@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Medical Form,shape=partialRectangle,null,null,data_base
+201,Camp Administrator,rounded=0,null,null,external_entity
+202,See Medical Forms,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Medical Form,endArrow=classic,202,200,endArrow=classic

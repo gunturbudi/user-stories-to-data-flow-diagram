@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Activity,shape=partialRectangle,null,null,data_base
+201,Task,shape=partialRectangle,null,null,data_base
+202,Camp Group,shape=partialRectangle,null,null,data_base
+203,Camp Administrator,rounded=0,null,null,external_entity
+204,Schedule Tasks For A Specific Camp Group,ellipse,null,null,process
+205,Schedule Activity,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Task,endArrow=classic,204,201,endArrow=classic
+210,Camp Group,endArrow=classic,204,202,endArrow=classic
+211,Activity,endArrow=classic,205,200,endArrow=classic

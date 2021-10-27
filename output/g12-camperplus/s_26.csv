@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Camp Group,shape=partialRectangle,null,null,data_base
+201,Event,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,See Camp Groups,ellipse,null,null,process
+204,See The Event For Each Camp Group,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Camp Group,endArrow=classic,203,200,endArrow=classic
+209,Event,endArrow=classic,204,201,endArrow=classic
+210,Camp Group,endArrow=classic,204,200,endArrow=classic

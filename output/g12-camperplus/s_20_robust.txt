@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Place" as thingplace
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	control "Keep Information\nIn Place" as controlkeepinformationplace
+
+	thingplace <.. thinginformation
+	actorcampadministrator --- thingplaceinterface
+	thinginformation --- controlkeepinformationplace
+	thingplace --- controlkeepinformationplace
+	thingplaceinterface --> controlkeepinformationplace
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Activity" as thingactivity
+	entity "Task" as thingtask
+	entity "Camp Group" as thingcampgroup
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "Activity\nInterface" as thingactivityinterface #grey
+	control "Schedule Tasks\nFor A\nSpecific Camp\nGroup" as controlscheduletaskspecificcampgroup
+	control "Schedule Activity" as controlscheduleactivity
+
+	thingcampgroup <.. thingtask
+	actorcampadministrator --- thinggroupinterface
+	actorcampadministrator --- thingactivityinterface
+	thingtask --- controlscheduletaskspecificcampgroup
+	thingcampgroup --- controlscheduletaskspecificcampgroup
+	thinggroupinterface --> controlscheduletaskspecificcampgroup
+	thingactivity --- controlscheduleactivity
+	thingactivityinterface --> controlscheduleactivity
+
+@enduml

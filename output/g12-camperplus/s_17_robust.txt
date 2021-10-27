@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Weekly Feedback" as thingweeklyfeedback
+	entity "Camper" as thingcamper
+	entity "Parent" as thingparent
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Parent\nInterface" as thingparentinterface #grey
+	control "Provide Weekly\nFeedback To\nCamper's Parents" as controlprovideweeklyfeedbackparent
+
+	thingparent <.. thingweeklyfeedback
+	thingcamper <.. thingparent
+	actorcampadministrator --- thingparentinterface
+	thingweeklyfeedback --- controlprovideweeklyfeedbackparent
+	thingparent --- controlprovideweeklyfeedbackparent
+	thingparentinterface --> controlprovideweeklyfeedbackparent
+
+@enduml

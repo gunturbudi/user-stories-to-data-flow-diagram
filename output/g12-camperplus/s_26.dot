@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Camp Group " color=red];
+201 [label="<f0>  |<f1> Event " color=red];
+202 [label="Camp Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> See Camp Groups }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> See The Event For Each Camp Group }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Camp Group"]
+204 -> 201 [label="Event"]
+204 -> 200 [label="Camp Group"]
+}

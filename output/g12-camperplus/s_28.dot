@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Activity " color=red];
+201 [label="<f0>  |<f1> Task " color=red];
+202 [label="Camp Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Delete Activity }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Delete Tasks }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Activity"]
+204 -> 201 [label="Task"]
+}

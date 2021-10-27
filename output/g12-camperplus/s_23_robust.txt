@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Attendance" as thingattendance
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Attendance\nInterface" as thingattendanceinterface #grey
+	control "Log Attendance" as controllogattendance
+
+	actorcampadministrator --- thingattendanceinterface
+	thingattendance --- controllogattendance
+	thingattendanceinterface --> controllogattendance
+
+@enduml

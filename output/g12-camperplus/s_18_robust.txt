@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nametag" as thingnametag
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Nametag\nInterface" as thingnametaginterface #grey
+	control "Make Nametags" as controlmakenametag
+
+	actorcampadministrator --- thingnametaginterface
+	thingnametag --- controlmakenametag
+	thingnametaginterface --> controlmakenametag
+
+@enduml

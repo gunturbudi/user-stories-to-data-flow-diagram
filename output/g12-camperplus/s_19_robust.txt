@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Staff" as thingstaff
+	entity "Kid" as thingkid
+	entity "Form" as thingform #grey
+	entity "Registration" as thingregistration #grey
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Kid\nInterface" as thingkidinterface #grey
+	boundary "Staff\nInterface" as thingstaffinterface #grey
+	control "Create A\nForm For\nKid" as controlcreateformkid
+	control "Create A\nRegistration Form\nFor Both\nStaff" as controlcreateregistrationform
+
+	thingkid <.. thingform
+	thingregistration <.. thingform
+	thingstaff <.. thingform
+	actorcampadministrator --- thingkidinterface
+	actorcampadministrator --- thingstaffinterface
+	thingform --- controlcreateformkid
+	thingkid --- controlcreateformkid
+	thingkidinterface --> controlcreateformkid
+	thingstaff --- controlcreateregistrationform
+	thingstaffinterface --> controlcreateregistrationform
+	thingform --- controlcreateregistrationform
+
+@enduml

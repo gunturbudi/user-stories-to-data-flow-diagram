@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Task" as thingtask
+	entity "Event" as thingevent
+	entity "Case" as thingcase
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Case\nInterface" as thingcaseinterface #grey
+	control "Modify Event" as controlmodifyevent
+	control "Modify Tasks\nIn Case\nA Change" as controlmodifytaskcase
+
+	thingcase <.. thingtask
+	actorcampadministrator --- thingeventinterface
+	actorcampadministrator --- thingcaseinterface
+	thingevent --- controlmodifyevent
+	thingeventinterface --> controlmodifyevent
+	thingtask --- controlmodifytaskcase
+	thingcase --- controlmodifytaskcase
+	thingcaseinterface --> controlmodifytaskcase
+
+@enduml

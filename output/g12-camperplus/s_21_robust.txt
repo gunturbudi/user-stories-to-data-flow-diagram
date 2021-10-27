@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Medical Form" as thingmedicalform
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "See Medical\nForms" as controlseemedicalform
+
+	actorcampadministrator --- thingforminterface
+	thingmedicalform --- controlseemedicalform
+	thingforminterface --> controlseemedicalform
+
+@enduml

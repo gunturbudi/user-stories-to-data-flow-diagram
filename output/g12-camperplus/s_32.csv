@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Keep parent's information up to date,ellipse,null,null,process
+200,Add Parent,shape=partialRectangle,null,null,data_base
+201,Camp Administrator,rounded=0,null,null,external_entity
+202,Modify The Information Of Added Parents,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Add Parent,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Parent's information,rounded=0,null,null,external_entity
+1002,Parent's information,endArrow=classic,2,1001,endArrow=classic

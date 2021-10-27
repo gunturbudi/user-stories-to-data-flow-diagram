@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Add Parent " ];
+201 [label="Camp Administrator" shape=box];
+202 [label="{<f0> 1.0|<f1> Modify The Information Of Added Parents }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Keep parent's information up to date }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Parent's information " color=red];
+2 -> 1001 [label="Parent's information"]
+201 -> 202
+202 -> 200 [label="Add Parent"]
+}

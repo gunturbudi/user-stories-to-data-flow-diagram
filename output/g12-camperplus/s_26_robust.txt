@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp Group" as thingcampgroup #grey
+	entity "Event" as thingevent
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "See Camp\nGroups" as controlseecampgroups
+	control "See The\nEvent For\nEach Camp\nGroup" as controlseeevent
+
+	thingcampgroup <.. thingevent
+	actorcampadministrator --- thinggroupinterface
+	thinggroupinterface --> controlseecampgroups
+	thingcampgroup --- controlseecampgroups
+	thingevent --- controlseeevent
+	thingcampgroup --- controlseeevent
+	thinggroupinterface --> controlseeevent
+
+@enduml

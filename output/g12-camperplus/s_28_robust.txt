@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Activity" as thingactivity
+	entity "Task" as thingtask
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Activity\nInterface" as thingactivityinterface #grey
+	boundary "Task\nInterface" as thingtaskinterface #grey
+	control "Delete Activity" as controldeleteactivity
+	control "Delete Tasks" as controldeletetask
+
+	actorcampadministrator --- thingactivityinterface
+	actorcampadministrator --- thingtaskinterface
+	thingactivity --- controldeleteactivity
+	thingactivityinterface --> controldeleteactivity
+	thingtask --- controldeletetask
+	thingtaskinterface --> controldeletetask
+
+@enduml

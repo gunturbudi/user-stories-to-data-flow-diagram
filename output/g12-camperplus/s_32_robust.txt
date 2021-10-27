@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Add Parent" as thingaddedparent
+	actor "Camp Administrator" as actorcampadministrator
+	circle "Information" as thinginformation
+	boundary "Parent\nInterface" as thingparentinterface #grey
+	control "Modify The\nInformation Of\nAdded Parents" as controlmodifyinformation
+
+	thingaddedparent *-- thinginformation
+	actorcampadministrator --- thingparentinterface
+	thinginformation --- controlmodifyinformation
+	thingaddedparent --- controlmodifyinformation
+	thingparentinterface --> controlmodifyinformation
+
+@enduml

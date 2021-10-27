@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Activity,shape=partialRectangle,null,null,data_base
+201,Task,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,Delete Activity,ellipse,null,null,process
+204,Delete Tasks,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Activity,endArrow=classic,203,200,endArrow=classic
+209,Task,endArrow=classic,204,201,endArrow=classic

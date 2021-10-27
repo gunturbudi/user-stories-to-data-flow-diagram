@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Group" as thinggroup
+	entity "Camper" as thingcamper
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Create Groups" as controlcreategroup
+	control "Add Campers\nTo The\nGroups" as controladdcampergroup
+
+	thinggroup <.. thingcamper
+	actorcampadministrator --- thinggroupinterface
+	thinggroup --- controlcreategroup
+	thinggroupinterface --> controlcreategroup
+	thingcamper --- controladdcampergroup
+	thinggroup --- controladdcampergroup
+	thinggroupinterface --> controladdcampergroup
+
+@enduml

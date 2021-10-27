@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	entity "Database" as thingdatabase
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Delete Campers\nFrom The\nDatabase" as controldeletecamperdatabase
+
+	thingdatabase <.. thingcamper
+	actorcampadministrator --- thingdatabaseinterface
+	thingcamper --- controldeletecamperdatabase
+	thingdatabase --- controldeletecamperdatabase
+	thingdatabaseinterface --> controldeletecamperdatabase
+
+@enduml
