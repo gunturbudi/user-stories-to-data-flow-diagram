@@ -1,0 +1,47 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Form" as thingform #grey
+	entity "Kid" as thingkid
+	entity "Staff" as thingstaff
+	entity "Attendance" as thingattendance
+	entity "Parent" as thingparent
+	entity "Account" as thingaccount
+	entity "Registration" as thingregistration #grey
+	actor "Camp Administrator" as actorcampadministrator
+	actor "Parent" as actorparent
+	boundary "Kid\nInterface" as thingkidinterface #grey
+	boundary "Staff\nInterface" as thingstaffinterface #grey
+	boundary "Attendance\nInterface" as thingattendanceinterface #grey
+	boundary "Parent\nInterface" as thingparentinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	control "Create A\nForm For\nKid" as controlcreateformkid
+	control "Create A\nRegistration Form\nFor Both\nStaff" as controlcreateregistrationform
+	control "Log Attendance" as controllogattendance
+	control "Add Parents" as controladdparent
+	control "Create An\nAccount" as controlcreateaccount
+
+	thingkid <.. thingform
+	thingregistration <.. thingform
+	thingstaff <.. thingform
+	actorcampadministrator --- thingkidinterface
+	actorcampadministrator --- thingstaffinterface
+	actorcampadministrator --- thingattendanceinterface
+	actorcampadministrator --- thingparentinterface
+	actorparent --- thingaccountinterface
+	thingform --- controlcreateformkid
+	thingkid --- controlcreateformkid
+	thingkidinterface --> controlcreateformkid
+	thingstaff --- controlcreateregistrationform
+	thingstaffinterface --> controlcreateregistrationform
+	thingform --- controlcreateregistrationform
+	thingattendance --- controllogattendance
+	thingattendanceinterface --> controllogattendance
+	thingparent --- controladdparent
+	thingparentinterface --> controladdparent
+	thingaccount --- controlcreateaccount
+	thingaccountinterface --> controlcreateaccount
+
+@enduml

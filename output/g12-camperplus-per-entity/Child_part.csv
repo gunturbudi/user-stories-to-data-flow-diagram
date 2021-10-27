@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+DR4hPaVEkidcE5KIjDBk-2,Child,shape=partialRectangle,null,null,data_base
+DR4hPaVEkidcE5KIjDBk-4,Activity,shape=partialRectangle,null,null,data_base
+DR4hPaVEkidcE5KIjDBk-5,Camp,shape=partialRectangle,null,null,data_base
+DR4hPaVEkidcE5KIjDBk-6,Parent,rounded=0,null,null,external_entity
+DR4hPaVEkidcE5KIjDBk-8,See A Schedule Of The Activities Children Involved At Camp,ellipse,null,null,process
+DR4hPaVEkidcE5KIjDBk-10,,endArrow=classic,DR4hPaVEkidcE5KIjDBk-6,DR4hPaVEkidcE5KIjDBk-8,endArrow=classic
+DR4hPaVEkidcE5KIjDBk-12,Activity,endArrow=classic,DR4hPaVEkidcE5KIjDBk-8,DR4hPaVEkidcE5KIjDBk-4,endArrow=classic
+DR4hPaVEkidcE5KIjDBk-13,Camp,endArrow=classic,DR4hPaVEkidcE5KIjDBk-8,DR4hPaVEkidcE5KIjDBk-5,endArrow=classic
+DR4hPaVEkidcE5KIjDBk-14,Child,endArrow=classic,DR4hPaVEkidcE5KIjDBk-8,DR4hPaVEkidcE5KIjDBk-2,endArrow=classic

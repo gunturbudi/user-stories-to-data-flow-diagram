@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a camp counselor, I want to be able to take attendance of my assigned kids, so that I can make ensure everybody is accounted for",
+    "entities": [
+      {
+        "text": "camp counselor",
+        "label": "Data"
+      },
+      {
+        "text": "take",
+        "label": "Processing"
+      },
+      {
+        "text": "attendance",
+        "label": "PII"
+      },
+      {
+        "text": "assigned kids",
+        "label": "PII"
+      }
+    ]
+  }
+]

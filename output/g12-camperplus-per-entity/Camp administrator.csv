@@ -1,0 +1,231 @@
+id,value,style,source,target,type
+48,Keep track of each individual camper,ellipse,null,null,process
+49,Keep track of who is where at all times,ellipse,null,null,process
+50,Organize activities in terms of responsibilities,ellipse,null,null,process
+51,Keep parent's information up to date,ellipse,null,null,process
+200,Camper,shape=partialRectangle,null,null,data_base
+201,Camp,shape=partialRectangle,null,null,data_base
+202,Previous Year,shape=partialRectangle,null,null,data_base
+203,Track,shape=partialRectangle,null,null,data_base
+204,Activity,shape=partialRectangle,null,null,data_base
+205,Nametag,shape=partialRectangle,null,null,data_base
+206,Behavioral Problem,shape=partialRectangle,null,null,data_base
+207,Specific Task,shape=partialRectangle,null,null,data_base
+208,Reminder,shape=partialRectangle,null,null,data_base
+209,Different Position,shape=partialRectangle,null,null,data_base
+210,Rule,shape=partialRectangle,null,null,data_base
+211,Campers Worker,shape=partialRectangle,null,null,data_base
+212,Avenue,shape=partialRectangle,null,null,data_base
+213,Parent,shape=partialRectangle,null,null,data_base
+214,Feedback,shape=partialRectangle,null,null,data_base
+215,General Concern,shape=partialRectangle,null,null,data_base
+216,Database,shape=partialRectangle,null,null,data_base
+217,Immediate Parent,shape=partialRectangle,null,null,data_base
+218,Information,shape=partialRectangle,null,null,data_base
+219,Guardian,shape=partialRectangle,null,null,data_base
+220,Weekly Feedback,shape=partialRectangle,null,null,data_base
+221,Kid,shape=partialRectangle,null,null,data_base
+222,Staff,shape=partialRectangle,null,null,data_base
+223,Form,shape=partialRectangle,null,null,data_base
+224,Place,shape=partialRectangle,null,null,data_base
+225,Medical Form,shape=partialRectangle,null,null,data_base
+226,Attendance,shape=partialRectangle,null,null,data_base
+227,Group,shape=partialRectangle,null,null,data_base
+228,Event,shape=partialRectangle,null,null,data_base
+229,Task,shape=partialRectangle,null,null,data_base
+230,Case,shape=partialRectangle,null,null,data_base
+231,Enrolled Camper,shape=partialRectangle,null,null,data_base
+232,Add Parent,shape=partialRectangle,null,null,data_base
+233,Specific Group,shape=partialRectangle,null,null,data_base
+234,Consent,shape=partialRectangle,null,null,data_base
+235,Emergency,shape=partialRectangle,null,null,data_base
+236,Registration,shape=partialRectangle,null,null,data_base
+237,Camp Administrator,rounded=0,null,null,external_entity
+238,Add Campers,ellipse,null,null,process
+239,Remove Campers,ellipse,null,null,process
+240,Attend The Camp,ellipse,null,null,process
+241,Keep Camper Records From Previous Years,ellipse,null,null,process
+242,Upload Consent Forms,ellipse,null,null,process
+243,Keep Track Of Which Camper Submitted,ellipse,null,null,process
+244,Schedule Activities For Campers,ellipse,null,null,process
+245,Create Nametags For Campers,ellipse,null,null,process
+246,Suspend A Camper Had Behavioral Problems,ellipse,null,null,process
+247,Set A Reminders To Specific Tasks Has,ellipse,null,null,process
+248,Done,ellipse,null,null,process
+249,Assign Different Positions To The Staff Members,ellipse,null,null,process
+250,Warn A Camp Worker,ellipse,null,null,process
+251,Create Rules Camp Has,ellipse,null,null,process
+252,Create Rules Campers Workers Has,ellipse,null,null,process
+253,Follow,ellipse,null,null,process
+254,Modify Rules Camp Has,ellipse,null,null,process
+255,Modify Rules Campers Workers Has,ellipse,null,null,process
+256,Parents Submit Feedback,ellipse,null,null,process
+257,Create An Avenue,ellipse,null,null,process
+258,Parents Submit General Concern,ellipse,null,null,process
+259,Store Campers' Emergency Information In A Database,ellipse,null,null,process
+260,Store Guardian's Information,ellipse,null,null,process
+261,Store Camper's Immediate Parent Information,ellipse,null,null,process
+262,Provide Weekly Feedback To Camper's Parents,ellipse,null,null,process
+263,Make Nametags,ellipse,null,null,process
+264,Create A Registration Form For Both Staff,ellipse,null,null,process
+265,Create A Form For Kid,ellipse,null,null,process
+266,Keep Information In Place,ellipse,null,null,process
+267,See Medical Forms,ellipse,null,null,process
+268,Notify Parents Once,ellipse,null,null,process
+269,Log Attendance,ellipse,null,null,process
+270,Add Parents,ellipse,null,null,process
+271,Create Groups,ellipse,null,null,process
+272,Add Campers To The Groups,ellipse,null,null,process
+273,See The Event For Each Camp Group,ellipse,null,null,process
+274,See Camp Groups,ellipse,null,null,process
+275,Schedule Tasks For A Specific Camp Group,ellipse,null,null,process
+276,Delete Tasks,ellipse,null,null,process
+277,Delete Activity,ellipse,null,null,process
+278,Modify Tasks In Case A Change,ellipse,null,null,process
+279,Modify Event,ellipse,null,null,process
+280,Modify The Information Of Enrolled Campers,ellipse,null,null,process
+281,Delete Campers From The Database,ellipse,null,null,process
+282,Delete Parents From The Database,ellipse,null,null,process
+283,See Only Events For A Specific Group On The Event Calendar,ellipse,null,null,process
+284,See Only Events For Group,ellipse,null,null,process
+286,,endArrow=classic,237,238,endArrow=classic
+287,,endArrow=classic,237,239,endArrow=classic
+288,,endArrow=classic,237,240,endArrow=classic
+289,,endArrow=classic,237,241,endArrow=classic
+290,,endArrow=classic,237,242,endArrow=classic
+291,,endArrow=classic,237,243,endArrow=classic
+292,,endArrow=classic,237,244,endArrow=classic
+293,,endArrow=classic,237,245,endArrow=classic
+294,,endArrow=classic,237,246,endArrow=classic
+295,,endArrow=classic,237,247,endArrow=classic
+296,,endArrow=classic,237,248,endArrow=classic
+297,,endArrow=classic,237,249,endArrow=classic
+298,,endArrow=classic,237,250,endArrow=classic
+299,,endArrow=classic,237,251,endArrow=classic
+300,,endArrow=classic,237,252,endArrow=classic
+301,,endArrow=classic,237,253,endArrow=classic
+302,,endArrow=classic,237,254,endArrow=classic
+303,,endArrow=classic,237,255,endArrow=classic
+304,,endArrow=classic,237,256,endArrow=classic
+305,,endArrow=classic,237,257,endArrow=classic
+306,,endArrow=classic,237,258,endArrow=classic
+307,,endArrow=classic,237,259,endArrow=classic
+308,,endArrow=classic,237,260,endArrow=classic
+309,,endArrow=classic,237,261,endArrow=classic
+310,,endArrow=classic,237,262,endArrow=classic
+311,,endArrow=classic,237,263,endArrow=classic
+312,,endArrow=classic,237,264,endArrow=classic
+313,,endArrow=classic,237,265,endArrow=classic
+314,,endArrow=classic,237,266,endArrow=classic
+315,,endArrow=classic,237,267,endArrow=classic
+316,,endArrow=classic,237,268,endArrow=classic
+317,,endArrow=classic,237,269,endArrow=classic
+318,,endArrow=classic,237,270,endArrow=classic
+319,,endArrow=classic,237,271,endArrow=classic
+320,,endArrow=classic,237,272,endArrow=classic
+321,,endArrow=classic,237,273,endArrow=classic
+322,,endArrow=classic,237,274,endArrow=classic
+323,,endArrow=classic,237,275,endArrow=classic
+324,,endArrow=classic,237,276,endArrow=classic
+325,,endArrow=classic,237,278,endArrow=classic
+326,,endArrow=classic,237,279,endArrow=classic
+327,,endArrow=classic,237,280,endArrow=classic
+328,,endArrow=classic,237,281,endArrow=classic
+329,,endArrow=classic,237,282,endArrow=classic
+330,,endArrow=classic,237,283,endArrow=classic
+331,,endArrow=classic,237,284,endArrow=classic
+332,Camper,endArrow=classic,238,200,endArrow=classic
+333,,endArrow=classic,239,240,endArrow=classic
+334,Camper,endArrow=classic,239,200,endArrow=classic
+335,Camp,endArrow=classic,240,201,endArrow=classic
+336,Previous Year,endArrow=classic,241,202,endArrow=classic
+337,Form,endArrow=classic,242,223,endArrow=classic
+338,Track,endArrow=classic,243,203,endArrow=classic
+339,Camper,endArrow=classic,243,200,endArrow=classic
+340,Activity,endArrow=classic,244,204,endArrow=classic
+341,Camper,endArrow=classic,244,200,endArrow=classic
+342,Nametag,endArrow=classic,245,205,endArrow=classic
+343,Camper,endArrow=classic,245,200,endArrow=classic
+344,Behavioral Problem,endArrow=classic,246,206,endArrow=classic
+345,Camper,endArrow=classic,246,200,endArrow=classic
+346,,endArrow=classic,247,248,endArrow=classic
+347,Reminder,endArrow=classic,247,208,endArrow=classic
+348,Specific Task,endArrow=classic,247,207,endArrow=classic
+349,Different Position,endArrow=classic,249,209,endArrow=classic
+350,Camp,endArrow=classic,251,201,endArrow=classic
+351,Rule,endArrow=classic,251,210,endArrow=classic
+352,,endArrow=classic,252,253,endArrow=classic
+353,Rule,endArrow=classic,252,210,endArrow=classic
+354,Campers Worker,endArrow=classic,252,211,endArrow=classic
+355,Camp,endArrow=classic,254,201,endArrow=classic
+356,Rule,endArrow=classic,254,210,endArrow=classic
+357,,endArrow=classic,255,253,endArrow=classic
+358,Rule,endArrow=classic,255,210,endArrow=classic
+359,Campers Worker,endArrow=classic,255,211,endArrow=classic
+360,Parent,endArrow=classic,256,213,endArrow=classic
+361,Feedback,endArrow=classic,256,214,endArrow=classic
+362,,endArrow=classic,257,256,endArrow=classic
+363,,endArrow=classic,257,258,endArrow=classic
+364,Avenue,endArrow=classic,257,212,endArrow=classic
+365,Parent,endArrow=classic,257,213,endArrow=classic
+366,General Concern,endArrow=classic,258,215,endArrow=classic
+367,Parent,endArrow=classic,258,213,endArrow=classic
+368,Database,endArrow=classic,259,216,endArrow=classic
+369,Information,endArrow=classic,259,218,endArrow=classic
+370,Guardian,endArrow=classic,260,219,endArrow=classic
+371,Information,endArrow=classic,260,218,endArrow=classic
+372,Information,endArrow=classic,261,218,endArrow=classic
+373,Weekly Feedback,endArrow=classic,262,220,endArrow=classic
+374,Parent,endArrow=classic,262,213,endArrow=classic
+375,Nametag,endArrow=classic,263,205,endArrow=classic
+376,Staff,endArrow=classic,264,222,endArrow=classic
+377,Form,endArrow=classic,264,223,endArrow=classic
+378,Form,endArrow=classic,265,223,endArrow=classic
+379,Kid,endArrow=classic,265,221,endArrow=classic
+380,Place,endArrow=classic,266,224,endArrow=classic
+381,Information,endArrow=classic,266,218,endArrow=classic
+382,Medical Form,endArrow=classic,267,225,endArrow=classic
+383,Parent,endArrow=classic,268,213,endArrow=classic
+384,Attendance,endArrow=classic,269,226,endArrow=classic
+385,Parent,endArrow=classic,270,213,endArrow=classic
+386,Group,endArrow=classic,271,227,endArrow=classic
+387,Camper,endArrow=classic,272,200,endArrow=classic
+388,Group,endArrow=classic,272,227,endArrow=classic
+389,Event,endArrow=classic,273,228,endArrow=classic
+390,Group,endArrow=classic,273,227,endArrow=classic
+391,Group,endArrow=classic,274,227,endArrow=classic
+392,Task,endArrow=classic,275,229,endArrow=classic
+393,Group,endArrow=classic,275,227,endArrow=classic
+394,Task,endArrow=classic,276,229,endArrow=classic
+395,Activity,endArrow=classic,277,204,endArrow=classic
+396,Case,endArrow=classic,278,230,endArrow=classic
+397,Task,endArrow=classic,278,229,endArrow=classic
+398,Event,endArrow=classic,279,228,endArrow=classic
+399,Enrolled Camper,endArrow=classic,280,231,endArrow=classic
+400,Information,endArrow=classic,280,218,endArrow=classic
+401,Add Parent,endArrow=classic,280,232,endArrow=classic
+402,Camper,endArrow=classic,281,200,endArrow=classic
+403,Database,endArrow=classic,281,216,endArrow=classic
+404,Parent,endArrow=classic,282,213,endArrow=classic
+405,Database,endArrow=classic,282,216,endArrow=classic
+406,Specific Group,endArrow=classic,283,233,endArrow=classic
+407,Event,endArrow=classic,283,228,endArrow=classic
+408,Group,endArrow=classic,284,227,endArrow=classic
+409,Event,endArrow=classic,284,228,endArrow=classic
+433,Immediate Parent,endArrow=classic,261,217,endArrow=classic
+438,Consent,endArrow=classic,242,234,endArrow=classic
+460,Emergency,endArrow=classic,259,235,endArrow=classic
+487,Registration,endArrow=classic,264,236,endArrow=classic
+1000,,endArrow=classic,238,48,endArrow=classic
+1001,Individual camper,rounded=0,null,null,external_entity
+1002,Individual camper,endArrow=classic,48,1001,endArrow=classic
+1003,Camp workers,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,49,endArrow=classic
+1005,Who is where,rounded=0,null,null,external_entity
+1006,Who is where,endArrow=classic,49,1005,endArrow=classic
+1007,,endArrow=classic,249,50,endArrow=classic
+1008,Activities,rounded=0,null,null,external_entity
+1009,Activities,endArrow=classic,50,1008,endArrow=classic
+1010,,endArrow=classic,237,51,endArrow=classic
+1011,Parent's information,rounded=0,null,null,external_entity
+1012,Parent's information,endArrow=classic,51,1011,endArrow=classic

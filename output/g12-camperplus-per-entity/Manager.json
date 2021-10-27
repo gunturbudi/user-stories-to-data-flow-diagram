@@ -1,0 +1,65 @@
+[
+  {
+    "text": "As a camp worker, I'm able to report a camper to the manager with an inappropriate behavior",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "camper",
+        "label": "Data"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I'm able to report a list of supplies to the manager that the camp is short of",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "list of supplies",
+        "label": "PII"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I'm able to report necessary repairs to the manager that the camp is needed of",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "necessary repairs",
+        "label": "PII"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  }
+]

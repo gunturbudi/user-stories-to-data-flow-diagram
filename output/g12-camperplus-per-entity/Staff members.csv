@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Organize activities in terms of responsibilities,ellipse,null,null,process
+200,Different Position,shape=partialRectangle,null,null,data_base
+201,Staff Member,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,Assign Different Positions To The Staff Members,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Different Position,endArrow=classic,203,200,endArrow=classic
+207,Staff Member,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Activities,rounded=0,null,null,external_entity
+1002,Activities,endArrow=classic,2,1001,endArrow=classic

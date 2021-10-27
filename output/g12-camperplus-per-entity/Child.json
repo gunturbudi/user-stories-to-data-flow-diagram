@@ -1,0 +1,60 @@
+[
+  {
+    "text": "As a parent, I want to be able to message my child's counselors, so that I can voice my concerns or check on my child's progress",
+    "entities": [
+      {
+        "text": "parent",
+        "label": "Data"
+      },
+      {
+        "text": "message",
+        "label": "Processing"
+      },
+      {
+        "text": "child",
+        "label": "Data"
+      },
+      {
+        "text": "voice",
+        "label": "Processing"
+      },
+      {
+        "text": "concerns",
+        "label": "PII"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      },
+      {
+        "text": "child",
+        "label": "Data"
+      },
+      {
+        "text": "progress",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a parent, I want to be able to see a schedule of the activities my children are involved in at camp, so that I can be more informed as to what they are doing at camp",
+    "entities": [
+      {
+        "text": "parent,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "activities",
+        "label": "PII"
+      },
+      {
+        "text": "children",
+        "label": "Data"
+      }
+    ]
+  }
+]

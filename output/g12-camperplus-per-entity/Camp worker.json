@@ -1,0 +1,133 @@
+[
+  {
+    "text": "As a camp administrator, I want to be able to warn a camp worker who I think did his/her job inappropriate",
+    "entities": [
+      {
+        "text": "camp administrator",
+        "label": "Data"
+      },
+      {
+        "text": "warn",
+        "label": "Processing"
+      },
+      {
+        "text": "camp worker",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I want to be able to see which campers I am in charge of and where, so that I can make sure I am doing my job properly",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "campers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I would be able to submit a completion report for the tasks which was assigned to me",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "tasks",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I'm able to report a camper to the manager with an inappropriate behavior",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "camper",
+        "label": "Data"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I'm able to report a list of supplies to the manager that the camp is short of",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "list of supplies",
+        "label": "PII"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I'm able to report necessary repairs to the manager that the camp is needed of",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "necessary repairs",
+        "label": "PII"
+      },
+      {
+        "text": "manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a camp worker, I want to be able to see which campers I am in charge of and where, so that I can make sure I am doing my job properly",
+    "entities": [
+      {
+        "text": "camp worker",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "campers",
+        "label": "Data"
+      }
+    ]
+  }
+]
