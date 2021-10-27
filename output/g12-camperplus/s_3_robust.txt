@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Previous Year" as thingpreviousyear
+	entity "Camper Record" as thingcamperrecord
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Year\nInterface" as thingyearinterface #grey
+	control "Keep Camper\nRecords From\nPrevious Years" as controlkeepcamperrecordspreviousyear
+
+	thingpreviousyear <.. thingcamperrecord
+	actorcampadministrator --- thingyearinterface
+	thingcamperrecord --- controlkeepcamperrecordspreviousyear
+	thingpreviousyear --- controlkeepcamperrecordspreviousyear
+	thingyearinterface --> controlkeepcamperrecordspreviousyear
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Camper,shape=partialRectangle,null,null,data_base
+201,Behavioral Problem,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,Suspend A Camper Had Behavioral Problems,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Camper,endArrow=classic,203,200,endArrow=classic
+207,Behavioral Problem,endArrow=classic,203,201,endArrow=classic

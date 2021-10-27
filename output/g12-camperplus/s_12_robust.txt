@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Campers Worker" as thingcampersworker
+	entity "Rule" as thingrule
+	entity "Camp" as thingcamp
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Worker\nInterface" as thingworkerinterface #grey
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	control "Create Rules\nCampers Workers\nHas" as controlcreaterule
+	control "Create Rules\nCamp Has" as controlcreaterulecamp
+	control "Follow" as controlfollow
+	control "Modify Rules\nCampers Workers\nHas" as controlmodifyrule
+	control "Modify Rules\nCamp Has" as controlmodifyrulecamp
+
+	thingcampersworker <.. thingrule
+	thingcamp <.. thingrule
+	actorcampadministrator --- thingworkerinterface
+	actorcampadministrator --- thingcampinterface
+	thingrule --- controlcreaterule
+	thingcampersworker --- controlcreaterule
+	thingworkerinterface --> controlcreaterule
+	thingcamp --- controlcreaterulecamp
+	thingcampinterface --> controlcreaterulecamp
+	thingrule --- controlcreaterulecamp
+	controlcreaterule --> controlfollow
+	controlmodifyrule --> controlfollow
+	thingworkerinterface --> controlfollow
+	thingcampersworker --- controlmodifyrule
+	thingrule --- controlmodifyrule
+	thingworkerinterface --> controlmodifyrule
+	thingcamp --- controlmodifyrulecamp
+	thingcampinterface --> controlmodifyrulecamp
+	thingrule --- controlmodifyrulecamp
+
+@enduml

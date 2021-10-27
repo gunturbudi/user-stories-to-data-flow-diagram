@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Parent" as thingparent
+	entity "Avenue" as thingavenue
+	entity "Feedback" as thingfeedback
+	entity "General Concern" as thinggeneralconcern
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Avenue\nInterface" as thingavenueinterface #grey
+	boundary "Concern\nInterface" as thingconcerninterface #grey
+	control "Create An\nAvenue" as controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	control "Parents Submit\nFeedback" as controlsubmitparentfeedback
+	control "Parents Submit\nGeneral Concern" as controlsubmitparentgeneralconcern
+
+	thingfeedback <.. thingparent
+	thinggeneralconcern <.. thingparent
+	actorcampadministrator --- thingavenueinterface
+	actorcampadministrator --- thingconcerninterface
+	thingparent --- controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingavenue --- controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingavenueinterface --> controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingparent --- controlsubmitparentfeedback
+	thingfeedback --- controlsubmitparentfeedback
+	thingavenueinterface --> controlsubmitparentfeedback
+	controlcreateavenuesubmitparentsubmitparentgeneralconcern --> controlsubmitparentfeedback
+	controlcreateavenuesubmitparentsubmitparentgeneralconcern --> controlsubmitparentgeneralconcern
+	thinggeneralconcern --- controlsubmitparentgeneralconcern
+	thingconcerninterface --> controlsubmitparentgeneralconcern
+	thingparent --- controlsubmitparentgeneralconcern
+
+@enduml

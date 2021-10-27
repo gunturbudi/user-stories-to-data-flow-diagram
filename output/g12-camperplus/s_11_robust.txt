@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp Worker" as thingcampworker #grey
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Worker\nInterface" as thingworkerinterface #grey
+	control "Warn A\nCamp Worker" as controlwarncampworker
+
+	actorcampadministrator --- thingworkerinterface
+	thingcampworker --- controlwarncampworker
+	thingworkerinterface --> controlwarncampworker
+
+@enduml

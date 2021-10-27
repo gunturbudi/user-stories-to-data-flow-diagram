@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	entity "Behavioral Problem" as thingbehavioralproblem
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Problem\nInterface" as thingprobleminterface #grey
+	control "Suspend A\nCamper Had\nBehavioral Problems" as controlsuspendcamper
+
+	thingbehavioralproblem <.. thingcamper
+	actorcampadministrator --- thingprobleminterface
+	thingcamper --- controlsuspendcamper
+	thingbehavioralproblem --- controlsuspendcamper
+	thingprobleminterface --> controlsuspendcamper
+
+@enduml

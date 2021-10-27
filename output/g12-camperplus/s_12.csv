@@ -1,0 +1,25 @@
+id,value,style,source,target,type
+200,Campers Worker,shape=partialRectangle,null,null,data_base
+201,Rule,shape=partialRectangle,null,null,data_base
+202,Camp,shape=partialRectangle,null,null,data_base
+203,Camp Administrator,rounded=0,null,null,external_entity
+204,Create Rules Campers Workers Has,ellipse,null,null,process
+205,Create Rules Camp Has,ellipse,null,null,process
+206,Follow,ellipse,null,null,process
+207,Modify Rules Campers Workers Has,ellipse,null,null,process
+208,Modify Rules Camp Has,ellipse,null,null,process
+210,,endArrow=classic,203,204,endArrow=classic
+211,,endArrow=classic,203,205,endArrow=classic
+212,,endArrow=classic,203,206,endArrow=classic
+213,,endArrow=classic,203,207,endArrow=classic
+214,,endArrow=classic,203,208,endArrow=classic
+215,,endArrow=classic,204,206,endArrow=classic
+216,Rule,endArrow=classic,204,201,endArrow=classic
+217,Campers Worker,endArrow=classic,204,200,endArrow=classic
+218,Camp,endArrow=classic,205,202,endArrow=classic
+219,Rule,endArrow=classic,205,201,endArrow=classic
+220,,endArrow=classic,207,206,endArrow=classic
+221,Campers Worker,endArrow=classic,207,200,endArrow=classic
+222,Rule,endArrow=classic,207,201,endArrow=classic
+223,Camp,endArrow=classic,208,202,endArrow=classic
+224,Rule,endArrow=classic,208,201,endArrow=classic

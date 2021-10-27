@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Camp,shape=partialRectangle,null,null,data_base
+201,Camper,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,Attend The Camp,ellipse,null,null,process
+204,Remove Campers,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Camp,endArrow=classic,203,200,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,Camper,endArrow=classic,204,201,endArrow=classic

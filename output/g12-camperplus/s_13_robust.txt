@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp Facility" as thingcampfacility
+	actor "Camp Administrator" as actorcampadministrator
+	circle "Usage" as thingusage
+	circle "Track" as thingtrack
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	control "Keep Track\nOf The\nUsage Of\nInternal Camp\nFacilities" as controlkeeptrack
+
+	thingcampfacility *-- thingusage
+	thingusage *-- thingtrack
+	actorcampadministrator --- thingfacilityinterface
+	thingtrack --- controlkeeptrack
+	thingusage --- controlkeeptrack
+	thingcampfacility --- controlkeeptrack
+	thingfacilityinterface --> controlkeeptrack
+
+@enduml

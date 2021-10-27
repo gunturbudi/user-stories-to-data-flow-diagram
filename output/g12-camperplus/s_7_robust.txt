@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	entity "Nametag" as thingnametag
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Camper\nInterface" as thingcamperinterface #grey
+	control "Create Nametags\nFor Campers" as controlcreatenametag
+
+	thingcamper <.. thingnametag
+	actorcampadministrator --- thingcamperinterface
+	thingnametag --- controlcreatenametag
+	thingcamper --- controlcreatenametag
+	thingcamperinterface --> controlcreatenametag
+
+@enduml

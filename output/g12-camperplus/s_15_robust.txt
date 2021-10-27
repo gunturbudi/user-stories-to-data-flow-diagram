@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	entity "Database" as thingdatabase
+	entity "Emergency Information" as thingemergencyinformation #grey
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Store Campers'\nEmergency Information\nIn A\nDatabase" as controlstoreemergencyinformationdatabase
+
+	thingdatabase <.. thingemergencyinformation
+	actorcampadministrator --- thingdatabaseinterface
+	thingemergencyinformation --- controlstoreemergencyinformationdatabase
+	thingdatabase --- controlstoreemergencyinformationdatabase
+	thingdatabaseinterface --> controlstoreemergencyinformationdatabase
+
+@enduml

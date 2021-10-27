@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Specific Task " ];
+201 [label="<f0>  |<f1> Reminder " color=red];
+202 [label="Camp Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Set A Reminders To Specific Tasks Has }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Done }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Reminder"]
+203 -> 200 [label="Specific Task"]
+}

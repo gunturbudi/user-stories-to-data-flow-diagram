@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Activity" as thingactivity
+	entity "Camper" as thingcamper
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Camper\nInterface" as thingcamperinterface #grey
+	control "Schedule Activities\nFor Campers" as controlscheduleactivity
+
+	thingcamper <.. thingactivity
+	actorcampadministrator --- thingcamperinterface
+	thingactivity --- controlscheduleactivity
+	thingcamper --- controlscheduleactivity
+	thingcamperinterface --> controlscheduleactivity
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific Task" as thingspecifictask
+	entity "Reminder" as thingreminder
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Task\nInterface" as thingtaskinterface #grey
+	control "Set A\nReminders To\nSpecific Tasks\nHas" as controlsetreminder
+	control "Done" as controldo
+
+	thingspecifictask <.. thingreminder
+	actorcampadministrator --- thingtaskinterface
+	thingreminder --- controlsetreminder
+	thingspecifictask --- controlsetreminder
+	thingtaskinterface --> controlsetreminder
+	controlsetreminder --> controldo
+	thingtaskinterface --> controldo
+
+@enduml

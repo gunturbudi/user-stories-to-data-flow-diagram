@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	entity "Track" as thingtrack
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Camper\nInterface" as thingcamperinterface #grey
+	control "Keep Track\nOf Which\nCamper Submitted" as controlkeeptrack
+
+	thingcamper <.. thingtrack
+	actorcampadministrator --- thingcamperinterface
+	thingtrack --- controlkeeptrack
+	thingcamper --- controlkeeptrack
+	thingcamperinterface --> controlkeeptrack
+
+@enduml

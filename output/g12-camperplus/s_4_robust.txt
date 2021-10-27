@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Consent Form" as thingconsentform
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Upload Consent\nForms" as controluploadconsentforms
+
+	actorcampadministrator --- thingforminterface
+	thingconsentform --- controluploadconsentforms
+	thingforminterface --> controluploadconsentforms
+
+@enduml

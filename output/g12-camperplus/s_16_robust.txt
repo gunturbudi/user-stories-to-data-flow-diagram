@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Immediate Parent" as thingimmediateparent
+	entity "Guardian" as thingguardian
+	entity "Information" as thinginformation
+	entity "Camper" as thingcamper
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Guardian\nInterface" as thingguardianinterface #grey
+	control "Store Camper's\nImmediate Parent\nInformation" as controlstoreinformation
+	control "Store Guardian's\nInformation" as controlstoreinformationguardian
+
+	thingcamper <.. thingimmediateparent
+	thingimmediateparent <.. thinginformation
+	thingguardian <.. thinginformation
+	actorcampadministrator --- thinginformationinterface
+	actorcampadministrator --- thingguardianinterface
+	thinginformation --- controlstoreinformation
+	thinginformationinterface --> controlstoreinformation
+	thingguardian --- controlstoreinformationguardian
+	thingguardianinterface --> controlstoreinformationguardian
+	thinginformation --- controlstoreinformationguardian
+
+@enduml

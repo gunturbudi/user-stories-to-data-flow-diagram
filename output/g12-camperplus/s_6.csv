@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+2,Keep track of who is where at all times,ellipse,null,null,process
+200,Activity,shape=partialRectangle,null,null,data_base
+201,Camper,shape=partialRectangle,null,null,data_base
+202,Camp Administrator,rounded=0,null,null,external_entity
+203,Schedule Activities For Campers,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Activity,endArrow=classic,203,200,endArrow=classic
+207,Camper,endArrow=classic,203,201,endArrow=classic
+1000,Camp workers,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Who is where,rounded=0,null,null,external_entity
+1003,Who is where,endArrow=classic,2,1002,endArrow=classic

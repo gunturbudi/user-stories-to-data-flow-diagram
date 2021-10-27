@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camper" as thingcamper
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Camper\nInterface" as thingcamperinterface #grey
+	control "Add Campers" as controladdcamper
+
+	actorcampadministrator --- thingcamperinterface
+	thingcamper --- controladdcamper
+	thingcamperinterface --> controladdcamper
+
+@enduml
