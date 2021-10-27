@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Necessary Payment" as thingnecessarypayment
+	actor "Parent" as actorparent
+	boundary "Payment\nInterface" as thingpaymentinterface #grey
+	control "See" as controlsee
+	control "Made The\nNecessary Payments" as controlmakeseenecessarypayment
+
+	actorparent --- thingpaymentinterface
+	controlmakeseenecessarypayment --> controlsee
+	thingpaymentinterface --> controlsee
+	thingnecessarypayment --- controlmakeseenecessarypayment
+	thingpaymentinterface --> controlmakeseenecessarypayment
+
+@enduml

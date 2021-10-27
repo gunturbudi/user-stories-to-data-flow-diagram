@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Enrolled Child " color=red];
+201 [label="<f0>  |<f1> Camp Year " ];
+202 [label="Parent" shape=box];
+203 [label="{<f0> 1.0|<f1> See Enrolled Children To The Camp Year }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Edit Enrolled Children To The Camp Year }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Enrolled Child"]
+203 -> 201 [label="Camp Year"]
+204 -> 200 [label="Enrolled Child"]
+204 -> 201 [label="Camp Year"]
+}

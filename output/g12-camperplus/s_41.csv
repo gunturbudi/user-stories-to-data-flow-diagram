@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Check on my child's progress,ellipse,null,null,process
+200,Child,shape=partialRectangle,null,null,data_base
+201,Counselor,shape=partialRectangle,null,null,data_base
+202,Parent,rounded=0,null,null,external_entity
+203,Message Child's Counselors,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Counselor,endArrow=classic,203,201,endArrow=classic
+207,Child,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Concerns,rounded=0,null,null,external_entity
+1002,Concerns,endArrow=classic,2,1001,endArrow=classic
+1003,Progress,rounded=0,null,null,external_entity
+1004,Progress,endArrow=classic,2,1003,endArrow=classic

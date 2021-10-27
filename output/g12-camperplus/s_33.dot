@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Database " ];
+201 [label="<f0>  |<f1> Parent " color=red];
+202 [label="Camp Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Delete Parents From The Database }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Parent"]
+203 -> 200 [label="Database"]
+}

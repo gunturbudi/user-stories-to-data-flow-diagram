@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inappropriate Behavior" as thinginappropriatebehavior
+	entity "Camper" as thingcamper
+	entity "Manager" as thingmanager
+	actor "Camp Worker" as actorcampworker
+	boundary "Behavior\nInterface" as thingbehaviorinterface #grey
+	control "Report A\nCamper To\nThe Manager\nWith An\nInappropriate Behavior" as controlreportcampermanagerinappropriatebehavior
+
+	thingmanager <.. thingcamper
+	thinginappropriatebehavior <.. thingmanager
+	actorcampworker --- thingbehaviorinterface
+	thingcamper --- controlreportcampermanagerinappropriatebehavior
+	thingmanager --- controlreportcampermanagerinappropriatebehavior
+	thinginappropriatebehavior --- controlreportcampermanagerinappropriatebehavior
+	thingbehaviorinterface --> controlreportcampermanagerinappropriatebehavior
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Camp Management,shape=partialRectangle,null,null,data_base
+201,Form,shape=partialRectangle,null,null,data_base
+202,Parent,rounded=0,null,null,external_entity
+203,Submit Various Type Of Forms To The Camp Management,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Form,endArrow=classic,203,201,endArrow=classic
+207,Camp Management,endArrow=classic,203,200,endArrow=classic

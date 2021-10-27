@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Activity,shape=partialRectangle,null,null,data_base
+201,Child,shape=partialRectangle,null,null,data_base
+202,Camp,shape=partialRectangle,null,null,data_base
+203,Parent,rounded=0,null,null,external_entity
+204,See A Schedule Of The Activities Children Involved At Camp,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Activity,endArrow=classic,204,200,endArrow=classic
+208,Child,endArrow=classic,204,201,endArrow=classic
+209,Camp,endArrow=classic,204,202,endArrow=classic

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Enrolled Child" as thingenrolledchild
+	entity "Camp Year" as thingcampyear #grey
+	actor "Parent" as actorparent
+	boundary "Year\nInterface" as thingyearinterface #grey
+	control "See Enrolled\nChildren To\nThe Camp\nYear" as controlseeenrolledchildcampyear
+	control "Edit Enrolled\nChildren To\nThe Camp\nYear" as controleditenrolledchildcampyear
+
+	thingcampyear <.. thingenrolledchild
+	actorparent --- thingyearinterface
+	thingenrolledchild --- controlseeenrolledchildcampyear
+	thingcampyear --- controlseeenrolledchildcampyear
+	thingyearinterface --> controlseeenrolledchildcampyear
+	thingenrolledchild --- controleditenrolledchildcampyear
+	thingcampyear --- controleditenrolledchildcampyear
+	thingyearinterface --> controleditenrolledchildcampyear
+
+@enduml

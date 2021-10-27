@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp" as thingcamp
+	entity "Child" as thingchild
+	entity "Photo" as thingphoto
+	actor "Parent" as actorparent
+	boundary "Child\nInterface" as thingchildinterface #grey
+	control "Share Any\nPhotos The\nCamp Has\nTaken Of\nChild" as controlsharephoto
+
+	thingchild <.. thingcamp
+	thingcamp <.. thingphoto
+	thingchild <.. thingphoto
+	actorparent --- thingchildinterface
+	thingphoto --- controlsharephoto
+	thingcamp --- controlsharephoto
+	thingchild --- controlsharephoto
+	thingchildinterface --> controlsharephoto
+
+@enduml

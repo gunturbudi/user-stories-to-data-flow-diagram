@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Database" as thingdatabase
+	entity "Parent" as thingparent
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Delete Parents\nFrom The\nDatabase" as controldeleteparentdatabase
+
+	thingdatabase <.. thingparent
+	actorcampadministrator --- thingdatabaseinterface
+	thingparent --- controldeleteparentdatabase
+	thingdatabase --- controldeleteparentdatabase
+	thingdatabaseinterface --> controldeleteparentdatabase
+
+@enduml

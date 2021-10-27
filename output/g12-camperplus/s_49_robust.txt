@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Camp Worker" as actorcampworker
+	control "See" as controlsee
+
+
+@enduml

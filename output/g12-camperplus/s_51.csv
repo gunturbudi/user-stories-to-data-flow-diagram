@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Inappropriate Behavior,shape=partialRectangle,null,null,data_base
+201,Camper,shape=partialRectangle,null,null,data_base
+202,Manager,shape=partialRectangle,null,null,data_base
+203,Camp Worker,rounded=0,null,null,external_entity
+204,Report A Camper To The Manager With An Inappropriate Behavior,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Camper,endArrow=classic,204,201,endArrow=classic
+208,Manager,endArrow=classic,204,202,endArrow=classic
+209,Inappropriate Behavior,endArrow=classic,204,200,endArrow=classic

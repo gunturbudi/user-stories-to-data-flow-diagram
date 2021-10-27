@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Necessary Payment,shape=partialRectangle,null,null,data_base
+201,Parent,rounded=0,null,null,external_entity
+202,See,ellipse,null,null,process
+203,Made The Necessary Payments,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,203,202,endArrow=classic
+208,Necessary Payment,endArrow=classic,203,200,endArrow=classic

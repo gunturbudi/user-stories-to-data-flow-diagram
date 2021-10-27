@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Consent Form" as thingconsentform
+	actor "Parent" as actorparent
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Sign Consent\nForms" as controlsignconsentforms
+	control "Submit Consent\nForms" as controlsubmitconsentforms
+
+	actorparent --- thingforminterface
+	thingconsentform --- controlsignconsentforms
+	thingforminterface --> controlsignconsentforms
+	thingforminterface --> controlsubmitconsentforms
+	thingconsentform --- controlsubmitconsentforms
+
+@enduml

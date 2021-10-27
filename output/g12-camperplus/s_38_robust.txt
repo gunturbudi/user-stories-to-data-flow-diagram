@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp Management" as thingcampmanagement #grey
+	entity "Form" as thingform
+	actor "Parent" as actorparent
+	circle "Type" as thingvarioustype
+	boundary "Management\nInterface" as thingmanagementinterface #grey
+	control "Submit Various\nType Of\nForms To\nThe Camp\nManagement" as controlsubmitvarioustypecampmanagement
+
+	thingcampmanagement <.. thingform
+	thingform *-- thingvarioustype
+	actorparent --- thingmanagementinterface
+	thingvarioustype --- controlsubmitvarioustypecampmanagement
+	thingform --- controlsubmitvarioustypecampmanagement
+	thingcampmanagement --- controlsubmitvarioustypecampmanagement
+	thingmanagementinterface --> controlsubmitvarioustypecampmanagement
+
+@enduml

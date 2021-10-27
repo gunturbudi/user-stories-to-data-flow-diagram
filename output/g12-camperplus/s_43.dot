@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Necessary Payment " ];
+201 [label="Parent" shape=box];
+202 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Made The Necessary Payments }" shape=Mrecord];
+201 -> 202
+201 -> 203
+203 -> 202
+203 -> 200 [label="Necessary Payment"]
+}

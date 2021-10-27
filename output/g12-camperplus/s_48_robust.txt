@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Activity" as thingactivity
+	entity "Child" as thingchild
+	entity "Camp" as thingcamp
+	actor "Parent" as actorparent
+	circle "Schedule" as thingschedule
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	control "See A\nSchedule Of\nThe Activities\nChildren Involved\nAt Camp" as controlseeschedule
+
+	thingchild <.. thingactivity
+	thingcamp <.. thingactivity
+	thingcamp <.. thingchild
+	thingactivity *-- thingschedule
+	actorparent --- thingcampinterface
+	thingschedule --- controlseeschedule
+	thingactivity --- controlseeschedule
+	thingchild --- controlseeschedule
+	thingcamp --- controlseeschedule
+	thingcampinterface --> controlseeschedule
+
+@enduml

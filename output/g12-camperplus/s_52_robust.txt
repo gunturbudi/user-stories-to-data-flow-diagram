@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Camp" as thingcamp
+	entity "Supply" as thingsupply
+	entity "Manager" as thingmanager
+	actor "Camp Worker" as actorcampworker
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	control "Report A\nList Of\nSupplies To\nThe Manager\nThe Camp\nShort" as controlreportlistmanagercamp
+
+	thingmanager <.. thingsupply
+	thingcamp <.. thingmanager
+	actorcampworker --- thingcampinterface
+	thingsupply --- controlreportlistmanagercamp
+	thingmanager --- controlreportlistmanagercamp
+	thingcamp --- controlreportlistmanagercamp
+	thingcampinterface --> controlreportlistmanagercamp
+
+@enduml

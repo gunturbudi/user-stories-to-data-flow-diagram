@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Staff " ];
+201 [label="<f0>  |<f1> Emergency " color=red];
+202 [label="Parent" shape=box];
+203 [label="{<f0> 1.0|<f1> Connect With The Staff In Case Of An Emergency }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Staff"]
+203 -> 201 [label="Emergency"]
+}

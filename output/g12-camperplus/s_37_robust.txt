@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Child" as thingchild
+	entity "Schedule" as thingschedule
+	entity "Activity" as thingactivity
+	entity "Camp" as thingcamp
+	actor "Parent" as actorparent
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	control "Track Child's\nActivity At\nCamp" as controltrackactivitycamp
+	control "Track Schedule" as controltrackschedule
+
+	thingchild <.. thingactivity
+	thingcamp <.. thingactivity
+	actorparent --- thingcampinterface
+	actorparent --- thingscheduleinterface
+	thingactivity --- controltrackactivitycamp
+	thingcamp --- controltrackactivitycamp
+	thingcampinterface --> controltrackactivitycamp
+	thingschedule --- controltrackschedule
+	thingscheduleinterface --> controltrackschedule
+
+@enduml

@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Consent Form,shape=partialRectangle,null,null,data_base
+201,Parent,rounded=0,null,null,external_entity
+202,See Which Consent Forms,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Consent Form,endArrow=classic,202,200,endArrow=classic

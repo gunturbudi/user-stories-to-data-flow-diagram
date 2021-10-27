@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingonlyevent
+	entity "Specific Group" as thingspecificgroup
+	entity "Group" as thinggroup
+	entity "Event Calendar" as thingeventcalendar #grey
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Calendar\nInterface" as thingcalendarinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "See Only\nEvents For\nA Specific\nGroup On\nThe Event\nCalendar" as controlseeonlyevent
+	control "See Only\nEvents For\nGroup" as controlseeonlyeventgroup
+
+	thingspecificgroup <.. thingonlyevent
+	thinggroup <.. thingonlyevent
+	thingeventcalendar <.. thingspecificgroup
+	actorcampadministrator --- thingcalendarinterface
+	actorcampadministrator --- thinggroupinterface
+	thingonlyevent --- controlseeonlyevent
+	thingspecificgroup --- controlseeonlyevent
+	thingeventcalendar --- controlseeonlyevent
+	thingcalendarinterface --> controlseeonlyevent
+	thinggroup --- controlseeonlyeventgroup
+	thinggroupinterface --> controlseeonlyeventgroup
+	thingonlyevent --- controlseeonlyeventgroup
+
+@enduml

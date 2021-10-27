@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Group" as thinggroup
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Modify A\nGroup's Information" as controlmodifyinformation
+
+	thinggroup <.. thinginformation
+	actorcampadministrator --- thinginformationinterface
+	thinginformation --- controlmodifyinformation
+	thinginformationinterface --> controlmodifyinformation
+
+@enduml

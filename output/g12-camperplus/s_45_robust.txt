@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Staff" as thingstaff
+	entity "Emergency" as thingemergency
+	actor "Parent" as actorparent
+	circle "Case" as thingcase
+	boundary "Emergency\nInterface" as thingemergencyinterface #grey
+	control "Connect With\nThe Staff\nIn Case\nOf An\nEmergency" as controlconnectstaffcase
+
+	thingcase <.. thingstaff
+	thingemergency *-- thingcase
+	actorparent --- thingemergencyinterface
+	thingstaff --- controlconnectstaffcase
+	thingcase --- controlconnectstaffcase
+	thingemergency --- controlconnectstaffcase
+	thingemergencyinterface --> controlconnectstaffcase
+
+@enduml

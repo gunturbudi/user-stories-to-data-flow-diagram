@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Consent Form " color=red];
+201 [label="Parent" shape=box];
+202 [label="{<f0> 1.0|<f1> Sign Consent Forms }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Submit Consent Forms }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Consent Form"]
+203 -> 200 [label="Consent Form"]
+}

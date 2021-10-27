@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Completion Report" as thingcompletionreport #grey
+	entity "Task" as thingtask
+	actor "Camp Worker" as actorcampworker
+	boundary "Task\nInterface" as thingtaskinterface #grey
+	control "Submit A\nCompletion Report\nFor The\nTasks Assigned\nTo" as controlsubmitcompletionreport
+
+	thingtask <.. thingcompletionreport
+	thingtask <.. thingtask
+	actorcampworker --- thingtaskinterface
+	thingcompletionreport --- controlsubmitcompletionreport
+	thingtask --- controlsubmitcompletionreport
+	thingtaskinterface --> controlsubmitcompletionreport
+
+@enduml

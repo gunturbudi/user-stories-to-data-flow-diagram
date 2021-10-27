@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Manager,shape=partialRectangle,null,null,data_base
+201,Camp,shape=partialRectangle,null,null,data_base
+202,Necessary Repair,shape=partialRectangle,null,null,data_base
+203,Camp Worker,rounded=0,null,null,external_entity
+204,Report Necessary Repairs To The Manager The Camp,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Necessary Repair,endArrow=classic,204,202,endArrow=classic
+208,Manager,endArrow=classic,204,200,endArrow=classic
+209,Camp,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Enrolled Child,shape=partialRectangle,null,null,data_base
+201,Camp Year,shape=partialRectangle,null,null,data_base
+202,Parent,rounded=0,null,null,external_entity
+203,See Enrolled Children To The Camp Year,ellipse,null,null,process
+204,Edit Enrolled Children To The Camp Year,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Enrolled Child,endArrow=classic,203,200,endArrow=classic
+209,Camp Year,endArrow=classic,203,201,endArrow=classic
+210,Enrolled Child,endArrow=classic,204,200,endArrow=classic
+211,Camp Year,endArrow=classic,204,201,endArrow=classic

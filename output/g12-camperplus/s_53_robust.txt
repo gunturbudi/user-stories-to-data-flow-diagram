@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Manager" as thingmanager
+	entity "Camp" as thingcamp
+	entity "Necessary Repair" as thingnecessaryrepair
+	actor "Camp Worker" as actorcampworker
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	control "Report Necessary\nRepairs To\nThe Manager\nThe Camp" as controlreportnecessaryrepair
+
+	thingmanager <.. thingnecessaryrepair
+	thingcamp <.. thingnecessaryrepair
+	actorcampworker --- thingmanagerinterface
+	thingnecessaryrepair --- controlreportnecessaryrepair
+	thingmanager --- controlreportnecessaryrepair
+	thingmanagerinterface --> controlreportnecessaryrepair
+
+@enduml

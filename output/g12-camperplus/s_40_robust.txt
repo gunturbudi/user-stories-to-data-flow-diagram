@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Kid" as thingkid
+	actor "Parent" as actorparent
+	boundary "Counselor" as thingcounselorparent
+	control "Assigned To\nKids" as controlassigncounselorparentkid
+	control "See" as controlseeassigncounselorparentkid
+
+	actorparent --- thingcounselorparent
+	thingcounselorparent --> controlassigncounselorparentkid
+	thingkid --- controlassigncounselorparentkid
+	controlseeassigncounselorparentkid --> controlassigncounselorparentkid
+	thingcounselorparent --> controlseeassigncounselorparentkid
+
+@enduml
