@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hearing Date" as thinghearingdate #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Date\nInterface" as thingdateinterface #grey
+	control "Assign A\nHearing Date" as controlassignhearingdate
+
+	actorstaffmember --- thingdateinterface
+	thinghearingdate --- controlassignhearingdate
+	thingdateinterface --> controlassignhearingdate
+
+@enduml

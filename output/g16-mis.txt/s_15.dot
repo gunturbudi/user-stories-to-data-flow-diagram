@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fedora Connector " ];
+201 [label="<f0>  |<f1> Object " color=red];
+202 [label="<f0>  |<f1> Ddr " color=red];
+203 [label="<f0>  |<f1> Hydra " ];
+204 [label="<f0>  |<f1> Symplectic Element " ];
+205 [label="<f0>  |<f1> Emory " ];
+206 [label="<f0>  |<f1> Fedora Instance " ];
+207 [label="Repoadmin" shape=box];
+208 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Integrate With Ddr Provide Emory }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Integrate With Ddr Provide A Fedora Connector }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Have Bidirectionally Symplectic Elements }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 209
+208 -> 210
+208 -> 202 [label="Ddr"]
+209 -> 205 [label="Emory"]
+209 -> 202 [label="Ddr"]
+210 -> 202 [label="Ddr"]
+210 -> 200 [label="Fedora Connector"]
+211 -> 204 [label="Symplectic Element"]
+}

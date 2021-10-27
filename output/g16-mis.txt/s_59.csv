@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Access,shape=partialRectangle,null,null,data_base
+201,Collection,shape=partialRectangle,null,null,data_base
+202,Item,shape=partialRectangle,null,null,data_base
+203,Duke Duke\nIp Address,shape=partialRectangle,null,null,data_base
+204,Collection Curator,rounded=0,null,null,external_entity
+205,Restrict Access To Collection To Duke Duke Ip Addresses,ellipse,null,null,process
+206,Restrict Access To Item,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Access,endArrow=classic,205,200,endArrow=classic
+211,Collection,endArrow=classic,205,201,endArrow=classic
+212,Duke Duke\nIp Address,endArrow=classic,205,203,endArrow=classic
+213,Item,endArrow=classic,206,202,endArrow=classic
+214,Access,endArrow=classic,206,200,endArrow=classic

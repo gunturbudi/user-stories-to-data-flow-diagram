@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityrestrictdatumresearcher #grey
+	control "Have" as controlhaveabilityrestrictdatumresearcher
+	control "Restrict The\nData" as controlrestrictdatum
+
+	actorresearcher --- thingabilityrestrictdatumresearcher
+	thingabilityrestrictdatumresearcher --> controlhaveabilityrestrictdatumresearcher
+	controlhaveabilityrestrictdatumresearcher --> controlrestrictdatum
+	thingdatum --- controlrestrictdatum
+	thingabilityrestrictdatumresearcher --> controlrestrictdatum
+
+@enduml

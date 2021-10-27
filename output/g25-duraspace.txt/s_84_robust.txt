@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object Component" as thingobjectcomponent
+	entity "Copyright" as thingcopyright
+	entity "Object" as thingobject
+	actor "Dams Manager" as actordamsmanager
+	circle "Statute" as thingstatute #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Copyright\nInterface" as thingcopyrightinterface #grey
+	control "Know Copyright\nFor An\nObject Component" as controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	control "Know Copyright\nFor Object" as controlknowcopyrightobject
+	control "Expire Per\nJurisdictional Copyright\nStatute" as controlexpirejurisdictionalcopyrightstatute
+
+	thingobjectcomponent <.. thingcopyright
+	thingobject <.. thingcopyright
+	thingcopyright *-- thingstatute
+	actordamsmanager --- thingcomponentinterface
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingcopyrightinterface
+	thingcopyright --- controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingobjectcomponent --- controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingcomponentinterface --> controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingobject --- controlknowcopyrightobject
+	thingobjectinterface --> controlknowcopyrightobject
+	thingcopyright --- controlknowcopyrightobject
+	thingcopyrightinterface --> controlexpirejurisdictionalcopyrightstatute
+	controlknowcopyrightexpirejurisdictionalcopyrightstatute --> controlexpirejurisdictionalcopyrightstatute
+	thingstatute --- controlexpirejurisdictionalcopyrightstatute
+	thingcopyright --- controlexpirejurisdictionalcopyrightstatute
+
+@enduml

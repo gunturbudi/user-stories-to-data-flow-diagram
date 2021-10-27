@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Datum" as thingdatum
+	actor "Publisher" as actorpublisher
+	circle "Visualization" as thingvisualization
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Provide A\nVisualization Of\nData In\nThe Data\nPackage" as controlprovidevisualization
+
+	thingdatapackage <.. thingdatum
+	thingdatum *-- thingvisualization
+	thingdatapackage *-- thingvisualization
+	actorpublisher --- thingpackageinterface
+	thingvisualization --- controlprovidevisualization
+	thingdatum --- controlprovidevisualization
+	thingdatapackage --- controlprovidevisualization
+	thingpackageinterface --> controlprovidevisualization
+
+@enduml

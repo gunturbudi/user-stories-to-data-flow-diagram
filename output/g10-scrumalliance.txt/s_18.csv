@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Follow Date,shape=partialRectangle,null,null,data_base
+201,News Item,shape=partialRectangle,null,null,data_base
+202,Date,shape=partialRectangle,null,null,data_base
+203,Publishing,shape=partialRectangle,null,null,data_base
+204,Site Editor,rounded=0,null,null,external_entity
+205,Set The Following Dates On A News Item,ellipse,null,null,process
+206,Publishing Date,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Follow Date,endArrow=classic,205,200,endArrow=classic
+211,News Item,endArrow=classic,205,201,endArrow=classic
+212,Date,endArrow=classic,206,202,endArrow=classic
+214,Publishing,endArrow=classic,206,203,endArrow=classic

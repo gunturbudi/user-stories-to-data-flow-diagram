@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Necessary Right" as thingnecessaryright
+	actor "Data Manager" as actordatamanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Clarify The\nNecessary Rights" as controlclarifynecessaryright
+	control "Using The\nData" as controluseclarifynecessaryrightdatum
+
+	actordatamanager --- thingdatuminterface
+	thingnecessaryright --- controlclarifynecessaryright
+	controluseclarifynecessaryrightdatum --> controlclarifynecessaryright
+	thingdatuminterface --> controlclarifynecessaryright
+	thingdatum --- controluseclarifynecessaryrightdatum
+	thingdatuminterface --> controluseclarifynecessaryrightdatum
+
+@enduml

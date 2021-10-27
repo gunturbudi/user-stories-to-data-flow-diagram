@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	actor "Repository ,\nSupport ,\nTeam Member" as actorrepositorysupportteammember
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Rename A\nCollection" as controlrenamecollection
+
+	actorrepositorysupportteammember --- thingcollectioninterface
+	thingcollection --- controlrenamecollection
+	thingcollectioninterface --> controlrenamecollection
+
+@enduml

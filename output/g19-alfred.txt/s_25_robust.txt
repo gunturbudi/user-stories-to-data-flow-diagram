@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred Device" as thingalfreddevice #grey
+	entity "Phrase" as thinglastphrase
+	actor "Olderperson" as actorOlderPerson
+	boundary "Phrase\nInterface" as thingphraseinterface #grey
+	control "Have An\nAlfred Device\nRepeats The\nLast Phrase" as controlhavealfreddevice
+
+	thinglastphrase <.. thingalfreddevice
+	actorOlderPerson --- thingphraseinterface
+	thingalfreddevice --- controlhavealfreddevice
+	thinglastphrase --- controlhavealfreddevice
+	thingphraseinterface --> controlhavealfreddevice
+
+@enduml

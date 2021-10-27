@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+2,Locate digitized documents relevant to my research,ellipse,null,null,process
+200,Researcher,rounded=0,null,null,external_entity
+201,Search,ellipse,null,null,process
+1000,,endArrow=classic,200,2,endArrow=classic
+1001,Research,rounded=0,null,null,external_entity
+1002,Research,endArrow=classic,2,1001,endArrow=classic

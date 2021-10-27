@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Drive" as thingdrive
+	entity "Digital File" as thingdigitalfile
+	actor "Archivist" as actorarchivist
+	boundary "Drive\nInterface" as thingdriveinterface #grey
+	control "Access The\nDigital Files\nOn The\nDrive" as controlaccessdigitalfile
+
+	thingdrive <.. thingdigitalfile
+	actorarchivist --- thingdriveinterface
+	thingdigitalfile --- controlaccessdigitalfile
+	thingdrive --- controlaccessdigitalfile
+	thingdriveinterface --> controlaccessdigitalfile
+
+@enduml

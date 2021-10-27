@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object Component" as thingobjectcomponent
+	entity "Object" as thingobject
+	entity "Copyright" as thingcopyright
+	actor "User" as actoruser
+	control "Know" as controlknow
+
+
+@enduml

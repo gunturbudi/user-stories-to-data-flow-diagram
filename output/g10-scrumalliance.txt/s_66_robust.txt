@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Flexibility" as thingflexibility
+	entity "Thing" as thingthing
+	actor "Site Editor" as actorsiteeditor
+	boundary "Thing\nInterface" as thingthinginterface #grey
+	control "Have Some\nFlexibility Things\nWhere Appear" as controlhaveflexibilitything
+
+	thingthing <.. thingflexibility
+	actorsiteeditor --- thingthinginterface
+	thingflexibility --- controlhaveflexibilitything
+	thingthing --- controlhaveflexibilitything
+	thingthinginterface --> controlhaveflexibilitything
+
+@enduml

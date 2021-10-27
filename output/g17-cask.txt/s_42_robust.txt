@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Uniform Way" as thinguniformway
+	entity "Dataset" as thingdataset
+	actor "User" as actoruser
+	circle "Schema" as thingschema
+	circle "Type" as thingtype #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Specify The\nSchema Of\nA Dataset\nIn A\nUniform Way\nAcross All\nDataset Types" as controlspecifyschemauniformway
+
+	thingtype <.. thinguniformway
+	thingdataset <.. thinguniformway
+	thinguniformway <.. thingdataset
+	thingdataset *-- thingschema
+	thingdataset *-- thingtype
+	actoruser --- thingdatasetinterface
+	thingschema --- controlspecifyschemauniformway
+	thingdataset --- controlspecifyschemauniformway
+	thinguniformway --- controlspecifyschemauniformway
+	thingtype --- controlspecifyschemauniformway
+	thingdatasetinterface --> controlspecifyschemauniformway
+
+@enduml

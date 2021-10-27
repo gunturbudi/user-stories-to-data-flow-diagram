@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Measure" as thingmeasure
+	entity "Geographical Area" as thinggeographicalarea
+	actor "Api User" as actorapiuser
+	boundary "Area\nInterface" as thingareainterface #grey
+	control "Normalise Measures\nBy Geographical\nArea" as controlnormalisemeasure
+
+	thinggeographicalarea <.. thingmeasure
+	actorapiuser --- thingareainterface
+	thingmeasure --- controlnormalisemeasure
+	thinggeographicalarea --- controlnormalisemeasure
+	thingareainterface --> controlnormalisemeasure
+
+@enduml

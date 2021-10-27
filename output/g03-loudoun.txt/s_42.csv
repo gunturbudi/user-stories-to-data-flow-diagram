@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,"Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",ellipse,null,null,process
+200,Plan Review,shape=partialRectangle,null,null,data_base
+201,"Plan , Review , Staff Member",rounded=0,null,null,external_entity
+202,Track The Completion Of Required Plan Reviews,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Plan Review,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Results,rounded=0,null,null,external_entity
+1002,Results,endArrow=classic,2,1001,endArrow=classic
+1003,Payment,rounded=0,null,null,external_entity
+1004,Payment,endArrow=classic,2,1003,endArrow=classic

@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Wrong Extension" as thingwrongextension
+	entity "File" as thingfile
+	actor "Agency User" as actoragencyuser
+	circle "Level Error" as thinglevelerror #grey
+	boundary "Extension\nInterface" as thingextensioninterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Upload A\nFile With\nThe Wrong\nExtension" as controluploadreceivehelpfulfilelevelerrorfile
+	control "Receive A\nMore Helpful\nFile Level\nError" as controlreceivehelpfulfilelevelerror
+
+	thingwrongextension <.. thingfile
+	thingfile *-- thinglevelerror
+	actoragencyuser --- thingextensioninterface
+	actoragencyuser --- thingfileinterface
+	thingfile --- controluploadreceivehelpfulfilelevelerrorfile
+	thingwrongextension --- controluploadreceivehelpfulfilelevelerrorfile
+	thingextensioninterface --> controluploadreceivehelpfulfilelevelerrorfile
+	controluploadreceivehelpfulfilelevelerrorfile --> controlreceivehelpfulfilelevelerror
+	thinglevelerror --- controlreceivehelpfulfilelevelerror
+	thingfileinterface --> controlreceivehelpfulfilelevelerror
+
+@enduml

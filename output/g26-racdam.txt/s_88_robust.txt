@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection File" as thingcollectionfile
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "View Collection\nFiles" as controlviewcollectionfiles
+
+	actorarchivist --- thingfileinterface
+	thingcollectionfile --- controlviewcollectionfiles
+	thingfileinterface --> controlviewcollectionfiles
+
+@enduml

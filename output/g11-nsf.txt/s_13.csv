@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Wig Prototype,shape=partialRectangle,null,null,data_base
+201,User Researcher,rounded=0,null,null,external_entity
+202,Have The Wig Prototype,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Wig Prototype,endArrow=classic,202,200,endArrow=classic

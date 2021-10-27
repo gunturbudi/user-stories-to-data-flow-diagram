@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection Level " color=red];
+201 [label="<f0>  |<f1> Dashboard " ];
+202 [label="<f0>  |<f1> Replication Status " ];
+203 [label="Collection Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Summary Of All Remote Replication Status At Collection Level On Dashboard }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Replication Status"]
+204 -> 200 [label="Collection Level"]
+204 -> 201 [label="Dashboard"]
+}

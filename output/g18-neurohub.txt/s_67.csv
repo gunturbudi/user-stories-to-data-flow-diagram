@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Greek Symbol,shape=partialRectangle,null,null,data_base
+201,Logbook Entry,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Have,ellipse,null,null,process
+204,Insert Greek Symbols Into Logbook Entries,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Greek Symbol,endArrow=classic,204,200,endArrow=classic
+210,Logbook Entry,endArrow=classic,204,201,endArrow=classic

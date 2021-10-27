@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Issue " color=red];
+201 [label="<f0>  |<f1> System Provider " ];
+202 [label="<f0>  |<f1> Question " ];
+203 [label="Patron" shape=box];
+204 [label="{<f0> 1.0|<f1> Report Issues }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Email System Provider }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Ask Questions }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Issue"]
+205 -> 204
+205 -> 201 [label="System Provider"]
+206 -> 202 [label="Question"]
+}

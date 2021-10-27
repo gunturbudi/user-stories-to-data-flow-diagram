@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Draft Proffer" as thingdraftproffer
+	actor "Staff Member" as actorstaffmember
+	boundary "Proffer\nInterface" as thingprofferinterface #grey
+	control "Track The\nDraft Proffers" as controltrackdraftproffers
+
+	actorstaffmember --- thingprofferinterface
+	thingdraftproffer --- controltrackdraftproffers
+	thingprofferinterface --> controltrackdraftproffers
+
+@enduml

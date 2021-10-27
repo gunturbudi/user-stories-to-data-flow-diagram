@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Consumer" as actorconsumer
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Relied Know\nThe Data\nGood" as controlknowdatum
+
+	actorconsumer --- thingdatuminterface
+	thingdatum --- controlknowdatum
+	thingdatuminterface --> controlknowdatum
+
+@enduml

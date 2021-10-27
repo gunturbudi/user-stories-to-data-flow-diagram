@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Performance Impact " ];
+201 [label="<f0>  |<f1> Flexfield " color=red];
+202 [label="Agency User" shape=box];
+203 [label="{<f0> 1.0|<f1> Include A Large Number Of Flexfields Without Performance Impact }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

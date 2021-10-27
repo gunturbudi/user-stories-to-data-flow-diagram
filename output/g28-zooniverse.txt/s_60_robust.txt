@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	actor "Admin" as actoradmin
+	circle "Summary" as thingsummary
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "See A\nSummary Of\nArticles" as controlseesummary
+
+	thingarticle *-- thingsummary
+	actoradmin --- thingarticleinterface
+	thingsummary --- controlseesummary
+	thingarticle --- controlseesummary
+	thingarticleinterface --> controlseesummary
+
+@enduml

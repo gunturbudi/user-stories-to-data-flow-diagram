@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Execution History,shape=partialRectangle,null,null,data_base
+201,Workflow,shape=partialRectangle,null,null,data_base
+202,Detail,shape=partialRectangle,null,null,data_base
+203,Result,shape=partialRectangle,null,null,data_base
+204,Neurohub,shape=partialRectangle,null,null,data_base
+205,Researcher,rounded=0,null,null,external_entity
+206,Have The Details Of Result,ellipse,null,null,process
+207,Have The Details Of The As Well Workflow Plan,ellipse,null,null,process
+208,Have The Details Of The Execution History In Neurohub Executing A Workflow,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Result,endArrow=classic,206,203,endArrow=classic
+214,Detail,endArrow=classic,206,202,endArrow=classic
+215,Detail,endArrow=classic,207,202,endArrow=classic
+216,Execution History,endArrow=classic,208,200,endArrow=classic
+217,Neurohub,endArrow=classic,208,204,endArrow=classic
+218,Workflow,endArrow=classic,208,201,endArrow=classic
+219,Detail,endArrow=classic,208,202,endArrow=classic

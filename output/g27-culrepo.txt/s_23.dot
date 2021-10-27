@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Aforementioned Work " color=red];
+201 [label="<f0>  |<f1> Digital Space " ];
+202 [label="Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Disseminate The Aforementioned Works In A Digital Space Strongly Branded }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Make sure my school is credited for the work }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> School " color=red];
+2 -> 1001 [label="School"]
+202 -> 203
+203 -> 200 [label="Aforementioned Work"]
+203 -> 201 [label="Digital Space"]
+}

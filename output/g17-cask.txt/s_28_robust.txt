@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Pipeline" as thingpipeline
+	actor "Hydrator User" as actorhydratoruser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Explore The\nDatasets Pipeline" as controlexploredataset
+
+	thingpipeline <.. thingdataset
+	actorhydratoruser --- thingdatasetinterface
+	thingdataset --- controlexploredataset
+	thingdatasetinterface --> controlexploredataset
+
+@enduml

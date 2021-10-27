@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search" as thingsearch
+	entity "Log Book" as thinglogbook
+	actor "User" as actoruser
+	boundary "Book\nInterface" as thingbookinterface #grey
+	control "Limit Search\nTo A\nParticular Set\nOf Log\nBooks" as controllimitsearchparticularset
+
+	thinglogbook <.. thingsearch
+	actoruser --- thingbookinterface
+	thingsearch --- controllimitsearchparticularset
+	thinglogbook --- controllimitsearchparticularset
+	thingbookinterface --> controllimitsearchparticularset
+
+@enduml

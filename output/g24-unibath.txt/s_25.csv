@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Deposit File,shape=partialRectangle,null,null,data_base
+201,Datum Reuser,rounded=0,null,null,external_entity
+202,Examine Deposited Files,ellipse,null,null,process
+203,Identify Deposited Files,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Deposit File,endArrow=classic,202,200,endArrow=classic
+208,Deposit File,endArrow=classic,203,200,endArrow=classic

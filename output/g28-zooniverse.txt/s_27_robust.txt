@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Talk" as thingtalk
+	entity "Picture" as thingpicture
+	entity "Comment" as thingcomment
+	entity "Automated Analysis" as thingautomatedanalysis
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	control "Assess" as controlassess
+
+	thingtalk <.. thingcomment
+
+@enduml

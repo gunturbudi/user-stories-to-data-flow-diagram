@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Website,shape=partialRectangle,null,null,data_base
+201,Scrum,shape=partialRectangle,null,null,data_base
+202,Basic,shape=partialRectangle,null,null,data_base
+203,Site Visitor,rounded=0,null,null,external_entity
+204,View A Section Of The Website Teaches Me The Basics What Scrum Is,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Website,endArrow=classic,204,200,endArrow=classic
+208,Basic,endArrow=classic,204,202,endArrow=classic
+209,Scrum,endArrow=classic,204,201,endArrow=classic

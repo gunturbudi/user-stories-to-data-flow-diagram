@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource Record" as thingresourcerecord #grey
+	actor "Archivist" as actorarchivist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Create A\nResource Record" as controlcreateresourcerecord
+	control "Edit A\nResource Record" as controleditresourcerecord
+
+	actorarchivist --- thingrecordinterface
+	thingresourcerecord --- controlcreateresourcerecord
+	thingrecordinterface --> controlcreateresourcerecord
+	thingresourcerecord --- controleditresourcerecord
+	thingrecordinterface --> controleditresourcerecord
+
+@enduml

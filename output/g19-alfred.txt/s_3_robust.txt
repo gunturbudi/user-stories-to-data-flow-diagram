@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visible Button" as thingvisiblebutton
+	actor "Olderperson" as actorOlderPerson
+	boundary "Button\nInterface" as thingbuttoninterface #grey
+	control "Use Only\nWell Visible\nButtons" as controlusevisiblebutton
+
+	actorOlderPerson --- thingbuttoninterface
+	thingvisiblebutton --- controlusevisiblebutton
+	thingbuttoninterface --> controlusevisiblebutton
+
+@enduml

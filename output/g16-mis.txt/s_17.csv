@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Deposit Form,shape=partialRectangle,null,null,data_base
+202,Collection Curator,rounded=0,null,null,external_entity
+203,Create Specific Deposit Forms To The Collection,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Deposit Form,endArrow=classic,203,201,endArrow=classic
+207,Collection,endArrow=classic,203,200,endArrow=classic

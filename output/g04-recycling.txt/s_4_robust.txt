@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recycling Facility" as thingrecyclingfacility #grey
+	actor "User" as actoruser
+	circle "Hour" as thinghour
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	control "Get The\nHours Of\nEach Recycling\nFacility" as controlgethour
+
+	thingrecyclingfacility *-- thinghour
+	actoruser --- thingfacilityinterface
+	thinghour --- controlgethour
+	thingrecyclingfacility --- controlgethour
+	thingfacilityinterface --> controlgethour
+
+@enduml

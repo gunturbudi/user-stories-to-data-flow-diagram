@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Permission" as thingpermission
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Change Permissions\nOn More" as controlchangepermissionmore
+	control "Change Permissions\nOn Items" as controlchangepermission
+
+	thingitem <.. thingpermission
+	actorcollectioncurator --- thingpermissioninterface
+	actorcollectioncurator --- thingiteminterface
+	thingpermissioninterface --> controlchangepermissionmore
+	thingpermission --- controlchangepermissionmore
+	thingpermission --- controlchangepermission
+	thingitem --- controlchangepermission
+	thingiteminterface --> controlchangepermission
+
+@enduml

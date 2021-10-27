@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ppopzip" as thingPPoPZIP
+	entity "Citywide" as thingcitywide
+	entity "Validation" as thingvalidation
+	actor "Fabs User" as actorfabsuser
+	boundary "Ppopzip\nInterface" as thingppopzipinterface #grey
+	boundary "Validation\nInterface" as thingvalidationinterface #grey
+	control "Submit A\nCitywide As\nA Ppopzip" as controlsubmitcitywide
+	control "Pass Validations" as controlpassvalidation
+
+	thingPPoPZIP <.. thingcitywide
+	actorfabsuser --- thingppopzipinterface
+	actorfabsuser --- thingvalidationinterface
+	thingcitywide --- controlsubmitcitywide
+	thingPPoPZIP --- controlsubmitcitywide
+	thingppopzipinterface --> controlsubmitcitywide
+	thingvalidation --- controlpassvalidation
+	thingvalidationinterface --> controlpassvalidation
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email Id" as thingemailid
+	actor "User" as actoruser
+	boundary "Id\nInterface" as thingidinterface #grey
+	control "Give Email\nId" as controlgiveemailID
+
+	actoruser --- thingidinterface
+	thingemailid --- controlgiveemailID
+	thingidinterface --> controlgiveemailID
+
+@enduml

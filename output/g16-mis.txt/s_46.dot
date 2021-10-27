@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " ];
+201 [label="<f0>  |<f1> Data Interface " color=red];
+202 [label="Repoadmin" shape=box];
+203 [label="{<f0> 1.0|<f1> Provide A Linked Data Interface To The Repository }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Data Interface"]
+203 -> 200 [label="Repository"]
+}

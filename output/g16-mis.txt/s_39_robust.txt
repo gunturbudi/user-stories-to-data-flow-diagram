@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage
+	entity "Upcoming Downtime" as thingupcomingdowntime
+	entity "User" as thinguser
+	entity "Select Time" as thingselecttime
+	entity "Thing" as thingthing
+	entity "Message" as thingmessage
+	entity "Repository" as thingrepository
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Notification" as thingnotification
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Downtime\nInterface" as thingdowntimeinterface #grey
+	control "Schedule A\nMessage To\nUsers" as controlschedulemessageuserdisplaypagerepositorythingnotification
+	control "Displayed On\nEach Page\nOn The\nRepository Between\nSelect Times\nFor Things\nLike Notification\nOf Upcoming\nDowntime" as controldisplaypagerepositorythingnotification
+
+	thingrepository <.. thingpage
+	thingthing <.. thingselecttime
+	thingnotification <.. thingthing
+	thinguser <.. thingmessage
+	thingselecttime <.. thingrepository
+	thingupcomingdowntime *-- thingnotification
+	actorrepositorymanager --- thinguserinterface
+	actorrepositorymanager --- thingdowntimeinterface
+	thingmessage --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguser --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguserinterface --> controlschedulemessageuserdisplaypagerepositorythingnotification
+	controlschedulemessageuserdisplaypagerepositorythingnotification --> controldisplaypagerepositorythingnotification
+	thingpage --- controldisplaypagerepositorythingnotification
+	thingrepository --- controldisplaypagerepositorythingnotification
+	thingselecttime --- controldisplaypagerepositorythingnotification
+	thingthing --- controldisplaypagerepositorythingnotification
+	thingnotification --- controldisplaypagerepositorythingnotification
+	thingupcomingdowntime --- controldisplaypagerepositorythingnotification
+	thingdowntimeinterface --> controldisplaypagerepositorythingnotification
+
+@enduml

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype #grey
+	entity "App" as thingapp
+	entity "Plugin" as thingplugin
+	entity "Custom Dataset" as thingcustomdataset #grey
+	actor "Plugin Developer" as actorplugindeveloper
+	boundary "Plugin\nInterface" as thingplugininterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Use A\nType As\nPart Of\nAn App\nInside The\nPlugin" as controlusetypeas
+	control "Use A\nCustom Dataset\nType Independently\nDeployed" as controlusecustomdatasettype
+
+	thingapp <.. thingtype
+	thingcustomdataset <.. thingtype
+	thingplugin <.. thingapp
+	actorplugindeveloper --- thingplugininterface
+	actorplugindeveloper --- thingtypeinterface
+	thingtype --- controlusetypeas
+	thingapp --- controlusetypeas
+	thingplugin --- controlusetypeas
+	thingplugininterface --> controlusetypeas
+	thingtypeinterface --> controlusecustomdatasettype
+	thingtype --- controlusecustomdatasettype
+
+@enduml

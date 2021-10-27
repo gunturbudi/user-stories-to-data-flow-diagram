@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Database Index" as thingdatabaseindex
+	actor "Developer" as actordeveloper
+	boundary "Index\nInterface" as thingindexinterface #grey
+	control "Created Database\nIndexes" as controlcreatedatabaseindexes
+
+	actordeveloper --- thingindexinterface
+	thingdatabaseindex --- controlcreatedatabaseindexes
+	thingindexinterface --> controlcreatedatabaseindexes
+
+@enduml

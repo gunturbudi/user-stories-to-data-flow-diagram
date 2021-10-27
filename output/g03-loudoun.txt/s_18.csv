@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Maintain accurate ordinance information in the system.,ellipse,null,null,process
+200,Ordinance,shape=partialRectangle,null,null,data_base
+201,Staff Member,rounded=0,null,null,external_entity
+202,Manage Ordinances,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Ordinance,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Ordinance information,rounded=0,null,null,external_entity
+1002,Ordinance information,endArrow=classic,2,1001,endArrow=classic

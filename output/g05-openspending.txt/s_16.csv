@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+2,Use the data in other tools.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Visualisation,shape=partialRectangle,null,null,data_base
+202,"Datum , Consume User",rounded=0,null,null,external_entity
+203,Download A Csv Of The Data Used In Any Visualisation,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Datum,endArrow=classic,203,200,endArrow=classic
+207,Visualisation,endArrow=classic,203,201,endArrow=classic
+1000,Data consuming user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Data,rounded=0,null,null,external_entity
+1003,Data,endArrow=classic,2,1002,endArrow=classic

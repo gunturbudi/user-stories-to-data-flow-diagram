@@ -1,0 +1,46 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email Address" as thingemailaddress #grey
+	entity "Etc" as thingetc
+	entity "Password" as thingpassword
+	entity "Purpose" as thingpurpose
+	entity "Subscription" as thingsubscription
+	entity "Account" as thingaccount #grey
+	entity "Closing" as thingclosing #grey
+	entity "Patron" as thingpatron #grey
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Viewing, Changing,\nResetting, Changing\nAdministrate Accounts\nFor Purpose\nOf Accounts\nSubscriptions Subscriptions\nPasswords Etc" as controladministrateaccountsubscriptionsubscriptionpasswordetc
+	control "Viewing, Changing,\nResetting, Changing\nAdministrate Patron\nAccounts For\nPurpose Of\nClosing Accounts\nSubscriptions Subscriptions\nPasswords Email\nAddress" as controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+
+	thingemailaddress <.. thingpassword
+	thingetc <.. thingpassword
+	thingsubscription *-- thingpurpose
+	thingaccount *-- thingpurpose
+	thingpassword <.. thingsubscription
+	thingclosing <.. thingaccount
+	thingpatron <.. thingaccount
+	thingpurpose <.. thingaccount
+	actordb --- thingetcinterface
+	actoriradministrator --- thingetcinterface
+	actordb --- thingaddressinterface
+	actoriradministrator --- thingaddressinterface
+	thingetc --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingetcinterface --> controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingaccount --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpassword --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpurpose --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingsubscription --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpurpose --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingsubscription --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingpassword --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingemailaddress --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingaddressinterface --> controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingaccount --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+
+@enduml

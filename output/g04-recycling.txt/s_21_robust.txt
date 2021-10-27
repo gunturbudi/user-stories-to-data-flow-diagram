@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific User" as thingspecificuser
+	entity "Ip Address" as thingipaddress #grey
+	actor "Admin" as actoradmin
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Block Specific\nUsers On\nIp Address" as controlblockspecificuser
+
+	thingipaddress <.. thingspecificuser
+	actoradmin --- thingaddressinterface
+	thingspecificuser --- controlblockspecificuser
+	thingipaddress --- controlblockspecificuser
+	thingaddressinterface --> controlblockspecificuser
+
+@enduml

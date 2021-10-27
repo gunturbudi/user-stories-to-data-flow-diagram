@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Current Version,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Neurohub,shape=partialRectangle,null,null,data_base
+203,System Administrator,rounded=0,null,null,external_entity
+204,Migrate Data From An Older Version Of Neurohub To The Current Version,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Datum,endArrow=classic,204,201,endArrow=classic
+208,Neurohub,endArrow=classic,204,202,endArrow=classic
+209,Current Version,endArrow=classic,204,200,endArrow=classic

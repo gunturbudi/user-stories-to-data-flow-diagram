@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Data Interface,shape=partialRectangle,null,null,data_base
+202,Repoadmin,rounded=0,null,null,external_entity
+203,Provide A Linked Data Interface To The Repository,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Interface,endArrow=classic,203,201,endArrow=classic
+207,Repository,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,"Remote ,\nPrimary Site",shape=partialRectangle,null,null,data_base
+201,Repository Manager,rounded=0,null,null,external_entity
+202,"Replicate Beyond The Remote, Primary Site",ellipse,null,null,process
+203,Elect,ellipse,null,null,process
+204,Elect Not,ellipse,null,null,process
+205,Replicate,ellipse,null,null,process
+207,,endArrow=classic,201,202,endArrow=classic
+208,,endArrow=classic,201,203,endArrow=classic
+209,"Remote ,\nPrimary Site",endArrow=classic,202,200,endArrow=classic
+210,,endArrow=classic,203,202,endArrow=classic
+211,,endArrow=classic,203,205,endArrow=classic

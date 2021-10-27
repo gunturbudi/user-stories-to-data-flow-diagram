@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Route Planning\nSystem,shape=partialRectangle,null,null,data_base
+201,Work,shape=partialRectangle,null,null,data_base
+202,Employee,rounded=0,null,null,external_entity
+203,Access The Route Planning System During Work,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Route Planning\nSystem,endArrow=classic,203,200,endArrow=classic
+207,Work,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Workstation" as thingworkstation
+	entity "Network Drive" as thingnetworkdrive #grey
+	entity "Neurohub Workspace" as thingneurohubworkspace
+	entity "File" as thingfile
+	actor "Researcher" as actorresearcher
+	boundary "Workstation\nInterface" as thingworkstationinterface #grey
+	control "Access Files\nIn Neurohub\nWorkspace Using\nA Network\nDrive To\nWorkstation" as controlaccessfilenetworkdrive
+
+	thingworkstation <.. thingnetworkdrive
+	thingnetworkdrive <.. thingneurohubworkspace
+	thingneurohubworkspace <.. thingfile
+	actorresearcher --- thingworkstationinterface
+	thingfile --- controlaccessfilenetworkdrive
+	thingneurohubworkspace --- controlaccessfilenetworkdrive
+	thingnetworkdrive --- controlaccessfilenetworkdrive
+	thingworkstation --- controlaccessfilenetworkdrive
+	thingworkstationinterface --> controlaccessfilenetworkdrive
+
+@enduml

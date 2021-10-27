@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,"Web ,\nBased Calendar",shape=partialRectangle,null,null,data_base
+201,Event,shape=partialRectangle,null,null,data_base
+202,Neurohub,shape=partialRectangle,null,null,data_base
+203,Google Calendar,shape=partialRectangle,null,null,data_base
+204,User,rounded=0,null,null,external_entity
+205,"Sync Events In Neurohub With A Web, Based Calendar Such As Google Calendar",ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Event,endArrow=classic,205,201,endArrow=classic
+209,Neurohub,endArrow=classic,205,202,endArrow=classic
+210,"Web ,\nBased Calendar",endArrow=classic,205,200,endArrow=classic
+211,Google Calendar,endArrow=classic,205,203,endArrow=classic

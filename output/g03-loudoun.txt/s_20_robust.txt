@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Action Status" as thingactionstatus
+	actor "Staff Member" as actorstaffmember
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	control "Denote An\nApplication With\nA Final\nAction Status" as controldenoteapplication
+
+	thingactionstatus <.. thingapplication
+	actorstaffmember --- thingstatusinterface
+	thingapplication --- controldenoteapplication
+	thingactionstatus --- controldenoteapplication
+	thingstatusinterface --> controldenoteapplication
+
+@enduml

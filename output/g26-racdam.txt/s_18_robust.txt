@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Access Copy" as thingaccesscopy
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Create Access\nCopies Of\nFiles" as controlcreateaccesscopies
+
+	thingfile <.. thingaccesscopy
+	actorarchivist --- thingfileinterface
+	thingaccesscopy --- controlcreateaccesscopies
+	thingfile --- controlcreateaccesscopies
+	thingfileinterface --> controlcreateaccesscopies
+
+@enduml

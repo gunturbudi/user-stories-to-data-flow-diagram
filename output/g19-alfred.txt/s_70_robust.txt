@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "People" as thingpeople
+	entity "Similar Disease" as thingsimilardisease
+	actor "Olderperson" as actorOlderPerson
+	circle "Social Group" as thingsocialgroup
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Set Up\nSocial Groups\nOf People\nWith Similar\nDiseases" as controlsetsocialgroup
+	control "Use Alfred" as controluseALFREDsetsocialgroup
+
+	thingsimilardisease <.. thingpeople
+	thingpeople *-- thingsocialgroup
+	actorOlderPerson --- thingalfredinterface
+	thingsocialgroup --- controlsetsocialgroup
+	thingpeople --- controlsetsocialgroup
+	thingsimilardisease --- controlsetsocialgroup
+	controluseALFREDsetsocialgroup --> controlsetsocialgroup
+	thingalfredinterface --> controlsetsocialgroup
+	thingALFRED --- controluseALFREDsetsocialgroup
+	thingalfredinterface --> controluseALFREDsetsocialgroup
+
+@enduml

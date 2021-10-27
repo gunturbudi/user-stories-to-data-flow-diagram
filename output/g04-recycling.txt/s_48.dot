@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Facolitie " ];
+201 [label="User" shape=box];
+202 [label="{<f0> 1.0|<f1> Browse Through The List Of Facolities }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Environment See Which Ones }" shape=Mrecord];
+201 -> 202
+202 -> 200
+}

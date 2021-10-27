@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Hardware " ];
+201 [label="<f0>  |<f1> Content File " color=red];
+202 [label="<f0>  |<f1> Software " ];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Generate A Content File }" shape=Mrecord];
+203 -> 205
+205 -> 201 [label="Content File"]
+}

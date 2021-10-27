@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archive " color=red];
+201 [label="<f0>  |<f1> Facility " color=red];
+202 [label="<f0>  |<f1> Researcher " ];
+203 [label="<f0>  |<f1> Datum " ];
+204 [label="Research , Facility Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Deposit Data From Facility Directly Into The Archive On Behalf Of Researchers }" shape=Mrecord];
+204 -> 205
+205 -> 203 [label="Datum"]
+205 -> 201 [label="Facility"]
+205 -> 200 [label="Archive"]
+205 -> 202 [label="Researcher"]
+}

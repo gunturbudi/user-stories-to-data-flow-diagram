@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+2,Use,ellipse,null,null,process
+200,Server,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Data Package,shape=partialRectangle,null,null,data_base
+203,Registry,shape=partialRectangle,null,null,data_base
+204,Resource,shape=partialRectangle,null,null,data_base
+205,Publisher,rounded=0,null,null,external_entity
+206,Publish A Data Package Resource Data Where Stored On Servers,ellipse,null,null,process
+208,,endArrow=classic,205,206,endArrow=classic
+209,Data Package,endArrow=classic,206,202,endArrow=classic
+210,Server,endArrow=classic,206,200,endArrow=classic
+211,Datum,endArrow=classic,206,201,endArrow=classic
+213,Resource,endArrow=classic,206,204,endArrow=classic
+1000,,endArrow=classic,206,2,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,2,1001,endArrow=classic

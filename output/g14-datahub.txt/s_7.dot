@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Registry " ];
+201 [label="<f0>  |<f1> Data Package " color=red];
+202 [label="Publisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Import Data Package Into The Registry }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Access }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Data " color=red];
+2 -> 1001 [label="Data"]
+202 -> 203
+203 -> 201 [label="Data Package"]
+203 -> 200 [label="Registry"]
+}

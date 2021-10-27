@@ -1,0 +1,68 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Useful File" as thingusefulfile #grey
+	entity "Format Version" as thingformatversion #grey
+	entity "Aspect" as thingaspect #grey
+	entity "Obsolescence" as thingobsolescence
+	entity "Integrity" as thingintegrity
+	entity "File Size" as thingfilesize #grey
+	entity "File Format" as thingfileformat #grey
+	entity "Creation Date" as thingcreationdate #grey
+	entity "Master File" as thingmasterfile
+	entity "Preservation Managers" as thingpreservationmanagers #grey
+	actor "Dams Manager" as actordamsmanager
+	boundary "Size\nInterface" as thingsizeinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Indicate To\nAspects Of\nA Useful\nFile" as controlindicateaspect #grey
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nSize" as controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Creation\nDate" as controlmonitorindicateaspectintegrityobsolescencecreationdate
+	control "Indicate To\nPreservation Managers\nAspects Of\nA Useful\nMaster File" as controlindicatepreservationmanagersaspects
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Format\nVersion" as controlmonitorindicateaspectintegrityobsolescenceformatversion
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nFormat" as controlmonitorindicateaspectintegrityobsolescencefileformat
+
+	thingusefulfile <.. thingaspect
+	thingpreservationmanagers <.. thingaspect
+	thingmasterfile <.. thingaspect
+	thingfilesize <.. thingobsolescence
+	thingcreationdate <.. thingobsolescence
+	thingformatversion <.. thingobsolescence
+	thingfileformat <.. thingobsolescence
+	thingobsolescence <.. thingintegrity
+	actordamsmanager --- thingsizeinterface
+	actordamsmanager --- thingdateinterface
+	actordamsmanager --- thingfileinterface
+	actordamsmanager --- thingversioninterface
+	actordamsmanager --- thingformatinterface
+	controlmonitorindicateaspectintegrityobsolescencefileformat --> controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescenceformatversion --> controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescencecreationdate --> controlindicateaspect
+	thingaspect --- controlindicateaspect
+	thingusefulfile --- controlindicateaspect
+	thingintegrity --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingobsolescence --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingfilesize --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingsizeinterface --> controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingcreationdate --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingdateinterface --> controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence --> controlindicatepreservationmanagersaspects
+	thingmasterfile --- controlindicatepreservationmanagersaspects
+	thingfileinterface --> controlindicatepreservationmanagersaspects
+	thingaspect --- controlindicatepreservationmanagersaspects
+	thingformatversion --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingversioninterface --> controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingfileformat --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingformatinterface --> controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencefileformat
+
+@enduml

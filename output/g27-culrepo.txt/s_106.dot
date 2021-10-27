@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Content " color=red];
+201 [label="<f0>  |<f1> Metadata " color=red];
+202 [label="<f0>  |<f1> Repository " ];
+203 [label="<f0>  |<f1> Robust Manner " ];
+204 [label="Library , Staff Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Preserve The Metadata Within The Repository }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Preserve The Content In A Robust Manner }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 201 [label="Metadata"]
+205 -> 202 [label="Repository"]
+206 -> 200 [label="Content"]
+206 -> 203 [label="Robust Manner"]
+}

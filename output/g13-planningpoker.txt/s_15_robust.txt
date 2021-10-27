@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Story" as thingstory
+	entity "Spreadsheet" as thingspreadsheet
+	actor "Moderator" as actormoderator
+	boundary "Spreadsheet\nInterface" as thingspreadsheetinterface #grey
+	control "Copy Stories\nFrom A\nSpreadsheet" as controlcopystory
+	control "Paste Stories\nFrom A\nSpreadsheet" as controlpastestory
+
+	thingspreadsheet <.. thingstory
+	actormoderator --- thingspreadsheetinterface
+	thingstory --- controlcopystory
+	thingspreadsheet --- controlcopystory
+	thingspreadsheetinterface --> controlcopystory
+	thingstory --- controlpastestory
+	thingspreadsheet --- controlpastestory
+	thingspreadsheetinterface --> controlpastestory
+
+@enduml

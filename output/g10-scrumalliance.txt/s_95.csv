@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,New Password,shape=partialRectangle,null,null,data_base
+201,System,shape=partialRectangle,null,null,data_base
+202,Term Memory\nProblem,shape=partialRectangle,null,null,data_base
+203,Member,rounded=0,null,null,external_entity
+204,Have,ellipse,null,null,process
+205,The System Email Me A New Password Have Short Term Memory Problems,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,205,204,endArrow=classic
+210,System,endArrow=classic,205,201,endArrow=classic
+211,New Password,endArrow=classic,205,200,endArrow=classic
+212,Term Memory\nProblem,endArrow=classic,205,202,endArrow=classic

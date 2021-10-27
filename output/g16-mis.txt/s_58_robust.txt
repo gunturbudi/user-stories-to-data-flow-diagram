@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Permission" as thingpermission
+	entity "Easy Way" as thingeasyway
+	entity "Repository" as thingrepository
+	entity "User" as thinguser
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Group" as thinggroup
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Manage Permissions\nIn The\nRepository In\nAn Easy\nWay" as controlmanagepermissioneasyway
+	control "Create Groups\nOf Users" as controlcreategroupmanagepermissioneasyway
+
+	thingrepository <.. thingpermission
+	thingeasyway <.. thingrepository
+	thinguser *-- thinggroup
+	actorcollectioncurator --- thinguserinterface
+	thingpermission --- controlmanagepermissioneasyway
+	thingrepository --- controlmanagepermissioneasyway
+	thingeasyway --- controlmanagepermissioneasyway
+	controlcreategroupmanagepermissioneasyway --> controlmanagepermissioneasyway
+	thinguserinterface --> controlmanagepermissioneasyway
+	thinggroup --- controlcreategroupmanagepermissioneasyway
+	thinguser --- controlcreategroupmanagepermissioneasyway
+	thinguserinterface --> controlcreategroupmanagepermissioneasyway
+
+@enduml

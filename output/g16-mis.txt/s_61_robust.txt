@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Exist Item" as thingexistingitem
+	entity "Submitter" as thingsubmitter
+	actor "Collection Owner" as actorcollectionowner
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Be" as controlbemodifyexistingitem
+	control "Have Submitters\nTo Collection" as controlhavesubmittercollectionbemodifyexistingitem
+	control "Modify Existing\nItems In\nThat Collection" as controlmodifyexistingitem
+
+	thingcollection <.. thingexistingitem
+	thingcollection <.. thingsubmitter
+	actorcollectionowner --- thingcollectioninterface
+	controlhavesubmittercollectionbemodifyexistingitem --> controlbemodifyexistingitem
+	thingcollectioninterface --> controlbemodifyexistingitem
+	thingsubmitter --- controlhavesubmittercollectionbemodifyexistingitem
+	thingcollection --- controlhavesubmittercollectionbemodifyexistingitem
+	thingcollectioninterface --> controlhavesubmittercollectionbemodifyexistingitem
+	controlbemodifyexistingitem --> controlmodifyexistingitem
+	thingexistingitem --- controlmodifyexistingitem
+	thingcollection --- controlmodifyexistingitem
+	thingcollectioninterface --> controlmodifyexistingitem
+
+@enduml

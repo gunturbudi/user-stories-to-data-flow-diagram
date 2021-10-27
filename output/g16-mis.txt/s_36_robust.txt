@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Etd" as thingetd
+	entity "Repository" as thingrepository
+	entity "Summary Embargo\nMetadata" as thingsummaryembargometadata #grey
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "View Summary\nEmbargo Metadata\nFor All\nEtds In\nThe Repository" as controlviewsummaryembargometadataetd
+	control "Download Summary\nEmbargo Metadata\nFor All\nEtds In\nThe Repository" as controldownloadsummaryembargometadataetd
+
+	thingrepository <.. thingetd
+	thingetd <.. thingsummaryembargometadata
+	actordigitalrecordsarchivist --- thingrepositoryinterface
+	thingsummaryembargometadata --- controlviewsummaryembargometadataetd
+	thingetd --- controlviewsummaryembargometadataetd
+	thingrepository --- controlviewsummaryembargometadataetd
+	thingrepositoryinterface --> controlviewsummaryembargometadataetd
+	thingetd --- controldownloadsummaryembargometadataetd
+	thingrepository --- controldownloadsummaryembargometadataetd
+	thingsummaryembargometadata --- controldownloadsummaryembargometadataetd
+	thingrepositoryinterface --> controldownloadsummaryembargometadataetd
+
+@enduml

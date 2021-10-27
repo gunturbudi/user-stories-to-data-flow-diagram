@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingduedataset
+	entity "Error" as thingerror
+	entity "Report" as thingreport
+	entity "Revise Report" as thingrevisedreport
+	entity "Document" as thingdocument
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Upload Revised\nReport" as controluploadrevisedreport
+	control "Upload Due\nDataset To\nError In\nDocument" as controluploadduedatasetdocument
+	control "Upload Due\nDataset To\nError In\nReport" as controluploadduedataset
+
+	thingerror <.. thingduedataset
+	thingdocument <.. thingduedataset
+	thingreport <.. thingerror
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actordb --- thingdocumentinterface
+	actoriradministrator --- thingdocumentinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	thingrevisedreport --- controluploadrevisedreport
+	thingreportinterface --> controluploadrevisedreport
+	thingdocument --- controluploadduedatasetdocument
+	thingdocumentinterface --> controluploadduedatasetdocument
+	thingduedataset --- controluploadduedatasetdocument
+	thingduedataset --- controluploadduedataset
+	thingdatasetinterface --> controluploadduedataset
+
+@enduml

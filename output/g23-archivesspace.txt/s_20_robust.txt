@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Subject Information" as thingsubjectinformation
+	entity "Agent" as thingagent
+	entity "Marcxml Record" as thingmarcxmlrecord
+	actor "Archivist" as actorarchivist
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Import Subject\nInformation" as controlimportsubjectinformation
+	control "Import Only\nAgent From\nMarcxml Records" as controlimportagentmarcxmlrecords
+
+	thingmarcxmlrecord <.. thingagent
+	actorarchivist --- thinginformationinterface
+	actorarchivist --- thingrecordinterface
+	thingsubjectinformation --- controlimportsubjectinformation
+	thinginformationinterface --> controlimportsubjectinformation
+	thingagent --- controlimportagentmarcxmlrecords
+	thingmarcxmlrecord --- controlimportagentmarcxmlrecords
+	thingrecordinterface --> controlimportagentmarcxmlrecords
+
+@enduml

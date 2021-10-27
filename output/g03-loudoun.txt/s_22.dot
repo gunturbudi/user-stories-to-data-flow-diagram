@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Planning ,\nRelated Report " ];
+201 [label="Planning , Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Generate Planning, Related Reports }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Export the needed information in the format i requested. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Needed information " color=red];
+2 -> 1001
+201 -> 202
+202 -> 200
+}

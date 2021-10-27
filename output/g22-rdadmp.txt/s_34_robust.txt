@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File Format" as thingfileformat #grey
+	entity "Information" as thinginformation
+	actor "Archivemanager" as actorarchivemanager
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Reuse The\nInformation Regarding\nFile Format" as controlreuseinformation
+
+	thingfileformat <.. thinginformation
+	actorarchivemanager --- thingformatinterface
+	thinginformation --- controlreuseinformation
+	thingfileformat --- controlreuseinformation
+	thingformatinterface --> controlreuseinformation
+
+@enduml

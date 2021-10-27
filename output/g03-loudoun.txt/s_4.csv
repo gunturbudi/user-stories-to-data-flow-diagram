@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Perform transactions that first require user authentication.,ellipse,null,null,process
+200,Customer Portal\nUser Account,shape=partialRectangle,null,null,data_base
+201,Customer,rounded=0,null,null,external_entity
+202,Create A Customer Portal User Account,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Customer Portal\nUser Account,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Transactions,rounded=0,null,null,external_entity
+1002,Transactions,endArrow=classic,2,1001,endArrow=classic

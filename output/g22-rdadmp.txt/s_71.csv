@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,External Repository,shape=partialRectangle,null,null,data_base
+201,Data Set,shape=partialRectangle,null,null,data_base
+202,"Institutional , Data Steward",rounded=0,null,null,external_entity
+203,Extract The Data Sets Submitted To External Repositories,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Set,endArrow=classic,203,201,endArrow=classic
+207,External Repository,endArrow=classic,203,200,endArrow=classic

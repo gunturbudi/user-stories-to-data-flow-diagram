@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Calendar " ];
+201 [label="<f0>  |<f1> Future Date " ];
+202 [label="<f0>  |<f1> Dataset " color=red];
+203 [label="<f0>  |<f1> Report " color=red];
+204 [label="<f0>  |<f1> Patron Fyi " ];
+205 [label="<f0>  |<f1> Release Date " ];
+206 [label="Db" shape=box];
+207 [label="Ir Administrator" shape=box];
+208 [label="{<f0> 1.0|<f1> Add Future Release Dates Of Reports To Calendar For Patron Fyi }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Add Future Dates Of Dataset }" shape=Mrecord];
+206 -> 208
+206 -> 209
+207 -> 208
+207 -> 209
+208 -> 205 [label="Release Date"]
+208 -> 203 [label="Report"]
+208 -> 204 [label="Patron Fyi"]
+208 -> 200 [label="Calendar"]
+209 -> 201 [label="Future Date"]
+209 -> 202 [label="Dataset"]
+}

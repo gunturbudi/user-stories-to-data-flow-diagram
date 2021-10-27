@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plankton Specie " color=red];
+201 [label="<f0>  |<f1> Plankton Portal\nImage " color=red];
+202 [label="Zooniverse Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Perform Automatic Preclassification Of Plankton Species In Plankton Portal Images }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Plankton Specie"]
+203 -> 201 [label="Plankton Portal\nImage"]
+}

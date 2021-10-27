@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Event" as thingevent
+	entity "Concert" as thingconcert
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Navigate To\nConcert" as controlnavigateconcert
+	control "Use Alfred" as controluseALFREDnavigateevent
+	control "Navigate To\nAn Event" as controlnavigateevent
+	control "Alfred Help" as controlhelpALFRED
+	control "Lost" as controllosehelpALFRED
+
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingeventinterface
+	thingconcert --- controlnavigateconcert
+	thingalfredinterface --> controlnavigateconcert
+	controluseALFREDnavigateevent --> controlnavigateconcert
+	thingALFRED --- controluseALFREDnavigateevent
+	thingalfredinterface --> controluseALFREDnavigateevent
+	controluseALFREDnavigateevent --> controlnavigateevent
+	thingevent --- controlnavigateevent
+	thingeventinterface --> controlnavigateevent
+	controllosehelpALFRED --> controlhelpALFRED
+	thingalfredinterface --> controlhelpALFRED
+	thingALFRED --- controlhelpALFRED
+	thingalfredinterface --> controllosehelpALFRED
+	controluseALFREDnavigateevent --> controllosehelpALFRED
+
+@enduml

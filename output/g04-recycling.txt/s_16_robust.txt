@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Recycling Facility" as thingrecyclingfacility
+	actor "Admin" as actoradmin
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Add Recycling\nFacilities' Information" as controladdinformation
+	control "Remove Recycling\nFacilities' Information" as controlremoveinformation
+
+	thingrecyclingfacility <.. thinginformation
+	actoradmin --- thinginformationinterface
+	thinginformation --- controladdinformation
+	thinginformationinterface --> controladdinformation
+	thinginformation --- controlremoveinformation
+	thinginformationinterface --> controlremoveinformation
+
+@enduml

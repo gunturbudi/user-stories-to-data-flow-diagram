@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Fiscal ,\nData Package\nDescriptor File" as thingfiscaldatapackagedescriptorfiledatapublishinguser
+	control "Import Data\nFrom" as controlimportdatum
+
+	actordatapublishinguser --- thingfiscaldatapackagedescriptorfiledatapublishinguser
+	thingdatum --- controlimportdatum
+	thingfiscaldatapackagedescriptorfiledatapublishinguser --> controlimportdatum
+
+@enduml

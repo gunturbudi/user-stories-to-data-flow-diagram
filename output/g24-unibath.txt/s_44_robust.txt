@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Country" as thingcountry
+	entity "View Statistic" as thingviewstatistic
+	entity "Sector" as thingsector
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Country\nInterface" as thingcountryinterface #grey
+	boundary "Sector\nInterface" as thingsectorinterface #grey
+	control "Download" as controldownload
+	control "Segment" as controlsegmentdownload
+	control "Segment The\nView Statistics\nBy Country" as controlsegmentviewstatistic
+	control "Segment The\nView Statistics\nBy Sector" as controlsegmentviewstatisticsector
+
+	thingcountry <.. thingviewstatistic
+	thingsector <.. thingviewstatistic
+	actorresearchinformationmanager --- thingcountryinterface
+	actorresearchinformationmanager --- thingsectorinterface
+	controlsegmentdownload --> controldownload
+	thingviewstatistic --- controlsegmentviewstatistic
+	thingcountry --- controlsegmentviewstatistic
+	thingcountryinterface --> controlsegmentviewstatistic
+	thingsector --- controlsegmentviewstatisticsector
+	thingsectorinterface --> controlsegmentviewstatisticsector
+	thingviewstatistic --- controlsegmentviewstatisticsector
+
+@enduml

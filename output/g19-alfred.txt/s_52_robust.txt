@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Message" as thingmessage
+	actor "Olderperson" as actorOlderPerson
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	control "Receive A\nMessage" as controlreceivemessage
+
+	actorOlderPerson --- thingmessageinterface
+	thingmessage --- controlreceivemessage
+	thingmessageinterface --> controlreceivemessage
+
+@enduml

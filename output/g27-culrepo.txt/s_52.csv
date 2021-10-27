@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Report,shape=partialRectangle,null,null,data_base
+201,Historical,shape=partialRectangle,null,null,data_base
+202,Timely Information,shape=partialRectangle,null,null,data_base
+203,Patron,rounded=0,null,null,external_entity
+204,View Multiple Versions Of A Report,ellipse,null,null,process
+205,Dataset,ellipse,null,null,process
+206,Get Timely Information,ellipse,null,null,process
+207,Get Historical,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,205,endArrow=classic
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,Report,endArrow=classic,204,200,endArrow=classic
+214,,endArrow=classic,205,206,endArrow=classic
+215,,endArrow=classic,205,207,endArrow=classic
+216,Timely Information,endArrow=classic,206,202,endArrow=classic
+217,Historical,endArrow=classic,207,201,endArrow=classic

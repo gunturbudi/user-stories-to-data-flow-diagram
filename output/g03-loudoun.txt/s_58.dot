@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Citation " ];
+201 [label="<f0>  |<f1> Fine " ];
+202 [label="Staff Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Send Citations }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Send Fine }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Post Fine }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Post Citations }" shape=Mrecord];
+5 [label="{<f0> 5.0|<f1> Send the notice of violation document to the property owner and log information about the action. }" shape=Mrecord];
+206 -> 5
+1001 [label="<f0>  |<f1> Notice of violation document " color=red];
+5 -> 1001
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 200
+204 -> 201
+205 -> 201
+206 -> 200
+}

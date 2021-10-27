@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Date,shape=partialRectangle,null,null,data_base
+201,Schedule Record,shape=partialRectangle,null,null,data_base
+202,Item,shape=partialRectangle,null,null,data_base
+203,Component Page,shape=partialRectangle,null,null,data_base
+204,Deletion,shape=partialRectangle,null,null,data_base
+205,Collection Curator,rounded=0,null,null,external_entity
+206,See The Scheduled Records Date Displayed On Component Page,ellipse,null,null,process
+207,See The Scheduled Records Deletion Date Displayed On The Item,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Date,endArrow=classic,206,200,endArrow=classic
+212,Component Page,endArrow=classic,206,203,endArrow=classic
+213,Schedule Record,endArrow=classic,206,201,endArrow=classic
+214,Schedule Record,endArrow=classic,207,201,endArrow=classic
+215,Item,endArrow=classic,207,202,endArrow=classic
+216,Date,endArrow=classic,207,200,endArrow=classic
+218,Deletion,endArrow=classic,207,204,endArrow=classic

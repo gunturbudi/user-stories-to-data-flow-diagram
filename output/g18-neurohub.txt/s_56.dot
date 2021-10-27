@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Current Version " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Neurohub " color=red];
+203 [label="System Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Migrate Data From An Older Version Of Neurohub To The Current Version }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Datum"]
+204 -> 202 [label="Neurohub"]
+204 -> 200 [label="Current Version"]
+}

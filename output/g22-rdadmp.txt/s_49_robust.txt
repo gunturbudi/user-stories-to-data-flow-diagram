@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dmp" as thingdmp
+	entity "Repository" as thingrepository
+	actor "Funder" as actorfunder
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Check The\nRepositories In\nA Dmp" as controlcheckrepository
+
+	thingdmp <.. thingrepository
+	actorfunder --- thingdmpinterface
+	thingrepository --- controlcheckrepository
+	thingdmp --- controlcheckrepository
+	thingdmpinterface --> controlcheckrepository
+
+@enduml

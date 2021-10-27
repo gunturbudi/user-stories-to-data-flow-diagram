@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schedule" as thingschedule
+	entity "Week" as thingweek
+	actor "User" as actoruser
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	control "Upload Week's\nSchedule" as controluploadschedule
+
+	thingweek <.. thingschedule
+	actoruser --- thingscheduleinterface
+	thingschedule --- controluploadschedule
+	thingscheduleinterface --> controluploadschedule
+
+@enduml

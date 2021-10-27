@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Submission" as thingsubmission
+	entity "Fsrs Record" as thingfsrsrecord
+	actor "Agency User" as actoragencyuser
+	control "Ensure" as controlensure
+
+
+@enduml

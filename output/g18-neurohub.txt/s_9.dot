@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Experiment " color=red];
+201 [label="<f0>  |<f1> Page " color=red];
+202 [label="<f0>  |<f1> File " color=red];
+203 [label="<f0>  |<f1> Log Book " color=red];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Create A Log Book Page For An Experiment }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Attach A File To This Page }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Experiment"]
+205 -> 201 [label="Page"]
+206 -> 202 [label="File"]
+206 -> 201 [label="Page"]
+205 -> 203 [label="Log Book"]
+}

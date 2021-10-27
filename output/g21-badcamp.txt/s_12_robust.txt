@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training" as thingtraining
+	actor "Trainee" as actortrainee
+	control "See" as controlsee
+
+
+@enduml

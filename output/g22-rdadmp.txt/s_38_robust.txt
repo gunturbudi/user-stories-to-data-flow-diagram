@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publication" as thingpublication #grey
+	entity "Institutional Repository" as thinginstitutionalrepository
+	entity "Cris" as thingCRIS
+	entity "Dmp Record" as thingdmprecord
+	entity "Research" as thingresearch #grey
+	actor "Researcher" as actorresearcher
+	boundary "Cris\nInterface" as thingcrisinterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Link Publications\nIn Cris" as controllinkpublicationCRIS
+	control "Link Research\nPublications In\nThe Institutional\nRepository With\nDmp Records" as controllinkresearchpublicationsinstitutionalrepositorydmprecords
+
+	thingCRIS <.. thingpublication
+	thingresearch <.. thingpublication
+	thinginstitutionalrepository <.. thingpublication
+	thingdmprecord <.. thinginstitutionalrepository
+	actorresearcher --- thingcrisinterface
+	actorresearcher --- thingrecordinterface
+	thingpublication --- controllinkpublicationCRIS
+	thingCRIS --- controllinkpublicationCRIS
+	thingcrisinterface --> controllinkpublicationCRIS
+	thinginstitutionalrepository --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingdmprecord --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingrecordinterface --> controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingpublication --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+
+@enduml

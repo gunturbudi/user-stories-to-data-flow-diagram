@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Transaction" as thingtransaction
+	actor "Applicant" as actorapplicant
+	circle "Status" as thingstatus
+	boundary "Transaction\nInterface" as thingtransactioninterface #grey
+	control "Check The\nStatus Of\nA Transaction" as controlcheckstatus
+
+	thingtransaction *-- thingstatus
+	actorapplicant --- thingtransactioninterface
+	thingstatus --- controlcheckstatus
+	thingtransaction --- controlcheckstatus
+	thingtransactioninterface --> controlcheckstatus
+
+@enduml

@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Probable Importance" as thingprobableimportance
+	entity "User" as thinguser
+	entity "Description" as thingdescription
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	circle "External Version" as thingexternalversion
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	control "Be Of\nProbable Importance\nTo An\nUser" as controlbeprobableimportanceuser
+	control "Indicate Description" as controlindicatedescription
+	control "Indicate Any\nExternal Versions\nOf An\nObject" as controlindicateexternalversionbeprobableimportanceuser
+
+	thinguser <.. thingprobableimportance
+	thingobject *-- thingexternalversion
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingdescriptioninterface
+	thingprobableimportance --- controlbeprobableimportanceuser
+	thinguser --- controlbeprobableimportanceuser
+	controlindicateexternalversionbeprobableimportanceuser --> controlbeprobableimportanceuser
+	thingobjectinterface --> controlbeprobableimportanceuser
+	thingdescription --- controlindicatedescription
+	thingdescriptioninterface --> controlindicatedescription
+	thingexternalversion --- controlindicateexternalversionbeprobableimportanceuser
+	thingobject --- controlindicateexternalversionbeprobableimportanceuser
+	thingobjectinterface --> controlindicateexternalversionbeprobableimportanceuser
+
+@enduml

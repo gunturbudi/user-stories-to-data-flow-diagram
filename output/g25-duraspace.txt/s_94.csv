@@ -1,0 +1,31 @@
+id,value,style,source,target,type
+200,Object Component,shape=partialRectangle,null,null,data_base
+201,Use,shape=partialRectangle,null,null,data_base
+202,Object,shape=partialRectangle,null,null,data_base
+203,Status,shape=partialRectangle,null,null,data_base
+204,Rights,shape=partialRectangle,null,null,data_base
+205,Dams Manager,rounded=0,null,null,external_entity
+206,Restrict Per The Rights Status Of The Object,ellipse,null,null,process
+207,Know The Uses For An Object Component,ellipse,null,null,process
+208,Restrict Per The Status Of Object Component,ellipse,null,null,process
+209,Know The Uses For Object,ellipse,null,null,process
+210,Know The Uses For An Object Component Permitted,ellipse,null,null,process
+212,,endArrow=classic,205,206,endArrow=classic
+213,,endArrow=classic,205,207,endArrow=classic
+214,,endArrow=classic,205,208,endArrow=classic
+215,,endArrow=classic,205,209,endArrow=classic
+216,,endArrow=classic,205,210,endArrow=classic
+217,Object,endArrow=classic,206,202,endArrow=classic
+218,Status,endArrow=classic,206,203,endArrow=classic
+219,,endArrow=classic,207,206,endArrow=classic
+220,,endArrow=classic,207,208,endArrow=classic
+221,Object Component,endArrow=classic,207,200,endArrow=classic
+222,Status,endArrow=classic,207,203,endArrow=classic
+223,Use,endArrow=classic,207,201,endArrow=classic
+224,Status,endArrow=classic,208,203,endArrow=classic
+225,Object,endArrow=classic,208,202,endArrow=classic
+226,Object,endArrow=classic,209,202,endArrow=classic
+227,Use,endArrow=classic,209,201,endArrow=classic
+228,Use,endArrow=classic,210,201,endArrow=classic
+229,Object Component,endArrow=classic,210,200,endArrow=classic
+230,Rights,endArrow=classic,206,204,endArrow=classic

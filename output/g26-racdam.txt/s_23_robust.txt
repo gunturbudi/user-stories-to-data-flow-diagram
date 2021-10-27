@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	entity "Scan" as thingscan
+	entity "Research Request" as thingresearchrequest
+	actor "Archivist" as actorarchivist
+	boundary "Request\nInterface" as thingrequestinterface #grey
+	control "Upload Scans\nOf Images\nAnswering Research\nRequests" as controluploadscanimage
+
+	thingresearchrequest <.. thingimage
+	thingimage <.. thingscan
+	actorarchivist --- thingrequestinterface
+	thingscan --- controluploadscanimage
+	thingimage --- controluploadscanimage
+	thingresearchrequest --- controluploadscanimage
+	thingrequestinterface --> controluploadscanimage
+
+@enduml

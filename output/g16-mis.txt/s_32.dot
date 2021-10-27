@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Tool " ];
+201 [label="<f0>  |<f1> Author Authority\nControl " ];
+202 [label="Collection Curator" shape=box];
+203 [label="{<f0> 1.0|<f1> Have A Tool }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Perform Author Authority Control }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 200 [label="Tool"]
+204 -> 201 [label="Author Authority\nControl"]
+}

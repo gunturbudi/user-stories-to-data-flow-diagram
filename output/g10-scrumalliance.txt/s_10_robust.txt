@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	entity "Name" as thingname
+	actor "Site Member" as actorsitemember
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Mark Profile" as controlmarkprofile
+
+	actorsitemember --- thingprofileinterface
+	thingprofile --- controlmarkprofile
+	thingprofileinterface --> controlmarkprofile
+
+@enduml

@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Historical Fabs" as thinghistoricalFABS
+	entity "Frec Derivation" as thingfrecderivation
+	entity "Datum" as thingdatum
+	actor "Developer" as actordeveloper
+	boundary "Derivation\nInterface" as thingderivationinterface #grey
+	control "Include The\nFrec Derivations" as controlincludefrecderivation
+
+	actordeveloper --- thingderivationinterface
+	thingfrecderivation --- controlincludefrecderivation
+	thingderivationinterface --> controlincludefrecderivation
+
+@enduml

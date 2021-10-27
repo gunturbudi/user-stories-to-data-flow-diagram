@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+4,Find the datasets i'm interested in.,ellipse,null,null,process
+200,Accessible,shape=partialRectangle,null,null,data_base
+201,Metadata,shape=partialRectangle,null,null,data_base
+202,Title,shape=partialRectangle,null,null,data_base
+203,Dataset,shape=partialRectangle,null,null,data_base
+204,"Datum , Consume User",rounded=0,null,null,external_entity
+205,Search Publicly Accessible By Title,ellipse,null,null,process
+206,Search Publicly Accessible By Metadata,ellipse,null,null,process
+207,Search Any Dataset,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Accessible,endArrow=classic,205,200,endArrow=classic
+213,Title,endArrow=classic,205,202,endArrow=classic
+214,Metadata,endArrow=classic,206,201,endArrow=classic
+215,Accessible,endArrow=classic,206,200,endArrow=classic
+216,Dataset,endArrow=classic,207,203,endArrow=classic
+1000,Data consuming user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,4,endArrow=classic
+1002,Datasets,rounded=0,null,null,external_entity
+1003,Datasets,endArrow=classic,4,1002,endArrow=classic

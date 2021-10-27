@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Image,shape=partialRectangle,null,null,data_base
+201,Researcher,rounded=0,null,null,external_entity
+202,Understand The Copyright Status Of The Image,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Image,endArrow=classic,202,200,endArrow=classic

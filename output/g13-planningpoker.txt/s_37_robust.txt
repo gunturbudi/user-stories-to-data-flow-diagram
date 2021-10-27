@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Minute Countdown\nTimer" as thingminutecountdowntimer #grey
+	entity "Participant" as thingparticipant
+	actor "Participant" as actorparticipant
+	boundary "Participant\nInterface" as thingparticipantinterface #grey
+	control "Start A\nMinute Countdown\nTimer That\nAll Participants\nSee" as controlstartminutecountdowntimer
+
+	thingparticipant <.. thingminutecountdowntimer
+	actorparticipant --- thingparticipantinterface
+	thingminutecountdowntimer --- controlstartminutecountdowntimer
+	thingparticipant --- controlstartminutecountdowntimer
+	thingparticipantinterface --> controlstartminutecountdowntimer
+
+@enduml

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Line " ];
+202 [label="<f0>  |<f1> Geographic Datum " ];
+203 [label="Researchergovernment Publisher" shape=box];
+204 [label="{<f0> 1.0|<f1> Map Lines In Dataset Using Geographic Data In Dataset }" shape=Mrecord];
+203 -> 204
+204 -> 201
+204 -> 202
+204 -> 200
+}

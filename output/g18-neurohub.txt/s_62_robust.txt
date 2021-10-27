@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Logbook Entry" as thinglogbookentry #grey
+	entity "Individual" as thingindividual
+	entity "Group" as thinggroup
+	actor "User" as actoruser
+	boundary "Entry\nInterface" as thingentryinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Keep A\nPrivate Logbook\nEntry" as controlkeepprivatelogbookentry
+	control "Share A\nLogbook Entry\nWith Individuals\nRather Than\nGroups" as controlsharelogbookentry
+
+	thingindividual <.. thinglogbookentry
+	thinggroup <.. thingindividual
+	actoruser --- thingentryinterface
+	actoruser --- thinggroupinterface
+	thinglogbookentry --- controlkeepprivatelogbookentry
+	thingentryinterface --> controlkeepprivatelogbookentry
+	thingindividual --- controlsharelogbookentry
+	thinggroup --- controlsharelogbookentry
+	thinggroupinterface --> controlsharelogbookentry
+	thinglogbookentry --- controlsharelogbookentry
+
+@enduml

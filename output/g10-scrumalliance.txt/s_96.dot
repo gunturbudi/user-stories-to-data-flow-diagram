@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Trainer " ];
+201 [label="<f0>  |<f1> Relevance " ];
+202 [label="Trainer" shape=box];
+203 [label="{<f0> 1.0|<f1> Read Information Of Relevance Only To Trainers }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Share information with me easily }" shape=Mrecord];
+1000 [label="Scrum alliance" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Information " color=red];
+2 -> 1002 [label="Information"]
+202 -> 203
+203 -> 201 [label="Relevance"]
+203 -> 200 [label="Trainer"]
+}

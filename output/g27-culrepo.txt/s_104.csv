@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Commitment,shape=partialRectangle,null,null,data_base
+201,Longevity,shape=partialRectangle,null,null,data_base
+202,Repository,shape=partialRectangle,null,null,data_base
+203,Ir,shape=partialRectangle,null,null,data_base
+204,Staffing,shape=partialRectangle,null,null,data_base
+205,Publish Plan,shape=partialRectangle,null,null,data_base
+206,Funding,shape=partialRectangle,null,null,data_base
+207,Contract Clause,shape=partialRectangle,null,null,data_base
+208,Asset Manager,rounded=0,null,null,external_entity
+209,Assured,ellipse,null,null,process

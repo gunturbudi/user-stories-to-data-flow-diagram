@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Guarantee" as thingguarantee
+	entity "Ip Right" as thingipright
+	actor "Externalcoordinator" as actorexternalcoordinator
+	boundary "Guarantee\nInterface" as thingguaranteeinterface #grey
+	control "Have Guarantees\nIp Rights\nNot" as controlhaveguarantee
+
+	thingipright <.. thingguarantee
+	actorexternalcoordinator --- thingguaranteeinterface
+	thingguarantee --- controlhaveguarantee
+	thingguaranteeinterface --> controlhaveguarantee
+
+@enduml

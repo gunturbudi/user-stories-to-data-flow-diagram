@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Archivemanager" as actorarchivemanager
+	boundary "Detailed Metadata" as thingdetailedmetadataarchivemanager
+	control "Associated To\nData" as controlassociatedetailedmetadataarchivemanagerdatum
+
+	actorarchivemanager --- thingdetailedmetadataarchivemanager
+	thingdetailedmetadataarchivemanager --> controlassociatedetailedmetadataarchivemanagerdatum
+	thingdatum --- controlassociatedetailedmetadataarchivemanagerdatum
+
+@enduml

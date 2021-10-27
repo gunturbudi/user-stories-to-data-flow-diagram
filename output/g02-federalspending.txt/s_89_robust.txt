@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Broker Application\nDatum" as thingbrokerapplicationdatum
+	actor "Developer" as actordeveloper
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Access Broker\nApplication Data" as controlaccessbrokerapplicationdata
+
+	actordeveloper --- thingdatuminterface
+	thingbrokerapplicationdatum --- controlaccessbrokerapplicationdata
+	thingdatuminterface --> controlaccessbrokerapplicationdata
+
+@enduml

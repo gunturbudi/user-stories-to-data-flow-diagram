@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Geojson ,\nAdditional Source " ];
+201 [label="<f0>  |<f1> Platform Administrator " ];
+202 [label="Datum , Publishing User" shape=box];
+203 [label="{<f0> 1.0|<f1> Provide The Platform Administrator With Geojson, Additional Sources }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Improve the map-based visualisations of my data. }" shape=Mrecord];
+1000 [label="Data publishing user" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Data " color=red];
+2 -> 1002
+202 -> 203
+203 -> 201
+203 -> 200
+}

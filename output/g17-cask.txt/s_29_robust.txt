@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sink" as thingsink
+	entity "Instance" as thinginstance #grey
+	entity "Source" as thingsource
+	entity "Pipeline" as thingpipeline
+	entity "App" as thingapp
+	entity "Dataset" as thingdataset #grey
+	actor "Hydrator User" as actorhydratoruser
+	boundary "Pipeline\nInterface" as thingpipelineinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Ensure All\nDataset Instances\nApps Available\nAs Sinks\nFor Pipelines" as controlensuredatasetinstancessink
+	control "Ensure All\nInstances Apps\nAvailable As\nSource" as controlensureinstancesource
+
+	thingpipeline <.. thingsink
+	thingsource <.. thinginstance
+	thingdataset <.. thinginstance
+	thingsink <.. thinginstance
+	thingapp <.. thinginstance
+	actorhydratoruser --- thingpipelineinterface
+	actorhydratoruser --- thingsourceinterface
+	thingsink --- controlensuredatasetinstancessink
+	thingpipeline --- controlensuredatasetinstancessink
+	thingpipelineinterface --> controlensuredatasetinstancessink
+	thinginstance --- controlensuredatasetinstancessink
+	thinginstance --- controlensureinstancesource
+	thingsource --- controlensureinstancesource
+	thingsourceinterface --> controlensureinstancesource
+
+@enduml

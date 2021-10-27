@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Security " ];
+202 [label="Institutional , Data Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Know About Security }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Know About The Privacy Requirements Of The Data }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Plan the right storage system and sharing permissions }" shape=Mrecord];
+204 -> 3
+1001 [label="<f0>  |<f1> Sharing permissions " color=red];
+3 -> 1001 [label="Sharing permissions"]
+202 -> 203
+202 -> 204
+203 -> 201 [label="Security"]
+204 -> 200 [label="Datum"]
+}

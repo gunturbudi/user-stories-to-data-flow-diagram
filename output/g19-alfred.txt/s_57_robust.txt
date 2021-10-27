@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Message" as thingmessage
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Send Messages" as controlsendmessage
+	control "Use Alfred" as controluseALFREDsendmessage
+
+	actorOlderPerson --- thingalfredinterface
+	thingmessage --- controlsendmessage
+	controluseALFREDsendmessage --> controlsendmessage
+	thingalfredinterface --> controlsendmessage
+	thingALFRED --- controluseALFREDsendmessage
+	thingalfredinterface --> controluseALFREDsendmessage
+
+@enduml

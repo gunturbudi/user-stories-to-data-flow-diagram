@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Security Requirement,shape=partialRectangle,null,null,data_base
+202,", Staff Member",rounded=0,null,null,external_entity
+203,Know The Security Requirements Of The Data,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Security Requirement,endArrow=classic,203,201,endArrow=classic
+207,Datum,endArrow=classic,203,200,endArrow=classic

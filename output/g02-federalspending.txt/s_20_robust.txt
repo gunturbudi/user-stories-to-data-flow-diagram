@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Flexfield" as thingflexfield
+	entity "Performance Impact" as thingperformanceimpact #grey
+	actor "Agency User" as actoragencyuser
+	circle "Large Number" as thinglargenumber
+	boundary "Impact\nInterface" as thingimpactinterface #grey
+	control "Include A\nLarge Number\nOf Flexfields\nWithout Performance\nImpact" as controlincludelargenumber
+
+	thingperformanceimpact <.. thingflexfield
+	thingflexfield *-- thinglargenumber
+	thingperformanceimpact *-- thinglargenumber
+	actoragencyuser --- thingimpactinterface
+	thinglargenumber --- controlincludelargenumber
+	thingflexfield --- controlincludelargenumber
+	thingperformanceimpact --- controlincludelargenumber
+	thingimpactinterface --> controlincludelargenumber
+
+@enduml

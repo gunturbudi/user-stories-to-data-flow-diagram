@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,"Visual ,\nUx Design",shape=partialRectangle,null,null,data_base
+201,Content >,shape=partialRectangle,null,null,data_base
+202,Work,shape=partialRectangle,null,null,data_base
+203,Team Member,rounded=0,null,null,external_entity
+204,"Understand Work Between Visual, Ux Design",ellipse,null,null,process
+205,Understand Work Between Content >,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Work,endArrow=classic,204,202,endArrow=classic
+210,"Visual ,\nUx Design",endArrow=classic,204,200,endArrow=classic
+211,Content >,endArrow=classic,205,201,endArrow=classic
+212,Work,endArrow=classic,205,202,endArrow=classic

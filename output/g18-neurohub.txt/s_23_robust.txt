@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype
+	entity "Bespoke Information" as thingbespokeinformation
+	entity "Dependent File" as thingdependentfile
+	actor "User" as actoruser
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Assign Bespoke\nInformation To\nA Dependent\nFile On\nType" as controlassignbespokeinformationdependentfile
+
+	thingdependentfile <.. thingbespokeinformation
+	thingtype <.. thingdependentfile
+	actoruser --- thingtypeinterface
+	thingbespokeinformation --- controlassignbespokeinformationdependentfile
+	thingdependentfile --- controlassignbespokeinformationdependentfile
+	thingtype --- controlassignbespokeinformationdependentfile
+	thingtypeinterface --> controlassignbespokeinformationdependentfile
+
+@enduml

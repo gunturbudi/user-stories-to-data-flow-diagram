@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingDataPackage
+	entity "Datum" as thingdata
+	entity "Sqlite Database" as thingsqlitedatabase
+	actor "Consumer" as actorconsumer
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	control "Download Coherent\nSqlite Database" as controldownloadcoherentsqlitedatabase
+	control "Download A\nDatapackage's Data" as controldownloaddata
+
+	thingDataPackage <.. thingdata
+	actorconsumer --- thingdatabaseinterface
+	actorconsumer --- thingdatainterface
+	thingsqlitedatabase --- controldownloadcoherentsqlitedatabase
+	thingdatabaseinterface --> controldownloadcoherentsqlitedatabase
+	thingdata --- controldownloaddata
+	thingdatainterface --> controldownloaddata
+
+@enduml

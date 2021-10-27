@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "New Research" as thingnewresearch
+	entity "Content" as thingcontent
+	entity "Suitable ,\nTimely Research" as thingsuitabletimelyresearch
+	entity "Relevant" as thingrelevant
+	entity "Use" as thinguse
+	entity "Curriculum" as thingcurriculum
+	actor "Teachingfacultymember" as actorteachingfacultymember
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Relevant\nInterface" as thingrelevantinterface #grey
+	control "Notified Identify\nSuitable, Timely\nResearch For\nUse In\nCurriculum Of\nNew Research" as controlidentifysuitabletimelyresearchnewresearch
+	control "Notified Identify\nSuitable, Timely\nResearch For\nUse In\nCurriculum Of\nContent" as controlidentifysuitabletimelyresearchcontent
+	control "Identify Relevant" as controlidentifyrelevant
+
+	thinguse <.. thingsuitabletimelyresearch
+	thingcurriculum <.. thinguse
+	thingnewresearch <.. thingcurriculum
+	thingcontent <.. thingcurriculum
+	actorteachingfacultymember --- thingresearchinterface
+	actorteachingfacultymember --- thingcontentinterface
+	actorteachingfacultymember --- thingrelevantinterface
+	thingsuitabletimelyresearch --- controlidentifysuitabletimelyresearchnewresearch
+	thinguse --- controlidentifysuitabletimelyresearchnewresearch
+	thingcurriculum --- controlidentifysuitabletimelyresearchnewresearch
+	thingnewresearch --- controlidentifysuitabletimelyresearchnewresearch
+	thingresearchinterface --> controlidentifysuitabletimelyresearchnewresearch
+	thingcontent --- controlidentifysuitabletimelyresearchcontent
+	thingcontentinterface --> controlidentifysuitabletimelyresearchcontent
+	thingsuitabletimelyresearch --- controlidentifysuitabletimelyresearchcontent
+	thinguse --- controlidentifysuitabletimelyresearchcontent
+	thingcurriculum --- controlidentifysuitabletimelyresearchcontent
+	thingrelevant --- controlidentifyrelevant
+	thingrelevantinterface --> controlidentifyrelevant
+
+@enduml

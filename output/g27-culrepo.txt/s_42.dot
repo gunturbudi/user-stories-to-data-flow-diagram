@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Author " color=red];
+201 [label="<f0>  |<f1> Need Resource " ];
+202 [label="<f0>  |<f1> Content " color=red];
+203 [label="<f0>  |<f1> Subject Area " color=red];
+204 [label="Patron" shape=box];
+205 [label="{<f0> 1.0|<f1> Browse Content By Author }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Locate Needed Resources }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Browse Content By Subject Area }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 206
+205 -> 202 [label="Content"]
+205 -> 200 [label="Author"]
+206 -> 201 [label="Need Resource"]
+207 -> 203 [label="Subject Area"]
+207 -> 202 [label="Content"]
+}

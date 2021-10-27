@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publisher" as thingpublisher
+	entity "Email" as thingemail
+	actor "Owner" as actorowner
+	circle "Member" as thingmember
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	control "Invite Someone" as controlinvitesomeoneuseemailsignmember
+	control "Sign Up\nA Member\nOf Publisher" as controlsignmember
+	control "Using Email" as controluseemailsignmember
+	control "Become A\nMember Of\nPublisher" as controlbecomepublisher
+
+	thingpublisher *-- thingmember
+	actorowner --- thingemailinterface
+	actorowner --- thingpublisherinterface
+	thingemailinterface --> controlinvitesomeoneuseemailsignmember
+	controluseemailsignmember --> controlsignmember
+	thingmember --- controlsignmember
+	thingpublisher --- controlsignmember
+	thingpublisherinterface --> controlsignmember
+	controlinvitesomeoneuseemailsignmember --> controluseemailsignmember
+	thingemail --- controluseemailsignmember
+	thingemailinterface --> controluseemailsignmember
+	thingpublisher --- controlbecomepublisher
+	thingpublisherinterface --> controlbecomepublisher
+	controluseemailsignmember --> controlbecomepublisher
+
+@enduml

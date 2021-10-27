@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Digital Object,shape=partialRectangle,null,null,data_base
+201,Preservation Standard,shape=partialRectangle,null,null,data_base
+202,Access Purpose,shape=partialRectangle,null,null,data_base
+203,Archivist,rounded=0,null,null,external_entity
+204,Distinguish Between Digital Objects To Preservation Standards,ellipse,null,null,process
+205,Distinguish Between Digital Objects To Only Those For Access Purposes,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Digital Object,endArrow=classic,204,200,endArrow=classic
+210,Preservation Standard,endArrow=classic,204,201,endArrow=classic
+211,Access Purpose,endArrow=classic,205,202,endArrow=classic
+212,Digital Object,endArrow=classic,205,200,endArrow=classic

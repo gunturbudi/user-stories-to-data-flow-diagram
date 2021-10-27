@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Session" as thingsession
+	entity "Sponsor Attendee" as thingsponsorattendee
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Attendee\nInterface" as thingattendeeinterface #grey
+	control "See A\nList Of\nThe Sessions\nWith Sponsor\nAttendees" as controlseelist
+
+	thingsponsorattendee <.. thingsession
+	actoranonymoususer --- thingattendeeinterface
+	thingsession --- controlseelist
+	thingsponsorattendee --- controlseelist
+	thingattendeeinterface --> controlseelist
+
+@enduml

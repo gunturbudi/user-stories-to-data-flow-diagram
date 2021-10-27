@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search" as thingsearch
+	entity "Information" as thinginformation #grey
+	entity "Metadata" as thingmetadata
+	entity "Tag" as thingtag
+	entity "High­level" as thinghigh­level
+	entity "Asset" as thingasset #grey
+	actor "Admin" as actoradmin
+	boundary "Content" as thingcontentusesearchadmin #grey
+	control "Prefilter" as controlprefiltercontentusesearchadmin
+	control "Use Search\nOn High­Level\nAsset Information\nSuch As\nMetadata" as controlusesearch
+	control "Use Search\nOn High­Level\nInformation Such\nAs Tag" as controlusesearchtag
+
+	thinghigh­level <.. thingsearch
+	thinginformation <.. thingsearch
+	thingasset <.. thinginformation
+	thingmetadata <.. thinginformation
+	actoradmin --- thingcontentusesearchadmin
+	thingcontentusesearchadmin --> controlprefiltercontentusesearchadmin
+	controlprefiltercontentusesearchadmin --> controlusesearch
+	thingsearch --- controlusesearch
+	thinghigh­level --- controlusesearch
+	thingmetadata --- controlusesearch
+	thingcontentusesearchadmin --> controlusesearch
+	thinginformation --- controlusesearch
+	thingtag --- controlusesearchtag
+	thinginformation --- controlusesearchtag
+	thingsearch --- controlusesearchtag
+	thinghigh­level --- controlusesearchtag
+	thingcontentusesearchadmin --> controlusesearchtag
+	controlprefiltercontentusesearchadmin --> controlusesearchtag
+
+@enduml

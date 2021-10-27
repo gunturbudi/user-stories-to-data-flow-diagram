@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cloud .\nGov" as thingcloud.gov
+	entity "Dis" as thingDIS
+	actor "Team Member" as actorteammember
+	boundary "Dis\nInterface" as thingdisinterface #grey
+	boundary "Cloud.Gov\nInterface" as thingcloudgovinterface #grey
+	control "Meet With\nDis" as controlmeetDIS
+	control "Meet With\nCloud.Gov" as controlmeetcloud.gov
+
+	actorteammember --- thingdisinterface
+	actorteammember --- thingcloudgovinterface
+	thingDIS --- controlmeetDIS
+	thingdisinterface --> controlmeetDIS
+	thingcloud.gov --- controlmeetcloud.gov
+	thingcloudgovinterface --> controlmeetcloud.gov
+
+@enduml

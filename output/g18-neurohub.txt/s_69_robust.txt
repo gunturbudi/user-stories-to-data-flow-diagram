@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Notification" as thingnotification
+	entity "Mendeley" as thingmendeley
+	entity "Research Paper" as thingresearchpaper
+	actor "Researcher" as actorresearcher
+	circle "Shared ,\nGroup ,\nWide Repository" as thingsharedgroupwiderepository
+	circle "Client" as thingclient #grey
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	boundary "Mendeley\nInterface" as thingmendeleyinterface #grey
+	control "Point Mendeley\nClient At\nA Shared,\nGroup, Wide\nRepository Of\nResearch Papers" as controlpointmendeleyclientsharedgroupwiderepository
+	control "Get Notifications\nVia Mendeley" as controlgetnotification
+
+	thingmendeley <.. thingnotification
+	thingresearchpaper *-- thingsharedgroupwiderepository
+	thingsharedgroupwiderepository *-- thingclient
+	thingmendeley *-- thingclient
+	actorresearcher --- thingpaperinterface
+	actorresearcher --- thingmendeleyinterface
+	thingclient --- controlpointmendeleyclientsharedgroupwiderepository
+	thingsharedgroupwiderepository --- controlpointmendeleyclientsharedgroupwiderepository
+	thingresearchpaper --- controlpointmendeleyclientsharedgroupwiderepository
+	thingpaperinterface --> controlpointmendeleyclientsharedgroupwiderepository
+	thingnotification --- controlgetnotification
+	thingmendeley --- controlgetnotification
+	thingmendeleyinterface --> controlgetnotification
+
+@enduml

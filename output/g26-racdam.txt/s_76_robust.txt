@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	actor "Researcher" as actorresearcher
+	boundary "Date\nInterface" as thingdateinterface #grey
+	control "Know The\nDate On\nWhich Something\nDigitized" as controlknowdate
+
+	actorresearcher --- thingdateinterface
+	thingdate --- controlknowdate
+	thingdateinterface --> controlknowdate
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Blank" as thingblank
+	entity "Loan Record" as thingloanrecord
+	entity "Zero" as thingzero
+	actor "Agency User" as actoragencyuser
+	boundary "Validation Fabs\nRule" as thingvalidationfabsrulesagencyuser
+	boundary "Rule" as thingruleagencyuser #grey
+	control "Accept Zero\nFor Loan\nRecords" as controlacceptvalidationfabsrulesagencyuserzeroloanrecord
+	control "Accept Blank" as controlacceptruleagencyuserblank
+
+	actoragencyuser --- thingvalidationfabsrulesagencyuser
+	actoragencyuser --- thingruleagencyuser
+	thingvalidationfabsrulesagencyuser --> controlacceptvalidationfabsrulesagencyuserzeroloanrecord
+	thingzero --- controlacceptvalidationfabsrulesagencyuserzeroloanrecord
+	thingloanrecord --- controlacceptvalidationfabsrulesagencyuserzeroloanrecord
+	thingruleagencyuser --> controlacceptruleagencyuserblank
+	thingblank --- controlacceptruleagencyuserblank
+
+@enduml

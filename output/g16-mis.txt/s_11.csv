@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Remote Status,shape=partialRectangle,null,null,data_base
+201,Staff Interface,shape=partialRectangle,null,null,data_base
+202,Replication,shape=partialRectangle,null,null,data_base
+203,Collection,shape=partialRectangle,null,null,data_base
+204,Item,shape=partialRectangle,null,null,data_base
+205,Component Page,shape=partialRectangle,null,null,data_base
+206,Repository,shape=partialRectangle,null,null,data_base
+207,Storage Site,shape=partialRectangle,null,null,data_base
+208,Collection Curator,rounded=0,null,null,external_entity
+209,Have,ellipse,null,null,process
+210,Display The Remote Status In Component Page,ellipse,null,null,process
+211,Display The Remote Replication Status In Each Item In The Staff Interface,ellipse,null,null,process
+213,,endArrow=classic,208,210,endArrow=classic
+214,,endArrow=classic,208,211,endArrow=classic
+215,Remote Status,endArrow=classic,210,200,endArrow=classic
+216,Component Page,endArrow=classic,210,205,endArrow=classic
+217,Item,endArrow=classic,211,204,endArrow=classic
+218,Staff Interface,endArrow=classic,211,201,endArrow=classic
+221,Replication,endArrow=classic,211,202,endArrow=classic

@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Calendar" as thingcalendar
+	entity "Future Date" as thingfuturedate #grey
+	entity "Dataset" as thingdataset
+	entity "Report" as thingreport
+	entity "Patron Fyi" as thingpatronfyi
+	entity "Release Date" as thingreleasedate
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Fyi\nInterface" as thingfyiinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Add Future\nRelease Dates\nOf Reports\nTo Calendar\nFor Patron\nFyi" as controladdfuturereleasedatescalendarpatronFYI
+	control "Add Future\nDates Of\nDataset" as controladdfuturedatedataset
+
+	thingpatronfyi <.. thingcalendar
+	thingdataset <.. thingfuturedate
+	thingcalendar <.. thingreport
+	thingreport <.. thingreleasedate
+	actordb --- thingfyiinterface
+	actoriradministrator --- thingfyiinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	thingreleasedate --- controladdfuturereleasedatescalendarpatronFYI
+	thingreport --- controladdfuturereleasedatescalendarpatronFYI
+	thingpatronfyi --- controladdfuturereleasedatescalendarpatronFYI
+	thingfyiinterface --> controladdfuturereleasedatescalendarpatronFYI
+	thingcalendar --- controladdfuturereleasedatescalendarpatronFYI
+	thingfuturedate --- controladdfuturedatedataset
+	thingdataset --- controladdfuturedatedataset
+	thingdatasetinterface --> controladdfuturedatedataset
+
+@enduml

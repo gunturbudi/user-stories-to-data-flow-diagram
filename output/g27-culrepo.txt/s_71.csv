@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+3,Deliver the fullest picture of my research,ellipse,null,null,process
+200,", Scholarly\nWork",shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Access,shape=partialRectangle,null,null,data_base
+203,Faculty Member,rounded=0,null,null,external_entity
+204,"Associate Files With Such, Scholarly Works",ellipse,null,null,process
+205,Access The Latter,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,File,endArrow=classic,204,201,endArrow=classic
+209,", Scholarly\nWork",endArrow=classic,204,200,endArrow=classic
+211,Access,endArrow=classic,205,202,endArrow=classic
+1000,,endArrow=classic,203,3,endArrow=classic
+1001,Research,rounded=0,null,null,external_entity
+1002,Research,endArrow=classic,3,1001,endArrow=classic

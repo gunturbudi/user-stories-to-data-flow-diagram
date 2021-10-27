@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "Table" as thingtable
+	entity "Html Tag" as thinghtmltag
+	actor "User" as actoruser
+	circle "Content" as thingcontent
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Draw Tables\nUsing Html\nTags As\nPart Of\nThe Content\nOf A\nLog Book\nPage" as controldrawtablehtmltagspart
+
+	thinghtmltag <.. thingtable
+	thingcontent <.. thinghtmltag
+	thinglogbookpage *-- thingcontent
+	actoruser --- thingpageinterface
+	thingtable --- controldrawtablehtmltagspart
+	thinghtmltag --- controldrawtablehtmltagspart
+	thingcontent --- controldrawtablehtmltagspart
+	thinglogbookpage --- controldrawtablehtmltagspart
+	thingpageinterface --> controldrawtablehtmltagspart
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Function" as thingfunction
+	entity "Control" as thingcontrol
+	entity "User Experience" as thinguserexperience
+	actor ", Games\nDeveloper" as actorseriousgamesdeveloper
+	boundary "Function\nInterface" as thingfunctioninterface #grey
+	control "Provide The\nDesired User\nExperience" as controlprovidedesireduserexperience
+	control "Take Control\nOver Some\nFunctions" as controltakecontrolfunctionprovidedesireduserexperience
+
+	thingfunction <.. thingcontrol
+	actorseriousgamesdeveloper --- thingfunctioninterface
+	thinguserexperience --- controlprovidedesireduserexperience
+	controltakecontrolfunctionprovidedesireduserexperience --> controlprovidedesireduserexperience
+	thingfunctioninterface --> controlprovidedesireduserexperience
+	thingcontrol --- controltakecontrolfunctionprovidedesireduserexperience
+	thingfunction --- controltakecontrolfunctionprovidedesireduserexperience
+	thingfunctioninterface --> controltakecontrolfunctionprovidedesireduserexperience
+
+@enduml

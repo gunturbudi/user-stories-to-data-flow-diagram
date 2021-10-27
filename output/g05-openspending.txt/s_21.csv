@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Social Network,shape=partialRectangle,null,null,data_base
+201,View State,shape=partialRectangle,null,null,data_base
+202,"Datum , Consume User",rounded=0,null,null,external_entity
+203,Share An Image Of A Particular View State To The Social Networks Support This,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,View State,endArrow=classic,203,201,endArrow=classic
+207,Social Network,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Item,shape=partialRectangle,null,null,data_base
+201,Moderator,rounded=0,null,null,external_entity
+202,Add An Item To The List Of Items,ellipse,null,null,process
+203,Estimated,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,Item,endArrow=classic,202,200,endArrow=classic

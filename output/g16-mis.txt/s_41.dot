@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collections Size " color=red];
+201 [label="<f0>  |<f1> Collection " color=red];
+202 [label="<f0>  |<f1> Item " color=red];
+203 [label="<f0>  |<f1> Component " ];
+204 [label="<f0>  |<f1> Dashboard Statistic " ];
+205 [label="Repository Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> View A Dashboard Statistics About Collections Size Including A List Of Collections }" shape=Mrecord];
+205 -> 206
+206 -> 204 [label="Dashboard Statistic"]
+206 -> 200 [label="Collections Size"]
+206 -> 201 [label="Collection"]
+}

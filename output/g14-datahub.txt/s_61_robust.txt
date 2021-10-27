@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Owner" as thingowner
+	entity "User" as thinguser
+	actor "Owner" as actorowner
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	control "Remove A\nUser As\nAn Owner" as controlremoveuserowner
+
+	thingowner <.. thinguser
+	actorowner --- thingownerinterface
+	thinguser --- controlremoveuserowner
+	thingowner --- controlremoveuserowner
+	thingownerinterface --> controlremoveuserowner
+
+@enduml

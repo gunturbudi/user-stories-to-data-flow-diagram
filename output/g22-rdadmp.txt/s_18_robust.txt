@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype #grey
+	entity "Kind" as thingkind
+	entity "Data" as thingdata #grey
+	actor "Data Manager" as actordatamanager
+	control "Know" as controlknow
+
+	thingdata <.. thingtype
+	thingtype *-- thingkind
+
+@enduml

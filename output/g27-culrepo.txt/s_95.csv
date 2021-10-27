@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Certain Collection,shape=partialRectangle,null,null,data_base
+201,Field,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,"Library , Staff Member",rounded=0,null,null,external_entity
+204,Create Custom Metadata Fields For Certain Collections,ellipse,null,null,process
+205,Allow Searching Of Those Fields,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Certain Collection,endArrow=classic,204,200,endArrow=classic
+210,Field,endArrow=classic,204,201,endArrow=classic
+211,Field,endArrow=classic,205,201,endArrow=classic
+212,Metadata,endArrow=classic,204,202,endArrow=classic

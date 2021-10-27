@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Similar Profile,shape=partialRectangle,null,null,data_base
+201,Content Recommendation,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Receive Content Recommendations From Similar Profiles,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Content Recommendation,endArrow=classic,203,201,endArrow=classic
+207,Similar Profile,endArrow=classic,203,200,endArrow=classic

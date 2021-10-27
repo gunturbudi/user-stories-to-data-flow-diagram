@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Working Paper" as thingworkingpaper
+	actor "Researcher" as actorresearcher
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	control "Access Tagged\nWorking Papers" as controlaccesstaggedworkingpapers
+
+	actorresearcher --- thingpaperinterface
+	thingworkingpaper --- controlaccesstaggedworkingpapers
+	thingpaperinterface --> controlaccesstaggedworkingpapers
+
+@enduml

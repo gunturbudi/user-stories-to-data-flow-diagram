@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Assigned Order" as thingassignedorder
+	entity "Object" as thingobject
+	actor "Dams Manager" as actordamsmanager
+	boundary "Component" as thingcomponentcompriseobjectdamsmanager #grey
+	control "Comprise An\nObject" as controlcompriseobject
+	control "Present In\nAssigned Order" as controlpresentassignedordercomponentcompriseobjectdamsmanager
+
+	actordamsmanager --- thingcomponentcompriseobjectdamsmanager
+	thingcomponentcompriseobjectdamsmanager --> controlcompriseobject
+	thingobject --- controlcompriseobject
+	controlpresentassignedordercomponentcompriseobjectdamsmanager --> controlcompriseobject
+	thingassignedorder --- controlpresentassignedordercomponentcompriseobjectdamsmanager
+	thingcomponentcompriseobjectdamsmanager --> controlpresentassignedordercomponentcompriseobjectdamsmanager
+
+@enduml

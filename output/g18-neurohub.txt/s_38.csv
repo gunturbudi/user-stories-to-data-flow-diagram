@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Experimental Run,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Capture The Same Metadata For Each File In An Experimental Run,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Metadata,endArrow=classic,204,202,endArrow=classic
+208,File,endArrow=classic,204,200,endArrow=classic
+209,Experimental Run,endArrow=classic,204,201,endArrow=classic

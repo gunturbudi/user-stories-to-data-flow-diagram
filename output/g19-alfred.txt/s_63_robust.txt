@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific Button" as thingspecificbutton
+	entity "Alfred" as thingALFRED
+	entity "Interaction Mode" as thinginteractionmode
+	actor "Olderperson" as actorOlderPerson
+	boundary "Button\nInterface" as thingbuttoninterface #grey
+	control "Activate The\nVocal Interaction\nMode Of\nAlfred" as controlactivatevocalinteractionmode
+	control "Pushing A\nSpecific Button" as controlpushactivatevocalinteractionmodespecificbutton
+
+	thingALFRED <.. thinginteractionmode
+	actorOlderPerson --- thingbuttoninterface
+	thinginteractionmode --- controlactivatevocalinteractionmode
+	thingALFRED --- controlactivatevocalinteractionmode
+	controlpushactivatevocalinteractionmodespecificbutton --> controlactivatevocalinteractionmode
+	thingbuttoninterface --> controlactivatevocalinteractionmode
+	thingspecificbutton --- controlpushactivatevocalinteractionmodespecificbutton
+	thingbuttoninterface --> controlpushactivatevocalinteractionmodespecificbutton
+
+@enduml

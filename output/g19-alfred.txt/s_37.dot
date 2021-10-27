@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Night " ];
+201 [label="<f0>  |<f1> Rythm Support " color=red];
+202 [label="<f0>  |<f1> Agenda Reminder " color=red];
+203 [label="Olderperson" shape=box];
+204 [label="{<f0> 1.0|<f1> Receive Day Rythm Support With Agenda Reminders }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Receive Night }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Rythm Support"]
+204 -> 202 [label="Agenda Reminder"]
+205 -> 200 [label="Night"]
+}

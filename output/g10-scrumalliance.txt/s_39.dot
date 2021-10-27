@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Faq " ];
+201 [label="<f0>  |<f1> Text Search " ];
+202 [label="Site Visitor" shape=box];
+203 [label="{<f0> 1.0|<f1> Do A Full Text Search Of The Faqs }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Text Search"]
+203 -> 200 [label="Faq"]
+}

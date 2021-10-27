@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Deposit File " ];
+201 [label="Datum Reuser" shape=box];
+202 [label="{<f0> 1.0|<f1> Examine Deposited Files }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Identify Deposited Files }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Deposit File"]
+203 -> 200 [label="Deposit File"]
+}

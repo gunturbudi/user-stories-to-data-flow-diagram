@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Collection Component " ];
+202 [label="<f0>  |<f1> Title Entity " color=red];
+203 [label="<f0>  |<f1> Date " color=red];
+204 [label="<f0>  |<f1> Name " color=red];
+205 [label="<f0>  |<f1> Subject " color=red];
+206 [label="Repository Manager" shape=box];
+207 [label="{<f0> 1.0|<f1> Describe Various Facets Of Object }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Subject }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Date }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Title Entities }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Name }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+207 -> 200 [label="Object"]
+208 -> 205 [label="Subject"]
+208 -> 201 [label="Collection Component"]
+209 -> 203 [label="Date"]
+209 -> 201 [label="Collection Component"]
+210 -> 201 [label="Collection Component"]
+210 -> 202 [label="Title Entity"]
+211 -> 204 [label="Name"]
+211 -> 201 [label="Collection Component"]
+}

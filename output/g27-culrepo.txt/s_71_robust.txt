@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity ", Scholarly\nWork" as thingsuchscholarlywork
+	entity "File" as thingfile
+	entity "Access" as thingaccess
+	actor "Faculty Member" as actorfacultymember
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Associate Files\nWith Such,\nScholarly Works" as controlassociatefile
+	control "Access The\nLatter" as controlaccesslatter
+
+	thingsuchscholarlywork <.. thingfile
+	actorfacultymember --- thingworkinterface
+	thingfile --- controlassociatefile
+	thingsuchscholarlywork --- controlassociatefile
+	thingworkinterface --> controlassociatefile
+
+@enduml

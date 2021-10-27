@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Account" as thingaccount
+	actor "Publisher" as actorpublisher
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	control "Sign Up\nFor An\nAccount" as controlsignaccount
+
+	actorpublisher --- thingaccountinterface
+	thingaccount --- controlsignaccount
+	thingaccountinterface --> controlsignaccount
+
+@enduml

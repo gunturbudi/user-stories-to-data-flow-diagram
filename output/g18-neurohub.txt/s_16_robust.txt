@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Web Browser" as thingwebbrowser #grey
+	entity "File" as thingfile
+	actor "Researcher" as actorresearcher
+	boundary "Experiment" as thingexperimentusewebbrowserresearcher #grey
+	control "Use Web\nBrowser" as controlusewebbrowser
+	control "Download Files\nTo" as controldownloadfile
+
+	actorresearcher --- thingexperimentusewebbrowserresearcher
+	thingexperimentusewebbrowserresearcher --> controlusewebbrowser
+	thingwebbrowser --- controlusewebbrowser
+	controldownloadfile --> controlusewebbrowser
+	thingfile --- controldownloadfile
+	thingexperimentusewebbrowserresearcher --> controldownloadfile
+
+@enduml

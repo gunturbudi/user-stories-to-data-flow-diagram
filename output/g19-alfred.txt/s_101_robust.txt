@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	entity "Favourite Sport" as thingfavouritesport
+	actor "Olderperson" as actorOlderPerson
+	boundary "Sport\nInterface" as thingsportinterface #grey
+	control "Have Games\nInclude Favourite\nSports" as controlhavegame
+
+	thingfavouritesport <.. thinggame
+	actorOlderPerson --- thingsportinterface
+	thinggame --- controlhavegame
+	thingfavouritesport --- controlhavegame
+	thingsportinterface --> controlhavegame
+
+@enduml

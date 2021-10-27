@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Permission,shape=partialRectangle,null,null,data_base
+201,Restriction,shape=partialRectangle,null,null,data_base
+202,Date,shape=partialRectangle,null,null,data_base
+203,Dams Manager,rounded=0,null,null,external_entity
+204,Provided Know The Dates Restriction When Is,ellipse,null,null,process
+205,Provided Know The Dates A Permission When Is Active,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Restriction,endArrow=classic,204,201,endArrow=classic
+210,Date,endArrow=classic,204,202,endArrow=classic
+211,Date,endArrow=classic,205,202,endArrow=classic
+212,Permission,endArrow=classic,205,200,endArrow=classic

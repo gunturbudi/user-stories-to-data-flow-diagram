@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Priority Workflow\nCandidate" as thingpriorityworkflowcandidate
+	actor "User Researcher" as actoruserresearcher
+	boundary "Candidate\nInterface" as thingcandidateinterface #grey
+	control "Have A\nList Of\nPriority Workflow\nCandidates" as controlhavelist
+
+	actoruserresearcher --- thingcandidateinterface
+	thingpriorityworkflowcandidate --- controlhavelist
+	thingcandidateinterface --> controlhavelist
+
+@enduml

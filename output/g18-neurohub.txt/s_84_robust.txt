@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Detailed Datum" as thingdetaileddatum #grey
+	entity "Entry" as thingentry
+	entity "Meta" as thingmeta #grey
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityattachdetaileddatumentryresearcher #grey
+	control "Attach Detailed\nMeta Data\nTo The\nData" as controlattachdetailedmetadatadatum
+	control "Have" as controlhaveabilityattachdetaileddatumabilityattachdetaileddatumentryresearcher
+	control "Attach Detailed\nData To\nEntry" as controlattachdetaileddatumentry
+	control "Attach Detailed\nData To" as controlattachdetaileddatum #grey
+
+	thingmeta <.. thingdatum
+	actorresearcher --- thingabilityattachdetaileddatumentryresearcher
+	thingdatum --- controlattachdetailedmetadatadatum
+	thingabilityattachdetaileddatumentryresearcher --> controlattachdetailedmetadatadatum
+	controlhaveabilityattachdetaileddatumabilityattachdetaileddatumentryresearcher --> controlattachdetailedmetadatadatum
+	thingabilityattachdetaileddatumentryresearcher --> controlhaveabilityattachdetaileddatumabilityattachdetaileddatumentryresearcher
+	controlhaveabilityattachdetaileddatumabilityattachdetaileddatumentryresearcher --> controlattachdetaileddatumentry
+	thingentry --- controlattachdetaileddatumentry
+	thingabilityattachdetaileddatumentryresearcher --> controlattachdetaileddatumentry
+	thingdetaileddatum --- controlattachdetaileddatumentry
+	controlhaveabilityattachdetaileddatumabilityattachdetaileddatumentryresearcher --> controlattachdetaileddatum
+	thingdetaileddatum --- controlattachdetaileddatum
+
+@enduml

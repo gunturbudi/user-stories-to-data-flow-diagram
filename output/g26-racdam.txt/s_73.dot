@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Image " color=red];
+201 [label="<f0>  |<f1> Color " ];
+202 [label="<f0>  |<f1> Black " ];
+203 [label="<f0>  |<f1> White " ];
+204 [label="Archivist" shape=box];
+205 [label="{<f0> 1.0|<f1> Distinguish Between Images In Black }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Distinguish Between Images In White }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Distinguish Between Images In Color }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 202 [label="Black"]
+205 -> 200 [label="Image"]
+206 -> 203 [label="White"]
+206 -> 200 [label="Image"]
+207 -> 200 [label="Image"]
+207 -> 201 [label="Color"]
+}

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Patron,shape=partialRectangle,null,null,data_base
+201,Relationship Group,shape=partialRectangle,null,null,data_base
+202,Db,rounded=0,null,null,external_entity
+203,Ir Administrator,rounded=0,null,null,external_entity
+204,Manage Customizable Relationship Groups In Support Of Patron,ellipse,null,null,process
+206,,endArrow=classic,202,204,endArrow=classic
+207,,endArrow=classic,203,204,endArrow=classic
+208,Relationship Group,endArrow=classic,204,201,endArrow=classic
+209,Patron,endArrow=classic,204,200,endArrow=classic

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Feedback" as thingfeedback
+	entity "Activity Level" as thingactivitylevel #grey
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Have Feedback\nOn The\nActivity Level\nOf The\nUser" as controlhavefeedback
+
+	thingactivitylevel <.. thingfeedback
+	thinguser <.. thingactivitylevel
+	actorMedicalCaregiver --- thinguserinterface
+	thingfeedback --- controlhavefeedback
+	thingactivitylevel --- controlhavefeedback
+	thinguser --- controlhavefeedback
+	thinguserinterface --> controlhavefeedback
+
+@enduml

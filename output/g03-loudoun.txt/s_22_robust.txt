@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Planning ,\nRelated Report" as thingplanningrelatedreport
+	actor "Planning ,\nStaff Member" as actorplanningstaffmember
+	boundary "Report\nInterface" as thingreportinterface #grey
+	control "Generate Planning,\nRelated Reports" as controlgenerateplanningrelatedreport
+
+	actorplanningstaffmember --- thingreportinterface
+	thingplanningrelatedreport --- controlgenerateplanningrelatedreport
+	thingreportinterface --> controlgenerateplanningrelatedreport
+
+@enduml

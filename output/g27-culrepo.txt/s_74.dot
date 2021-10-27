@@ -1,0 +1,35 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Periodic Reminder " ];
+201 [label="<f0>  |<f1> Attention " ];
+202 [label="<f0>  |<f1> Approval Step " ];
+203 [label="<f0>  |<f1> Historical " color=red];
+204 [label="<f0>  |<f1> Ingestion " ];
+205 [label="<f0>  |<f1> Knowledge Collection " color=red];
+206 [label="<f0>  |<f1> Ir Reminder " ];
+207 [label="Extension Administrator" shape=box];
+208 [label="Staff , Content Manager" shape=box];
+209 [label="{<f0> 1.0|<f1> Move From A Current Knowledge Collection To Historical }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Get Periodic Reminders Something When Needs Attention Including Something Need }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Get Periodic Ir Reminders Something When Needs Attention Including Next Ingestion }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> Get Periodic Reminders Something When Needs Attention Including Approval Step }" shape=Mrecord];
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+208 -> 209
+208 -> 210
+208 -> 211
+208 -> 212
+209 -> 205 [label="Knowledge Collection"]
+209 -> 203 [label="Historical"]
+210 -> 209
+210 -> 200 [label="Periodic Reminder"]
+210 -> 201 [label="Attention"]
+211 -> 206 [label="Ir Reminder"]
+211 -> 201 [label="Attention"]
+211 -> 204 [label="Ingestion"]
+212 -> 200 [label="Periodic Reminder"]
+212 -> 202 [label="Approval Step"]
+212 -> 201 [label="Attention"]
+}

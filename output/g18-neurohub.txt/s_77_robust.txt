@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Electronic Book" as thingelectronicbook #grey
+	entity "System" as thingsystem
+	entity "Experimental Datum" as thingexperimentaldata
+	entity "Bad Datum" as thingbaddatum
+	entity "Log Book" as thinglogbook
+	actor "Researcher" as actorresearcher
+	boundary "Data\nInterface" as thingdatainterface #grey
+	control "Indicate Within\nElectronic Log\nBook Experimental\nData" as controlindicateelectroniclogbookexperimentaldata
+	control "Bad Indicate\nWithin Electronic\nBook Experimental\nData" as controlindicateelectronicbookexperimentaldata #grey
+	control "Hide The\nBad Data" as controlhidebaddatum #grey
+	control "Keep Which\nThe Bad\nData In\nThe System" as controlkeepbaddatumwhichsystem #grey
+
+	thingexperimentaldata <.. thinglogbook
+	actorresearcher --- thingdatainterface
+	thinglogbook --- controlindicateelectroniclogbookexperimentaldata
+	thingexperimentaldata --- controlindicateelectroniclogbookexperimentaldata
+	thingdatainterface --> controlindicateelectroniclogbookexperimentaldata
+	thingelectronicbook --- controlindicateelectronicbookexperimentaldata
+	thingexperimentaldata --- controlindicateelectronicbookexperimentaldata
+	thingbaddatum --- controlhidebaddatum
+	thingsystem --- controlkeepbaddatumwhichsystem
+	thingbaddatum --- controlkeepbaddatumwhichsystem
+
+@enduml

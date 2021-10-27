@@ -1,0 +1,50 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Read" as thingread
+	entity "Subject" as thingsubject
+	entity "View" as thingview
+	entity "Accession" as thingaccession
+	entity "Extent" as thingextent
+	entity "Resource" as thingresource
+	actor "Archivist" as actorarchivist
+	boundary "Extent\nInterface" as thingextentinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Read\nInterface" as thingreadinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	control "See Extent" as controlseeextent
+	control "Edit Views\nFor Accessions\nBefore The\nList Of\nSubjects" as controleditviewlist
+	control "See Dates\nIn The\nRead" as controlseedate
+	control "See Dates\nIn" as controlseedateeditviewlist
+	control "Edit Views\nFor Resource" as controleditviewresource
+
+	thingread <.. thingdate
+	thingaccession <.. thingview
+	thingresource <.. thingview
+	thingsubject <.. thingaccession
+	actorarchivist --- thingextentinterface
+	actorarchivist --- thingdateinterface
+	actorarchivist --- thingreadinterface
+	actorarchivist --- thingviewinterface
+	thingextent --- controlseeextent
+	thingextentinterface --> controlseeextent
+	thingview --- controleditviewlist
+	thingaccession --- controleditviewlist
+	controlseedateeditviewlist --> controleditviewlist
+	thingdateinterface --> controleditviewlist
+	thingsubject --- controleditviewlist
+	thingdate --- controlseedate
+	thingread --- controlseedate
+	thingreadinterface --> controlseedate
+	thingdateinterface --> controlseedateeditviewlist
+	thingdate --- controlseedateeditviewlist
+	thingview --- controlseedateeditviewlist
+	thingresource --- controleditviewresource
+	thingviewinterface --> controleditviewresource
+	thingview --- controleditviewresource
+	controlseedateeditviewlist --> controleditviewresource
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recommendation" as thingrecommendation
+	entity "Content Design" as thingcontentdesign
+	actor "Content Designer" as actorcontentdesigner
+	circle "Value" as thingvalue
+	boundary "Recommendation\nInterface" as thingrecommendationinterface #grey
+	control "Ensure" as controlensure
+	control "Demonstrate The\nValue Of\nUser, Centered\nContent Design\n'S An\nIntegral Part\nOf Recommendations" as controldemonstratevalueensurerecommendation
+
+	thingrecommendation <.. thingcontentdesign
+	thingcontentdesign *-- thingvalue
+	actorcontentdesigner --- thingrecommendationinterface
+	controldemonstratevalueensurerecommendation --> controlensure
+	thingrecommendationinterface --> controlensure
+	thingvalue --- controldemonstratevalueensurerecommendation
+	thingcontentdesign --- controldemonstratevalueensurerecommendation
+	thingrecommendation --- controldemonstratevalueensurerecommendation
+	thingrecommendationinterface --> controldemonstratevalueensurerecommendation
+
+@enduml

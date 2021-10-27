@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+4,Raise the profile of my work,ellipse,null,null,process
+200,Publication,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Access Point,shape=partialRectangle,null,null,data_base
+203,Faculty Member,rounded=0,null,null,external_entity
+204,Collect Publications,ellipse,null,null,process
+205,"Collect Those Within The Repository Into A Online, Single Access Point",ellipse,null,null,process
+206,Collect Those Without,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,Publication,endArrow=classic,204,200,endArrow=classic
+211,Repository,endArrow=classic,205,201,endArrow=classic
+212,Access Point,endArrow=classic,205,202,endArrow=classic
+1000,,endArrow=classic,205,4,endArrow=classic
+1001,Work,rounded=0,null,null,external_entity
+1002,Work,endArrow=classic,4,1001,endArrow=classic

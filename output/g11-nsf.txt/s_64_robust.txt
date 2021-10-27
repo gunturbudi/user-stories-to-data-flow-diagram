@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Research" as thingresearch
+	entity "Contact Information" as thingcontactinformation #grey
+	actor "Potential ,\nResearch Participant" as actorpotentialresearchparticipant
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Learn About\nThe Research" as controllearnresearch
+	control "Leave Contact\nInformation" as controlleavecontactinformation
+
+	actorpotentialresearchparticipant --- thingresearchinterface
+	actorpotentialresearchparticipant --- thinginformationinterface
+	thingresearch --- controllearnresearch
+	thingresearchinterface --> controllearnresearch
+	thingcontactinformation --- controlleavecontactinformation
+	thinginformationinterface --> controlleavecontactinformation
+
+@enduml

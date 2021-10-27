@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Area" as thingarea
+	entity "Map Display" as thingmapdisplay #grey
+	entity "Recycling Bin" as thingrecyclingbin
+	actor "User" as actoruser
+	boundary "Area\nInterface" as thingareainterface #grey
+	control "View A\nMap Display\nOf The\nPublic Recycling\nBins Around\nArea" as controlviewmapdisplay
+
+	thingrecyclingbin <.. thingmapdisplay
+	thingarea <.. thingrecyclingbin
+	actoruser --- thingareainterface
+	thingmapdisplay --- controlviewmapdisplay
+	thingrecyclingbin --- controlviewmapdisplay
+	thingarea --- controlviewmapdisplay
+	thingareainterface --> controlviewmapdisplay
+
+@enduml

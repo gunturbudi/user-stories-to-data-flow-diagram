@@ -1,0 +1,27 @@
+id,value,style,source,target,type
+200,Associated File,shape=partialRectangle,null,null,data_base
+201,Record,shape=partialRectangle,null,null,data_base
+202,System,shape=partialRectangle,null,null,data_base
+203,Uniform Error,shape=partialRectangle,null,null,data_base
+204,Datum,shape=partialRectangle,null,null,data_base
+205,Collection,shape=partialRectangle,null,null,data_base
+206,"Repository , Support , Team Member",rounded=0,null,null,external_entity
+207,Export A Set Of Records,ellipse,null,null,process
+208,Export A Set Of Associated File,ellipse,null,null,process
+209,Manipulate,ellipse,null,null,process
+210,Reload Into The System,ellipse,null,null,process
+211,Manipulate This Data,ellipse,null,null,process
+212,Am Aware Of A Uniform Error In A Collection,ellipse,null,null,process
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,206,210,endArrow=classic
+218,,endArrow=classic,206,211,endArrow=classic
+219,,endArrow=classic,206,212,endArrow=classic
+220,Record,endArrow=classic,207,201,endArrow=classic
+221,Associated File,endArrow=classic,208,200,endArrow=classic
+222,,endArrow=classic,209,210,endArrow=classic
+223,System,endArrow=classic,210,202,endArrow=classic
+224,Datum,endArrow=classic,211,204,endArrow=classic
+225,Uniform Error,endArrow=classic,212,203,endArrow=classic
+226,Collection,endArrow=classic,212,205,endArrow=classic

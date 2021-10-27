@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Explicit Version" as thingexplicitversion
+	entity "Dataset Type" as thingdatasettype #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Code" as thingcode
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Assign Explicit\nVersions To\nThe Code\nOf A\nDataset Type" as controlassignexplicitversioncode
+
+	thingcode <.. thingexplicitversion
+	thingdatasettype *-- thingcode
+	actordatasetdeveloper --- thingtypeinterface
+	thingexplicitversion --- controlassignexplicitversioncode
+	thingcode --- controlassignexplicitversioncode
+	thingdatasettype --- controlassignexplicitversioncode
+	thingtypeinterface --> controlassignexplicitversioncode
+
+@enduml

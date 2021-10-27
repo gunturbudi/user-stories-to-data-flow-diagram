@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Storage" as thingstorage
+	entity "Financial Contact" as thingfinancialcontact
+	entity "T" as thingt
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Report" as thingreportshowstoragerepositorymanager #grey
+	control "Show The\nStorage Each\nFinancial Contact" as controlshowstorage
+	control "T Run" as controlruntreportshowstoragerepositorymanager
+
+	thingfinancialcontact <.. thingstorage
+	actorrepositorymanager --- thingreportshowstoragerepositorymanager
+	thingstorage --- controlshowstorage
+	thingreportshowstoragerepositorymanager --> controlshowstorage
+	controlruntreportshowstoragerepositorymanager --> controlshowstorage
+	thingt --- controlruntreportshowstoragerepositorymanager
+	thingreportshowstoragerepositorymanager --> controlruntreportshowstoragerepositorymanager
+
+@enduml

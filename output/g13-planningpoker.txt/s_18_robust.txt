@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	entity "Html File" as thinghtmlfile #grey
+	actor "Moderator" as actormoderator
+	circle "Transcript" as thingtranscript
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Export A\nTranscript Of\nA Game\nAs A\nHtml File" as controlexporttranscript
+
+	thinghtmlfile <.. thinggame
+	thinggame *-- thingtranscript
+	actormoderator --- thingfileinterface
+	thingtranscript --- controlexporttranscript
+	thinggame --- controlexporttranscript
+	thinghtmlfile --- controlexporttranscript
+	thingfileinterface --> controlexporttranscript
+
+@enduml

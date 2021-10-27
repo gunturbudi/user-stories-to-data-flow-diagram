@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Cognitive ,\nMild Impairment" as thingcognitivemildimpairment
+	actor "Olderperson" as actorOlderPerson
+	boundary "Impairment\nInterface" as thingimpairmentinterface #grey
+	control "Help" as controlhelp
+	control "Use Alfred\nNavigate Despite\nCognitive, Mild\nImpairments" as controluseALFREDhelpcognitivemildimpairment
+
+	thingcognitivemildimpairment <.. thingALFRED
+	actorOlderPerson --- thingimpairmentinterface
+	controluseALFREDhelpcognitivemildimpairment --> controlhelp
+	thingimpairmentinterface --> controlhelp
+	thingALFRED --- controluseALFREDhelpcognitivemildimpairment
+	thingcognitivemildimpairment --- controluseALFREDhelpcognitivemildimpairment
+	thingimpairmentinterface --> controluseALFREDhelpcognitivemildimpairment
+
+@enduml

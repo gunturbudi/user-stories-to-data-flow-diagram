@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collaborator" as thingcollaborator
+	entity "Dataset" as thingdataset
+	entity "Access" as thingaccess
+	actor "Depositor" as actordepositor
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Allow Collaborators\nAccess To\nDatasets" as controlallowcollaboratoraccess
+
+	thingaccess <.. thingcollaborator
+	thingdataset <.. thingaccess
+	actordepositor --- thingdatasetinterface
+	thingcollaborator --- controlallowcollaboratoraccess
+	thingaccess --- controlallowcollaboratoraccess
+	thingdataset --- controlallowcollaboratoraccess
+	thingdatasetinterface --> controlallowcollaboratoraccess
+
+@enduml

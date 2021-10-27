@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Appointment" as thingappointment
+	entity "Reminder" as thingreminder
+	actor "Olderperson" as actorOlderPerson
+	boundary "Appointment\nInterface" as thingappointmentinterface #grey
+	control "Receive Reminders\nOn Appointments" as controlreceivereminderappointment
+
+	thingappointment <.. thingreminder
+	actorOlderPerson --- thingappointmentinterface
+	thingreminder --- controlreceivereminderappointment
+	thingappointment --- controlreceivereminderappointment
+	thingappointmentinterface --> controlreceivereminderappointment
+
+@enduml

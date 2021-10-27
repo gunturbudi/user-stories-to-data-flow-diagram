@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Document" as thingdocument
+	entity "Citation Information" as thingcitationinformation
+	actor "Researcher" as actorresearcher
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	control "Provided With\nClear Citation\nInformation On\nEach Document" as controlprovideclearcitationinformation
+
+	thingdocument <.. thingcitationinformation
+	actorresearcher --- thingdocumentinterface
+	thingcitationinformation --- controlprovideclearcitationinformation
+	thingdocument --- controlprovideclearcitationinformation
+	thingdocumentinterface --> controlprovideclearcitationinformation
+
+@enduml

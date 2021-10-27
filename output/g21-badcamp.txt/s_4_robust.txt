@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Clear Map" as thingclearmap
+	entity "Room" as thingroom
+	entity "Building" as thingbuilding
+	actor "Attendee" as actorattendee
+	boundary "Building\nInterface" as thingbuildinginterface #grey
+	boundary "Room\nInterface" as thingroominterface #grey
+	control "Have A\nVery Clear\nMap The\nBuildings Where\nAre" as controlhaveclearmap
+	control "Have A\nVery Clear\nMap Room\nWhere Are" as controlhaveclearmaproom
+
+	thingbuilding <.. thingclearmap
+	thingroom <.. thingclearmap
+	actorattendee --- thingbuildinginterface
+	actorattendee --- thingroominterface
+	thingclearmap --- controlhaveclearmap
+	thingbuilding --- controlhaveclearmap
+	thingbuildinginterface --> controlhaveclearmap
+	thingroom --- controlhaveclearmaproom
+	thingroominterface --> controlhaveclearmaproom
+	thingclearmap --- controlhaveclearmaproom
+
+@enduml

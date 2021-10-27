@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Easy" as thingeasy
+	entity "Workflow" as thingworkflow
+	actor "Extension Administrator" as actorextensionadministrator
+	boundary "Easy\nInterface" as thingeasyinterface #grey
+	control "Have Easy" as controlhaveeasy
+
+	actorextensionadministrator --- thingeasyinterface
+	thingeasy --- controlhaveeasy
+	thingeasyinterface --> controlhaveeasy
+
+@enduml

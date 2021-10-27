@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Exist Dataset" as thingexistingdataset
+	actor "App Developer" as actorappdeveloper
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Tolerate Existing\nDatasets" as controltolerateexistingdataset
+
+	actorappdeveloper --- thingdatasetinterface
+	thingexistingdataset --- controltolerateexistingdataset
+	thingdatasetinterface --> controltolerateexistingdataset
+
+@enduml

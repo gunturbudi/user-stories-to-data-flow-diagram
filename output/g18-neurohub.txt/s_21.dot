@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Gb " color=red];
+201 [label="<f0>  |<f1> Size " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Upload Large Files Of Over Gb In Size }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Gb"]
+203 -> 201 [label="Size"]
+}

@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Level " ];
+201 [label="<f0>  |<f1> Contrast " color=red];
+202 [label="<f0>  |<f1> Manipulation " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Perform Manually Other Manipulation }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Perform Level }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Perform Contrast }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Improve on results from automated tools }" shape=Mrecord];
+206 -> 4
+1001 [label="<f0>  |<f1> Results " color=red];
+4 -> 1001 [label="Results"]
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 202 [label="Manipulation"]
+205 -> 200 [label="Level"]
+206 -> 201 [label="Contrast"]
+}

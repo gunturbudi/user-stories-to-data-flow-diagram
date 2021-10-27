@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Dataset Instance,shape=partialRectangle,null,null,data_base
+201,Property,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Update A Single Property Of A Dataset Instance,ellipse,null,null,process
+204,Knowing All Other Properties,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Dataset Instance,endArrow=classic,203,200,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,Property,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Earth" as thingearth
+	entity "Csm" as thingcsm
+	entity "Home Page" as thinghomepage #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Know" as controlknow
+	control "Glance Around\nThe Home\nPage" as controlglanceknowhomepage
+	control "Be One" as controlbe
+
+	actorsitevisitor --- thingpageinterface
+	controlglanceknowhomepage --> controlknow
+	thingpageinterface --> controlknow
+	thinghomepage --- controlglanceknowhomepage
+	thingpageinterface --> controlglanceknowhomepage
+
+@enduml

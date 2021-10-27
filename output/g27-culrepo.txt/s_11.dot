@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publication " color=red];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Access Point " ];
+203 [label="Faculty Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Collect Publications }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Collect Those Within The Repository Into A Online, Single Access Point }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Collect Those Without }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Raise the profile of my work }" shape=Mrecord];
+205 -> 4
+1001 [label="<f0>  |<f1> Work " color=red];
+4 -> 1001 [label="Work"]
+203 -> 204
+203 -> 205
+204 -> 200 [label="Publication"]
+205 -> 201 [label="Repository"]
+205 -> 202 [label="Access Point"]
+}

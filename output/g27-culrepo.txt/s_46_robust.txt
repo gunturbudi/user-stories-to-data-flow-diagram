@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "Digital Item" as thingdigitalitem
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Searchable" as thingsearchable #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Make Digital\nItems In\nExternal, Trusted\nSystem Searchable\nWithin System" as controlmakedigitalitem
+
+	thingsearchable <.. thingdigitalitem
+	thingsystem <.. thingdigitalitem
+	thingsystem *-- thingsearchable
+	actorlibrarystaffmember --- thingsysteminterface
+	thingdigitalitem --- controlmakedigitalitem
+	thingsearchable --- controlmakedigitalitem
+	thingsystem --- controlmakedigitalitem
+	thingsysteminterface --> controlmakedigitalitem
+
+@enduml

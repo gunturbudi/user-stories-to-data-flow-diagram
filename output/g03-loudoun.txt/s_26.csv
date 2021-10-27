@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,"Zoning ,\nRelated Permit",shape=partialRectangle,null,null,data_base
+201,"Zoning , Staff Member",rounded=0,null,null,external_entity
+202,"Issue The Zoning, Related Permits",ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,"Zoning ,\nRelated Permit",endArrow=classic,202,200,endArrow=classic

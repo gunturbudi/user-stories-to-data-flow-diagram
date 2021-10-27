@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schema" as thingschema
+	entity "Json String" as thingjsonstring #grey
+	actor "User" as actoruser
+	boundary "String\nInterface" as thingstringinterface #grey
+	control "Specify Schema\nAs A\nJson String" as controlspecifyschemajsonstring
+
+	thingjsonstring <.. thingschema
+	actoruser --- thingstringinterface
+	thingschema --- controlspecifyschemajsonstring
+	thingjsonstring --- controlspecifyschemajsonstring
+	thingstringinterface --> controlspecifyschemajsonstring
+
+@enduml

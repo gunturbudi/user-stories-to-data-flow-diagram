@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Image Tag,shape=partialRectangle,null,null,data_base
+201,Music,shape=partialRectangle,null,null,data_base
+202,Enriched Metadata,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Search Music,ellipse,null,null,process
+205,Exploiting Image Tag,ellipse,null,null,process
+206,Exploiting Enriched Metadata,ellipse,null,null,process
+207,Discover Music,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,205,endArrow=classic
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,Music,endArrow=classic,204,201,endArrow=classic
+214,,endArrow=classic,205,204,endArrow=classic
+215,,endArrow=classic,205,207,endArrow=classic
+216,Image Tag,endArrow=classic,205,200,endArrow=classic
+217,,endArrow=classic,206,204,endArrow=classic
+218,,endArrow=classic,206,207,endArrow=classic
+219,Enriched Metadata,endArrow=classic,206,202,endArrow=classic
+220,Music,endArrow=classic,207,201,endArrow=classic

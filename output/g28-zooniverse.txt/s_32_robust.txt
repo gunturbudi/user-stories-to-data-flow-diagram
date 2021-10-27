@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Malfunction" as thingmalfunction
+	entity "Case" as thingcase
+	entity "Serengeti Image" as thingserengetiimage
+	entity "Image Series\nDetection" as thingimageseriesdetection
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Perform Automatic\nImage Series\nDetection For\nThe Case\nTimestamping Malfunction\nIn Snapshot\nSerengeti Images" as controlperformautomaticimageseriesdetectioncase
+
+	thingserengetiimage <.. thingmalfunction
+	thingmalfunction <.. thingcase
+	thingcase <.. thingimageseriesdetection
+	actorzooniverseadmin --- thingimageinterface
+	thingimageseriesdetection --- controlperformautomaticimageseriesdetectioncase
+	thingcase --- controlperformautomaticimageseriesdetectioncase
+	thingmalfunction --- controlperformautomaticimageseriesdetectioncase
+	thingserengetiimage --- controlperformautomaticimageseriesdetectioncase
+	thingimageinterface --> controlperformautomaticimageseriesdetectioncase
+
+@enduml

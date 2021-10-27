@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,"Repository , Support , Team Member",rounded=0,null,null,external_entity
+203,To,ellipse,null,null,process
+204,Belong To Both Collections,ellipse,null,null,process
+205,Map,ellipse,null,null,process
+206,Alias An Item From Collection To Another,ellipse,null,null,process
+207,The Collection Owner Asked Both Collections,ellipse,null,null,process
+209,,endArrow=classic,202,203,endArrow=classic
+210,,endArrow=classic,202,204,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,,endArrow=classic,202,207,endArrow=classic
+213,Collection,endArrow=classic,204,200,endArrow=classic
+214,Item,endArrow=classic,206,201,endArrow=classic
+215,Collection,endArrow=classic,206,200,endArrow=classic
+216,,endArrow=classic,207,203,endArrow=classic
+217,Collection,endArrow=classic,207,200,endArrow=classic

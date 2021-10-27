@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Certain File" as thingcertainfile
+	entity "User" as thinguser
+	entity "Access" as thingaccess
+	actor "Archivist" as actorarchivist
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Restrict Access\nTo Certain\nFiles By\nUser" as controlrestrictaccessuser
+
+	thinguser <.. thingcertainfile
+	thingcertainfile <.. thingaccess
+	actorarchivist --- thinguserinterface
+	thingaccess --- controlrestrictaccessuser
+	thingcertainfile --- controlrestrictaccessuser
+	thinguser --- controlrestrictaccessuser
+	thinguserinterface --> controlrestrictaccessuser
+
+@enduml

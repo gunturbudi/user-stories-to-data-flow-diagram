@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Depositor" as actordepositor
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Deposit The\nFiles" as controldepositfile
+
+	actordepositor --- thingfileinterface
+	thingfile --- controldepositfile
+	thingfileinterface --> controldepositfile
+
+@enduml

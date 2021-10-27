@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="<f0>  |<f1> Multiple Version " ];
+202 [label="<f0>  |<f1> Old Version " ];
+203 [label="Publisher" shape=box];
+204 [label="{<f0> 1.0|<f1> Version Data Package }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Keep Multiple Versions Including Older Versions }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Data Package"]
+205 -> 201 [label="Multiple Version"]
+205 -> 202 [label="Old Version"]
+}

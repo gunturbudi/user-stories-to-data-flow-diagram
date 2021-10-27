@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Life Cycle" as thinglifecycle #grey
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Cycle\nInterface" as thingcycleinterface #grey
+	control "Know All\nEvents To\nAn Object\nOver The\nObject's Life\nCycle" as controlknowevent
+
+	thingobject <.. thingevent
+	thingobject <.. thinglifecycle
+	thinglifecycle <.. thingobject
+	actorrepositorymanager --- thingcycleinterface
+	thingevent --- controlknowevent
+	thingobject --- controlknowevent
+	thinglifecycle --- controlknowevent
+	thingcycleinterface --> controlknowevent
+
+@enduml

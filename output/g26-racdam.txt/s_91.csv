@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Visual,shape=partialRectangle,null,null,data_base
+201,Index Card,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Access Metadata Representations Of Index Cards,ellipse,null,null,process
+204,Access Visual,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Index Card,endArrow=classic,203,201,endArrow=classic
+209,Visual,endArrow=classic,204,200,endArrow=classic

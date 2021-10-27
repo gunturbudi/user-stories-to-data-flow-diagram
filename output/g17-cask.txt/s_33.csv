@@ -1,0 +1,30 @@
+id,value,style,source,target,type
+200,Type,shape=partialRectangle,null,null,data_base
+201,Pipeline,shape=partialRectangle,null,null,data_base
+202,Code,shape=partialRectangle,null,null,data_base
+203,Dataset Instance,shape=partialRectangle,null,null,data_base
+204,Version,shape=partialRectangle,null,null,data_base
+205,Plugin,shape=partialRectangle,null,null,data_base
+206,Dataset,shape=partialRectangle,null,null,data_base
+207,Plugin Developer,rounded=0,null,null,external_entity
+208,Upgrade The Code Of A Dataset Type,ellipse,null,null,process
+209,Update The Pipeline,ellipse,null,null,process
+210,Upgrade The Code Of A Type,ellipse,null,null,process
+211,Use That Version,ellipse,null,null,process
+212,A Dataset Instance That Plugin Deploy A New Version Of The Plugin,ellipse,null,null,process
+214,,endArrow=classic,207,208,endArrow=classic
+215,,endArrow=classic,207,209,endArrow=classic
+216,,endArrow=classic,207,210,endArrow=classic
+217,,endArrow=classic,207,211,endArrow=classic
+218,,endArrow=classic,207,212,endArrow=classic
+219,Code,endArrow=classic,208,202,endArrow=classic
+220,Type,endArrow=classic,208,200,endArrow=classic
+221,,endArrow=classic,209,211,endArrow=classic
+222,Pipeline,endArrow=classic,209,201,endArrow=classic
+223,,endArrow=classic,210,209,endArrow=classic
+224,Type,endArrow=classic,210,200,endArrow=classic
+225,Code,endArrow=classic,210,202,endArrow=classic
+226,Version,endArrow=classic,211,204,endArrow=classic
+227,Dataset Instance,endArrow=classic,212,203,endArrow=classic
+228,Plugin,endArrow=classic,212,205,endArrow=classic
+229,Dataset,endArrow=classic,208,206,endArrow=classic

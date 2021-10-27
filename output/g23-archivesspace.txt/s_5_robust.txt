@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource Component" as thingresourcecomponent #grey
+	entity "Unique ,\nComponent Identifier" as thinguniquecomponentidentifier
+	actor "Archivist" as actorarchivist
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Assign A\nUnique, Component\nIdentifier To\nA Resource\nComponent" as controlassignuniquecomponentidentifierresourcecomponent
+
+	thingresourcecomponent <.. thinguniquecomponentidentifier
+	actorarchivist --- thingcomponentinterface
+	thinguniquecomponentidentifier --- controlassignuniquecomponentidentifierresourcecomponent
+	thingresourcecomponent --- controlassignuniquecomponentidentifierresourcecomponent
+	thingcomponentinterface --> controlassignuniquecomponentidentifierresourcecomponent
+
+@enduml

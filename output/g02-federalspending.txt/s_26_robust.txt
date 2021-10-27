@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schedule" as thingschedule
+	entity "Ui Sme" as thinguisme
+	actor "Owner" as actorowner
+	boundary "Sme\nInterface" as thingsmeinterface #grey
+	control "Design A\nSchedule From\nThe Ui\nSme" as controldesignschedule
+
+	thinguisme <.. thingschedule
+	actorowner --- thingsmeinterface
+	thingschedule --- controldesignschedule
+	thinguisme --- controldesignschedule
+	thingsmeinterface --> controldesignschedule
+
+@enduml

@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Necessary Right,shape=partialRectangle,null,null,data_base
+202,Data Manager,rounded=0,null,null,external_entity
+203,Clarify The Necessary Rights,ellipse,null,null,process
+204,Using The Data,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Necessary Right,endArrow=classic,203,201,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,Datum,endArrow=classic,204,200,endArrow=classic

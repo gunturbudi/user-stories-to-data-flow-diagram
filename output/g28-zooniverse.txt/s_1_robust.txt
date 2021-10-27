@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fingerprinting" as thingfingerprinting
+	entity "Content Identification" as thingcontentidentification #grey
+	entity "Music" as thingmusic
+	actor "User" as actoruser
+	boundary "Music\nInterface" as thingmusicinterface #grey
+	control "Use" as controluse #grey
+	control "Use Content\nIdentification" as controlusecontentidentification
+	control "Use Fingerprinting" as controlusefingerprinting
+	control "Search" as controlsearchmusicusemusicusefingerprintinguser
+	control "Discover Music" as controldiscovermusicuseusefingerprinting
+
+	actoruser --- thingmusicinterface
+	controlsearchmusicusemusicusefingerprintinguser --> controluse
+	thingcontentidentification --- controlusecontentidentification
+	thingmusicinterface --> controlusecontentidentification
+	controlsearchmusicusemusicusefingerprintinguser --> controlusecontentidentification
+	controldiscovermusicuseusefingerprinting --> controlusecontentidentification
+	thingfingerprinting --- controlusefingerprinting
+	controlsearchmusicusemusicusefingerprintinguser --> controlusefingerprinting
+	controldiscovermusicuseusefingerprinting --> controlusefingerprinting
+	thingmusicinterface --> controlusefingerprinting
+	thingmusicinterface --> controlsearchmusicusemusicusefingerprintinguser
+	thingmusic --- controldiscovermusicuseusefingerprinting
+	thingmusicinterface --> controldiscovermusicuseusefingerprinting
+
+@enduml

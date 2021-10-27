@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Alfred,shape=partialRectangle,null,null,data_base
+201,Sensor,shape=partialRectangle,null,null,data_base
+202,Guide Exercise,shape=partialRectangle,null,null,data_base
+203,Exercise,shape=partialRectangle,null,null,data_base
+204,Health Datum,shape=partialRectangle,null,null,data_base
+205,Olderperson,rounded=0,null,null,external_entity
+206,Do Guided Exercises With Alfred,ellipse,null,null,process
+207,Capture Health Data Am Doing Exercises,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Alfred,endArrow=classic,206,200,endArrow=classic
+212,Guide Exercise,endArrow=classic,206,202,endArrow=classic
+213,Health Datum,endArrow=classic,207,204,endArrow=classic
+214,Exercise,endArrow=classic,207,203,endArrow=classic

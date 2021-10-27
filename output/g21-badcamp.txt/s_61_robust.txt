@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Session" as thingsession
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	control "Edit Session" as controleditsession
+
+	actorauthenticateduser --- thingsessioninterface
+	thingsession --- controleditsession
+	thingsessioninterface --> controleditsession
+
+@enduml

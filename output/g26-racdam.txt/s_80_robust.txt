@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Folder" as thingfolder
+	actor "Researcher" as actorresearcher
+	control "Know" as controlknow
+
+
+@enduml

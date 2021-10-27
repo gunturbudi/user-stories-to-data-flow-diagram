@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collections Size" as thingcollectionssize #grey
+	entity "Collection" as thingcollection
+	entity "Item" as thingitem
+	entity "Component" as thingcomponent
+	entity "Dashboard Statistic" as thingdashboardstatistic
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "View A\nDashboard Statistics\nAbout Collections\nSize Including\nA List\nOf Collections" as controlviewdashboardstatisticscollectionssize
+
+	thingcollection <.. thingcollectionssize
+	thingcollectionssize <.. thingdashboardstatistic
+	actorrepositorymanager --- thingcollectioninterface
+	thingdashboardstatistic --- controlviewdashboardstatisticscollectionssize
+	thingcollectionssize --- controlviewdashboardstatisticscollectionssize
+	thingcollection --- controlviewdashboardstatisticscollectionssize
+	thingcollectioninterface --> controlviewdashboardstatisticscollectionssize
+
+@enduml

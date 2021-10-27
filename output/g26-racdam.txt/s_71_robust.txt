@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Citation Information" as thingcitationinformation
+	actor "Researcher" as actorresearcher
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Have Collection,\nAccurate Citation\nInformation" as controlhavecollectionaccuratecitationinformation
+
+	actorresearcher --- thinginformationinterface
+	thingcitationinformation --- controlhavecollectionaccuratecitationinformation
+	thinginformationinterface --> controlhavecollectionaccuratecitationinformation
+
+@enduml

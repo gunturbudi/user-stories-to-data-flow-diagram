@@ -1,0 +1,38 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Submitter " ];
+202 [label="<f0>  |<f1> License " ];
+203 [label="<f0>  |<f1> Selection " ];
+204 [label="<f0>  |<f1> Deposit " color=red];
+205 [label="<f0>  |<f1> Specific License " ];
+206 [label="Repoadmin" shape=box];
+207 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Denied }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> The Submitter Not Accept The License }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Presented With A License }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Presented With A Selection Of Specific Licenses To The Collection }" shape=Mrecord];
+212 [label="{<f0> 6.0|<f1> Presented With A Selection Of Specific Licenses To Deposit }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+206 -> 212
+207 -> 210
+207 -> 211
+207 -> 212
+207 -> 205 [label="Specific License"]
+207 -> 203 [label="Selection"]
+208 -> 209
+209 -> 201 [label="Submitter"]
+209 -> 202 [label="License"]
+210 -> 208
+210 -> 202 [label="License"]
+211 -> 203 [label="Selection"]
+211 -> 205 [label="Specific License"]
+211 -> 200 [label="Collection"]
+212 -> 204 [label="Deposit"]
+212 -> 205 [label="Specific License"]
+212 -> 203 [label="Selection"]
+}

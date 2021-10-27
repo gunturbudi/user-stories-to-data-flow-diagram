@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Great Ui" as thinggreatUI
+	entity "Ux" as thingUX
+	actor "User" as actoruser
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Ux\nInterface" as thinguxinterface #grey
+	control "Have A\nGreat Ui\nFrom The\nSites" as controlhavegreatUI
+	control "Have Ux" as controlhaveUX
+
+	thingsite <.. thinggreatUI
+	actoruser --- thingsiteinterface
+	actoruser --- thinguxinterface
+	thinggreatUI --- controlhavegreatUI
+	thingsite --- controlhavegreatUI
+	thingsiteinterface --> controlhavegreatUI
+	thingUX --- controlhaveUX
+	thinguxinterface --> controlhaveUX
+
+@enduml

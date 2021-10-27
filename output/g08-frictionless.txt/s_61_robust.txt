@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Source" as thingsource
+	entity "Proxy Package" as thingproxypackage #grey
+	entity "Know Datum" as thingknowdatum
+	entity "App" as thingapp
+	entity "Reliable" as thingreliable
+	entity "Data Package" as thingdatapackage
+	actor "Researcher" as actorresearcher
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	boundary "Reliable\nInterface" as thingreliableinterface #grey
+	control "Provided With\nAn App\nCreate Proxy\nData Packages\nFor Well\nKnow Data\nSources" as controlprovideapp
+	control "Provided With\nAn App\nCreate Proxy\nPackages For\nReliable" as controlprovideappreliable
+
+	thingreliable <.. thingproxypackage
+	thingsource <.. thingknowdatum
+	thingdatapackage <.. thingapp
+	thingknowdatum <.. thingapp
+	thingsource <.. thingapp
+	thingproxypackage <.. thingapp
+	thingknowdatum <.. thingdatapackage
+	actorresearcher --- thingsourceinterface
+	actorresearcher --- thingreliableinterface
+	thingapp --- controlprovideapp
+	thingdatapackage --- controlprovideapp
+	thingknowdatum --- controlprovideapp
+	thingsource --- controlprovideapp
+	thingsourceinterface --> controlprovideapp
+	thingproxypackage --- controlprovideappreliable
+	thingreliable --- controlprovideappreliable
+	thingreliableinterface --> controlprovideappreliable
+	thingapp --- controlprovideappreliable
+
+@enduml

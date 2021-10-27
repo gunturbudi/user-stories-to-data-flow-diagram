@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Back Button " ];
+201 [label="<f0>  |<f1> Log Book\nPage " color=red];
+202 [label="<f0>  |<f1> Browser " ];
+203 [label="<f0>  |<f1> Log Book " color=red];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Backwards Navigate Between Log Book Page }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Use Browser's Back Button }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Backwards Navigate Between Log Books }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Having }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+205 -> 201 [label="Log Book\nPage"]
+206 -> 200 [label="Back Button"]
+207 -> 203 [label="Log Book"]
+208 -> 206
+208 -> 207
+206 -> 202 [label="Browser"]
+}

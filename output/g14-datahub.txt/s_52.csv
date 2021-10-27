@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Publisher,shape=partialRectangle,null,null,data_base
+201,Profile,shape=partialRectangle,null,null,data_base
+202,Consumer,rounded=0,null,null,external_entity
+203,See A Publisher's Profile,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Profile,endArrow=classic,203,201,endArrow=classic
+207,Publisher,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Image Tag " color=red];
+201 [label="<f0>  |<f1> Music " color=red];
+202 [label="<f0>  |<f1> Enriched Metadata " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Search Music }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Exploiting Image Tag }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Exploiting Enriched Metadata }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Discover Music }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 201 [label="Music"]
+205 -> 204
+205 -> 207
+205 -> 200 [label="Image Tag"]
+206 -> 204
+206 -> 207
+206 -> 202 [label="Enriched Metadata"]
+207 -> 201 [label="Music"]
+}

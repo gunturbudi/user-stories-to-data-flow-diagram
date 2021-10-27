@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fedora " ];
+201 [label="<f0>  |<f1> Application " color=red];
+202 [label="<f0>  |<f1> Datum " ];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Upgrade To Fedora }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Migrate Datum }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Migrate Applications }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Fedora"]
+205 -> 202 [label="Datum"]
+206 -> 201 [label="Application"]
+}

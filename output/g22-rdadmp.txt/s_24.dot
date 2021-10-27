@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Management " color=red];
+201 [label="<f0>  |<f1> Cost " color=red];
+202 [label="<f0>  |<f1> Dmp " color=red];
+203 [label="Funder" shape=box];
+204 [label="{<f0> 1.0|<f1> Read The Costs For Data Management From The Dmp }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Cost"]
+204 -> 200 [label="Data Management"]
+204 -> 202 [label="Dmp"]
+}

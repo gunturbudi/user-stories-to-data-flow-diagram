@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Institution " ];
+201 [label="<f0>  |<f1> Asset " color=red];
+202 [label="<f0>  |<f1> Deposit " color=red];
+203 [label="Asset Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> What Is To The Institution At The Time Of Deposit }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Asset"]
+204 -> 200 [label="Institution"]
+204 -> 202 [label="Deposit"]
+205 -> 204
+}

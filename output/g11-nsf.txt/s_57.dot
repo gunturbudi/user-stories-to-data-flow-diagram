@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Research Plan " ];
+201 [label="User Researcher" shape=box];
+202 [label="{<f0> 1.0|<f1> Drafting A Research Plan }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Begin }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Research Plan"]
+203 -> 202
+}

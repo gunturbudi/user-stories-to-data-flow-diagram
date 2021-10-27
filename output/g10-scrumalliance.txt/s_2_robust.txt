@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	actor "Site Member" as actorsitemember
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	control "Fill Out\nAn Application" as controlfillapplicationbecome
+	control "Become A\nCertified Scrum\nPractitioner" as controlbecome
+
+	actorsitemember --- thingapplicationinterface
+	thingapplication --- controlfillapplicationbecome
+	thingapplicationinterface --> controlfillapplicationbecome
+	controlfillapplicationbecome --> controlbecome
+	thingapplicationinterface --> controlbecome
+
+@enduml

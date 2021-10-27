@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Old Format" as thingoldformat
+	entity "Content" as thingcontent
+	entity "Multiple Format" as thingmultipleformat
+	entity "Lotus Work" as thinglotuswork
+	actor "Patron" as actorpatron
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Upload Content\nIn Multiple\nFormats Including\nOld Formats\nSuch As\nLotus Works" as controluploadcontent #grey
+	control "View Content\nIn Multiple\nFormats Including\nOld Formats\nSuch As\nLotus Works" as controlviewcontent
+
+	thinglotuswork <.. thingoldformat
+	thingmultipleformat <.. thingcontent
+	thingoldformat <.. thingmultipleformat
+	actorpatron --- thingworkinterface
+	thinglotuswork --- controluploadcontent
+	thingoldformat --- controluploadcontent
+	thingmultipleformat --- controluploadcontent
+	thingcontent --- controluploadcontent
+	thingcontent --- controlviewcontent
+	thingmultipleformat --- controlviewcontent
+	thingoldformat --- controlviewcontent
+	thingworkinterface --> controlviewcontent
+	thinglotuswork --- controlviewcontent
+
+@enduml

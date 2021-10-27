@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cube ,\nBased Query" as thingcubebasedquery
+	entity "Csv Output" as thingcsvoutput #grey
+	actor "Api User" as actorapiuser
+	boundary "Query\nInterface" as thingqueryinterface #grey
+	control "Get A\nCsv Output\nOf Any\nCube, Based\nQuery" as controlgetcsvoutput
+
+	thingcubebasedquery <.. thingcsvoutput
+	actorapiuser --- thingqueryinterface
+	thingcsvoutput --- controlgetcsvoutput
+	thingcubebasedquery --- controlgetcsvoutput
+	thingqueryinterface --> controlgetcsvoutput
+
+@enduml

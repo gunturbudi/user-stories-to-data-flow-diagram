@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Service,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Term Curation,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Support The Long Term Curation Of Data,ellipse,null,null,process
+205,Have Services,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Term Curation,endArrow=classic,204,202,endArrow=classic
+210,Datum,endArrow=classic,204,201,endArrow=classic
+211,,endArrow=classic,205,204,endArrow=classic
+212,Service,endArrow=classic,205,200,endArrow=classic

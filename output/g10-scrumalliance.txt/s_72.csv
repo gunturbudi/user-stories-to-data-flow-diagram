@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Home Page,shape=partialRectangle,null,null,data_base
+201,Site Visitor,rounded=0,null,null,external_entity
+202,Easily Get To The Home Page,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Home Page,endArrow=classic,202,200,endArrow=classic

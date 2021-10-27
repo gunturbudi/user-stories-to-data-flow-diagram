@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Second" as thingsecond
+	entity "Clojure" as thingclojure
+	entity "Data Package" as thingdatapackage #grey
+	actor "Developer" as actordeveloper
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto Clojure\nIn Seconds" as controlgetdatapackageclojuresecond
+
+	thingsecond <.. thingclojure
+	thingclojure <.. thingdatapackage
+	actordeveloper --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackageclojuresecond
+	thingclojure --- controlgetdatapackageclojuresecond
+	thingsecond --- controlgetdatapackageclojuresecond
+	thingsecondinterface --> controlgetdatapackageclojuresecond
+
+@enduml

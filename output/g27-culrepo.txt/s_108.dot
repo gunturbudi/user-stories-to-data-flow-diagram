@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Rot " ];
+201 [label="<f0>  |<f1> Law School " color=red];
+202 [label="Library , Staff Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Using Sustainable Links Not Succumb }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Preserve The Scholarship Of The Law School }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Link Rot }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Create a permanent digital archive for the scholarship of my institution }" shape=Mrecord];
+204 -> 4
+1001 [label="<f0>  |<f1> Institution " color=red];
+4 -> 1001 [label="Institution"]
+202 -> 203
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 204
+203 -> 205
+204 -> 201 [label="Law School"]
+205 -> 200 [label="Rot"]
+}

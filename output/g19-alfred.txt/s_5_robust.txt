@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Control" as thingcontrol
+	actor "Olderperson" as actorOlderPerson
+	circle "Activity" as thingactivity
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Keep Control\nOn The\nActivities Of\nAlfred" as controlkeepcontrolactivity
+
+	thingactivity <.. thingcontrol
+	thingALFRED *-- thingactivity
+	actorOlderPerson --- thingalfredinterface
+	thingcontrol --- controlkeepcontrolactivity
+	thingactivity --- controlkeepcontrolactivity
+	thingALFRED --- controlkeepcontrolactivity
+	thingalfredinterface --> controlkeepcontrolactivity
+
+@enduml

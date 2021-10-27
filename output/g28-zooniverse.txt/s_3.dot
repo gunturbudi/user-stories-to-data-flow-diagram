@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Music " color=red];
+201 [label="<f0>  |<f1> Similar ,\nUser " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Search Music On Similar, Other Users To }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Discover Music On Similar, Other Users To }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Music"]
+203 -> 201 [label="Similar ,\nUser"]
+204 -> 200 [label="Music"]
+204 -> 201 [label="Similar ,\nUser"]
+}

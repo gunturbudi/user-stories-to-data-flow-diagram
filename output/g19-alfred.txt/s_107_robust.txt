@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training" as thingtraining
+	entity "Muscle Group" as thingmusclegroup
+	actor "Olderperson" as actorOlderPerson
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Have Training\nFor Specific\nMuscle Groups" as controlhavetraining
+
+	thingmusclegroup <.. thingtraining
+	actorOlderPerson --- thinggroupinterface
+	thingtraining --- controlhavetraining
+	thingmusclegroup --- controlhavetraining
+	thinggroupinterface --> controlhavetraining
+
+@enduml

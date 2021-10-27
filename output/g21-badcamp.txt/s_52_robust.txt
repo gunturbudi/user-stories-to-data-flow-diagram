@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Job" as thingjob
+	actor "Sponsor" as actorsponsor
+	boundary "Job\nInterface" as thingjobinterface #grey
+	control "Post A\nJob" as controlpostjob
+
+	actorsponsor --- thingjobinterface
+	thingjob --- controlpostjob
+	thingjobinterface --> controlpostjob
+
+@enduml

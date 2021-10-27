@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	entity "Site" as thingsite
+	actor "Site Editor" as actorsiteeditor
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Add An\nArticle To\nThe Site" as controladdarticlesite
+
+	thingsite <.. thingarticle
+	actorsiteeditor --- thingsiteinterface
+	thingarticle --- controladdarticlesite
+	thingsite --- controladdarticlesite
+	thingsiteinterface --> controladdarticlesite
+
+@enduml

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Physical" as thingphysical
+	entity "Game" as thinggame
+	entity "Memory Health" as thingmemoryhealth
+	actor "Olderperson" as actorOlderPerson
+	boundary "Health\nInterface" as thinghealthinterface #grey
+	boundary "Physical\nInterface" as thingphysicalinterface #grey
+	control "Have Some\nGames How\nShow Memory\nHealth" as controlhavegame
+	control "Have Some\nGames How\nShow Physical" as controlhavegamephysical
+
+	thingmemoryhealth <.. thinggame
+	thingphysical <.. thinggame
+	thinggame <.. thinggame
+	actorOlderPerson --- thinghealthinterface
+	actorOlderPerson --- thingphysicalinterface
+	thinggame --- controlhavegame
+	thingmemoryhealth --- controlhavegame
+	thinghealthinterface --> controlhavegame
+	thingphysical --- controlhavegamephysical
+	thingphysicalinterface --> controlhavegamephysical
+	thinggame --- controlhavegamephysical
+
+@enduml

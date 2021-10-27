@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Eml Dataset" as thingemldataset #grey
+	entity "Data Package" as thingdatapackage #grey
+	actor "Researcher" as actorresearcher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Translate Eml\nDataset To\nA Data\nPackage" as controltranslateemldatasetdatapackage
+
+	thingdatapackage <.. thingemldataset
+	actorresearcher --- thingpackageinterface
+	thingemldataset --- controltranslateemldatasetdatapackage
+	thingdatapackage --- controltranslateemldatasetdatapackage
+	thingpackageinterface --> controltranslateemldatasetdatapackage
+
+@enduml

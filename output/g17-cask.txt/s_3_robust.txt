@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App Artifact" as thingappartifact #grey
+	entity "Type" as thingtype
+	actor "App Developer" as actorappdeveloper
+	circle "New Version" as thingnewversion
+	circle "Dataset" as thingotherdataset
+	boundary "Dataset Type" as thingdatasettype
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Affecting Other\nDatasets Of\nThis Type" as controlaffectdeploynewversionpartotherdataset
+	control "Deploy A\nNew Version\nOf A\nDataset Type\nAs Part\nOf An\nApp Artifact" as controldeploynewversionpart
+
+	thingtype *-- thingotherdataset
+	actorappdeveloper --- thingdatasettype
+	actorappdeveloper --- thingtypeinterface
+	thingotherdataset --- controlaffectdeploynewversionpartotherdataset
+	thingtype --- controlaffectdeploynewversionpartotherdataset
+	thingtypeinterface --> controlaffectdeploynewversionpartotherdataset
+	controlaffectdeploynewversionpartotherdataset --> controldeploynewversionpart
+	thingnewversion --- controldeploynewversionpart
+	thingdatasettype --> controldeploynewversionpart
+	thingappartifact --- controldeploynewversionpart
+
+@enduml

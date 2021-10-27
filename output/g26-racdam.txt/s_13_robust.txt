@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Digital File" as thingdigitalfile
+	entity "Time" as thingtime
+	actor "Archivist" as actorarchivist
+	circle "Period" as thingperiod
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	control "Redact Information\nIn Digital\nFiles For\nA Period\nOf Time" as controlredactinformationperiod
+
+	thingdigitalfile <.. thinginformation
+	thingperiod <.. thingdigitalfile
+	thingtime *-- thingperiod
+	actorarchivist --- thingtimeinterface
+	thinginformation --- controlredactinformationperiod
+	thingdigitalfile --- controlredactinformationperiod
+	thingperiod --- controlredactinformationperiod
+	thingtime --- controlredactinformationperiod
+	thingtimeinterface --> controlredactinformationperiod
+
+@enduml

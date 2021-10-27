@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Story" as thingstory
+	entity "Estimate" as thingestimate
+	entity "Prior Round" as thingpriorround
+	actor "Participant" as actorparticipant
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	boundary "Round\nInterface" as thingroundinterface #grey
+	control "Scroll Through\nEstimate" as controlscrollestimate
+	control "Scroll Through\nThe Stories\nFrom Prior\nRounds" as controlscrollstory
+
+	thingpriorround <.. thingstory
+	actorparticipant --- thingestimateinterface
+	actorparticipant --- thingroundinterface
+	thingestimate --- controlscrollestimate
+	thingestimateinterface --> controlscrollestimate
+	thingstory --- controlscrollstory
+	thingpriorround --- controlscrollstory
+	thingroundinterface --> controlscrollstory
+
+@enduml

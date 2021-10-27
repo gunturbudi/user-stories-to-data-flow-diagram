@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Recent Submission,shape=partialRectangle,null,null,data_base
+202,Collection Curator,rounded=0,null,null,external_entity
+203,See,ellipse,null,null,process
+204,Show A Summary Of Recent Submissions To Collection,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Recent Submission,endArrow=classic,204,201,endArrow=classic
+210,Collection,endArrow=classic,204,200,endArrow=classic

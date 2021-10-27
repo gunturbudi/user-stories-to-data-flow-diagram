@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Price" as thingprice
+	entity "Site" as thingsite
+	actor "Publisher" as actorpublisher
+	control "Know" as controlknow
+
+
+@enduml

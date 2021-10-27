@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recyclable Waste" as thingrecyclablewaste
+	entity "Facility" as thingfacility
+	entity "Type" as thingtype
+	entity "Opening Hour" as thingopeninghour #grey
+	actor "User" as actoruser
+	circle "Different Type" as thingdifferenttype
+	boundary "Waste\nInterface" as thingwasteinterface #grey
+	control "Select Different\nTypes Of\nRecyclable Waste" as controlselectdifferenttype
+
+	thingtype <.. thingfacility
+	thingopeninghour <.. thingfacility
+	thingrecyclablewaste *-- thingdifferenttype
+	actoruser --- thingwasteinterface
+	thingdifferenttype --- controlselectdifferenttype
+	thingrecyclablewaste --- controlselectdifferenttype
+	thingwasteinterface --> controlselectdifferenttype
+
+@enduml

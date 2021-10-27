@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,System,shape=partialRectangle,null,null,data_base
+201,Researcher,shape=partialRectangle,null,null,data_base
+202,Cornell,shape=partialRectangle,null,null,data_base
+203,Dmps,shape=partialRectangle,null,null,data_base
+204,Research,shape=partialRectangle,null,null,data_base
+205,Sharing,shape=partialRectangle,null,null,data_base
+206,Repository,shape=partialRectangle,null,null,data_base
+207,"Library , Staff Member",rounded=0,null,null,external_entity
+208,Tell The Researchers,ellipse,null,null,process
+210,,endArrow=classic,207,208,endArrow=classic
+211,Researcher,endArrow=classic,208,201,endArrow=classic
+215,Research,endArrow=classic,208,204,endArrow=classic

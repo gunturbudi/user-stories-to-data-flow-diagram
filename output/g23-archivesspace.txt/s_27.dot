@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource Component " color=red];
+201 [label="<f0>  |<f1> Description " color=red];
+202 [label="<f0>  |<f1> Value " color=red];
+203 [label="<f0>  |<f1> Level " ];
+204 [label="<f0>  |<f1> Resource " color=red];
+205 [label="Archivist" shape=box];
+206 [label="{<f0> 1.0|<f1> Specify Another Value }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Assign A Level Of Description To A Resource Component }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Assign A Level Of Description To Resource }" shape=Mrecord];
+205 -> 207
+205 -> 208
+206 -> 202 [label="Value"]
+207 -> 203 [label="Level"]
+207 -> 201 [label="Description"]
+207 -> 200 [label="Resource Component"]
+208 -> 204 [label="Resource"]
+208 -> 201 [label="Description"]
+208 -> 203 [label="Level"]
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Testing\nSummary" as thingusertestingsummary #grey
+	entity "Ui Sme" as thinguisme
+	actor "Owner" as actorowner
+	boundary "Sme\nInterface" as thingsmeinterface #grey
+	control "Create A\nUser Testing\nSummary From\nThe Ui\nSme" as controlcreateusertestingsummary
+
+	thinguisme <.. thingusertestingsummary
+	actorowner --- thingsmeinterface
+	thingusertestingsummary --- controlcreateusertestingsummary
+	thinguisme --- controlcreateusertestingsummary
+	thingsmeinterface --> controlcreateusertestingsummary
+
+@enduml

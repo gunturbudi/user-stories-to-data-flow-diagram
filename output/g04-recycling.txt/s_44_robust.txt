@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Stat" as thingstat
+	actor "Superuser" as actorsuperuser
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	control "View Users'\nStats" as controlviewstat
+
+	thinguser <.. thingstat
+	actorsuperuser --- thingstatinterface
+	thingstat --- controlviewstat
+	thingstatinterface --> controlviewstat
+
+@enduml

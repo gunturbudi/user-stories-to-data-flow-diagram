@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email" as thingemail
+	entity "Password Reminder" as thingpasswordreminder #grey
+	actor "Moderator" as actormoderator
+	boundary "Email\nInterface" as thingemailinterface #grey
+	control "Get A\nPassword Reminder\nBy Email" as controlgetpasswordreminderemail
+
+	thingemail <.. thingpasswordreminder
+	actormoderator --- thingemailinterface
+	thingpasswordreminder --- controlgetpasswordreminderemail
+	thingemail --- controlgetpasswordreminderemail
+	thingemailinterface --> controlgetpasswordreminderemail
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Neighbourhood,shape=partialRectangle,null,null,data_base
+201,Suggestion,shape=partialRectangle,null,null,data_base
+202,Sports Class,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Get Suggestions For Sports Classes In Neighbourhood,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Suggestion,endArrow=classic,204,201,endArrow=classic
+208,Sports Class,endArrow=classic,204,202,endArrow=classic
+209,Neighbourhood,endArrow=classic,204,200,endArrow=classic

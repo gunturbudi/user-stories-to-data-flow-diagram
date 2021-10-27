@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Brightcove " ];
+201 [label="<f0>  |<f1> Video " color=red];
+202 [label="Content Editor" shape=box];
+203 [label="{<f0> 1.0|<f1> Add Videos From Brightcove }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Video"]
+203 -> 200 [label="Brightcove"]
+}

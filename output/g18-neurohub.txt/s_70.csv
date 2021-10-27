@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+200,Output,shape=partialRectangle,null,null,data_base
+201,Electronic Support,shape=partialRectangle,null,null,data_base
+202,Track,shape=partialRectangle,null,null,data_base
+203,Particular Experiment,shape=partialRectangle,null,null,data_base
+204,Data Set,shape=partialRectangle,null,null,data_base
+205,Researcher,rounded=0,null,null,external_entity
+206,Have Electronic Support,ellipse,null,null,process
+207,Keeping Track Output,ellipse,null,null,process
+208,Modify As Part Of A Particular Experiment,ellipse,null,null,process
+209,Keeping Track,ellipse,null,null,process
+210,Keeping Track Of Which Data Sets Used,ellipse,null,null,process
+212,,endArrow=classic,205,206,endArrow=classic
+213,,endArrow=classic,205,207,endArrow=classic
+214,,endArrow=classic,205,208,endArrow=classic
+215,,endArrow=classic,205,209,endArrow=classic
+216,,endArrow=classic,205,210,endArrow=classic
+217,Electronic Support,endArrow=classic,206,201,endArrow=classic
+218,,endArrow=classic,207,206,endArrow=classic
+219,Output,endArrow=classic,207,200,endArrow=classic
+220,Track,endArrow=classic,207,202,endArrow=classic
+221,Particular Experiment,endArrow=classic,208,203,endArrow=classic
+222,,endArrow=classic,209,206,endArrow=classic
+223,,endArrow=classic,209,208,endArrow=classic
+224,Track,endArrow=classic,209,202,endArrow=classic
+225,,endArrow=classic,210,206,endArrow=classic
+226,Track,endArrow=classic,210,202,endArrow=classic
+227,Data Set,endArrow=classic,210,204,endArrow=classic

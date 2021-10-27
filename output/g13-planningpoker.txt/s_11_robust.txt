@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Estimate Field" as thingestimatefield
+	actor "Moderator" as actormoderator
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Have The\nAutomatically Estimate\nField" as controlhaveestimatefield
+
+	actormoderator --- thingfieldinterface
+	thingestimatefield --- controlhaveestimatefield
+	thingfieldinterface --> controlhaveestimatefield
+
+@enduml

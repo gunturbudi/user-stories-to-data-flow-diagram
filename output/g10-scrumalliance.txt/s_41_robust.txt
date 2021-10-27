@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pdf" as thingpdf
+	entity "Presentation" as thingpresentation
+	entity "Etc" as thingetc
+	actor "Visitor" as actorvisitor
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	boundary "Presentation\nInterface" as thingpresentationinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	control "Download Pdf" as controldownloadpdf
+	control "Download Presentations" as controldownloadpresentation
+	control "Download Etc" as controldownloadetc
+
+	actorvisitor --- thingpdfinterface
+	actorvisitor --- thingpresentationinterface
+	actorvisitor --- thingetcinterface
+	thingpdf --- controldownloadpdf
+	thingpdfinterface --> controldownloadpdf
+	thingpresentation --- controldownloadpresentation
+	thingpresentationinterface --> controldownloadpresentation
+	thingetc --- controldownloadetc
+	thingetcinterface --> controldownloadetc
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Right,shape=partialRectangle,null,null,data_base
+202,File,shape=partialRectangle,null,null,data_base
+203,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+204,See Rights To Files In The Repository,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Right,endArrow=classic,204,201,endArrow=classic
+208,File,endArrow=classic,204,202,endArrow=classic
+209,Repository,endArrow=classic,204,200,endArrow=classic

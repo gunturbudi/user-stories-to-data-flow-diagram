@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingotherresearcher
+	entity "Write Up" as thingwriteup
+	actor "Researcher" as actorresearcher
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	control "Share Experiment\nWrite Ups\nWith Other\nResearchers" as controlshareexperimentwriteups
+
+	thingotherresearcher <.. thingwriteup
+	actorresearcher --- thingresearcherinterface
+	thingwriteup --- controlshareexperimentwriteups
+	thingotherresearcher --- controlshareexperimentwriteups
+	thingresearcherinterface --> controlshareexperimentwriteups
+
+@enduml

@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,System,shape=partialRectangle,null,null,data_base
+201,New Datum,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,New Data Added To The System,ellipse,null,null,process
+204,Have,ellipse,null,null,process
+205,Inserted,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,New Datum,endArrow=classic,203,201,endArrow=classic
+211,System,endArrow=classic,203,200,endArrow=classic
+212,,endArrow=classic,204,205,endArrow=classic
+213,,endArrow=classic,205,203,endArrow=classic

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Embargo " ];
+202 [label="Depositor" shape=box];
+203 [label="{<f0> 1.0|<f1> Place Data Under An Embargo }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Fulfil my confidentiality responsibilities }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Confidentiality responsibilities " color=red];
+2 -> 1001 [label="Confidentiality responsibilities"]
+202 -> 203
+203 -> 200 [label="Datum"]
+203 -> 201 [label="Embargo"]
+}

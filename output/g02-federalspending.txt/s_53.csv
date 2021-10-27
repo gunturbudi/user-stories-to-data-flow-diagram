@@ -1,0 +1,32 @@
+id,value,style,source,target,type
+200,C,shape=partialRectangle,null,null,data_base
+201,D,shape=partialRectangle,null,null,data_base
+202,Record,shape=partialRectangle,null,null,data_base
+203,Dun,shape=partialRectangle,null,null,data_base
+204,Actiontype,shape=partialRectangle,null,null,data_base
+205,Sam,shape=partialRectangle,null,null,data_base
+206,actorwhose,rounded=0,null,null,external_entity
+207,User,rounded=0,null,null,external_entity
+208,Accept Records Actiontypes Are B,ellipse,null,null,process
+209,Accept Records Actiontypes Are C,ellipse,null,null,process
+210,Accept Records Actiontypes Are D,ellipse,null,null,process
+211,Accept Records Actiontypes Are The Duns,ellipse,null,null,process
+213,,endArrow=classic,206,208,endArrow=classic
+214,,endArrow=classic,206,209,endArrow=classic
+215,,endArrow=classic,206,210,endArrow=classic
+216,,endArrow=classic,206,211,endArrow=classic
+217,,endArrow=classic,207,208,endArrow=classic
+218,,endArrow=classic,207,209,endArrow=classic
+219,,endArrow=classic,207,210,endArrow=classic
+220,,endArrow=classic,207,211,endArrow=classic
+221,Record,endArrow=classic,208,202,endArrow=classic
+222,Actiontype,endArrow=classic,208,204,endArrow=classic
+223,C,endArrow=classic,209,200,endArrow=classic
+224,Record,endArrow=classic,209,202,endArrow=classic
+225,Actiontype,endArrow=classic,209,204,endArrow=classic
+226,D,endArrow=classic,210,201,endArrow=classic
+227,Record,endArrow=classic,210,202,endArrow=classic
+228,Actiontype,endArrow=classic,210,204,endArrow=classic
+229,Dun,endArrow=classic,211,203,endArrow=classic
+230,Record,endArrow=classic,211,202,endArrow=classic
+231,Actiontype,endArrow=classic,211,204,endArrow=classic

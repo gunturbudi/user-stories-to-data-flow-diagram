@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Appropriate Order,shape=partialRectangle,null,null,data_base
+201,Component,shape=partialRectangle,null,null,data_base
+202,Object,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,List The Components In Appropriate Order For An Object,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Component,endArrow=classic,204,201,endArrow=classic
+208,Appropriate Order,endArrow=classic,204,200,endArrow=classic
+209,Object,endArrow=classic,204,202,endArrow=classic

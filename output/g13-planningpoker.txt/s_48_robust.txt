@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Action" as thingaction
+	actor "User" as actoruser
+	boundary "Application" as thingapplicationuser
+	control "Have" as controlhaverespondapplicationuseraction
+	control "Respond To\nActions" as controlrespondapplicationuseraction
+
+	actoruser --- thingapplicationuser
+	thingapplicationuser --> controlhaverespondapplicationuseraction
+	controlhaverespondapplicationuseraction --> controlrespondapplicationuseraction
+	thingapplicationuser --> controlrespondapplicationuseraction
+	thingaction --- controlrespondapplicationuseraction
+
+@enduml

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Library Unit" as thinglibraryunit #grey
+	entity "Collection" as thingcollection
+	entity "Dam" as thingDAMS
+	actor "User" as actoruser
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "List The\nCollections In\nThe Dams\nBelong To\nA Library\nUnit" as controllistcollection
+	control "List Object" as controllistobject
+
+	thingDAMS <.. thingcollection
+	thinglibraryunit <.. thingcollection
+	thinglibraryunit <.. thingDAMS
+	actoruser --- thingunitinterface
+	actoruser --- thingobjectinterface
+	thingcollection --- controllistcollection
+	thingDAMS --- controllistcollection
+	thinglibraryunit --- controllistcollection
+	thingunitinterface --> controllistcollection
+	thingobject --- controllistobject
+	thingobjectinterface --> controllistobject
+
+@enduml

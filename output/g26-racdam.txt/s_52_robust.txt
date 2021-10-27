@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Available ,\nPossible ,\nArchival ,\nMaterial" as thingavailablepossiblearchivalmuchmaterial
+	entity "Use" as thinguse
+	actor "Archivist" as actorarchivist
+	boundary "Use\nInterface" as thinguseinterface #grey
+	control "Make As\nAvailable, Possible,\nArchival, Much\nMaterial For\nUse" as controlmakeavailablepossiblearchivalmuchmaterial
+
+	thinguse <.. thingavailablepossiblearchivalmuchmaterial
+	actorarchivist --- thinguseinterface
+	thingavailablepossiblearchivalmuchmaterial --- controlmakeavailablepossiblearchivalmuchmaterial
+	thinguse --- controlmakeavailablepossiblearchivalmuchmaterial
+	thinguseinterface --> controlmakeavailablepossiblearchivalmuchmaterial
+
+@enduml

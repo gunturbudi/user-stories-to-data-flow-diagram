@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Article,shape=partialRectangle,null,null,data_base
+201,Site Visitor,rounded=0,null,null,external_entity
+202,Get,ellipse,null,null,process
+203,Have Articles Interest,ellipse,null,null,process
+205,,endArrow=classic,201,203,endArrow=classic
+206,Article,endArrow=classic,203,200,endArrow=classic

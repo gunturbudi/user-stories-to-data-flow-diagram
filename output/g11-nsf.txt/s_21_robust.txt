@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Overlap" as thingoverlap
+	entity "Plan" as thingplan
+	entity "User Research" as thinguserresearch #grey
+	actor "Team Member" as actorteammember
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	control "How, Time\nUnderstand Overlaps\nWith Plans\nAround The\nUser Research" as controlunderstandoverlap
+
+	thingplan <.. thingoverlap
+	thinguserresearch <.. thingplan
+	actorteammember --- thingresearchinterface
+	thingoverlap --- controlunderstandoverlap
+	thingplan --- controlunderstandoverlap
+	thinguserresearch --- controlunderstandoverlap
+	thingresearchinterface --> controlunderstandoverlap
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Volume" as thingdatavolume
+	actor ", Staff\nMember" as actoritstaffmember
+	circle "Estimate" as thingestimate
+	boundary "Volume\nInterface" as thingvolumeinterface #grey
+	control "Have An\nEstimate Of\nThe Produced\nData Volume" as controlhaveestimate
+
+	thingdatavolume *-- thingestimate
+	actoritstaffmember --- thingvolumeinterface
+	thingestimate --- controlhaveestimate
+	thingdatavolume --- controlhaveestimate
+	thingvolumeinterface --> controlhaveestimate
+
+@enduml

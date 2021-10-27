@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> House " ];
+201 [label="<f0>  |<f1> Alfred " ];
+202 [label="<f0>  |<f1> Reminder " color=red];
+203 [label="<f0>  |<f1> Thing " color=red];
+204 [label="Olderperson" shape=box];
+205 [label="{<f0> 1.0|<f1> Leave The House }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Receive A Reminder From Alfred On The Things }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> The Things Bring With }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 207
+205 -> 200 [label="House"]
+206 -> 205
+206 -> 202 [label="Reminder"]
+206 -> 201 [label="Alfred"]
+206 -> 203 [label="Thing"]
+207 -> 203 [label="Thing"]
+}

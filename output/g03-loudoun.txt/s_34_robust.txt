@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Appeal" as thingappeal
+	actor "Staff Member" as actorstaffmember
+	boundary "Appeal\nInterface" as thingappealinterface #grey
+	control "Process The\nAppeals" as controlprocessappeal
+
+	actorstaffmember --- thingappealinterface
+	thingappeal --- controlprocessappeal
+	thingappealinterface --> controlprocessappeal
+
+@enduml

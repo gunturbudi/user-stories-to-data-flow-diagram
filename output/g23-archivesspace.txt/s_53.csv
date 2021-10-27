@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Resource Description,shape=partialRectangle,null,null,data_base
+201,Subject Record,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Associate A Subject Record With A Resource Description,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Subject Record,endArrow=classic,203,201,endArrow=classic
+207,Resource Description,endArrow=classic,203,200,endArrow=classic

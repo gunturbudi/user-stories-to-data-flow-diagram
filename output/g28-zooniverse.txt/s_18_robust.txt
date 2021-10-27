@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Speech Recognition" as thingspeechrecognition
+	actor "User" as actoruser
+	boundary "Content Item" as thingcontentitemsuseautomaticspeechrecognitionuser #grey
+	control "Search" as controlsearchcontentitemsuseautomaticspeechrecognitionuser
+	control "Use Automatic\nSpeech Recognition" as controluseautomaticspeechrecognition
+
+	actoruser --- thingcontentitemsuseautomaticspeechrecognitionuser
+	thingcontentitemsuseautomaticspeechrecognitionuser --> controlsearchcontentitemsuseautomaticspeechrecognitionuser
+	controlsearchcontentitemsuseautomaticspeechrecognitionuser --> controluseautomaticspeechrecognition
+	thingspeechrecognition --- controluseautomaticspeechrecognition
+	thingcontentitemsuseautomaticspeechrecognitionuser --> controluseautomaticspeechrecognition
+
+@enduml

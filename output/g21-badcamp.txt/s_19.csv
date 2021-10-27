@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+2,Code with my friends,ellipse,null,null,process
+200,Code Lounge,shape=partialRectangle,null,null,data_base
+201,Anonymoususer,rounded=0,null,null,external_entity
+202,Find Out,ellipse,null,null,process
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Friends,rounded=0,null,null,external_entity
+1002,Friends,endArrow=classic,2,1001,endArrow=classic

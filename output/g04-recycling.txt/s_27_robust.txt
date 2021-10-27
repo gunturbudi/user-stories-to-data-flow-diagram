@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Api" as thingapi
+	entity "Website" as thingwebsite
+	actor "Developer" as actordeveloper
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	control "Access An\nApi From\nThe Website" as controlaccessapiwebsite
+
+	thingwebsite <.. thingapi
+	actordeveloper --- thingwebsiteinterface
+	thingapi --- controlaccessapiwebsite
+	thingwebsite --- controlaccessapiwebsite
+	thingwebsiteinterface --> controlaccessapiwebsite
+
+@enduml

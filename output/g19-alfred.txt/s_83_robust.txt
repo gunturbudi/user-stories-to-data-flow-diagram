@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Caregiver" as thingcaregiver
+	entity "Button" as thingbutton
+	actor "Olderperson" as actorOlderPerson
+	boundary "Button\nInterface" as thingbuttoninterface #grey
+	boundary "Caregiver\nInterface" as thingcaregiverinterface #grey
+	control "Press Button" as controlpressbuttoncallcaregiver
+	control "Call Caregiver" as controlcallcaregiver
+
+	actorOlderPerson --- thingbuttoninterface
+	actorOlderPerson --- thingcaregiverinterface
+	thingbutton --- controlpressbuttoncallcaregiver
+	thingbuttoninterface --> controlpressbuttoncallcaregiver
+	controlpressbuttoncallcaregiver --> controlcallcaregiver
+	thingcaregiver --- controlcallcaregiver
+	thingcaregiverinterface --> controlcallcaregiver
+
+@enduml

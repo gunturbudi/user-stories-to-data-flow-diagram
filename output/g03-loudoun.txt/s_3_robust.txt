@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Preapplication Assistance" as thingpreapplicationassistance #grey
+	actor "Applicant" as actorapplicant
+	boundary "Assistance\nInterface" as thingassistanceinterface #grey
+	control "Request Preapplication\nAssistance" as controlrequestpreapplicationassistance
+
+	actorapplicant --- thingassistanceinterface
+	thingpreapplicationassistance --- controlrequestpreapplicationassistance
+	thingassistanceinterface --> controlrequestpreapplicationassistance
+
+@enduml

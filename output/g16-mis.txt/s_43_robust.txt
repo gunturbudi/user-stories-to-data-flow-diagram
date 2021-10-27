@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Event" as thingevent
+	entity "Repository" as thingrepository
+	entity "Server" as thingserver
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Server\nInterface" as thingserverinterface #grey
+	control "Continue" as controlcontinueprovideaccessevent
+	control "Provide Access\nTo The\nRepository In\nThe Event\nThat The\nServer Fails" as controlprovideaccessevent
+
+	thingrepository <.. thingaccess
+	thingserver <.. thingevent
+	thingevent <.. thingrepository
+	actorrepoadmin --- thingserverinterface
+	thingserverinterface --> controlcontinueprovideaccessevent
+	controlcontinueprovideaccessevent --> controlprovideaccessevent
+	thingaccess --- controlprovideaccessevent
+	thingrepository --- controlprovideaccessevent
+	thingevent --- controlprovideaccessevent
+	thingserver --- controlprovideaccessevent
+	thingserverinterface --> controlprovideaccessevent
+
+@enduml

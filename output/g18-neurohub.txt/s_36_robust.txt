@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Experiment" as thingexperiment
+	entity "Experimental Run" as thingexperimentalrun
+	actor "User" as actoruser
+	boundary "Run\nInterface" as thingruninterface #grey
+	control "Build An\nExperiment" as controlbuildexperiment
+	control "Link Experimental\nRuns" as controllinkexperimentalrunbuildexperiment
+
+	actoruser --- thingruninterface
+	thingexperiment --- controlbuildexperiment
+	controllinkexperimentalrunbuildexperiment --> controlbuildexperiment
+	thingruninterface --> controlbuildexperiment
+	thingexperimentalrun --- controllinkexperimentalrunbuildexperiment
+	thingruninterface --> controllinkexperimentalrunbuildexperiment
+
+@enduml

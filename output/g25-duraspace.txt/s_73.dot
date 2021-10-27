@@ -1,0 +1,28 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Name " color=red];
+201 [label="<f0>  |<f1> Search " color=red];
+202 [label="<f0>  |<f1> Etc " ];
+203 [label="<f0>  |<f1> Photographer " ];
+204 [label="<f0>  |<f1> Specific Role " color=red];
+205 [label="<f0>  |<f1> Illustrator " ];
+206 [label="User" shape=box];
+207 [label="{<f0> 1.0|<f1> Scope By Searches By Name To A Specific Role Such As Etc }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Scope By Searches By Name To A Specific Role Such As Photographer }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Scope By Searches By Name To A Specific Role Such As Illustrator }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 202 [label="Etc"]
+207 -> 204 [label="Specific Role"]
+207 -> 200 [label="Name"]
+207 -> 201 [label="Search"]
+208 -> 203 [label="Photographer"]
+208 -> 204 [label="Specific Role"]
+208 -> 200 [label="Name"]
+208 -> 201 [label="Search"]
+209 -> 201 [label="Search"]
+209 -> 200 [label="Name"]
+209 -> 204 [label="Specific Role"]
+209 -> 205 [label="Illustrator"]
+}

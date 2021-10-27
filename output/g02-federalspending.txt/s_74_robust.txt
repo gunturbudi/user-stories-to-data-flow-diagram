@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Correct Format" as thingcorrectformat
+	entity "File F" as thingfilef
+	actor "Agency User" as actoragencyuser
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Get File\nF In\nThe Correct\nFormat" as controlgetfileFcorrectformat
+
+	thingcorrectformat <.. thingfilef
+	actoragencyuser --- thingformatinterface
+	thingfilef --- controlgetfileFcorrectformat
+	thingcorrectformat --- controlgetfileFcorrectformat
+	thingformatinterface --> controlgetfileFcorrectformat
+
+@enduml

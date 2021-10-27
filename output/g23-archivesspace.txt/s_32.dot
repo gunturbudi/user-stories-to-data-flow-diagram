@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection Management\nSubrecord " ];
+201 [label="Archivist" shape=box];
+202 [label="{<f0> 1.0|<f1> Create A Collection Management Subrecord }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Edit A Collection Management Subrecord }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Collection Management\nSubrecord"]
+203 -> 200 [label="Collection Management\nSubrecord"]
+}

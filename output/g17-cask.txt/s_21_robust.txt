@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Outdate Version" as thingoutdatedversion
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Delete Outdated\nVersions Of\nA Dataset\nType" as controldeleteoutdatedversion
+	control "Fail" as controlfail
+
+	thingdatasettype *-- thingoutdatedversion
+	actordatasetdeveloper --- thingtypeinterface
+	thingoutdatedversion --- controldeleteoutdatedversion
+	thingdatasettype --- controldeleteoutdatedversion
+	thingtypeinterface --> controldeleteoutdatedversion
+
+@enduml

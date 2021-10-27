@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Control Vocabulary,shape=partialRectangle,null,null,data_base
+201,Tag,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Use The Tags,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Tag,endArrow=classic,203,201,endArrow=classic

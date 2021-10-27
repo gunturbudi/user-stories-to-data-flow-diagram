@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Session,shape=partialRectangle,null,null,data_base
+201,Sponsor Attendee,shape=partialRectangle,null,null,data_base
+202,Anonymoususer,rounded=0,null,null,external_entity
+203,See A List Of The Sessions With Sponsor Attendees,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Session,endArrow=classic,203,200,endArrow=classic
+207,Sponsor Attendee,endArrow=classic,203,201,endArrow=classic

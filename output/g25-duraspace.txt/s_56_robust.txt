@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Access" as thingaccess
+	entity "Content File" as thingcontentfile
+	actor "User" as actoruser
+
+	thingcontentfile <.. thingaccess
+	thingobject <.. thingcontentfile
+
+@enduml

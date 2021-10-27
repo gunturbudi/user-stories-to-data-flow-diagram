@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summit" as thingsummit
+	entity "Seat" as thingmanyseat
+	actor "Anonymoususer" as actoranonymoususer
+	control "See" as controlsee
+
+
+@enduml

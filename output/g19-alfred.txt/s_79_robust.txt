@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thingotheruser
+	entity "Online Game" as thingonlinegame
+	actor "Olderperson" as actorOlderPerson
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Play Online\nGames Together\nWith Other\nUsers" as controlplayonlinegameotheruser
+
+	thingotheruser <.. thingonlinegame
+	actorOlderPerson --- thinguserinterface
+	thingonlinegame --- controlplayonlinegameotheruser
+	thingotheruser --- controlplayonlinegameotheruser
+	thinguserinterface --> controlplayonlinegameotheruser
+
+@enduml

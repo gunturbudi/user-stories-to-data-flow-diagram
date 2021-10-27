@@ -1,0 +1,56 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Collection Component" as thingcollectioncomponent
+	entity "Title Entity" as thingtitleentity
+	entity "Date" as thingdate
+	entity "Name" as thingname
+	entity "Subject" as thingsubject
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Facet" as thingvariousfacet
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Subject\nInterface" as thingsubjectinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Entity\nInterface" as thingentityinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	control "Describe Various\nFacets Of\nObject" as controldescribevariousfacetobject
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Subject" as controldescribevariousfacetsubject
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Date" as controldescribevariousfacetdate
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Title\nEntities" as controldescribevariousfacet
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Name" as controldescribevariousfacetname
+
+	thingtitleentity <.. thingcollectioncomponent
+	thingname <.. thingcollectioncomponent
+	thingdate <.. thingcollectioncomponent
+	thingsubject <.. thingcollectioncomponent
+	thingcollectioncomponent *-- thingvariousfacet
+	thingobject *-- thingvariousfacet
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingsubjectinterface
+	actorrepositorymanager --- thingdateinterface
+	actorrepositorymanager --- thingentityinterface
+	actorrepositorymanager --- thingnameinterface
+	thingobjectinterface --> controldescribevariousfacetobject
+	thingobject --- controldescribevariousfacetobject
+	thingvariousfacet --- controldescribevariousfacetobject
+	thingsubject --- controldescribevariousfacetsubject
+	thingsubjectinterface --> controldescribevariousfacetsubject
+	thingcollectioncomponent --- controldescribevariousfacetsubject
+	thingvariousfacet --- controldescribevariousfacetsubject
+	thingdate --- controldescribevariousfacetdate
+	thingdateinterface --> controldescribevariousfacetdate
+	thingcollectioncomponent --- controldescribevariousfacetdate
+	thingvariousfacet --- controldescribevariousfacetdate
+	thingvariousfacet --- controldescribevariousfacet
+	thingcollectioncomponent --- controldescribevariousfacet
+	thingtitleentity --- controldescribevariousfacet
+	thingentityinterface --> controldescribevariousfacet
+	thingname --- controldescribevariousfacetname
+	thingnameinterface --> controldescribevariousfacetname
+	thingcollectioncomponent --- controldescribevariousfacetname
+	thingvariousfacet --- controldescribevariousfacetname
+
+@enduml

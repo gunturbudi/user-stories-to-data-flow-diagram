@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Estimate" as thingestimate
+	actor "Moderator" as actormoderator
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	control "Show All\nEstimates" as controlshowestimate
+
+	actormoderator --- thingestimateinterface
+	thingestimate --- controlshowestimate
+	thingestimateinterface --> controlshowestimate
+
+@enduml

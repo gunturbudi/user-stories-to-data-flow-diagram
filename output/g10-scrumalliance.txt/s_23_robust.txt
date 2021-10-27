@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Upcoming Event" as thingupcomingevent
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "See A\nList Of\nAll Upcoming\nEvents" as controlseelist
+
+	actorsitevisitor --- thingeventinterface
+	thingupcomingevent --- controlseelist
+	thingeventinterface --> controlseelist
+
+@enduml

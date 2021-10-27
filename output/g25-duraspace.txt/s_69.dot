@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Specific Language " ];
+202 [label="<f0>  |<f1> Search " color=red];
+203 [label="<f0>  |<f1> Object " color=red];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Scope Searches For Object Component }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Scope Searches For Collections To A Specific Language }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Scope Searches For Object }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 202 [label="Search"]
+206 -> 202 [label="Search"]
+206 -> 200 [label="Collection"]
+206 -> 201 [label="Specific Language"]
+207 -> 203 [label="Object"]
+207 -> 202 [label="Search"]
+}

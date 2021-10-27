@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Guarantee" as thingguarantee
+	entity "Data Integrity" as thingdataintegrity #grey
+	actor "Depositor" as actordepositor
+	boundary "Integrity\nInterface" as thingintegrityinterface #grey
+	control "Have Guarantees\nAbout Data\nIntegrity" as controlhaveguarantee
+
+	thingdataintegrity <.. thingguarantee
+	actordepositor --- thingintegrityinterface
+	thingguarantee --- controlhaveguarantee
+	thingdataintegrity --- controlhaveguarantee
+	thingintegrityinterface --> controlhaveguarantee
+
+@enduml

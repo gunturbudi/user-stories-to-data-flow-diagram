@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Useful Metadata " color=red];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> Data Column " color=red];
+203 [label="Publisher" shape=box];
+204 [label="{<f0> 1.0|<f1> Add Useful Metadata }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Add In New Data Columns }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Make The Dataset }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Useful Metadata"]
+205 -> 206
+205 -> 202 [label="Data Column"]
+206 -> 201 [label="Dataset"]
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Access,shape=partialRectangle,null,null,data_base
+201,Previous Version,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Get Access To A Previous Version,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Access,endArrow=classic,203,200,endArrow=classic
+207,Previous Version,endArrow=classic,203,201,endArrow=classic

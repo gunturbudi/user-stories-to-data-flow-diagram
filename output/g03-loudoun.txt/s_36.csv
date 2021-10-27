@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Ensure service levels are met,ellipse,null,null,process
+200,Plan Reviewer\nWorkload,shape=partialRectangle,null,null,data_base
+201,"Plan , Review , Staff Supervisor",rounded=0,null,null,external_entity
+202,Manage Plan Reviewer Workload,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Plan Reviewer\nWorkload,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Workload,rounded=0,null,null,external_entity
+1002,Workload,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,New Research,shape=partialRectangle,null,null,data_base
+201,Content,shape=partialRectangle,null,null,data_base
+202,"Suitable ,\nTimely Research",shape=partialRectangle,null,null,data_base
+203,Relevant,shape=partialRectangle,null,null,data_base
+204,Use,shape=partialRectangle,null,null,data_base
+205,Curriculum,shape=partialRectangle,null,null,data_base
+206,Teachingfacultymember,rounded=0,null,null,external_entity
+207,"Notified Identify Suitable, Timely Research For Use In Curriculum Of New Research",ellipse,null,null,process
+208,"Notified Identify Suitable, Timely Research For Use In Curriculum Of Content",ellipse,null,null,process
+209,Identify Relevant,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,"Suitable ,\nTimely Research",endArrow=classic,207,202,endArrow=classic
+215,Use,endArrow=classic,207,204,endArrow=classic
+216,Curriculum,endArrow=classic,207,205,endArrow=classic
+217,New Research,endArrow=classic,207,200,endArrow=classic
+218,Content,endArrow=classic,208,201,endArrow=classic
+219,"Suitable ,\nTimely Research",endArrow=classic,208,202,endArrow=classic
+220,Use,endArrow=classic,208,204,endArrow=classic
+221,Curriculum,endArrow=classic,208,205,endArrow=classic
+222,Relevant,endArrow=classic,209,203,endArrow=classic

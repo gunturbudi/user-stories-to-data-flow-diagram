@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Team,shape=partialRectangle,null,null,data_base
+202,Object,shape=partialRectangle,null,null,data_base
+203,Duke Researcher,rounded=0,null,null,external_entity
+204,Describe Object,ellipse,null,null,process
+205,Describe Team In The Repository,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Object,endArrow=classic,204,202,endArrow=classic
+210,Team,endArrow=classic,205,201,endArrow=classic
+211,Repository,endArrow=classic,205,200,endArrow=classic

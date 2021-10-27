@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Encrypt File" as thingencryptedfile
+	entity "Key" as thingkey
+	entity "Server" as thingserver
+	entity "Storage Site" as thingstoragesite
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Stored Checksum" as thingstoredchecksum
+	control "Have" as controlhave
+
+	thingserver <.. thingkey
+	thingencryptedfile *-- thingstoredchecksum
+
+@enduml

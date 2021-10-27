@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Training Performance,shape=partialRectangle,null,null,data_base
+201,Olderperson,rounded=0,null,null,external_entity
+202,See Training Performance,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Training Performance,endArrow=classic,202,200,endArrow=classic

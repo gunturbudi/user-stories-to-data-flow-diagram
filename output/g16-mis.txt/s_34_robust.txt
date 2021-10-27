@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository Content" as thingrepositorycontent
+	entity "Oai Pmh" as thingoaipmh
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Pmh\nInterface" as thingpmhinterface #grey
+	control "Expose Repository\nContents Via\nOai Pmh" as controlexposerepositorycontentsoaiPMH
+
+	thingoaipmh <.. thingrepositorycontent
+	actorrepoadmin --- thingpmhinterface
+	thingrepositorycontent --- controlexposerepositorycontentsoaiPMH
+	thingoaipmh --- controlexposerepositorycontentsoaiPMH
+	thingpmhinterface --> controlexposerepositorycontentsoaiPMH
+
+@enduml

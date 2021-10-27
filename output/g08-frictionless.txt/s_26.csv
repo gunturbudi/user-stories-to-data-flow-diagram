@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Integrate data-packaged data with pipelines that use dat.,ellipse,null,null,process
+200,Dat Integration,shape=partialRectangle,null,null,data_base
+201,Developer,rounded=0,null,null,external_entity
+202,Provided With A Dat Integration,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Dat Integration,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Data-packaged data,rounded=0,null,null,external_entity
+1002,Data-packaged data,endArrow=classic,2,1001,endArrow=classic

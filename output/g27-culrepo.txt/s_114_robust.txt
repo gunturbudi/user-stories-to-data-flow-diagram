@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Item" as thingitem
+	entity "Mechanism" as thingmechanism
+	actor "Data Curator" as actordatacurator
+	boundary "Mechanism\nInterface" as thingmechanisminterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Have A\nMechanism" as controlhavemechanismallowrecord
+	control "Allow For\nRecords For\nItems Not\nDo Need" as controlallowrecord
+	control "Stored" as controlstore
+
+	thingitem <.. thingrecord
+	actordatacurator --- thingmechanisminterface
+	actordatacurator --- thingiteminterface
+	thingmechanism --- controlhavemechanismallowrecord
+	thingmechanisminterface --> controlhavemechanismallowrecord
+	controlhavemechanismallowrecord --> controlallowrecord
+	thingrecord --- controlallowrecord
+	thingitem --- controlallowrecord
+	thingiteminterface --> controlallowrecord
+	controlallowrecord --> controlstore
+	thingiteminterface --> controlstore
+
+@enduml

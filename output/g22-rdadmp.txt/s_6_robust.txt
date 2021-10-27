@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "thingIT" as thingIT
+	entity "Project Lifecycle" as thingprojectlifecycle #grey
+	entity "Resource Requirement" as thingresourcerequirement
+	actor "Manager" as actoritmanager
+	boundary "Lifecycle\nInterface" as thinglifecycleinterface #grey
+	control "Know About\nIt Resource\nRequirements In\nThe Project\nLifecycle" as controlknowITresourcerequirementsprojectlifecycle
+
+	thingresourcerequirement <.. thingIT
+	thingprojectlifecycle <.. thingresourcerequirement
+	actoritmanager --- thinglifecycleinterface
+	thingIT --- controlknowITresourcerequirementsprojectlifecycle
+	thingresourcerequirement --- controlknowITresourcerequirementsprojectlifecycle
+	thingprojectlifecycle --- controlknowITresourcerequirementsprojectlifecycle
+	thinglifecycleinterface --> controlknowITresourcerequirementsprojectlifecycle
+
+@enduml

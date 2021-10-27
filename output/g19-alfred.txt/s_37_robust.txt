@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Night" as thingnight
+	entity "Rythm Support" as thingrythmsupport
+	entity "Agenda Reminder" as thingagendareminder
+	actor "Olderperson" as actorOlderPerson
+	boundary "Reminder\nInterface" as thingreminderinterface #grey
+	boundary "Night\nInterface" as thingnightinterface #grey
+	control "Receive Day\nRythm Support\nWith Agenda\nReminders" as controlreceivedayrythmsupport
+	control "Receive Night" as controlreceivenight
+
+	thingagendareminder <.. thingrythmsupport
+	actorOlderPerson --- thingreminderinterface
+	actorOlderPerson --- thingnightinterface
+	thingrythmsupport --- controlreceivedayrythmsupport
+	thingagendareminder --- controlreceivedayrythmsupport
+	thingreminderinterface --> controlreceivedayrythmsupport
+	thingnight --- controlreceivenight
+	thingnightinterface --> controlreceivenight
+
+@enduml

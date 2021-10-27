@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Execution" as thingexecution
+	actor "Staff Member" as actorstaffmember
+	boundary "Execution\nInterface" as thingexecutioninterface #grey
+	control "Hearing Execution" as controlhearingexecution
+	control "Support" as controlsupporthearingexecution #grey
+	control "Prepare" as controlpreparehearingexecution
+
+	actorstaffmember --- thingexecutioninterface
+	thingexecution --- controlhearingexecution
+	controlpreparehearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlhearingexecution
+	controlsupporthearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlpreparehearingexecution
+
+@enduml

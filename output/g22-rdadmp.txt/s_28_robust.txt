@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reference" as thingreference
+	entity "Project Proposal" as thingprojectproposal #grey
+	actor "Stakeholder" as actorstakeholder
+	boundary "Proposal\nInterface" as thingproposalinterface #grey
+	control "Have References\nTo The\nProject Proposal" as controlhavereference
+
+	thingprojectproposal <.. thingreference
+	actorstakeholder --- thingproposalinterface
+	thingreference --- controlhavereference
+	thingprojectproposal --- controlhavereference
+	thingproposalinterface --> controlhavereference
+
+@enduml

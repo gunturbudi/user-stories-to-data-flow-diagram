@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Gdp " ];
+201 [label="<f0>  |<f1> Reference " ];
+202 [label="<f0>  |<f1> Contextual Constraint " ];
+203 [label="<f0>  |<f1> Dataset " color=red];
+204 [label="<f0>  |<f1> Measure " color=red];
+205 [label="Api User" shape=box];
+206 [label="{<f0> 1.0|<f1> Normalise Measures By Gdp }" shape=Mrecord];
+205 -> 206
+206 -> 204
+206 -> 200
+}

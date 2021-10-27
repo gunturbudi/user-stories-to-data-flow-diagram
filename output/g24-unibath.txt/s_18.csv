@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+2,Find my data more easily,ellipse,null,null,process
+200,Record,shape=partialRectangle,null,null,data_base
+201,Discoverability Metadata,shape=partialRectangle,null,null,data_base
+202,Depositor,rounded=0,null,null,external_entity
+203,"Attach Specific, Subject Discoverability Metadata To Records",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Discoverability Metadata,endArrow=classic,203,201,endArrow=classic
+207,Record,endArrow=classic,203,200,endArrow=classic
+1000,Researchers,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Discipline,rounded=0,null,null,external_entity
+1003,Discipline,endArrow=classic,2,1002,endArrow=classic
+1004,Data,rounded=0,null,null,external_entity
+1005,Data,endArrow=classic,2,1004,endArrow=classic

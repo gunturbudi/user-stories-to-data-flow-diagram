@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Place" as thingplace
+	actor "Team" as actorteam
+	actor "Nsf Member" as actornsfmember
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	control "Have A\nPlace" as controlhaveplace
+
+	actorteam --- thingplaceinterface
+	actornsfmember --- thingplaceinterface
+	thingplace --- controlhaveplace
+	thingplaceinterface --> controlhaveplace
+
+@enduml

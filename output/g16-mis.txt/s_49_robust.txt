@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fedora" as thingfedora
+	entity "Application" as thingapplication
+	entity "Datum" as thingdatum
+	actor "Developer" as actordeveloper
+	boundary "Fedora\nInterface" as thingfedorainterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	control "Upgrade To\nFedora" as controlupgradefedora
+	control "Migrate Datum" as controlmigratedatum
+	control "Migrate Applications" as controlmigrateapplication
+
+	actordeveloper --- thingfedorainterface
+	actordeveloper --- thingdatuminterface
+	actordeveloper --- thingapplicationinterface
+	thingfedora --- controlupgradefedora
+	thingfedorainterface --> controlupgradefedora
+	thingdatum --- controlmigratedatum
+	thingdatuminterface --> controlmigratedatum
+	thingapplication --- controlmigrateapplication
+	thingapplicationinterface --> controlmigrateapplication
+
+@enduml

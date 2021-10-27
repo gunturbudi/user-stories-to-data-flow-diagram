@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Calendar" as thingcalendar
+	actor "Staff Member" as actorstaffmember
+	boundary "Calendar\nInterface" as thingcalendarinterface #grey
+	control "Manage" as controlmanagehearingcalendar
+	control "Hearing Calendars" as controlhearingcalendar
+
+	actorstaffmember --- thingcalendarinterface
+	thingcalendarinterface --> controlmanagehearingcalendar
+	controlmanagehearingcalendar --> controlhearingcalendar
+	thingcalendar --- controlhearingcalendar
+	thingcalendarinterface --> controlhearingcalendar
+
+@enduml

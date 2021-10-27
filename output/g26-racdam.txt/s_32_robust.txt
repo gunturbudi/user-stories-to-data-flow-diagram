@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Educational Visit" as thingeducationalvisit
+	entity "Archival Material" as thingarchivalmaterial
+	actor "Archivist" as actorarchivist
+	circle "Scan" as thingscan
+	boundary "Visit\nInterface" as thingvisitinterface #grey
+	control "Manage Scans\nOf Archival\nMaterial For\nEducational Visits" as controlmanagescan
+
+	thingeducationalvisit <.. thingarchivalmaterial
+	thingarchivalmaterial *-- thingscan
+	actorarchivist --- thingvisitinterface
+	thingscan --- controlmanagescan
+	thingarchivalmaterial --- controlmanagescan
+	thingeducationalvisit --- controlmanagescan
+	thingvisitinterface --> controlmanagescan
+
+@enduml

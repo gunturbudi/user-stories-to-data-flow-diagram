@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Current Version" as thingcurrentversion
+	entity "Datum" as thingdatum
+	entity "Neurohub" as thingNeuroHub
+	actor "System Administrator" as actorsystemadministrator
+	circle "Old Version" as thingolderversion
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Migrate Data\nFrom An\nOlder Version\nOf Neurohub\nTo The\nCurrent Version" as controlmigratedatumcurrentversion
+
+	thingolderversion <.. thingdatum
+	thingcurrentversion <.. thingNeuroHub
+	thingNeuroHub *-- thingolderversion
+	actorsystemadministrator --- thingversioninterface
+	thingdatum --- controlmigratedatumcurrentversion
+	thingolderversion --- controlmigratedatumcurrentversion
+	thingNeuroHub --- controlmigratedatumcurrentversion
+	thingcurrentversion --- controlmigratedatumcurrentversion
+	thingversioninterface --> controlmigratedatumcurrentversion
+
+@enduml

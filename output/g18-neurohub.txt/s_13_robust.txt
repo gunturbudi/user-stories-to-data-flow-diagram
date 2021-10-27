@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "Network Drive" as thingnetworkdrive
+	actor "Researcher" as actorresearcher
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Drive\nInterface" as thingdriveinterface #grey
+	control "Having Files\nTo A\nLog Book\nPage" as controlhaveuploadfilefileusemappednetworkdrive
+	control "Upload Files" as controluploadfile
+	control "Using A\nMapped Network\nDrive" as controlusemappednetworkdrive
+
+	thinglogbookpage <.. thingfile
+	actorresearcher --- thingpageinterface
+	actorresearcher --- thingfileinterface
+	actorresearcher --- thingdriveinterface
+	thingfile --- controlhaveuploadfilefileusemappednetworkdrive
+	thinglogbookpage --- controlhaveuploadfilefileusemappednetworkdrive
+	thingpageinterface --> controlhaveuploadfilefileusemappednetworkdrive
+	controlhaveuploadfilefileusemappednetworkdrive --> controluploadfile
+	thingfileinterface --> controluploadfile
+	thingfile --- controluploadfile
+	controlhaveuploadfilefileusemappednetworkdrive --> controlusemappednetworkdrive
+	thingnetworkdrive --- controlusemappednetworkdrive
+	thingdriveinterface --> controlusemappednetworkdrive
+
+@enduml

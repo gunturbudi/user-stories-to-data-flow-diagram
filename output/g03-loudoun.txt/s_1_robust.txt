@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	actor "Public User" as actorpublicuser
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Search For\nInformation" as controlsearchinformation
+
+	actorpublicuser --- thinginformationinterface
+	thinginformation --- controlsearchinformation
+	thinginformationinterface --> controlsearchinformation
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Different System" as thingdifferentsystem
+	actor "Univitservice" as actorUnivITservice
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Export All\nData To\nA Different\nSystem" as controlexportdatumdifferentsystem
+
+	thingdifferentsystem <.. thingdatum
+	actorUnivITservice --- thingsysteminterface
+	thingdatum --- controlexportdatumdifferentsystem
+	thingdifferentsystem --- controlexportdatumdifferentsystem
+	thingsysteminterface --> controlexportdatumdifferentsystem
+
+@enduml

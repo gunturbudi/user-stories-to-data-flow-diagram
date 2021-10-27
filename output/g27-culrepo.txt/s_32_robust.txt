@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Google Search\nResult" as thinggooglesearchresult
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "See Items" as controlseeitem
+
+	actorcornellfacultymember --- thingiteminterface
+	thingitem --- controlseeitem
+	thingiteminterface --> controlseeitem
+
+@enduml

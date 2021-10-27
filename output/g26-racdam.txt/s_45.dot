@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Donor " ];
+201 [label="<f0>  |<f1> Information " color=red];
+202 [label="<f0>  |<f1> Available Right " ];
+203 [label="<f0>  |<f1> Researcher " color=red];
+204 [label="Archivist" shape=box];
+205 [label="{<f0> 1.0|<f1> Make Information About Available Rights To Researchers }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Make Information About Available Rights To Donor }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 201 [label="Information"]
+205 -> 202 [label="Available Right"]
+205 -> 203 [label="Researcher"]
+206 -> 200 [label="Donor"]
+206 -> 202 [label="Available Right"]
+206 -> 201 [label="Information"]
+}

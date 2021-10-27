@@ -1,0 +1,44 @@
+id,value,style,source,target,type
+200,Useful File,shape=partialRectangle,null,null,data_base
+201,Format Version,shape=partialRectangle,null,null,data_base
+202,Aspect,shape=partialRectangle,null,null,data_base
+203,Obsolescence,shape=partialRectangle,null,null,data_base
+204,Integrity,shape=partialRectangle,null,null,data_base
+205,File Size,shape=partialRectangle,null,null,data_base
+206,File Format,shape=partialRectangle,null,null,data_base
+207,Creation Date,shape=partialRectangle,null,null,data_base
+208,Master File,shape=partialRectangle,null,null,data_base
+209,Preservation Managers,shape=partialRectangle,null,null,data_base
+210,Dams Manager,rounded=0,null,null,external_entity
+211,Indicate To Aspects Of A Useful File,ellipse,null,null,process
+212,Impending Monitoring Integrity Obsolescence Including File Size,ellipse,null,null,process
+213,Impending Monitoring Integrity Obsolescence Including Creation Date,ellipse,null,null,process
+214,Indicate To Preservation Managers Aspects Of A Useful Master File,ellipse,null,null,process
+215,Impending Monitoring Integrity Obsolescence Including Format Version,ellipse,null,null,process
+216,Impending Monitoring Integrity Obsolescence Including File Format,ellipse,null,null,process
+218,,endArrow=classic,210,212,endArrow=classic
+219,,endArrow=classic,210,213,endArrow=classic
+220,,endArrow=classic,210,214,endArrow=classic
+221,,endArrow=classic,210,215,endArrow=classic
+222,,endArrow=classic,210,216,endArrow=classic
+223,Aspect,endArrow=classic,211,202,endArrow=classic
+224,Useful File,endArrow=classic,211,200,endArrow=classic
+225,,endArrow=classic,212,214,endArrow=classic
+226,Integrity,endArrow=classic,212,204,endArrow=classic
+227,Obsolescence,endArrow=classic,212,203,endArrow=classic
+228,File Size,endArrow=classic,212,205,endArrow=classic
+229,,endArrow=classic,213,211,endArrow=classic
+230,Creation Date,endArrow=classic,213,207,endArrow=classic
+231,Obsolescence,endArrow=classic,213,203,endArrow=classic
+232,Integrity,endArrow=classic,213,204,endArrow=classic
+233,Master File,endArrow=classic,214,208,endArrow=classic
+234,Aspect,endArrow=classic,214,202,endArrow=classic
+235,,endArrow=classic,215,211,endArrow=classic
+236,Format Version,endArrow=classic,215,201,endArrow=classic
+237,Obsolescence,endArrow=classic,215,203,endArrow=classic
+238,Integrity,endArrow=classic,215,204,endArrow=classic
+239,,endArrow=classic,216,211,endArrow=classic
+240,File Format,endArrow=classic,216,206,endArrow=classic
+241,Obsolescence,endArrow=classic,216,203,endArrow=classic
+242,Integrity,endArrow=classic,216,204,endArrow=classic
+246,Preservation Managers,endArrow=classic,214,209,endArrow=classic

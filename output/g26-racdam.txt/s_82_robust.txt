@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Film Clip" as thingfilmclip
+	actor "Researcher" as actorresearcher
+	boundary "Clip\nInterface" as thingclipinterface #grey
+	control "View Film\nClips" as controlviewfilmclips
+
+	actorresearcher --- thingclipinterface
+	thingfilmclip --- controlviewfilmclips
+	thingclipinterface --> controlviewfilmclips
+
+@enduml

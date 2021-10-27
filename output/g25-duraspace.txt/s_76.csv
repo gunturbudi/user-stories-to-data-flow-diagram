@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Resource,shape=partialRectangle,null,null,data_base
+201,End User,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,Geo Indicate For Any Resource Believe To An End User,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Resource,endArrow=classic,203,200,endArrow=classic
+207,End User,endArrow=classic,203,201,endArrow=classic

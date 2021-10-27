@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Web Page,shape=partialRectangle,null,null,data_base
+201,Group,shape=partialRectangle,null,null,data_base
+202,Neurohub Node,shape=partialRectangle,null,null,data_base
+203,Mobile Device,shape=partialRectangle,null,null,data_base
+204,Share Calendar,shape=partialRectangle,null,null,data_base
+205,User,rounded=0,null,null,external_entity
+206,View The Group Shared Calendars On Mobile Device,ellipse,null,null,process
+207,View The Group's Shared Calendars As Well Via The Neurohub Nodes' Web Page,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Mobile Device,endArrow=classic,206,203,endArrow=classic
+212,Share Calendar,endArrow=classic,206,204,endArrow=classic
+213,Share Calendar,endArrow=classic,207,204,endArrow=classic
+214,Web Page,endArrow=classic,207,200,endArrow=classic
+215,Group,endArrow=classic,206,201,endArrow=classic
+217,Neurohub Node,endArrow=classic,207,202,endArrow=classic

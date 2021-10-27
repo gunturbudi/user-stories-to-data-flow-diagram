@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Good Battery,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,Have A Very Good Battery For Alfred,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Good Battery,endArrow=classic,203,200,endArrow=classic
+207,Alfred,endArrow=classic,203,201,endArrow=classic

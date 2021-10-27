@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+2,Find one data package amongst all the data packages by this publisher,ellipse,null,null,process
+200,Publisher,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Consumer,rounded=0,null,null,external_entity
+203,Search Among All Data Packages A Publisher,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Package,endArrow=classic,203,201,endArrow=classic
+207,Publisher,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Data package,endArrow=classic,2,201,endArrow=classic

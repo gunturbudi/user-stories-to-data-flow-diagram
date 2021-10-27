@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Workflow,shape=partialRectangle,null,null,data_base
+201,Log Book,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Have The Details Of The Workflow Execution To Recorded In A Neurohub Log Book Executing A Workflow,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Log Book,endArrow=classic,203,201,endArrow=classic
+207,Workflow,endArrow=classic,203,200,endArrow=classic

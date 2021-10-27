@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Access,shape=partialRectangle,null,null,data_base
+201,Unprocessed Material,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Provide Access To Digital Copies Of Unprocessed Material,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Access,endArrow=classic,203,200,endArrow=classic
+207,Unprocessed Material,endArrow=classic,203,201,endArrow=classic

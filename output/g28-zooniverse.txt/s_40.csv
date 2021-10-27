@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Video Duration,shape=partialRectangle,null,null,data_base
+201,Worm Watch\nLab,shape=partialRectangle,null,null,data_base
+202,Worm Motion\nAnalysis,shape=partialRectangle,null,null,data_base
+203,Zooniverse Admin,rounded=0,null,null,external_entity
+204,Perform Automatic Worm Motion Analysis,ellipse,null,null,process
+205,Reduce Video Duration In Worm Watch Lab,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Worm Motion\nAnalysis,endArrow=classic,204,202,endArrow=classic
+211,Video Duration,endArrow=classic,205,200,endArrow=classic
+212,Worm Watch\nLab,endArrow=classic,205,201,endArrow=classic

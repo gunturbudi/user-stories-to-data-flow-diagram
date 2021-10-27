@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Healthy Recipe" as thinghealthyrecipe
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Suggest Healthy\nRecipes" as controlsuggestALFREDOlderPersonhealthyrecipe
+	control "Have" as controlhavesuggestALFREDOlderPersonhealthyrecipe
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingALFREDOlderPerson --> controlsuggestALFREDOlderPersonhealthyrecipe
+	thinghealthyrecipe --- controlsuggestALFREDOlderPersonhealthyrecipe
+	controlhavesuggestALFREDOlderPersonhealthyrecipe --> controlsuggestALFREDOlderPersonhealthyrecipe
+	thingALFREDOlderPerson --> controlhavesuggestALFREDOlderPersonhealthyrecipe
+
+@enduml

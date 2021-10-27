@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Coworking Slot" as thingcoworkingslot
+	actor "Team Member" as actorteammember
+	circle "Schedule" as thingschedule
+	boundary "Slot\nInterface" as thingslotinterface #grey
+	control "Have A\nSchedule Of\nMore Coworking\nSlots" as controlhaveschedule
+
+	thingcoworkingslot *-- thingschedule
+	actorteammember --- thingslotinterface
+	thingschedule --- controlhaveschedule
+	thingcoworkingslot --- controlhaveschedule
+	thingslotinterface --> controlhaveschedule
+
+@enduml

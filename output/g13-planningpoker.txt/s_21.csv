@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+200,Application,shape=partialRectangle,null,null,data_base
+201,Account,shape=partialRectangle,null,null,data_base
+202,Email Address,shape=partialRectangle,null,null,data_base
+203,Password,shape=partialRectangle,null,null,data_base
+204,Name,shape=partialRectangle,null,null,data_base
+205,Username,shape=partialRectangle,null,null,data_base
+206,Moderator,rounded=0,null,null,external_entity
+207,Create An Account For The Application,ellipse,null,null,process
+208,Entering Name,ellipse,null,null,process
+209,Entering Email Address,ellipse,null,null,process
+210,Entering A Username,ellipse,null,null,process
+211,Entering A Password,ellipse,null,null,process
+213,,endArrow=classic,206,207,endArrow=classic
+214,,endArrow=classic,206,208,endArrow=classic
+215,,endArrow=classic,206,209,endArrow=classic
+216,,endArrow=classic,206,210,endArrow=classic
+217,,endArrow=classic,206,211,endArrow=classic
+218,Account,endArrow=classic,207,201,endArrow=classic
+219,Application,endArrow=classic,207,200,endArrow=classic
+220,,endArrow=classic,208,207,endArrow=classic
+221,Name,endArrow=classic,208,204,endArrow=classic
+222,,endArrow=classic,209,207,endArrow=classic
+223,Email Address,endArrow=classic,209,202,endArrow=classic
+224,,endArrow=classic,210,207,endArrow=classic
+225,Username,endArrow=classic,210,205,endArrow=classic
+226,,endArrow=classic,211,207,endArrow=classic
+227,Password,endArrow=classic,211,203,endArrow=classic

@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	actor "Moderator" as actormoderator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Delete An\nItem From\nThe List\nOf Items\nTo Estimated" as controldeleteitem
+
+	thingitem <.. thingitem
+	actormoderator --- thingiteminterface
+	thingiteminterface --> controldeleteitem
+	thingitem --- controldeleteitem
+
+@enduml

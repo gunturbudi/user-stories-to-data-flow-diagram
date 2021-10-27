@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> , Scholarly\nWork " color=red];
+201 [label="<f0>  |<f1> File " color=red];
+202 [label="<f0>  |<f1> Access " ];
+203 [label="Faculty Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Associate Files With Such, Scholarly Works }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Access The Latter }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Deliver the fullest picture of my research }" shape=Mrecord];
+203 -> 3
+1001 [label="<f0>  |<f1> Research " color=red];
+3 -> 1001 [label="Research"]
+203 -> 204
+204 -> 201 [label="File"]
+204 -> 200 [label=", Scholarly\nWork"]
+205 -> 202 [label="Access"]
+}

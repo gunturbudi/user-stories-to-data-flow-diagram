@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Application,shape=partialRectangle,null,null,data_base
+201,Site Member,rounded=0,null,null,external_entity
+202,Become A Certified Scrum Trainer,ellipse,null,null,process
+203,Fill Out An Application,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,203,202,endArrow=classic
+208,Application,endArrow=classic,203,200,endArrow=classic

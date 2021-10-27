@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "File" as thingfile
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Know The\nFiles To\nAn Object" as controlknowfile
+
+	thingobject <.. thingfile
+	actorrepositorymanager --- thingobjectinterface
+	thingfile --- controlknowfile
+	thingobject --- controlknowfile
+	thingobjectinterface --> controlknowfile
+
+@enduml

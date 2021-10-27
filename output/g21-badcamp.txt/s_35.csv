@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Blog Post,shape=partialRectangle,null,null,data_base
+201,Administrator,rounded=0,null,null,external_entity
+202,Create Blog Posts,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Blog Post,endArrow=classic,202,200,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Pertinent ,\nRight" as thingpertinentotherright
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Indicate Any\nPertinent, Other\nRights To\nAn Object" as controlindicatepertinentotherright
+
+	thingobject <.. thingpertinentotherright
+	actorrepositorymanager --- thingobjectinterface
+	thingpertinentotherright --- controlindicatepertinentotherright
+	thingobject --- controlindicatepertinentotherright
+	thingobjectinterface --> controlindicatepertinentotherright
+
+@enduml

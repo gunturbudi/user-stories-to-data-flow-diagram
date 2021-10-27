@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Reference,shape=partialRectangle,null,null,data_base
+201,Paper,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Manage The References,ellipse,null,null,process
+204,Manage Paper,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Reference,endArrow=classic,203,200,endArrow=classic
+209,Paper,endArrow=classic,204,201,endArrow=classic

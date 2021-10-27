@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Appropriate Permission" as thingappropriatepermission
+	entity "Data Entry" as thingdataentry
+	actor "Application Administrator" as actorapplicationadministrator
+	boundary "Entry\nInterface" as thingentryinterface #grey
+	control "Assign Users\nTo An\nAdvanced Data\nEntry" as controlassignuseradvanceddataentry
+	control "Ensure" as controlensure
+
+	thingdataentry <.. thinguser
+	actorapplicationadministrator --- thingentryinterface
+	thinguser --- controlassignuseradvanceddataentry
+	thingdataentry --- controlassignuseradvanceddataentry
+	thingentryinterface --> controlassignuseradvanceddataentry
+
+@enduml

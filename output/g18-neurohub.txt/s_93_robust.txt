@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Minimal Effort" as thingminimaleffort
+	entity "File" as thingfile
+	entity "Upload Directory" as thinguploaddirectory
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilitybulkuploaddirectoriesminimaleffortresearcher #grey
+	control "Bulk File" as controlbulkfile
+	control "Have" as controlhaveabilitybulkuploaddirectoriesminimaleffortresearcher
+	control "Bulk" as controlbulk #grey
+	control "Bulk Upload\nDirectories With\nMinimal Effort" as controlbulkuploaddirectoriesminimaleffort
+
+	actorresearcher --- thingabilitybulkuploaddirectoriesminimaleffortresearcher
+	thingfile --- controlbulkfile
+	thingabilitybulkuploaddirectoriesminimaleffortresearcher --> controlbulkfile
+	controlhaveabilitybulkuploaddirectoriesminimaleffortresearcher --> controlbulkfile
+	thingabilitybulkuploaddirectoriesminimaleffortresearcher --> controlhaveabilitybulkuploaddirectoriesminimaleffortresearcher
+	controlhaveabilitybulkuploaddirectoriesminimaleffortresearcher --> controlbulk
+	thingabilitybulkuploaddirectoriesminimaleffortresearcher --> controlbulkuploaddirectoriesminimaleffort
+	thinguploaddirectory --- controlbulkuploaddirectoriesminimaleffort
+	thingminimaleffort --- controlbulkuploaddirectoriesminimaleffort
+	controlhaveabilitybulkuploaddirectoriesminimaleffortresearcher --> controlbulkuploaddirectoriesminimaleffort
+
+@enduml

@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+5,"Record work in process, outcome, and location-based information related to the plan(s).",ellipse,null,null,process
+200,Planning Study,shape=partialRectangle,null,null,data_base
+201,Plan Amendment,shape=partialRectangle,null,null,data_base
+202,"Planning , Staff Member",rounded=0,null,null,external_entity
+203,Conduct Planning Study,ellipse,null,null,process
+204,Conduct Plan Amendments,ellipse,null,null,process
+205,Track Planning Study,ellipse,null,null,process
+206,Track Plan Amendments,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,Planning Study,endArrow=classic,203,200,endArrow=classic
+213,Plan Amendment,endArrow=classic,204,201,endArrow=classic
+214,Planning Study,endArrow=classic,205,200,endArrow=classic
+215,Plan Amendment,endArrow=classic,206,201,endArrow=classic
+1000,,endArrow=classic,206,5,endArrow=classic
+1001,Work,rounded=0,null,null,external_entity
+1002,Work,endArrow=classic,5,1001,endArrow=classic
+1003,Location-based information,rounded=0,null,null,external_entity
+1004,Location-based information,endArrow=classic,5,1003,endArrow=classic

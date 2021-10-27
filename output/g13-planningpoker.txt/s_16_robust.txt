@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Previous Game" as thingpreviousgame
+	actor "Moderator" as actormoderator
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "Browse Through\nPrevious Games" as controlbrowsepreviousgame
+
+	actormoderator --- thinggameinterface
+	thingpreviousgame --- controlbrowsepreviousgame
+	thinggameinterface --> controlbrowsepreviousgame
+
+@enduml

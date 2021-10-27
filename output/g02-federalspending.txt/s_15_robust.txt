@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "Grant Record" as thinggrantrecord
+	actor "Owner" as actorowner
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Send Grant\nRecords To\nSystem" as controlsendgrantrecordsystem
+
+	thingsystem <.. thinggrantrecord
+	actorowner --- thingsysteminterface
+	thinggrantrecord --- controlsendgrantrecordsystem
+	thingsystem --- controlsendgrantrecordsystem
+	thingsysteminterface --> controlsendgrantrecordsystem
+
+@enduml

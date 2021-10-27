@@ -1,0 +1,32 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Type " color=red];
+201 [label="<f0>  |<f1> Pipeline " ];
+202 [label="<f0>  |<f1> Code " color=red];
+203 [label="<f0>  |<f1> Dataset Instance " color=red];
+204 [label="<f0>  |<f1> Version " ];
+205 [label="<f0>  |<f1> Plugin " ];
+206 [label="<f0>  |<f1> Dataset " color=red];
+207 [label="Plugin Developer" shape=box];
+208 [label="{<f0> 1.0|<f1> Upgrade The Code Of A Dataset Type }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Update The Pipeline }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Upgrade The Code Of A Type }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Use That Version }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> A Dataset Instance That Plugin Deploy A New Version Of The Plugin }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+208 -> 202 [label="Code"]
+208 -> 200 [label="Type"]
+209 -> 211
+209 -> 201 [label="Pipeline"]
+210 -> 209
+210 -> 200 [label="Type"]
+210 -> 202 [label="Code"]
+211 -> 204 [label="Version"]
+212 -> 203 [label="Dataset Instance"]
+212 -> 205 [label="Plugin"]
+208 -> 206 [label="Dataset"]
+}

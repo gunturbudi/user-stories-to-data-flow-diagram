@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+3,Track hearing-related activities and due dates.,ellipse,null,null,process
+200,Calendar,shape=partialRectangle,null,null,data_base
+201,Staff Member,rounded=0,null,null,external_entity
+202,Manage,ellipse,null,null,process
+203,Hearing Calendars,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,Calendar,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,202,3,endArrow=classic
+1001,Due dates,rounded=0,null,null,external_entity
+1002,Due dates,endArrow=classic,3,1001,endArrow=classic

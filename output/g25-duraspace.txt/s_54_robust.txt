@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Source Capture\nInformation" as thingsourcecaptureinformation #grey
+	entity "File" as thingfile
+	actor "Dams Manager" as actordamsmanager
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Indicate The\nSource Capture\nInformation For\nA File\nWhere Is\nUseful" as controlindicatesourcecaptureinformation
+	control "Do" as controldo
+
+	thingfile <.. thingsourcecaptureinformation
+	actordamsmanager --- thingfileinterface
+	thingsourcecaptureinformation --- controlindicatesourcecaptureinformation
+	thingfile --- controlindicatesourcecaptureinformation
+	thingfileinterface --> controlindicatesourcecaptureinformation
+	controlindicatesourcecaptureinformation --> controldo
+	thingfileinterface --> controldo
+
+@enduml

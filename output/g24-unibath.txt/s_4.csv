@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Research Environment,shape=partialRectangle,null,null,data_base
+202,Workflow Tool,shape=partialRectangle,null,null,data_base
+203,Depositor,rounded=0,null,null,external_entity
+204,Deposit Datasets Through Virtual Research Environments,ellipse,null,null,process
+205,Deposit Datasets Through Other Workflow Tool,ellipse,null,null,process
+206,Maintain Datasets Through Other Workflow Tool,ellipse,null,null,process
+207,Maintain Datasets Through Virtual Research Environments,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,205,endArrow=classic
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,Dataset,endArrow=classic,204,200,endArrow=classic
+214,Research Environment,endArrow=classic,204,201,endArrow=classic
+215,Workflow Tool,endArrow=classic,205,202,endArrow=classic
+216,Dataset,endArrow=classic,205,200,endArrow=classic
+217,Dataset,endArrow=classic,206,200,endArrow=classic
+218,Workflow Tool,endArrow=classic,206,202,endArrow=classic
+219,Dataset,endArrow=classic,207,200,endArrow=classic
+220,Research Environment,endArrow=classic,207,201,endArrow=classic

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Certain Collection" as thingcertaincollection
+	entity "Field" as thingfield
+	entity "Metadata" as thingmetadata #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Searching" as thingsearching
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Create Custom\nMetadata Fields\nFor Certain\nCollections" as controlcreatecustommetadatafields
+	control "Allow Searching\nOf Those\nFields" as controlallowsearching
+
+	thingmetadata <.. thingfield
+	thingcertaincollection <.. thingfield
+	thingfield *-- thingsearching
+	actorlibrarystaffmember --- thingcollectioninterface
+	actorlibrarystaffmember --- thingfieldinterface
+	thingcertaincollection --- controlcreatecustommetadatafields
+	thingcollectioninterface --> controlcreatecustommetadatafields
+	thingfield --- controlcreatecustommetadatafields
+	thingsearching --- controlallowsearching
+	thingfield --- controlallowsearching
+	thingfieldinterface --> controlallowsearching
+
+@enduml

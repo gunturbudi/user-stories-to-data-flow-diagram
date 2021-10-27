@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Decide if i am the right trainer for them,ellipse,null,null,process
+200,Page,shape=partialRectangle,null,null,data_base
+201,Additional Detail,shape=partialRectangle,null,null,data_base
+202,Profile,shape=partialRectangle,null,null,data_base
+203,Trainer,rounded=0,null,null,external_entity
+204,Include Additional Details In Page Profile Page About,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Additional Detail,endArrow=classic,204,201,endArrow=classic
+208,Page,endArrow=classic,204,200,endArrow=classic
+209,Profile,endArrow=classic,204,202,endArrow=classic
+1000,,endArrow=classic,204,2,endArrow=classic
+1001,About me,rounded=0,null,null,external_entity
+1002,About me,endArrow=classic,2,1001,endArrow=classic

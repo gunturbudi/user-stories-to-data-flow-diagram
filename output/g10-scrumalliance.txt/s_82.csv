@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+3,Verify my certification,ellipse,null,null,process
+200,Registry,shape=partialRectangle,null,null,data_base
+201,Name,shape=partialRectangle,null,null,data_base
+202,Site,shape=partialRectangle,null,null,data_base
+203,Csm,rounded=0,null,null,external_entity
+204,Becoming A Member Of The Site,ellipse,null,null,process
+205,Have Name In The Registry,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Site,endArrow=classic,204,202,endArrow=classic
+211,Name,endArrow=classic,205,201,endArrow=classic
+212,Registry,endArrow=classic,205,200,endArrow=classic
+1000,Employers,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,3,endArrow=classic
+1002,Certification,rounded=0,null,null,external_entity
+1003,Certification,endArrow=classic,3,1002,endArrow=classic

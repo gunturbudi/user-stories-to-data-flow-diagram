@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Database" as thingdatabase
+	entity "Enum Value\nList" as thingenumvaluelist
+	entity "Backend Change" as thingbackendchange
+	actor "User" as actoruser
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Loading Enum\nValue Lists\nFrom The\nDatabase" as controlloadingenumvaluelistsdatabase
+
+	thingdatabase <.. thingenumvaluelist
+	actoruser --- thingdatabaseinterface
+	thingenumvaluelist --- controlloadingenumvaluelistsdatabase
+	thingdatabase --- controlloadingenumvaluelistsdatabase
+	thingdatabaseinterface --> controlloadingenumvaluelistsdatabase
+
+@enduml

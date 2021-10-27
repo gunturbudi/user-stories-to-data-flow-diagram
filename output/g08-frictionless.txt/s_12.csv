@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Eml Dataset,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Translate Eml Dataset To A Data Package,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Eml Dataset,endArrow=classic,203,200,endArrow=classic
+207,Data Package,endArrow=classic,203,201,endArrow=classic

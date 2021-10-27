@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Unattache File" as thingunattachedfile
+	entity "Workspace" as thingworkspace
+	actor "Researcher" as actorresearcher
+	circle "Alert" as thingalert
+	boundary "Workspace\nInterface" as thingworkspaceinterface #grey
+	control "Receive An\nAlert Of\nAny Unattached\nFiles Are\nIn Workspace" as controlreceivealert
+
+	thingworkspace <.. thingunattachedfile
+	thingunattachedfile *-- thingalert
+	actorresearcher --- thingworkspaceinterface
+	thingalert --- controlreceivealert
+	thingunattachedfile --- controlreceivealert
+	thingworkspace --- controlreceivealert
+	thingworkspaceinterface --> controlreceivealert
+
+@enduml

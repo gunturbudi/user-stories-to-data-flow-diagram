@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Related ,\nInformation" as thingrelatedotherinformation
+	entity "Report S" as thingreports
+	entity "Dataset S" as thingdatasets
+	actor "Patron" as actorpatron
+	boundary "Purpose" as thingpurposefindrelatedotherinformationpatron #grey
+	boundary "S\nInterface" as thingsinterface #grey
+	control "Know Other\nReport S" as controlknowotherreports
+	control "Report" as controlreport
+	control "Find Related,\nOther Information" as controlfindrelatedotherinformation
+	control "Viewed For" as controlviewpurposefindrelatedotherinformationpatron
+	control "Dataset" as controldatasetviewpurposefindrelatedotherinformationpatron
+	control "Know Other\nDataset S\nE.G. Also\nRelated" as controlknowotherdatasets
+
+	actorpatron --- thingpurposefindrelatedotherinformationpatron
+	actorpatron --- thingsinterface
+	thingreports --- controlknowotherreports
+	thingsinterface --> controlknowotherreports
+	thingpurposefindrelatedotherinformationpatron --> controlfindrelatedotherinformation
+	thingrelatedotherinformation --- controlfindrelatedotherinformation
+	controlviewpurposefindrelatedotherinformationpatron --> controlfindrelatedotherinformation
+	thingpurposefindrelatedotherinformationpatron --> controlviewpurposefindrelatedotherinformationpatron
+	controldatasetviewpurposefindrelatedotherinformationpatron --> controlviewpurposefindrelatedotherinformationpatron
+	thingsinterface --> controldatasetviewpurposefindrelatedotherinformationpatron
+	controlknowotherdatasets --> controldatasetviewpurposefindrelatedotherinformationpatron
+	thingdatasets --- controlknowotherdatasets
+	thingsinterface --> controlknowotherdatasets
+
+@enduml

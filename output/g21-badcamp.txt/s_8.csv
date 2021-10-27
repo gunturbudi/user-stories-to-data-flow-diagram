@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Training Waitlist,shape=partialRectangle,null,null,data_base
+201,Attendee,rounded=0,null,null,external_entity
+202,Added To A Training Waitlist,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Training Waitlist,endArrow=classic,202,200,endArrow=classic

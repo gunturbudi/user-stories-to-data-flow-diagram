@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Password " color=red];
+201 [label="<f0>  |<f1> Account Name " color=red];
+202 [label="Moderator" shape=box];
+203 [label="{<f0> 1.0|<f1> Log }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Using Password }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Using Account Name }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+204 -> 203
+204 -> 200 [label="Password"]
+205 -> 203
+205 -> 201 [label="Account Name"]
+}

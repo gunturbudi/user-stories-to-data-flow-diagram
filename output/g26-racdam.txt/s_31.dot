@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Incremental Accrual " ];
+201 [label="<f0>  |<f1> New Collection " color=red];
+202 [label="Donor Representative" shape=box];
+203 [label="{<f0> 1.0|<f1> Supply Incremental Accruals To }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Exist }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Supply Incremental Accruals To New Collections }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 204
+203 -> 200 [label="Incremental Accrual"]
+205 -> 200 [label="Incremental Accrual"]
+205 -> 201 [label="New Collection"]
+}

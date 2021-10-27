@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Data File,shape=partialRectangle,null,null,data_base
+201,Cc0 License,shape=partialRectangle,null,null,data_base
+202,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+203,Upload A Data File,ellipse,null,null,process
+204,Put A Cc Cc0 License On A Data File,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Data File,endArrow=classic,203,200,endArrow=classic
+209,Cc0 License,endArrow=classic,204,201,endArrow=classic
+210,Data File,endArrow=classic,204,200,endArrow=classic

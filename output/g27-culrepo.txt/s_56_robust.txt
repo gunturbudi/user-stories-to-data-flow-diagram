@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Descriptive Metadata" as thingdescriptivemetadata
+	entity "Item" as thingitem
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Large Batch" as thinglargebatch
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Upload Large\nBatches Of\nItems Including\nDescriptive Metadata" as controluploadlargebatchdescriptivemetadata
+
+	thingdescriptivemetadata <.. thingitem
+	thingitem *-- thinglargebatch
+	actorlibrarystaffmember --- thingmetadatainterface
+	thinglargebatch --- controluploadlargebatchdescriptivemetadata
+	thingitem --- controluploadlargebatchdescriptivemetadata
+	thingdescriptivemetadata --- controluploadlargebatchdescriptivemetadata
+	thingmetadatainterface --> controluploadlargebatchdescriptivemetadata
+
+@enduml

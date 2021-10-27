@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Earth " ];
+201 [label="<f0>  |<f1> Csm " ];
+202 [label="<f0>  |<f1> Home Page " ];
+203 [label="Site Visitor" shape=box];
+204 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Glance Around The Home Page }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Be One }" shape=Mrecord];
+203 -> 204
+203 -> 205
+205 -> 204
+205 -> 202 [label="Home Page"]
+}

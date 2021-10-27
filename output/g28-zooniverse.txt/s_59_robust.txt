@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Previous Experience" as thingpreviousexperience
+	entity "Different Project" as thingdifferentproject
+	entity "Volunteer" as thingvolunteer
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Experience\nInterface" as thingexperienceinterface #grey
+	control "Recommend Different\nProjects To\nVolunteers On\nPrevious Experiences" as controlrecommenddifferentprojectvolunteer
+
+	thingvolunteer <.. thingdifferentproject
+	thingpreviousexperience <.. thingvolunteer
+	actorzooniverseadmin --- thingexperienceinterface
+	thingdifferentproject --- controlrecommenddifferentprojectvolunteer
+	thingvolunteer --- controlrecommenddifferentprojectvolunteer
+	thingpreviousexperience --- controlrecommenddifferentprojectvolunteer
+	thingexperienceinterface --> controlrecommenddifferentprojectvolunteer
+
+@enduml

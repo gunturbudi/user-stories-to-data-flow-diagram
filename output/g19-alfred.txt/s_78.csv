@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Certain Place,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Friend,shape=partialRectangle,null,null,data_base
+203,Meeting,shape=partialRectangle,null,null,data_base
+204,Olderperson,rounded=0,null,null,external_entity
+205,Organize A Meeting With A Group Of Friends At A Certain Place,ellipse,null,null,process
+206,Use Alfred,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Meeting,endArrow=classic,205,203,endArrow=classic
+211,Friend,endArrow=classic,205,202,endArrow=classic
+212,Certain Place,endArrow=classic,205,200,endArrow=classic
+213,,endArrow=classic,206,205,endArrow=classic
+214,Alfred,endArrow=classic,206,201,endArrow=classic

@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Phone,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Content,shape=partialRectangle,null,null,data_base
+203,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+204,Browse Through Contents On Phone,ellipse,null,null,process
+205,Search The Repository,ellipse,null,null,process
+207,,endArrow=classic,203,205,endArrow=classic
+208,Content,endArrow=classic,204,202,endArrow=classic
+209,Phone,endArrow=classic,204,200,endArrow=classic
+210,Repository,endArrow=classic,205,201,endArrow=classic

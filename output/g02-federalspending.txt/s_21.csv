@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+3,Submit my data efficiently.,ellipse,null,null,process
+200,Content Mockup,shape=partialRectangle,null,null,data_base
+201,Broker User,rounded=0,null,null,external_entity
+202,Create Content Mockups,ellipse,null,null,process
+203,Help,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Content Mockup,endArrow=classic,202,200,endArrow=classic
+208,,endArrow=classic,203,202,endArrow=classic
+1000,,endArrow=classic,202,3,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,3,1001,endArrow=classic

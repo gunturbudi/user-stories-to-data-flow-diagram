@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Different System " ];
+202 [label="Univitservice" shape=box];
+203 [label="{<f0> 1.0|<f1> Export All Data To A Different System }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Datum"]
+203 -> 201 [label="Different System"]
+}

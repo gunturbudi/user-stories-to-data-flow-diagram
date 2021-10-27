@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	actor "Moderator" as actormoderator
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "Delete A\nGame" as controldeletegame
+
+	actormoderator --- thinggameinterface
+	thinggame --- controldeletegame
+	thinggameinterface --> controldeletegame
+
+@enduml

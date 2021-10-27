@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Remote Status" as thingremotestatus #grey
+	entity "Staff Interface" as thingstaffinterface #grey
+	entity "Replication" as thingreplication
+	entity "Collection" as thingcollection
+	entity "Item" as thingitem
+	entity "Component Page" as thingcomponentpage #grey
+	entity "Repository" as thingrepository
+	entity "Storage Site" as thingstoragesite
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Status" as thingstatus #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	control "Have" as controlhave
+	control "Display The\nRemote Status\nIn Component\nPage" as controldisplayremotestatuscomponentpage
+	control "Display The\nRemote Replication\nStatus In\nEach Item\nIn The\nStaff Interface" as controldisplayremotereplicationstatusstaffinterface
+
+	thingcomponentpage <.. thingremotestatus
+	thingstoragesite <.. thingreplication
+	thingreplication <.. thingcollection
+	thingstaffinterface <.. thingitem
+	thingitem *-- thingstatus
+	thingreplication *-- thingstatus
+	actorcollectioncurator --- thingpageinterface
+	actorcollectioncurator --- thinginterfaceinterface
+	thingremotestatus --- controldisplayremotestatuscomponentpage
+	thingcomponentpage --- controldisplayremotestatuscomponentpage
+	thingpageinterface --> controldisplayremotestatuscomponentpage
+	thingstatus --- controldisplayremotereplicationstatusstaffinterface
+	thingitem --- controldisplayremotereplicationstatusstaffinterface
+	thinginterfaceinterface --> controldisplayremotereplicationstatusstaffinterface
+	thingstaffinterface --- controldisplayremotereplicationstatusstaffinterface
+
+@enduml

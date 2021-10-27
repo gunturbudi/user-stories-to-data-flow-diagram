@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Local Timezone" as thinglocaltimezone
+	entity "Time" as thingtime
+	actor "Moderator" as actormoderator
+	boundary "Timezone\nInterface" as thingtimezoneinterface #grey
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	control "See Dates\nIn Local\nTimezone" as controlseedatelocaltimezone
+	control "See Time" as controlseetime
+
+	thinglocaltimezone <.. thingdate
+	actormoderator --- thingtimezoneinterface
+	actormoderator --- thingtimeinterface
+	thingdate --- controlseedatelocaltimezone
+	thinglocaltimezone --- controlseedatelocaltimezone
+	thingtimezoneinterface --> controlseedatelocaltimezone
+	thingtime --- controlseetime
+	thingtimeinterface --> controlseetime
+
+@enduml

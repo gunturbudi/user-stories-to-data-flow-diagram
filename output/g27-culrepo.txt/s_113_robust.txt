@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Issue" as thingissue
+	entity "System Provider" as thingsystemprovider #grey
+	entity "Question" as thingquestion
+	actor "Patron" as actorpatron
+	boundary "Provider\nInterface" as thingproviderinterface #grey
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	control "Report Issues" as controlreportissue
+	control "Email System\nProvider" as controlemailsystemproviderreportissue
+	control "Ask Questions" as controlaskquestion
+
+	actorpatron --- thingproviderinterface
+	actorpatron --- thingquestioninterface
+	thingissue --- controlreportissue
+	controlemailsystemproviderreportissue --> controlreportissue
+	thingproviderinterface --> controlreportissue
+	thingsystemprovider --- controlemailsystemproviderreportissue
+	thingproviderinterface --> controlemailsystemproviderreportissue
+	thingquestion --- controlaskquestion
+	thingquestioninterface --> controlaskquestion
+
+@enduml

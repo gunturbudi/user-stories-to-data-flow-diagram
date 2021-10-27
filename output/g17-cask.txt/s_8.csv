@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,App,shape=partialRectangle,null,null,data_base
+201,Dataset Type,shape=partialRectangle,null,null,data_base
+202,App Developer,rounded=0,null,null,external_entity
+203,Deploy A New Version Of An App Includes An Older Version Of Dataset Type Another App,ellipse,null,null,process
+204,Ensure That,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,App,endArrow=classic,203,200,endArrow=classic
+210,Dataset Type,endArrow=classic,203,201,endArrow=classic

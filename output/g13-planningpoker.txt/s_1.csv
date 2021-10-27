@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Name,shape=partialRectangle,null,null,data_base
+201,New Game,shape=partialRectangle,null,null,data_base
+202,Optional Description,shape=partialRectangle,null,null,data_base
+203,Moderator,rounded=0,null,null,external_entity
+204,Entering A Name,ellipse,null,null,process
+205,Entering An Optional Description,ellipse,null,null,process
+206,Create A New Game,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,Name,endArrow=classic,204,200,endArrow=classic
+213,,endArrow=classic,205,206,endArrow=classic
+214,Optional Description,endArrow=classic,205,202,endArrow=classic
+215,New Game,endArrow=classic,206,201,endArrow=classic

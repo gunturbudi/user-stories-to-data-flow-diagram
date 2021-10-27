@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training" as thingtraining
+	entity "Complex Thinking" as thingcomplexthinking
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Alfred" as thingALFREDMedicalCaregiver
+	control "Propose Training\nPromotes Complex\nThinking" as controlproposeALFREDMedicalCaregivertraining
+	control "Have" as controlhaveproposeALFREDMedicalCaregivertraining
+
+	thingcomplexthinking <.. thingtraining
+	actorMedicalCaregiver --- thingALFREDMedicalCaregiver
+	thingALFREDMedicalCaregiver --> controlproposeALFREDMedicalCaregivertraining
+	thingtraining --- controlproposeALFREDMedicalCaregivertraining
+	thingcomplexthinking --- controlproposeALFREDMedicalCaregivertraining
+	controlhaveproposeALFREDMedicalCaregivertraining --> controlproposeALFREDMedicalCaregivertraining
+	thingALFREDMedicalCaregiver --> controlhaveproposeALFREDMedicalCaregivertraining
+
+@enduml

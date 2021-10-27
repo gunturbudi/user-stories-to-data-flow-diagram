@@ -1,0 +1,28 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Mechanism " ];
+201 [label="<f0>  |<f1> Current Status " ];
+202 [label="<f0>  |<f1> Listing " ];
+203 [label="<f0>  |<f1> Understanding " ];
+204 [label="<f0>  |<f1> Asset " color=red];
+205 [label="Asset Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Have A Mechanism }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Obtain Understanding }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Obtain }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Obtain A Listing Of The Assets Have Deposited }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Obtain A Listing Of Current Status }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 209
+205 -> 210
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 200 [label="Mechanism"]
+206 -> 203 [label="Understanding"]
+207 -> 203 [label="Understanding"]
+209 -> 202 [label="Listing"]
+209 -> 204 [label="Asset"]
+210 -> 201 [label="Current Status"]
+210 -> 202 [label="Listing"]
+}

@@ -1,0 +1,46 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Prefiltering" as thingprefiltering
+	entity "Image" as thingimage
+	entity "Artefact" as thingartefact
+	entity "Read Error" as thingreaderror #grey
+	entity "Camera" as thingcamera
+	entity "Bright Star" as thingbrightstar
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	boundary "Star\nInterface" as thingstarinterface #grey
+	boundary "Artefact\nInterface" as thingartefactinterface #grey
+	control "Perform Prefiltering\nOf The\nImages" as controlperformprefilteringremoveartefact
+	control "Remove Artefacts\nSuch As\nRead Error" as controlremoveartefactreaderror
+	control "Remove Artefacts\nSuch As\nBright Stars" as controlremoveartefact
+	control "Remove Artefacts\nSuch As\nCamera" as controlremoveartefactcamera
+
+	thingimage *-- thingprefiltering
+	thingbrightstar <.. thingartefact
+	thingcamera <.. thingartefact
+	thingreaderror <.. thingartefact
+	actorzooniverseadmin --- thingimageinterface
+	actorzooniverseadmin --- thingerrorinterface
+	actorzooniverseadmin --- thingstarinterface
+	actorzooniverseadmin --- thingartefactinterface
+	thingprefiltering --- controlperformprefilteringremoveartefact
+	thingimage --- controlperformprefilteringremoveartefact
+	thingimageinterface --> controlperformprefilteringremoveartefact
+	thingartefact --- controlperformprefilteringremoveartefact
+	thingreaderror --- controlremoveartefactreaderror
+	thingerrorinterface --> controlremoveartefactreaderror
+	thingartefact --- controlremoveartefactreaderror
+	controlperformprefilteringremoveartefact --> controlremoveartefact
+	thingartefact --- controlremoveartefact
+	thingbrightstar --- controlremoveartefact
+	thingstarinterface --> controlremoveartefact
+	thingcamera --- controlremoveartefactcamera
+	thingartefactinterface --> controlremoveartefactcamera
+	thingartefact --- controlremoveartefactcamera
+	controlperformprefilteringremoveartefact --> controlremoveartefactcamera
+
+@enduml

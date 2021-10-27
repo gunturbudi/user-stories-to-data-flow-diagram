@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Reference,shape=partialRectangle,null,null,data_base
+201,Project Proposal,shape=partialRectangle,null,null,data_base
+202,Stakeholder,rounded=0,null,null,external_entity
+203,Have References To The Project Proposal,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Reference,endArrow=classic,203,200,endArrow=classic
+207,Project Proposal,endArrow=classic,203,201,endArrow=classic

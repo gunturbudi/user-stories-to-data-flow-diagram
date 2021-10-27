@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "Depositor" as actordepositor
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Pure Deposit\nDatasets" as controldepositdataset
+	control "Pure Maintain\nDatasets" as controlmaintaindataset
+
+	actordepositor --- thingdatasetinterface
+	thingdataset --- controldepositdataset
+	thingdatasetinterface --> controldepositdataset
+	thingdataset --- controlmaintaindataset
+	thingdatasetinterface --> controlmaintaindataset
+
+@enduml

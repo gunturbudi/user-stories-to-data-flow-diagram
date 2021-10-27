@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ownership" as thingownership
+	entity "Multiple File" as thingmultiplefile
+	actor "User" as actoruser
+	circle "Sharing" as thingsharing
+	boundary "Ability" as thingabilitychangesharinguser #grey
+	control "Have" as controlhaveabilitychangeabilitychangeownershipuser
+	control "Change Ownership" as controlchangeownership
+	control "Change" as controlchange #grey
+	control "Change The\nSharing Of\nMultiple Files" as controlchangesharing
+
+	thingmultiplefile *-- thingsharing
+	actoruser --- thingabilitychangesharinguser
+	thingabilitychangesharinguser --> controlhaveabilitychangeabilitychangeownershipuser
+	controlhaveabilitychangeabilitychangeownershipuser --> controlchangeownership
+	thingownership --- controlchangeownership
+	thingabilitychangesharinguser --> controlchangeownership
+	controlhaveabilitychangeabilitychangeownershipuser --> controlchange
+	thingsharing --- controlchangesharing
+	thingmultiplefile --- controlchangesharing
+	thingabilitychangesharinguser --> controlchangesharing
+	controlhaveabilitychangeabilitychangeownershipuser --> controlchangesharing
+
+@enduml

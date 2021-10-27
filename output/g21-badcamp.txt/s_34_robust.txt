@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Consumption" as thingconsumption
+	entity "Drupal Planet" as thingdrupalplanet
+	entity "Blog Post" as thingblogpost
+	actor "Administrator" as actoradministrator
+	boundary "Planet\nInterface" as thingplanetinterface #grey
+	control "Tag Blog\nPosts For\nConsumption By\nDrupal Planet" as controltagblogpostsdrupalplanet
+
+	thingdrupalplanet <.. thingconsumption
+	thingconsumption <.. thingblogpost
+	actoradministrator --- thingplanetinterface
+	thingblogpost --- controltagblogpostsdrupalplanet
+	thingconsumption --- controltagblogpostsdrupalplanet
+	thingdrupalplanet --- controltagblogpostsdrupalplanet
+	thingplanetinterface --> controltagblogpostsdrupalplanet
+
+@enduml

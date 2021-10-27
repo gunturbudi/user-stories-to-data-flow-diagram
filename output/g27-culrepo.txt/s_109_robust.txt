@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Custom Metadata\nField" as thingcustommetadatafield
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Create A\nCollection Sometimes\nWith Custom\nMetadata Fields" as controlcreatecollectioncustommetadatafields
+
+	thingcustommetadatafield <.. thingcollection
+	actorlibrarystaffmember --- thingfieldinterface
+	thingcollection --- controlcreatecollectioncustommetadatafields
+	thingcustommetadatafield --- controlcreatecollectioncustommetadatafields
+	thingfieldinterface --> controlcreatecollectioncustommetadatafields
+
+@enduml

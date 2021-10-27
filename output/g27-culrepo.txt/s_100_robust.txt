@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Redundant Copy" as thingredundantcopy
+	entity "Original Object" as thingoriginalobject
+	entity "Unwanted Change" as thingunwantedchange
+	entity "Change" as thingchange
+	entity "Copy" as thingcopy
+	actor "Asset Manager" as actorassetmanager
+	boundary "Mechanism" as thingmechanismrestorewhichoriginalobjectcopyassetmanager #grey
+	boundary "Change\nInterface" as thingchangeinterface #grey
+	control "Assured" as controlassure
+	control "Changes Occur" as controloccurchange
+	control "By Which\nRestore The\nOriginal Object\nTo All\nCopies" as controlrestorewhichoriginalobjectcopy
+
+	actorassetmanager --- thingmechanismrestorewhichoriginalobjectcopyassetmanager
+	actorassetmanager --- thingchangeinterface
+	thingchange --- controloccurchange
+	thingchangeinterface --> controloccurchange
+	thingcopy --- controlrestorewhichoriginalobjectcopy
+	thingmechanismrestorewhichoriginalobjectcopyassetmanager --> controlrestorewhichoriginalobjectcopy
+	thingoriginalobject --- controlrestorewhichoriginalobjectcopy
+
+@enduml

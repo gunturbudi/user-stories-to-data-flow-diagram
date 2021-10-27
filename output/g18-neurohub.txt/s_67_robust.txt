@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Greek Symbol" as thinggreeksymbol
+	entity "Logbook Entry" as thinglogbookentry
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityinsertgreeksymbollogbookentriesresearcher #grey
+	control "Have" as controlhaveabilityinsertgreeksymbollogbookentriesresearcher
+	control "Insert Greek\nSymbols Into\nLogbook Entries" as controlinsertgreeksymbollogbookentries
+
+	actorresearcher --- thingabilityinsertgreeksymbollogbookentriesresearcher
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlhaveabilityinsertgreeksymbollogbookentriesresearcher
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlinsertgreeksymbollogbookentries
+	thinggreeksymbol --- controlinsertgreeksymbollogbookentries
+	thinglogbookentry --- controlinsertgreeksymbollogbookentries
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlinsertgreeksymbollogbookentries
+
+@enduml

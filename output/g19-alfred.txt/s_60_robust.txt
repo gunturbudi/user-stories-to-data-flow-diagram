@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Spontaneous Question" as thingspontaneousquestion
+	entity "Day" as thingday
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	circle "Certain Time" as thingcertaintime
+	boundary "Day\nInterface" as thingdayinterface #grey
+	control "Have" as controlhave
+	control "Spontaneous Questions\nProgramme During\nCertain Times\nOf The\nDay" as controlprogrammespontaneousquestioncertaintime
+
+	thingcertaintime <.. thingspontaneousquestion
+	thingday *-- thingcertaintime
+	actorOlderPerson --- thingdayinterface
+	thingcertaintime --- controlprogrammespontaneousquestioncertaintime
+	thingday --- controlprogrammespontaneousquestioncertaintime
+	thingdayinterface --> controlprogrammespontaneousquestioncertaintime
+	thingspontaneousquestion --- controlprogrammespontaneousquestioncertaintime
+
+@enduml

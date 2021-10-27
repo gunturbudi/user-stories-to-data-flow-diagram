@@ -1,0 +1,44 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Deposit Window " color=red];
+201 [label="<f0>  |<f1> Date " color=red];
+202 [label="<f0>  |<f1> Group " color=red];
+203 [label="<f0>  |<f1> Specific Collection " color=red];
+204 [label="<f0>  |<f1> Multiple People " ];
+205 [label="<f0>  |<f1> Collection " color=red];
+206 [label="<f0>  |<f1> Depositor " color=red];
+207 [label="<f0>  |<f1> Permission " color=red];
+208 [label="<f0>  |<f1> Default " ];
+209 [label="Digitalrecords Archivist" shape=box];
+210 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Deposit Groups In Specific Collections }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Set A Date To Have These Permissions On These Depositors Pick Up On The Collection's Default Permission }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Set A Date The Deposit Window Closes }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Add Multiple People }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Remove Multiple People }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 201 [label="Date"]
+211 -> 202 [label="Group"]
+211 -> 203 [label="Specific Collection"]
+212 -> 207 [label="Permission"]
+212 -> 206 [label="Depositor"]
+212 -> 201 [label="Date"]
+213 -> 201 [label="Date"]
+213 -> 200 [label="Deposit Window"]
+214 -> 211
+214 -> 204 [label="Multiple People"]
+215 -> 211
+215 -> 204 [label="Multiple People"]
+211 -> 205 [label="Collection"]
+212 -> 208 [label="Default"]
+}

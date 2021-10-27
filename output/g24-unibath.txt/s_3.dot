@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="Depositor" shape=box];
+202 [label="{<f0> 1.0|<f1> Pure Deposit Datasets }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Pure Maintain Datasets }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Dataset"]
+203 -> 200 [label="Dataset"]
+}

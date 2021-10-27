@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Item" as thingitem
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Move Items\nFrom Collection\nTo Another" as controlmoveitemanother
+
+	thingcollection <.. thingitem
+	actorcollectioncurator --- thingcollectioninterface
+	thingitem --- controlmoveitemanother
+	thingcollection --- controlmoveitemanother
+	thingcollectioninterface --> controlmoveitemanother
+
+@enduml

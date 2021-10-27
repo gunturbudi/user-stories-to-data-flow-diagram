@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Name" as thingname
+	entity "Identification Issue" as thingidentificationissue #grey
+	entity "Author" as thingauthor #grey
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	circle "Authority" as thingauthority #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Issue\nInterface" as thingissueinterface #grey
+	control "Find The\nItems In\nThe Repository" as controlfinditem
+	control "Searching On\nName" as controlsearchfinditemname
+	control "Searching On\nAuthor Name\nAuthority" as controlsearchfinditemauthornameauthority
+	control "Searching On\nIdentification Issue" as controlsearchfinditemidentificationissue
+
+	thingrepository <.. thingitem
+	thingauthor <.. thingname
+	thingname *-- thingauthority
+	actorcornellfacultymember --- thingnameinterface
+	actorcornellfacultymember --- thingrepositoryinterface
+	actorcornellfacultymember --- thingissueinterface
+	controlsearchfinditemname --> controlfinditem
+	thingitem --- controlfinditem
+	thingrepository --- controlfinditem
+	thingrepositoryinterface --> controlfinditem
+	controlsearchfinditemauthornameauthority --> controlfinditem
+	controlsearchfinditemidentificationissue --> controlfinditem
+	thingname --- controlsearchfinditemname
+	thingnameinterface --> controlsearchfinditemname
+	thingauthority --- controlsearchfinditemauthornameauthority
+	thingnameinterface --> controlsearchfinditemauthornameauthority
+	thingidentificationissue --- controlsearchfinditemidentificationissue
+	thingissueinterface --> controlsearchfinditemidentificationissue
+
+@enduml

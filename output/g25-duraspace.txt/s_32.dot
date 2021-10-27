@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Component Part " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> See The Component Parts Of An Object }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Component Part"]
+203 -> 200 [label="Object"]
+}

@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Remote Status " ];
+201 [label="<f0>  |<f1> Staff Interface " ];
+202 [label="<f0>  |<f1> Replication " color=red];
+203 [label="<f0>  |<f1> Collection " color=red];
+204 [label="<f0>  |<f1> Item " color=red];
+205 [label="<f0>  |<f1> Component Page " ];
+206 [label="<f0>  |<f1> Repository " ];
+207 [label="<f0>  |<f1> Storage Site " ];
+208 [label="Collection Curator" shape=box];
+209 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Display The Remote Status In Component Page }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Display The Remote Replication Status In Each Item In The Staff Interface }" shape=Mrecord];
+208 -> 210
+208 -> 211
+210 -> 200 [label="Remote Status"]
+210 -> 205 [label="Component Page"]
+211 -> 204 [label="Item"]
+211 -> 201 [label="Staff Interface"]
+211 -> 202 [label="Replication"]
+}

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection Sort " color=red];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Control " ];
+203 [label="<f0>  |<f1> Collection Contents\nList " color=red];
+204 [label="Cornell , Faculty Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Have Some Control Over Items Within Collection Sort How Collection Contents Lists }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Control how my work is presented }" shape=Mrecord];
+205 -> 2
+1001 [label="<f0>  |<f1> Work " color=red];
+2 -> 1001 [label="Work"]
+204 -> 205
+205 -> 202 [label="Control"]
+205 -> 203 [label="Collection Contents\nList"]
+205 -> 200 [label="Collection Sort"]
+205 -> 201 [label="Item"]
+}

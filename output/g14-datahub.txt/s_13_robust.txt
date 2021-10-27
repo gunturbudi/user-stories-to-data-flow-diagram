@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Publisher" as actorpublisher
+	control "Publish" as controlpublishvalidate
+	control "Validated" as controlvalidate
+	control "Data" as controldatumpublishvalidate
+
+	controldatumpublishvalidate --> controlpublishvalidate
+	controlpublishvalidate --> controlvalidate
+
+@enduml

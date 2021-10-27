@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Exist Wizard" as thingexistingwizard
+	actor "Developer" as actordeveloper
+	circle "Specific Type" as thingspecifictype
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Customize An\nExisting Wizard\nFor Specific\nType Of\nData" as controlcustomizeexistingwizard
+
+	thingspecifictype <.. thingexistingwizard
+	thingdatum *-- thingspecifictype
+	actordeveloper --- thingdatuminterface
+	thingexistingwizard --- controlcustomizeexistingwizard
+	thingspecifictype --- controlcustomizeexistingwizard
+	thingdatum --- controlcustomizeexistingwizard
+	thingdatuminterface --> controlcustomizeexistingwizard
+
+@enduml

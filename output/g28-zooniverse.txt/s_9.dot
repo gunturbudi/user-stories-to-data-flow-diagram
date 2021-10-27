@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Info " color=red];
+201 [label="<f0>  |<f1> Segment " color=red];
+202 [label="<f0>  |<f1> Video Item " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Get Info About Segment }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Get Info About Perceptually Similar Video Items }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Segment"]
+204 -> 200 [label="Info"]
+205 -> 200 [label="Info"]
+205 -> 202 [label="Video Item"]
+}

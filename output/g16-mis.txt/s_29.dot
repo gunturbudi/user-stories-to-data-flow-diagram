@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fedora " ];
+201 [label="<f0>  |<f1> Use External " ];
+202 [label="<f0>  |<f1> Etd Item " color=red];
+203 [label="<f0>  |<f1> Descriptive Record " color=red];
+204 [label="Digitalrecords Archivist" shape=box];
+205 [label="{<f0> 1.0|<f1> Expose The Descriptive Record For Each Etd Item For Use External To Fedora }" shape=Mrecord];
+204 -> 205
+205 -> 203 [label="Descriptive Record"]
+205 -> 202 [label="Etd Item"]
+205 -> 201 [label="Use External"]
+205 -> 200 [label="Fedora"]
+}

@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Dams Manager" as actordamsmanager
+	control "Know" as controlknow
+
+
+@enduml

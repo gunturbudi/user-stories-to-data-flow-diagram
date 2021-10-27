@@ -1,0 +1,6 @@
+digraph dfd2{ 
+node[shape=record]
+1 [label="{<f0> 1.0|<f1> Use data packages in workflows that involve ms-sql }" shape=Mrecord];
+1000 [label="<f0>  |<f1> Data packages " color=red];
+1 -> 1000 [label="Data packages"]
+}

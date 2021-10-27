@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Location" as thinglocation
+	entity "Dashboard" as thingdashboard
+	entity "Usage Stat" as thingusagestat
+	actor "Admin" as actoradmin
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	control "Have A\nDashboard Shows\nLocation" as controlhavedashboardlocation
+	control "Have A\nDashboard Shows\nUsage Stats" as controlhavedashboard
+
+	thingusagestat <.. thingdashboard
+	thinglocation <.. thingdashboard
+	actoradmin --- thinglocationinterface
+	actoradmin --- thingstatinterface
+	thinglocation --- controlhavedashboardlocation
+	thinglocationinterface --> controlhavedashboardlocation
+	thingdashboard --- controlhavedashboardlocation
+	thingdashboard --- controlhavedashboard
+	thingusagestat --- controlhavedashboard
+	thingstatinterface --> controlhavedashboard
+
+@enduml

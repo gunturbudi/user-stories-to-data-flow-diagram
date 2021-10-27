@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Colour" as thingcolour
+	entity "Map Visualisation" as thingmapvisualisation
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	circle "Consistent Use" as thingconsistentuse
+	boundary "Visualisation\nInterface" as thingvisualisationinterface #grey
+	control "Have Consistent\nUse Of\nColour On\nMap Visualisations" as controlhaveconsistentusemapvisualisations
+
+	thingmapvisualisation <.. thingcolour
+	thingcolour *-- thingconsistentuse
+	actordataconsuminguser --- thingvisualisationinterface
+	thingconsistentuse --- controlhaveconsistentusemapvisualisations
+	thingcolour --- controlhaveconsistentusemapvisualisations
+	thingmapvisualisation --- controlhaveconsistentusemapvisualisations
+	thingvisualisationinterface --> controlhaveconsistentusemapvisualisations
+
+@enduml

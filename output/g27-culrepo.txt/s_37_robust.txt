@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Update" as thingupdate
+	actor "Researcher" as actorresearcher
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	control "Receive Updates" as controlreceiveupdate
+
+	actorresearcher --- thingupdateinterface
+	thingupdate --- controlreceiveupdate
+	thingupdateinterface --> controlreceiveupdate
+
+@enduml

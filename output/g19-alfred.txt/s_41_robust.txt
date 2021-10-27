@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Taxi" as thingtaxi
+	entity "Time" as thingtime
+	actor "Olderperson" as actorOlderPerson
+	boundary "Support" as thingsupporthavetaxitimeOlderPerson #grey
+	control "Have A\nTaxi On\nTime" as controlhavetaxitime
+	control "Receive" as controlreceivesupporthavetaxitimeOlderPerson
+
+	actorOlderPerson --- thingsupporthavetaxitimeOlderPerson
+	thingtaxi --- controlhavetaxitime
+	thingtime --- controlhavetaxitime
+	controlreceivesupporthavetaxitimeOlderPerson --> controlhavetaxitime
+	thingsupporthavetaxitimeOlderPerson --> controlhavetaxitime
+	thingsupporthavetaxitimeOlderPerson --> controlreceivesupporthavetaxitimeOlderPerson
+
+@enduml

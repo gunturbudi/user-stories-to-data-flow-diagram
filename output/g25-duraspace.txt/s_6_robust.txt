@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Formal Collection" as thingformalcollection
+	entity "Dam" as thingDAMS
+	entity "Appropriate Relationship" as thingappropriaterelationship
+	actor "Dams Manager" as actordamsmanager
+	boundary "Relationship\nInterface" as thingrelationshipinterface #grey
+	control "Browsing All\nFormal Collections\nIn The\nDams With\nThe Appropriate\nRelationships" as controlbrowselistformalcollection
+	control "List" as controllist
+
+	thingDAMS <.. thingformalcollection
+	thingappropriaterelationship <.. thingformalcollection
+	thingappropriaterelationship <.. thingDAMS
+	actordamsmanager --- thingrelationshipinterface
+	thingformalcollection --- controlbrowselistformalcollection
+	thingDAMS --- controlbrowselistformalcollection
+	thingappropriaterelationship --- controlbrowselistformalcollection
+	thingrelationshipinterface --> controlbrowselistformalcollection
+	controlbrowselistformalcollection --> controllist
+	thingrelationshipinterface --> controllist
+
+@enduml

@@ -1,0 +1,31 @@
+id,value,style,source,target,type
+200,Need Report,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,Complete,shape=partialRectangle,null,null,data_base
+203,Report,shape=partialRectangle,null,null,data_base
+204,Keyword,shape=partialRectangle,null,null,data_base
+205,Partial Title,shape=partialRectangle,null,null,data_base
+206,Patron,rounded=0,null,null,external_entity
+207,Search For Dataset With Keywords,ellipse,null,null,process
+208,Search For Report,ellipse,null,null,process
+209,Locate Dataset,ellipse,null,null,process
+210,Locate Needed Report,ellipse,null,null,process
+211,Search For Dataset With Complete,ellipse,null,null,process
+212,Search For Dataset With A Partial Title,ellipse,null,null,process
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,206,210,endArrow=classic
+218,,endArrow=classic,206,211,endArrow=classic
+219,,endArrow=classic,206,212,endArrow=classic
+220,Dataset,endArrow=classic,207,201,endArrow=classic
+221,Keyword,endArrow=classic,207,204,endArrow=classic
+222,Report,endArrow=classic,208,203,endArrow=classic
+223,Dataset,endArrow=classic,209,201,endArrow=classic
+224,Need Report,endArrow=classic,210,200,endArrow=classic
+225,Complete,endArrow=classic,211,202,endArrow=classic
+226,Dataset,endArrow=classic,211,201,endArrow=classic
+227,,endArrow=classic,212,209,endArrow=classic
+228,,endArrow=classic,212,210,endArrow=classic
+229,Partial Title,endArrow=classic,212,205,endArrow=classic
+230,Dataset,endArrow=classic,212,201,endArrow=classic

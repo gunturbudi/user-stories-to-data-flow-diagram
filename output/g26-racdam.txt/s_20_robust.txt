@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Working Paper" as thingworkingpaper
+	actor "Assistant Archivist" as actorassistantarchivist
+	control "Tag Staff" as controlstaff
+
+
+@enduml

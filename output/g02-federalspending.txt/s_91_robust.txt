@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage #grey
+	entity "Language" as thinglanguage
+	entity "Fabs" as thingfabs #grey
+	actor "Fabs User" as actorfabsuser
+
+	thingfabs <.. thingpage
+	thingpage <.. thinglanguage
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Additional Field" as thingadditionalfield
+	entity "Fpds Datum" as thingfpdsdatum
+	actor "Datum User" as actordatauser
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Access Additional\nFields From\nThe Fpds\nData" as controlaccessadditionalfield
+
+	thingfpdsdatum <.. thingadditionalfield
+	actordatauser --- thingdatuminterface
+	thingadditionalfield --- controlaccessadditionalfield
+	thingfpdsdatum --- controlaccessadditionalfield
+	thingdatuminterface --> controlaccessadditionalfield
+
+@enduml

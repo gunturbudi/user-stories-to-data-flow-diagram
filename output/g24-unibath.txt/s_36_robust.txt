@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Require A\nMinimum Set\nOf Metadata" as controlrequireminimumset
+
+	actorbathdataarchiveadministrator --- thingmetadatainterface
+	thingmetadata --- controlrequireminimumset
+	thingmetadatainterface --> controlrequireminimumset
+
+@enduml

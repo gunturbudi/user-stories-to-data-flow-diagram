@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository Content " ];
+201 [label="<f0>  |<f1> Oai Pmh " ];
+202 [label="Repoadmin" shape=box];
+203 [label="{<f0> 1.0|<f1> Expose Repository Contents Via Oai Pmh }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Repository Content"]
+203 -> 201 [label="Oai Pmh"]
+}

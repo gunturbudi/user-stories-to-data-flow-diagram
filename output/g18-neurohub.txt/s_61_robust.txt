@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub" as thingneurohub
+	entity "Post Content" as thingpostedcontent
+	entity "Twitter Feed" as thingtwitterfeed #grey
+	entity "Time" as thingsametime
+	actor "User" as actoruser
+	boundary "Option" as thingoptiontellneurohubpushpostedcontentsametimeuser #grey
+	boundary "Neurohub\nInterface" as thingneurohubinterface #grey
+	control "Push Posted\nContent To\nTwitter Feed\nAt The\nSame Time" as controlpushpostedcontentsametime
+	control "Tell Neurohub" as controltellneurohubpushpostedcontentsametime
+	control "Have" as controlhaveoptiontellneurohubpushpostedcontentsametimeuser
+
+	thingtwitterfeed <.. thingpostedcontent
+	thingsametime <.. thingtwitterfeed
+	actoruser --- thingoptiontellneurohubpushpostedcontentsametimeuser
+	actoruser --- thingneurohubinterface
+	thingpostedcontent --- controlpushpostedcontentsametime
+	thingtwitterfeed --- controlpushpostedcontentsametime
+	thingsametime --- controlpushpostedcontentsametime
+	controltellneurohubpushpostedcontentsametime --> controlpushpostedcontentsametime
+	thingneurohubinterface --> controlpushpostedcontentsametime
+	thingneurohub --- controltellneurohubpushpostedcontentsametime
+	thingoptiontellneurohubpushpostedcontentsametimeuser --> controltellneurohubpushpostedcontentsametime
+	controlhaveoptiontellneurohubpushpostedcontentsametimeuser --> controltellneurohubpushpostedcontentsametime
+	thingoptiontellneurohubpushpostedcontentsametimeuser --> controlhaveoptiontellneurohubpushpostedcontentsametimeuser
+
+@enduml

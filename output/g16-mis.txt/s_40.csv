@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Easy Comprehension,shape=partialRectangle,null,null,data_base
+201,Recent Error,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,See A Display Of Recent Errors For Easy Comprehension,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Recent Error,endArrow=classic,203,201,endArrow=classic
+207,Easy Comprehension,endArrow=classic,203,200,endArrow=classic

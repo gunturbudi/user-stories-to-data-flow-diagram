@@ -1,0 +1,34 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> C " color=red];
+201 [label="<f0>  |<f1> D " color=red];
+202 [label="<f0>  |<f1> Record " color=red];
+203 [label="<f0>  |<f1> Dun " ];
+204 [label="<f0>  |<f1> Actiontype " ];
+205 [label="<f0>  |<f1> Sam " ];
+206 [label="actorwhose" shape=box];
+207 [label="User" shape=box];
+208 [label="{<f0> 1.0|<f1> Accept Records Actiontypes Are B }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Accept Records Actiontypes Are C }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Accept Records Actiontypes Are D }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Accept Records Actiontypes Are The Duns }" shape=Mrecord];
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 202
+208 -> 204
+209 -> 200
+209 -> 202
+209 -> 204
+210 -> 201
+210 -> 202
+210 -> 204
+211 -> 203
+211 -> 202
+211 -> 204
+}

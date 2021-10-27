@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Conservation Period,shape=partialRectangle,null,null,data_base
+202,Advance,shape=partialRectangle,null,null,data_base
+203,Archivemanager,rounded=0,null,null,external_entity
+204,Know In Advance The Conservation Period Of Data,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Advance,endArrow=classic,204,202,endArrow=classic
+208,Conservation Period,endArrow=classic,204,201,endArrow=classic
+209,Datum,endArrow=classic,204,200,endArrow=classic

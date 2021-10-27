@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Subject Information " color=red];
+201 [label="<f0>  |<f1> Agent " color=red];
+202 [label="<f0>  |<f1> Marcxml Record " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Import Subject Information }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Import Only Agent From Marcxml Records }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Subject Information"]
+205 -> 201 [label="Agent"]
+205 -> 202 [label="Marcxml Record"]
+}

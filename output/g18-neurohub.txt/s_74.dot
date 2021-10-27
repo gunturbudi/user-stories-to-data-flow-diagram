@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Remote Access " ];
+201 [label="<f0>  |<f1> Off Site\nWorking " color=red];
+202 [label="<f0>  |<f1> Datum " ];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Remote Access To Data For Off Site Working }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Remote Access"]
+204 -> 202 [label="Datum"]
+204 -> 201 [label="Off Site\nWorking"]
+}

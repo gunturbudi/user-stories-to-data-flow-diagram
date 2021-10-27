@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Search " color=red];
+201 [label="<f0>  |<f1> Log Book " color=red];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Limit Search To A Particular Set Of Log Books }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Search"]
+203 -> 201 [label="Log Book"]
+}

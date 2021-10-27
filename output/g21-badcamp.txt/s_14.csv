@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Trainee Information,shape=partialRectangle,null,null,data_base
+201,View,shape=partialRectangle,null,null,data_base
+202,Training Session,shape=partialRectangle,null,null,data_base
+203,Admin,shape=partialRectangle,null,null,data_base
+204,Trainingcoordinator,rounded=0,null,null,external_entity
+205,Show A Single Training Session,ellipse,null,null,process
+206,Filter,ellipse,null,null,process
+207,Have An View,ellipse,null,null,process
+208,Have An Admin View All Trainee Information Where Shown,ellipse,null,null,process
+210,,endArrow=classic,204,205,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,,endArrow=classic,204,207,endArrow=classic
+213,,endArrow=classic,204,208,endArrow=classic
+214,Training Session,endArrow=classic,205,202,endArrow=classic
+215,,endArrow=classic,206,205,endArrow=classic
+216,,endArrow=classic,207,206,endArrow=classic
+217,View,endArrow=classic,207,201,endArrow=classic
+218,Trainee Information,endArrow=classic,208,200,endArrow=classic
+219,View,endArrow=classic,208,201,endArrow=classic
+223,Admin,endArrow=classic,208,203,endArrow=classic

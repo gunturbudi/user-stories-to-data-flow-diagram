@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Fedora,shape=partialRectangle,null,null,data_base
+201,Application,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Developer,rounded=0,null,null,external_entity
+204,Upgrade To Fedora,ellipse,null,null,process
+205,Migrate Datum,ellipse,null,null,process
+206,Migrate Applications,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Fedora,endArrow=classic,204,200,endArrow=classic
+212,Datum,endArrow=classic,205,202,endArrow=classic
+213,Application,endArrow=classic,206,201,endArrow=classic

@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Instance" as thingdatasetinstance
+	entity "App" as thingapp
+	entity "New Code" as thingnewcode
+	entity "App" as thingotherapp
+	entity "Dataset Type" as thingdatasettype
+	actor "App Developer" as actorappdeveloper
+	circle "New Version" as thingnewversion
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Ensure That" as controlensurethat
+	control "Deploy A\nNew Version\nOf An\nApp Includes\nA Shared\nDataset Type\nThat Dataset\nInstances This\nApp Start\nDataset Instances\nOther Apps\nUnchanged" as controldeployensurethatnewversiondatasetinstance
+	control "Using The\nNew Code" as controlusenewcode
+
+	thingotherapp <.. thingdatasetinstance
+	thingapp <.. thingdatasetinstance
+	thingdatasettype <.. thingapp
+	thingdatasetinstance <.. thingdatasettype
+	thingapp *-- thingnewversion
+	actorappdeveloper --- thinginstanceinterface
+	actorappdeveloper --- thingcodeinterface
+	controldeployensurethatnewversiondatasetinstance --> controlensurethat
+	thinginstanceinterface --> controlensurethat
+	thingnewversion --- controldeployensurethatnewversiondatasetinstance
+	thingdatasettype --- controldeployensurethatnewversiondatasetinstance
+	thingdatasetinstance --- controldeployensurethatnewversiondatasetinstance
+	thingapp --- controldeployensurethatnewversiondatasetinstance
+	thinginstanceinterface --> controldeployensurethatnewversiondatasetinstance
+	controldeployensurethatnewversiondatasetinstance --> controlusenewcode
+	thingnewcode --- controlusenewcode
+	thingcodeinterface --> controlusenewcode
+
+@enduml

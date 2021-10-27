@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Interested ,\nNsf Person" as actorinterestednsfperson
+	actor "User Interview" as actoruserinterview
+	control "Know" as controlknow
+
+
+@enduml

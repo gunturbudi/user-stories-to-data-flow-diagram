@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	actor "Dams Manager" as actordamsmanager
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Know" as controlknow
+	control "Carrying Out\nAn Event" as controlcarryknowevent
+
+	actordamsmanager --- thingeventinterface
+	controlcarryknowevent --> controlknow
+	thingeventinterface --> controlknow
+	thingevent --- controlcarryknowevent
+	thingeventinterface --> controlcarryknowevent
+
+@enduml

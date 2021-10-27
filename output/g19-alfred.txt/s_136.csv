@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Goal,shape=partialRectangle,null,null,data_base
+201,Work,shape=partialRectangle,null,null,data_base
+202,Alfred Api,shape=partialRectangle,null,null,data_base
+203,Developer,rounded=0,null,null,external_entity
+204,Achieve Goals,ellipse,null,null,process
+205,Reduce The Work,ellipse,null,null,process
+206,Have The Alfred Api,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Goal,endArrow=classic,204,200,endArrow=classic
+212,,endArrow=classic,205,204,endArrow=classic
+213,Work,endArrow=classic,205,201,endArrow=classic
+214,,endArrow=classic,206,205,endArrow=classic
+215,Alfred Api,endArrow=classic,206,202,endArrow=classic

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "House" as thinghouse
+	entity "Device" as thingdevice #grey
+	entity "Low Battery" as thinglowbattery
+	entity "Alfred" as thingalfred #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "House\nInterface" as thinghouseinterface #grey
+	control "Have An\nAlfred Device\nAn Device\nInforms About\nA Low\nBattery When\nLeaving The\nHouse" as controlhavealfreddevice
+
+	thingalfred <.. thingdevice
+	thinglowbattery <.. thingdevice
+	thinghouse <.. thinglowbattery
+	actorOlderPerson --- thinghouseinterface
+	thinglowbattery --- controlhavealfreddevice
+	thinghouse --- controlhavealfreddevice
+	thinghouseinterface --> controlhavealfreddevice
+	thingdevice --- controlhavealfreddevice
+
+@enduml

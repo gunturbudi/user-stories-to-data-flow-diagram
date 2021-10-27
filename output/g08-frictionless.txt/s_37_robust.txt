@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Integration" as thingintegration
+	entity "Open Refine" as thingopenrefine
+	actor "Publisher" as actorpublisher
+	boundary "Refine\nInterface" as thingrefineinterface #grey
+	control "Provided With\nAn Integration\nWith Open\nRefine" as controlprovideintegration
+
+	thingopenrefine <.. thingintegration
+	actorpublisher --- thingrefineinterface
+	thingintegration --- controlprovideintegration
+	thingopenrefine --- controlprovideintegration
+	thingrefineinterface --> controlprovideintegration
+
+@enduml

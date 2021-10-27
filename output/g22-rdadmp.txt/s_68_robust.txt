@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Affiliation" as thingaffiliation
+	entity "Datum" as thingdatum
+	actor "Research ,\nEvaluation Manager" as actorresearchevaluationmanager
+	control "Ensure" as controlensure
+
+
+@enduml

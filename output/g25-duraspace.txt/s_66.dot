@@ -1,0 +1,44 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Scope " ];
+201 [label="<f0>  |<f1> Identifier " ];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="<f0>  |<f1> Etc " ];
+204 [label="<f0>  |<f1> Condition " ];
+205 [label="<f0>  |<f1> Collection Component " ];
+206 [label="<f0>  |<f1> Access " ];
+207 [label="<f0>  |<f1> Use " color=red];
+208 [label="<f0>  |<f1> Content " color=red];
+209 [label="User" shape=box];
+210 [label="{<f0> 1.0|<f1> Govern }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Know About Various Facets Of A Collection Component Such As Scope }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Govern Access }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Govern Use }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Know About Various Facets Of Object }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Know About Various Facets Of A Collection Component Such As Content }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Know About Various Facets Of A Collection Component Such As Various Identifier }" shape=Mrecord];
+217 [label="{<f0> 8.0|<f1> Govern Etc }" shape=Mrecord];
+218 [label="{<f0> 9.0|<f1> Know About Various Facets Of A Collection Component Such As Condition }" shape=Mrecord];
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+209 -> 216
+209 -> 217
+209 -> 218
+211 -> 205 [label="Collection Component"]
+211 -> 200 [label="Scope"]
+212 -> 206 [label="Access"]
+213 -> 207 [label="Use"]
+214 -> 202 [label="Object"]
+215 -> 208 [label="Content"]
+215 -> 205 [label="Collection Component"]
+216 -> 201 [label="Identifier"]
+216 -> 205 [label="Collection Component"]
+217 -> 203 [label="Etc"]
+218 -> 210
+218 -> 212
+218 -> 204 [label="Condition"]
+218 -> 205 [label="Collection Component"]
+}

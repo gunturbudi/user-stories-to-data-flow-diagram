@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs" as thingFABS
+	entity "Usaspende" as thingusaspende
+	entity "File" as thingfile
+	actor "User" as actoruser
+	boundary "Raw Agency" as thingrawagencypublishfileusaspendeuser #grey
+	control "Access" as controlaccessrawagencypublishfileusaspendeuser
+	control "Publish Files\nFrom Fabs\nVia Usaspending" as controlpublishfileusaspende
+
+	thingFABS <.. thingfile
+	actoruser --- thingrawagencypublishfileusaspendeuser
+	thingrawagencypublishfileusaspendeuser --> controlaccessrawagencypublishfileusaspendeuser
+	thingrawagencypublishfileusaspendeuser --> controlpublishfileusaspende
+	thingfile --- controlpublishfileusaspende
+	thingFABS --- controlpublishfileusaspende
+	thingusaspende --- controlpublishfileusaspende
+	controlaccessrawagencypublishfileusaspendeuser --> controlpublishfileusaspende
+
+@enduml

@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fabs " ];
+201 [label="<f0>  |<f1> D File " ];
+202 [label="<f0>  |<f1> Fpds Datum " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Generate D Files From Fabs }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Generate D Files From Fpds Datum }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Validate D Files From Fabs }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Validate D Files From Fpds Datum }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 201
+204 -> 200
+205 -> 202
+205 -> 201
+206 -> 200
+206 -> 201
+207 -> 201
+207 -> 202
+}

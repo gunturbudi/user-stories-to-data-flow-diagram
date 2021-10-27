@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photo Collection\nImage" as thingphotocollectionimage
+	actor "Researcher" as actorresearcher
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Search Across\nPhoto Collection\nImages" as controlsearchphotocollectionimages
+
+	actorresearcher --- thingimageinterface
+	thingphotocollectionimage --- controlsearchphotocollectionimages
+	thingimageinterface --> controlsearchphotocollectionimages
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan" as thingplan
+	actor "Applicant" as actorapplicant
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Resubmit Plans" as controlresubmitplan
+
+	actorapplicant --- thingplaninterface
+	thingplan --- controlresubmitplan
+	thingplaninterface --> controlresubmitplan
+
+@enduml

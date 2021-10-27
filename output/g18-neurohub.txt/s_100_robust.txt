@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Laboratory" as thinglaboratory
+	entity "Neurohub Node" as thingneurohubnode
+	entity "Remote Access" as thingremoteaccess
+	actor "Researcher" as actorresearcher
+	boundary "Laboratory\nInterface" as thinglaboratoryinterface #grey
+	control "Secure Remote\nAccess To\nThe Neurohub\nNode When\nAway Working\nFrom The\nLaboratory" as controlsecureremoteaccesslaboratory
+
+	thinglaboratory <.. thingneurohubnode
+	thingneurohubnode <.. thingremoteaccess
+	actorresearcher --- thinglaboratoryinterface
+	thingremoteaccess --- controlsecureremoteaccesslaboratory
+	thingneurohubnode --- controlsecureremoteaccesslaboratory
+	thinglaboratory --- controlsecureremoteaccesslaboratory
+	thinglaboratoryinterface --> controlsecureremoteaccesslaboratory
+
+@enduml

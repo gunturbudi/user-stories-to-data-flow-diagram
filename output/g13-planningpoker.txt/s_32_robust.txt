@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Estimate" as thingestimate
+	entity "Specific Estimator" as thingspecificestimator
+	actor "Participant" as actorparticipant
+	control "See" as controlsee
+
+
+@enduml

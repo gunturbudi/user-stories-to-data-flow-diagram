@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Medication,shape=partialRectangle,null,null,data_base
+201,Specific Tip,shape=partialRectangle,null,null,data_base
+202,Health Impairment,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Reduce Health Impairments Without Medication,ellipse,null,null,process
+205,Receive Specific Tips,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Health Impairment,endArrow=classic,204,202,endArrow=classic
+210,Medication,endArrow=classic,204,200,endArrow=classic
+211,,endArrow=classic,205,204,endArrow=classic
+212,Specific Tip,endArrow=classic,205,201,endArrow=classic

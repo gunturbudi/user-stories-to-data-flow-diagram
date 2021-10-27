@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Content Similarity " color=red];
+201 [label="<f0>  |<f1> Music " color=red];
+202 [label="<f0>  |<f1> Ringback " color=red];
+203 [label="<f0>  |<f1> Similar ,\nMusic Tone " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Search Similar Ringback Tone To A Given Music Video On Content Similarity }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Search Music }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Discover Ringback }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Discover Similar, Music Tones To A Given Music Video On Content Similarity }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+205 -> 200 [label="Content Similarity"]
+206 -> 201 [label="Music"]
+207 -> 202 [label="Ringback"]
+208 -> 203 [label="Similar ,\nMusic Tone"]
+208 -> 200 [label="Content Similarity"]
+208 -> 201 [label="Music"]
+}

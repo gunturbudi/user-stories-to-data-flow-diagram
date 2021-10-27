@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Olderperson" as actorOlderPerson
+	control "Pay For\nSmall Amounts" as controlpaysmallamount
+
+
+@enduml

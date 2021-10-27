@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Medication " ];
+201 [label="<f0>  |<f1> Specific Tip " ];
+202 [label="<f0>  |<f1> Health Impairment " color=red];
+203 [label="Olderperson" shape=box];
+204 [label="{<f0> 1.0|<f1> Reduce Health Impairments Without Medication }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Receive Specific Tips }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Health Impairment"]
+204 -> 200 [label="Medication"]
+205 -> 204
+205 -> 201 [label="Specific Tip"]
+}

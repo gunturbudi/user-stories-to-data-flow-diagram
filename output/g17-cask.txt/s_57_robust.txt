@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Configuration" as thingdatasetconfiguration #grey
+	actor "User" as actoruser
+	boundary "Configuration\nInterface" as thingconfigurationinterface #grey
+	control "Specify As\nPart Of\nDataset Configuration\nExplorable" as controlspecifypart
+
+	actoruser --- thingconfigurationinterface
+	thingdatasetconfiguration --- controlspecifypart
+	thingconfigurationinterface --> controlspecifypart
+
+@enduml

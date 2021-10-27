@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Digital Object,shape=partialRectangle,null,null,data_base
+201,Access Derivative,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Create Access Derivatives Of Digital Objects,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Access Derivative,endArrow=classic,203,201,endArrow=classic
+207,Digital Object,endArrow=classic,203,200,endArrow=classic

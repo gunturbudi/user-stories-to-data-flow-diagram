@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs File" as thingfabsfile
+	actor "Website User" as actorwebsiteuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Access Published\nFabs Files" as controlaccesspublishedfabsfiles
+
+	actorwebsiteuser --- thingfileinterface
+	thingfabsfile --- controlaccesspublishedfabsfiles
+	thingfileinterface --> controlaccesspublishedfabsfiles
+
+@enduml

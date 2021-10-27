@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,"Fiscal ,\nOpen Space",shape=partialRectangle,null,null,data_base
+201,Blog,shape=partialRectangle,null,null,data_base
+202,Project,shape=partialRectangle,null,null,data_base
+203,"Openspending , Community Member",rounded=0,null,null,external_entity
+204,Have A Blog Highlights Any,ellipse,null,null,process
+205,"Have A Blog All Project In The Fiscal, Open Space",ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Blog,endArrow=classic,204,201,endArrow=classic
+210,Project,endArrow=classic,205,202,endArrow=classic
+211,"Fiscal ,\nOpen Space",endArrow=classic,205,200,endArrow=classic
+212,Blog,endArrow=classic,205,201,endArrow=classic

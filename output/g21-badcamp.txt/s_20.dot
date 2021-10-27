@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsorship Money " color=red];
+201 [label="<f0>  |<f1> Stripe " ];
+202 [label="Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Refund Sponsorship Money Processed Stripe }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Sponsorship Money"]
+203 -> 201 [label="Stripe"]
+}

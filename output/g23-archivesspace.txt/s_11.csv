@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Csv,shape=partialRectangle,null,null,data_base
+201,Accessions Datum,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Import Accessions Data In Csv,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Accessions Datum,endArrow=classic,203,201,endArrow=classic
+207,Csv,endArrow=classic,203,200,endArrow=classic

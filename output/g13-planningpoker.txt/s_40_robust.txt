@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Multiple Draw" as thingmultipledraw
+	entity "Order" as thingsameorder
+	entity "Card" as thingcard
+	actor "Participant" as actorparticipant
+	boundary "Draw\nInterface" as thingdrawinterface #grey
+	control "Have The\nCards In\nThe Same\nOrder Across\nMultiple Draws" as controlhavecardsameorder
+
+	thingmultipledraw <.. thingsameorder
+	thingsameorder <.. thingcard
+	actorparticipant --- thingdrawinterface
+	thingcard --- controlhavecardsameorder
+	thingsameorder --- controlhavecardsameorder
+	thingmultipledraw --- controlhavecardsameorder
+	thingdrawinterface --> controlhavecardsameorder
+
+@enduml

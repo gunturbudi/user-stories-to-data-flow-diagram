@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Registry " ];
+201 [label="<f0>  |<f1> Publish Command " ];
+202 [label="<f0>  |<f1> Data Package " color=red];
+203 [label="Publisher" shape=box];
+204 [label="{<f0> 1.0|<f1> Use A Publish Command }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Update A Data Package Already Is In The Registry }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 201 [label="Publish Command"]
+205 -> 202 [label="Data Package"]
+205 -> 200 [label="Registry"]
+}

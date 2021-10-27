@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Jquery Plugin" as thingjqueryplugin #grey
+	entity "Core Data\nPackage" as thingcoredatapackage
+	actor "Developer" as actordeveloper
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Provided With\nA Jquery\nPlugin For\nCore Data\nPackages" as controlprovidejqueryplugin
+
+	thingcoredatapackage <.. thingjqueryplugin
+	actordeveloper --- thingpackageinterface
+	thingjqueryplugin --- controlprovidejqueryplugin
+	thingcoredatapackage --- controlprovidejqueryplugin
+	thingpackageinterface --> controlprovidejqueryplugin
+
+@enduml

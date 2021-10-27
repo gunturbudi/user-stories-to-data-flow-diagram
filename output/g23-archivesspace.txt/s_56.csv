@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Container,shape=partialRectangle,null,null,data_base
+201,Instance,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Associate An Instance With A Container,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Instance,endArrow=classic,203,201,endArrow=classic
+207,Container,endArrow=classic,203,200,endArrow=classic

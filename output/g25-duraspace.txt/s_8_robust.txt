@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Provenance" as thingsameprovenance
+	entity "Singular Provenance" as thingsingularprovenance
+	entity "Assembly" as thingassembly
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Item" as thingitemsharesameprovenancerepositorymanager #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Represent A\nPart Of\nA Collection" as controlrepresentpart
+	control "Limit The\nCollection" as controllimitcollectionrepresentpart
+	control "Compose Collections\nLimiting The\nCollection To" as controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	control "Compose Collections" as controlcomposecollectionlimitcollectionrepresentpart
+	control "Share The\nSame Provenance" as controlsharesameprovenance
+
+	thingobject <.. thingcollection
+	thingcollection <.. thingcollection
+	actorrepositorymanager --- thingitemsharesameprovenancerepositorymanager
+	actorrepositorymanager --- thingcollectioninterface
+	controllimitcollectionrepresentpart --> controlrepresentpart
+	thingcollectioninterface --> controlrepresentpart
+	thingcollection --- controlrepresentpart
+	controlcomposecollectionlimitcollectionrepresentpart --> controllimitcollectionrepresentpart
+	thingcollection --- controllimitcollectionrepresentpart
+	thingcollectioninterface --> controllimitcollectionrepresentpart
+	thingcollection --- controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	thingitemsharesameprovenancerepositorymanager --> controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	thingcollectioninterface --> controlcomposecollectionlimitcollectionrepresentpart
+	thingcollection --- controlcomposecollectionlimitcollectionrepresentpart
+	controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager --> controlsharesameprovenance
+	thingsameprovenance --- controlsharesameprovenance
+	thingitemsharesameprovenancerepositorymanager --> controlsharesameprovenance
+
+@enduml

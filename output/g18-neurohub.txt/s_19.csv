@@ -1,0 +1,26 @@
+id,value,style,source,target,type
+200,Manual Input,shape=partialRectangle,null,null,data_base
+201,Interaction,shape=partialRectangle,null,null,data_base
+202,Test,shape=partialRectangle,null,null,data_base
+203,Neurohub Installation,shape=partialRectangle,null,null,data_base
+204,Result,shape=partialRectangle,null,null,data_base
+205,Nightly Build,shape=partialRectangle,null,null,data_base
+206,Operating System,shape=partialRectangle,null,null,data_base
+207,Release Engineer,rounded=0,null,null,external_entity
+208,Configure Nightly Builds Automatically Perform A Neurohub Installation On A Virgin Operating System,ellipse,null,null,process
+209,Execute Tests,ellipse,null,null,process
+210,Requiring Interaction,ellipse,null,null,process
+211,Requiring Any Manual Input,ellipse,null,null,process
+212,Report Back Results,ellipse,null,null,process
+214,,endArrow=classic,207,208,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Nightly Build,endArrow=classic,208,205,endArrow=classic
+218,Neurohub Installation,endArrow=classic,208,203,endArrow=classic
+219,Operating System,endArrow=classic,208,206,endArrow=classic
+220,Test,endArrow=classic,209,202,endArrow=classic
+221,,endArrow=classic,210,209,endArrow=classic
+222,Interaction,endArrow=classic,210,201,endArrow=classic
+223,,endArrow=classic,211,209,endArrow=classic
+224,Manual Input,endArrow=classic,211,200,endArrow=classic
+225,Result,endArrow=classic,212,204,endArrow=classic

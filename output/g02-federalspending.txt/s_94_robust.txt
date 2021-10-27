@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Validation" as thingvalidation
+	entity "Time" as thingtime
+	actor "Fabs User" as actorfabsuser
+	control "Have" as controlhave
+
+
+@enduml

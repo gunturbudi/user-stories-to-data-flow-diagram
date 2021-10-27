@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "File Header" as thingfileheader
+	actor "Archivist" as actorarchivist
+	boundary "Header\nInterface" as thingheaderinterface #grey
+	control "Embed Metadata\nIn File\nHeaders" as controlembedmetadata
+
+	thingfileheader <.. thingmetadata
+	actorarchivist --- thingheaderinterface
+	thingmetadata --- controlembedmetadata
+	thingfileheader --- controlembedmetadata
+	thingheaderinterface --> controlembedmetadata
+
+@enduml

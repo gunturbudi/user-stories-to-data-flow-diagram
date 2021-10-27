@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	actor "Data Manager" as actordatamanager
+	circle "Content" as thingcontent
+	control "Know" as controlknow
+
+	thingdata *-- thingcontent
+
+@enduml

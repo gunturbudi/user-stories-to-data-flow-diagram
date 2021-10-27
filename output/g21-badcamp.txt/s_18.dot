@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Link " ];
+201 [label="<f0>  |<f1> Home Page " ];
+202 [label="<f0>  |<f1> Training Option " ];
+203 [label="Anonymoususer" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Link On The Home Page To A List Of Training Options }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Link"]
+204 -> 201 [label="Home Page"]
+204 -> 202 [label="Training Option"]
+}

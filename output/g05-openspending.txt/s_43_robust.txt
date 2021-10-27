@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hide State" as thinghiddenstate
+	entity "Dataset" as thingdataset
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "State\nInterface" as thingstateinterface #grey
+	control "Add A\nDataset In\nA Hidden\nState" as controladddatasethiddenstate
+
+	thinghiddenstate <.. thingdataset
+	actordatapublishinguser --- thingstateinterface
+	thingdataset --- controladddatasethiddenstate
+	thinghiddenstate --- controladddatasethiddenstate
+	thingstateinterface --> controladddatasethiddenstate
+
+@enduml

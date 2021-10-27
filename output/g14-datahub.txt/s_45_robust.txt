@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package\nSchema" as thingdatapackageschema #grey
+	entity "Detail" as thingfulldetail
+	actor "Consumer" as actorconsumer
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	control "Know Full\nDetails The\nData Package\nSchema How\nHas Changed" as controlknowfulldetail
+
+	thingdatapackageschema <.. thingfulldetail
+	actorconsumer --- thingschemainterface
+	thingfulldetail --- controlknowfulldetail
+	thingdatapackageschema --- controlknowfulldetail
+	thingschemainterface --> controlknowfulldetail
+
+@enduml

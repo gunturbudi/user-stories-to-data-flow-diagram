@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archive " color=red];
+201 [label="<f0>  |<f1> Cris " ];
+202 [label="Research , Information Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Integrate The Archive With Cris }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Link funding to all of the outputs it produces }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Funding " color=red];
+2 -> 1001 [label="Funding"]
+202 -> 203
+203 -> 200 [label="Archive"]
+203 -> 201 [label="Cris"]
+}

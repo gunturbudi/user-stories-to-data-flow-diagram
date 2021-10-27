@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	actor "Openspending ,\nCommunity Member" as actoropenspendingcommunitymember
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Have An\nApp" as controlhaveapp
+
+	actoropenspendingcommunitymember --- thingappinterface
+	thingapp --- controlhaveapp
+	thingappinterface --> controlhaveapp
+
+@enduml

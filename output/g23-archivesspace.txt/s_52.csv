@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Resource Record,shape=partialRectangle,null,null,data_base
+201,Archivist,rounded=0,null,null,external_entity
+202,Create A Resource Record,ellipse,null,null,process
+203,Edit A Resource Record,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Resource Record,endArrow=classic,202,200,endArrow=classic
+208,Resource Record,endArrow=classic,203,200,endArrow=classic

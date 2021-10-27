@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Provide formal communication to the responsible party.,ellipse,null,null,process
+200,Violation,shape=partialRectangle,null,null,data_base
+201,"Enforcement , Staff Member",rounded=0,null,null,external_entity
+202,Issue A Notice Of Violation,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Violation,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Communication,rounded=0,null,null,external_entity
+1002,Communication,endArrow=classic,2,1001,endArrow=classic

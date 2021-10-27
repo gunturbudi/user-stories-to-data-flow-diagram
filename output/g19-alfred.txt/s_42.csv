@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Door,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,See,ellipse,null,null,process
+204,Open The Door,ellipse,null,null,process
+205,Use Alfred,ellipse,null,null,process
+206,Use Alfred Is Standing At Door,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,Door,endArrow=classic,204,200,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,Alfred,endArrow=classic,205,201,endArrow=classic
+215,,endArrow=classic,206,203,endArrow=classic
+216,Alfred,endArrow=classic,206,201,endArrow=classic
+217,Door,endArrow=classic,206,200,endArrow=classic

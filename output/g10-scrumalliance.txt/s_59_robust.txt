@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Member" as thingmember
+	entity "Article" as thingarticle
+	actor "Site Editor" as actorsiteeditor
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	control "For Indicate\nAn Article\nMembers" as controlindicatearticlemember
+
+	thingmember <.. thingarticle
+	actorsiteeditor --- thingmemberinterface
+	thingarticle --- controlindicatearticlemember
+	thingmember --- controlindicatearticlemember
+	thingmemberinterface --> controlindicatearticlemember
+
+@enduml

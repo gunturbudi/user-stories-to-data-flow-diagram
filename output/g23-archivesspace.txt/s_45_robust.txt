@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Custom Importer" as thingcustomimporter #grey
+	actor "Developer" as actordeveloper
+	boundary "Importer\nInterface" as thingimporterinterface #grey
+	control "Develop A\nCustom Importer" as controldevelopcustomimporter
+
+	actordeveloper --- thingimporterinterface
+	thingcustomimporter --- controldevelopcustomimporter
+	thingimporterinterface --> controldevelopcustomimporter
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Sponsorship Page,shape=partialRectangle,null,null,data_base
+201,Badcamp Attendee,shape=partialRectangle,null,null,data_base
+202,Sponsor,rounded=0,null,null,external_entity
+203,Link Badcamp Attendees To Sponsorship Page,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Badcamp Attendee,endArrow=classic,203,201,endArrow=classic
+207,Sponsorship Page,endArrow=classic,203,200,endArrow=classic

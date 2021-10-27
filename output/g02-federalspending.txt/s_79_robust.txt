@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Duns Error" as thingdunserror #grey
+	entity "Record" as thingrecord
+	entity "Individual Recipient" as thingindividualrecipient
+	actor "Broker User" as actorbrokeruser
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	control "Submit Records\nFor Individual\nRecipients" as controlsubmitrecord
+	control "Receiving A\nDuns Error" as controlreceivesubmitrecorddunserror
+
+	thingindividualrecipient <.. thingrecord
+	actorbrokeruser --- thingerrorinterface
+	thingrecord --- controlsubmitrecord
+	thingindividualrecipient --- controlsubmitrecord
+	controlreceivesubmitrecorddunserror --> controlsubmitrecord
+	thingerrorinterface --> controlsubmitrecord
+	thingdunserror --- controlreceivesubmitrecorddunserror
+	thingerrorinterface --> controlreceivesubmitrecorddunserror
+
+@enduml

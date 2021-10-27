@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> R " color=red];
+201 [label="<f0>  |<f1> Python " ];
+202 [label="<f0>  |<f1> Analysis " color=red];
+203 [label="<f0>  |<f1> Data " color=red];
+204 [label="Developer" shape=box];
+205 [label="{<f0> 1.0|<f1> Do Exploratory Data Analysis In R }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Operationalize That Analysis In Python }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200
+205 -> 202
+206 -> 202
+206 -> 201
+205 -> 203
+}

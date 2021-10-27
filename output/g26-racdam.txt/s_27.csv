@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Metadata,shape=partialRectangle,null,null,data_base
+201,File Header,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Embed Metadata In File Headers,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Metadata,endArrow=classic,203,200,endArrow=classic
+207,File Header,endArrow=classic,203,201,endArrow=classic

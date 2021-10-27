@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dmp" as thingdmp
+	actor "Stakeholder" as actorstakeholder
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Know Responsible\nFor The\nDmp" as controlknowdmp
+
+	actorstakeholder --- thingdmpinterface
+	thingdmp --- controlknowdmp
+	thingdmpinterface --> controlknowdmp
+
+@enduml

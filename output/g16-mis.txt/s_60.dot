@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Restrict Object " ];
+201 [label="<f0>  |<f1> Access " ];
+202 [label="<f0>  |<f1> Repository " ];
+203 [label="Collection Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Request Access To Restricted Objects }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Contact From The Repository }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Access"]
+204 -> 200 [label="Restrict Object"]
+205 -> 204
+205 -> 202 [label="Repository"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Blog Post" as thingblogpost
+	actor "Administrator" as actoradministrator
+	boundary "Post\nInterface" as thingpostinterface #grey
+	control "Create Blog\nPosts" as controlcreateblogposts
+
+	actoradministrator --- thingpostinterface
+	thingblogpost --- controlcreateblogposts
+	thingpostinterface --> controlcreateblogposts
+
+@enduml

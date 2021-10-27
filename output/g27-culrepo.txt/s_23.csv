@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Make sure my school is credited for the work,ellipse,null,null,process
+200,Aforementioned Work,shape=partialRectangle,null,null,data_base
+201,Digital Space,shape=partialRectangle,null,null,data_base
+202,Administrator,rounded=0,null,null,external_entity
+203,Disseminate The Aforementioned Works In A Digital Space Strongly Branded,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Aforementioned Work,endArrow=classic,203,200,endArrow=classic
+207,Digital Space,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,School,rounded=0,null,null,external_entity
+1002,School,endArrow=classic,2,1001,endArrow=classic

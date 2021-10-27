@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Consumption,shape=partialRectangle,null,null,data_base
+201,Drupal Planet,shape=partialRectangle,null,null,data_base
+202,Blog Post,shape=partialRectangle,null,null,data_base
+203,Administrator,rounded=0,null,null,external_entity
+204,Tag Blog Posts For Consumption By Drupal Planet,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Blog Post,endArrow=classic,204,202,endArrow=classic
+208,Consumption,endArrow=classic,204,200,endArrow=classic
+209,Drupal Planet,endArrow=classic,204,201,endArrow=classic

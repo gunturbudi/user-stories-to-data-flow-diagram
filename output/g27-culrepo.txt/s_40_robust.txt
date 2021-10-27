@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Insight" as thinginsight
+	entity "Paper" as thingpaper #grey
+	entity "Influential Judge" as thinginfluentialjudge
+	entity "Legal Thinker" as thinglegalthinker
+	entity "Initial Scholarship" as thinginitialscholarship
+	entity "Thesis" as thingthesis #grey
+	actor "Academicresearcher" as actoracademicresearcher
+	boundary "Scholarship\nInterface" as thingscholarshipinterface #grey
+	control "Gain Insight\nInitial Scholarship\nHow Started" as controlgaininsight
+
+	thinginitialscholarship <.. thinginsight
+	thinglegalthinker <.. thingpaper
+	thingthesis <.. thingpaper
+	actoracademicresearcher --- thingscholarshipinterface
+	thinginsight --- controlgaininsight
+	thinginitialscholarship --- controlgaininsight
+	thingscholarshipinterface --> controlgaininsight
+
+@enduml

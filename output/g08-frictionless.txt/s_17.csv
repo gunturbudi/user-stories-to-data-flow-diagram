@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,R,shape=partialRectangle,null,null,data_base
+201,Python,shape=partialRectangle,null,null,data_base
+202,Analysis,shape=partialRectangle,null,null,data_base
+203,Data,shape=partialRectangle,null,null,data_base
+204,Developer,rounded=0,null,null,external_entity
+205,Do Exploratory Data Analysis In R,ellipse,null,null,process
+206,Operationalize That Analysis In Python,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,R,endArrow=classic,205,200,endArrow=classic
+211,Analysis,endArrow=classic,205,202,endArrow=classic
+212,Analysis,endArrow=classic,206,202,endArrow=classic
+213,Python,endArrow=classic,206,201,endArrow=classic
+214,Data,endArrow=classic,205,203,endArrow=classic

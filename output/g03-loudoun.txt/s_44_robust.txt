@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Bond" as thingbond
+	actor "Staff Member" as actorstaffmember
+	boundary "Bond\nInterface" as thingbondinterface #grey
+	control "Manage Bonds" as controlmanagebond
+
+	actorstaffmember --- thingbondinterface
+	thingbond --- controlmanagebond
+	thingbondinterface --> controlmanagebond
+
+@enduml

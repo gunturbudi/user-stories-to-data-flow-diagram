@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Compaction" as thingcompaction
+	entity "Administrative ,\nCustom Operation" as thingadministrativecustomoperation
+	entity "Dataset Type" as thingdatasettype
+	actor "Dataset Developer" as actordatasetdeveloper
+	boundary "Compaction\nInterface" as thingcompactioninterface #grey
+	boundary "Operation\nInterface" as thingoperationinterface #grey
+	control "Implement Administrative,\nCustom Operations\nSuch As\nCompaction" as controlimplementadministrativecustomoperation
+	control "Implement Administrative,\nCustom Operations\nSuch As" as controlimplementadministrativecustomoperationrebalance
+	control "Rebalance" as controlrebalance
+
+	thingcompaction <.. thingadministrativecustomoperation
+	actordatasetdeveloper --- thingcompactioninterface
+	actordatasetdeveloper --- thingoperationinterface
+	thingadministrativecustomoperation --- controlimplementadministrativecustomoperation
+	thingcompaction --- controlimplementadministrativecustomoperation
+	thingcompactioninterface --> controlimplementadministrativecustomoperation
+	thingoperationinterface --> controlimplementadministrativecustomoperationrebalance
+	thingadministrativecustomoperation --- controlimplementadministrativecustomoperationrebalance
+	controlimplementadministrativecustomoperationrebalance --> controlrebalance
+	thingoperationinterface --> controlrebalance
+
+@enduml

@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,Electronic Book,shape=partialRectangle,null,null,data_base
+201,System,shape=partialRectangle,null,null,data_base
+202,Experimental Datum,shape=partialRectangle,null,null,data_base
+203,Bad Datum,shape=partialRectangle,null,null,data_base
+204,Log Book,shape=partialRectangle,null,null,data_base
+205,Researcher,rounded=0,null,null,external_entity
+206,Indicate Within Electronic Log Book Experimental Data,ellipse,null,null,process
+207,Bad Indicate Within Electronic Book Experimental Data,ellipse,null,null,process
+208,Hide The Bad Data,ellipse,null,null,process
+209,Keep Which The Bad Data In The System,ellipse,null,null,process
+211,,endArrow=classic,205,206,endArrow=classic
+212,Log Book,endArrow=classic,206,204,endArrow=classic
+213,Experimental Datum,endArrow=classic,206,202,endArrow=classic
+214,Electronic Book,endArrow=classic,207,200,endArrow=classic
+215,Experimental Datum,endArrow=classic,207,202,endArrow=classic
+216,Bad Datum,endArrow=classic,208,203,endArrow=classic
+217,System,endArrow=classic,209,201,endArrow=classic
+218,Bad Datum,endArrow=classic,209,203,endArrow=classic

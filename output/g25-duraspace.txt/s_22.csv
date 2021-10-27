@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Repository Manager,rounded=0,null,null,external_entity
+202,Indicate The Copyright Status Of An Object,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Object,endArrow=classic,202,200,endArrow=classic

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="<f0>  |<f1> Format " color=red];
+202 [label="<f0>  |<f1> Ability " ];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Have The To Ability For Files By }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have The To Ability For Files By Format }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Ability"]
+204 -> 200 [label="File"]
+205 -> 201 [label="Format"]
+205 -> 200 [label="File"]
+205 -> 202 [label="Ability"]
+}

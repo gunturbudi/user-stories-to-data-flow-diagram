@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nsf Project\nTeam" as thingnsfprojectteam #grey
+	entity "Visual Design" as thingvisualdesign
+	actor "Visualdesigner" as actorVisualDesigner
+	circle "Value" as thingvalue
+	boundary "Team\nInterface" as thingteaminterface #grey
+	control "Demonstrate The\nValue Of\nVisual Design\nTo The\nNsf Project\nTeam" as controldemonstratevalue
+
+	thingnsfprojectteam <.. thingvisualdesign
+	thingvisualdesign *-- thingvalue
+	thingnsfprojectteam *-- thingvalue
+	actorVisualDesigner --- thingteaminterface
+	thingvalue --- controldemonstratevalue
+	thingvisualdesign --- controldemonstratevalue
+	thingnsfprojectteam --- controldemonstratevalue
+	thingteaminterface --> controldemonstratevalue
+
+@enduml

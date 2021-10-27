@@ -1,0 +1,27 @@
+id,value,style,source,target,type
+200,Paper,shape=partialRectangle,null,null,data_base
+201,Researcher,shape=partialRectangle,null,null,data_base
+202,Review,shape=partialRectangle,null,null,data_base
+203,Comment,shape=partialRectangle,null,null,data_base
+204,Repository,shape=partialRectangle,null,null,data_base
+205,Group Level,shape=partialRectangle,null,null,data_base
+206,Researcher,rounded=0,null,null,external_entity
+207,Sharing Comment,ellipse,null,null,process
+208,Have A Group Level Repository,ellipse,null,null,process
+209,Have A Repository,ellipse,null,null,process
+210,Sharing Review,ellipse,null,null,process
+211,Sharing Papers With Other Researchers,ellipse,null,null,process
+213,,endArrow=classic,206,207,endArrow=classic
+214,,endArrow=classic,206,208,endArrow=classic
+215,,endArrow=classic,206,210,endArrow=classic
+216,,endArrow=classic,206,211,endArrow=classic
+217,,endArrow=classic,207,209,endArrow=classic
+218,Comment,endArrow=classic,207,203,endArrow=classic
+219,Repository,endArrow=classic,208,204,endArrow=classic
+220,Repository,endArrow=classic,209,204,endArrow=classic
+221,,endArrow=classic,210,209,endArrow=classic
+222,Review,endArrow=classic,210,202,endArrow=classic
+223,,endArrow=classic,211,208,endArrow=classic
+224,Paper,endArrow=classic,211,200,endArrow=classic
+225,Researcher,endArrow=classic,211,201,endArrow=classic
+227,Group Level,endArrow=classic,208,205,endArrow=classic

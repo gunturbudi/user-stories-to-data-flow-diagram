@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Home Page" as thinghomepage #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Easily Get\nTo The\nHome Page" as controlgethomepage
+
+	actorsitevisitor --- thingpageinterface
+	thinghomepage --- controlgethomepage
+	thingpageinterface --> controlgethomepage
+
+@enduml

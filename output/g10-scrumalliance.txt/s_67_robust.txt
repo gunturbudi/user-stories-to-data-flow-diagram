@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Upcoming Course" as thingupcomingcourse
+	actor "Trainer" as actortrainer
+	boundary "Visitor" as thingvisitortrainer
+	control "See" as controlsee
+	control "Notice" as controlnoticevisitortrainer
+
+	actortrainer --- thingvisitortrainer
+	thingvisitortrainer --> controlnoticevisitortrainer
+
+@enduml

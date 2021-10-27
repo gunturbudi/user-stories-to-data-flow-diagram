@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object Component " color=red];
+201 [label="<f0>  |<f1> Copyright " color=red];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="Dams Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know Copyright For An Object Component }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know Copyright For Object }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Expire Per Jurisdictional Copyright Statute }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 206
+204 -> 201 [label="Copyright"]
+204 -> 200 [label="Object Component"]
+205 -> 202 [label="Object"]
+205 -> 201 [label="Copyright"]
+206 -> 201 [label="Copyright"]
+}

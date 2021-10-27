@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Redundant Copy,shape=partialRectangle,null,null,data_base
+201,Original Object,shape=partialRectangle,null,null,data_base
+202,Unwanted Change,shape=partialRectangle,null,null,data_base
+203,Change,shape=partialRectangle,null,null,data_base
+204,Copy,shape=partialRectangle,null,null,data_base
+205,Asset Manager,rounded=0,null,null,external_entity
+206,Assured,ellipse,null,null,process
+207,Changes Occur,ellipse,null,null,process
+208,By Which Restore The Original Object To All Copies,ellipse,null,null,process
+210,,endArrow=classic,205,207,endArrow=classic
+211,,endArrow=classic,205,208,endArrow=classic
+212,Change,endArrow=classic,207,203,endArrow=classic
+213,Copy,endArrow=classic,208,204,endArrow=classic
+214,Original Object,endArrow=classic,208,201,endArrow=classic

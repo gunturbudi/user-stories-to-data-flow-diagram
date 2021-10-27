@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Username" as thingownusername
+	actor "User" as actoruser
+	boundary "Username\nInterface" as thingusernameinterface #grey
+	control "Set Own\nUsername" as controlsetownusername
+
+	actoruser --- thingusernameinterface
+	thingownusername --- controlsetownusername
+	thingusernameinterface --> controlsetownusername
+
+@enduml

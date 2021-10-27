@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Usage " color=red];
+201 [label="<f0>  |<f1> Key Metric " ];
+202 [label="<f0>  |<f1> User " color=red];
+203 [label="<f0>  |<f1> Download " color=red];
+204 [label="<f0>  |<f1> Api " color=red];
+205 [label="Admin" shape=box];
+206 [label="{<f0> 1.0|<f1> See Key Metrics About Usage Such As Users }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> See Key Metrics About Usage Such As Download }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> See Key Metrics About Usage Such As Api Usage }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 201 [label="Key Metric"]
+206 -> 200 [label="Usage"]
+206 -> 202 [label="User"]
+207 -> 203 [label="Download"]
+207 -> 201 [label="Key Metric"]
+207 -> 200 [label="Usage"]
+208 -> 201 [label="Key Metric"]
+208 -> 200 [label="Usage"]
+208 -> 204 [label="Api"]
+}

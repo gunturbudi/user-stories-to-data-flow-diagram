@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Team Member" as actorteammember
+	control "Design, Visual,\nRelated Know" as controlknow
+
+
+@enduml

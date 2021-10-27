@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Outreach" as thingoutreach
+	actor "User Researcher" as actoruserresearcher
+	boundary "Outreach\nInterface" as thingoutreachinterface #grey
+	control "Know Outreach\nTo Lists\nSuccessful" as controlknowoutreach
+
+	actoruserresearcher --- thingoutreachinterface
+	thingoutreach --- controlknowoutreach
+	thingoutreachinterface --> controlknowoutreach
+
+@enduml

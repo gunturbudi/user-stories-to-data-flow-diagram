@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Additional Property" as thingadditionalproperty
+	actor "User" as actoruser
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Add Additional\nProperties For\nRepositories" as controladdadditionalproperty
+
+	thingrepository <.. thingadditionalproperty
+	actoruser --- thingrepositoryinterface
+	thingadditionalproperty --- controladdadditionalproperty
+	thingrepository --- controladdadditionalproperty
+	thingrepositoryinterface --> controladdadditionalproperty
+
+@enduml

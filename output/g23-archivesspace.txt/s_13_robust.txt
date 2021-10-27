@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Frontend Change" as thingfrontendchange
+	entity "Enum List" as thingenumlist
+	actor "User" as actoruser
+	boundary "List\nInterface" as thinglistinterface #grey
+	boundary "Change\nInterface" as thingchangeinterface #grey
+	control "Managing Enum\nLists" as controlmanageprovidefrontendchangesenumlists
+	control "Provided With\nFrontend Changes" as controlprovidefrontendchanges
+
+	actoruser --- thinglistinterface
+	actoruser --- thingchangeinterface
+	thingenumlist --- controlmanageprovidefrontendchangesenumlists
+	thinglistinterface --> controlmanageprovidefrontendchangesenumlists
+	controlmanageprovidefrontendchangesenumlists --> controlprovidefrontendchanges
+	thingfrontendchange --- controlprovidefrontendchanges
+	thingchangeinterface --> controlprovidefrontendchanges
+
+@enduml

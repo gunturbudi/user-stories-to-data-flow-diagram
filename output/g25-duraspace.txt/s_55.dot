@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Authenticity " ];
+202 [label="<f0>  |<f1> Integrity " ];
+203 [label="<f0>  |<f1> Question " ];
+204 [label="<f0>  |<f1> Preservation Manager " ];
+205 [label="<f0>  |<f1> File Format " ];
+206 [label="Dams Manager" shape=box];
+207 [label="{<f0> 1.0|<f1> Update To A More Current File Format }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Know Of Any Object }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Know Of Any Object For Which Integrity Is In Question }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Know Of Any Object For Which Authenticity Is }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Know Via Preservation Managers }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+207 -> 205 [label="File Format"]
+208 -> 207
+208 -> 200 [label="Object"]
+209 -> 200 [label="Object"]
+209 -> 202 [label="Integrity"]
+209 -> 203 [label="Question"]
+210 -> 201 [label="Authenticity"]
+210 -> 200 [label="Object"]
+211 -> 204 [label="Preservation Manager"]
+}

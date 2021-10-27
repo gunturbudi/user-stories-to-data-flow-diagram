@@ -1,0 +1,32 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Important Feature " ];
+201 [label="<f0>  |<f1> Flooding " ];
+202 [label="<f0>  |<f1> Area " color=red];
+203 [label="<f0>  |<f1> Damage " ];
+204 [label="<f0>  |<f1> Temporary Shelter " ];
+205 [label="<f0>  |<f1> Satellite Image " color=red];
+206 [label="<f0>  |<f1> Roads Etc " ];
+207 [label="Zooniverse Admin" shape=box];
+208 [label="{<f0> 1.0|<f1> Detect Important Features Such As Areas Of Damage }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Detect Important Features Such As Areas Of Temporary Shelter }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Detect Important Features Such As Areas Of Flooding In The Satellite Images }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Detect Important Features Such As Areas Of Blocked Roads Etc }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 203 [label="Damage"]
+208 -> 200 [label="Important Feature"]
+208 -> 202 [label="Area"]
+209 -> 204 [label="Temporary Shelter"]
+209 -> 200 [label="Important Feature"]
+209 -> 202 [label="Area"]
+210 -> 200 [label="Important Feature"]
+210 -> 202 [label="Area"]
+210 -> 201 [label="Flooding"]
+210 -> 205 [label="Satellite Image"]
+211 -> 206 [label="Roads Etc"]
+211 -> 200 [label="Important Feature"]
+211 -> 202 [label="Area"]
+}

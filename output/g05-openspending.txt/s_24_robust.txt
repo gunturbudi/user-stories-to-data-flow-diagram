@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Brand Name" as thingbrandname #grey
+	entity "Primary Color" as thingprimarycolor
+	entity "Icon" as thingicon
+	entity "Frontend Javascript\nApp" as thingfrontendjavascriptapp
+	actor "Developer" as actordeveloper
+	boundary "Color\nInterface" as thingcolorinterface #grey
+	boundary "Icon\nInterface" as thingiconinterface #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Customise Primary\nColor" as controlcustomiseprimarycolor
+	control "Customise Icon" as controlcustomiseicon
+	control "Customise The\nBrand Name\nOf All\nFrontend Javascript\nApps" as controlcustomisebrandname
+
+	thingfrontendjavascriptapp <.. thingbrandname
+	actordeveloper --- thingcolorinterface
+	actordeveloper --- thingiconinterface
+	actordeveloper --- thingappinterface
+	thingprimarycolor --- controlcustomiseprimarycolor
+	thingcolorinterface --> controlcustomiseprimarycolor
+	thingicon --- controlcustomiseicon
+	thingiconinterface --> controlcustomiseicon
+	thingbrandname --- controlcustomisebrandname
+	thingfrontendjavascriptapp --- controlcustomisebrandname
+	thingappinterface --> controlcustomisebrandname
+
+@enduml

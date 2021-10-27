@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object Component" as thingobjectcomponent
+	entity "Statute" as thingstatute
+	entity "Application" as thingapplication
+	entity "Object" as thingobject
+	actor "Dams Manager" as actordamsmanager
+	control "Know" as controlknow
+
+	thingstatute *-- thingapplication
+	thingobjectcomponent *-- thingapplication
+	thingobject *-- thingapplication
+
+@enduml

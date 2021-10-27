@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Guarantee " ];
+201 [label="<f0>  |<f1> Data Integrity " color=red];
+202 [label="Depositor" shape=box];
+203 [label="{<f0> 1.0|<f1> Have Guarantees About Data Integrity }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Fulfil funder requirements for archival }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Data " color=red];
+2 -> 1001 [label="Data"]
+202 -> 203
+203 -> 200 [label="Guarantee"]
+203 -> 201 [label="Data Integrity"]
+}

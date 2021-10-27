@@ -1,0 +1,28 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Manual Input " ];
+201 [label="<f0>  |<f1> Interaction " ];
+202 [label="<f0>  |<f1> Test " color=red];
+203 [label="<f0>  |<f1> Neurohub Installation " ];
+204 [label="<f0>  |<f1> Result " color=red];
+205 [label="<f0>  |<f1> Nightly Build " ];
+206 [label="<f0>  |<f1> Operating System " ];
+207 [label="Release Engineer" shape=box];
+208 [label="{<f0> 1.0|<f1> Configure Nightly Builds Automatically Perform A Neurohub Installation On A Virgin Operating System }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Execute Tests }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Requiring Interaction }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Requiring Any Manual Input }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Report Back Results }" shape=Mrecord];
+207 -> 208
+207 -> 210
+207 -> 211
+208 -> 205 [label="Nightly Build"]
+208 -> 203 [label="Neurohub Installation"]
+208 -> 206 [label="Operating System"]
+209 -> 202 [label="Test"]
+210 -> 209
+210 -> 201 [label="Interaction"]
+211 -> 209
+211 -> 200 [label="Manual Input"]
+212 -> 204 [label="Result"]
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Web Socket\nProtocol,shape=partialRectangle,null,null,data_base
+201,Frictionless Data\nTool,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Create A Web Socket Protocol For Frictionless Data Tools,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Web Socket\nProtocol,endArrow=classic,203,200,endArrow=classic
+207,Frictionless Data\nTool,endArrow=classic,203,201,endArrow=classic

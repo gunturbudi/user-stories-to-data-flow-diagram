@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Worm" as thingworm
+	entity "Way" as thingway
+	actor "Lab Administrator" as actorlabadministrator
+	boundary "Worm\nInterface" as thingworminterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Managing Worm" as controlmanageprovidewayworm
+	control "Provided With\nA Way" as controlprovideway
+
+	actorlabadministrator --- thingworminterface
+	actorlabadministrator --- thingwayinterface
+	thingworm --- controlmanageprovidewayworm
+	thingworminterface --> controlmanageprovidewayworm
+	controlmanageprovidewayworm --> controlprovideway
+	thingway --- controlprovideway
+	thingwayinterface --> controlprovideway
+
+@enduml

@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Case" as thingcase
+	entity "User" as thinguser
+	actor "Developer" as actordeveloper
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Clarify To\nUsers" as controlclarifyuser
+
+	actordeveloper --- thinguserinterface
+	thinguser --- controlclarifyuser
+	thinguserinterface --> controlclarifyuser
+
+@enduml

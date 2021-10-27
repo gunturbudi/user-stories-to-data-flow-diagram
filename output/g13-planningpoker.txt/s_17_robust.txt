@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	actor "Moderator" as actormoderator
+	circle "Transcript" as thingtranscript
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "View A\nTranscript Of\nA Game" as controlviewtranscript
+
+	thinggame *-- thingtranscript
+	actormoderator --- thinggameinterface
+	thingtranscript --- controlviewtranscript
+	thinggame --- controlviewtranscript
+	thinggameinterface --> controlviewtranscript
+
+@enduml

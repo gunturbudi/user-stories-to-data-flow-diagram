@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Badcamp" as thingbadcamp
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Badcamp\nInterface" as thingbadcampinterface #grey
+	control "Register" as controlregisterspeakbadcamp
+	control "Speak At\nBadcamp" as controlspeakbadcamp
+
+	actoranonymoususer --- thingbadcampinterface
+	thingbadcampinterface --> controlregisterspeakbadcamp
+	controlregisterspeakbadcamp --> controlspeakbadcamp
+	thingbadcamp --- controlspeakbadcamp
+	thingbadcampinterface --> controlspeakbadcamp
+
+@enduml

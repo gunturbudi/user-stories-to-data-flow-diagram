@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Company Sponsorship,shape=partialRectangle,null,null,data_base
+201,Authenticateduser,rounded=0,null,null,external_entity
+202,Identify,ellipse,null,null,process
+203,Pay For A $ Company Sponsorship,ellipse,null,null,process
+205,,endArrow=classic,201,203,endArrow=classic
+206,Company Sponsorship,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Survey,shape=partialRectangle,null,null,data_base
+201,Class,shape=partialRectangle,null,null,data_base
+202,Trainer,rounded=0,null,null,external_entity
+203,Notified About The Results Of Surveys About Classes,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Survey,endArrow=classic,203,200,endArrow=classic
+207,Class,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Information" as thinginformation
+	entity "Datum" as thingdatum
+	actor "Depositor" as actordepositor
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Find Information\nWhich Data\nA Assigned\nWhat Metadata\nRequired" as controlfindinformationgetonemetadata
+	control "Get One" as controlgetone
+
+	thingdatum <.. thinginformation
+	thingmetadata <.. thingdatum
+	actordepositor --- thingmetadatainterface
+	thinginformation --- controlfindinformationgetonemetadata
+	thingdatum --- controlfindinformationgetonemetadata
+	thingmetadata --- controlfindinformationgetonemetadata
+	thingmetadatainterface --> controlfindinformationgetonemetadata
+	controlfindinformationgetonemetadata --> controlgetone
+	thingmetadatainterface --> controlgetone
+
+@enduml

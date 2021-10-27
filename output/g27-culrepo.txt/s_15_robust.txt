@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Phone" as thingphone
+	entity "Repository" as thingrepository
+	entity "Content" as thingcontent
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Browse Through\nContents On\nPhone" as controlbrowsecontentphone #grey
+	control "Search The\nRepository" as controlsearchrepository
+
+	actorcornellfacultymember --- thingrepositoryinterface
+	thingcontent --- controlbrowsecontentphone
+	thingphone --- controlbrowsecontentphone
+	thingrepository --- controlsearchrepository
+	thingrepositoryinterface --> controlsearchrepository
+
+@enduml

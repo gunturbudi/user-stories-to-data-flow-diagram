@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Approve Proffer" as thingapprovedproffer
+	actor "Staff Member" as actorstaffmember
+	boundary "Proffer\nInterface" as thingprofferinterface #grey
+	control "Manage Approved\nProffers" as controlmanageapprovedproffer
+
+	actorstaffmember --- thingprofferinterface
+	thingapprovedproffer --- controlmanageapprovedproffer
+	thingprofferinterface --> controlmanageapprovedproffer
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Integration" as thingintegration
+	entity "Zenodo" as thingzenodo
+	actor "Researcherpublisher" as actorResearcherPublisher
+	boundary "Zenodo\nInterface" as thingzenodointerface #grey
+	control "Provided With\nAn Integration\nWith Zenodo" as controlprovideintegration
+
+	thingzenodo <.. thingintegration
+	actorResearcherPublisher --- thingzenodointerface
+	thingintegration --- controlprovideintegration
+	thingzenodo --- controlprovideintegration
+	thingzenodointerface --> controlprovideintegration
+
+@enduml

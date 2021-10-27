@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Formal Collection " color=red];
+201 [label="<f0>  |<f1> Dam " ];
+202 [label="<f0>  |<f1> Appropriate Relationship " ];
+203 [label="Dams Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Browsing All Formal Collections In The Dams With The Appropriate Relationships }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> List }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 200 [label="Formal Collection"]
+204 -> 201 [label="Dam"]
+204 -> 202 [label="Appropriate Relationship"]
+}

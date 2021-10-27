@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agent Information" as thingagentinformation #grey
+	entity "Eac Cpf\nRecord" as thingeaccpfrecord
+	actor "Archivist" as actorarchivist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Import Agent\nInformation From\nEac Cpf\nRecords" as controlimportagentinformation
+
+	thingeaccpfrecord <.. thingagentinformation
+	actorarchivist --- thingrecordinterface
+	thingagentinformation --- controlimportagentinformation
+	thingeaccpfrecord --- controlimportagentinformation
+	thingrecordinterface --> controlimportagentinformation
+
+@enduml

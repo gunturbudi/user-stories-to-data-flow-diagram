@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Update" as thingupdate
+	entity "Fabs Submission" as thingfabssubmission #grey
+	actor "Developer" as actordeveloper
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	control "Add The\nUpdates On\nA Fabs\nSubmission To\nModified" as controladdupdatefabssubmission
+
+	thingfabssubmission <.. thingupdate
+	actordeveloper --- thingsubmissioninterface
+	thingupdate --- controladdupdatefabssubmission
+	thingfabssubmission --- controladdupdatefabssubmission
+	thingsubmissioninterface --> controladdupdatefabssubmission
+
+@enduml

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	entity "Technology" as thingtechnology
+	entity "Software" as thingsoftware
+	actor "Data Manager" as actordatamanager
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "Technology\nInterface" as thingtechnologyinterface #grey
+	control "Know" as controlknowuse
+	control "Know Which\nSoftware The\nData Produced" as controlknowsoftwaredata
+	control "Know Technology\nProduced" as controlknowtechnology
+	control "Use" as controluse
+
+	thingdata <.. thingsoftware
+	actordatamanager --- thingdatainterface
+	actordatamanager --- thingtechnologyinterface
+	thingsoftware --- controlknowsoftwaredata
+	thingdata --- controlknowsoftwaredata
+	thingdatainterface --> controlknowsoftwaredata
+	thingtechnology --- controlknowtechnology
+	thingtechnologyinterface --> controlknowtechnology
+	controlknowuse --> controluse
+
+@enduml

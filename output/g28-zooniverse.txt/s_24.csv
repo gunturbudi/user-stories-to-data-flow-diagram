@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Content,shape=partialRectangle,null,null,data_base
+201,Asset Information,shape=partialRectangle,null,null,data_base
+202,Search,shape=partialRectangle,null,null,data_base
+203,Admin,rounded=0,null,null,external_entity
+204,Prefilter Content Using Search On Asset Information,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Content,endArrow=classic,204,200,endArrow=classic
+208,Search,endArrow=classic,204,202,endArrow=classic
+209,Asset Information,endArrow=classic,204,201,endArrow=classic

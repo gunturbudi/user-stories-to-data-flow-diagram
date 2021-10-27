@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Round" as thinground
+	entity "Item" as thingitem
+	entity "Text Field" as thingtextfield
+	actor "Moderator" as actormoderator
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	boundary "Round\nInterface" as thingroundinterface #grey
+	control "Entering An\nItem In\nA Line,\nSingle Text\nField" as controlenterstartrounditemlinesingletextfield
+	control "Start A\nRound" as controlstartround
+
+	thingtextfield <.. thingitem
+	actormoderator --- thingfieldinterface
+	actormoderator --- thingroundinterface
+	thingitem --- controlenterstartrounditemlinesingletextfield
+	thingtextfield --- controlenterstartrounditemlinesingletextfield
+	thingfieldinterface --> controlenterstartrounditemlinesingletextfield
+	controlenterstartrounditemlinesingletextfield --> controlstartround
+	thinground --- controlstartround
+	thingroundinterface --> controlstartround
+
+@enduml

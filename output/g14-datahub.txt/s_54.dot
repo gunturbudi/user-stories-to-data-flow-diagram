@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publisher " color=red];
+201 [label="<f0>  |<f1> Data Package " color=red];
+202 [label="Consumer" shape=box];
+203 [label="{<f0> 1.0|<f1> Search Among All Data Packages A Publisher }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Find one data package amongst all the data packages by this publisher }" shape=Mrecord];
+203 -> 2
+2 -> 201  [label="Data package"]
+202 -> 203
+203 -> 201 [label="Data Package"]
+203 -> 200 [label="Publisher"]
+}

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Area " color=red];
+201 [label="<f0>  |<f1> News Event " color=red];
+202 [label="<f0>  |<f1> Content Recommendation " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Receive Content Recommendations On Most Relevant News Events In Area }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Content Recommendation"]
+204 -> 201 [label="News Event"]
+204 -> 200 [label="Area"]
+}

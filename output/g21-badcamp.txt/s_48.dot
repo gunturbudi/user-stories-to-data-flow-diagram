@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsorship Level " color=red];
+201 [label="Anonymoususer" shape=box];
+202 [label="{<f0> 1.0|<f1> Learn About Sponsorship Levels }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Determine the right level of sponsorship for my organization }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Organization " color=red];
+2 -> 1001 [label="Organization"]
+201 -> 202
+202 -> 200 [label="Sponsorship Level"]
+}

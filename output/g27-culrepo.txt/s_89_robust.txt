@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Feature" as thingfeature
+	entity "Tracking" as thingtracking
+	entity "Robust Searching" as thingrobustsearching
+	entity "Patron Account" as thingpatronaccount
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Tracking\nInterface" as thingtrackinginterface #grey
+	boundary "Searching\nInterface" as thingsearchinginterface #grey
+	control "Have Tracking\nFeatures For\nExisting Patron\nAccounts" as controlhavetracking
+	control "Create" as controlcreate
+	control "Have Robust\nSearching" as controlhaverobustsearching
+	control "Have Tracking\nFeatures For" as controlhavetrackingcreate
+
+	thingpatronaccount <.. thingfeature
+	thingfeature <.. thingtracking
+	actordb --- thingtrackinginterface
+	actoriradministrator --- thingtrackinginterface
+	actordb --- thingsearchinginterface
+	actoriradministrator --- thingsearchinginterface
+	thingtracking --- controlhavetracking
+	thingtrackinginterface --> controlhavetracking
+	controlhavetrackingcreate --> controlcreate
+	thingtrackinginterface --> controlcreate
+	thingrobustsearching --- controlhaverobustsearching
+	thingsearchinginterface --> controlhaverobustsearching
+	thingtrackinginterface --> controlhavetrackingcreate
+	thingtracking --- controlhavetrackingcreate
+
+@enduml

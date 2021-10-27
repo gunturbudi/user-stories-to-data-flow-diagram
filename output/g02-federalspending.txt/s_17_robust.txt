@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Database" as thingdatabase
+	entity "Gtas Window\nDatum" as thinggtaswindowdatum
+	actor "Developer" as actordeveloper
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Add The\nGtas Window\nData To\nThe Database" as controladdgtaswindowdatadatabase
+
+	thingdatabase <.. thinggtaswindowdatum
+	actordeveloper --- thingdatabaseinterface
+	thinggtaswindowdatum --- controladdgtaswindowdatadatabase
+	thingdatabase --- controladdgtaswindowdatadatabase
+	thingdatabaseinterface --> controladdgtaswindowdatadatabase
+
+@enduml

@@ -1,0 +1,36 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " ];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Address " color=red];
+203 [label="<f0>  |<f1> Phone " color=red];
+204 [label="<f0>  |<f1> Email " color=red];
+205 [label="<f0>  |<f1> Name " color=red];
+206 [label="<f0>  |<f1> Title " ];
+207 [label="Repository Manager" shape=box];
+208 [label="{<f0> 1.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Address }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Email }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Maybe Title }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Phone }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Person Contact Including Name }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+208 -> 202 [label="Address"]
+208 -> 200 [label="Repository"]
+208 -> 201 [label="Item"]
+209 -> 204 [label="Email"]
+209 -> 200 [label="Repository"]
+209 -> 201 [label="Item"]
+210 -> 206 [label="Title"]
+210 -> 200 [label="Repository"]
+210 -> 201 [label="Item"]
+211 -> 203 [label="Phone"]
+211 -> 200 [label="Repository"]
+211 -> 201 [label="Item"]
+212 -> 201 [label="Item"]
+212 -> 200 [label="Repository"]
+212 -> 205 [label="Name"]
+}

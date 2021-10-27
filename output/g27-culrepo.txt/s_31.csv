@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Item,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Name,shape=partialRectangle,null,null,data_base
+203,Identification Issue,shape=partialRectangle,null,null,data_base
+204,Author,shape=partialRectangle,null,null,data_base
+205,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+206,Find The Items In The Repository,ellipse,null,null,process
+207,Searching On Name,ellipse,null,null,process
+208,Searching On Author Name Authority,ellipse,null,null,process
+209,Searching On Identification Issue,ellipse,null,null,process
+211,,endArrow=classic,205,206,endArrow=classic
+212,,endArrow=classic,205,207,endArrow=classic
+213,,endArrow=classic,205,208,endArrow=classic
+214,,endArrow=classic,205,209,endArrow=classic
+215,Item,endArrow=classic,206,200,endArrow=classic
+216,Repository,endArrow=classic,206,201,endArrow=classic
+217,,endArrow=classic,207,206,endArrow=classic
+218,Name,endArrow=classic,207,202,endArrow=classic
+219,,endArrow=classic,208,206,endArrow=classic
+220,,endArrow=classic,209,206,endArrow=classic
+221,Identification Issue,endArrow=classic,209,203,endArrow=classic
+224,Author,endArrow=classic,208,204,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Gini" as thingGINI
+	entity "Measure" as thingmeasure
+	actor "Api User" as actorapiuser
+	boundary "Gini\nInterface" as thingginiinterface #grey
+	control "Socioeconomic, Related\nIndexes Measures\nBy Gini" as controlindexmeasureGINI
+
+	thingGINI <.. thingmeasure
+	actorapiuser --- thingginiinterface
+	thingmeasure --- controlindexmeasureGINI
+	thingGINI --- controlindexmeasureGINI
+	thingginiinterface --> controlindexmeasureGINI
+
+@enduml

@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Training " color=red];
+201 [label="<f0>  |<f1> Muscle Group " color=red];
+202 [label="Medicalcaregiver" shape=box];
+203 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Offer Training For Specific Muscle Groups }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+204 -> 200 [label="Training"]
+204 -> 201 [label="Muscle Group"]
+}

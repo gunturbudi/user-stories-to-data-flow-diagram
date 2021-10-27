@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Report on projects depositing datasets in relation to funder requirements,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Project,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,"Research , Information Manager",rounded=0,null,null,external_entity
+204,Have Datasets To Metadata About Projects,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Dataset,endArrow=classic,204,200,endArrow=classic
+208,Metadata,endArrow=classic,204,202,endArrow=classic
+209,Project,endArrow=classic,204,201,endArrow=classic
+1000,,endArrow=classic,204,2,endArrow=classic
+1001,Datasets,rounded=0,null,null,external_entity
+1002,Datasets,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Annual Fee,shape=partialRectangle,null,null,data_base
+201,Trainer,shape=partialRectangle,null,null,data_base
+202,Practitioner,shape=partialRectangle,null,null,data_base
+203,Member,shape=partialRectangle,null,null,data_base
+204,Site Administrator,rounded=0,null,null,external_entity
+205,Set The Annual Fees For Practitioner,ellipse,null,null,process
+206,Set The Annual Fees For Members,ellipse,null,null,process
+207,Set The Annual Fees For Trainer,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Practitioner,endArrow=classic,205,202,endArrow=classic
+213,Annual Fee,endArrow=classic,205,200,endArrow=classic
+214,Annual Fee,endArrow=classic,206,200,endArrow=classic
+215,Member,endArrow=classic,206,203,endArrow=classic
+216,Trainer,endArrow=classic,207,201,endArrow=classic
+217,Annual Fee,endArrow=classic,207,200,endArrow=classic

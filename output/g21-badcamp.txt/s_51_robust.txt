@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Job" as thingjob
+	entity "Sponsor" as thingsponsor
+	entity "Sponsorship Person" as thingsponsorshipperson #grey
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Sponsor\nInterface" as thingsponsorinterface #grey
+	control "Posting Jobs\nAs A\nSponsor" as controlpostlearnjobsponsor
+	control "Learn" as controllearn
+	control "Contact Jobs\nAs A\nSponsor The\nSponsorship Person" as controlcontactlearnjobsponsorsponsorshipperson #grey
+
+	thingsponsor <.. thingjob
+	actoranonymoususer --- thingsponsorinterface
+	thingjob --- controlpostlearnjobsponsor
+	thingsponsor --- controlpostlearnjobsponsor
+	thingsponsorinterface --> controlpostlearnjobsponsor
+	controlpostlearnjobsponsor --> controllearn
+	thingsponsorinterface --> controllearn
+	controlcontactlearnjobsponsorsponsorshipperson --> controllearn
+	thingsponsorshipperson --- controlcontactlearnjobsponsorsponsorshipperson
+	thingjob --- controlcontactlearnjobsponsorsponsorshipperson
+	thingsponsor --- controlcontactlearnjobsponsorsponsorshipperson
+
+@enduml

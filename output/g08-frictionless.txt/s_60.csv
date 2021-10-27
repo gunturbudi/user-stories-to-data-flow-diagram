@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Openrefine Reconciliation\nApi Endpoint,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Data Package,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Provided With An App Generates An Openrefine Reconciliation Api Endpoint From A Tabular Data Package,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,App,endArrow=classic,204,201,endArrow=classic
+208,Openrefine Reconciliation\nApi Endpoint,endArrow=classic,204,200,endArrow=classic
+209,Data Package,endArrow=classic,204,202,endArrow=classic

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Guarantee,shape=partialRectangle,null,null,data_base
+201,Ip Right,shape=partialRectangle,null,null,data_base
+202,Externalcoordinator,rounded=0,null,null,external_entity
+203,Have Guarantees Ip Rights Not,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Guarantee,endArrow=classic,203,200,endArrow=classic
+207,Ip Right,endArrow=classic,203,201,endArrow=classic

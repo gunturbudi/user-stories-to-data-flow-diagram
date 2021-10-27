@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Keyword" as thingkeyword
+	actor "Researcher" as actorresearcher
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	control "Search By\nKeyword" as controlsearchkeyword
+
+	actorresearcher --- thingkeywordinterface
+	thingkeyword --- controlsearchkeyword
+	thingkeywordinterface --> controlsearchkeyword
+
+@enduml

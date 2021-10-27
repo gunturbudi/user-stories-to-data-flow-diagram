@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Summit " color=red];
+201 [label="<f0>  |<f1> Event " color=red];
+202 [label="<f0>  |<f1> Training " color=red];
+203 [label="<f0>  |<f1> Sponsor " color=red];
+204 [label="Anonymoususer" shape=box];
+205 [label="{<f0> 1.0|<f1> See Training }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> See Summit }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> See All Events That A Sponsor Is Sponsoring }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 202 [label="Training"]
+206 -> 200 [label="Summit"]
+207 -> 201 [label="Event"]
+207 -> 203 [label="Sponsor"]
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Educational Visit,shape=partialRectangle,null,null,data_base
+201,Archival Material,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Manage Scans Of Archival Material For Educational Visits,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Archival Material,endArrow=classic,203,201,endArrow=classic
+207,Educational Visit,endArrow=classic,203,200,endArrow=classic

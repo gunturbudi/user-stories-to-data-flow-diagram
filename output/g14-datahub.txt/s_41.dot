@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Tag " ];
+201 [label="Publisher" shape=box];
+202 [label="{<f0> 1.0|<f1> Overwrite A Tag }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> A Tag Exists Try }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Warned }" shape=Mrecord];
+201 -> 202
+201 -> 203
+201 -> 204
+202 -> 200 [label="Tag"]
+203 -> 202
+203 -> 204
+203 -> 200 [label="Tag"]
+}

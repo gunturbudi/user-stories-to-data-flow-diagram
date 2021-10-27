@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	entity "Behavioural Observation" as thingbehaviouralobservation
+	entity "Standard Datum" as thingstandarddata #grey
+	entity "Meta Data" as thingmetadata
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityattachstandardmetadatabehaviouralobservationresearcher #grey
+	control "Have" as controlhaveabilityattachstandardmetadatabehaviouralobservationresearcher
+	control "Attach Standard\nData For\nVideo" as controlattachstandarddatavideo
+	control "Attach Standard\nMeta Data\nFor Behavioural\nObservations" as controlattachstandardmetadatabehaviouralobservation
+	control "Attach Standard\nData For" as controlattachstandarddata #grey
+
+	actorresearcher --- thingabilityattachstandardmetadatabehaviouralobservationresearcher
+	thingabilityattachstandardmetadatabehaviouralobservationresearcher --> controlhaveabilityattachstandardmetadatabehaviouralobservationresearcher
+	thingvideo --- controlattachstandarddatavideo
+	thingstandarddata --- controlattachstandarddatavideo
+	thingabilityattachstandardmetadatabehaviouralobservationresearcher --> controlattachstandarddatavideo
+	controlhaveabilityattachstandardmetadatabehaviouralobservationresearcher --> controlattachstandarddatavideo
+	thingabilityattachstandardmetadatabehaviouralobservationresearcher --> controlattachstandardmetadatabehaviouralobservation
+	thingmetadata --- controlattachstandardmetadatabehaviouralobservation
+	thingbehaviouralobservation --- controlattachstandardmetadatabehaviouralobservation
+	controlhaveabilityattachstandardmetadatabehaviouralobservationresearcher --> controlattachstandardmetadatabehaviouralobservation
+	thingstandarddata --- controlattachstandarddata
+	controlhaveabilityattachstandardmetadatabehaviouralobservationresearcher --> controlattachstandarddata
+
+@enduml

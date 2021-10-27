@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish Datum" as thingpublisheddata
+	entity "World" as thingworld
+	actor "Publisher" as actorpublisher
+	boundary "World\nInterface" as thingworldinterface #grey
+	control "Show The\nWorld" as controlshowworld
+
+	actorpublisher --- thingworldinterface
+	thingworld --- controlshowworld
+	thingworldinterface --> controlshowworld
+
+@enduml

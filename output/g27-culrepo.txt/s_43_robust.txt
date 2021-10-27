@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ease" as thingease
+	entity "Subject Classification" as thingsubjectclassification
+	entity "Patron Browsing" as thingpatronbrowsing #grey
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Ease\nInterface" as thingeaseinterface #grey
+	boundary "Browsing\nInterface" as thingbrowsinginterface #grey
+	control "Manage Subject\nClassifications For\nEase Of" as controlmanagesubjectclassificationsearch
+	control "Search" as controlsearch
+	control "Manage Subject\nClassifications For\nEase Of\nPatron Browsing" as controlmanagesubjectclassification
+
+	thingpatronbrowsing *-- thingease
+	thingease <.. thingsubjectclassification
+	actordb --- thingeaseinterface
+	actoriradministrator --- thingeaseinterface
+	actordb --- thingbrowsinginterface
+	actoriradministrator --- thingbrowsinginterface
+	thingeaseinterface --> controlmanagesubjectclassificationsearch
+	thingsubjectclassification --- controlmanagesubjectclassificationsearch
+	thingease --- controlmanagesubjectclassificationsearch
+	controlmanagesubjectclassificationsearch --> controlsearch
+	thingeaseinterface --> controlsearch
+	thingsubjectclassification --- controlmanagesubjectclassification
+	thingease --- controlmanagesubjectclassification
+	thingpatronbrowsing --- controlmanagesubjectclassification
+	thingbrowsinginterface --> controlmanagesubjectclassification
+
+@enduml

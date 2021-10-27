@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Navigation,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,Use Alfred For Navigation,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Alfred,endArrow=classic,203,201,endArrow=classic
+207,Navigation,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Fabs Go\nLive,shape=partialRectangle,null,null,data_base
+201,Assistance Datum,shape=partialRectangle,null,null,data_base
+202,Agency User,rounded=0,null,null,external_entity
+203,"Provided With All Financial, Historical Assistance Data For Fabs Go Live",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Assistance Datum,endArrow=classic,203,201,endArrow=classic
+207,Fabs Go\nLive,endArrow=classic,203,200,endArrow=classic

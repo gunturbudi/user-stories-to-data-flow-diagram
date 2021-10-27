@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Keep my account details up-to-date,ellipse,null,null,process
+200,Account Detail,shape=partialRectangle,null,null,data_base
+201,Moderator,rounded=0,null,null,external_entity
+202,Change Account Details,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Account Detail,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Account details,rounded=0,null,null,external_entity
+1002,Account details,endArrow=classic,2,1001,endArrow=classic

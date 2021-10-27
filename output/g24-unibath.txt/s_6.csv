@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Fulfil my confidentiality responsibilities,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Embargo,shape=partialRectangle,null,null,data_base
+202,Depositor,rounded=0,null,null,external_entity
+203,Place Data Under An Embargo,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Datum,endArrow=classic,203,200,endArrow=classic
+207,Embargo,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Confidentiality responsibilities,rounded=0,null,null,external_entity
+1002,Confidentiality responsibilities,endArrow=classic,2,1001,endArrow=classic

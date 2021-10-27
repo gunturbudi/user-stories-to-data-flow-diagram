@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	control "Indicate" as controlindicate
+
+
+@enduml

@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Email Notification,shape=partialRectangle,null,null,data_base
+201,Personal Account,shape=partialRectangle,null,null,data_base
+202,Patron,rounded=0,null,null,external_entity
+203,Create A Personal Account,ellipse,null,null,process
+204,Request Email Notification,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Personal Account,endArrow=classic,203,201,endArrow=classic
+210,Email Notification,endArrow=classic,204,200,endArrow=classic

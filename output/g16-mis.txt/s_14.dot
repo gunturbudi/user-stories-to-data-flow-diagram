@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Embargo " ];
+201 [label="<f0>  |<f1> Simple Way " ];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="Collection Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Lift An Embargo For An Object In A Simple Way }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Embargo"]
+204 -> 202 [label="Object"]
+204 -> 201 [label="Simple Way"]
+}

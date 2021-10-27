@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Metadata " color=red];
+201 [label="<f0>  |<f1> Information " ];
+202 [label="<f0>  |<f1> Datum " ];
+203 [label="Depositor" shape=box];
+204 [label="{<f0> 1.0|<f1> Find Information Which Data A Assigned What Metadata Required }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Get One }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 201 [label="Information"]
+204 -> 202 [label="Datum"]
+204 -> 200 [label="Metadata"]
+}

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archive" as thingarchive
+	entity "Ldap" as thingLDAP
+	entity "University System" as thinguniversitysystem
+	actor "Univitservice" as actorUnivITservice
+	boundary "Ldap\nInterface" as thingldapinterface #grey
+	control "Integrate The\nArchive With\nExisting University\nSystems Such\nAs Ldap" as controlintegratearchive
+
+	thinguniversitysystem <.. thingarchive
+	thingLDAP <.. thinguniversitysystem
+	actorUnivITservice --- thingldapinterface
+	thingarchive --- controlintegratearchive
+	thinguniversitysystem --- controlintegratearchive
+	thingLDAP --- controlintegratearchive
+	thingldapinterface --> controlintegratearchive
+
+@enduml

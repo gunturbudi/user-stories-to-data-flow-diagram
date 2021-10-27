@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Training,shape=partialRectangle,null,null,data_base
+201,Complex Thinking,shape=partialRectangle,null,null,data_base
+202,Medicalcaregiver,rounded=0,null,null,external_entity
+203,Propose Training Promotes Complex Thinking,ellipse,null,null,process
+204,Have,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Training,endArrow=classic,203,200,endArrow=classic
+209,Complex Thinking,endArrow=classic,203,201,endArrow=classic
+210,,endArrow=classic,204,203,endArrow=classic

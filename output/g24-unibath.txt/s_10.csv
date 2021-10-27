@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Publication,shape=partialRectangle,null,null,data_base
+202,Opus,shape=partialRectangle,null,null,data_base
+203,Depositor,rounded=0,null,null,external_entity
+204,Link Datasets To Publications In Opus,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Dataset,endArrow=classic,204,200,endArrow=classic
+208,Publication,endArrow=classic,204,201,endArrow=classic
+209,Opus,endArrow=classic,204,202,endArrow=classic

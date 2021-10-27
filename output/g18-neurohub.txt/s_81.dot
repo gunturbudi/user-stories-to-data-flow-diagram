@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Drug Response " color=red];
+201 [label="<f0>  |<f1> Meta Data " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Attach Standard Meta Data For Drug Responses }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Meta Data"]
+203 -> 200 [label="Drug Response"]
+204 -> 203
+}

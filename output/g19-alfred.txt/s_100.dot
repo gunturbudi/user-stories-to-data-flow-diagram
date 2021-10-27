@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Alfred " ];
+201 [label="<f0>  |<f1> Sensor " color=red];
+202 [label="<f0>  |<f1> Guide Exercise " color=red];
+203 [label="<f0>  |<f1> Exercise " color=red];
+204 [label="<f0>  |<f1> Health Datum " ];
+205 [label="Olderperson" shape=box];
+206 [label="{<f0> 1.0|<f1> Do Guided Exercises With Alfred }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Capture Health Data Am Doing Exercises }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 200 [label="Alfred"]
+206 -> 202 [label="Guide Exercise"]
+207 -> 204 [label="Health Datum"]
+207 -> 203 [label="Exercise"]
+}

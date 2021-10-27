@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Directory Credential" as thingdirectorycredential
+	actor "Administrator" as actoradministrator
+	boundary "User" as thinguseradministrator
+	boundary "Credential\nInterface" as thingcredentialinterface #grey
+	control "Log" as controlloguseradministrator
+	control "Allow" as controlallowuseloguseradministratoractivedirectorycredentials
+	control "Using Active\nDirectory Credentials" as controluseloguseradministratoractivedirectorycredentials
+
+	actoradministrator --- thinguseradministrator
+	actoradministrator --- thingcredentialinterface
+	thinguseradministrator --> controlloguseradministrator
+	controluseloguseradministratoractivedirectorycredentials --> controlloguseradministrator
+	thingcredentialinterface --> controlallowuseloguseradministratoractivedirectorycredentials
+	controlallowuseloguseradministratoractivedirectorycredentials --> controluseloguseradministratoractivedirectorycredentials
+	thingdirectorycredential --- controluseloguseradministratoractivedirectorycredentials
+	thingcredentialinterface --> controluseloguseradministratoractivedirectorycredentials
+
+@enduml

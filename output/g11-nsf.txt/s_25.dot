@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Final Workshop " color=red];
+201 [label="<f0>  |<f1> Content Management\nSystem Decision " color=red];
+202 [label="<f0>  |<f1> Key Lesson " ];
+203 [label="<f0>  |<f1> Feature " ];
+204 [label="Nsf Employee" shape=box];
+205 [label="{<f0> 1.0|<f1> Have A Final Workshop Feature For The Content Management System Decision }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Have A Final Workshop }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Identify Key Lessons }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 203 [label="Feature"]
+205 -> 201 [label="Content Management\nSystem Decision"]
+205 -> 200 [label="Final Workshop"]
+206 -> 207
+206 -> 200 [label="Final Workshop"]
+207 -> 202 [label="Key Lesson"]
+}

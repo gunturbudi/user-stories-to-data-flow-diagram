@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Job" as thingjob
+	actor "Site Member" as actorsitemember
+	circle "Listing" as thinglisting
+	boundary "Job\nInterface" as thingjobinterface #grey
+	control "Scroll Through\nA Listing\nOf Jobs" as controlscrolllisting
+
+	thingjob *-- thinglisting
+	actorsitemember --- thingjobinterface
+	thinglisting --- controlscrolllisting
+	thingjob --- controlscrolllisting
+	thingjobinterface --> controlscrolllisting
+
+@enduml

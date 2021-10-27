@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Particular Version" as thingparticularversion
+	actor "Consumer" as actorconsumer
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Download A\nData Package\nAt A\nParticular Version" as controldownloaddatapackageparticularversion
+
+	thingparticularversion <.. thingdatapackage
+	actorconsumer --- thingversioninterface
+	thingdatapackage --- controldownloaddatapackageparticularversion
+	thingparticularversion --- controldownloaddatapackageparticularversion
+	thingversioninterface --> controldownloaddatapackageparticularversion
+
+@enduml

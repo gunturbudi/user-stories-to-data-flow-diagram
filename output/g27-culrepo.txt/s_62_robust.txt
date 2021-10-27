@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deposit" as thingdeposit
+	entity "Metadata Field" as thingmetadatafield
+	entity "Search Capability" as thingsearchcapability
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	boundary "Capability\nInterface" as thingcapabilityinterface #grey
+	control "Add Custom\nMetadata Fields\nFor Deposits" as controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	control "Allow For\nBetter Search\nCapabilities" as controlallowbettersearchcapabilities
+
+	thingdeposit <.. thingmetadatafield
+	actorlibrarystaffmember --- thingdepositinterface
+	actorlibrarystaffmember --- thingcapabilityinterface
+	thingmetadatafield --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingdeposit --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingdepositinterface --> controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	controladdcustommetadatafieldsdepositallowbettersearchcapabilities --> controlallowbettersearchcapabilities
+	thingsearchcapability --- controlallowbettersearchcapabilities
+	thingcapabilityinterface --> controlallowbettersearchcapabilities
+
+@enduml

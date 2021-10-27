@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource " ];
+201 [label="<f0>  |<f1> End User " ];
+202 [label="Repository Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Geo Indicate For Any Resource Believe To An End User }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Resource"]
+203 -> 201 [label="End User"]
+}

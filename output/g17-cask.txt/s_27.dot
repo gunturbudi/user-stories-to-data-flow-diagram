@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Exist Instance " ];
+201 [label="<f0>  |<f1> App " color=red];
+202 [label="<f0>  |<f1> Pipeline " ];
+203 [label="<f0>  |<f1> Dataset Instance " color=red];
+204 [label="<f0>  |<f1> Dataset Type " color=red];
+205 [label="Hydrator User" shape=box];
+206 [label="{<f0> 1.0|<f1> Specify An Explicit Version Of The Dataset Types Of The Dataset Instances Pipeline }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Fail }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 207
+206 -> 204 [label="Dataset Type"]
+206 -> 203 [label="Dataset Instance"]
+206 -> 202 [label="Pipeline"]
+}

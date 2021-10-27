@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Morning,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,Receive Up A Wake Call From Alfred In The Morning Checking On,ellipse,null,null,process
+204,Am Ok,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Alfred,endArrow=classic,203,201,endArrow=classic
+209,Morning,endArrow=classic,203,200,endArrow=classic
+210,,endArrow=classic,204,203,endArrow=classic

@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,House,shape=partialRectangle,null,null,data_base
+201,Device,shape=partialRectangle,null,null,data_base
+202,Low Battery,shape=partialRectangle,null,null,data_base
+203,Alfred,shape=partialRectangle,null,null,data_base
+204,Olderperson,rounded=0,null,null,external_entity
+205,Have An Alfred Device An Device Informs About A Low Battery When Leaving The House,ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Low Battery,endArrow=classic,205,202,endArrow=classic
+209,House,endArrow=classic,205,200,endArrow=classic
+210,Device,endArrow=classic,205,201,endArrow=classic
+211,Alfred,endArrow=classic,205,203,endArrow=classic

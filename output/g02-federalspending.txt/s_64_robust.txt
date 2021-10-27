@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs" as thingFABS
+	entity "D File" as thingdfile
+	entity "Fpds Datum" as thingfpdsdatum #grey
+	actor "User" as actoruser
+	boundary "Fabs\nInterface" as thingfabsinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Generate D\nFiles From\nFabs" as controlgeneratedfile
+	control "Generate D\nFiles From\nFpds Datum" as controlgeneratedfilefpdsdatum
+	control "Validate D\nFiles From\nFabs" as controlvalidatedfile
+	control "Validate D\nFiles From\nFpds Datum" as controlvalidatedfilefpdsdatum
+
+	thingFABS <.. thingdfile
+	thingfpdsdatum <.. thingdfile
+	actoruser --- thingfabsinterface
+	actoruser --- thingdatuminterface
+	thingdfile --- controlgeneratedfile
+	thingFABS --- controlgeneratedfile
+	thingfabsinterface --> controlgeneratedfile
+	thingfpdsdatum --- controlgeneratedfilefpdsdatum
+	thingdatuminterface --> controlgeneratedfilefpdsdatum
+	thingdfile --- controlgeneratedfilefpdsdatum
+	thingFABS --- controlvalidatedfile
+	thingdfile --- controlvalidatedfile
+	thingfabsinterface --> controlvalidatedfile
+	thingdfile --- controlvalidatedfilefpdsdatum
+	thingfpdsdatum --- controlvalidatedfilefpdsdatum
+	thingdatuminterface --> controlvalidatedfilefpdsdatum
+
+@enduml

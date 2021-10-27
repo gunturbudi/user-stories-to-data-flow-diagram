@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,App,shape=partialRectangle,null,null,data_base
+201,Type,shape=partialRectangle,null,null,data_base
+202,Dataset,shape=partialRectangle,null,null,data_base
+203,Dataset Developer,rounded=0,null,null,external_entity
+204,Deploy A Independent Dataset Type From Any App,ellipse,null,null,process
+205,Create Dataset Instances Of That Type,ellipse,null,null,process
+206,Allow,ellipse,null,null,process
+207,Use Dataset Instances Of That Type,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,205,endArrow=classic
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,App,endArrow=classic,204,200,endArrow=classic
+214,Type,endArrow=classic,204,201,endArrow=classic
+215,Type,endArrow=classic,205,201,endArrow=classic
+216,,endArrow=classic,206,205,endArrow=classic
+217,,endArrow=classic,206,207,endArrow=classic
+218,Type,endArrow=classic,207,201,endArrow=classic
+219,Dataset,endArrow=classic,204,202,endArrow=classic

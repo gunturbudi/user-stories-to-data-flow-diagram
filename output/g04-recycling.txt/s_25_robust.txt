@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Route Planning\nSystem" as thingrouteplanningsystem #grey
+	entity "Work" as thingwork
+	actor "Employee" as actoremployee
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Access The\nRoute Planning\nSystem During\nWork" as controlaccessrouteplanningsystemwork
+
+	thingwork <.. thingrouteplanningsystem
+	actoremployee --- thingworkinterface
+	thingrouteplanningsystem --- controlaccessrouteplanningsystemwork
+	thingwork --- controlaccessrouteplanningsystemwork
+	thingworkinterface --> controlaccessrouteplanningsystemwork
+
+@enduml

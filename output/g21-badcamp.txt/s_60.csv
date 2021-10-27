@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Session,shape=partialRectangle,null,null,data_base
+201,Notification,shape=partialRectangle,null,null,data_base
+202,Anonymoususer,rounded=0,null,null,external_entity
+203,Submit A Session,ellipse,null,null,process
+204,Receive A Notification,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Session,endArrow=classic,203,200,endArrow=classic
+210,Notification,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training Waitlist" as thingtrainingwaitlist #grey
+	actor "Attendee" as actorattendee
+	boundary "Waitlist\nInterface" as thingwaitlistinterface #grey
+	control "Added To\nA Training\nWaitlist" as controladdtrainingwaitlist
+
+	actorattendee --- thingwaitlistinterface
+	thingtrainingwaitlist --- controladdtrainingwaitlist
+	thingwaitlistinterface --> controladdtrainingwaitlist
+
+@enduml

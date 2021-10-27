@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Background Noise " color=red];
+201 [label="<f0>  |<f1> Sound " ];
+202 [label="<f0>  |<f1> Audio File " ];
+203 [label="Zooniverse Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Distracting Remove Background Noise Sounds From The Audio Files }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Background Noise"]
+204 -> 201 [label="Sound"]
+204 -> 202 [label="Audio File"]
+}

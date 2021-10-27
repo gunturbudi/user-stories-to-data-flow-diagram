@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+2,Determine what kind of basic services and functionalities are required,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,", Staff Member",rounded=0,null,null,external_entity
+202,Know,ellipse,null,null,process
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Basic services,rounded=0,null,null,external_entity
+1002,Basic services,endArrow=classic,2,1001,endArrow=classic

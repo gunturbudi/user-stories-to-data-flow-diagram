@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Facolitie" as thingfacolitie
+	actor "User" as actoruser
+	boundary "Facolitie\nInterface" as thingfacolitieinterface #grey
+	control "Browse Through\nThe List\nOf Facolities" as controlbrowselist
+	control "Environment See\nWhich Ones" as controlseeone
+
+	actoruser --- thingfacolitieinterface
+	thingfacolitie --- controlbrowselist
+	thingfacolitieinterface --> controlbrowselist
+
+@enduml

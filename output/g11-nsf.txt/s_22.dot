@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Internal Workflow " color=red];
+201 [label="<f0>  |<f1> User Research\nProtocol " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Develop The User Research Protocol For Internal Workflows }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="User Research\nProtocol"]
+203 -> 200 [label="Internal Workflow"]
+}

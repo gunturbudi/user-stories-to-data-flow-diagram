@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Digital Object" as thingdigitalobject
+	entity "Preservation Standard" as thingpreservationstandard
+	entity "Access Purpose" as thingaccesspurpose
+	actor "Archivist" as actorarchivist
+	boundary "Standard\nInterface" as thingstandardinterface #grey
+	boundary "Purpose\nInterface" as thingpurposeinterface #grey
+	control "Distinguish Between\nDigital Objects\nTo Preservation\nStandards" as controldistinguishdigitalobject
+	control "Distinguish Between\nDigital Objects\nTo Only\nThose For\nAccess Purposes" as controldistinguishdigitalobjectthose
+
+	thingpreservationstandard <.. thingdigitalobject
+	thingaccesspurpose <.. thingdigitalobject
+	actorarchivist --- thingstandardinterface
+	actorarchivist --- thingpurposeinterface
+	thingdigitalobject --- controldistinguishdigitalobject
+	thingpreservationstandard --- controldistinguishdigitalobject
+	thingstandardinterface --> controldistinguishdigitalobject
+	thingaccesspurpose --- controldistinguishdigitalobjectthose
+	thingpurposeinterface --> controldistinguishdigitalobjectthose
+	thingdigitalobject --- controldistinguishdigitalobjectthose
+
+@enduml

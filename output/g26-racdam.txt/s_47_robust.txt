@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Audio File" as thingaudiofile
+	entity "Web Browser" as thingwebbrowser #grey
+	entity "Video" as thingvideo
+	actor "Researcher" as actorresearcher
+	boundary "Browser\nInterface" as thingbrowserinterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	control "Stream Audio\nFiles In\nWeb Browser" as controlstreamaudiofilewebbrowser
+	control "Stream Video" as controlstreamvideo
+
+	thingwebbrowser <.. thingaudiofile
+	actorresearcher --- thingbrowserinterface
+	actorresearcher --- thingvideointerface
+	thingaudiofile --- controlstreamaudiofilewebbrowser
+	thingwebbrowser --- controlstreamaudiofilewebbrowser
+	thingbrowserinterface --> controlstreamaudiofilewebbrowser
+	thingvideo --- controlstreamvideo
+	thingvideointerface --> controlstreamvideo
+
+@enduml

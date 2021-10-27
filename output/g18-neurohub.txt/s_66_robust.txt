@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Web ,\nBased Calendar" as thingwebbasedcalendar
+	entity "Event" as thingevent
+	entity "Neurohub" as thingNeuroHub
+	entity "Google Calendar" as thinggooglecalendar #grey
+	actor "User" as actoruser
+	boundary "Calendar\nInterface" as thingcalendarinterface #grey
+	control "Sync Events\nIn Neurohub\nWith A\nWeb, Based\nCalendar Such\nAs Google\nCalendar" as controlsynceventwebbasedcalendar
+
+	thinggooglecalendar <.. thingwebbasedcalendar
+	thingNeuroHub <.. thingevent
+	thingwebbasedcalendar <.. thingNeuroHub
+	actoruser --- thingcalendarinterface
+	thingevent --- controlsynceventwebbasedcalendar
+	thingNeuroHub --- controlsynceventwebbasedcalendar
+	thingwebbasedcalendar --- controlsynceventwebbasedcalendar
+	thinggooglecalendar --- controlsynceventwebbasedcalendar
+	thingcalendarinterface --> controlsynceventwebbasedcalendar
+
+@enduml

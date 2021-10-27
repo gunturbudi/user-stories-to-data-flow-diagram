@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Centre" as thingdatacentre
+	entity "Bath Datum" as thingbathdatum
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	boundary "Centre\nInterface" as thingcentreinterface #grey
+	control "Import Bath\nData From\nAn Wholesale,\nExternal Data\nCentre" as controlimportbathdatawholesaleexternaldatacentre
+
+	thingdatacentre <.. thingbathdatum
+	actorbathdataarchiveadministrator --- thingcentreinterface
+	thingbathdatum --- controlimportbathdatawholesaleexternaldatacentre
+	thingdatacentre --- controlimportbathdatawholesaleexternaldatacentre
+	thingcentreinterface --> controlimportbathdatawholesaleexternaldatacentre
+
+@enduml

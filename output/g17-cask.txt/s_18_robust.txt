@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype
+	entity "Dataset" as thingdataset #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Dataset Instance" as thingdatasetinstance
+	circle "New Version" as thingnewversion
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Affecting The\nDataset Instances\nOf That\nType" as controlaffectdeploynewversiondatasetinstance
+	control "Deploy A\nNew Version\nOf A\nDataset Type" as controldeploynewversion
+
+	thingdataset <.. thingtype
+	thingtype *-- thingdatasetinstance
+	thingtype *-- thingnewversion
+	actordatasetdeveloper --- thingtypeinterface
+	thingdatasetinstance --- controlaffectdeploynewversiondatasetinstance
+	thingtype --- controlaffectdeploynewversiondatasetinstance
+	thingtypeinterface --> controlaffectdeploynewversiondatasetinstance
+	controlaffectdeploynewversiondatasetinstance --> controldeploynewversion
+	thingnewversion --- controldeploynewversion
+	thingtypeinterface --> controldeploynewversion
+	thingtype --- controldeploynewversion
+
+@enduml

@@ -1,0 +1,53 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Material" as thingmaterial
+	entity "Place" as thingplace
+	entity "Variety" as thingvariety
+	entity "Extra Step" as thingextrastep
+	entity "County" as thingowncounty
+	entity "Datum" as thingdatum
+	entity "Presentation" as thingpresentation
+	entity "Document" as thingdocument
+	entity "Project" as thingproject
+	entity "Region Site" as thingregionsite
+	actor "Extension Educator" as actorextensioneducator
+	circle "Directory" as thingdirectory
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	boundary "Variety\nInterface" as thingvarietyinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	control "Have A\nPlace" as controlhaveplacestorevariety
+	control "Store A\nVariety Of\nDatum" as controlstorevarietydatum
+	control "Store A\nVariety Of\nPresentation" as controlstorevarietypresentation
+	control "Store A\nVariety Of\nDocuments" as controlstorevariety
+
+	thingdocument *-- thingvariety
+	thingdatum *-- thingvariety
+	thingpresentation *-- thingvariety
+	thingowncounty <.. thingextrastep
+	thingregionsite <.. thingextrastep
+	thingdirectory <.. thingextrastep
+	thingproject <.. thingextrastep
+	thingmaterial *-- thingdirectory
+	actorextensioneducator --- thingplaceinterface
+	actorextensioneducator --- thingvarietyinterface
+	actorextensioneducator --- thingdocumentinterface
+	thingplace --- controlhaveplacestorevariety
+	thingplaceinterface --> controlhaveplacestorevariety
+	thingvariety --- controlhaveplacestorevariety
+	thingdatum --- controlstorevarietydatum
+	thingvarietyinterface --> controlstorevarietydatum
+	thingvariety --- controlstorevarietydatum
+	controlhaveplacestorevariety --> controlstorevarietydatum
+	thingpresentation --- controlstorevarietypresentation
+	thingvarietyinterface --> controlstorevarietypresentation
+	thingvariety --- controlstorevarietypresentation
+	controlhaveplacestorevariety --> controlstorevarietypresentation
+	controlhaveplacestorevariety --> controlstorevariety
+	thingvariety --- controlstorevariety
+	thingdocument --- controlstorevariety
+	thingdocumentinterface --> controlstorevariety
+
+@enduml

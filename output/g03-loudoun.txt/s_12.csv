@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Detailed Review,shape=partialRectangle,null,null,data_base
+201,Application,shape=partialRectangle,null,null,data_base
+202,Staff Member,rounded=0,null,null,external_entity
+203,Assign An Application For Detailed Review,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Application,endArrow=classic,203,201,endArrow=classic
+207,Detailed Review,endArrow=classic,203,200,endArrow=classic

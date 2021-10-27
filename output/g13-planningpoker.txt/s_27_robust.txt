@@ -1,0 +1,70 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Team" as thingteam
+	entity "2" as thing2
+	entity "1" as thing1
+	entity "5" as thing5
+	entity "8" as thing8
+	entity "3" as thing3
+	entity "Etc" as thingetc
+	actor "Moderator" as actormoderator
+	boundary "5\nInterface" as thing5interface #grey
+	boundary "8\nInterface" as thing8interface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "3\nInterface" as thing3interface #grey
+	boundary "Team\nInterface" as thingteaminterface #grey
+	boundary "1\nInterface" as thing1interface #grey
+	boundary "2\nInterface" as thing2interface #grey
+	control "Have The\nTeam With" as controlhaveteam #grey
+	control "Have The\nTeam With\n2" as controlhaveteam2
+	control "Have The\nTeam With\n1" as controlhaveteam1
+	control "Select" as controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam
+	control "Have The\nTeam With\n5" as controlhaveteam5
+	control "Have The\nTeam With\n8" as controlhaveteam8
+	control "Have The\nTeam With\nEtc" as controlhaveteametc
+	control "Have The\nTeam With\n3" as controlhaveteam3
+
+	thing8 <.. thingteam
+	thing3 <.. thingteam
+	thing5 <.. thingteam
+	thing1 <.. thingteam
+	thingetc <.. thingteam
+	thing2 <.. thingteam
+	actormoderator --- thing5interface
+	actormoderator --- thing8interface
+	actormoderator --- thingetcinterface
+	actormoderator --- thing3interface
+	actormoderator --- thingteaminterface
+	actormoderator --- thing1interface
+	actormoderator --- thing2interface
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam --> controlhaveteam
+	thingteam --- controlhaveteam
+	thing2 --- controlhaveteam2
+	thingteaminterface --> controlhaveteam2
+	thing2interface --> controlhaveteam2
+	thingteam --- controlhaveteam2
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam --> controlhaveteam2
+	thing1 --- controlhaveteam1
+	thing1interface --> controlhaveteam1
+	thingteam --- controlhaveteam1
+	thingteam --- controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam
+	thing2 --- controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam
+	thing8interface --> controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam
+	thing5 --- controlhaveteam5
+	thing5interface --> controlhaveteam5
+	thingteam --- controlhaveteam5
+	thingteam --- controlhaveteam8
+	thing8 --- controlhaveteam8
+	thing8interface --> controlhaveteam8
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteamhaveteam --> controlhaveteam8
+	thingetc --- controlhaveteametc
+	thingetcinterface --> controlhaveteametc
+	thingteam --- controlhaveteametc
+	thing3 --- controlhaveteam3
+	thing3interface --> controlhaveteam3
+	thingteam --- controlhaveteam3
+
+@enduml

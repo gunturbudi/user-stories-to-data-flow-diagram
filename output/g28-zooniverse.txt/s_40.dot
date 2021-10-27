@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Video Duration " color=red];
+201 [label="<f0>  |<f1> Worm Watch\nLab " ];
+202 [label="<f0>  |<f1> Worm Motion\nAnalysis " ];
+203 [label="Zooniverse Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Perform Automatic Worm Motion Analysis }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Reduce Video Duration In Worm Watch Lab }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 202 [label="Worm Motion\nAnalysis"]
+205 -> 200 [label="Video Duration"]
+205 -> 201 [label="Worm Watch\nLab"]
+}

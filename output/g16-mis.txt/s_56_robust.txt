@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Thing" as thingthing
+	entity "Format" as thingformat
+	entity "Repository" as thingrepository
+	actor "Depositor" as actordepositor
+	circle "Kind" as thingkind
+	control "See" as controlsee
+
+	thingrepository <.. thingthing
+	thingthing *-- thingkind
+
+@enduml

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Image " color=red];
+201 [label="Archivist" shape=box];
+202 [label="{<f0> 1.0|<f1> Search Images }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Uploading An Image }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Find images when i don't have any metadata }" shape=Mrecord];
+202 -> 3
+1001 [label="<f0>  |<f1> Images " color=red];
+3 -> 1001 [label="Images"]
+201 -> 202
+201 -> 203
+202 -> 200 [label="Image"]
+203 -> 202
+203 -> 200 [label="Image"]
+}

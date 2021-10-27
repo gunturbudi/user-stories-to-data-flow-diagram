@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Experimental Run" as thingexperimentalrun
+	entity "Metadata" as thingsamemetadata
+	actor "User" as actoruser
+	boundary "Run\nInterface" as thingruninterface #grey
+	control "Capture The\nSame Metadata\nFor Each\nFile In\nAn Experimental\nRun" as controlcapturesamemetadata
+
+	thingexperimentalrun <.. thingfile
+	thingfile <.. thingsamemetadata
+	actoruser --- thingruninterface
+	thingsamemetadata --- controlcapturesamemetadata
+	thingfile --- controlcapturesamemetadata
+	thingexperimentalrun --- controlcapturesamemetadata
+	thingruninterface --> controlcapturesamemetadata
+
+@enduml

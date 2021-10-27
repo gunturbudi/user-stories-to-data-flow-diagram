@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visual Way" as thingvisualway
+	entity "Time Period" as thingtimeperiod #grey
+	entity "Particular File" as thingparticularfile
+	actor "User" as actoruser
+	boundary "Period\nInterface" as thingperiodinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Viewing Particular\nFiles Over\nA Time\nPeriod" as controlviewhavevisualwayparticularfile
+	control "Have A\nVisual Way" as controlhavevisualway
+
+	thingtimeperiod <.. thingparticularfile
+	actoruser --- thingperiodinterface
+	actoruser --- thingwayinterface
+	thingparticularfile --- controlviewhavevisualwayparticularfile
+	thingtimeperiod --- controlviewhavevisualwayparticularfile
+	thingperiodinterface --> controlviewhavevisualwayparticularfile
+	controlviewhavevisualwayparticularfile --> controlhavevisualway
+	thingvisualway --- controlhavevisualway
+	thingwayinterface --> controlhavevisualway
+
+@enduml

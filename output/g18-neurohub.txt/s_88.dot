@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="<f0>  |<f1> Meta Datum " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Use Meta Data }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have Those Files Where Located }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Locate }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 205
+203 -> 201 [label="Meta Datum"]
+204 -> 205
+204 -> 200 [label="File"]
+205 -> 203
+}

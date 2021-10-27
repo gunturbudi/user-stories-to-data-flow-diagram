@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Teaser" as thingteaser
+	entity "Article" as thingarticle
+	actor "Site Editor" as actorsiteeditor
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Include A\nTeaser With\nEach Article" as controlincludeteaser
+
+	thingarticle <.. thingteaser
+	actorsiteeditor --- thingarticleinterface
+	thingteaser --- controlincludeteaser
+	thingarticle --- controlincludeteaser
+	thingarticleinterface --> controlincludeteaser
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Account " color=red];
+201 [label="Publisher" shape=box];
+202 [label="{<f0> 1.0|<f1> Sign Up For An Account }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Publish my data package under }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Data package " color=red];
+2 -> 1001 [label="Data package"]
+1003 [label="<f0>  |<f1> Data package " color=red];
+2 -> 1003 [label="Data package"]
+201 -> 202
+202 -> 200 [label="Account"]
+}

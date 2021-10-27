@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Dataset" as thingdataset
+	entity "View" as thingview
+	actor "Platform Administrator" as actorplatformadministrator
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Have A\nView On\nAll Datasets\nAll Users" as controlhaveview
+
+	thinguser <.. thingdataset
+	thingdataset <.. thingview
+	actorplatformadministrator --- thingdatasetinterface
+	thingview --- controlhaveview
+	thingdataset --- controlhaveview
+	thingdatasetinterface --> controlhaveview
+
+@enduml

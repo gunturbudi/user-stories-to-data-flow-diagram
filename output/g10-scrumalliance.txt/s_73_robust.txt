@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Popular Item" as thingpopularitem
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "See A\nList Of\nThe Most\nPopular Items\nOn The\nSite" as controlseelist
+
+	thingsite <.. thingpopularitem
+	actorsitevisitor --- thingsiteinterface
+	thingpopularitem --- controlseelist
+	thingsite --- controlseelist
+	thingsiteinterface --> controlseelist
+
+@enduml

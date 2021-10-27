@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plankton Specie" as thingplanktonspecie
+	entity "Plankton Portal\nImage" as thingplanktonportalimage
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Automatic Preclassification" as thingautomaticpreclassification
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Perform Automatic\nPreclassification Of\nPlankton Species\nIn Plankton\nPortal Images" as controlperformautomaticpreclassificationplanktonportalimages
+
+	thingplanktonportalimage <.. thingplanktonspecie
+	thingplanktonspecie *-- thingautomaticpreclassification
+	actorzooniverseadmin --- thingimageinterface
+	thingautomaticpreclassification --- controlperformautomaticpreclassificationplanktonportalimages
+	thingplanktonspecie --- controlperformautomaticpreclassificationplanktonportalimages
+	thingplanktonportalimage --- controlperformautomaticpreclassificationplanktonportalimages
+	thingimageinterface --> controlperformautomaticpreclassificationplanktonportalimages
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Predicate Link" as thingpredicatedlink
+	actor "User" as actoruser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Make Predicated\nLinks Between\nFiles" as controlmakepredicatedlink
+
+	thingfile <.. thingpredicatedlink
+	actoruser --- thingfileinterface
+	thingpredicatedlink --- controlmakepredicatedlink
+	thingfile --- controlmakepredicatedlink
+	thingfileinterface --> controlmakepredicatedlink
+
+@enduml

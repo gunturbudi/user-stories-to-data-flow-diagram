@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+3,Use this information when i estimate the item of the current round,ellipse,null,null,process
+200,Story,shape=partialRectangle,null,null,data_base
+201,Estimate,shape=partialRectangle,null,null,data_base
+202,Prior Round,shape=partialRectangle,null,null,data_base
+203,Participant,rounded=0,null,null,external_entity
+204,Scroll Through Estimate,ellipse,null,null,process
+205,Scroll Through The Stories From Prior Rounds,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Estimate,endArrow=classic,204,201,endArrow=classic
+210,Story,endArrow=classic,205,200,endArrow=classic
+211,Prior Round,endArrow=classic,205,202,endArrow=classic
+1000,,endArrow=classic,205,3,endArrow=classic
+1001,Information,rounded=0,null,null,external_entity
+1002,Information,endArrow=classic,3,1001,endArrow=classic

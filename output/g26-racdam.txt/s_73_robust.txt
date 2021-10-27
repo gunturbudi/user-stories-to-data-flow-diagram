@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	entity "Color" as thingcolor
+	entity "Black" as thingblack
+	entity "White" as thingwhite
+	actor "Archivist" as actorarchivist
+	boundary "Black\nInterface" as thingblackinterface #grey
+	boundary "White\nInterface" as thingwhiteinterface #grey
+	boundary "Color\nInterface" as thingcolorinterface #grey
+	control "Distinguish Between\nImages In\nBlack" as controldistinguishimageblack
+	control "Distinguish Between\nImages In\nWhite" as controldistinguishimagewhite
+	control "Distinguish Between\nImages In\nColor" as controldistinguishimage
+
+	thingcolor <.. thingimage
+	thingblack <.. thingimage
+	thingwhite <.. thingimage
+	actorarchivist --- thingblackinterface
+	actorarchivist --- thingwhiteinterface
+	actorarchivist --- thingcolorinterface
+	thingblack --- controldistinguishimageblack
+	thingblackinterface --> controldistinguishimageblack
+	thingimage --- controldistinguishimageblack
+	thingwhite --- controldistinguishimagewhite
+	thingwhiteinterface --> controldistinguishimagewhite
+	thingimage --- controldistinguishimagewhite
+	thingimage --- controldistinguishimage
+	thingcolor --- controldistinguishimage
+	thingcolorinterface --> controldistinguishimage
+
+@enduml

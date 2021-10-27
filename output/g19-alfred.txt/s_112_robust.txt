@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Combination" as thingcombination #grey
+	entity "Arm" as thingarm
+	entity "Mental Exercise" as thingmentalexercise
+	entity "Exercise" as thingexercise #grey
+	entity "Game" as thinggame
+	entity "Physical" as thingphysical
+	entity "Leg" as thingleg
+	entity "Motion" as thingmotion #grey
+	actor "Olderperson" as actorOlderPerson
+	circle "Combination" as thingsuchcombination
+
+	thingphysical <.. thingcombination
+	thingleg <.. thingexercise
+	thingmotion <.. thingexercise
+	thingsuchcombination <.. thinggame
+	thingcombination <.. thinggame
+	thingmentalexercise *-- thingsuchcombination
+	thingexercise *-- thingsuchcombination
+
+@enduml

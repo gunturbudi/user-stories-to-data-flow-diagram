@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Condo Unit " color=red];
+201 [label="Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Create Each Condo Unit }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Associate it to the child parcel and address after the condominiums are recorded in the system. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Child parcel " color=red];
+2 -> 1001
+1003 [label="<f0>  |<f1> Address " color=red];
+2 -> 1003
+201 -> 202
+202 -> 200
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Meeting" as thingmeeting
+	actor "Staff Member" as actorstaffmember
+	boundary "Meeting\nInterface" as thingmeetinginterface #grey
+	control "Schedule A\nMeeting" as controlschedulemeeting
+
+	actorstaffmember --- thingmeetinginterface
+	thingmeeting --- controlschedulemeeting
+	thingmeetinginterface --> controlschedulemeeting
+
+@enduml

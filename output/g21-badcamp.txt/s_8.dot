@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Training Waitlist " color=red];
+201 [label="Attendee" shape=box];
+202 [label="{<f0> 1.0|<f1> Added To A Training Waitlist }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Training Waitlist"]
+}

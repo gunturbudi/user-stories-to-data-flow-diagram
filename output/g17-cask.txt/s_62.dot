@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Explore " ];
+201 [label="<f0>  |<f1> Silent Loss " ];
+202 [label="<f0>  |<f1> Datum " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Never Leads To Available, Silent Loss Of Data For Explore }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Ensure }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Never Leads To Silent Loss Of Datum }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Explore"]
+204 -> 202 [label="Datum"]
+205 -> 204
+205 -> 206
+205 -> 201 [label="Silent Loss"]
+205 -> 200 [label="Explore"]
+206 -> 201 [label="Silent Loss"]
+206 -> 202 [label="Datum"]
+206 -> 200 [label="Explore"]
+}

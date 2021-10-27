@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Browse Through Files In A Collection,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,File,endArrow=classic,203,201,endArrow=classic
+207,Collection,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+5,Determine what kind of technical services and functionalities are required,ellipse,null,null,process
+200,Technology,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Software,shape=partialRectangle,null,null,data_base
+203,", Staff Member",rounded=0,null,null,external_entity
+204,Know Technology Produced,ellipse,null,null,process
+205,Know,ellipse,null,null,process
+206,Use,ellipse,null,null,process
+207,Know Which Software The Data Produced,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,207,endArrow=classic
+211,Technology,endArrow=classic,204,200,endArrow=classic
+212,,endArrow=classic,205,206,endArrow=classic
+213,Software,endArrow=classic,207,202,endArrow=classic
+214,Datum,endArrow=classic,207,201,endArrow=classic
+1000,,endArrow=classic,203,5,endArrow=classic
+1001,Technical services,rounded=0,null,null,external_entity
+1002,Technical services,endArrow=classic,5,1001,endArrow=classic

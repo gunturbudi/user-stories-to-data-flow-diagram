@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	entity "Quality Aspect" as thingqualityaspect
+	actor "Admin" as actoradmin
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Aspect\nInterface" as thingaspectinterface #grey
+	control "V" as controlV
+	control "Filter Videos\nOn" as controlfiltervideoV
+	control "Filter Videos\nOn Quality\nAspects" as controlfiltervideo
+	control "Rank Videos\nOn" as controlrankvideoV
+	control "Rank Videos\nOn Quality\nAspects" as controlrankvideo
+
+	thingqualityaspect <.. thingvideo
+	actoradmin --- thingvideointerface
+	actoradmin --- thingaspectinterface
+	controlfiltervideoV --> controlV
+	thingvideointerface --> controlV
+	controlrankvideoV --> controlV
+	thingvideointerface --> controlfiltervideoV
+	thingvideo --- controlfiltervideoV
+	thingvideo --- controlfiltervideo
+	thingqualityaspect --- controlfiltervideo
+	thingaspectinterface --> controlfiltervideo
+	thingvideointerface --> controlrankvideoV
+	thingvideo --- controlrankvideoV
+	thingvideo --- controlrankvideo
+	thingaspectinterface --> controlrankvideo
+	thingqualityaspect --- controlrankvideo
+
+@enduml

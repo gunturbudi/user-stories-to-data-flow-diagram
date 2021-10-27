@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Ui Designer" as actoruidesigner
+	control "Move On" as controlmove
+
+
+@enduml

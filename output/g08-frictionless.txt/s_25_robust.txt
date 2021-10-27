@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Mongo Integration" as thingmongointegration #grey
+	actor "Developer" as actordeveloper
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	control "Provided With\nA Mongo\nIntegration" as controlprovidemongointegration
+
+	actordeveloper --- thingintegrationinterface
+	thingmongointegration --- controlprovidemongointegration
+	thingintegrationinterface --> controlprovidemongointegration
+
+@enduml

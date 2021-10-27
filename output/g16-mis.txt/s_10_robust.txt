@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Remote ,\nPrimary Site" as thingremoteprimarysite
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Replicate Beyond\nThe Remote,\nPrimary Site" as controlreplicateremoteprimarysite
+	control "Elect" as controlelectreplicate
+	control "Elect Not" as controlelectnot
+	control "Replicate" as controlreplicate
+
+	actorrepositorymanager --- thingsiteinterface
+	thingremoteprimarysite --- controlreplicateremoteprimarysite
+	thingsiteinterface --> controlreplicateremoteprimarysite
+	controlelectreplicate --> controlreplicateremoteprimarysite
+	thingsiteinterface --> controlelectreplicate
+	controlelectreplicate --> controlreplicate
+
+@enduml

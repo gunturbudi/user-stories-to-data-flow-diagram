@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Json " ];
+202 [label="Datum , Publishing User" shape=box];
+203 [label="{<f0> 1.0|<f1> Import Data In Json }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

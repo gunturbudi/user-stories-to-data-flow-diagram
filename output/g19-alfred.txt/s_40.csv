@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,Alfred,shape=partialRectangle,null,null,data_base
+201,Cultural,shape=partialRectangle,null,null,data_base
+202,Explanation,shape=partialRectangle,null,null,data_base
+203,Touristic Walk,shape=partialRectangle,null,null,data_base
+204,Historical Sight,shape=partialRectangle,null,null,data_base
+205,Olderperson,rounded=0,null,null,external_entity
+206,Indications Alfred For Touristic Walks With Explanations On Cultural,ellipse,null,null,process
+207,Indications Alfred For Touristic Walks With Explanations On Historical Sights,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Cultural,endArrow=classic,206,201,endArrow=classic
+212,Touristic Walk,endArrow=classic,206,203,endArrow=classic
+213,Alfred,endArrow=classic,206,200,endArrow=classic
+214,Explanation,endArrow=classic,206,202,endArrow=classic
+215,Alfred,endArrow=classic,207,200,endArrow=classic
+216,Touristic Walk,endArrow=classic,207,203,endArrow=classic
+217,Explanation,endArrow=classic,207,202,endArrow=classic
+218,Historical Sight,endArrow=classic,207,204,endArrow=classic

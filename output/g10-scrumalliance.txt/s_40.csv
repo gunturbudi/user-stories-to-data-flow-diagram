@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Methodology,shape=partialRectangle,null,null,data_base
+201,Training Pdf,shape=partialRectangle,null,null,data_base
+202,Site Member,rounded=0,null,null,external_entity
+203,Download Methodology,ellipse,null,null,process
+204,"Download The Material, Latest Training Pdfs",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Methodology,endArrow=classic,203,200,endArrow=classic
+209,Training Pdf,endArrow=classic,204,201,endArrow=classic

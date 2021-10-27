@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Snapshot Serengeti,shape=partialRectangle,null,null,data_base
+201,Animal Species\nPreclassification,shape=partialRectangle,null,null,data_base
+202,Zooniverse Admin,rounded=0,null,null,external_entity
+203,Perform Automatic Animal Species Preclassification In Snapshot Serengeti,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Animal Species\nPreclassification,endArrow=classic,203,201,endArrow=classic
+207,Snapshot Serengeti,endArrow=classic,203,200,endArrow=classic

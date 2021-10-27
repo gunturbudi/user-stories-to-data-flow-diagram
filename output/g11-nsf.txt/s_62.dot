@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Recruiting Email\nTemplate " ];
+201 [label="Team Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Go }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Have Recruiting Email Templates }" shape=Mrecord];
+201 -> 202
+201 -> 203
+203 -> 202
+203 -> 200 [label="Recruiting Email\nTemplate"]
+}

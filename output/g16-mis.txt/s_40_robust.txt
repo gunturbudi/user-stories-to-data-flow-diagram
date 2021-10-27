@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Easy Comprehension" as thingeasycomprehension
+	entity "Recent Error" as thingrecenterror
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Display" as thingdisplay
+	boundary "Comprehension\nInterface" as thingcomprehensioninterface #grey
+	control "See A\nDisplay Of\nRecent Errors\nFor Easy\nComprehension" as controlseedisplay
+
+	thingeasycomprehension <.. thingrecenterror
+	thingrecenterror *-- thingdisplay
+	actorrepositorymanager --- thingcomprehensioninterface
+	thingdisplay --- controlseedisplay
+	thingrecenterror --- controlseedisplay
+	thingeasycomprehension --- controlseedisplay
+	thingcomprehensioninterface --> controlseedisplay
+
+@enduml

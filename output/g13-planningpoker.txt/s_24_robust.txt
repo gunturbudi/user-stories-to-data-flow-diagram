@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Account" as thingaccount
+	actor "Moderator" as actormoderator
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	control "Delete Account" as controldeleteaccount
+
+	actormoderator --- thingaccountinterface
+	thingaccount --- controldeleteaccount
+	thingaccountinterface --> controldeleteaccount
+
+@enduml

@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Fall,shape=partialRectangle,null,null,data_base
+201,Emergency,shape=partialRectangle,null,null,data_base
+202,Specific Contact,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Have,ellipse,null,null,process
+205,Detect Falls,ellipse,null,null,process
+206,Send An Emergency To A Specific Contact,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,205,endArrow=classic
+212,,endArrow=classic,204,206,endArrow=classic
+213,Fall,endArrow=classic,205,200,endArrow=classic
+214,Emergency,endArrow=classic,206,201,endArrow=classic
+215,Specific Contact,endArrow=classic,206,202,endArrow=classic

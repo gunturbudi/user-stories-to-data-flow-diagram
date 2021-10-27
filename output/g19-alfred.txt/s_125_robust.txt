@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	entity "Fee" as thingfee
+	entity "Market Place\nCharge" as thingmarketplacecharge
+	actor "Developer" as actordeveloper
+	circle "Provider" as thingprovider
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Charge\nInterface" as thingchargeinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "Using The\nPlatform" as controluseknowproviderplatform
+	control "Know The\nProvider Of\nThe Market\nPlace Charges" as controlknowprovider
+	control "Know The\nFees" as controlknowfee
+
+	thingmarketplacecharge *-- thingprovider
+	actordeveloper --- thingplatforminterface
+	actordeveloper --- thingchargeinterface
+	actordeveloper --- thingfeeinterface
+	thingplatform --- controluseknowproviderplatform
+	thingplatforminterface --> controluseknowproviderplatform
+	controluseknowproviderplatform --> controlknowprovider
+	thingprovider --- controlknowprovider
+	thingmarketplacecharge --- controlknowprovider
+	thingchargeinterface --> controlknowprovider
+	thingfee --- controlknowfee
+	thingfeeinterface --> controlknowfee
+
+@enduml

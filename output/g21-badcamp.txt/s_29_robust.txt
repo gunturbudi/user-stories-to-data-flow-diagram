@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summit" as thingsummit
+	entity "Event" as thingevent
+	entity "Training" as thingtraining
+	entity "Sponsor" as thingsponsor
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	boundary "Sponsor\nInterface" as thingsponsorinterface #grey
+	control "See Training" as controlseetraining
+	control "See Summit" as controlseesummit
+	control "See All\nEvents That\nA Sponsor\nIs Sponsoring" as controlseeevent
+
+	thingsponsor <.. thingevent
+	actoranonymoususer --- thingtraininginterface
+	actoranonymoususer --- thingsummitinterface
+	actoranonymoususer --- thingsponsorinterface
+	thingtraining --- controlseetraining
+	thingtraininginterface --> controlseetraining
+	thingsummit --- controlseesummit
+	thingsummitinterface --> controlseesummit
+	thingevent --- controlseeevent
+	thingsponsor --- controlseeevent
+	thingsponsorinterface --> controlseeevent
+
+@enduml

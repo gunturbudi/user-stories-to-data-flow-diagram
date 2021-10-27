@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rac Staff" as thingracstaff #grey
+	entity "User Group" as thingusergroup
+	actor "Administrator" as actoradministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Assign Rac\nStaff To\nDifferent User\nGroups" as controlassignracstaffdifferentusergroups
+
+	thingusergroup <.. thingracstaff
+	actoradministrator --- thinggroupinterface
+	thingracstaff --- controlassignracstaffdifferentusergroups
+	thingusergroup --- controlassignracstaffdifferentusergroups
+	thinggroupinterface --> controlassignracstaffdifferentusergroups
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Segment" as thingsegment
+	entity "Topic" as thingtopic
+	entity "News Video" as thingnewsvideo #grey
+	actor "Admin" as actoradmin
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	control "Annotate News\nVideo Segments" as controlannotatenewsvideosegments
+	control "Extract A\nTopic For\nEach Segment" as controlextracttopicsegment
+
+	thingnewsvideo <.. thingsegment
+	thingsegment <.. thingtopic
+	actoradmin --- thingsegmentinterface
+	thingsegmentinterface --> controlannotatenewsvideosegments
+	thingsegment --- controlannotatenewsvideosegments
+	thingtopic --- controlextracttopicsegment
+	thingsegment --- controlextracttopicsegment
+	thingsegmentinterface --> controlextracttopicsegment
+
+@enduml

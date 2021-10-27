@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="<f0>  |<f1> Excel Spreadsheet " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Get Excel Spreadsheet Into A Data Package }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

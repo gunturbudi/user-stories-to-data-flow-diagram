@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Time " ];
+202 [label="<f0>  |<f1> New Version " ];
+203 [label="<f0>  |<f1> Report " color=red];
+204 [label="Patron" shape=box];
+205 [label="{<f0> 1.0|<f1> Select Dataset }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Select Reports To Emailed Possibly Many At Time New Versions When Are Available }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Deselect Reports To Emailed Possibly Many At Time New Versions When Are Available }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Deselect Dataset }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+205 -> 200 [label="Dataset"]
+206 -> 203 [label="Report"]
+206 -> 201 [label="Time"]
+206 -> 202 [label="New Version"]
+207 -> 201 [label="Time"]
+207 -> 202 [label="New Version"]
+207 -> 203 [label="Report"]
+208 -> 200 [label="Dataset"]
+}

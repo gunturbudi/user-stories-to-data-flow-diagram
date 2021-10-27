@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " color=red];
+201 [label="<f0>  |<f1> Additional Property " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Add Additional Properties For Repositories }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Additional Property"]
+203 -> 200 [label="Repository"]
+}

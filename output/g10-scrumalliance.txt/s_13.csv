@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Application,shape=partialRectangle,null,null,data_base
+201,Training,shape=partialRectangle,null,null,data_base
+202,Site Administrator,rounded=0,null,null,external_entity
+203,Practicing,ellipse,null,null,process
+204,Read Training Application,ellipse,null,null,process
+205,Read,ellipse,null,null,process
+206,Reject Applications,ellipse,null,null,process
+207,Approve Applications,ellipse,null,null,process
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,207,endArrow=classic
+211,Application,endArrow=classic,204,200,endArrow=classic
+212,,endArrow=classic,205,203,endArrow=classic
+213,Application,endArrow=classic,206,200,endArrow=classic
+214,Application,endArrow=classic,207,200,endArrow=classic
+216,Training,endArrow=classic,204,201,endArrow=classic

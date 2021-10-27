@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Registry " ];
+201 [label="<f0>  |<f1> Name " color=red];
+202 [label="<f0>  |<f1> Site " ];
+203 [label="Csm" shape=box];
+204 [label="{<f0> 1.0|<f1> Becoming A Member Of The Site }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have Name In The Registry }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Verify my certification }" shape=Mrecord];
+1000 [label="Employers" shape=box];
+1000 -> 3
+1002 [label="<f0>  |<f1> Certification " color=red];
+3 -> 1002 [label="Certification"]
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 202 [label="Site"]
+205 -> 201 [label="Name"]
+205 -> 200 [label="Registry"]
+}

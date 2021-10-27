@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Component Hierarchy" as thingcomponenthierarchy #grey
+	actor "User" as actoruser
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "See The\nComponent Hierarchy\nOf An\nObject" as controlseecomponenthierarchy
+	control "Navigate The\nComponent Hierarchy\nOf An\nObject" as controlnavigatecomponenthierarchy
+
+	thingobject <.. thingcomponenthierarchy
+	actoruser --- thingobjectinterface
+	thingcomponenthierarchy --- controlseecomponenthierarchy
+	thingobject --- controlseecomponenthierarchy
+	thingobjectinterface --> controlseecomponenthierarchy
+	thingobject --- controlnavigatecomponenthierarchy
+	thingcomponenthierarchy --- controlnavigatecomponenthierarchy
+	thingobjectinterface --> controlnavigatecomponenthierarchy
+
+@enduml

@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> People " ];
+201 [label="<f0>  |<f1> Alfred " ];
+202 [label="<f0>  |<f1> Circle " color=red];
+203 [label="Olderperson" shape=box];
+204 [label="{<f0> 1.0|<f1> Contact People From Own Circle }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Use Alfred }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="People"]
+204 -> 202 [label="Circle"]
+205 -> 204
+205 -> 201 [label="Alfred"]
+}

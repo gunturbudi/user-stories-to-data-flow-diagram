@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summit" as thingsummit
+	actor "Attendee" as actorattendee
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "Register For\nA Summit" as controlregistersummit
+
+	actorattendee --- thingsummitinterface
+	thingsummit --- controlregistersummit
+	thingsummitinterface --> controlregistersummit
+
+@enduml

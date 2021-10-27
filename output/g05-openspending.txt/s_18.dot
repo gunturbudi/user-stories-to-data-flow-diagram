@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Embed Visualisation " ];
+201 [label="<f0>  |<f1> Textual Description " color=red];
+202 [label="Datum , Consume User" shape=box];
+203 [label="{<f0> 1.0|<f1> See Textual Descriptions Accompany Embedded Visualisations }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ppopcongressionaldistrict " ];
+201 [label="<f0>  |<f1> Complete " ];
+202 [label="<f0>  |<f1> Accurate Datum " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Complete }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have Accurate Data To Ppopcongressionaldistrict }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Have Accurate Data To Ppopcode }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 201
+205 -> 200
+205 -> 202
+206 -> 202
+206 -> 200
+}

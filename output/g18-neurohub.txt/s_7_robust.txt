@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Colour" as thingcolour
+	entity "Web Interface\nGraphic" as thingwebinterfacegraphic
+	actor "Lab Administrator" as actorlabadministrator
+	boundary "Colour\nInterface" as thingcolourinterface #grey
+	boundary "Graphic\nInterface" as thinggraphicinterface #grey
+	control "Theme Colour" as controlthemecolour
+	control "Theme The\nWeb Interface\nGraphics" as controlthemewebinterfacegraphics
+
+	actorlabadministrator --- thingcolourinterface
+	actorlabadministrator --- thinggraphicinterface
+	thingcolour --- controlthemecolour
+	thingcolourinterface --> controlthemecolour
+	thingwebinterfacegraphic --- controlthemewebinterfacegraphics
+	thinggraphicinterface --> controlthemewebinterfacegraphics
+
+@enduml

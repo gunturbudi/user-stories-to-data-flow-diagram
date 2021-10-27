@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Area,shape=partialRectangle,null,null,data_base
+201,Disposal Event,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,View The Currently Safe Disposal Events Around Area,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Disposal Event,endArrow=classic,203,201,endArrow=classic
+207,Area,endArrow=classic,203,200,endArrow=classic

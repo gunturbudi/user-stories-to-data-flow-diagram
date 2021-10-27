@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	actor "Consumer" as actorconsumer
+	circle "Description" as thingdescription
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Search On\nDescription Of\nData Package" as controlsearchdescription
+
+	thingdatapackage *-- thingdescription
+	actorconsumer --- thingpackageinterface
+	thingdescription --- controlsearchdescription
+	thingdatapackage --- controlsearchdescription
+	thingpackageinterface --> controlsearchdescription
+
+@enduml

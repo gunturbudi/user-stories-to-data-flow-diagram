@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Alfred Device,shape=partialRectangle,null,null,data_base
+201,Trouble,shape=partialRectangle,null,null,data_base
+202,User,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Have An Alfred Device Easily Adapted For User Have Hearing Trouble,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Alfred Device,endArrow=classic,204,200,endArrow=classic
+208,User,endArrow=classic,204,202,endArrow=classic
+209,Trouble,endArrow=classic,204,201,endArrow=classic

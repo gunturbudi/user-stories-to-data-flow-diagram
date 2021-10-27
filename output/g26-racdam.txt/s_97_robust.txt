@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Role" as thingrole
+	entity "Right" as thingright
+	entity "User Group" as thingusergroup
+	actor "Administrator" as actoradministrator
+	boundary "Role\nInterface" as thingroleinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Assign Rights\nTo Role" as controlassignrightrole
+	control "Assign Rights\nTo User\nGroups" as controlassignrightusergroups
+
+	thingusergroup <.. thingright
+	thingrole <.. thingright
+	actoradministrator --- thingroleinterface
+	actoradministrator --- thinggroupinterface
+	thingrole --- controlassignrightrole
+	thingroleinterface --> controlassignrightrole
+	thingright --- controlassignrightrole
+	thingright --- controlassignrightusergroups
+	thingusergroup --- controlassignrightusergroups
+	thinggroupinterface --> controlassignrightusergroups
+
+@enduml

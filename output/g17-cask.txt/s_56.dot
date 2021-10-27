@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Error Message " ];
+201 [label="Pipeline Designer" shape=box];
+202 [label="{<f0> 1.0|<f1> Get A Meaningful Error Message }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Error Message"]
+}

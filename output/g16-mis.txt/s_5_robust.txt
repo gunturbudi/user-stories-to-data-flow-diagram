@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Item" as thingitem
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Map Item" as controlmapitem
+	control "Map An\nItem From\nCollection To\nAnother" as controlmapitemanother
+
+	thingcollection <.. thingitem
+	actorcollectioncurator --- thingiteminterface
+	actorcollectioncurator --- thingcollectioninterface
+	thingitem --- controlmapitem
+	thingiteminterface --> controlmapitem
+	thingcollection --- controlmapitemanother
+	thingcollectioninterface --> controlmapitemanother
+	thingitem --- controlmapitemanother
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+1,Complete the user interview,ellipse,null,null,process
+200,Workflow,shape=partialRectangle,null,null,data_base
+201,Prototype,shape=partialRectangle,null,null,data_base
+202,Research Participant,rounded=0,null,null,external_entity
+1000,,endArrow=classic,202,1,endArrow=classic
+1001,User interview,rounded=0,null,null,external_entity
+1002,User interview,endArrow=classic,1,1001,endArrow=classic

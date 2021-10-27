@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	actor "Donor Representative" as actordonorrepresentative
+	circle "Thumbnail" as thingthumbnail
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "See Thumbnails\nOf Images" as controlseethumbnail
+
+	thingimage *-- thingthumbnail
+	actordonorrepresentative --- thingimageinterface
+	thingthumbnail --- controlseethumbnail
+	thingimage --- controlseethumbnail
+	thingimageinterface --> controlseethumbnail
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Team" as thingteam
+	entity "Object" as thingobject
+	actor "Duke Researcher" as actordukeresearcher
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Describe Object" as controldescribeobject
+	control "Describe Team\nIn The\nRepository" as controldescribeteamrepository
+
+	thingrepository <.. thingteam
+	actordukeresearcher --- thingobjectinterface
+	actordukeresearcher --- thingrepositoryinterface
+	thingobject --- controldescribeobject
+	thingobjectinterface --> controldescribeobject
+	thingteam --- controldescribeteamrepository
+	thingrepository --- controldescribeteamrepository
+	thingrepositoryinterface --> controldescribeteamrepository
+
+@enduml

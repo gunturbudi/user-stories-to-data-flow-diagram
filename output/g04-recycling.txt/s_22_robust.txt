@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dashboard" as thingdashboard
+	entity "Site" as thingsite
+	entity "Status" as thingstatus
+	actor "Admin" as actoradmin
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	control "View A\nDashboard Monitors\nThe Sites'\nStatuses" as controlviewdashboard
+
+	thingstatus <.. thingdashboard
+	thingsite <.. thingstatus
+	actoradmin --- thingstatusinterface
+	thingdashboard --- controlviewdashboard
+	thingstatus --- controlviewdashboard
+	thingstatusinterface --> controlviewdashboard
+
+@enduml

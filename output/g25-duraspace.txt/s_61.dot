@@ -1,0 +1,40 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publication " ];
+201 [label="<f0>  |<f1> . " ];
+202 [label="<f0>  |<f1> Edition " ];
+203 [label="<f0>  |<f1> Object " color=red];
+204 [label="<f0>  |<f1> Place " ];
+205 [label="<f0>  |<f1> Publisher " ];
+206 [label="<f0>  |<f1> Object Component " color=red];
+207 [label="Repository Manager" shape=box];
+208 [label="{<f0> 1.0|<f1> Indicate For The The Edition }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Indicate For The The Publisher }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Indicate For Object }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Indicate For An Object Component The Place Of Publication When Pertinent }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Indicate For The The . The Place }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Indicate For The The Publisher The . }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Indicate For The The Publisher The Place }" shape=Mrecord];
+215 [label="{<f0> 8.0|<f1> Indicate For The The . }" shape=Mrecord];
+216 [label="{<f0> 9.0|<f1> Indicate For The The Publisher The Edition }" shape=Mrecord];
+217 [label="{<f0> 10.0|<f1> Indicate For The The Edition The Place }" shape=Mrecord];
+207 -> 210
+207 -> 211
+208 -> 202 [label="Edition"]
+209 -> 205 [label="Publisher"]
+210 -> 203 [label="Object"]
+211 -> 206 [label="Object Component"]
+211 -> 200 [label="Publication"]
+211 -> 204 [label="Place"]
+212 -> 201 [label="."]
+212 -> 204 [label="Place"]
+213 -> 201 [label="."]
+213 -> 205 [label="Publisher"]
+214 -> 205 [label="Publisher"]
+214 -> 204 [label="Place"]
+215 -> 201 [label="."]
+216 -> 202 [label="Edition"]
+216 -> 205 [label="Publisher"]
+217 -> 202 [label="Edition"]
+217 -> 204 [label="Place"]
+}

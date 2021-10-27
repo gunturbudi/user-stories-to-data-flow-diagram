@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Pertinent Name" as thingpertinentname
+	entity "Etc" as thingetc
+	entity "Component" as thingcomponent
+	entity "Object" as thingobject
+	entity "Specific Role" as thingspecificrole
+	entity "Photographer" as thingphotographer
+	entity "Illustrator" as thingillustrator
+	actor "Repository Manager" as actorrepositorymanager
+	control "Indicate" as controlindicate
+
+	thingcollection <.. thingpertinentname
+	thingobject <.. thingpertinentname
+	thingcomponent <.. thingpertinentname
+	thingillustrator <.. thingspecificrole
+	thingphotographer <.. thingspecificrole
+	thingetc <.. thingspecificrole
+
+@enduml

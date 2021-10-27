@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "People" as thingpeople
+	entity "Alfred" as thingALFRED
+	entity "Circle" as thingowncircle
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Contact People\nFrom Own\nCircle" as controlcontactpeopleowncircle
+	control "Use Alfred" as controluseALFREDcontactpeopleowncircle
+
+	thingowncircle <.. thingpeople
+	actorOlderPerson --- thingalfredinterface
+	thingpeople --- controlcontactpeopleowncircle
+	thingowncircle --- controlcontactpeopleowncircle
+	controluseALFREDcontactpeopleowncircle --> controlcontactpeopleowncircle
+	thingalfredinterface --> controlcontactpeopleowncircle
+	thingALFRED --- controluseALFREDcontactpeopleowncircle
+	thingalfredinterface --> controluseALFREDcontactpeopleowncircle
+
+@enduml

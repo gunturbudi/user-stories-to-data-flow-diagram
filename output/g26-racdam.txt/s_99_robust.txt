@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingresearcher
+	entity "Password" as thingownpassword
+	actor "Administrator" as actoradministrator
+	control "Have" as controlhave
+
+
+@enduml

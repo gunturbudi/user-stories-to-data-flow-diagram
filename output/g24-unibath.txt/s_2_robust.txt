@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Interface" as thinguserinterface #grey
+	actor "Depositor" as actordepositor
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	control "Have A\nUser Interface\nIs Familiar\nTo" as controlhaveuserinterface
+
+	actordepositor --- thinginterfaceinterface
+	thinguserinterface --- controlhaveuserinterface
+	thinginterfaceinterface --> controlhaveuserinterface
+
+@enduml

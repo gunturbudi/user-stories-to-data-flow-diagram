@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Type " color=red];
+201 [label="<f0>  |<f1> Dataset Instance " color=red];
+202 [label="<f0>  |<f1> Way " ];
+203 [label="Dataset Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Reject An Upgrade Of A Dataset Instance To A Newer Version Of }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Way }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Dataset Instance"]
+205 -> 204
+205 -> 202 [label="Way"]
+}

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Component" as thingcomponent
+	entity "File" as thingfile
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Link A\nComponent To\nA File" as controllinkcomponentto
+	control "Link A\nComponent To\nAnother Component" as controllinkcomponent
+
+	thingcomponent <.. thingcomponent
+	thingfile <.. thingcomponent
+	actorrepositorymanager --- thingfileinterface
+	actorrepositorymanager --- thingcomponentinterface
+	thingfile --- controllinkcomponentto
+	thingfileinterface --> controllinkcomponentto
+	thingcomponent --- controllinkcomponentto
+	thingcomponentinterface --> controllinkcomponent
+	thingcomponent --- controllinkcomponent
+
+@enduml

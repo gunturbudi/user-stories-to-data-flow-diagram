@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Site " ];
+201 [label="<f0>  |<f1> Popular Item " ];
+202 [label="Site Visitor" shape=box];
+203 [label="{<f0> 1.0|<f1> See A List Of The Most Popular Items On The Site }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Popular Item"]
+203 -> 200 [label="Site"]
+}

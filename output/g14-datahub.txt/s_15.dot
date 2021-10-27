@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Server " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Data Package " color=red];
+203 [label="<f0>  |<f1> Registry " ];
+204 [label="<f0>  |<f1> Resource " color=red];
+205 [label="Publisher" shape=box];
+206 [label="{<f0> 1.0|<f1> Publish A Data Package Resource Data Where Stored On Servers }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Use }" shape=Mrecord];
+206 -> 2
+1001 [label="<f0>  |<f1> Data " color=red];
+2 -> 1001 [label="Data"]
+205 -> 206
+206 -> 202 [label="Data Package"]
+206 -> 200 [label="Server"]
+206 -> 201 [label="Datum"]
+206 -> 204 [label="Resource"]
+}

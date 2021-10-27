@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage
+	actor "Fabs User" as actorfabsuser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Frontend Reflect\nThe Page" as controlreflectpage
+
+	actorfabsuser --- thingpageinterface
+	thingpage --- controlreflectpage
+	thingpageinterface --> controlreflectpage
+
+@enduml

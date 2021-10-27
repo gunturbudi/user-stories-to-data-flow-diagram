@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Record" as thingrecord
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Create Any\nRecords In\nRepository" as controlcreaterecord
+	control "Update Any\nRecords In\nRepository" as controlupdaterecord
+	control "Delete Any\nRecords In\nRepository" as controldeleterecord
+
+	thingrepository <.. thingrecord
+	actorrepositorymanager --- thingrepositoryinterface
+	thingrecord --- controlcreaterecord
+	thingrepository --- controlcreaterecord
+	thingrepositoryinterface --> controlcreaterecord
+	thingrepository --- controlupdaterecord
+	thingrecord --- controlupdaterecord
+	thingrepositoryinterface --> controlupdaterecord
+	thingrepository --- controldeleterecord
+	thingrecord --- controldeleterecord
+	thingrepositoryinterface --> controldeleterecord
+
+@enduml

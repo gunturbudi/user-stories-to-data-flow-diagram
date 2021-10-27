@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan Review " ];
+201 [label="<f0>  |<f1> Applicant " ];
+202 [label="<f0>  |<f1> Outcome " ];
+203 [label="Plan , Review , Staff Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Conduct A Plan Review With The Applicant }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Record The Outcome }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200
+204 -> 201
+205 -> 202
+}

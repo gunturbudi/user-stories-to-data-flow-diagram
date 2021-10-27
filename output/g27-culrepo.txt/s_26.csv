@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Easy,shape=partialRectangle,null,null,data_base
+201,Workflow,shape=partialRectangle,null,null,data_base
+202,Extension Administrator,rounded=0,null,null,external_entity
+203,Have Easy,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Easy,endArrow=classic,203,200,endArrow=classic

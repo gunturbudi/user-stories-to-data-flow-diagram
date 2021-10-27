@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Etc Publisher" as thingetcpublisher #grey
+	entity "Place" as thingplace
+	entity "Publication" as thingpublication
+	entity "Object" as thingobject
+	actor "User" as actoruser
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	control "Know For\nThe Place\nOf The\nEtc Publisher" as controlknowplace #grey
+	control "Know For\nThe Place\nOf Publication\nThe Etc\nPublisher" as controlknowplaceplace #grey
+	control "Know For\nAn Object\nThe Place\nOf Publication" as controlknowobjectplace
+	control "Component Part" as controlpart
+	control "Know For" as controlknowpart
+
+	thingpublication <.. thingplace
+	thingetcpublisher <.. thingplace
+	thingplace <.. thingobject
+	actoruser --- thingpublicationinterface
+	thingetcpublisher --- controlknowplace
+	thingplace --- controlknowplace
+	thingetcpublisher --- controlknowplaceplace
+	thingplace --- controlknowplaceplace
+	thingpublication --- controlknowplaceplace
+	thingobject --- controlknowobjectplace
+	thingpublicationinterface --> controlknowobjectplace
+	thingplace --- controlknowobjectplace
+	thingpublication --- controlknowobjectplace
+	controlknowpart --> controlpart
+
+@enduml

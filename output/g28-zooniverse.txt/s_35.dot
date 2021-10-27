@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Snapshot Serengeti " color=red];
+201 [label="<f0>  |<f1> Animal Number\nDetection " color=red];
+202 [label="Zooniverse Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Perform Automatic Animal Number Detection In Snapshot Serengeti }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Animal Number\nDetection"]
+203 -> 200 [label="Snapshot Serengeti"]
+}

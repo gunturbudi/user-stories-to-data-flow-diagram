@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Save the stories and estimates locally,ellipse,null,null,process
+200,Game,shape=partialRectangle,null,null,data_base
+201,Html File,shape=partialRectangle,null,null,data_base
+202,Moderator,rounded=0,null,null,external_entity
+203,Export A Transcript Of A Game As A Html File,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Game,endArrow=classic,203,200,endArrow=classic
+207,Html File,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Stories,rounded=0,null,null,external_entity
+1002,Stories,endArrow=classic,2,1001,endArrow=classic

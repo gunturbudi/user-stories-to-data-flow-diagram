@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection Sort" as thingcollectionsort #grey
+	entity "Item" as thingitem
+	entity "Control" as thingcontrol
+	entity "Collection Contents\nList" as thingcollectioncontentslist
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "List\nInterface" as thinglistinterface #grey
+	control "Have Some\nControl Over\nItems Within\nCollection Sort\nHow Collection\nContents Lists" as controlhavecontrol
+
+	thingcollectionsort <.. thingitem
+	thingcollectioncontentslist <.. thingcontrol
+	actorcornellfacultymember --- thinglistinterface
+	thingcontrol --- controlhavecontrol
+	thingcollectioncontentslist --- controlhavecontrol
+	thinglistinterface --> controlhavecontrol
+
+@enduml

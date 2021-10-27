@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interdepartmental Form" as thinginterdepartmentalform
+	actor "Assistant Archivist" as actorassistantarchivist
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Access Interdepartmental\nForms" as controlaccessinterdepartmentalform
+
+	actorassistantarchivist --- thingforminterface
+	thinginterdepartmentalform --- controlaccessinterdepartmentalform
+	thingforminterface --> controlaccessinterdepartmentalform
+
+@enduml

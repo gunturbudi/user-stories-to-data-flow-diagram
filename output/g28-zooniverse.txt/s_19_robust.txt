@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	actor "Admin" as actoradmin
+	circle "Segmentation" as thingsegmentation
+	boundary "Video\nInterface" as thingvideointerface #grey
+	control "See Segmentation\nOf Videos" as controlseesegmentation
+	control "Validate Segmentation\nOf Videos" as controlvalidatesegmentation
+	control "Edit Segmentation\nOf Videos" as controleditsegmentation
+
+	thingvideo *-- thingsegmentation
+	actoradmin --- thingvideointerface
+	thingsegmentation --- controlseesegmentation
+	thingvideo --- controlseesegmentation
+	thingvideointerface --> controlseesegmentation
+	thingsegmentation --- controlvalidatesegmentation
+	thingvideo --- controlvalidatesegmentation
+	thingvideointerface --> controlvalidatesegmentation
+	thingsegmentation --- controleditsegmentation
+	thingvideo --- controleditsegmentation
+	thingvideointerface --> controleditsegmentation
+
+@enduml

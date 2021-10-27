@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Present the application to the appropriate governing body within the timelines dictated by the relevant county rules and procedures.,ellipse,null,null,process
+200,Hearing Date,shape=partialRectangle,null,null,data_base
+201,Staff Member,rounded=0,null,null,external_entity
+202,Assign A Hearing Date,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Hearing Date,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Application,rounded=0,null,null,external_entity
+1002,Application,endArrow=classic,2,1001,endArrow=classic
+1003,Governing body,rounded=0,null,null,external_entity
+1004,Governing body,endArrow=classic,2,1003,endArrow=classic

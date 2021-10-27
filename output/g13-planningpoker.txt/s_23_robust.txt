@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Account Detail" as thingaccountdetail
+	actor "Moderator" as actormoderator
+	boundary "Detail\nInterface" as thingdetailinterface #grey
+	control "Change Account\nDetails" as controlchangeaccountdetails
+
+	actormoderator --- thingdetailinterface
+	thingaccountdetail --- controlchangeaccountdetails
+	thingdetailinterface --> controlchangeaccountdetails
+
+@enduml

@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Agenda" as thingagenda
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Manage Agenda" as controlmanageagenda
+	control "Use Alfred" as controluseALFREDmanageagenda
+
+	actorOlderPerson --- thingalfredinterface
+	thingagenda --- controlmanageagenda
+	controluseALFREDmanageagenda --> controlmanageagenda
+	thingalfredinterface --> controlmanageagenda
+	thingALFRED --- controluseALFREDmanageagenda
+	thingalfredinterface --> controluseALFREDmanageagenda
+
+@enduml

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Pipeline " ];
+201 [label="<f0>  |<f1> Dataset Instance " color=red];
+202 [label="Hydrator User" shape=box];
+203 [label="{<f0> 1.0|<f1> Create A Pipeline Reads }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Write A New Dataset Instance }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Create A Pipeline }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 200 [label="Pipeline"]
+204 -> 201 [label="Dataset Instance"]
+205 -> 204
+205 -> 200 [label="Pipeline"]
+}

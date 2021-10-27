@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Type,shape=partialRectangle,null,null,data_base
+201,Dataset Instance,shape=partialRectangle,null,null,data_base
+202,Way,shape=partialRectangle,null,null,data_base
+203,Dataset Developer,rounded=0,null,null,external_entity
+204,Reject An Upgrade Of A Dataset Instance To A Newer Version Of,ellipse,null,null,process
+205,Have A Way,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Dataset Instance,endArrow=classic,204,201,endArrow=classic
+210,,endArrow=classic,205,204,endArrow=classic
+211,Way,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pill" as thingpill
+	actor "Olderperson" as actorOlderPerson
+	boundary "Pill\nInterface" as thingpillinterface #grey
+	control "Taken Pills" as controltakeseepill
+	control "See" as controlsee
+
+	actorOlderPerson --- thingpillinterface
+	thingpill --- controltakeseepill
+	thingpillinterface --> controltakeseepill
+	controltakeseepill --> controlsee
+	thingpillinterface --> controlsee
+
+@enduml

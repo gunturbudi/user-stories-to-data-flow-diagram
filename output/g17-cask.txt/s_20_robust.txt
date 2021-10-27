@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype #grey
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Dataset" as thingdataset #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Explore A\nDataset Instance\nFrom A\nDataset Type\nA Type\nDeployed" as controlexploredatasetinstance
+
+	thingdataset <.. thingtype
+	thingtype <.. thingtype
+	thingtype <.. thingdatasetinstance
+	actordatasetdeveloper --- thingtypeinterface
+	thingdatasetinstance --- controlexploredatasetinstance
+	thingtypeinterface --> controlexploredatasetinstance
+	thingtype --- controlexploredatasetinstance
+
+@enduml

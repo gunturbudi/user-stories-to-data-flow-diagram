@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Platform,shape=partialRectangle,null,null,data_base
+201,Fee,shape=partialRectangle,null,null,data_base
+202,Market Place\nCharge,shape=partialRectangle,null,null,data_base
+203,Developer,rounded=0,null,null,external_entity
+204,Using The Platform,ellipse,null,null,process
+205,Know The Provider Of The Market Place Charges,ellipse,null,null,process
+206,Know The Fees,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,205,endArrow=classic
+212,Platform,endArrow=classic,204,200,endArrow=classic
+213,Market Place\nCharge,endArrow=classic,205,202,endArrow=classic
+214,Fee,endArrow=classic,206,201,endArrow=classic

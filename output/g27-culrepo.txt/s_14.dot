@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Old Format " ];
+201 [label="<f0>  |<f1> Content " color=red];
+202 [label="<f0>  |<f1> Multiple Format " ];
+203 [label="<f0>  |<f1> Lotus Work " color=red];
+204 [label="Patron" shape=box];
+205 [label="{<f0> 1.0|<f1> Upload Content In Multiple Formats Including Old Formats Such As Lotus Works }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> View Content In Multiple Formats Including Old Formats Such As Lotus Works }" shape=Mrecord];
+204 -> 206
+205 -> 203 [label="Lotus Work"]
+205 -> 200 [label="Old Format"]
+205 -> 202 [label="Multiple Format"]
+205 -> 201 [label="Content"]
+206 -> 201 [label="Content"]
+206 -> 202 [label="Multiple Format"]
+206 -> 200 [label="Old Format"]
+206 -> 203 [label="Lotus Work"]
+}

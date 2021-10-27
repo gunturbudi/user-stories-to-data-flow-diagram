@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Videophone" as thingvideophone
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Videophone\nInterface" as thingvideophoneinterface #grey
+	control "Have Videophone" as controlhavevideophone
+
+	actorMedicalCaregiver --- thingvideophoneinterface
+	thingvideophone --- controlhavevideophone
+	thingvideophoneinterface --> controlhavevideophone
+
+@enduml

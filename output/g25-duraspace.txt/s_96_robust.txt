@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Permit Act" as thingpermittedact
+	entity "Active Date" as thingactivedate
+	actor "Dams Manager" as actordamsmanager
+	boundary "Act\nInterface" as thingactinterface #grey
+	control "Know" as controlknowrestrict
+	control "Know When\nPermitted Acts" as controlknowpermittedact
+	control "Restrict" as controlrestrict
+
+	actordamsmanager --- thingactinterface
+	thingpermittedact --- controlknowpermittedact
+	thingactinterface --> controlknowpermittedact
+	controlknowrestrict --> controlrestrict
+
+@enduml

@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nys" as thingNYS
+	entity "Available ,\nGeographic Area" as thingavailablegeographicarea
+	entity "Educator" as thingeducator
+	entity "Faculty" as thingotherfaculty
+	entity "Resource" as thingresource
+	entity "Specific Project" as thingspecificproject
+	actor "Extension Administrator" as actorextensionadministrator
+	boundary "Educator\nInterface" as thingeducatorinterface #grey
+	boundary "Nys\nInterface" as thingnysinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nEducator" as controlmakeresourceavailablegeographicareaeducator
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nOther Faculty\nAcross Nys" as controlmakeresourceavailablegeographicarea
+	control "Make Resources\nDeveloped For\nSpecific Projects" as controlmakeresource
+
+	thingotherfaculty <.. thingavailablegeographicarea
+	thingeducator <.. thingavailablegeographicarea
+	thingNYS <.. thingotherfaculty
+	thingspecificproject <.. thingresource
+	thingavailablegeographicarea <.. thingresource
+	actorextensionadministrator --- thingeducatorinterface
+	actorextensionadministrator --- thingnysinterface
+	actorextensionadministrator --- thingprojectinterface
+	thingeducator --- controlmakeresourceavailablegeographicareaeducator
+	thingeducatorinterface --> controlmakeresourceavailablegeographicareaeducator
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicareaeducator
+	thingresource --- controlmakeresourceavailablegeographicareaeducator
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicarea
+	thingotherfaculty --- controlmakeresourceavailablegeographicarea
+	thingNYS --- controlmakeresourceavailablegeographicarea
+	thingnysinterface --> controlmakeresourceavailablegeographicarea
+	thingresource --- controlmakeresourceavailablegeographicarea
+	thingresource --- controlmakeresource
+	thingspecificproject --- controlmakeresource
+	thingprojectinterface --> controlmakeresource
+
+@enduml

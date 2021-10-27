@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Scholarly ,\nFaculty Output" as thingscholarlyfacultyoutput
+	entity "Symplectic Element" as thingsymplecticelement
+	entity "Activity Insight" as thingactivityinsight #grey
+	entity "Repository" as thingrepository
+	entity "System" as thingsystem
+	actor "Administrator" as actoradministrator
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Insight\nInterface" as thinginsightinterface #grey
+	control "Use Systems\nSuch As\nSymplectic Elements" as controlusesystemtrackscholarlyfacultyoutputrepository
+	control "Track Scholarly,\nFaculty Output\nIn The\nRepositories" as controltrackscholarlyfacultyoutputrepository
+	control "Use Systems\nSuch As\nActivity Insight" as controlusesystemactivityinsight
+
+	thingrepository <.. thingscholarlyfacultyoutput
+	thingsymplecticelement <.. thingsystem
+	thingactivityinsight <.. thingsystem
+	actoradministrator --- thingelementinterface
+	actoradministrator --- thingrepositoryinterface
+	actoradministrator --- thinginsightinterface
+	thingsystem --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingsymplecticelement --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingelementinterface --> controlusesystemtrackscholarlyfacultyoutputrepository
+	thingscholarlyfacultyoutput --- controltrackscholarlyfacultyoutputrepository
+	thingrepository --- controltrackscholarlyfacultyoutputrepository
+	thingrepositoryinterface --> controltrackscholarlyfacultyoutputrepository
+	controlusesystemtrackscholarlyfacultyoutputrepository --> controltrackscholarlyfacultyoutputrepository
+	thingactivityinsight --- controlusesystemactivityinsight
+	thinginsightinterface --> controlusesystemactivityinsight
+	thingsystem --- controlusesystemactivityinsight
+
+@enduml

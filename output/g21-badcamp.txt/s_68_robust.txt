@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Registration\nForm" as thinguserregistrationform #grey
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Fill Out\nA User\nRegistration Form" as controlfilluserregistrationform
+
+	actoranonymoususer --- thingforminterface
+	thinguserregistrationform --- controlfilluserregistrationform
+	thingforminterface --> controlfilluserregistrationform
+
+@enduml

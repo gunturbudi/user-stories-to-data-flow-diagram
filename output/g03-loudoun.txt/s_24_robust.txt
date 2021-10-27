@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Staff Review" as thingstaffreview #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	control "Perform A\nStaff Review" as controlperformstaffreview
+
+	actorstaffmember --- thingreviewinterface
+	thingstaffreview --- controlperformstaffreview
+	thingreviewinterface --> controlperformstaffreview
+
+@enduml

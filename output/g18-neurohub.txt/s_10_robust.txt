@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "Experiment" as thingexperiment
+	entity "Directory" as thingdirectory
+	entity "Multiple File" as thingmultiplefile
+	actor "Researcher" as actorresearcher
+	boundary "Experiment\nInterface" as thingexperimentinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Create A\nLog Book\nPage For\nAn Experiment" as controlcreatelogbookpageexperiment
+	control "Attach A\nDirectory Contains\nMultiple Files" as controlattachdirectory
+
+	thingexperiment <.. thinglogbookpage
+	thingmultiplefile <.. thingdirectory
+	actorresearcher --- thingexperimentinterface
+	actorresearcher --- thingfileinterface
+	thinglogbookpage --- controlcreatelogbookpageexperiment
+	thingexperiment --- controlcreatelogbookpageexperiment
+	thingexperimentinterface --> controlcreatelogbookpageexperiment
+	thingdirectory --- controlattachdirectory
+	thingmultiplefile --- controlattachdirectory
+	thingfileinterface --> controlattachdirectory
+
+@enduml

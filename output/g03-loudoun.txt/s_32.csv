@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+4,Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing.,ellipse,null,null,process
+200,Execution,shape=partialRectangle,null,null,data_base
+201,Staff Member,rounded=0,null,null,external_entity
+202,Hearing Execution,ellipse,null,null,process
+203,Support,ellipse,null,null,process
+204,Prepare,ellipse,null,null,process
+206,,endArrow=classic,201,202,endArrow=classic
+207,,endArrow=classic,201,204,endArrow=classic
+208,Execution,endArrow=classic,202,200,endArrow=classic
+209,,endArrow=classic,203,202,endArrow=classic
+210,,endArrow=classic,204,202,endArrow=classic
+1000,,endArrow=classic,202,4,endArrow=classic
+1001,Pre-hearing requirements,rounded=0,null,null,external_entity
+1002,Pre-hearing requirements,endArrow=classic,4,1001,endArrow=classic

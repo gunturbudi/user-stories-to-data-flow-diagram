@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Site Editor" as actorsiteeditor
+	circle "Content" as thingcontent
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Create The\nContent Of\nThe" as controlcreatecontent
+
+	actorsiteeditor --- thingcontentinterface
+	thingcontent --- controlcreatecontent
+	thingcontentinterface --> controlcreatecontent
+
+@enduml

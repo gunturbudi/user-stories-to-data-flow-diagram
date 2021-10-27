@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "Membership" as thingmembership
+	entity "Scrum Alliance" as thingscrumalliance #grey
+	entity "Registry" as thingregistry
+	actor "Csm" as actorcsm
+	boundary "Email" as thingemailwelcomescrumalliancecsm #grey
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	control "Register Membership" as controlregistermembershiploadnameregistry
+	control "Name Loaded\nTo The\nRegistry" as controlloadnameregistry
+	control "With Sent" as controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm
+	control "Welcome To\nThe Scrum\nAlliance" as controlwelcomescrumalliance
+	control "Activate Membership" as controlactivatemembershiploadnameregistry
+
+	thingregistry <.. thingname
+	actorcsm --- thingemailwelcomescrumalliancecsm
+	actorcsm --- thingregistryinterface
+	thingmembership --- controlregistermembershiploadnameregistry
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlregistermembershiploadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlregistermembershiploadnameregistry
+	controlregistermembershiploadnameregistry --> controlloadnameregistry
+	thingname --- controlloadnameregistry
+	thingregistry --- controlloadnameregistry
+	thingregistryinterface --> controlloadnameregistry
+	controlactivatemembershiploadnameregistry --> controlloadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlwelcomescrumalliance
+	thingscrumalliance --- controlwelcomescrumalliance
+	thingemailwelcomescrumalliancecsm --> controlwelcomescrumalliance
+	thingmembership --- controlactivatemembershiploadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlactivatemembershiploadnameregistry
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlactivatemembershiploadnameregistry
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Classifiable Plankton,shape=partialRectangle,null,null,data_base
+201,Plankton Portal\nImage,shape=partialRectangle,null,null,data_base
+202,Zooniverse Admin,rounded=0,null,null,external_entity
+203,Detect Plankton Portal Images With No Classifiable Plankton In,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Plankton Portal\nImage,endArrow=classic,203,201,endArrow=classic
+207,Classifiable Plankton,endArrow=classic,203,200,endArrow=classic

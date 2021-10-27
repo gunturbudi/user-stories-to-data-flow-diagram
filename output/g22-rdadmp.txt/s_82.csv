@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Metadata,shape=partialRectangle,null,null,data_base
+201,Additional Language,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,Have Metadata In Additional Languages,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Metadata,endArrow=classic,203,200,endArrow=classic
+207,Additional Language,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ux Lesson" as thinguxlesson #grey
+	entity "Ui" as thingUI
+	actor "Developer" as actordeveloper
+	boundary "Lesson\nInterface" as thinglessoninterface #grey
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	control "Attend Ux\nLesson" as controlattenduxlesson
+	control "Attend Some\nUi" as controlattendUI
+
+	actordeveloper --- thinglessoninterface
+	actordeveloper --- thinguiinterface
+	thinguxlesson --- controlattenduxlesson
+	thinglessoninterface --> controlattenduxlesson
+	thingUI --- controlattendUI
+	thinguiinterface --> controlattendUI
+
+@enduml

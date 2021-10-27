@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Individual Sponsorship" as thingindividualsponsorship
+	entity "Payment Page" as thingpaymentpage #grey
+	entity "Registration Process" as thingregistrationprocess #grey
+	actor "Authenticateduser" as actorauthenticateduser
+	circle "Step" as thingthirdstep
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Pay For\nIndividual Sponsorships\nAs The\nThird Step\nOf The\nRegistration Process" as controlpayindividualsponsorship
+	control "See A\nPayment Page" as controlseepaymentpagepayindividualsponsorship
+
+	thingthirdstep <.. thingindividualsponsorship
+	thingregistrationprocess *-- thingthirdstep
+	actorauthenticateduser --- thingpageinterface
+	thingindividualsponsorship --- controlpayindividualsponsorship
+	thingthirdstep --- controlpayindividualsponsorship
+	thingregistrationprocess --- controlpayindividualsponsorship
+	controlseepaymentpagepayindividualsponsorship --> controlpayindividualsponsorship
+	thingpageinterface --> controlpayindividualsponsorship
+	thingpaymentpage --- controlseepaymentpagepayindividualsponsorship
+	thingpageinterface --> controlseepaymentpagepayindividualsponsorship
+
+@enduml

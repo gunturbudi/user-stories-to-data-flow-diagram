@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> Feedback " color=red];
+202 [label="<f0>  |<f1> Activity Level " color=red];
+203 [label="Medicalcaregiver" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Feedback On The Activity Level Of The User }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Feedback"]
+204 -> 202 [label="Activity Level"]
+204 -> 200 [label="User"]
+}

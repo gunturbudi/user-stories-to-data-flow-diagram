@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Administrator" as thingotheradministrator
+	entity "Permission" as thingpermission
+	entity "Account" as thingaccount
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	circle "Level" as thingvariouslevel
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	control "Set Up\nAccounts For\nOther Administrators\nWith Various\nLevels Of\nPermission" as controlsetaccount
+	control "Delete Accounts\nFor Other\nAdministrators With\nVarious Levels\nOf Permission" as controldeleteaccountotheradministrator
+
+	thingvariouslevel <.. thingotheradministrator
+	thingotheradministrator <.. thingaccount
+	thingpermission *-- thingvariouslevel
+	actordb --- thingpermissioninterface
+	actoriradministrator --- thingpermissioninterface
+	thingaccount --- controlsetaccount
+	thingotheradministrator --- controlsetaccount
+	thingvariouslevel --- controlsetaccount
+	thingpermission --- controlsetaccount
+	thingpermissioninterface --> controlsetaccount
+	thingotheradministrator --- controldeleteaccountotheradministrator
+	thingpermission --- controldeleteaccountotheradministrator
+	thingvariouslevel --- controldeleteaccountotheradministrator
+	thingaccount --- controldeleteaccountotheradministrator
+	thingpermissioninterface --> controldeleteaccountotheradministrator
+
+@enduml

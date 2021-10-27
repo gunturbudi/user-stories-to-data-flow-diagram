@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Iframe " ];
+201 [label="<f0>  |<f1> Data Summary " color=red];
+202 [label="Developerpublisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Create An Embeddable Data Summary Via Iframe }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Data Summary"]
+203 -> 200 [label="Iframe"]
+}

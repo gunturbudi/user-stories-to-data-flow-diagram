@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Line" as thingline
+	entity "Geographic Datum" as thinggeographicdatum
+	actor "Researchergovernment Publisher" as actorresearchergovernmentpublisher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Map Lines\nIn Dataset\nUsing Geographic\nData In\nDataset" as controlmaplinegeographicdatumdataset
+
+	thinggeographicdatum <.. thingdataset
+	thingdataset <.. thingline
+	actorresearchergovernmentpublisher --- thingdatuminterface
+	thingline --- controlmaplinegeographicdatumdataset
+	thinggeographicdatum --- controlmaplinegeographicdatumdataset
+	thingdatuminterface --> controlmaplinegeographicdatumdataset
+	thingdataset --- controlmaplinegeographicdatumdataset
+
+@enduml

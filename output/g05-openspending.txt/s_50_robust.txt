@@ -1,0 +1,50 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Default" as thingdefault
+	entity "Bubble Tree" as thingbubbletree #grey
+	entity "Treemap" as thingtreemap
+	entity "Recent Year" as thingrecentyear
+	entity "Multiple Year" as thingmultipleyear
+	entity "Dataset" as thingdataset
+	entity "Pivot Table" as thingpivottable #grey
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	boundary "Treemap\nInterface" as thingtreemapinterface #grey
+	boundary "Tree\nInterface" as thingtreeinterface #grey
+	boundary "Table\nInterface" as thingtableinterface #grey
+	boundary "Year\nInterface" as thingyearinterface #grey
+	control "Visualize By\nDefault In\nTreemap" as controlvisualizedefault
+	control "Visualize By\nDefault In\nBubble Tree" as controlvisualizedefaultbubbletree
+	control "Visualize By\nDefault In\nPivot Table" as controlvisualizedefaultpivottable
+	control "Visualize By\nDefault In\nTreemap The\nMost Recent\nYear Dataset\nWhen Contain\nMultiple Years" as controlvisualizedefaultrecentyear
+
+	thingtreemap <.. thingdefault
+	thingbubbletree <.. thingdefault
+	thingpivottable <.. thingdefault
+	thingrecentyear <.. thingtreemap
+	thingdataset <.. thingrecentyear
+	thingmultipleyear <.. thingrecentyear
+	thingmultipleyear <.. thingdataset
+	actordataconsuminguser --- thingtreemapinterface
+	actordataconsuminguser --- thingtreeinterface
+	actordataconsuminguser --- thingtableinterface
+	actordataconsuminguser --- thingyearinterface
+	thingdefault --- controlvisualizedefault
+	thingtreemap --- controlvisualizedefault
+	thingtreemapinterface --> controlvisualizedefault
+	thingbubbletree --- controlvisualizedefaultbubbletree
+	thingtreeinterface --> controlvisualizedefaultbubbletree
+	thingdefault --- controlvisualizedefaultbubbletree
+	thingpivottable --- controlvisualizedefaultpivottable
+	thingtableinterface --> controlvisualizedefaultpivottable
+	thingdefault --- controlvisualizedefaultpivottable
+	thingyearinterface --> controlvisualizedefaultrecentyear
+	thingdefault --- controlvisualizedefaultrecentyear
+	thingtreemap --- controlvisualizedefaultrecentyear
+	thingrecentyear --- controlvisualizedefaultrecentyear
+	thingmultipleyear --- controlvisualizedefaultrecentyear
+	thingdataset --- controlvisualizedefaultrecentyear
+
+@enduml

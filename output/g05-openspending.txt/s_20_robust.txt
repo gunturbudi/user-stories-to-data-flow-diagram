@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "View State" as thingviewstate
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	boundary "State\nInterface" as thingstateinterface #grey
+	control "Download An\nImage, Ofa,\nParticular View\nState" as controldownloadimageofaparticularviewstate
+
+	actordataconsuminguser --- thingstateinterface
+	thingviewstate --- controldownloadimageofaparticularviewstate
+	thingstateinterface --> controldownloadimageofaparticularviewstate
+
+@enduml

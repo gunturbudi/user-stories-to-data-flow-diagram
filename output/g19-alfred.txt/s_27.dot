@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> New App " color=red];
+202 [label="<f0>  |<f1> Alfredo Platform " ];
+203 [label="<f0>  |<f1> Alfred Device " ];
+204 [label="Olderperson" shape=box];
+205 [label="{<f0> 1.0|<f1> Have An Alfred Device Responds To The Changing Demand Of The Users }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Offering New Apps In The Alfredo Platform }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 203 [label="Alfred Device"]
+205 -> 200 [label="User"]
+206 -> 205
+206 -> 201 [label="New App"]
+206 -> 202 [label="Alfredo Platform"]
+}

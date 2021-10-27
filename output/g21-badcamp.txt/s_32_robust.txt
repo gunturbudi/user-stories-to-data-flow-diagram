@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Profile" as thinguserprofile #grey
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Update User\nProfile" as controlupdateuserprofile
+
+	actorauthenticateduser --- thingprofileinterface
+	thinguserprofile --- controlupdateuserprofile
+	thingprofileinterface --> controlupdateuserprofile
+
+@enduml

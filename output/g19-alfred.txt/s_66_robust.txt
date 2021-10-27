@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Meeting" as thingmeeting
+	entity "Speech" as thingspeech
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Speech\nInterface" as thingspeechinterface #grey
+	control "Insert Meetings\nInto Alfred\nUsing Speech" as controlinsertmeetingALFREDspeech
+
+	thingALFRED <.. thingmeeting
+	thingspeech <.. thingALFRED
+	actorOlderPerson --- thingspeechinterface
+	thingmeeting --- controlinsertmeetingALFREDspeech
+	thingALFRED --- controlinsertmeetingALFREDspeech
+	thingspeech --- controlinsertmeetingALFREDspeech
+	thingspeechinterface --> controlinsertmeetingALFREDspeech
+
+@enduml

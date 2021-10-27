@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Link" as thinglink
+	entity "File" as thingfile
+	entity "Social Medium" as thingsocialmedium
+	actor "Researcher" as actorresearcher
+	boundary "Medium\nInterface" as thingmediuminterface #grey
+	control "Share A\nLink To\nA File\nOn Social\nMedia" as controlsharelink
+
+	thingfile <.. thinglink
+	thingsocialmedium <.. thingfile
+	actorresearcher --- thingmediuminterface
+	thinglink --- controlsharelink
+	thingfile --- controlsharelink
+	thingsocialmedium --- controlsharelink
+	thingmediuminterface --> controlsharelink
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "License" as thinglicense
+	actor "Depositor" as actordepositor
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Apply Licenses\nTo Datasets" as controlapplylicensedataset
+
+	thingdataset <.. thinglicense
+	actordepositor --- thingdatasetinterface
+	thinglicense --- controlapplylicensedataset
+	thingdataset --- controlapplylicensedataset
+	thingdatasetinterface --> controlapplylicensedataset
+
+@enduml

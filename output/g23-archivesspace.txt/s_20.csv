@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Subject Information,shape=partialRectangle,null,null,data_base
+201,Agent,shape=partialRectangle,null,null,data_base
+202,Marcxml Record,shape=partialRectangle,null,null,data_base
+203,Archivist,rounded=0,null,null,external_entity
+204,Import Subject Information,ellipse,null,null,process
+205,Import Only Agent From Marcxml Records,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Subject Information,endArrow=classic,204,200,endArrow=classic
+210,Agent,endArrow=classic,205,201,endArrow=classic
+211,Marcxml Record,endArrow=classic,205,202,endArrow=classic

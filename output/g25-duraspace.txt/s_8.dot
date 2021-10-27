@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Provenance " ];
+202 [label="<f0>  |<f1> Singular Provenance " ];
+203 [label="<f0>  |<f1> Assembly " ];
+204 [label="<f0>  |<f1> Object " color=red];
+205 [label="Repository Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Represent A Part Of A Collection }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Limit The Collection }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Compose Collections Limiting The Collection To }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Compose Collections }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Share The Same Provenance }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+206 -> 200 [label="Collection"]
+207 -> 206
+207 -> 200 [label="Collection"]
+208 -> 210
+208 -> 200 [label="Collection"]
+209 -> 207
+209 -> 200 [label="Collection"]
+210 -> 201 [label="Provenance"]
+}

@@ -1,0 +1,28 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Name " color=red];
+201 [label="<f0>  |<f1> Membership " color=red];
+202 [label="<f0>  |<f1> Scrum Alliance " ];
+203 [label="<f0>  |<f1> Registry " ];
+204 [label="Csm" shape=box];
+205 [label="{<f0> 1.0|<f1> Register Membership }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Name Loaded To The Registry }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> With Sent }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Welcome To The Scrum Alliance }" shape=Mrecord];
+209 [label="{<f0> 5.0|<f1> Activate Membership }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+204 -> 209
+205 -> 206
+205 -> 201 [label="Membership"]
+206 -> 200 [label="Name"]
+206 -> 203 [label="Registry"]
+207 -> 205
+207 -> 208
+207 -> 209
+208 -> 202 [label="Scrum Alliance"]
+209 -> 206
+209 -> 201 [label="Membership"]
+}

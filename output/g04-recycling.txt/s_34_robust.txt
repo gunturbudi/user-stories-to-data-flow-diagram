@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Bootstrap" as thingbootstrap
+	entity "Process" as thingprocess
+	actor "Developer" as actordeveloper
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	control "Use Bootstrap\nIn The\nProcess" as controlusebootstrap
+	control "Developing" as controldevelopusebootstrap
+
+	thingprocess <.. thingbootstrap
+	actordeveloper --- thingprocessinterface
+	thingbootstrap --- controlusebootstrap
+	thingprocess --- controlusebootstrap
+	controldevelopusebootstrap --> controlusebootstrap
+	thingprocessinterface --> controlusebootstrap
+	thingprocessinterface --> controldevelopusebootstrap
+
+@enduml

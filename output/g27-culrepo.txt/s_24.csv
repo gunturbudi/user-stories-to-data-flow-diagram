@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Scholarly Work,shape=partialRectangle,null,null,data_base
+202,Faculty Member,rounded=0,null,null,external_entity
+203,Upload Scholarly Work To The Repository,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Scholarly Work,endArrow=classic,203,201,endArrow=classic
+207,Repository,endArrow=classic,203,200,endArrow=classic

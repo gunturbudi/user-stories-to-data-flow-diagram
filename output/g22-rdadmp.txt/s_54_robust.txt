@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archive" as thingarchive
+	actor "Researcher" as actorresearcher
+	boundary "Archive\nInterface" as thingarchiveinterface #grey
+	control "Take To\nArchive" as controltakearchive
+	control "Know" as controlknowtakearchive
+
+	actorresearcher --- thingarchiveinterface
+	thingarchive --- controltakearchive
+	controlknowtakearchive --> controltakearchive
+	thingarchiveinterface --> controltakearchive
+	thingarchiveinterface --> controlknowtakearchive
+
+@enduml

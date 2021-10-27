@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Schema " ];
+201 [label="<f0>  |<f1> Maximum Length " ];
+202 [label="<f0>  |<f1> Legalentityaddressline3 " ];
+203 [label="Agency User" shape=box];
+204 [label="{<f0> 1.0|<f1> Legalentityaddressline3 Match Schema }" shape=Mrecord];
+203 -> 204
+204 -> 202
+204 -> 200
+}

@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset Type " color=red];
+201 [label="Dataset Developer" shape=box];
+202 [label="{<f0> 1.0|<f1> Delete Outdated Versions Of A Dataset Type }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Fail }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Dataset Type"]
+}

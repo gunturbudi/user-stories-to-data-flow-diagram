@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Home Page" as thinghomepage #grey
+	entity "News" as thingnews
+	entity "Prominent Area" as thingprominentarea
+	actor "Site Editor" as actorsiteeditor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Have A\nProminent Area\nOn The\nHome Page" as controlhaveprominentarea
+
+	thinghomepage <.. thingprominentarea
+	actorsiteeditor --- thingpageinterface
+	thingprominentarea --- controlhaveprominentarea
+	thinghomepage --- controlhaveprominentarea
+	thingpageinterface --> controlhaveprominentarea
+
+@enduml

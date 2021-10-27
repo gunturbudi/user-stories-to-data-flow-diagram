@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cost" as thingcost
+	actor "Researcher" as actorresearcher
+	boundary "Cost\nInterface" as thingcostinterface #grey
+	control "Know About\nCosts" as controlknowcost
+
+	actorresearcher --- thingcostinterface
+	thingcost --- controlknowcost
+	thingcostinterface --> controlknowcost
+
+@enduml

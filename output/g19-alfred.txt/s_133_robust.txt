@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Datum" as thingdatum
+	entity "Easy Way" as thingeasyway
+	entity "Health Sensor" as thinghealthsensor
+	actor "Developer" as actordeveloper
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Read Data\nFrom Health\nSensors" as controlreaddatum
+	control "Have An\nEasy Way\nThe User\nIs Wearing" as controlhaveeasywayreaddatum
+
+	thinghealthsensor <.. thingdatum
+	thinguser <.. thingeasyway
+	actordeveloper --- thinguserinterface
+	thingdatum --- controlreaddatum
+	thinghealthsensor --- controlreaddatum
+	controlhaveeasywayreaddatum --> controlreaddatum
+	thinguserinterface --> controlreaddatum
+	thingeasyway --- controlhaveeasywayreaddatum
+	thinguser --- controlhaveeasywayreaddatum
+	thinguserinterface --> controlhaveeasywayreaddatum
+
+@enduml

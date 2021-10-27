@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Record,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,Create Any Records In Repository,ellipse,null,null,process
+204,Update Any Records In Repository,ellipse,null,null,process
+205,Delete Any Records In Repository,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,Record,endArrow=classic,203,201,endArrow=classic
+211,Repository,endArrow=classic,203,200,endArrow=classic
+212,Repository,endArrow=classic,204,200,endArrow=classic
+213,Record,endArrow=classic,204,201,endArrow=classic
+214,Repository,endArrow=classic,205,200,endArrow=classic
+215,Record,endArrow=classic,205,201,endArrow=classic

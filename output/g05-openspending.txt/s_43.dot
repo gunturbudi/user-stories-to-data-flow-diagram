@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Hide State " ];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="Datum , Publishing User" shape=box];
+203 [label="{<f0> 1.0|<f1> Add A Dataset In A Hidden State }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Work on a dataset before having it discoverable via openspending user interfaces. }" shape=Mrecord];
+1000 [label="Data publishing user" shape=box];
+1000 -> 2
+2 -> 201
+202 -> 203
+203 -> 201
+203 -> 200
+}

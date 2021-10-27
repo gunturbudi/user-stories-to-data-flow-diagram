@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Collection " color=red];
+202 [label="<f0>  |<f1> Title " color=red];
+203 [label="Dams Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Present Object }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Present Collections By Title }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Present Object Component }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Object"]
+205 -> 201 [label="Collection"]
+205 -> 202 [label="Title"]
+}

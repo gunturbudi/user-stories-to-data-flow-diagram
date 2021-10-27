@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Completeness Review" as thingcompletenessreview #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	control "Perform A\nCompleteness Review" as controlperformcompletenessreview
+
+	actorstaffmember --- thingreviewinterface
+	thingcompletenessreview --- controlperformcompletenessreview
+	thingreviewinterface --> controlperformcompletenessreview
+
+@enduml

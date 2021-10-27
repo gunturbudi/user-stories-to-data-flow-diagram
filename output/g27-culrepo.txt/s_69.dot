@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Dmp " ];
+203 [label="Student" shape=box];
+204 [label="{<f0> 1.0|<f1> Upload To The Repository The Data Associated With }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Meet Requirements Of A Dmp }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 201 [label="Repository"]
+204 -> 200 [label="Datum"]
+205 -> 202 [label="Dmp"]
+}

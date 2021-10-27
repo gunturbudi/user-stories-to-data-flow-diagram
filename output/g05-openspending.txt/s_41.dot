@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fiscal ,\nOpen Space " ];
+201 [label="<f0>  |<f1> Blog " ];
+202 [label="<f0>  |<f1> Project " color=red];
+203 [label="Openspending , Community Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Blog Highlights Any }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Blog All Project In The Fiscal, Open Space }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201
+205 -> 202
+205 -> 200
+205 -> 201
+}

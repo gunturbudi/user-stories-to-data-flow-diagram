@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Event " color=red];
+201 [label="<f0>  |<f1> Object Nn " color=red];
+202 [label="Dams Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Know The Outcome Of The Event }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Event"]
+}

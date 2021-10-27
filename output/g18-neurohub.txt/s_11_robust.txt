@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "File" as thingfile
+	actor "Researcher" as actorresearcher
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Upload Files" as controluploadfile
+	control "Having Files\nTo A\nLog Book\nPage" as controlhaveuploadfilefile
+
+	thinglogbookpage <.. thingfile
+	actorresearcher --- thingpageinterface
+	controlhaveuploadfilefile --> controluploadfile
+	thingpageinterface --> controluploadfile
+	thingfile --- controluploadfile
+	thingfile --- controlhaveuploadfilefile
+	thinglogbookpage --- controlhaveuploadfilefile
+	thingpageinterface --> controlhaveuploadfilefile
+
+@enduml

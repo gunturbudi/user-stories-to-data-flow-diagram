@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Body Posture " ];
+201 [label="Olderperson" shape=box];
+202 [label="{<f0> 1.0|<f1> Keep A Good Body Posture }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Remind }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Have }" shape=Mrecord];
+201 -> 202
+201 -> 203
+201 -> 204
+202 -> 200 [label="Body Posture"]
+203 -> 202
+204 -> 203
+}

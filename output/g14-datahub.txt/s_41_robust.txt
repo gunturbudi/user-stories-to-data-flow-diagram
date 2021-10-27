@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Tag" as thingtag
+	actor "Publisher" as actorpublisher
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	control "Overwrite A\nTag" as controloverwritetag
+	control "A Tag\nExists Try" as controltrywarntagoverwritetag
+	control "Warned" as controlwarn
+
+	actorpublisher --- thingtaginterface
+	controltrywarntagoverwritetag --> controloverwritetag
+	thingtaginterface --> controloverwritetag
+	thingtag --- controloverwritetag
+	thingtag --- controltrywarntagoverwritetag
+	thingtaginterface --> controltrywarntagoverwritetag
+	controltrywarntagoverwritetag --> controlwarn
+	thingtaginterface --> controlwarn
+
+@enduml

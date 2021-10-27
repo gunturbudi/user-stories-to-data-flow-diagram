@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Job Board" as thingjobboard #grey
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Board\nInterface" as thingboardinterface #grey
+	control "View The\nJob Board" as controlviewjobboard
+
+	actorauthenticateduser --- thingboardinterface
+	thingjobboard --- controlviewjobboard
+	thingboardinterface --> controlviewjobboard
+
+@enduml

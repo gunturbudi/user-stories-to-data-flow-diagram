@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Country,shape=partialRectangle,null,null,data_base
+201,View Statistic,shape=partialRectangle,null,null,data_base
+202,Sector,shape=partialRectangle,null,null,data_base
+203,"Research , Information Manager",rounded=0,null,null,external_entity
+204,Download,ellipse,null,null,process
+205,Segment,ellipse,null,null,process
+206,Segment The View Statistics By Country,ellipse,null,null,process
+207,Segment The View Statistics By Sector,ellipse,null,null,process
+209,,endArrow=classic,203,206,endArrow=classic
+210,,endArrow=classic,203,207,endArrow=classic
+211,,endArrow=classic,205,204,endArrow=classic
+212,View Statistic,endArrow=classic,206,201,endArrow=classic
+213,Country,endArrow=classic,206,200,endArrow=classic
+214,Sector,endArrow=classic,207,202,endArrow=classic
+215,View Statistic,endArrow=classic,207,201,endArrow=classic

@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publication" as thingpublication
+	entity "Data Availability\nPersistence" as thingdataavailabilitypersistence #grey
+	actor "Publisher" as actorpublisher
+	boundary "Tool" as thingtoolcheckdataavailabilitypersistencepublicationpublisher
+	control "Check Data\nAvailability Persistence\nAfter Publication" as controlcheckdataavailabilitypersistencepublication
+
+	actorpublisher --- thingtoolcheckdataavailabilitypersistencepublicationpublisher
+	thingtoolcheckdataavailabilitypersistencepublicationpublisher --> controlcheckdataavailabilitypersistencepublication
+	thingdataavailabilitypersistence --- controlcheckdataavailabilitypersistencepublication
+	thingpublication --- controlcheckdataavailabilitypersistencepublication
+
+@enduml

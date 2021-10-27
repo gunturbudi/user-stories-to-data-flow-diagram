@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Example" as thingexample
+	entity "Link" as thinglink
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityformlinkresearcher #grey
+	control "Have" as controlhaveabilityformlinkresearcher
+	control "Form Links\nBetween Objects" as controlformlink
+
+	thingobject <.. thinglink
+	actorresearcher --- thingabilityformlinkresearcher
+	thingabilityformlinkresearcher --> controlhaveabilityformlinkresearcher
+	thingabilityformlinkresearcher --> controlformlink
+	thinglink --- controlformlink
+	thingobject --- controlformlink
+	controlhaveabilityformlinkresearcher --> controlformlink
+
+@enduml

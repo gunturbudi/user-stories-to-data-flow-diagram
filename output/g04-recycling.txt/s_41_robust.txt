@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Error\nLog" as thingusererrorlog
+	actor "Admin" as actoradmin
+	boundary "Log\nInterface" as thingloginterface #grey
+	control "View User\nError Logs" as controlviewusererrorlogs
+
+	actoradmin --- thingloginterface
+	thingusererrorlog --- controlviewusererrorlogs
+	thingloginterface --> controlviewusererrorlogs
+
+@enduml

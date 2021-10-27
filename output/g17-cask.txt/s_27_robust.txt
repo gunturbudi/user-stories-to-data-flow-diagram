@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Exist Instance" as thingexistinginstance #grey
+	entity "App" as thingotherapp
+	entity "Pipeline" as thingpipeline
+	entity "Dataset Instance" as thingdatasetinstance
+	entity "Dataset Type" as thingdatasettype
+	actor "Hydrator User" as actorhydratoruser
+	circle "Incompatible Upgrade" as thingincompatibleupgrade
+	circle "Explicit Version" as thingexplicitversion
+	boundary "Creation" as thingcreationhydratoruser #grey
+	boundary "Pipeline Creation" as thingpipelinecreationhydratoruser
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	control "Specify An\nExplicit Version\nOf The\nDataset Types\nOf The\nDataset Instances\nPipeline" as controlspecifyexplicitversion
+	control "Fail" as controlfailpipelinecreationhydratoruser
+
+	thingpipeline <.. thingexistinginstance
+	thingotherapp <.. thingdatasetinstance
+	thingdatasetinstance <.. thingdatasettype
+	thingexistinginstance *-- thingincompatibleupgrade
+	thingdatasetinstance *-- thingincompatibleupgrade
+	thingdatasettype *-- thingexplicitversion
+	actorhydratoruser --- thingcreationhydratoruser
+	actorhydratoruser --- thingpipelinecreationhydratoruser
+	actorhydratoruser --- thinginstanceinterface
+	thingexplicitversion --- controlspecifyexplicitversion
+	thingdatasettype --- controlspecifyexplicitversion
+	thingdatasetinstance --- controlspecifyexplicitversion
+	thinginstanceinterface --> controlspecifyexplicitversion
+	thingpipelinecreationhydratoruser --> controlfailpipelinecreationhydratoruser
+	thingcreationhydratoruser --> controlfailpipelinecreationhydratoruser
+
+@enduml

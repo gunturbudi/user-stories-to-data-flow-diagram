@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Time" as thingtime
+	entity "Uniform Way" as thinguniformway
+	entity "Dataset Type" as thingdatasettype
+	actor "User" as actoruser
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Configure Time\nIn A\nUniform Way\nAcross All\nDataset Types" as controlconfiguretimeliveuniformway
+	control "Live" as controllive
+
+	thinguniformway <.. thingtime
+	thingdatasettype <.. thinguniformway
+	actoruser --- thingtypeinterface
+	thingtime --- controlconfiguretimeliveuniformway
+	thinguniformway --- controlconfiguretimeliveuniformway
+	thingdatasettype --- controlconfiguretimeliveuniformway
+	thingtypeinterface --> controlconfiguretimeliveuniformway
+	controlconfiguretimeliveuniformway --> controllive
+	thingtypeinterface --> controllive
+
+@enduml

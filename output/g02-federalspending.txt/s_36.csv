@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Environment,shape=partialRectangle,null,null,data_base
+201,Max Permission,shape=partialRectangle,null,null,data_base
+202,Owner,rounded=0,null,null,external_entity
+203,Reset The Environment,ellipse,null,null,process
+204,Take,ellipse,null,null,process
+205,Staging Max Permissions,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,,endArrow=classic,203,204,endArrow=classic
+211,Environment,endArrow=classic,203,200,endArrow=classic
+212,,endArrow=classic,204,205,endArrow=classic
+213,Max Permission,endArrow=classic,205,201,endArrow=classic

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registry" as thingregistry
+	entity "Publish Command" as thingpublishcommand
+	entity "Data Package" as thingdatapackage #grey
+	actor "Publisher" as actorpublisher
+	boundary "Command\nInterface" as thingcommandinterface #grey
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	control "Use A\nPublish Command" as controlusepublishcommandupdatedatapackage
+	control "Update A\nData Package\nAlready Is\nIn The\nRegistry" as controlupdatedatapackage
+
+	thingregistry <.. thingdatapackage
+	actorpublisher --- thingcommandinterface
+	actorpublisher --- thingregistryinterface
+	thingpublishcommand --- controlusepublishcommandupdatedatapackage
+	thingcommandinterface --> controlusepublishcommandupdatedatapackage
+	controlusepublishcommandupdatedatapackage --> controlupdatedatapackage
+	thingdatapackage --- controlupdatedatapackage
+	thingregistry --- controlupdatedatapackage
+	thingregistryinterface --> controlupdatedatapackage
+
+@enduml

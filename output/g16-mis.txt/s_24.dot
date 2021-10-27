@@ -1,0 +1,38 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Batch " ];
+201 [label="<f0>  |<f1> Tool " ];
+202 [label="<f0>  |<f1> Repository Administrator " ];
+203 [label="<f0>  |<f1> Permission " color=red];
+204 [label="<f0>  |<f1> Embargo " ];
+205 [label="<f0>  |<f1> Metadata Curator " color=red];
+206 [label="<f0>  |<f1> Embargoed Item " ];
+207 [label="<f0>  |<f1> File " color=red];
+208 [label="<f0>  |<f1> Collection " color=red];
+209 [label="Digitalrecords Archivist" shape=box];
+210 [label="{<f0> 1.0|<f1> View Collection }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Recognize Embargoes }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Download The Files }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> View Metadata Curator }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Have The Batch Tool }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> View Repository Administrator }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Set Embargoes }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+209 -> 216
+210 -> 208 [label="Collection"]
+211 -> 204 [label="Embargo"]
+212 -> 207 [label="File"]
+213 -> 212
+213 -> 205 [label="Metadata Curator"]
+214 -> 211
+214 -> 216
+214 -> 200 [label="Batch"]
+214 -> 201 [label="Tool"]
+215 -> 202 [label="Repository Administrator"]
+216 -> 204 [label="Embargo"]
+}

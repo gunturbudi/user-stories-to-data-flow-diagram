@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Link" as thinglink
+	entity "Home Page" as thinghomepage #grey
+	entity "Training Option" as thingtrainingoption
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	control "Have A\nLink On\nThe Home\nPage To\nA List\nOf Training\nOptions" as controlhavelinklist
+
+	thinghomepage <.. thinglink
+	thingtrainingoption <.. thinghomepage
+	actoranonymoususer --- thingoptioninterface
+	thinglink --- controlhavelinklist
+	thinghomepage --- controlhavelinklist
+	thingtrainingoption --- controlhavelinklist
+	thingoptioninterface --> controlhavelinklist
+
+@enduml

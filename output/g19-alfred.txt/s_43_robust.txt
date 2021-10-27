@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Home" as thinghome
+	entity "Phone" as thingphone
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	boundary "Home\nInterface" as thinghomeinterface #grey
+	control "Use Alfred" as controluseALFREDbepickphonehome
+	control "Pick The\nPhone Up" as controlpickphone
+	control "Am At\nHome" as controlbepickphonehome
+
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingphoneinterface
+	actorOlderPerson --- thinghomeinterface
+	thingALFRED --- controluseALFREDbepickphonehome
+	thingalfredinterface --> controluseALFREDbepickphonehome
+	controlbepickphonehome --> controlpickphone
+	thingphone --- controlpickphone
+	thingphoneinterface --> controlpickphone
+	controluseALFREDbepickphonehome --> controlbepickphonehome
+	thinghome --- controlbepickphonehome
+	thinghomeinterface --> controlbepickphonehome
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Behalf " color=red];
+201 [label="<f0>  |<f1> Author " color=red];
+202 [label="<f0>  |<f1> Material " color=red];
+203 [label="<f0>  |<f1> Repository " ];
+204 [label="Library , Staff Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Upload Material To The Repository On The Author's Behalf }" shape=Mrecord];
+204 -> 205
+205 -> 202 [label="Material"]
+205 -> 203 [label="Repository"]
+205 -> 200 [label="Behalf"]
+205 -> 201 [label="Author"]
+}

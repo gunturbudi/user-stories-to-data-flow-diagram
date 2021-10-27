@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Right" as thingright
+	entity "File" as thingfile
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "See Rights\nTo Files\nIn The\nRepository" as controlseerightfile
+
+	thingfile <.. thingright
+	thingrepository <.. thingfile
+	actorcornellfacultymember --- thingrepositoryinterface
+	thingright --- controlseerightfile
+	thingfile --- controlseerightfile
+	thingrepository --- controlseerightfile
+	thingrepositoryinterface --> controlseerightfile
+
+@enduml

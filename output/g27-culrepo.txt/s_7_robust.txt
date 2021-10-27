@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name Dataset\nChange" as thingnamedatasetchange #grey
+	entity "Report" as thingreport
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Change\nInterface" as thingchangeinterface #grey
+	control "Manage Report" as controlmanagereport
+	control "Manage Name\nDataset Change" as controlmanagenamedatasetchange
+
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actordb --- thingchangeinterface
+	actoriradministrator --- thingchangeinterface
+	thingreport --- controlmanagereport
+	thingreportinterface --> controlmanagereport
+	thingnamedatasetchange --- controlmanagenamedatasetchange
+	thingchangeinterface --> controlmanagenamedatasetchange
+
+@enduml

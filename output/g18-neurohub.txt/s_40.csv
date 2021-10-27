@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,"Experimental ,\nHuman ,\nReadable Protocol",shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Search,ellipse,null,null,process
+203,"Download Experimental, Human, Readable Protocols",ellipse,null,null,process
+205,,endArrow=classic,201,203,endArrow=classic
+206,"Experimental ,\nHuman ,\nReadable Protocol",endArrow=classic,203,200,endArrow=classic

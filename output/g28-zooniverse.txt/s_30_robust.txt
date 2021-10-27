@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image Feature" as thingimagefeature
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Galaxy Zoo\nImages" as thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin #grey
+	control "Preclassify" as controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	control "Use Simple\nImage Features" as controlusesimpleimagefeatures
+
+	actorzooniverseadmin --- thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlusesimpleimagefeatures
+	thingimagefeature --- controlusesimpleimagefeatures
+	thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlusesimpleimagefeatures
+
+@enduml

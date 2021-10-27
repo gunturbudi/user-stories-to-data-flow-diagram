@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Favorite" as thingfavorite
+	entity "Profile" as thingprofile
+	entity "Donation Center" as thingdonationcenter
+	actor "User" as actoruser
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Add Donation\nCenters As\nFavorites On\nProfile" as controladddonationcentersfavorite
+
+	thingprofile <.. thingfavorite
+	thingfavorite <.. thingdonationcenter
+	actoruser --- thingprofileinterface
+	thingdonationcenter --- controladddonationcentersfavorite
+	thingfavorite --- controladddonationcentersfavorite
+	thingprofile --- controladddonationcentersfavorite
+	thingprofileinterface --> controladddonationcentersfavorite
+
+@enduml

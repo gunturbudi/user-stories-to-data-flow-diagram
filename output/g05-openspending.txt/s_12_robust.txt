@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Google Spreadsheet" as thinggooglespreadsheet #grey
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Spreadsheet\nInterface" as thingspreadsheetinterface #grey
+	control "Import Data\nFrom A\nGoogle Spreadsheet" as controlimportdatumgooglespreadsheet
+
+	thinggooglespreadsheet <.. thingdatum
+	actordatapublishinguser --- thingspreadsheetinterface
+	thingdatum --- controlimportdatumgooglespreadsheet
+	thinggooglespreadsheet --- controlimportdatumgooglespreadsheet
+	thingspreadsheetinterface --> controlimportdatumgooglespreadsheet
+
+@enduml

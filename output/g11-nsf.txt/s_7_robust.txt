@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Element" as thingelement
+	actor "Team Member" as actorteammember
+	circle "Feature" as thingfeature
+	circle "Page" as thingpage #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	control "Have A\nPrioritized List\nOf Features\nOf A\nSocial, Future\nElement Page" as controlhaveprioritizedlist
+	control "Have A\nPrioritized List\nOf Element" as controlhaveprioritizedlistelement
+
+	thingpage *-- thingfeature
+	thingelement *-- thingpage
+	actorteammember --- thingelementinterface
+	thingfeature --- controlhaveprioritizedlist
+	thingpage --- controlhaveprioritizedlist
+	thingelementinterface --> controlhaveprioritizedlist
+	thingelement --- controlhaveprioritizedlistelement
+	thingelementinterface --> controlhaveprioritizedlistelement
+
+@enduml

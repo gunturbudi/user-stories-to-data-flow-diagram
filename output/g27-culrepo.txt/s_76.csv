@@ -1,0 +1,31 @@
+id,value,style,source,target,type
+200,Material,shape=partialRectangle,null,null,data_base
+201,Place,shape=partialRectangle,null,null,data_base
+202,Variety,shape=partialRectangle,null,null,data_base
+203,Extra Step,shape=partialRectangle,null,null,data_base
+204,County,shape=partialRectangle,null,null,data_base
+205,Datum,shape=partialRectangle,null,null,data_base
+206,Presentation,shape=partialRectangle,null,null,data_base
+207,Document,shape=partialRectangle,null,null,data_base
+208,Project,shape=partialRectangle,null,null,data_base
+209,Region Site,shape=partialRectangle,null,null,data_base
+210,Extension Educator,rounded=0,null,null,external_entity
+211,Have A Place,ellipse,null,null,process
+212,Store A Variety Of Datum,ellipse,null,null,process
+213,Store A Variety Of Presentation,ellipse,null,null,process
+214,Store A Variety Of Documents,ellipse,null,null,process
+216,,endArrow=classic,210,211,endArrow=classic
+217,,endArrow=classic,210,212,endArrow=classic
+218,,endArrow=classic,210,213,endArrow=classic
+219,,endArrow=classic,210,214,endArrow=classic
+220,,endArrow=classic,211,212,endArrow=classic
+221,,endArrow=classic,211,213,endArrow=classic
+222,,endArrow=classic,211,214,endArrow=classic
+223,Place,endArrow=classic,211,201,endArrow=classic
+224,Variety,endArrow=classic,211,202,endArrow=classic
+225,Datum,endArrow=classic,212,205,endArrow=classic
+226,Variety,endArrow=classic,212,202,endArrow=classic
+227,Presentation,endArrow=classic,213,206,endArrow=classic
+228,Variety,endArrow=classic,213,202,endArrow=classic
+229,Variety,endArrow=classic,214,202,endArrow=classic
+230,Document,endArrow=classic,214,207,endArrow=classic

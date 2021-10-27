@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Archive,shape=partialRectangle,null,null,data_base
+201,Ldap,shape=partialRectangle,null,null,data_base
+202,University System,shape=partialRectangle,null,null,data_base
+203,Univitservice,rounded=0,null,null,external_entity
+204,Integrate The Archive With Existing University Systems Such As Ldap,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Archive,endArrow=classic,204,200,endArrow=classic
+208,University System,endArrow=classic,204,202,endArrow=classic
+209,Ldap,endArrow=classic,204,201,endArrow=classic

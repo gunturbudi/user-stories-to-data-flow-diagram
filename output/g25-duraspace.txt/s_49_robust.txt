@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dam" as thingDAMS
+	entity "Repository" as thingrepository
+	entity "Object" as thingobject
+	entity "Content File" as thingcontentfile
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Know The\nContent Files\nIn The\nDams For\nRepository's Objects" as controlknowcontentfiles
+
+	thingobject <.. thingDAMS
+	thingrepository <.. thingobject
+	thingDAMS <.. thingcontentfile
+	actorrepositorymanager --- thingobjectinterface
+	thingcontentfile --- controlknowcontentfiles
+	thingDAMS --- controlknowcontentfiles
+	thingobject --- controlknowcontentfiles
+	thingobjectinterface --> controlknowcontentfiles
+
+@enduml

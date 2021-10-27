@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Emergency" as thingemergency
+	entity "Video Call" as thingvideocall
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	circle "Case" as thingcase
+	boundary "Emergency\nInterface" as thingemergencyinterface #grey
+	control "Use Video\nCalls In\nCase Of\nEmergency" as controlusevideocallscase
+
+	thingcase <.. thingvideocall
+	thingemergency *-- thingcase
+	actorMedicalCaregiver --- thingemergencyinterface
+	thingvideocall --- controlusevideocallscase
+	thingcase --- controlusevideocallscase
+	thingemergency --- controlusevideocallscase
+	thingemergencyinterface --> controlusevideocallscase
+
+@enduml

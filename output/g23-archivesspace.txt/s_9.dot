@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Subject Heading " ];
+201 [label="<f0>  |<f1> Standard Identifier " ];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Associate A Standard Identifier With A Subject Heading }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Standard Identifier"]
+203 -> 200 [label="Subject Heading"]
+}

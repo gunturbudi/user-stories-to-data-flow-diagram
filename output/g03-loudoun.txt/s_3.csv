@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Receive a response to a request for a meeting or information that is a result of the preapplication assistance.,ellipse,null,null,process
+200,Preapplication Assistance,shape=partialRectangle,null,null,data_base
+201,Applicant,rounded=0,null,null,external_entity
+202,Request Preapplication Assistance,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Preapplication Assistance,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Meeting,rounded=0,null,null,external_entity
+1002,Meeting,endArrow=classic,2,1001,endArrow=classic

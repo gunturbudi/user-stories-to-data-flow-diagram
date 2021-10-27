@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Descriptive Metadata " color=red];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Repository " ];
+203 [label="<f0>  |<f1> Pdf " ];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> See Descriptive Metadata For The Item }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Come To The Item Directly To The Pdf }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Come To The Item Through The Repository }" shape=Mrecord];
+204 -> 205
+204 -> 207
+205 -> 200 [label="Descriptive Metadata"]
+205 -> 201 [label="Item"]
+206 -> 205
+206 -> 203 [label="Pdf"]
+206 -> 201 [label="Item"]
+207 -> 205
+207 -> 202 [label="Repository"]
+207 -> 201 [label="Item"]
+}

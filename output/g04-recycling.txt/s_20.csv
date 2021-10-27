@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Site,shape=partialRectangle,null,null,data_base
+201,Electronic Device,shape=partialRectangle,null,null,data_base
+202,Stuff,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Access The Site,ellipse,null,null,process
+205,Do The Other Stuffs On All Of Electronic Devices,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Site,endArrow=classic,204,200,endArrow=classic
+210,Stuff,endArrow=classic,205,202,endArrow=classic
+211,Electronic Device,endArrow=classic,205,201,endArrow=classic

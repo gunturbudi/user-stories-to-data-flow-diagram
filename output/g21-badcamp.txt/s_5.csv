@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Training Node,shape=partialRectangle,null,null,data_base
+201,-pron-,shape=partialRectangle,null,null,data_base
+202,Trainer,rounded=0,null,null,external_entity
+203,Edit Training Node,ellipse,null,null,process
+204,Edit -Pron-,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Training Node,endArrow=classic,203,200,endArrow=classic
+209,-pron-,endArrow=classic,204,201,endArrow=classic

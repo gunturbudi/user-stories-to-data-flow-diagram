@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "Keyboard ,\nBased Navigation" as thingkeyboardbasednavigation
+	entity "Object Hierarchy" as thingobjecthierarchy
+	actor "Archivist" as actorarchivist
+	boundary "Hierarchy\nInterface" as thinghierarchyinterface #grey
+	boundary "Navigation\nInterface" as thingnavigationinterface #grey
+	control "Rearrange Digital\nObject Hierarchy" as controlrearrangedigitalobjecthierarchy
+	control "Rearrange The\nResource Using\nKeyboard, Based\nNavigation" as controlrearrangeresourcekeyboardbasednavigation
+
+	thingkeyboardbasednavigation <.. thingresource
+	actorarchivist --- thinghierarchyinterface
+	actorarchivist --- thingnavigationinterface
+	thingobjecthierarchy --- controlrearrangedigitalobjecthierarchy
+	thinghierarchyinterface --> controlrearrangedigitalobjecthierarchy
+	thingresource --- controlrearrangeresourcekeyboardbasednavigation
+	thingkeyboardbasednavigation --- controlrearrangeresourcekeyboardbasednavigation
+	thingnavigationinterface --> controlrearrangeresourcekeyboardbasednavigation
+
+@enduml

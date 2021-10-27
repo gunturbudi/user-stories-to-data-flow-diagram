@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Stream Medium,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,"Library , Staff Member",rounded=0,null,null,external_entity
+203,Deliver Streaming Media Within The Repository,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Stream Medium,endArrow=classic,203,200,endArrow=classic
+207,Repository,endArrow=classic,203,201,endArrow=classic

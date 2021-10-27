@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Issue,shape=partialRectangle,null,null,data_base
+201,Tech,shape=partialRectangle,null,null,data_base
+202,Ui Designer,rounded=0,null,null,external_entity
+203,Track The Issues Thursday Come Up In Tech,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Issue,endArrow=classic,203,200,endArrow=classic
+207,Tech,endArrow=classic,203,201,endArrow=classic

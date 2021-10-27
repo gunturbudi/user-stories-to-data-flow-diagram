@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+2,Synthesize results,ellipse,null,null,process
+200,User Research,shape=partialRectangle,null,null,data_base
+201,Researcher,rounded=0,null,null,external_entity
+202,Recruit For The Last Round Of User Research,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,User Research,endArrow=classic,202,200,endArrow=classic
+1000,We,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Findings,rounded=0,null,null,external_entity
+1003,Findings,endArrow=classic,2,1002,endArrow=classic

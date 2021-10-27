@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,House,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Reminder,shape=partialRectangle,null,null,data_base
+203,Thing,shape=partialRectangle,null,null,data_base
+204,Olderperson,rounded=0,null,null,external_entity
+205,Leave The House,ellipse,null,null,process
+206,Receive A Reminder From Alfred On The Things,ellipse,null,null,process
+207,The Things Bring With,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,,endArrow=classic,205,207,endArrow=classic
+213,House,endArrow=classic,205,200,endArrow=classic
+214,,endArrow=classic,206,205,endArrow=classic
+215,Reminder,endArrow=classic,206,202,endArrow=classic
+216,Alfred,endArrow=classic,206,201,endArrow=classic
+217,Thing,endArrow=classic,206,203,endArrow=classic
+218,Thing,endArrow=classic,207,203,endArrow=classic

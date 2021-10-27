@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Basic Metadata" as thingbasicmetadata
+	entity "Tool" as thingtool
+	entity "Researcher" as thingresearcher
+	entity "User" as thinguser
+	entity "Research Datum" as thingresearchdatum
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Researchers Add\nBasic Metadata\nTo Research\nData" as controladdresearcherbasicmetadataresearchdata
+	control "User Add" as controladduser
+
+	thingresearchdatum <.. thingbasicmetadata
+	thingbasicmetadata <.. thingresearcher
+	actorrepositorymanager --- thingdatuminterface
+	actorrepositorymanager --- thinguserinterface
+	thingresearcher --- controladdresearcherbasicmetadataresearchdata
+	thingbasicmetadata --- controladdresearcherbasicmetadataresearchdata
+	thingresearchdatum --- controladdresearcherbasicmetadataresearchdata
+	thingdatuminterface --> controladdresearcherbasicmetadataresearchdata
+	thinguser --- controladduser
+	thinguserinterface --> controladduser
+
+@enduml

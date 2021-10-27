@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Output " ];
+201 [label="<f0>  |<f1> Electronic Support " ];
+202 [label="<f0>  |<f1> Track " ];
+203 [label="<f0>  |<f1> Particular Experiment " color=red];
+204 [label="<f0>  |<f1> Data Set " color=red];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Have Electronic Support }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Keeping Track Output }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Modify As Part Of A Particular Experiment }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Keeping Track }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Keeping Track Of Which Data Sets Used }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+206 -> 201 [label="Electronic Support"]
+207 -> 206
+207 -> 200 [label="Output"]
+207 -> 202 [label="Track"]
+208 -> 203 [label="Particular Experiment"]
+209 -> 206
+209 -> 208
+209 -> 202 [label="Track"]
+210 -> 206
+210 -> 202 [label="Track"]
+210 -> 204 [label="Data Set"]
+}

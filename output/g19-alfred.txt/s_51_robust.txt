@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nearest Caregiver" as thingnearestcaregiver
+	entity "Alfred" as thingALFRED
+	entity "Urgent Help" as thingurgenthelp
+	actor "Olderperson" as actorOlderPerson
+	boundary "Help\nInterface" as thinghelpinterface #grey
+	control "Ask Alfred\nFor Urgent\nHelp" as controlaskhaveALFREDurgenthelp
+	control "Have" as controlhave
+
+	thingurgenthelp <.. thingALFRED
+	actorOlderPerson --- thinghelpinterface
+	thingALFRED --- controlaskhaveALFREDurgenthelp
+	thingurgenthelp --- controlaskhaveALFREDurgenthelp
+	thinghelpinterface --> controlaskhaveALFREDurgenthelp
+	controlaskhaveALFREDurgenthelp --> controlhave
+	thinghelpinterface --> controlhave
+
+@enduml

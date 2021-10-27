@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository ,\nAssign Doi" as thingrepositoryassigneddoi
+	entity "Item" as thingitem
+	entity "Ezid" as thingEZID
+	entity "Metadata Change" as thingmetadatachange
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Ezid\nInterface" as thingezidinterface #grey
+	control "Have Metadata\nChanges To\nItems With\nRepository, Assigned\nDois To\nPropagated To\nThe Ezid" as controlhavemetadatachanges
+
+	thingEZID <.. thingrepositoryassigneddoi
+	thingrepositoryassigneddoi <.. thingitem
+	thingitem <.. thingmetadatachange
+	thingEZID <.. thingmetadatachange
+	actorcollectioncurator --- thingezidinterface
+	thingmetadatachange --- controlhavemetadatachanges
+	thingitem --- controlhavemetadatachanges
+	thingrepositoryassigneddoi --- controlhavemetadatachanges
+	thingEZID --- controlhavemetadatachanges
+	thingezidinterface --> controlhavemetadatachanges
+
+@enduml

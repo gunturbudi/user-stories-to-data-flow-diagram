@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+4,Improve on results from automated tools,ellipse,null,null,process
+200,Level,shape=partialRectangle,null,null,data_base
+201,Contrast,shape=partialRectangle,null,null,data_base
+202,Manipulation,shape=partialRectangle,null,null,data_base
+203,Archivist,rounded=0,null,null,external_entity
+204,Perform Manually Other Manipulation,ellipse,null,null,process
+205,Perform Level,ellipse,null,null,process
+206,Perform Contrast,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Manipulation,endArrow=classic,204,202,endArrow=classic
+212,Level,endArrow=classic,205,200,endArrow=classic
+213,Contrast,endArrow=classic,206,201,endArrow=classic
+1000,,endArrow=classic,206,4,endArrow=classic
+1001,Results,rounded=0,null,null,external_entity
+1002,Results,endArrow=classic,4,1001,endArrow=classic

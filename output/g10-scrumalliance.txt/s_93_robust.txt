@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Annual Fee" as thingannualfee
+	entity "Trainer" as thingtrainer
+	entity "Practitioner" as thingpractitioner
+	entity "Member" as thingmember
+	actor "Site Administrator" as actorsiteadministrator
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	control "Set The\nAnnual Fees\nFor Practitioner" as controlsetannualfeepractitioner
+	control "Set The\nAnnual Fees\nFor Members" as controlsetannualfee
+	control "Set The\nAnnual Fees\nFor Trainer" as controlsetannualfeetrainer
+
+	thingmember <.. thingannualfee
+	thingpractitioner <.. thingannualfee
+	thingtrainer <.. thingannualfee
+	actorsiteadministrator --- thingpractitionerinterface
+	actorsiteadministrator --- thingmemberinterface
+	actorsiteadministrator --- thingtrainerinterface
+	thingpractitioner --- controlsetannualfeepractitioner
+	thingpractitionerinterface --> controlsetannualfeepractitioner
+	thingannualfee --- controlsetannualfeepractitioner
+	thingannualfee --- controlsetannualfee
+	thingmember --- controlsetannualfee
+	thingmemberinterface --> controlsetannualfee
+	thingtrainer --- controlsetannualfeetrainer
+	thingtrainerinterface --> controlsetannualfeetrainer
+	thingannualfee --- controlsetannualfeetrainer
+
+@enduml

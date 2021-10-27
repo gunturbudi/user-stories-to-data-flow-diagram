@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Condo Unit" as thingcondounit #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	control "Create Each\nCondo Unit" as controlcreatecondounit
+
+	actorstaffmember --- thingunitinterface
+	thingcondounit --- controlcreatecondounit
+	thingunitinterface --> controlcreatecondounit
+
+@enduml

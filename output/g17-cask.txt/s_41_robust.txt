@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Property" as thingproperty
+	entity "Value" as thingvalue
+	entity "Default" as thingdefault
+	actor "User" as actoruser
+	control "Find Out" as controlfind
+
+
+@enduml

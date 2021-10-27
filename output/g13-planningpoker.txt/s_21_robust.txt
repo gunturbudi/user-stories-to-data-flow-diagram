@@ -1,0 +1,46 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Account" as thingaccount
+	entity "Email Address" as thingemailaddress #grey
+	entity "Password" as thingpassword
+	entity "Name" as thingname
+	entity "Username" as thingusername
+	actor "Moderator" as actormoderator
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Username\nInterface" as thingusernameinterface #grey
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	control "Create An\nAccount For\nThe Application" as controlcreateaccount
+	control "Entering Name" as controlentercreateaccountname
+	control "Entering Email\nAddress" as controlentercreateaccountemailaddress
+	control "Entering A\nUsername" as controlentercreateaccountusername
+	control "Entering A\nPassword" as controlentercreateaccountpassword
+
+	thingapplication <.. thingaccount
+	actormoderator --- thingnameinterface
+	actormoderator --- thingaddressinterface
+	actormoderator --- thingapplicationinterface
+	actormoderator --- thingusernameinterface
+	actormoderator --- thingpasswordinterface
+	controlentercreateaccountname --> controlcreateaccount
+	thingaccount --- controlcreateaccount
+	thingapplication --- controlcreateaccount
+	thingapplicationinterface --> controlcreateaccount
+	controlentercreateaccountpassword --> controlcreateaccount
+	controlentercreateaccountusername --> controlcreateaccount
+	controlentercreateaccountemailaddress --> controlcreateaccount
+	thingname --- controlentercreateaccountname
+	thingnameinterface --> controlentercreateaccountname
+	thingemailaddress --- controlentercreateaccountemailaddress
+	thingaddressinterface --> controlentercreateaccountemailaddress
+	thingusername --- controlentercreateaccountusername
+	thingusernameinterface --> controlentercreateaccountusername
+	thingpassword --- controlentercreateaccountpassword
+	thingpasswordinterface --> controlentercreateaccountpassword
+
+@enduml

@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Author" as thingauthor
+	entity "Work" as thingwork
+	actor "Researcher" as actorresearcher
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Contact The\nAuthor Of\nA Work\nInterests" as controlcontactauthor
+
+	thingwork *-- thingauthor
+	thingauthor <.. thingwork
+	actorresearcher --- thingworkinterface
+	thingauthor --- controlcontactauthor
+	thingwork --- controlcontactauthor
+	thingworkinterface --> controlcontactauthor
+
+@enduml

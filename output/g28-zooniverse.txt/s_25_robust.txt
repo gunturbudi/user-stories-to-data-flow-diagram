@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ingested Content" as thingingestedcontent
+	entity "Copyright Infringement" as thingcopyrightinfringement #grey
+	actor "Admin" as actoradmin
+	boundary "Infringement\nInterface" as thinginfringementinterface #grey
+	control "Validated The\nIngested Contents\nFor Copyright\nInfringement" as controlvalidatedingestedcontentcopyrightinfringement
+
+	thingcopyrightinfringement <.. thingingestedcontent
+	actoradmin --- thinginfringementinterface
+	thingingestedcontent --- controlvalidatedingestedcontentcopyrightinfringement
+	thingcopyrightinfringement --- controlvalidatedingestedcontentcopyrightinfringement
+	thinginfringementinterface --> controlvalidatedingestedcontentcopyrightinfringement
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Common Material" as thingcommonmaterial
+	actor "Researcher" as actorresearcher
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "See Common\nMaterial Across\nCollections" as controlseecommonmaterialcollection
+
+	thingcollection <.. thingcommonmaterial
+	actorresearcher --- thingcollectioninterface
+	thingcommonmaterial --- controlseecommonmaterialcollection
+	thingcollection --- controlseecommonmaterialcollection
+	thingcollectioninterface --> controlseecommonmaterialcollection
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archival Description" as thingarchivaldescription #grey
+	entity "Aid ,\nRelated Datum" as thingaidrelateddatum
+	entity "Administrative Datum" as thingadministrativedatum
+	entity "Level Resource" as thinglevelresource
+	actor "Archivist" as actorarchivist
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	control "Finding Add\nAdministrative Data\nAbout The\nArchival Description\nAid, Related\nData To\nA Top\nLevel Resource" as controladdadministrativedatumaidrelateddatumtoplevelresource
+
+	thingaidrelateddatum <.. thingarchivaldescription
+	thinglevelresource <.. thingaidrelateddatum
+	thingarchivaldescription <.. thingadministrativedatum
+	actorarchivist --- thingresourceinterface
+	thingadministrativedatum --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingarchivaldescription --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingaidrelateddatum --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thinglevelresource --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingresourceinterface --> controladdadministrativedatumaidrelateddatumtoplevelresource
+
+@enduml

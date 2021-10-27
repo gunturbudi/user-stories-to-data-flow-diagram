@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visual ,\nUx Design" as thingvisualuxdesign
+	entity "Content >" as thingcontent>
+	entity "Work" as thingwork
+	actor "Team Member" as actorteammember
+	boundary "Design\nInterface" as thingdesigninterface #grey
+	boundary ">\nInterface" as thinginterface #grey
+	control "Understand Work\nBetween Visual,\nUx Design" as controlunderstandworkvisualuxdesign
+	control "Understand Work\nBetween Content\n>" as controlunderstandworkcontent>
+
+	thingvisualuxdesign <.. thingwork
+	thingcontent> <.. thingwork
+	actorteammember --- thingdesigninterface
+	actorteammember --- thinginterface
+	thingwork --- controlunderstandworkvisualuxdesign
+	thingvisualuxdesign --- controlunderstandworkvisualuxdesign
+	thingdesigninterface --> controlunderstandworkvisualuxdesign
+	thingcontent> --- controlunderstandworkcontent>
+	thinginterface --> controlunderstandworkcontent>
+	thingwork --- controlunderstandworkcontent>
+
+@enduml

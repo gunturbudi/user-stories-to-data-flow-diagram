@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Agent Record,shape=partialRectangle,null,null,data_base
+201,Eac Cpf,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Export Agent Records As Eac Cpf,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Agent Record,endArrow=classic,203,200,endArrow=classic
+207,Eac Cpf,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "New Datum" as thingnewdatum
+	entity "System" as thingsystem
+	entity "Populated Template" as thingpopulatedtemplate
+	entity "Meta Datum" as thingmetadatum
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityselectpopulatedtemplateresearcher #grey
+	control "Select A\nPartially Populated\nTemplate Already\nContains" as controlselectpopulatedtemplate
+	control "Have" as controlhaveabilityselectpopulatedtemplateresearcher
+
+	actorresearcher --- thingabilityselectpopulatedtemplateresearcher
+	thingpopulatedtemplate --- controlselectpopulatedtemplate
+	thingabilityselectpopulatedtemplateresearcher --> controlselectpopulatedtemplate
+	controlhaveabilityselectpopulatedtemplateresearcher --> controlselectpopulatedtemplate
+	thingabilityselectpopulatedtemplateresearcher --> controlhaveabilityselectpopulatedtemplateresearcher
+
+@enduml

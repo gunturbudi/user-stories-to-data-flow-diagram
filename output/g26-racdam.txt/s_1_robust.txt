@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "License Statement" as thinglicensestatement
+	entity "Right" as thingright
+	actor "Archivist" as actorarchivist
+	boundary "Statement\nInterface" as thingstatementinterface #grey
+	boundary "Right\nInterface" as thingrightinterface #grey
+	control "Apply A\nLicense Statement" as controlapplylicensestatement
+	control "Apply Right" as controlapplyright
+
+	actorarchivist --- thingstatementinterface
+	actorarchivist --- thingrightinterface
+	thinglicensestatement --- controlapplylicensestatement
+	thingstatementinterface --> controlapplylicensestatement
+	thingright --- controlapplyright
+	thingrightinterface --> controlapplyright
+
+@enduml

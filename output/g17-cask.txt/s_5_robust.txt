@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Artifact" as thingartifact
+	entity "Instance" as thinginstance
+	entity "Dataset Type" as thingdatasettype
+	actor "App Developer" as actorappdeveloper
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Artifact\nInterface" as thingartifactinterface #grey
+	control "Deploy An\nArtifact" as controldeployensurethatmoinsPRONmoinsartifact
+	control "Creating An\nApp Not\nCreate Any\nDataset Types" as controlcreatedeployensurethatartifactapp
+	control "Ensure That" as controlensurethat
+	control "Creating An\nApp Not\nCreate Instance" as controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+
+	thingdatasettype <.. thingapp
+	thinginstance <.. thingapp
+	actorappdeveloper --- thinginstanceinterface
+	actorappdeveloper --- thingtypeinterface
+	actorappdeveloper --- thingartifactinterface
+	controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance --> controldeployensurethatmoinsPRONmoinsartifact
+	thinginstanceinterface --> controldeployensurethatmoinsPRONmoinsartifact
+	thingartifact --- controldeployensurethatmoinsPRONmoinsartifact
+	controlcreatedeployensurethatartifactapp --> controldeployensurethatmoinsPRONmoinsartifact
+	thingartifactinterface --> controldeployensurethatmoinsPRONmoinsartifact
+	thingapp --- controlcreatedeployensurethatartifactapp
+	thingdatasettype --- controlcreatedeployensurethatartifactapp
+	thingtypeinterface --> controlcreatedeployensurethatartifactapp
+	thingartifactinterface --> controlensurethat
+	controldeployensurethatmoinsPRONmoinsartifact --> controlensurethat
+	thinginstance --- controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	thinginstanceinterface --> controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	thingapp --- controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+
+@enduml

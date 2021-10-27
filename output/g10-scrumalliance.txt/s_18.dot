@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Follow Date " ];
+201 [label="<f0>  |<f1> News Item " color=red];
+202 [label="<f0>  |<f1> Date " color=red];
+203 [label="<f0>  |<f1> Publishing " ];
+204 [label="Site Editor" shape=box];
+205 [label="{<f0> 1.0|<f1> Set The Following Dates On A News Item }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Publishing Date }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Follow Date"]
+205 -> 201 [label="News Item"]
+206 -> 202 [label="Date"]
+206 -> 203 [label="Publishing"]
+}

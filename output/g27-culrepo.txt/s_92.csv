@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+2,Assist in my research,ellipse,null,null,process
+200,Digital Collection,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Faculty Member,rounded=0,null,null,external_entity
+203,Recommend,ellipse,null,null,process
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Research,rounded=0,null,null,external_entity
+1002,Research,endArrow=classic,2,1001,endArrow=classic

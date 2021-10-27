@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Asset" as thingasset
+	entity "Management" as thingmanagement
+	entity "Successor" as thingsuccessor
+	entity "Mechanism" as thingmechanism
+	actor "Asset Manager" as actorassetmanager
+	circle "Ownership" as thingownership
+	boundary "Mechanism\nInterface" as thingmechanisminterface #grey
+	boundary "Management\nInterface" as thingmanagementinterface #grey
+	boundary "Successor\nInterface" as thingsuccessorinterface #grey
+	control "Have Mechanism" as controlhavemechanismpasspassmanagement
+	control "Pass Management" as controlpassmanagement
+	control "Pass Ownership\nOf The\nAssets To\nA Successor" as controlpassownershipsuccessor
+
+	thingsuccessor <.. thingasset
+	thingasset *-- thingownership
+	actorassetmanager --- thingmechanisminterface
+	actorassetmanager --- thingmanagementinterface
+	actorassetmanager --- thingsuccessorinterface
+	thingmechanism --- controlhavemechanismpasspassmanagement
+	thingmechanisminterface --> controlhavemechanismpasspassmanagement
+	controlhavemechanismpasspassmanagement --> controlpassmanagement
+	thingmanagement --- controlpassmanagement
+	thingmanagementinterface --> controlpassmanagement
+	thingownership --- controlpassownershipsuccessor
+	thingasset --- controlpassownershipsuccessor
+	thingsuccessor --- controlpassownershipsuccessor
+	thingsuccessorinterface --> controlpassownershipsuccessor
+	controlhavemechanismpasspassmanagement --> controlpassownershipsuccessor
+
+@enduml

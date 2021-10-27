@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Doi" as thingdoi
+	entity "Datum" as thingdatum
+	actor "Depositor" as actordepositor
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Mint Dois\nFor Data" as controlmintdoidatum
+
+	thingdatum <.. thingdoi
+	actordepositor --- thingdatuminterface
+	thingdoi --- controlmintdoidatum
+	thingdatum --- controlmintdoidatum
+	thingdatuminterface --> controlmintdoidatum
+
+@enduml

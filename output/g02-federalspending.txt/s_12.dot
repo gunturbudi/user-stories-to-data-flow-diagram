@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Error Message " color=red];
+201 [label="<f0>  |<f1> Accurate Text " ];
+202 [label="Broker User" shape=box];
+203 [label="{<f0> 1.0|<f1> Upload The Error Message }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have Accurate Text }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Validate The Error Message }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 204
+203 -> 200
+204 -> 201
+205 -> 204
+205 -> 200
+}

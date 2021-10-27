@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Country Code " ];
+202 [label="<f0>  |<f1> Country Name " color=red];
+203 [label="Researchergovernment Publisher" shape=box];
+204 [label="{<f0> 1.0|<f1> Add General Country Names To Dataset Only Contains Country Codes }" shape=Mrecord];
+203 -> 204
+204 -> 202
+204 -> 200
+204 -> 201
+}

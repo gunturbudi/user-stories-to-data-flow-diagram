@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Multiple File" as thingmultiplefile
+	entity "File Browser" as thingfilebrowser
+	entity "Processing Datum" as thingprocessingdatum
+	actor "User" as actoruser
+	boundary "Ability" as thingabilitymovemultiplefileuser #grey
+	boundary "Multiple File" as thingmultiplefileuseneurohubfilebrowseruser #grey
+	control "Move Multiple\nFiles" as controlmovemultiplefile
+	control "Have" as controlhaveabilitymovemultiplefileuser
+	control "Use The\nNeurohub File\nBrowser" as controluseneurohubfilebrowser
+	control "Rearrange" as controlrearrangemultiplefileuseneurohubfilebrowseruser
+
+	actoruser --- thingabilitymovemultiplefileuser
+	thingmultiplefile --- controlmovemultiplefile
+	controlhaveabilitymovemultiplefileuser --> controlmovemultiplefile
+	thingabilitymovemultiplefileuser --> controlmovemultiplefile
+	thingabilitymovemultiplefileuser --> controlhaveabilitymovemultiplefileuser
+	controlrearrangemultiplefileuseneurohubfilebrowseruser --> controluseneurohubfilebrowser
+	thingfilebrowser --- controluseneurohubfilebrowser
+	thingabilitymovemultiplefileuser --> controluseneurohubfilebrowser
+	thingabilitymovemultiplefileuser --> controlrearrangemultiplefileuseneurohubfilebrowseruser
+	controlhaveabilitymovemultiplefileuser --> controlrearrangemultiplefileuseneurohubfilebrowseruser
+
+@enduml

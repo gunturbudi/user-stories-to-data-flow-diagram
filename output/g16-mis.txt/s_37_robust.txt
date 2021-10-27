@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Ingest" as thingingest
+	entity "Repository Staff" as thingrepositorystaff #grey
+	entity "Document ,\nSimple Format" as thingdocumentedsimpleformat
+	entity "Metadata" as thingmetadata
+	actor "Batch Submitter" as actorbatchsubmitter
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Ingest\nInterface" as thingingestinterface #grey
+	control "Provide Metadata" as controlprovidemetadata
+	control "Provide Data\nIn A\nDocumented, Simple\nFormat To\nThe Repository\nStaff For\nIngest" as controlprovidedatumdocumentedsimpleformat
+
+	thingdocumentedsimpleformat <.. thingdatum
+	thingingest <.. thingrepositorystaff
+	thingrepositorystaff <.. thingdocumentedsimpleformat
+	thingingest <.. thingdocumentedsimpleformat
+	actorbatchsubmitter --- thingmetadatainterface
+	actorbatchsubmitter --- thingingestinterface
+	thingmetadata --- controlprovidemetadata
+	thingmetadatainterface --> controlprovidemetadata
+	thingdatum --- controlprovidedatumdocumentedsimpleformat
+	thingdocumentedsimpleformat --- controlprovidedatumdocumentedsimpleformat
+	thingrepositorystaff --- controlprovidedatumdocumentedsimpleformat
+	thingingest --- controlprovidedatumdocumentedsimpleformat
+	thingingestinterface --> controlprovidedatumdocumentedsimpleformat
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Web Socket\nProtocol " ];
+201 [label="<f0>  |<f1> Frictionless Data\nTool " color=red];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Create A Web Socket Protocol For Frictionless Data Tools }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Web Socket\nProtocol"]
+203 -> 201 [label="Frictionless Data\nTool"]
+}

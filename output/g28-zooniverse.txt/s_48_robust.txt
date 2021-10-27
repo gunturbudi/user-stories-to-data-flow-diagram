@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Audio ,\nSingle File" as thingaudiosinglefile
+	entity "Whale" as thingwhale
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Number" as thingnumber
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Identify The\nNumber Of\nWhales In\nA Audio,\nSingle File" as controlidentifynumber
+
+	thingaudiosinglefile <.. thingwhale
+	thingwhale *-- thingnumber
+	thingaudiosinglefile *-- thingnumber
+	actorzooniverseadmin --- thingfileinterface
+	thingnumber --- controlidentifynumber
+	thingwhale --- controlidentifynumber
+	thingaudiosinglefile --- controlidentifynumber
+	thingfileinterface --> controlidentifynumber
+
+@enduml

@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Report" as thingreport
+	actor "Patron" as actorpatron
+	control "Know" as controlknow
+
+
+@enduml

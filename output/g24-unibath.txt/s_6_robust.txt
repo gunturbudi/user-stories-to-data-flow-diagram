@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Embargo" as thingembargo
+	actor "Depositor" as actordepositor
+	boundary "Embargo\nInterface" as thingembargointerface #grey
+	control "Place Data\nUnder An\nEmbargo" as controlplacedatumembargo
+
+	thingembargo <.. thingdatum
+	actordepositor --- thingembargointerface
+	thingdatum --- controlplacedatumembargo
+	thingembargo --- controlplacedatumembargo
+	thingembargointerface --> controlplacedatumembargo
+
+@enduml

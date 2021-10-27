@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object Component" as thingobjectscomponent
+	entity "License" as thinglicense
+	entity "Copyright" as thingcopyright
+	entity "Object" as thingobject
+	entity "Risk" as thingrisk
+	actor "Dams Manager" as actordamsmanager
+	boundary "Risk\nInterface" as thingriskinterface #grey
+	control "Know" as controlknow
+	control "Incur Risk" as controlincurrisk
+
+	actordamsmanager --- thingriskinterface
+	thingrisk --- controlincurrisk
+	thingriskinterface --> controlincurrisk
+
+@enduml

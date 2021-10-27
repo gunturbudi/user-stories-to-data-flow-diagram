@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Satisfy documentation requirements for my application.,ellipse,null,null,process
+200,Support Documentation,shape=partialRectangle,null,null,data_base
+201,Applicant,rounded=0,null,null,external_entity
+202,Submit Supporting Documentation,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Support Documentation,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Application,rounded=0,null,null,external_entity
+1002,Application,endArrow=classic,2,1001,endArrow=classic

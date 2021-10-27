@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ability " ];
+201 [label="<f0>  |<f1> Meta Datum " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Use Standard Meta Data }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have The To Ability For Images Of }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Meta Datum"]
+204 -> 203
+204 -> 200 [label="Ability"]
+}

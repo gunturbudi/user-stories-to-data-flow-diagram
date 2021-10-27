@@ -1,0 +1,45 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content Similarity" as thingcontentsimilarity #grey
+	entity "Music" as thingmusic
+	entity "Ringback" as thingringback
+	entity "Similar ,\nMusic Tone" as thingsimilarmusictone
+	actor "User" as actoruser
+	circle "Tone" as thingtone #grey
+	circle "Video" as thingvideo #grey
+	boundary "Similarity\nInterface" as thingsimilarityinterface #grey
+	boundary "Music\nInterface" as thingmusicinterface #grey
+	boundary "Ringback\nInterface" as thingringbackinterface #grey
+	control "Search Similar\nRingback Tone\nTo A\nGiven Music\nVideo On\nContent Similarity" as controlsearchsimilarringbacktone
+	control "Search Music" as controlsearchmusic
+	control "Discover Ringback" as controldiscoverringback
+	control "Discover Similar,\nMusic Tones\nTo A\nGiven Music\nVideo On\nContent Similarity" as controldiscoversimilarmusictone
+
+	thingcontentsimilarity <.. thingmusic
+	thingmusic <.. thingringback
+	thingvideo <.. thingsimilarmusictone
+	thingmusic <.. thingsimilarmusictone
+	thingvideo *-- thingtone
+	thingringback *-- thingtone
+	thingcontentsimilarity *-- thingvideo
+	thingmusic *-- thingvideo
+	actoruser --- thingsimilarityinterface
+	actoruser --- thingmusicinterface
+	actoruser --- thingringbackinterface
+	thingtone --- controlsearchsimilarringbacktone
+	thingvideo --- controlsearchsimilarringbacktone
+	thingcontentsimilarity --- controlsearchsimilarringbacktone
+	thingsimilarityinterface --> controlsearchsimilarringbacktone
+	thingmusic --- controlsearchmusic
+	thingmusicinterface --> controlsearchmusic
+	thingringback --- controldiscoverringback
+	thingringbackinterface --> controldiscoverringback
+	thingsimilarmusictone --- controldiscoversimilarmusictone
+	thingcontentsimilarity --- controldiscoversimilarmusictone
+	thingsimilarityinterface --> controldiscoversimilarmusictone
+	thingmusic --- controldiscoversimilarmusictone
+
+@enduml

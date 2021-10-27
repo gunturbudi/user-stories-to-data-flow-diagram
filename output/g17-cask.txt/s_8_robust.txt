@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Dataset Type" as thingdatasettype
+	actor "App Developer" as actorappdeveloper
+	circle "Old Version" as thingolderversion
+	circle "New Version" as thingnewversion
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Deploy A\nNew Version\nOf An\nApp Includes\nAn Older\nVersion Of\nDataset Type\nAnother App" as controldeployensurethatnewversion
+	control "Ensure That" as controlensurethat
+
+	thingolderversion <.. thingapp
+	thingapp <.. thingdatasettype
+	thingdatasettype *-- thingolderversion
+	thingapp *-- thingnewversion
+	actorappdeveloper --- thingtypeinterface
+	thingnewversion --- controldeployensurethatnewversion
+	thingapp --- controldeployensurethatnewversion
+	thingolderversion --- controldeployensurethatnewversion
+	thingdatasettype --- controldeployensurethatnewversion
+	thingtypeinterface --> controldeployensurethatnewversion
+	controldeployensurethatnewversion --> controlensurethat
+	thingtypeinterface --> controlensurethat
+
+@enduml

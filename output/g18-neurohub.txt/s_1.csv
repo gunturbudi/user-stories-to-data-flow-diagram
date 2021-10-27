@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Neurohub Node,shape=partialRectangle,null,null,data_base
+201,Script,shape=partialRectangle,null,null,data_base
+202,Ubuntu Operating\nSystem,shape=partialRectangle,null,null,data_base
+203,System Administrator,rounded=0,null,null,external_entity
+204,Run A Script Installs The Neurohub Node Onto A Virgin Ubuntu Operating System,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Script,endArrow=classic,204,201,endArrow=classic
+208,Neurohub Node,endArrow=classic,204,200,endArrow=classic
+209,Ubuntu Operating\nSystem,endArrow=classic,204,202,endArrow=classic

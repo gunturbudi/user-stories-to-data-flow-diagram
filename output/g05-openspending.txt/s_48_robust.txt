@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Csv File" as thingcsvfile #grey
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Know Csv\nFile Valid" as controlknowcsvfile
+
+	actordatapublishinguser --- thingfileinterface
+	thingcsvfile --- controlknowcsvfile
+	thingfileinterface --> controlknowcsvfile
+
+@enduml

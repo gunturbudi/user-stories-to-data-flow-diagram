@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Drug Response" as thingdrugresponse
+	entity "Meta Data" as thingmetadata
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilityattachstandardmetadataresearcher #grey
+	control "Attach Standard\nMeta Data\nFor Drug\nResponses" as controlattachstandardmetadata
+	control "Have" as controlhaveabilityattachstandardmetadataresearcher
+
+	thingdrugresponse <.. thingmetadata
+	actorresearcher --- thingabilityattachstandardmetadataresearcher
+	thingabilityattachstandardmetadataresearcher --> controlattachstandardmetadata
+	thingmetadata --- controlattachstandardmetadata
+	thingdrugresponse --- controlattachstandardmetadata
+	controlhaveabilityattachstandardmetadataresearcher --> controlattachstandardmetadata
+	thingabilityattachstandardmetadataresearcher --> controlhaveabilityattachstandardmetadataresearcher
+
+@enduml

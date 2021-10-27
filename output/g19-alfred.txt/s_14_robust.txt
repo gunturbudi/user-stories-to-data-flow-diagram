@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Device" as thingdevice #grey
+	entity "Alfred" as thingalfred #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	control "Have An\nAlfred Device" as controlhavealfreddevice
+	control "An Device\nOnly Listens\nTo Ask" as controlaskdeviceto
+	control "To" as controlto
+
+	thingalfred <.. thingdevice
+	actorOlderPerson --- thingdeviceinterface
+	thingdeviceinterface --> controlhavealfreddevice
+	thingdevice --- controlhavealfreddevice
+	thingdevice --- controlaskdeviceto
+	thingdeviceinterface --> controlaskdeviceto
+	controlaskdeviceto --> controlto
+	thingdeviceinterface --> controlto
+
+@enduml

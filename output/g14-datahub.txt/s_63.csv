@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Usage,shape=partialRectangle,null,null,data_base
+201,Key Metric,shape=partialRectangle,null,null,data_base
+202,User,shape=partialRectangle,null,null,data_base
+203,Download,shape=partialRectangle,null,null,data_base
+204,Api,shape=partialRectangle,null,null,data_base
+205,Admin,rounded=0,null,null,external_entity
+206,See Key Metrics About Usage Such As Users,ellipse,null,null,process
+207,See Key Metrics About Usage Such As Download,ellipse,null,null,process
+208,See Key Metrics About Usage Such As Api Usage,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Key Metric,endArrow=classic,206,201,endArrow=classic
+214,Usage,endArrow=classic,206,200,endArrow=classic
+215,User,endArrow=classic,206,202,endArrow=classic
+216,Download,endArrow=classic,207,203,endArrow=classic
+217,Key Metric,endArrow=classic,207,201,endArrow=classic
+218,Usage,endArrow=classic,207,200,endArrow=classic
+219,Key Metric,endArrow=classic,208,201,endArrow=classic
+220,Usage,endArrow=classic,208,200,endArrow=classic
+223,Api,endArrow=classic,208,204,endArrow=classic

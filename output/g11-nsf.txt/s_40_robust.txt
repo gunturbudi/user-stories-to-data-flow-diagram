@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Person Check\nIn" as thingpersoncheckin
+	actor "Nsf Employee" as actornsfemployee
+	boundary "In\nInterface" as thingininterface #grey
+	control "Schedule In,\nRegular Person\nCheck Ins" as controlscheduleinregularpersoncheckins
+
+	actornsfemployee --- thingininterface
+	thingpersoncheckin --- controlscheduleinregularpersoncheckins
+	thingininterface --> controlscheduleinregularpersoncheckins
+
+@enduml

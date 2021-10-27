@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Change" as thingchange
+	entity "Collection Component" as thingcollectioncomponent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Know Of\nAny Changes\nFor Object" as controlknowchangeobject
+	control "Know Of\nAny Changes\nFor A\nCollection Component" as controlknowchange
+
+	thingcollectioncomponent <.. thingchange
+	thingobject <.. thingchange
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingcomponentinterface
+	thingobjectinterface --> controlknowchangeobject
+	thingobject --- controlknowchangeobject
+	thingchange --- controlknowchangeobject
+	thingchange --- controlknowchange
+	thingcollectioncomponent --- controlknowchange
+	thingcomponentinterface --> controlknowchange
+
+@enduml

@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Probable Importance " ];
+201 [label="<f0>  |<f1> User " ];
+202 [label="<f0>  |<f1> Description " ];
+203 [label="<f0>  |<f1> Object " color=red];
+204 [label="Repository Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Be Of Probable Importance To An User }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Indicate Description }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Indicate Any External Versions Of An Object }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200 [label="Probable Importance"]
+205 -> 201 [label="User"]
+206 -> 202 [label="Description"]
+207 -> 205
+207 -> 203 [label="Object"]
+}

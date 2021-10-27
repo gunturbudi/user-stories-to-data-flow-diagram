@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Classifiable Animal" as thingclassifiableanimal
+	entity "Serengeti Image" as thingserengetiimage
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Animal\nInterface" as thinganimalinterface #grey
+	control "Detect Snapshot\nSerengeti Images\nWith No\nClassifiable Animals\nIn Snapshot\nSerengeti Images" as controldetectsnapshotserengetiimages
+
+	thingserengetiimage <.. thingclassifiableanimal
+	thingclassifiableanimal <.. thingserengetiimage
+	actorzooniverseadmin --- thinganimalinterface
+	thingclassifiableanimal --- controldetectsnapshotserengetiimages
+	thinganimalinterface --> controldetectsnapshotserengetiimages
+	thingserengetiimage --- controldetectsnapshotserengetiimages
+
+@enduml

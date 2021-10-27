@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Work,shape=partialRectangle,null,null,data_base
+201,Entity Zip\nValidation,shape=partialRectangle,null,null,data_base
+202,Broker User,rounded=0,null,null,external_entity
+203,Have The Same Work As The Legal Entity Zip Validations,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Work,endArrow=classic,203,200,endArrow=classic
+207,Entity Zip\nValidation,endArrow=classic,203,201,endArrow=classic

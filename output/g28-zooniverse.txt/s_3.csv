@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Music,shape=partialRectangle,null,null,data_base
+201,"Similar ,\nUser",shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,"Search Music On Similar, Other Users To",ellipse,null,null,process
+204,"Discover Music On Similar, Other Users To",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Music,endArrow=classic,203,200,endArrow=classic
+209,"Similar ,\nUser",endArrow=classic,203,201,endArrow=classic
+210,Music,endArrow=classic,204,200,endArrow=classic
+211,"Similar ,\nUser",endArrow=classic,204,201,endArrow=classic

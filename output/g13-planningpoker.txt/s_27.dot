@@ -1,0 +1,45 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Team " ];
+201 [label="<f0>  |<f1> 2 " ];
+202 [label="<f0>  |<f1> 1 " ];
+203 [label="<f0>  |<f1> 5 " ];
+204 [label="<f0>  |<f1> 8 " ];
+205 [label="<f0>  |<f1> 3 " ];
+206 [label="<f0>  |<f1> Etc " ];
+207 [label="Moderator" shape=box];
+208 [label="{<f0> 1.0|<f1> Have The Team With }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Have The Team With 2 }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Have The Team With 1 }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Select }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Have The Team With 5 }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Have The Team With 8 }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Have The Team With Etc }" shape=Mrecord];
+215 [label="{<f0> 8.0|<f1> Have The Team With 3 }" shape=Mrecord];
+207 -> 209
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+207 -> 213
+207 -> 214
+207 -> 215
+208 -> 200 [label="Team"]
+209 -> 201 [label="2"]
+209 -> 200 [label="Team"]
+210 -> 202 [label="1"]
+210 -> 200 [label="Team"]
+211 -> 208
+211 -> 209
+211 -> 213
+211 -> 200 [label="Team"]
+211 -> 201 [label="2"]
+212 -> 203 [label="5"]
+212 -> 200 [label="Team"]
+213 -> 200 [label="Team"]
+213 -> 204 [label="8"]
+214 -> 206 [label="Etc"]
+214 -> 200 [label="Team"]
+215 -> 205 [label="3"]
+215 -> 200 [label="Team"]
+}

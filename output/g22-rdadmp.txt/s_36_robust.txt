@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	circle "Description" as thingdescription
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Extract The\nDescription Of\nThe Data" as controlextractdescription
+
+	thingdatum *-- thingdescription
+	actorresearcher --- thingdatuminterface
+	thingdescription --- controlextractdescription
+	thingdatum --- controlextractdescription
+	thingdatuminterface --> controlextractdescription
+
+@enduml

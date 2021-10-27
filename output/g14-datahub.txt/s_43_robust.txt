@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Multiple Version" as thingmultipleversion
+	entity "Old Version" as thingolderversion
+	actor "Publisher" as actorpublisher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Version Data\nPackage" as controlversiondatapackage
+	control "Keep Multiple\nVersions Including\nOlder Versions" as controlkeepmultipleversion
+
+	thingolderversion <.. thingmultipleversion
+	actorpublisher --- thingpackageinterface
+	actorpublisher --- thingversioninterface
+	thingdatapackage --- controlversiondatapackage
+	thingpackageinterface --> controlversiondatapackage
+	thingmultipleversion --- controlkeepmultipleversion
+	thingolderversion --- controlkeepmultipleversion
+	thingversioninterface --> controlkeepmultipleversion
+
+@enduml

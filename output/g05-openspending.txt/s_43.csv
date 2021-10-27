@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Work on a dataset before having it discoverable via openspending user interfaces.,ellipse,null,null,process
+200,Hide State,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,"Datum , Publishing User",rounded=0,null,null,external_entity
+203,Add A Dataset In A Hidden State,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Dataset,endArrow=classic,203,201,endArrow=classic
+207,Hide State,endArrow=classic,203,200,endArrow=classic
+1000,Data publishing user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Dataset,endArrow=classic,2,201,endArrow=classic

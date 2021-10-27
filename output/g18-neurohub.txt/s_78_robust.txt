@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Centre" as thingcentre
+	entity "System" as thingsystem
+	entity "Standard Metadata" as thingstandardmetadata
+	entity "Researcher" as thingresearcher
+	actor "Researcher" as actorresearcher
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Have The\nSystem" as controlhavesystemprovidestandardmetadata
+	control "Provide Standard\nMetadata" as controlprovidestandardmetadata
+
+	thingcentre <.. thingresearcher
+	actorresearcher --- thingsysteminterface
+	actorresearcher --- thingmetadatainterface
+	thingsystem --- controlhavesystemprovidestandardmetadata
+	thingsysteminterface --> controlhavesystemprovidestandardmetadata
+	controlhavesystemprovidestandardmetadata --> controlprovidestandardmetadata
+	thingstandardmetadata --- controlprovidestandardmetadata
+	thingmetadatainterface --> controlprovidestandardmetadata
+
+@enduml

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registry" as thingregistry
+	entity "Name" as thingname
+	entity "Site" as thingsite
+	actor "Csm" as actorcsm
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	control "Becoming A\nMember Of\nThe Site" as controlbecomehavenamesite
+	control "Have Name\nIn The\nRegistry" as controlhavename
+
+	thingregistry <.. thingname
+	actorcsm --- thingsiteinterface
+	actorcsm --- thingregistryinterface
+	thingsite --- controlbecomehavenamesite
+	thingsiteinterface --> controlbecomehavenamesite
+	controlbecomehavenamesite --> controlhavename
+	thingname --- controlhavename
+	thingregistry --- controlhavename
+	thingregistryinterface --> controlhavename
+
+@enduml

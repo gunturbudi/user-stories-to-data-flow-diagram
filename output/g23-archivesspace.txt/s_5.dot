@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource Component " color=red];
+201 [label="<f0>  |<f1> Unique ,\nComponent Identifier " ];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Assign A Unique, Component Identifier To A Resource Component }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Unique ,\nComponent Identifier"]
+203 -> 200 [label="Resource Component"]
+}

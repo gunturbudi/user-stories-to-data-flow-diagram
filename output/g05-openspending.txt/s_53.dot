@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Viewer " ];
+201 [label="<f0>  |<f1> Data Types\nHierarchy " ];
+202 [label="Platform Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Translate The Data Types Hierarchies Of The Viewer }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Brightcove" as thingbrightcove
+	entity "Video" as thingvideo
+	actor "Content Editor" as actorcontenteditor
+	boundary "Brightcove\nInterface" as thingbrightcoveinterface #grey
+	control "Add Videos\nFrom Brightcove" as controladdvideobrightcove
+
+	thingbrightcove <.. thingvideo
+	actorcontenteditor --- thingbrightcoveinterface
+	thingvideo --- controladdvideobrightcove
+	thingbrightcove --- controladdvideobrightcove
+	thingbrightcoveinterface --> controladdvideobrightcove
+
+@enduml

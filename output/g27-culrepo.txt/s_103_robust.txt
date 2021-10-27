@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Mechanism" as thingmechanism
+	entity "Current Status" as thingcurrentstatus
+	entity "Listing" as thinglisting
+	entity "Understanding" as thingunderstanding
+	entity "Asset" as thingasset
+	actor "Asset Manager" as actorassetmanager
+	boundary "Mechanism\nInterface" as thingmechanisminterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	control "Have A\nMechanism" as controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	control "Obtain Understanding" as controlobtainunderstanding
+	control "Obtain" as controlobtain #grey
+	control "Obtain A\nListing Of\nThe Assets\nHave Deposited" as controlobtainlisting
+	control "Obtain A\nListing Of\nCurrent Status" as controlobtainlistingcurrentstatus
+
+	thingasset *-- thinglisting
+	thingcurrentstatus *-- thinglisting
+	actorassetmanager --- thingmechanisminterface
+	actorassetmanager --- thingstatusinterface
+	thingmechanism --- controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thingunderstanding --- controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thingmechanisminterface --> controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thingunderstanding --- controlobtainunderstanding
+	thingmechanisminterface --> controlobtainunderstanding
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtainunderstanding
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtain
+	thinglisting --- controlobtainlisting
+	thingasset --- controlobtainlisting
+	thingmechanisminterface --> controlobtainlisting
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtainlisting
+	thingcurrentstatus --- controlobtainlistingcurrentstatus
+	thingstatusinterface --> controlobtainlistingcurrentstatus
+	thinglisting --- controlobtainlistingcurrentstatus
+
+@enduml

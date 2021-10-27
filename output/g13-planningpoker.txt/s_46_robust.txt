@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "7" as thing7
+	entity "Function" as thingfunction #grey
+	entity "Internet Explorer" as thinginternetexplorer #grey
+	entity "Application" as thingapplication #grey
+	actor "Developer" as actordeveloper
+	boundary "Explorer\nInterface" as thingexplorerinterface #grey
+	boundary "7\nInterface" as thing7interface #grey
+	control "Have The\nApplication Function\nIn Internet\nExplorer" as controlhaveapplicationfunctioninternetexplorer
+	control "Have The\nFunction In\n7" as controlhavefunction7
+
+	thing7 <.. thingfunction
+	thingapplication <.. thingfunction
+	thinginternetexplorer <.. thingfunction
+	actordeveloper --- thingexplorerinterface
+	actordeveloper --- thing7interface
+	thinginternetexplorer --- controlhaveapplicationfunctioninternetexplorer
+	thingexplorerinterface --> controlhaveapplicationfunctioninternetexplorer
+	thingfunction --- controlhaveapplicationfunctioninternetexplorer
+	thingfunction --- controlhavefunction7
+	thing7 --- controlhavefunction7
+	thing7interface --> controlhavefunction7
+
+@enduml

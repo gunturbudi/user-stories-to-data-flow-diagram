@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Submission Dashboard" as thingsubmissiondashboard #grey
+	entity "Helpful ,\nAdditional Info" as thinghelpfuladditionalinfo
+	actor "Fabs User" as actorfabsuser
+	boundary "Dashboard\nInterface" as thingdashboardinterface #grey
+	control "Provided With\nHelpful, Additional\nInfo In\nThe Submission\nDashboard" as controlprovidehelpfuladditionalinfo
+
+	thingsubmissiondashboard <.. thinghelpfuladditionalinfo
+	actorfabsuser --- thingdashboardinterface
+	thinghelpfuladditionalinfo --- controlprovidehelpfuladditionalinfo
+	thingsubmissiondashboard --- controlprovidehelpfuladditionalinfo
+	thingdashboardinterface --> controlprovidehelpfuladditionalinfo
+
+@enduml

@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Note" as thingnote
+	entity "Modification" as thingmodification
+	entity "Object" as thingobject
+	entity "Repository" as thingrepository
+	entity "Collection" as thingcollection
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Know Of\nAll Modifications\nTo Notes\nFor Object\nComponent" as controlknowmodificationobjectcomponent
+	control "Know Of\nAll Modifications\nTo Notes\nFor Repository's\nCollections" as controlknowmodification
+	control "Know Of\nAll Modifications\nTo Notes\nFor Object" as controlknowmodificationobject
+
+	thingcollection <.. thingnote
+	thingobject <.. thingnote
+	thingcomponent <.. thingnote
+	thingnote <.. thingmodification
+	thingrepository <.. thingcollection
+	thingobject *-- thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingcollectioninterface
+	thingcomponent --- controlknowmodificationobjectcomponent
+	thingobjectinterface --> controlknowmodificationobjectcomponent
+	thingnote --- controlknowmodificationobjectcomponent
+	thingmodification --- controlknowmodificationobjectcomponent
+	thingmodification --- controlknowmodification
+	thingnote --- controlknowmodification
+	thingcollection --- controlknowmodification
+	thingcollectioninterface --> controlknowmodification
+	thingobject --- controlknowmodificationobject
+	thingobjectinterface --> controlknowmodificationobject
+	thingnote --- controlknowmodificationobject
+	thingmodification --- controlknowmodificationobject
+
+@enduml

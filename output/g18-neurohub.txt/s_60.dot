@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Neurohub " color=red];
+201 [label="<f0>  |<f1> Student " ];
+202 [label="<f0>  |<f1> Course " ];
+203 [label="<f0>  |<f1> Form " color=red];
+204 [label="<f0>  |<f1> Feedback " color=red];
+205 [label="Supervisor" shape=box];
+206 [label="{<f0> 1.0|<f1> Create Feedback Forms Within Neurohub }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Forms Provide With Feedback About The Course That Attended }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 200 [label="Neurohub"]
+206 -> 203 [label="Form"]
+207 -> 203 [label="Form"]
+207 -> 204 [label="Feedback"]
+207 -> 202 [label="Course"]
+}

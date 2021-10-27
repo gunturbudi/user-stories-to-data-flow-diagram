@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Feature " ];
+201 [label="<f0>  |<f1> Tracking " color=red];
+202 [label="<f0>  |<f1> Robust Searching " ];
+203 [label="<f0>  |<f1> Patron Account " color=red];
+204 [label="Db" shape=box];
+205 [label="Ir Administrator" shape=box];
+206 [label="{<f0> 1.0|<f1> Have Tracking Features For Existing Patron Accounts }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Create }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Have Robust Searching }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Have Tracking Features For }" shape=Mrecord];
+204 -> 206
+204 -> 207
+204 -> 208
+204 -> 209
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 201 [label="Tracking"]
+208 -> 202 [label="Robust Searching"]
+209 -> 207
+209 -> 201 [label="Tracking"]
+206 -> 200 [label="Feature"]
+206 -> 203 [label="Patron Account"]
+}

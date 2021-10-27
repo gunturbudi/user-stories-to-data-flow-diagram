@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "User" as actoruser
+	control "Log In" as controllog
+
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Researcher" as actorresearcher
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Download A\nFile" as controldownloadfile
+
+	actorresearcher --- thingfileinterface
+	thingfile --- controldownloadfile
+	thingfileinterface --> controldownloadfile
+
+@enduml

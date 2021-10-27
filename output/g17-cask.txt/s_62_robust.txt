@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Explore" as thingexplore
+	entity "Silent Loss" as thingsilentloss #grey
+	entity "Datum" as thingdatum
+	actor "User" as actoruser
+	circle "Available ,\nSilent Loss" as thingavailablesilentloss
+	boundary "Update" as thingupdateexploreuser
+	control "Never Leads\nTo Available,\nSilent Loss\nOf Data\nFor Explore" as controlleadupdateexploreuseravailablesilentloss
+	control "Ensure" as controlensureleadupdateexploreuseravailablesilentloss
+	control "Never Leads\nTo Silent\nLoss Of\nDatum" as controlleadupdateexploreusersilentlossdatum
+
+	thingdatum *-- thingavailablesilentloss
+	thingexplore *-- thingavailablesilentloss
+	actoruser --- thingupdateexploreuser
+	thingupdateexploreuser --> controlleadupdateexploreuseravailablesilentloss
+	thingexplore --- controlleadupdateexploreuseravailablesilentloss
+	thingavailablesilentloss --- controlleadupdateexploreuseravailablesilentloss
+	thingdatum --- controlleadupdateexploreuseravailablesilentloss
+	controlensureleadupdateexploreuseravailablesilentloss --> controlleadupdateexploreuseravailablesilentloss
+	thingupdateexploreuser --> controlensureleadupdateexploreuseravailablesilentloss
+	thingsilentloss --- controlensureleadupdateexploreuseravailablesilentloss
+	thingexplore --- controlensureleadupdateexploreuseravailablesilentloss
+	thingsilentloss --- controlleadupdateexploreusersilentlossdatum
+	thingdatum --- controlleadupdateexploreusersilentlossdatum
+	thingexplore --- controlleadupdateexploreusersilentlossdatum
+	thingupdateexploreuser --> controlleadupdateexploreusersilentlossdatum
+	controlensureleadupdateexploreuseravailablesilentloss --> controlleadupdateexploreusersilentlossdatum
+
+@enduml

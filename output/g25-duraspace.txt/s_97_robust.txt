@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Dam" as thingDAMS
+	entity "Record" as thingrecord
+	actor "Dams Manager" as actordamsmanager
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	control "Track All\nEvents For\nRecording In\nThe Dams" as controltrackevent
+
+	thingrecord <.. thingevent
+	thingDAMS <.. thingrecord
+	actordamsmanager --- thingdamsinterface
+	thingevent --- controltrackevent
+	thingrecord --- controltrackevent
+	thingDAMS --- controltrackevent
+	thingdamsinterface --> controltrackevent
+
+@enduml

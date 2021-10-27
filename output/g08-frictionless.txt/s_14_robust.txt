@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Second" as thingsecond
+	entity "Python" as thingpython
+	actor "Developer" as actordeveloper
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto Python\nIn Seconds" as controlgetdatapackagepythonsecond
+
+	thingpython <.. thingdatapackage
+	thingsecond <.. thingpython
+	actordeveloper --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackagepythonsecond
+	thingpython --- controlgetdatapackagepythonsecond
+	thingsecond --- controlgetdatapackagepythonsecond
+	thingsecondinterface --> controlgetdatapackagepythonsecond
+
+@enduml

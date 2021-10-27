@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Researcherid " color=red];
+201 [label="<f0>  |<f1> Submission " ];
+202 [label="Cornell , Faculty Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Associate A Researcherid With A Submission }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Associate Orcid }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Researcherid"]
+203 -> 201 [label="Submission"]
+204 -> 200 [label="Researcherid"]
+}

@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Backend Change " ];
+201 [label="<f0>  |<f1> Enum List " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Managing Enum Lists }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Provided With Backend Changes }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Enum List"]
+204 -> 200 [label="Backend Change"]
+}

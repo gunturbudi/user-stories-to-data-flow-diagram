@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Platform,shape=partialRectangle,null,null,data_base
+201,Embedded Viewer,shape=partialRectangle,null,null,data_base
+202,Api User,rounded=0,null,null,external_entity
+203,Change Some Of The Styling Of The Embedded Viewer In Own Platform,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Embedded Viewer,endArrow=classic,203,201,endArrow=classic
+207,Platform,endArrow=classic,203,200,endArrow=classic

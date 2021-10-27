@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Faq Section" as thingfaqsection #grey
+	actor "Site Editor" as actorsiteeditor
+	boundary "Section\nInterface" as thingsectioninterface #grey
+	control "Maintain A\nFaq Section" as controlmaintainfaqsection
+
+	actorsiteeditor --- thingsectioninterface
+	thingfaqsection --- controlmaintainfaqsection
+	thingsectioninterface --> controlmaintainfaqsection
+
+@enduml

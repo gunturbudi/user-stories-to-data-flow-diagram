@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Checkbox" as thingcheckbox
+	entity "Cancellation Term" as thingcancellationterm
+	actor "Trainee" as actortrainee
+	boundary "Checkbox\nInterface" as thingcheckboxinterface #grey
+	control "Accept The\nCancellation Terms\nWith A\nCheckbox" as controlacceptcancellationterms
+
+	thingcheckbox <.. thingcancellationterm
+	actortrainee --- thingcheckboxinterface
+	thingcancellationterm --- controlacceptcancellationterms
+	thingcheckbox --- controlacceptcancellationterms
+	thingcheckboxinterface --> controlacceptcancellationterms
+
+@enduml

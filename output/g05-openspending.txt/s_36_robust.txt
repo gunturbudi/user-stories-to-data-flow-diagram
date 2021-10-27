@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Gdp" as thingGDP
+	entity "Reference" as thingreference
+	entity "Contextual Constraint" as thingcontextualconstraint
+	entity "Dataset" as thingdataset
+	entity "Measure" as thingmeasure
+	actor "Api User" as actorapiuser
+	boundary "Gdp\nInterface" as thinggdpinterface #grey
+	control "Normalise Measures\nBy Gdp" as controlnormalisemeasure
+
+	thingcontextualconstraint <.. thingreference
+	thingreference <.. thingdataset
+	thingGDP <.. thingmeasure
+	actorapiuser --- thinggdpinterface
+	thingmeasure --- controlnormalisemeasure
+	thingGDP --- controlnormalisemeasure
+	thinggdpinterface --> controlnormalisemeasure
+
+@enduml

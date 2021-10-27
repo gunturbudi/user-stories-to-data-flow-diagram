@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Google " ];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Library " ];
+203 [label="<f0>  |<f1> Item " color=red];
+204 [label="<f0>  |<f1> Discovery System " ];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Discover Items In The Repository Through The Library's Discovery System }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Discover Items In The Repository Through Google }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 203 [label="Item"]
+206 -> 201 [label="Repository"]
+206 -> 204 [label="Discovery System"]
+207 -> 200 [label="Google"]
+207 -> 201 [label="Repository"]
+207 -> 203 [label="Item"]
+206 -> 202 [label="Library"]
+}

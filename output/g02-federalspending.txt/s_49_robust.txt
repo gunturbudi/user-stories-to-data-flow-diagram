@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Field" as thingfield
+	actor "Broker User" as actorbrokeruser
+	boundary "Historical Fabs\nLoader" as thinghistoricalfabsloaderbrokeruser
+	control "Derive Fields" as controlderivehistoricalfabsloaderbrokeruserfield
+
+	actorbrokeruser --- thinghistoricalfabsloaderbrokeruser
+	thinghistoricalfabsloaderbrokeruser --> controlderivehistoricalfabsloaderbrokeruserfield
+	thingfield --- controlderivehistoricalfabsloaderbrokeruserfield
+
+@enduml

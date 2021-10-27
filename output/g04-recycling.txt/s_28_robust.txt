@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Tempting Reward" as thingtemptingreward
+	actor "User" as actoruser
+	boundary "Reward\nInterface" as thingrewardinterface #grey
+	control "Receive Tempting\nRewards" as controlreceivetemptingreward
+
+	actoruser --- thingrewardinterface
+	thingtemptingreward --- controlreceivetemptingreward
+	thingrewardinterface --> controlreceivetemptingreward
+
+@enduml

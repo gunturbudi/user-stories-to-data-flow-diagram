@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Upcoming Class " color=red];
+201 [label="<f0>  |<f1> Profile " color=red];
+202 [label="<f0>  |<f1> Link " ];
+203 [label="<f0>  |<f1> Detailed Page " ];
+204 [label="Trainer" shape=box];
+205 [label="{<f0> 1.0|<f1> Include A Link To A Detailed Page About Each }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> List Upcoming Classes In Profile }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Find my courses }" shape=Mrecord];
+1000 [label="Attendees" shape=box];
+1000 -> 3
+1002 [label="<f0>  |<f1> Courses " color=red];
+3 -> 1002 [label="Courses"]
+204 -> 206
+205 -> 202 [label="Link"]
+205 -> 203 [label="Detailed Page"]
+206 -> 200 [label="Upcoming Class"]
+206 -> 201 [label="Profile"]
+}

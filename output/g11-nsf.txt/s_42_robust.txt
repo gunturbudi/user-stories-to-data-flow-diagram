@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summary" as thingsummary
+	actor "Workshop Attendee" as actorworkshopattendee
+	boundary "Summary\nInterface" as thingsummaryinterface #grey
+	control "Have A\nSummary What\nLearned" as controlhavesummary
+
+	actorworkshopattendee --- thingsummaryinterface
+	thingsummary --- controlhavesummary
+	thingsummaryinterface --> controlhavesummary
+
+@enduml

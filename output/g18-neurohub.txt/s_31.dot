@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Visual Way " ];
+201 [label="<f0>  |<f1> Time Period " ];
+202 [label="<f0>  |<f1> Particular File " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Viewing Particular Files Over A Time Period }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Visual Way }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 202 [label="Particular File"]
+204 -> 201 [label="Time Period"]
+205 -> 200 [label="Visual Way"]
+}

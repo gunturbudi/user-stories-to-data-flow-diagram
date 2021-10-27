@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Click " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="Researcherpublisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Provided Validate Data With A Minimum Of Clicks }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Datum"]
+203 -> 200 [label="Click"]
+}

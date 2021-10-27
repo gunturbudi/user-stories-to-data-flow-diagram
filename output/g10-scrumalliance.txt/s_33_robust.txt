@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Course" as thingcourse
+	entity "Event" as thingevent
+	actor "Trainer" as actortrainer
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Turn A\nCourse Into\nAn Event" as controlturncourseevent
+	control "Turn A\nCourse Into\nAn Event\nInto A\nCourse" as controlturncourseeventcourse
+
+	thingevent <.. thingcourse
+	actortrainer --- thingeventinterface
+	thingeventinterface --> controlturncourseevent
+	thingevent --- controlturncourseevent
+	thingcourse --- controlturncourseevent
+	thingevent --- controlturncourseeventcourse
+	thingcourse --- controlturncourseeventcourse
+	thingeventinterface --> controlturncourseeventcourse
+
+@enduml

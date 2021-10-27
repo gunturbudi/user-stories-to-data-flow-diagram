@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Access,ellipse,null,null,process
+200,Registry,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Import Data Package Into The Registry,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Package,endArrow=classic,203,201,endArrow=classic
+207,Registry,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,2,1001,endArrow=classic

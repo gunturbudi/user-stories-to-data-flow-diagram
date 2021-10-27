@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Display" as thingdisplay #grey
+	entity "Associated Image" as thingassociatedimage
+	entity "Data File" as thingdatafile
+	entity "Timeline" as thingtimeline #grey
+	actor "Researcher" as actorresearcher
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Have A\nDisplay Of\nAssociated Image" as controlhavedisplayassociatedimage
+	control "Have A\nTimeline Display\nOf Multiple\nData Files" as controlhavetimelinedisplay
+
+	thingassociatedimage <.. thingdisplay
+	thingtimeline <.. thingdisplay
+	thingdatafile <.. thingdisplay
+	actorresearcher --- thingimageinterface
+	actorresearcher --- thingfileinterface
+	thingdisplay --- controlhavedisplayassociatedimage
+	thingassociatedimage --- controlhavedisplayassociatedimage
+	thingimageinterface --> controlhavedisplayassociatedimage
+	thingdatafile --- controlhavetimelinedisplay
+	thingfileinterface --> controlhavetimelinedisplay
+	thingdisplay --- controlhavetimelinedisplay
+
+@enduml

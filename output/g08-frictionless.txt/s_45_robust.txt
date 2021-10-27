@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Click" as thingclick
+	entity "Datum" as thingdatum
+	actor "Researcherpublisher" as actorResearcherPublisher
+	circle "Minimum" as thingminimum
+	boundary "Click\nInterface" as thingclickinterface #grey
+	control "Provided Validate\nData With\nA Minimum\nOf Clicks" as controlprovidedatumminimum
+
+	thingminimum <.. thingdatum
+	thingclick *-- thingminimum
+	actorResearcherPublisher --- thingclickinterface
+	thingdatum --- controlprovidedatumminimum
+	thingminimum --- controlprovidedatumminimum
+	thingclick --- controlprovidedatumminimum
+	thingclickinterface --> controlprovidedatumminimum
+
+@enduml

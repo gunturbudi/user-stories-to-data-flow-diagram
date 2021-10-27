@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Overlap,shape=partialRectangle,null,null,data_base
+201,Plan,shape=partialRectangle,null,null,data_base
+202,User Research,shape=partialRectangle,null,null,data_base
+203,Team Member,rounded=0,null,null,external_entity
+204,"How, Time Understand Overlaps With Plans Around The User Research",ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Overlap,endArrow=classic,204,200,endArrow=classic
+208,Plan,endArrow=classic,204,201,endArrow=classic
+209,User Research,endArrow=classic,204,202,endArrow=classic

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Picture,shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Take A Picture,ellipse,null,null,process
+203,Upload An Image,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Picture,endArrow=classic,202,200,endArrow=classic
+208,Picture,endArrow=classic,203,200,endArrow=classic

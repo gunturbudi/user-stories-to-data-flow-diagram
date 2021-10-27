@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Administrator" as thingadministrator
+	entity "Account" as thingaccount
+	entity "Ease" as thingease
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Ease\nInterface" as thingeaseinterface #grey
+	control "Administering Accounts" as controladministerseelisteaseaccount
+	control "See A\nList Of\nAll Administrators\nFor Ease" as controlseelistease
+
+	thingease <.. thingadministrator
+	actordb --- thingaccountinterface
+	actoriradministrator --- thingaccountinterface
+	actordb --- thingeaseinterface
+	actoriradministrator --- thingeaseinterface
+	thingaccount --- controladministerseelisteaseaccount
+	thingaccountinterface --> controladministerseelisteaseaccount
+	controladministerseelisteaseaccount --> controlseelistease
+	thingadministrator --- controlseelistease
+	thingease --- controlseelistease
+	thingeaseinterface --> controlseelistease
+
+@enduml

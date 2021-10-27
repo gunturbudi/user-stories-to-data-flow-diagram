@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Personal Datum" as thingpersonaldatum
+	entity "Alfred" as thingALFRED
+	entity "Specific Permission" as thingspecificpermission
+	actor "Olderperson" as actorOlderPerson
+	control "Know" as controlknow
+
+
+@enduml

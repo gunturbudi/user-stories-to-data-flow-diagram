@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Music" as thingmusic
+	entity "Similar ,\nUser" as thingsimilarotheruser
+	actor "User" as actoruser
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Search Music\nOn Similar,\nOther Users\nTo" as controlsearchmusic
+	control "Discover Music\nOn Similar,\nOther Users\nTo" as controldiscovermusicsimilarotheruser
+
+	thingsimilarotheruser <.. thingmusic
+	thingsimilarotheruser <.. thingsimilarotheruser
+	actoruser --- thinguserinterface
+	thingmusic --- controlsearchmusic
+	thingsimilarotheruser --- controlsearchmusic
+	thinguserinterface --> controlsearchmusic
+	thingmusic --- controldiscovermusicsimilarotheruser
+	thingsimilarotheruser --- controldiscovermusicsimilarotheruser
+	thinguserinterface --> controldiscovermusicsimilarotheruser
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Asset,shape=partialRectangle,null,null,data_base
+201,Ir,shape=partialRectangle,null,null,data_base
+202,Asset Manager,rounded=0,null,null,external_entity
+203,Assured,ellipse,null,null,process
+204,The Ir Cease,ellipse,null,null,process
+206,,endArrow=classic,202,204,endArrow=classic
+207,Ir,endArrow=classic,204,201,endArrow=classic

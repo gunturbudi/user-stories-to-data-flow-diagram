@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pricing Plan" as thingpricingplan
+	actor "Publisher" as actorpublisher
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Sign Up\nFor A\nGiven Pricing\nPlan" as controlsigngivenpricingplan
+
+	actorpublisher --- thingplaninterface
+	thingpricingplan --- controlsigngivenpricingplan
+	thingplaninterface --> controlsigngivenpricingplan
+
+@enduml

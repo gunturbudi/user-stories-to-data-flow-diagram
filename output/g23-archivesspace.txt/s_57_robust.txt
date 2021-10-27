@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Location Information" as thinglocationinformation #grey
+	entity "Container" as thingcontainer
+	actor "Archivist" as actorarchivist
+	boundary "Container\nInterface" as thingcontainerinterface #grey
+	control "Assign Location\nInformation To\nA Container" as controlassignlocationinformationcontainer
+
+	thingcontainer <.. thinglocationinformation
+	actorarchivist --- thingcontainerinterface
+	thinglocationinformation --- controlassignlocationinformationcontainer
+	thingcontainer --- controlassignlocationinformationcontainer
+	thingcontainerinterface --> controlassignlocationinformationcontainer
+
+@enduml

@@ -1,0 +1,80 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " ];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="<f0>  |<f1> Document Title " ];
+204 [label="<f0>  |<f1> Author " color=red];
+205 [label="<f0>  |<f1> File Location " ];
+206 [label="<f0>  |<f1> Keyword " ];
+207 [label="<f0>  |<f1> Description " ];
+208 [label="<f0>  |<f1> Release Frequency " ];
+209 [label="<f0>  |<f1> Document Type " ];
+210 [label="<f0>  |<f1> Status " ];
+211 [label="<f0>  |<f1> Subject Area " color=red];
+212 [label="<f0>  |<f1> Subscribable Flag " ];
+213 [label="Library , Staff Member" shape=box];
+214 [label="{<f0> 1.0|<f1> Create Metadata For Items Within The Repository Includes Keyword }" shape=Mrecord];
+215 [label="{<f0> 2.0|<f1> Create Metadata For Items Within The Repository Includes Status }" shape=Mrecord];
+216 [label="{<f0> 3.0|<f1> Create Metadata For Items Within The Repository Includes Document Type }" shape=Mrecord];
+217 [label="{<f0> 4.0|<f1> Create Metadata For Items Within The Repository Includes Document Title }" shape=Mrecord];
+218 [label="{<f0> 5.0|<f1> Create Metadata For Items Within The Repository Includes Description }" shape=Mrecord];
+219 [label="{<f0> 6.0|<f1> Create Metadata For Items Within The Repository Includes Subject Area }" shape=Mrecord];
+220 [label="{<f0> 7.0|<f1> Create Metadata For Items Within The Repository Includes Release Frequency }" shape=Mrecord];
+221 [label="{<f0> 8.0|<f1> Create Metadata For Items Within The Repository Includes Author }" shape=Mrecord];
+222 [label="{<f0> 9.0|<f1> Create Metadata For Items Within The Repository Includes File Location }" shape=Mrecord];
+223 [label="{<f0> 10.0|<f1> Searching }" shape=Mrecord];
+224 [label="{<f0> 11.0|<f1> Create Metadata For Items Within The Repository Includes Subscribable Flag }" shape=Mrecord];
+213 -> 214
+213 -> 215
+213 -> 216
+213 -> 217
+213 -> 218
+213 -> 219
+213 -> 220
+213 -> 221
+213 -> 222
+213 -> 223
+213 -> 224
+214 -> 206 [label="Keyword"]
+214 -> 200 [label="Repository"]
+214 -> 201 [label="Item"]
+214 -> 202 [label="Metadata"]
+215 -> 210 [label="Status"]
+215 -> 200 [label="Repository"]
+215 -> 201 [label="Item"]
+215 -> 202 [label="Metadata"]
+216 -> 209 [label="Document Type"]
+216 -> 200 [label="Repository"]
+216 -> 201 [label="Item"]
+216 -> 202 [label="Metadata"]
+217 -> 202 [label="Metadata"]
+217 -> 201 [label="Item"]
+217 -> 200 [label="Repository"]
+217 -> 203 [label="Document Title"]
+218 -> 207 [label="Description"]
+218 -> 200 [label="Repository"]
+218 -> 201 [label="Item"]
+218 -> 202 [label="Metadata"]
+219 -> 211 [label="Subject Area"]
+219 -> 200 [label="Repository"]
+219 -> 201 [label="Item"]
+219 -> 202 [label="Metadata"]
+220 -> 208 [label="Release Frequency"]
+220 -> 200 [label="Repository"]
+220 -> 201 [label="Item"]
+220 -> 202 [label="Metadata"]
+221 -> 204 [label="Author"]
+221 -> 200 [label="Repository"]
+221 -> 201 [label="Item"]
+221 -> 202 [label="Metadata"]
+222 -> 205 [label="File Location"]
+222 -> 200 [label="Repository"]
+222 -> 201 [label="Item"]
+222 -> 202 [label="Metadata"]
+223 -> 214
+224 -> 212 [label="Subscribable Flag"]
+224 -> 200 [label="Repository"]
+224 -> 201 [label="Item"]
+224 -> 202 [label="Metadata"]
+}

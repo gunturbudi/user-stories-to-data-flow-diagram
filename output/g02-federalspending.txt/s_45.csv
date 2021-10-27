@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Update,shape=partialRectangle,null,null,data_base
+201,Clarity,shape=partialRectangle,null,null,data_base
+202,Sql Code,shape=partialRectangle,null,null,data_base
+203,"Broker , Team Member",rounded=0,null,null,external_entity
+204,Make Some Updates To The Sql Codes For Clarity,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Update,endArrow=classic,204,200,endArrow=classic
+208,Sql Code,endArrow=classic,204,202,endArrow=classic
+209,Clarity,endArrow=classic,204,201,endArrow=classic

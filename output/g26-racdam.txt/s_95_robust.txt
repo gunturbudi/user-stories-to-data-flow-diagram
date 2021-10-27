@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Role" as thinguserrole
+	actor "Administrator" as actoradministrator
+	boundary "Role\nInterface" as thingroleinterface #grey
+	control "Create User\nRoles" as controlcreateuserroles
+
+	actoradministrator --- thingroleinterface
+	thinguserrole --- controlcreateuserroles
+	thingroleinterface --> controlcreateuserroles
+
+@enduml

@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Option" as thingoption
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Dataset Type" as thingdatasettype #grey
+	entity "Upgrade Step" as thingupgradestep
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "New Version" as thingnewversion
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	control "Implementing An\nUpgrade Step\nA Dataset\nInstance When\nUpgraded To\nA New\nVersion Of\nThe Dataset\nType" as controlimplementhaveoptionupgradestep
+	control "Have The\nOption" as controlhaveoption
+
+	thingnewversion <.. thingdatasetinstance
+	thingdatasetinstance <.. thingupgradestep
+	thingnewversion <.. thingupgradestep
+	thingdatasettype *-- thingnewversion
+	actordatasetdeveloper --- thingtypeinterface
+	actordatasetdeveloper --- thingoptioninterface
+	thingupgradestep --- controlimplementhaveoptionupgradestep
+	thingdatasetinstance --- controlimplementhaveoptionupgradestep
+	thingnewversion --- controlimplementhaveoptionupgradestep
+	thingdatasettype --- controlimplementhaveoptionupgradestep
+	thingtypeinterface --> controlimplementhaveoptionupgradestep
+	controlimplementhaveoptionupgradestep --> controlhaveoption
+	thingoption --- controlhaveoption
+	thingoptioninterface --> controlhaveoption
+
+@enduml

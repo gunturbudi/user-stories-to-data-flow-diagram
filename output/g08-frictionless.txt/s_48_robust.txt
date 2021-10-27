@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Online Service" as thingonlineservice
+	entity "Data Repository" as thingdatarepository #grey
+	entity "Datum" as thingdatum
+	entity "Update" as thingupdate
+	actor "Developer" as actordeveloper
+
+	thingdatarepository <.. thingonlineservice
+	thingdatum <.. thingdatarepository
+	thingupdate <.. thingdatarepository
+
+@enduml

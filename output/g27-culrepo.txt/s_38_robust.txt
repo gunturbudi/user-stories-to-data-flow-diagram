@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Effective Manner" as thingeffectivemanner
+	entity "Subset" as thingsubset
+	entity "Collection" as thinggivencollection
+	entity "Repository" as thingrepository
+	actor "Researcher" as actorresearcher
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Search Within\nCollection" as controlsearchcollection
+	control "Search Within\nA Repository\nIn An\nEffective Manner\nSearching Within\nSubsets Of\nA Given\nCollection" as controlsearchrepositoryeffectivemanner
+
+	thingsubset <.. thingeffectivemanner
+	thinggivencollection <.. thingsubset
+	thingeffectivemanner <.. thingrepository
+	actorresearcher --- thingcollectioninterface
+	thingcollectioninterface --> controlsearchcollection
+	thinggivencollection --- controlsearchcollection
+	thingrepository --- controlsearchrepositoryeffectivemanner
+	thingeffectivemanner --- controlsearchrepositoryeffectivemanner
+	thinggivencollection --- controlsearchrepositoryeffectivemanner
+	thingcollectioninterface --> controlsearchrepositoryeffectivemanner
+	thingsubset --- controlsearchrepositoryeffectivemanner
+
+@enduml

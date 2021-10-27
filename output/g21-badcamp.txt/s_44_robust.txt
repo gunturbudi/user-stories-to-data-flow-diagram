@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agenda" as thingagenda
+	entity "Summit" as thingsummit
+	actor "Summit Coordinator" as actorsummitcoordinator
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "List An\nAgenda For\nSummit" as controllistagenda
+
+	thingsummit <.. thingagenda
+	actorsummitcoordinator --- thingsummitinterface
+	thingagenda --- controllistagenda
+	thingsummit --- controllistagenda
+	thingsummitinterface --> controllistagenda
+
+@enduml

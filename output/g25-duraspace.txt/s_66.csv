@@ -1,0 +1,42 @@
+id,value,style,source,target,type
+200,Scope,shape=partialRectangle,null,null,data_base
+201,Identifier,shape=partialRectangle,null,null,data_base
+202,Object,shape=partialRectangle,null,null,data_base
+203,Etc,shape=partialRectangle,null,null,data_base
+204,Condition,shape=partialRectangle,null,null,data_base
+205,Collection Component,shape=partialRectangle,null,null,data_base
+206,Access,shape=partialRectangle,null,null,data_base
+207,Use,shape=partialRectangle,null,null,data_base
+208,Content,shape=partialRectangle,null,null,data_base
+209,User,rounded=0,null,null,external_entity
+210,Govern,ellipse,null,null,process
+211,Know About Various Facets Of A Collection Component Such As Scope,ellipse,null,null,process
+212,Govern Access,ellipse,null,null,process
+213,Govern Use,ellipse,null,null,process
+214,Know About Various Facets Of Object,ellipse,null,null,process
+215,Know About Various Facets Of A Collection Component Such As Content,ellipse,null,null,process
+216,Know About Various Facets Of A Collection Component Such As Various Identifier,ellipse,null,null,process
+217,Govern Etc,ellipse,null,null,process
+218,Know About Various Facets Of A Collection Component Such As Condition,ellipse,null,null,process
+220,,endArrow=classic,209,211,endArrow=classic
+221,,endArrow=classic,209,212,endArrow=classic
+222,,endArrow=classic,209,213,endArrow=classic
+223,,endArrow=classic,209,214,endArrow=classic
+224,,endArrow=classic,209,215,endArrow=classic
+225,,endArrow=classic,209,216,endArrow=classic
+226,,endArrow=classic,209,217,endArrow=classic
+227,,endArrow=classic,209,218,endArrow=classic
+228,Collection Component,endArrow=classic,211,205,endArrow=classic
+229,Scope,endArrow=classic,211,200,endArrow=classic
+230,Access,endArrow=classic,212,206,endArrow=classic
+231,Use,endArrow=classic,213,207,endArrow=classic
+232,Object,endArrow=classic,214,202,endArrow=classic
+233,Content,endArrow=classic,215,208,endArrow=classic
+234,Collection Component,endArrow=classic,215,205,endArrow=classic
+235,Identifier,endArrow=classic,216,201,endArrow=classic
+236,Collection Component,endArrow=classic,216,205,endArrow=classic
+237,Etc,endArrow=classic,217,203,endArrow=classic
+238,,endArrow=classic,218,210,endArrow=classic
+239,,endArrow=classic,218,212,endArrow=classic
+240,Condition,endArrow=classic,218,204,endArrow=classic
+241,Collection Component,endArrow=classic,218,205,endArrow=classic

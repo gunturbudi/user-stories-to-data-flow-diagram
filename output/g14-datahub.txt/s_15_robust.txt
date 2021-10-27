@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Server" as thingserver
+	entity "Datum" as thingdatum
+	entity "Data Package" as thingdatapackage #grey
+	entity "Registry" as thingregistry
+	entity "Resource" as thingresource #grey
+	actor "Publisher" as actorpublisher
+	circle "Copy" as thingcopy
+	boundary "Server\nInterface" as thingserverinterface #grey
+	control "Publish A\nData Package\nResource Data\nWhere Stored\nOn Servers" as controlpublishdatapackage
+
+	thingresource <.. thingdatum
+	thingserver <.. thingdatum
+	thingserver <.. thingdatapackage
+	thingdatum <.. thingdatapackage
+	thingdatum *-- thingcopy
+	actorpublisher --- thingserverinterface
+	thingdatapackage --- controlpublishdatapackage
+	thingserver --- controlpublishdatapackage
+	thingserverinterface --> controlpublishdatapackage
+	thingdatum --- controlpublishdatapackage
+
+@enduml

@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access " ];
+201 [label="<f0>  |<f1> Public Interface " ];
+202 [label="<f0>  |<f1> Repository Index " ];
+203 [label="Repoadmin" shape=box];
+204 [label="{<f0> 1.0|<f1> Disrupting Access To The Public Interface }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Update The Repository Index }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 200 [label="Access"]
+204 -> 201 [label="Public Interface"]
+205 -> 202 [label="Repository Index"]
+}

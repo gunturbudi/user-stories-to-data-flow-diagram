@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Stakeholder" as actorstakeholder
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Have Adequately\nFiles" as controlhavefile
+
+	actorstakeholder --- thingfileinterface
+	thingfile --- controlhavefile
+	thingfileinterface --> controlhavefile
+
+@enduml

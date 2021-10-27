@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Component" as thingcomponent
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Know The\nComponents To\nAn Object" as controlknowcomponent
+
+	thingobject <.. thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	thingcomponent --- controlknowcomponent
+	thingobject --- controlknowcomponent
+	thingobjectinterface --> controlknowcomponent
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Material" as thingmaterial
+	actor "Recyclingfacility Representative" as actorrecyclingfacilityrepresentative
+	circle "Type" as thingtype
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Update The\nType Of\nMaterial" as controlupdatetype
+	control "Update Information" as controlupdateinformation
+
+	thingmaterial *-- thingtype
+	actorrecyclingfacilityrepresentative --- thingmaterialinterface
+	actorrecyclingfacilityrepresentative --- thinginformationinterface
+	thingtype --- controlupdatetype
+	thingmaterial --- controlupdatetype
+	thingmaterialinterface --> controlupdatetype
+	thinginformation --- controlupdateinformation
+	thinginformationinterface --> controlupdateinformation
+
+@enduml

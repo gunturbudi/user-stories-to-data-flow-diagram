@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Unattache File " ];
+201 [label="<f0>  |<f1> Workspace " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Receive An Alert Of Any Unattached Files Are In Workspace }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Unattache File"]
+203 -> 201 [label="Workspace"]
+}

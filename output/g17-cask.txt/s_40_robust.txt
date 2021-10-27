@@ -1,0 +1,48 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Administrative ,\nCustom Operation" as thingadministrativecustomoperation
+	entity "Dataset Instance" as thingdatasetinstance
+	entity "Ui" as thingUI
+	entity "App" as thingapp
+	entity "Cli" as thingCLI
+	entity "Rest" as thingREST
+	actor "App Developer" as actorappdeveloper
+	boundary "Rest\nInterface" as thingrestinterface #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	boundary "Cli\nInterface" as thingcliinterface #grey
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nRest" as controlperformadministrativecustomoperationdatasetinstanceREST
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nApp" as controlperformadministrativecustomoperationdatasetinstance
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nThe Ui" as controlperformadministrativecustomoperationdatasetinstanceUI
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nThe Cli" as controlperformadministrativecustomoperationdatasetinstanceCLI
+
+	thingdatasetinstance <.. thingadministrativecustomoperation
+	thingapp <.. thingdatasetinstance
+	thingCLI <.. thingdatasetinstance
+	thingUI <.. thingdatasetinstance
+	thingREST <.. thingdatasetinstance
+	actorappdeveloper --- thingrestinterface
+	actorappdeveloper --- thingappinterface
+	actorappdeveloper --- thinguiinterface
+	actorappdeveloper --- thingcliinterface
+	thingREST --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingrestinterface --> controlperformadministrativecustomoperationdatasetinstanceREST
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstance
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstance
+	thingapp --- controlperformadministrativecustomoperationdatasetinstance
+	thingappinterface --> controlperformadministrativecustomoperationdatasetinstance
+	thingUI --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thinguiinterface --> controlperformadministrativecustomoperationdatasetinstanceUI
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thingCLI --- controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingcliinterface --> controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceCLI
+
+@enduml

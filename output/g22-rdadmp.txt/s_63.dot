@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Technology " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Software " ];
+203 [label=", Staff Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Know Technology Produced }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Use }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Know Which Software The Data Produced }" shape=Mrecord];
+5 [label="{<f0> 5.0|<f1> Determine what kind of technical services and functionalities are required }" shape=Mrecord];
+203 -> 5
+1001 [label="<f0>  |<f1> Technical services " color=red];
+5 -> 1001 [label="Technical services"]
+203 -> 204
+203 -> 207
+204 -> 200 [label="Technology"]
+205 -> 206
+207 -> 202 [label="Software"]
+207 -> 201 [label="Datum"]
+}

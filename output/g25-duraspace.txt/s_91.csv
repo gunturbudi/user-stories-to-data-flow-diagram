@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Way,shape=partialRectangle,null,null,data_base
+202,Library Policy,shape=partialRectangle,null,null,data_base
+203,Object Component,shape=partialRectangle,null,null,data_base
+204,Access,shape=partialRectangle,null,null,data_base
+205,Dams Manager,rounded=0,null,null,external_entity
+206,Know Object,ellipse,null,null,process
+207,Know An Object Component Subject To A Library Policy Restricts Access In Any Way,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Object,endArrow=classic,206,200,endArrow=classic
+212,Object Component,endArrow=classic,207,203,endArrow=classic
+213,Library Policy,endArrow=classic,207,202,endArrow=classic
+214,Access,endArrow=classic,207,204,endArrow=classic
+215,Way,endArrow=classic,207,201,endArrow=classic

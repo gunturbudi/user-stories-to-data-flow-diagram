@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Note " color=red];
+201 [label="<f0>  |<f1> Modification " color=red];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="<f0>  |<f1> Repository " color=red];
+204 [label="<f0>  |<f1> Collection " color=red];
+205 [label="Repository Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Know Of All Modifications To Notes For Object Component }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Know Of All Modifications To Notes For Repository's Collections }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Know Of All Modifications To Notes For Object }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 200 [label="Note"]
+206 -> 201 [label="Modification"]
+207 -> 201 [label="Modification"]
+207 -> 200 [label="Note"]
+207 -> 204 [label="Collection"]
+208 -> 202 [label="Object"]
+208 -> 200 [label="Note"]
+208 -> 201 [label="Modification"]
+207 -> 203 [label="Repository"]
+}

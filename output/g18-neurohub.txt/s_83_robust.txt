@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "New Datum" as thingnewdatum
+	actor "Researcher" as actorresearcher
+	boundary "Meta Data" as thingmetadataresearcher
+	control "New Data\nAdded To\nThe System" as controladdnewdatumsystem
+	control "Have" as controlhaveinsertmetadataresearcheraddnewdatumsystem
+	control "Inserted" as controlinsertmetadataresearcheraddnewdatumsystem
+
+	thingsystem <.. thingnewdatum
+	actorresearcher --- thingmetadataresearcher
+	thingnewdatum --- controladdnewdatumsystem
+	thingsystem --- controladdnewdatumsystem
+	controlinsertmetadataresearcheraddnewdatumsystem --> controladdnewdatumsystem
+	thingmetadataresearcher --> controladdnewdatumsystem
+	thingmetadataresearcher --> controlhaveinsertmetadataresearcheraddnewdatumsystem
+	controlhaveinsertmetadataresearcheraddnewdatumsystem --> controlinsertmetadataresearcheraddnewdatumsystem
+	thingmetadataresearcher --> controlinsertmetadataresearcheraddnewdatumsystem
+
+@enduml

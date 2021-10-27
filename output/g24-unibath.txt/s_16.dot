@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="Depositor" shape=box];
+202 [label="{<f0> 1.0|<f1> Track Citations Of Data }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Demonstrate the impact of my work }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Work " color=red];
+2 -> 1001 [label="Work"]
+201 -> 202
+202 -> 200 [label="Datum"]
+}

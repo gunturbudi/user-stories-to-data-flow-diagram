@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Doi" as thingdoi
+	actor "Datum Reuser" as actordatareuser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "View A\nDoi For\nA Dataset" as controlviewdoidataset
+
+	thingdataset <.. thingdoi
+	actordatareuser --- thingdatasetinterface
+	thingdoi --- controlviewdoidataset
+	thingdataset --- controlviewdoidataset
+	thingdatasetinterface --> controlviewdoidataset
+
+@enduml

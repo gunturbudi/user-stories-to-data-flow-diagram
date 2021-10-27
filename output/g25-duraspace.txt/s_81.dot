@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="<f0>  |<f1> Preservation Manager " ];
+202 [label="<f0>  |<f1> Checksum " ];
+203 [label="<f0>  |<f1> Register " ];
+204 [label="Dams Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Know Via The Preservation Manager Of All Files For Which The Checksum Has Changed Since Last Registered }" shape=Mrecord];
+204 -> 205
+205 -> 201 [label="Preservation Manager"]
+205 -> 200 [label="File"]
+205 -> 202 [label="Checksum"]
+205 -> 203 [label="Register"]
+}

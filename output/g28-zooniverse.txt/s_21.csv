@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Video,shape=partialRectangle,null,null,data_base
+201,Quality Aspect,shape=partialRectangle,null,null,data_base
+202,Admin,rounded=0,null,null,external_entity
+203,V,ellipse,null,null,process
+204,Filter Videos On,ellipse,null,null,process
+205,Filter Videos On Quality Aspects,ellipse,null,null,process
+206,Rank Videos On,ellipse,null,null,process
+207,Rank Videos On Quality Aspects,ellipse,null,null,process
+209,,endArrow=classic,202,203,endArrow=classic
+210,,endArrow=classic,202,204,endArrow=classic
+211,,endArrow=classic,202,205,endArrow=classic
+212,,endArrow=classic,202,206,endArrow=classic
+213,,endArrow=classic,202,207,endArrow=classic
+214,,endArrow=classic,204,203,endArrow=classic
+215,Video,endArrow=classic,204,200,endArrow=classic
+216,Video,endArrow=classic,205,200,endArrow=classic
+217,Quality Aspect,endArrow=classic,205,201,endArrow=classic
+218,,endArrow=classic,206,203,endArrow=classic
+219,Video,endArrow=classic,206,200,endArrow=classic
+220,Video,endArrow=classic,207,200,endArrow=classic
+221,Quality Aspect,endArrow=classic,207,201,endArrow=classic

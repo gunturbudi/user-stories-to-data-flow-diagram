@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Way" as thingseveralway
+	entity "App" as thingapp
+	actor "Developer" as actordeveloper
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Present App\nIn Several\nWays" as controlpresentappseveralway
+
+	thingseveralway <.. thingapp
+	actordeveloper --- thingwayinterface
+	thingapp --- controlpresentappseveralway
+	thingseveralway --- controlpresentappseveralway
+	thingwayinterface --> controlpresentappseveralway
+
+@enduml

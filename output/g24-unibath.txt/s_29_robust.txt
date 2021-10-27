@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archive" as thingarchive
+	entity "Primo" as thingprimo
+	actor "Datum Reuser" as actordatareuser
+	boundary "Primo\nInterface" as thingprimointerface #grey
+	control "Search The\nArchive Through\nPrimo" as controlsearcharchiveprimo
+
+	thingprimo <.. thingarchive
+	actordatareuser --- thingprimointerface
+	thingarchive --- controlsearcharchiveprimo
+	thingprimo --- controlsearcharchiveprimo
+	thingprimointerface --> controlsearcharchiveprimo
+
+@enduml

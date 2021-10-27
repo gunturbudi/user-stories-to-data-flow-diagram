@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Inventory " ];
+201 [label="<f0>  |<f1> Unprocesse Collection " color=red];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Access Inventories For Unprocessed Collections }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Inventory"]
+203 -> 201 [label="Unprocesse Collection"]
+}

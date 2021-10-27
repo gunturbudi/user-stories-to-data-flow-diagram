@@ -1,0 +1,26 @@
+id,value,style,source,target,type
+200,Name,shape=partialRectangle,null,null,data_base
+201,Membership,shape=partialRectangle,null,null,data_base
+202,Scrum Alliance,shape=partialRectangle,null,null,data_base
+203,Registry,shape=partialRectangle,null,null,data_base
+204,Csm,rounded=0,null,null,external_entity
+205,Register Membership,ellipse,null,null,process
+206,Name Loaded To The Registry,ellipse,null,null,process
+207,With Sent,ellipse,null,null,process
+208,Welcome To The Scrum Alliance,ellipse,null,null,process
+209,Activate Membership,ellipse,null,null,process
+211,,endArrow=classic,204,205,endArrow=classic
+212,,endArrow=classic,204,206,endArrow=classic
+213,,endArrow=classic,204,207,endArrow=classic
+214,,endArrow=classic,204,208,endArrow=classic
+215,,endArrow=classic,204,209,endArrow=classic
+216,,endArrow=classic,205,206,endArrow=classic
+217,Membership,endArrow=classic,205,201,endArrow=classic
+218,Name,endArrow=classic,206,200,endArrow=classic
+219,Registry,endArrow=classic,206,203,endArrow=classic
+220,,endArrow=classic,207,205,endArrow=classic
+221,,endArrow=classic,207,208,endArrow=classic
+222,,endArrow=classic,207,209,endArrow=classic
+223,Scrum Alliance,endArrow=classic,208,202,endArrow=classic
+224,,endArrow=classic,209,206,endArrow=classic
+225,Membership,endArrow=classic,209,201,endArrow=classic

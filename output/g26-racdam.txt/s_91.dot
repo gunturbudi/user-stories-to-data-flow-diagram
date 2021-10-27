@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Visual " color=red];
+201 [label="<f0>  |<f1> Index Card " color=red];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Access Metadata Representations Of Index Cards }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Access Visual }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Index Card"]
+204 -> 200 [label="Visual"]
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Publication,shape=partialRectangle,null,null,data_base
+201,Data Availability\nPersistence,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Check Data Availability Persistence After Publication,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Availability\nPersistence,endArrow=classic,203,201,endArrow=classic
+207,Publication,endArrow=classic,203,200,endArrow=classic

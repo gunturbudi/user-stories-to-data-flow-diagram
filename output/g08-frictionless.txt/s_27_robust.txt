@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Narrow Dataset" as thingnarrowdataset
+	entity "Reference Datum" as thingreferencedatum
+	actor "Researchergovernment Publisher" as actorresearchergovernmentpublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Add General\nReference Data\nTo Narrow\nDataset" as controladdgeneralreferencedatanarrowdataset
+
+	thingnarrowdataset <.. thingreferencedatum
+	actorresearchergovernmentpublisher --- thingdatasetinterface
+	thingreferencedatum --- controladdgeneralreferencedatanarrowdataset
+	thingnarrowdataset --- controladdgeneralreferencedatanarrowdataset
+	thingdatasetinterface --> controladdgeneralreferencedatanarrowdataset
+
+@enduml

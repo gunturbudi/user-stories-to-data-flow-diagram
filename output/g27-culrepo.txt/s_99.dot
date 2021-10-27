@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Copy " color=red];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Redundant Copy " ];
+203 [label="<f0>  |<f1> Threat " ];
+204 [label="Asset Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Assured }" shape=Mrecord];
+}

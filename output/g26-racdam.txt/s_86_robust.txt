@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Right" as thingright
+	entity "Image" as thingimage
+	actor "Archivist" as actorarchivist
+	boundary "Right\nInterface" as thingrightinterface #grey
+	control "Search Images\nBy Rights" as controlsearchimage
+
+	thingright <.. thingimage
+	actorarchivist --- thingrightinterface
+	thingimage --- controlsearchimage
+	thingright --- controlsearchimage
+	thingrightinterface --> controlsearchimage
+
+@enduml

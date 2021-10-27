@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Repository Administrator,shape=partialRectangle,null,null,data_base
+201,Embargo Privilege,shape=partialRectangle,null,null,data_base
+202,Digitalrecords Archivist,rounded=0,null,null,external_entity
+203,Grant Embargo Privileges To Other Repository Administrators,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Embargo Privilege,endArrow=classic,203,201,endArrow=classic
+207,Repository Administrator,endArrow=classic,203,200,endArrow=classic

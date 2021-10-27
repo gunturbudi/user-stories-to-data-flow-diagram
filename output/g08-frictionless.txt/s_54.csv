@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Exist Wizard,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Customize An Existing Wizard For Specific Type Of Data,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Exist Wizard,endArrow=classic,203,201,endArrow=classic
+207,Datum,endArrow=classic,203,200,endArrow=classic

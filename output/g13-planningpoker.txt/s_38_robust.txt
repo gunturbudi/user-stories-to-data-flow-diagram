@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Timer" as thingtimer #grey
+	entity "-pron-" as thingmoinsPRONmoins #grey
+	entity "Estimate" as thingestimate
+	entity "Minute" as thingminute #grey
+	actor "Participant" as actorparticipant
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	control "The Minute\nTimer Soon\nAs Reset\nPlay An\nEstimate" as controlplayhaveminutetimerestimate
+	control "The Timer\nSoon As\nReset Itself\nAll Play" as controlplayhavetimermoinsPRONmoinsall
+	control "Have" as controlhave
+
+	thingmoinsPRONmoins <.. thingtimer
+	thingminute <.. thingtimer
+	thingestimate <.. thingtimer
+	actorparticipant --- thingestimateinterface
+	actorparticipant --- thingproninterface
+	thingestimate --- controlplayhaveminutetimerestimate
+	thingestimateinterface --> controlplayhaveminutetimerestimate
+	thingtimer --- controlplayhaveminutetimerestimate
+	thingtimer --- controlplayhavetimermoinsPRONmoinsall
+	thingmoinsPRONmoins --- controlplayhavetimermoinsPRONmoinsall
+	thingproninterface --> controlplayhavetimermoinsPRONmoinsall
+	controlplayhaveminutetimerestimate --> controlhave
+	thingestimateinterface --> controlhave
+	controlplayhavetimermoinsPRONmoinsall --> controlhave
+
+@enduml

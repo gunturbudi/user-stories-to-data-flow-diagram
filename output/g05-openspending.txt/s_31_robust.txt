@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Different Currency" as thingdifferentcurrency
+	entity "Monetary Measure" as thingmonetarymeasure
+	actor "Api User" as actorapiuser
+	boundary "Currency\nInterface" as thingcurrencyinterface #grey
+	control "Get A\nSet Of\nMonetary Measures\nTo Different\nCurrencies" as controlgetset
+
+	thingdifferentcurrency <.. thingmonetarymeasure
+	actorapiuser --- thingcurrencyinterface
+	thingmonetarymeasure --- controlgetset
+	thingdifferentcurrency --- controlgetset
+	thingcurrencyinterface --> controlgetset
+
+@enduml

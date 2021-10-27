@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Integration,shape=partialRectangle,null,null,data_base
+201,Zenodo,shape=partialRectangle,null,null,data_base
+202,Researcherpublisher,rounded=0,null,null,external_entity
+203,Provided With An Integration With Zenodo,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Integration,endArrow=classic,203,200,endArrow=classic
+207,Zenodo,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Question" as thingquestion
+	entity "User" as thinguser
+	entity "Easy Way" as thingeasyway
+	actor "Developer" as actordeveloper
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Define Questions\nThe User\nAsk" as controldefinequestion
+	control "Have An\nEasy Way" as controlhaveeasywaydefinequestion
+
+	thinguser <.. thingquestion
+	actordeveloper --- thingwayinterface
+	thingquestion --- controldefinequestion
+	thinguser --- controldefinequestion
+	controlhaveeasywaydefinequestion --> controldefinequestion
+	thingwayinterface --> controldefinequestion
+	thingeasyway --- controlhaveeasywaydefinequestion
+	thingwayinterface --> controlhaveeasywaydefinequestion
+
+@enduml

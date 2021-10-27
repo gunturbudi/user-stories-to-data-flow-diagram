@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "News Item" as thingnewsitem
+	entity "Mailing List" as thingmailinglist
+	actor "User" as actoruser
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "List\nInterface" as thinglistinterface #grey
+	control "Have The\nSystem" as controlhavesystemforwardimportantnewsitemsexternalmailinglist
+	control "Forward Important\nNews Items\nTo An\nExternal Mailing\nList" as controlforwardimportantnewsitemsexternalmailinglist
+
+	thingmailinglist <.. thingnewsitem
+	actoruser --- thingsysteminterface
+	actoruser --- thinglistinterface
+	thingsystem --- controlhavesystemforwardimportantnewsitemsexternalmailinglist
+	thingsysteminterface --> controlhavesystemforwardimportantnewsitemsexternalmailinglist
+	controlhavesystemforwardimportantnewsitemsexternalmailinglist --> controlforwardimportantnewsitemsexternalmailinglist
+	thingnewsitem --- controlforwardimportantnewsitemsexternalmailinglist
+	thingmailinglist --- controlforwardimportantnewsitemsexternalmailinglist
+	thinglistinterface --> controlforwardimportantnewsitemsexternalmailinglist
+
+@enduml

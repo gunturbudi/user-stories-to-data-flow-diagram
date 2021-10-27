@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fee" as thingfee
+	actor "Applicant" as actorapplicant
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "Pay Fee" as controlpayfee
+
+	actorapplicant --- thingfeeinterface
+	thingfee --- controlpayfee
+	thingfeeinterface --> controlpayfee
+
+@enduml

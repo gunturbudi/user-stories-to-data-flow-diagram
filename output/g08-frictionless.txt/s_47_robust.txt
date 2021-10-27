@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Command Line\nTool" as thingcommandlinetool #grey
+	actor "Developerwrangler" as actorDeveloperWrangler
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Use A\nCommand Line\nTool Allows\nMet" as controlusecommandlinetool
+	control "Validate Data" as controlvalidatedatum
+
+	actorDeveloperWrangler --- thingtoolinterface
+	actorDeveloperWrangler --- thingdatuminterface
+	thingcommandlinetool --- controlusecommandlinetool
+	thingtoolinterface --> controlusecommandlinetool
+	controlusecommandlinetool --> controlvalidatedatum
+	thingdatum --- controlvalidatedatum
+	thingdatuminterface --> controlvalidatedatum
+
+@enduml

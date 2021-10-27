@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Database" as thingdatabase
+	entity "Visualisation State" as thingvisualisationstate #grey
+	actor "Api User" as actorapiuser
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Store Visualisation\nState In\nThe Database" as controlstorevisualisationstatedatabase
+
+	thingdatabase <.. thingvisualisationstate
+	actorapiuser --- thingdatabaseinterface
+	thingvisualisationstate --- controlstorevisualisationstatedatabase
+	thingdatabase --- controlstorevisualisationstatedatabase
+	thingdatabaseinterface --> controlstorevisualisationstatedatabase
+
+@enduml

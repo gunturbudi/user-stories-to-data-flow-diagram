@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Digital Object " color=red];
+201 [label="<f0>  |<f1> Preservation Standard " ];
+202 [label="<f0>  |<f1> Access Purpose " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Distinguish Between Digital Objects To Preservation Standards }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Distinguish Between Digital Objects To Only Those For Access Purposes }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Digital Object"]
+204 -> 201 [label="Preservation Standard"]
+205 -> 202 [label="Access Purpose"]
+205 -> 200 [label="Digital Object"]
+}

@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recruiter" as thingrecruiter
+	entity "Science360.gov" as thingscience360.gov
+	actor "Web ,\nRecruiter Manager" as actorwebrecruitermanager
+	control "Confirm" as controlconfirm
+
+
+@enduml

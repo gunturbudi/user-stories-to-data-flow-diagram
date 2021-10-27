@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Goal" as thinggoal
+	entity "Work" as thingwork
+	entity "Alfred Api" as thingalfredapi
+	actor "Developer" as actordeveloper
+	boundary "Api\nInterface" as thingapiinterface #grey
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Goal\nInterface" as thinggoalinterface #grey
+	control "Have The\nAlfred Api" as controlhavealfredAPIreduceworkachievegoal
+	control "Reduce The\nWork" as controlreduceworkachievegoal
+	control "Achieve Goals" as controlachievegoal
+
+	actordeveloper --- thingapiinterface
+	actordeveloper --- thingworkinterface
+	actordeveloper --- thinggoalinterface
+	thingalfredapi --- controlhavealfredAPIreduceworkachievegoal
+	thingapiinterface --> controlhavealfredAPIreduceworkachievegoal
+	controlhavealfredAPIreduceworkachievegoal --> controlreduceworkachievegoal
+	thingwork --- controlreduceworkachievegoal
+	thingworkinterface --> controlreduceworkachievegoal
+	controlreduceworkachievegoal --> controlachievegoal
+	thinggoal --- controlachievegoal
+	thinggoalinterface --> controlachievegoal
+
+@enduml

@@ -1,0 +1,49 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object Component" as thingobjectcomponent
+	entity "Use" as thinguse
+	entity "Object" as thingobject
+	entity "Status" as thingstatus #grey
+	entity "Rights" as thingrights #grey
+	actor "Dams Manager" as actordamsmanager
+	circle "Component" as thingcomponent #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Restrict Per\nThe Rights\nStatus Of\nThe Object" as controlrestrictrightsstatus
+	control "Know The\nUses For\nAn Object\nComponent" as controlknowuserestrictstatusrestrictstatusobjectcomponent
+	control "Restrict Per\nThe Status\nOf Object\nComponent" as controlrestrictstatusobjectcomponent
+	control "Know The\nUses For\nObject" as controlknowuseobject
+	control "Know The\nUses For\nAn Object\nComponent Permitted" as controlknowuse
+
+	thingobjectcomponent <.. thinguse
+	thingobject <.. thinguse
+	thingcomponent <.. thingstatus
+	thingrights <.. thingstatus
+	thingobject <.. thingstatus
+	thingobject *-- thingcomponent
+	actordamsmanager --- thingcomponentinterface
+	actordamsmanager --- thingobjectinterface
+	thingobject --- controlrestrictrightsstatus
+	thingcomponentinterface --> controlrestrictrightsstatus
+	thingstatus --- controlrestrictrightsstatus
+	controlknowuserestrictstatusrestrictstatusobjectcomponent --> controlrestrictrightsstatus
+	thingobjectcomponent --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thingstatus --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thinguse --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thingcomponentinterface --> controlknowuserestrictstatusrestrictstatusobjectcomponent
+	controlknowuserestrictstatusrestrictstatusobjectcomponent --> controlrestrictstatusobjectcomponent
+	thingstatus --- controlrestrictstatusobjectcomponent
+	thingcomponent --- controlrestrictstatusobjectcomponent
+	thingobjectinterface --> controlrestrictstatusobjectcomponent
+	thingobject --- controlrestrictstatusobjectcomponent
+	thingobject --- controlknowuseobject
+	thingobjectinterface --> controlknowuseobject
+	thinguse --- controlknowuseobject
+	thinguse --- controlknowuse
+	thingobjectcomponent --- controlknowuse
+	thingcomponentinterface --> controlknowuse
+
+@enduml

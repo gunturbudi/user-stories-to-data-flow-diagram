@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Session " color=red];
+201 [label="<f0>  |<f1> Sponsor Attendee " ];
+202 [label="Anonymoususer" shape=box];
+203 [label="{<f0> 1.0|<f1> See A List Of The Sessions With Sponsor Attendees }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Session"]
+203 -> 201 [label="Sponsor Attendee"]
+}

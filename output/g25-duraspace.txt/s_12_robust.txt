@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Subject" as thingsubject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Indicate Subjects\nTo The\nCollection" as controlindicatesubject
+
+	thingcollection <.. thingsubject
+	actorrepositorymanager --- thingcollectioninterface
+	thingsubject --- controlindicatesubject
+	thingcollection --- controlindicatesubject
+	thingcollectioninterface --> controlindicatesubject
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingotherresearcher
+	entity "Role" as thingrole
+	entity "Department" as thingdepartment
+	entity "Section" as thingsection
+	actor "Researcher" as actorresearcher
+	boundary "Department\nInterface" as thingdepartmentinterface #grey
+	control "See The\nSections On\nRoles Other\nResearchers In\nDepartment" as controlseesection
+
+	thingotherresearcher <.. thingrole
+	thingdepartment <.. thingrole
+	thingrole <.. thingsection
+	actorresearcher --- thingdepartmentinterface
+	thingsection --- controlseesection
+	thingrole --- controlseesection
+	thingdepartment --- controlseesection
+	thingdepartmentinterface --> controlseesection
+
+@enduml

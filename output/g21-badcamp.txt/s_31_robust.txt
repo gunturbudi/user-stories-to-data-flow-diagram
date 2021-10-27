@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Page" as thingsponsorshippage #grey
+	entity "Badcamp Attendee" as thingbadcampattendee
+	actor "Sponsor" as actorsponsor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Link Badcamp\nAttendees To\nSponsorship Page" as controllinkbadcampattendeessponsorshippage
+
+	thingsponsorshippage <.. thingbadcampattendee
+	actorsponsor --- thingpageinterface
+	thingbadcampattendee --- controllinkbadcampattendeessponsorshippage
+	thingsponsorshippage --- controllinkbadcampattendeessponsorshippage
+	thingpageinterface --> controllinkbadcampattendeessponsorshippage
+
+@enduml

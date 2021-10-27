@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Face" as thingface
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Have" as controlhaveenableALFREDOlderPersonhaveface
+	control "Enable" as controlenableALFREDOlderPersonhaveface
+	control "Have Face" as controlhaveface
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingALFREDOlderPerson --> controlhaveenableALFREDOlderPersonhaveface
+	controlhaveenableALFREDOlderPersonhaveface --> controlenableALFREDOlderPersonhaveface
+	thingALFREDOlderPerson --> controlenableALFREDOlderPersonhaveface
+	controlenableALFREDOlderPersonhaveface --> controlhaveface
+	thingface --- controlhaveface
+	thingALFREDOlderPerson --> controlhaveface
+
+@enduml

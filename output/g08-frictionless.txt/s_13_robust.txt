@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Openoffice" as thingOpenOffice
+	entity "Package" as thingpackage #grey
+	entity "Second" as thingsecond
+	entity "Libreoffice" as thingLibreOffice
+	entity "Data" as thingdata #grey
+	actor "Researcher" as actorresearcher
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	boundary "Openoffice\nInterface" as thingopenofficeinterface #grey
+	control "Get A\nData Package\nInto Libreoffice\nIn Seconds" as controlgetdatapackageLibreOfficesecond
+	control "Get A\nPackage Into\nOpenoffice" as controlgetpackageOpenOffice
+
+	thingOpenOffice <.. thingpackage
+	thingdata <.. thingpackage
+	thingLibreOffice <.. thingpackage
+	thingsecond <.. thingLibreOffice
+	actorresearcher --- thingsecondinterface
+	actorresearcher --- thingopenofficeinterface
+	thingLibreOffice --- controlgetdatapackageLibreOfficesecond
+	thingsecondinterface --> controlgetdatapackageLibreOfficesecond
+	thingpackage --- controlgetdatapackageLibreOfficesecond
+	thingsecond --- controlgetdatapackageLibreOfficesecond
+	thingpackage --- controlgetpackageOpenOffice
+	thingOpenOffice --- controlgetpackageOpenOffice
+	thingopenofficeinterface --> controlgetpackageOpenOffice
+
+@enduml

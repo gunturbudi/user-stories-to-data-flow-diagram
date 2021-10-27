@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Field,shape=partialRectangle,null,null,data_base
+201,Profile,shape=partialRectangle,null,null,data_base
+202,Site Member,rounded=0,null,null,external_entity
+203,Search For Profiles On A Few Fields,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Profile,endArrow=classic,203,201,endArrow=classic
+207,Field,endArrow=classic,203,200,endArrow=classic

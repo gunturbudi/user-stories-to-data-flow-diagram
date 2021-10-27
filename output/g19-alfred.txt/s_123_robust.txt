@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Api" as thingapi
+	actor "Developer" as actordeveloper
+	boundary "Api\nInterface" as thingapiinterface #grey
+	control "Documented Have\nThe Api" as controlhaveapi
+
+	actordeveloper --- thingapiinterface
+	thingapi --- controlhaveapi
+	thingapiinterface --> controlhaveapi
+
+@enduml

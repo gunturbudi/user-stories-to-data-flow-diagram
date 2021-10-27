@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Consistency" as thingconsistency
+	entity "Comprehensive Plan" as thingcomprehensiveplan
+	actor "Planning ,\nStaff Member" as actorplanningstaffmember
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Evaluate Consistency\nWith The\nComprehensive Plan" as controlevaluateconsistency
+
+	thingcomprehensiveplan <.. thingconsistency
+	actorplanningstaffmember --- thingplaninterface
+	thingconsistency --- controlevaluateconsistency
+	thingcomprehensiveplan --- controlevaluateconsistency
+	thingplaninterface --> controlevaluateconsistency
+
+@enduml

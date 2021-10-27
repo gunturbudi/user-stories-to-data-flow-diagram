@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Report" as thingreport
+	entity "Historical" as thinghistorical
+	entity "Timely Information" as thingtimelyinformation
+	actor "Patron" as actorpatron
+	circle "Multiple Version" as thingmultipleversion
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Historical\nInterface" as thinghistoricalinterface #grey
+	control "View Multiple\nVersions Of\nA Report" as controlviewmultipleversion
+	control "Dataset" as controldatasetgettimelyinformation
+	control "Get Timely\nInformation" as controlgettimelyinformation
+	control "Get Historical" as controlgethistorical
+
+	thingreport *-- thingmultipleversion
+	actorpatron --- thingreportinterface
+	actorpatron --- thinginformationinterface
+	actorpatron --- thinghistoricalinterface
+	thingmultipleversion --- controlviewmultipleversion
+	thingreport --- controlviewmultipleversion
+	thingreportinterface --> controlviewmultipleversion
+	thinginformationinterface --> controldatasetgettimelyinformation
+	controldatasetgettimelyinformation --> controlgettimelyinformation
+	thingtimelyinformation --- controlgettimelyinformation
+	thinginformationinterface --> controlgettimelyinformation
+	thinghistorical --- controlgethistorical
+	thinghistoricalinterface --> controlgethistorical
+	controldatasetgettimelyinformation --> controlgethistorical
+
+@enduml

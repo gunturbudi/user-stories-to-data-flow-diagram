@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Appropriate Order" as thingappropriateorder
+	entity "Component" as thingcomponent
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "List The\nComponents In\nAppropriate Order\nFor An\nObject" as controllistcomponentappropriateorderobject
+
+	thingobject <.. thingappropriateorder
+	thingappropriateorder <.. thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	thingcomponent --- controllistcomponentappropriateorderobject
+	thingappropriateorder --- controllistcomponentappropriateorderobject
+	thingobject --- controllistcomponentappropriateorderobject
+	thingobjectinterface --> controllistcomponentappropriateorderobject
+
+@enduml

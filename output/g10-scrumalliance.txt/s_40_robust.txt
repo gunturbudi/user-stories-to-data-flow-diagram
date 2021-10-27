@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Methodology" as thingmethodology
+	entity "Training Pdf" as thingtrainingpdf
+	actor "Site Member" as actorsitemember
+	boundary "Methodology\nInterface" as thingmethodologyinterface #grey
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	control "Download Methodology" as controldownloadmethodology
+	control "Download The\nMaterial, Latest\nTraining Pdfs" as controldownloadmateriallatesttrainingPDFs
+
+	actorsitemember --- thingmethodologyinterface
+	actorsitemember --- thingpdfinterface
+	thingmethodology --- controldownloadmethodology
+	thingmethodologyinterface --> controldownloadmethodology
+	thingtrainingpdf --- controldownloadmateriallatesttrainingPDFs
+	thingpdfinterface --> controldownloadmateriallatesttrainingPDFs
+
+@enduml

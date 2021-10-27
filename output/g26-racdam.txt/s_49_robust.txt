@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photo" as thingphoto
+	actor "Archivist" as actorarchivist
+	circle "Use" as thinguse
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	control "Track Use\nOf A\nPhoto" as controltrackuse
+
+	thingphoto *-- thinguse
+	actorarchivist --- thingphotointerface
+	thinguse --- controltrackuse
+	thingphoto --- controltrackuse
+	thingphotointerface --> controltrackuse
+
+@enduml

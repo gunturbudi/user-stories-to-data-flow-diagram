@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype #grey
+	entity "Archetype" as thingarchetype
+	actor "Dataset Developer" as actordatasetdeveloper
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Have An\nArchetype Helps\nProperly Package\nDataset Type" as controlhavearchetype
+
+	thingdatasettype <.. thingarchetype
+	actordatasetdeveloper --- thingtypeinterface
+	thingarchetype --- controlhavearchetype
+	thingdatasettype --- controlhavearchetype
+	thingtypeinterface --> controlhavearchetype
+
+@enduml

@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training" as thingtraining
+	entity "Follow Information" as thingfollowinginformation
+	entity "Link" as thinglink #grey
+	entity "Registration" as thingregistration
+	entity "Title" as thingtitle
+	entity "Short Summary" as thingshortsummary
+	entity "Remain Registration" as thingremainingregistration
+	entity "Trainer" as thingtrainer
+	entity "Day Register" as thingdayregister #grey
+	actor "Anonymoususer" as actoranonymoususer
+	circle "Day Level" as thingdaylevel
+	circle "Number" as thingnumber #grey
+	circle "Location" as thinglocation
+	circle "Detail" as thingfulldetail
+	circle "Option" as thingoption #grey
+	control "Have" as controlhave
+
+	thingfulldetail <.. thinglink
+	thingnumber *-- thingdaylevel
+	thinglink *-- thingdaylevel
+	thingdayregister *-- thingdaylevel
+	thingremainingregistration *-- thingdaylevel
+	thinglocation *-- thingdaylevel
+	thingtrainer *-- thingdaylevel
+	thingtitle *-- thingdaylevel
+	thingshortsummary *-- thingdaylevel
+	thingtraining *-- thingdaylevel
+	thingregistration *-- thingnumber
+	thingtraining *-- thinglocation
+	thingtraining *-- thingfulldetail
+	thingtraining *-- thingoption
+
+@enduml

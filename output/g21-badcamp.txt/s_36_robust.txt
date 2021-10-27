@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Blog" as thingblog
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Blog\nInterface" as thingbloginterface #grey
+	control "Read The\nBlog" as controlreadblog
+
+	actoranonymoususer --- thingbloginterface
+	thingblog --- controlreadblog
+	thingbloginterface --> controlreadblog
+
+@enduml

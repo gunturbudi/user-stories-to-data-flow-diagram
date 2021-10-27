@@ -1,0 +1,36 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Submitter,shape=partialRectangle,null,null,data_base
+202,License,shape=partialRectangle,null,null,data_base
+203,Selection,shape=partialRectangle,null,null,data_base
+204,Deposit,shape=partialRectangle,null,null,data_base
+205,Specific License,shape=partialRectangle,null,null,data_base
+206,Repoadmin,rounded=0,null,null,external_entity
+207,Have,ellipse,null,null,process
+208,Denied,ellipse,null,null,process
+209,The Submitter Not Accept The License,ellipse,null,null,process
+210,Presented With A License,ellipse,null,null,process
+211,Presented With A Selection Of Specific Licenses To The Collection,ellipse,null,null,process
+212,Presented With A Selection Of Specific Licenses To Deposit,ellipse,null,null,process
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,206,210,endArrow=classic
+218,,endArrow=classic,206,211,endArrow=classic
+219,,endArrow=classic,206,212,endArrow=classic
+220,,endArrow=classic,207,210,endArrow=classic
+221,,endArrow=classic,207,211,endArrow=classic
+222,,endArrow=classic,207,212,endArrow=classic
+223,Specific License,endArrow=classic,207,205,endArrow=classic
+224,Selection,endArrow=classic,207,203,endArrow=classic
+225,,endArrow=classic,208,209,endArrow=classic
+226,Submitter,endArrow=classic,209,201,endArrow=classic
+227,License,endArrow=classic,209,202,endArrow=classic
+228,,endArrow=classic,210,208,endArrow=classic
+229,License,endArrow=classic,210,202,endArrow=classic
+230,Selection,endArrow=classic,211,203,endArrow=classic
+231,Specific License,endArrow=classic,211,205,endArrow=classic
+232,Collection,endArrow=classic,211,200,endArrow=classic
+233,Deposit,endArrow=classic,212,204,endArrow=classic
+234,Specific License,endArrow=classic,212,205,endArrow=classic
+235,Selection,endArrow=classic,212,203,endArrow=classic

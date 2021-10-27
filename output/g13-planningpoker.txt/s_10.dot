@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Estimate " color=red];
+201 [label="Moderator" shape=box];
+202 [label="{<f0> 1.0|<f1> Accept The Average Of All Estimates }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Estimate"]
+}

@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rot" as thingrot
+	entity "Law School" as thinglawschool #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Scholarship" as thingscholarship
+	boundary "Sustainable Link" as thingsustainablelink
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	boundary "School\nInterface" as thingschoolinterface #grey
+	control "Using Sustainable\nLinks Not\nSuccumb" as controlusepreservescholarshipsustainablelink
+	control "Preserve The\nScholarship Of\nThe Law\nSchool" as controlpreservescholarship
+	control "Link Rot" as controllinkrot
+
+	thinglawschool *-- thingscholarship
+	actorlibrarystaffmember --- thingsustainablelink
+	actorlibrarystaffmember --- thinglinkinterface
+	actorlibrarystaffmember --- thingschoolinterface
+	thingsustainablelink --> controlusepreservescholarshipsustainablelink
+	thinglinkinterface --> controlusepreservescholarshipsustainablelink
+	controlusepreservescholarshipsustainablelink --> controlpreservescholarship
+	thingscholarship --- controlpreservescholarship
+	thinglawschool --- controlpreservescholarship
+	thingschoolinterface --> controlpreservescholarship
+	controlusepreservescholarshipsustainablelink --> controllinkrot
+	thingrot --- controllinkrot
+	thingsustainablelink --> controllinkrot
+
+@enduml

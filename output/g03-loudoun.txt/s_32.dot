@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Execution " ];
+201 [label="Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Hearing Execution }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Support }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Prepare }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing. }" shape=Mrecord];
+202 -> 4
+1001 [label="<f0>  |<f1> Pre-hearing requirements " color=red];
+4 -> 1001
+201 -> 202
+201 -> 204
+202 -> 200
+203 -> 202
+204 -> 202
+}

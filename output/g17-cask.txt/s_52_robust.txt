@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Effect" as thingeffect
+	entity "Change" as thingchange
+	actor "User" as actoruser
+	control "Ensure" as controlensure
+
+
+@enduml

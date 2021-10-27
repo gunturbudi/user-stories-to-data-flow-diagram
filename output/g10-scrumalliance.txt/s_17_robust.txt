@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Editor" as thingeditor
+	entity "News Item" as thingnewsitem
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Editor\nInterface" as thingeditorinterface #grey
+	control "Email News\nItems To\nThe Editor" as controlemailnewsitemseditor
+
+	thingeditor <.. thingnewsitem
+	actorsitevisitor --- thingeditorinterface
+	thingnewsitem --- controlemailnewsitemseditor
+	thingeditor --- controlemailnewsitemseditor
+	thingeditorinterface --> controlemailnewsitemseditor
+
+@enduml

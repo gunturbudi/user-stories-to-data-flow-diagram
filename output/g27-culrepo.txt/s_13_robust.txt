@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Cut" as thingcut
+	entity "Format Citation" as thingformattedcitation
+	entity "People" as thingpeople
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Cut\nInterface" as thingcutinterface #grey
+	control "Upload Data" as controluploaddatum
+	control "Provide A\nCut" as controlprovidecut
+	control "Paste Formatted\nCitation For\nPeople Use\nA Cut" as controlpasteformattedcitation
+
+	thingpeople <.. thingformattedcitation
+	thingcut <.. thingpeople
+	actorcornellfacultymember --- thingdatuminterface
+	actorcornellfacultymember --- thingcutinterface
+	thingdatum --- controluploaddatum
+	thingdatuminterface --> controluploaddatum
+	thingcut --- controlprovidecut
+	thingcutinterface --> controlprovidecut
+	thingformattedcitation --- controlpasteformattedcitation
+	thingpeople --- controlpasteformattedcitation
+	thingcut --- controlpasteformattedcitation
+	thingcutinterface --> controlpasteformattedcitation
+
+@enduml

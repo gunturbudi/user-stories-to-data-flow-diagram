@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Component" as thingcomponent
+	entity "Title" as thingtitle
+	entity "Facet" as thingotherfacet
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Facet\nInterface" as thingfacetinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	control "Necessary Describe\nEach Component\nIncluding Other\nFacet" as controldescribecomponentotherfacet
+	control "Necessary Describe\nEach Component\nIncluding Title" as controldescribecomponenttitle
+
+	thingtitle <.. thingcomponent
+	thingotherfacet <.. thingcomponent
+	actorrepositorymanager --- thingfacetinterface
+	actorrepositorymanager --- thingtitleinterface
+	thingotherfacet --- controldescribecomponentotherfacet
+	thingfacetinterface --> controldescribecomponentotherfacet
+	thingcomponent --- controldescribecomponentotherfacet
+	thingcomponent --- controldescribecomponenttitle
+	thingtitle --- controldescribecomponenttitle
+	thingtitleinterface --> controldescribecomponenttitle
+
+@enduml

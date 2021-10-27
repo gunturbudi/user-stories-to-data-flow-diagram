@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Atom Feed " ];
+201 [label="<f0>  |<f1> Federalactionobligation " ];
+202 [label="Agency User" shape=box];
+203 [label="{<f0> 1.0|<f1> Map The Federalactionobligation Properly To The Atom Feed }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

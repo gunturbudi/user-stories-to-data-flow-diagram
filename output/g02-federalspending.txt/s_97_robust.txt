@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs Page" as thingfabspage
+	actor "Agency User" as actoragencyuser
+	boundary "Page" as thingpageagencyuser #grey
+	boundary "Landing Page" as thinglandingpageagencyuser
+	control "Dabs" as controldabs
+	control "Navigate To" as controlnavigatepageagencyuserdabs
+	control "Navigate To\nFabs Pages" as controlnavigatelandingpageagencyuserfabspage
+
+	actoragencyuser --- thingpageagencyuser
+	actoragencyuser --- thinglandingpageagencyuser
+	controlnavigatepageagencyuserdabs --> controldabs
+	thingpageagencyuser --> controlnavigatepageagencyuserdabs
+	thinglandingpageagencyuser --> controlnavigatelandingpageagencyuserfabspage
+	thingfabspage --- controlnavigatelandingpageagencyuserfabspage
+
+@enduml

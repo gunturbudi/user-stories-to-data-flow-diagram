@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Video " color=red];
+201 [label="<f0>  |<f1> Related Information " ];
+202 [label="<f0>  |<f1> Broadcaster Logo " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Identify Broadcaster Logos In Videos }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Receive Related Information About Broadcaster Logos }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Broadcaster Logo"]
+204 -> 200 [label="Video"]
+205 -> 201 [label="Related Information"]
+205 -> 202 [label="Broadcaster Logo"]
+}

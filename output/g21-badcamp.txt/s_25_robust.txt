@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Venue Detail" as thingvenuedetail
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Detail\nInterface" as thingdetailinterface #grey
+	control "View Venue\nDetails" as controlviewvenuedetails
+
+	actoranonymoususer --- thingdetailinterface
+	thingvenuedetail --- controlviewvenuedetails
+	thingdetailinterface --> controlviewvenuedetails
+
+@enduml

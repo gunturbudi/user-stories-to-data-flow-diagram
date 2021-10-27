@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Link funding to all of the outputs it produces,ellipse,null,null,process
+200,Archive,shape=partialRectangle,null,null,data_base
+201,Cris,shape=partialRectangle,null,null,data_base
+202,"Research , Information Manager",rounded=0,null,null,external_entity
+203,Integrate The Archive With Cris,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Archive,endArrow=classic,203,200,endArrow=classic
+207,Cris,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Funding,rounded=0,null,null,external_entity
+1002,Funding,endArrow=classic,2,1001,endArrow=classic

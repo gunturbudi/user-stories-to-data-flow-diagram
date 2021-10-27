@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Researcher" as actorresearcher
+	control "Search" as controlsearch
+
+
+@enduml

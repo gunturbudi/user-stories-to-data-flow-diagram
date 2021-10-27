@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Calendar " ];
+201 [label="Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Manage }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Hearing Calendars }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Track hearing-related activities and due dates. }" shape=Mrecord];
+202 -> 3
+1001 [label="<f0>  |<f1> Due dates " color=red];
+3 -> 1001
+201 -> 202
+201 -> 203
+202 -> 203
+203 -> 200
+}

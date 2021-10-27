@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingresearcher
+	entity "Time" as thingtime
+	entity "Date" as thinggivendate
+	actor "Supervisor" as actorsupervisor
+	circle "Period" as thingperiod
+	control "View" as controlview
+
+	thingtime *-- thingperiod
+
+@enduml

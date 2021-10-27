@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Item" as thingitem
+	entity "License" as thinglicense
+	actor "Repoadmin" as actorrepoadmin
+	control "Have" as controlhave
+
+
+@enduml

@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Session,shape=partialRectangle,null,null,data_base
+201,Authenticateduser,rounded=0,null,null,external_entity
+202,Edit Session,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Session,endArrow=classic,202,200,endArrow=classic

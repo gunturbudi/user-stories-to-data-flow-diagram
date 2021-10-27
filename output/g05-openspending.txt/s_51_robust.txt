@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Embed Visualisation" as thingembeddedvisualisation
+	entity "Platform" as thingownplatform
+	actor "Api User" as actorapiuser
+	circle "Color" as thingcolor
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Change The\nColors Of\nThe Embedded\nVisualisations In\nOwn Platform" as controlchangecolor
+
+	thingownplatform <.. thingembeddedvisualisation
+	thingembeddedvisualisation *-- thingcolor
+	actorapiuser --- thingplatforminterface
+	thingcolor --- controlchangecolor
+	thingembeddedvisualisation --- controlchangecolor
+	thingownplatform --- controlchangecolor
+	thingplatforminterface --> controlchangecolor
+
+@enduml

@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collect Datum" as thingcollecteddata
+	entity "Institution" as thingowninstitution
+	actor "Data Manager" as actordatamanager
+	control "Know" as controlknow
+
+
+@enduml

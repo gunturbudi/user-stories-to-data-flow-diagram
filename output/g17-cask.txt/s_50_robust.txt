@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Property" as thingotherproperty
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	actor "User" as actoruser
+	circle "Single Property" as thingsingleproperty
+	boundary "Property\nInterface" as thingpropertyinterface #grey
+	control "Remove A\nSingle Property\nOf A\nDataset Instance" as controlremovesingleproperty
+	control "Knowing All\nOther Properties" as controlknowremovesinglepropertyotherproperty
+
+	thingdatasetinstance *-- thingsingleproperty
+	actoruser --- thingpropertyinterface
+	thingsingleproperty --- controlremovesingleproperty
+	thingdatasetinstance --- controlremovesingleproperty
+	controlknowremovesinglepropertyotherproperty --> controlremovesingleproperty
+	thingpropertyinterface --> controlremovesingleproperty
+	thingotherproperty --- controlknowremovesinglepropertyotherproperty
+	thingpropertyinterface --> controlknowremovesinglepropertyotherproperty
+
+@enduml

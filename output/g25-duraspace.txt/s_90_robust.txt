@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Applicable License" as thingapplicablelicense
+	entity "Copyright Content" as thingcopyrightedcontent
+	actor "Dams Manager" as actordamsmanager
+	control "Know" as controlknow
+
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dam " ];
+201 [label="<f0>  |<f1> Resource " ];
+202 [label="<f0>  |<f1> Description " ];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Indicate Description }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Indicate All Pertinent, Other Versions Of A Resource Are External To The Dams }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Description"]
+205 -> 201 [label="Resource"]
+205 -> 200 [label="Dam"]
+}

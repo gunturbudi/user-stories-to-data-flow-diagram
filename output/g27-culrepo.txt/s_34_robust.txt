@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Google" as thinggoogle
+	entity "Repository" as thingrepository
+	entity "Library" as thinglibrary
+	entity "Item" as thingitem
+	entity "Discovery System" as thingdiscoverysystem #grey
+	actor "Researcher" as actorresearcher
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Google\nInterface" as thinggoogleinterface #grey
+	control "Discover Items\nIn The\nRepository Through\nThe Library's\nDiscovery System" as controldiscoveritemdiscoverysystem
+	control "Discover Items\nIn The\nRepository Through\nGoogle" as controldiscoveritemgoogle
+
+	thingdiscoverysystem <.. thingrepository
+	thinggoogle <.. thingrepository
+	thingrepository <.. thingitem
+	thinglibrary <.. thingdiscoverysystem
+	actorresearcher --- thingsysteminterface
+	actorresearcher --- thinggoogleinterface
+	thingitem --- controldiscoveritemdiscoverysystem
+	thingrepository --- controldiscoveritemdiscoverysystem
+	thingdiscoverysystem --- controldiscoveritemdiscoverysystem
+	thingsysteminterface --> controldiscoveritemdiscoverysystem
+	thinggoogle --- controldiscoveritemgoogle
+	thinggoogleinterface --> controldiscoveritemgoogle
+	thingrepository --- controldiscoveritemgoogle
+	thingitem --- controldiscoveritemgoogle
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Meeting,shape=partialRectangle,null,null,data_base
+201,Speech,shape=partialRectangle,null,null,data_base
+202,Alfred,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Insert Meetings Into Alfred Using Speech,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Meeting,endArrow=classic,204,200,endArrow=classic
+208,Alfred,endArrow=classic,204,202,endArrow=classic
+209,Speech,endArrow=classic,204,201,endArrow=classic

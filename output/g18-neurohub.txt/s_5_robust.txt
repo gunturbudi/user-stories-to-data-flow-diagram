@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Response" as thingresponse
+	entity "Paper ,\nBased Form" as thingpaperbasedform
+	entity "Subject" as thingsubject
+	actor "Mri Operator" as actormrioperator
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Record The\nResponses That\nSubjects Make\nWhen Completing\nPaper, Based\nForms" as controlrecordresponse
+
+	thingsubject <.. thingresponse
+	thingpaperbasedform <.. thingresponse
+	thingpaperbasedform <.. thingsubject
+	actormrioperator --- thingforminterface
+	thingresponse --- controlrecordresponse
+	thingsubject --- controlrecordresponse
+	thingpaperbasedform --- controlrecordresponse
+	thingforminterface --> controlrecordresponse
+
+@enduml

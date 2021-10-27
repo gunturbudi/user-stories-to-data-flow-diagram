@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Spreadsheet" as thingspreadsheet
+	entity "Web Page" as thingwebpage
+	actor "User" as actoruser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Have A\nSpreadsheet Within\nThe Neurohub\nWeb Page" as controlhavespreadsheet
+
+	thingwebpage <.. thingspreadsheet
+	actoruser --- thingpageinterface
+	thingspreadsheet --- controlhavespreadsheet
+	thingwebpage --- controlhavespreadsheet
+	thingpageinterface --> controlhavespreadsheet
+
+@enduml

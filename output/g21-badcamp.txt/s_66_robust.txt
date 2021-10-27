@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registration" as thingregistration
+	entity "Idividual Sponsorship" as thingidividualsponsorship
+	actor "Authenticateduser" as actorauthenticateduser
+	circle "Choice" as thingseveralchoice
+	circle "Second Page" as thingsecondpage
+	boundary "Registration\nInterface" as thingregistrationinterface #grey
+	control "Offered Several\nChoices Of\nIdividual Sponsorship\nOn The\nSecond Page\nOf Registration" as controlofferseveralchoicesecondpage
+
+	thingsecondpage <.. thingidividualsponsorship
+	thingidividualsponsorship *-- thingseveralchoice
+	thingregistration *-- thingsecondpage
+	actorauthenticateduser --- thingregistrationinterface
+	thingseveralchoice --- controlofferseveralchoicesecondpage
+	thingidividualsponsorship --- controlofferseveralchoicesecondpage
+	thingsecondpage --- controlofferseveralchoicesecondpage
+	thingregistration --- controlofferseveralchoicesecondpage
+	thingregistrationinterface --> controlofferseveralchoicesecondpage
+
+@enduml

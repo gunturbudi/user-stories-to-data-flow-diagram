@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Exist Instance,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Pipeline,shape=partialRectangle,null,null,data_base
+203,Dataset Instance,shape=partialRectangle,null,null,data_base
+204,Dataset Type,shape=partialRectangle,null,null,data_base
+205,Hydrator User,rounded=0,null,null,external_entity
+206,Specify An Explicit Version Of The Dataset Types Of The Dataset Instances Pipeline,ellipse,null,null,process
+207,Fail,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,Dataset Type,endArrow=classic,206,204,endArrow=classic
+213,Dataset Instance,endArrow=classic,206,203,endArrow=classic
+218,Pipeline,endArrow=classic,206,202,endArrow=classic

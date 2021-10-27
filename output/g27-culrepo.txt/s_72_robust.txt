@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Web Page" as thingwebpage #grey
+	entity "System" as thingothersystem
+	entity "Content" as thingcontent
+	entity "Repository" as thingrepository
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Use Content\nFrom Easily\nWeb Page" as controlusecontentwebpage
+	control "Use Content\nFrom The\nRepository In\nOther Systems" as controlusecontentrepository
+	control "Use Metadata" as controlusemetadata
+
+	thingrepository <.. thingcontent
+	thingwebpage <.. thingcontent
+	thingothersystem <.. thingrepository
+	actorlibrarystaffmember --- thingpageinterface
+	actorlibrarystaffmember --- thingsysteminterface
+	actorlibrarystaffmember --- thingmetadatainterface
+	thingwebpage --- controlusecontentwebpage
+	thingpageinterface --> controlusecontentwebpage
+	thingcontent --- controlusecontentwebpage
+	thingcontent --- controlusecontentrepository
+	thingrepository --- controlusecontentrepository
+	thingothersystem --- controlusecontentrepository
+	thingsysteminterface --> controlusecontentrepository
+	thingmetadata --- controlusemetadata
+	thingmetadatainterface --> controlusemetadata
+
+@enduml

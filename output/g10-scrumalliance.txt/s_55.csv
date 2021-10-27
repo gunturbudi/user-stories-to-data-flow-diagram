@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Article,shape=partialRectangle,null,null,data_base
+201,Date,shape=partialRectangle,null,null,data_base
+202,Publishing,shape=partialRectangle,null,null,data_base
+203,Site Editor,rounded=0,null,null,external_entity
+204,Set Start Publishing Dates,ellipse,null,null,process
+205,Publishing Dates For Articles,ellipse,null,null,process
+206,Stop,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Date,endArrow=classic,204,201,endArrow=classic
+212,Date,endArrow=classic,205,201,endArrow=classic
+213,Article,endArrow=classic,205,200,endArrow=classic
+214,,endArrow=classic,206,205,endArrow=classic
+215,Publishing,endArrow=classic,204,202,endArrow=classic

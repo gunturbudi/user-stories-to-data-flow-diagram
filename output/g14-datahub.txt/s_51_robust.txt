@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publisher" as thingpublisher
+	actor "Consumer" as actorconsumer
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	control "Browse Publishers" as controlbrowsepublisher
+	control "Find Publishers" as controlfindpublisher
+
+	actorconsumer --- thingpublisherinterface
+	thingpublisher --- controlbrowsepublisher
+	thingpublisherinterface --> controlbrowsepublisher
+	thingpublisher --- controlfindpublisher
+	thingpublisherinterface --> controlfindpublisher
+
+@enduml

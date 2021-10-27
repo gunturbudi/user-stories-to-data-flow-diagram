@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	actor "Developer" as actordeveloper
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Be A,\nFew Rules" as controlbe
+	control "Design App\nOn Own" as controldesignappown
+
+	actordeveloper --- thingappinterface
+	thingapp --- controldesignappown
+	thingappinterface --> controldesignappown
+
+@enduml

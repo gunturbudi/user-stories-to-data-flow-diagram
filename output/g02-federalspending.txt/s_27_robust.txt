@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Audit" as thingaudit
+	entity "Ui Sme" as thinguisme
+	actor "Owner" as actorowner
+	boundary "Sme\nInterface" as thingsmeinterface #grey
+	control "Design An\nAudit From\nThe Ui\nSme" as controldesignaudit
+
+	thinguisme <.. thingaudit
+	actorowner --- thingsmeinterface
+	thingaudit --- controldesignaudit
+	thinguisme --- controldesignaudit
+	thingsmeinterface --> controldesignaudit
+
+@enduml

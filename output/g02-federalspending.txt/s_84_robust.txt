@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Zip" as thingzip
+	entity "Error" as thingerror
+	actor "Agency User" as actoragencyuser
+	circle "Digit" as thinglastdigit
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	control "Leave Off\nThe Last\nDigits Of\nThe Zip\nWithout An\nError" as controlleavelastdigiterror
+
+	thingerror <.. thingzip
+	thingzip *-- thinglastdigit
+	actoragencyuser --- thingerrorinterface
+	thinglastdigit --- controlleavelastdigiterror
+	thingzip --- controlleavelastdigiterror
+	thingerror --- controlleavelastdigiterror
+	thingerrorinterface --> controlleavelastdigiterror
+
+@enduml

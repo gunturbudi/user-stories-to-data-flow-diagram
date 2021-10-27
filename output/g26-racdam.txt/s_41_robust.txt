@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Document" as thingdocument
+	entity "Photograph" as thingphotograph
+	actor "Researcher" as actorresearcher
+	boundary "Photograph\nInterface" as thingphotographinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	control "Locate Photographs" as controllocatephotograph
+	control "Locate Document" as controllocatedocument
+
+	actorresearcher --- thingphotographinterface
+	actorresearcher --- thingdocumentinterface
+	thingphotograph --- controllocatephotograph
+	thingphotographinterface --> controllocatephotograph
+	thingdocument --- controllocatedocument
+	thingdocumentinterface --> controllocatedocument
+
+@enduml

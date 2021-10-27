@@ -1,0 +1,78 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,Document Title,shape=partialRectangle,null,null,data_base
+204,Author,shape=partialRectangle,null,null,data_base
+205,File Location,shape=partialRectangle,null,null,data_base
+206,Keyword,shape=partialRectangle,null,null,data_base
+207,Description,shape=partialRectangle,null,null,data_base
+208,Release Frequency,shape=partialRectangle,null,null,data_base
+209,Document Type,shape=partialRectangle,null,null,data_base
+210,Status,shape=partialRectangle,null,null,data_base
+211,Subject Area,shape=partialRectangle,null,null,data_base
+212,Subscribable Flag,shape=partialRectangle,null,null,data_base
+213,"Library , Staff Member",rounded=0,null,null,external_entity
+214,Create Metadata For Items Within The Repository Includes Keyword,ellipse,null,null,process
+215,Create Metadata For Items Within The Repository Includes Status,ellipse,null,null,process
+216,Create Metadata For Items Within The Repository Includes Document Type,ellipse,null,null,process
+217,Create Metadata For Items Within The Repository Includes Document Title,ellipse,null,null,process
+218,Create Metadata For Items Within The Repository Includes Description,ellipse,null,null,process
+219,Create Metadata For Items Within The Repository Includes Subject Area,ellipse,null,null,process
+220,Create Metadata For Items Within The Repository Includes Release Frequency,ellipse,null,null,process
+221,Create Metadata For Items Within The Repository Includes Author,ellipse,null,null,process
+222,Create Metadata For Items Within The Repository Includes File Location,ellipse,null,null,process
+223,Searching,ellipse,null,null,process
+224,Create Metadata For Items Within The Repository Includes Subscribable Flag,ellipse,null,null,process
+226,,endArrow=classic,213,214,endArrow=classic
+227,,endArrow=classic,213,215,endArrow=classic
+228,,endArrow=classic,213,216,endArrow=classic
+229,,endArrow=classic,213,217,endArrow=classic
+230,,endArrow=classic,213,218,endArrow=classic
+231,,endArrow=classic,213,219,endArrow=classic
+232,,endArrow=classic,213,220,endArrow=classic
+233,,endArrow=classic,213,221,endArrow=classic
+234,,endArrow=classic,213,222,endArrow=classic
+235,,endArrow=classic,213,223,endArrow=classic
+236,,endArrow=classic,213,224,endArrow=classic
+237,Keyword,endArrow=classic,214,206,endArrow=classic
+238,Repository,endArrow=classic,214,200,endArrow=classic
+239,Item,endArrow=classic,214,201,endArrow=classic
+240,Metadata,endArrow=classic,214,202,endArrow=classic
+241,Status,endArrow=classic,215,210,endArrow=classic
+242,Repository,endArrow=classic,215,200,endArrow=classic
+243,Item,endArrow=classic,215,201,endArrow=classic
+244,Metadata,endArrow=classic,215,202,endArrow=classic
+245,Document Type,endArrow=classic,216,209,endArrow=classic
+246,Repository,endArrow=classic,216,200,endArrow=classic
+247,Item,endArrow=classic,216,201,endArrow=classic
+248,Metadata,endArrow=classic,216,202,endArrow=classic
+249,Metadata,endArrow=classic,217,202,endArrow=classic
+250,Item,endArrow=classic,217,201,endArrow=classic
+251,Repository,endArrow=classic,217,200,endArrow=classic
+252,Document Title,endArrow=classic,217,203,endArrow=classic
+253,Description,endArrow=classic,218,207,endArrow=classic
+254,Repository,endArrow=classic,218,200,endArrow=classic
+255,Item,endArrow=classic,218,201,endArrow=classic
+256,Metadata,endArrow=classic,218,202,endArrow=classic
+257,Subject Area,endArrow=classic,219,211,endArrow=classic
+258,Repository,endArrow=classic,219,200,endArrow=classic
+259,Item,endArrow=classic,219,201,endArrow=classic
+260,Metadata,endArrow=classic,219,202,endArrow=classic
+261,Release Frequency,endArrow=classic,220,208,endArrow=classic
+262,Repository,endArrow=classic,220,200,endArrow=classic
+263,Item,endArrow=classic,220,201,endArrow=classic
+264,Metadata,endArrow=classic,220,202,endArrow=classic
+265,Author,endArrow=classic,221,204,endArrow=classic
+266,Repository,endArrow=classic,221,200,endArrow=classic
+267,Item,endArrow=classic,221,201,endArrow=classic
+268,Metadata,endArrow=classic,221,202,endArrow=classic
+269,File Location,endArrow=classic,222,205,endArrow=classic
+270,Repository,endArrow=classic,222,200,endArrow=classic
+271,Item,endArrow=classic,222,201,endArrow=classic
+272,Metadata,endArrow=classic,222,202,endArrow=classic
+273,,endArrow=classic,223,214,endArrow=classic
+274,Subscribable Flag,endArrow=classic,224,212,endArrow=classic
+275,Repository,endArrow=classic,224,200,endArrow=classic
+276,Item,endArrow=classic,224,201,endArrow=classic
+277,Metadata,endArrow=classic,224,202,endArrow=classic

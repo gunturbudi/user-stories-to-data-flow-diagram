@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Course" as thingothercourse
+	entity "Listing Fee" as thinglistingfee #grey
+	entity "Event" as thingevent
+	actor "Site Administrator" as actorsiteadministrator
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "Create Event" as controlcreateevent
+	control "Create An\nOther Course\nNot Charged\nA Listing\nFee" as controlcreateothercourse
+
+	thinglistingfee <.. thingothercourse
+	actorsiteadministrator --- thingeventinterface
+	actorsiteadministrator --- thingfeeinterface
+	thingevent --- controlcreateevent
+	thingeventinterface --> controlcreateevent
+	thingothercourse --- controlcreateothercourse
+	thinglistingfee --- controlcreateothercourse
+	thingfeeinterface --> controlcreateothercourse
+
+@enduml

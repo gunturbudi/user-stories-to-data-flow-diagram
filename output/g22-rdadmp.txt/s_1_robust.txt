@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	actor "Pi" as actorpi
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Record All\nMetadata" as controlrecordmetadata
+
+	actorpi --- thingmetadatainterface
+	thingmetadata --- controlrecordmetadata
+	thingmetadatainterface --> controlrecordmetadata
+
+@enduml

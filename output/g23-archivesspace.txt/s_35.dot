@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Agent " color=red];
+201 [label="<f0>  |<f1> Accession Component " color=red];
+202 [label="<f0>  |<f1> Source " color=red];
+203 [label="<f0>  |<f1> Subject " color=red];
+204 [label="<f0>  |<f1> Resource " color=red];
+205 [label="Archivist" shape=box];
+206 [label="{<f0> 1.0|<f1> Indicate }" shape=Mrecord];
+}

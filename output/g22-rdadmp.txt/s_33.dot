@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Service " color=red];
+203 [label="Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know About Service }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know About All Resources For The Data }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Service"]
+205 -> 200 [label="Resource"]
+205 -> 201 [label="Datum"]
+}

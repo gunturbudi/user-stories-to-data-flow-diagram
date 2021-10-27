@@ -1,0 +1,42 @@
+id,value,style,source,target,type
+200,Deposit Window,shape=partialRectangle,null,null,data_base
+201,Date,shape=partialRectangle,null,null,data_base
+202,Group,shape=partialRectangle,null,null,data_base
+203,Specific Collection,shape=partialRectangle,null,null,data_base
+204,Multiple People,shape=partialRectangle,null,null,data_base
+205,Collection,shape=partialRectangle,null,null,data_base
+206,Depositor,shape=partialRectangle,null,null,data_base
+207,Permission,shape=partialRectangle,null,null,data_base
+208,Default,shape=partialRectangle,null,null,data_base
+209,Digitalrecords Archivist,rounded=0,null,null,external_entity
+210,Have,ellipse,null,null,process
+211,Deposit Groups In Specific Collections,ellipse,null,null,process
+212,Set A Date To Have These Permissions On These Depositors Pick Up On The Collection's Default Permission,ellipse,null,null,process
+213,Set A Date The Deposit Window Closes,ellipse,null,null,process
+214,Add Multiple People,ellipse,null,null,process
+215,Remove Multiple People,ellipse,null,null,process
+217,,endArrow=classic,209,210,endArrow=classic
+218,,endArrow=classic,209,211,endArrow=classic
+219,,endArrow=classic,209,212,endArrow=classic
+220,,endArrow=classic,209,212,endArrow=classic
+221,,endArrow=classic,209,213,endArrow=classic
+222,,endArrow=classic,209,214,endArrow=classic
+223,,endArrow=classic,209,215,endArrow=classic
+224,,endArrow=classic,210,212,endArrow=classic
+225,,endArrow=classic,210,213,endArrow=classic
+226,,endArrow=classic,210,214,endArrow=classic
+227,,endArrow=classic,210,215,endArrow=classic
+228,Date,endArrow=classic,210,201,endArrow=classic
+229,Group,endArrow=classic,211,202,endArrow=classic
+230,Specific Collection,endArrow=classic,211,203,endArrow=classic
+231,Permission,endArrow=classic,212,207,endArrow=classic
+232,Depositor,endArrow=classic,212,206,endArrow=classic
+233,Date,endArrow=classic,212,201,endArrow=classic
+234,Date,endArrow=classic,213,201,endArrow=classic
+235,Deposit Window,endArrow=classic,213,200,endArrow=classic
+236,,endArrow=classic,214,211,endArrow=classic
+237,Multiple People,endArrow=classic,214,204,endArrow=classic
+238,,endArrow=classic,215,211,endArrow=classic
+239,Multiple People,endArrow=classic,215,204,endArrow=classic
+241,Collection,endArrow=classic,211,205,endArrow=classic
+244,Default,endArrow=classic,212,208,endArrow=classic

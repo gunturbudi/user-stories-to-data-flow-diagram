@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Website Recruitment\nTest" as thingwebsiterecruitmenttest #grey
+	actor "User Researcher" as actoruserresearcher
+	boundary "Test\nInterface" as thingtestinterface #grey
+	control "Set Up\nA Website\nRecruitment Test" as controlsetwebsiterecruitmenttest
+
+	actoruserresearcher --- thingtestinterface
+	thingwebsiterecruitmenttest --- controlsetwebsiterecruitmenttest
+	thingtestinterface --> controlsetwebsiterecruitmenttest
+
+@enduml

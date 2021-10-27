@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	boundary "Intention" as thingintentionsharedatumresearcher #grey
+	control "Share Data" as controlsharedatum
+	control "Record" as controlrecordintentionsharedatumresearcher
+
+	actorresearcher --- thingintentionsharedatumresearcher
+	thingintentionsharedatumresearcher --> controlsharedatum
+	thingdatum --- controlsharedatum
+	controlrecordintentionsharedatumresearcher --> controlsharedatum
+	thingintentionsharedatumresearcher --> controlrecordintentionsharedatumresearcher
+
+@enduml

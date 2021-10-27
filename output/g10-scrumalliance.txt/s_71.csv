@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Earth,shape=partialRectangle,null,null,data_base
+201,Csm,shape=partialRectangle,null,null,data_base
+202,Home Page,shape=partialRectangle,null,null,data_base
+203,Site Visitor,rounded=0,null,null,external_entity
+204,Know,ellipse,null,null,process
+205,Glance Around The Home Page,ellipse,null,null,process
+206,Be One,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,205,204,endArrow=classic
+211,Home Page,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visitor" as thingvisitor
+	entity "Referer" as thingreferer
+	entity "Item" as thingitem
+	entity "Resolver ,\nAbstract Link" as thingresolverabstractedlink
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "See The\nReferers For\nVisitors Use\nResolver, Abstracted\nLinks" as controlseereferer
+	control "Reach Items" as controlreachitem
+
+	thingresolverabstractedlink <.. thingvisitor
+	thingvisitor <.. thingreferer
+	actorcollectioncurator --- thinglinkinterface
+	actorcollectioncurator --- thingiteminterface
+	thingreferer --- controlseereferer
+	thingvisitor --- controlseereferer
+	thingresolverabstractedlink --- controlseereferer
+	thinglinkinterface --> controlseereferer
+	controlseereferer --> controlreachitem
+	thingitem --- controlreachitem
+	thingiteminterface --> controlreachitem
+
+@enduml

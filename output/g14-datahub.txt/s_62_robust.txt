@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site Deployment" as thingsitedeployment #grey
+	entity "Configuration Parameter" as thingconfigurationparameter
+	actor "Admin" as actoradmin
+	boundary "Deployment\nInterface" as thingdeploymentinterface #grey
+	control "Set Key\nConfiguration Parameters\nFor Site\nDeployment" as controlsetkeyconfigurationparameterssitedeployment
+
+	thingsitedeployment <.. thingconfigurationparameter
+	actoradmin --- thingdeploymentinterface
+	thingconfigurationparameter --- controlsetkeyconfigurationparameterssitedeployment
+	thingsitedeployment --- controlsetkeyconfigurationparameterssitedeployment
+	thingdeploymentinterface --> controlsetkeyconfigurationparameterssitedeployment
+
+@enduml

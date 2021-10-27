@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Permission" as thingpermission
+	entity "Item" as thingitem
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Have Items" as controlhaveitem
+
+	actorcollectioncurator --- thingiteminterface
+	thingitem --- controlhaveitem
+	thingiteminterface --> controlhaveitem
+
+@enduml

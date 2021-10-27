@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Experiment" as thingexperiment
+	actor "User" as actoruser
+	boundary "Experiment\nInterface" as thingexperimentinterface #grey
+	control "Associate Files\nIn A\nExperiment" as controlassociatefile
+
+	thingexperiment <.. thingfile
+	actoruser --- thingexperimentinterface
+	thingfile --- controlassociatefile
+	thingexperiment --- controlassociatefile
+	thingexperimentinterface --> controlassociatefile
+
+@enduml

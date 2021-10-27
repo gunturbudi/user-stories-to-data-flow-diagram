@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Output" as thingoutput
+	entity "Research" as thingresearch
+	entity "Metadata" as thingmetadata
+	actor "Fundingbody" as actorfundingbody
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	control "Harvest Metadata\nOn Outputs\nFrom Research" as controlharvestmetadataoutputresearch
+
+	thingresearch <.. thingoutput
+	thingoutput <.. thingmetadata
+	actorfundingbody --- thingresearchinterface
+	thingmetadata --- controlharvestmetadataoutputresearch
+	thingoutput --- controlharvestmetadataoutputresearch
+	thingresearch --- controlharvestmetadataoutputresearch
+	thingresearchinterface --> controlharvestmetadataoutputresearch
+
+@enduml

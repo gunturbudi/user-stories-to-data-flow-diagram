@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="<f0>  |<f1> Log Book\nPage " color=red];
+202 [label="<f0>  |<f1> Network Drive " color=red];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Having Files To A Log Book Page }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Upload Files }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Using A Mapped Network Drive }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 205
+204 -> 206
+204 -> 200 [label="File"]
+204 -> 201 [label="Log Book\nPage"]
+205 -> 200 [label="File"]
+206 -> 202 [label="Network Drive"]
+}

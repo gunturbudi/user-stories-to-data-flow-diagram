@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Device,shape=partialRectangle,null,null,data_base
+201,Clearly,shape=partialRectangle,null,null,data_base
+202,Alfred,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Have An Alfred Device Slowly Very Speaks,ellipse,null,null,process
+205,Have An Device Clearly,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Device,endArrow=classic,204,200,endArrow=classic
+210,Device,endArrow=classic,205,200,endArrow=classic
+211,Clearly,endArrow=classic,205,201,endArrow=classic
+212,Alfred,endArrow=classic,204,202,endArrow=classic

@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Title " color=red];
+201 [label="<f0>  |<f1> Object " color=red];
+202 [label="<f0>  |<f1> Aspect " ];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Describe An Object Including Title }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Describe An Object Including Other Aspect }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Object"]
+204 -> 200 [label="Title"]
+205 -> 202 [label="Aspect"]
+205 -> 201 [label="Object"]
+}

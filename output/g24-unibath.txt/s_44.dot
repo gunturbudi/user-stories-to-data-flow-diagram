@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Country " color=red];
+201 [label="<f0>  |<f1> View Statistic " ];
+202 [label="<f0>  |<f1> Sector " color=red];
+203 [label="Research , Information Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Download }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Segment }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Segment The View Statistics By Country }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Segment The View Statistics By Sector }" shape=Mrecord];
+203 -> 206
+203 -> 207
+205 -> 204
+206 -> 201 [label="View Statistic"]
+206 -> 200 [label="Country"]
+207 -> 202 [label="Sector"]
+207 -> 201 [label="View Statistic"]
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Data Manager" as actordatamanager
+	circle "Anonymization" as thinganonymization
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Plan The\nAnonymization Of\nData" as controlplananonymization
+
+	thingdatum *-- thinganonymization
+	actordatamanager --- thingdatuminterface
+	thinganonymization --- controlplananonymization
+	thingdatum --- controlplananonymization
+	thingdatuminterface --> controlplananonymization
+
+@enduml

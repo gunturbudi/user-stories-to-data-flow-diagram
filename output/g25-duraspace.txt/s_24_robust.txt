@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "License" as thinglicense
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Indicate Any\nLicense To\nAn Object" as controlindicatelicenseobject
+
+	thingobject <.. thinglicense
+	actorrepositorymanager --- thingobjectinterface
+	thinglicense --- controlindicatelicenseobject
+	thingobject --- controlindicatelicenseobject
+	thingobjectinterface --> controlindicatelicenseobject
+
+@enduml

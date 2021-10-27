@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Small Device " ];
+201 [label="<f0>  |<f1> Easy " ];
+202 [label="<f0>  |<f1> Alfred Device " ];
+203 [label="Olderperson" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Small Device Easy }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Small Alfred Device Is }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Carry With }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Small Device"]
+204 -> 201 [label="Easy"]
+205 -> 206
+205 -> 202 [label="Alfred Device"]
+}

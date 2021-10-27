@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype
+	entity "Code" as thingcode
+	entity "Plugin Artifact" as thingpluginartifact #grey
+	actor "Plugin Developer" as actorplugindeveloper
+	boundary "Artifact\nInterface" as thingartifactinterface #grey
+	control "Include The\nCode For\nA Dataset\nType In\nThe Plugin\nArtifact" as controlincludecode
+
+	thingpluginartifact <.. thingdatasettype
+	thingdatasettype <.. thingcode
+	actorplugindeveloper --- thingartifactinterface
+	thingcode --- controlincludecode
+	thingdatasettype --- controlincludecode
+	thingpluginartifact --- controlincludecode
+	thingartifactinterface --> controlincludecode
+
+@enduml

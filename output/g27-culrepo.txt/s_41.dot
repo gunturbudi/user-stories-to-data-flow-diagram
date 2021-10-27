@@ -1,0 +1,33 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Need Report " color=red];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> Complete " ];
+203 [label="<f0>  |<f1> Report " color=red];
+204 [label="<f0>  |<f1> Keyword " ];
+205 [label="<f0>  |<f1> Partial Title " ];
+206 [label="Patron" shape=box];
+207 [label="{<f0> 1.0|<f1> Search For Dataset With Keywords }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Search For Report }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Locate Dataset }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Locate Needed Report }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Search For Dataset With Complete }" shape=Mrecord];
+212 [label="{<f0> 6.0|<f1> Search For Dataset With A Partial Title }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+206 -> 212
+207 -> 201 [label="Dataset"]
+207 -> 204 [label="Keyword"]
+208 -> 203 [label="Report"]
+209 -> 201 [label="Dataset"]
+210 -> 200 [label="Need Report"]
+211 -> 202 [label="Complete"]
+211 -> 201 [label="Dataset"]
+212 -> 209
+212 -> 210
+212 -> 205 [label="Partial Title"]
+212 -> 201 [label="Dataset"]
+}

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Basic Statistic" as thingbasicstatistic
+	entity "Tool" as thingtool
+	entity "Dataset" as thingdataset
+	actor "Researcher" as actorresearcher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Provided With\nA Tool\nGenerate Basic\nStatistics About\nA Dataset" as controlprovidetool
+
+	thingdataset <.. thingbasicstatistic
+	thingbasicstatistic <.. thingtool
+	actorresearcher --- thingdatasetinterface
+	thingtool --- controlprovidetool
+	thingbasicstatistic --- controlprovidetool
+	thingdataset --- controlprovidetool
+	thingdatasetinterface --> controlprovidetool
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pipeline" as thingpipeline
+	entity "Dataset Instance" as thingdatasetinstance
+	actor "Hydrator User" as actorhydratoruser
+	boundary "Pipeline\nInterface" as thingpipelineinterface #grey
+	control "Write An\nExisting Dataset\nInstance" as controlwriteexistingdatasetinstance
+	control "Create A\nPipeline" as controlcreatepipelinewriteexistingdatasetinstance
+	control "Create A\nPipeline Reads" as controlcreatepipeline
+
+	actorhydratoruser --- thingpipelineinterface
+	thingdatasetinstance --- controlwriteexistingdatasetinstance
+	controlcreatepipelinewriteexistingdatasetinstance --> controlwriteexistingdatasetinstance
+	thingpipelineinterface --> controlwriteexistingdatasetinstance
+	thingpipelineinterface --> controlcreatepipelinewriteexistingdatasetinstance
+	thingpipeline --- controlcreatepipelinewriteexistingdatasetinstance
+	thingpipeline --- controlcreatepipeline
+	thingpipelineinterface --> controlcreatepipeline
+
+@enduml

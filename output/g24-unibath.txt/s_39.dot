@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Centre " color=red];
+201 [label="<f0>  |<f1> Bath Datum " ];
+202 [label="Bath , Data , Archive Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Import Bath Data From An Wholesale, External Data Centre }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Bath Datum"]
+203 -> 200 [label="Data Centre"]
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Sortable Spot,shape=partialRectangle,null,null,data_base
+201,Particular Author,shape=partialRectangle,null,null,data_base
+202,Academicresearcher,rounded=0,null,null,external_entity
+203,Find The Works Of A Particular Author In Easily Sortable Spot,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Particular Author,endArrow=classic,203,201,endArrow=classic
+207,Sortable Spot,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Datum" as thingdatum
+	entity "Publication" as thingpublication
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	control "Upload Data\nTo The\nRepository" as controluploaddatumrepository
+	control "Associate The\nRepository With\nA Publication" as controlassociaterepository
+
+	thingpublication <.. thingrepository
+	thingrepository <.. thingdatum
+	actorcornellfacultymember --- thingrepositoryinterface
+	actorcornellfacultymember --- thingpublicationinterface
+	thingdatum --- controluploaddatumrepository
+	thingrepository --- controluploaddatumrepository
+	thingrepositoryinterface --> controluploaddatumrepository
+	thingpublication --- controlassociaterepository
+	thingpublicationinterface --> controlassociaterepository
+	thingrepository --- controlassociaterepository
+
+@enduml

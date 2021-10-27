@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Center ,\nUrl ,\nHelp Mapping" as thingcenterurlhelpmapping
+	entity "Topic" as thingtopic
+	actor "Application Administrator" as actorapplicationadministrator
+	boundary "Topic\nInterface" as thingtopicinterface #grey
+	boundary "Mapping\nInterface" as thingmappinginterface #grey
+	control "Configure Topic" as controlconfiguretopic
+	control "Configure The\nCenter, Url,\nHelp Mappings" as controlconfigurecenterurlhelpmapping
+
+	actorapplicationadministrator --- thingtopicinterface
+	actorapplicationadministrator --- thingmappinginterface
+	thingtopic --- controlconfiguretopic
+	thingtopicinterface --> controlconfiguretopic
+	thingcenterurlhelpmapping --- controlconfigurecenterurlhelpmapping
+	thingmappinginterface --> controlconfigurecenterurlhelpmapping
+
+@enduml

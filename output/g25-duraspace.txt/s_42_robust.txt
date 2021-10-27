@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Different ,\nCopyright Status" as thingdifferentcopyrightstatus
+	entity "Component" as thingcomponent
+	actor "Repository Manager" as actorrepositorymanager
+	control "Indicate" as controlindicate
+
+	thingobject <.. thingdifferentcopyrightstatus
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Badcamp" as thingBADCAMP
+	entity "Session" as thingsession
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Badcamp\nInterface" as thingbadcampinterface #grey
+	control "Submit A\nSession At\nBadcamp" as controlsubmitsessionBADCAMP
+
+	thingBADCAMP <.. thingsession
+	actorauthenticateduser --- thingbadcampinterface
+	thingsession --- controlsubmitsessionBADCAMP
+	thingBADCAMP --- controlsubmitsessionBADCAMP
+	thingbadcampinterface --> controlsubmitsessionBADCAMP
+
+@enduml

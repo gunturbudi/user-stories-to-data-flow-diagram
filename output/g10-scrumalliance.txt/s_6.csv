@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Small Graphic,shape=partialRectangle,null,null,data_base
+201,Site,shape=partialRectangle,null,null,data_base
+202,Article,shape=partialRectangle,null,null,data_base
+203,Csp,shape=partialRectangle,null,null,data_base
+204,Cst Status,shape=partialRectangle,null,null,data_base
+205,Practitioner,rounded=0,null,null,external_entity
+206,Write An Article For The Site With A Small Graphic With,ellipse,null,null,process
+207,Show,ellipse,null,null,process
+208,Show Csp,ellipse,null,null,process
+209,Show Cst Status,ellipse,null,null,process
+211,,endArrow=classic,205,206,endArrow=classic
+212,,endArrow=classic,205,207,endArrow=classic
+213,,endArrow=classic,205,208,endArrow=classic
+214,,endArrow=classic,205,209,endArrow=classic
+215,,endArrow=classic,206,207,endArrow=classic
+216,,endArrow=classic,206,208,endArrow=classic
+217,,endArrow=classic,206,209,endArrow=classic
+218,Small Graphic,endArrow=classic,206,200,endArrow=classic
+219,Site,endArrow=classic,206,201,endArrow=classic
+220,Article,endArrow=classic,206,202,endArrow=classic
+221,Csp,endArrow=classic,208,203,endArrow=classic
+222,Cst Status,endArrow=classic,209,204,endArrow=classic

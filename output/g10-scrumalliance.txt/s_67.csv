@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Upcoming Course,shape=partialRectangle,null,null,data_base
+201,Trainer,rounded=0,null,null,external_entity
+202,See,ellipse,null,null,process
+203,Notice,ellipse,null,null,process
+205,,endArrow=classic,201,203,endArrow=classic

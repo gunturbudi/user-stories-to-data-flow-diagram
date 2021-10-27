@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Card" as thingcard
+	entity "Thumbnail Photo" as thingthumbnailphoto
+	actor "Participant" as actorparticipant
+	boundary "Card\nInterface" as thingcardinterface #grey
+	control "Have A\nSmall Thumbnail\nPhoto Cards\nWhere Played" as controlhavesmallthumbnailphoto
+
+	thingcard <.. thingthumbnailphoto
+	actorparticipant --- thingcardinterface
+	thingthumbnailphoto --- controlhavesmallthumbnailphoto
+	thingcard --- controlhavesmallthumbnailphoto
+	thingcardinterface --> controlhavesmallthumbnailphoto
+
+@enduml

@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,"Publish ,\nNew Datum",shape=partialRectangle,null,null,data_base
+201,Existent Record,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Correct Existent Records,ellipse,null,null,process
+204,Ensure,ellipse,null,null,process
+205,Delete Existent Records,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,Existent Record,endArrow=classic,203,201,endArrow=classic
+211,,endArrow=classic,204,203,endArrow=classic
+212,,endArrow=classic,204,205,endArrow=classic
+213,Existent Record,endArrow=classic,205,201,endArrow=classic

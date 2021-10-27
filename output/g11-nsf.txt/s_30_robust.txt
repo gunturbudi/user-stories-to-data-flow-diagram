@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Conjunction" as thingconjunction
+	entity "New Cms" as thingnewCMS
+	entity "Level Strategy\nRecommendation" as thinglevelstrategyrecommendation
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Recommendation\nInterface" as thingrecommendationinterface #grey
+	boundary "Cms\nInterface" as thingcmsinterface #grey
+	control "Have High\nLevel Strategy\nRecommendations" as controlhavehighlevelstrategyrecommendationsimplementconjunction
+	control "Implement In\nConjunction With\nThe New\nCms" as controlimplementconjunction
+
+	thingnewCMS <.. thingconjunction
+	actornsfemployee --- thingrecommendationinterface
+	actornsfemployee --- thingcmsinterface
+	thinglevelstrategyrecommendation --- controlhavehighlevelstrategyrecommendationsimplementconjunction
+	thingrecommendationinterface --> controlhavehighlevelstrategyrecommendationsimplementconjunction
+	controlhavehighlevelstrategyrecommendationsimplementconjunction --> controlimplementconjunction
+	thingconjunction --- controlimplementconjunction
+	thingnewCMS --- controlimplementconjunction
+	thingcmsinterface --> controlimplementconjunction
+
+@enduml

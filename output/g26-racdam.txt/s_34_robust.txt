@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Citation Datum" as thingcitationdatum
+	actor "Researcher" as actorresearcher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Generate Structured\nCitation Data" as controlgeneratestructuredcitationdata
+
+	actorresearcher --- thingdatuminterface
+	thingcitationdatum --- controlgeneratestructuredcitationdata
+	thingdatuminterface --> controlgeneratestructuredcitationdata
+
+@enduml

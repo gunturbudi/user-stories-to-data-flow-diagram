@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "City" as thingcity
+	entity "Region" as thingregion
+	entity "Border Region" as thingborderingregion
+	actor "Api User" as actorapiuser
+	boundary "Region\nInterface" as thingregioninterface #grey
+	boundary "City\nInterface" as thingcityinterface #grey
+	control "Query A\nRegion" as controlquerygetborderingregionregion
+	control "Get Bordering\nRegions" as controlgetborderingregion
+	control "Query City" as controlquerygetborderingregionmoinsPRONmoinscity
+	control "Get City" as controlgetcity
+
+	actorapiuser --- thingregioninterface
+	actorapiuser --- thingcityinterface
+	thingregion --- controlquerygetborderingregionregion
+	thingregioninterface --> controlquerygetborderingregionregion
+	controlquerygetborderingregionregion --> controlgetborderingregion
+	thingborderingregion --- controlgetborderingregion
+	thingregioninterface --> controlgetborderingregion
+	controlquerygetborderingregionmoinsPRONmoinscity --> controlgetborderingregion
+	thingcityinterface --> controlquerygetborderingregionmoinsPRONmoinscity
+	thingcity --- controlquerygetborderingregionmoinsPRONmoinscity
+	thingcity --- controlgetcity
+	thingcityinterface --> controlgetcity
+
+@enduml

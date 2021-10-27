@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "App" as thingapp
+	entity "Operating System\nFeature" as thingoperatingsystemfeature
+	actor "Developer" as actordeveloper
+	boundary "Feature\nInterface" as thingfeatureinterface #grey
+	control "Have App\nTo Granted\nAccess To\nSeveral Operating\nSystem Features" as controlhaveapp
+
+	thingoperatingsystemfeature <.. thingaccess
+	thingaccess <.. thingapp
+	actordeveloper --- thingfeatureinterface
+	thingapp --- controlhaveapp
+	thingaccess --- controlhaveapp
+	thingoperatingsystemfeature --- controlhaveapp
+	thingfeatureinterface --> controlhaveapp
+
+@enduml

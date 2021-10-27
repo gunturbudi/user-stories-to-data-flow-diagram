@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Encoding" as thingencoding
+	entity "Christopher James" as thingchristopherjames #grey
+	entity "Worm Analysis\nSoftware" as thingwormanalysissoftware #grey
+	entity "Worm Behaviour\nVideo" as thingwormbehaviourvideo
+	actor "User" as actoruser
+	boundary "Software\nInterface" as thingsoftwareinterface #grey
+	control "Store Worm\nBehaviour Videos\nWith An\nEncoding Analysed\nThe Worm\nAnalysis Software\nChristopher James" as controlstorewormbehaviourvideosencoding
+
+	thingwormanalysissoftware <.. thingencoding
+	thingchristopherjames <.. thingwormanalysissoftware
+	thingencoding <.. thingwormbehaviourvideo
+	actoruser --- thingsoftwareinterface
+	thingwormbehaviourvideo --- controlstorewormbehaviourvideosencoding
+	thingencoding --- controlstorewormbehaviourvideosencoding
+	thingwormanalysissoftware --- controlstorewormbehaviourvideosencoding
+	thingsoftwareinterface --> controlstorewormbehaviourvideosencoding
+
+@enduml

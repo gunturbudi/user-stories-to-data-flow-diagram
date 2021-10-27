@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Atom Feed,shape=partialRectangle,null,null,data_base
+201,Federalactionobligation,shape=partialRectangle,null,null,data_base
+202,Agency User,rounded=0,null,null,external_entity
+203,Map The Federalactionobligation Properly To The Atom Feed,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Federalactionobligation,endArrow=classic,203,201,endArrow=classic
+207,Atom Feed,endArrow=classic,203,200,endArrow=classic

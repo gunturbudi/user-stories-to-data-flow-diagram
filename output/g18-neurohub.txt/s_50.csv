@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Page,shape=partialRectangle,null,null,data_base
+201,Search Result,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,See The Provenance Of The Page As Part Of The Search Results,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Page,endArrow=classic,203,200,endArrow=classic
+207,Search Result,endArrow=classic,203,201,endArrow=classic

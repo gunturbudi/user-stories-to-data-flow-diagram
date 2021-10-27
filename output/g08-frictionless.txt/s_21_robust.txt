@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ml Dataset" as thingmldataset
+	actor "Machine ,\nLearning Expert" as actormachinelearningexpert
+	boundary "Data Package" as thingdatapackage
+	control "Package Ml\nDatasets As\nData Packages" as controlpackagemldatasetsdatapackages
+
+	actormachinelearningexpert --- thingdatapackage
+	thingmldataset --- controlpackagemldatasetsdatapackages
+	thingdatapackage --> controlpackagemldatasetsdatapackages
+
+@enduml

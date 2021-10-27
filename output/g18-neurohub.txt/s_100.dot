@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Laboratory " ];
+201 [label="<f0>  |<f1> Neurohub Node " ];
+202 [label="<f0>  |<f1> Remote Access " ];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Secure Remote Access To The Neurohub Node When Away Working From The Laboratory }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Remote Access"]
+204 -> 201 [label="Neurohub Node"]
+204 -> 200 [label="Laboratory"]
+}

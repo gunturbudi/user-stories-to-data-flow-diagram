@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Logic " ];
+201 [label="<f0>  |<f1> Code " color=red];
+202 [label="<f0>  |<f1> Information " color=red];
+203 [label="<f0>  |<f1> Error " color=red];
+204 [label="Broker User" shape=box];
+205 [label="{<f0> 1.0|<f1> Provide Enough Information }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Updated Error Codes Accurately Reflect The Logic }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Updated Codes }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Fix my submission. }" shape=Mrecord];
+205 -> 4
+1001 [label="<f0>  |<f1> Submission " color=red];
+4 -> 1001
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 202
+206 -> 200
+206 -> 201
+207 -> 205
+207 -> 201
+206 -> 203
+}

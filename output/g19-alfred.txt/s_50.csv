@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Emergency,shape=partialRectangle,null,null,data_base
+201,Video Call,shape=partialRectangle,null,null,data_base
+202,Medicalcaregiver,rounded=0,null,null,external_entity
+203,Use Video Calls In Case Of Emergency,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Video Call,endArrow=classic,203,201,endArrow=classic
+207,Emergency,endArrow=classic,203,200,endArrow=classic

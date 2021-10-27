@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Fabs Submission" as thingfabssubmission
+	actor "Developer" as actordeveloper
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	control "Prevent Users\nFrom Publishing,\nDouble Fabs\nSubmissions Refreshing" as controlpreventuserpublishingdoublefabssubmissions
+
+	thingfabssubmission <.. thinguser
+	actordeveloper --- thingsubmissioninterface
+	thinguser --- controlpreventuserpublishingdoublefabssubmissions
+	thingfabssubmission --- controlpreventuserpublishingdoublefabssubmissions
+	thingsubmissioninterface --> controlpreventuserpublishingdoublefabssubmissions
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Information,shape=partialRectangle,null,null,data_base
+201,", Trainers\nSection",shape=partialRectangle,null,null,data_base
+202,Site Editor,rounded=0,null,null,external_entity
+203,"Post Information In A Only, Trainers Section",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Information,endArrow=classic,203,200,endArrow=classic
+207,", Trainers\nSection",endArrow=classic,203,201,endArrow=classic

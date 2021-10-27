@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Subject Heading" as thingsubjectheading
+	entity "Standard Identifier" as thingstandardidentifier
+	actor "Archivist" as actorarchivist
+	boundary "Heading\nInterface" as thingheadinginterface #grey
+	control "Associate A\nStandard Identifier\nWith A\nSubject Heading" as controlassociatestandardidentifier
+
+	thingsubjectheading <.. thingstandardidentifier
+	actorarchivist --- thingheadinginterface
+	thingstandardidentifier --- controlassociatestandardidentifier
+	thingsubjectheading --- controlassociatestandardidentifier
+	thingheadinginterface --> controlassociatestandardidentifier
+
+@enduml

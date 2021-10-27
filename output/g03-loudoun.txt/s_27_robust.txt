@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Staff Report" as thingstaffreport #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Report\nInterface" as thingreportinterface #grey
+	control "Develop A\nStaff Report" as controldevelopstaffreport
+
+	actorstaffmember --- thingreportinterface
+	thingstaffreport --- controldevelopstaffreport
+	thingreportinterface --> controldevelopstaffreport
+
+@enduml

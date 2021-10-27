@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Digital Object " color=red];
+201 [label="<f0>  |<f1> Analog Version " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Request Analog Versions Of Digital Objects }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Analog Version"]
+203 -> 200 [label="Digital Object"]
+}

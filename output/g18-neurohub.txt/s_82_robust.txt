@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ability" as thingability
+	entity "Meta Datum" as thingmetadatum
+	actor "Researcher" as actorresearcher
+	circle "Image" as thingimage
+	boundary "Cell" as thingcellusestandardmetadataresearcher #grey
+	control "Use Standard\nMeta Data" as controlusestandardmetadata
+	control "Have The\nTo Ability\nFor Images\nOf" as controlhaveability
+
+	thingimage <.. thingability
+	actorresearcher --- thingcellusestandardmetadataresearcher
+	thingmetadatum --- controlusestandardmetadata
+	thingcellusestandardmetadataresearcher --> controlusestandardmetadata
+	controlhaveability --> controlusestandardmetadata
+	thingability --- controlhaveability
+	thingimage --- controlhaveability
+	thingcellusestandardmetadataresearcher --> controlhaveability
+
+@enduml

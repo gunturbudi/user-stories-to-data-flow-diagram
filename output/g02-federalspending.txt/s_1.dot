@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Deletion " ];
+201 [label="Datum User" shape=box];
+202 [label="{<f0> 1.0|<f1> Have The Deletions }" shape=Mrecord];
+201 -> 202
+202 -> 200
+}

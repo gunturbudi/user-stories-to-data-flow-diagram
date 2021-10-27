@@ -1,0 +1,25 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Nys " ];
+201 [label="<f0>  |<f1> Available ,\nGeographic Area " ];
+202 [label="<f0>  |<f1> Educator " ];
+203 [label="<f0>  |<f1> Faculty " ];
+204 [label="<f0>  |<f1> Resource " color=red];
+205 [label="<f0>  |<f1> Specific Project " ];
+206 [label="Extension Administrator" shape=box];
+207 [label="{<f0> 1.0|<f1> Make Resources Developed For Available, Geographic Area To Educator }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Make Resources Developed For Available, Geographic Area To Other Faculty Across Nys }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Make Resources Developed For Specific Projects }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 202 [label="Educator"]
+207 -> 201 [label="Available ,\nGeographic Area"]
+207 -> 204 [label="Resource"]
+208 -> 201 [label="Available ,\nGeographic Area"]
+208 -> 203 [label="Faculty"]
+208 -> 200 [label="Nys"]
+208 -> 204 [label="Resource"]
+209 -> 204 [label="Resource"]
+209 -> 205 [label="Specific Project"]
+}

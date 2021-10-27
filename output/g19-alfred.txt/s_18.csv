@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Visual Support,shape=partialRectangle,null,null,data_base
+201,Olderperson,rounded=0,null,null,external_entity
+202,Receive Visual Support When Especially Looking At A List,ellipse,null,null,process
+203,Receive Visual Support When Especially Agenda Looking At A List,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Visual Support,endArrow=classic,202,200,endArrow=classic
+208,Visual Support,endArrow=classic,203,200,endArrow=classic

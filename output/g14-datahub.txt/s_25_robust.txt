@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingdatapackage
+	actor "Publisher" as actorpublisher
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Preview A\nDatapackage" as controlpreviewdatapackage
+
+	actorpublisher --- thingdatapackageinterface
+	thingdatapackage --- controlpreviewdatapackage
+	thingdatapackageinterface --> controlpreviewdatapackage
+
+@enduml

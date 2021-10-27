@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub Node" as thingneurohubnode
+	entity "Script" as thingscript
+	entity "Ubuntu Operating\nSystem" as thingubuntuoperatingsystem
+	actor "System Administrator" as actorsystemadministrator
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Run A\nScript Installs\nThe Neurohub\nNode Onto\nA Virgin\nUbuntu Operating\nSystem" as controlrunscript
+
+	thingubuntuoperatingsystem <.. thingneurohubnode
+	thingneurohubnode <.. thingscript
+	thingubuntuoperatingsystem <.. thingscript
+	actorsystemadministrator --- thingsysteminterface
+	thingscript --- controlrunscript
+	thingneurohubnode --- controlrunscript
+	thingubuntuoperatingsystem --- controlrunscript
+	thingsysteminterface --> controlrunscript
+
+@enduml

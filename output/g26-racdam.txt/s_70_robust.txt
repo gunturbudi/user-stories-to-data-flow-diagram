@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Outreach Material" as thingoutreachmaterial
+	actor "Researcher" as actorresearcher
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "Access Educational\nOutreach Materials" as controlaccesseducationaloutreachmaterials
+
+	actorresearcher --- thingmaterialinterface
+	thingoutreachmaterial --- controlaccesseducationaloutreachmaterials
+	thingmaterialinterface --> controlaccesseducationaloutreachmaterials
+
+@enduml

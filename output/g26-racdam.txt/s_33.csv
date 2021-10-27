@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Correspondence,shape=partialRectangle,null,null,data_base
+201,Documentation,shape=partialRectangle,null,null,data_base
+202,Form,shape=partialRectangle,null,null,data_base
+203,Preservation Photo,shape=partialRectangle,null,null,data_base
+204,Loan,shape=partialRectangle,null,null,data_base
+205,Archivist,rounded=0,null,null,external_entity
+206,Manage Documentation Including Correspondence,ellipse,null,null,process
+207,Manage Loan Documentation Including Preservation Photos,ellipse,null,null,process
+208,Manage Documentation Including Form,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Correspondence,endArrow=classic,206,200,endArrow=classic
+214,Documentation,endArrow=classic,206,201,endArrow=classic
+215,Preservation Photo,endArrow=classic,207,203,endArrow=classic
+216,Documentation,endArrow=classic,207,201,endArrow=classic
+217,Documentation,endArrow=classic,208,201,endArrow=classic
+218,Form,endArrow=classic,208,202,endArrow=classic
+220,Loan,endArrow=classic,207,204,endArrow=classic

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Use" as thinguse
+	entity "Metadata" as thingmetadata
+	entity "Object" as thingobject
+	actor "User" as actoruser
+	circle "Version" as thingotherversion
+	boundary "Use\nInterface" as thinguseinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Know About\nMetadata Be\nOf Use\nTo" as controlknowmetadata
+	control "Know About\nOther Versions\nOf The\nObject" as controlknowotherversion
+
+	thinguse <.. thinguse
+	thinguse <.. thingmetadata
+	thingobject *-- thingotherversion
+	actoruser --- thinguseinterface
+	actoruser --- thingobjectinterface
+	thingmetadata --- controlknowmetadata
+	thinguse --- controlknowmetadata
+	thinguseinterface --> controlknowmetadata
+	thingotherversion --- controlknowotherversion
+	thingobject --- controlknowotherversion
+	thingobjectinterface --> controlknowotherversion
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	actor "Researcher" as actorresearcher
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Create A\nLog Book\nPage" as controlcreatelogbookpage
+
+	actorresearcher --- thingpageinterface
+	thinglogbookpage --- controlcreatelogbookpage
+	thingpageinterface --> controlcreatelogbookpage
+
+@enduml

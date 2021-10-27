@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "C" as thingc
+	entity "D" as thingd
+	entity "Record" as thingrecord
+	entity "Dun" as thingDUNS
+	entity "Actiontype" as thingActionTypes
+	entity "Sam" as thingSAM
+	actor "actorwhose" as actorwhose #grey
+	actor "User" as actoruser
+	boundary "Duns Validations" as thingdunsvalidationswhosewhosewhoseuser
+	boundary "Validation" as thingvalidationwhosewhosewhoseuser #grey
+	control "Accept Records\nActiontypes Are\nB" as controlacceptdunsvalidationswhosewhosewhoseuserrecord
+	control "Accept Records\nActiontypes Are\nC" as controlacceptvalidationwhosewhosewhoseuserrecordc
+	control "Accept Records\nActiontypes Are\nD" as controlacceptvalidationwhosewhosewhoseuserrecordd
+	control "Accept Records\nActiontypes Are\nThe Duns" as controlacceptvalidationwhosewhosewhoseuserrecordDUNS
+
+	thingActionTypes <.. thingrecord
+	actoruser --- thingdunsvalidationswhosewhosewhoseuser
+	actorwhose --- thingdunsvalidationswhosewhosewhoseuser
+	actorwhose --- thingvalidationwhosewhosewhoseuser
+	actoruser --- thingvalidationwhosewhosewhoseuser
+	thingdunsvalidationswhosewhosewhoseuser --> controlacceptdunsvalidationswhosewhosewhoseuserrecord
+	thingrecord --- controlacceptdunsvalidationswhosewhosewhoseuserrecord
+	thingActionTypes --- controlacceptdunsvalidationswhosewhosewhoseuserrecord
+	thingc --- controlacceptvalidationwhosewhosewhoseuserrecordc
+	thingvalidationwhosewhosewhoseuser --> controlacceptvalidationwhosewhosewhoseuserrecordc
+	thingrecord --- controlacceptvalidationwhosewhosewhoseuserrecordc
+	thingActionTypes --- controlacceptvalidationwhosewhosewhoseuserrecordc
+	thingvalidationwhosewhosewhoseuser --> controlacceptvalidationwhosewhosewhoseuserrecordd
+	thingd --- controlacceptvalidationwhosewhosewhoseuserrecordd
+	thingrecord --- controlacceptvalidationwhosewhosewhoseuserrecordd
+	thingActionTypes --- controlacceptvalidationwhosewhosewhoseuserrecordd
+	thingDUNS --- controlacceptvalidationwhosewhosewhoseuserrecordDUNS
+	thingvalidationwhosewhosewhoseuser --> controlacceptvalidationwhosewhosewhoseuserrecordDUNS
+	thingrecord --- controlacceptvalidationwhosewhosewhoseuserrecordDUNS
+	thingActionTypes --- controlacceptvalidationwhosewhosewhoseuserrecordDUNS
+
+@enduml

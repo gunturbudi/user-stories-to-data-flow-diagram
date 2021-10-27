@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Certain Place" as thingcertainplace
+	entity "Alfred" as thingALFRED
+	entity "Friend" as thingfriend
+	entity "Meeting" as thingmeeting
+	actor "Olderperson" as actorOlderPerson
+	circle "Group" as thinggroup
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Organize A\nMeeting With\nA Group\nOf Friends\nAt A\nCertain Place" as controlorganizemeetingcertainplace
+	control "Use Alfred" as controluseALFREDorganizemeetingcertainplace
+
+	thingcertainplace <.. thingfriend
+	thinggroup <.. thingmeeting
+	thingfriend *-- thinggroup
+	actorOlderPerson --- thingalfredinterface
+	thingmeeting --- controlorganizemeetingcertainplace
+	thinggroup --- controlorganizemeetingcertainplace
+	thingfriend --- controlorganizemeetingcertainplace
+	thingcertainplace --- controlorganizemeetingcertainplace
+	controluseALFREDorganizemeetingcertainplace --> controlorganizemeetingcertainplace
+	thingalfredinterface --> controlorganizemeetingcertainplace
+	thingALFRED --- controluseALFREDorganizemeetingcertainplace
+	thingalfredinterface --> controluseALFREDorganizemeetingcertainplace
+
+@enduml

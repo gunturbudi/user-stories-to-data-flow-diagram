@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Descriptive Metadata,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,"Library , Staff Member",rounded=0,null,null,external_entity
+203,Upload Large Batches Of Items Including Descriptive Metadata,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Item,endArrow=classic,203,201,endArrow=classic
+207,Descriptive Metadata,endArrow=classic,203,200,endArrow=classic

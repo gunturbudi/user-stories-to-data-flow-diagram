@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Publication,shape=partialRectangle,null,null,data_base
+203,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+204,Upload Data To The Repository,ellipse,null,null,process
+205,Associate The Repository With A Publication,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Datum,endArrow=classic,204,201,endArrow=classic
+210,Repository,endArrow=classic,204,200,endArrow=classic
+211,Publication,endArrow=classic,205,202,endArrow=classic
+212,Repository,endArrow=classic,205,200,endArrow=classic

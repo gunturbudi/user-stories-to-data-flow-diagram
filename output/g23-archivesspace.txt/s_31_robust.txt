@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Accession" as thingaccession
+	entity "Resource" as thingresource
+	entity "Repository" as thingrepository
+	entity "Digital Object" as thingdigitalobject
+	actor "Archivist" as actorarchivist
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Accession\nInterface" as thingaccessioninterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Search Within\nA Repository\nFor Digital\nObject" as controlsearchrepositorydigitalobject
+	control "Search Within\nA Repository\nFor Accession" as controlsearchrepositoryaccession
+	control "Search Within\nA Repository\nFor Resource\nRecords" as controlsearchrepository
+
+	thingrecord <.. thingresource
+	thingresource <.. thingrepository
+	thingrecord <.. thingrepository
+	thingaccession <.. thingrepository
+	thingdigitalobject <.. thingrepository
+	actorarchivist --- thingobjectinterface
+	actorarchivist --- thingaccessioninterface
+	actorarchivist --- thingrecordinterface
+	thingdigitalobject --- controlsearchrepositorydigitalobject
+	thingobjectinterface --> controlsearchrepositorydigitalobject
+	thingrepository --- controlsearchrepositorydigitalobject
+	thingaccession --- controlsearchrepositoryaccession
+	thingaccessioninterface --> controlsearchrepositoryaccession
+	thingrepository --- controlsearchrepositoryaccession
+	thingrepository --- controlsearchrepository
+	thingresource --- controlsearchrepository
+	thingrecord --- controlsearchrepository
+	thingrecordinterface --> controlsearchrepository
+
+@enduml

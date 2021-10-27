@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingsamedatapackage
+	actor "Web Developer" as actorwebdeveloper
+	circle "Multiple Version" as thingmultipleversion
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Install Multiple\nVersions Of\nThe Same\nDatapackage" as controlinstallmultipleversion
+
+	thingsamedatapackage *-- thingmultipleversion
+	actorwebdeveloper --- thingdatapackageinterface
+	thingmultipleversion --- controlinstallmultipleversion
+	thingsamedatapackage --- controlinstallmultipleversion
+	thingdatapackageinterface --> controlinstallmultipleversion
+
+@enduml

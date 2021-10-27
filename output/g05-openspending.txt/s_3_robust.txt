@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Delete A\nDataset" as controldeletedataset
+
+	actordatapublishinguser --- thingdatasetinterface
+	thingdataset --- controldeletedataset
+	thingdatasetinterface --> controldeletedataset
+
+@enduml

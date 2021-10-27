@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Transaction " color=red];
+201 [label="Applicant" shape=box];
+202 [label="{<f0> 1.0|<f1> Check The Status Of A Transaction }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Service " color=red];
+2 -> 1001
+201 -> 202
+202 -> 200
+}

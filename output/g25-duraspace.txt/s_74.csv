@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Subject,shape=partialRectangle,null,null,data_base
+201,Object,shape=partialRectangle,null,null,data_base
+202,Collection Component,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,Indicate All Subjects Are Pertinent To Object,ellipse,null,null,process
+205,Indicate All Subjects Are Pertinent To A Collection Component,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Object,endArrow=classic,204,201,endArrow=classic
+210,Subject,endArrow=classic,204,200,endArrow=classic
+211,Subject,endArrow=classic,205,200,endArrow=classic
+212,Collection Component,endArrow=classic,205,202,endArrow=classic

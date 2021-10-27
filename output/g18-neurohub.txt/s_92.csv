@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Format,shape=partialRectangle,null,null,data_base
+202,Ability,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Have The To Ability For Files By,ellipse,null,null,process
+205,Have The To Ability For Files By Format,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Ability,endArrow=classic,204,202,endArrow=classic
+210,File,endArrow=classic,204,200,endArrow=classic
+211,Format,endArrow=classic,205,201,endArrow=classic
+212,File,endArrow=classic,205,200,endArrow=classic
+213,Ability,endArrow=classic,205,202,endArrow=classic

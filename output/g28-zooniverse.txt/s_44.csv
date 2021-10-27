@@ -1,0 +1,27 @@
+id,value,style,source,target,type
+200,Prefiltering,shape=partialRectangle,null,null,data_base
+201,Image,shape=partialRectangle,null,null,data_base
+202,Artefact,shape=partialRectangle,null,null,data_base
+203,Read Error,shape=partialRectangle,null,null,data_base
+204,Camera,shape=partialRectangle,null,null,data_base
+205,Bright Star,shape=partialRectangle,null,null,data_base
+206,Zooniverse Admin,rounded=0,null,null,external_entity
+207,Perform Prefiltering Of The Images,ellipse,null,null,process
+208,Remove Artefacts Such As Read Error,ellipse,null,null,process
+209,Remove Artefacts Such As Bright Stars,ellipse,null,null,process
+210,Remove Artefacts Such As Camera,ellipse,null,null,process
+212,,endArrow=classic,206,207,endArrow=classic
+213,,endArrow=classic,206,208,endArrow=classic
+214,,endArrow=classic,206,209,endArrow=classic
+215,,endArrow=classic,206,210,endArrow=classic
+216,,endArrow=classic,207,209,endArrow=classic
+217,,endArrow=classic,207,210,endArrow=classic
+218,Prefiltering,endArrow=classic,207,200,endArrow=classic
+219,Image,endArrow=classic,207,201,endArrow=classic
+220,Artefact,endArrow=classic,207,202,endArrow=classic
+221,Read Error,endArrow=classic,208,203,endArrow=classic
+222,Artefact,endArrow=classic,208,202,endArrow=classic
+223,Artefact,endArrow=classic,209,202,endArrow=classic
+224,Bright Star,endArrow=classic,209,205,endArrow=classic
+225,Camera,endArrow=classic,210,204,endArrow=classic
+226,Artefact,endArrow=classic,210,202,endArrow=classic

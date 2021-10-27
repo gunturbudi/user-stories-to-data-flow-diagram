@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Deposit Dataset,shape=partialRectangle,null,null,data_base
+201,Check,shape=partialRectangle,null,null,data_base
+202,"Bath , Data , Archive Administrator",rounded=0,null,null,external_entity
+203,Make Some Checks On Deposited Datasets,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Check,endArrow=classic,203,201,endArrow=classic
+207,Deposit Dataset,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Logo" as thinglogo
+	actor "Corporatesponsor" as actorcorporatesponsor
+	control "Make" as controlmake
+
+
+@enduml

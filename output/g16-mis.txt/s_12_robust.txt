@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection Level" as thingcollectionlevel #grey
+	entity "Dashboard" as thingdashboard
+	entity "Replication Status" as thingreplicationstatus
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Summary" as thingsummary
+	boundary "Dashboard\nInterface" as thingdashboardinterface #grey
+	control "Have A\nSummary Of\nAll Remote\nReplication Status\nAt Collection\nLevel On\nDashboard" as controlhavesummarycollectionlevel
+
+	thingdashboard <.. thingcollectionlevel
+	thingcollectionlevel <.. thingreplicationstatus
+	thingreplicationstatus *-- thingsummary
+	actorcollectioncurator --- thingdashboardinterface
+	thingsummary --- controlhavesummarycollectionlevel
+	thingreplicationstatus --- controlhavesummarycollectionlevel
+	thingcollectionlevel --- controlhavesummarycollectionlevel
+	thingdashboard --- controlhavesummarycollectionlevel
+	thingdashboardinterface --> controlhavesummarycollectionlevel
+
+@enduml

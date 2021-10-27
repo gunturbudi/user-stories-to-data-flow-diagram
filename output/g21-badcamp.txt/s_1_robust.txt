@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsor" as thingsponsor
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Sponsor\nInterface" as thingsponsorinterface #grey
+	control "View A\nList Of\nSponsors" as controlviewlist
+
+	actoranonymoususer --- thingsponsorinterface
+	thingsponsor --- controlviewlist
+	thingsponsorinterface --> controlviewlist
+
+@enduml

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Result" as thingresult
+	entity "Multiple Dataset" as thingmultipledataset
+	entity "Metadata" as thingmetadata
+	actor "Api User" as actorapiuser
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Use Metadata" as controlusemetadatagetresult
+	control "Get Results\nFrom Multiple\nDatasets" as controlgetresult
+
+	thingmultipledataset <.. thingresult
+	actorapiuser --- thingmetadatainterface
+	actorapiuser --- thingdatasetinterface
+	thingmetadata --- controlusemetadatagetresult
+	thingmetadatainterface --> controlusemetadatagetresult
+	controlusemetadatagetresult --> controlgetresult
+	thingresult --- controlgetresult
+	thingmultipledataset --- controlgetresult
+	thingdatasetinterface --> controlgetresult
+
+@enduml

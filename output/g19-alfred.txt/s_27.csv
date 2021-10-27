@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,User,shape=partialRectangle,null,null,data_base
+201,New App,shape=partialRectangle,null,null,data_base
+202,Alfredo Platform,shape=partialRectangle,null,null,data_base
+203,Alfred Device,shape=partialRectangle,null,null,data_base
+204,Olderperson,rounded=0,null,null,external_entity
+205,Have An Alfred Device Responds To The Changing Demand Of The Users,ellipse,null,null,process
+206,Offering New Apps In The Alfredo Platform,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Alfred Device,endArrow=classic,205,203,endArrow=classic
+211,User,endArrow=classic,205,200,endArrow=classic
+212,,endArrow=classic,206,205,endArrow=classic
+213,New App,endArrow=classic,206,201,endArrow=classic
+214,Alfredo Platform,endArrow=classic,206,202,endArrow=classic

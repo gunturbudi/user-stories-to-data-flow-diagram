@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search Criterion" as thingsearchcriterion
+	entity "Search Option" as thingsearchoption
+	actor "Site Visitor" as actorsitevisitor
+	circle "Form" as thingform
+	boundary "Criterion\nInterface" as thingcriterioninterface #grey
+	control "Have An\nAdvanced Search\nOption Lets\nFill In\nA Form\nOf Search\nCriteria" as controlhaveadvancedsearchoption
+
+	thingform <.. thingsearchoption
+	thingsearchcriterion *-- thingform
+	actorsitevisitor --- thingcriterioninterface
+	thingsearchoption --- controlhaveadvancedsearchoption
+	thingform --- controlhaveadvancedsearchoption
+	thingsearchcriterion --- controlhaveadvancedsearchoption
+	thingcriterioninterface --> controlhaveadvancedsearchoption
+
+@enduml

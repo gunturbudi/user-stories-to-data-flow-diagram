@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Step " ];
+201 [label="<f0>  |<f1> Key Consideration " ];
+202 [label="<f0>  |<f1> Cms Option " ];
+203 [label="Nsf Employee" shape=box];
+204 [label="{<f0> 1.0|<f1> Narrow Down The Universe Of Cms Options }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Identify }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Prioritize Key Considerations }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Getting To The Next Step }" shape=Mrecord];
+203 -> 204
+203 -> 206
+203 -> 207
+204 -> 202 [label="Cms Option"]
+206 -> 201 [label="Key Consideration"]
+207 -> 206
+207 -> 200 [label="Step"]
+}

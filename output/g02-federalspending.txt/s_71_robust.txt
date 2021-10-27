@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fpds" as thingFPDS
+	entity "Feed Datum" as thingfeeddatum
+	actor "Developer" as actordeveloper
+	boundary "Historical Data\nFpds Loader" as thinghistoricaldatafpdsloaderdeveloper
+	boundary "Historical Loader" as thinghistoricalloaderdeveloper #grey
+	control "Include Fpds" as controlincludehistoricalloaderdeveloperFPDS
+	control "Include Both\nHistorical, Data,\nExtracted Feed\nData" as controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+
+	actordeveloper --- thinghistoricaldatafpdsloaderdeveloper
+	actordeveloper --- thinghistoricalloaderdeveloper
+	thinghistoricalloaderdeveloper --> controlincludehistoricalloaderdeveloperFPDS
+	thingFPDS --- controlincludehistoricalloaderdeveloperFPDS
+	thinghistoricaldatafpdsloaderdeveloper --> controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+	thingfeeddatum --- controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+
+@enduml

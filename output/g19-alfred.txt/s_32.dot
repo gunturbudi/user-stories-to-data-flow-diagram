@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Interest " color=red];
+201 [label="<f0>  |<f1> Device " ];
+202 [label="<f0>  |<f1> Information " color=red];
+203 [label="<f0>  |<f1> Exist App " color=red];
+204 [label="<f0>  |<f1> Alfred " ];
+205 [label="Olderperson" shape=box];
+206 [label="{<f0> 1.0|<f1> Have An Alfred Device An Device Provides With Information About Existing Apps Corresponds To Interests }" shape=Mrecord];
+205 -> 206
+206 -> 202 [label="Information"]
+206 -> 203 [label="Exist App"]
+206 -> 200 [label="Interest"]
+206 -> 201 [label="Device"]
+206 -> 204 [label="Alfred"]
+}

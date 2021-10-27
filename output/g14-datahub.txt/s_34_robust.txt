@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	actor "Data Analyst" as actordataanalyst
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Download A\nData Package" as controldownloaddatapackage
+
+	actordataanalyst --- thingpackageinterface
+	thingdatapackage --- controldownloaddatapackage
+	thingpackageinterface --> controldownloaddatapackage
+
+@enduml

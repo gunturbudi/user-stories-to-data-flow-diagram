@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Individual Sponsorship " color=red];
+201 [label="<f0>  |<f1> Payment Page " ];
+202 [label="<f0>  |<f1> Registration Process " color=red];
+203 [label="Authenticateduser" shape=box];
+204 [label="{<f0> 1.0|<f1> Pay For Individual Sponsorships As The Third Step Of The Registration Process }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> See A Payment Page }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Individual Sponsorship"]
+204 -> 202 [label="Registration Process"]
+205 -> 204
+205 -> 201 [label="Payment Page"]
+}

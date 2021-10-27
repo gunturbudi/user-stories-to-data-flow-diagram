@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reminder" as thingreminder
+	actor "Advertiser" as actoradvertiser
+	boundary "Reminder\nInterface" as thingreminderinterface #grey
+	control "Emailed A\nReminder" as controlemailreminder
+
+	actoradvertiser --- thingreminderinterface
+	thingreminder --- controlemailreminder
+	thingreminderinterface --> controlemailreminder
+
+@enduml

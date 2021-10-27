@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Object Nn" as thingobjectnn
+	actor "Dams Manager" as actordamsmanager
+	circle "Outcome" as thingoutcome
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Know The\nOutcome Of\nThe Event" as controlknowoutcome
+
+	thingevent *-- thingoutcome
+	actordamsmanager --- thingeventinterface
+	thingoutcome --- controlknowoutcome
+	thingevent --- controlknowoutcome
+	thingeventinterface --> controlknowoutcome
+
+@enduml

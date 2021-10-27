@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Title" as thingtitle
+	entity "Author Name" as thingauthorname #grey
+	entity "Article Body" as thingarticlebody #grey
+	entity "Search" as thingfullsearch #grey
+	entity "Text Search" as thingtextsearch
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Body\nInterface" as thingbodyinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	control "Do A\nFull Search\nOf Author\nName" as controldofullsearchauthorname
+	control "Do A\nFull Text\nSearch Of\nArticle Body" as controldofulltextsearch
+	control "Do A\nFull Search\nOf Title" as controldofullsearchtitle
+
+	thingtitle <.. thingfullsearch
+	thingauthorname <.. thingfullsearch
+	thingarticlebody <.. thingtextsearch
+	actorsitevisitor --- thingnameinterface
+	actorsitevisitor --- thingbodyinterface
+	actorsitevisitor --- thingtitleinterface
+	thingauthorname --- controldofullsearchauthorname
+	thingnameinterface --> controldofullsearchauthorname
+	thingfullsearch --- controldofullsearchauthorname
+	thingtextsearch --- controldofulltextsearch
+	thingarticlebody --- controldofulltextsearch
+	thingbodyinterface --> controldofulltextsearch
+	thingfullsearch --- controldofullsearchtitle
+	thingtitle --- controldofullsearchtitle
+	thingtitleinterface --> controldofullsearchtitle
+
+@enduml

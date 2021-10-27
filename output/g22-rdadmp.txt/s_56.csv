@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Reference,shape=partialRectangle,null,null,data_base
+201,Documentation,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Creation Process,shape=partialRectangle,null,null,data_base
+204,Data Manager,rounded=0,null,null,external_entity
+205,Have References To Documentation Of Creation Process,ellipse,null,null,process
+206,Have References To Documentation Of The Data,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Creation Process,endArrow=classic,205,203,endArrow=classic
+211,Reference,endArrow=classic,205,200,endArrow=classic
+212,Documentation,endArrow=classic,205,201,endArrow=classic
+213,Reference,endArrow=classic,206,200,endArrow=classic
+214,Documentation,endArrow=classic,206,201,endArrow=classic
+215,Datum,endArrow=classic,206,202,endArrow=classic

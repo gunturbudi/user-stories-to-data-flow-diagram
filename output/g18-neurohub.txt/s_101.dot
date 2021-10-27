@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Paper " color=red];
+201 [label="<f0>  |<f1> Researcher " color=red];
+202 [label="<f0>  |<f1> Review " color=red];
+203 [label="<f0>  |<f1> Comment " color=red];
+204 [label="<f0>  |<f1> Repository " ];
+205 [label="<f0>  |<f1> Group Level " ];
+206 [label="Researcher" shape=box];
+207 [label="{<f0> 1.0|<f1> Sharing Comment }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Have A Group Level Repository }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Have A Repository }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Sharing Review }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Sharing Papers With Other Researchers }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 210
+206 -> 211
+207 -> 209
+207 -> 203 [label="Comment"]
+208 -> 204 [label="Repository"]
+209 -> 204 [label="Repository"]
+210 -> 209
+210 -> 202 [label="Review"]
+211 -> 208
+211 -> 200 [label="Paper"]
+211 -> 201 [label="Researcher"]
+208 -> 205 [label="Group Level"]
+}

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Institution,shape=partialRectangle,null,null,data_base
+201,Image,shape=partialRectangle,null,null,data_base
+202,Descriptive Information,shape=partialRectangle,null,null,data_base
+203,Donor Representative,rounded=0,null,null,external_entity
+204,Access The Descriptive Information About The Images Institutions Needs,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Descriptive Information,endArrow=classic,204,202,endArrow=classic
+208,Image,endArrow=classic,204,201,endArrow=classic
+209,Institution,endArrow=classic,204,200,endArrow=classic

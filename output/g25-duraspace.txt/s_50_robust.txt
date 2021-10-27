@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "File" as thingfile #grey
+	entity "Content" as thingcontent #grey
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Associate A\nContent File\nWith An\nObject" as controlassociatecontentfile
+	control "Associate A\nFile With\nAn Object\nComponent" as controlassociatefileobjectcomponent
+
+	thingcomponent <.. thingfile
+	thingcontent <.. thingfile
+	thingobject <.. thingfile
+	thingobject *-- thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	thingobject --- controlassociatecontentfile
+	thingobjectinterface --> controlassociatecontentfile
+	thingfile --- controlassociatecontentfile
+	thingfile --- controlassociatefileobjectcomponent
+	thingcomponent --- controlassociatefileobjectcomponent
+	thingobjectinterface --> controlassociatefileobjectcomponent
+
+@enduml

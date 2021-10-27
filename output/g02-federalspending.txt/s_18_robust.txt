@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Developer" as actordeveloper
+	boundary "D Files\nGeneration Request" as thingdfilesgenerationrequestsdeveloper
+	control "Cached Managed" as controlmanagedfilesgenerationrequestsdeveloper
+
+	actordeveloper --- thingdfilesgenerationrequestsdeveloper
+	thingdfilesgenerationrequestsdeveloper --> controlmanagedfilesgenerationrequestsdeveloper
+
+@enduml

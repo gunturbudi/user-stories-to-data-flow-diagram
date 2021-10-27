@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Prefiltering " ];
+201 [label="<f0>  |<f1> Image " color=red];
+202 [label="<f0>  |<f1> Artefact " ];
+203 [label="<f0>  |<f1> Read Error " ];
+204 [label="<f0>  |<f1> Camera " ];
+205 [label="<f0>  |<f1> Bright Star " ];
+206 [label="Zooniverse Admin" shape=box];
+207 [label="{<f0> 1.0|<f1> Perform Prefiltering Of The Images }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Remove Artefacts Such As Read Error }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Remove Artefacts Such As Bright Stars }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Remove Artefacts Such As Camera }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+207 -> 209
+207 -> 210
+207 -> 200 [label="Prefiltering"]
+207 -> 201 [label="Image"]
+207 -> 202 [label="Artefact"]
+208 -> 203 [label="Read Error"]
+208 -> 202 [label="Artefact"]
+209 -> 202 [label="Artefact"]
+209 -> 205 [label="Bright Star"]
+210 -> 204 [label="Camera"]
+210 -> 202 [label="Artefact"]
+}

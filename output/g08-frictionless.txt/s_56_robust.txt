@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reproducible Step" as thingreproduciblestep
+	entity "Methodology" as thingmethodology
+	entity "Data State" as thingdatastate
+	actor "Publisher" as actorpublisher
+	boundary "Step\nInterface" as thingstepinterface #grey
+	control "Get A\nCertain Data\nState" as controlgetcertaindatastate
+	control "Package Reproducible\nSteps" as controlpackagereproduciblestepgetcertaindatastate
+
+	actorpublisher --- thingstepinterface
+	thingdatastate --- controlgetcertaindatastate
+	controlpackagereproduciblestepgetcertaindatastate --> controlgetcertaindatastate
+	thingstepinterface --> controlgetcertaindatastate
+	thingreproduciblestep --- controlpackagereproduciblestepgetcertaindatastate
+	thingstepinterface --> controlpackagereproduciblestepgetcertaindatastate
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan Review " ];
+201 [label="Plan , Review , Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Track The Completion Of Required Plan Reviews }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Results " color=red];
+2 -> 1001
+1003 [label="<f0>  |<f1> Payment " color=red];
+2 -> 1003
+201 -> 202
+202 -> 200
+}

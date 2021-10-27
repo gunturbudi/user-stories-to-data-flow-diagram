@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Index Card" as thingindexcard
+	entity "Finding Aid" as thingfindingaid
+	actor "Archivist" as actorarchivist
+	boundary "Card\nInterface" as thingcardinterface #grey
+	boundary "Aid\nInterface" as thingaidinterface #grey
+	control "Search Index\nCards" as controlsearchindexcards
+	control "Search Public,\nOther Finding\nAid" as controlsearchpublicotherfindingaid
+
+	actorarchivist --- thingcardinterface
+	actorarchivist --- thingaidinterface
+	thingindexcard --- controlsearchindexcards
+	thingcardinterface --> controlsearchindexcards
+	thingfindingaid --- controlsearchpublicotherfindingaid
+	thingaidinterface --> controlsearchpublicotherfindingaid
+
+@enduml

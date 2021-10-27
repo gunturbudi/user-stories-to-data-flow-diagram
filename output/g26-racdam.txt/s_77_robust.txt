@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search" as thingsearch
+	entity "Program Rf\nOfficer" as thingprogramrfofficer #grey
+	entity "Scan Diary" as thingscanneddiary
+	entity "Diary Segment" as thingdiarysegment
+	actor "Researcher" as actorresearcher
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	boundary "Diary\nInterface" as thingdiaryinterface #grey
+	control "Search Each\nScanned Diary\nSegment" as controlsearchscanneddiarysegment
+	control "Keyword Search\nAcross All\nOf An\nProgram Rf\nOfficer's Scanned\nDiaries" as controlkeywordsearchall
+	control "Having" as controlhavekeywordsearchallsearchscanneddiarysegment
+
+	thingscanneddiary <.. thingsearch
+	thingprogramrfofficer <.. thingscanneddiary
+	actorresearcher --- thingsegmentinterface
+	actorresearcher --- thingdiaryinterface
+	thingdiarysegment --- controlsearchscanneddiarysegment
+	controlhavekeywordsearchallsearchscanneddiarysegment --> controlsearchscanneddiarysegment
+	thingsegmentinterface --> controlsearchscanneddiarysegment
+	thingsearch --- controlkeywordsearchall
+	thingscanneddiary --- controlkeywordsearchall
+	controlhavekeywordsearchallsearchscanneddiarysegment --> controlkeywordsearchall
+	thingdiaryinterface --> controlkeywordsearchall
+	thingsegmentinterface --> controlhavekeywordsearchallsearchscanneddiarysegment
+
+@enduml

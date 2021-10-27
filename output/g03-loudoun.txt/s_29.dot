@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Hearing Date " ];
+201 [label="Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Assign A Hearing Date }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Present the application to the appropriate governing body within the timelines dictated by the relevant county rules and procedures. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Application " color=red];
+2 -> 1001
+1003 [label="<f0>  |<f1> Governing body " color=red];
+2 -> 1003
+201 -> 202
+202 -> 200
+}

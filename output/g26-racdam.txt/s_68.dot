@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Structured Datum " ];
+201 [label="Researcher" shape=box];
+202 [label="{<f0> 1.0|<f1> Search }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Using Structured Data }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Find everything relevant to my inquiry across collections }" shape=Mrecord];
+202 -> 3
+1001 [label="<f0>  |<f1> Inquiry " color=red];
+3 -> 1001 [label="Inquiry"]
+201 -> 202
+201 -> 203
+202 -> 203
+203 -> 200 [label="Structured Datum"]
+}

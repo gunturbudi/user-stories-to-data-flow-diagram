@@ -1,0 +1,53 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Batch" as thingbatch
+	entity "Tool" as thingtool
+	entity "Repository Administrator" as thingrepositoryadministrator #grey
+	entity "Permission" as thingpermission
+	entity "Embargo" as thingembargo
+	entity "Metadata Curator" as thingmetadatacurator
+	entity "Embargoed Item" as thingembargoeditem
+	entity "File" as thingfile
+	entity "Collection" as thingcollection
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Curator\nInterface" as thingcuratorinterface #grey
+	boundary "Administrator\nInterface" as thingadministratorinterface #grey
+	control "View Collection" as controlvieweveryonecollection
+	control "Recognize Embargoes" as controlrecognizeembargo
+	control "Download The\nFiles" as controldownloadfile
+	control "View Metadata\nCurator" as controlvieweveryonemetadatacuratordownloadfile
+	control "Have The\nBatch Tool" as controlhavebatchtoolrecognizeembargo
+	control "View Repository\nAdministrator" as controlvieweveryonerepositoryadministrator
+	control "Set Embargoes" as controlsetembargo
+
+	thingtool <.. thingbatch
+	thingembargoeditem <.. thingpermission
+	actordigitalrecordsarchivist --- thingcollectioninterface
+	actordigitalrecordsarchivist --- thingtoolinterface
+	actordigitalrecordsarchivist --- thingcuratorinterface
+	actordigitalrecordsarchivist --- thingadministratorinterface
+	thingcollection --- controlvieweveryonecollection
+	thingcollectioninterface --> controlvieweveryonecollection
+	thingembargo --- controlrecognizeembargo
+	controlhavebatchtoolrecognizeembargo --> controlrecognizeembargo
+	thingtoolinterface --> controlrecognizeembargo
+	thingfile --- controldownloadfile
+	controlvieweveryonemetadatacuratordownloadfile --> controldownloadfile
+	thingcuratorinterface --> controldownloadfile
+	thingmetadatacurator --- controlvieweveryonemetadatacuratordownloadfile
+	thingcuratorinterface --> controlvieweveryonemetadatacuratordownloadfile
+	thingbatch --- controlhavebatchtoolrecognizeembargo
+	thingtool --- controlhavebatchtoolrecognizeembargo
+	thingtoolinterface --> controlhavebatchtoolrecognizeembargo
+	thingrepositoryadministrator --- controlvieweveryonerepositoryadministrator
+	thingadministratorinterface --> controlvieweveryonerepositoryadministrator
+	thingembargo --- controlsetembargo
+	thingtoolinterface --> controlsetembargo
+	controlhavebatchtoolrecognizeembargo --> controlsetembargo
+
+@enduml

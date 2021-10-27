@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity ", Initial\nMeeting" as thingininitialmeeting
+	entity "Person" as thingperson
+	actor "Nsf Employee" as actornsfemployee
+	control "Know" as controlknow
+
+	thingperson <.. thingininitialmeeting
+
+@enduml

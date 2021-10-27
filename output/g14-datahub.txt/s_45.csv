@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Handle it,ellipse,null,null,process
+200,Data Package\nSchema,shape=partialRectangle,null,null,data_base
+201,Detail,shape=partialRectangle,null,null,data_base
+202,Consumer,rounded=0,null,null,external_entity
+203,Know Full Details The Data Package Schema How Has Changed,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Detail,endArrow=classic,203,201,endArrow=classic
+207,Data Package\nSchema,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Scripts,rounded=0,null,null,external_entity
+1002,Scripts,endArrow=classic,2,1001,endArrow=classic

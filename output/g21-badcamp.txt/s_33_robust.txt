@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Badcamp Newsletter" as thingbadcampnewsletter #grey
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Newsletter\nInterface" as thingnewsletterinterface #grey
+	control "Sign Up\nFor The\nBadcamp Newsletter" as controlsignbadcampnewsletter
+
+	actoranonymoususer --- thingnewsletterinterface
+	thingbadcampnewsletter --- controlsignbadcampnewsletter
+	thingnewsletterinterface --> controlsignbadcampnewsletter
+
+@enduml

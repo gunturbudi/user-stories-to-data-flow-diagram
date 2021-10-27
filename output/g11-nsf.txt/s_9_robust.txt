@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Research\nPlan" as thinguserresearchplan #grey
+	actor "User Researcher" as actoruserresearcher
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Test The\nUser Research\nPlan" as controltestuserresearchplan
+
+	actoruserresearcher --- thingplaninterface
+	thinguserresearchplan --- controltestuserresearchplan
+	thingplaninterface --> controltestuserresearchplan
+
+@enduml

@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Error Message,shape=partialRectangle,null,null,data_base
+201,Accurate Text,shape=partialRectangle,null,null,data_base
+202,Broker User,rounded=0,null,null,external_entity
+203,Upload The Error Message,ellipse,null,null,process
+204,Have Accurate Text,ellipse,null,null,process
+205,Validate The Error Message,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,,endArrow=classic,203,204,endArrow=classic
+211,Error Message,endArrow=classic,203,200,endArrow=classic
+212,Accurate Text,endArrow=classic,204,201,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,Error Message,endArrow=classic,205,200,endArrow=classic

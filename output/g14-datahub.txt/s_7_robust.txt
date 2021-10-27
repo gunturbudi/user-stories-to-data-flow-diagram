@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registry" as thingregistry
+	entity "Data Package" as thingdatapackage #grey
+	actor "Publisher" as actorpublisher
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	control "Import Data\nPackage Into\nThe Registry" as controlimportdatapackageregistry
+
+	thingregistry <.. thingdatapackage
+	actorpublisher --- thingregistryinterface
+	thingdatapackage --- controlimportdatapackageregistry
+	thingregistry --- controlimportdatapackageregistry
+	thingregistryinterface --> controlimportdatapackageregistry
+
+@enduml

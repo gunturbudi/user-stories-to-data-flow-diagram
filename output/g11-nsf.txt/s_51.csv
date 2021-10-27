@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Nsf.Gov Website,shape=partialRectangle,null,null,data_base
+201,Different Style,shape=partialRectangle,null,null,data_base
+202,Visualdesigner,rounded=0,null,null,external_entity
+203,Concept Different Styles For The Nsf.Gov Website,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Different Style,endArrow=classic,203,201,endArrow=classic
+207,Nsf.Gov Website,endArrow=classic,203,200,endArrow=classic

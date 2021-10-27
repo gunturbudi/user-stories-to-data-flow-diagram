@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Acocunt" as thingacocunt
+	actor "User" as actoruser
+	boundary "Acocunt\nInterface" as thingacocuntinterface #grey
+	control "Create An\nAcocunt" as controlcreateacocunt
+
+	actoruser --- thingacocuntinterface
+	thingacocunt --- controlcreateacocunt
+	thingacocuntinterface --> controlcreateacocunt
+
+@enduml

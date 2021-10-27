@@ -1,0 +1,103 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Genre" as thinggenre #grey
+	entity ", Pertinent\nHeading" as thingsuchpertinentheading
+	entity "Title" as thingtitle
+	entity "Topic" as thingtopic #grey
+	entity "Geographical Etc" as thinggeographicaletc #grey
+	entity "Form" as thingform #grey
+	entity "Geographical Name" as thinggeographicalname #grey
+	entity "Geographical Function" as thinggeographicalfunction #grey
+	entity "Etc" as thingetc #grey
+	entity "Occupation" as thingoccupation #grey
+	entity "Name" as thingname #grey
+	entity "Function" as thingfunction #grey
+	entity "Geographical Cartographic" as thinggeographicalcartographic #grey
+	entity "Cartographic" as thingcartographic #grey
+	entity "Geographical Occupation" as thinggeographicaloccupation #grey
+	entity "Object" as thingobject
+	entity "Collection" as thingcollection
+	actor "User" as actoruser
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Form\nGeographical Function\nGeographical Occupation" as controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Title\nForm Geographical\nFunction Geographical\nOccupation" as controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Genre\nTopic" as controlsearchsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nObject" as controlsearchobject
+	control "Search For\nObject Component" as controlsearchobjectcomponent
+	control "Search For\nCollections By\nSuch, Pertinent\nHeadings Including\nTitle" as controlsearchcollectionsuchpertinentheading
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Topic" as controlsearchsuchpertinentheading #grey
+
+	thingtitle <.. thingsuchpertinentheading
+	thingtopic <.. thingsuchpertinentheading
+	thingfunction <.. thingsuchpertinentheading
+	thinggenre <.. thingsuchpertinentheading
+	thinggeographicaletc <.. thingsuchpertinentheading
+	thingform <.. thingsuchpertinentheading
+	thinggeographicalname <.. thingsuchpertinentheading
+	thinggeographicalfunction <.. thingsuchpertinentheading
+	thingetc <.. thingsuchpertinentheading
+	thingoccupation <.. thingsuchpertinentheading
+	thingname <.. thingsuchpertinentheading
+	thinggeographicalcartographic <.. thingsuchpertinentheading
+	thingcartographic <.. thingsuchpertinentheading
+	thinggeographicaloccupation <.. thingsuchpertinentheading
+	thingsuchpertinentheading <.. thingcollection
+	thingobject *-- thingcomponent
+	actoruser --- thingobjectinterface
+	actoruser --- thingtitleinterface
+	thinggenre --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingetc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingoccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggenre --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingcartographic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingoccupation --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingetc --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingname --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingobject --- controlsearchobject
+	thingobjectinterface --> controlsearchobject
+	thingcomponent --- controlsearchobjectcomponent
+	thingobjectinterface --> controlsearchobjectcomponent
+	thingcollection --- controlsearchcollectionsuchpertinentheading
+	thingtitleinterface --> controlsearchcollectionsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchcollectionsuchpertinentheading
+	thingtitle --- controlsearchcollectionsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheading
+	thinggenre --- controlsearchsuchpertinentheading
+
+@enduml

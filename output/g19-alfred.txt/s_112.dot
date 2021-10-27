@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Combination " ];
+201 [label="<f0>  |<f1> Arm " ];
+202 [label="<f0>  |<f1> Mental Exercise " color=red];
+203 [label="<f0>  |<f1> Exercise " color=red];
+204 [label="<f0>  |<f1> Game " color=red];
+205 [label="<f0>  |<f1> Physical " color=red];
+206 [label="<f0>  |<f1> Leg " ];
+207 [label="<f0>  |<f1> Motion " ];
+208 [label="Olderperson" shape=box];
+}

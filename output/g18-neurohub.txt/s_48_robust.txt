@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Result" as thingresult #grey
+	entity "Log Book" as thinglogbook
+	entity "Search" as thingsearch #grey
+	actor "User" as actoruser
+	circle "Section" as thingsection #grey
+	boundary "Result\nInterface" as thingresultinterface #grey
+	boundary "Book\nInterface" as thingbookinterface #grey
+	control "Limit Results\nTo More" as controllimitresultmore
+	control "Limit Search\nResults To\nLog Book\nSections From\nMore Log\nBooks" as controllimitsearchresultslogbooksectionsmorelogbooks
+
+	thingsearch <.. thingresult
+	thingsection <.. thingresult
+	thinglogbook *-- thingsection
+	actoruser --- thingresultinterface
+	actoruser --- thingbookinterface
+	thingresult --- controllimitresultmore
+	thingresultinterface --> controllimitresultmore
+	thingsection --- controllimitsearchresultslogbooksectionsmorelogbooks
+	thinglogbook --- controllimitsearchresultslogbooksectionsmorelogbooks
+	thingbookinterface --> controllimitsearchresultslogbooksectionsmorelogbooks
+	thingresult --- controllimitsearchresultslogbooksectionsmorelogbooks
+
+@enduml

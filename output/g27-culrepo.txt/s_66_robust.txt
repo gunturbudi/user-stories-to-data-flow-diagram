@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cc License" as thingcclicense #grey
+	entity "File" as thingfile
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Assign A\nCc License\nTo The\nFiles" as controlassigncclicensefile
+
+	thingfile <.. thingcclicense
+	actorcornellfacultymember --- thingfileinterface
+	thingcclicense --- controlassigncclicensefile
+	thingfile --- controlassigncclicensefile
+	thingfileinterface --> controlassigncclicensefile
+
+@enduml

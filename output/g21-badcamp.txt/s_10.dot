@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Registration " color=red];
+201 [label="<f0>  |<f1> Cancellation Workflow " ];
+202 [label="<f0>  |<f1> Deadline " ];
+203 [label="<f0>  |<f1> Cancellation " ];
+204 [label="Trainingcoordinator" shape=box];
+205 [label="{<f0> 1.0|<f1> Tie In A Cancellation Deadline Whatever Registration Exists }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Tie In A Deadline Whatever Cancellation Workflow Exists }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Registration"]
+205 -> 202 [label="Deadline"]
+206 -> 202 [label="Deadline"]
+206 -> 201 [label="Cancellation Workflow"]
+205 -> 203 [label="Cancellation"]
+}

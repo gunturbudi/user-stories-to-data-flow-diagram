@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Project " color=red];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="Research , Information Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Datasets To Metadata About Projects }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Report on projects depositing datasets in relation to funder requirements }" shape=Mrecord];
+204 -> 2
+1001 [label="<f0>  |<f1> Datasets " color=red];
+2 -> 1001 [label="Datasets"]
+203 -> 204
+204 -> 200 [label="Dataset"]
+204 -> 202 [label="Metadata"]
+204 -> 201 [label="Project"]
+}

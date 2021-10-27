@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Ingested Content,shape=partialRectangle,null,null,data_base
+201,Copyright Infringement,shape=partialRectangle,null,null,data_base
+202,Admin,rounded=0,null,null,external_entity
+203,Validated The Ingested Contents For Copyright Infringement,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Ingested Content,endArrow=classic,203,200,endArrow=classic
+207,Copyright Infringement,endArrow=classic,203,201,endArrow=classic

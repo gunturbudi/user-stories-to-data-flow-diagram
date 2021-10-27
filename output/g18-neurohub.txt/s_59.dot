@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Spreadsheet " ];
+201 [label="<f0>  |<f1> Web Page " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Have A Spreadsheet Within The Neurohub Web Page }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Spreadsheet"]
+203 -> 201 [label="Web Page"]
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Ui" as thingUI
+	actor "Publisher" as actorpublisher
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	control "Create A\nData Package\nIn The\nUi" as controlcreatedatapackage
+
+	thingUI <.. thingdatapackage
+	actorpublisher --- thinguiinterface
+	thingdatapackage --- controlcreatedatapackage
+	thingUI --- controlcreatedatapackage
+	thinguiinterface --> controlcreatedatapackage
+
+@enduml

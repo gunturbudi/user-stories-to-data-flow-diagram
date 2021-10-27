@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Submission Dashboard" as thingsubmissiondashboard #grey
+	entity "Status Label" as thingstatuslabel
+	actor "Fabs User" as actorfabsuser
+	boundary "Dashboard\nInterface" as thingdashboardinterface #grey
+	control "See Correct\nStatus Labels\nOn The\nSubmission Dashboard" as controlseecorrectstatuslabels
+
+	thingsubmissiondashboard <.. thingstatuslabel
+	actorfabsuser --- thingdashboardinterface
+	thingstatuslabel --- controlseecorrectstatuslabels
+	thingsubmissiondashboard --- controlseecorrectstatuslabels
+	thingdashboardinterface --> controlseecorrectstatuslabels
+
+@enduml

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Faculty" as thingfaculty
+	entity "Digestible Way" as thingdigestibleway
+	entity "Tracking Statistic" as thingtrackingstatistic
+	actor "Administrator" as actoradministrator
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "See Comprehensive\nTracking Statistics\nPresented To\nFaculty In\nA Digestible\nWay" as controlseecomprehensivetrackingstatistics
+
+	thingdigestibleway <.. thingfaculty
+	thingfaculty <.. thingtrackingstatistic
+	thingdigestibleway <.. thingtrackingstatistic
+	actoradministrator --- thingwayinterface
+	thingtrackingstatistic --- controlseecomprehensivetrackingstatistics
+	thingfaculty --- controlseecomprehensivetrackingstatistics
+	thingdigestibleway --- controlseecomprehensivetrackingstatistics
+	thingwayinterface --> controlseecomprehensivetrackingstatistics
+
+@enduml

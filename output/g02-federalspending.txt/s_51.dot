@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Historical Fabs " ];
+201 [label="<f0>  |<f1> Frec Derivation " ];
+202 [label="<f0>  |<f1> Datum " ];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Include The Frec Derivations }" shape=Mrecord];
+203 -> 204
+204 -> 201
+}

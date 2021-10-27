@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reference" as thingreference
+	entity "Paper" as thingpaper
+	actor "User" as actoruser
+	boundary "Reference\nInterface" as thingreferenceinterface #grey
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	control "Manage The\nReferences" as controlmanagereference
+	control "Manage Paper" as controlmanagepaper
+
+	actoruser --- thingreferenceinterface
+	actoruser --- thingpaperinterface
+	thingreference --- controlmanagereference
+	thingreferenceinterface --> controlmanagereference
+	thingpaper --- controlmanagepaper
+	thingpaperinterface --> controlmanagepaper
+
+@enduml

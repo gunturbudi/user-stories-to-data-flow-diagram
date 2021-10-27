@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fedora" as thingfedora
+	entity "Use External" as thinguseexternal
+	entity "Etd Item" as thingetditem #grey
+	entity "Descriptive Record" as thingdescriptiverecord
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Fedora\nInterface" as thingfedorainterface #grey
+	control "Expose The\nDescriptive Record\nFor Each\nEtd Item\nFor Use\nExternal To\nFedora" as controlexposedescriptiverecordfedora
+
+	thingfedora <.. thinguseexternal
+	thinguseexternal <.. thingetditem
+	thingetditem <.. thingdescriptiverecord
+	actordigitalrecordsarchivist --- thingfedorainterface
+	thingdescriptiverecord --- controlexposedescriptiverecordfedora
+	thingetditem --- controlexposedescriptiverecordfedora
+	thinguseexternal --- controlexposedescriptiverecordfedora
+	thingfedora --- controlexposedescriptiverecordfedora
+	thingfedorainterface --> controlexposedescriptiverecordfedora
+
+@enduml

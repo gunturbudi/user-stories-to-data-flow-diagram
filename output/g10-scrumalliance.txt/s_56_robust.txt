@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Site Editor" as actorsiteeditor
+	control "Designate" as controldesignate
+
+
+@enduml

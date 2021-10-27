@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+3,Build user experiences based on more than one dataset more easily.,ellipse,null,null,process
+200,Result,shape=partialRectangle,null,null,data_base
+201,Multiple Dataset,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,Api User,rounded=0,null,null,external_entity
+204,Use Metadata,ellipse,null,null,process
+205,Get Results From Multiple Datasets,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Metadata,endArrow=classic,204,202,endArrow=classic
+211,Result,endArrow=classic,205,200,endArrow=classic
+212,Multiple Dataset,endArrow=classic,205,201,endArrow=classic
+1000,,endArrow=classic,204,3,endArrow=classic
+1001,User experiences,rounded=0,null,null,external_entity
+1002,User experiences,endArrow=classic,3,1001,endArrow=classic
+1003,Dataset,rounded=0,null,null,external_entity
+1004,Dataset,endArrow=classic,3,1003,endArrow=classic

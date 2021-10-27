@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Deposit,shape=partialRectangle,null,null,data_base
+201,Metadata Field,shape=partialRectangle,null,null,data_base
+202,Search Capability,shape=partialRectangle,null,null,data_base
+203,"Library , Staff Member",rounded=0,null,null,external_entity
+204,Add Custom Metadata Fields For Deposits,ellipse,null,null,process
+205,Allow For Better Search Capabilities,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Metadata Field,endArrow=classic,204,201,endArrow=classic
+211,Deposit,endArrow=classic,204,200,endArrow=classic
+212,Search Capability,endArrow=classic,205,202,endArrow=classic

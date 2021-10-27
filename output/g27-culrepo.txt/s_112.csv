@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Asset,shape=partialRectangle,null,null,data_base
+201,Management,shape=partialRectangle,null,null,data_base
+202,Successor,shape=partialRectangle,null,null,data_base
+203,Mechanism,shape=partialRectangle,null,null,data_base
+204,Asset Manager,rounded=0,null,null,external_entity
+205,Have Mechanism,ellipse,null,null,process
+206,Pass Management,ellipse,null,null,process
+207,Pass Ownership Of The Assets To A Successor,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,,endArrow=classic,205,206,endArrow=classic
+213,,endArrow=classic,205,207,endArrow=classic
+214,Mechanism,endArrow=classic,205,203,endArrow=classic
+215,Management,endArrow=classic,206,201,endArrow=classic
+216,Asset,endArrow=classic,207,200,endArrow=classic
+217,Successor,endArrow=classic,207,202,endArrow=classic

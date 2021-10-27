@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Command Line\nTool " ];
+202 [label="Developerwrangler" shape=box];
+203 [label="{<f0> 1.0|<f1> Use A Command Line Tool Allows Met }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Validate Data }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Command Line\nTool"]
+204 -> 200 [label="Datum"]
+}

@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Apps Change" as thingappschange
+	actor "Developer" as actordeveloper
+	circle "State" as thingstate
+	control "Possible Notified" as controlnotify
+
+	thingappschange *-- thingstate
+
+@enduml

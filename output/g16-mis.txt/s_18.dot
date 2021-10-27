@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Deposit " color=red];
+202 [label="<f0>  |<f1> Embargo Date " ];
+203 [label="<f0>  |<f1> Option " ];
+204 [label="Collection Curator" shape=box];
+205 [label="{<f0> 1.0|<f1> Allow Some Collections The Option }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Setting An Embargo Date At Deposit }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Collection"]
+205 -> 203 [label="Option"]
+206 -> 205
+206 -> 202 [label="Embargo Date"]
+206 -> 201 [label="Deposit"]
+}

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Database " ];
+201 [label="<f0>  |<f1> Gtas Window\nDatum " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Add The Gtas Window Data To The Database }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

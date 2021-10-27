@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+3,Renew my membership,ellipse,null,null,process
+200,Reminder,shape=partialRectangle,null,null,data_base
+201,Link,shape=partialRectangle,null,null,data_base
+202,Member,rounded=0,null,null,external_entity
+203,Receive A Link,ellipse,null,null,process
+204,Receive A Reminder,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Link,endArrow=classic,203,201,endArrow=classic
+209,Reminder,endArrow=classic,204,200,endArrow=classic
+1000,,endArrow=classic,204,3,endArrow=classic
+1001,Membership,rounded=0,null,null,external_entity
+1002,Membership,endArrow=classic,3,1001,endArrow=classic

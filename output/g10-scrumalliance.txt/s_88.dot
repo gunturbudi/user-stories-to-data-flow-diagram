@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Scrum Alliance " ];
+201 [label="<f0>  |<f1> Membership Fee " color=red];
+202 [label="Company" shape=box];
+203 [label="{<f0> 1.0|<f1> Paying A Corporate Membership Fee }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Join The Scrum Alliance }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Membership Fee"]
+204 -> 200 [label="Scrum Alliance"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Example Data\nPackage" as thingexampledatapackage
+	actor "Consumer" as actorconsumer
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "See Some\nExample Data\nPackages" as controlseeexampledatapackages
+
+	actorconsumer --- thingpackageinterface
+	thingexampledatapackage --- controlseeexampledatapackages
+	thingpackageinterface --> controlseeexampledatapackages
+
+@enduml

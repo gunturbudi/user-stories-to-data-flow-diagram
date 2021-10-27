@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Prototype Strategy" as thingprototypestrategy #grey
+	actor "Team Member" as actorteammember
+	boundary "Strategy\nInterface" as thingstrategyinterface #grey
+	control "Have A\nPrototype Strategy" as controlhaveprototypestrategy
+
+	actorteammember --- thingstrategyinterface
+	thingprototypestrategy --- controlhaveprototypestrategy
+	thingstrategyinterface --> controlhaveprototypestrategy
+
+@enduml

@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Experimental ,\nHuman ,\nReadable Protocol" as thingexperimentalhumanreadableprotocol
+	actor "User" as actoruser
+	boundary "Protocol\nInterface" as thingprotocolinterface #grey
+	control "Search" as controlsearch
+	control "Download Experimental,\nHuman, Readable\nProtocols" as controldownloadexperimentalhumanreadableprotocol
+
+	actoruser --- thingprotocolinterface
+	thingexperimentalhumanreadableprotocol --- controldownloadexperimentalhumanreadableprotocol
+	thingprotocolinterface --> controldownloadexperimentalhumanreadableprotocol
+
+@enduml

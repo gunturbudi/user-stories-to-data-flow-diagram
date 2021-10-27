@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Map Visualisation" as thingmapvisualisation
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	control "Stepped" as controlstep
+
+
+@enduml

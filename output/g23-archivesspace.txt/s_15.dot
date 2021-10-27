@@ -1,0 +1,33 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Date " color=red];
+201 [label="<f0>  |<f1> Read " ];
+202 [label="<f0>  |<f1> Subject " color=red];
+203 [label="<f0>  |<f1> View " ];
+204 [label="<f0>  |<f1> Accession " color=red];
+205 [label="<f0>  |<f1> Extent " color=red];
+206 [label="<f0>  |<f1> Resource " color=red];
+207 [label="Archivist" shape=box];
+208 [label="{<f0> 1.0|<f1> See Extent }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Edit Views For Accessions Before The List Of Subjects }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> See Dates In The Read }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> See Dates In }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Edit Views For Resource }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+208 -> 205 [label="Extent"]
+209 -> 203 [label="View"]
+209 -> 204 [label="Accession"]
+209 -> 202 [label="Subject"]
+210 -> 200 [label="Date"]
+210 -> 201 [label="Read"]
+211 -> 209
+211 -> 212
+211 -> 200 [label="Date"]
+211 -> 203 [label="View"]
+212 -> 206 [label="Resource"]
+212 -> 203 [label="View"]
+}

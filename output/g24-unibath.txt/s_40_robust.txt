@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deposit" as thingdeposit
+	entity "Open Standard" as thingopenstandard
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	circle "Use" as thinguse
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	control "Encourage The\nUse Of\nOpen Standards\nFor Deposit" as controlencourageuse
+	control "Promote The\nUse Of\nOpen Standards\nFor Deposit" as controlpromoteuse
+
+	thingdeposit <.. thingopenstandard
+	thingopenstandard *-- thinguse
+	thingdeposit *-- thinguse
+	actorbathdataarchiveadministrator --- thingdepositinterface
+	thinguse --- controlencourageuse
+	thingopenstandard --- controlencourageuse
+	thingdeposit --- controlencourageuse
+	thingdepositinterface --> controlencourageuse
+	thingdeposit --- controlpromoteuse
+	thinguse --- controlpromoteuse
+	thingopenstandard --- controlpromoteuse
+	thingdepositinterface --> controlpromoteuse
+
+@enduml

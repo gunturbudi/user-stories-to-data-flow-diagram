@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Time " color=red];
+201 [label="<f0>  |<f1> Uniform Way " ];
+202 [label="<f0>  |<f1> Dataset Type " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Configure Time In A Uniform Way Across All Dataset Types }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Live }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 200 [label="Time"]
+204 -> 201 [label="Uniform Way"]
+204 -> 202 [label="Dataset Type"]
+}

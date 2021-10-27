@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Operation" as thingdatasetoperation
+	actor "User" as actoruser
+	control "Ensure" as controlensure
+
+
+@enduml

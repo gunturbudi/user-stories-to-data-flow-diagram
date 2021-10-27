@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Additional Field " ];
+201 [label="<f0>  |<f1> Fpds Datum " ];
+202 [label="Datum User" shape=box];
+203 [label="{<f0> 1.0|<f1> Access Additional Fields From The Fpds Data }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

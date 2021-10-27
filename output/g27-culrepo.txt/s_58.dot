@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Supplementary File " ];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> Etc " ];
+203 [label="<f0>  |<f1> Slideshow " ];
+204 [label="Library , Staff Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Include Supplementary Files Such As Datasets }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Include Supplementary Files Such As Etc }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Include Supplementary Files Such As Slideshow }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200 [label="Supplementary File"]
+205 -> 201 [label="Dataset"]
+206 -> 202 [label="Etc"]
+206 -> 200 [label="Supplementary File"]
+207 -> 203 [label="Slideshow"]
+207 -> 200 [label="Supplementary File"]
+}

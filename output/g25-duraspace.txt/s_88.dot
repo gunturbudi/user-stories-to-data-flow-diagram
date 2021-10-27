@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object Component " color=red];
+201 [label="<f0>  |<f1> Statute " color=red];
+202 [label="<f0>  |<f1> Pertinence " ];
+203 [label="<f0>  |<f1> Object " color=red];
+204 [label="Dams Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Expire }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Know }" shape=Mrecord];
+}

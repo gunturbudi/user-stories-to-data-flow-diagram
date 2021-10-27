@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Deposit" as thingdeposit
+	entity "Embargo Date" as thingembargodate #grey
+	entity "Option" as thingoption
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	control "Allow Some\nCollections The\nOption" as controlallowcollectionoption
+	control "Setting An\nEmbargo Date\nAt Deposit" as controlsetallowcollectionoptionembargodatedeposit
+
+	thingoption <.. thingcollection
+	thingdeposit <.. thingembargodate
+	actorcollectioncurator --- thingdepositinterface
+	thingcollection --- controlallowcollectionoption
+	thingoption --- controlallowcollectionoption
+	controlsetallowcollectionoptionembargodatedeposit --> controlallowcollectionoption
+	thingdepositinterface --> controlallowcollectionoption
+	thingembargodate --- controlsetallowcollectionoptionembargodatedeposit
+	thingdeposit --- controlsetallowcollectionoptionembargodatedeposit
+	thingdepositinterface --> controlsetallowcollectionoptionembargodatedeposit
+
+@enduml

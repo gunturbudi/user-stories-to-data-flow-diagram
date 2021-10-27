@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Real Interaction " ];
+201 [label="<f0>  |<f1> User " color=red];
+202 [label="<f0>  |<f1> Human " ];
+203 [label="<f0>  |<f1> Aflred Device " ];
+204 [label="<f0>  |<f1> Ict Tool " ];
+205 [label="Olderperson" shape=box];
+206 [label="{<f0> 1.0|<f1> Have An Aflred Device Encourages Users For Real Interaction Between Humans Only With Ict Tools }" shape=Mrecord];
+205 -> 206
+206 -> 203 [label="Aflred Device"]
+206 -> 201 [label="User"]
+206 -> 200 [label="Real Interaction"]
+206 -> 202 [label="Human"]
+206 -> 204 [label="Ict Tool"]
+}

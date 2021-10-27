@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Release\nCalendar" as thingdatasetreleasecalendar #grey
+	entity "Calendar" as thingowncalendar
+	entity "Report" as thingreport
+	actor "Patron" as actorpatron
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Calendar\nInterface" as thingcalendarinterface #grey
+	control "Load Into\nOwn Calendar" as controlloadowncalendar
+	control "Download Report" as controldownloadreportloadowncalendar
+	control "Download Dataset\nRelease Calendar" as controldownloaddatasetreleasecalendar
+
+	actorpatron --- thingreportinterface
+	actorpatron --- thingcalendarinterface
+	thingowncalendar --- controlloadowncalendar
+	controldownloadreportloadowncalendar --> controlloadowncalendar
+	thingreportinterface --> controlloadowncalendar
+	thingreport --- controldownloadreportloadowncalendar
+	thingreportinterface --> controldownloadreportloadowncalendar
+	thingdatasetreleasecalendar --- controldownloaddatasetreleasecalendar
+	thingcalendarinterface --> controldownloaddatasetreleasecalendar
+
+@enduml

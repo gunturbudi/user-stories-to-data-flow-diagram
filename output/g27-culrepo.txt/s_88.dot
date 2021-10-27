@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Administrator " ];
+201 [label="<f0>  |<f1> Account " color=red];
+202 [label="<f0>  |<f1> Ease " ];
+203 [label="Db" shape=box];
+204 [label="Ir Administrator" shape=box];
+205 [label="{<f0> 1.0|<f1> Administering Accounts }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> See A List Of All Administrators For Ease }" shape=Mrecord];
+203 -> 205
+203 -> 206
+204 -> 205
+204 -> 206
+205 -> 206
+205 -> 201 [label="Account"]
+206 -> 200 [label="Administrator"]
+206 -> 202 [label="Ease"]
+}

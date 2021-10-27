@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Audio Material " color=red];
+201 [label="<f0>  |<f1> Quick Assessment " ];
+202 [label="<f0>  |<f1> Upload " ];
+203 [label="Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Get A Quick Assessment Audio Material Has Edited Before The Upload }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Quick Assessment"]
+204 -> 200 [label="Audio Material"]
+204 -> 202 [label="Upload"]
+}

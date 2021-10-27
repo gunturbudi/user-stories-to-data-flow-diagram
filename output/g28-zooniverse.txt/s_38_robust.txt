@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Orientation" as thingorientation
+	entity "Plankton Size" as thingplanktonsize #grey
+	entity "Plankton Portal\nImage" as thingplanktonportalimage
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Automatic Detection" as thingautomaticdetection
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Orientation\nInterface" as thingorientationinterface #grey
+	control "Perform Automatic\nDetection Of\nPlankton Size\nIn Plankton\nPortal Images" as controlperformautomaticdetection
+	control "Perform Automatic\nDetection Of\nOrientation" as controlperformautomaticdetectionorientation
+
+	thingplanktonportalimage <.. thingplanktonsize
+	thingplanktonsize *-- thingautomaticdetection
+	thingorientation *-- thingautomaticdetection
+	actorzooniverseadmin --- thingimageinterface
+	actorzooniverseadmin --- thingorientationinterface
+	thingautomaticdetection --- controlperformautomaticdetection
+	thingplanktonsize --- controlperformautomaticdetection
+	thingplanktonportalimage --- controlperformautomaticdetection
+	thingimageinterface --> controlperformautomaticdetection
+	thingorientation --- controlperformautomaticdetectionorientation
+	thingorientationinterface --> controlperformautomaticdetectionorientation
+	thingautomaticdetection --- controlperformautomaticdetectionorientation
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Tag Datapackage" as thingtaggeddatapackage
+	actor "Publisher" as actorpublisher
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Overwrite The\nPreviously Tagged\nDatapackage" as controloverwritetaggeddatapackage
+
+	actorpublisher --- thingdatapackageinterface
+	thingtaggeddatapackage --- controloverwritetaggeddatapackage
+	thingdatapackageinterface --> controloverwritetaggeddatapackage
+
+@enduml

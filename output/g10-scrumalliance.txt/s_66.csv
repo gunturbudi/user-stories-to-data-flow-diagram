@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Flexibility,shape=partialRectangle,null,null,data_base
+201,Thing,shape=partialRectangle,null,null,data_base
+202,Site Editor,rounded=0,null,null,external_entity
+203,Have Some Flexibility Things Where Appear,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Flexibility,endArrow=classic,203,200,endArrow=classic
+207,Thing,endArrow=classic,203,201,endArrow=classic

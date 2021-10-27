@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Asset" as thingasset
+	entity "Repository" as thingrepository
+	actor "Asset Manager" as actorassetmanager
+	control "Assured" as controlassure
+
+
+@enduml

@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> User " ];
+202 [label="<f0>  |<f1> Dam " ];
+203 [label="<f0>  |<f1> Probable Importance " ];
+204 [label="Repository Manager" shape=box];
+205 [label="{<f0> 1.0|<f1> Indicate Other Descriptions Of The Collection Are Outside The Dams }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Indicate Other Descriptions Of The Collection Are Of Probable Importance To Users }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Collection"]
+205 -> 202 [label="Dam"]
+206 -> 203 [label="Probable Importance"]
+206 -> 201 [label="User"]
+206 -> 200 [label="Collection"]
+}

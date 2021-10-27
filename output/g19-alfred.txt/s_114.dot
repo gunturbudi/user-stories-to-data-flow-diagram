@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> Regular Summary " ];
+202 [label="<f0>  |<f1> Exercise " color=red];
+203 [label="Medicalcaregiver" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Regular Summary How Much Exercise Performed The User }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Regular Summary"]
+204 -> 202 [label="Exercise"]
+204 -> 200 [label="User"]
+}

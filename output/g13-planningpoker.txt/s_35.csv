@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Ask questions,ellipse,null,null,process
+200,Prior Estimate,shape=partialRectangle,null,null,data_base
+201,Estimator,shape=partialRectangle,null,null,data_base
+202,Story,shape=partialRectangle,null,null,data_base
+203,Participant,rounded=0,null,null,external_entity
+204,See,ellipse,null,null,process
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Opinion,rounded=0,null,null,external_entity
+1002,Opinion,endArrow=classic,2,1001,endArrow=classic

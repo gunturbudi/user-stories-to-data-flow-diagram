@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Preservation Manager" as thingpreservationmanager #grey
+	entity "Checksum" as thingchecksum
+	entity "Register" as thinglastregister
+	actor "Dams Manager" as actordamsmanager
+	boundary "Register\nInterface" as thingregisterinterface #grey
+	control "Know Via\nThe Preservation\nManager Of\nAll Files\nFor Which\nThe Checksum\nHas Changed\nSince Last\nRegistered" as controlknowpreservationmanager
+
+	thingchecksum <.. thingfile
+	thinglastregister <.. thingfile
+	thingfile <.. thingpreservationmanager
+	thinglastregister <.. thingchecksum
+	actordamsmanager --- thingregisterinterface
+	thingpreservationmanager --- controlknowpreservationmanager
+	thingfile --- controlknowpreservationmanager
+	thingchecksum --- controlknowpreservationmanager
+	thinglastregister --- controlknowpreservationmanager
+	thingregisterinterface --> controlknowpreservationmanager
+
+@enduml

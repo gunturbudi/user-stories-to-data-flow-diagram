@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Predictable" as thingpredictable
+	entity "Sensible Url" as thingsensibleurl
+	actor "User" as actoruser
+	boundary "Predictable\nInterface" as thingpredictableinterface #grey
+	boundary "Url\nInterface" as thingurlinterface #grey
+	control "See Predictable" as controlseepredictable
+	control "See Sensible\nUrls" as controlseesensibleurl
+
+	actoruser --- thingpredictableinterface
+	actoruser --- thingurlinterface
+	thingpredictable --- controlseepredictable
+	thingpredictableinterface --> controlseepredictable
+	thingsensibleurl --- controlseesensibleurl
+	thingurlinterface --> controlseesensibleurl
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Particular User " color=red];
+201 [label="Archivist" shape=box];
+202 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Track use of assets }" shape=Mrecord];
+201 -> 2
+1001 [label="<f0>  |<f1> Use of assets " color=red];
+2 -> 1001 [label="Use of assets"]
+}

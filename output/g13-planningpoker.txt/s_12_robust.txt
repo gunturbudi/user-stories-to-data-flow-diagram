@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agree Estimate" as thingagreedestimate
+	actor "Moderator" as actormoderator
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	control "Enter Upon\nThe Agreed\nEstimate" as controlenteragreedestimate
+
+	actormoderator --- thingestimateinterface
+	thingagreedestimate --- controlenteragreedestimate
+	thingestimateinterface --> controlenteragreedestimate
+
+@enduml

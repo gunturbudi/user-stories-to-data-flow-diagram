@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dam" as thingDAMS
+	entity "Resource" as thingresource
+	entity "Description" as thingdescription
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Pertinent ,\nVersion" as thingpertinentotherversion
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	control "Indicate Description" as controlindicatedescription
+	control "Indicate All\nPertinent, Other\nVersions Of\nA Resource\nAre External\nTo The\nDams" as controlindicatepertinentotherversion
+
+	thingDAMS <.. thingresource
+	thingresource *-- thingpertinentotherversion
+	actorrepositorymanager --- thingdescriptioninterface
+	actorrepositorymanager --- thingdamsinterface
+	thingdescription --- controlindicatedescription
+	thingdescriptioninterface --> controlindicatedescription
+	thingpertinentotherversion --- controlindicatepertinentotherversion
+	thingresource --- controlindicatepertinentotherversion
+	thingDAMS --- controlindicatepertinentotherversion
+	thingdamsinterface --> controlindicatepertinentotherversion
+
+@enduml

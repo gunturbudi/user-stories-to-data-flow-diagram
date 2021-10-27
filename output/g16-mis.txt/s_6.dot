@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Search String " ];
+201 [label="<f0>  |<f1> Date Delimiter " ];
+202 [label="Faculty Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Add A Date Delimiter To A Search String }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Return only results from before, after, or between a given date or dates }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Results " color=red];
+2 -> 1001 [label="Results"]
+1003 [label="<f0>  |<f1> Given date " color=red];
+2 -> 1003 [label="Given date"]
+202 -> 203
+203 -> 201 [label="Date Delimiter"]
+203 -> 200 [label="Search String"]
+}

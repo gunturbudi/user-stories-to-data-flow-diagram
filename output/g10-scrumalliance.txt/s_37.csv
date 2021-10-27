@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Faq,shape=partialRectangle,null,null,data_base
+201,Site Visitor,rounded=0,null,null,external_entity
+202,Read Faqs,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Faq,endArrow=classic,202,200,endArrow=classic

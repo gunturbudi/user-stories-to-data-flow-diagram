@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Description " ];
+201 [label="<f0>  |<f1> Project Lifecycle " color=red];
+202 [label="<f0>  |<f1> Data Set " color=red];
+203 [label="Data Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Update Throughout The Project Lifecycle }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have The Description Of Collected Data Sets Used }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Have The Description Of Collected Sets }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 201 [label="Project Lifecycle"]
+205 -> 200 [label="Description"]
+205 -> 202 [label="Data Set"]
+206 -> 204
+206 -> 200 [label="Description"]
+}

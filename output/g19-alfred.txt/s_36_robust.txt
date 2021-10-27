@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Morning" as thingmorning
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Morning\nInterface" as thingmorninginterface #grey
+	control "Receive Up\nA Wake\nCall From\nAlfred In\nThe Morning\nChecking On" as controlreceivewakecallmorningmorning
+	control "Am Ok" as controlbereceivewakecallmorningmorning
+
+	thingmorning <.. thingALFRED
+	actorOlderPerson --- thingmorninginterface
+	thingALFRED --- controlreceivewakecallmorningmorning
+	thingmorning --- controlreceivewakecallmorningmorning
+	controlbereceivewakecallmorningmorning --> controlreceivewakecallmorningmorning
+	thingmorninginterface --> controlreceivewakecallmorningmorning
+	thingmorninginterface --> controlbereceivewakecallmorningmorning
+
+@enduml

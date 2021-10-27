@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Neurohub,shape=partialRectangle,null,null,data_base
+201,Post Content,shape=partialRectangle,null,null,data_base
+202,Twitter Feed,shape=partialRectangle,null,null,data_base
+203,Time,shape=partialRectangle,null,null,data_base
+204,User,rounded=0,null,null,external_entity
+205,Push Posted Content To Twitter Feed At The Same Time,ellipse,null,null,process
+206,Tell Neurohub,ellipse,null,null,process
+207,Have,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Post Content,endArrow=classic,205,201,endArrow=classic
+213,Twitter Feed,endArrow=classic,205,202,endArrow=classic
+214,Time,endArrow=classic,205,203,endArrow=classic
+215,,endArrow=classic,206,205,endArrow=classic
+216,Neurohub,endArrow=classic,206,200,endArrow=classic
+217,,endArrow=classic,207,206,endArrow=classic

@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Security Level" as thingsecuritylevel
+	actor "Administrator" as actoradministrator
+	control "Check" as controlcheck
+
+
+@enduml

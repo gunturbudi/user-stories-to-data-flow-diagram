@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inflation" as thinginflation
+	entity "Spending Dataset" as thingspendingdataset #grey
+	entity "Reference Datum" as thingreferencedatum
+	actor "Researchergovernment Publisher" as actorresearchergovernmentpublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Add Reference\nData On\nInflation To\nSpending Dataset" as controladdreferencedataspendingdataset
+
+	thingspendingdataset <.. thinginflation
+	thinginflation <.. thingreferencedatum
+	actorresearchergovernmentpublisher --- thingdatasetinterface
+	thingreferencedatum --- controladdreferencedataspendingdataset
+	thinginflation --- controladdreferencedataspendingdataset
+	thingspendingdataset --- controladdreferencedataspendingdataset
+	thingdatasetinterface --> controladdreferencedataspendingdataset
+
+@enduml

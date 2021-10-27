@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Node Lib" as thingnodelib #grey
+	entity "Project" as thingproject
+	entity "Data Package" as thingdatapackage #grey
+	actor "Developer" as actordeveloper
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Use Data\nPackage As\nA Node\nLib In\nProject" as controlusedatapackagenodelib
+
+	thingproject <.. thingnodelib
+	thingnodelib <.. thingdatapackage
+	actordeveloper --- thingprojectinterface
+	thingdatapackage --- controlusedatapackagenodelib
+	thingnodelib --- controlusedatapackagenodelib
+	thingproject --- controlusedatapackagenodelib
+	thingprojectinterface --> controlusedatapackagenodelib
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Section" as thingsection
+	entity "Costing" as thingcosting
+	actor "Faculty ,\nData Steward" as actorfacultydatasteward
+	boundary "Costing\nInterface" as thingcostinginterface #grey
+	control "See The\nSections On\nCosting" as controlseesection
+
+	thingcosting <.. thingsection
+	actorfacultydatasteward --- thingcostinginterface
+	thingsection --- controlseesection
+	thingcosting --- controlseesection
+	thingcostinginterface --> controlseesection
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content" as thingcontent
+	entity "Asset Information" as thingassetinformation #grey
+	entity "Search" as thingsearch
+	actor "Admin" as actoradmin
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Prefilter Content\nUsing Search\nOn Asset\nInformation" as controlprefiltercontentsearchassetinformation
+
+	thingsearch <.. thingcontent
+	thingassetinformation <.. thingsearch
+	actoradmin --- thinginformationinterface
+	thingcontent --- controlprefiltercontentsearchassetinformation
+	thingsearch --- controlprefiltercontentsearchassetinformation
+	thingassetinformation --- controlprefiltercontentsearchassetinformation
+	thinginformationinterface --> controlprefiltercontentsearchassetinformation
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Iframe" as thingiframe
+	entity "Data Summary" as thingdatasummary
+	actor "Developerpublisher" as actorDeveloperPublisher
+	boundary "Tool" as thingtoolcreateembeddabledatasummaryDeveloperPublisher
+	control "Create An\nEmbeddable Data\nSummary Via\nIframe" as controlcreateembeddabledatasummary
+
+	thingiframe <.. thingdatasummary
+	actorDeveloperPublisher --- thingtoolcreateembeddabledatasummaryDeveloperPublisher
+	thingtoolcreateembeddabledatasummaryDeveloperPublisher --> controlcreateembeddabledatasummary
+	thingdatasummary --- controlcreateembeddabledatasummary
+	thingiframe --- controlcreateembeddabledatasummary
+
+@enduml

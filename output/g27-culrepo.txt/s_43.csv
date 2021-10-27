@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Ease,shape=partialRectangle,null,null,data_base
+201,Subject Classification,shape=partialRectangle,null,null,data_base
+202,Patron Browsing,shape=partialRectangle,null,null,data_base
+203,Db,rounded=0,null,null,external_entity
+204,Ir Administrator,rounded=0,null,null,external_entity
+205,Manage Subject Classifications For Ease Of,ellipse,null,null,process
+206,Search,ellipse,null,null,process
+207,Manage Subject Classifications For Ease Of Patron Browsing,ellipse,null,null,process
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,203,207,endArrow=classic
+212,,endArrow=classic,204,205,endArrow=classic
+213,,endArrow=classic,204,206,endArrow=classic
+214,,endArrow=classic,204,207,endArrow=classic
+215,,endArrow=classic,205,206,endArrow=classic
+216,Subject Classification,endArrow=classic,205,201,endArrow=classic
+217,Ease,endArrow=classic,205,200,endArrow=classic
+218,Subject Classification,endArrow=classic,207,201,endArrow=classic
+219,Ease,endArrow=classic,207,200,endArrow=classic
+220,Patron Browsing,endArrow=classic,207,202,endArrow=classic

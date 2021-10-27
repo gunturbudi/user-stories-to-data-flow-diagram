@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Determine what basic support services and functionalities are required,ellipse,null,null,process
+200,Type,shape=partialRectangle,null,null,data_base
+201,Kind,shape=partialRectangle,null,null,data_base
+202,Data,shape=partialRectangle,null,null,data_base
+203,Data Manager,rounded=0,null,null,external_entity
+204,Know,ellipse,null,null,process
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Support services,rounded=0,null,null,external_entity
+1002,Support services,endArrow=classic,2,1001,endArrow=classic

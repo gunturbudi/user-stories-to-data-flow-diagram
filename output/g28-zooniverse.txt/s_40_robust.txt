@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video Duration" as thingvideoduration #grey
+	entity "Worm Watch\nLab" as thingwormwatchlab #grey
+	entity "Worm Motion\nAnalysis" as thingwormmotionanalysis
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Analysis\nInterface" as thinganalysisinterface #grey
+	boundary "Lab\nInterface" as thinglabinterface #grey
+	control "Perform Automatic\nWorm Motion\nAnalysis" as controlperformautomaticwormmotionanalysisreducevideoduration
+	control "Reduce Video\nDuration In\nWorm Watch\nLab" as controlreducevideoduration
+
+	thingwormwatchlab <.. thingvideoduration
+	actorzooniverseadmin --- thinganalysisinterface
+	actorzooniverseadmin --- thinglabinterface
+	thingwormmotionanalysis --- controlperformautomaticwormmotionanalysisreducevideoduration
+	thinganalysisinterface --> controlperformautomaticwormmotionanalysisreducevideoduration
+	controlperformautomaticwormmotionanalysisreducevideoduration --> controlreducevideoduration
+	thingvideoduration --- controlreducevideoduration
+	thingwormwatchlab --- controlreducevideoduration
+	thinglabinterface --> controlreducevideoduration
+
+@enduml

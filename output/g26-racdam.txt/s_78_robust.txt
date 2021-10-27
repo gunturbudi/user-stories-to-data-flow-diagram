@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inventory" as thinginventory
+	entity "Unprocesse Collection" as thingunprocessedcollection
+	actor "Archivist" as actorarchivist
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Access Inventories\nFor Unprocessed\nCollections" as controlaccessinventory
+
+	thingunprocessedcollection <.. thinginventory
+	actorarchivist --- thingcollectioninterface
+	thinginventory --- controlaccessinventory
+	thingunprocessedcollection --- controlaccessinventory
+	thingcollectioninterface --> controlaccessinventory
+
+@enduml

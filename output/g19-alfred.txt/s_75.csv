@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Alfred,shape=partialRectangle,null,null,data_base
+201,Event,shape=partialRectangle,null,null,data_base
+202,Concert,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Navigate To Concert,ellipse,null,null,process
+205,Use Alfred,ellipse,null,null,process
+206,Navigate To An Event,ellipse,null,null,process
+207,Alfred Help,ellipse,null,null,process
+208,Lost,ellipse,null,null,process
+210,,endArrow=classic,203,204,endArrow=classic
+211,,endArrow=classic,203,205,endArrow=classic
+212,,endArrow=classic,203,206,endArrow=classic
+213,,endArrow=classic,203,207,endArrow=classic
+214,,endArrow=classic,203,208,endArrow=classic
+215,Concert,endArrow=classic,204,202,endArrow=classic
+216,,endArrow=classic,205,204,endArrow=classic
+217,,endArrow=classic,205,206,endArrow=classic
+218,,endArrow=classic,205,208,endArrow=classic
+219,Alfred,endArrow=classic,205,200,endArrow=classic
+220,Event,endArrow=classic,206,201,endArrow=classic
+221,Alfred,endArrow=classic,207,200,endArrow=classic
+222,,endArrow=classic,208,207,endArrow=classic

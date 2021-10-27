@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Design Direction" as thingdesigndirection
+	actor "Nsf Employee" as actornsfemployee
+	control "Know" as controlknow
+
+
+@enduml

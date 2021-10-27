@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Publisher" as actorpublisher
+	control "Time Check\nGood" as controlcheck
+
+
+@enduml

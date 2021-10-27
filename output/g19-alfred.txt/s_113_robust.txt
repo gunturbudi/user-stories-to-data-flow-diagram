@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	control "Control" as controlcontrol
+
+
+@enduml

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Work " color=red];
+201 [label="<f0>  |<f1> Interactive Map " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Promote Work Through Interactive Maps }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Share Work Through Interactive Maps }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Display the range and extent of my work graphically }" shape=Mrecord];
+203 -> 3
+1001 [label="<f0>  |<f1> Work graphically " color=red];
+3 -> 1001 [label="Work graphically"]
+202 -> 203
+202 -> 204
+203 -> 200 [label="Work"]
+203 -> 201 [label="Interactive Map"]
+204 -> 200 [label="Work"]
+204 -> 201 [label="Interactive Map"]
+}

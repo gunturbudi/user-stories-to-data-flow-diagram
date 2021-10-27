@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Public Transport" as thingpublictransport
+	actor "Olderperson" as actorOlderPerson
+	boundary "Support" as thingsupportusepublictransportOlderPerson #grey
+	control "Receive" as controlreceivesupportusepublictransportOlderPerson
+	control "Use The\nPublic Transport" as controlusepublictransport
+
+	actorOlderPerson --- thingsupportusepublictransportOlderPerson
+	thingsupportusepublictransportOlderPerson --> controlreceivesupportusepublictransportOlderPerson
+	controlreceivesupportusepublictransportOlderPerson --> controlusepublictransport
+	thingpublictransport --- controlusepublictransport
+	thingsupportusepublictransportOlderPerson --> controlusepublictransport
+
+@enduml

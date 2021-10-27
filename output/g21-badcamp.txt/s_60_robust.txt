@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Session" as thingsession
+	entity "Notification" as thingnotification
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	boundary "Notification\nInterface" as thingnotificationinterface #grey
+	control "Submit A\nSession" as controlsubmitreceivenotificationsession
+	control "Receive A\nNotification" as controlreceivenotification
+
+	actoranonymoususer --- thingsessioninterface
+	actoranonymoususer --- thingnotificationinterface
+	thingsession --- controlsubmitreceivenotificationsession
+	thingsessioninterface --> controlsubmitreceivenotificationsession
+	controlsubmitreceivenotificationsession --> controlreceivenotification
+	thingnotification --- controlreceivenotification
+	thingnotificationinterface --> controlreceivenotification
+
+@enduml

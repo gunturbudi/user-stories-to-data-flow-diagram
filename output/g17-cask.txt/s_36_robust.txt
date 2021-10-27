@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type" as thingtype
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Way" as thingway
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "New Version" as thingnewerversion
+	circle "Upgrade" as thingupgrade
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Reject An\nUpgrade Of\nA Dataset\nInstance To\nA Newer\nVersion Of" as controlrejectupgradenewerversion
+	control "Have A\nWay" as controlhavewayrejectupgradenewerversion
+
+	thingnewerversion <.. thingdatasetinstance
+	thingnewerversion *-- thingnewerversion
+	thingdatasetinstance *-- thingupgrade
+	actordatasetdeveloper --- thingwayinterface
+	thingupgrade --- controlrejectupgradenewerversion
+	thingdatasetinstance --- controlrejectupgradenewerversion
+	thingnewerversion --- controlrejectupgradenewerversion
+	controlhavewayrejectupgradenewerversion --> controlrejectupgradenewerversion
+	thingwayinterface --> controlrejectupgradenewerversion
+	thingway --- controlhavewayrejectupgradenewerversion
+	thingwayinterface --> controlhavewayrejectupgradenewerversion
+
+@enduml

@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Etd " color=red];
+201 [label="<f0>  |<f1> Method " ];
+202 [label="Digitalrecords Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Batch }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have A Method Etds }" shape=Mrecord];
+202 -> 203
+202 -> 204
+204 -> 203
+204 -> 201 [label="Method"]
+204 -> 200 [label="Etd"]
+}

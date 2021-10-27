@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Design Guide,shape=partialRectangle,null,null,data_base
+201,Content Guide,shape=partialRectangle,null,null,data_base
+202,Style Guide,shape=partialRectangle,null,null,data_base
+203,Designer,rounded=0,null,null,external_entity
+204,Have Content Guide,ellipse,null,null,process
+205,Have Design Guide,ellipse,null,null,process
+206,Have A Style Guide,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Content Guide,endArrow=classic,204,201,endArrow=classic
+212,Design Guide,endArrow=classic,205,200,endArrow=classic
+213,Style Guide,endArrow=classic,206,202,endArrow=classic

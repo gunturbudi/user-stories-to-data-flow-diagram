@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Story,shape=partialRectangle,null,null,data_base
+201,Spreadsheet,shape=partialRectangle,null,null,data_base
+202,Moderator,rounded=0,null,null,external_entity
+203,Copy Stories From A Spreadsheet,ellipse,null,null,process
+204,Paste Stories From A Spreadsheet,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Story,endArrow=classic,203,200,endArrow=classic
+209,Spreadsheet,endArrow=classic,203,201,endArrow=classic
+210,Story,endArrow=classic,204,200,endArrow=classic
+211,Spreadsheet,endArrow=classic,204,201,endArrow=classic

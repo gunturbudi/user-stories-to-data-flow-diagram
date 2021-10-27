@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Affidavit" as thingaffidavit
+	actor "Staff Member" as actorstaffmember
+	boundary "Affidavit\nInterface" as thingaffidavitinterface #grey
+	control "Manage Affidavits" as controlmanageaffidavit
+
+	actorstaffmember --- thingaffidavitinterface
+	thingaffidavit --- controlmanageaffidavit
+	thingaffidavitinterface --> controlmanageaffidavit
+
+@enduml

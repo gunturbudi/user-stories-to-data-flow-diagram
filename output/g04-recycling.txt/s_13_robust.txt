@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Website" as thingwebsite
+	entity "User Documentation" as thinguserdocumentation #grey
+	actor "User" as actoruser
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	control "View User\nDocumentation For\nThe Website" as controlviewuserdocumentation
+
+	thingwebsite <.. thinguserdocumentation
+	actoruser --- thingwebsiteinterface
+	thinguserdocumentation --- controlviewuserdocumentation
+	thingwebsite --- controlviewuserdocumentation
+	thingwebsiteinterface --> controlviewuserdocumentation
+
+@enduml

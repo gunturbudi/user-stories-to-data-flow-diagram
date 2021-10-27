@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> External Repository " ];
+201 [label="<f0>  |<f1> Data Set " color=red];
+202 [label="Institutional , Data Steward" shape=box];
+203 [label="{<f0> 1.0|<f1> Extract The Data Sets Submitted To External Repositories }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Data Set"]
+203 -> 200 [label="External Repository"]
+}

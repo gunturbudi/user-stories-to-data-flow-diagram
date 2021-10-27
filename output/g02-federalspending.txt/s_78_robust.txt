@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Padded Field" as thingpaddedfield
+	actor "Owner" as actorowner
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Provided With\nPadded Fields" as controlprovidepaddedfield
+
+	actorowner --- thingfieldinterface
+	thingpaddedfield --- controlprovidepaddedfield
+	thingfieldinterface --> controlprovidepaddedfield
+
+@enduml

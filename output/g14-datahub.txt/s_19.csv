@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Cli,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Restore The Deleted Data Package Via Cli,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Package,endArrow=classic,203,201,endArrow=classic
+207,Cli,endArrow=classic,203,200,endArrow=classic

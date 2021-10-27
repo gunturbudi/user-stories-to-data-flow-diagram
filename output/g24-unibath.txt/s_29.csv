@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+2,"Search books, articles and data all in one place",ellipse,null,null,process
+200,Archive,shape=partialRectangle,null,null,data_base
+201,Primo,shape=partialRectangle,null,null,data_base
+202,Datum Reuser,rounded=0,null,null,external_entity
+203,Search The Archive Through Primo,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Archive,endArrow=classic,203,200,endArrow=classic
+207,Primo,endArrow=classic,203,201,endArrow=classic
+1000,Data reuser,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Articles,rounded=0,null,null,external_entity
+1003,Articles,endArrow=classic,2,1002,endArrow=classic
+1004,Data,rounded=0,null,null,external_entity
+1005,Data,endArrow=classic,2,1004,endArrow=classic

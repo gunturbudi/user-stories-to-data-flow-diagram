@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "Publisher" as actorpublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Publish A\nDataset" as controlpublishdataset
+
+	actorpublisher --- thingdatasetinterface
+	thingdataset --- controlpublishdataset
+	thingdatasetinterface --> controlpublishdataset
+
+@enduml

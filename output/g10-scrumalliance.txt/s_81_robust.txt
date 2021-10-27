@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Trainer" as thingtrainer
+	entity "Practitioner" as thingpractitioner
+	entity "Scrum Product\nOwner" as thingscrumproductowner
+	entity "Scrum Master" as thingscrummaster
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	boundary "Master\nInterface" as thingmasterinterface #grey
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	control "View Lists\nOn The\nSite Of\nTrainer" as controlviewlisttrainer
+	control "View Lists\nOn The\nSite Of\nAll Certified\nScrum Masters" as controlviewlist
+	control "View Lists\nOn The\nSite Of\nCertified Scrum\nProduct Owner" as controlviewlistcertifiedscrumproductowner
+	control "View Lists\nOn The\nSite Of\nPractitioner" as controlviewlistpractitioner
+
+	thingscrummaster *-- thingsite
+	thingtrainer *-- thingsite
+	thingpractitioner *-- thingsite
+	thingscrumproductowner *-- thingsite
+	actorsitevisitor --- thingtrainerinterface
+	actorsitevisitor --- thingmasterinterface
+	actorsitevisitor --- thingownerinterface
+	actorsitevisitor --- thingpractitionerinterface
+	thingtrainer --- controlviewlisttrainer
+	thingtrainerinterface --> controlviewlisttrainer
+	thingsite --- controlviewlisttrainer
+	thingsite --- controlviewlist
+	thingscrummaster --- controlviewlist
+	thingmasterinterface --> controlviewlist
+	thingscrumproductowner --- controlviewlistcertifiedscrumproductowner
+	thingownerinterface --> controlviewlistcertifiedscrumproductowner
+	thingsite --- controlviewlistcertifiedscrumproductowner
+	thingpractitioner --- controlviewlistpractitioner
+	thingpractitionerinterface --> controlviewlistpractitioner
+	thingsite --- controlviewlistpractitioner
+
+@enduml

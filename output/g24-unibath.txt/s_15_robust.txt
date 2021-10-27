@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Depositor" as actordepositor
+	circle "Download" as thingdownload
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Track Downloads\nOf Data" as controltrackdownload
+
+	thingdatum *-- thingdownload
+	actordepositor --- thingdatuminterface
+	thingdownload --- controltrackdownload
+	thingdatum --- controltrackdownload
+	thingdatuminterface --> controltrackdownload
+
+@enduml

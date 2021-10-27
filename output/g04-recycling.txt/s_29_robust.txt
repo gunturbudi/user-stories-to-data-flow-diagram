@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Website" as thingwebsite
+	entity "Personal Information" as thingpersonalinformation
+	actor "User" as actoruser
+	circle "Database" as thingdatabase
+	control "Have" as controlhave
+
+	thingwebsite *-- thingdatabase
+
+@enduml

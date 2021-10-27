@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Report" as thingreport
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Unpublish A\nReport" as controlunpublishreport
+	control "Unpublish Dataset" as controlunpublishdataset
+
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	thingreport --- controlunpublishreport
+	thingreportinterface --> controlunpublishreport
+	thingdataset --- controlunpublishdataset
+	thingdatasetinterface --> controlunpublishdataset
+
+@enduml

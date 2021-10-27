@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Outreach " ];
+201 [label="User Researcher" shape=box];
+202 [label="{<f0> 1.0|<f1> Know Outreach To Lists Successful }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Outreach"]
+}

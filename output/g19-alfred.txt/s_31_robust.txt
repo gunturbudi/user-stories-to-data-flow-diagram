@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Real Interaction" as thingrealinteraction
+	entity "User" as thinguser
+	entity "Human" as thinghuman
+	entity "Aflred Device" as thingaflreddevice #grey
+	entity "Ict Tool" as thingicttool
+	actor "Olderperson" as actorOlderPerson
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Have An\nAflred Device\nEncourages Users\nFor Real\nInteraction Between\nHumans Only\nWith Ict\nTools" as controlhaveaflreddevice
+
+	thinghuman <.. thingrealinteraction
+	thingrealinteraction <.. thinguser
+	thingicttool <.. thinghuman
+	thinguser <.. thingaflreddevice
+	thingrealinteraction <.. thingaflreddevice
+	thingicttool <.. thingaflreddevice
+	actorOlderPerson --- thingtoolinterface
+	thingaflreddevice --- controlhaveaflreddevice
+	thinguser --- controlhaveaflreddevice
+	thingrealinteraction --- controlhaveaflreddevice
+	thinghuman --- controlhaveaflreddevice
+	thingicttool --- controlhaveaflreddevice
+	thingtoolinterface --> controlhaveaflreddevice
+
+@enduml

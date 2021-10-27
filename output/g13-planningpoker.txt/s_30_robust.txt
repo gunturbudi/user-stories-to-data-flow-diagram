@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	actor "Estimator" as actorestimator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "See The\nItem" as controlseeitem
+
+	actorestimator --- thingiteminterface
+	thingitem --- controlseeitem
+	thingiteminterface --> controlseeitem
+
+@enduml

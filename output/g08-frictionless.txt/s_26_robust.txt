@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dat Integration" as thingdatintegration #grey
+	actor "Developer" as actordeveloper
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	control "Provided With\nA Dat\nIntegration" as controlprovidedatintegration
+
+	actordeveloper --- thingintegrationinterface
+	thingdatintegration --- controlprovidedatintegration
+	thingintegrationinterface --> controlprovidedatintegration
+
+@enduml

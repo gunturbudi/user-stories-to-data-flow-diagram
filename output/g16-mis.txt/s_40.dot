@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Easy Comprehension " ];
+201 [label="<f0>  |<f1> Recent Error " ];
+202 [label="Repository Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> See A Display Of Recent Errors For Easy Comprehension }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Recent Error"]
+203 -> 200 [label="Easy Comprehension"]
+}

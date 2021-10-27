@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Snapshot Serengeti" as thingsnapshotserengeti
+	entity "Animal Number\nDetection" as thinganimalnumberdetection
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Serengeti\nInterface" as thingserengetiinterface #grey
+	control "Perform Automatic\nAnimal Number\nDetection In\nSnapshot Serengeti" as controlperformautomaticanimalnumberdetectionsnapshotserengeti
+
+	thingsnapshotserengeti <.. thinganimalnumberdetection
+	actorzooniverseadmin --- thingserengetiinterface
+	thinganimalnumberdetection --- controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	thingsnapshotserengeti --- controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	thingserengetiinterface --> controlperformautomaticanimalnumberdetectionsnapshotserengeti
+
+@enduml

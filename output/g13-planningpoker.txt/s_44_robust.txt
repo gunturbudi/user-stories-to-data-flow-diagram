@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Use Term" as thingusedterm
+	entity "Definition" as thingdefinition
+	actor "Developer" as actordeveloper
+	boundary "Term\nInterface" as thingterminterface #grey
+	control "Have A\nList Of\nDefinitions For\nCommonly Used\nTerms" as controlhavelist
+
+	thingusedterm <.. thingdefinition
+	actordeveloper --- thingterminterface
+	thingdefinition --- controlhavelist
+	thingusedterm --- controlhavelist
+	thingterminterface --> controlhavelist
+
+@enduml

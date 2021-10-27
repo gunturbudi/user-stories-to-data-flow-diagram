@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Research Datum" as thingresearchdatum
+	actor "Depositor" as actordepositor
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Manage Live\nResearch Data" as controlmanageliveresearchdata
+	control "Share Live\nResearch Data" as controlshareliveresearchdata
+
+	actordepositor --- thingdatuminterface
+	thingresearchdatum --- controlmanageliveresearchdata
+	thingdatuminterface --> controlmanageliveresearchdata
+	thingdatuminterface --> controlshareliveresearchdata
+	thingresearchdatum --- controlshareliveresearchdata
+
+@enduml

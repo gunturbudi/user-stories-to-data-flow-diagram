@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Personal Account" as thingpersonalaccount
+	entity "Access" as thingaccess
+	entity "Authorized Function" as thingauthorizedfunction
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Function\nInterface" as thingfunctioninterface #grey
+	control "Login To\nPersonal Account\nWith Access\nTo Authorized\nFunctions" as controlloginpersonalaccountaccess
+
+	thingaccess <.. thingpersonalaccount
+	thingauthorizedfunction <.. thingaccess
+	actordb --- thingfunctioninterface
+	actoriradministrator --- thingfunctioninterface
+	thingpersonalaccount --- controlloginpersonalaccountaccess
+	thingaccess --- controlloginpersonalaccountaccess
+	thingauthorizedfunction --- controlloginpersonalaccountaccess
+	thingfunctioninterface --> controlloginpersonalaccountaccess
+
+@enduml

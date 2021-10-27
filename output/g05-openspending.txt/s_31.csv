@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Different Currency,shape=partialRectangle,null,null,data_base
+201,Monetary Measure,shape=partialRectangle,null,null,data_base
+202,Api User,rounded=0,null,null,external_entity
+203,Get A Set Of Monetary Measures To Different Currencies,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Monetary Measure,endArrow=classic,203,201,endArrow=classic
+207,Different Currency,endArrow=classic,203,200,endArrow=classic

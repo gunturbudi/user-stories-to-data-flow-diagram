@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Storage " ];
+201 [label="<f0>  |<f1> Financial Contact " color=red];
+202 [label="<f0>  |<f1> T " color=red];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Show The Storage Each Financial Contact }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> T Run }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Storage"]
+205 -> 204
+205 -> 202 [label="T"]
+204 -> 201 [label="Financial Contact"]
+}

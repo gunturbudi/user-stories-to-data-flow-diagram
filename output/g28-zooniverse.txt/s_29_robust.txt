@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Volunteer Type" as thingvolunteertype
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Identify Volunteer\nTypes" as controlidentifyvolunteertypes
+
+	actorzooniverseadmin --- thingtypeinterface
+	thingvolunteertype --- controlidentifyvolunteertypes
+	thingtypeinterface --> controlidentifyvolunteertypes
+
+@enduml

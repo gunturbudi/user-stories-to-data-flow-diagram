@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata Field" as thingmetadatafield
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Have Customizable\nMetadata Fields" as controlhavecustomizablemetadatafields
+
+	actorlibrarystaffmember --- thingfieldinterface
+	thingmetadatafield --- controlhavecustomizablemetadatafields
+	thingfieldinterface --> controlhavecustomizablemetadatafields
+
+@enduml

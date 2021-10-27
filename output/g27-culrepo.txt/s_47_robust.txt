@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Faculty" as thingotherfaculty
+	entity "Information" as thinginformation
+	actor "Researcher" as actorresearcher
+	boundary "Faculty\nInterface" as thingfacultyinterface #grey
+	control "Have Information\nHelp Identify\nOther Faculty" as controlhaveinformation
+
+	thingotherfaculty <.. thinginformation
+	actorresearcher --- thingfacultyinterface
+	thinginformation --- controlhaveinformation
+	thingotherfaculty --- controlhaveinformation
+	thingfacultyinterface --> controlhaveinformation
+
+@enduml

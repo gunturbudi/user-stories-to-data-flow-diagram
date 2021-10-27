@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Persistent Url" as thingpersistenturl
+	actor "Datum Reuser" as actordatareuser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Get A\nPersistent Url\nFor A\nDataset" as controlgetpersistenturl
+
+	thingdataset <.. thingpersistenturl
+	actordatareuser --- thingdatasetinterface
+	thingpersistenturl --- controlgetpersistenturl
+	thingdataset --- controlgetpersistenturl
+	thingdatasetinterface --> controlgetpersistenturl
+
+@enduml

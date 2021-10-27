@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Input" as thinginput
+	entity "Experiment" as thingexperiment
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilitystoreinputresearcher #grey
+	control "Store The\nInputs For\nAn Experiment" as controlstoreinput
+	control "Have" as controlhaveabilitystoreinputresearcher
+
+	thingexperiment <.. thinginput
+	actorresearcher --- thingabilitystoreinputresearcher
+	thinginput --- controlstoreinput
+	thingexperiment --- controlstoreinput
+	controlhaveabilitystoreinputresearcher --> controlstoreinput
+	thingabilitystoreinputresearcher --> controlstoreinput
+	thingabilitystoreinputresearcher --> controlhaveabilitystoreinputresearcher
+
+@enduml

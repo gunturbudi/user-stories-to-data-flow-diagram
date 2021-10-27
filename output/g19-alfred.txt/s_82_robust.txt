@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Body Weight" as thingbodyweight #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Weight\nInterface" as thingweightinterface #grey
+	control "Help" as controlhelpcontrolbodyweight
+	control "Control Body\nWeight" as controlcontrolbodyweight
+
+	actorOlderPerson --- thingweightinterface
+	thingweightinterface --> controlhelpcontrolbodyweight
+	controlhelpcontrolbodyweight --> controlcontrolbodyweight
+	thingbodyweight --- controlcontrolbodyweight
+	thingweightinterface --> controlcontrolbodyweight
+
+@enduml

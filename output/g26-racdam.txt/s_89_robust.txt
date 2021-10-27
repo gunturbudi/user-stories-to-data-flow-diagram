@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archival Material" as thingarchivalmaterial
+	entity "Physical Location" as thingphysicallocation
+	actor "Archivist" as actorarchivist
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "View Physical\nLocations For\nArchival Material" as controlviewphysicallocation
+
+	thingarchivalmaterial <.. thingphysicallocation
+	actorarchivist --- thingmaterialinterface
+	thingphysicallocation --- controlviewphysicallocation
+	thingarchivalmaterial --- controlviewphysicallocation
+	thingmaterialinterface --> controlviewphysicallocation
+
+@enduml

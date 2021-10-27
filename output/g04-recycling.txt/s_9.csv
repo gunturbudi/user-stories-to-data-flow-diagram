@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Area,shape=partialRectangle,null,null,data_base
+201,Map Display,shape=partialRectangle,null,null,data_base
+202,Recycling Bin,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,View A Map Display Of The Public Recycling Bins Around Area,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Map Display,endArrow=classic,204,201,endArrow=classic
+208,Recycling Bin,endArrow=classic,204,202,endArrow=classic
+209,Area,endArrow=classic,204,200,endArrow=classic

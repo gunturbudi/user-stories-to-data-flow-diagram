@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Follow Date" as thingfollowingdate
+	entity "News Item" as thingnewsitem #grey
+	entity "Date" as thingdate
+	entity "Publishing" as thingpublishing #grey
+	actor "Site Editor" as actorsiteeditor
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	control "Set The\nFollowing Dates\nOn A\nNews Item" as controlsetfollowingdatenewsitem
+	control "Publishing Date" as controlpublishdate
+
+	thingnewsitem <.. thingfollowingdate
+	thingpublishing <.. thingdate
+	actorsiteeditor --- thingiteminterface
+	actorsiteeditor --- thingdateinterface
+	thingfollowingdate --- controlsetfollowingdatenewsitem
+	thingnewsitem --- controlsetfollowingdatenewsitem
+	thingiteminterface --> controlsetfollowingdatenewsitem
+	thingdate --- controlpublishdate
+	thingdateinterface --> controlpublishdate
+
+@enduml

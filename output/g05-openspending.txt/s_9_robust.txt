@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Excel" as thingexcel
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Excel\nInterface" as thingexcelinterface #grey
+	control "Import Data\nIn Excel" as controlimportdatumexcel
+
+	thingexcel <.. thingdatum
+	actordatapublishinguser --- thingexcelinterface
+	thingdatum --- controlimportdatumexcel
+	thingexcel --- controlimportdatumexcel
+	thingexcelinterface --> controlimportdatumexcel
+
+@enduml

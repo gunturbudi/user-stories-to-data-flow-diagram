@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Priority Number" as thingprioritynumber
+	entity "News Item" as thingnewsitem
+	actor "Site Editor" as actorsiteeditor
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Assign Priority\nNumbers To\nNews Items" as controlassignprioritynumbersnewsitems
+
+	thingnewsitem <.. thingprioritynumber
+	actorsiteeditor --- thingiteminterface
+	thingprioritynumber --- controlassignprioritynumbersnewsitems
+	thingnewsitem --- controlassignprioritynumbersnewsitems
+	thingiteminterface --> controlassignprioritynumbersnewsitems
+
+@enduml

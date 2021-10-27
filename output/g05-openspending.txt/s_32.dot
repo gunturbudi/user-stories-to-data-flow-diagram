@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Result " color=red];
+201 [label="<f0>  |<f1> Multiple Dataset " ];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="Api User" shape=box];
+204 [label="{<f0> 1.0|<f1> Use Metadata }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Get Results From Multiple Datasets }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Build user experiences based on more than one dataset more easily. }" shape=Mrecord];
+204 -> 3
+1001 [label="<f0>  |<f1> User experiences " color=red];
+3 -> 1001
+1003 [label="<f0>  |<f1> Dataset " color=red];
+3 -> 1003
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 202
+205 -> 200
+205 -> 201
+}

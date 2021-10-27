@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Preference" as thingpreference
+	entity "Solution" as thingsolution
+	actor "Olderperson" as actorOlderPerson
+	circle "Different Functionality" as thingdifferentfunctionality
+	boundary "Solution\nInterface" as thingsolutioninterface #grey
+	control "Customize Preferences\nIn The\nDifferent Functionalities\nOf The\nSolution" as controlcustomizepreference
+
+	thingdifferentfunctionality <.. thingpreference
+	thingsolution *-- thingdifferentfunctionality
+	actorOlderPerson --- thingsolutioninterface
+	thingpreference --- controlcustomizepreference
+	thingdifferentfunctionality --- controlcustomizepreference
+	thingsolution --- controlcustomizepreference
+	thingsolutioninterface --> controlcustomizepreference
+
+@enduml

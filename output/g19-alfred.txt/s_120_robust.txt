@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Market Place" as thingmarketplace #grey
+	entity "App" as thingapp
+	actor "Developer" as actordeveloper
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	control "Maintain Apps\nWithin The\nMarket Place" as controlmaintainapp #grey
+	control "Create Apps\nWithin The\nMarket Place" as controlcreateapp
+
+	thingmarketplace <.. thingapp
+	actordeveloper --- thingplaceinterface
+	thingmarketplace --- controlmaintainapp
+	thingapp --- controlmaintainapp
+	thingapp --- controlcreateapp
+	thingmarketplace --- controlcreateapp
+	thingplaceinterface --> controlcreateapp
+
+@enduml

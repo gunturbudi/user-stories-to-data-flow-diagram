@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Sensitivity" as thingdatasensitivity #grey
+	actor "Legalofficer" as actorlegalofficer
+	boundary "Sensitivity\nInterface" as thingsensitivityinterface #grey
+	control "Know About\nData Sensitivity" as controlknowdatasensitivity
+
+	actorlegalofficer --- thingsensitivityinterface
+	thingdatasensitivity --- controlknowdatasensitivity
+	thingsensitivityinterface --> controlknowdatasensitivity
+
+@enduml

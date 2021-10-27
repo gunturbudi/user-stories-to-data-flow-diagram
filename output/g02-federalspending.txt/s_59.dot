@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Work " ];
+201 [label="<f0>  |<f1> Entity Zip\nValidation " ];
+202 [label="Broker User" shape=box];
+203 [label="{<f0> 1.0|<f1> Have The Same Work As The Legal Entity Zip Validations }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

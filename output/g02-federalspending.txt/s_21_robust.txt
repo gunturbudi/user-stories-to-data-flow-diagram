@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content Mockup" as thingcontentmockup
+	actor "Broker User" as actorbrokeruser
+	boundary "Mockup\nInterface" as thingmockupinterface #grey
+	control "Create Content\nMockups" as controlcreatecontentmockups
+	control "Help" as controlhelpcreatecontentmockups
+
+	actorbrokeruser --- thingmockupinterface
+	thingcontentmockup --- controlcreatecontentmockups
+	controlhelpcreatecontentmockups --> controlcreatecontentmockups
+	thingmockupinterface --> controlcreatecontentmockups
+	thingmockupinterface --> controlhelpcreatecontentmockups
+
+@enduml

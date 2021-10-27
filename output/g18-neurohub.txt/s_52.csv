@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Multiple File,shape=partialRectangle,null,null,data_base
+201,Search Result,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Download Multiple Files From The Search Results In Go,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Multiple File,endArrow=classic,203,200,endArrow=classic
+207,Search Result,endArrow=classic,203,201,endArrow=classic

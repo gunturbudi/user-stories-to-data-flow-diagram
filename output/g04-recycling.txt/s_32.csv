@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Process cases the first time.,ellipse,null,null,process
+200,Quick Notification,shape=partialRectangle,null,null,data_base
+201,Employee,rounded=0,null,null,external_entity
+202,Get Quick Notifications,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Quick Notification,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Cases,rounded=0,null,null,external_entity
+1002,Cases,endArrow=classic,2,1001,endArrow=classic

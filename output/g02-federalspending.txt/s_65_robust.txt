@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Update Date" as thingupdateddate
+	entity "Time" as thingtime
+	actor "Agency User" as actoragencyuser
+	boundary "Box" as thingboxshowtimeagencyuser #grey
+	boundary "Header Information\nBox" as thingheaderinformationboxshowupdateddateagencyuser
+	control "Show Updated\nDate" as controlshowupdateddate
+	control "Show Time" as controlshowtime
+
+	actoragencyuser --- thingboxshowtimeagencyuser
+	actoragencyuser --- thingheaderinformationboxshowupdateddateagencyuser
+	thingupdateddate --- controlshowupdateddate
+	thingheaderinformationboxshowupdateddateagencyuser --> controlshowupdateddate
+	thingboxshowtimeagencyuser --> controlshowtime
+	thingtime --- controlshowtime
+
+@enduml

@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Colleague " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> That Share }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Locate Data Colleagues Want }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Access Data Colleagues Want }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 205
+203 -> 206
+205 -> 204
+205 -> 200 [label="Datum"]
+205 -> 201 [label="Colleague"]
+206 -> 204
+206 -> 200 [label="Datum"]
+206 -> 201 [label="Colleague"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity ", Estimator" as thingtoupestimator
+	actor "Moderator" as actormoderator
+	boundary "Estimator\nInterface" as thingestimatorinterface #grey
+	control "Invite To,\nUp Estimators" as controlinvitetoupestimator
+
+	actormoderator --- thingestimatorinterface
+	thingtoupestimator --- controlinvitetoupestimator
+	thingestimatorinterface --> controlinvitetoupestimator
+
+@enduml

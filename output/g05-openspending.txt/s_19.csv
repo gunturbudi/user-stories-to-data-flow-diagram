@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+2,Share data that i have found with others.,ellipse,null,null,process
+200,Social Network,shape=partialRectangle,null,null,data_base
+201,View State,shape=partialRectangle,null,null,data_base
+202,Url,shape=partialRectangle,null,null,data_base
+203,"Datum , Consume User",rounded=0,null,null,external_entity
+204,Share A View State As A Url To Social Networks,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,View State,endArrow=classic,204,201,endArrow=classic
+208,Url,endArrow=classic,204,202,endArrow=classic
+209,Social Network,endArrow=classic,204,200,endArrow=classic
+1000,Data consuming user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Data,rounded=0,null,null,external_entity
+1003,Data,endArrow=classic,2,1002,endArrow=classic

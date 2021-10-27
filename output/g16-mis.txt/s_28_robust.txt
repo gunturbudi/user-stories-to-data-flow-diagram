@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Embargo" as thingembargo
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	circle "Length" as thinglength
+	boundary "Embargo\nInterface" as thingembargointerface #grey
+	control "Edit The\nLength Of\nEmbargoes" as controleditlength
+
+	thingembargo *-- thinglength
+	actordigitalrecordsarchivist --- thingembargointerface
+	thinglength --- controleditlength
+	thingembargo --- controleditlength
+	thingembargointerface --> controleditlength
+
+@enduml

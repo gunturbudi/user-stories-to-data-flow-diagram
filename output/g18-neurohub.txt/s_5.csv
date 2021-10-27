@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Response,shape=partialRectangle,null,null,data_base
+201,"Paper ,\nBased Form",shape=partialRectangle,null,null,data_base
+202,Subject,shape=partialRectangle,null,null,data_base
+203,Mri Operator,rounded=0,null,null,external_entity
+204,"Record The Responses That Subjects Make When Completing Paper, Based Forms",ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Response,endArrow=classic,204,200,endArrow=classic
+208,Subject,endArrow=classic,204,202,endArrow=classic
+209,"Paper ,\nBased Form",endArrow=classic,204,201,endArrow=classic

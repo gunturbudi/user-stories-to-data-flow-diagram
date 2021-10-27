@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Quick Notification" as thingquicknotification
+	actor "Employee" as actoremployee
+	boundary "Notification\nInterface" as thingnotificationinterface #grey
+	control "Get Quick\nNotifications" as controlgetquicknotification
+
+	actoremployee --- thingnotificationinterface
+	thingquicknotification --- controlgetquicknotification
+	thingnotificationinterface --> controlgetquicknotification
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred Unit" as thingalfredunit
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	control "Have A\nSimple Alfred\nUnit Is\nExpandable" as controlhavesimplealfredunit
+
+	actorMedicalCaregiver --- thingunitinterface
+	thingalfredunit --- controlhavesimplealfredunit
+	thingunitinterface --> controlhavesimplealfredunit
+
+@enduml

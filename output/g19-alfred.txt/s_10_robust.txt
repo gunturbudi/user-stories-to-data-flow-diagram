@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Bracelet" as thingbracelet
+	entity "Necklace" as thingnecklace
+	actor "Olderperson" as actorOlderPerson
+	boundary "Necklace\nInterface" as thingnecklaceinterface #grey
+	boundary "Bracelet\nInterface" as thingbraceletinterface #grey
+	control "Have Alfred\nOn A\nNecklace" as controlhaveALFREDnecklace
+	control "Have Alfred\nOn A\nBracelet" as controlhaveALFREDbracelet
+
+	thingbracelet <.. thingALFRED
+	thingnecklace <.. thingALFRED
+	actorOlderPerson --- thingnecklaceinterface
+	actorOlderPerson --- thingbraceletinterface
+	thingnecklace --- controlhaveALFREDnecklace
+	thingnecklaceinterface --> controlhaveALFREDnecklace
+	thingALFRED --- controlhaveALFREDnecklace
+	thingALFRED --- controlhaveALFREDbracelet
+	thingbracelet --- controlhaveALFREDbracelet
+	thingbraceletinterface --> controlhaveALFREDbracelet
+
+@enduml

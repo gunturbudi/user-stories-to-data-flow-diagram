@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Example Data\nPackage,shape=partialRectangle,null,null,data_base
+201,Consumer,rounded=0,null,null,external_entity
+202,See Some Example Data Packages,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Example Data\nPackage,endArrow=classic,202,200,endArrow=classic

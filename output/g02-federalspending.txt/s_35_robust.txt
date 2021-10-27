@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish ,\nNew Datum" as thingpublishednewdatum
+	entity "Existent Record" as thingexistentrecord
+	actor "Developer" as actordeveloper
+	boundary "Attempt" as thingattemptcorrectexistentrecorddeveloper #grey
+	control "Correct Existent\nRecords" as controlcorrectexistentrecord
+	control "Ensure" as controlensureattemptcorrectexistentrecorddeveloper
+	control "Delete Existent\nRecords" as controldeleteexistentrecord
+
+	actordeveloper --- thingattemptcorrectexistentrecorddeveloper
+	thingexistentrecord --- controlcorrectexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controlcorrectexistentrecord
+	controlensureattemptcorrectexistentrecorddeveloper --> controlcorrectexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controlensureattemptcorrectexistentrecorddeveloper
+	thingexistentrecord --- controldeleteexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controldeleteexistentrecord
+	controlensureattemptcorrectexistentrecorddeveloper --> controldeleteexistentrecord
+
+@enduml

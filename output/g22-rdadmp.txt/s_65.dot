@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Format " color=red];
+201 [label="Data Manager" shape=box];
+202 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Use the data }" shape=Mrecord];
+201 -> 2
+1001 [label="<f0>  |<f1> Background information " color=red];
+2 -> 1001 [label="Background information"]
+}

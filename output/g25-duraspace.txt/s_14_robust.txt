@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Event" as thingevent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Know All\nEvents To\nA Collection" as controlknowevent
+
+	thingcollection <.. thingevent
+	actorrepositorymanager --- thingcollectioninterface
+	thingevent --- controlknowevent
+	thingcollection --- controlknowevent
+	thingcollectioninterface --> controlknowevent
+
+@enduml

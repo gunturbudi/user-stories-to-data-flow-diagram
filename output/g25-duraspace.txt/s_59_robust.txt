@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Collection" as thingcollection
+	entity "Title" as thingtitle
+	actor "Dams Manager" as actordamsmanager
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	control "Present Object" as controlpresentobject
+	control "Present Collections\nBy Title" as controlpresentcollection
+	control "Present Object\nComponent" as controlpresentobjectcomponent
+
+	thingtitle <.. thingcollection
+	thingobject *-- thingcomponent
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingtitleinterface
+	thingobject --- controlpresentobject
+	thingobjectinterface --> controlpresentobject
+	thingcollection --- controlpresentcollection
+	thingtitle --- controlpresentcollection
+	thingtitleinterface --> controlpresentcollection
+	thingcomponent --- controlpresentobjectcomponent
+	thingobjectinterface --> controlpresentobjectcomponent
+
+@enduml

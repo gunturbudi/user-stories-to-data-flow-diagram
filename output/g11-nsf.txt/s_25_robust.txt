@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Final Workshop" as thingfinalworkshop
+	entity "Content Management\nSystem Decision" as thingcontentmanagementsystemdecision #grey
+	entity "Key Lesson" as thingkeylesson
+	entity "Feature" as thingfeature
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Workshop\nInterface" as thingworkshopinterface #grey
+	boundary "Lesson\nInterface" as thinglessoninterface #grey
+	control "Have A\nFinal Workshop\nFeature For\nThe Content\nManagement System\nDecision" as controlhavefinalworkshopfeature
+	control "Have A\nFinal Workshop" as controlhavefinalworkshopidentifykeylesson
+	control "Identify Key\nLessons" as controlidentifykeylesson
+
+	thingfeature <.. thingfinalworkshop
+	thingcontentmanagementsystemdecision <.. thingfeature
+	actornsfemployee --- thingdecisioninterface
+	actornsfemployee --- thingworkshopinterface
+	actornsfemployee --- thinglessoninterface
+	thingfeature --- controlhavefinalworkshopfeature
+	thingcontentmanagementsystemdecision --- controlhavefinalworkshopfeature
+	thingdecisioninterface --> controlhavefinalworkshopfeature
+	thingfinalworkshop --- controlhavefinalworkshopfeature
+	thingfinalworkshop --- controlhavefinalworkshopidentifykeylesson
+	thingworkshopinterface --> controlhavefinalworkshopidentifykeylesson
+	controlhavefinalworkshopidentifykeylesson --> controlidentifykeylesson
+	thingkeylesson --- controlidentifykeylesson
+	thinglessoninterface --> controlidentifykeylesson
+
+@enduml

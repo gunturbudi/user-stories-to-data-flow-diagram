@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Google Spreadsheet,shape=partialRectangle,null,null,data_base
+202,"Datum , Publishing User",rounded=0,null,null,external_entity
+203,Import Data From A Google Spreadsheet,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Datum,endArrow=classic,203,200,endArrow=classic
+207,Google Spreadsheet,endArrow=classic,203,201,endArrow=classic

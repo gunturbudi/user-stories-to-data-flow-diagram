@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Launch " ];
+201 [label="<f0>  |<f1> Daim " ];
+202 [label="<f0>  |<f1> Fabs " ];
+203 [label="<f0>  |<f1> Resource " ];
+204 [label="<f0>  |<f1> Validation " color=red];
+205 [label="<f0>  |<f1> Broker " ];
+206 [label="Broker , Team Member" shape=box];
+207 [label="{<f0> 1.0|<f1> Ensure }" shape=Mrecord];
+}

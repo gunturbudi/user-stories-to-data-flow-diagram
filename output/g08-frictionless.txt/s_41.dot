@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data .\nMendeley .\nCom " color=red];
+201 [label="<f0>  |<f1> Integration " ];
+202 [label="<f0>  |<f1> Https " ];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Provided With An Integration With Https }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Provided With Data.Mendeley.Com }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Validate my data upon ingest to the service }" shape=Mrecord];
+203 -> 3
+1001 [label="<f0>  |<f1> Data " color=red];
+3 -> 1001 [label="Data"]
+203 -> 204
+203 -> 205
+204 -> 201 [label="Integration"]
+204 -> 202 [label="Https"]
+205 -> 200 [label="Data .\nMendeley .\nCom"]
+}

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Symplectic Element,shape=partialRectangle,null,null,data_base
+201,Repoadmin,rounded=0,null,null,external_entity
+202,Have Symplectic Elements,ellipse,null,null,process
+203,Communicate,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,Symplectic Element,endArrow=classic,202,200,endArrow=classic

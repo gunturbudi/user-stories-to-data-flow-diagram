@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Predicate Link,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Make Predicated Links Between Files,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Predicate Link,endArrow=classic,203,201,endArrow=classic
+207,File,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Revisor" as thingrevisor
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Revisor\nInterface" as thingrevisorinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Trace The\nList Of\nRevisors" as controltracelistdetermineuploaditemrepository
+	control "Uploaded An\nItem To\nThe Repository" as controluploaditemrepository
+	control "Determine" as controldetermineuploaditemrepository
+
+	thingrepository <.. thingitem
+	actorlibrarystaffmember --- thingrevisorinterface
+	actorlibrarystaffmember --- thingrepositoryinterface
+	thingrevisor --- controltracelistdetermineuploaditemrepository
+	thingrevisorinterface --> controltracelistdetermineuploaditemrepository
+	controldetermineuploaditemrepository --> controluploaditemrepository
+	thingitem --- controluploaditemrepository
+	thingrepository --- controluploaditemrepository
+	thingrepositoryinterface --> controluploaditemrepository
+	controltracelistdetermineuploaditemrepository --> controldetermineuploaditemrepository
+	thingrevisorinterface --> controldetermineuploaditemrepository
+
+@enduml

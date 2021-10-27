@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Access" as thingaccess
+	entity "Ip Address" as thingipaddress #grey
+	actor "Archivist" as actorarchivist
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Restrict Access\nTo Some\nFiles By\nIp Address" as controlrestrictaccess
+
+	thingipaddress <.. thingfile
+	thingfile <.. thingaccess
+	actorarchivist --- thingaddressinterface
+	thingaccess --- controlrestrictaccess
+	thingfile --- controlrestrictaccess
+	thingipaddress --- controlrestrictaccess
+	thingaddressinterface --> controlrestrictaccess
+
+@enduml

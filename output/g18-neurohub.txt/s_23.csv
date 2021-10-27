@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Type,shape=partialRectangle,null,null,data_base
+201,Bespoke Information,shape=partialRectangle,null,null,data_base
+202,Dependent File,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Assign Bespoke Information To A Dependent File On Type,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Bespoke Information,endArrow=classic,204,201,endArrow=classic
+208,Dependent File,endArrow=classic,204,202,endArrow=classic
+209,Type,endArrow=classic,204,200,endArrow=classic

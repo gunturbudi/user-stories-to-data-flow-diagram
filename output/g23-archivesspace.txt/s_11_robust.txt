@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Csv" as thingCSV
+	entity "Accessions Datum" as thingaccessionsdatum
+	actor "Archivist" as actorarchivist
+	boundary "Csv\nInterface" as thingcsvinterface #grey
+	control "Import Accessions\nData In\nCsv" as controlimportaccessionsdata
+
+	thingCSV <.. thingaccessionsdatum
+	actorarchivist --- thingcsvinterface
+	thingaccessionsdatum --- controlimportaccessionsdata
+	thingCSV --- controlimportaccessionsdata
+	thingcsvinterface --> controlimportaccessionsdata
+
+@enduml

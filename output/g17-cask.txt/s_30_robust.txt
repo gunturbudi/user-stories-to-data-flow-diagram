@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Dataset Instance" as thingdatasetinstance
+	entity "Hydrator Pipeline" as thinghydratorpipeline
+	actor "App Developer" as actorappdeveloper
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Ensure Dataset\nInstances Hydrator\nPipelines Accessible\nTo The\nApp" as controlensuredatasetinstanceapp
+
+	thinghydratorpipeline <.. thingdatasetinstance
+	thingapp <.. thingdatasetinstance
+	actorappdeveloper --- thingappinterface
+	thingdatasetinstance --- controlensuredatasetinstanceapp
+	thingapp --- controlensuredatasetinstanceapp
+	thingappinterface --> controlensuredatasetinstanceapp
+
+@enduml

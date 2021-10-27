@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource Description" as thingresourcedescription #grey
+	entity "Subject Record" as thingsubjectrecord
+	actor "Archivist" as actorarchivist
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	control "Associate A\nSubject Record\nWith A\nResource Description" as controlassociatesubjectrecord
+
+	thingresourcedescription <.. thingsubjectrecord
+	actorarchivist --- thingdescriptioninterface
+	thingsubjectrecord --- controlassociatesubjectrecord
+	thingresourcedescription --- controlassociatesubjectrecord
+	thingdescriptioninterface --> controlassociatesubjectrecord
+
+@enduml

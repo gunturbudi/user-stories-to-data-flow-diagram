@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Publication " ];
+202 [label="<f0>  |<f1> Opus " ];
+203 [label="Depositor" shape=box];
+204 [label="{<f0> 1.0|<f1> Link Datasets To Publications In Opus }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Dataset"]
+204 -> 201 [label="Publication"]
+204 -> 202 [label="Opus"]
+}

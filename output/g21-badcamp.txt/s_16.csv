@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+2,Find their class on on one page,ellipse,null,null,process
+200,Training,shape=partialRectangle,null,null,data_base
+201,Follow Information,shape=partialRectangle,null,null,data_base
+202,Link,shape=partialRectangle,null,null,data_base
+203,Registration,shape=partialRectangle,null,null,data_base
+204,Title,shape=partialRectangle,null,null,data_base
+205,Short Summary,shape=partialRectangle,null,null,data_base
+206,Remain Registration,shape=partialRectangle,null,null,data_base
+207,Trainer,shape=partialRectangle,null,null,data_base
+208,Day Register,shape=partialRectangle,null,null,data_base
+209,Anonymoususer,rounded=0,null,null,external_entity
+210,Have,ellipse,null,null,process
+1000,,endArrow=classic,209,2,endArrow=classic
+1001,Class,rounded=0,null,null,external_entity
+1002,Class,endArrow=classic,2,1001,endArrow=classic

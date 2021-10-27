@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data File" as thingdatafile #grey
+	entity "Cc0 License" as thingcc0license
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Upload A\nData File" as controluploaddatafile
+	control "Put A\nCc Cc0\nLicense On\nA Data\nFile" as controlputcccc0licensedatafile
+
+	thingdatafile <.. thingcc0license
+	actorcornellfacultymember --- thingfileinterface
+	thingdatafile --- controluploaddatafile
+	thingfileinterface --> controluploaddatafile
+	thingcc0license --- controlputcccc0licensedatafile
+	thingdatafile --- controlputcccc0licensedatafile
+	thingfileinterface --> controlputcccc0licensedatafile
+
+@enduml

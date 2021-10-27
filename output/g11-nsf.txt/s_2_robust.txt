@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Subdomain" as thingsubdomain
+	actor "Developer" as actordeveloper
+	control "Have" as controlhave
+
+
+@enduml

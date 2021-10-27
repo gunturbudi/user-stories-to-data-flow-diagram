@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Asset" as thingasset
+	entity "Ir" as thingIR
+	actor "Asset Manager" as actorassetmanager
+	circle "Disposition" as thingdisposition
+	boundary "Ir\nInterface" as thingirinterface #grey
+	control "Assured" as controlassure
+	control "The Ir\nCease" as controlceaseIR
+
+	thingasset *-- thingdisposition
+	actorassetmanager --- thingirinterface
+	thingIR --- controlceaseIR
+	thingirinterface --> controlceaseIR
+
+@enduml

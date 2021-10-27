@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fabs Sample\nFile " ];
+201 [label="<f0>  |<f1> Fundingagencycode " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Update The Fabs Sample File }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Remove Fundingagencycode }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 200
+204 -> 201
+}

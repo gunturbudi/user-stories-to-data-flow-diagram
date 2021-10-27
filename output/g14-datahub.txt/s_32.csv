@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Node Lib,shape=partialRectangle,null,null,data_base
+201,Project,shape=partialRectangle,null,null,data_base
+202,Data Package,shape=partialRectangle,null,null,data_base
+203,Developer,rounded=0,null,null,external_entity
+204,Use Data Package As A Node Lib In Project,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Data Package,endArrow=classic,204,202,endArrow=classic
+208,Node Lib,endArrow=classic,204,200,endArrow=classic
+209,Project,endArrow=classic,204,201,endArrow=classic

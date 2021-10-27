@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Constant" as thingconstant
+	entity "Packager" as thingpackager
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Constant\nInterface" as thingconstantinterface #grey
+	control "Have The\nPackager Constants" as controlhavepackagerconstant
+
+	thingconstant <.. thingpackager
+	actordatapublishinguser --- thingconstantinterface
+	thingpackager --- controlhavepackagerconstant
+	thingconstant --- controlhavepackagerconstant
+	thingconstantinterface --> controlhavepackagerconstant
+
+@enduml

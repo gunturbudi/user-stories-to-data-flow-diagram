@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Get" as controlget
+	control "Have Articles\nInterest" as controlhavearticle
+
+	thingarticle <.. thingarticle
+	actorsitevisitor --- thingarticleinterface
+	thingarticle --- controlhavearticle
+	thingarticleinterface --> controlhavearticle
+
+@enduml

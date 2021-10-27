@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Measure,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,Api User,rounded=0,null,null,external_entity
+203,Get A Relative Percentage Of A Measure To The Total Of The Dataset Comes,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Measure,endArrow=classic,203,200,endArrow=classic
+207,Dataset,endArrow=classic,203,201,endArrow=classic

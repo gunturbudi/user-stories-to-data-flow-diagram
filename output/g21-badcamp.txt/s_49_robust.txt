@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Wysiwyg Editor" as thingwysiwygeditor #grey
+	entity "Form Content" as thingformcontent
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Use A\nWysiwyg Editor\nFor All\nLong Form\nContent" as controlusewysiwygeditor
+
+	thingformcontent <.. thingwysiwygeditor
+	actorauthenticateduser --- thingcontentinterface
+	thingwysiwygeditor --- controlusewysiwygeditor
+	thingformcontent --- controlusewysiwygeditor
+	thingcontentinterface --> controlusewysiwygeditor
+
+@enduml

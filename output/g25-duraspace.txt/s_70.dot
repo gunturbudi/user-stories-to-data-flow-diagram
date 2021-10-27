@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Repository " color=red];
+202 [label="<f0>  |<f1> Record " color=red];
+203 [label="<f0>  |<f1> Unique Identity " color=red];
+204 [label="<f0>  |<f1> Object " color=red];
+205 [label="<f0>  |<f1> Name " color=red];
+206 [label="Repository Manager" shape=box];
+207 [label="{<f0> 1.0|<f1> Register A Name Record For Each Unique Identity With Repository's Collections }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Register A Record For Each Unique Identity With Object }" shape=Mrecord];
+206 -> 207
+206 -> 208
+207 -> 203 [label="Unique Identity"]
+207 -> 200 [label="Collection"]
+207 -> 202 [label="Record"]
+208 -> 202 [label="Record"]
+208 -> 204 [label="Object"]
+208 -> 203 [label="Unique Identity"]
+207 -> 201 [label="Repository"]
+207 -> 205 [label="Name"]
+}

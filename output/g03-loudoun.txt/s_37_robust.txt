@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan Review\nMeeting" as thingplanreviewmeeting #grey
+	actor "Applicant" as actorapplicant
+	boundary "Meeting\nInterface" as thingmeetinginterface #grey
+	control "Request A\nPlan Review\nMeeting" as controlrequestplanreviewmeeting
+
+	actorapplicant --- thingmeetinginterface
+	thingplanreviewmeeting --- controlrequestplanreviewmeeting
+	thingmeetinginterface --> controlrequestplanreviewmeeting
+
+@enduml

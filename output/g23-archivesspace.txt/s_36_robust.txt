@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ead" as thingEAD
+	entity "Description" as thingdescription
+	actor "Archivist" as actorarchivist
+	boundary "Ead\nInterface" as thingeadinterface #grey
+	control "Export A\nDescription As\nEad" as controlexportdescription
+
+	thingEAD <.. thingdescription
+	actorarchivist --- thingeadinterface
+	thingdescription --- controlexportdescription
+	thingEAD --- controlexportdescription
+	thingeadinterface --> controlexportdescription
+
+@enduml

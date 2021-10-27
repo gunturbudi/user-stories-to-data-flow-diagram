@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Result,shape=partialRectangle,null,null,data_base
+201,Log Book,shape=partialRectangle,null,null,data_base
+202,Search,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Limit Results To More,ellipse,null,null,process
+205,Limit Search Results To Log Book Sections From More Log Books,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Result,endArrow=classic,204,200,endArrow=classic
+210,Log Book,endArrow=classic,205,201,endArrow=classic
+211,Result,endArrow=classic,205,200,endArrow=classic
+213,Search,endArrow=classic,205,202,endArrow=classic

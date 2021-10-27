@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Research" as thinguserresearch #grey
+	actor "Stakeholder" as actorstakeholder
+	circle "Result" as thingresult
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	control "See The\nResults Of\nUser Research" as controlseeresult
+
+	thinguserresearch *-- thingresult
+	actorstakeholder --- thingresearchinterface
+	thingresult --- controlseeresult
+	thinguserresearch --- controlseeresult
+	thingresearchinterface --> controlseeresult
+
+@enduml

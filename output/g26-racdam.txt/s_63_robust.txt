@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Tag" as thingtag
+	actor "Archivist" as actorarchivist
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	control "Search By\nTag" as controlsearchtag
+
+	actorarchivist --- thingtaginterface
+	thingtag --- controlsearchtag
+	thingtaginterface --> controlsearchtag
+
+@enduml

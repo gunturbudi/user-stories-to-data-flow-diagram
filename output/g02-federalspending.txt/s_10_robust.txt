@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Edit" as thingedit
+	actor "Ui Designer" as actoruidesigner
+	control "Move On" as controlmove
+
+
+@enduml

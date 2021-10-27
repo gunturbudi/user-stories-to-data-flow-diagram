@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Start using the data for doing analysis and visualizations.,ellipse,null,null,process
+200,Data Package,shape=partialRectangle,null,null,data_base
+201,Spss,shape=partialRectangle,null,null,data_base
+202,Second,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Get A Data Package Into Spss In Seconds,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Data Package,endArrow=classic,204,200,endArrow=classic
+208,Spss,endArrow=classic,204,201,endArrow=classic
+209,Second,endArrow=classic,204,202,endArrow=classic
+1000,,endArrow=classic,204,2,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,2,1001,endArrow=classic

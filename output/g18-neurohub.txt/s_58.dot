@@ -1,0 +1,26 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Consumable " ];
+201 [label="<f0>  |<f1> Equipment " color=red];
+202 [label="<f0>  |<f1> Centre " ];
+203 [label="<f0>  |<f1> Inventory " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> View An Inventory Of Consumable }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> View An Inventory Of The Equipment Are Present In The Centre }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Update An Inventory Of Consumable }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Update An Inventory Of The Equipment Are Present In The Centre }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+205 -> 200 [label="Consumable"]
+205 -> 203 [label="Inventory"]
+206 -> 203 [label="Inventory"]
+206 -> 201 [label="Equipment"]
+206 -> 202 [label="Centre"]
+207 -> 200 [label="Consumable"]
+207 -> 203 [label="Inventory"]
+208 -> 201 [label="Equipment"]
+208 -> 202 [label="Centre"]
+208 -> 203 [label="Inventory"]
+}

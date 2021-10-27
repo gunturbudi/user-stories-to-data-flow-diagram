@@ -1,0 +1,43 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Output" as thingoutput
+	entity "Electronic Support" as thingelectronicsupport
+	entity "Track" as thingtrack
+	entity "Particular Experiment" as thingparticularexperiment
+	entity "Data Set" as thingdataset
+	actor "Researcher" as actorresearcher
+	boundary "Output\nInterface" as thingoutputinterface #grey
+	boundary "Track\nInterface" as thingtrackinterface #grey
+	boundary "Set\nInterface" as thingsetinterface #grey
+	control "Have Electronic\nSupport" as controlhaveelectronicsupport
+	control "Keeping Track\nOutput" as controlkeephaveelectronicsupporttrackoutput
+	control "Modify As\nPart Of\nA Particular\nExperiment" as controlmodifypart
+	control "Keeping Track" as controlkeephaveelectronicsupporttrackmodifypart
+	control "Keeping Track\nOf Which\nData Sets\nUsed" as controlkeephaveelectronicsupporttrack
+
+	thingdataset <.. thingtrack
+	thingoutput <.. thingtrack
+	actorresearcher --- thingoutputinterface
+	actorresearcher --- thingtrackinterface
+	actorresearcher --- thingsetinterface
+	thingelectronicsupport --- controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrack --> controlhaveelectronicsupport
+	thingsetinterface --> controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrackoutput --> controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrackmodifypart --> controlhaveelectronicsupport
+	thingoutput --- controlkeephaveelectronicsupporttrackoutput
+	thingoutputinterface --> controlkeephaveelectronicsupporttrackoutput
+	thingtrack --- controlkeephaveelectronicsupporttrackoutput
+	thingparticularexperiment --- controlmodifypart
+	controlkeephaveelectronicsupporttrackmodifypart --> controlmodifypart
+	thingtrackinterface --> controlmodifypart
+	thingtrackinterface --> controlkeephaveelectronicsupporttrackmodifypart
+	thingtrack --- controlkeephaveelectronicsupporttrackmodifypart
+	thingtrack --- controlkeephaveelectronicsupporttrack
+	thingdataset --- controlkeephaveelectronicsupporttrack
+	thingsetinterface --> controlkeephaveelectronicsupporttrack
+
+@enduml

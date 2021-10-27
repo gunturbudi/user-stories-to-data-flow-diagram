@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Measure" as thingmeasure
+	entity "Dataset" as thingdataset
+	actor "Api User" as actorapiuser
+	circle "Relative Percentage" as thingrelativepercentage
+	circle "Total" as thingtotal
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Get A\nRelative Percentage\nOf A\nMeasure To\nThe Total\nOf The\nDataset Comes" as controlgetrelativepercentagetotal
+
+	thingtotal <.. thingmeasure
+	thingmeasure *-- thingrelativepercentage
+	thingdataset *-- thingtotal
+	actorapiuser --- thingdatasetinterface
+	thingrelativepercentage --- controlgetrelativepercentagetotal
+	thingmeasure --- controlgetrelativepercentagetotal
+	thingtotal --- controlgetrelativepercentagetotal
+	thingdataset --- controlgetrelativepercentagetotal
+	thingdatasetinterface --> controlgetrelativepercentagetotal
+
+@enduml

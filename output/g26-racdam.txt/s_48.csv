@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Descriptive Datum,shape=partialRectangle,null,null,data_base
+201,Common Format,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Export Descriptive Data In A Common Format,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Descriptive Datum,endArrow=classic,203,200,endArrow=classic
+207,Common Format,endArrow=classic,203,201,endArrow=classic

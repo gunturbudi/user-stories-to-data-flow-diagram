@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interview" as thinginterview
+	entity "Hypothesis" as thinghypothesis
+	actor "User Researcher" as actoruserresearcher
+	boundary "Hypothesis\nInterface" as thinghypothesisinterface #grey
+	control "Continue" as controlcontinueschedulinginterview
+	control "Scheduling Interviews\nFor Hypothesis" as controlschedulinginterview
+
+	thinghypothesis <.. thinginterview
+	actoruserresearcher --- thinghypothesisinterface
+	thinghypothesisinterface --> controlcontinueschedulinginterview
+	controlcontinueschedulinginterview --> controlschedulinginterview
+	thinginterview --- controlschedulinginterview
+	thinghypothesis --- controlschedulinginterview
+	thinghypothesisinterface --> controlschedulinginterview
+
+@enduml

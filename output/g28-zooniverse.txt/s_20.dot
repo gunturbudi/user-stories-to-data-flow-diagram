@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Segment " color=red];
+201 [label="<f0>  |<f1> Topic " color=red];
+202 [label="<f0>  |<f1> News Video " color=red];
+203 [label="Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Annotate News Video Segments }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Extract A Topic For Each Segment }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Segment"]
+205 -> 201 [label="Topic"]
+205 -> 200 [label="Segment"]
+204 -> 202 [label="News Video"]
+}

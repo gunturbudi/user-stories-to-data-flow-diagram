@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ppopcongressionaldistrict" as thingPPoPCongressionalDistrict
+	entity "Complete" as thingcomplete
+	entity "Accurate Datum" as thingaccuratedatum
+	actor "User" as actoruser
+	boundary "Complete\nInterface" as thingcompleteinterface #grey
+	boundary "Ppopcongressionaldistrict\nInterface" as thingppopcongressionaldistrictinterface #grey
+	boundary "Ppopcode\nInterface" as thingppopcodeinterface #grey
+	control "Have Complete" as controlhavecomplete
+	control "Have Accurate\nData To\nPpopcongressionaldistrict" as controlhaveaccuratedatumPPoPCongressionalDistrict
+	control "Have Accurate\nData To\nPpopcode" as controlhaveaccuratedatum
+
+	thingPPoPCongressionalDistrict <.. thingaccuratedatum
+	actoruser --- thingcompleteinterface
+	actoruser --- thingppopcongressionaldistrictinterface
+	actoruser --- thingppopcodeinterface
+	thingcomplete --- controlhavecomplete
+	thingcompleteinterface --> controlhavecomplete
+	thingPPoPCongressionalDistrict --- controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingppopcongressionaldistrictinterface --> controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingaccuratedatum --- controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingaccuratedatum --- controlhaveaccuratedatum
+	thingppopcodeinterface --> controlhaveaccuratedatum
+	thingPPoPCongressionalDistrict --- controlhaveaccuratedatum
+
+@enduml

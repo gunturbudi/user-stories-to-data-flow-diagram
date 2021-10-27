@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Excel File" as thingexcelfile #grey
+	actor "Trainer" as actortrainer
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Load An\nExcel File\nInto The\nSite" as controlloadexcelfilesite
+
+	thingsite <.. thingexcelfile
+	actortrainer --- thingsiteinterface
+	thingexcelfile --- controlloadexcelfilesite
+	thingsite --- controlloadexcelfilesite
+	thingsiteinterface --> controlloadexcelfilesite
+
+@enduml

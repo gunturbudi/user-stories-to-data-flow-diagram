@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Previous Range" as thingpreviousrange #grey
+	entity "Version" as thingfirstversion #grey
+	entity "Dataset" as thingdataset
+	entity "Report" as thingreport
+	entity "Publication Date\nRange" as thingpublicationdaterange
+	actor "Patron" as actorpatron
+	control "Know" as controlknow
+
+	thingdataset <.. thingpreviousrange
+	thingfirstversion <.. thingpreviousrange
+
+@enduml

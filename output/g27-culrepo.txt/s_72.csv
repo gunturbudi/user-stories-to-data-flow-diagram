@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+4,Deliver such content in the manner best fit to the audience or occasion,ellipse,null,null,process
+200,Metadata,shape=partialRectangle,null,null,data_base
+201,Web Page,shape=partialRectangle,null,null,data_base
+202,System,shape=partialRectangle,null,null,data_base
+203,Content,shape=partialRectangle,null,null,data_base
+204,Repository,shape=partialRectangle,null,null,data_base
+205,"Library , Staff Member",rounded=0,null,null,external_entity
+206,Use Content From Easily Web Page,ellipse,null,null,process
+207,Use Content From The Repository In Other Systems,ellipse,null,null,process
+208,Use Metadata,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Web Page,endArrow=classic,206,201,endArrow=classic
+214,Content,endArrow=classic,206,203,endArrow=classic
+215,Content,endArrow=classic,207,203,endArrow=classic
+216,Repository,endArrow=classic,207,204,endArrow=classic
+217,System,endArrow=classic,207,202,endArrow=classic
+218,Metadata,endArrow=classic,208,200,endArrow=classic
+1000,,endArrow=classic,205,4,endArrow=classic
+1001,Content,endArrow=classic,4,203,endArrow=classic

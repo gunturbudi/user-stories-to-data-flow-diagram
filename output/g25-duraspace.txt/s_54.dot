@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Source Capture\nInformation " ];
+201 [label="<f0>  |<f1> File " color=red];
+202 [label="Dams Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Indicate The Source Capture Information For A File Where Is Useful }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Do }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 200 [label="Source Capture\nInformation"]
+203 -> 201 [label="File"]
+}

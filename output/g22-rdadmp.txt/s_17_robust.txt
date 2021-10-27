@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Archivemanager" as actorarchivemanager
+	circle "Legal Status" as thinglegalstatus
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Know The\nLegal Status\nOf Data" as controlknowlegalstatus
+
+	thingdatum *-- thinglegalstatus
+	actorarchivemanager --- thingdatuminterface
+	thinglegalstatus --- controlknowlegalstatus
+	thingdatum --- controlknowlegalstatus
+	thingdatuminterface --> controlknowlegalstatus
+
+@enduml

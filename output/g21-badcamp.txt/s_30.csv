@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Payment Information,shape=partialRectangle,null,null,data_base
+201,Individual Sponsorship,shape=partialRectangle,null,null,data_base
+202,Card,shape=partialRectangle,null,null,data_base
+203,Authenticateduser,rounded=0,null,null,external_entity
+204,Enter Payment Information,ellipse,null,null,process
+205,Have Card For An Individual Sponsorship,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Payment Information,endArrow=classic,204,200,endArrow=classic
+210,Card,endArrow=classic,205,202,endArrow=classic
+211,Individual Sponsorship,endArrow=classic,205,201,endArrow=classic

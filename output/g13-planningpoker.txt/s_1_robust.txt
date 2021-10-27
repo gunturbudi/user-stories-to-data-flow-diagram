@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "New Game" as thingnewgame
+	entity "Optional Description" as thingoptionaldescription
+	actor "Moderator" as actormoderator
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "Entering A\nName" as controlentercreatenewgamename
+	control "Entering An\nOptional Description" as controlentercreatenewgameoptionaldescription
+	control "Create A\nNew Game" as controlcreatenewgame
+
+	actormoderator --- thingnameinterface
+	actormoderator --- thingdescriptioninterface
+	actormoderator --- thinggameinterface
+	thingname --- controlentercreatenewgamename
+	thingnameinterface --> controlentercreatenewgamename
+	thingoptionaldescription --- controlentercreatenewgameoptionaldescription
+	thingdescriptioninterface --> controlentercreatenewgameoptionaldescription
+	controlentercreatenewgamename --> controlcreatenewgame
+	thingnewgame --- controlcreatenewgame
+	thinggameinterface --> controlcreatenewgame
+	controlentercreatenewgameoptionaldescription --> controlcreatenewgame
+
+@enduml

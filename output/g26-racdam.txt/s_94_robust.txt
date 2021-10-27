@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Group" as thingusergroup
+	actor "Administrator" as actoradministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "Create User\nGroups" as controlcreateusergroups
+
+	actoradministrator --- thinggroupinterface
+	thingusergroup --- controlcreateusergroups
+	thinggroupinterface --> controlcreateusergroups
+
+@enduml

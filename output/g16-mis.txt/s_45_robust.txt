@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Public Interface" as thingpublicinterface
+	entity "Repository Index" as thingrepositoryindex #grey
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	boundary "Index\nInterface" as thingindexinterface #grey
+	control "Disrupting Access\nTo The\nPublic Interface" as controldisruptupdaterepositoryindexaccess
+	control "Update The\nRepository Index" as controlupdaterepositoryindex
+
+	thingpublicinterface <.. thingaccess
+	actorrepoadmin --- thinginterfaceinterface
+	actorrepoadmin --- thingindexinterface
+	thingaccess --- controldisruptupdaterepositoryindexaccess
+	thingpublicinterface --- controldisruptupdaterepositoryindexaccess
+	thinginterfaceinterface --> controldisruptupdaterepositoryindexaccess
+	controldisruptupdaterepositoryindexaccess --> controlupdaterepositoryindex
+	thingrepositoryindex --- controlupdaterepositoryindex
+	thingindexinterface --> controlupdaterepositoryindex
+
+@enduml

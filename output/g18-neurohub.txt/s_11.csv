@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Log Book\nPage,shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Upload Files,ellipse,null,null,process
+204,Having Files To A Log Book Page,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,File,endArrow=classic,203,201,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,File,endArrow=classic,204,201,endArrow=classic
+211,Log Book\nPage,endArrow=classic,204,200,endArrow=classic

@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+3,Deal with their details,ellipse,null,null,process
+200,High Level,shape=partialRectangle,null,null,data_base
+201,Developer,rounded=0,null,null,external_entity
+202,Have,ellipse,null,null,process
+203,Be On A High Level,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,High Level,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,202,3,endArrow=classic
+1001,Details,rounded=0,null,null,external_entity
+1002,Details,endArrow=classic,3,1001,endArrow=classic

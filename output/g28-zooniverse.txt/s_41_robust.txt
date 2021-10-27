@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Time" as thingtime
+	entity "Worm" as thingworm
+	entity "Egg" as thingegg
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Watch Lab\nVideo" as thingwatchlabvideo #grey
+	boundary "Egg\nInterface" as thingegginterface #grey
+	control "Detect The\nTime In\nA Worm\nWatch Lab\nVideo The\nWorm Where\nLays An\nEgg" as controldetecttime
+
+	thingwatchlabvideo <.. thingtime
+	thingworm <.. thingtime
+	thingworm <.. thingworm
+	thingegg <.. thingworm
+	thingworm *-- thingwatchlabvideo
+	actorzooniverseadmin --- thingegginterface
+	thingtime --- controldetecttime
+	thingegg --- controldetecttime
+	thingegginterface --> controldetecttime
+	thingworm --- controldetecttime
+
+@enduml

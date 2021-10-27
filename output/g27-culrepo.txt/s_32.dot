@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Google Search\nResult " ];
+202 [label="Cornell , Faculty Member" shape=box];
+203 [label="{<f0> 1.0|<f1> See Items }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Item"]
+}

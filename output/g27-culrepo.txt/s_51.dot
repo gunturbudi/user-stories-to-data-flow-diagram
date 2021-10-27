@@ -1,0 +1,25 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> New Research " color=red];
+201 [label="<f0>  |<f1> Content " color=red];
+202 [label="<f0>  |<f1> Suitable ,\nTimely Research " color=red];
+203 [label="<f0>  |<f1> Relevant " ];
+204 [label="<f0>  |<f1> Use " color=red];
+205 [label="<f0>  |<f1> Curriculum " color=red];
+206 [label="Teachingfacultymember" shape=box];
+207 [label="{<f0> 1.0|<f1> Notified Identify Suitable, Timely Research For Use In Curriculum Of New Research }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Notified Identify Suitable, Timely Research For Use In Curriculum Of Content }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Identify Relevant }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 202 [label="Suitable ,\nTimely Research"]
+207 -> 204 [label="Use"]
+207 -> 205 [label="Curriculum"]
+207 -> 200 [label="New Research"]
+208 -> 201 [label="Content"]
+208 -> 202 [label="Suitable ,\nTimely Research"]
+208 -> 204 [label="Use"]
+208 -> 205 [label="Curriculum"]
+209 -> 203 [label="Relevant"]
+}

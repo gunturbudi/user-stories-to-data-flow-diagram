@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Education" as thingeducation
+	entity "Volunteer" as thingvolunteer
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Piece" as thingpiece
+	boundary "Volunteer\nInterface" as thingvolunteerinterface #grey
+	control "Which Piece\nOf Education\nGive To\nA Volunteer" as controlgivepiecevolunteer
+	control "Know" as controlknowgivepiecevolunteer
+
+	thingvolunteer <.. thingeducation
+	thingeducation *-- thingpiece
+	actorzooniverseadmin --- thingvolunteerinterface
+	thingpiece --- controlgivepiecevolunteer
+	thingeducation --- controlgivepiecevolunteer
+	thingvolunteer --- controlgivepiecevolunteer
+	controlknowgivepiecevolunteer --> controlgivepiecevolunteer
+	thingvolunteerinterface --> controlgivepiecevolunteer
+	thingvolunteerinterface --> controlknowgivepiecevolunteer
+
+@enduml

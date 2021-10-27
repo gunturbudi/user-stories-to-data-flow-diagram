@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Error" as thingerror
+	entity "Fabs" as thingfabs #grey
+	actor "Fabs User" as actorfabsuser
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	control "Submission Errors" as controlsubmissionerrorrepresentfabserrors
+	control "Represent Fabs\nErrors" as controlrepresentfabserrors
+
+	thingfabs <.. thingerror
+	actorfabsuser --- thingerrorinterface
+	thingerror --- controlsubmissionerrorrepresentfabserrors
+	thingerrorinterface --> controlsubmissionerrorrepresentfabserrors
+	controlsubmissionerrorrepresentfabserrors --> controlrepresentfabserrors
+	thingerrorinterface --> controlrepresentfabserrors
+	thingerror --- controlrepresentfabserrors
+
+@enduml

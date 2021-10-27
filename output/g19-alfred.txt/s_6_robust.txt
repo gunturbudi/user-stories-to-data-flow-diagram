@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Setting" as thingdatasetting
+	actor "Olderperson" as actorOlderPerson
+	boundary "Setting\nInterface" as thingsettinginterface #grey
+	control "Manage Privacy\nData Settings" as controlmanageprivacydatasettings
+
+	actorOlderPerson --- thingsettinginterface
+	thingdatasetting --- controlmanageprivacydatasettings
+	thingsettinginterface --> controlmanageprivacydatasettings
+
+@enduml

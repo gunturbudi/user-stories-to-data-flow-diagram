@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Visualisation " color=red];
+202 [label="Datum , Consume User" shape=box];
+203 [label="{<f0> 1.0|<f1> Download A Csv Of The Data Used In Any Visualisation }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Use the data in other tools. }" shape=Mrecord];
+1000 [label="Data consuming user" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Data " color=red];
+2 -> 1002
+202 -> 203
+203 -> 200
+203 -> 201
+}

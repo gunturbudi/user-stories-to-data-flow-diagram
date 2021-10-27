@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Brand" as thingbrand
+	entity "Video" as thingvideo
+	entity "Related Information" as thingrelatedinformation
+	actor "User" as actoruser
+	boundary "Video\nInterface" as thingvideointerface #grey
+	control "Identify Brands\nIn Videos" as controlidentifybrand
+	control "Receive Related\nInformation About\nBrands In\nVideos" as controlreceiverelatedinformation
+
+	thingvideo <.. thingbrand
+	thingbrand <.. thingrelatedinformation
+	actoruser --- thingvideointerface
+	thingbrand --- controlidentifybrand
+	thingvideo --- controlidentifybrand
+	thingvideointerface --> controlidentifybrand
+	thingrelatedinformation --- controlreceiverelatedinformation
+	thingbrand --- controlreceiverelatedinformation
+	thingvideo --- controlreceiverelatedinformation
+	thingvideointerface --> controlreceiverelatedinformation
+
+@enduml

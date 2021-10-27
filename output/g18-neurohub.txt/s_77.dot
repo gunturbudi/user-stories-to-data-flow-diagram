@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Electronic Book " ];
+201 [label="<f0>  |<f1> System " ];
+202 [label="<f0>  |<f1> Experimental Datum " color=red];
+203 [label="<f0>  |<f1> Bad Datum " ];
+204 [label="<f0>  |<f1> Log Book " color=red];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Indicate Within Electronic Log Book Experimental Data }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Bad Indicate Within Electronic Book Experimental Data }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Hide The Bad Data }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Keep Which The Bad Data In The System }" shape=Mrecord];
+205 -> 206
+206 -> 204 [label="Log Book"]
+206 -> 202 [label="Experimental Datum"]
+207 -> 200 [label="Electronic Book"]
+207 -> 202 [label="Experimental Datum"]
+208 -> 203 [label="Bad Datum"]
+209 -> 201 [label="System"]
+209 -> 203 [label="Bad Datum"]
+}

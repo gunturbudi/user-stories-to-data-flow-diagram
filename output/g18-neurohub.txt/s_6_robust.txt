@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Back Button" as thingbackbutton #grey
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "Browser" as thingbrowser
+	entity "Log Book" as thinglogbook
+	actor "User" as actoruser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Button\nInterface" as thingbuttoninterface #grey
+	boundary "Book\nInterface" as thingbookinterface #grey
+	control "Backwards Navigate\nBetween Log\nBook Page" as controlnavigatelogbookpage
+	control "Use Browser's\nBack Button" as controlusebackbutton
+	control "Backwards Navigate\nBetween Log\nBooks" as controlnavigatelogbooks
+	control "Having" as controlhavenavigatelogbooksusebackbutton
+
+	actoruser --- thingpageinterface
+	actoruser --- thingbuttoninterface
+	actoruser --- thingbookinterface
+	thinglogbookpage --- controlnavigatelogbookpage
+	thingpageinterface --> controlnavigatelogbookpage
+	thingbackbutton --- controlusebackbutton
+	controlhavenavigatelogbooksusebackbutton --> controlusebackbutton
+	thingbuttoninterface --> controlusebackbutton
+	thinglogbook --- controlnavigatelogbooks
+	controlhavenavigatelogbooksusebackbutton --> controlnavigatelogbooks
+	thingbookinterface --> controlnavigatelogbooks
+	thingbuttoninterface --> controlhavenavigatelogbooksusebackbutton
+
+@enduml

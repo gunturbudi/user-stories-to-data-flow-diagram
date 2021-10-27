@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Package" as thingpackage
+	entity "Change" as thingchange
+	actor "Consumer" as actorconsumer
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Notified Of\nChanges To\nA Package" as controlnotifychange
+
+	thingpackage <.. thingchange
+	actorconsumer --- thingpackageinterface
+	thingchange --- controlnotifychange
+	thingpackage --- controlnotifychange
+	thingpackageinterface --> controlnotifychange
+
+@enduml

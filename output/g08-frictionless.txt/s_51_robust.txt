@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Site" as thingsite
+	actor "Publisher" as actorpublisher
+	circle "Interactive Preview" as thinginteractivepreview
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Embed An\nInteractive Preview\nOf Data\nOn Site" as controlembedinteractivepreview
+
+	thingsite <.. thingdatum
+	thingdatum *-- thinginteractivepreview
+	actorpublisher --- thingsiteinterface
+	thinginteractivepreview --- controlembedinteractivepreview
+	thingdatum --- controlembedinteractivepreview
+	thingsite --- controlembedinteractivepreview
+	thingsiteinterface --> controlembedinteractivepreview
+
+@enduml

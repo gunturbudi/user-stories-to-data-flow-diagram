@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Quick Response" as thingquickresponse
+	entity "Reasonable Resolution" as thingreasonableresolution
+	entity "Tech Support\nIssue" as thingtechsupportissue
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Issue\nInterface" as thingissueinterface #grey
+	boundary "Response\nInterface" as thingresponseinterface #grey
+	control "Receive A\nReasonable Resolution\nTo Tech\nSupport Issues" as controlreceivereasonableresolution
+	control "Receive A\nQuick Response" as controlreceivequickresponse
+
+	thingtechsupportissue <.. thingreasonableresolution
+	actorlibrarystaffmember --- thingissueinterface
+	actorlibrarystaffmember --- thingresponseinterface
+	thingreasonableresolution --- controlreceivereasonableresolution
+	thingtechsupportissue --- controlreceivereasonableresolution
+	thingissueinterface --> controlreceivereasonableresolution
+	thingquickresponse --- controlreceivequickresponse
+	thingresponseinterface --> controlreceivequickresponse
+
+@enduml

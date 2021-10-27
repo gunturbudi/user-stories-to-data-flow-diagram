@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Related ,\nInformation " color=red];
+201 [label="<f0>  |<f1> Report S " color=red];
+202 [label="<f0>  |<f1> Dataset S " color=red];
+203 [label="Patron" shape=box];
+204 [label="{<f0> 1.0|<f1> Know Other Report S }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Report }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Find Related, Other Information }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Viewed For }" shape=Mrecord];
+208 [label="{<f0> 5.0|<f1> Dataset }" shape=Mrecord];
+209 [label="{<f0> 6.0|<f1> Know Other Dataset S E.G. Also Related }" shape=Mrecord];
+203 -> 204
+203 -> 206
+203 -> 207
+203 -> 208
+203 -> 209
+204 -> 201 [label="Report S"]
+206 -> 200 [label="Related ,\nInformation"]
+207 -> 206
+208 -> 207
+209 -> 208
+209 -> 202 [label="Dataset S"]
+}

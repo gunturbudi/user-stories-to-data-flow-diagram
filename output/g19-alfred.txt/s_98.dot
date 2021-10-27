@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Limit " ];
+201 [label="<f0>  |<f1> Games Duration " color=red];
+202 [label="Olderperson" shape=box];
+203 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Set Limits In The Games Duration }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+204 -> 200 [label="Limit"]
+204 -> 201 [label="Games Duration"]
+}

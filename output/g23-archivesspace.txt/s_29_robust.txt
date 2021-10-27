@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Toolkit" as thingtoolkit
+	entity "Archivist" as thingarchivist
+	entity "Ead File" as thingeadfile
+	actor "Archivist" as actorarchivist
+	boundary "Toolkit\nInterface" as thingtoolkitinterface #grey
+	control "Import Ead\nFiles Exported\nThe Archivists'\nToolkit" as controlimporteadfiles
+
+	thingarchivist <.. thingtoolkit
+	thingtoolkit <.. thingeadfile
+	actorarchivist --- thingtoolkitinterface
+	thingeadfile --- controlimporteadfiles
+	thingtoolkit --- controlimporteadfiles
+	thingtoolkitinterface --> controlimporteadfiles
+
+@enduml

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fall" as thingfall
+	entity "Emergency" as thingemergency
+	entity "Specific Contact" as thingspecificcontact
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Have" as controlhavedetectALFREDOlderPersonfall
+	control "Detect Falls" as controldetectALFREDOlderPersonfall
+	control "Send An\nEmergency To\nA Specific\nContact" as controlsendALFREDOlderPersonemergencyspecificcontact
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingALFREDOlderPerson --> controlhavedetectALFREDOlderPersonfall
+	controlhavedetectALFREDOlderPersonfall --> controldetectALFREDOlderPersonfall
+	thingALFREDOlderPerson --> controldetectALFREDOlderPersonfall
+	thingfall --- controldetectALFREDOlderPersonfall
+	thingemergency --- controlsendALFREDOlderPersonemergencyspecificcontact
+	thingspecificcontact --- controlsendALFREDOlderPersonemergencyspecificcontact
+	thingALFREDOlderPerson --> controlsendALFREDOlderPersonemergencyspecificcontact
+	controlhavedetectALFREDOlderPersonfall --> controlsendALFREDOlderPersonemergencyspecificcontact
+
+@enduml

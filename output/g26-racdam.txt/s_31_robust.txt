@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Incremental Accrual" as thingincrementalaccrual
+	entity "New Collection" as thingnewcollection
+	actor "Donor Representative" as actordonorrepresentative
+	boundary "Accrual\nInterface" as thingaccrualinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Supply Incremental\nAccruals To" as controlsupplyincrementalaccrualexist
+	control "Exist" as controlexist
+	control "Supply Incremental\nAccruals To\nNew Collections" as controlsupplyincrementalaccrualnewcollection
+
+	thingnewcollection <.. thingincrementalaccrual
+	actordonorrepresentative --- thingaccrualinterface
+	actordonorrepresentative --- thingcollectioninterface
+	thingaccrualinterface --> controlsupplyincrementalaccrualexist
+	thingincrementalaccrual --- controlsupplyincrementalaccrualexist
+	controlsupplyincrementalaccrualexist --> controlexist
+	thingaccrualinterface --> controlexist
+	thingincrementalaccrual --- controlsupplyincrementalaccrualnewcollection
+	thingnewcollection --- controlsupplyincrementalaccrualnewcollection
+	thingcollectioninterface --> controlsupplyincrementalaccrualnewcollection
+
+@enduml

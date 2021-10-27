@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Session Information" as thingsessioninformation #grey
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Find Session\nInformation" as controlfindsessioninformation
+
+	actoranonymoususer --- thinginformationinterface
+	thingsessioninformation --- controlfindsessioninformation
+	thinginformationinterface --> controlfindsessioninformation
+
+@enduml

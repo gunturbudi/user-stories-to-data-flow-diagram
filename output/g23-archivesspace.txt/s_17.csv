@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Database,shape=partialRectangle,null,null,data_base
+201,Enum Value\nList,shape=partialRectangle,null,null,data_base
+202,Backend Change,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Loading Enum Value Lists From The Database,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Enum Value\nList,endArrow=classic,204,201,endArrow=classic
+208,Database,endArrow=classic,204,200,endArrow=classic

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fundingagencycode" as thingFundingAgencyCode
+	actor "Broker ,\nTeam Member" as actorbrokerteammember
+	boundary "Fundingagencycode\nInterface" as thingfundingagencycodeinterface #grey
+	control "Derive Fundingagencycode" as controlderiveFundingAgencyCode
+
+	actorbrokerteammember --- thingfundingagencycodeinterface
+	thingFundingAgencyCode --- controlderiveFundingAgencyCode
+	thingfundingagencycodeinterface --> controlderiveFundingAgencyCode
+
+@enduml

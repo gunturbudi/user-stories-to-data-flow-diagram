@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Good Way " ];
+201 [label="<f0>  |<f1> Fpds Datum " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Determine The Best Way }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Load Historical Fpds Data }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 200
+204 -> 201
+}

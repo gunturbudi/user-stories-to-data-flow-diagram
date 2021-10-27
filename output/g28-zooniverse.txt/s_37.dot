@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Classifiable Plankton " ];
+201 [label="<f0>  |<f1> Plankton Portal\nImage " color=red];
+202 [label="Zooniverse Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Detect Plankton Portal Images With No Classifiable Plankton In }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Plankton Portal\nImage"]
+203 -> 200 [label="Classifiable Plankton"]
+}

@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs" as thingFABS
+	entity "Field" as thingfield
+	entity "Follow Check" as thingfollowcheck
+	entity "Test File" as thingtestfile
+	actor "Tester" as actortester
+	control "Ensure" as controlensure
+
+
+@enduml

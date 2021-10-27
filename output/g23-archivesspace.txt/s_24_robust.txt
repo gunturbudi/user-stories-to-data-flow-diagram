@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Note" as thingnote
+	entity "Record Type" as thingrecordtype
+	actor "Archivist" as actorarchivist
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Add Notes\nTo Other\nRecord Types" as controladdnoteotherrecordtypes
+
+	thingrecordtype <.. thingnote
+	actorarchivist --- thingtypeinterface
+	thingnote --- controladdnoteotherrecordtypes
+	thingrecordtype --- controladdnoteotherrecordtypes
+	thingtypeinterface --> controladdnoteotherrecordtypes
+
+@enduml

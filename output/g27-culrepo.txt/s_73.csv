@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Nys,shape=partialRectangle,null,null,data_base
+201,"Available ,\nGeographic Area",shape=partialRectangle,null,null,data_base
+202,Educator,shape=partialRectangle,null,null,data_base
+203,Faculty,shape=partialRectangle,null,null,data_base
+204,Resource,shape=partialRectangle,null,null,data_base
+205,Specific Project,shape=partialRectangle,null,null,data_base
+206,Extension Administrator,rounded=0,null,null,external_entity
+207,"Make Resources Developed For Available, Geographic Area To Educator",ellipse,null,null,process
+208,"Make Resources Developed For Available, Geographic Area To Other Faculty Across Nys",ellipse,null,null,process
+209,Make Resources Developed For Specific Projects,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,Educator,endArrow=classic,207,202,endArrow=classic
+215,"Available ,\nGeographic Area",endArrow=classic,207,201,endArrow=classic
+216,Resource,endArrow=classic,207,204,endArrow=classic
+217,"Available ,\nGeographic Area",endArrow=classic,208,201,endArrow=classic
+218,Faculty,endArrow=classic,208,203,endArrow=classic
+219,Nys,endArrow=classic,208,200,endArrow=classic
+220,Resource,endArrow=classic,208,204,endArrow=classic
+221,Resource,endArrow=classic,209,204,endArrow=classic
+222,Specific Project,endArrow=classic,209,205,endArrow=classic

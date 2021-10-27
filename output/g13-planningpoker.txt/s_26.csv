@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Email,shape=partialRectangle,null,null,data_base
+201,Password Reminder,shape=partialRectangle,null,null,data_base
+202,Moderator,rounded=0,null,null,external_entity
+203,Get A Password Reminder By Email,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Password Reminder,endArrow=classic,203,201,endArrow=classic
+207,Email,endArrow=classic,203,200,endArrow=classic

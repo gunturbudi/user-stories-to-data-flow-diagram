@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+200,"Administrative ,\nCustom Operation",shape=partialRectangle,null,null,data_base
+201,Dataset Instance,shape=partialRectangle,null,null,data_base
+202,Ui,shape=partialRectangle,null,null,data_base
+203,App,shape=partialRectangle,null,null,data_base
+204,Cli,shape=partialRectangle,null,null,data_base
+205,Rest,shape=partialRectangle,null,null,data_base
+206,App Developer,rounded=0,null,null,external_entity
+207,"Perform Administrative, Custom Operations On Dataset Instances From Rest",ellipse,null,null,process
+208,"Perform Administrative, Custom Operations On Dataset Instances From App",ellipse,null,null,process
+209,"Perform Administrative, Custom Operations On Dataset Instances From The Ui",ellipse,null,null,process
+210,"Perform Administrative, Custom Operations On Dataset Instances From The Cli",ellipse,null,null,process
+212,,endArrow=classic,206,207,endArrow=classic
+213,,endArrow=classic,206,208,endArrow=classic
+214,,endArrow=classic,206,209,endArrow=classic
+215,,endArrow=classic,206,210,endArrow=classic
+216,Rest,endArrow=classic,207,205,endArrow=classic
+217,"Administrative ,\nCustom Operation",endArrow=classic,207,200,endArrow=classic
+218,Dataset Instance,endArrow=classic,207,201,endArrow=classic
+219,"Administrative ,\nCustom Operation",endArrow=classic,208,200,endArrow=classic
+220,Dataset Instance,endArrow=classic,208,201,endArrow=classic
+221,App,endArrow=classic,208,203,endArrow=classic
+222,Ui,endArrow=classic,209,202,endArrow=classic
+223,"Administrative ,\nCustom Operation",endArrow=classic,209,200,endArrow=classic
+224,Dataset Instance,endArrow=classic,209,201,endArrow=classic
+225,Cli,endArrow=classic,210,204,endArrow=classic
+226,"Administrative ,\nCustom Operation",endArrow=classic,210,200,endArrow=classic
+227,Dataset Instance,endArrow=classic,210,201,endArrow=classic

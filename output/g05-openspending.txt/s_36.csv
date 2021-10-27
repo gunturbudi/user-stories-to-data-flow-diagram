@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Gdp,shape=partialRectangle,null,null,data_base
+201,Reference,shape=partialRectangle,null,null,data_base
+202,Contextual Constraint,shape=partialRectangle,null,null,data_base
+203,Dataset,shape=partialRectangle,null,null,data_base
+204,Measure,shape=partialRectangle,null,null,data_base
+205,Api User,rounded=0,null,null,external_entity
+206,Normalise Measures By Gdp,ellipse,null,null,process
+208,,endArrow=classic,205,206,endArrow=classic
+209,Measure,endArrow=classic,206,204,endArrow=classic
+210,Gdp,endArrow=classic,206,200,endArrow=classic

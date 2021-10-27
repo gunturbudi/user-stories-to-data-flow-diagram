@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	actor "Olderperson" as actorOlderPerson
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "Play Games" as controlplaygame
+
+	actorOlderPerson --- thinggameinterface
+	thinggame --- controlplaygame
+	thinggameinterface --> controlplaygame
+
+@enduml

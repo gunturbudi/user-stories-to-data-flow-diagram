@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Attendee" as thingattendee
+	entity "Registration Status" as thingregistrationstatus #grey
+	entity "Admin View" as thingadminview #grey
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	boundary "View\nInterface" as thingviewinterface #grey
+	control "Track Registration\nStatus For\nEach Attendee" as controltrackregistrationstatusattendee
+	control "Have An\nAdmin View\nHelps" as controlhaveadminview
+
+	thingattendee <.. thingregistrationstatus
+	actortrainingcoordinator --- thingviewinterface
+	thingregistrationstatus --- controltrackregistrationstatusattendee
+	thingattendee --- controltrackregistrationstatusattendee
+	controlhaveadminview --> controltrackregistrationstatusattendee
+	thingviewinterface --> controltrackregistrationstatusattendee
+	thingadminview --- controlhaveadminview
+	thingviewinterface --> controlhaveadminview
+
+@enduml

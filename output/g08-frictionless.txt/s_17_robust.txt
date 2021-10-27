@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "R" as thingr
+	entity "Python" as thingpython
+	entity "Analysis" as thinganalysis
+	entity "Data" as thingdata #grey
+	actor "Developer" as actordeveloper
+	boundary "R\nInterface" as thingrinterface #grey
+	boundary "Python\nInterface" as thingpythoninterface #grey
+	control "Do Exploratory\nData Analysis\nIn R" as controldoexploratorydataanalysisr
+	control "Operationalize That\nAnalysis In\nPython" as controloperationalizeanalysis
+
+	thingpython <.. thinganalysis
+	thingdata <.. thinganalysis
+	thingr <.. thinganalysis
+	actordeveloper --- thingrinterface
+	actordeveloper --- thingpythoninterface
+	thingr --- controldoexploratorydataanalysisr
+	thingrinterface --> controldoexploratorydataanalysisr
+	thinganalysis --- controldoexploratorydataanalysisr
+	thinganalysis --- controloperationalizeanalysis
+	thingpython --- controloperationalizeanalysis
+	thingpythoninterface --> controloperationalizeanalysis
+
+@enduml

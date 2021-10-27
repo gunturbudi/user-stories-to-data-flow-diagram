@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Agent Information,shape=partialRectangle,null,null,data_base
+201,Eac Cpf\nRecord,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Import Agent Information From Eac Cpf Records,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Agent Information,endArrow=classic,203,200,endArrow=classic
+207,Eac Cpf\nRecord,endArrow=classic,203,201,endArrow=classic

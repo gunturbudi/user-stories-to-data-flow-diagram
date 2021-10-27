@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nsf" as thingNSF
+	entity "Editorial Plan" as thingeditorialplan
+	entity "Content Type" as thingcontenttype
+	actor "Content Designer" as actorcontentdesigner
+	circle "Understanding" as thingbetterunderstanding
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Develop A\nBetter Understanding\nOf Editorial\nPlan" as controldevelopbetterunderstandingeditorialplan
+	control "Develop A\nBetter Understanding\nOf Nsf's\nContent Types" as controldevelopbetterunderstanding
+
+	thingNSF <.. thingcontenttype
+	thingcontenttype *-- thingbetterunderstanding
+	thingeditorialplan *-- thingbetterunderstanding
+	actorcontentdesigner --- thingplaninterface
+	actorcontentdesigner --- thingtypeinterface
+	thingeditorialplan --- controldevelopbetterunderstandingeditorialplan
+	thingplaninterface --> controldevelopbetterunderstandingeditorialplan
+	thingbetterunderstanding --- controldevelopbetterunderstandingeditorialplan
+	thingbetterunderstanding --- controldevelopbetterunderstanding
+	thingcontenttype --- controldevelopbetterunderstanding
+	thingtypeinterface --> controldevelopbetterunderstanding
+
+@enduml

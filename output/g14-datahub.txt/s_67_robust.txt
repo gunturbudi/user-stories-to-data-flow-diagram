@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage
+	actor "Publisher" as actorpublisher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Have Private\nData Packages" as controlhaveprivatedatapackages
+
+	actorpublisher --- thingpackageinterface
+	thingdatapackage --- controlhaveprivatedatapackages
+	thingpackageinterface --> controlhaveprivatedatapackages
+
+@enduml

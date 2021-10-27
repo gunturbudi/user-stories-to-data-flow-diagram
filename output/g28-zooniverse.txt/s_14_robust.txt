@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	entity "Related Information" as thingrelatedinformation
+	entity "Broadcaster Logo" as thingbroadcasterlogo
+	actor "User" as actoruser
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Logo\nInterface" as thinglogointerface #grey
+	control "Identify Broadcaster\nLogos In\nVideos" as controlidentifybroadcasterlogos
+	control "Receive Related\nInformation About\nBroadcaster Logos" as controlreceiverelatedinformation
+
+	thingbroadcasterlogo <.. thingrelatedinformation
+	thingvideo <.. thingbroadcasterlogo
+	actoruser --- thingvideointerface
+	actoruser --- thinglogointerface
+	thingbroadcasterlogo --- controlidentifybroadcasterlogos
+	thingvideo --- controlidentifybroadcasterlogos
+	thingvideointerface --> controlidentifybroadcasterlogos
+	thingrelatedinformation --- controlreceiverelatedinformation
+	thinglogointerface --> controlreceiverelatedinformation
+	thingbroadcasterlogo --- controlreceiverelatedinformation
+
+@enduml

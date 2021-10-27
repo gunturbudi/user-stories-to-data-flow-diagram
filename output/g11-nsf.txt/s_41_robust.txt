@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Initial Hypothesis" as thinginitialhypothesis
+	actor "Developer" as actordeveloper
+	control "Know" as controlknow
+
+
+@enduml

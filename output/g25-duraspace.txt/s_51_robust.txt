@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Event" as thingevent
+	entity "Repository" as thingrepository
+	entity "Content File" as thingcontentfile #grey
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Know Any\nEvent Occurred\nTo A\nContent File\nFor Any\nOf Repository's\nObjects" as controlknowevent
+
+	thingrepository <.. thingobject
+	thingcontentfile <.. thingevent
+	thingobject <.. thingcontentfile
+	actorrepositorymanager --- thingobjectinterface
+	thingevent --- controlknowevent
+	thingcontentfile --- controlknowevent
+	thingobject --- controlknowevent
+	thingobjectinterface --> controlknowevent
+
+@enduml

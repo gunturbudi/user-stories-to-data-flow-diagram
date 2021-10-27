@@ -1,0 +1,51 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Periodic Reminder" as thingperiodicreminder #grey
+	entity "Attention" as thingattention
+	entity "Approval Step" as thingapprovalstep #grey
+	entity "Historical" as thinghistorical
+	entity "Ingestion" as thingnextingestion
+	entity "Knowledge Collection" as thingknowledgecollection
+	entity "Ir Reminder" as thingirreminder
+	actor "Extension Administrator" as actorextensionadministrator
+	actor "Staff ,\nContent Manager" as actorstaffcontentmanager
+	boundary "Attention\nInterface" as thingattentioninterface #grey
+	boundary "Ingestion\nInterface" as thingingestioninterface #grey
+	boundary "Step\nInterface" as thingstepinterface #grey
+	control "Move From\nA Current\nKnowledge Collection\nTo Historical" as controlmovecurrentknowledgecollectionhistorical
+	control "Get Periodic\nReminders Something\nWhen Needs\nAttention Including\nSomething Need" as controlgetperiodicremindersomething
+	control "Get Periodic\nIr Reminders\nSomething When\nNeeds Attention\nIncluding Next\nIngestion" as controlgetperiodicirreminders
+	control "Get Periodic\nReminders Something\nWhen Needs\nAttention Including\nApproval Step" as controlgetperiodicreminderapprovalstep
+
+	thingattention <.. thingperiodicreminder
+	thingnextingestion <.. thingattention
+	thingapprovalstep <.. thingattention
+	thinghistorical <.. thingknowledgecollection
+	thingattention <.. thingirreminder
+	thingnextingestion <.. thingirreminder
+	actorextensionadministrator --- thingattentioninterface
+	actorstaffcontentmanager --- thingattentioninterface
+	actorextensionadministrator --- thingingestioninterface
+	actorstaffcontentmanager --- thingingestioninterface
+	actorextensionadministrator --- thingstepinterface
+	actorstaffcontentmanager --- thingstepinterface
+	thingknowledgecollection --- controlmovecurrentknowledgecollectionhistorical
+	thinghistorical --- controlmovecurrentknowledgecollectionhistorical
+	controlgetperiodicremindersomething --> controlmovecurrentknowledgecollectionhistorical
+	thingattentioninterface --> controlmovecurrentknowledgecollectionhistorical
+	thingperiodicreminder --- controlgetperiodicremindersomething
+	thingattentioninterface --> controlgetperiodicremindersomething
+	thingattention --- controlgetperiodicremindersomething
+	thingirreminder --- controlgetperiodicirreminders
+	thingattention --- controlgetperiodicirreminders
+	thingnextingestion --- controlgetperiodicirreminders
+	thingingestioninterface --> controlgetperiodicirreminders
+	thingperiodicreminder --- controlgetperiodicreminderapprovalstep
+	thingapprovalstep --- controlgetperiodicreminderapprovalstep
+	thingstepinterface --> controlgetperiodicreminderapprovalstep
+	thingattention --- controlgetperiodicreminderapprovalstep
+
+@enduml

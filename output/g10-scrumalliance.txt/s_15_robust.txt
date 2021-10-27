@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Current News" as thingcurrentnews
+	entity "Home Page" as thinghomepage #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Read Current\nNews On\nThe Home\nPage" as controlreadcurrentnews
+
+	thinghomepage <.. thingcurrentnews
+	actorsitevisitor --- thingpageinterface
+	thingcurrentnews --- controlreadcurrentnews
+	thinghomepage --- controlreadcurrentnews
+	thingpageinterface --> controlreadcurrentnews
+
+@enduml

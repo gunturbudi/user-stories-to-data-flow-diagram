@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject
+	entity "Administrative Information" as thingadministrativeinformation
+	entity "Dmp" as thingdmp
+	actor "Data Librarian" as actordatalibrarian
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Import Administrative\nInformation Regarding\nA Project\nInto Dmp" as controlimportadministrativeinformationproject
+
+	thingdmp <.. thingproject
+	thingproject <.. thingadministrativeinformation
+	actordatalibrarian --- thingdmpinterface
+	thingadministrativeinformation --- controlimportadministrativeinformationproject
+	thingproject --- controlimportadministrativeinformationproject
+	thingdmp --- controlimportadministrativeinformationproject
+	thingdmpinterface --> controlimportadministrativeinformationproject
+
+@enduml

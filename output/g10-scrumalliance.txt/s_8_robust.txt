@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Member" as thingothermember
+	actor "Site Member" as actorsitemember
+	circle "Profile" as thingprofile
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	control "View The\nProfiles Of\nOther Members" as controlviewprofile
+
+	thingothermember *-- thingprofile
+	actorsitemember --- thingmemberinterface
+	thingprofile --- controlviewprofile
+	thingothermember --- controlviewprofile
+	thingmemberinterface --> controlviewprofile
+
+@enduml

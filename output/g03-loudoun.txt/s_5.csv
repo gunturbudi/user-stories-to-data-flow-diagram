@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+2,Initiate a transaction with the county.,ellipse,null,null,process
+200,Application,shape=partialRectangle,null,null,data_base
+201,Applicant,rounded=0,null,null,external_entity
+202,Submit Application,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Application,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Information,rounded=0,null,null,external_entity
+1002,Information,endArrow=classic,2,1001,endArrow=classic
+1003,Plans,rounded=0,null,null,external_entity
+1004,Plans,endArrow=classic,2,1003,endArrow=classic
+1005,Documents,rounded=0,null,null,external_entity
+1006,Documents,endArrow=classic,2,1005,endArrow=classic
+1007,Transaction,rounded=0,null,null,external_entity
+1008,Transaction,endArrow=classic,2,1007,endArrow=classic

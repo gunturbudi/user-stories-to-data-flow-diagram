@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Mediation,shape=partialRectangle,null,null,data_base
+201,"Archival ,\nDigitized Material",shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,"Access Archival, Digitized Materials Without Mediation",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,"Archival ,\nDigitized Material",endArrow=classic,203,201,endArrow=classic
+207,Mediation,endArrow=classic,203,200,endArrow=classic

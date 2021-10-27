@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rac Website" as thingracwebsite #grey
+	entity "Archival Content" as thingarchivalcontent #grey
+	actor "Archivist" as actorarchivist
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	control "Use Archival\nContent On\nThe Rac\nWebsite" as controlusearchivalcontentracwebsite
+
+	thingracwebsite <.. thingarchivalcontent
+	actorarchivist --- thingwebsiteinterface
+	thingarchivalcontent --- controlusearchivalcontentracwebsite
+	thingracwebsite --- controlusearchivalcontentracwebsite
+	thingwebsiteinterface --> controlusearchivalcontentracwebsite
+
+@enduml

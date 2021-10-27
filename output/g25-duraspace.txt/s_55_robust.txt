@@ -1,0 +1,46 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Authenticity" as thingauthenticity
+	entity "Integrity" as thingintegrity
+	entity "Question" as thingquestion
+	entity "Preservation Manager" as thingpreservationmanager
+	entity "File Format" as thingfileformat
+	actor "Dams Manager" as actordamsmanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	boundary "Authenticity\nInterface" as thingauthenticityinterface #grey
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	control "Update To\nA More\nCurrent File\nFormat" as controlupdatecurrentfileformat
+	control "Know Of\nAny Object" as controlknowofupdatecurrentfileformat
+	control "Know Of\nAny Object\nFor Which\nIntegrity Is\nIn Question" as controlknowof
+	control "Know Of\nAny Object\nFor Which\nAuthenticity Is" as controlknowofauthenticity
+	control "Know Via\nPreservation Managers" as controlknowpreservationmanagers
+
+	thingintegrity <.. thingobject
+	thingquestion <.. thingobject
+	thingauthenticity <.. thingobject
+	thingquestion <.. thingintegrity
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingquestioninterface
+	actordamsmanager --- thingauthenticityinterface
+	actordamsmanager --- thingmanagerinterface
+	thingfileformat --- controlupdatecurrentfileformat
+	controlknowofupdatecurrentfileformat --> controlupdatecurrentfileformat
+	thingobjectinterface --> controlupdatecurrentfileformat
+	thingobjectinterface --> controlknowofupdatecurrentfileformat
+	thingobject --- controlknowofupdatecurrentfileformat
+	thingobject --- controlknowof
+	thingintegrity --- controlknowof
+	thingquestion --- controlknowof
+	thingquestioninterface --> controlknowof
+	thingauthenticity --- controlknowofauthenticity
+	thingauthenticityinterface --> controlknowofauthenticity
+	thingobject --- controlknowofauthenticity
+	thingpreservationmanager --- controlknowpreservationmanagers
+	thingmanagerinterface --> controlknowpreservationmanagers
+
+@enduml

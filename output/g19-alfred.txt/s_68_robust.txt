@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "House" as thinghouse
+	entity "Alfred" as thingALFRED
+	entity "Reminder" as thingreminder
+	entity "Thing" as thingthing
+	actor "Olderperson" as actorOlderPerson
+	boundary "Thing\nInterface" as thingthinginterface #grey
+	control "Leave The\nHouse" as controlleavebringthinghouse
+	control "Receive A\nReminder From\nAlfred On\nThe Things" as controlreceivereminderALFREDthingleavebringthinghouse
+	control "The Things\nBring With" as controlbringthing
+
+	thingthing <.. thingALFRED
+	thingALFRED <.. thingreminder
+	actorOlderPerson --- thingthinginterface
+	thinghouse --- controlleavebringthinghouse
+	controlreceivereminderALFREDthingleavebringthinghouse --> controlleavebringthinghouse
+	thingthinginterface --> controlleavebringthinghouse
+	thingreminder --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingALFRED --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingthing --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingthinginterface --> controlreceivereminderALFREDthingleavebringthinghouse
+	controlleavebringthinghouse --> controlbringthing
+	thingthinginterface --> controlbringthing
+	thingthing --- controlbringthing
+
+@enduml

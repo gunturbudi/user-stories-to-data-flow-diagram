@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Video,shape=partialRectangle,null,null,data_base
+201,Behavioural Observation,shape=partialRectangle,null,null,data_base
+202,Standard Datum,shape=partialRectangle,null,null,data_base
+203,Meta Data,shape=partialRectangle,null,null,data_base
+204,Researcher,rounded=0,null,null,external_entity
+205,Have,ellipse,null,null,process
+206,Attach Standard Data For Video,ellipse,null,null,process
+207,Attach Standard Meta Data For Behavioural Observations,ellipse,null,null,process
+208,Attach Standard Data For,ellipse,null,null,process
+210,,endArrow=classic,204,205,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,,endArrow=classic,204,207,endArrow=classic
+213,,endArrow=classic,205,206,endArrow=classic
+214,,endArrow=classic,205,207,endArrow=classic
+215,,endArrow=classic,205,208,endArrow=classic
+216,Video,endArrow=classic,206,200,endArrow=classic
+217,Standard Datum,endArrow=classic,206,202,endArrow=classic
+218,Meta Data,endArrow=classic,207,203,endArrow=classic
+219,Behavioural Observation,endArrow=classic,207,201,endArrow=classic
+220,Standard Datum,endArrow=classic,208,202,endArrow=classic

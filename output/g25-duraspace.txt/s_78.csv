@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Dam,shape=partialRectangle,null,null,data_base
+201,Resource,shape=partialRectangle,null,null,data_base
+202,Description,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,Indicate Description,ellipse,null,null,process
+205,"Indicate All Pertinent, Other Versions Of A Resource Are External To The Dams",ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Description,endArrow=classic,204,202,endArrow=classic
+210,Resource,endArrow=classic,205,201,endArrow=classic
+211,Dam,endArrow=classic,205,200,endArrow=classic

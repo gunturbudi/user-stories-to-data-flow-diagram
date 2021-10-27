@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Project" as thingproject
+	entity "Metadata" as thingmetadata
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Have Datasets\nTo Metadata\nAbout Projects" as controlhavedataset
+
+	thingmetadata <.. thingdataset
+	thingproject <.. thingdataset
+	thingproject <.. thingmetadata
+	actorresearchinformationmanager --- thingprojectinterface
+	thingdataset --- controlhavedataset
+	thingmetadata --- controlhavedataset
+	thingproject --- controlhavedataset
+	thingprojectinterface --> controlhavedataset
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Excel" as thingexcel
+	entity "Second" as thingsecond
+	entity "Data Package" as thingdatapackage #grey
+	actor "Researcher" as actorresearcher
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto Excel\nIn Seconds" as controlgetdatapackageexcelsecond
+
+	thingsecond <.. thingexcel
+	thingexcel <.. thingdatapackage
+	actorresearcher --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackageexcelsecond
+	thingexcel --- controlgetdatapackageexcelsecond
+	thingsecond --- controlgetdatapackageexcelsecond
+	thingsecondinterface --> controlgetdatapackageexcelsecond
+
+@enduml

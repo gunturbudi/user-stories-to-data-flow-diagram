@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset Instance " color=red];
+201 [label="<f0>  |<f1> Code " color=red];
+202 [label="<f0>  |<f1> Dataset Type " color=red];
+203 [label="Datum Scientist" shape=box];
+204 [label="{<f0> 1.0|<f1> Create A Dataset Instance Of An Existing Dataset Type Writing Code }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Dataset Instance"]
+204 -> 202 [label="Dataset Type"]
+204 -> 201 [label="Code"]
+}

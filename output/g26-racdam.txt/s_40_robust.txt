@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Report" as thingreport
+	actor "Researcher" as actorresearcher
+	boundary "Report\nInterface" as thingreportinterface #grey
+	control "Download Reports" as controldownloadreport
+
+	actorresearcher --- thingreportinterface
+	thingreport --- controldownloadreport
+	thingreportinterface --> controldownloadreport
+
+@enduml

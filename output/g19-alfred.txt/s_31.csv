@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Real Interaction,shape=partialRectangle,null,null,data_base
+201,User,shape=partialRectangle,null,null,data_base
+202,Human,shape=partialRectangle,null,null,data_base
+203,Aflred Device,shape=partialRectangle,null,null,data_base
+204,Ict Tool,shape=partialRectangle,null,null,data_base
+205,Olderperson,rounded=0,null,null,external_entity
+206,Have An Aflred Device Encourages Users For Real Interaction Between Humans Only With Ict Tools,ellipse,null,null,process
+208,,endArrow=classic,205,206,endArrow=classic
+209,Aflred Device,endArrow=classic,206,203,endArrow=classic
+210,User,endArrow=classic,206,201,endArrow=classic
+211,Real Interaction,endArrow=classic,206,200,endArrow=classic
+212,Human,endArrow=classic,206,202,endArrow=classic
+213,Ict Tool,endArrow=classic,206,204,endArrow=classic

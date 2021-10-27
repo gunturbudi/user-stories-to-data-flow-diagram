@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Type " color=red];
+201 [label="<f0>  |<f1> Instance " color=red];
+202 [label="<f0>  |<f1> Dataset Type " color=red];
+203 [label="<f0>  |<f1> Dataset " color=red];
+204 [label="Dataset Developer" shape=box];
+205 [label="{<f0> 1.0|<f1> List All Instances Use A Specific Version Of A Type }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> List All Dataset Instances Use A Dataset Type }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 201 [label="Instance"]
+205 -> 200 [label="Type"]
+206 -> 202 [label="Dataset Type"]
+206 -> 201 [label="Instance"]
+206 -> 203 [label="Dataset"]
+}

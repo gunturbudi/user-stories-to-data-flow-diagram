@@ -1,0 +1,26 @@
+id,value,style,source,target,type
+200,Detail,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Sensitive,shape=partialRectangle,null,null,data_base
+203,Project,shape=partialRectangle,null,null,data_base
+204,Research,shape=partialRectangle,null,null,data_base
+205,Director,rounded=0,null,null,external_entity
+206,Research Integrity,rounded=0,null,null,external_entity
+207,Access,ellipse,null,null,process
+208,Contain Details Of Research Projects In Which Data Sensitive Classified,ellipse,null,null,process
+209,Contain Details Of Projects Highly Sensitive,ellipse,null,null,process
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,,endArrow=classic,205,209,endArrow=classic
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,207,208,endArrow=classic
+218,,endArrow=classic,207,209,endArrow=classic
+219,Detail,endArrow=classic,208,200,endArrow=classic
+220,Datum,endArrow=classic,208,201,endArrow=classic
+221,Project,endArrow=classic,208,203,endArrow=classic
+222,Sensitive,endArrow=classic,209,202,endArrow=classic
+223,Project,endArrow=classic,209,203,endArrow=classic
+224,Detail,endArrow=classic,209,200,endArrow=classic
+226,Research,endArrow=classic,208,204,endArrow=classic

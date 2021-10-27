@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Certain Date" as thingcertaindate
+	entity "Page" as thingpage
+	actor "User" as actoruser
+	boundary "Date\nInterface" as thingdateinterface #grey
+	control "Created A\nPage On\nA Certain\nDate" as controlcreateprovepagecertaindate
+	control "Prove" as controlprove
+
+	thingcertaindate <.. thingpage
+	actoruser --- thingdateinterface
+	thingpage --- controlcreateprovepagecertaindate
+	thingcertaindate --- controlcreateprovepagecertaindate
+	thingdateinterface --> controlcreateprovepagecertaindate
+	controlcreateprovepagecertaindate --> controlprove
+	thingdateinterface --> controlprove
+
+@enduml

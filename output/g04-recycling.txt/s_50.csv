@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+3,Accomodate larger amounts of recyclable materials.,ellipse,null,null,process
+200,Access,shape=partialRectangle,null,null,data_base
+201,Schedule,shape=partialRectangle,null,null,data_base
+202,User Stat,shape=partialRectangle,null,null,data_base
+203,Recyclingfacility Representative,rounded=0,null,null,external_entity
+204,Have Access To Schedule,ellipse,null,null,process
+205,Have Access To User Stats,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Schedule,endArrow=classic,204,201,endArrow=classic
+210,Access,endArrow=classic,204,200,endArrow=classic
+211,Access,endArrow=classic,205,200,endArrow=classic
+212,User Stat,endArrow=classic,205,202,endArrow=classic
+1000,,endArrow=classic,205,3,endArrow=classic
+1001,Hours,rounded=0,null,null,external_entity
+1002,Hours,endArrow=classic,3,1001,endArrow=classic
+1003,Equipment,rounded=0,null,null,external_entity
+1004,Equipment,endArrow=classic,3,1003,endArrow=classic
+1005,Capacity,rounded=0,null,null,external_entity
+1006,Capacity,endArrow=classic,3,1005,endArrow=classic

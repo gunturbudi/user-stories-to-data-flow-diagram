@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Send a communication from the system to the applicant.,ellipse,null,null,process
+200,Zoning Information,shape=partialRectangle,null,null,data_base
+201,Request,shape=partialRectangle,null,null,data_base
+202,"Zoning , Staff Member",rounded=0,null,null,external_entity
+203,Process The Requests For Zoning Information,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Request,endArrow=classic,203,201,endArrow=classic
+207,Zoning Information,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Response,rounded=0,null,null,external_entity
+1002,Response,endArrow=classic,2,1001,endArrow=classic
+1003,Communication,rounded=0,null,null,external_entity
+1004,Communication,endArrow=classic,2,1003,endArrow=classic

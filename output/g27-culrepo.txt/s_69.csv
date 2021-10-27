@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Dmp,shape=partialRectangle,null,null,data_base
+203,Student,rounded=0,null,null,external_entity
+204,Upload To The Repository The Data Associated With,ellipse,null,null,process
+205,Meet Requirements Of A Dmp,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Repository,endArrow=classic,204,201,endArrow=classic
+211,Datum,endArrow=classic,204,200,endArrow=classic
+212,Dmp,endArrow=classic,205,202,endArrow=classic

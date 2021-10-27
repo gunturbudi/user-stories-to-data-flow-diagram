@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name Form" as thingnameform #grey
+	entity "Source" as thingsource
+	entity "Agent" as thingagent
+	entity "New Source" as thingnewsource
+	entity "Exist Source" as thingexistingsource
+	actor "Archivist" as actorarchivist
+	boundary "Agent\nInterface" as thingagentinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Specify The\nSource For\nA Name\nForm Of\nAn Agent" as controlspecifysource
+	control "Add New\nSources" as controladdnewsource
+	control "Edit Existing\nSources" as controleditexistingsource #grey
+
+	thingagent <.. thingnameform
+	thingnameform <.. thingsource
+	actorarchivist --- thingagentinterface
+	actorarchivist --- thingsourceinterface
+	thingsource --- controlspecifysource
+	thingnameform --- controlspecifysource
+	thingagent --- controlspecifysource
+	thingagentinterface --> controlspecifysource
+	thingnewsource --- controladdnewsource
+	thingsourceinterface --> controladdnewsource
+	thingexistingsource --- controleditexistingsource
+
+@enduml

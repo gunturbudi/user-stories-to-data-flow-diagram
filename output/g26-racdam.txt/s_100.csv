@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+2,Hide things from display based on user groups,ellipse,null,null,process
+200,Metadata Field,shape=partialRectangle,null,null,data_base
+201,Administrator,rounded=0,null,null,external_entity
+202,Limit,ellipse,null,null,process
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,User groups,rounded=0,null,null,external_entity
+1002,User groups,endArrow=classic,2,1001,endArrow=classic

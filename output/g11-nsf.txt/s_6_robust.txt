@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Media Wireframe" as thingmediawireframe
+	actor "Designer" as actordesigner
+	boundary "Wireframe\nInterface" as thingwireframeinterface #grey
+	control "Have A\nSocial, New\nMedia Wireframe" as controlhavesocialnewmediawireframe
+
+	actordesigner --- thingwireframeinterface
+	thingmediawireframe --- controlhavesocialnewmediawireframe
+	thingwireframeinterface --> controlhavesocialnewmediawireframe
+
+@enduml

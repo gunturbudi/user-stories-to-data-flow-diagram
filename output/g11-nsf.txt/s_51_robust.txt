@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nsf.Gov Website" as thingnsf.govwebsite #grey
+	entity "Different Style" as thingdifferentstyle
+	actor "Visualdesigner" as actorVisualDesigner
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	control "Concept Different\nStyles For\nThe Nsf.Gov\nWebsite" as controlconceptdifferentstyle
+
+	thingnsf.govwebsite <.. thingdifferentstyle
+	actorVisualDesigner --- thingwebsiteinterface
+	thingdifferentstyle --- controlconceptdifferentstyle
+	thingnsf.govwebsite --- controlconceptdifferentstyle
+	thingwebsiteinterface --> controlconceptdifferentstyle
+
+@enduml

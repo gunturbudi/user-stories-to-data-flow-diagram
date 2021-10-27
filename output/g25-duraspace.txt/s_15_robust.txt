@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dam" as thingDAMS
+	entity "Collection" as thingcollection
+	actor "User" as actoruser
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	control "Browse By\nCollections In\nThe Dams" as controlbrowsecollection
+
+	thingDAMS <.. thingcollection
+	actoruser --- thingdamsinterface
+	thingcollection --- controlbrowsecollection
+	thingDAMS --- controlbrowsecollection
+	thingdamsinterface --> controlbrowsecollection
+
+@enduml

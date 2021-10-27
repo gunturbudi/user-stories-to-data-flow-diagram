@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Technology" as thingtechnology
+	entity "Datum" as thingdata
+	entity "Software" as thingsoftware
+	actor ", Staff\nMember" as actoritstaffmember
+	boundary "Technology\nInterface" as thingtechnologyinterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	control "Know Technology\nProduced" as controlknowtechnology
+	control "Know" as controlknowuse
+	control "Use" as controluse
+	control "Know Which\nSoftware The\nData Produced" as controlknowsoftwaredata
+
+	thingdata <.. thingsoftware
+	actoritstaffmember --- thingtechnologyinterface
+	actoritstaffmember --- thingdatainterface
+	thingtechnology --- controlknowtechnology
+	thingtechnologyinterface --> controlknowtechnology
+	controlknowuse --> controluse
+	thingsoftware --- controlknowsoftwaredata
+	thingdata --- controlknowsoftwaredata
+	thingdatainterface --> controlknowsoftwaredata
+
+@enduml

@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Personal Account" as thingpersonalaccount
+	entity "Password" as thingpassword
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Ability" as thingabilitychangepasswordmakedb #grey
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	control "Make" as controlmake
+	control "Change Passwords" as controlchangepassword
+	control "Have A\nPersonal Account\nWith" as controlhavepersonalaccountabilitychangepasswordmakedb
+	control "Retrieve Forgotten\nOnes" as controlretrieveforgottenone
+
+	actordb --- thingabilitychangepasswordmakedb
+	actoriradministrator --- thingabilitychangepasswordmakedb
+	actoriradministrator --- thingpasswordinterface
+	actordb --- thingpasswordinterface
+	thingpasswordinterface --> controlmake
+	controlchangepassword --> controlmake
+	thingpassword --- controlchangepassword
+	thingabilitychangepasswordmakedb --> controlchangepassword
+	controlhavepersonalaccountabilitychangepasswordmakedb --> controlchangepassword
+	thingpersonalaccount --- controlhavepersonalaccountabilitychangepasswordmakedb
+	thingabilitychangepasswordmakedb --> controlhavepersonalaccountabilitychangepasswordmakedb
+	thingpasswordinterface --> controlretrieveforgottenone
+	controlchangepassword --> controlretrieveforgottenone
+
+@enduml

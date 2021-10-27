@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deletion" as thingdeletion
+	actor "Datum User" as actordatauser
+	boundary "Deletion\nInterface" as thingdeletioninterface #grey
+	control "Have The\nDeletions" as controlhavedeletion
+
+	actordatauser --- thingdeletioninterface
+	thingdeletion --- controlhavedeletion
+	thingdeletioninterface --> controlhavedeletion
+
+@enduml

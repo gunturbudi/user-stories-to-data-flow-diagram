@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Unicode" as thingunicode
+	actor "User" as actoruser
+	boundary "Unicode\nInterface" as thingunicodeinterface #grey
+	control "Use Unicode" as controluseunicode
+
+	actoruser --- thingunicodeinterface
+	thingunicode --- controluseunicode
+	thingunicodeinterface --> controluseunicode
+
+@enduml

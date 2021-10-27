@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Image,shape=partialRectangle,null,null,data_base
+201,Color,shape=partialRectangle,null,null,data_base
+202,Black,shape=partialRectangle,null,null,data_base
+203,White,shape=partialRectangle,null,null,data_base
+204,Archivist,rounded=0,null,null,external_entity
+205,Distinguish Between Images In Black,ellipse,null,null,process
+206,Distinguish Between Images In White,ellipse,null,null,process
+207,Distinguish Between Images In Color,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Black,endArrow=classic,205,202,endArrow=classic
+213,Image,endArrow=classic,205,200,endArrow=classic
+214,White,endArrow=classic,206,203,endArrow=classic
+215,Image,endArrow=classic,206,200,endArrow=classic
+216,Image,endArrow=classic,207,200,endArrow=classic
+217,Color,endArrow=classic,207,201,endArrow=classic

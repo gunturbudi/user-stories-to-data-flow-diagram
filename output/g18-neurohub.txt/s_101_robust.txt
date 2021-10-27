@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Paper" as thingpaper
+	entity "Researcher" as thingotherresearcher
+	entity "Review" as thingreview
+	entity "Comment" as thingcomment
+	entity "Repository" as thingrepository #grey
+	entity "Group Level" as thinggrouplevel #grey
+	actor "Researcher" as actorresearcher
+	boundary "Comment\nInterface" as thingcommentinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	control "Sharing Comment" as controlsharehaverepositorycomment
+	control "Have A\nGroup Level\nRepository" as controlhavegrouplevelrepository
+	control "Have A\nRepository" as controlhaverepository #grey
+	control "Sharing Review" as controlsharehaverepositoryreview
+	control "Sharing Papers\nWith Other\nResearchers" as controlsharehavegrouplevelrepositorypaperotherresearcher
+
+	thingotherresearcher <.. thingpaper
+	thinggrouplevel <.. thingrepository
+	actorresearcher --- thingcommentinterface
+	actorresearcher --- thingresearcherinterface
+	actorresearcher --- thingreviewinterface
+	thingcomment --- controlsharehaverepositorycomment
+	thingcommentinterface --> controlsharehaverepositorycomment
+	controlsharehavegrouplevelrepositorypaperotherresearcher --> controlhavegrouplevelrepository
+	thingresearcherinterface --> controlhavegrouplevelrepository
+	thingrepository --- controlhavegrouplevelrepository
+	thingrepository --- controlhaverepository
+	controlsharehaverepositoryreview --> controlhaverepository
+	controlsharehaverepositorycomment --> controlhaverepository
+	thingreview --- controlsharehaverepositoryreview
+	thingreviewinterface --> controlsharehaverepositoryreview
+	thingpaper --- controlsharehavegrouplevelrepositorypaperotherresearcher
+	thingotherresearcher --- controlsharehavegrouplevelrepositorypaperotherresearcher
+	thingresearcherinterface --> controlsharehavegrouplevelrepositorypaperotherresearcher
+
+@enduml

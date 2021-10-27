@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Multiple File" as thingmultiplefile
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	actor "User" as actoruser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Attach Multiple\nFiles To\nA Log\nBook Page" as controlattachmultiplefilelogbookpage
+
+	thinglogbookpage <.. thingmultiplefile
+	actoruser --- thingpageinterface
+	thingmultiplefile --- controlattachmultiplefilelogbookpage
+	thinglogbookpage --- controlattachmultiplefilelogbookpage
+	thingpageinterface --> controlattachmultiplefilelogbookpage
+
+@enduml

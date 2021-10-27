@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Collection Component,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,See The Geographical Context Of A Collection Component Where Pertinent,ellipse,null,null,process
+204,See The Geographical Context Of Object,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Collection Component,endArrow=classic,203,201,endArrow=classic
+209,Object,endArrow=classic,204,200,endArrow=classic

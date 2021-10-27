@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Update" as thingupdate
+	entity "Clarity" as thingclarity
+	entity "Sql Code" as thingsqlcode
+	actor "Broker ,\nTeam Member" as actorbrokerteammember
+	boundary "Clarity\nInterface" as thingclarityinterface #grey
+	control "Make Some\nUpdates To\nThe Sql\nCodes For\nClarity" as controlmakeupdatesqlcodesclarity
+
+	thingsqlcode <.. thingupdate
+	thingclarity <.. thingsqlcode
+	actorbrokerteammember --- thingclarityinterface
+	thingupdate --- controlmakeupdatesqlcodesclarity
+	thingsqlcode --- controlmakeupdatesqlcodesclarity
+	thingclarity --- controlmakeupdatesqlcodesclarity
+	thingclarityinterface --> controlmakeupdatesqlcodesclarity
+
+@enduml

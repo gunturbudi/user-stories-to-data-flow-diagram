@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Researcher,shape=partialRectangle,null,null,data_base
+201,Time,shape=partialRectangle,null,null,data_base
+202,Date,shape=partialRectangle,null,null,data_base
+203,Supervisor,rounded=0,null,null,external_entity
+204,View,ellipse,null,null,process

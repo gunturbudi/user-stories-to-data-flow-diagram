@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Manual Input" as thingmanualinput
+	entity "Interaction" as thinginteraction
+	entity "Test" as thingtest
+	entity "Neurohub Installation" as thingneurohubinstallation
+	entity "Result" as thingresult
+	entity "Nightly Build" as thingnightlybuild
+	entity "Operating System" as thingoperatingsystem
+	actor "Release Engineer" as actorreleaseengineer
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Interaction\nInterface" as thinginteractioninterface #grey
+	boundary "Input\nInterface" as thinginputinterface #grey
+	control "Configure Nightly\nBuilds Automatically\nPerform A\nNeurohub Installation\nOn A\nVirgin Operating\nSystem" as controlconfigurenightlybuild
+	control "Execute Tests" as controlexecutetest #grey
+	control "Requiring Interaction" as controlrequireexecutetestinteraction
+	control "Requiring Any\nManual Input" as controlrequireexecutetestmanualinput
+	control "Report Back\nResults" as controlreportresult #grey
+
+	thingoperatingsystem <.. thingneurohubinstallation
+	thingneurohubinstallation <.. thingnightlybuild
+	actorreleaseengineer --- thingsysteminterface
+	actorreleaseengineer --- thinginteractioninterface
+	actorreleaseengineer --- thinginputinterface
+	thingnightlybuild --- controlconfigurenightlybuild
+	thingneurohubinstallation --- controlconfigurenightlybuild
+	thingoperatingsystem --- controlconfigurenightlybuild
+	thingsysteminterface --> controlconfigurenightlybuild
+	controlrequireexecutetestinteraction --> controlexecutetest
+	controlrequireexecutetestmanualinput --> controlexecutetest
+	thingtest --- controlexecutetest
+	thinginteraction --- controlrequireexecutetestinteraction
+	thinginteractioninterface --> controlrequireexecutetestinteraction
+	thingmanualinput --- controlrequireexecutetestmanualinput
+	thinginputinterface --> controlrequireexecutetestmanualinput
+	thingresult --- controlreportresult
+
+@enduml

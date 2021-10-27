@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> App " color=red];
+201 [label="<f0>  |<f1> Type " color=red];
+202 [label="<f0>  |<f1> App " color=red];
+203 [label="<f0>  |<f1> Dataset Type " color=red];
+204 [label="<f0>  |<f1> Version Conflict\nError " ];
+205 [label="<f0>  |<f1> Dataset Instance " color=red];
+206 [label="App Developer" shape=box];
+207 [label="{<f0> 1.0|<f1> Shares Deploy A New Version Of An App Includes A Different Version Of Dataset Type Another App This App A Dataset Instance Of This Type With The Other App The Deployment Fail With A Version Conflict Error }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Ensure }" shape=Mrecord];
+206 -> 207
+206 -> 208
+207 -> 208
+207 -> 204 [label="Version Conflict\nError"]
+207 -> 203 [label="Dataset Type"]
+207 -> 205 [label="Dataset Instance"]
+207 -> 201 [label="Type"]
+207 -> 200 [label="App"]
+207 -> 202 [label="App"]
+}

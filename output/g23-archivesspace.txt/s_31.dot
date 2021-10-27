@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Record " color=red];
+201 [label="<f0>  |<f1> Accession " color=red];
+202 [label="<f0>  |<f1> Resource " color=red];
+203 [label="<f0>  |<f1> Repository " color=red];
+204 [label="<f0>  |<f1> Digital Object " ];
+205 [label="Archivist" shape=box];
+206 [label="{<f0> 1.0|<f1> Search Within A Repository For Digital Object }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Search Within A Repository For Accession }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Search Within A Repository For Resource Records }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 204 [label="Digital Object"]
+206 -> 203 [label="Repository"]
+207 -> 201 [label="Accession"]
+207 -> 203 [label="Repository"]
+208 -> 203 [label="Repository"]
+208 -> 202 [label="Resource"]
+208 -> 200 [label="Record"]
+}

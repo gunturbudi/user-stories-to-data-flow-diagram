@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	actor "Archivist" as actorarchivist
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Rotate Images" as controlrotateimage
+
+	actorarchivist --- thingimageinterface
+	thingimage --- controlrotateimage
+	thingimageinterface --> controlrotateimage
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photo" as thingphoto
+	actor "Researcher" as actorresearcher
+	circle "Copy" as thingcopy
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	control "Order Copies\nOf Photos" as controlordercopy
+
+	thingphoto *-- thingcopy
+	actorresearcher --- thingphotointerface
+	thingcopy --- controlordercopy
+	thingphoto --- controlordercopy
+	thingphotointerface --> controlordercopy
+
+@enduml

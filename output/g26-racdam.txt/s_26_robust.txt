@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Unique Identifier" as thinguniqueidentifier
+	actor "Archivist" as actorarchivist
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	control "Assign Unique\nIdentifiers" as controlassignuniqueidentifier
+
+	actorarchivist --- thingidentifierinterface
+	thinguniqueidentifier --- controlassignuniqueidentifier
+	thingidentifierinterface --> controlassignuniqueidentifier
+
+@enduml

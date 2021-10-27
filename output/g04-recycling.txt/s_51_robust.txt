@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site Admin" as thingsiteadmin #grey
+	entity "Issue" as thingissue
+	entity "Concern" as thingconcern
+	actor "Recyclingfacility" as actorrecyclingfacility
+	boundary "Admin\nInterface" as thingadmininterface #grey
+	boundary "Concern\nInterface" as thingconcerninterface #grey
+	boundary "Issue\nInterface" as thingissueinterface #grey
+	control "Communicate With\nThe Site\nAdmin" as controlcommunicatesiteadmin
+	control "Convey Concern" as controlconveyconcern
+	control "Convey Any\nIssues" as controlconveyissue
+
+	actorrecyclingfacility --- thingadmininterface
+	actorrecyclingfacility --- thingconcerninterface
+	actorrecyclingfacility --- thingissueinterface
+	thingsiteadmin --- controlcommunicatesiteadmin
+	thingadmininterface --> controlcommunicatesiteadmin
+	thingconcern --- controlconveyconcern
+	thingconcerninterface --> controlconveyconcern
+	thingissue --- controlconveyissue
+	thingissueinterface --> controlconveyissue
+
+@enduml

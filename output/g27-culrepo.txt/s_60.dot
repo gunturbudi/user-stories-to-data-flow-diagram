@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Variety " ];
+201 [label="<f0>  |<f1> Media File " color=red];
+202 [label="<f0>  |<f1> Platform " ];
+203 [label="<f0>  |<f1> Text ,\nBased Format " ];
+204 [label="Administrator" shape=box];
+205 [label="{<f0> 1.0|<f1> Have A Platform Support A Variety Of Media File }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Have A Platform Support A Variety Of Text, Based Format }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Platform"]
+205 -> 200 [label="Variety"]
+205 -> 201 [label="Media File"]
+206 -> 203 [label="Text ,\nBased Format"]
+206 -> 200 [label="Variety"]
+206 -> 202 [label="Platform"]
+}

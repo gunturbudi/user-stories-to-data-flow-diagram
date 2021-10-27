@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Easy Way,shape=partialRectangle,null,null,data_base
+201,User Setting,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Manage The User Settings,ellipse,null,null,process
+204,Provide An Easy Way,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,User Setting,endArrow=classic,203,201,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,Easy Way,endArrow=classic,204,200,endArrow=classic

@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Vital Parameter,shape=partialRectangle,null,null,data_base
+201,Phone,shape=partialRectangle,null,null,data_base
+202,-pron-,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,See -Pron-,ellipse,null,null,process
+205,See Vital Parameters On The Phone,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,-pron-,endArrow=classic,204,202,endArrow=classic
+210,Vital Parameter,endArrow=classic,205,200,endArrow=classic
+211,Phone,endArrow=classic,205,201,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Estimate" as thingestimate
+	actor "Moderator" as actormoderator
+	circle "Average" as thingaverage
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	control "Accept The\nAverage Of\nAll Estimates" as controlacceptaverage
+
+	thingestimate *-- thingaverage
+	actormoderator --- thingestimateinterface
+	thingaverage --- controlacceptaverage
+	thingestimate --- controlacceptaverage
+	thingestimateinterface --> controlacceptaverage
+
+@enduml

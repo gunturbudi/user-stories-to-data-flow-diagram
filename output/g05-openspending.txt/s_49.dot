@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Accessible " ];
+201 [label="<f0>  |<f1> Metadata " color=red];
+202 [label="<f0>  |<f1> Title " color=red];
+203 [label="<f0>  |<f1> Dataset " color=red];
+204 [label="Datum , Consume User" shape=box];
+205 [label="{<f0> 1.0|<f1> Search Publicly Accessible By Title }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Search Publicly Accessible By Metadata }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Search Any Dataset }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Find the datasets i'm interested in. }" shape=Mrecord];
+1000 [label="Data consuming user" shape=box];
+1000 -> 4
+1002 [label="<f0>  |<f1> Datasets " color=red];
+4 -> 1002
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200
+205 -> 202
+206 -> 201
+206 -> 200
+207 -> 203
+}

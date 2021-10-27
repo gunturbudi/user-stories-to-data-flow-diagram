@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Profile,shape=partialRectangle,null,null,data_base
+201,Name,shape=partialRectangle,null,null,data_base
+202,Site Member,rounded=0,null,null,external_entity
+203,Mark Profile,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Profile,endArrow=classic,203,200,endArrow=classic

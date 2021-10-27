@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingdatapackage
+	actor "Consumer" as actorconsumer
+	circle "Age" as thingage
+	circle "Sense" as thingsense
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Get A\nSense Of\nThe Age\nOf The\nDatapackage" as controlgetsense
+
+	thingdatapackage *-- thingage
+	thingage *-- thingsense
+	actorconsumer --- thingdatapackageinterface
+	thingsense --- controlgetsense
+	thingage --- controlgetsense
+	thingdatapackage --- controlgetsense
+	thingdatapackageinterface --> controlgetsense
+
+@enduml

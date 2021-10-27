@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Notification " ];
+201 [label="<f0>  |<f1> Mendeley " color=red];
+202 [label="<f0>  |<f1> Research Paper " color=red];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> Point Mendeley Client At A Shared, Group, Wide Repository Of Research Papers }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Get Notifications Via Mendeley }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Research Paper"]
+205 -> 200 [label="Notification"]
+205 -> 201 [label="Mendeley"]
+}

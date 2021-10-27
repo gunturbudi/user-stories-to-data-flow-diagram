@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+2,Preview the data and be encouraged that this is the correct data for them,ellipse,null,null,process
+200,Preview Button,shape=partialRectangle,null,null,data_base
+201,Site,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Embed A Preview Button On Site,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Preview Button,endArrow=classic,203,200,endArrow=classic
+207,Site,endArrow=classic,203,201,endArrow=classic
+1000,Users,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,This,rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,2,endArrow=classic
+1004,Data,rounded=0,null,null,external_entity
+1005,Data,endArrow=classic,2,1004,endArrow=classic

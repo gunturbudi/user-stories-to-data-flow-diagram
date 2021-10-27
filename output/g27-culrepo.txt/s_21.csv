@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+2,See what others are most interested in reading,ellipse,null,null,process
+200,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+201,Notified,ellipse,null,null,process
+1000,,endArrow=classic,200,2,endArrow=classic
+1001,Usage,rounded=0,null,null,external_entity
+1002,Usage,endArrow=classic,2,1001,endArrow=classic

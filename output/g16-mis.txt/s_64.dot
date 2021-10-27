@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Request " ];
+201 [label="<f0>  |<f1> Authentication " ];
+202 [label="<f0>  |<f1> Address " color=red];
+203 [label="<f0>  |<f1> Access Object " ];
+204 [label="<f0>  |<f1> Ip " color=red];
+205 [label="Collection Curator" shape=box];
+206 [label="{<f0> 1.0|<f1> Require Authentication To Access Objects }" shape=Mrecord];
+205 -> 206
+206 -> 201 [label="Authentication"]
+206 -> 203 [label="Access Object"]
+}

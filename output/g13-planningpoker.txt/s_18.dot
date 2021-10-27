@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Game " color=red];
+201 [label="<f0>  |<f1> Html File " ];
+202 [label="Moderator" shape=box];
+203 [label="{<f0> 1.0|<f1> Export A Transcript Of A Game As A Html File }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Save the stories and estimates locally }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Stories " color=red];
+2 -> 1001 [label="Stories"]
+202 -> 203
+203 -> 200 [label="Game"]
+203 -> 201 [label="Html File"]
+}

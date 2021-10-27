@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Etd" as thingetd
+	entity "Method" as thingmethod
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Etd\nInterface" as thingetdinterface #grey
+	control "Batch" as controlbatch
+	control "Have A\nMethod Etds" as controlhavemethodbatchetd
+
+	thingetd <.. thingmethod
+	actordigitalrecordsarchivist --- thingetdinterface
+	controlhavemethodbatchetd --> controlbatch
+	thingetdinterface --> controlbatch
+	thingmethod --- controlhavemethodbatchetd
+	thingetd --- controlhavemethodbatchetd
+	thingetdinterface --> controlhavemethodbatchetd
+
+@enduml

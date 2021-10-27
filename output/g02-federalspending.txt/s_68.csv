@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Error,shape=partialRectangle,null,null,data_base
+201,Fabs,shape=partialRectangle,null,null,data_base
+202,Fabs User,rounded=0,null,null,external_entity
+203,Submission Errors,ellipse,null,null,process
+204,Represent Fabs Errors,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Error,endArrow=classic,203,200,endArrow=classic
+210,Error,endArrow=classic,204,200,endArrow=classic
+212,Fabs,endArrow=classic,204,201,endArrow=classic

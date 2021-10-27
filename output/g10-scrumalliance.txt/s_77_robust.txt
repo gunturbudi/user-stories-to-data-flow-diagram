@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rating" as thingrating
+	entity "Trainer" as thingtrainer
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Rating\nInterface" as thingratinginterface #grey
+	control "See A\nTrainer's Rating" as controlseerating
+
+	thingtrainer <.. thingrating
+	actorsitevisitor --- thingratinginterface
+	thingrating --- controlseerating
+	thingratinginterface --> controlseerating
+
+@enduml

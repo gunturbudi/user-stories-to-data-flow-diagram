@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Location,shape=partialRectangle,null,null,data_base
+201,Room,shape=partialRectangle,null,null,data_base
+202,Time Slot,shape=partialRectangle,null,null,data_base
+203,Administrator,rounded=0,null,null,external_entity
+204,Assign A Room To A Location,ellipse,null,null,process
+205,Assign A Room To A Time Slot,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Location,endArrow=classic,204,200,endArrow=classic
+210,Room,endArrow=classic,204,201,endArrow=classic
+211,Room,endArrow=classic,205,201,endArrow=classic
+212,Time Slot,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Revision" as thingrevision
+	entity "Upload ,\nCorrect Document" as thinguploadedcorrectdocument
+	entity "Error" as thingerror
+	entity "Upload Metadata" as thinguploadedmetadata
+	entity "Reason" as thingreason #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Record" as thingrecord
+
+	thingerror <.. thinguploadedcorrectdocument
+	thinguploadedmetadata <.. thingerror
+	thingrevision <.. thingreason
+	thingrevision *-- thingrecord
+
+@enduml

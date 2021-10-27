@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "File" as thingfile
+	actor "Consumer" as actorconsumer
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Download The\nData Package\nIn File" as controldownloaddatapackagefile
+
+	thingfile <.. thingdatapackage
+	actorconsumer --- thingfileinterface
+	thingdatapackage --- controldownloaddatapackagefile
+	thingfile --- controldownloaddatapackagefile
+	thingfileinterface --> controldownloaddatapackagefile
+
+@enduml

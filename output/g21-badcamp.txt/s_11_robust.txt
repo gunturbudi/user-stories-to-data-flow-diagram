@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schedule" as thingschedule
+	actor "Trainee" as actortrainee
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	control "Add To\nSchedule" as controladdschedule
+
+	actortrainee --- thingscheduleinterface
+	thingschedule --- controladdschedule
+	thingscheduleinterface --> controladdschedule
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Experiment Protocol" as thingexperimentprotocol #grey
+	actor "User" as actoruser
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Protocol\nInterface" as thingprotocolinterface #grey
+	control "Enter Metadata" as controlentermetadata
+	control "Describe An\nExperiment Protocol" as controldescribeexperimentprotocol
+
+	actoruser --- thingmetadatainterface
+	actoruser --- thingprotocolinterface
+	thingmetadata --- controlentermetadata
+	thingmetadatainterface --> controlentermetadata
+	thingexperimentprotocol --- controldescribeexperimentprotocol
+	thingprotocolinterface --> controldescribeexperimentprotocol
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Campus,shape=partialRectangle,null,null,data_base
+202,Bath Collaborator,shape=partialRectangle,null,null,data_base
+203,Externalcoordinator,rounded=0,null,null,external_entity
+204,Access Data From Bath Collaborators Off Campus,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Datum,endArrow=classic,204,200,endArrow=classic
+208,Bath Collaborator,endArrow=classic,204,202,endArrow=classic
+209,Campus,endArrow=classic,204,201,endArrow=classic

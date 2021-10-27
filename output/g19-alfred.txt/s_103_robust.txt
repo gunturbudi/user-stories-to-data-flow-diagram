@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Body Posture" as thingbodyposture
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Keep A\nGood Body\nPosture" as controlkeepgoodbodyposture
+	control "Remind" as controlremindALFREDOlderPersonkeepgoodbodyposture
+	control "Have" as controlhaveremindALFREDOlderPersonkeepgoodbodyposture
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingbodyposture --- controlkeepgoodbodyposture
+	controlremindALFREDOlderPersonkeepgoodbodyposture --> controlkeepgoodbodyposture
+	thingALFREDOlderPerson --> controlkeepgoodbodyposture
+	thingALFREDOlderPerson --> controlremindALFREDOlderPersonkeepgoodbodyposture
+	controlhaveremindALFREDOlderPersonkeepgoodbodyposture --> controlremindALFREDOlderPersonkeepgoodbodyposture
+	thingALFREDOlderPerson --> controlhaveremindALFREDOlderPersonkeepgoodbodyposture
+
+@enduml

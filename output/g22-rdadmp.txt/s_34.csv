@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,File Format,shape=partialRectangle,null,null,data_base
+201,Information,shape=partialRectangle,null,null,data_base
+202,Archivemanager,rounded=0,null,null,external_entity
+203,Reuse The Information Regarding File Format,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Information,endArrow=classic,203,201,endArrow=classic
+207,File Format,endArrow=classic,203,200,endArrow=classic

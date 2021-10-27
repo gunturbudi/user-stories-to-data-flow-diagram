@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+2,Fix possible data issues before publishing it on open spending.,ellipse,null,null,process
+200,Csv File,shape=partialRectangle,null,null,data_base
+201,"Datum , Publishing User",rounded=0,null,null,external_entity
+202,Know Csv File Valid,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Csv File,endArrow=classic,202,200,endArrow=classic
+1000,Data publishing user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Data issues,rounded=0,null,null,external_entity
+1003,Data issues,endArrow=classic,2,1002,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rights Management\nStatement" as thingrightsmanagementstatement
+	actor "Archivist" as actorarchivist
+	boundary "Statement\nInterface" as thingstatementinterface #grey
+	control "Create Rights\nManagement Statements" as controlcreaterightsmanagementstatements
+	control "Edit Rights\nManagement Statements" as controleditrightsmanagementstatements
+
+	actorarchivist --- thingstatementinterface
+	thingrightsmanagementstatement --- controlcreaterightsmanagementstatements
+	thingstatementinterface --> controlcreaterightsmanagementstatements
+	thingstatementinterface --> controleditrightsmanagementstatements
+	thingrightsmanagementstatement --- controleditrightsmanagementstatements
+
+@enduml

@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub" as thingneurohub
+	entity "Twitter Tweet" as thingtwittertweet
+	actor "User" as actoruser
+	boundary "Tweet\nInterface" as thingtweetinterface #grey
+	control "Appear In\nNeurohub" as controlappearneurohub
+	control "Have That\nTwitter Tweets" as controlhavethattwittertweetsappearneurohub
+
+	actoruser --- thingtweetinterface
+	thingneurohub --- controlappearneurohub
+	controlhavethattwittertweetsappearneurohub --> controlappearneurohub
+	thingtweetinterface --> controlappearneurohub
+	thingtwittertweet --- controlhavethattwittertweetsappearneurohub
+	thingtweetinterface --> controlhavethattwittertweetsappearneurohub
+
+@enduml

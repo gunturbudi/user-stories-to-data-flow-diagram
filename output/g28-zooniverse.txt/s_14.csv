@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Video,shape=partialRectangle,null,null,data_base
+201,Related Information,shape=partialRectangle,null,null,data_base
+202,Broadcaster Logo,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Identify Broadcaster Logos In Videos,ellipse,null,null,process
+205,Receive Related Information About Broadcaster Logos,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Broadcaster Logo,endArrow=classic,204,202,endArrow=classic
+210,Video,endArrow=classic,204,200,endArrow=classic
+211,Related Information,endArrow=classic,205,201,endArrow=classic
+212,Broadcaster Logo,endArrow=classic,205,202,endArrow=classic

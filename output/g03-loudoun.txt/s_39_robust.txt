@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan" as thingplan
+	actor "Plan ,\nReview ,\nStaff Member" as actorplanreviewstaffmember
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Review Plans" as controlreviewplan
+
+	actorplanreviewstaffmember --- thingplaninterface
+	thingplan --- controlreviewplan
+	thingplaninterface --> controlreviewplan
+
+@enduml

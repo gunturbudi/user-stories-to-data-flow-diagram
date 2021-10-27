@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+2,Preserve the history of draft proffer statements submitted by the applicant.,ellipse,null,null,process
+200,Draft Proffer,shape=partialRectangle,null,null,data_base
+201,Staff Member,rounded=0,null,null,external_entity
+202,Track The Draft Proffers,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Draft Proffer,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Draft proffer statements,endArrow=classic,2,200,endArrow=classic

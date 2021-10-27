@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "Backup Protocol" as thingbackupprotocol
+	actor "System Administrator" as actorsystemadministrator
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Have A\nManaged Backup\nProtocol For\nThe System" as controlhavemanagedbackupprotocol
+
+	thingsystem <.. thingbackupprotocol
+	actorsystemadministrator --- thingsysteminterface
+	thingbackupprotocol --- controlhavemanagedbackupprotocol
+	thingsystem --- controlhavemanagedbackupprotocol
+	thingsysteminterface --> controlhavemanagedbackupprotocol
+
+@enduml

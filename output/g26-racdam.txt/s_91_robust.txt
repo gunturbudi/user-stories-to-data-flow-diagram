@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visual" as thingvisual
+	entity "Index Card" as thingindexcard
+	actor "Archivist" as actorarchivist
+	circle "Metadata Representation" as thingmetadatarepresentation
+	boundary "Card\nInterface" as thingcardinterface #grey
+	boundary "Visual\nInterface" as thingvisualinterface #grey
+	control "Access Metadata\nRepresentations Of\nIndex Cards" as controlaccessmetadatarepresentation
+	control "Access Visual" as controlaccessvisual
+
+	thingindexcard *-- thingmetadatarepresentation
+	actorarchivist --- thingcardinterface
+	actorarchivist --- thingvisualinterface
+	thingmetadatarepresentation --- controlaccessmetadatarepresentation
+	thingindexcard --- controlaccessmetadatarepresentation
+	thingcardinterface --> controlaccessmetadatarepresentation
+	thingvisual --- controlaccessvisual
+	thingvisualinterface --> controlaccessvisual
+
+@enduml

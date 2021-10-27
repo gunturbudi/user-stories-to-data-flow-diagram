@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Home Page " ];
+201 [label="<f0>  |<f1> News " color=red];
+202 [label="<f0>  |<f1> Prominent Area " ];
+203 [label="Site Editor" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Prominent Area On The Home Page }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Prominent Area"]
+204 -> 200 [label="Home Page"]
+}

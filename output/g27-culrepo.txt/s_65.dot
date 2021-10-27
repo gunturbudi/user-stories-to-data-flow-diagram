@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Historical Report " color=red];
+201 [label="<f0>  |<f1> System " ];
+202 [label="<f0>  |<f1> Subtopic " ];
+203 [label="<f0>  |<f1> Historical ,\nExpired Report " color=red];
+204 [label="<f0>  |<f1> Topic Dataset " color=red];
+205 [label="Db" shape=box];
+206 [label="Ir Administrator" shape=box];
+207 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+}

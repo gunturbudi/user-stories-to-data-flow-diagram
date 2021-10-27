@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Zip Code,shape=partialRectangle,null,null,data_base
+201,Recycling Facility,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Enter Zip Code,ellipse,null,null,process
+204,Get A List Of Nearby Recycling Facilities,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Zip Code,endArrow=classic,203,200,endArrow=classic
+209,Recycling Facility,endArrow=classic,204,201,endArrow=classic

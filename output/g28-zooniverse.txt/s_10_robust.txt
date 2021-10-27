@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Similar Profile" as thingsimilarprofile
+	entity "Content Recommendation" as thingcontentrecommendation
+	actor "User" as actoruser
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Receive Content\nRecommendations From\nSimilar Profiles" as controlreceivecontentrecommendations
+
+	thingsimilarprofile <.. thingcontentrecommendation
+	actoruser --- thingprofileinterface
+	thingcontentrecommendation --- controlreceivecontentrecommendations
+	thingsimilarprofile --- controlreceivecontentrecommendations
+	thingprofileinterface --> controlreceivecontentrecommendations
+
+@enduml

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registry Server" as thingregistryserver #grey
+	entity "Datapackage" as thingdatapackage
+	entity "Datum" as thingdatum
+	actor "Publisher" as actorpublisher
+	circle "Snapshot" as thingsnapshot
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	boundary "Server\nInterface" as thingserverinterface #grey
+	control "Tag Datapackage" as controltagdatapackagecreatesnapshot
+	control "Create A\nSnapshot Of\nData On\nThe Registry\nServer" as controlcreatesnapshot
+
+	thingregistryserver <.. thingdatum
+	thingdatum *-- thingsnapshot
+	actorpublisher --- thingdatapackageinterface
+	actorpublisher --- thingserverinterface
+	thingdatapackage --- controltagdatapackagecreatesnapshot
+	thingdatapackageinterface --> controltagdatapackagecreatesnapshot
+	controltagdatapackagecreatesnapshot --> controlcreatesnapshot
+	thingsnapshot --- controlcreatesnapshot
+	thingdatum --- controlcreatesnapshot
+	thingregistryserver --- controlcreatesnapshot
+	thingserverinterface --> controlcreatesnapshot
+
+@enduml

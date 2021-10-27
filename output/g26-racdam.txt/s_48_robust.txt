@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Descriptive Datum" as thingdescriptivedatum
+	entity "Common Format" as thingcommonformat
+	actor "Researcher" as actorresearcher
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Export Descriptive\nData In\nA Common\nFormat" as controlexportdescriptivedatum
+
+	thingcommonformat <.. thingdescriptivedatum
+	actorresearcher --- thingformatinterface
+	thingdescriptivedatum --- controlexportdescriptivedatum
+	thingcommonformat --- controlexportdescriptivedatum
+	thingformatinterface --> controlexportdescriptivedatum
+
+@enduml

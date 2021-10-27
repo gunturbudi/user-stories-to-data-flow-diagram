@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Zoning Information" as thingzoninginformation #grey
+	entity "Request" as thingrequest
+	actor "Zoning ,\nStaff Member" as actorzoningstaffmember
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Process The\nRequests For\nZoning Information" as controlprocessrequest
+
+	thingzoninginformation <.. thingrequest
+	actorzoningstaffmember --- thinginformationinterface
+	thingrequest --- controlprocessrequest
+	thingzoninginformation --- controlprocessrequest
+	thinginformationinterface --> controlprocessrequest
+
+@enduml

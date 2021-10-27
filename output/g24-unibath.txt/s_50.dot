@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Api " ];
+201 [label="<f0>  |<f1> Sword2 " ];
+202 [label="<f0>  |<f1> Dataset " color=red];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Deposit Datasets Via An Api Such As Sword2 }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Maintain Datasets Via An Api Such As Sword2 }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Dataset"]
+204 -> 200 [label="Api"]
+204 -> 201 [label="Sword2"]
+205 -> 200 [label="Api"]
+205 -> 201 [label="Sword2"]
+205 -> 202 [label="Dataset"]
+}

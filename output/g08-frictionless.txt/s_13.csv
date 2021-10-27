@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+3,Start using the data for doing analysis and visualizations.,ellipse,null,null,process
+200,Openoffice,shape=partialRectangle,null,null,data_base
+201,Package,shape=partialRectangle,null,null,data_base
+202,Second,shape=partialRectangle,null,null,data_base
+203,Libreoffice,shape=partialRectangle,null,null,data_base
+204,Data,shape=partialRectangle,null,null,data_base
+205,Researcher,rounded=0,null,null,external_entity
+206,Get A Data Package Into Libreoffice In Seconds,ellipse,null,null,process
+207,Get A Package Into Openoffice,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Libreoffice,endArrow=classic,206,203,endArrow=classic
+212,Package,endArrow=classic,206,201,endArrow=classic
+213,Second,endArrow=classic,206,202,endArrow=classic
+214,Package,endArrow=classic,207,201,endArrow=classic
+215,Openoffice,endArrow=classic,207,200,endArrow=classic
+216,Data,endArrow=classic,206,204,endArrow=classic
+1000,,endArrow=classic,206,3,endArrow=classic
+1001,Data,endArrow=classic,3,204,endArrow=classic

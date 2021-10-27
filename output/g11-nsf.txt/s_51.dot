@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Nsf.Gov Website " ];
+201 [label="<f0>  |<f1> Different Style " ];
+202 [label="Visualdesigner" shape=box];
+203 [label="{<f0> 1.0|<f1> Concept Different Styles For The Nsf.Gov Website }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Different Style"]
+203 -> 200 [label="Nsf.Gov Website"]
+}

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Format" as thingformat
+	entity "Ability" as thingability
+	actor "Researcher" as actorresearcher
+	boundary "File Type" as thingfiletyperesearcher
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Have The\nTo Ability\nFor Files\nBy" as controlhaveability
+	control "Have The\nTo Ability\nFor Files\nBy Format" as controlhaveabilityformat
+
+	thingformat <.. thingfile
+	thingfile <.. thingability
+	actorresearcher --- thingfiletyperesearcher
+	actorresearcher --- thingformatinterface
+	thingability --- controlhaveability
+	thingfile --- controlhaveability
+	thingfiletyperesearcher --> controlhaveability
+	thingformat --- controlhaveabilityformat
+	thingformatinterface --> controlhaveabilityformat
+	thingfile --- controlhaveabilityformat
+	thingability --- controlhaveabilityformat
+
+@enduml

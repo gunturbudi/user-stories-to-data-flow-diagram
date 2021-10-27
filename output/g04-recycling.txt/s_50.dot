@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access " ];
+201 [label="<f0>  |<f1> Schedule " color=red];
+202 [label="<f0>  |<f1> User Stat " color=red];
+203 [label="Recyclingfacility Representative" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Access To Schedule }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have Access To User Stats }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Accomodate larger amounts of recyclable materials. }" shape=Mrecord];
+205 -> 3
+1001 [label="<f0>  |<f1> Hours " color=red];
+3 -> 1001
+1003 [label="<f0>  |<f1> Equipment " color=red];
+3 -> 1003
+1005 [label="<f0>  |<f1> Capacity " color=red];
+3 -> 1005
+203 -> 204
+203 -> 205
+204 -> 201
+204 -> 200
+205 -> 200
+205 -> 202
+}

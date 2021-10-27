@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Zoning Information " ];
+201 [label="<f0>  |<f1> Request " ];
+202 [label="Zoning , Staff Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Process The Requests For Zoning Information }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Send a communication from the system to the applicant. }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Response " color=red];
+2 -> 1001
+1003 [label="<f0>  |<f1> Communication " color=red];
+2 -> 1003
+202 -> 203
+203 -> 201
+203 -> 200
+}

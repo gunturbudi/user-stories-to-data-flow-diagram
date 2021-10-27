@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Suggestion" as thingsuggestion
+	entity "Sport Class" as thingsportclass
+	actor "Olderperson" as actorOlderPerson
+	boundary "Class\nInterface" as thingclassinterface #grey
+	control "Receive Suggestions\nAbout Local\nSport Classes" as controlreceivesuggestion
+
+	thingsportclass <.. thingsuggestion
+	actorOlderPerson --- thingclassinterface
+	thingsuggestion --- controlreceivesuggestion
+	thingsportclass --- controlreceivesuggestion
+	thingclassinterface --> controlreceivesuggestion
+
+@enduml

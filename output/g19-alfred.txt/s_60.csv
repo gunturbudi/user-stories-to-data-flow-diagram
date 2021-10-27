@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Spontaneous Question,shape=partialRectangle,null,null,data_base
+201,Day,shape=partialRectangle,null,null,data_base
+202,Alfred,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Have,ellipse,null,null,process
+205,Spontaneous Questions Programme During Certain Times Of The Day,ellipse,null,null,process
+207,,endArrow=classic,203,205,endArrow=classic
+208,Day,endArrow=classic,205,201,endArrow=classic
+209,Spontaneous Question,endArrow=classic,205,200,endArrow=classic

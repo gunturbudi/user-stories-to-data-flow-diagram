@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Exercise " color=red];
+201 [label="<f0>  |<f1> Week " ];
+202 [label="Olderperson" shape=box];
+203 [label="{<f0> 1.0|<f1> Motivate During The Week }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Do Exercise Daily Change }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Have }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Help }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 204
+203 -> 201 [label="Week"]
+204 -> 200 [label="Exercise"]
+205 -> 206
+206 -> 203
+}

@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Accessible" as thingaccessible
+	entity "Metadata" as thingmetadata
+	entity "Title" as thingtitle
+	entity "Dataset" as thingdataset
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Search Publicly\nAccessible By\nTitle" as controlsearchaccessible
+	control "Search Publicly\nAccessible By\nMetadata" as controlsearchaccessiblemetadata
+	control "Search Any\nDataset" as controlsearchdataset
+
+	thingtitle <.. thingaccessible
+	thingmetadata <.. thingaccessible
+	actordataconsuminguser --- thingtitleinterface
+	actordataconsuminguser --- thingmetadatainterface
+	actordataconsuminguser --- thingdatasetinterface
+	thingaccessible --- controlsearchaccessible
+	thingtitle --- controlsearchaccessible
+	thingtitleinterface --> controlsearchaccessible
+	thingmetadata --- controlsearchaccessiblemetadata
+	thingmetadatainterface --> controlsearchaccessiblemetadata
+	thingaccessible --- controlsearchaccessiblemetadata
+	thingdataset --- controlsearchdataset
+	thingdatasetinterface --> controlsearchdataset
+
+@enduml

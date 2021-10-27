@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Transaction History" as thingtransactionhistory #grey
+	actor "User" as actoruser
+	circle "Record" as thingrecord
+	boundary "History\nInterface" as thinghistoryinterface #grey
+	control "Check Transaction\nHistory" as controlchecktransactionhistory
+	control "Keep A\nRecord Of\nTransaction History" as controlkeeprecord
+
+	thingtransactionhistory *-- thingrecord
+	actoruser --- thinghistoryinterface
+	thingtransactionhistory --- controlchecktransactionhistory
+	thinghistoryinterface --> controlchecktransactionhistory
+	thingrecord --- controlkeeprecord
+	thingtransactionhistory --- controlkeeprecord
+	thinghistoryinterface --> controlkeeprecord
+
+@enduml

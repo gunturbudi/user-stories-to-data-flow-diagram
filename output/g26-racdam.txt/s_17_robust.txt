@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	circle "Group" as thinggroup
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Upload Groups\nOf Files" as controluploadgroup
+
+	thingfile *-- thinggroup
+	actorarchivist --- thingfileinterface
+	thinggroup --- controluploadgroup
+	thingfile --- controluploadgroup
+	thingfileinterface --> controluploadgroup
+
+@enduml

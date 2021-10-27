@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access " ];
+201 [label="<f0>  |<f1> Previous Version " ];
+202 [label="Publisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Get Access To A Previous Version }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Access"]
+203 -> 201 [label="Previous Version"]
+}

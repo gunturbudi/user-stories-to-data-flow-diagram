@@ -1,0 +1,66 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Organization " color=red];
+201 [label="<f0>  |<f1> Place " ];
+202 [label="<f0>  |<f1> Material " color=red];
+203 [label="<f0>  |<f1> Range " color=red];
+204 [label="<f0>  |<f1> Tagging " ];
+205 [label="<f0>  |<f1> Option " ];
+206 [label="<f0>  |<f1> Internal ,\nPrivate Group " ];
+207 [label="<f0>  |<f1> University " ];
+208 [label="<f0>  |<f1> Public " color=red];
+209 [label="<f0>  |<f1> Access " ];
+210 [label="<f0>  |<f1> Project " color=red];
+211 [label="Crossdeptprojteammember" shape=box];
+212 [label="{<f0> 1.0|<f1> Have A Better Place With A Range Of Access }" shape=Mrecord];
+213 [label="{<f0> 2.0|<f1> Have A Better Place With University }" shape=Mrecord];
+214 [label="{<f0> 3.0|<f1> Have A Better Place With Public }" shape=Mrecord];
+215 [label="{<f0> 4.0|<f1> Collect Materials }" shape=Mrecord];
+216 [label="{<f0> 5.0|<f1> Have A Better Place With Option Internal, Private Group Only Use }" shape=Mrecord];
+217 [label="{<f0> 6.0|<f1> Collect Project Materials }" shape=Mrecord];
+218 [label="{<f0> 7.0|<f1> Have A Better Place With A Range Of Organization }" shape=Mrecord];
+219 [label="{<f0> 8.0|<f1> Have A Better Place With A Range Of Tagging }" shape=Mrecord];
+220 [label="{<f0> 9.0|<f1> Share Project Materials }" shape=Mrecord];
+221 [label="{<f0> 10.0|<f1> Share Materials }" shape=Mrecord];
+211 -> 212
+211 -> 213
+211 -> 214
+211 -> 216
+211 -> 217
+211 -> 218
+211 -> 219
+211 -> 220
+212 -> 215
+212 -> 221
+212 -> 209 [label="Access"]
+212 -> 201 [label="Place"]
+212 -> 203 [label="Range"]
+213 -> 215
+213 -> 221
+213 -> 207 [label="University"]
+213 -> 201 [label="Place"]
+214 -> 215
+214 -> 221
+214 -> 208 [label="Public"]
+214 -> 201 [label="Place"]
+215 -> 202 [label="Material"]
+216 -> 215
+216 -> 221
+216 -> 205 [label="Option"]
+216 -> 206 [label="Internal ,\nPrivate Group"]
+216 -> 201 [label="Place"]
+217 -> 202 [label="Material"]
+218 -> 217
+218 -> 220
+218 -> 201 [label="Place"]
+218 -> 203 [label="Range"]
+218 -> 200 [label="Organization"]
+219 -> 215
+219 -> 221
+219 -> 204 [label="Tagging"]
+219 -> 201 [label="Place"]
+219 -> 203 [label="Range"]
+220 -> 202 [label="Material"]
+221 -> 202 [label="Material"]
+217 -> 210 [label="Project"]
+}

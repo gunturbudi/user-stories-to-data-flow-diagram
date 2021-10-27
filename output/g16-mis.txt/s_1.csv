@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Date,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Collection Curator,rounded=0,null,null,external_entity
+203,Set A Date,ellipse,null,null,process
+204,Delete,ellipse,null,null,process
+205,Hide,ellipse,null,null,process
+206,Set A Date Which Data Expire,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,,endArrow=classic,203,204,endArrow=classic
+213,,endArrow=classic,203,205,endArrow=classic
+214,Date,endArrow=classic,203,200,endArrow=classic
+215,Date,endArrow=classic,206,200,endArrow=classic
+216,Datum,endArrow=classic,206,201,endArrow=classic

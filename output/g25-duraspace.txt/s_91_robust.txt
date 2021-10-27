@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Way" as thingway
+	entity "Library Policy" as thinglibrarypolicy #grey
+	entity "Object Component" as thingobjectcomponent
+	entity "Access" as thingaccess
+	actor "Dams Manager" as actordamsmanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Know Object" as controlknowobject
+	control "Know An\nObject Component\nSubject To\nA Library\nPolicy Restricts\nAccess In\nAny Way" as controlknowobjectcomponentlibrarypolicy
+
+	thingaccess <.. thinglibrarypolicy
+	thinglibrarypolicy <.. thingobjectcomponent
+	thingway <.. thingaccess
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingwayinterface
+	thingobject --- controlknowobject
+	thingobjectinterface --> controlknowobject
+	thingobjectcomponent --- controlknowobjectcomponentlibrarypolicy
+	thinglibrarypolicy --- controlknowobjectcomponentlibrarypolicy
+	thingaccess --- controlknowobjectcomponentlibrarypolicy
+	thingway --- controlknowobjectcomponentlibrarypolicy
+	thingwayinterface --> controlknowobjectcomponentlibrarypolicy
+
+@enduml

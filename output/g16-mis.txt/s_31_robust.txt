@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Individual People" as thingindividualpeople
+	entity "Deposit Group" as thingdepositgroup
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Method" as thingmethodaddindividualpeopledepositgroupsdigitalrecordsarchivist #grey
+	control "Add Individual\nPeople From\nDeposit Groups" as controladdindividualpeopledepositgroups
+	control "Have" as controlhavemethodaddindividualpeopledepositgroupsdigitalrecordsarchivist
+	control "Remove Individual\nPeople From\nDeposit Groups" as controlremoveindividualpeopledepositgroups
+
+	actordigitalrecordsarchivist --- thingmethodaddindividualpeopledepositgroupsdigitalrecordsarchivist
+	thingindividualpeople --- controladdindividualpeopledepositgroups
+	thingdepositgroup --- controladdindividualpeopledepositgroups
+	controlhavemethodaddindividualpeopledepositgroupsdigitalrecordsarchivist --> controladdindividualpeopledepositgroups
+	thingmethodaddindividualpeopledepositgroupsdigitalrecordsarchivist --> controladdindividualpeopledepositgroups
+	thingmethodaddindividualpeopledepositgroupsdigitalrecordsarchivist --> controlhavemethodaddindividualpeopledepositgroupsdigitalrecordsarchivist
+	thingindividualpeople --- controlremoveindividualpeopledepositgroups
+	thingdepositgroup --- controlremoveindividualpeopledepositgroups
+	thingmethodaddindividualpeopledepositgroupsdigitalrecordsarchivist --> controlremoveindividualpeopledepositgroups
+	controlhavemethodaddindividualpeopledepositgroupsdigitalrecordsarchivist --> controlremoveindividualpeopledepositgroups
+
+@enduml

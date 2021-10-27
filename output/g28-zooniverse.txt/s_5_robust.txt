@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image Tag" as thingimagetag #grey
+	entity "Music" as thingmusic
+	entity "Enriched Metadata" as thingenrichedmetadata
+	actor "User" as actoruser
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Music\nInterface" as thingmusicinterface #grey
+	control "Search Music" as controlsearchmusic
+	control "Exploiting Image\nTag" as controlexploitsearchmusicimagetag
+	control "Exploiting Enriched\nMetadata" as controlexploitsearchmusicenrichedmetadata
+	control "Discover Music" as controldiscovermusic
+
+	actoruser --- thingtaginterface
+	actoruser --- thingmetadatainterface
+	actoruser --- thingmusicinterface
+	controlexploitsearchmusicenrichedmetadata --> controlsearchmusic
+	thingmusic --- controlsearchmusic
+	thingmusicinterface --> controlsearchmusic
+	controlexploitsearchmusicimagetag --> controlsearchmusic
+	thingimagetag --- controlexploitsearchmusicimagetag
+	thingtaginterface --> controlexploitsearchmusicimagetag
+	thingenrichedmetadata --- controlexploitsearchmusicenrichedmetadata
+	thingmetadatainterface --> controlexploitsearchmusicenrichedmetadata
+	thingmusic --- controldiscovermusic
+	thingmetadatainterface --> controldiscovermusic
+	controlexploitsearchmusicimagetag --> controldiscovermusic
+	controlexploitsearchmusicenrichedmetadata --> controldiscovermusic
+
+@enduml

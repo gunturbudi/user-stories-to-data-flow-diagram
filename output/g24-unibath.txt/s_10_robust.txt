@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Publication" as thingpublication
+	entity "Opus" as thingopus
+	actor "Depositor" as actordepositor
+	boundary "Opus\nInterface" as thingopusinterface #grey
+	control "Link Datasets\nTo Publications\nIn Opus" as controllinkdatasetpublication
+
+	thingpublication <.. thingdataset
+	thingopus <.. thingpublication
+	actordepositor --- thingopusinterface
+	thingdataset --- controllinkdatasetpublication
+	thingpublication --- controllinkdatasetpublication
+	thingopus --- controllinkdatasetpublication
+	thingopusinterface --> controllinkdatasetpublication
+
+@enduml

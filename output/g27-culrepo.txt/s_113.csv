@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Issue,shape=partialRectangle,null,null,data_base
+201,System Provider,shape=partialRectangle,null,null,data_base
+202,Question,shape=partialRectangle,null,null,data_base
+203,Patron,rounded=0,null,null,external_entity
+204,Report Issues,ellipse,null,null,process
+205,Email System Provider,ellipse,null,null,process
+206,Ask Questions,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Issue,endArrow=classic,204,200,endArrow=classic
+212,,endArrow=classic,205,204,endArrow=classic
+213,System Provider,endArrow=classic,205,201,endArrow=classic
+214,Question,endArrow=classic,206,202,endArrow=classic

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="Consumer" shape=box];
+203 [label="{<f0> 1.0|<f1> Get The Data For A Data Package }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Use is and my app or analysis keeps working }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> App " color=red];
+2 -> 1001 [label="App"]
+1003 [label="<f0>  |<f1> Analysis " color=red];
+2 -> 1003 [label="Analysis"]
+202 -> 203
+203 -> 201 [label="Datum"]
+203 -> 200 [label="Data Package"]
+}

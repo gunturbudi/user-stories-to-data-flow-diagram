@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata Field" as thingmetadatafield #grey
+	actor "User" as actoruser
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Entered To\nA Metadata\nField" as controlentermetadatafield
+	control "Restrict" as controlrestrictentermetadatafield
+
+	actoruser --- thingfieldinterface
+	thingmetadatafield --- controlentermetadatafield
+	controlrestrictentermetadatafield --> controlentermetadatafield
+	thingfieldinterface --> controlentermetadatafield
+	thingfieldinterface --> controlrestrictentermetadatafield
+
+@enduml

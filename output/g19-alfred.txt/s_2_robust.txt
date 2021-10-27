@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Speech Technology" as thingspeechtechnology #grey
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Technology\nInterface" as thingtechnologyinterface #grey
+	control "Receive Information\nFrom Alfred\nBy Speech\nTechnology" as controlreceiveinformationALFREDspeechtechnology
+
+	thingALFRED <.. thinginformation
+	thingspeechtechnology <.. thingALFRED
+	actorOlderPerson --- thingtechnologyinterface
+	thinginformation --- controlreceiveinformationALFREDspeechtechnology
+	thingALFRED --- controlreceiveinformationALFREDspeechtechnology
+	thingspeechtechnology --- controlreceiveinformationALFREDspeechtechnology
+	thingtechnologyinterface --> controlreceiveinformationALFREDspeechtechnology
+
+@enduml

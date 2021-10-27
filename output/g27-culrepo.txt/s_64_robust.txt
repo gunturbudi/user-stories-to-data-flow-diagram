@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Patron Use" as thingpatronuse #grey
+	entity "Previous Version" as thingpreviousversion
+	entity "Report" as thingreport
+	entity "Dataset" as thingdataset
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	circle "New Version" as thingnewversion
+	boundary "Use\nInterface" as thinguseinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Upload New\nVersion Of\nReport Retaining\nPrevious Versions\nFor Patron\nUse" as controluploadnewversionpreviousversion
+	control "Upload New\nVersion Of\nDataset" as controluploadnewversiondataset
+
+	thingpatronuse <.. thingpreviousversion
+	thingpreviousversion <.. thingreport
+	thingreport *-- thingnewversion
+	thingdataset *-- thingnewversion
+	actordb --- thinguseinterface
+	actoriradministrator --- thinguseinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	thingnewversion --- controluploadnewversionpreviousversion
+	thingreport --- controluploadnewversionpreviousversion
+	thinguseinterface --> controluploadnewversionpreviousversion
+	thingpatronuse --- controluploadnewversionpreviousversion
+	thingpreviousversion --- controluploadnewversionpreviousversion
+	thingdataset --- controluploadnewversiondataset
+	thingdatasetinterface --> controluploadnewversiondataset
+	thingnewversion --- controluploadnewversiondataset
+
+@enduml

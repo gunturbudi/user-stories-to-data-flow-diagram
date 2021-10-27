@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Change " ];
+202 [label="<f0>  |<f1> Collection Component " ];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know Of Any Changes For Object }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know Of Any Changes For A Collection Component }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Object"]
+204 -> 201 [label="Change"]
+205 -> 201 [label="Change"]
+205 -> 202 [label="Collection Component"]
+}

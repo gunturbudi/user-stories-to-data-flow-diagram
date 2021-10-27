@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Access Copy,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Create Access Copies Of Files,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Access Copy,endArrow=classic,203,201,endArrow=classic
+207,File,endArrow=classic,203,200,endArrow=classic

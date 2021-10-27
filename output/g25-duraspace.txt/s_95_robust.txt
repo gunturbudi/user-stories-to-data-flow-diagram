@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Permission" as thingpermission
+	entity "Restriction" as thingrestriction
+	entity "Date" as thingdate
+	actor "Dams Manager" as actordamsmanager
+	boundary "Restriction\nInterface" as thingrestrictioninterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	control "Provided Know\nThe Dates\nRestriction When\nIs" as controlprovidedaterestriction
+	control "Provided Know\nThe Dates\nA Permission\nWhen Is\nActive" as controlprovidedate
+
+	thingpermission <.. thingdate
+	thingrestriction <.. thingdate
+	actordamsmanager --- thingrestrictioninterface
+	actordamsmanager --- thingpermissioninterface
+	thingrestriction --- controlprovidedaterestriction
+	thingrestrictioninterface --> controlprovidedaterestriction
+	thingdate --- controlprovidedaterestriction
+	thingdate --- controlprovidedate
+	thingpermission --- controlprovidedate
+	thingpermissioninterface --> controlprovidedate
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Spss Integration" as thingspssintegration #grey
+	actor "Developer" as actordeveloper
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	control "Provided With\nAn Spss\nIntegration" as controlprovidespssintegration
+
+	actordeveloper --- thingintegrationinterface
+	thingspssintegration --- controlprovidespssintegration
+	thingintegrationinterface --> controlprovidespssintegration
+
+@enduml

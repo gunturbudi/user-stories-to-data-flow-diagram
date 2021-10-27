@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Info" as thinginfo
+	entity "Trainer" as thingtrainer
+	entity "Website" as thingwebsite
+	entity "Update" as thingupdate
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	boundary "Info\nInterface" as thinginfointerface #grey
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nUpdate" as controlemailtrainerwebsiteupdate
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nInfo" as controlemailtrainerwebsite
+
+	thingwebsite <.. thingtrainer
+	thinginfo <.. thingwebsite
+	thingupdate <.. thingwebsite
+	actortrainingcoordinator --- thingupdateinterface
+	actortrainingcoordinator --- thinginfointerface
+	thingupdate --- controlemailtrainerwebsiteupdate
+	thingupdateinterface --> controlemailtrainerwebsiteupdate
+	thingtrainer --- controlemailtrainerwebsiteupdate
+	thingwebsite --- controlemailtrainerwebsiteupdate
+	thingtrainer --- controlemailtrainerwebsite
+	thingwebsite --- controlemailtrainerwebsite
+	thinginfo --- controlemailtrainerwebsite
+	thinginfointerface --> controlemailtrainerwebsite
+
+@enduml

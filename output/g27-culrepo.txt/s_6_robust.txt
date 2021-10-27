@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Report" as thingreport
+	entity "Viewable" as thingviewable
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Viewable\nInterface" as thingviewableinterface #grey
+	control "Mark Report" as controlmarkreport
+	control "Mark Dataset" as controlmarkdataset
+	control "Mark Dataset\nViewable To" as controlmarkdatasetviewable
+	control "Not Emailed" as controlemail
+
+	thingviewable <.. thingdataset
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	actordb --- thingviewableinterface
+	actoriradministrator --- thingviewableinterface
+	thingreport --- controlmarkreport
+	thingreportinterface --> controlmarkreport
+	thingdataset --- controlmarkdataset
+	thingdatasetinterface --> controlmarkdataset
+	thingviewable --- controlmarkdatasetviewable
+	thingviewableinterface --> controlmarkdatasetviewable
+	thingdataset --- controlmarkdatasetviewable
+
+@enduml

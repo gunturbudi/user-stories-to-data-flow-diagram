@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Meta Datum" as thingmetadatum
+	entity "Physiology Image" as thingphysiologyimage
+	actor "Researcher" as actorresearcher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Have Physiology\nImages To\nAnnotated With\nStandard Meta\nData" as controlhavephysiologyimages
+
+	thingmetadatum <.. thingphysiologyimage
+	actorresearcher --- thingdatuminterface
+	thingphysiologyimage --- controlhavephysiologyimages
+	thingmetadatum --- controlhavephysiologyimages
+	thingdatuminterface --> controlhavephysiologyimages
+
+@enduml

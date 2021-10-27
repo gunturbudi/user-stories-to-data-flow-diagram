@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Workstation,shape=partialRectangle,null,null,data_base
+201,Network Drive,shape=partialRectangle,null,null,data_base
+202,Neurohub Workspace,shape=partialRectangle,null,null,data_base
+203,File,shape=partialRectangle,null,null,data_base
+204,Researcher,rounded=0,null,null,external_entity
+205,Access Files In Neurohub Workspace Using A Network Drive To Workstation,ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,File,endArrow=classic,205,203,endArrow=classic
+209,Neurohub Workspace,endArrow=classic,205,202,endArrow=classic
+210,Network Drive,endArrow=classic,205,201,endArrow=classic
+211,Workstation,endArrow=classic,205,200,endArrow=classic

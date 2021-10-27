@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Navigation" as thingnavigation
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Navigation\nInterface" as thingnavigationinterface #grey
+	control "Use Alfred\nFor Navigation" as controluseALFREDnavigation
+
+	thingnavigation <.. thingALFRED
+	actorOlderPerson --- thingnavigationinterface
+	thingALFRED --- controluseALFREDnavigation
+	thingnavigation --- controluseALFREDnavigation
+	thingnavigationinterface --> controluseALFREDnavigation
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Detailed Information" as thingdetailedinformation
+	actor "Developer" as actordeveloper
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Have Detailed\nInformation Happened" as controlhavedetailedinformation
+
+	actordeveloper --- thinginformationinterface
+	thingdetailedinformation --- controlhavedetailedinformation
+	thinginformationinterface --> controlhavedetailedinformation
+
+@enduml

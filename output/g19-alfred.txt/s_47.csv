@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Movie,shape=partialRectangle,null,null,data_base
+201,Alfred,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,Use Alfred,ellipse,null,null,process
+204,Watch Movies,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Alfred,endArrow=classic,203,201,endArrow=classic
+210,Movie,endArrow=classic,204,200,endArrow=classic

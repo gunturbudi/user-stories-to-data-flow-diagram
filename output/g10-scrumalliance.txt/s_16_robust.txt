@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Old News" as thingoldnews
+	entity "Home Page" as thinghomepage #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Access Old\nNews Longer\nIs No\nOn The\nHome Page" as controlaccessoldnews
+
+	thinghomepage <.. thingoldnews
+	actorsitevisitor --- thingpageinterface
+	thingoldnews --- controlaccessoldnews
+	thinghomepage --- controlaccessoldnews
+	thingpageinterface --> controlaccessoldnews
+
+@enduml

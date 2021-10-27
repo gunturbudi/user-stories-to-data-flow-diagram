@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Document" as thingdocument
+	entity "Collection" as thingcollection
+	entity "Organization" as thingorganization
+	entity "Distinctive Branding" as thingdistinctivebranding
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Create A\nCollection For\nDocuments" as controlcreatecollection
+	control "Create A\nCollection For\nOrganization's Document" as controlcreatecollectiondocument
+	control "Apply Some\nDistinctive Branding\nTo That\nCollection" as controlapplydistinctivebrandingcollection
+
+	thingorganization <.. thingdocument
+	thingdocument <.. thingcollection
+	thingcollection <.. thingdistinctivebranding
+	actorcornellfacultymember --- thingdocumentinterface
+	actorcornellfacultymember --- thingcollectioninterface
+	thingcollection --- controlcreatecollection
+	thingdocumentinterface --> controlcreatecollection
+	thingdocument --- controlcreatecollection
+	thingdocument --- controlcreatecollectiondocument
+	thingdocumentinterface --> controlcreatecollectiondocument
+	thingcollection --- controlcreatecollectiondocument
+	thingdistinctivebranding --- controlapplydistinctivebrandingcollection
+	thingcollectioninterface --> controlapplydistinctivebrandingcollection
+	thingcollection --- controlapplydistinctivebrandingcollection
+
+@enduml

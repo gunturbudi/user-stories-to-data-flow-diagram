@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Header " ];
+201 [label="<f0>  |<f1> Schema " ];
+202 [label="<f0>  |<f1> Fabs File " ];
+203 [label="Agency User" shape=box];
+204 [label="{<f0> 1.0|<f1> Use The Schema Headers In Fabs File }" shape=Mrecord];
+203 -> 204
+204 -> 201
+204 -> 200
+204 -> 202
+}

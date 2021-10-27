@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Necessary Column" as thingnecessarycolumn
+	entity "Historical Datum" as thinghistoricaldata
+	actor "Fabs User" as actorfabsuser
+	control "Make" as controlmake
+
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inventory" as thinginventory
+	actor "Archivist" as actorarchivist
+	boundary "Inventory\nInterface" as thinginventoryinterface #grey
+	control "Upload Inventories" as controluploadinventory
+
+	actorarchivist --- thinginventoryinterface
+	thinginventory --- controluploadinventory
+	thinginventoryinterface --> controluploadinventory
+
+@enduml

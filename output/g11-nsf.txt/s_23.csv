@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Assign them to my users,ellipse,null,null,process
+200,Role,shape=partialRectangle,null,null,data_base
+201,Cms Administrator,rounded=0,null,null,external_entity
+202,Have Roles,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Role,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Users,rounded=0,null,null,external_entity
+1002,Users,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Localization " ];
+201 [label="<f0>  |<f1> Plankton " color=red];
+202 [label="Zooniverse Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Perform Automatic Segmentation Of Plankton In }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Perform Localization }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Plankton"]
+204 -> 200 [label="Localization"]
+}

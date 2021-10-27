@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,App,shape=partialRectangle,null,null,data_base
+201,"Openspending , Community Member",rounded=0,null,null,external_entity
+202,Have An App,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,App,endArrow=classic,202,200,endArrow=classic

@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Execution History " ];
+201 [label="<f0>  |<f1> Workflow " color=red];
+202 [label="<f0>  |<f1> Detail " ];
+203 [label="<f0>  |<f1> Result " color=red];
+204 [label="<f0>  |<f1> Neurohub " color=red];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Have The Details Of Result }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Have The Details Of The As Well Workflow Plan }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Have The Details Of The Execution History In Neurohub Executing A Workflow }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 203 [label="Result"]
+206 -> 202 [label="Detail"]
+207 -> 202 [label="Detail"]
+208 -> 200 [label="Execution History"]
+208 -> 204 [label="Neurohub"]
+208 -> 201 [label="Workflow"]
+208 -> 202 [label="Detail"]
+}

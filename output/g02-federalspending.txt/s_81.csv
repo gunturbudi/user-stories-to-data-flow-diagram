@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Publishing Decision,shape=partialRectangle,null,null,data_base
+201,Gap,shape=partialRectangle,null,null,data_base
+202,Duplicate Transaction,shape=partialRectangle,null,null,data_base
+203,Validation,shape=partialRectangle,null,null,data_base
+204,Time,shape=partialRectangle,null,null,data_base
+205,Developer,rounded=0,null,null,external_entity
+206,Deal With The Gap Between The Publishing Decision,ellipse,null,null,process
+207,Deal With The Time Gap Between Validation,ellipse,null,null,process
+208,Prevent Duplicate Transactions Published,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,208,endArrow=classic
+212,Gap,endArrow=classic,206,201,endArrow=classic
+213,Publishing Decision,endArrow=classic,206,200,endArrow=classic
+214,Validation,endArrow=classic,207,203,endArrow=classic
+215,Gap,endArrow=classic,207,201,endArrow=classic
+216,Duplicate Transaction,endArrow=classic,208,202,endArrow=classic
+218,Time,endArrow=classic,207,204,endArrow=classic

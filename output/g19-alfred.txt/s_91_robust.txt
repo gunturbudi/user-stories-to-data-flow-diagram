@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Alfred" as thingALFRED
+	entity "Body Temperature" as thingbodytemperature #grey
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Temperature\nInterface" as thingtemperatureinterface #grey
+	control "Have Alfred" as controlhaveALFREDdeterminebodytemperature
+	control "Determine The\nUser's Body\nTemperature" as controldeterminebodytemperature
+
+	thinguser <.. thingbodytemperature
+	actorMedicalCaregiver --- thingalfredinterface
+	actorMedicalCaregiver --- thingtemperatureinterface
+	thingALFRED --- controlhaveALFREDdeterminebodytemperature
+	thingalfredinterface --> controlhaveALFREDdeterminebodytemperature
+	controlhaveALFREDdeterminebodytemperature --> controldeterminebodytemperature
+	thingbodytemperature --- controldeterminebodytemperature
+	thingtemperatureinterface --> controldeterminebodytemperature
+
+@enduml

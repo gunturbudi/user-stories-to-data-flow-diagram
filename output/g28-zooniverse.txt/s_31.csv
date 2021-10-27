@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Classifiable Animal,shape=partialRectangle,null,null,data_base
+201,Serengeti Image,shape=partialRectangle,null,null,data_base
+202,Zooniverse Admin,rounded=0,null,null,external_entity
+203,Detect Snapshot Serengeti Images With No Classifiable Animals In Snapshot Serengeti Images,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Classifiable Animal,endArrow=classic,203,200,endArrow=classic
+207,Serengeti Image,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Arrange drop-offs on my off days or during after-work hours.,ellipse,null,null,process
+200,Recycling Facility,shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Get The Hours Of Each Recycling Facility,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Recycling Facility,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Off days,rounded=0,null,null,external_entity
+1002,Off days,endArrow=classic,2,1001,endArrow=classic

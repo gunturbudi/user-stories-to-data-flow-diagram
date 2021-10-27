@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Behalf,shape=partialRectangle,null,null,data_base
+201,Depositor,rounded=0,null,null,external_entity
+202,Deposit On Behalf,ellipse,null,null,process
+203,Allow,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Behalf,endArrow=classic,202,200,endArrow=classic
+208,,endArrow=classic,203,202,endArrow=classic

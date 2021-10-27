@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Management" as thingdatamanagement #grey
+	entity "Cost" as thingcost
+	entity "Dmp" as thingdmp
+	actor "Funder" as actorfunder
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Read The\nCosts For\nData Management\nFrom The\nDmp" as controlreadcostdmp
+
+	thingdmp <.. thingdatamanagement
+	thingdatamanagement <.. thingcost
+	actorfunder --- thingdmpinterface
+	thingcost --- controlreadcostdmp
+	thingdatamanagement --- controlreadcostdmp
+	thingdmp --- controlreadcostdmp
+	thingdmpinterface --> controlreadcostdmp
+
+@enduml

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Environment" as thingenvironment
+	entity "Max Permission" as thingmaxpermission
+	actor "Owner" as actorowner
+	boundary "Environment\nInterface" as thingenvironmentinterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	control "Reset The\nEnvironment" as controlresetenvironmenttakestagemaxpermissions
+	control "Take" as controltakestagemaxpermissions
+	control "Staging Max\nPermissions" as controlstagemaxpermissions
+
+	actorowner --- thingenvironmentinterface
+	actorowner --- thingpermissioninterface
+	thingenvironment --- controlresetenvironmenttakestagemaxpermissions
+	thingenvironmentinterface --> controlresetenvironmenttakestagemaxpermissions
+	controlresetenvironmenttakestagemaxpermissions --> controltakestagemaxpermissions
+	thingenvironmentinterface --> controltakestagemaxpermissions
+	controltakestagemaxpermissions --> controlstagemaxpermissions
+	thingmaxpermission --- controlstagemaxpermissions
+	thingpermissioninterface --> controlstagemaxpermissions
+
+@enduml

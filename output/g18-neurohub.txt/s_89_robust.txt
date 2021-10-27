@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Have Any\nData" as controlhavedatum
+
+	actorresearcher --- thingdatuminterface
+	thingdatum --- controlhavedatum
+	thingdatuminterface --> controlhavedatum
+
+@enduml

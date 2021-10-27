@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Error,shape=partialRectangle,null,null,data_base
+202,Report,shape=partialRectangle,null,null,data_base
+203,Revise Report,shape=partialRectangle,null,null,data_base
+204,Document,shape=partialRectangle,null,null,data_base
+205,Db,rounded=0,null,null,external_entity
+206,Ir Administrator,rounded=0,null,null,external_entity
+207,Upload Revised Report,ellipse,null,null,process
+208,Upload Due Dataset To Error In Document,ellipse,null,null,process
+209,Upload Due Dataset To Error In Report,ellipse,null,null,process
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,,endArrow=classic,205,209,endArrow=classic
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,Revise Report,endArrow=classic,207,203,endArrow=classic
+218,Document,endArrow=classic,208,204,endArrow=classic
+219,Dataset,endArrow=classic,208,200,endArrow=classic
+220,Dataset,endArrow=classic,209,200,endArrow=classic
+222,Error,endArrow=classic,208,201,endArrow=classic
+223,Report,endArrow=classic,207,202,endArrow=classic

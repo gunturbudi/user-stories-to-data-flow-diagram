@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Story " color=red];
+201 [label="<f0>  |<f1> Spreadsheet " ];
+202 [label="Moderator" shape=box];
+203 [label="{<f0> 1.0|<f1> Copy Stories From A Spreadsheet }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Paste Stories From A Spreadsheet }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Story"]
+203 -> 201 [label="Spreadsheet"]
+204 -> 200 [label="Story"]
+204 -> 201 [label="Spreadsheet"]
+}

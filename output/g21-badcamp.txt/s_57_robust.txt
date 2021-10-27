@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Approve Session" as thingapprovesession
+	actor "Administrator" as actoradministrator
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	control "Bulk Approve\nSessions" as controlbulkapprovesessions
+
+	actoradministrator --- thingsessioninterface
+	thingapprovesession --- controlbulkapprovesessions
+	thingsessioninterface --> controlbulkapprovesessions
+
+@enduml

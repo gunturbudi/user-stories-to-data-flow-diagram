@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	actor "User" as actoruser
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Contact Repositories" as controlcontactrepository
+
+	actoruser --- thingrepositoryinterface
+	thingrepository --- controlcontactrepository
+	thingrepositoryinterface --> controlcontactrepository
+
+@enduml

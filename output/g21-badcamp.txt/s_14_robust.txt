@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Trainee Information" as thingtraineeinformation #grey
+	entity "View" as thingview #grey
+	entity "Training Session" as thingtrainingsession
+	entity "Admin" as thingadmin #grey
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Show A\nSingle Training\nSession" as controlshowsingletrainingsession
+	control "Filter" as controlfiltershowsingletrainingsession
+	control "Have An\nView" as controlhaveviewfiltershowsingletrainingsession
+	control "Have An\nAdmin View\nAll Trainee\nInformation Where\nShown" as controlhaveadminview
+
+	thingadmin <.. thingview
+	thingtraineeinformation <.. thingview
+	actortrainingcoordinator --- thingviewinterface
+	actortrainingcoordinator --- thinginformationinterface
+	thingtrainingsession --- controlshowsingletrainingsession
+	controlfiltershowsingletrainingsession --> controlshowsingletrainingsession
+	thingviewinterface --> controlshowsingletrainingsession
+	controlhaveviewfiltershowsingletrainingsession --> controlfiltershowsingletrainingsession
+	thingviewinterface --> controlfiltershowsingletrainingsession
+	thingview --- controlhaveviewfiltershowsingletrainingsession
+	thingviewinterface --> controlhaveviewfiltershowsingletrainingsession
+	thingtraineeinformation --- controlhaveadminview
+	thinginformationinterface --> controlhaveadminview
+	thingview --- controlhaveadminview
+
+@enduml

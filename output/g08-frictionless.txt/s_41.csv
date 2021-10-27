@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+3,Validate my data upon ingest to the service,ellipse,null,null,process
+200,Data .\nMendeley .\nCom,shape=partialRectangle,null,null,data_base
+201,Integration,shape=partialRectangle,null,null,data_base
+202,Https,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Provided With An Integration With Https,ellipse,null,null,process
+205,Provided With Data.Mendeley.Com,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Integration,endArrow=classic,204,201,endArrow=classic
+210,Https,endArrow=classic,204,202,endArrow=classic
+211,Data .\nMendeley .\nCom,endArrow=classic,205,200,endArrow=classic
+1000,,endArrow=classic,203,3,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,3,1001,endArrow=classic

@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+5,Send the notice of violation document to the property owner and log information about the action.,ellipse,null,null,process
+200,Citation,shape=partialRectangle,null,null,data_base
+201,Fine,shape=partialRectangle,null,null,data_base
+202,Staff Member,rounded=0,null,null,external_entity
+203,Send Citations,ellipse,null,null,process
+204,Send Fine,ellipse,null,null,process
+205,Post Fine,ellipse,null,null,process
+206,Post Citations,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,Citation,endArrow=classic,203,200,endArrow=classic
+213,Fine,endArrow=classic,204,201,endArrow=classic
+214,Fine,endArrow=classic,205,201,endArrow=classic
+215,Citation,endArrow=classic,206,200,endArrow=classic
+1000,,endArrow=classic,206,5,endArrow=classic
+1001,Notice of violation document,rounded=0,null,null,external_entity
+1002,Notice of violation document,endArrow=classic,5,1001,endArrow=classic

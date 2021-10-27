@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Coworking Slot,shape=partialRectangle,null,null,data_base
+201,Team Member,rounded=0,null,null,external_entity
+202,Have A Schedule Of More Coworking Slots,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Coworking Slot,endArrow=classic,202,200,endArrow=classic

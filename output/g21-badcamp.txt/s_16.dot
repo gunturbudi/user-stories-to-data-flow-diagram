@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Training " color=red];
+201 [label="<f0>  |<f1> Follow Information " ];
+202 [label="<f0>  |<f1> Link " ];
+203 [label="<f0>  |<f1> Registration " color=red];
+204 [label="<f0>  |<f1> Title " ];
+205 [label="<f0>  |<f1> Short Summary " ];
+206 [label="<f0>  |<f1> Remain Registration " color=red];
+207 [label="<f0>  |<f1> Trainer " ];
+208 [label="<f0>  |<f1> Day Register " color=red];
+209 [label="Anonymoususer" shape=box];
+210 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Find their class on on one page }" shape=Mrecord];
+209 -> 2
+1001 [label="<f0>  |<f1> Class " color=red];
+2 -> 1001 [label="Class"]
+}

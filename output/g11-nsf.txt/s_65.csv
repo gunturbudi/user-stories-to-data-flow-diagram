@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Plan my work,ellipse,null,null,process
+200,Project Timeline,shape=partialRectangle,null,null,data_base
+201,Level Sense,shape=partialRectangle,null,null,data_base
+202,Team Member,rounded=0,null,null,external_entity
+203,Have A High Level Sense Of The Project Timeline,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Level Sense,endArrow=classic,203,201,endArrow=classic
+207,Project Timeline,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Work,rounded=0,null,null,external_entity
+1002,Work,endArrow=classic,2,1001,endArrow=classic

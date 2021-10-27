@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Mediation" as thingmediation
+	entity "Archival ,\nDigitized Material" as thingarchivaldigitizedmaterial
+	actor "Researcher" as actorresearcher
+	boundary "Mediation\nInterface" as thingmediationinterface #grey
+	control "Access Archival,\nDigitized Materials\nWithout Mediation" as controlaccessarchivaldigitizedmaterialmediation
+
+	thingmediation <.. thingarchivaldigitizedmaterial
+	actorresearcher --- thingmediationinterface
+	thingarchivaldigitizedmaterial --- controlaccessarchivaldigitizedmaterialmediation
+	thingmediation --- controlaccessarchivaldigitizedmaterialmediation
+	thingmediationinterface --> controlaccessarchivaldigitizedmaterialmediation
+
+@enduml

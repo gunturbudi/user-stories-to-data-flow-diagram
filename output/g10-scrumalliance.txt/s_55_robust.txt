@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	entity "Date" as thingdate
+	entity "Publishing" as thingpublishing #grey
+	actor "Site Editor" as actorsiteeditor
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Set Start\nPublishing Dates" as controlsetstartpublishingdates
+	control "Publishing Dates\nFor Articles" as controlpublishdate
+	control "Stop" as controlstoppublishdate
+
+	thingarticle <.. thingdate
+	thingpublishing <.. thingdate
+	actorsiteeditor --- thingdateinterface
+	actorsiteeditor --- thingarticleinterface
+	thingdateinterface --> controlsetstartpublishingdates
+	thingdate --- controlsetstartpublishingdates
+	thingdate --- controlpublishdate
+	thingarticle --- controlpublishdate
+	controlstoppublishdate --> controlpublishdate
+	thingarticleinterface --> controlpublishdate
+	thingarticleinterface --> controlstoppublishdate
+
+@enduml

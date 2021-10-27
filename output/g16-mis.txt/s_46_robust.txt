@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Data Interface" as thingdatainterface
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Provide A\nLinked Data\nInterface To\nThe Repository" as controlprovidelinkeddatainterfacerepository
+
+	thingrepository <.. thingdatainterface
+	actorrepoadmin --- thingrepositoryinterface
+	thingdatainterface --- controlprovidelinkeddatainterfacerepository
+	thingrepository --- controlprovidelinkeddatainterfacerepository
+	thingrepositoryinterface --> controlprovidelinkeddatainterfacerepository
+
+@enduml

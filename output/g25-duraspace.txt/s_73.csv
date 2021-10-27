@@ -1,0 +1,26 @@
+id,value,style,source,target,type
+200,Name,shape=partialRectangle,null,null,data_base
+201,Search,shape=partialRectangle,null,null,data_base
+202,Etc,shape=partialRectangle,null,null,data_base
+203,Photographer,shape=partialRectangle,null,null,data_base
+204,Specific Role,shape=partialRectangle,null,null,data_base
+205,Illustrator,shape=partialRectangle,null,null,data_base
+206,User,rounded=0,null,null,external_entity
+207,Scope By Searches By Name To A Specific Role Such As Etc,ellipse,null,null,process
+208,Scope By Searches By Name To A Specific Role Such As Photographer,ellipse,null,null,process
+209,Scope By Searches By Name To A Specific Role Such As Illustrator,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,Etc,endArrow=classic,207,202,endArrow=classic
+215,Specific Role,endArrow=classic,207,204,endArrow=classic
+216,Name,endArrow=classic,207,200,endArrow=classic
+217,Search,endArrow=classic,207,201,endArrow=classic
+218,Photographer,endArrow=classic,208,203,endArrow=classic
+219,Specific Role,endArrow=classic,208,204,endArrow=classic
+220,Name,endArrow=classic,208,200,endArrow=classic
+221,Search,endArrow=classic,208,201,endArrow=classic
+222,Search,endArrow=classic,209,201,endArrow=classic
+223,Name,endArrow=classic,209,200,endArrow=classic
+224,Specific Role,endArrow=classic,209,204,endArrow=classic
+225,Illustrator,endArrow=classic,209,205,endArrow=classic

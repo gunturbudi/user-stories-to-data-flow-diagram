@@ -1,0 +1,33 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Material " color=red];
+201 [label="<f0>  |<f1> Place " ];
+202 [label="<f0>  |<f1> Variety " ];
+203 [label="<f0>  |<f1> Extra Step " ];
+204 [label="<f0>  |<f1> County " color=red];
+205 [label="<f0>  |<f1> Datum " ];
+206 [label="<f0>  |<f1> Presentation " color=red];
+207 [label="<f0>  |<f1> Document " color=red];
+208 [label="<f0>  |<f1> Project " color=red];
+209 [label="<f0>  |<f1> Region Site " ];
+210 [label="Extension Educator" shape=box];
+211 [label="{<f0> 1.0|<f1> Have A Place }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Store A Variety Of Datum }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Store A Variety Of Presentation }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Store A Variety Of Documents }" shape=Mrecord];
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+211 -> 212
+211 -> 213
+211 -> 214
+211 -> 201 [label="Place"]
+211 -> 202 [label="Variety"]
+212 -> 205 [label="Datum"]
+212 -> 202 [label="Variety"]
+213 -> 206 [label="Presentation"]
+213 -> 202 [label="Variety"]
+214 -> 202 [label="Variety"]
+214 -> 207 [label="Document"]
+}

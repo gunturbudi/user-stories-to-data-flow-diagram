@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reference" as thingreference
+	entity "Documentation" as thingdocumentation
+	entity "Datum" as thingdatum
+	entity "Creation Process" as thingcreationprocess #grey
+	actor "Data Manager" as actordatamanager
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Have References\nTo Documentation\nOf Creation\nProcess" as controlhavereferencecreationprocess
+	control "Have References\nTo Documentation\nOf The\nData" as controlhavereference
+
+	thingdocumentation <.. thingreference
+	thingdatum *-- thingdocumentation
+	thingcreationprocess *-- thingdocumentation
+	actordatamanager --- thingprocessinterface
+	actordatamanager --- thingdatuminterface
+	thingcreationprocess --- controlhavereferencecreationprocess
+	thingprocessinterface --> controlhavereferencecreationprocess
+	thingreference --- controlhavereferencecreationprocess
+	thingdocumentation --- controlhavereferencecreationprocess
+	thingreference --- controlhavereference
+	thingdocumentation --- controlhavereference
+	thingdatum --- controlhavereference
+	thingdatuminterface --> controlhavereference
+
+@enduml

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Viewer,shape=partialRectangle,null,null,data_base
+201,Data Types\nHierarchy,shape=partialRectangle,null,null,data_base
+202,Platform Administrator,rounded=0,null,null,external_entity
+203,Translate The Data Types Hierarchies Of The Viewer,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Types\nHierarchy,endArrow=classic,203,201,endArrow=classic
+207,Viewer,endArrow=classic,203,200,endArrow=classic

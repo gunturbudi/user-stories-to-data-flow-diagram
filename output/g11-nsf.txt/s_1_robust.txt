@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Beta" as thingbeta
+	entity "Cloud .\nGov" as thingcloud.gov
+	actor "Team Member" as actorteammember
+	circle "Iteration" as thingfirstiteration
+	boundary "Cloud.Gov\nInterface" as thingcloudgovinterface #grey
+	control "See The\nFirst Iteration\nOf Beta\nUp On\nCloud.Gov" as controlseefirstiteration
+
+	thingcloud.gov <.. thingbeta
+	thingbeta *-- thingfirstiteration
+	actorteammember --- thingcloudgovinterface
+	thingfirstiteration --- controlseefirstiteration
+	thingbeta --- controlseefirstiteration
+	thingcloud.gov --- controlseefirstiteration
+	thingcloudgovinterface --> controlseefirstiteration
+
+@enduml

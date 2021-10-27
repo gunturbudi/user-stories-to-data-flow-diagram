@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Repository" as thingrepository
+	entity "Dmp" as thingdmp
+	actor "Student" as actorstudent
+	circle "Requirement" as thingrequirement
+	boundary "Embargoed Dissertation" as thingembargoeddissertationmeetrequirementstudent #grey
+	control "Upload To\nThe Repository\nThe Data\nAssociated With" as controluploadrepositorydatum
+	control "Meet Requirements\nOf A\nDmp" as controlmeetrequirement
+
+	thingdmp *-- thingrequirement
+	actorstudent --- thingembargoeddissertationmeetrequirementstudent
+	thingrepository --- controluploadrepositorydatum
+	thingdatum --- controluploadrepositorydatum
+	thingembargoeddissertationmeetrequirementstudent --> controluploadrepositorydatum
+	controluploadrepositorydatum --> controlmeetrequirement
+	thingrequirement --- controlmeetrequirement
+	thingdmp --- controlmeetrequirement
+	thingembargoeddissertationmeetrequirementstudent --> controlmeetrequirement
+
+@enduml

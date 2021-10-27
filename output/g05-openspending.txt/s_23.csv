@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Colour,shape=partialRectangle,null,null,data_base
+201,Map Visualisation,shape=partialRectangle,null,null,data_base
+202,"Datum , Consume User",rounded=0,null,null,external_entity
+203,Have Consistent Use Of Colour On Map Visualisations,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Colour,endArrow=classic,203,200,endArrow=classic
+207,Map Visualisation,endArrow=classic,203,201,endArrow=classic

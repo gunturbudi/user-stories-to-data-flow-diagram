@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Video " color=red];
+201 [label="<f0>  |<f1> Quality Aspect " ];
+202 [label="Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> V }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Filter Videos On }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Filter Videos On Quality Aspects }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Rank Videos On }" shape=Mrecord];
+207 [label="{<f0> 5.0|<f1> Rank Videos On Quality Aspects }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+202 -> 207
+204 -> 203
+204 -> 200 [label="Video"]
+205 -> 200 [label="Video"]
+205 -> 201 [label="Quality Aspect"]
+206 -> 203
+206 -> 200 [label="Video"]
+207 -> 200 [label="Video"]
+207 -> 201 [label="Quality Aspect"]
+}

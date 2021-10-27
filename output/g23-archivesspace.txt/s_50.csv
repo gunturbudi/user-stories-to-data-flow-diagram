@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Name Form,shape=partialRectangle,null,null,data_base
+201,Source,shape=partialRectangle,null,null,data_base
+202,Agent,shape=partialRectangle,null,null,data_base
+203,New Source,shape=partialRectangle,null,null,data_base
+204,Exist Source,shape=partialRectangle,null,null,data_base
+205,Archivist,rounded=0,null,null,external_entity
+206,Specify The Source For A Name Form Of An Agent,ellipse,null,null,process
+207,Add New Sources,ellipse,null,null,process
+208,Edit Existing Sources,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,Source,endArrow=classic,206,201,endArrow=classic
+213,Name Form,endArrow=classic,206,200,endArrow=classic
+214,Agent,endArrow=classic,206,202,endArrow=classic
+215,New Source,endArrow=classic,207,203,endArrow=classic
+216,Exist Source,endArrow=classic,208,204,endArrow=classic

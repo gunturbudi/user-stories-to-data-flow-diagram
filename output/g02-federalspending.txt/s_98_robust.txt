@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Quotation Mark" as thingquotationmark
+	entity "Data Element" as thingdataelement
+	actor "Agency User" as actoragencyuser
+	boundary "Element\nInterface" as thingelementinterface #grey
+	control "Submit Data\nElements Quotation\nMarks" as controlsubmitdataelements
+
+	actoragencyuser --- thingelementinterface
+	thingdataelement --- controlsubmitdataelements
+	thingelementinterface --> controlsubmitdataelements
+
+@enduml

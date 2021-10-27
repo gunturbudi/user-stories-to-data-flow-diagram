@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Author" as thingauthor
+	entity "Need Resource" as thingneededresource
+	entity "Content" as thingcontent
+	entity "Subject Area" as thingsubjectarea
+	actor "Patron" as actorpatron
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	control "Browse Content\nBy Author" as controlbrowsecontentlocateneededresource
+	control "Locate Needed\nResources" as controllocateneededresource
+	control "Browse Content\nBy Subject\nArea" as controlbrowsecontentsubjectarea
+
+	thingauthor <.. thingcontent
+	thingsubjectarea <.. thingcontent
+	actorpatron --- thingauthorinterface
+	actorpatron --- thingareainterface
+	actorpatron --- thingresourceinterface
+	thingcontent --- controlbrowsecontentlocateneededresource
+	thingauthor --- controlbrowsecontentlocateneededresource
+	thingauthorinterface --> controlbrowsecontentlocateneededresource
+	thingneededresource --- controllocateneededresource
+	thingresourceinterface --> controllocateneededresource
+	controlbrowsecontentlocateneededresource --> controllocateneededresource
+	thingsubjectarea --- controlbrowsecontentsubjectarea
+	thingareainterface --> controlbrowsecontentsubjectarea
+	thingcontent --- controlbrowsecontentsubjectarea
+
+@enduml

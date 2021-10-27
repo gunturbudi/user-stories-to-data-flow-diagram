@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Volunteer" as thingvolunteer
+	entity "Image" as thingimage
+	entity "Video" as thingvideo
+	entity "Text" as thingtext
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Text\nInterface" as thingtextinterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Know" as controlknow
+	control "Interrupt A\nVolunteer With\nA Video" as controlinterruptknowmoinsPRONmoinsvolunteervideo
+	control "Interrupt A\nVolunteer With\nAn Image" as controlinterruptknowmoinsPRONmoinsvolunteerimage
+	control "Interrupt A\nVolunteer With\nText" as controlinterruptknowvolunteer
+
+	thingtext <.. thingvolunteer
+	thingvideo <.. thingvolunteer
+	thingimage <.. thingvolunteer
+	actorzooniverseadmin --- thingtextinterface
+	controlinterruptknowvolunteer --> controlknow
+	thingtextinterface --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteervideo --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteerimage --> controlknow
+	thingvideo --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvideointerface --> controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingimage --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingimageinterface --> controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controlinterruptknowvolunteer
+	thingtext --- controlinterruptknowvolunteer
+	thingtextinterface --> controlinterruptknowvolunteer
+
+@enduml

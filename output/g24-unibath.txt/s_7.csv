@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,License,shape=partialRectangle,null,null,data_base
+202,Depositor,rounded=0,null,null,external_entity
+203,Apply Licenses To Datasets,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,License,endArrow=classic,203,201,endArrow=classic
+207,Dataset,endArrow=classic,203,200,endArrow=classic

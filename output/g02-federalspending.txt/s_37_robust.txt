@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile #grey
+	entity "Warning File" as thingwarningfile
+	entity "Error" as thingerror
+	entity "Submission" as thingsubmission #grey
+	actor "-pron-" as actormoinsPRONmoins #grey
+	actor "User" as actoruser
+	boundary "Flexfield" as thingflexfieldfilemoinsPRONmoinsuser
+	control "Appear In\nError" as controlappearflexfieldfilemoinsPRONmoinsusererror
+	control "Appear In\nThe Warning\nFiles" as controlappearflexfieldsubmissionfilemoinsPRONmoinsuserwarningfile
+
+	thingsubmission <.. thingfile
+	actoruser --- thingflexfieldfilemoinsPRONmoinsuser
+	actormoinsPRONmoins --- thingflexfieldfilemoinsPRONmoinsuser
+	thingflexfieldfilemoinsPRONmoinsuser --> controlappearflexfieldfilemoinsPRONmoinsusererror
+	thingfile --- controlappearflexfieldfilemoinsPRONmoinsusererror
+	thingerror --- controlappearflexfieldfilemoinsPRONmoinsusererror
+	thingwarningfile --- controlappearflexfieldsubmissionfilemoinsPRONmoinsuserwarningfile
+	thingfile --- controlappearflexfieldsubmissionfilemoinsPRONmoinsuserwarningfile
+	thingflexfieldfilemoinsPRONmoinsuser --> controlappearflexfieldsubmissionfilemoinsPRONmoinsuserwarningfile
+
+@enduml

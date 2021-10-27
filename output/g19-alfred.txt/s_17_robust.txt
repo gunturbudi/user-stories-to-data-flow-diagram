@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Low Price" as thinglowprice
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Price\nInterface" as thingpriceinterface #grey
+	control "Buy Alfred\nFor A\nLow Price" as controlbuyALFREDlowprice
+
+	thinglowprice <.. thingALFRED
+	actorOlderPerson --- thingpriceinterface
+	thingALFRED --- controlbuyALFREDlowprice
+	thinglowprice --- controlbuyALFREDlowprice
+	thingpriceinterface --> controlbuyALFREDlowprice
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Behalf" as thingbehalf
+	entity "Author" as thingauthor
+	entity "Material" as thingmaterial
+	entity "Repository" as thingrepository
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Behalf\nInterface" as thingbehalfinterface #grey
+	control "Upload Material\nTo The\nRepository On\nThe Author's\nBehalf" as controluploadmaterialrepository
+
+	thingauthor <.. thingbehalf
+	thingrepository <.. thingmaterial
+	thingbehalf <.. thingrepository
+	actorlibrarystaffmember --- thingbehalfinterface
+	thingmaterial --- controluploadmaterialrepository
+	thingrepository --- controluploadmaterialrepository
+	thingbehalf --- controluploadmaterialrepository
+	thingbehalfinterface --> controluploadmaterialrepository
+
+@enduml

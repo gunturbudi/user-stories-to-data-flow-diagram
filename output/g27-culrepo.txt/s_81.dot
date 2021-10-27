@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Useful Metadata " color=red];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Oai " ];
+203 [label="Librarydiscoveryoperator" shape=box];
+204 [label="{<f0> 1.0|<f1> Harvest Useful Metadata From The Repository Via Oai }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Continue }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Do }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Useful Metadata"]
+204 -> 201 [label="Repository"]
+204 -> 202 [label="Oai"]
+205 -> 206
+}

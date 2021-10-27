@@ -1,0 +1,4 @@
+id,value,style,source,target,type
+1,Use data packages in workflows that involve ms-sql,ellipse,null,null,process
+1000,Data packages,rounded=0,null,null,external_entity
+1001,Data packages,endArrow=classic,1,1000,endArrow=classic

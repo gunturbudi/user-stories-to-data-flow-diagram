@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Update " color=red];
+201 [label="<f0>  |<f1> Fabs Submission " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Add The Updates On A Fabs Submission To Modified }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

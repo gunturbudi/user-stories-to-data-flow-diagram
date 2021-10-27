@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Structured Datum" as thingstructureddatum
+	actor "Researcher" as actorresearcher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Search" as controlsearchusestructureddatum
+	control "Using Structured\nData" as controlusestructureddatum
+
+	actorresearcher --- thingdatuminterface
+	thingdatuminterface --> controlsearchusestructureddatum
+	controlsearchusestructureddatum --> controlusestructureddatum
+	thingstructureddatum --- controlusestructureddatum
+	thingdatuminterface --> controlusestructureddatum
+
+@enduml

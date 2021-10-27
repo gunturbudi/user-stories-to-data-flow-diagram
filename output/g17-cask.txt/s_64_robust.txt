@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Explore" as thingexplore
+	entity "Dataset" as thingdataset
+	actor "User" as actoruser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Disable Explore\nFor A\nDataset Configured\nFor Initially\nExplore" as controldisableexplore
+
+	thingdataset <.. thingexplore
+	thingexplore <.. thingdataset
+	actoruser --- thingdatasetinterface
+	thingdataset --- controldisableexplore
+	thingdatasetinterface --> controldisableexplore
+	thingexplore --- controldisableexplore
+
+@enduml

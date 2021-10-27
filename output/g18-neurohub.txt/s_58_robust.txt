@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Consumable" as thingconsumable
+	entity "Equipment" as thingequipment
+	entity "Centre" as thingcentre
+	entity "Inventory" as thinginventory
+	actor "User" as actoruser
+	boundary "Consumable\nInterface" as thingconsumableinterface #grey
+	boundary "Centre\nInterface" as thingcentreinterface #grey
+	control "View An\nInventory Of\nConsumable" as controlviewinventoryconsumable
+	control "View An\nInventory Of\nThe Equipment\nAre Present\nIn The\nCentre" as controlviewinventory
+	control "Update An\nInventory Of\nConsumable" as controlupdateinventoryconsumable
+	control "Update An\nInventory Of\nThe Equipment\nAre Present\nIn The\nCentre" as controlupdateinventory
+
+	thingcentre <.. thingequipment
+	thingequipment *-- thinginventory
+	thingconsumable *-- thinginventory
+	actoruser --- thingconsumableinterface
+	actoruser --- thingcentreinterface
+	thingconsumable --- controlviewinventoryconsumable
+	thingconsumableinterface --> controlviewinventoryconsumable
+	thinginventory --- controlviewinventoryconsumable
+	thinginventory --- controlviewinventory
+	thingequipment --- controlviewinventory
+	thingcentre --- controlviewinventory
+	thingcentreinterface --> controlviewinventory
+	thingconsumable --- controlupdateinventoryconsumable
+	thingconsumableinterface --> controlupdateinventoryconsumable
+	thinginventory --- controlupdateinventoryconsumable
+	thingequipment --- controlupdateinventory
+	thingcentre --- controlupdateinventory
+	thinginventory --- controlupdateinventory
+	thingcentreinterface --> controlupdateinventory
+
+@enduml

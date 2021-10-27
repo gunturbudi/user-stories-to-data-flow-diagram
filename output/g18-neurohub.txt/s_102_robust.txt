@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Execution History" as thingexecutionhistory #grey
+	entity "Workflow" as thingworkflow
+	entity "Detail" as thingdetail
+	entity "Result" as thingresult
+	entity "Neurohub" as thingneurohub
+	actor "Researcher" as actorresearcher
+	circle "Plan" as thingplan #grey
+	boundary "Result\nInterface" as thingresultinterface #grey
+	boundary "Workflow\nInterface" as thingworkflowinterface #grey
+	control "Have The\nDetails Of\nResult" as controlhavedetailresult
+	control "Have The\nDetails Of\nThe As\nWell Workflow\nPlan" as controlhavedetail
+	control "Have The\nDetails Of\nThe Execution\nHistory In\nNeurohub Executing\nA Workflow" as controlhavedetailexecutionhistory
+
+	thingneurohub <.. thingexecutionhistory
+	thingplan *-- thingdetail
+	thingworkflow *-- thingdetail
+	thingresult *-- thingdetail
+	thingexecutionhistory *-- thingdetail
+	thingworkflow <.. thingneurohub
+	thingworkflow *-- thingplan
+	actorresearcher --- thingresultinterface
+	actorresearcher --- thingworkflowinterface
+	thingresult --- controlhavedetailresult
+	thingresultinterface --> controlhavedetailresult
+	thingdetail --- controlhavedetailresult
+	thingdetail --- controlhavedetail
+	thingplan --- controlhavedetail
+	thingworkflowinterface --> controlhavedetail
+	thingexecutionhistory --- controlhavedetailexecutionhistory
+	thingneurohub --- controlhavedetailexecutionhistory
+	thingworkflow --- controlhavedetailexecutionhistory
+	thingworkflowinterface --> controlhavedetailexecutionhistory
+	thingdetail --- controlhavedetailexecutionhistory
+
+@enduml

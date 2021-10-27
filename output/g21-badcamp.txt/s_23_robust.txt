@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Company Sponsorship" as thingcompanysponsorship
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Sponsorship\nInterface" as thingsponsorshipinterface #grey
+	control "Identify" as controlidentify
+	control "Pay For\nA $\nCompany Sponsorship" as controlpaydollarcompanysponsorship
+
+	actorauthenticateduser --- thingsponsorshipinterface
+	thingcompanysponsorship --- controlpaydollarcompanysponsorship
+	thingsponsorshipinterface --> controlpaydollarcompanysponsorship
+
+@enduml

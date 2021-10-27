@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deposit Dataset" as thingdepositeddataset
+	entity "Check" as thingcheck
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Make Some\nChecks On\nDeposited Datasets" as controlmakecheckdepositeddataset
+
+	thingdepositeddataset <.. thingcheck
+	actorbathdataarchiveadministrator --- thingdatasetinterface
+	thingcheck --- controlmakecheckdepositeddataset
+	thingdepositeddataset --- controlmakecheckdepositeddataset
+	thingdatasetinterface --> controlmakecheckdepositeddataset
+
+@enduml

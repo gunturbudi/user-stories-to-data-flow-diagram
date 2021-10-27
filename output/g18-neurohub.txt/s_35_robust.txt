@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Regular User" as thingregularuser
+	entity "Access" as thingaccess
+	entity "System" as thingsystem
+	actor "Lab Administrator" as actorlabadministrator
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Increased Access\nTo The\nSystem" as controlincreaseaccesssupportregularuser
+	control "Support Regular\nUsers" as controlsupportregularuser
+
+	thingsystem <.. thingaccess
+	actorlabadministrator --- thingsysteminterface
+	actorlabadministrator --- thinguserinterface
+	thingaccess --- controlincreaseaccesssupportregularuser
+	thingsystem --- controlincreaseaccesssupportregularuser
+	thingsysteminterface --> controlincreaseaccesssupportregularuser
+	controlincreaseaccesssupportregularuser --> controlsupportregularuser
+	thingregularuser --- controlsupportregularuser
+	thinguserinterface --> controlsupportregularuser
+
+@enduml

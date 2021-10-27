@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archive " color=red];
+201 [label="<f0>  |<f1> Ldap " ];
+202 [label="<f0>  |<f1> University System " ];
+203 [label="Univitservice" shape=box];
+204 [label="{<f0> 1.0|<f1> Integrate The Archive With Existing University Systems Such As Ldap }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Archive"]
+204 -> 202 [label="University System"]
+204 -> 201 [label="Ldap"]
+}

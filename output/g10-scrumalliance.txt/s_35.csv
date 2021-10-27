@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Course,shape=partialRectangle,null,null,data_base
+201,Site Visitor,rounded=0,null,null,external_entity
+202,View A Course,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Course,endArrow=classic,202,200,endArrow=classic

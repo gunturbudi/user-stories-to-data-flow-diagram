@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Ead,shape=partialRectangle,null,null,data_base
+201,Description,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Export A Description As Ead,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Description,endArrow=classic,203,201,endArrow=classic
+207,Ead,endArrow=classic,203,200,endArrow=classic

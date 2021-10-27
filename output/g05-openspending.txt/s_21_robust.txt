@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Social Network" as thingsocialnetwork
+	entity "View State" as thingviewstate
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	circle "Image" as thingimage
+	boundary "Network\nInterface" as thingnetworkinterface #grey
+	control "Share An\nImage Of\nA Particular\nView State\nTo The\nSocial Networks\nSupport This" as controlshareimagesocialnetwork
+
+	thingsocialnetwork <.. thingviewstate
+	thingviewstate *-- thingimage
+	actordataconsuminguser --- thingnetworkinterface
+	thingimage --- controlshareimagesocialnetwork
+	thingviewstate --- controlshareimagesocialnetwork
+	thingsocialnetwork --- controlshareimagesocialnetwork
+	thingnetworkinterface --> controlshareimagesocialnetwork
+
+@enduml

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content" as thingcontent
+	entity "Metadata" as thingmetadata
+	entity "Repository" as thingrepository
+	entity "Robust Manner" as thingrobustmanner
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Manner\nInterface" as thingmannerinterface #grey
+	control "Preserve The\nMetadata Within\nThe Repository" as controlpreservemetadata
+	control "Preserve The\nContent In\nA Robust\nManner" as controlpreservecontentrobustmanner
+
+	thingrobustmanner <.. thingcontent
+	thingrepository <.. thingmetadata
+	actorlibrarystaffmember --- thingrepositoryinterface
+	actorlibrarystaffmember --- thingmannerinterface
+	thingmetadata --- controlpreservemetadata
+	thingrepository --- controlpreservemetadata
+	thingrepositoryinterface --> controlpreservemetadata
+	thingcontent --- controlpreservecontentrobustmanner
+	thingrobustmanner --- controlpreservecontentrobustmanner
+	thingmannerinterface --> controlpreservecontentrobustmanner
+
+@enduml

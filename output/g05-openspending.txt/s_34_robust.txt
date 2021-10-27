@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Population" as thingpopulation
+	entity "Measure" as thingmeasure
+	actor "Api User" as actorapiuser
+	boundary "Population\nInterface" as thingpopulationinterface #grey
+	control "Normalise Measures\nBy Population" as controlnormalisemeasure
+
+	thingpopulation <.. thingmeasure
+	actorapiuser --- thingpopulationinterface
+	thingmeasure --- controlnormalisemeasure
+	thingpopulation --- controlnormalisemeasure
+	thingpopulationinterface --> controlnormalisemeasure
+
+@enduml

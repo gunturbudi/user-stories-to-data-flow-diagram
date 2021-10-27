@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Pertinent Statute " ];
+202 [label="<f0>  |<f1> Object Component " color=red];
+203 [label="Dams Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know The Pertinent Statutes To Object }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know The Pertinent Statutes To An Object Component }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Object"]
+204 -> 201 [label="Pertinent Statute"]
+205 -> 201 [label="Pertinent Statute"]
+205 -> 202 [label="Object Component"]
+}

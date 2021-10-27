@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Bulk" as thingbulk
+	entity "Enum Value" as thingenumvalue #grey
+	actor "User" as actoruser
+	boundary "Backend Change" as thingbackendchangesbulkupdateenumvalueanotheruser #grey
+	control "Update Enum\nValue To\nAnother" as controlupdateenumvalueanother
+
+	actoruser --- thingbackendchangesbulkupdateenumvalueanotheruser
+	thingenumvalue --- controlupdateenumvalueanother
+	thingbackendchangesbulkupdateenumvalueanotheruser --> controlupdateenumvalueanother
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ingested Content " color=red];
+201 [label="<f0>  |<f1> Copyright Infringement " ];
+202 [label="Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Validated The Ingested Contents For Copyright Infringement }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Ingested Content"]
+203 -> 201 [label="Copyright Infringement"]
+}

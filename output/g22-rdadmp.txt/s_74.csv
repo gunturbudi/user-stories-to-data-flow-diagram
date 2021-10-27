@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+2,Share data manager posts,ellipse,null,null,process
+200,Researcher,shape=partialRectangle,null,null,data_base
+201,Role,shape=partialRectangle,null,null,data_base
+202,Department,shape=partialRectangle,null,null,data_base
+203,Section,shape=partialRectangle,null,null,data_base
+204,Researcher,rounded=0,null,null,external_entity
+205,See The Sections On Roles Other Researchers In Department,ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Section,endArrow=classic,205,203,endArrow=classic
+209,Role,endArrow=classic,205,201,endArrow=classic
+210,Department,endArrow=classic,205,202,endArrow=classic
+211,Researcher,endArrow=classic,205,200,endArrow=classic
+1000,,endArrow=classic,205,2,endArrow=classic
+1001,Posts,rounded=0,null,null,external_entity
+1002,Posts,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,26 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Document " color=red];
+201 [label="<f0>  |<f1> Collection " color=red];
+202 [label="<f0>  |<f1> Organization " color=red];
+203 [label="<f0>  |<f1> Distinctive Branding " ];
+204 [label="Cornell , Faculty Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Create A Collection For Documents }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Create A Collection For Organization's Document }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Apply Some Distinctive Branding To That Collection }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Promote my work, or that of my organization }" shape=Mrecord];
+207 -> 4
+1001 [label="<f0>  |<f1> Work " color=red];
+4 -> 1001 [label="Work"]
+4 -> 202  [label="Organization"]
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 201 [label="Collection"]
+205 -> 200 [label="Document"]
+206 -> 200 [label="Document"]
+206 -> 201 [label="Collection"]
+207 -> 203 [label="Distinctive Branding"]
+207 -> 201 [label="Collection"]
+206 -> 202 [label="Organization"]
+}

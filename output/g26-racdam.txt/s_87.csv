@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Index Card,shape=partialRectangle,null,null,data_base
+201,Finding Aid,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Search Index Cards,ellipse,null,null,process
+204,"Search Public, Other Finding Aid",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Index Card,endArrow=classic,203,200,endArrow=classic
+209,Finding Aid,endArrow=classic,204,201,endArrow=classic

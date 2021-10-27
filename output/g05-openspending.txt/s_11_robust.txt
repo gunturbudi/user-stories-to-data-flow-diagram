@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Json" as thingJSON
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Json\nInterface" as thingjsoninterface #grey
+	control "Import Data\nIn Json" as controlimportdatumJSON
+
+	thingJSON <.. thingdatum
+	actordatapublishinguser --- thingjsoninterface
+	thingdatum --- controlimportdatumJSON
+	thingJSON --- controlimportdatumJSON
+	thingjsoninterface --> controlimportdatumJSON
+
+@enduml

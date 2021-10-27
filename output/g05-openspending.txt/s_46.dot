@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Python Client " ];
+201 [label="Datum , Publishing User" shape=box];
+202 [label="{<f0> 1.0|<f1> Have A Functioning Python Client }" shape=Mrecord];
+201 -> 202
+202 -> 200
+}

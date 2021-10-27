@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Funding" as thingfunding
+	entity "Dataset" as thinggivendataset
+	actor "Researcherpublisher" as actorResearcherPublisher
+	circle "Creation" as thingcreation
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Specify The\nFunding Contributed\nTo The\nCreation Of\nA Given\nDataset" as controlspecifyfunding
+
+	thingcreation <.. thingfunding
+	thinggivendataset *-- thingcreation
+	actorResearcherPublisher --- thingdatasetinterface
+	thingfunding --- controlspecifyfunding
+	thingcreation --- controlspecifyfunding
+	thinggivendataset --- controlspecifyfunding
+	thingdatasetinterface --> controlspecifyfunding
+
+@enduml

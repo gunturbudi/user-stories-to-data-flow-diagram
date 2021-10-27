@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Match ,\nService" as thingmatchmakingservice
+	entity "Packaging Datum" as thingpackagingdatum
+	actor "actora" as actora
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Provided With\nAn App\nActs As\nA Match,\nMaking Service\nFor Packaging\nData" as controlprovideapp
+
+	thingmatchmakingservice <.. thingapp
+	thingpackagingdatum <.. thingmatchmakingservice
+	actora --- thingdatuminterface
+	thingapp --- controlprovideapp
+	thingmatchmakingservice --- controlprovideapp
+	thingpackagingdatum --- controlprovideapp
+	thingdatuminterface --> controlprovideapp
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Feather Integration" as thingfeatherintegration #grey
+	actor "Developer" as actordeveloper
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	control "Provided With\nFeather Integration" as controlprovidefeatherintegration
+
+	actordeveloper --- thingintegrationinterface
+	thingfeatherintegration --- controlprovidefeatherintegration
+	thingintegrationinterface --> controlprovidefeatherintegration
+
+@enduml

@@ -1,0 +1,52 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Important Feature" as thingimportantfeature
+	entity "Flooding" as thingflooding
+	entity "Area" as thingarea
+	entity "Damage" as thingdamage
+	entity "Temporary Shelter" as thingtemporaryshelter
+	entity "Satellite Image" as thingsatelliteimage
+	entity "Roads Etc" as thingroadsetc
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Damage\nInterface" as thingdamageinterface #grey
+	boundary "Shelter\nInterface" as thingshelterinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Damage" as controldetectimportantfeaturedamage
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Temporary\nShelter" as controldetectimportantfeaturetemporaryshelter
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Flooding\nIn The\nSatellite Images" as controldetectimportantfeature
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Blocked\nRoads Etc" as controldetectimportantfeatureblockedroadsetc
+
+	thingarea <.. thingimportantfeature
+	thingsatelliteimage <.. thingflooding
+	thingflooding *-- thingarea
+	thingsatelliteimage *-- thingarea
+	thingtemporaryshelter *-- thingarea
+	thingroadsetc *-- thingarea
+	thingdamage *-- thingarea
+	actorzooniverseadmin --- thingdamageinterface
+	actorzooniverseadmin --- thingshelterinterface
+	actorzooniverseadmin --- thingimageinterface
+	actorzooniverseadmin --- thingetcinterface
+	thingdamage --- controldetectimportantfeaturedamage
+	thingdamageinterface --> controldetectimportantfeaturedamage
+	thingimportantfeature --- controldetectimportantfeaturedamage
+	thingarea --- controldetectimportantfeaturedamage
+	thingtemporaryshelter --- controldetectimportantfeaturetemporaryshelter
+	thingshelterinterface --> controldetectimportantfeaturetemporaryshelter
+	thingimportantfeature --- controldetectimportantfeaturetemporaryshelter
+	thingarea --- controldetectimportantfeaturetemporaryshelter
+	thingimportantfeature --- controldetectimportantfeature
+	thingarea --- controldetectimportantfeature
+	thingflooding --- controldetectimportantfeature
+	thingsatelliteimage --- controldetectimportantfeature
+	thingimageinterface --> controldetectimportantfeature
+	thingroadsetc --- controldetectimportantfeatureblockedroadsetc
+	thingetcinterface --> controldetectimportantfeatureblockedroadsetc
+	thingimportantfeature --- controldetectimportantfeatureblockedroadsetc
+	thingarea --- controldetectimportantfeatureblockedroadsetc
+
+@enduml

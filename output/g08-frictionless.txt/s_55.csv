@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Useful Metadata,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,Data Column,shape=partialRectangle,null,null,data_base
+203,Publisher,rounded=0,null,null,external_entity
+204,Add Useful Metadata,ellipse,null,null,process
+205,Add In New Data Columns,ellipse,null,null,process
+206,Make The Dataset,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Useful Metadata,endArrow=classic,204,200,endArrow=classic
+212,,endArrow=classic,205,206,endArrow=classic
+213,Data Column,endArrow=classic,205,202,endArrow=classic
+214,Dataset,endArrow=classic,206,201,endArrow=classic

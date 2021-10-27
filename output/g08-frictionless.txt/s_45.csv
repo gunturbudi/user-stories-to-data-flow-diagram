@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Click,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Researcherpublisher,rounded=0,null,null,external_entity
+203,Provided Validate Data With A Minimum Of Clicks,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Datum,endArrow=classic,203,201,endArrow=classic
+207,Click,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Centre " ];
+201 [label="<f0>  |<f1> System " ];
+202 [label="<f0>  |<f1> Standard Metadata " color=red];
+203 [label="<f0>  |<f1> Researcher " color=red];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Have The System }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Provide Standard Metadata }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 206
+205 -> 201 [label="System"]
+206 -> 202 [label="Standard Metadata"]
+}

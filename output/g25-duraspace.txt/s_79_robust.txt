@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Description" as thingdescription
+	entity "Resource" as thingresource
+	actor "User" as actoruser
+	circle "Pertinent ,\nVersion" as thingpertinentotherversion
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	control "Know Of\nDescription" as controlknowdescription
+	control "Know Of\nAll Pertinent,\nOther Versions\nOf The\nResource" as controlknowpertinentotherversion
+
+	thingresource *-- thingpertinentotherversion
+	actoruser --- thingdescriptioninterface
+	actoruser --- thingresourceinterface
+	thingdescription --- controlknowdescription
+	thingdescriptioninterface --> controlknowdescription
+	thingpertinentotherversion --- controlknowpertinentotherversion
+	thingresource --- controlknowpertinentotherversion
+	thingresourceinterface --> controlknowpertinentotherversion
+
+@enduml

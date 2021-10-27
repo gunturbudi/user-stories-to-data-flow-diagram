@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Requirement" as thingrequirement
+	actor "Applicant" as actorapplicant
+	boundary "Requirement\nInterface" as thingrequirementinterface #grey
+	control "Satisfy" as controlsatisfyhearingrequirement
+	control "Hearing Requirements" as controlhearingrequirement
+
+	actorapplicant --- thingrequirementinterface
+	thingrequirementinterface --> controlsatisfyhearingrequirement
+	controlsatisfyhearingrequirement --> controlhearingrequirement
+	thingrequirement --- controlhearingrequirement
+	thingrequirementinterface --> controlhearingrequirement
+
+@enduml

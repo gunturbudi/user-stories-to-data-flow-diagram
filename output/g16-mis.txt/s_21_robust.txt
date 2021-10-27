@@ -1,0 +1,50 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Submitter" as thingsubmitter
+	entity "License" as thinglicense
+	entity "Selection" as thingselection
+	entity "Deposit" as thingdeposit
+	entity "Specific License" as thingspecificlicense
+	actor "Repoadmin" as actorrepoadmin
+	boundary "User" as thinguserrepoadmin
+	boundary "License\nInterface" as thinglicenseinterface #grey
+	control "Have" as controlhavepresentuserrepoadminpresentuserrepoadminselection
+	control "Denied" as controldenyacceptsubmitterlicense
+	control "The Submitter\nNot Accept\nThe License" as controlacceptsubmitterlicense
+	control "Presented With\nA License" as controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nThe Collection" as controlpresentuserrepoadminselection
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nDeposit" as controlpresentuserrepoadminselectiondeposit
+
+	thinglicense <.. thingsubmitter
+	thingspecificlicense *-- thingselection
+	thingcollection <.. thingspecificlicense
+	actorrepoadmin --- thinguserrepoadmin
+	actorrepoadmin --- thinglicenseinterface
+	thinguserrepoadmin --> controlhavepresentuserrepoadminpresentuserrepoadminselection
+	thingspecificlicense --- controlhavepresentuserrepoadminpresentuserrepoadminselection
+	thingselection --- controlhavepresentuserrepoadminpresentuserrepoadminselection
+	thinglicenseinterface --> controldenyacceptsubmitterlicense
+	controlpresentuserrepoadminlicensedenyacceptsubmitterlicense --> controldenyacceptsubmitterlicense
+	controldenyacceptsubmitterlicense --> controlacceptsubmitterlicense
+	thingsubmitter --- controlacceptsubmitterlicense
+	thinglicense --- controlacceptsubmitterlicense
+	thinglicenseinterface --> controlacceptsubmitterlicense
+	thinguserrepoadmin --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thinglicense --- controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	controlhavepresentuserrepoadminpresentuserrepoadminselection --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	controlhavepresentuserrepoadminpresentuserrepoadminselection --> controlpresentuserrepoadminselection
+	thingselection --- controlpresentuserrepoadminselection
+	thingspecificlicense --- controlpresentuserrepoadminselection
+	thingcollection --- controlpresentuserrepoadminselection
+	thinguserrepoadmin --> controlpresentuserrepoadminselection
+	thingdeposit --- controlpresentuserrepoadminselectiondeposit
+	thingspecificlicense --- controlpresentuserrepoadminselectiondeposit
+	thinguserrepoadmin --> controlpresentuserrepoadminselectiondeposit
+	thingselection --- controlpresentuserrepoadminselectiondeposit
+	controlhavepresentuserrepoadminpresentuserrepoadminselection --> controlpresentuserrepoadminselectiondeposit
+
+@enduml

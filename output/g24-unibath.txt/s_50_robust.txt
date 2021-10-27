@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Api" as thingapi
+	entity "Sword2" as thingSWORD2
+	entity "Dataset" as thingdataset
+	actor "Developer" as actordeveloper
+	boundary "Sword2\nInterface" as thingsword2interface #grey
+	control "Deposit Datasets\nVia An\nApi Such\nAs Sword2" as controldepositdatasetapi
+	control "Maintain Datasets\nVia An\nApi Such\nAs Sword2" as controlmaintaindatasetapi
+
+	thingSWORD2 <.. thingapi
+	thingapi <.. thingdataset
+	actordeveloper --- thingsword2interface
+	thingdataset --- controldepositdatasetapi
+	thingapi --- controldepositdatasetapi
+	thingSWORD2 --- controldepositdatasetapi
+	thingsword2interface --> controldepositdatasetapi
+	thingapi --- controlmaintaindatasetapi
+	thingSWORD2 --- controlmaintaindatasetapi
+	thingdataset --- controlmaintaindatasetapi
+	thingsword2interface --> controlmaintaindatasetapi
+
+@enduml

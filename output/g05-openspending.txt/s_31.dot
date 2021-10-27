@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Different Currency " ];
+201 [label="<f0>  |<f1> Monetary Measure " color=red];
+202 [label="Api User" shape=box];
+203 [label="{<f0> 1.0|<f1> Get A Set Of Monetary Measures To Different Currencies }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

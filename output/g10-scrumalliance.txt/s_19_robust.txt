@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "News" as thingnews
+	entity "Rss Feed" as thingrssfeed #grey
+	actor "Site Member" as actorsitemember
+	boundary "News\nInterface" as thingnewsinterface #grey
+	control "Subscribe To\nAn Rss\nFeed Of\nNews" as controlsubscriberssfeed
+
+	thingnews <.. thingrssfeed
+	actorsitemember --- thingnewsinterface
+	thingrssfeed --- controlsubscriberssfeed
+	thingnews --- controlsubscriberssfeed
+	thingnewsinterface --> controlsubscriberssfeed
+
+@enduml

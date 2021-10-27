@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Show my work to users of the data.,ellipse,null,null,process
+200,Data Package,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Publisher,rounded=0,null,null,external_entity
+203,Provide A Visualization Of Data In The Data Package,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Datum,endArrow=classic,203,201,endArrow=classic
+207,Data Package,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Analysis,rounded=0,null,null,external_entity
+1002,Analysis,endArrow=classic,2,1001,endArrow=classic
+1003,Work,rounded=0,null,null,external_entity
+1004,Work,endArrow=classic,2,1003,endArrow=classic

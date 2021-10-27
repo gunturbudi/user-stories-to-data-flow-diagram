@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Work" as thingwork
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Understand Work" as controlunderstandwork
+
+	actornsfemployee --- thingworkinterface
+	thingwork --- controlunderstandwork
+	thingworkinterface --> controlunderstandwork
+
+@enduml

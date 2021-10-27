@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Cube ,\nBased Query " ];
+201 [label="<f0>  |<f1> Csv Output " ];
+202 [label="Api User" shape=box];
+203 [label="{<f0> 1.0|<f1> Get A Csv Output Of Any Cube, Based Query }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

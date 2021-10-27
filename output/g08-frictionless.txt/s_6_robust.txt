@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package\nProfile" as thingdatapackageprofile #grey
+	actor "Researcherpublisher" as actorResearcherPublisher
+	boundary "Datum" as thingdatumResearcherPublisher
+	control "Conforms To\nData Package\nProfile" as controlconformdatumResearcherPublisherdatapackageprofile
+	control "Know" as controlknowconformdatumResearcherPublisherdatapackageprofile
+
+	actorResearcherPublisher --- thingdatumResearcherPublisher
+	thingdatumResearcherPublisher --> controlconformdatumResearcherPublisherdatapackageprofile
+	thingdatapackageprofile --- controlconformdatumResearcherPublisherdatapackageprofile
+	controlknowconformdatumResearcherPublisherdatapackageprofile --> controlconformdatumResearcherPublisherdatapackageprofile
+	thingdatumResearcherPublisher --> controlknowconformdatumResearcherPublisherdatapackageprofile
+
+@enduml

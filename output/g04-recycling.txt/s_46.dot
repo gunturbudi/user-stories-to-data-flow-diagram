@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Location " color=red];
+201 [label="<f0>  |<f1> Dashboard " ];
+202 [label="<f0>  |<f1> Usage Stat " color=red];
+203 [label="Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Dashboard Shows Location }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Dashboard Shows Usage Stats }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Try getting more facilities involved. }" shape=Mrecord];
+203 -> 3
+1001 [label="<f0>  |<f1> Neighbourhoods " color=red];
+3 -> 1001
+203 -> 204
+203 -> 205
+204 -> 200
+204 -> 201
+205 -> 201
+205 -> 202
+}

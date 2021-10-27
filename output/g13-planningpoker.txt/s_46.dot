@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> 7 " ];
+201 [label="<f0>  |<f1> Function " ];
+202 [label="<f0>  |<f1> Internet Explorer " ];
+203 [label="<f0>  |<f1> Application " ];
+204 [label="Developer" shape=box];
+205 [label="{<f0> 1.0|<f1> Have The Application Function In Internet Explorer }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Have The Function In 7 }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Internet Explorer"]
+205 -> 201 [label="Function"]
+206 -> 201 [label="Function"]
+206 -> 200 [label="7"]
+205 -> 203 [label="Application"]
+}

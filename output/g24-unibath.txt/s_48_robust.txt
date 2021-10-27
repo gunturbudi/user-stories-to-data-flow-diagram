@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archived Datum" as thingarchiveddatum
+	actor "Univitservice" as actorUnivITservice
+	boundary "Hcp Object\nStore" as thinghcpobjectstore #grey
+	control "Store Archived\nData On\nThe Hcp\nObject Store" as controlstorearchiveddatumhcpobjectstore
+
+	actorUnivITservice --- thinghcpobjectstore
+	thingarchiveddatum --- controlstorearchiveddatumhcpobjectstore
+	thinghcpobjectstore --> controlstorearchiveddatumhcpobjectstore
+
+@enduml

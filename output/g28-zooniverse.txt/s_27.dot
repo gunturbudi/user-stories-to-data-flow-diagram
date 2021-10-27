@@ -1,0 +1,9 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Talk " color=red];
+201 [label="<f0>  |<f1> Picture " color=red];
+202 [label="<f0>  |<f1> Comment " color=red];
+203 [label="<f0>  |<f1> Automated Analysis " ];
+204 [label="Zooniverse Admin" shape=box];
+205 [label="{<f0> 1.0|<f1> Assess }" shape=Mrecord];
+}

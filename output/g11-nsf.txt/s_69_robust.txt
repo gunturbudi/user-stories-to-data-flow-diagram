@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Definition\nWorkshop" as thinguserdefinitionworkshop #grey
+	entity "Nsf" as thingNSF
+	actor "User Researcher" as actoruserresearcher
+	boundary "Nsf\nInterface" as thingnsfinterface #grey
+	control "Conduct A\nUser Definition\nWorkshop With\nNsf" as controlconductuserdefinitionworkshopNSF
+
+	thingNSF <.. thinguserdefinitionworkshop
+	actoruserresearcher --- thingnsfinterface
+	thinguserdefinitionworkshop --- controlconductuserdefinitionworkshopNSF
+	thingNSF --- controlconductuserdefinitionworkshopNSF
+	thingnsfinterface --> controlconductuserdefinitionworkshopNSF
+
+@enduml

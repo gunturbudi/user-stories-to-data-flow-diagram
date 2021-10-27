@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Attendee " color=red];
+201 [label="<f0>  |<f1> Registration Status " color=red];
+202 [label="<f0>  |<f1> Admin View " ];
+203 [label="Trainingcoordinator" shape=box];
+204 [label="{<f0> 1.0|<f1> Track Registration Status For Each Attendee }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have An Admin View Helps }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Registration Status"]
+204 -> 200 [label="Attendee"]
+205 -> 204
+205 -> 202 [label="Admin View"]
+}

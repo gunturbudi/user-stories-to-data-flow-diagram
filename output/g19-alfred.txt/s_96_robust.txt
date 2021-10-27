@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Pain" as thingpain
+	entity "Skin Conduction\nSensor" as thingskinconductionsensor
+	actor "Socialcaregiver" as actorSocialCaregiver
+	boundary "Sensor\nInterface" as thingsensorinterface #grey
+	boundary "Pain\nInterface" as thingpaininterface #grey
+	control "Stress Alfred" as controlstressALFREDrecognizepain
+	control "Using Skin\nConduction Sensors" as controlusestressALFREDrecognizepainskinconductionsensors
+	control "Recognize Pain" as controlrecognizepain
+
+	actorSocialCaregiver --- thingsensorinterface
+	actorSocialCaregiver --- thingpaininterface
+	thingALFRED --- controlstressALFREDrecognizepain
+	controlusestressALFREDrecognizepainskinconductionsensors --> controlstressALFREDrecognizepain
+	thingsensorinterface --> controlstressALFREDrecognizepain
+	thingskinconductionsensor --- controlusestressALFREDrecognizepainskinconductionsensors
+	thingsensorinterface --> controlusestressALFREDrecognizepainskinconductionsensors
+	controlstressALFREDrecognizepain --> controlrecognizepain
+	thingpain --- controlrecognizepain
+	thingpaininterface --> controlrecognizepain
+
+@enduml

@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ldap " ];
+201 [label="User" shape=box];
+202 [label="{<f0> 1.0|<f1> Using Ldap }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Authenticate }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Ldap"]
+203 -> 202
+}

@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Researcher " color=red];
+201 [label="<f0>  |<f1> Section " ];
+202 [label="<f0>  |<f1> Department " color=red];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> See The Sections }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Costing By Other Researchers In Department }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Share data manager posts }" shape=Mrecord];
+204 -> 3
+1001 [label="<f0>  |<f1> Posts " color=red];
+3 -> 1001 [label="Posts"]
+203 -> 204
+203 -> 205
+204 -> 201 [label="Section"]
+205 -> 204
+205 -> 200 [label="Researcher"]
+205 -> 202 [label="Department"]
+}

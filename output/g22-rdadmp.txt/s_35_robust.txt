@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingmanyresource
+	entity "Project" as thingproject
+	actor "Researcher" as actorresearcher
+	control "Know" as controlknow
+
+
+@enduml

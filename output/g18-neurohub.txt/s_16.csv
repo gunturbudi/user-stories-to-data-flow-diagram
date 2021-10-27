@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Web Browser,shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Use Web Browser,ellipse,null,null,process
+204,Download Files To,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Web Browser,endArrow=classic,203,200,endArrow=classic
+209,,endArrow=classic,204,203,endArrow=classic
+210,File,endArrow=classic,204,201,endArrow=classic

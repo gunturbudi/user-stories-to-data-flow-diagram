@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Cultural" as thingcultural
+	entity "Explanation" as thingexplanation
+	entity "Touristic Walk" as thingtouristicwalk
+	entity "Historical Sight" as thinghistoricalsight
+	actor "Olderperson" as actorOlderPerson
+	boundary "Cultural\nInterface" as thingculturalinterface #grey
+	boundary "Sight\nInterface" as thingsightinterface #grey
+	control "Indications Alfred\nFor Touristic\nWalks With\nExplanations On\nCultural" as controlindicationALFREDtouristicwalkexplanationcultural
+	control "Indications Alfred\nFor Touristic\nWalks With\nExplanations On\nHistorical Sights" as controlindicationALFREDtouristicwalkexplanation
+
+	thingtouristicwalk <.. thingALFRED
+	thinghistoricalsight <.. thingexplanation
+	thingcultural <.. thingexplanation
+	thingexplanation <.. thingtouristicwalk
+	actorOlderPerson --- thingculturalinterface
+	actorOlderPerson --- thingsightinterface
+	thingcultural --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingculturalinterface --> controlindicationALFREDtouristicwalkexplanationcultural
+	thingtouristicwalk --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingALFRED --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingexplanation --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingALFRED --- controlindicationALFREDtouristicwalkexplanation
+	thingtouristicwalk --- controlindicationALFREDtouristicwalkexplanation
+	thingexplanation --- controlindicationALFREDtouristicwalkexplanation
+	thinghistoricalsight --- controlindicationALFREDtouristicwalkexplanation
+	thingsightinterface --> controlindicationALFREDtouristicwalkexplanation
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	actor "Researcher" as actorresearcher
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Import Metadata" as controlimportmetadata
+
+	actorresearcher --- thingmetadatainterface
+	thingmetadata --- controlimportmetadata
+	thingmetadatainterface --> controlimportmetadata
+
+@enduml

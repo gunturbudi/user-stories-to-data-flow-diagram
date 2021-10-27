@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Useful Datum " ];
+201 [label="<f0>  |<f1> Application " color=red];
+202 [label="Devops Engineer" shape=box];
+203 [label="{<f0> 1.0|<f1> Provide Useful Data Across All Applications }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

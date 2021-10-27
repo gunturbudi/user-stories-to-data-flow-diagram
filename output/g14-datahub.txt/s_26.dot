@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="Consumer" shape=box];
+202 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Choose most popular in the case when there are several alternatives for my use case }" shape=Mrecord];
+201 -> 2
+1001 [label="<f0>  |<f1> Use case " color=red];
+2 -> 1001 [label="Use case"]
+}

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype #grey
+	entity "App" as thingapp
+	entity "Unit Test" as thingunittest
+	actor "App Developer" as actorappdeveloper
+	circle "Interface" as thinginterface
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Write Unit\nTests For\nAn App\nDepends On\nThe Interface\nOf A\nDataset Type" as controlwriteunittestsapp
+
+	thinginterface <.. thingapp
+	thingapp <.. thingunittest
+	thingdatasettype *-- thinginterface
+	actorappdeveloper --- thingtypeinterface
+	thingunittest --- controlwriteunittestsapp
+	thingapp --- controlwriteunittestsapp
+	thinginterface --- controlwriteunittestsapp
+	thingdatasettype --- controlwriteunittestsapp
+	thingtypeinterface --> controlwriteunittestsapp
+
+@enduml

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Information " color=red];
+201 [label="<f0>  |<f1> Material " ];
+202 [label="Recyclingfacility Representative" shape=box];
+203 [label="{<f0> 1.0|<f1> Update The Type Of Material }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Update Information }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201
+204 -> 200
+}

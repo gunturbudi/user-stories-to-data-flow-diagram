@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Workflow " color=red];
+201 [label="<f0>  |<f1> Log Book " color=red];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> Have The Details Of The Workflow Execution To Recorded In A Neurohub Log Book Executing A Workflow }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Log Book"]
+203 -> 200 [label="Workflow"]
+}

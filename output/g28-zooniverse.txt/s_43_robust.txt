@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Volunteer" as thingvolunteer
+	entity "Classification" as thingclassification
+	entity "Weight" as thingweight
+	entity "Experience" as thingexperience
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Probability" as thingprobability
+	boundary "Weight\nInterface" as thingweightinterface #grey
+	boundary "Experience\nInterface" as thingexperienceinterface #grey
+	control "Assess Weight" as controlassessweight
+	control "Assess The\nProbability Of\nA Volunteer’s\nClassification On\nExperience" as controlassessprobability
+
+	thingvolunteer <.. thingclassification
+	thingexperience <.. thingclassification
+	thingclassification *-- thingprobability
+	thingexperience *-- thingprobability
+	actorzooniverseadmin --- thingweightinterface
+	actorzooniverseadmin --- thingexperienceinterface
+	thingweight --- controlassessweight
+	thingweightinterface --> controlassessweight
+	thingprobability --- controlassessprobability
+	thingclassification --- controlassessprobability
+	thingexperience --- controlassessprobability
+	thingexperienceinterface --> controlassessprobability
+
+@enduml

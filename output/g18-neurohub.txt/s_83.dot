@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> System " ];
+201 [label="<f0>  |<f1> New Datum " ];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> New Data Added To The System }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Have }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Inserted }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 201 [label="New Datum"]
+203 -> 200 [label="System"]
+204 -> 205
+205 -> 203
+}

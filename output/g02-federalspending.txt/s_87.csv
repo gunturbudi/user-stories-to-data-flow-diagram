@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Submission Dashboard,shape=partialRectangle,null,null,data_base
+201,"Helpful ,\nAdditional Info",shape=partialRectangle,null,null,data_base
+202,Fabs User,rounded=0,null,null,external_entity
+203,"Provided With Helpful, Additional Info In The Submission Dashboard",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,"Helpful ,\nAdditional Info",endArrow=classic,203,201,endArrow=classic
+207,Submission Dashboard,endArrow=classic,203,200,endArrow=classic

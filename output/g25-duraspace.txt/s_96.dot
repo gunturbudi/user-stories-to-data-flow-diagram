@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Permit Act " ];
+201 [label="<f0>  |<f1> Active Date " color=red];
+202 [label="Dams Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Know When Permitted Acts }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Restrict }" shape=Mrecord];
+202 -> 204
+203 -> 205
+204 -> 200 [label="Permit Act"]
+}

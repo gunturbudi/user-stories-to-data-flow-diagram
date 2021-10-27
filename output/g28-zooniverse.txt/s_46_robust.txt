@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Background Noise" as thingbackgroundnoise #grey
+	entity "Sound" as thingsound
+	entity "Audio File" as thingaudiofile
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Distracting Remove\nBackground Noise\nSounds From\nThe Audio\nFiles" as controlremovebackgroundnoisesound
+
+	thingsound <.. thingbackgroundnoise
+	thingaudiofile <.. thingsound
+	actorzooniverseadmin --- thingfileinterface
+	thingbackgroundnoise --- controlremovebackgroundnoisesound
+	thingsound --- controlremovebackgroundnoisesound
+	thingaudiofile --- controlremovebackgroundnoisesound
+	thingfileinterface --> controlremovebackgroundnoisesound
+
+@enduml

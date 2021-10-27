@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Example Citation " ];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="Datum Reuser" shape=box];
+203 [label="{<f0> 1.0|<f1> View An Example Citation For A Dataset }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Example Citation"]
+203 -> 201 [label="Dataset"]
+}

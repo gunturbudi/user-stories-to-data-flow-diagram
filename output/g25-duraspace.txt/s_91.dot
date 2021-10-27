@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Way " ];
+202 [label="<f0>  |<f1> Library Policy " ];
+203 [label="<f0>  |<f1> Object Component " color=red];
+204 [label="<f0>  |<f1> Access " ];
+205 [label="Dams Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Know Object }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Know An Object Component Subject To A Library Policy Restricts Access In Any Way }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 200 [label="Object"]
+207 -> 203 [label="Object Component"]
+207 -> 202 [label="Library Policy"]
+207 -> 204 [label="Access"]
+207 -> 201 [label="Way"]
+}

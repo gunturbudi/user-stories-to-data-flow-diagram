@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Environment " ];
+201 [label="<f0>  |<f1> Max Permission " ];
+202 [label="Owner" shape=box];
+203 [label="{<f0> 1.0|<f1> Reset The Environment }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Take }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Staging Max Permissions }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 204
+203 -> 200
+204 -> 205
+205 -> 201
+}

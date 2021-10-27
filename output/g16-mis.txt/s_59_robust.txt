@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Collection" as thingcollection
+	entity "Item" as thingitem
+	entity "Duke Duke\nIp Address" as thingdukedukeipaddress
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Restrict Access\nTo Collection\nTo Duke\nDuke Ip\nAddresses" as controlrestrictaccessdukedukeipaddresses
+	control "Restrict Access\nTo Item" as controlrestrictaccessitem
+
+	thingcollection <.. thingaccess
+	thingitem <.. thingaccess
+	thingdukedukeipaddress <.. thingcollection
+	actorcollectioncurator --- thingaddressinterface
+	actorcollectioncurator --- thingiteminterface
+	thingaccess --- controlrestrictaccessdukedukeipaddresses
+	thingcollection --- controlrestrictaccessdukedukeipaddresses
+	thingdukedukeipaddress --- controlrestrictaccessdukedukeipaddresses
+	thingaddressinterface --> controlrestrictaccessdukedukeipaddresses
+	thingitem --- controlrestrictaccessitem
+	thingiteminterface --> controlrestrictaccessitem
+	thingaccess --- controlrestrictaccessitem
+
+@enduml

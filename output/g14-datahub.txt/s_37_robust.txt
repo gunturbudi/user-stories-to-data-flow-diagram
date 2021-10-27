@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingdatapackage
+	actor "Data Analyst" as actordataanalyst
+	circle "Different Version" as thingdifferentversion
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Compare Different\nVersions Of\nSome Datapackage" as controlcomparedifferentversion
+
+	thingdatapackage *-- thingdifferentversion
+	actordataanalyst --- thingdatapackageinterface
+	thingdifferentversion --- controlcomparedifferentversion
+	thingdatapackage --- controlcomparedifferentversion
+	thingdatapackageinterface --> controlcomparedifferentversion
+
+@enduml

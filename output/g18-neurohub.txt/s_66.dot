@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Web ,\nBased Calendar " ];
+201 [label="<f0>  |<f1> Event " color=red];
+202 [label="<f0>  |<f1> Neurohub " color=red];
+203 [label="<f0>  |<f1> Google Calendar " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Sync Events In Neurohub With A Web, Based Calendar Such As Google Calendar }" shape=Mrecord];
+204 -> 205
+205 -> 201 [label="Event"]
+205 -> 202 [label="Neurohub"]
+205 -> 200 [label="Web ,\nBased Calendar"]
+205 -> 203 [label="Google Calendar"]
+}

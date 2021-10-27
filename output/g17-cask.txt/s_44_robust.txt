@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schema" as thingschema
+	entity "Sql" as thingsql #grey
+	actor "User" as actoruser
+	circle "String" as thingstring #grey
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	control "Specify Schema\nAs A\nSql Schema\nString" as controlspecifyschemasqlschemastring
+
+	thingstring <.. thingschema
+	thingsql <.. thingschema
+	thingschema *-- thingstring
+	actoruser --- thingschemainterface
+	thingschema --- controlspecifyschemasqlschemastring
+	thingstring --- controlspecifyschemasqlschemastring
+	thingschemainterface --> controlspecifyschemasqlschemastring
+
+@enduml

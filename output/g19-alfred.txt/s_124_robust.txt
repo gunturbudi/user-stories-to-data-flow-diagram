@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Apps Development\nSupport" as thingappsdevelopmentsupport #grey
+	actor "Developer" as actordeveloper
+	boundary "Support\nInterface" as thingsupportinterface #grey
+	control "Obtain Apps\nDevelopment Support" as controlobtainappsdevelopmentsupport
+
+	actordeveloper --- thingsupportinterface
+	thingappsdevelopmentsupport --- controlobtainappsdevelopmentsupport
+	thingsupportinterface --> controlobtainappsdevelopmentsupport
+
+@enduml

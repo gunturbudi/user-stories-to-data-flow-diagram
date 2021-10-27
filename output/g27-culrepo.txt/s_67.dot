@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Associated File " color=red];
+201 [label="<f0>  |<f1> Record " color=red];
+202 [label="<f0>  |<f1> System " ];
+203 [label="<f0>  |<f1> Uniform Error " ];
+204 [label="<f0>  |<f1> Datum " ];
+205 [label="<f0>  |<f1> Collection " color=red];
+206 [label="Repository , Support , Team Member" shape=box];
+207 [label="{<f0> 1.0|<f1> Export A Set Of Records }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Export A Set Of Associated File }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Manipulate }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Reload Into The System }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Manipulate This Data }" shape=Mrecord];
+212 [label="{<f0> 6.0|<f1> Am Aware Of A Uniform Error In A Collection }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+206 -> 212
+207 -> 201 [label="Record"]
+208 -> 200 [label="Associated File"]
+209 -> 210
+210 -> 202 [label="System"]
+211 -> 204 [label="Datum"]
+212 -> 203 [label="Uniform Error"]
+212 -> 205 [label="Collection"]
+}

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Planning Study" as thingplanningstudy #grey
+	entity "Plan Amendment" as thingplanamendment
+	actor "Planning ,\nStaff Member" as actorplanningstaffmember
+	boundary "Study\nInterface" as thingstudyinterface #grey
+	boundary "Amendment\nInterface" as thingamendmentinterface #grey
+	control "Conduct Planning\nStudy" as controlconductplanningstudy
+	control "Conduct Plan\nAmendments" as controlconductplanamendments
+	control "Track Planning\nStudy" as controltrackplanningstudy
+	control "Track Plan\nAmendments" as controltrackplanamendments
+
+	actorplanningstaffmember --- thingstudyinterface
+	actorplanningstaffmember --- thingamendmentinterface
+	thingplanningstudy --- controlconductplanningstudy
+	thingstudyinterface --> controlconductplanningstudy
+	thingplanamendment --- controlconductplanamendments
+	thingamendmentinterface --> controlconductplanamendments
+	thingplanningstudy --- controltrackplanningstudy
+	thingstudyinterface --> controltrackplanningstudy
+	thingamendmentinterface --> controltrackplanamendments
+	thingplanamendment --- controltrackplanamendments
+
+@enduml

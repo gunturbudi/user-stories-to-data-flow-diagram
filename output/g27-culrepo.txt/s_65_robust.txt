@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Historical Report" as thinghistoricalreport
+	entity "System" as thingsystem
+	entity "Subtopic" as thingsubtopic
+	entity "Historical ,\nExpired Report" as thinghistoricalexpiredreport
+	entity "Topic Dataset" as thingtopicdataset
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	control "Have" as controlhave
+
+
+@enduml

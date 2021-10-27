@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,"Repository ,\nAssign Doi",shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Ezid,shape=partialRectangle,null,null,data_base
+203,Metadata Change,shape=partialRectangle,null,null,data_base
+204,Collection Curator,rounded=0,null,null,external_entity
+205,"Have Metadata Changes To Items With Repository, Assigned Dois To Propagated To The Ezid",ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Metadata Change,endArrow=classic,205,203,endArrow=classic
+209,Item,endArrow=classic,205,201,endArrow=classic
+210,"Repository ,\nAssign Doi",endArrow=classic,205,200,endArrow=classic
+211,Ezid,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Receive notifications for new events as they are posted.,ellipse,null,null,process
+200,Email Id,shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Give Email Id,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Email Id,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Events,rounded=0,null,null,external_entity
+1002,Events,endArrow=classic,2,1001,endArrow=classic

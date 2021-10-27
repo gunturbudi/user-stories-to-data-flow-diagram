@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Mechanism" as thingmechanism
+	entity "Note" as thingnote
+	entity "Researcher" as thingotherresearcher
+	entity "Sharing Paper" as thingsharingpaper
+	actor "User" as actoruser
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	control "Provided With\nA Mechanism\nFor Note\nWith Other\nResearchers" as controlprovidemechanismnote
+	control "Provided With\nA Mechanism\nFor Electronically\nSharing Papers" as controlprovidemechanism
+
+	thingsharingpaper <.. thingmechanism
+	thingnote <.. thingmechanism
+	thingotherresearcher <.. thingnote
+	actoruser --- thingresearcherinterface
+	actoruser --- thingpaperinterface
+	thingnote --- controlprovidemechanismnote
+	thingotherresearcher --- controlprovidemechanismnote
+	thingresearcherinterface --> controlprovidemechanismnote
+	thingmechanism --- controlprovidemechanismnote
+	thingmechanism --- controlprovidemechanism
+	thingsharingpaper --- controlprovidemechanism
+	thingpaperinterface --> controlprovidemechanism
+
+@enduml

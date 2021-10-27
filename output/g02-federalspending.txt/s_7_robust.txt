@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Developer" as actordeveloper
+	control "Log" as controllog
+
+
+@enduml

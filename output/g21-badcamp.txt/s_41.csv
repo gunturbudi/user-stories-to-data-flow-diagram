@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Communicate with my attendees by email prior to the event,ellipse,null,null,process
+200,Summit,shape=partialRectangle,null,null,data_base
+201,Attendee,shape=partialRectangle,null,null,data_base
+202,Summit Coordinator,rounded=0,null,null,external_entity
+203,See A List Of Attendees Up For Summit,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Attendee,endArrow=classic,203,201,endArrow=classic
+207,Summit,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Attendees,rounded=0,null,null,external_entity
+1002,Attendees,endArrow=classic,2,1001,endArrow=classic
+1003,Email,rounded=0,null,null,external_entity
+1004,Email,endArrow=classic,2,1003,endArrow=classic

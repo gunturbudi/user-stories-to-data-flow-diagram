@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Supplementary File" as thingsupplementaryfile
+	entity "Dataset" as thingdataset
+	entity "Etc" as thingetc
+	entity "Slideshow" as thingslideshow
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Slideshow\nInterface" as thingslideshowinterface #grey
+	control "Include Supplementary\nFiles Such\nAs Datasets" as controlincludesupplementaryfile
+	control "Include Supplementary\nFiles Such\nAs Etc" as controlincludesupplementaryfileetc
+	control "Include Supplementary\nFiles Such\nAs Slideshow" as controlincludesupplementaryfileslideshow
+
+	thingdataset <.. thingsupplementaryfile
+	thingetc <.. thingsupplementaryfile
+	thingslideshow <.. thingsupplementaryfile
+	actorlibrarystaffmember --- thingdatasetinterface
+	actorlibrarystaffmember --- thingetcinterface
+	actorlibrarystaffmember --- thingslideshowinterface
+	thingsupplementaryfile --- controlincludesupplementaryfile
+	thingdataset --- controlincludesupplementaryfile
+	thingdatasetinterface --> controlincludesupplementaryfile
+	thingetc --- controlincludesupplementaryfileetc
+	thingetcinterface --> controlincludesupplementaryfileetc
+	thingsupplementaryfile --- controlincludesupplementaryfileetc
+	thingslideshow --- controlincludesupplementaryfileslideshow
+	thingslideshowinterface --> controlincludesupplementaryfileslideshow
+	thingsupplementaryfile --- controlincludesupplementaryfileslideshow
+
+@enduml

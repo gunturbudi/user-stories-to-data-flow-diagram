@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item Metadata" as thingitemmetadata #grey
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Have Item\nMetadata Discoverable" as controlhaveitemmetadata
+
+	actorcollectioncurator --- thingmetadatainterface
+	thingitemmetadata --- controlhaveitemmetadata
+	thingmetadatainterface --> controlhaveitemmetadata
+
+@enduml

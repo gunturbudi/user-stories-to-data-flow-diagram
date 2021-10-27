@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Collection Component " ];
+202 [label="User" shape=box];
+203 [label="{<f0> 1.0|<f1> See The Geographical Context Of A Collection Component Where Pertinent }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> See The Geographical Context Of Object }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Collection Component"]
+204 -> 200 [label="Object"]
+}

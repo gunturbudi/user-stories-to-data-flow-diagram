@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "View" as thingview
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	circle "Group" as thinggroup
+	boundary "View\nInterface" as thingviewinterface #grey
+	control "Restrict A\nGroup Of\nFiles From\nView" as controlrestrictgroup
+
+	thingview <.. thingfile
+	thingfile *-- thinggroup
+	actorarchivist --- thingviewinterface
+	thinggroup --- controlrestrictgroup
+	thingfile --- controlrestrictgroup
+	thingview --- controlrestrictgroup
+	thingviewinterface --> controlrestrictgroup
+
+@enduml

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Property" as thingproperty
+	actor "User" as actoruser
+	boundary "Property\nInterface" as thingpropertyinterface #grey
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	control "See The\nProperties Used" as controlseeproperty
+	control "Configure A\nDataset Instance" as controlconfiguredatasetinstance
+
+	actoruser --- thingpropertyinterface
+	actoruser --- thinginstanceinterface
+	thingproperty --- controlseeproperty
+	thingpropertyinterface --> controlseeproperty
+	controlseeproperty --> controlconfiguredatasetinstance
+	thingdatasetinstance --- controlconfiguredatasetinstance
+	thinginstanceinterface --> controlconfiguredatasetinstance
+
+@enduml

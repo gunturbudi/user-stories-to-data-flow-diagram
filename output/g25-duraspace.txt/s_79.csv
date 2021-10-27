@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Description,shape=partialRectangle,null,null,data_base
+201,Resource,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Know Of Description,ellipse,null,null,process
+204,"Know Of All Pertinent, Other Versions Of The Resource",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Description,endArrow=classic,203,200,endArrow=classic
+209,Resource,endArrow=classic,204,201,endArrow=classic

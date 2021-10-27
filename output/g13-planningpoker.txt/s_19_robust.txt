@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Csv File" as thingcsvfile #grey
+	entity "Game" as thinggame
+	actor "Moderator" as actormoderator
+	circle "Transcript" as thingtranscript
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Export A\nTranscript Of\nA Game\nAs A\nCsv File" as controlexporttranscript
+
+	thingcsvfile <.. thinggame
+	thinggame *-- thingtranscript
+	actormoderator --- thingfileinterface
+	thingtranscript --- controlexporttranscript
+	thinggame --- controlexporttranscript
+	thingcsvfile --- controlexporttranscript
+	thingfileinterface --> controlexporttranscript
+
+@enduml

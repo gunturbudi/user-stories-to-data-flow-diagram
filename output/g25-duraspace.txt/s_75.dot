@@ -1,0 +1,77 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Genre " color=red];
+201 [label="<f0>  |<f1> , Pertinent\nHeading " ];
+202 [label="<f0>  |<f1> Title " color=red];
+203 [label="<f0>  |<f1> Topic " color=red];
+204 [label="<f0>  |<f1> Geographical Etc " ];
+205 [label="<f0>  |<f1> Form " color=red];
+206 [label="<f0>  |<f1> Geographical Name " color=red];
+207 [label="<f0>  |<f1> Geographical Function " ];
+208 [label="<f0>  |<f1> Etc " ];
+209 [label="<f0>  |<f1> Occupation " color=red];
+210 [label="<f0>  |<f1> Name " color=red];
+211 [label="<f0>  |<f1> Function " ];
+212 [label="<f0>  |<f1> Geographical Cartographic " ];
+213 [label="<f0>  |<f1> Cartographic " ];
+214 [label="<f0>  |<f1> Geographical Occupation " color=red];
+215 [label="<f0>  |<f1> Object " color=red];
+216 [label="<f0>  |<f1> Collection " color=red];
+217 [label="User" shape=box];
+218 [label="{<f0> 1.0|<f1> Search For By Such, Pertinent Headings Including Form Geographical Function Geographical Occupation }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> Search For By Such, Pertinent Headings Including Title Form Geographical Function Geographical Occupation }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Search For By Such, Pertinent Headings Including Genre Topic }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Search For Object }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Search For Object Component }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> Search For Collections By Such, Pertinent Headings Including Title }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Search For By Such, Pertinent Headings Including Topic }" shape=Mrecord];
+217 -> 221
+217 -> 222
+217 -> 223
+218 -> 200 [label="Genre"]
+218 -> 203 [label="Topic"]
+218 -> 201 [label=", Pertinent\nHeading"]
+218 -> 204 [label="Geographical Etc"]
+218 -> 205 [label="Form"]
+218 -> 206 [label="Geographical Name"]
+218 -> 207 [label="Geographical Function"]
+218 -> 208 [label="Etc"]
+218 -> 209 [label="Occupation"]
+218 -> 210 [label="Name"]
+218 -> 212 [label="Geographical Cartographic"]
+218 -> 213 [label="Cartographic"]
+218 -> 214 [label="Geographical Occupation"]
+218 -> 202 [label="Title"]
+219 -> 201 [label=", Pertinent\nHeading"]
+219 -> 205 [label="Form"]
+219 -> 207 [label="Geographical Function"]
+219 -> 203 [label="Topic"]
+219 -> 204 [label="Geographical Etc"]
+219 -> 206 [label="Geographical Name"]
+219 -> 212 [label="Geographical Cartographic"]
+219 -> 214 [label="Geographical Occupation"]
+219 -> 202 [label="Title"]
+220 -> 200 [label="Genre"]
+220 -> 201 [label=", Pertinent\nHeading"]
+220 -> 203 [label="Topic"]
+220 -> 213 [label="Cartographic"]
+220 -> 205 [label="Form"]
+220 -> 209 [label="Occupation"]
+220 -> 208 [label="Etc"]
+220 -> 204 [label="Geographical Etc"]
+220 -> 210 [label="Name"]
+220 -> 207 [label="Geographical Function"]
+220 -> 206 [label="Geographical Name"]
+220 -> 212 [label="Geographical Cartographic"]
+220 -> 214 [label="Geographical Occupation"]
+220 -> 202 [label="Title"]
+221 -> 215 [label="Object"]
+223 -> 216 [label="Collection"]
+223 -> 201 [label=", Pertinent\nHeading"]
+223 -> 202 [label="Title"]
+224 -> 201 [label=", Pertinent\nHeading"]
+224 -> 203 [label="Topic"]
+224 -> 205 [label="Form"]
+224 -> 200 [label="Genre"]
+218 -> 211 [label="Function"]
+}

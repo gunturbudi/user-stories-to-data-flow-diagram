@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Email Notification " color=red];
+201 [label="<f0>  |<f1> Personal Account " color=red];
+202 [label="Patron" shape=box];
+203 [label="{<f0> 1.0|<f1> Create A Personal Account }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Request Email Notification }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Personal Account"]
+204 -> 200 [label="Email Notification"]
+}

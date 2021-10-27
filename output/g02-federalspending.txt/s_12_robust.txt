@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Error Message" as thingerrormessage #grey
+	entity "Accurate Text" as thingaccuratetext
+	actor "Broker User" as actorbrokeruser
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	control "Upload The\nError Message" as controluploaderrormessagehaveaccuratetext
+	control "Have Accurate\nText" as controlhaveaccuratetext
+	control "Validate The\nError Message" as controlvalidateerrormessagehaveaccuratetext
+
+	actorbrokeruser --- thingmessageinterface
+	thingerrormessage --- controluploaderrormessagehaveaccuratetext
+	thingmessageinterface --> controluploaderrormessagehaveaccuratetext
+	controluploaderrormessagehaveaccuratetext --> controlhaveaccuratetext
+	thingaccuratetext --- controlhaveaccuratetext
+	controlvalidateerrormessagehaveaccuratetext --> controlhaveaccuratetext
+	thingmessageinterface --> controlhaveaccuratetext
+	thingerrormessage --- controlvalidateerrormessagehaveaccuratetext
+	thingmessageinterface --> controlvalidateerrormessagehaveaccuratetext
+
+@enduml

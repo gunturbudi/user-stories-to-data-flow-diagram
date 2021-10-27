@@ -1,0 +1,77 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Scope" as thingscope
+	entity "Identifier" as thingvariousidentifier
+	entity "Object" as thingobject
+	entity "Etc" as thingetc
+	entity "Condition" as thingcondition
+	entity "Collection Component" as thingcollectioncomponent
+	entity "Access" as thingaccess
+	entity "Use" as thinguse
+	entity "Content" as thingcontent
+	actor "User" as actoruser
+	circle "Facet" as thingvariousfacet
+	boundary "Scope\nInterface" as thingscopeinterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	boundary "Use\nInterface" as thinguseinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Condition\nInterface" as thingconditioninterface #grey
+	control "Govern" as controlgovern #grey
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nScope" as controlknowvariousfacet
+	control "Govern Access" as controlgovernaccess
+	control "Govern Use" as controlgovernuse
+	control "Know About\nVarious Facets\nOf Object" as controlknowvariousfacetobject
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nContent" as controlknowvariousfacetcontent
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nVarious Identifier" as controlknowvariousfacetvariousidentifier
+	control "Govern Etc" as controlgovernetc
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nCondition" as controlknowvariousfacetcondition
+
+	thingscope <.. thingcollectioncomponent
+	thingcontent <.. thingcollectioncomponent
+	thingcondition <.. thingcollectioncomponent
+	thingvariousidentifier <.. thingcollectioncomponent
+	thingcollectioncomponent *-- thingvariousfacet
+	thingobject *-- thingvariousfacet
+	actoruser --- thingscopeinterface
+	actoruser --- thingaccessinterface
+	actoruser --- thinguseinterface
+	actoruser --- thingobjectinterface
+	actoruser --- thingcontentinterface
+	actoruser --- thingidentifierinterface
+	actoruser --- thingetcinterface
+	actoruser --- thingconditioninterface
+	controlknowvariousfacetcondition --> controlgovern
+	thingvariousfacet --- controlknowvariousfacet
+	thingcollectioncomponent --- controlknowvariousfacet
+	thingscope --- controlknowvariousfacet
+	thingscopeinterface --> controlknowvariousfacet
+	thingaccess --- controlgovernaccess
+	thingaccessinterface --> controlgovernaccess
+	controlknowvariousfacetcondition --> controlgovernaccess
+	thinguse --- controlgovernuse
+	thinguseinterface --> controlgovernuse
+	thingobjectinterface --> controlknowvariousfacetobject
+	thingvariousfacet --- controlknowvariousfacetobject
+	thingobject --- controlknowvariousfacetobject
+	thingcontent --- controlknowvariousfacetcontent
+	thingcontentinterface --> controlknowvariousfacetcontent
+	thingvariousfacet --- controlknowvariousfacetcontent
+	thingcollectioncomponent --- controlknowvariousfacetcontent
+	thingvariousidentifier --- controlknowvariousfacetvariousidentifier
+	thingidentifierinterface --> controlknowvariousfacetvariousidentifier
+	thingvariousfacet --- controlknowvariousfacetvariousidentifier
+	thingcollectioncomponent --- controlknowvariousfacetvariousidentifier
+	thingetc --- controlgovernetc
+	thingetcinterface --> controlgovernetc
+	thingcondition --- controlknowvariousfacetcondition
+	thingconditioninterface --> controlknowvariousfacetcondition
+	thingvariousfacet --- controlknowvariousfacetcondition
+	thingcollectioncomponent --- controlknowvariousfacetcondition
+
+@enduml

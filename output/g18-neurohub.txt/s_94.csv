@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Point,shape=partialRectangle,null,null,data_base
+201,Time,shape=partialRectangle,null,null,data_base
+202,Group,shape=partialRectangle,null,null,data_base
+203,Meta Datum,shape=partialRectangle,null,null,data_base
+204,Researcher,rounded=0,null,null,external_entity
+205,Associate Meta Data To The Group As A Whole At Some Point In Time,ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Meta Datum,endArrow=classic,205,203,endArrow=classic
+209,Group,endArrow=classic,205,202,endArrow=classic
+210,Point,endArrow=classic,205,200,endArrow=classic
+211,Time,endArrow=classic,205,201,endArrow=classic

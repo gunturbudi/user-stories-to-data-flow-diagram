@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "User" as actoruser
+	circle "Property" as thingproperty
+	control "Find Out" as controlfind
+
+	thingdataset *-- thingproperty
+
+@enduml

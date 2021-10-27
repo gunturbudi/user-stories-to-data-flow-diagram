@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Area" as thingarea
+	entity "News Event" as thingnewsevent
+	entity "Content Recommendation" as thingcontentrecommendation
+	actor "User" as actoruser
+	boundary "Area\nInterface" as thingareainterface #grey
+	control "Receive Content\nRecommendations On\nMost Relevant\nNews Events\nIn Area" as controlreceivecontentrecommendations
+
+	thingarea <.. thingnewsevent
+	thingnewsevent <.. thingcontentrecommendation
+	actoruser --- thingareainterface
+	thingcontentrecommendation --- controlreceivecontentrecommendations
+	thingnewsevent --- controlreceivecontentrecommendations
+	thingarea --- controlreceivecontentrecommendations
+	thingareainterface --> controlreceivecontentrecommendations
+
+@enduml

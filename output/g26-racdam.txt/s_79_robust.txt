@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photo" as thingphoto
+	actor "Researcher" as actorresearcher
+	circle "Thumbnail" as thingthumbnail
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	control "View Thumbnails\nOf Photos" as controlviewthumbnail
+
+	thingphoto *-- thingthumbnail
+	actorresearcher --- thingphotointerface
+	thingthumbnail --- controlviewthumbnail
+	thingphoto --- controlviewthumbnail
+	thingphotointerface --> controlviewthumbnail
+
+@enduml

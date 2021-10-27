@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hierarchy" as thinghierarchy
+	entity "Different Position" as thingdifferentposition
+	entity "Archival Object" as thingarchivalobject
+	entity "Resource Description" as thingresourcedescription #grey
+	actor "Archivist" as actorarchivist
+	boundary "Hierarchy\nInterface" as thinghierarchyinterface #grey
+	control "Dragging An\nArchival Object\nTo A\nDifferent Position\nIn The\nHierarchy" as controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	control "Rearrange The\nResource Description\nHierarchy" as controlrearrangeresourcedescriptionhierarchy
+
+	thingresourcedescription <.. thinghierarchy
+	thinghierarchy <.. thingdifferentposition
+	thingdifferentposition <.. thingarchivalobject
+	actorarchivist --- thinghierarchyinterface
+	thingarchivalobject --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thingdifferentposition --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thinghierarchy --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thinghierarchyinterface --> controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition --> controlrearrangeresourcedescriptionhierarchy
+	thinghierarchyinterface --> controlrearrangeresourcedescriptionhierarchy
+	thinghierarchy --- controlrearrangeresourcedescriptionhierarchy
+
+@enduml

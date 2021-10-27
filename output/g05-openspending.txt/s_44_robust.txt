@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Hide A\nDataset" as controlhidedataset
+
+	actordatapublishinguser --- thingdatasetinterface
+	thingdataset --- controlhidedataset
+	thingdatasetinterface --> controlhidedataset
+
+@enduml

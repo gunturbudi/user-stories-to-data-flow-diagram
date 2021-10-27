@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "End User" as thingenduser #grey
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Geo Indicate\nFor Any\nResource Believe\nTo An\nEnd User" as controlindicateresource
+
+	thingenduser <.. thingresource
+	actorrepositorymanager --- thinguserinterface
+	thingresource --- controlindicateresource
+	thingenduser --- controlindicateresource
+	thinguserinterface --> controlindicateresource
+
+@enduml

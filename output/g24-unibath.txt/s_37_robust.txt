@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	circle "Schedule Disposal" as thingscheduleddisposal
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Approve Scheduled\nDisposal Of\nData" as controlapprovescheduleddisposal
+
+	thingdatum *-- thingscheduleddisposal
+	actorbathdataarchiveadministrator --- thingdatuminterface
+	thingscheduleddisposal --- controlapprovescheduleddisposal
+	thingdatum --- controlapprovescheduleddisposal
+	thingdatuminterface --> controlapprovescheduleddisposal
+
+@enduml

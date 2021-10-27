@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Component " color=red];
+201 [label="<f0>  |<f1> Title " color=red];
+202 [label="<f0>  |<f1> Facet " ];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Necessary Describe Each Component Including Other Facet }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Necessary Describe Each Component Including Title }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Facet"]
+204 -> 200 [label="Component"]
+205 -> 200 [label="Component"]
+205 -> 201 [label="Title"]
+}

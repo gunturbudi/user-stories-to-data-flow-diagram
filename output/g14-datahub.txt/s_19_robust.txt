@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cli" as thingcli
+	entity "Data Package" as thingdatapackage
+	actor "Publisher" as actorpublisher
+	boundary "Cli\nInterface" as thingcliinterface #grey
+	control "Restore The\nDeleted Data\nPackage Via\nCli" as controlrestoredeleteddatapackagecli
+
+	thingcli <.. thingdatapackage
+	actorpublisher --- thingcliinterface
+	thingdatapackage --- controlrestoredeleteddatapackagecli
+	thingcli --- controlrestoredeleteddatapackagecli
+	thingcliinterface --> controlrestoredeleteddatapackagecli
+
+@enduml

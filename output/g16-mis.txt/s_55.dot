@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Folder " ];
+201 [label="<f0>  |<f1> Process " ];
+202 [label="Batch Submitter" shape=box];
+203 [label="{<f0> 1.0|<f1> Describe The Folder }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Access }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Folder"]
+204 -> 203
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Drive,shape=partialRectangle,null,null,data_base
+201,Digital File,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Access The Digital Files On The Drive,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Digital File,endArrow=classic,203,201,endArrow=classic
+207,Drive,endArrow=classic,203,200,endArrow=classic

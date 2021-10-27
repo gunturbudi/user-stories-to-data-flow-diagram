@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Roadmap Document" as thingroadmapdocument
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	control "Have An\nUpdated Roadmap\nDocument" as controlhaveupdatedroadmapdocument
+
+	actornsfemployee --- thingdocumentinterface
+	thingroadmapdocument --- controlhaveupdatedroadmapdocument
+	thingdocumentinterface --> controlhaveupdatedroadmapdocument
+
+@enduml

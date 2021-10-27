@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Unique Identifier,shape=partialRectangle,null,null,data_base
+201,Archivist,rounded=0,null,null,external_entity
+202,Assign Unique Identifiers,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Unique Identifier,endArrow=classic,202,200,endArrow=classic

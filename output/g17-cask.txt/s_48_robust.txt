@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	actor "User" as actoruser
+	circle "Property" as thingproperty
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	control "Update The\nProperties Of\nA Dataset\nInstance" as controlupdateproperty
+
+	thingdatasetinstance *-- thingproperty
+	actoruser --- thinginstanceinterface
+	thingproperty --- controlupdateproperty
+	thingdatasetinstance --- controlupdateproperty
+	thinginstanceinterface --> controlupdateproperty
+
+@enduml

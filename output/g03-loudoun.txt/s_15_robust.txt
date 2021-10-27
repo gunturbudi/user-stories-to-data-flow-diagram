@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Formal Response" as thingformalresponse
+	entity "Applicant" as thingapplicant
+	actor "Staff Member" as actorstaffmember
+	boundary "Applicant\nInterface" as thingapplicantinterface #grey
+	control "Send A\nFormal Response\nTo Applicant" as controlsendformalresponse
+
+	thingapplicant <.. thingformalresponse
+	actorstaffmember --- thingapplicantinterface
+	thingformalresponse --- controlsendformalresponse
+	thingapplicant --- controlsendformalresponse
+	thingapplicantinterface --> controlsendformalresponse
+
+@enduml

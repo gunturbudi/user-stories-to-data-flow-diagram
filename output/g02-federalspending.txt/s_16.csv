@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Validation Broker\nRule Table,shape=partialRectangle,null,null,data_base
+201,Db-2213,shape=partialRectangle,null,null,data_base
+202,Rule Update,shape=partialRectangle,null,null,data_base
+203,Developer,rounded=0,null,null,external_entity
+204,Account For The Rule Updates In Db-2213,ellipse,null,null,process
+205,Update The Validation Broker Rule Table,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Rule Update,endArrow=classic,204,202,endArrow=classic
+210,Db-2213,endArrow=classic,204,201,endArrow=classic
+211,,endArrow=classic,205,204,endArrow=classic
+212,Validation Broker\nRule Table,endArrow=classic,205,200,endArrow=classic

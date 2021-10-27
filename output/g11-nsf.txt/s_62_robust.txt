@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recruiting Email\nTemplate" as thingrecruitingemailtemplate
+	actor "Team Member" as actorteammember
+	boundary "Template\nInterface" as thingtemplateinterface #grey
+	control "Go" as controlgo
+	control "Have Recruiting\nEmail Templates" as controlhaverecruitingemailtemplatesgo
+
+	actorteammember --- thingtemplateinterface
+	controlhaverecruitingemailtemplatesgo --> controlgo
+	thingtemplateinterface --> controlgo
+	thingrecruitingemailtemplate --- controlhaverecruitingemailtemplatesgo
+	thingtemplateinterface --> controlhaverecruitingemailtemplatesgo
+
+@enduml

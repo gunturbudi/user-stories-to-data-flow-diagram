@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate #grey
+	entity "Schedule Record" as thingscheduledrecord
+	entity "Item" as thingitem
+	entity "Component Page" as thingcomponentpage #grey
+	entity "Deletion" as thingdeletion #grey
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "See The\nScheduled Records\nDate Displayed\nOn Component\nPage" as controlseescheduledrecordcomponentpage
+	control "See The\nScheduled Records\nDeletion Date\nDisplayed On\nThe Item" as controlseescheduledrecord
+
+	thingcomponentpage <.. thingdate
+	thingdeletion <.. thingdate
+	thingitem <.. thingdate
+	thingitem <.. thingscheduledrecord
+	thingdate <.. thingscheduledrecord
+	actorcollectioncurator --- thingpageinterface
+	actorcollectioncurator --- thingiteminterface
+	thingdate --- controlseescheduledrecordcomponentpage
+	thingcomponentpage --- controlseescheduledrecordcomponentpage
+	thingpageinterface --> controlseescheduledrecordcomponentpage
+	thingscheduledrecord --- controlseescheduledrecordcomponentpage
+	thingscheduledrecord --- controlseescheduledrecord
+	thingitem --- controlseescheduledrecord
+	thingiteminterface --> controlseescheduledrecord
+	thingdate --- controlseescheduledrecord
+
+@enduml

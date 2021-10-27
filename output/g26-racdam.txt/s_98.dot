@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Directory Credential " ];
+201 [label="Administrator" shape=box];
+202 [label="{<f0> 1.0|<f1> Log }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Allow }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Using Active Directory Credentials }" shape=Mrecord];
+201 -> 202
+201 -> 203
+201 -> 204
+203 -> 204
+204 -> 202
+204 -> 200 [label="Directory Credential"]
+}

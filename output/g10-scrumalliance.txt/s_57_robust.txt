@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	entity "Good Control" as thinggoodcontrol
+	actor "Site Editor" as actorsiteeditor
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Have Pretty\nGood Control\nOver How\nThe Article" as controlhavegoodcontrol
+
+	thingarticle <.. thinggoodcontrol
+	actorsiteeditor --- thingarticleinterface
+	thinggoodcontrol --- controlhavegoodcontrol
+	thingarticle --- controlhavegoodcontrol
+	thingarticleinterface --> controlhavegoodcontrol
+
+@enduml

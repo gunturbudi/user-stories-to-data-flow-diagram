@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Default " ];
+201 [label="<f0>  |<f1> Bubble Tree " ];
+202 [label="<f0>  |<f1> Treemap " ];
+203 [label="<f0>  |<f1> Recent Year " ];
+204 [label="<f0>  |<f1> Multiple Year " ];
+205 [label="<f0>  |<f1> Dataset " color=red];
+206 [label="<f0>  |<f1> Pivot Table " ];
+207 [label="Datum , Consume User" shape=box];
+208 [label="{<f0> 1.0|<f1> Visualize By Default In Treemap }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Visualize By Default In Bubble Tree }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Visualize By Default In Pivot Table }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Visualize By Default In Treemap The Most Recent Year Dataset When Contain Multiple Years }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 200
+208 -> 202
+209 -> 201
+209 -> 200
+210 -> 206
+210 -> 200
+211 -> 200
+211 -> 202
+211 -> 203
+211 -> 204
+211 -> 205
+}

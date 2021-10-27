@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Checkbox " ];
+201 [label="<f0>  |<f1> Cancellation Term " ];
+202 [label="Trainee" shape=box];
+203 [label="{<f0> 1.0|<f1> Accept The Cancellation Terms With A Checkbox }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Cancellation Term"]
+203 -> 200 [label="Checkbox"]
+}

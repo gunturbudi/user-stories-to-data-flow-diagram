@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event Record" as thingeventrecord
+	actor "Archivist" as actorarchivist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Create Event\nRecords" as controlcreateeventrecords
+	control "Edit Event\nRecords" as controlediteventrecords
+
+	actorarchivist --- thingrecordinterface
+	thingeventrecord --- controlcreateeventrecords
+	thingrecordinterface --> controlcreateeventrecords
+	thingrecordinterface --> controlediteventrecords
+	thingeventrecord --- controlediteventrecords
+
+@enduml

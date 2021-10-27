@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Point" as thingpoint
+	entity "Time" as thingtime
+	entity "Group" as thinggroup
+	entity "Meta Datum" as thingmetadatum
+	actor "Researcher" as actorresearcher
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	control "Associate Meta\nData To\nThe Group\nAs A\nWhole At\nSome Point\nIn Time" as controlassociatemetadatagroupwholepointtime
+
+	thingtime <.. thingpoint
+	thingpoint <.. thinggroup
+	thinggroup <.. thingmetadatum
+	actorresearcher --- thingtimeinterface
+	thingmetadatum --- controlassociatemetadatagroupwholepointtime
+	thinggroup --- controlassociatemetadatagroupwholepointtime
+	thingpoint --- controlassociatemetadatagroupwholepointtime
+	thingtime --- controlassociatemetadatagroupwholepointtime
+	thingtimeinterface --> controlassociatemetadatagroupwholepointtime
+
+@enduml

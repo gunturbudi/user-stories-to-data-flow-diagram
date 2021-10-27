@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Individual People,shape=partialRectangle,null,null,data_base
+201,Deposit Group,shape=partialRectangle,null,null,data_base
+202,Digitalrecords Archivist,rounded=0,null,null,external_entity
+203,Add Individual People From Deposit Groups,ellipse,null,null,process
+204,Have,ellipse,null,null,process
+205,Remove Individual People From Deposit Groups,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,Individual People,endArrow=classic,203,200,endArrow=classic
+211,Deposit Group,endArrow=classic,203,201,endArrow=classic
+212,,endArrow=classic,204,203,endArrow=classic
+213,,endArrow=classic,204,205,endArrow=classic
+214,Individual People,endArrow=classic,205,200,endArrow=classic
+215,Deposit Group,endArrow=classic,205,201,endArrow=classic

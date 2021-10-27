@@ -1,0 +1,117 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Item" as thingitem
+	entity "Metadata" as thingmetadata
+	entity "Document Title" as thingdocumenttitle #grey
+	entity "Author" as thingauthor
+	entity "File Location" as thingfilelocation #grey
+	entity "Keyword" as thingkeyword
+	entity "Description" as thingdescription
+	entity "Release Frequency" as thingreleasefrequency #grey
+	entity "Document Type" as thingdocumenttype #grey
+	entity "Status" as thingstatus
+	entity "Subject Area" as thingsubjectarea #grey
+	entity "Subscribable Flag" as thingsubscribableflag
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Frequency\nInterface" as thingfrequencyinterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Flag\nInterface" as thingflaginterface #grey
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nKeyword" as controlcreatemetadatakeyword
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nStatus" as controlcreatemetadatastatus
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDocument Type" as controlcreatemetadatadocumenttype
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDocument Title" as controlcreatemetadata
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDescription" as controlcreatemetadatadescription
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nSubject Area" as controlcreatemetadatasubjectarea
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nRelease Frequency" as controlcreatemetadatareleasefrequency
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nAuthor" as controlcreatemetadataauthor
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nFile Location" as controlcreatemetadatafilelocation
+	control "Searching" as controlsearchcreatemetadatakeyword
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nSubscribable Flag" as controlcreatemetadatasubscribableflag
+
+	thingdocumenttitle <.. thingrepository
+	thingreleasefrequency <.. thingrepository
+	thingsubjectarea <.. thingrepository
+	thingfilelocation <.. thingrepository
+	thingdescription <.. thingrepository
+	thingkeyword <.. thingrepository
+	thingauthor <.. thingrepository
+	thingstatus <.. thingrepository
+	thingdocumenttype <.. thingrepository
+	thingsubscribableflag <.. thingrepository
+	thingrepository <.. thingitem
+	thingitem <.. thingmetadata
+	actorlibrarystaffmember --- thingkeywordinterface
+	actorlibrarystaffmember --- thingstatusinterface
+	actorlibrarystaffmember --- thingtypeinterface
+	actorlibrarystaffmember --- thingtitleinterface
+	actorlibrarystaffmember --- thingdescriptioninterface
+	actorlibrarystaffmember --- thingareainterface
+	actorlibrarystaffmember --- thingfrequencyinterface
+	actorlibrarystaffmember --- thingauthorinterface
+	actorlibrarystaffmember --- thinglocationinterface
+	actorlibrarystaffmember --- thingflaginterface
+	thingkeyword --- controlcreatemetadatakeyword
+	controlsearchcreatemetadatakeyword --> controlcreatemetadatakeyword
+	thingkeywordinterface --> controlcreatemetadatakeyword
+	thingrepository --- controlcreatemetadatakeyword
+	thingitem --- controlcreatemetadatakeyword
+	thingmetadata --- controlcreatemetadatakeyword
+	thingstatus --- controlcreatemetadatastatus
+	thingstatusinterface --> controlcreatemetadatastatus
+	thingrepository --- controlcreatemetadatastatus
+	thingitem --- controlcreatemetadatastatus
+	thingmetadata --- controlcreatemetadatastatus
+	thingdocumenttype --- controlcreatemetadatadocumenttype
+	thingtypeinterface --> controlcreatemetadatadocumenttype
+	thingrepository --- controlcreatemetadatadocumenttype
+	thingitem --- controlcreatemetadatadocumenttype
+	thingmetadata --- controlcreatemetadatadocumenttype
+	thingmetadata --- controlcreatemetadata
+	thingitem --- controlcreatemetadata
+	thingrepository --- controlcreatemetadata
+	thingdocumenttitle --- controlcreatemetadata
+	thingtitleinterface --> controlcreatemetadata
+	thingdescription --- controlcreatemetadatadescription
+	thingdescriptioninterface --> controlcreatemetadatadescription
+	thingrepository --- controlcreatemetadatadescription
+	thingitem --- controlcreatemetadatadescription
+	thingmetadata --- controlcreatemetadatadescription
+	thingsubjectarea --- controlcreatemetadatasubjectarea
+	thingareainterface --> controlcreatemetadatasubjectarea
+	thingrepository --- controlcreatemetadatasubjectarea
+	thingitem --- controlcreatemetadatasubjectarea
+	thingmetadata --- controlcreatemetadatasubjectarea
+	thingreleasefrequency --- controlcreatemetadatareleasefrequency
+	thingfrequencyinterface --> controlcreatemetadatareleasefrequency
+	thingrepository --- controlcreatemetadatareleasefrequency
+	thingitem --- controlcreatemetadatareleasefrequency
+	thingmetadata --- controlcreatemetadatareleasefrequency
+	thingauthor --- controlcreatemetadataauthor
+	thingauthorinterface --> controlcreatemetadataauthor
+	thingrepository --- controlcreatemetadataauthor
+	thingitem --- controlcreatemetadataauthor
+	thingmetadata --- controlcreatemetadataauthor
+	thingfilelocation --- controlcreatemetadatafilelocation
+	thinglocationinterface --> controlcreatemetadatafilelocation
+	thingrepository --- controlcreatemetadatafilelocation
+	thingitem --- controlcreatemetadatafilelocation
+	thingmetadata --- controlcreatemetadatafilelocation
+	thingkeywordinterface --> controlsearchcreatemetadatakeyword
+	thingsubscribableflag --- controlcreatemetadatasubscribableflag
+	thingflaginterface --> controlcreatemetadatasubscribableflag
+	thingrepository --- controlcreatemetadatasubscribableflag
+	thingitem --- controlcreatemetadatasubscribableflag
+	thingmetadata --- controlcreatemetadatasubscribableflag
+
+@enduml

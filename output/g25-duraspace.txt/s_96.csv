@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Permit Act,shape=partialRectangle,null,null,data_base
+201,Active Date,shape=partialRectangle,null,null,data_base
+202,Dams Manager,rounded=0,null,null,external_entity
+203,Know,ellipse,null,null,process
+204,Know When Permitted Acts,ellipse,null,null,process
+205,Restrict,ellipse,null,null,process
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Permit Act,endArrow=classic,204,200,endArrow=classic

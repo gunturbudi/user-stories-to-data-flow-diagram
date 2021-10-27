@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Design Guide" as thingdesignguide #grey
+	entity "Content Guide" as thingcontentguide #grey
+	entity "Style Guide" as thingstyleguide #grey
+	actor "Designer" as actordesigner
+	boundary "Guide\nInterface" as thingguideinterface #grey
+	control "Have Content\nGuide" as controlhavecontentguide
+	control "Have Design\nGuide" as controlhavedesignguide
+	control "Have A\nStyle Guide" as controlhavestyleguide
+
+	actordesigner --- thingguideinterface
+	thingcontentguide --- controlhavecontentguide
+	thingguideinterface --> controlhavecontentguide
+	thingdesignguide --- controlhavedesignguide
+	thingguideinterface --> controlhavedesignguide
+	thingstyleguide --- controlhavestyleguide
+	thingguideinterface --> controlhavestyleguide
+
+@enduml

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Multiple Dimension " ];
+202 [label="<f0>  |<f1> Multiple Measure " ];
+203 [label="Datum , Consume User" shape=box];
+204 [label="{<f0> 1.0|<f1> Sort Aggregate Data By Multiple Dimensions }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Sort Filter Data By Multiple Dimensions }" shape=Mrecord];
+203 -> 205
+204 -> 201
+204 -> 202
+204 -> 200
+205 -> 200
+205 -> 201
+205 -> 202
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Element" as thingdataelement
+	actor "Agency User" as actoragencyuser
+	boundary "Element\nInterface" as thingelementinterface #grey
+	control "Derived Properly\nData Elements" as controlderivedataelements
+
+	actoragencyuser --- thingelementinterface
+	thingdataelement --- controlderivedataelements
+	thingelementinterface --> controlderivedataelements
+
+@enduml

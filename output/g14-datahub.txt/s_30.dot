@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="Consumer" shape=box];
+202 [label="{<f0> 1.0|<f1> Search On Description Of Data Package }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Find package which related to some key words }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Key words " color=red];
+2 -> 1001 [label="Key words"]
+201 -> 202
+202 -> 200 [label="Data Package"]
+}

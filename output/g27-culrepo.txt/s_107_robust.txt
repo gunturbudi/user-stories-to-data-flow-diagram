@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	actor "Data Curator" as actordatacurator
+	circle "New Version" as thingnewversion
+	boundary "Old Version" as thingoldversiondatacurator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Accessed" as controlaccessoldversiondatacurator
+	control "Upload A\nNew Version\nOf An\nItem Has\nChanged Still\nAllowing" as controluploadnewversionaccessoldversiondatacurator
+
+	thingitem *-- thingnewversion
+	actordatacurator --- thingoldversiondatacurator
+	actordatacurator --- thingiteminterface
+	thingoldversiondatacurator --> controlaccessoldversiondatacurator
+	controluploadnewversionaccessoldversiondatacurator --> controlaccessoldversiondatacurator
+	thingnewversion --- controluploadnewversionaccessoldversiondatacurator
+	thingitem --- controluploadnewversionaccessoldversiondatacurator
+	thingiteminterface --> controluploadnewversionaccessoldversiondatacurator
+
+@enduml

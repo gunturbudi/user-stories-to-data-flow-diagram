@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Migration Process" as thingmigrationprocess #grey
+	entity "Dataset" as thingdataset
+	actor "User" as actoruser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Trigger A\nMigration Process\nFor A\nDataset" as controltriggermigrationprocess
+
+	thingdataset <.. thingmigrationprocess
+	actoruser --- thingdatasetinterface
+	thingmigrationprocess --- controltriggermigrationprocess
+	thingdataset --- controltriggermigrationprocess
+	thingdatasetinterface --> controltriggermigrationprocess
+
+@enduml

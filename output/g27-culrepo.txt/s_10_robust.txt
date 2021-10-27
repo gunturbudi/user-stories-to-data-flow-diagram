@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cornell" as thingcornell
+	entity "Topic" as thinggiventopic
+	entity "School" as thingschool
+	entity "Date" as thingdate
+	entity "Research" as thingresearch
+	entity "Department" as thingotherdepartment
+	actor "Researcher" as actorresearcher
+	boundary "School\nInterface" as thingschoolinterface #grey
+	boundary "Department\nInterface" as thingdepartmentinterface #grey
+	control "Stay Up\nTo Date\nOn Research\nTo A\nGiven Topic\nAt Cornell\nIncluding Those\nIn School" as controlstaydateresearchschool
+	control "Stay Up\nTo Date\nOn Research\nTo A\nGiven Topic\nAt Cornell\nIncluding Those\nIn Other\nDepartments" as controlstaydateresearch
+
+	thingotherdepartment <.. thingcornell
+	thingschool <.. thingcornell
+	thingcornell <.. thinggiventopic
+	thingotherdepartment <.. thinggiventopic
+	thingresearch <.. thingdate
+	thinggiventopic <.. thingresearch
+	actorresearcher --- thingschoolinterface
+	actorresearcher --- thingdepartmentinterface
+	thingschool --- controlstaydateresearchschool
+	thingschoolinterface --> controlstaydateresearchschool
+	thinggiventopic --- controlstaydateresearchschool
+	thingcornell --- controlstaydateresearchschool
+	thingdate --- controlstaydateresearchschool
+	thingresearch --- controlstaydateresearchschool
+	thingdate --- controlstaydateresearch
+	thingresearch --- controlstaydateresearch
+	thinggiventopic --- controlstaydateresearch
+	thingcornell --- controlstaydateresearch
+	thingotherdepartment --- controlstaydateresearch
+	thingdepartmentinterface --> controlstaydateresearch
+
+@enduml

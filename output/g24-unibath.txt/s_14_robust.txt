@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Disposal Policy" as thingdisposalpolicy #grey
+	entity "Datum" as thingdatum
+	actor "Depositor" as actordepositor
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Specify A\nDisposal Policy\nFor Data" as controlspecifydisposalpolicy
+
+	thingdatum <.. thingdisposalpolicy
+	actordepositor --- thingdatuminterface
+	thingdisposalpolicy --- controlspecifydisposalpolicy
+	thingdatum --- controlspecifydisposalpolicy
+	thingdatuminterface --> controlspecifydisposalpolicy
+
+@enduml

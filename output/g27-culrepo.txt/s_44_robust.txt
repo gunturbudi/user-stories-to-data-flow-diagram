@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Patron" as thingpatron
+	entity "Relationship Group" as thingrelationshipgroup
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	circle "Support" as thingsupport
+	boundary "Patron\nInterface" as thingpatroninterface #grey
+	control "Manage Customizable\nRelationship Groups\nIn Support\nOf Patron" as controlmanagecustomizablerelationshipgroups
+
+	thingsupport <.. thingrelationshipgroup
+	thingpatron *-- thingsupport
+	actordb --- thingpatroninterface
+	actoriradministrator --- thingpatroninterface
+	thingrelationshipgroup --- controlmanagecustomizablerelationshipgroups
+	thingsupport --- controlmanagecustomizablerelationshipgroups
+	thingpatron --- controlmanagecustomizablerelationshipgroups
+	thingpatroninterface --> controlmanagecustomizablerelationshipgroups
+
+@enduml

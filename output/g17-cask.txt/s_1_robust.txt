@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype
+	entity "Type" as thingtype
+	entity "App" as thingapp
+	actor "App Developer" as actorappdeveloper
+	circle "Code" as thingcode
+	circle "Dataset" as thingdataset
+	circle "Artifact" as thingartifact #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Include The\nCode Of\nA Dataset\nType In\nApp Artifact" as controlincludecode
+	control "Create A\nDataset Of\nThat Type\nWhen Deploying\nThe App" as controlcreatedatasetapp
+
+	thingapp <.. thingdatasettype
+	thingapp <.. thingtype
+	thingdatasettype *-- thingcode
+	thingartifact *-- thingcode
+	thingtype *-- thingdataset
+	thingapp *-- thingartifact
+	actorappdeveloper --- thingappinterface
+	thingcode --- controlincludecode
+	thingdatasettype --- controlincludecode
+	thingappinterface --> controlincludecode
+	thingapp --- controlincludecode
+	thingdataset --- controlcreatedatasetapp
+	thingtype --- controlcreatedatasetapp
+	thingapp --- controlcreatedatasetapp
+	thingappinterface --> controlcreatedatasetapp
+
+@enduml

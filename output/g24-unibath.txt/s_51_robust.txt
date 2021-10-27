@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Underlie Dataset" as thingunderlyingdataset
+	entity "Article" as thingarticle
+	entity "Persistent Link" as thingpersistentlink #grey
+	entity "Web Link" as thingweblink
+	actor "Academicpublisher" as actoracademicpublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Make Persistent\nLinks Between\nUnderlying Dataset" as controlmakepersistentlinkunderlyingdataset
+	control "Make Persistent\nWeb Links\nBetween Articles" as controlmakepersistentweblinks
+
+	thingunderlyingdataset <.. thingpersistentlink
+	thingarticle <.. thingweblink
+	actoracademicpublisher --- thingdatasetinterface
+	actoracademicpublisher --- thingarticleinterface
+	thingpersistentlink --- controlmakepersistentlinkunderlyingdataset
+	thingunderlyingdataset --- controlmakepersistentlinkunderlyingdataset
+	thingdatasetinterface --> controlmakepersistentlinkunderlyingdataset
+	thingweblink --- controlmakepersistentweblinks
+	thingarticle --- controlmakepersistentweblinks
+	thingarticleinterface --> controlmakepersistentweblinks
+
+@enduml

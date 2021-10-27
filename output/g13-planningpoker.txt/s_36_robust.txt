@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Current Round" as thingcurrentround
+	entity "Estimate" as thingestimate
+	actor "Participant" as actorparticipant
+	control "See" as controlsee
+
+
+@enduml

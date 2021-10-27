@@ -1,0 +1,38 @@
+id,value,style,source,target,type
+200,Publication,shape=partialRectangle,null,null,data_base
+201,.,shape=partialRectangle,null,null,data_base
+202,Edition,shape=partialRectangle,null,null,data_base
+203,Object,shape=partialRectangle,null,null,data_base
+204,Place,shape=partialRectangle,null,null,data_base
+205,Publisher,shape=partialRectangle,null,null,data_base
+206,Object Component,shape=partialRectangle,null,null,data_base
+207,Repository Manager,rounded=0,null,null,external_entity
+208,Indicate For The The Edition,ellipse,null,null,process
+209,Indicate For The The Publisher,ellipse,null,null,process
+210,Indicate For Object,ellipse,null,null,process
+211,Indicate For An Object Component The Place Of Publication When Pertinent,ellipse,null,null,process
+212,Indicate For The The . The Place,ellipse,null,null,process
+213,Indicate For The The Publisher The .,ellipse,null,null,process
+214,Indicate For The The Publisher The Place,ellipse,null,null,process
+215,Indicate For The The .,ellipse,null,null,process
+216,Indicate For The The Publisher The Edition,ellipse,null,null,process
+217,Indicate For The The Edition The Place,ellipse,null,null,process
+219,,endArrow=classic,207,210,endArrow=classic
+220,,endArrow=classic,207,211,endArrow=classic
+221,Edition,endArrow=classic,208,202,endArrow=classic
+222,Publisher,endArrow=classic,209,205,endArrow=classic
+223,Object,endArrow=classic,210,203,endArrow=classic
+224,Object Component,endArrow=classic,211,206,endArrow=classic
+225,Publication,endArrow=classic,211,200,endArrow=classic
+226,Place,endArrow=classic,211,204,endArrow=classic
+227,.,endArrow=classic,212,201,endArrow=classic
+228,Place,endArrow=classic,212,204,endArrow=classic
+229,.,endArrow=classic,213,201,endArrow=classic
+230,Publisher,endArrow=classic,213,205,endArrow=classic
+231,Publisher,endArrow=classic,214,205,endArrow=classic
+232,Place,endArrow=classic,214,204,endArrow=classic
+233,.,endArrow=classic,215,201,endArrow=classic
+234,Edition,endArrow=classic,216,202,endArrow=classic
+235,Publisher,endArrow=classic,216,205,endArrow=classic
+236,Edition,endArrow=classic,217,202,endArrow=classic
+237,Place,endArrow=classic,217,204,endArrow=classic

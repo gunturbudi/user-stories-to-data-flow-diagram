@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Acceptance Test\nResult" as thingacceptancetestresult
+	actor "Investigator" as actorinvestigator
+	boundary "Result\nInterface" as thingresultinterface #grey
+	control "View The\nAcceptance Test\nResults" as controlviewacceptancetestresults
+
+	actorinvestigator --- thingresultinterface
+	thingacceptancetestresult --- controlviewacceptancetestresults
+	thingresultinterface --> controlviewacceptancetestresults
+
+@enduml

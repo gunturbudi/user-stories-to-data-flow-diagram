@@ -1,0 +1,62 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deposit Window" as thingdepositwindow #grey
+	entity "Date" as thingdate
+	entity "Group" as thinggroup
+	entity "Specific Collection" as thingspecificcollection
+	entity "Multiple People" as thingmultiplepeople
+	entity "Collection" as thingcollection
+	entity "Depositor" as thingdepositor
+	entity "Permission" as thingpermission
+	entity "Default" as thingdefault #grey
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Method" as thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Window\nInterface" as thingwindowinterface #grey
+	boundary "Depositor\nInterface" as thingdepositorinterface #grey
+	control "Have" as controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate
+	control "Deposit Groups\nIn Specific\nCollections" as controldepositgroup
+	control "Set A\nDate To\nHave These\nPermissions On\nThese Depositors\nPick Up\nOn The\nCollection's Default\nPermission" as controlsetdatehavepermissiondefaultpermission
+	control "Set A\nDate The\nDeposit Window\nCloses" as controlsetdate
+	control "Add Multiple\nPeople" as controladdmultiplepeopledepositgroup
+	control "Remove Multiple\nPeople" as controlremovemultiplepeopledepositgroup
+
+	thingdepositwindow <.. thingdate
+	thingpermission <.. thingdate
+	thingspecificcollection <.. thinggroup
+	thingdepositor <.. thingpermission
+	thingdefault <.. thingpermission
+	actordigitalrecordsarchivist --- thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist
+	actordigitalrecordsarchivist --- thingcollectioninterface
+	actordigitalrecordsarchivist --- thingdateinterface
+	actordigitalrecordsarchivist --- thingwindowinterface
+	actordigitalrecordsarchivist --- thingdepositorinterface
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate
+	thingdate --- controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate
+	controladdmultiplepeopledepositgroup --> controldepositgroup
+	thinggroup --- controldepositgroup
+	thingspecificcollection --- controldepositgroup
+	thingcollectioninterface --> controldepositgroup
+	controlremovemultiplepeopledepositgroup --> controldepositgroup
+	thingpermission --- controlsetdatehavepermissiondefaultpermission
+	thingdepositor --- controlsetdatehavepermissiondefaultpermission
+	thingdateinterface --> controlsetdatehavepermissiondefaultpermission
+	thingdepositorinterface --> controlsetdatehavepermissiondefaultpermission
+	thingdate --- controlsetdatehavepermissiondefaultpermission
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate --> controlsetdatehavepermissiondefaultpermission
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate --> controlsetdate
+	thingdate --- controlsetdate
+	thingdepositwindow --- controlsetdate
+	thingwindowinterface --> controlsetdate
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controladdmultiplepeopledepositgroup
+	thingmultiplepeople --- controladdmultiplepeopledepositgroup
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate --> controladdmultiplepeopledepositgroup
+	thingmultiplepeople --- controlremovemultiplepeopledepositgroup
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controlremovemultiplepeopledepositgroup
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdate --> controlremovemultiplepeopledepositgroup
+
+@enduml

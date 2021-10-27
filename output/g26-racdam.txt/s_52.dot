@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Available ,\nPossible ,\nArchival ,\nMaterial " color=red];
+201 [label="<f0>  |<f1> Use " color=red];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Make As Available, Possible, Archival, Much Material For Use }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Available ,\nPossible ,\nArchival ,\nMaterial"]
+203 -> 201 [label="Use"]
+}

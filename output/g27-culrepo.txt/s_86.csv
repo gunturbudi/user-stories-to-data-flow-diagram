@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Personal Account,shape=partialRectangle,null,null,data_base
+201,Password,shape=partialRectangle,null,null,data_base
+202,Db,rounded=0,null,null,external_entity
+203,Ir Administrator,rounded=0,null,null,external_entity
+204,Make,ellipse,null,null,process
+205,Change Passwords,ellipse,null,null,process
+206,Have A Personal Account With,ellipse,null,null,process
+207,Retrieve Forgotten Ones,ellipse,null,null,process
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,,endArrow=classic,202,207,endArrow=classic
+213,,endArrow=classic,203,204,endArrow=classic
+214,,endArrow=classic,203,205,endArrow=classic
+215,,endArrow=classic,203,206,endArrow=classic
+216,,endArrow=classic,203,207,endArrow=classic
+217,,endArrow=classic,205,204,endArrow=classic
+218,,endArrow=classic,205,207,endArrow=classic
+219,Password,endArrow=classic,205,201,endArrow=classic
+220,,endArrow=classic,206,205,endArrow=classic
+221,Personal Account,endArrow=classic,206,200,endArrow=classic

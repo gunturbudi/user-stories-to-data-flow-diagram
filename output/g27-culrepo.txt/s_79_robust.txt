@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email Notification" as thingemailnotification #grey
+	entity "Personal Account" as thingpersonalaccount
+	actor "Patron" as actorpatron
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Notification\nInterface" as thingnotificationinterface #grey
+	control "Create A\nPersonal Account" as controlcreatepersonalaccountrequestemailnotification
+	control "Request Email\nNotification" as controlrequestemailnotification
+
+	actorpatron --- thingaccountinterface
+	actorpatron --- thingnotificationinterface
+	thingpersonalaccount --- controlcreatepersonalaccountrequestemailnotification
+	thingaccountinterface --> controlcreatepersonalaccountrequestemailnotification
+	controlcreatepersonalaccountrequestemailnotification --> controlrequestemailnotification
+	thingemailnotification --- controlrequestemailnotification
+	thingnotificationinterface --> controlrequestemailnotification
+
+@enduml

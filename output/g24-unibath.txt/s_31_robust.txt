@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Privileged Access" as thingprivilegedaccess
+	entity "Project" as thingproject
+	entity "Datum" as thingdatum
+	actor "Externalcollaborator" as actorexternalcollaborator
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Gain Privileged\nAccess To\nData For\nProjects In\nWhich Involved" as controlgainprivilegedaccess
+
+	thingdatum <.. thingprivilegedaccess
+	thingproject <.. thingprivilegedaccess
+	thingproject <.. thingdatum
+	actorexternalcollaborator --- thingprojectinterface
+	thingprivilegedaccess --- controlgainprivilegedaccess
+	thingdatum --- controlgainprivilegedaccess
+	thingproject --- controlgainprivilegedaccess
+	thingprojectinterface --> controlgainprivilegedaccess
+
+@enduml

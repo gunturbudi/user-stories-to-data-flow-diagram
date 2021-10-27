@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="Repository , Support , Team Member" shape=box];
+203 [label="{<f0> 1.0|<f1> To }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Belong To Both Collections }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Map }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Alias An Item From Collection To Another }" shape=Mrecord];
+207 [label="{<f0> 5.0|<f1> The Collection Owner Asked Both Collections }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 206
+202 -> 207
+204 -> 200 [label="Collection"]
+206 -> 201 [label="Item"]
+206 -> 200 [label="Collection"]
+207 -> 203
+207 -> 200 [label="Collection"]
+}

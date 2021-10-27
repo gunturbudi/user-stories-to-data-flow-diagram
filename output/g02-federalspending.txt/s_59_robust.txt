@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Work" as thingsamework
+	entity "Entity Zip\nValidation" as thingentityzipvalidation
+	actor "Broker User" as actorbrokeruser
+	boundary "Validation\nInterface" as thingvalidationinterface #grey
+	control "Have The\nSame Work\nAs The\nLegal Entity\nZip Validations" as controlhavesameworklegalentityzipvalidations
+
+	thingentityzipvalidation <.. thingsamework
+	actorbrokeruser --- thingvalidationinterface
+	thingsamework --- controlhavesameworklegalentityzipvalidations
+	thingentityzipvalidation --- controlhavesameworklegalentityzipvalidations
+	thingvalidationinterface --> controlhavesameworklegalentityzipvalidations
+
+@enduml

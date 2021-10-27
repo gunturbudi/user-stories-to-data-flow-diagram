@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Datapackage,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Sqlite Database,shape=partialRectangle,null,null,data_base
+203,Consumer,rounded=0,null,null,external_entity
+204,Download Coherent Sqlite Database,ellipse,null,null,process
+205,Download A Datapackage's Data,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Sqlite Database,endArrow=classic,204,202,endArrow=classic
+210,Datum,endArrow=classic,205,201,endArrow=classic
+212,Datapackage,endArrow=classic,205,200,endArrow=classic

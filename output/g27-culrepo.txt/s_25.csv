@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Archival,shape=partialRectangle,null,null,data_base
+202,Rare Material,shape=partialRectangle,null,null,data_base
+203,"Library , Staff Member",rounded=0,null,null,external_entity
+204,Create Collections Highlight Archival,ellipse,null,null,process
+205,Create Collections Highlight Rare Material,ellipse,null,null,process
+206,Endanger,ellipse,null,null,process
+207,Create Collections Highlight,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,205,endArrow=classic
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,Archival,endArrow=classic,204,201,endArrow=classic
+214,Collection,endArrow=classic,204,200,endArrow=classic
+215,Collection,endArrow=classic,205,200,endArrow=classic
+216,Rare Material,endArrow=classic,205,202,endArrow=classic
+217,,endArrow=classic,207,206,endArrow=classic
+218,Collection,endArrow=classic,207,200,endArrow=classic

@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Link" as thinglink
+	entity "Article" as thingarticle
+	actor "Site Visitor" as actorsitevisitor
+	circle "Body" as thingbody
+	circle "Teaser" as thingteaser #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Click The\nLink From\nThe Article\nTeaser" as controlclicklinktakelinkbody
+	control "The Link\nTake To\nThe Body\nOf The\nArticle" as controltakelinkbody
+
+	thingteaser <.. thinglink
+	thingbody <.. thinglink
+	thingarticle <.. thinglink
+	thingarticle *-- thingbody
+	thingarticle *-- thingteaser
+	actorsitevisitor --- thingarticleinterface
+	thinglink --- controlclicklinktakelinkbody
+	thingteaser --- controlclicklinktakelinkbody
+	thingarticleinterface --> controlclicklinktakelinkbody
+	controlclicklinktakelinkbody --> controltakelinkbody
+	thingbody --- controltakelinkbody
+	thingarticle --- controltakelinkbody
+	thingarticleinterface --> controltakelinkbody
+	thinglink --- controltakelinkbody
+
+@enduml

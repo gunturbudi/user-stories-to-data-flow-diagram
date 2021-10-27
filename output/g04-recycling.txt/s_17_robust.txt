@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Feedback" as thingfeedback
+	entity "User" as thinguser
+	entity "Complaint" as thingcomplaint
+	actor "Admin" as actoradmin
+	boundary "Complaint\nInterface" as thingcomplaintinterface #grey
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	control "Read Complaint" as controlreadcomplaint
+	control "Read Users'\nFeedback" as controlreadfeedback
+
+	thinguser <.. thingfeedback
+	actoradmin --- thingcomplaintinterface
+	actoradmin --- thingfeedbackinterface
+	thingcomplaint --- controlreadcomplaint
+	thingcomplaintinterface --> controlreadcomplaint
+	thingfeedback --- controlreadfeedback
+	thingfeedbackinterface --> controlreadfeedback
+
+@enduml

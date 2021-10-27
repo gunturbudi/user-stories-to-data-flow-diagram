@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Configuration" as thingconfiguration
+	entity "Item" as thingitem
+	entity "Embargo" as thingembargo
+	entity "Access Control" as thingaccesscontrol
+	entity "Release" as thingrelease #grey
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Repository" as thingrepositoryliftembargodigitalrecordsarchivist #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	control "Lift Embargoes\nOn The\nRelease Date" as controlliftembargo
+	control "Set The\nAccess Controls\nTo The\nConfiguration On\nItem On\nThat Date" as controlsetaccesscontrolsconfiguration
+	control "Have" as controlhaverepositoryliftembargodigitalrecordsarchivist
+
+	thingrelease <.. thingdate
+	thingitem <.. thingconfiguration
+	thingdate <.. thingconfiguration
+	thingdate <.. thingitem
+	thingdate <.. thingembargo
+	thingconfiguration <.. thingaccesscontrol
+	actordigitalrecordsarchivist --- thingrepositoryliftembargodigitalrecordsarchivist
+	actordigitalrecordsarchivist --- thingdateinterface
+	thingembargo --- controlliftembargo
+	thingrepositoryliftembargodigitalrecordsarchivist --> controlliftembargo
+	controlhaverepositoryliftembargodigitalrecordsarchivist --> controlliftembargo
+	thingdate --- controlliftembargo
+	thingaccesscontrol --- controlsetaccesscontrolsconfiguration
+	thingconfiguration --- controlsetaccesscontrolsconfiguration
+	thingitem --- controlsetaccesscontrolsconfiguration
+	thingdate --- controlsetaccesscontrolsconfiguration
+	thingdateinterface --> controlsetaccesscontrolsconfiguration
+	controlhaverepositoryliftembargodigitalrecordsarchivist --> controlsetaccesscontrolsconfiguration
+	thingrepositoryliftembargodigitalrecordsarchivist --> controlhaverepositoryliftembargodigitalrecordsarchivist
+
+@enduml

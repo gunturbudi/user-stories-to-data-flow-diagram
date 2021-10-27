@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,"Center ,\nUrl ,\nHelp Mapping",shape=partialRectangle,null,null,data_base
+201,Topic,shape=partialRectangle,null,null,data_base
+202,Application Administrator,rounded=0,null,null,external_entity
+203,Configure Topic,ellipse,null,null,process
+204,"Configure The Center, Url, Help Mappings",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Topic,endArrow=classic,203,201,endArrow=classic
+209,"Center ,\nUrl ,\nHelp Mapping",endArrow=classic,204,200,endArrow=classic

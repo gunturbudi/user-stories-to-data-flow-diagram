@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training Node" as thingtrainingnode #grey
+	entity "-pron-" as thingmoinsPRONmoins
+	actor "Trainer" as actortrainer
+	boundary "Node\nInterface" as thingnodeinterface #grey
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	control "Edit Training\nNode" as controledittrainingnode
+	control "Edit -Pron-" as controleditmoinsPRONmoins
+
+	actortrainer --- thingnodeinterface
+	actortrainer --- thingproninterface
+	thingtrainingnode --- controledittrainingnode
+	thingnodeinterface --> controledittrainingnode
+	thingmoinsPRONmoins --- controleditmoinsPRONmoins
+	thingproninterface --> controleditmoinsPRONmoins
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Symplectic Element" as thingsymplecticelement
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Element\nInterface" as thingelementinterface #grey
+	control "Have Symplectic\nElements" as controlhavesymplecticelementcommunicate
+	control "Communicate" as controlcommunicate
+
+	actorrepoadmin --- thingelementinterface
+	thingsymplecticelement --- controlhavesymplecticelementcommunicate
+	thingelementinterface --> controlhavesymplecticelementcommunicate
+	controlhavesymplecticelementcommunicate --> controlcommunicate
+	thingelementinterface --> controlcommunicate
+
+@enduml

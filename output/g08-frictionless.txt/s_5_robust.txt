@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "New Visualization" as thingnewvisualization
+	actor "Researcher" as actorresearcher
+	boundary "Visualization\nInterface" as thingvisualizationinterface #grey
+	control "Save New\nVisualizations" as controlsavenewvisualization
+
+	actorresearcher --- thingvisualizationinterface
+	thingnewvisualization --- controlsavenewvisualization
+	thingvisualizationinterface --> controlsavenewvisualization
+
+@enduml

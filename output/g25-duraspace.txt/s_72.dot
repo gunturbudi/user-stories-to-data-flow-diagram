@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Pertinent Name " color=red];
+202 [label="<f0>  |<f1> Etc " ];
+203 [label="<f0>  |<f1> Component " color=red];
+204 [label="<f0>  |<f1> Object " color=red];
+205 [label="<f0>  |<f1> Specific Role " color=red];
+206 [label="<f0>  |<f1> Photographer " ];
+207 [label="<f0>  |<f1> Illustrator " ];
+208 [label="Repository Manager" shape=box];
+209 [label="{<f0> 1.0|<f1> Indicate }" shape=Mrecord];
+}

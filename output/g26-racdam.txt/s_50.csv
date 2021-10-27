@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+2,Track use of assets,ellipse,null,null,process
+200,Particular User,shape=partialRectangle,null,null,data_base
+201,Archivist,rounded=0,null,null,external_entity
+202,See,ellipse,null,null,process
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Use of assets,rounded=0,null,null,external_entity
+1002,Use of assets,endArrow=classic,2,1001,endArrow=classic

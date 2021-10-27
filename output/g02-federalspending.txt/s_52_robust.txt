@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Contract" as thingcontract
+	entity "Nasa Grant" as thingnasagrant
+	actor "User" as actoruser
+	control "See" as controlsee
+
+
+@enduml

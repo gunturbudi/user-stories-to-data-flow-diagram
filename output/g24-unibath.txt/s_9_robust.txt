@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Large File" as thinglargefile
+	actor "Depositor" as actordepositor
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Deposit Arbitrarily\nLarge Files" as controldepositlargefile
+
+	actordepositor --- thingfileinterface
+	thinglargefile --- controldepositlargefile
+	thingfileinterface --> controldepositlargefile
+
+@enduml

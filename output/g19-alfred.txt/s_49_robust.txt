@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Help" as thinghelp
+	entity "Alfred" as thingALFRED
+	entity "Emergency" as thingemergency
+	actor "Olderperson" as actorOlderPerson
+	circle "Case" as thingcase
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Contact Help\nIn Case\nOf An\nEmergency" as controlcontacthelpcase
+	control "Use Alfred" as controluseALFREDcontacthelpcase
+
+	thingcase <.. thinghelp
+	thingemergency *-- thingcase
+	actorOlderPerson --- thingalfredinterface
+	thinghelp --- controlcontacthelpcase
+	thingcase --- controlcontacthelpcase
+	thingemergency --- controlcontacthelpcase
+	controluseALFREDcontacthelpcase --> controlcontacthelpcase
+	thingalfredinterface --> controlcontacthelpcase
+	thingALFRED --- controluseALFREDcontacthelpcase
+	thingalfredinterface --> controluseALFREDcontacthelpcase
+
+@enduml

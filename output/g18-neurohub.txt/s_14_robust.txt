@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Log Book\nPage" as thinglogbookpage #grey
+	entity "Attach File" as thingattachedfile
+	actor "Researcher" as actorresearcher
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Attach Currently\nAttached Files\nTo A\nLog Book\nPage" as controlattachattachedfilelogbookpage
+
+	thinglogbookpage <.. thingattachedfile
+	actorresearcher --- thingpageinterface
+	thingattachedfile --- controlattachattachedfilelogbookpage
+	thinglogbookpage --- controlattachattachedfilelogbookpage
+	thingpageinterface --> controlattachattachedfilelogbookpage
+
+@enduml

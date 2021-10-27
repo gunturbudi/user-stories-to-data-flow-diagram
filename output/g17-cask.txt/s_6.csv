@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Dataset Type,shape=partialRectangle,null,null,data_base
+201,Multiple Application,shape=partialRectangle,null,null,data_base
+202,Code,shape=partialRectangle,null,null,data_base
+203,Artifact,shape=partialRectangle,null,null,data_base
+204,App Developer,rounded=0,null,null,external_entity
+205,Share A Dataset Type Across Multiple Applications Include The Dataset Type's Code In Artifacts,ellipse,null,null,process
+207,,endArrow=classic,204,205,endArrow=classic
+208,Multiple Application,endArrow=classic,205,201,endArrow=classic
+209,Code,endArrow=classic,205,202,endArrow=classic
+210,Artifact,endArrow=classic,205,203,endArrow=classic
+211,Dataset Type,endArrow=classic,205,200,endArrow=classic

@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Descriptive Metadata" as thingdescriptivemetadata
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Pdf" as thingPDF
+	actor "Researcher" as actorresearcher
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "See Descriptive\nMetadata For\nThe Item" as controlseedescriptivemetadata
+	control "Come To\nThe Item\nDirectly To\nThe Pdf" as controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	control "Come To\nThe Item\nThrough The\nRepository" as controlcomeseedescriptivemetadataitemrepository
+
+	thingitem <.. thingdescriptivemetadata
+	thingrepository <.. thingitem
+	thingPDF <.. thingitem
+	actorresearcher --- thingrepositoryinterface
+	thingdescriptivemetadata --- controlseedescriptivemetadata
+	thingitem --- controlseedescriptivemetadata
+	controlcomeseedescriptivemetadataitemrepository --> controlseedescriptivemetadata
+	thingrepositoryinterface --> controlseedescriptivemetadata
+	controlcomeseedescriptivemetadatamoinsPRONmoinsitemto --> controlseedescriptivemetadata
+	thingPDF --- controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingpdfinterface --> controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingitem --- controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingrepository --- controlcomeseedescriptivemetadataitemrepository
+	thingitem --- controlcomeseedescriptivemetadataitemrepository
+	thingrepositoryinterface --> controlcomeseedescriptivemetadataitemrepository
+
+@enduml

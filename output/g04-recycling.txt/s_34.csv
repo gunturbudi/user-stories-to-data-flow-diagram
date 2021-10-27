@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+3,Design my website.,ellipse,null,null,process
+200,Bootstrap,shape=partialRectangle,null,null,data_base
+201,Process,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Use Bootstrap In The Process,ellipse,null,null,process
+204,Developing,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Bootstrap,endArrow=classic,203,200,endArrow=classic
+209,Process,endArrow=classic,203,201,endArrow=classic
+210,,endArrow=classic,204,203,endArrow=classic
+1000,,endArrow=classic,203,3,endArrow=classic
+1001,Website,rounded=0,null,null,external_entity
+1002,Website,endArrow=classic,3,1001,endArrow=classic

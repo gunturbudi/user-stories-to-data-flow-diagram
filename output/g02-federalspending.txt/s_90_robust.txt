@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Good Way" as thingbestway
+	entity "Fpds Datum" as thingfpdsdatum
+	actor "Developer" as actordeveloper
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Determine The\nBest Way" as controldeterminebestwayloadhistoricalfpdsdata
+	control "Load Historical\nFpds Data" as controlloadhistoricalfpdsdata
+
+	actordeveloper --- thingwayinterface
+	actordeveloper --- thingdatuminterface
+	thingbestway --- controldeterminebestwayloadhistoricalfpdsdata
+	thingwayinterface --> controldeterminebestwayloadhistoricalfpdsdata
+	controldeterminebestwayloadhistoricalfpdsdata --> controlloadhistoricalfpdsdata
+	thingfpdsdatum --- controlloadhistoricalfpdsdata
+	thingdatuminterface --> controlloadhistoricalfpdsdata
+
+@enduml

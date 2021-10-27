@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource " color=red];
+201 [label="<f0>  |<f1> Keyboard ,\nBased Navigation " ];
+202 [label="<f0>  |<f1> Object Hierarchy " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Rearrange Digital Object Hierarchy }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Rearrange The Resource Using Keyboard, Based Navigation }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Object Hierarchy"]
+205 -> 200 [label="Resource"]
+205 -> 201 [label="Keyboard ,\nBased Navigation"]
+}

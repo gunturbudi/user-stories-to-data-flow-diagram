@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archon" as thingarchon
+	entity "Ead File" as thingeadfile
+	actor "Archivist" as actorarchivist
+	boundary "Archon\nInterface" as thingarchoninterface #grey
+	control "Import Ead\nFiles Exported\nArchon" as controlimporteadfiles
+
+	thingarchon <.. thingeadfile
+	actorarchivist --- thingarchoninterface
+	thingeadfile --- controlimporteadfiles
+	thingarchon --- controlimporteadfiles
+	thingarchoninterface --> controlimporteadfiles
+
+@enduml

@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Logbook Entry,shape=partialRectangle,null,null,data_base
+201,Individual,shape=partialRectangle,null,null,data_base
+202,Group,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Keep A Private Logbook Entry,ellipse,null,null,process
+205,Share A Logbook Entry With Individuals Rather Than Groups,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Logbook Entry,endArrow=classic,204,200,endArrow=classic
+210,Individual,endArrow=classic,205,201,endArrow=classic
+211,Group,endArrow=classic,205,202,endArrow=classic
+212,Logbook Entry,endArrow=classic,205,200,endArrow=classic

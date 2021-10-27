@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Feedback" as thingfeedback
+	entity "Zip Code" as thingzipcode
+	actor "User" as actoruser
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Get Feedback" as controlgetfeedback
+	control "Enter An\nInvalid Zip\nCode" as controlentergetfeedbackinvalidzipcode
+
+	actoruser --- thingcodeinterface
+	thingfeedback --- controlgetfeedback
+	controlentergetfeedbackinvalidzipcode --> controlgetfeedback
+	thingcodeinterface --> controlgetfeedback
+	thingzipcode --- controlentergetfeedbackinvalidzipcode
+	thingcodeinterface --> controlentergetfeedbackinvalidzipcode
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Technical Metadata" as thingtechnicalmetadata
+	actor "Archivist" as actorarchivist
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Generate Technical\nMetadata" as controlgeneratetechnicalmetadata
+
+	actorarchivist --- thingmetadatainterface
+	thingtechnicalmetadata --- controlgeneratetechnicalmetadata
+	thingmetadatainterface --> controlgeneratetechnicalmetadata
+
+@enduml

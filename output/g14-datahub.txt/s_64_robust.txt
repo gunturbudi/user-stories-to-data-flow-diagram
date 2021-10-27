@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pricing Plan" as thingpricingplan #grey
+	entity "Billing System" as thingbillingsystem #grey
+	actor "Admin" as actoradmin
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Have Billing\nSystem" as controlhavebillingsystem
+	control "Have A\nPricing Plan" as controlhavepricingplan
+
+	actoradmin --- thingsysteminterface
+	actoradmin --- thingplaninterface
+	thingbillingsystem --- controlhavebillingsystem
+	thingsysteminterface --> controlhavebillingsystem
+	thingpricingplan --- controlhavepricingplan
+	thingplaninterface --> controlhavepricingplan
+
+@enduml

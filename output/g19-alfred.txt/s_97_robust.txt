@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Step Counter" as thingstepcounter #grey
+	actor "Socialcaregiver" as actorSocialCaregiver
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Have A\nStep Counter\nInto Alfred" as controlhavestepcounter
+
+	thingALFRED <.. thingstepcounter
+	actorSocialCaregiver --- thingalfredinterface
+	thingstepcounter --- controlhavestepcounter
+	thingALFRED --- controlhavestepcounter
+	thingalfredinterface --> controlhavestepcounter
+
+@enduml

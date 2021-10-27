@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Aforementioned Work" as thingaforementionedwork
+	entity "Digital Space" as thingdigitalspace
+	actor "Administrator" as actoradministrator
+	boundary "Space\nInterface" as thingspaceinterface #grey
+	control "Disseminate The\nAforementioned Works\nIn A\nDigital Space\nStrongly Branded" as controldisseminateaforementionedworkdigitalspace
+
+	thingdigitalspace <.. thingaforementionedwork
+	actoradministrator --- thingspaceinterface
+	thingaforementionedwork --- controldisseminateaforementionedworkdigitalspace
+	thingdigitalspace --- controldisseminateaforementionedworkdigitalspace
+	thingspaceinterface --> controldisseminateaforementionedworkdigitalspace
+
+@enduml

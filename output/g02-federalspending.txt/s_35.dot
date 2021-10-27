@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publish ,\nNew Datum " ];
+201 [label="<f0>  |<f1> Existent Record " color=red];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Correct Existent Records }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Ensure }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Delete Existent Records }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+203 -> 201
+204 -> 203
+204 -> 205
+205 -> 201
+}

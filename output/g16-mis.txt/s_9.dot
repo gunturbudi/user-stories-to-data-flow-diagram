@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Replication Policy " ];
+202 [label="Repository Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Specify The Remote Replication Policy For Each Collection }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Replication Policy"]
+203 -> 200 [label="Collection"]
+}

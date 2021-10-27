@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training" as thingtraining
+	entity "Muscle Group" as thingmusclegroup
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Alfred" as thingALFREDMedicalCaregiver
+	control "Have" as controlhaveofferALFREDMedicalCaregivertraining
+	control "Offer Training\nFor Specific\nMuscle Groups" as controlofferALFREDMedicalCaregivertraining
+
+	thingmusclegroup <.. thingtraining
+	actorMedicalCaregiver --- thingALFREDMedicalCaregiver
+	thingALFREDMedicalCaregiver --> controlhaveofferALFREDMedicalCaregivertraining
+	controlhaveofferALFREDMedicalCaregivertraining --> controlofferALFREDMedicalCaregivertraining
+	thingALFREDMedicalCaregiver --> controlofferALFREDMedicalCaregivertraining
+	thingtraining --- controlofferALFREDMedicalCaregivertraining
+	thingmusclegroup --- controlofferALFREDMedicalCaregivertraining
+
+@enduml

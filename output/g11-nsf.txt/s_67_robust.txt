@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	entity "Html Idea" as thinghtmlidea
+	actor "Team Member" as actorteammember
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Idea\nInterface" as thingideainterface #grey
+	control "Have A\nPlatform Allows" as controlhaveplatformprototypehtmlideas
+	control "Prototype Html\nIdeas" as controlprototypehtmlideas
+
+	actorteammember --- thingplatforminterface
+	actorteammember --- thingideainterface
+	thingplatform --- controlhaveplatformprototypehtmlideas
+	thingplatforminterface --> controlhaveplatformprototypehtmlideas
+	controlhaveplatformprototypehtmlideas --> controlprototypehtmlideas
+	thinghtmlidea --- controlprototypehtmlideas
+	thingideainterface --> controlprototypehtmlideas
+
+@enduml

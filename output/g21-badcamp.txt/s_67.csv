@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Registration Form,shape=partialRectangle,null,null,data_base
+201,Link,shape=partialRectangle,null,null,data_base
+202,Menu,shape=partialRectangle,null,null,data_base
+203,Anonymoususer,rounded=0,null,null,external_entity
+204,Find A Link In The Menu Links To The Registration Form,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Link,endArrow=classic,204,201,endArrow=classic
+208,Menu,endArrow=classic,204,202,endArrow=classic
+209,Registration Form,endArrow=classic,204,200,endArrow=classic

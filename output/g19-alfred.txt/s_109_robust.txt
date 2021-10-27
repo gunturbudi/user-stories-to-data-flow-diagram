@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training Performance" as thingtrainingperformance #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Performance\nInterface" as thingperformanceinterface #grey
+	control "See Training\nPerformance" as controlseetrainingperformance
+
+	actorOlderPerson --- thingperformanceinterface
+	thingtrainingperformance --- controlseetrainingperformance
+	thingperformanceinterface --> controlseetrainingperformance
+
+@enduml

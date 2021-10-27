@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Address" as thingaddress
+	actor "User" as actoruser
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Click On\nThe Address" as controlclickaddress
+
+	actoruser --- thingaddressinterface
+	thingaddress --- controlclickaddress
+	thingaddressinterface --> controlclickaddress
+
+@enduml

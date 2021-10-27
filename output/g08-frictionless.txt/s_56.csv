@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Reproducible Step,shape=partialRectangle,null,null,data_base
+201,Methodology,shape=partialRectangle,null,null,data_base
+202,Data State,shape=partialRectangle,null,null,data_base
+203,Publisher,rounded=0,null,null,external_entity
+204,Get A Certain Data State,ellipse,null,null,process
+205,Package Reproducible Steps,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Data State,endArrow=classic,204,202,endArrow=classic
+210,,endArrow=classic,205,204,endArrow=classic
+211,Reproducible Step,endArrow=classic,205,200,endArrow=classic

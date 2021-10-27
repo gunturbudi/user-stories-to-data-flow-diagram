@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Help me get to the location,ellipse,null,null,process
+200,Summit,shape=partialRectangle,null,null,data_base
+201,Specific Detail,shape=partialRectangle,null,null,data_base
+202,Anonymoususer,rounded=0,null,null,external_entity
+203,See Specific Details On Summits,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Specific Detail,endArrow=classic,203,201,endArrow=classic
+207,Summit,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Interests,rounded=0,null,null,external_entity
+1002,Interests,endArrow=classic,2,1001,endArrow=classic

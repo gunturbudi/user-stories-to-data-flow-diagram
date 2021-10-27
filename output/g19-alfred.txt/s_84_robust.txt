@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Vital Datum" as thingvitaldatum
+	entity "Access" as thingaccess
+	actor "Olderperson" as actorOlderPerson
+	control "Decide" as controldecide
+
+	thingvitaldatum <.. thingaccess
+
+@enduml

@@ -1,0 +1,49 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Need Report" as thingneededreport
+	entity "Dataset" as thingdataset
+	entity "Complete" as thingcomplete
+	entity "Report" as thingreport
+	entity "Keyword" as thingkeyword
+	entity "Partial Title" as thingpartialtitle
+	actor "Patron" as actorpatron
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Complete\nInterface" as thingcompleteinterface #grey
+	control "Search For\nDataset With\nKeywords" as controlsearchdataset
+	control "Search For\nReport" as controlsearchreport
+	control "Locate Dataset" as controllocatedataset
+	control "Locate Needed\nReport" as controllocateneededreport
+	control "Search For\nDataset With\nComplete" as controlsearchdatasetcomplete
+	control "Search For\nDataset With\nA Partial\nTitle" as controlsearchdatasetpartialtitlelocateneededreport
+
+	thingkeyword <.. thingdataset
+	thingpartialtitle <.. thingdataset
+	thingcomplete <.. thingdataset
+	actorpatron --- thingkeywordinterface
+	actorpatron --- thingreportinterface
+	actorpatron --- thingtitleinterface
+	actorpatron --- thingcompleteinterface
+	thingdataset --- controlsearchdataset
+	thingkeyword --- controlsearchdataset
+	thingkeywordinterface --> controlsearchdataset
+	thingreport --- controlsearchreport
+	thingreportinterface --> controlsearchreport
+	thingtitleinterface --> controllocatedataset
+	thingdataset --- controllocatedataset
+	controlsearchdatasetpartialtitlelocateneededreport --> controllocatedataset
+	thingneededreport --- controllocateneededreport
+	controlsearchdatasetpartialtitlelocateneededreport --> controllocateneededreport
+	thingtitleinterface --> controllocateneededreport
+	thingcomplete --- controlsearchdatasetcomplete
+	thingcompleteinterface --> controlsearchdatasetcomplete
+	thingdataset --- controlsearchdatasetcomplete
+	thingpartialtitle --- controlsearchdatasetpartialtitlelocateneededreport
+	thingtitleinterface --> controlsearchdatasetpartialtitlelocateneededreport
+	thingdataset --- controlsearchdatasetpartialtitlelocateneededreport
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	entity "Email Account" as thingemailaccount #grey
+	actor "User" as actoruser
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Link Email\nAccount To\nProfile" as controllinkemailaccountprofile
+
+	thingprofile <.. thingemailaccount
+	actoruser --- thingprofileinterface
+	thingemailaccount --- controllinkemailaccountprofile
+	thingprofile --- controllinkemailaccountprofile
+	thingprofileinterface --> controllinkemailaccountprofile
+
+@enduml

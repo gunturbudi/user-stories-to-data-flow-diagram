@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Import" as thingimport
+	entity "Error" as thingerror
+	actor "Archivist" as actorarchivist
+	control "Understand" as controlunderstand
+
+
+@enduml

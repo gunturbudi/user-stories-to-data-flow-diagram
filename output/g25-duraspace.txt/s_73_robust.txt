@@ -1,0 +1,44 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "Search" as thingsearch
+	entity "Etc" as thingetc
+	entity "Photographer" as thingphotographer
+	entity "Specific Role" as thingspecificrole
+	entity "Illustrator" as thingillustrator
+	actor "User" as actoruser
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Photographer\nInterface" as thingphotographerinterface #grey
+	boundary "Illustrator\nInterface" as thingillustratorinterface #grey
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Etc" as controlscopesearchspecificroleetc
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Photographer" as controlscopesearchspecificrolephotographer
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Illustrator" as controlscopesearchspecificrole
+
+	thingspecificrole <.. thingname
+	thingname <.. thingsearch
+	thingillustrator <.. thingspecificrole
+	thingphotographer <.. thingspecificrole
+	thingetc <.. thingspecificrole
+	actoruser --- thingetcinterface
+	actoruser --- thingphotographerinterface
+	actoruser --- thingillustratorinterface
+	thingetc --- controlscopesearchspecificroleetc
+	thingetcinterface --> controlscopesearchspecificroleetc
+	thingspecificrole --- controlscopesearchspecificroleetc
+	thingname --- controlscopesearchspecificroleetc
+	thingsearch --- controlscopesearchspecificroleetc
+	thingphotographer --- controlscopesearchspecificrolephotographer
+	thingphotographerinterface --> controlscopesearchspecificrolephotographer
+	thingspecificrole --- controlscopesearchspecificrolephotographer
+	thingname --- controlscopesearchspecificrolephotographer
+	thingsearch --- controlscopesearchspecificrolephotographer
+	thingsearch --- controlscopesearchspecificrole
+	thingname --- controlscopesearchspecificrole
+	thingspecificrole --- controlscopesearchspecificrole
+	thingillustrator --- controlscopesearchspecificrole
+	thingillustratorinterface --> controlscopesearchspecificrole
+
+@enduml

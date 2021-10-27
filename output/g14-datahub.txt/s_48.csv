@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Data Package,shape=partialRectangle,null,null,data_base
+201,Particular Version,shape=partialRectangle,null,null,data_base
+202,Consumer,rounded=0,null,null,external_entity
+203,Download A Data Package At A Particular Version,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Data Package,endArrow=classic,203,200,endArrow=classic
+207,Particular Version,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Geographical Map " color=red];
+201 [label="User" shape=box];
+202 [label="{<f0> 1.0|<f1> Informed, Content Access Walk }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Use A Geographical Map }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 203
+203 -> 200 [label="Geographical Map"]
+}

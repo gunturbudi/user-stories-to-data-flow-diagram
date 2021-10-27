@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Conjunction " ];
+201 [label="<f0>  |<f1> New Cms " ];
+202 [label="<f0>  |<f1> Level Strategy\nRecommendation " ];
+203 [label="Nsf Employee" shape=box];
+204 [label="{<f0> 1.0|<f1> Have High Level Strategy Recommendations }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Implement In Conjunction With The New Cms }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 202 [label="Level Strategy\nRecommendation"]
+205 -> 200 [label="Conjunction"]
+205 -> 201 [label="New Cms"]
+}

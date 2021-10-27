@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,See my submission history.,ellipse,null,null,process
+200,Submission Dashboard,shape=partialRectangle,null,null,data_base
+201,Status Label,shape=partialRectangle,null,null,data_base
+202,Fabs User,rounded=0,null,null,external_entity
+203,See Correct Status Labels On The Submission Dashboard,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Status Label,endArrow=classic,203,201,endArrow=classic
+207,Submission Dashboard,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Submission history,rounded=0,null,null,external_entity
+1002,Submission history,endArrow=classic,2,1001,endArrow=classic

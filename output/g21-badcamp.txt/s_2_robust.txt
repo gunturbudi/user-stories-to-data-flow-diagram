@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Profile" as thinguserprofile
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "View A\nList Of\nUser Profiles" as controlviewlist
+
+	actoranonymoususer --- thingprofileinterface
+	thinguserprofile --- controlviewlist
+	thingprofileinterface --> controlviewlist
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Viewer" as thingviewer
+	entity "Data Types\nHierarchy" as thingdatatypeshierarchy
+	actor "Platform Administrator" as actorplatformadministrator
+	boundary "Viewer\nInterface" as thingviewerinterface #grey
+	control "Translate The\nData Types\nHierarchies Of\nThe Viewer" as controltranslatedatatypeshierarchies
+
+	thingviewer <.. thingdatatypeshierarchy
+	actorplatformadministrator --- thingviewerinterface
+	thingdatatypeshierarchy --- controltranslatedatatypeshierarchies
+	thingviewer --- controltranslatedatatypeshierarchies
+	thingviewerinterface --> controltranslatedatatypeshierarchies
+
+@enduml

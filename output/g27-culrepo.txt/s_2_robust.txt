@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Student" as thingstudent
+	actor "Faculty Member" as actorfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Direct Students\nTo An\nItem Within\nThe Repository" as controldirectstudentitem
+
+	thingrepository <.. thingitem
+	thingitem <.. thingstudent
+	actorfacultymember --- thingrepositoryinterface
+	thingstudent --- controldirectstudentitem
+	thingitem --- controldirectstudentitem
+	thingrepository --- controldirectstudentitem
+	thingrepositoryinterface --> controldirectstudentitem
+
+@enduml

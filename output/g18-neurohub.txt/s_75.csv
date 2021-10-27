@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+2,Replicate my work,ellipse,null,null,process
+200,Researcher,shape=partialRectangle,null,null,data_base
+201,Write Up,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Share Experiment Write Ups With Other Researchers,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Write Up,endArrow=classic,203,201,endArrow=classic
+207,Researcher,endArrow=classic,203,200,endArrow=classic
+1000,Others,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Work,rounded=0,null,null,external_entity
+1003,Work,endArrow=classic,2,1002,endArrow=classic

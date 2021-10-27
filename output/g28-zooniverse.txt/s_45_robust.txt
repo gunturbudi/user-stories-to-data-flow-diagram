@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingmovingobject
+	entity "Transient" as thingtransient
+	entity "Image" as thingimage
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Transient\nInterface" as thingtransientinterface #grey
+	control "Detect Moving\nObjects In\nThe Images" as controldetectmovingobject
+	control "Detect Transient" as controldetecttransient
+
+	thingimage <.. thingmovingobject
+	actorzooniverseadmin --- thingimageinterface
+	actorzooniverseadmin --- thingtransientinterface
+	thingmovingobject --- controldetectmovingobject
+	thingimage --- controldetectmovingobject
+	thingimageinterface --> controldetectmovingobject
+	thingtransient --- controldetecttransient
+	thingtransientinterface --> controldetecttransient
+
+@enduml

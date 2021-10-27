@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Web" as thingweb
+	entity "Archive" as thingarchive
+	actor "Datum Reuser" as actordatareuser
+	boundary "Web\nInterface" as thingwebinterface #grey
+	control "Search The\nArchive Through\nThe Web" as controlsearcharchiveweb
+
+	thingweb <.. thingarchive
+	actordatareuser --- thingwebinterface
+	thingarchive --- controlsearcharchiveweb
+	thingweb --- controlsearcharchiveweb
+	thingwebinterface --> controlsearcharchiveweb
+
+@enduml

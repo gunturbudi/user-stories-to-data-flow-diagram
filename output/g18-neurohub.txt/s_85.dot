@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> New Datum " ];
+201 [label="<f0>  |<f1> System " ];
+202 [label="<f0>  |<f1> Populated Template " ];
+203 [label="<f0>  |<f1> Meta Datum " ];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Select A Partially Populated Template Already Contains }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Have }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Populated Template"]
+206 -> 205
+}

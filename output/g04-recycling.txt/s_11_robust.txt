@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Area" as thingarea
+	entity "Disposal Event" as thingdisposalevent
+	actor "User" as actoruser
+	boundary "Area\nInterface" as thingareainterface #grey
+	control "View The\nCurrently Safe\nDisposal Events\nAround Area" as controlviewsafedisposalevents
+
+	thingarea <.. thingdisposalevent
+	actoruser --- thingareainterface
+	thingdisposalevent --- controlviewsafedisposalevents
+	thingarea --- controlviewsafedisposalevents
+	thingareainterface --> controlviewsafedisposalevents
+
+@enduml

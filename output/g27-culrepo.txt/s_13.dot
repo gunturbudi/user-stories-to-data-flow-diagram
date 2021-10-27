@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Cut " ];
+202 [label="<f0>  |<f1> Format Citation " ];
+203 [label="<f0>  |<f1> People " ];
+204 [label="Cornell , Faculty Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Upload Data }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Provide A Cut }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Paste Formatted Citation For People Use A Cut }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200 [label="Datum"]
+206 -> 201 [label="Cut"]
+207 -> 202 [label="Format Citation"]
+207 -> 203 [label="People"]
+207 -> 201 [label="Cut"]
+}

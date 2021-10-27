@@ -1,0 +1,27 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Collection Component,shape=partialRectangle,null,null,data_base
+202,Title Entity,shape=partialRectangle,null,null,data_base
+203,Date,shape=partialRectangle,null,null,data_base
+204,Name,shape=partialRectangle,null,null,data_base
+205,Subject,shape=partialRectangle,null,null,data_base
+206,Repository Manager,rounded=0,null,null,external_entity
+207,Describe Various Facets Of Object,ellipse,null,null,process
+208,Describe Various Facets Of A Collection Component Are Not Addressable Via Subject,ellipse,null,null,process
+209,Describe Various Facets Of A Collection Component Are Not Addressable Via Date,ellipse,null,null,process
+210,Describe Various Facets Of A Collection Component Are Not Addressable Via Title Entities,ellipse,null,null,process
+211,Describe Various Facets Of A Collection Component Are Not Addressable Via Name,ellipse,null,null,process
+213,,endArrow=classic,206,207,endArrow=classic
+214,,endArrow=classic,206,208,endArrow=classic
+215,,endArrow=classic,206,209,endArrow=classic
+216,,endArrow=classic,206,210,endArrow=classic
+217,,endArrow=classic,206,211,endArrow=classic
+218,Object,endArrow=classic,207,200,endArrow=classic
+219,Subject,endArrow=classic,208,205,endArrow=classic
+220,Collection Component,endArrow=classic,208,201,endArrow=classic
+221,Date,endArrow=classic,209,203,endArrow=classic
+222,Collection Component,endArrow=classic,209,201,endArrow=classic
+223,Collection Component,endArrow=classic,210,201,endArrow=classic
+224,Title Entity,endArrow=classic,210,202,endArrow=classic
+225,Name,endArrow=classic,211,204,endArrow=classic
+226,Collection Component,endArrow=classic,211,201,endArrow=classic

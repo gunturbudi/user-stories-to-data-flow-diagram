@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Design Direction,shape=partialRectangle,null,null,data_base
+201,Beta Page,shape=partialRectangle,null,null,data_base
+202,Team Member,rounded=0,null,null,external_entity
+203,Determine A Design Direction For The Social Beta Page,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Design Direction,endArrow=classic,203,200,endArrow=classic
+207,Beta Page,endArrow=classic,203,201,endArrow=classic

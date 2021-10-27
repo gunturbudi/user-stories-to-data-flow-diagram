@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Survey" as thingsurvey
+	entity "Class" as thingclass
+	actor "Trainer" as actortrainer
+	circle "Result" as thingresult
+	boundary "Class\nInterface" as thingclassinterface #grey
+	control "Notified About\nThe Results\nOf Surveys\nAbout Classes" as controlnotifyresult
+
+	thingclass <.. thingsurvey
+	thingsurvey *-- thingresult
+	actortrainer --- thingclassinterface
+	thingresult --- controlnotifyresult
+	thingsurvey --- controlnotifyresult
+	thingclass --- controlnotifyresult
+	thingclassinterface --> controlnotifyresult
+
+@enduml

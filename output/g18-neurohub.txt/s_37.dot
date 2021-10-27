@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Page Template " ];
+201 [label="<f0>  |<f1> Metadata Field " color=red];
+202 [label="Lab Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Create Page Templates With Bespoke Metadata Fields }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Page Template"]
+203 -> 201 [label="Metadata Field"]
+}

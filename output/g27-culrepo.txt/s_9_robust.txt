@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Access Embargo" as thingaccessembargo #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Apply An\nAccess Embargo\nTo An\nItem" as controlapplyaccessembargoitem
+	control "Remove An\nAccess Embargo\nTo An\nItem" as controlremoveaccessembargoitem
+
+	thingitem <.. thingaccessembargo
+	actorlibrarystaffmember --- thingiteminterface
+	thingaccessembargo --- controlapplyaccessembargoitem
+	thingitem --- controlapplyaccessembargoitem
+	thingiteminterface --> controlapplyaccessembargoitem
+	thingitem --- controlremoveaccessembargoitem
+	thingaccessembargo --- controlremoveaccessembargoitem
+	thingiteminterface --> controlremoveaccessembargoitem
+
+@enduml

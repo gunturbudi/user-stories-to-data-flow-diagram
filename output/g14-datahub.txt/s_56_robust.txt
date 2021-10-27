@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Exist User" as thingexistinguser
+	actor "Owner" as actorowner
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Invite An\nExisting User" as controlinviteexistinguser
+
+	actorowner --- thinguserinterface
+	thingexistinguser --- controlinviteexistinguser
+	thinguserinterface --> controlinviteexistinguser
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Url" as thingurl
+	entity "Estimator" as thingestimator
+	entity "Game" as thinggame
+	actor "Moderator" as actormoderator
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "Invite Estimators" as controlinviteestimator
+	control "Giving Them\nA Url\nWhere Access\nThe Game" as controlgiveinviteestimatorurl
+
+	thinggame <.. thingurl
+	actormoderator --- thinggameinterface
+	thingestimator --- controlinviteestimator
+	controlgiveinviteestimatorurl --> controlinviteestimator
+	thinggameinterface --> controlinviteestimator
+	thingurl --- controlgiveinviteestimatorurl
+	thinggame --- controlgiveinviteestimatorurl
+	thinggameinterface --> controlgiveinviteestimatorurl
+
+@enduml

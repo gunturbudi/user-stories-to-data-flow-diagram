@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Project,shape=partialRectangle,null,null,data_base
+201,Administrative Information,shape=partialRectangle,null,null,data_base
+202,Dmp,shape=partialRectangle,null,null,data_base
+203,Data Librarian,rounded=0,null,null,external_entity
+204,Import Administrative Information Regarding A Project Into Dmp,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Administrative Information,endArrow=classic,204,201,endArrow=classic
+208,Project,endArrow=classic,204,200,endArrow=classic
+209,Dmp,endArrow=classic,204,202,endArrow=classic

@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Web Interface,shape=partialRectangle,null,null,data_base
+202,Depositor,rounded=0,null,null,external_entity
+203,Deposit Datasets Through A Simple Web Interface,ellipse,null,null,process
+204,Maintain Datasets Through A Simple Web Interface,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Dataset,endArrow=classic,203,200,endArrow=classic
+209,Web Interface,endArrow=classic,203,201,endArrow=classic
+210,Dataset,endArrow=classic,204,200,endArrow=classic
+211,Web Interface,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Dataset Type,shape=partialRectangle,null,null,data_base
+201,Dataset Developer,rounded=0,null,null,external_entity
+202,Delete Outdated Versions Of A Dataset Type,ellipse,null,null,process
+203,Fail,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,Dataset Type,endArrow=classic,202,200,endArrow=classic

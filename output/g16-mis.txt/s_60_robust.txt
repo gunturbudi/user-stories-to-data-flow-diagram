@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Restrict Object" as thingrestrictedobject
+	entity "Access" as thingaccess
+	entity "Repository" as thingrepository
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "User" as thingusercollectioncurator
+	control "Request Access\nTo Restricted\nObjects" as controlrequestaccess
+	control "Contact From\nThe Repository" as controlcontactusercollectioncuratorrepositoryrequestaccess
+
+	thingrestrictedobject <.. thingaccess
+	actorcollectioncurator --- thingusercollectioncurator
+	thingaccess --- controlrequestaccess
+	thingrestrictedobject --- controlrequestaccess
+	controlcontactusercollectioncuratorrepositoryrequestaccess --> controlrequestaccess
+	thingusercollectioncurator --> controlrequestaccess
+	thingusercollectioncurator --> controlcontactusercollectioncuratorrepositoryrequestaccess
+	thingrepository --- controlcontactusercollectioncuratorrepositoryrequestaccess
+
+@enduml

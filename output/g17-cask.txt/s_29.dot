@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sink " ];
+201 [label="<f0>  |<f1> Instance " color=red];
+202 [label="<f0>  |<f1> Source " ];
+203 [label="<f0>  |<f1> Pipeline " ];
+204 [label="<f0>  |<f1> App " color=red];
+205 [label="<f0>  |<f1> Dataset " color=red];
+206 [label="Hydrator User" shape=box];
+207 [label="{<f0> 1.0|<f1> Ensure All Dataset Instances Apps Available As Sinks For Pipelines }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Ensure All Instances Apps Available As Source }" shape=Mrecord];
+206 -> 207
+206 -> 208
+207 -> 200 [label="Sink"]
+207 -> 203 [label="Pipeline"]
+207 -> 201 [label="Instance"]
+208 -> 201 [label="Instance"]
+208 -> 202 [label="Source"]
+207 -> 204 [label="App"]
+207 -> 205 [label="Dataset"]
+}

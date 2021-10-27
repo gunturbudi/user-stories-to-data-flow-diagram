@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reminder" as thingreminder
+	entity "Link" as thinglink
+	actor "Member" as actormember
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	boundary "Reminder\nInterface" as thingreminderinterface #grey
+	control "Receive A\nLink" as controlreceivelink
+	control "Receive A\nReminder" as controlreceivereminder
+
+	actormember --- thinglinkinterface
+	actormember --- thingreminderinterface
+	thinglink --- controlreceivelink
+	thinglinkinterface --> controlreceivelink
+	thingreminder --- controlreceivereminder
+	thingreminderinterface --> controlreceivereminder
+
+@enduml

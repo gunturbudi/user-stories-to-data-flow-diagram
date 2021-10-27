@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Subject" as thingsubject
+	entity "Zoonibot" as thingzoonibot
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	control "Know" as controlknow
+
+
+@enduml

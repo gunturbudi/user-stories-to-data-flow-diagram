@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,App,shape=partialRectangle,null,null,data_base
+201,"Match ,\nService",shape=partialRectangle,null,null,data_base
+202,Packaging Datum,shape=partialRectangle,null,null,data_base
+203,actora,rounded=0,null,null,external_entity
+204,"Provided With An App Acts As A Match, Making Service For Packaging Data",ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,App,endArrow=classic,204,200,endArrow=classic
+208,"Match ,\nService",endArrow=classic,204,201,endArrow=classic
+209,Packaging Datum,endArrow=classic,204,202,endArrow=classic

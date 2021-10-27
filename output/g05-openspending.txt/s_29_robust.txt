@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Code" as thingcode #grey
+	entity "Country" as thingcountry
+	entity "City" as thingcity
+	entity "Region" as thingregion
+	entity "Hasc" as thinghasc #grey
+	actor "Api User" as actorapiuser
+	boundary "Flexible Api" as thingflexibleapiusecodecityapiuser #grey
+	control "Use Hasc\nCodes For\nCountries" as controlusehasccodes
+	control "Use Codes\nFor" as controlusecode #grey
+	control "Use Codes\nFor City" as controlusecodecity
+	control "Have" as controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser
+	control "Use Codes\nFor Region" as controlusecoderegion
+
+	thinghasc <.. thingcode
+	thingcountry <.. thingcode
+	actorapiuser --- thingflexibleapiusecodecityapiuser
+	thingcountry --- controlusehasccodes
+	thingcode --- controlusehasccodes
+	thingflexibleapiusecodecityapiuser --> controlusehasccodes
+	controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser --> controlusehasccodes
+	thingcode --- controlusecode
+	controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser --> controlusecode
+	thingflexibleapiusecodecityapiuser --> controlusecodecity
+	thingcity --- controlusecodecity
+	thingcode --- controlusecodecity
+	controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser --> controlusecodecity
+	thingflexibleapiusecodecityapiuser --> controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser
+	controlhaveflexibleapiusecodeflexibleapiusecoderegionapiuser --> controlusecoderegion
+	thingcode --- controlusecoderegion
+	thingregion --- controlusecoderegion
+	thingflexibleapiusecodecityapiuser --> controlusecoderegion
+
+@enduml

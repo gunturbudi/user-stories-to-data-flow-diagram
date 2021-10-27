@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Restriction" as thingrestriction
+	entity "Date" as thingdate
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Set A\nDate On\nWhich Restrictions\nRemoved From\nA File" as controlsetdate
+
+	thingfile <.. thingrestriction
+	thingrestriction <.. thingdate
+	thingfile <.. thingdate
+	actorarchivist --- thingfileinterface
+	thingdate --- controlsetdate
+	thingrestriction --- controlsetdate
+	thingfile --- controlsetdate
+	thingfileinterface --> controlsetdate
+
+@enduml

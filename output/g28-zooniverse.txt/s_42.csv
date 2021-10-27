@@ -1,0 +1,30 @@
+id,value,style,source,target,type
+200,Important Feature,shape=partialRectangle,null,null,data_base
+201,Flooding,shape=partialRectangle,null,null,data_base
+202,Area,shape=partialRectangle,null,null,data_base
+203,Damage,shape=partialRectangle,null,null,data_base
+204,Temporary Shelter,shape=partialRectangle,null,null,data_base
+205,Satellite Image,shape=partialRectangle,null,null,data_base
+206,Roads Etc,shape=partialRectangle,null,null,data_base
+207,Zooniverse Admin,rounded=0,null,null,external_entity
+208,Detect Important Features Such As Areas Of Damage,ellipse,null,null,process
+209,Detect Important Features Such As Areas Of Temporary Shelter,ellipse,null,null,process
+210,Detect Important Features Such As Areas Of Flooding In The Satellite Images,ellipse,null,null,process
+211,Detect Important Features Such As Areas Of Blocked Roads Etc,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Damage,endArrow=classic,208,203,endArrow=classic
+218,Important Feature,endArrow=classic,208,200,endArrow=classic
+219,Area,endArrow=classic,208,202,endArrow=classic
+220,Temporary Shelter,endArrow=classic,209,204,endArrow=classic
+221,Important Feature,endArrow=classic,209,200,endArrow=classic
+222,Area,endArrow=classic,209,202,endArrow=classic
+223,Important Feature,endArrow=classic,210,200,endArrow=classic
+224,Area,endArrow=classic,210,202,endArrow=classic
+225,Flooding,endArrow=classic,210,201,endArrow=classic
+226,Satellite Image,endArrow=classic,210,205,endArrow=classic
+227,Roads Etc,endArrow=classic,211,206,endArrow=classic
+228,Important Feature,endArrow=classic,211,200,endArrow=classic
+229,Area,endArrow=classic,211,202,endArrow=classic

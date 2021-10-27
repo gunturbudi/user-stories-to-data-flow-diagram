@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Accounting" as thingaccounting
+	entity "Clear" as thingclear
+	actor "Developer" as actordeveloper
+	boundary "Clear\nInterface" as thingclearinterface #grey
+	boundary "Accounting\nInterface" as thingaccountinginterface #grey
+	control "Have The\nAccounting Clear" as controlhaveaccountingclear
+	control "Have The\nAccounting As\nPossible Simple" as controlhaveaccounting
+
+	thingclear <.. thingaccounting
+	actordeveloper --- thingclearinterface
+	actordeveloper --- thingaccountinginterface
+	thingclear --- controlhaveaccountingclear
+	thingclearinterface --> controlhaveaccountingclear
+	thingaccounting --- controlhaveaccountingclear
+	thingaccounting --- controlhaveaccounting
+	thingaccountinginterface --> controlhaveaccounting
+
+@enduml

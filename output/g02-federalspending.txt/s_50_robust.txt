@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Launch" as thinglaunch
+	entity "Daim" as thingDAIMS
+	entity "Fabs" as thingFABS
+	entity "Resource" as thingresource #grey
+	entity "Validation" as thingvalidation
+	entity "Broker" as thingbroker #grey
+	actor "Broker ,\nTeam Member" as actorbrokerteammember
+	control "Ensure" as controlensure
+
+	thingFABS *-- thinglaunch
+	thingDAIMS *-- thinglaunch
+	thingbroker <.. thingresource
+
+@enduml

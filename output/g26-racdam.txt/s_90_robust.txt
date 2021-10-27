@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Find Files\nNot Publicly\nMade" as controlfindfile
+
+	actorarchivist --- thingfileinterface
+	thingfile --- controlfindfile
+	thingfileinterface --> controlfindfile
+
+@enduml

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Body Weight,shape=partialRectangle,null,null,data_base
+201,Olderperson,rounded=0,null,null,external_entity
+202,Help,ellipse,null,null,process
+203,Control Body Weight,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,Body Weight,endArrow=classic,203,200,endArrow=classic

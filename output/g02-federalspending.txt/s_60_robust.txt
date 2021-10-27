@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Point" as thingpoint
+	entity "Dialog" as thingdialog
+	entity "Correct File" as thingcorrectfile
+	entity "Sample File" as thingsamplefile
+	actor "Fabs User" as actorfabsuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "What Submit\nDialog" as controlsubmitwhatdialog
+	control "Link The\nSample File\nOn Want\nThe To\nPoint To\nThe Correct\nFile" as controllinksampleFILEpoint
+
+	thingcorrectfile <.. thingpoint
+	thingpoint <.. thingsamplefile
+	actorfabsuser --- thingfileinterface
+	thingdialog --- controlsubmitwhatdialog
+	controllinksampleFILEpoint --> controlsubmitwhatdialog
+	thingfileinterface --> controlsubmitwhatdialog
+	thingsamplefile --- controllinksampleFILEpoint
+	thingpoint --- controllinksampleFILEpoint
+	thingcorrectfile --- controllinksampleFILEpoint
+	thingfileinterface --> controllinksampleFILEpoint
+
+@enduml

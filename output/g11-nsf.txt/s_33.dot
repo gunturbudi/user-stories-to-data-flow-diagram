@@ -1,0 +1,7 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Recruiter " ];
+201 [label="<f0>  |<f1> Science360.gov " ];
+202 [label="Web , Recruiter Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Confirm }" shape=Mrecord];
+}

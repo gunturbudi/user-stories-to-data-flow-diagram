@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Neighborhood" as thingneighborhood
+	entity "Social Activity" as thingsocialactivity
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Neighborhood\nInterface" as thingneighborhoodinterface #grey
+	control "Use Alfred" as controluseALFREDlearnsocialactivity
+	control "Learn About\nThe Social\nActivities Organized\nIn Neighborhood" as controllearnsocialactivity
+
+	thingneighborhood <.. thingsocialactivity
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingneighborhoodinterface
+	thingALFRED --- controluseALFREDlearnsocialactivity
+	thingalfredinterface --> controluseALFREDlearnsocialactivity
+	controluseALFREDlearnsocialactivity --> controllearnsocialactivity
+	thingsocialactivity --- controllearnsocialactivity
+	thingneighborhood --- controllearnsocialactivity
+	thingneighborhoodinterface --> controllearnsocialactivity
+
+@enduml

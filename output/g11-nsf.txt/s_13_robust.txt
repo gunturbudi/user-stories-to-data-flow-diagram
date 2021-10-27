@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Wig Prototype" as thingwigprototype #grey
+	actor "User Researcher" as actoruserresearcher
+	boundary "Prototype\nInterface" as thingprototypeinterface #grey
+	control "Have The\nWig Prototype" as controlhavewigprototype
+
+	actoruserresearcher --- thingprototypeinterface
+	thingwigprototype --- controlhavewigprototype
+	thingprototypeinterface --> controlhavewigprototype
+
+@enduml

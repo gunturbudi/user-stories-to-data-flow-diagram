@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Exercise" as thingexercise
+	entity "Week" as thingweek
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Motivate During\nThe Week" as controlmotivateweekdoexercise
+	control "Do Exercise\nDaily Change" as controldoexercise
+	control "Have" as controlhavehelpALFREDOlderPersonmotivateweekdoexercise
+	control "Help" as controlhelpALFREDOlderPersonmotivateweekdoexercise
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingweek --- controlmotivateweekdoexercise
+	controlhelpALFREDOlderPersonmotivateweekdoexercise --> controlmotivateweekdoexercise
+	thingALFREDOlderPerson --> controlmotivateweekdoexercise
+	controlmotivateweekdoexercise --> controldoexercise
+	thingexercise --- controldoexercise
+	thingALFREDOlderPerson --> controldoexercise
+	thingALFREDOlderPerson --> controlhavehelpALFREDOlderPersonmotivateweekdoexercise
+	controlhavehelpALFREDOlderPersonmotivateweekdoexercise --> controlhelpALFREDOlderPersonmotivateweekdoexercise
+	thingALFREDOlderPerson --> controlhelpALFREDOlderPersonmotivateweekdoexercise
+
+@enduml

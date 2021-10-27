@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	actor "Researcher" as actorresearcher
+	boundary "Dmp" as thingdmpresearcher
+	control "Prepopulate Information" as controlprepopulatedmpresearcherinformation
+
+	actorresearcher --- thingdmpresearcher
+	thingdmpresearcher --> controlprepopulatedmpresearcherinformation
+	thinginformation --- controlprepopulatedmpresearcherinformation
+
+@enduml

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Time Plan" as thingtimeplan #grey
+	entity "Datum" as thingdatum
+	actor "Data Manager" as actordatamanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	control "Collecting Data" as controlcollectknowtimeplandatum
+	control "Know The\nTime Plan" as controlknowtimeplan
+
+	actordatamanager --- thingdatuminterface
+	actordatamanager --- thingplaninterface
+	thingdatum --- controlcollectknowtimeplandatum
+	thingdatuminterface --> controlcollectknowtimeplandatum
+	controlcollectknowtimeplandatum --> controlknowtimeplan
+	thingtimeplan --- controlknowtimeplan
+	thingplaninterface --> controlknowtimeplan
+
+@enduml

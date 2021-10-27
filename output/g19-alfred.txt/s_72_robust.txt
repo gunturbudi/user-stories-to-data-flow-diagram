@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Museum" as thingmuseum
+	entity "Art Exposition" as thingartexposition
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Museum\nInterface" as thingmuseuminterface #grey
+	control "Use Alfred" as controluseALFREDlearnlearnmuseum
+	control "Learn About\nArt Expositions" as controllearnartexpositions
+	control "Learn About\nA Museum" as controllearnmuseum
+
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingmuseuminterface
+	thingALFRED --- controluseALFREDlearnlearnmuseum
+	thingalfredinterface --> controluseALFREDlearnlearnmuseum
+	thingartexposition --- controllearnartexpositions
+	thingalfredinterface --> controllearnartexpositions
+	controluseALFREDlearnlearnmuseum --> controllearnartexpositions
+	controluseALFREDlearnlearnmuseum --> controllearnmuseum
+	thingmuseum --- controllearnmuseum
+	thingmuseuminterface --> controllearnmuseum
+
+@enduml

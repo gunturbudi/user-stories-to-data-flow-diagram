@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Embed Visualisation" as thingembeddedvisualisation
+	entity "Textual Description" as thingtextualdescription
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	boundary "Visualisation\nInterface" as thingvisualisationinterface #grey
+	control "See Textual\nDescriptions Accompany\nEmbedded Visualisations" as controlseetextualdescription
+
+	thingembeddedvisualisation <.. thingtextualdescription
+	actordataconsuminguser --- thingvisualisationinterface
+	thingtextualdescription --- controlseetextualdescription
+	thingembeddedvisualisation --- controlseetextualdescription
+	thingvisualisationinterface --> controlseetextualdescription
+
+@enduml

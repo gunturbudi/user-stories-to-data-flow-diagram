@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Small Device" as thingsmalldevice #grey
+	entity "Easy" as thingeasy
+	entity "Alfred Device" as thingalfreddevice
+	actor "Olderperson" as actorOlderPerson
+	boundary "Easy\nInterface" as thingeasyinterface #grey
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	control "Have A\nSmall Device\nEasy" as controlhavesmalldeviceeasy
+	control "Have A\nSmall Alfred\nDevice Is" as controlhavesmallalfreddevice
+	control "Carry With" as controlcarry
+
+	thingeasy <.. thingsmalldevice
+	actorOlderPerson --- thingeasyinterface
+	actorOlderPerson --- thingdeviceinterface
+	thingsmalldevice --- controlhavesmalldeviceeasy
+	thingeasy --- controlhavesmalldeviceeasy
+	thingeasyinterface --> controlhavesmalldeviceeasy
+	thingalfreddevice --- controlhavesmallalfreddevice
+	thingdeviceinterface --> controlhavesmallalfreddevice
+	controlhavesmallalfreddevice --> controlcarry
+	thingdeviceinterface --> controlcarry
+
+@enduml

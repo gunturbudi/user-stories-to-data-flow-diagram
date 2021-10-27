@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Summary,shape=partialRectangle,null,null,data_base
+201,Workshop Attendee,rounded=0,null,null,external_entity
+202,Have A Summary What Learned,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Summary,endArrow=classic,202,200,endArrow=classic

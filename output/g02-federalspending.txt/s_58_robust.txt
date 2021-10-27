@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Atom Feed" as thingatomfeed #grey
+	entity "Federalactionobligation" as thingfederalactionobligation
+	actor "Agency User" as actoragencyuser
+	boundary "Feed\nInterface" as thingfeedinterface #grey
+	control "Map The\nFederalactionobligation Properly\nTo The\nAtom Feed" as controlmapfederalactionobligationatomfeed
+
+	thingatomfeed <.. thingfederalactionobligation
+	actoragencyuser --- thingfeedinterface
+	thingfederalactionobligation --- controlmapfederalactionobligationatomfeed
+	thingatomfeed --- controlmapfederalactionobligationatomfeed
+	thingfeedinterface --> controlmapfederalactionobligationatomfeed
+
+@enduml

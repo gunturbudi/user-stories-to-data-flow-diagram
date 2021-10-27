@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Digital Copy" as thingdigitalcopy
+	actor "Asset Manager" as actorassetmanager
+	control "Assured" as controlassure
+
+
+@enduml

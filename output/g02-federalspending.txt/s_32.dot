@@ -1,0 +1,7 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Submission " color=red];
+201 [label="<f0>  |<f1> Fsrs Record " ];
+202 [label="Agency User" shape=box];
+203 [label="{<f0> 1.0|<f1> Ensure }" shape=Mrecord];
+}

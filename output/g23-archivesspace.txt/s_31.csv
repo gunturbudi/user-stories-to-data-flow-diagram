@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Record,shape=partialRectangle,null,null,data_base
+201,Accession,shape=partialRectangle,null,null,data_base
+202,Resource,shape=partialRectangle,null,null,data_base
+203,Repository,shape=partialRectangle,null,null,data_base
+204,Digital Object,shape=partialRectangle,null,null,data_base
+205,Archivist,rounded=0,null,null,external_entity
+206,Search Within A Repository For Digital Object,ellipse,null,null,process
+207,Search Within A Repository For Accession,ellipse,null,null,process
+208,Search Within A Repository For Resource Records,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Digital Object,endArrow=classic,206,204,endArrow=classic
+214,Repository,endArrow=classic,206,203,endArrow=classic
+215,Accession,endArrow=classic,207,201,endArrow=classic
+216,Repository,endArrow=classic,207,203,endArrow=classic
+217,Repository,endArrow=classic,208,203,endArrow=classic
+218,Resource,endArrow=classic,208,202,endArrow=classic
+219,Record,endArrow=classic,208,200,endArrow=classic

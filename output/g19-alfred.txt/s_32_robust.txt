@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interest" as thinginterest
+	entity "Device" as thingdevice #grey
+	entity "Information" as thinginformation
+	entity "Exist App" as thingexistingapp
+	entity "Alfred" as thingalfred #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Interest\nInterface" as thinginterestinterface #grey
+	control "Have An\nAlfred Device\nAn Device\nProvides With\nInformation About\nExisting Apps\nCorresponds To\nInterests" as controlhavealfreddevice
+
+	thingalfred <.. thingdevice
+	thingdevice <.. thingdevice
+	thinginformation <.. thingdevice
+	thingexistingapp <.. thinginformation
+	thinginterest <.. thingexistingapp
+	actorOlderPerson --- thinginterestinterface
+	thinginformation --- controlhavealfreddevice
+	thingexistingapp --- controlhavealfreddevice
+	thinginterest --- controlhavealfreddevice
+	thinginterestinterface --> controlhavealfreddevice
+	thingdevice --- controlhavealfreddevice
+
+@enduml

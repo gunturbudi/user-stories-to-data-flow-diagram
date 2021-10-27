@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity ", Upcoming\nCourse" as thingotherupcomingcourse
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	control "See A\nList Of\nAll Other,\nUpcoming Courses" as controlseelist
+
+	actorsitevisitor --- thingcourseinterface
+	thingotherupcomingcourse --- controlseelist
+	thingcourseinterface --> controlseelist
+
+@enduml

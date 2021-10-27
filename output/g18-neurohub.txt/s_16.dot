@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Web Browser " ];
+201 [label="<f0>  |<f1> File " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Use Web Browser }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Download Files To }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Web Browser"]
+204 -> 203
+204 -> 201 [label="File"]
+}

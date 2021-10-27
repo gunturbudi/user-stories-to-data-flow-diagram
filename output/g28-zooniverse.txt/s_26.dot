@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Search " ];
+201 [label="<f0>  |<f1> Information " color=red];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="<f0>  |<f1> Tag " color=red];
+204 [label="<f0>  |<f1> High­level " color=red];
+205 [label="<f0>  |<f1> Asset " color=red];
+206 [label="Admin" shape=box];
+207 [label="{<f0> 1.0|<f1> Prefilter }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Use Search On High­Level Asset Information Such As Metadata }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Use Search On High­Level Information Such As Tag }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 208
+207 -> 209
+208 -> 200 [label="Search"]
+208 -> 204 [label="High­level"]
+208 -> 202 [label="Metadata"]
+208 -> 201 [label="Information"]
+209 -> 203 [label="Tag"]
+209 -> 201 [label="Information"]
+209 -> 200 [label="Search"]
+209 -> 204 [label="High­level"]
+208 -> 205 [label="Asset"]
+}

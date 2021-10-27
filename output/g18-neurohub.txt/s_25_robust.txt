@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Control Vocabulary" as thingcontrolledvocabulary
+	entity "Tag" as thingtag
+	actor "User" as actoruser
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	control "Use The\nTags" as controlusetag
+
+	actoruser --- thingtaginterface
+	thingtag --- controlusetag
+	thingtaginterface --> controlusetag
+
+@enduml

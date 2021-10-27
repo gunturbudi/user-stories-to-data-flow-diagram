@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Type" as thingtype
+	entity "Dataset" as thingdataset #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Dataset Instance" as thingdatasetinstance
+	boundary "App" as thingappdatasetdeveloper
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Deploy A\nIndependent Dataset\nType From\nAny App" as controldeployindependentdatasettype
+	control "Create Dataset\nInstances Of\nThat Type" as controlcreateappdatasetdeveloperdatasetinstance
+	control "Allow" as controlallowcreateappdatasetdeveloperdatasetinstance
+	control "Use Dataset\nInstances Of\nThat Type" as controluseappdatasetdeveloperdatasetinstance
+
+	thingdataset <.. thingtype
+	thingapp <.. thingtype
+	thingtype *-- thingdatasetinstance
+	actordatasetdeveloper --- thingappdatasetdeveloper
+	actordatasetdeveloper --- thingappinterface
+	thingapp --- controldeployindependentdatasettype
+	thingappinterface --> controldeployindependentdatasettype
+	thingtype --- controldeployindependentdatasettype
+	thingappdatasetdeveloper --> controlcreateappdatasetdeveloperdatasetinstance
+	thingdatasetinstance --- controlcreateappdatasetdeveloperdatasetinstance
+	thingtype --- controlcreateappdatasetdeveloperdatasetinstance
+	controlallowcreateappdatasetdeveloperdatasetinstance --> controlcreateappdatasetdeveloperdatasetinstance
+	thingappdatasetdeveloper --> controlallowcreateappdatasetdeveloperdatasetinstance
+	thingdatasetinstance --- controluseappdatasetdeveloperdatasetinstance
+	thingappdatasetdeveloper --> controluseappdatasetdeveloperdatasetinstance
+	thingtype --- controluseappdatasetdeveloperdatasetinstance
+	controlallowcreateappdatasetdeveloperdatasetinstance --> controluseappdatasetdeveloperdatasetinstance
+
+@enduml

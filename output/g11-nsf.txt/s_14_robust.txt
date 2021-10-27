@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	entity "Article" as thingarticle
+	actor "User" as actoruser
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Add A\nVideo To\nArticle" as controladdvideoarticle
+
+	thingarticle <.. thingvideo
+	actoruser --- thingarticleinterface
+	thingvideo --- controladdvideoarticle
+	thingarticle --- controladdvideoarticle
+	thingarticleinterface --> controladdvideoarticle
+
+@enduml

@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Openoffice " ];
+201 [label="<f0>  |<f1> Package " color=red];
+202 [label="<f0>  |<f1> Second " ];
+203 [label="<f0>  |<f1> Libreoffice " ];
+204 [label="<f0>  |<f1> Data " color=red];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Get A Data Package Into Libreoffice In Seconds }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Get A Package Into Openoffice }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Start using the data for doing analysis and visualizations. }" shape=Mrecord];
+206 -> 3
+3 -> 204
+205 -> 206
+205 -> 207
+206 -> 203
+206 -> 201
+206 -> 202
+207 -> 201
+207 -> 200
+206 -> 204
+}

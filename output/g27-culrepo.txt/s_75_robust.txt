@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Work" as thingwork
+	entity "Interactive Map" as thinginteractivemap
+	actor "Researcher" as actorresearcher
+	boundary "Map\nInterface" as thingmapinterface #grey
+	control "Promote Work\nThrough Interactive\nMaps" as controlpromoteworkinteractivemap
+	control "Share Work\nThrough Interactive\nMaps" as controlshareworkinteractivemap
+
+	thinginteractivemap <.. thingwork
+	actorresearcher --- thingmapinterface
+	thingwork --- controlpromoteworkinteractivemap
+	thinginteractivemap --- controlpromoteworkinteractivemap
+	thingmapinterface --> controlpromoteworkinteractivemap
+	thingwork --- controlshareworkinteractivemap
+	thinginteractivemap --- controlshareworkinteractivemap
+	thingmapinterface --> controlshareworkinteractivemap
+
+@enduml

@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Entire Article" as thingentirearticle
+	actor "Site Member" as actorsitemember
+	actor "Page" as actorfrontpage
+	actor "Teaser" as actorteaser
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Read The\nEntire Article" as controlreadentirearticle
+
+	actorsitemember --- thingarticleinterface
+	actorfrontpage --- thingarticleinterface
+	actorteaser --- thingarticleinterface
+	thingentirearticle --- controlreadentirearticle
+	thingarticleinterface --> controlreadentirearticle
+
+@enduml

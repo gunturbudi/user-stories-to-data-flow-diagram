@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Prior Estimate" as thingpriorestimate
+	entity "Estimator" as thingestimator
+	entity "Story" as thingstory
+	actor "Participant" as actorparticipant
+	control "See" as controlsee
+
+	thingestimator <.. thingpriorestimate
+
+@enduml

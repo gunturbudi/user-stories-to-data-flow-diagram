@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Remote ,\nControlled Vocabulary" as thingremotecontrolledvocabulary
+	actor "Researcher" as actorresearcher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Reference A\nRemote, Controlled\nVocabulary For\nDataset" as controlreferenceremotecontrolledvocabularydataset
+
+	thingdataset <.. thingremotecontrolledvocabulary
+	actorresearcher --- thingdatasetinterface
+	thingremotecontrolledvocabulary --- controlreferenceremotecontrolledvocabularydataset
+	thingdataset --- controlreferenceremotecontrolledvocabularydataset
+	thingdatasetinterface --> controlreferenceremotecontrolledvocabularydataset
+
+@enduml

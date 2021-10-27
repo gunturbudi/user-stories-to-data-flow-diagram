@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Site,shape=partialRectangle,null,null,data_base
+201,Excel File,shape=partialRectangle,null,null,data_base
+202,Trainer,rounded=0,null,null,external_entity
+203,Load An Excel File Into The Site,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Excel File,endArrow=classic,203,201,endArrow=classic
+207,Site,endArrow=classic,203,200,endArrow=classic

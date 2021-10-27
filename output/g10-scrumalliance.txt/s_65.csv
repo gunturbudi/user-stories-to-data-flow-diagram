@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Home Page,shape=partialRectangle,null,null,data_base
+201,News,shape=partialRectangle,null,null,data_base
+202,Prominent Area,shape=partialRectangle,null,null,data_base
+203,Site Editor,rounded=0,null,null,external_entity
+204,Have A Prominent Area On The Home Page,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Prominent Area,endArrow=classic,204,202,endArrow=classic
+208,Home Page,endArrow=classic,204,200,endArrow=classic

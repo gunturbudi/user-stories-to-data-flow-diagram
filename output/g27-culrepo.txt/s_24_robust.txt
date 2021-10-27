@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Scholarly Work" as thingscholarlywork
+	actor "Faculty Member" as actorfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Upload Scholarly\nWork To\nThe Repository" as controluploadscholarlyworkrepository
+
+	thingrepository <.. thingscholarlywork
+	actorfacultymember --- thingrepositoryinterface
+	thingscholarlywork --- controluploadscholarlyworkrepository
+	thingrepository --- controluploadscholarlyworkrepository
+	thingrepositoryinterface --> controluploadscholarlyworkrepository
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Security Requirement" as thingsecurityrequirement
+	actor ", Staff\nMember" as actoritstaffmember
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Know The\nSecurity Requirements\nOf The\nData" as controlknowsecurityrequirements
+
+	thingdatum <.. thingsecurityrequirement
+	actoritstaffmember --- thingdatuminterface
+	thingsecurityrequirement --- controlknowsecurityrequirements
+	thingdatum --- controlknowsecurityrequirements
+	thingdatuminterface --> controlknowsecurityrequirements
+
+@enduml

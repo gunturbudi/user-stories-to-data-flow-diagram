@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Exist Item " ];
+202 [label="<f0>  |<f1> Submitter " ];
+203 [label="Collection Owner" shape=box];
+204 [label="{<f0> 1.0|<f1> Be }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have Submitters To Collection }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Modify Existing Items In That Collection }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 206
+205 -> 204
+205 -> 202 [label="Submitter"]
+205 -> 200 [label="Collection"]
+206 -> 201 [label="Exist Item"]
+206 -> 200 [label="Collection"]
+}

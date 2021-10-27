@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Basic Statistic,shape=partialRectangle,null,null,data_base
+201,Tool,shape=partialRectangle,null,null,data_base
+202,Dataset,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Provided With A Tool Generate Basic Statistics About A Dataset,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Tool,endArrow=classic,204,201,endArrow=classic
+208,Basic Statistic,endArrow=classic,204,200,endArrow=classic
+209,Dataset,endArrow=classic,204,202,endArrow=classic

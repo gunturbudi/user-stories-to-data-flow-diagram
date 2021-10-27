@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Custom Metadata\nField " color=red];
+202 [label="Library , Staff Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Create A Collection Sometimes With Custom Metadata Fields }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Collection"]
+203 -> 201 [label="Custom Metadata\nField"]
+}

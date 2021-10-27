@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Curatorial Access" as thingcuratorialaccess
+	entity "Unit" as thingunit
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	control "Constrain Curatorial\nAccess To\nUnits" as controlconstraincuratorialaccess
+
+	thingunit <.. thingcuratorialaccess
+	actorrepositorymanager --- thingunitinterface
+	thingcuratorialaccess --- controlconstraincuratorialaccess
+	thingunit --- controlconstraincuratorialaccess
+	thingunitinterface --> controlconstraincuratorialaccess
+
+@enduml

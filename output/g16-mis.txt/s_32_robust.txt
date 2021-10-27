@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Tool" as thingtool
+	entity "Author Authority\nControl" as thingauthorauthoritycontrol #grey
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Control\nInterface" as thingcontrolinterface #grey
+	control "Have A\nTool" as controlhavetoolperformauthorauthoritycontrol
+	control "Perform Author\nAuthority Control" as controlperformauthorauthoritycontrol
+
+	actorcollectioncurator --- thingtoolinterface
+	actorcollectioncurator --- thingcontrolinterface
+	thingtool --- controlhavetoolperformauthorauthoritycontrol
+	thingtoolinterface --> controlhavetoolperformauthorauthoritycontrol
+	controlhavetoolperformauthorauthoritycontrol --> controlperformauthorauthoritycontrol
+	thingauthorauthoritycontrol --- controlperformauthorauthoritycontrol
+	thingcontrolinterface --> controlperformauthorauthoritycontrol
+
+@enduml

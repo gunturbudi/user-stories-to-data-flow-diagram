@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resources Page" as thingresourcespage #grey
+	actor "Ui Designer" as actoruidesigner
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Redesign The\nResources Page" as controlredesignresourcespage
+
+	actoruidesigner --- thingpageinterface
+	thingresourcespage --- controlredesignresourcespage
+	thingpageinterface --> controlredesignresourcespage
+
+@enduml

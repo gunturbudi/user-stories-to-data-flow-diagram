@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Polygon" as thingpolygon
+	entity "Query" as thingquery
+	actor "Api User" as actorapiuser
+	boundary "Query\nInterface" as thingqueryinterface #grey
+	control "Request Polygons\nOn The\nQuery" as controlrequestpolygon
+
+	thingquery <.. thingpolygon
+	actorapiuser --- thingqueryinterface
+	thingpolygon --- controlrequestpolygon
+	thingquery --- controlrequestpolygon
+	thingqueryinterface --> controlrequestpolygon
+
+@enduml

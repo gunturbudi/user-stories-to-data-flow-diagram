@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Country Code,shape=partialRectangle,null,null,data_base
+202,Country Name,shape=partialRectangle,null,null,data_base
+203,Researchergovernment Publisher,rounded=0,null,null,external_entity
+204,Add General Country Names To Dataset Only Contains Country Codes,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Country Name,endArrow=classic,204,202,endArrow=classic
+208,Dataset,endArrow=classic,204,200,endArrow=classic
+209,Country Code,endArrow=classic,204,201,endArrow=classic

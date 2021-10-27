@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Moodboard" as thingmoodboard
+	entity "Nsf.Gov Website" as thingnsf.govwebsite #grey
+	entity "Design Concept" as thingdesignconcept
+	actor "Visualdesigner" as actorVisualDesigner
+	boundary "Moodboard\nInterface" as thingmoodboardinterface #grey
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	control "Create A\nMoodboard" as controlcreatemoodboardaidvisualdesignconcepts
+	control "Aid With\nVisual Design\nConcepts For\nThe Nsf.Gov\nWebsite" as controlaidvisualdesignconcepts
+
+	thingnsf.govwebsite <.. thingdesignconcept
+	actorVisualDesigner --- thingmoodboardinterface
+	actorVisualDesigner --- thingwebsiteinterface
+	thingmoodboard --- controlcreatemoodboardaidvisualdesignconcepts
+	thingmoodboardinterface --> controlcreatemoodboardaidvisualdesignconcepts
+	controlcreatemoodboardaidvisualdesignconcepts --> controlaidvisualdesignconcepts
+	thingdesignconcept --- controlaidvisualdesignconcepts
+	thingnsf.govwebsite --- controlaidvisualdesignconcepts
+	thingwebsiteinterface --> controlaidvisualdesignconcepts
+
+@enduml

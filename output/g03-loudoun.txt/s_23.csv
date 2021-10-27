@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Complete my required review of a plan set and/or application.,ellipse,null,null,process
+200,Consistency,shape=partialRectangle,null,null,data_base
+201,Comprehensive Plan,shape=partialRectangle,null,null,data_base
+202,"Planning , Staff Member",rounded=0,null,null,external_entity
+203,Evaluate Consistency With The Comprehensive Plan,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Consistency,endArrow=classic,203,200,endArrow=classic
+207,Comprehensive Plan,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Required review,rounded=0,null,null,external_entity
+1002,Required review,endArrow=classic,2,1001,endArrow=classic

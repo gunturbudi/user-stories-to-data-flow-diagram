@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summit" as thingsummit
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "See A\nList Of\nThe Summits" as controlseelist
+
+	actoranonymoususer --- thingsummitinterface
+	thingsummit --- controlseelist
+	thingsummitinterface --> controlseelist
+
+@enduml

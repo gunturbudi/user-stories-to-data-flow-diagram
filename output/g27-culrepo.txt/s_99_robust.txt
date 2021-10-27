@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Copy" as thingcopy
+	entity "Repository" as thingrepository
+	entity "Redundant Copy" as thingredundantcopy
+	entity "Threat" as thingthreat
+	actor "Asset Manager" as actorassetmanager
+	control "Assured" as controlassure
+
+	thingrepository <.. thingcopy
+	thingcopy <.. thingthreat
+
+@enduml

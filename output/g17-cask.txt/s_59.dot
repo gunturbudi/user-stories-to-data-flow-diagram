@@ -1,0 +1,5 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="User" shape=box];
+201 [label="{<f0> 1.0|<f1> Ensure }" shape=Mrecord];
+}

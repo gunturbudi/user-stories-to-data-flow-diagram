@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Page" as thingsponsorshippage #grey
+	actor "Sponsor" as actorsponsor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Personalize Sponsorship\nPage" as controlpersonalizesponsorshippage
+
+	actorsponsor --- thingpageinterface
+	thingsponsorshippage --- controlpersonalizesponsorshippage
+	thingpageinterface --> controlpersonalizesponsorshippage
+
+@enduml

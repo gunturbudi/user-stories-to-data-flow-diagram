@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository ,\nAssign Doi " ];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Ezid " ];
+203 [label="<f0>  |<f1> Metadata Change " color=red];
+204 [label="Collection Curator" shape=box];
+205 [label="{<f0> 1.0|<f1> Have Metadata Changes To Items With Repository, Assigned Dois To Propagated To The Ezid }" shape=Mrecord];
+204 -> 205
+205 -> 203 [label="Metadata Change"]
+205 -> 201 [label="Item"]
+205 -> 200 [label="Repository ,\nAssign Doi"]
+205 -> 202 [label="Ezid"]
+}

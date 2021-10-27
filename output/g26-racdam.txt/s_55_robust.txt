@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	entity "Collection" as thingcollection
+	actor "Donor Representative" as actordonorrepresentative
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Look At\nImages Have\nScanned From\nCollection" as controllookimage
+
+	thingcollection <.. thingimage
+	actordonorrepresentative --- thingcollectioninterface
+	thingimage --- controllookimage
+	thingcollection --- controllookimage
+	thingcollectioninterface --> controllookimage
+
+@enduml

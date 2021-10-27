@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Frec Paradigm,shape=partialRectangle,null,null,data_base
+201,Fabs Group,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Provide Fabs Groups Function Under The Frec Paradigm,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Fabs Group,endArrow=classic,203,201,endArrow=classic
+207,Frec Paradigm,endArrow=classic,203,200,endArrow=classic

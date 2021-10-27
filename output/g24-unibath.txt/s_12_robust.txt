@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Previous Deposit" as thingpreviousdeposit
+	entity "University System" as thinguniversitysystem
+	actor "Depositor" as actordepositor
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Have Automatically\nMetadata From\nOther University\nSystems" as controlhavemetadata
+
+	thinguniversitysystem <.. thingmetadata
+	actordepositor --- thingsysteminterface
+	thingmetadata --- controlhavemetadata
+	thinguniversitysystem --- controlhavemetadata
+	thingsysteminterface --> controlhavemetadata
+
+@enduml

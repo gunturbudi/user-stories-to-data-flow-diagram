@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Openrefine Reconciliation\nApi Endpoint" as thingopenrefinereconciliationapiendpoint #grey
+	entity "App" as thingapp
+	entity "Data Package" as thingdatapackage
+	actor "Researcher" as actorresearcher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Provided With\nAn App\nGenerates An\nOpenrefine Reconciliation\nApi Endpoint\nFrom A\nTabular Data\nPackage" as controlprovideapp
+
+	thingdatapackage <.. thingopenrefinereconciliationapiendpoint
+	thingopenrefinereconciliationapiendpoint <.. thingapp
+	actorresearcher --- thingpackageinterface
+	thingapp --- controlprovideapp
+	thingopenrefinereconciliationapiendpoint --- controlprovideapp
+	thingdatapackage --- controlprovideapp
+	thingpackageinterface --> controlprovideapp
+
+@enduml

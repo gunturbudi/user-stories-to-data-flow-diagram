@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Thumbnail Sequence" as thingthumbnailsequence
+	entity "Video Segment" as thingvideosegment
+	actor "User" as actoruser
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	control "View Thumbnail\nSequences Of\nVideo Segments" as controlviewthumbnailsequences
+
+	thingvideosegment <.. thingthumbnailsequence
+	actoruser --- thingsegmentinterface
+	thingthumbnailsequence --- controlviewthumbnailsequences
+	thingvideosegment --- controlviewthumbnailsequences
+	thingsegmentinterface --> controlviewthumbnailsequences
+
+@enduml

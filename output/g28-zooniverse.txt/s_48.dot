@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Audio ,\nSingle File " ];
+201 [label="<f0>  |<f1> Whale " color=red];
+202 [label="Zooniverse Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Identify The Number Of Whales In A Audio, Single File }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Whale"]
+203 -> 200 [label="Audio ,\nSingle File"]
+}

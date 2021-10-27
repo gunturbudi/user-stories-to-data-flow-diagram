@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Script" as thingscript
+	entity "Neurohub Installation" as thingneurohubinstallation
+	entity "Result" as thingresult
+	entity "Acceptance Test" as thingacceptancetest
+	actor "Release Engineer" as actorreleaseengineer
+	boundary "Script\nInterface" as thingscriptinterface #grey
+	boundary "Installation\nInterface" as thinginstallationinterface #grey
+	control "Call A\nScript" as controlcallscriptexecuteacceptancetestsneurohubinstallation
+	control "Execute Acceptance\nTests Against\nA Neurohub\nInstallation" as controlexecuteacceptancetestsneurohubinstallation
+	control "Report Back\nThe Results" as controlreportresult
+
+	thingneurohubinstallation <.. thingacceptancetest
+	actorreleaseengineer --- thingscriptinterface
+	actorreleaseengineer --- thinginstallationinterface
+	thingscript --- controlcallscriptexecuteacceptancetestsneurohubinstallation
+	thingscriptinterface --> controlcallscriptexecuteacceptancetestsneurohubinstallation
+	controlcallscriptexecuteacceptancetestsneurohubinstallation --> controlexecuteacceptancetestsneurohubinstallation
+	thingacceptancetest --- controlexecuteacceptancetestsneurohubinstallation
+	thingneurohubinstallation --- controlexecuteacceptancetestsneurohubinstallation
+	thinginstallationinterface --> controlexecuteacceptancetestsneurohubinstallation
+	thingresult --- controlreportresult
+	thingscriptinterface --> controlreportresult
+	controlcallscriptexecuteacceptancetestsneurohubinstallation --> controlreportresult
+
+@enduml

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Sensor" as thingsensor
+	entity "Guide Exercise" as thingguidedexercise
+	entity "Exercise" as thingexercise
+	entity "Health Datum" as thinghealthdatum
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Exercise\nInterface" as thingexerciseinterface #grey
+	control "Do Guided\nExercises With\nAlfred" as controldoguidedexerciseALFRED
+	control "Capture Health\nData Am\nDoing Exercises" as controlcapturehealthdataexercise
+
+	thingALFRED <.. thingguidedexercise
+	thingexercise <.. thinghealthdatum
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingexerciseinterface
+	thingALFRED --- controldoguidedexerciseALFRED
+	thingalfredinterface --> controldoguidedexerciseALFRED
+	thingguidedexercise --- controldoguidedexerciseALFRED
+	thinghealthdatum --- controlcapturehealthdataexercise
+	thingexercise --- controlcapturehealthdataexercise
+	thingexerciseinterface --> controlcapturehealthdataexercise
+
+@enduml

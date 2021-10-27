@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Particular User" as thingparticularuser
+	actor "Archivist" as actorarchivist
+	control "See" as controlsee
+
+
+@enduml

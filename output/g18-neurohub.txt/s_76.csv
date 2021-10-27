@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Experiment,shape=partialRectangle,null,null,data_base
+202,Later Stage,shape=partialRectangle,null,null,data_base
+203,Library,shape=partialRectangle,null,null,data_base
+204,Multiple,shape=partialRectangle,null,null,data_base
+205,Researcher,rounded=0,null,null,external_entity
+206,Collect Data As A Library Of Data Then Used Multiple,ellipse,null,null,process
+207,Collect Data As A Library Of Data Then Used Experiments Defined At A Later Stage,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Multiple,endArrow=classic,206,204,endArrow=classic
+212,Datum,endArrow=classic,206,200,endArrow=classic
+213,Library,endArrow=classic,206,203,endArrow=classic
+214,Library,endArrow=classic,207,203,endArrow=classic
+215,Experiment,endArrow=classic,207,201,endArrow=classic
+216,Later Stage,endArrow=classic,207,202,endArrow=classic
+217,Datum,endArrow=classic,207,200,endArrow=classic

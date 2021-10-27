@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Preview Button" as thingpreviewbutton #grey
+	entity "Site" as thingsite
+	actor "Publisher" as actorpublisher
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Embed A\nPreview Button\nOn Site" as controlembedpreviewbutton
+
+	thingsite <.. thingpreviewbutton
+	actorpublisher --- thingsiteinterface
+	thingpreviewbutton --- controlembedpreviewbutton
+	thingsite --- controlembedpreviewbutton
+	thingsiteinterface --> controlembedpreviewbutton
+
+@enduml

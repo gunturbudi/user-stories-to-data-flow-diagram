@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource " color=red];
+201 [label="<f0>  |<f1> Marcxml Record " ];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Import Resources From Marcxml Records }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Resource"]
+203 -> 201 [label="Marcxml Record"]
+}

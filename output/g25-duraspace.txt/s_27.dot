@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Event " color=red];
+201 [label="<f0>  |<f1> Life Cycle " ];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Know All Events To An Object Over The Object's Life Cycle }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Event"]
+204 -> 202 [label="Object"]
+204 -> 201 [label="Life Cycle"]
+}

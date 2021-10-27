@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Internal Note" as thinginternalnote
+	actor "Staff Member" as actorstaffmember
+	boundary "Note\nInterface" as thingnoteinterface #grey
+	control "Record An\nInternal Note" as controlrecordinternalnote
+
+	actorstaffmember --- thingnoteinterface
+	thinginternalnote --- controlrecordinternalnote
+	thingnoteinterface --> controlrecordinternalnote
+
+@enduml

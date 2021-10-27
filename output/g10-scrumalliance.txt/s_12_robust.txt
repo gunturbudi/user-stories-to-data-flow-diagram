@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Member" as thingmember
+	entity "Email" as thingemail
+	entity "Form" as thingform
+	actor "Site Member" as actorsitemember
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Send An\nEmail To\nAny Member\nVia A\nForm" as controlsendemailmemberform
+
+	thingform <.. thingmember
+	thingmember <.. thingemail
+	actorsitemember --- thingforminterface
+	thingemail --- controlsendemailmemberform
+	thingmember --- controlsendemailmemberform
+	thingform --- controlsendemailmemberform
+	thingforminterface --> controlsendemailmemberform
+
+@enduml

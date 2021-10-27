@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs File" as thingfabsfile
+	actor "Fabs User" as actorfabsuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Download The\nUploaded Fabs\nFile" as controldownloaduploadedfabsfile
+
+	actorfabsuser --- thingfileinterface
+	thingfabsfile --- controldownloaduploadedfabsfile
+	thingfileinterface --> controldownloaduploadedfabsfile
+
+@enduml

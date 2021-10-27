@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "High Level" as thinghighlevel
+	actor "Developer" as actordeveloper
+	boundary "Api Components" as thingapicomponentsdeveloper
+	control "Have" as controlhavebeapicomponentsdeveloperhighlevel
+	control "Be On\nA High\nLevel" as controlbeapicomponentsdeveloperhighlevel
+
+	actordeveloper --- thingapicomponentsdeveloper
+	thingapicomponentsdeveloper --> controlhavebeapicomponentsdeveloperhighlevel
+	controlhavebeapicomponentsdeveloperhighlevel --> controlbeapicomponentsdeveloperhighlevel
+	thingapicomponentsdeveloper --> controlbeapicomponentsdeveloperhighlevel
+	thinghighlevel --- controlbeapicomponentsdeveloperhighlevel
+
+@enduml

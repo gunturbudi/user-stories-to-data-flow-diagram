@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Phone" as thingphone
+	actor "Olderperson" as actorOlderPerson
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	control "Have Directly\nData On\nThe Phone" as controlhavedatum
+
+	thingphone <.. thingdatum
+	actorOlderPerson --- thingphoneinterface
+	thingdatum --- controlhavedatum
+	thingphone --- controlhavedatum
+	thingphoneinterface --> controlhavedatum
+
+@enduml

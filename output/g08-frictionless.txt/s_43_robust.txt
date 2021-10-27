@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Publisher" as actorpublisher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Online Store\nData" as controlstoredatum
+
+	actorpublisher --- thingdatuminterface
+	thingdatum --- controlstoredatum
+	thingdatuminterface --> controlstoredatum
+
+@enduml

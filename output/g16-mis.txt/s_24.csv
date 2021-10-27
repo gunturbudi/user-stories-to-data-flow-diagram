@@ -1,0 +1,36 @@
+id,value,style,source,target,type
+200,Batch,shape=partialRectangle,null,null,data_base
+201,Tool,shape=partialRectangle,null,null,data_base
+202,Repository Administrator,shape=partialRectangle,null,null,data_base
+203,Permission,shape=partialRectangle,null,null,data_base
+204,Embargo,shape=partialRectangle,null,null,data_base
+205,Metadata Curator,shape=partialRectangle,null,null,data_base
+206,Embargoed Item,shape=partialRectangle,null,null,data_base
+207,File,shape=partialRectangle,null,null,data_base
+208,Collection,shape=partialRectangle,null,null,data_base
+209,Digitalrecords Archivist,rounded=0,null,null,external_entity
+210,View Collection,ellipse,null,null,process
+211,Recognize Embargoes,ellipse,null,null,process
+212,Download The Files,ellipse,null,null,process
+213,View Metadata Curator,ellipse,null,null,process
+214,Have The Batch Tool,ellipse,null,null,process
+215,View Repository Administrator,ellipse,null,null,process
+216,Set Embargoes,ellipse,null,null,process
+218,,endArrow=classic,209,210,endArrow=classic
+219,,endArrow=classic,209,211,endArrow=classic
+220,,endArrow=classic,209,212,endArrow=classic
+221,,endArrow=classic,209,213,endArrow=classic
+222,,endArrow=classic,209,214,endArrow=classic
+223,,endArrow=classic,209,215,endArrow=classic
+224,,endArrow=classic,209,216,endArrow=classic
+225,Collection,endArrow=classic,210,208,endArrow=classic
+226,Embargo,endArrow=classic,211,204,endArrow=classic
+227,File,endArrow=classic,212,207,endArrow=classic
+228,,endArrow=classic,213,212,endArrow=classic
+229,Metadata Curator,endArrow=classic,213,205,endArrow=classic
+230,,endArrow=classic,214,211,endArrow=classic
+231,,endArrow=classic,214,216,endArrow=classic
+232,Batch,endArrow=classic,214,200,endArrow=classic
+233,Tool,endArrow=classic,214,201,endArrow=classic
+234,Repository Administrator,endArrow=classic,215,202,endArrow=classic
+235,Embargo,endArrow=classic,216,204,endArrow=classic

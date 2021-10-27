@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "Object" as thingobject
+	entity "Collection" as thingcollection
+	actor "User" as actoruser
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Search For\nCollections By\nName" as controlsearchcollectionname
+	control "Search For\nObject" as controlsearchobject
+
+	thingname <.. thingcollection
+	actoruser --- thingnameinterface
+	actoruser --- thingobjectinterface
+	thingcollection --- controlsearchcollectionname
+	thingnameinterface --> controlsearchcollectionname
+	thingname --- controlsearchcollectionname
+	thingobject --- controlsearchobject
+	thingobjectinterface --> controlsearchobject
+
+@enduml

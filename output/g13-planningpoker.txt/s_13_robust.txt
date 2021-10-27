@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Story" as thingstory
+	actor "Moderator" as actormoderator
+	boundary "Story\nInterface" as thingstoryinterface #grey
+	control "Estimate A\nStory" as controlestimatestory
+
+	actormoderator --- thingstoryinterface
+	thingstory --- controlestimatestory
+	thingstoryinterface --> controlestimatestory
+
+@enduml

@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Info" as thinginfo
+	entity "Segment" as thingsegment
+	entity "Video Item" as thingvideoitem
+	actor "User" as actoruser
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Get Info\nAbout Segment" as controlgetinfosegment
+	control "Get Info\nAbout Perceptually\nSimilar Video\nItems" as controlgetinfo
+
+	thingvideoitem <.. thinginfo
+	thingsegment <.. thinginfo
+	actoruser --- thingsegmentinterface
+	actoruser --- thingiteminterface
+	thingsegment --- controlgetinfosegment
+	thingsegmentinterface --> controlgetinfosegment
+	thinginfo --- controlgetinfosegment
+	thinginfo --- controlgetinfo
+	thingvideoitem --- controlgetinfo
+	thingiteminterface --> controlgetinfo
+
+@enduml

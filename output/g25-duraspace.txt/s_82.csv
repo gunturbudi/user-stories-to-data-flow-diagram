@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Hardware,shape=partialRectangle,null,null,data_base
+201,Content File,shape=partialRectangle,null,null,data_base
+202,Software,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,Know,ellipse,null,null,process
+205,Generate A Content File,ellipse,null,null,process
+207,,endArrow=classic,203,205,endArrow=classic
+208,Content File,endArrow=classic,205,201,endArrow=classic

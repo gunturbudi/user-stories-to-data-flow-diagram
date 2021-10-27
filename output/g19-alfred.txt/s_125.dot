@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Platform " ];
+201 [label="<f0>  |<f1> Fee " color=red];
+202 [label="<f0>  |<f1> Market Place\nCharge " ];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Using The Platform }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Know The Provider Of The Market Place Charges }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Know The Fees }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 205
+204 -> 200 [label="Platform"]
+205 -> 202 [label="Market Place\nCharge"]
+206 -> 201 [label="Fee"]
+}

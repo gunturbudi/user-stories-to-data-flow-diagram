@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> System " ];
+201 [label="<f0>  |<f1> Backup Protocol " ];
+202 [label="System Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Have A Managed Backup Protocol For The System }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Backup Protocol"]
+203 -> 200 [label="System"]
+}

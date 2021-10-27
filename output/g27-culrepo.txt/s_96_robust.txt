@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	actor "Repository ,\nSupport ,\nTeam Member" as actorrepositorysupportteammember
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Move A\nCollection" as controlmovecollection
+
+	actorrepositorysupportteammember --- thingcollectioninterface
+	thingcollection --- controlmovecollection
+	thingcollectioninterface --> controlmovecollection
+
+@enduml

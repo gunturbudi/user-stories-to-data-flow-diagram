@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Location" as thinglocation
+	entity "Room" as thingroom
+	entity "Time Slot" as thingtimeslot #grey
+	actor "Administrator" as actoradministrator
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Slot\nInterface" as thingslotinterface #grey
+	control "Assign A\nRoom To\nA Location" as controlassignroomlocation
+	control "Assign A\nRoom To\nA Time\nSlot" as controlassignroomtimeslot
+
+	thingtimeslot <.. thingroom
+	thinglocation <.. thingroom
+	actoradministrator --- thinglocationinterface
+	actoradministrator --- thingslotinterface
+	thinglocation --- controlassignroomlocation
+	thinglocationinterface --> controlassignroomlocation
+	thingroom --- controlassignroomlocation
+	thingroom --- controlassignroomtimeslot
+	thingtimeslot --- controlassignroomtimeslot
+	thingslotinterface --> controlassignroomtimeslot
+
+@enduml

@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Multiple File " ];
+201 [label="<f0>  |<f1> File Browser " ];
+202 [label="<f0>  |<f1> Processing Datum " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Move Multiple Files }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Use The Neurohub File Browser }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Rearrange }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 200 [label="Multiple File"]
+205 -> 204
+205 -> 207
+206 -> 201 [label="File Browser"]
+207 -> 206
+}

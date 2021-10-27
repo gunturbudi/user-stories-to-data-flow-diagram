@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Technology,shape=partialRectangle,null,null,data_base
+202,Software,shape=partialRectangle,null,null,data_base
+203,Data Manager,rounded=0,null,null,external_entity
+204,Know,ellipse,null,null,process
+205,Know Which Software The Data Produced,ellipse,null,null,process
+206,Know Technology Produced,ellipse,null,null,process
+207,Use,ellipse,null,null,process
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Software,endArrow=classic,205,202,endArrow=classic
+213,Datum,endArrow=classic,205,200,endArrow=classic
+214,Technology,endArrow=classic,206,201,endArrow=classic

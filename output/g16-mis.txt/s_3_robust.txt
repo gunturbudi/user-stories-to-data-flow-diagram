@@ -1,0 +1,58 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Item" as thingitem
+	entity "Address" as thingaddress
+	entity "Phone" as thingphone
+	entity "Email" as thingemail
+	entity "Name" as thingname
+	entity "Title" as thingtitle
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nAddress" as controltrackitemaddress
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nEmail" as controltrackitememail
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nMaybe Title" as controltrackitemtitle
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nPhone" as controltrackitemphone
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nPerson Contact\nIncluding Name" as controltrackitem
+
+	thingname <.. thingrepository
+	thingaddress <.. thingrepository
+	thingtitle <.. thingrepository
+	thingphone <.. thingrepository
+	thingemail <.. thingrepository
+	thingrepository <.. thingitem
+	thingname <.. thingitem
+	actorrepositorymanager --- thingaddressinterface
+	actorrepositorymanager --- thingemailinterface
+	actorrepositorymanager --- thingtitleinterface
+	actorrepositorymanager --- thingphoneinterface
+	actorrepositorymanager --- thingnameinterface
+	thingaddress --- controltrackitemaddress
+	thingaddressinterface --> controltrackitemaddress
+	thingrepository --- controltrackitemaddress
+	thingitem --- controltrackitemaddress
+	thingemail --- controltrackitememail
+	thingemailinterface --> controltrackitememail
+	thingrepository --- controltrackitememail
+	thingitem --- controltrackitememail
+	thingtitle --- controltrackitemtitle
+	thingtitleinterface --> controltrackitemtitle
+	thingrepository --- controltrackitemtitle
+	thingitem --- controltrackitemtitle
+	thingphone --- controltrackitemphone
+	thingphoneinterface --> controltrackitemphone
+	thingrepository --- controltrackitemphone
+	thingitem --- controltrackitemphone
+	thingitem --- controltrackitem
+	thingrepository --- controltrackitem
+	thingname --- controltrackitem
+	thingnameinterface --> controltrackitem
+
+@enduml

@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Useful Statistic " ];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Altmetric " ];
+203 [label="<f0>  |<f1> Item Level " ];
+204 [label="<f0>  |<f1> Analytic " ];
+205 [label="<f0>  |<f1> Comprehensive " ];
+206 [label="<f0>  |<f1> Author " color=red];
+207 [label="<f0>  |<f1> Collection " color=red];
+208 [label="<f0>  |<f1> Usage Statistic " color=red];
+209 [label="Library , Staff Member" shape=box];
+210 [label="{<f0> 1.0|<f1> Access Analytic }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Access Comprehensive }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Access Useful Statistics Including Altmetrics At Collection }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Access Useful Statistics Including Altmetrics At Author }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Access Useful Statistics Including Altmetrics At Item Level }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Access Useful Usage Statistics Including Altmetrics At The Repository }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+210 -> 204 [label="Analytic"]
+211 -> 205 [label="Comprehensive"]
+212 -> 207 [label="Collection"]
+212 -> 200 [label="Useful Statistic"]
+212 -> 202 [label="Altmetric"]
+213 -> 200 [label="Useful Statistic"]
+213 -> 206 [label="Author"]
+213 -> 202 [label="Altmetric"]
+214 -> 203 [label="Item Level"]
+214 -> 200 [label="Useful Statistic"]
+214 -> 202 [label="Altmetric"]
+215 -> 208 [label="Usage Statistic"]
+215 -> 202 [label="Altmetric"]
+215 -> 201 [label="Repository"]
+}

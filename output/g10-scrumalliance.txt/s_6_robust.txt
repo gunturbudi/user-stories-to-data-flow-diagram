@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Small Graphic" as thingsmallgraphic
+	entity "Site" as thingsite
+	entity "Article" as thingarticle
+	entity "Csp" as thingcsp
+	entity "Cst Status" as thingcststatus #grey
+	actor "Practitioner" as actorpractitioner
+	boundary "Article" as thingarticleshowpractitioner #grey
+	control "Write An\nArticle For\nThe Site\nWith A\nSmall Graphic\nWith" as controlwritearticlesitesite
+	control "Show" as controlshow #grey
+	control "Show Csp" as controlshowcsp
+	control "Show Cst\nStatus" as controlshowcststatus
+
+	thingsmallgraphic <.. thingsite
+	actorpractitioner --- thingarticleshowpractitioner
+	thingarticleshowpractitioner --> controlwritearticlesitesite
+	thingsmallgraphic --- controlwritearticlesitesite
+	thingsite --- controlwritearticlesitesite
+	thingarticle --- controlwritearticlesitesite
+	controlwritearticlesitesite --> controlshow
+	thingarticleshowpractitioner --> controlshow
+	thingcsp --- controlshowcsp
+	thingarticleshowpractitioner --> controlshowcsp
+	controlwritearticlesitesite --> controlshowcsp
+	controlwritearticlesitesite --> controlshowcststatus
+	thingcststatus --- controlshowcststatus
+	thingarticleshowpractitioner --> controlshowcststatus
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Aspace Record " ];
+201 [label="<f0>  |<f1> Archon Source " color=red];
+202 [label="<f0>  |<f1> Record Id " color=red];
+203 [label="Migration Specialist" shape=box];
+204 [label="{<f0> 1.0|<f1> Store The At Record Ids In Each Aspace Record }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Store Archon Source }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Record Id"]
+204 -> 200 [label="Aspace Record"]
+205 -> 201 [label="Archon Source"]
+}

@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Transaction History " color=red];
+201 [label="User" shape=box];
+202 [label="{<f0> 1.0|<f1> Check Transaction History }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Keep A Record Of Transaction History }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200
+203 -> 200
+}

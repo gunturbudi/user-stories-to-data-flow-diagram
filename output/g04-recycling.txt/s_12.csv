@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Flexible Pick,shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Time Choose A Flexible Pick Up,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Flexible Pick,endArrow=classic,202,200,endArrow=classic

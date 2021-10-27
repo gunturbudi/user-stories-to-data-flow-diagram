@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	circle "Group" as thinggroup
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Mark Groups\nOf Files" as controlmarkgroup
+
+	thingfile *-- thinggroup
+	actorarchivist --- thingfileinterface
+	thinggroup --- controlmarkgroup
+	thingfile --- controlmarkgroup
+	thingfileinterface --> controlmarkgroup
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Course" as thingcourse
+	actor "Trainer" as actortrainer
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	control "Delete One\nOf Event" as controldeleteoneevent
+	control "Delete One\nOf Courses" as controldeleteone
+
+	actortrainer --- thingeventinterface
+	actortrainer --- thingcourseinterface
+	thingevent --- controldeleteoneevent
+	thingeventinterface --> controldeleteoneevent
+	thingcourse --- controldeleteone
+	thingcourseinterface --> controldeleteone
+
+@enduml

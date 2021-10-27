@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Validation Broker\nRule Table" as thingvalidationbrokerruletable #grey
+	entity "Db-2213" as thingDBmoins2213
+	entity "Rule Update" as thingruleupdate
+	actor "Developer" as actordeveloper
+	boundary "Table\nInterface" as thingtableinterface #grey
+	control "Account For\nThe Rule\nUpdates In\nDb-2213" as controlaccountruleupdates
+	control "Update The\nValidation Broker\nRule Table" as controlupdatevalidationbrokerruletableaccountruleupdates
+
+	thingDBmoins2213 <.. thingruleupdate
+	actordeveloper --- thingtableinterface
+	thingruleupdate --- controlaccountruleupdates
+	thingDBmoins2213 --- controlaccountruleupdates
+	controlupdatevalidationbrokerruletableaccountruleupdates --> controlaccountruleupdates
+	thingtableinterface --> controlaccountruleupdates
+	thingvalidationbrokerruletable --- controlupdatevalidationbrokerruletableaccountruleupdates
+	thingtableinterface --> controlupdatevalidationbrokerruletableaccountruleupdates
+
+@enduml

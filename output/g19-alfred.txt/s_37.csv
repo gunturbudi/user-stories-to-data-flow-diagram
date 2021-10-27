@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Night,shape=partialRectangle,null,null,data_base
+201,Rythm Support,shape=partialRectangle,null,null,data_base
+202,Agenda Reminder,shape=partialRectangle,null,null,data_base
+203,Olderperson,rounded=0,null,null,external_entity
+204,Receive Day Rythm Support With Agenda Reminders,ellipse,null,null,process
+205,Receive Night,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Rythm Support,endArrow=classic,204,201,endArrow=classic
+210,Agenda Reminder,endArrow=classic,204,202,endArrow=classic
+211,Night,endArrow=classic,205,200,endArrow=classic

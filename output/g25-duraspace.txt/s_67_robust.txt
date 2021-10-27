@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection Component" as thingcollectioncomponent
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Present Indicate\nIn Object" as controlindicateobject
+	control "Present Indicate\nIn A\nCollection Component" as controlindicatecollectioncomponent
+
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingcomponentinterface
+	thingobjectinterface --> controlindicateobject
+	thingobject --- controlindicateobject
+	thingcollectioncomponent --- controlindicatecollectioncomponent
+	thingcomponentinterface --> controlindicatecollectioncomponent
+
+@enduml

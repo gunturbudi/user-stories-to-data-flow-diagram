@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Workflow" as thingworkflow
+	entity "Prototype" as thingprototype
+	actor "Research Participant" as actorresearchparticipant
+	circle "Appearance" as thingappearance
+
+	thingprototype *-- thingappearance
+
+@enduml

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingownplatform
+	entity "Embedded Viewer" as thingembeddedviewer
+	actor "Api User" as actorapiuser
+	circle "Styling" as thingstyling
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Change Some\nOf The\nStyling Of\nThe Embedded\nViewer In\nOwn Platform" as controlchangesome
+
+	thingownplatform <.. thingembeddedviewer
+	thingembeddedviewer *-- thingstyling
+	thingownplatform *-- thingstyling
+	actorapiuser --- thingplatforminterface
+	thingstyling --- controlchangesome
+	thingembeddedviewer --- controlchangesome
+	thingownplatform --- controlchangesome
+	thingplatforminterface --> controlchangesome
+
+@enduml

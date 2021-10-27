@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Annual Fee " color=red];
+201 [label="<f0>  |<f1> Trainer " ];
+202 [label="<f0>  |<f1> Practitioner " ];
+203 [label="<f0>  |<f1> Member " color=red];
+204 [label="Site Administrator" shape=box];
+205 [label="{<f0> 1.0|<f1> Set The Annual Fees For Practitioner }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Set The Annual Fees For Members }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Set The Annual Fees For Trainer }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 202 [label="Practitioner"]
+205 -> 200 [label="Annual Fee"]
+206 -> 200 [label="Annual Fee"]
+206 -> 203 [label="Member"]
+207 -> 201 [label="Trainer"]
+207 -> 200 [label="Annual Fee"]
+}

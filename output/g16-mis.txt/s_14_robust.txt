@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Embargo" as thingembargo
+	entity "Simple Way" as thingsimpleway
+	entity "Object" as thingobject
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Lift An\nEmbargo For\nAn Object\nIn A\nSimple Way" as controlliftembargosimpleway
+
+	thingobject <.. thingembargo
+	thingsimpleway <.. thingobject
+	actorcollectioncurator --- thingwayinterface
+	thingembargo --- controlliftembargosimpleway
+	thingobject --- controlliftembargosimpleway
+	thingsimpleway --- controlliftembargosimpleway
+	thingwayinterface --> controlliftembargosimpleway
+
+@enduml

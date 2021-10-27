@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Landing Page\nEdit" as thinglandingpageedit
+	actor "Ui Designer" as actoruidesigner
+	boundary "Edit\nInterface" as thingeditinterface #grey
+	control "Move On\nLanding Page\nEdits" as controlmovelandingpageedits
+
+	actoruidesigner --- thingeditinterface
+	thinglandingpageedit --- controlmovelandingpageedits
+	thingeditinterface --> controlmovelandingpageedits
+
+@enduml

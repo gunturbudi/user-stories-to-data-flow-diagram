@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Office Code " ];
+201 [label="<f0>  |<f1> Office Name " color=red];
+202 [label="Datum User" shape=box];
+203 [label="{<f0> 1.0|<f1> See The Office Names From Office Codes }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

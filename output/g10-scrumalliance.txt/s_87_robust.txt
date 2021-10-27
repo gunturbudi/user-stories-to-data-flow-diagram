@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email" as thingemail
+	entity "Content" as thingcontent
+	entity "Product Owner" as thingproductowner #grey
+	entity "Scrum Master" as thingscrummaster
+	actor "Site Editor" as actorsiteeditor
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	boundary "Master\nInterface" as thingmasterinterface #grey
+	control "Edit The\nContent Of\nThe Automatically\nEmail To\nProduct Owner" as controleditcontentproductowner
+	control "Edit The\nContent Of\nThe Automatically\nEmail To\nCertified, New\nScrum Masters" as controleditcontent
+
+	thingscrummaster <.. thingemail
+	thingproductowner <.. thingemail
+	thingemail *-- thingcontent
+	actorsiteeditor --- thingownerinterface
+	actorsiteeditor --- thingmasterinterface
+	thingproductowner --- controleditcontentproductowner
+	thingownerinterface --> controleditcontentproductowner
+	thingemail --- controleditcontentproductowner
+	thingcontent --- controleditcontentproductowner
+	thingcontent --- controleditcontent
+	thingemail --- controleditcontent
+	thingscrummaster --- controleditcontent
+	thingmasterinterface --> controleditcontent
+
+@enduml

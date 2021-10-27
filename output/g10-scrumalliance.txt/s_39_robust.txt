@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Faq" as thingfaq
+	entity "Text Search" as thingtextsearch
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Faq\nInterface" as thingfaqinterface #grey
+	control "Do A\nFull Text\nSearch Of\nThe Faqs" as controldofulltextsearch
+
+	thingfaq <.. thingtextsearch
+	actorsitevisitor --- thingfaqinterface
+	thingtextsearch --- controldofulltextsearch
+	thingfaq --- controldofulltextsearch
+	thingfaqinterface --> controldofulltextsearch
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs Go\nLive" as thingfabsgolive #grey
+	entity "Assistance Datum" as thingassistancedatum
+	actor "Agency User" as actoragencyuser
+	boundary "Live\nInterface" as thingliveinterface #grey
+	control "Provided With\nAll Financial,\nHistorical Assistance\nData For\nFabs Go\nLive" as controlprovidefinancialhistoricalassistancedata
+
+	thingfabsgolive <.. thingassistancedatum
+	actoragencyuser --- thingliveinterface
+	thingassistancedatum --- controlprovidefinancialhistoricalassistancedata
+	thingfabsgolive --- controlprovidefinancialhistoricalassistancedata
+	thingliveinterface --> controlprovidefinancialhistoricalassistancedata
+
+@enduml

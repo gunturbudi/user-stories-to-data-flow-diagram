@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Basic Information" as thingbasicinformation
+	entity "Summit" as thingsummit
+	actor "Summit Coordinator" as actorsummitcoordinator
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "List Basic\nInformation About\nSummit" as controllistbasicinformation
+
+	thingsummit <.. thingbasicinformation
+	actorsummitcoordinator --- thingsummitinterface
+	thingbasicinformation --- controllistbasicinformation
+	thingsummit --- controllistbasicinformation
+	thingsummitinterface --> controllistbasicinformation
+
+@enduml

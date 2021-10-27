@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Site Deployment " ];
+201 [label="<f0>  |<f1> Configuration Parameter " ];
+202 [label="Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Set Key Configuration Parameters For Site Deployment }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Configuration Parameter"]
+203 -> 200 [label="Site Deployment"]
+}

@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Information " color=red];
+201 [label="Public User" shape=box];
+202 [label="{<f0> 1.0|<f1> Search For Information }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Obtain publicly available information concerning properties, county services, processes and other general information. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Properties " color=red];
+2 -> 1001
+1003 [label="<f0>  |<f1> County services " color=red];
+2 -> 1003
+1005 [label="<f0>  |<f1> Processes " color=red];
+2 -> 1005
+201 -> 202
+202 -> 200
+}

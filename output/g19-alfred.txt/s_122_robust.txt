@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pricing Modality" as thingpricingmodality #grey
+	entity "Easy Way" as thingeasyway
+	entity "App" as thingapp
+	actor "Developer" as actordeveloper
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Manage The\nPricing Modality\nOf Apps" as controlmanagepricingmodality
+	control "Have An\nEasy Way" as controlhaveeasywaymanagepricingmodality
+
+	thingapp <.. thingpricingmodality
+	actordeveloper --- thingwayinterface
+	thingpricingmodality --- controlmanagepricingmodality
+	thingapp --- controlmanagepricingmodality
+	controlhaveeasywaymanagepricingmodality --> controlmanagepricingmodality
+	thingwayinterface --> controlmanagepricingmodality
+	thingeasyway --- controlhaveeasywaymanagepricingmodality
+	thingwayinterface --> controlhaveeasywaymanagepricingmodality
+
+@enduml

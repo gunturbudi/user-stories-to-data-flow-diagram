@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "System" as thingsystem
+	entity "Share" as thingshare #grey
+	actor "User" as actoruser
+	boundary "Ability" as thingabilitykeepdatumsystemuser #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Have Only\nShare Datum" as controlhaveonlysharedatum
+	control "Have" as controlhaveabilitykeepdatumsystemuser
+	control "Keep Data\nOn The\nSystem" as controlkeepdatumsystem
+
+	thingshare <.. thingdatum
+	actoruser --- thingabilitykeepdatumsystemuser
+	actoruser --- thingdatuminterface
+	thingdatuminterface --> controlhaveonlysharedatum
+	thingdatum --- controlhaveonlysharedatum
+	thingabilitykeepdatumsystemuser --> controlhaveabilitykeepdatumsystemuser
+	thingabilitykeepdatumsystemuser --> controlkeepdatumsystem
+	thingdatum --- controlkeepdatumsystem
+	thingsystem --- controlkeepdatumsystem
+	controlhaveabilitykeepdatumsystemuser --> controlkeepdatumsystem
+
+@enduml

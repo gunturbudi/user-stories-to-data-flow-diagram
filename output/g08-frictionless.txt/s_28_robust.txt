@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Country Code" as thingcountrycode
+	entity "Country Name" as thingcountryname
+	actor "Researchergovernment Publisher" as actorresearchergovernmentpublisher
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Add General\nCountry Names\nTo Dataset\nOnly Contains\nCountry Codes" as controladdgeneralcountrynamesdataset
+
+	thingcountrycode <.. thingdataset
+	thingdataset <.. thingcountryname
+	actorresearchergovernmentpublisher --- thingcodeinterface
+	thingcountryname --- controladdgeneralcountrynamesdataset
+	thingdataset --- controladdgeneralcountrynamesdataset
+	thingcountrycode --- controladdgeneralcountrynamesdataset
+	thingcodeinterface --> controladdgeneralcountrynamesdataset
+
+@enduml

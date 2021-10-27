@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Mechanism " ];
+201 [label="<f0>  |<f1> Note " color=red];
+202 [label="<f0>  |<f1> Researcher " color=red];
+203 [label="<f0>  |<f1> Sharing Paper " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Provided With A Mechanism For Note With Other Researchers }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Provided With A Mechanism For Electronically Sharing Papers }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 201 [label="Note"]
+205 -> 202 [label="Researcher"]
+205 -> 200 [label="Mechanism"]
+206 -> 200 [label="Mechanism"]
+206 -> 203 [label="Sharing Paper"]
+}

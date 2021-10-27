@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Publish Button,shape=partialRectangle,null,null,data_base
+201,Fabs,shape=partialRectangle,null,null,data_base
+202,Derivation,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Click The Publish Button In Fabs The Derivations Are Happening,ellipse,null,null,process
+205,Deactivate,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Publish Button,endArrow=classic,204,200,endArrow=classic
+211,Fabs,endArrow=classic,204,201,endArrow=classic
+212,Derivation,endArrow=classic,204,202,endArrow=classic
+213,Fabs,endArrow=classic,205,201,endArrow=classic

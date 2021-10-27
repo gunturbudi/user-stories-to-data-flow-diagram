@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Research Environment" as thingresearchenvironment
+	entity "Workflow Tool" as thingworkflowtool
+	actor "Depositor" as actordepositor
+	boundary "Environment\nInterface" as thingenvironmentinterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Deposit Datasets\nThrough Virtual\nResearch Environments" as controldepositdatasetvirtualresearchenvironments
+	control "Deposit Datasets\nThrough Other\nWorkflow Tool" as controldepositdatasetotherworkflowtool
+	control "Maintain Datasets\nThrough Other\nWorkflow Tool" as controlmaintaindatasetotherworkflowtool
+	control "Maintain Datasets\nThrough Virtual\nResearch Environments" as controlmaintaindatasetvirtualresearchenvironments
+
+	thingresearchenvironment <.. thingdataset
+	thingworkflowtool <.. thingdataset
+	actordepositor --- thingenvironmentinterface
+	actordepositor --- thingtoolinterface
+	thingdataset --- controldepositdatasetvirtualresearchenvironments
+	thingresearchenvironment --- controldepositdatasetvirtualresearchenvironments
+	thingenvironmentinterface --> controldepositdatasetvirtualresearchenvironments
+	thingworkflowtool --- controldepositdatasetotherworkflowtool
+	thingtoolinterface --> controldepositdatasetotherworkflowtool
+	thingdataset --- controldepositdatasetotherworkflowtool
+	thingtoolinterface --> controlmaintaindatasetotherworkflowtool
+	thingdataset --- controlmaintaindatasetotherworkflowtool
+	thingworkflowtool --- controlmaintaindatasetotherworkflowtool
+	thingdataset --- controlmaintaindatasetvirtualresearchenvironments
+	thingenvironmentinterface --> controlmaintaindatasetvirtualresearchenvironments
+	thingresearchenvironment --- controlmaintaindatasetvirtualresearchenvironments
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Agent Record " color=red];
+201 [label="<f0>  |<f1> Eac Cpf " ];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Export Agent Records As Eac Cpf }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Agent Record"]
+203 -> 201 [label="Eac Cpf"]
+}

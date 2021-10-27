@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Course " color=red];
+201 [label="<f0>  |<f1> Listing Fee " color=red];
+202 [label="<f0>  |<f1> Event " color=red];
+203 [label="Site Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Create Event }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Create An Other Course Not Charged A Listing Fee }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="Event"]
+205 -> 200 [label="Course"]
+205 -> 201 [label="Listing Fee"]
+}

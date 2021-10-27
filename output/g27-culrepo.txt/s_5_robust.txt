@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Time" as thingtime
+	entity "New Version" as thingnewversion
+	entity "Report" as thingreport
+	actor "Patron" as actorpatron
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Select Dataset" as controlselectdataset
+	control "Select Reports\nTo Emailed\nPossibly Many\nAt Time\nNew Versions\nWhen Are\nAvailable" as controlselectreportmany
+	control "Deselect Reports\nTo Emailed\nPossibly Many\nAt Time\nNew Versions\nWhen Are\nAvailable" as controldeselectreportmanytime
+	control "Deselect Dataset" as controldeselectdataset
+
+	thingnewversion <.. thingtime
+	thingtime <.. thingreport
+	actorpatron --- thingdatasetinterface
+	actorpatron --- thingversioninterface
+	thingdataset --- controlselectdataset
+	thingdatasetinterface --> controlselectdataset
+	thingreport --- controlselectreportmany
+	thingtime --- controlselectreportmany
+	thingnewversion --- controlselectreportmany
+	thingversioninterface --> controlselectreportmany
+	thingtime --- controldeselectreportmanytime
+	thingnewversion --- controldeselectreportmanytime
+	thingreport --- controldeselectreportmanytime
+	thingversioninterface --> controldeselectreportmanytime
+	thingdataset --- controldeselectdataset
+	thingdatasetinterface --> controldeselectdataset
+
+@enduml

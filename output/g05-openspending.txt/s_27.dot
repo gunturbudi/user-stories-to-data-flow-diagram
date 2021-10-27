@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> City " ];
+201 [label="<f0>  |<f1> Region " color=red];
+202 [label="<f0>  |<f1> Border Region " ];
+203 [label="Api User" shape=box];
+204 [label="{<f0> 1.0|<f1> Query A Region }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Get Bordering Regions }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Query City }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Get City }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 205
+204 -> 201
+205 -> 202
+206 -> 205
+206 -> 200
+207 -> 200
+}

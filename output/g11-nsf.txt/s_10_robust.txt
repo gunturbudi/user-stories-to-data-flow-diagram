@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Olpa Task\nScript" as thingolpataskscript
+	actor "User Researcher" as actoruserresearcher
+	boundary "Script\nInterface" as thingscriptinterface #grey
+	control "Have The\nFinalized Olpa\nTask Script" as controlhavefinalizedolpataskscript
+
+	actoruserresearcher --- thingscriptinterface
+	thingolpataskscript --- controlhavefinalizedolpataskscript
+	thingscriptinterface --> controlhavefinalizedolpataskscript
+
+@enduml

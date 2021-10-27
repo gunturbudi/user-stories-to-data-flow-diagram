@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Way,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Present App In Several Ways,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,App,endArrow=classic,203,201,endArrow=classic
+207,Way,endArrow=classic,203,200,endArrow=classic

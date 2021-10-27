@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Webmaster Workflow\nReport,shape=partialRectangle,null,null,data_base
+201,Cms,rounded=0,null,null,external_entity
+202,See The Webmaster Workflow Report,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Webmaster Workflow\nReport,endArrow=classic,202,200,endArrow=classic

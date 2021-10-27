@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Log Book\nPage,shape=partialRectangle,null,null,data_base
+201,Researcher,rounded=0,null,null,external_entity
+202,Create A Log Book Page,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Log Book\nPage,endArrow=classic,202,200,endArrow=classic

@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Meta Datum" as thingmetadatum
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilitylocateexperimentfilesusemetadataresearcherresearcher #grey
+	boundary "Experiment File" as thingexperimentfilesusemetadataresearcher #grey
+	control "Use Meta\nData" as controlusemetadata
+	control "Have Those\nFiles Where\nLocated" as controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	control "Locate" as controllocateexperimentfilesusemetadataresearcher
+
+	actorresearcher --- thingabilitylocateexperimentfilesusemetadataresearcherresearcher
+	actorresearcher --- thingexperimentfilesusemetadataresearcher
+	controllocateexperimentfilesusemetadataresearcher --> controlusemetadata
+	thingmetadatum --- controlusemetadata
+	thingexperimentfilesusemetadataresearcher --> controlusemetadata
+	thingabilitylocateexperimentfilesusemetadataresearcherresearcher --> controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	thingfile --- controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	thingabilitylocateexperimentfilesusemetadataresearcherresearcher --> controllocateexperimentfilesusemetadataresearcher
+	thingexperimentfilesusemetadataresearcher --> controllocateexperimentfilesusemetadataresearcher
+	controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile --> controllocateexperimentfilesusemetadataresearcher
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Social Event" as thingsocialevent
+	entity "Personalize Invitation" as thingpersonalizedinvitation
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Get A\nPersonalized Invitation\nTo A\nSocial Event" as controlgetpersonalizedinvitation
+	control "Use Alfred" as controluseALFREDgetpersonalizedinvitation
+
+	thingsocialevent <.. thingpersonalizedinvitation
+	actorOlderPerson --- thingalfredinterface
+	thingpersonalizedinvitation --- controlgetpersonalizedinvitation
+	thingsocialevent --- controlgetpersonalizedinvitation
+	controluseALFREDgetpersonalizedinvitation --> controlgetpersonalizedinvitation
+	thingalfredinterface --> controlgetpersonalizedinvitation
+	thingALFRED --- controluseALFREDgetpersonalizedinvitation
+	thingalfredinterface --> controluseALFREDgetpersonalizedinvitation
+
+@enduml

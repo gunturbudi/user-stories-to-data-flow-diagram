@@ -1,0 +1,43 @@
+id,value,style,source,target,type
+200,Team,shape=partialRectangle,null,null,data_base
+201,2,shape=partialRectangle,null,null,data_base
+202,1,shape=partialRectangle,null,null,data_base
+203,5,shape=partialRectangle,null,null,data_base
+204,8,shape=partialRectangle,null,null,data_base
+205,3,shape=partialRectangle,null,null,data_base
+206,Etc,shape=partialRectangle,null,null,data_base
+207,Moderator,rounded=0,null,null,external_entity
+208,Have The Team With,ellipse,null,null,process
+209,Have The Team With 2,ellipse,null,null,process
+210,Have The Team With 1,ellipse,null,null,process
+211,Select,ellipse,null,null,process
+212,Have The Team With 5,ellipse,null,null,process
+213,Have The Team With 8,ellipse,null,null,process
+214,Have The Team With Etc,ellipse,null,null,process
+215,Have The Team With 3,ellipse,null,null,process
+217,,endArrow=classic,207,209,endArrow=classic
+218,,endArrow=classic,207,209,endArrow=classic
+219,,endArrow=classic,207,210,endArrow=classic
+220,,endArrow=classic,207,211,endArrow=classic
+221,,endArrow=classic,207,212,endArrow=classic
+222,,endArrow=classic,207,213,endArrow=classic
+223,,endArrow=classic,207,214,endArrow=classic
+224,,endArrow=classic,207,215,endArrow=classic
+225,Team,endArrow=classic,208,200,endArrow=classic
+226,2,endArrow=classic,209,201,endArrow=classic
+227,Team,endArrow=classic,209,200,endArrow=classic
+228,1,endArrow=classic,210,202,endArrow=classic
+229,Team,endArrow=classic,210,200,endArrow=classic
+230,,endArrow=classic,211,208,endArrow=classic
+231,,endArrow=classic,211,209,endArrow=classic
+232,,endArrow=classic,211,213,endArrow=classic
+233,Team,endArrow=classic,211,200,endArrow=classic
+234,2,endArrow=classic,211,201,endArrow=classic
+235,5,endArrow=classic,212,203,endArrow=classic
+236,Team,endArrow=classic,212,200,endArrow=classic
+237,Team,endArrow=classic,213,200,endArrow=classic
+238,8,endArrow=classic,213,204,endArrow=classic
+239,Etc,endArrow=classic,214,206,endArrow=classic
+240,Team,endArrow=classic,214,200,endArrow=classic
+241,3,endArrow=classic,215,205,endArrow=classic
+242,Team,endArrow=classic,215,200,endArrow=classic

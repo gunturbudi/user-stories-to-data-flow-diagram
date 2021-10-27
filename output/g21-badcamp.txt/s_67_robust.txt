@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registration Form" as thingregistrationform #grey
+	entity "Link" as thinglink
+	entity "Menu" as thingmenu
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Find A\nLink In\nThe Menu\nLinks To\nThe Registration\nForm" as controlfindlink
+
+	thingmenu <.. thinglink
+	thingregistrationform <.. thingmenu
+	actoranonymoususer --- thingforminterface
+	thinglink --- controlfindlink
+	thingmenu --- controlfindlink
+	thingregistrationform --- controlfindlink
+	thingforminterface --> controlfindlink
+
+@enduml

@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Neurohub Installation,shape=partialRectangle,null,null,data_base
+201,Script,shape=partialRectangle,null,null,data_base
+202,System Administrator,rounded=0,null,null,external_entity
+203,See,ellipse,null,null,process
+204,Run A Script Tests A Neurohub Installation Is Correctly Functioning,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,204,203,endArrow=classic
+209,Script,endArrow=classic,204,201,endArrow=classic
+210,Neurohub Installation,endArrow=classic,204,200,endArrow=classic

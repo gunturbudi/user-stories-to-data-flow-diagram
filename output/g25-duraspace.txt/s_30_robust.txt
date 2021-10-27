@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	actor "User" as actoruser
+	boundary "Object" as thingobjectuser
+	control "What Repository\nBelongs To" as controlbelongobjectuserrepository
+	control "Know" as controlknowbelongobjectuserrepository
+
+	actoruser --- thingobjectuser
+	thingobjectuser --> controlbelongobjectuserrepository
+	thingrepository --- controlbelongobjectuserrepository
+	controlknowbelongobjectuserrepository --> controlbelongobjectuserrepository
+	thingobjectuser --> controlknowbelongobjectuserrepository
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hearing Decision" as thinghearingdecision #grey
+	actor "Staff Member" as actorstaffmember
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	control "Capture A\nHearing Decision" as controlcapturehearingdecision
+
+	actorstaffmember --- thingdecisioninterface
+	thinghearingdecision --- controlcapturehearingdecision
+	thingdecisioninterface --> controlcapturehearingdecision
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Rating" as thingrating
+	entity "Profile Page" as thingprofilepage #grey
+	actor "Trainer" as actortrainer
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Show Rating\nUp On\nProfile Page" as controlshowrating
+
+	thingprofilepage <.. thingrating
+	actortrainer --- thingpageinterface
+	thingrating --- controlshowrating
+	thingprofilepage --- controlshowrating
+	thingpageinterface --> controlshowrating
+
+@enduml

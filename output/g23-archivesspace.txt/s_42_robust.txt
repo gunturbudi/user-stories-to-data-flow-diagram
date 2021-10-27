@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ead" as thingead
+	entity "Import" as thingimport
+	entity "Frontend Application" as thingfrontendapplication #grey
+	actor "Archivist" as actorarchivist
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	control "Upload An\nEad For\nImport Within\nThe Frontend\nApplication" as controluploadeadimport
+
+	thingimport <.. thingead
+	thingfrontendapplication <.. thingimport
+	actorarchivist --- thingapplicationinterface
+	thingead --- controluploadeadimport
+	thingimport --- controluploadeadimport
+	thingfrontendapplication --- controluploadeadimport
+	thingapplicationinterface --> controluploadeadimport
+
+@enduml

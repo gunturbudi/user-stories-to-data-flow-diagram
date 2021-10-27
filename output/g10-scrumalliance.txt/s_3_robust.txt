@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Additional Detail" as thingadditionaldetail
+	entity "Profile Page" as thingprofilepage #grey
+	actor "Practitioner" as actorpractitioner
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Include Additional\nDetails About\nIn Profile\nPage" as controlincludeadditionaldetail
+
+	thingprofilepage <.. thingadditionaldetail
+	actorpractitioner --- thingpageinterface
+	thingadditionaldetail --- controlincludeadditionaldetail
+	thingprofilepage --- controlincludeadditionaldetail
+	thingpageinterface --> controlincludeadditionaldetail
+
+@enduml

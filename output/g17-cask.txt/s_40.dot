@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Administrative ,\nCustom Operation " ];
+201 [label="<f0>  |<f1> Dataset Instance " color=red];
+202 [label="<f0>  |<f1> Ui " ];
+203 [label="<f0>  |<f1> App " color=red];
+204 [label="<f0>  |<f1> Cli " ];
+205 [label="<f0>  |<f1> Rest " ];
+206 [label="App Developer" shape=box];
+207 [label="{<f0> 1.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From Rest }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From App }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From The Ui }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From The Cli }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+207 -> 205 [label="Rest"]
+207 -> 200 [label="Administrative ,\nCustom Operation"]
+207 -> 201 [label="Dataset Instance"]
+208 -> 200 [label="Administrative ,\nCustom Operation"]
+208 -> 201 [label="Dataset Instance"]
+208 -> 203 [label="App"]
+209 -> 202 [label="Ui"]
+209 -> 200 [label="Administrative ,\nCustom Operation"]
+209 -> 201 [label="Dataset Instance"]
+210 -> 204 [label="Cli"]
+210 -> 200 [label="Administrative ,\nCustom Operation"]
+210 -> 201 [label="Dataset Instance"]
+}

@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fingerprinting " color=red];
+201 [label="<f0>  |<f1> Content Identification " color=red];
+202 [label="<f0>  |<f1> Music " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Use }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Use Content Identification }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Use Fingerprinting }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Search }" shape=Mrecord];
+208 [label="{<f0> 5.0|<f1> Discover Music }" shape=Mrecord];
+203 -> 205
+203 -> 206
+203 -> 207
+203 -> 208
+205 -> 201 [label="Content Identification"]
+206 -> 200 [label="Fingerprinting"]
+207 -> 204
+207 -> 205
+207 -> 206
+208 -> 205
+208 -> 206
+208 -> 202 [label="Music"]
+}

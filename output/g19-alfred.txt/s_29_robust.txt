@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video Conversation" as thingvideoconversation #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Conversation\nInterface" as thingconversationinterface #grey
+	control "Have Video\nConversation With\nOthers" as controlhavevideoconversation
+
+	actorOlderPerson --- thingconversationinterface
+	thingvideoconversation --- controlhavevideoconversation
+	thingconversationinterface --> controlhavevideoconversation
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Access,shape=partialRectangle,null,null,data_base
+202,Content File,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Have Access To The Content Files For An Object,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Access,endArrow=classic,204,201,endArrow=classic
+208,Content File,endArrow=classic,204,202,endArrow=classic
+209,Object,endArrow=classic,204,200,endArrow=classic

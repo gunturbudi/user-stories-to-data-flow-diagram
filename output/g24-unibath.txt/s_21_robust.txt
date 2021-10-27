@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingsamedataset
+	actor "Depositor" as actordepositor
+	circle "Multiple Version" as thingmultipleversion
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Manage Multiple\nVersions Of\nThe Same\nDataset" as controlmanagemultipleversion
+
+	thingsamedataset *-- thingmultipleversion
+	actordepositor --- thingdatasetinterface
+	thingmultipleversion --- controlmanagemultipleversion
+	thingsamedataset --- controlmanagemultipleversion
+	thingdatasetinterface --> controlmanagemultipleversion
+
+@enduml

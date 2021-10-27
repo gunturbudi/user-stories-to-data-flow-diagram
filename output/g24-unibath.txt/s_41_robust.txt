@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archive" as thingarchive
+	entity "Cris" as thingCRIS
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Cris\nInterface" as thingcrisinterface #grey
+	control "Integrate The\nArchive With\nCris" as controlintegratearchiveCRIS
+
+	thingCRIS <.. thingarchive
+	actorresearchinformationmanager --- thingcrisinterface
+	thingarchive --- controlintegratearchiveCRIS
+	thingCRIS --- controlintegratearchiveCRIS
+	thingcrisinterface --> controlintegratearchiveCRIS
+
+@enduml

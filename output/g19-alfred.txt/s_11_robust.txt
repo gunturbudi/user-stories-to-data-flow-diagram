@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Service" as thingservice
+	entity "Clear Instruction" as thingclearinstruction
+	entity "Sale" as thingsale
+	entity "Trouble" as thingtrouble
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Sale\nInterface" as thingsaleinterface #grey
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	control "Clear Instructions\nGuide Have\nTrouble" as controlhaveclearinstructiontrouble
+	control "Have Clear\nInstructions After\nSales" as controlhaveclearinstructionsale
+	control "Using Alfred" as controlusehaveclearinstructiontroubleALFRED
+	control "Have Service" as controlhaveservice
+
+	thingsale <.. thingclearinstruction
+	thingtrouble <.. thingclearinstruction
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingsaleinterface
+	actorOlderPerson --- thingserviceinterface
+	thingtrouble --- controlhaveclearinstructiontrouble
+	controlusehaveclearinstructiontroubleALFRED --> controlhaveclearinstructiontrouble
+	thingalfredinterface --> controlhaveclearinstructiontrouble
+	thingclearinstruction --- controlhaveclearinstructiontrouble
+	thingclearinstruction --- controlhaveclearinstructionsale
+	thingsale --- controlhaveclearinstructionsale
+	thingsaleinterface --> controlhaveclearinstructionsale
+	thingALFRED --- controlusehaveclearinstructiontroubleALFRED
+	thingalfredinterface --> controlusehaveclearinstructiontroubleALFRED
+	thingservice --- controlhaveservice
+	thingserviceinterface --> controlhaveservice
+
+@enduml

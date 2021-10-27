@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Css" as thingCSS
+	entity "Site" as thingsite
+	entity "Xhtml Standard" as thingxhtmlstandard
+	actor "Developer" as actordeveloper
+	boundary "Css\nInterface" as thingcssinterface #grey
+	boundary "Standard\nInterface" as thingstandardinterface #grey
+	control "Written A\nSite Is\nCompliant With\nCss" as controlwritesiteCSS
+	control "Written A\nSite Is\nCompliant With\nXhtml Standards" as controlwritesite
+
+	thingxhtmlstandard <.. thingsite
+	thingCSS <.. thingsite
+	actordeveloper --- thingcssinterface
+	actordeveloper --- thingstandardinterface
+	thingCSS --- controlwritesiteCSS
+	thingcssinterface --> controlwritesiteCSS
+	thingsite --- controlwritesiteCSS
+	thingsite --- controlwritesite
+	thingxhtmlstandard --- controlwritesite
+	thingstandardinterface --> controlwritesite
+
+@enduml

@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Draft Proffer " color=red];
+201 [label="Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Track The Draft Proffers }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Preserve the history of draft proffer statements submitted by the applicant. }" shape=Mrecord];
+202 -> 2
+2 -> 200
+201 -> 202
+202 -> 200
+}

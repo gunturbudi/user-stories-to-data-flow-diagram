@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Place" as thingplace
+	entity "Repository Information" as thingrepositoryinformation #grey
+	entity "Relevant Place" as thingrelevantplace
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Update" as thingupdaterepositorymanager
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	control "Update Repository\nInformation In\nPlace" as controlupdaterepositoryinformationplace
+	control "Propagated To\nAll Relevant\nPlaces" as controlpropagateupdaterepositorymanagerrelevantplace
+
+	thingplace <.. thingrepositoryinformation
+	actorrepositorymanager --- thingupdaterepositorymanager
+	actorrepositorymanager --- thingplaceinterface
+	thingrepositoryinformation --- controlupdaterepositoryinformationplace
+	thingplace --- controlupdaterepositoryinformationplace
+	thingplaceinterface --> controlupdaterepositoryinformationplace
+	thingupdaterepositorymanager --> controlpropagateupdaterepositorymanagerrelevantplace
+	thingrelevantplace --- controlpropagateupdaterepositorymanagerrelevantplace
+
+@enduml

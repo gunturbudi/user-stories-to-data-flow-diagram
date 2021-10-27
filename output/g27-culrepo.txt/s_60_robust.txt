@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Variety" as thingvariety
+	entity "Media File" as thingmediafile #grey
+	entity "Platform" as thingplatform
+	entity "Text ,\nBased Format" as thingtextbasedformat
+	actor "Administrator" as actoradministrator
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Have A\nPlatform Support\nA Variety\nOf Media\nFile" as controlhaveplatform
+	control "Have A\nPlatform Support\nA Variety\nOf Text,\nBased Format" as controlhaveplatformtextbasedformat
+
+	thingmediafile *-- thingvariety
+	thingtextbasedformat *-- thingvariety
+	thingvariety <.. thingplatform
+	actoradministrator --- thingfileinterface
+	actoradministrator --- thingformatinterface
+	thingplatform --- controlhaveplatform
+	thingvariety --- controlhaveplatform
+	thingmediafile --- controlhaveplatform
+	thingfileinterface --> controlhaveplatform
+	thingtextbasedformat --- controlhaveplatformtextbasedformat
+	thingformatinterface --> controlhaveplatformtextbasedformat
+	thingvariety --- controlhaveplatformtextbasedformat
+	thingplatform --- controlhaveplatformtextbasedformat
+
+@enduml

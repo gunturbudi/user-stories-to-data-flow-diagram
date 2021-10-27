@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nudity Content" as thingnuditycontent #grey
+	actor "Admin" as actoradmin
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Prefilter Nudity\nContent" as controlprefilternuditycontent
+
+	actoradmin --- thingcontentinterface
+	thingnuditycontent --- controlprefilternuditycontent
+	thingcontentinterface --> controlprefilternuditycontent
+
+@enduml

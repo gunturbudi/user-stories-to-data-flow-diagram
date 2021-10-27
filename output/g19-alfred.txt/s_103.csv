@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Body Posture,shape=partialRectangle,null,null,data_base
+201,Olderperson,rounded=0,null,null,external_entity
+202,Keep A Good Body Posture,ellipse,null,null,process
+203,Remind,ellipse,null,null,process
+204,Have,ellipse,null,null,process
+206,,endArrow=classic,201,202,endArrow=classic
+207,,endArrow=classic,201,203,endArrow=classic
+208,,endArrow=classic,201,204,endArrow=classic
+209,Body Posture,endArrow=classic,202,200,endArrow=classic
+210,,endArrow=classic,203,202,endArrow=classic
+211,,endArrow=classic,204,203,endArrow=classic

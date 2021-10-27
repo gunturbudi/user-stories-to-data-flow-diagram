@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Function " ];
+201 [label="<f0>  |<f1> Control " ];
+202 [label="<f0>  |<f1> User Experience " color=red];
+203 [label=", Games Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Provide The Desired User Experience }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Take Control Over Some Functions }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202 [label="User Experience"]
+205 -> 204
+205 -> 201 [label="Control"]
+205 -> 200 [label="Function"]
+}

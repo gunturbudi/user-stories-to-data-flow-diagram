@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype #grey
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	actor "App Developer" as actorappdeveloper
+	circle "Specific Version" as thingspecificversion
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Create A\nDataset Instance\nWith A\nSpecific Version\nOf A\nDataset Type" as controlcreatedatasetinstancespecificversion
+
+	thingspecificversion <.. thingdatasetinstance
+	thingdatasettype *-- thingspecificversion
+	actorappdeveloper --- thingtypeinterface
+	thingdatasetinstance --- controlcreatedatasetinstancespecificversion
+	thingspecificversion --- controlcreatedatasetinstancespecificversion
+	thingdatasettype --- controlcreatedatasetinstancespecificversion
+	thingtypeinterface --> controlcreatedatasetinstancespecificversion
+
+@enduml

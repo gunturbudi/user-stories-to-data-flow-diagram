@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Alfred " ];
+201 [label="<f0>  |<f1> Cultural " ];
+202 [label="<f0>  |<f1> Explanation " ];
+203 [label="<f0>  |<f1> Touristic Walk " color=red];
+204 [label="<f0>  |<f1> Historical Sight " ];
+205 [label="Olderperson" shape=box];
+206 [label="{<f0> 1.0|<f1> Indications Alfred For Touristic Walks With Explanations On Cultural }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Indications Alfred For Touristic Walks With Explanations On Historical Sights }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 201 [label="Cultural"]
+206 -> 203 [label="Touristic Walk"]
+206 -> 200 [label="Alfred"]
+206 -> 202 [label="Explanation"]
+207 -> 200 [label="Alfred"]
+207 -> 203 [label="Touristic Walk"]
+207 -> 202 [label="Explanation"]
+207 -> 204 [label="Historical Sight"]
+}

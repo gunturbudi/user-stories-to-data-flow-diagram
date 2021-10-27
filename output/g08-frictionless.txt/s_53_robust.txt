@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thingmanyuser
+	entity "Dataset" as thingdataset
+	actor "Publisher" as actorpublisher
+	control "Know" as controlknow
+
+
+@enduml

@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Project" as thingproject
+	entity "Datapackage" as thingDataPackage
+	entity "Datapackages Requirement" as thingdatapackagesrequirement
+	actor "Developer" as actordeveloper
+	circle "Exact Version" as thingexactversion
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "List All\nDatapackages Requirements\nFor Project\nIn The\nFile" as controllistdatapackagesrequirements
+	control "Pin The\nExact Versions\nOf Any\nDatapackage" as controlpinexactversion
+
+	thingfile <.. thingproject
+	thingproject <.. thingdatapackagesrequirement
+	thingDataPackage *-- thingexactversion
+	actordeveloper --- thingfileinterface
+	actordeveloper --- thingdatapackageinterface
+	thingdatapackagesrequirement --- controllistdatapackagesrequirements
+	thingproject --- controllistdatapackagesrequirements
+	thingfile --- controllistdatapackagesrequirements
+	thingfileinterface --> controllistdatapackagesrequirements
+	thingexactversion --- controlpinexactversion
+	thingDataPackage --- controlpinexactversion
+	thingdatapackageinterface --> controlpinexactversion
+
+@enduml

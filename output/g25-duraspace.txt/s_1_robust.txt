@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Dam" as thingDAMS
+	entity "Collection" as thingcollection
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	control "Know Object" as controlknowobject
+	control "Know The\nCollections In\nThe Dams" as controlknowcollection
+
+	thingDAMS <.. thingcollection
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingdamsinterface
+	thingobject --- controlknowobject
+	thingobjectinterface --> controlknowobject
+	thingcollection --- controlknowcollection
+	thingDAMS --- controlknowcollection
+	thingdamsinterface --> controlknowcollection
+
+@enduml

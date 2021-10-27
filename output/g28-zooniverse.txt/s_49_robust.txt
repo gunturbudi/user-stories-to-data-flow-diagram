@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Volunteer" as thingvolunteer
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Volunteer\nInterface" as thingvolunteerinterface #grey
+	control "Interrupt A\nVolunteer" as controlinterruptknowvolunteer
+	control "Know" as controlknow
+
+	actorzooniverseadmin --- thingvolunteerinterface
+	thingvolunteer --- controlinterruptknowvolunteer
+	thingvolunteerinterface --> controlinterruptknowvolunteer
+	controlinterruptknowvolunteer --> controlknow
+	thingvolunteerinterface --> controlknow
+
+@enduml

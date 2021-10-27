@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Event,shape=partialRectangle,null,null,data_base
+201,Object Nn,shape=partialRectangle,null,null,data_base
+202,Dams Manager,rounded=0,null,null,external_entity
+203,Know The Outcome Of The Event,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Event,endArrow=classic,203,200,endArrow=classic

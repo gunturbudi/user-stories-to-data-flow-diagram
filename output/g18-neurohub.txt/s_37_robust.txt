@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page Template" as thingpagetemplate
+	entity "Metadata Field" as thingmetadatafield
+	actor "Lab Administrator" as actorlabadministrator
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Create Page\nTemplates With\nBespoke Metadata\nFields" as controlcreatepagetemplates
+
+	thingmetadatafield <.. thingpagetemplate
+	actorlabadministrator --- thingfieldinterface
+	thingpagetemplate --- controlcreatepagetemplates
+	thingmetadatafield --- controlcreatepagetemplates
+	thingfieldinterface --> controlcreatepagetemplates
+
+@enduml

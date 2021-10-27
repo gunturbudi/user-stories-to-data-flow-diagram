@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingfrontpage
+	entity "New Article" as thingnewarticle
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Week Read\nA New\nArticle On\nThe Front\nPage" as controlreadnewarticle
+
+	thingfrontpage <.. thingnewarticle
+	actorsitevisitor --- thingpageinterface
+	thingnewarticle --- controlreadnewarticle
+	thingfrontpage --- controlreadnewarticle
+	thingpageinterface --> controlreadnewarticle
+
+@enduml

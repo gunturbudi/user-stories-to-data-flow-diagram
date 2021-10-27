@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archival Material" as thingarchivalmaterial #grey
+	entity "Online Form" as thingonlineform
+	actor "Archivist" as actorarchivist
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "Have An\nOnline Form" as controlhaveonlineform
+	control "Licensing Archival\nMaterial" as controllicensehaveonlineformarchivalmaterial
+
+	actorarchivist --- thingmaterialinterface
+	thingonlineform --- controlhaveonlineform
+	controllicensehaveonlineformarchivalmaterial --> controlhaveonlineform
+	thingmaterialinterface --> controlhaveonlineform
+	thingarchivalmaterial --- controllicensehaveonlineformarchivalmaterial
+	thingmaterialinterface --> controllicensehaveonlineformarchivalmaterial
+
+@enduml

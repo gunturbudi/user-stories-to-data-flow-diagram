@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Element,shape=partialRectangle,null,null,data_base
+201,Team Member,rounded=0,null,null,external_entity
+202,"Have A Prioritized List Of Features Of A Social, Future Element Page",ellipse,null,null,process
+203,Have A Prioritized List Of Element,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Element,endArrow=classic,203,200,endArrow=classic

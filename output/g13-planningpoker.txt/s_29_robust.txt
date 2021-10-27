@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage
+	entity "Name" as thingname
+	entity "Game" as thinggame
+	actor "Estimator" as actorestimator
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Join A\nGame" as controljoingame
+	control "Entering Name\nOn The\nPage" as controlenterjoingamenamepage
+
+	thingpage <.. thingname
+	actorestimator --- thingpageinterface
+	thinggame --- controljoingame
+	controlenterjoingamenamepage --> controljoingame
+	thingpageinterface --> controljoingame
+	thingname --- controlenterjoingamenamepage
+	thingpage --- controlenterjoingamenamepage
+	thingpageinterface --> controlenterjoingamenamepage
+
+@enduml

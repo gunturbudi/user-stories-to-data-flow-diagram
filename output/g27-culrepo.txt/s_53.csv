@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+2,Use it for teaching,ellipse,null,null,process
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Scholarly Work,shape=partialRectangle,null,null,data_base
+202,Faculty Member,rounded=0,null,null,external_entity
+203,Upload Scholarly Work To The Repository,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Scholarly Work,endArrow=classic,203,201,endArrow=classic
+207,Repository,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Non-academic audience,rounded=0,null,null,external_entity
+1002,Non-academic audience,endArrow=classic,2,1001,endArrow=classic
+1003,Influence,rounded=0,null,null,external_entity
+1004,Influence,endArrow=classic,2,1003,endArrow=classic
+1005,Academic community,rounded=0,null,null,external_entity
+1006,Academic community,endArrow=classic,2,1005,endArrow=classic

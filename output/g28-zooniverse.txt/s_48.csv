@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,"Audio ,\nSingle File",shape=partialRectangle,null,null,data_base
+201,Whale,shape=partialRectangle,null,null,data_base
+202,Zooniverse Admin,rounded=0,null,null,external_entity
+203,"Identify The Number Of Whales In A Audio, Single File",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Whale,endArrow=classic,203,201,endArrow=classic
+207,"Audio ,\nSingle File",endArrow=classic,203,200,endArrow=classic

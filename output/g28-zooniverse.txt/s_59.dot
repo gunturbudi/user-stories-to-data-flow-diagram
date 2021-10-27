@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Previous Experience " color=red];
+201 [label="<f0>  |<f1> Different Project " ];
+202 [label="<f0>  |<f1> Volunteer " ];
+203 [label="Zooniverse Admin" shape=box];
+204 [label="{<f0> 1.0|<f1> Recommend Different Projects To Volunteers On Previous Experiences }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Different Project"]
+204 -> 202 [label="Volunteer"]
+204 -> 200 [label="Previous Experience"]
+}

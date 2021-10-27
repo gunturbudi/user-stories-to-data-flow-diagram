@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Datum" as thingdatum
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Set A\nDate" as controlsetdatehide
+	control "Delete" as controldelete
+	control "Hide" as controlhide
+	control "Set A\nDate Which\nData Expire" as controlsetdate
+
+	thingdatum <.. thingdate
+	actorcollectioncurator --- thingdateinterface
+	actorcollectioncurator --- thingdatuminterface
+	thingdateinterface --> controlsetdatehide
+	thingdate --- controlsetdatehide
+	thingdateinterface --> controldelete
+	controlsetdatehide --> controldelete
+	controlsetdatehide --> controlhide
+	thingdateinterface --> controlhide
+	thingdate --- controlsetdate
+	thingdatum --- controlsetdate
+	thingdatuminterface --> controlsetdate
+
+@enduml

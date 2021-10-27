@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Clean up test datasets.,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Platform Administrator,rounded=0,null,null,external_entity
+202,Delete Any Dataset,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Dataset,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Takedown requests,rounded=0,null,null,external_entity
+1002,Takedown requests,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific Object" as thingspecificobject
+	entity "Email" as thingemail
+	entity "Citation Information" as thingcitationinformation
+	actor "Archivist" as actorarchivist
+	control "Ensure" as controlensure
+
+	thingspecificobject <.. thingemail
+
+@enduml

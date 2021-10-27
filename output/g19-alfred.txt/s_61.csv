@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Interest,shape=partialRectangle,null,null,data_base
+201,Domain,shape=partialRectangle,null,null,data_base
+202,Cinema,shape=partialRectangle,null,null,data_base
+203,Exhibition,shape=partialRectangle,null,null,data_base
+204,Question,shape=partialRectangle,null,null,data_base
+205,Olderperson,rounded=0,null,null,external_entity
+206,Initiate Questions,ellipse,null,null,process
+207,Have,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Question,endArrow=classic,206,204,endArrow=classic
+212,,endArrow=classic,207,206,endArrow=classic

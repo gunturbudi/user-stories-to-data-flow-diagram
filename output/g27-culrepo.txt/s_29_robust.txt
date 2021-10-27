@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem #grey
+	entity "Researcher" as thingresearcher
+	entity "Cornell" as thingcornell
+	entity "Dmps" as thingDMPs
+	entity "Research" as thingresearch
+	entity "Sharing" as thingsharing
+	entity "Repository" as thingrepository #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Result" as thingresult
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	control "Tell The\nResearchers" as controltellresearcher
+
+	thingsharing <.. thingsystem
+	thingrepository <.. thingsystem
+	thingresult <.. thingsharing
+	thingresearch *-- thingresult
+	actorlibrarystaffmember --- thingresearcherinterface
+	thingresearcher --- controltellresearcher
+	thingresearcherinterface --> controltellresearcher
+
+@enduml

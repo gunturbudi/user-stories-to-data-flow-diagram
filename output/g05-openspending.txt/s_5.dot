@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> View " ];
+203 [label="Platform Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A View On All Datasets All Users }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Perform management actions on any dataset. }" shape=Mrecord];
+204 -> 2
+2 -> 201
+203 -> 204
+204 -> 202
+204 -> 201
+204 -> 200
+}

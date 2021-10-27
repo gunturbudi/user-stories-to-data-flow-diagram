@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Behalf" as thingbehalf
+	actor "Depositor" as actordepositor
+	boundary "Behalf\nInterface" as thingbehalfinterface #grey
+	control "Deposit On\nBehalf" as controldepositotherbehalf
+	control "Allow" as controlallowdepositotherbehalf
+
+	actordepositor --- thingbehalfinterface
+	thingbehalf --- controldepositotherbehalf
+	controlallowdepositotherbehalf --> controldepositotherbehalf
+	thingbehalfinterface --> controldepositotherbehalf
+	thingbehalfinterface --> controlallowdepositotherbehalf
+
+@enduml

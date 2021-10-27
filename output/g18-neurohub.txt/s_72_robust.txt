@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Service" as thingservice
+	entity "Datum" as thingdatum
+	entity "Term Curation" as thingtermcuration
+	actor "Researcher" as actorresearcher
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	control "Support The\nLong Term\nCuration Of\nData" as controlsupportlongtermcuration
+	control "Have Services" as controlhaveservicesupportlongtermcuration
+
+	thingdatum <.. thingtermcuration
+	actorresearcher --- thingserviceinterface
+	thingtermcuration --- controlsupportlongtermcuration
+	thingdatum --- controlsupportlongtermcuration
+	controlhaveservicesupportlongtermcuration --> controlsupportlongtermcuration
+	thingserviceinterface --> controlsupportlongtermcuration
+	thingservice --- controlhaveservicesupportlongtermcuration
+	thingserviceinterface --> controlhaveservicesupportlongtermcuration
+
+@enduml

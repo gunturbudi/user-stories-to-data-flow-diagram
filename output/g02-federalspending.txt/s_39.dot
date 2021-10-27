@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Zero " ];
+201 [label="<f0>  |<f1> Loan Record " color=red];
+202 [label="Agency User" shape=box];
+203 [label="{<f0> 1.0|<f1> Accept }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Blank }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Accept Zero For Loan Records }" shape=Mrecord];
+202 -> 203
+202 -> 205
+203 -> 204
+205 -> 200
+205 -> 201
+}

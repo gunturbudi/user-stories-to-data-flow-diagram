@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Object " color=red];
+202 [label="<f0>  |<f1> Access Permission " color=red];
+203 [label="Collection Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Have The Item To Allowed Under The Access Permissions On The Object }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Item"]
+204 -> 202 [label="Access Permission"]
+204 -> 201 [label="Object"]
+}

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingothersystem
+	entity "Metadata" as thingmetadata
+	entity "Pointer" as thingpointer
+	entity "Dmp" as thingdmp
+	actor "Data Librarian" as actordatalibrarian
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Extract Pointers\nFrom The\nDmp To\nMetadata In\nOther Systems" as controlextractpointermetadata
+
+	thingothersystem <.. thingmetadata
+	thingdmp <.. thingpointer
+	thingmetadata <.. thingdmp
+	actordatalibrarian --- thingsysteminterface
+	thingpointer --- controlextractpointermetadata
+	thingdmp --- controlextractpointermetadata
+	thingmetadata --- controlextractpointermetadata
+	thingothersystem --- controlextractpointermetadata
+	thingsysteminterface --> controlextractpointermetadata
+
+@enduml

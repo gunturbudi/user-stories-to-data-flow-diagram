@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ease " ];
+201 [label="<f0>  |<f1> Subject Classification " color=red];
+202 [label="<f0>  |<f1> Patron Browsing " ];
+203 [label="Db" shape=box];
+204 [label="Ir Administrator" shape=box];
+205 [label="{<f0> 1.0|<f1> Manage Subject Classifications For Ease Of }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Search }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Manage Subject Classifications For Ease Of Patron Browsing }" shape=Mrecord];
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 206
+205 -> 201 [label="Subject Classification"]
+205 -> 200 [label="Ease"]
+207 -> 201 [label="Subject Classification"]
+207 -> 200 [label="Ease"]
+207 -> 202 [label="Patron Browsing"]
+}

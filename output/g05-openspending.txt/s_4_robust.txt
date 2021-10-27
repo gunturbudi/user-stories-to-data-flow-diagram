@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Public Dataset" as thingpublicdataset
+	actor "Platform Administrator" as actorplatformadministrator
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Hide Any\nAlready Public\nDataset" as controlhidepublicdataset
+
+	actorplatformadministrator --- thingdatasetinterface
+	thingpublicdataset --- controlhidepublicdataset
+	thingdatasetinterface --> controlhidepublicdataset
+
+@enduml

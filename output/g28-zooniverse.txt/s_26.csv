@@ -1,0 +1,25 @@
+id,value,style,source,target,type
+200,Search,shape=partialRectangle,null,null,data_base
+201,Information,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,Tag,shape=partialRectangle,null,null,data_base
+204,High­level,shape=partialRectangle,null,null,data_base
+205,Asset,shape=partialRectangle,null,null,data_base
+206,Admin,rounded=0,null,null,external_entity
+207,Prefilter,ellipse,null,null,process
+208,Use Search On High­Level Asset Information Such As Metadata,ellipse,null,null,process
+209,Use Search On High­Level Information Such As Tag,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,,endArrow=classic,207,208,endArrow=classic
+215,,endArrow=classic,207,209,endArrow=classic
+216,Search,endArrow=classic,208,200,endArrow=classic
+217,High­level,endArrow=classic,208,204,endArrow=classic
+218,Metadata,endArrow=classic,208,202,endArrow=classic
+219,Information,endArrow=classic,208,201,endArrow=classic
+220,Tag,endArrow=classic,209,203,endArrow=classic
+221,Information,endArrow=classic,209,201,endArrow=classic
+222,Search,endArrow=classic,209,200,endArrow=classic
+223,High­level,endArrow=classic,209,204,endArrow=classic
+225,Asset,endArrow=classic,208,205,endArrow=classic

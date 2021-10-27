@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Cris " ];
+201 [label="<f0>  |<f1> Publication " color=red];
+202 [label="<f0>  |<f1> Institutional Repository " ];
+203 [label="<f0>  |<f1> Research " color=red];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Record Publications In Cris }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Record Research Publications In The Institutional Repository With Dmp Records }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 201 [label="Publication"]
+205 -> 200 [label="Cris"]
+206 -> 202 [label="Institutional Repository"]
+206 -> 201 [label="Publication"]
+206 -> 203 [label="Research"]
+}

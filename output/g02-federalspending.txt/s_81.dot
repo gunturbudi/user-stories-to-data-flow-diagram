@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publishing Decision " ];
+201 [label="<f0>  |<f1> Gap " ];
+202 [label="<f0>  |<f1> Duplicate Transaction " ];
+203 [label="<f0>  |<f1> Validation " color=red];
+204 [label="<f0>  |<f1> Time " color=red];
+205 [label="Developer" shape=box];
+206 [label="{<f0> 1.0|<f1> Deal With The Gap Between The Publishing Decision }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Deal With The Time Gap Between Validation }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Prevent Duplicate Transactions Published }" shape=Mrecord];
+205 -> 206
+205 -> 208
+206 -> 201
+206 -> 200
+207 -> 203
+207 -> 201
+208 -> 202
+207 -> 204
+}

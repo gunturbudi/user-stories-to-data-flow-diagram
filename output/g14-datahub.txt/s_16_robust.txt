@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Datum" as thingdatum
+	actor "Consumer" as actorconsumer
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Get The\nData For\nA Data\nPackage" as controlgetdatum
+
+	thingdatapackage <.. thingdatum
+	actorconsumer --- thingpackageinterface
+	thingdatum --- controlgetdatum
+	thingdatapackage --- controlgetdatum
+	thingpackageinterface --> controlgetdatum
+
+@enduml

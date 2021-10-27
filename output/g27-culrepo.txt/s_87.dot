@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Administrator " ];
+201 [label="<f0>  |<f1> Permission " ];
+202 [label="<f0>  |<f1> Account " color=red];
+203 [label="Db" shape=box];
+204 [label="Ir Administrator" shape=box];
+205 [label="{<f0> 1.0|<f1> Set Up Accounts For Other Administrators With Various Levels Of Permission }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Delete Accounts For Other Administrators With Various Levels Of Permission }" shape=Mrecord];
+203 -> 205
+203 -> 206
+204 -> 205
+204 -> 206
+205 -> 202 [label="Account"]
+205 -> 200 [label="Administrator"]
+205 -> 201 [label="Permission"]
+206 -> 200 [label="Administrator"]
+206 -> 201 [label="Permission"]
+206 -> 202 [label="Account"]
+}

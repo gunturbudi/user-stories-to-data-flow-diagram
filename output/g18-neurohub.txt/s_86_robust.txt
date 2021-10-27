@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Exist Metadata" as thingexistingmetadata
+	entity "New Location" as thingnewlocation
+	actor "User" as actoruser
+
+	thingfile <.. thingexistingmetadata
+
+@enduml

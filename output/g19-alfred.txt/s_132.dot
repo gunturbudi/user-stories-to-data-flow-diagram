@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> High Level " ];
+201 [label="Developer" shape=box];
+202 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Be On A High Level }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Deal with their details }" shape=Mrecord];
+202 -> 3
+1001 [label="<f0>  |<f1> Details " color=red];
+3 -> 1001 [label="Details"]
+201 -> 202
+201 -> 203
+202 -> 203
+203 -> 200 [label="High Level"]
+}

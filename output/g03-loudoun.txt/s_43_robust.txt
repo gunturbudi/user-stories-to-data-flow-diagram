@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Development ,\nRelated Permit" as thingdevelopmentrelatedpermit
+	actor "Development ,\nStaff Member" as actordevelopmentstaffmember
+	boundary "Permit\nInterface" as thingpermitinterface #grey
+	control "Issue A\nDevelopment, Related\nPermit" as controlissuedevelopmentrelatedpermit
+
+	actordevelopmentstaffmember --- thingpermitinterface
+	thingdevelopmentrelatedpermit --- controlissuedevelopmentrelatedpermit
+	thingpermitinterface --> controlissuedevelopmentrelatedpermit
+
+@enduml

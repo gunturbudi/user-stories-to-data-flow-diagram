@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Multiple Dimension,shape=partialRectangle,null,null,data_base
+202,Multiple Measure,shape=partialRectangle,null,null,data_base
+203,"Datum , Consume User",rounded=0,null,null,external_entity
+204,Sort Aggregate Data By Multiple Dimensions,ellipse,null,null,process
+205,Sort Filter Data By Multiple Dimensions,ellipse,null,null,process
+207,,endArrow=classic,203,205,endArrow=classic
+208,Multiple Dimension,endArrow=classic,204,201,endArrow=classic
+209,Multiple Measure,endArrow=classic,204,202,endArrow=classic
+210,Datum,endArrow=classic,204,200,endArrow=classic
+211,Datum,endArrow=classic,205,200,endArrow=classic
+212,Multiple Dimension,endArrow=classic,205,201,endArrow=classic
+213,Multiple Measure,endArrow=classic,205,202,endArrow=classic

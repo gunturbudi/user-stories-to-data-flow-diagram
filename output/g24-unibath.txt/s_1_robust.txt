@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Web Interface" as thingwebinterface
+	actor "Depositor" as actordepositor
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	control "Deposit Datasets\nThrough A\nSimple Web\nInterface" as controldepositdatasetsimplewebinterface
+	control "Maintain Datasets\nThrough A\nSimple Web\nInterface" as controlmaintaindatasetsimplewebinterface
+
+	thingwebinterface <.. thingdataset
+	actordepositor --- thinginterfaceinterface
+	thingdataset --- controldepositdatasetsimplewebinterface
+	thingwebinterface --- controldepositdatasetsimplewebinterface
+	thinginterfaceinterface --> controldepositdatasetsimplewebinterface
+	thingdataset --- controlmaintaindatasetsimplewebinterface
+	thinginterfaceinterface --> controlmaintaindatasetsimplewebinterface
+	thingwebinterface --- controlmaintaindatasetsimplewebinterface
+
+@enduml

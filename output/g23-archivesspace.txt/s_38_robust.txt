@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Digital Object" as thingdigitalobject
+	actor "Archivist" as actorarchivist
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Manage Digital\nObjects" as controlmanagedigitalobject
+
+	actorarchivist --- thingobjectinterface
+	thingdigitalobject --- controlmanagedigitalobject
+	thingobjectinterface --> controlmanagedigitalobject
+
+@enduml

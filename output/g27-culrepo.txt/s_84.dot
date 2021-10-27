@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Gb " ];
+201 [label="<f0>  |<f1> Way " ];
+202 [label="<f0>  |<f1> Repository File " ];
+203 [label="Cornell , Faculty Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Share On The Repository Files Are Larger Than Gb In A Way Still Allows }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Download Users }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Want }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Use Users }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 206
+204 -> 202 [label="Repository File"]
+204 -> 200 [label="Gb"]
+204 -> 201 [label="Way"]
+206 -> 205
+206 -> 207
+}

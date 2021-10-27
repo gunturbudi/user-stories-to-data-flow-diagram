@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Commitment" as thingcommitment
+	entity "Longevity" as thinglongevity
+	entity "Repository" as thingrepository
+	entity "Ir" as thingIR
+	entity "Staffing" as thingstaffing
+	entity "Publish Plan" as thingpublishedplan
+	entity "Funding" as thingfunding
+	entity "Contract Clause" as thingcontractclause
+	actor "Asset Manager" as actorassetmanager
+	control "Assured" as controlassure
+
+	thinglongevity <.. thingcommitment
+	thingpublishedplan <.. thingcommitment
+	thingcontractclause <.. thingcommitment
+	thingrepository *-- thinglongevity
+	thingIR *-- thingfunding
+
+@enduml

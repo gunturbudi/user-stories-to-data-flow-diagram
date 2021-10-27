@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,"Record any conditions, clearances, or corrections needed from the applicant.",ellipse,null,null,process
+200,Plan,shape=partialRectangle,null,null,data_base
+201,"Plan , Review , Staff Member",rounded=0,null,null,external_entity
+202,Review Plans,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Plan,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Plans,rounded=0,null,null,external_entity
+1002,Plans,endArrow=classic,2,1001,endArrow=classic

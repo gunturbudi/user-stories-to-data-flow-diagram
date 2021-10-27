@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data .\nMendeley .\nCom" as thingdata.mendeley.com
+	entity "Integration" as thingintegration
+	entity "Https" as thinghttps
+	actor "Researcher" as actorresearcher
+	boundary "Https\nInterface" as thinghttpsinterface #grey
+	boundary "Data.Mendeley.Com\nInterface" as thingdatamendeleycominterface #grey
+	control "Provided With\nAn Integration\nWith Https" as controlprovideintegration
+	control "Provided With\nData.Mendeley.Com" as controlprovidedata.mendeley.com
+
+	thinghttps <.. thingintegration
+	actorresearcher --- thinghttpsinterface
+	actorresearcher --- thingdatamendeleycominterface
+	thingintegration --- controlprovideintegration
+	thinghttps --- controlprovideintegration
+	thinghttpsinterface --> controlprovideintegration
+	thingdata.mendeley.com --- controlprovidedata.mendeley.com
+	thingdatamendeleycominterface --> controlprovidedata.mendeley.com
+
+@enduml

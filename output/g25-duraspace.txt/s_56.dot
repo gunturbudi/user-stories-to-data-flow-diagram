@@ -1,0 +1,7 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Access " ];
+202 [label="<f0>  |<f1> Content File " color=red];
+203 [label="User" shape=box];
+}

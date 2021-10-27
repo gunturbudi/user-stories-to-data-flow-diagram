@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Pertinent ,\nRight " ];
+202 [label="Repository Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Indicate Any Pertinent, Other Rights To An Object }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Pertinent ,\nRight"]
+203 -> 200 [label="Object"]
+}

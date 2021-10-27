@@ -1,0 +1,46 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Useful File " ];
+201 [label="<f0>  |<f1> Format Version " ];
+202 [label="<f0>  |<f1> Aspect " ];
+203 [label="<f0>  |<f1> Obsolescence " ];
+204 [label="<f0>  |<f1> Integrity " ];
+205 [label="<f0>  |<f1> File Size " ];
+206 [label="<f0>  |<f1> File Format " ];
+207 [label="<f0>  |<f1> Creation Date " ];
+208 [label="<f0>  |<f1> Master File " color=red];
+209 [label="<f0>  |<f1> Preservation Managers " ];
+210 [label="Dams Manager" shape=box];
+211 [label="{<f0> 1.0|<f1> Indicate To Aspects Of A Useful File }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Impending Monitoring Integrity Obsolescence Including File Size }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Impending Monitoring Integrity Obsolescence Including Creation Date }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Indicate To Preservation Managers Aspects Of A Useful Master File }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> Impending Monitoring Integrity Obsolescence Including Format Version }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> Impending Monitoring Integrity Obsolescence Including File Format }" shape=Mrecord];
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 216
+211 -> 202 [label="Aspect"]
+211 -> 200 [label="Useful File"]
+212 -> 214
+212 -> 204 [label="Integrity"]
+212 -> 203 [label="Obsolescence"]
+212 -> 205 [label="File Size"]
+213 -> 211
+213 -> 207 [label="Creation Date"]
+213 -> 203 [label="Obsolescence"]
+213 -> 204 [label="Integrity"]
+214 -> 208 [label="Master File"]
+214 -> 202 [label="Aspect"]
+215 -> 211
+215 -> 201 [label="Format Version"]
+215 -> 203 [label="Obsolescence"]
+215 -> 204 [label="Integrity"]
+216 -> 211
+216 -> 206 [label="File Format"]
+216 -> 203 [label="Obsolescence"]
+216 -> 204 [label="Integrity"]
+214 -> 209 [label="Preservation Managers"]
+}

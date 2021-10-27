@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Component" as thingcomponent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Statute" as thingstatuterepositorymanager
+	control "Pertains To\nThe Component\nFrom The\nObject As\nA Whole" as controlpertainstatuterepositorymanagercomponentobjectwhole
+	control "Indicate" as controlindicatepertainstatuterepositorymanagercomponentobjectwhole
+
+	actorrepositorymanager --- thingstatuterepositorymanager
+	thingstatuterepositorymanager --> controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingcomponent --- controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingobject --- controlpertainstatuterepositorymanagercomponentobjectwhole
+	controlindicatepertainstatuterepositorymanagercomponentobjectwhole --> controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingstatuterepositorymanager --> controlindicatepertainstatuterepositorymanagercomponentobjectwhole
+
+@enduml

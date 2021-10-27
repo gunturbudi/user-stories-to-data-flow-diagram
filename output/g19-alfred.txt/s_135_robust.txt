@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Easy Way" as thingeasyway
+	entity "User Setting" as thingusersetting
+	actor "Developer" as actordeveloper
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Manage The\nUser Settings" as controlmanageusersettings
+	control "Provide An\nEasy Way" as controlprovideeasywaymanageusersettings
+
+	actordeveloper --- thingwayinterface
+	thingusersetting --- controlmanageusersettings
+	controlprovideeasywaymanageusersettings --> controlmanageusersettings
+	thingwayinterface --> controlmanageusersettings
+	thingeasyway --- controlprovideeasywaymanageusersettings
+	thingwayinterface --> controlprovideeasywaymanageusersettings
+
+@enduml

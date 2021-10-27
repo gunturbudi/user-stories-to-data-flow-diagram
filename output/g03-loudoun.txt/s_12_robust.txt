@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Detailed Review" as thingdetailedreview
+	entity "Application" as thingapplication
+	actor "Staff Member" as actorstaffmember
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	control "Assign An\nApplication For\nDetailed Review" as controlassignapplication
+
+	thingdetailedreview <.. thingapplication
+	actorstaffmember --- thingreviewinterface
+	thingapplication --- controlassignapplication
+	thingdetailedreview --- controlassignapplication
+	thingreviewinterface --> controlassignapplication
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Course" as thingcourse
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	control "View A\nCourse" as controlviewcourse
+
+	actorsitevisitor --- thingcourseinterface
+	thingcourse --- controlviewcourse
+	thingcourseinterface --> controlviewcourse
+
+@enduml

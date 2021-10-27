@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Faq" as thingfaq
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Faq\nInterface" as thingfaqinterface #grey
+	control "Read Faqs" as controlreadfaq
+
+	actorsitevisitor --- thingfaqinterface
+	thingfaq --- controlreadfaq
+	thingfaqinterface --> controlreadfaq
+
+@enduml

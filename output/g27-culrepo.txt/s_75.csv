@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+3,Display the range and extent of my work graphically,ellipse,null,null,process
+200,Work,shape=partialRectangle,null,null,data_base
+201,Interactive Map,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Promote Work Through Interactive Maps,ellipse,null,null,process
+204,Share Work Through Interactive Maps,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Work,endArrow=classic,203,200,endArrow=classic
+209,Interactive Map,endArrow=classic,203,201,endArrow=classic
+210,Work,endArrow=classic,204,200,endArrow=classic
+211,Interactive Map,endArrow=classic,204,201,endArrow=classic
+1000,,endArrow=classic,203,3,endArrow=classic
+1001,Work graphically,rounded=0,null,null,external_entity
+1002,Work graphically,endArrow=classic,3,1001,endArrow=classic

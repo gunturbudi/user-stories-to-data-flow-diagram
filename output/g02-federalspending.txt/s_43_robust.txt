@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Developer" as actordeveloper
+	boundary "Domain Model" as thingdomainmodelsdeveloper
+	control "Indexed" as controlindexdomainmodelsdeveloper
+
+	actordeveloper --- thingdomainmodelsdeveloper
+	thingdomainmodelsdeveloper --> controlindexdomainmodelsdeveloper
+
+@enduml

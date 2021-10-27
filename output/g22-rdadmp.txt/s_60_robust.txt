@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	actor ", Staff\nMember" as actoritstaffmember
+	control "Know" as controlknow
+
+
+@enduml

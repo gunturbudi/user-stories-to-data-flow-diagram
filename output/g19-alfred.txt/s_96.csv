@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Alfred,shape=partialRectangle,null,null,data_base
+201,Pain,shape=partialRectangle,null,null,data_base
+202,Skin Conduction\nSensor,shape=partialRectangle,null,null,data_base
+203,Socialcaregiver,rounded=0,null,null,external_entity
+204,Stress Alfred,ellipse,null,null,process
+205,Using Skin Conduction Sensors,ellipse,null,null,process
+206,Recognize Pain,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,Alfred,endArrow=classic,204,200,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,Skin Conduction\nSensor,endArrow=classic,205,202,endArrow=classic
+215,Pain,endArrow=classic,206,201,endArrow=classic

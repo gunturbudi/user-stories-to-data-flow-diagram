@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Author" as actorauthor
+	control "Outdent Content" as controlcontent
+
+
+@enduml

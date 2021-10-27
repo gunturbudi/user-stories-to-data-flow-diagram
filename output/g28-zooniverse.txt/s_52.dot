@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Video " color=red];
+201 [label="<f0>  |<f1> Text " color=red];
+202 [label="<f0>  |<f1> Volunteer " ];
+203 [label="<f0>  |<f1> Image " color=red];
+204 [label="Zooniverse Admin" shape=box];
+205 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Educate A Volunteer With Text }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Educate A Volunteer With An Image }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Educate A Volunteer With A Video }" shape=Mrecord];
+204 -> 205
+204 -> 206
+206 -> 205
+206 -> 202 [label="Volunteer"]
+206 -> 201 [label="Text"]
+207 -> 205
+207 -> 203 [label="Image"]
+207 -> 202 [label="Volunteer"]
+208 -> 205
+208 -> 200 [label="Video"]
+208 -> 202 [label="Volunteer"]
+}

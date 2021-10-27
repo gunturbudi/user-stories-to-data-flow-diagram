@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Recent Submission" as thingrecentsubmission
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Summary" as thingsummary
+	boundary "Dashboard Widget" as thingdashboardwidgetshowsummarycollectioncurator #grey
+	control "See" as controlseedashboardwidgetshowsummarycollectioncurator
+	control "Show A\nSummary Of\nRecent Submissions\nTo Collection" as controlshowsummary
+
+	thingcollection <.. thingrecentsubmission
+	thingrecentsubmission *-- thingsummary
+	actorcollectioncurator --- thingdashboardwidgetshowsummarycollectioncurator
+	thingdashboardwidgetshowsummarycollectioncurator --> controlseedashboardwidgetshowsummarycollectioncurator
+	thingdashboardwidgetshowsummarycollectioncurator --> controlshowsummary
+	thingsummary --- controlshowsummary
+	thingrecentsubmission --- controlshowsummary
+	thingcollection --- controlshowsummary
+	controlseedashboardwidgetshowsummarycollectioncurator --> controlshowsummary
+
+@enduml

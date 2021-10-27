@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Monetary Measure" as thingmonetarymeasure
+	entity "Currency" as thingcurrency
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	circle "Display" as thingdisplay
+	boundary "Currency\nInterface" as thingcurrencyinterface #grey
+	control "Change The\nDisplay Of\nAll Monetary\nMeasures Across\nA Set\nOf Currencies" as controlchangedisplayset
+
+	thingcurrency <.. thingmonetarymeasure
+	thingmonetarymeasure *-- thingdisplay
+	actordataconsuminguser --- thingcurrencyinterface
+	thingdisplay --- controlchangedisplayset
+	thingmonetarymeasure --- controlchangedisplayset
+	thingcurrency --- controlchangedisplayset
+	thingcurrencyinterface --> controlchangedisplayset
+
+@enduml

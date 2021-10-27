@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Stream Medium" as thingstreamingmedium
+	entity "Repository" as thingrepository
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Deliver Streaming\nMedia Within\nThe Repository" as controldeliverstreamingmediumrepository
+
+	thingrepository <.. thingstreamingmedium
+	actorlibrarystaffmember --- thingrepositoryinterface
+	thingstreamingmedium --- controldeliverstreamingmediumrepository
+	thingrepository --- controldeliverstreamingmediumrepository
+	thingrepositoryinterface --> controldeliverstreamingmediumrepository
+
+@enduml

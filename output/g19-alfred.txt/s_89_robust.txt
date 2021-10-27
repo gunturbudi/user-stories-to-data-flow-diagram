@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Olderperson" as actorOlderPerson
+	control "Have" as controlhave
+
+
+@enduml

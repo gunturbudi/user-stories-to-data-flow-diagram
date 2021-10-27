@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "New Password" as thingnewpassword
+	entity "System" as thingsystem
+	entity "Term Memory\nProblem" as thingtermmemoryproblem
+	actor "Member" as actormember
+	boundary "Problem\nInterface" as thingprobleminterface #grey
+	control "Have" as controlhave
+	control "The System\nEmail Me\nA New\nPassword Have\nShort Term\nMemory Problems" as controlhavehavesystemnewpasswordshorttermmemoryproblems
+
+	thingtermmemoryproblem <.. thingnewpassword
+	thingnewpassword <.. thingsystem
+	actormember --- thingprobleminterface
+	controlhavehavesystemnewpasswordshorttermmemoryproblems --> controlhave
+	thingprobleminterface --> controlhave
+	thingsystem --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingnewpassword --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingtermmemoryproblem --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingprobleminterface --> controlhavehavesystemnewpasswordshorttermmemoryproblems
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Information,shape=partialRectangle,null,null,data_base
+201,Material,shape=partialRectangle,null,null,data_base
+202,Recyclingfacility Representative,rounded=0,null,null,external_entity
+203,Update The Type Of Material,ellipse,null,null,process
+204,Update Information,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Material,endArrow=classic,203,201,endArrow=classic
+209,Information,endArrow=classic,204,200,endArrow=classic

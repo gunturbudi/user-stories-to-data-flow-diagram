@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Senior Shop" as thingseniorshop
+	entity "Alfred" as thingALFRED
+	entity "Client Support" as thingclientsupport
+	actor "Olderperson" as actorOlderPerson
+	boundary "Support\nInterface" as thingsupportinterface #grey
+	control "Buy Alfred\nIn A\nSenior Shop\nWith Special\nClient Support" as controlbuyALFREDseniorshop
+
+	thingclientsupport <.. thingseniorshop
+	thingseniorshop <.. thingALFRED
+	actorOlderPerson --- thingsupportinterface
+	thingALFRED --- controlbuyALFREDseniorshop
+	thingseniorshop --- controlbuyALFREDseniorshop
+	thingclientsupport --- controlbuyALFREDseniorshop
+	thingsupportinterface --> controlbuyALFREDseniorshop
+
+@enduml

@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Superuser Scope " ];
+201 [label="Superuser" shape=box];
+202 [label="{<f0> 1.0|<f1> Enter The Superuser Scope }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Exit The Superuser Scope }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 200 [label="Superuser Scope"]
+203 -> 200 [label="Superuser Scope"]
+}

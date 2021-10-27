@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ad" as thingad
+	actor "Recruiter" as actorrecruiter
+	boundary "Help" as thinghelpwantadrecruiter #grey
+	control "Want Ad" as controlwantad
+	control "Post" as controlposthelpwantadrecruiter
+
+	actorrecruiter --- thinghelpwantadrecruiter
+	thinghelpwantadrecruiter --> controlwantad
+	thingad --- controlwantad
+	controlposthelpwantadrecruiter --> controlwantad
+	thinghelpwantadrecruiter --> controlposthelpwantadrecruiter
+
+@enduml

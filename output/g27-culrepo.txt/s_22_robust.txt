@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specified Report" as thingspecifiedreport
+	entity "Subscriber" as thingsubscriber
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Research ,\nMiss ,\nReport Order\nComplaint" as thingresearchmissingreportordercomplaintsdb
+	control "See List\nOf Subscribers\nFor Specified\nReport In" as controlseelistspecifiedreport
+
+	actordb --- thingresearchmissingreportordercomplaintsdb
+	actoriradministrator --- thingresearchmissingreportordercomplaintsdb
+	thingsubscriber --- controlseelistspecifiedreport
+	thingspecifiedreport --- controlseelistspecifiedreport
+	thingresearchmissingreportordercomplaintsdb --> controlseelistspecifiedreport
+
+@enduml

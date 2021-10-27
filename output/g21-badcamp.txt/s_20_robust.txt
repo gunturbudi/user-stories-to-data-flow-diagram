@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Money" as thingsponsorshipmoney #grey
+	entity "Stripe" as thingstripe
+	actor "Administrator" as actoradministrator
+	boundary "Stripe\nInterface" as thingstripeinterface #grey
+	control "Refund Sponsorship\nMoney Processed\nStripe" as controlrefundsponsorshipmoney
+
+	thingstripe <.. thingsponsorshipmoney
+	actoradministrator --- thingstripeinterface
+	thingsponsorshipmoney --- controlrefundsponsorshipmoney
+	thingstripe --- controlrefundsponsorshipmoney
+	thingstripeinterface --> controlrefundsponsorshipmoney
+
+@enduml

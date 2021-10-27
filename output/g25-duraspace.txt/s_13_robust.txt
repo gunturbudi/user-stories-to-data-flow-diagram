@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "User" as thinguser
+	entity "Dam" as thingDAMS
+	entity "Probable Importance" as thingprobableimportance
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Description" as thingotherdescription
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Outside\nThe Dams" as controlindicateotherdescription
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Of\nProbable Importance\nTo Users" as controlindicateotherdescriptionof
+
+	thingDAMS <.. thingcollection
+	thingprobableimportance <.. thingcollection
+	thinguser <.. thingprobableimportance
+	thingcollection *-- thingotherdescription
+	actorrepositorymanager --- thingdamsinterface
+	actorrepositorymanager --- thinguserinterface
+	thingotherdescription --- controlindicateotherdescription
+	thingcollection --- controlindicateotherdescription
+	thingDAMS --- controlindicateotherdescription
+	thingdamsinterface --> controlindicateotherdescription
+	thingprobableimportance --- controlindicateotherdescriptionof
+	thinguser --- controlindicateotherdescriptionof
+	thinguserinterface --> controlindicateotherdescriptionof
+	thingotherdescription --- controlindicateotherdescriptionof
+	thingcollection --- controlindicateotherdescriptionof
+
+@enduml

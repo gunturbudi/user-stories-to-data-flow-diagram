@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Record,shape=partialRectangle,null,null,data_base
+201,"Complete ,\nHold Datum",shape=partialRectangle,null,null,data_base
+202,"Research , Information Manager",rounded=0,null,null,external_entity
+203,"Include Records For Externally Complete, Held Data",ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Record,endArrow=classic,203,200,endArrow=classic
+207,"Complete ,\nHold Datum",endArrow=classic,203,201,endArrow=classic

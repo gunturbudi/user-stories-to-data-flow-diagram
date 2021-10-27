@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Dataset Instance,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Type,shape=partialRectangle,null,null,data_base
+203,App Developer,rounded=0,null,null,external_entity
+204,Explore A Dataset Instance Of A Type Deployed As Part Of An App,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Dataset Instance,endArrow=classic,204,200,endArrow=classic
+208,Type,endArrow=classic,204,202,endArrow=classic
+209,App,endArrow=classic,204,201,endArrow=classic

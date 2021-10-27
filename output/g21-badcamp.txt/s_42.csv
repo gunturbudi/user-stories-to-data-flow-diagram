@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Basic Information,shape=partialRectangle,null,null,data_base
+201,Summit,shape=partialRectangle,null,null,data_base
+202,Summit Coordinator,rounded=0,null,null,external_entity
+203,List Basic Information About Summit,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Basic Information,endArrow=classic,203,200,endArrow=classic
+207,Summit,endArrow=classic,203,201,endArrow=classic

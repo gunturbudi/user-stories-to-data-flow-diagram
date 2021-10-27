@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Native Language" as thingnativelanguage
+	entity "System" as thingsystem
+	actor "Datum Reuser" as actordatareuser
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	control "Access The\nSystem In\nNative Language" as controlaccesssystemnativelanguage
+
+	thingnativelanguage <.. thingsystem
+	actordatareuser --- thinglanguageinterface
+	thingsystem --- controlaccesssystemnativelanguage
+	thingnativelanguage --- controlaccesssystemnativelanguage
+	thinglanguageinterface --> controlaccesssystemnativelanguage
+
+@enduml

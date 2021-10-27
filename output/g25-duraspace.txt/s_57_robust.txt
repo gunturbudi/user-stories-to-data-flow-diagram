@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Repository" as thingrepository
+	entity "Collection" as thingcollection
+	entity "Useful Form" as thingusefulform
+	entity "Title" as thingtitle
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Provide A\nTitle In\nAll Useful\nForms For\nObject Component" as controlprovidetitleusefulformobjectcomponent
+	control "Provide A\nTitle In\nAll Useful\nForms For\nRepository's Collections" as controlprovidetitleusefulformcollection
+	control "Provide A\nTitle In\nAll Useful\nForms For\nObject" as controlprovidetitleusefulformobject
+
+	thingrepository <.. thingcollection
+	thingcollection <.. thingusefulform
+	thingobject <.. thingusefulform
+	thingcomponent <.. thingusefulform
+	thingusefulform <.. thingtitle
+	thingobject *-- thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingcollectioninterface
+	thingcomponent --- controlprovidetitleusefulformobjectcomponent
+	thingobjectinterface --> controlprovidetitleusefulformobjectcomponent
+	thingusefulform --- controlprovidetitleusefulformobjectcomponent
+	thingtitle --- controlprovidetitleusefulformobjectcomponent
+	thingtitle --- controlprovidetitleusefulformcollection
+	thingusefulform --- controlprovidetitleusefulformcollection
+	thingcollection --- controlprovidetitleusefulformcollection
+	thingcollectioninterface --> controlprovidetitleusefulformcollection
+	thingobject --- controlprovidetitleusefulformobject
+	thingusefulform --- controlprovidetitleusefulformobject
+	thingobjectinterface --> controlprovidetitleusefulformobject
+	thingtitle --- controlprovidetitleusefulformobject
+
+@enduml

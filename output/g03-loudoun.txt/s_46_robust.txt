@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Building Development\nProject" as thingbuildingdevelopmentproject #grey
+	actor "Applicant" as actorapplicant
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Complete Building\nDevelopment Project" as controlcompletebuildingdevelopmentproject
+
+	actorapplicant --- thingprojectinterface
+	thingbuildingdevelopmentproject --- controlcompletebuildingdevelopmentproject
+	thingprojectinterface --> controlcompletebuildingdevelopmentproject
+
+@enduml

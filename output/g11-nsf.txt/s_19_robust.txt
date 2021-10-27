@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Acquisitions Roadmap" as thingacquisitionsroadmap
+	actor "Team Member" as actorteammember
+	boundary "Roadmap\nInterface" as thingroadmapinterface #grey
+	control "Have An\nUpdated Acquisitions\nRoadmap" as controlhaveupdatedacquisitionsroadmap
+
+	actorteammember --- thingroadmapinterface
+	thingacquisitionsroadmap --- controlhaveupdatedacquisitionsroadmap
+	thingroadmapinterface --> controlhaveupdatedacquisitionsroadmap
+
+@enduml

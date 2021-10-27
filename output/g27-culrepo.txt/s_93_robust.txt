@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "Partial" as thingpartial
+	entity "Email" as thingfullemail
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Account" as thingaccountusedb #grey
+	boundary "Administrator Account" as thingadministratoraccountsusefullemaildb #grey
+	control "Use Partial" as controlusepartial
+	control "Use" as controluse #grey
+	control "Search For" as controlsearchaccountusedbaccountusepartialdb
+	control "Use Full\nEmail" as controlusefullemail
+	control "Use Name" as controlusename
+
+	actordb --- thingaccountusedb
+	actoriradministrator --- thingaccountusedb
+	actordb --- thingadministratoraccountsusefullemaildb
+	actoriradministrator --- thingadministratoraccountsusefullemaildb
+	thingpartial --- controlusepartial
+	controlsearchaccountusedbaccountusepartialdb --> controlusepartial
+	thingaccountusedb --> controlusepartial
+	controlsearchaccountusedbaccountusepartialdb --> controluse
+	thingaccountusedb --> controluse
+	thingaccountusedb --> controlsearchaccountusedbaccountusepartialdb
+	thingadministratoraccountsusefullemaildb --> controlsearchaccountusedbaccountusepartialdb
+	thingfullemail --- controlusefullemail
+	thingadministratoraccountsusefullemaildb --> controlusefullemail
+	controlsearchaccountusedbaccountusepartialdb --> controlusefullemail
+	thingname --- controlusename
+	thingaccountusedb --> controlusename
+
+@enduml

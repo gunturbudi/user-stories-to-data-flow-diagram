@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection Management\nSubrecord" as thingcollectionmanagementsubrecord #grey
+	actor "Archivist" as actorarchivist
+	boundary "Subrecord\nInterface" as thingsubrecordinterface #grey
+	control "Create A\nCollection Management\nSubrecord" as controlcreatecollectionmanagementsubrecord
+	control "Edit A\nCollection Management\nSubrecord" as controleditcollectionmanagementsubrecord
+
+	actorarchivist --- thingsubrecordinterface
+	thingcollectionmanagementsubrecord --- controlcreatecollectionmanagementsubrecord
+	thingsubrecordinterface --> controlcreatecollectionmanagementsubrecord
+	thingcollectionmanagementsubrecord --- controleditcollectionmanagementsubrecord
+	thingsubrecordinterface --> controleditcollectionmanagementsubrecord
+
+@enduml

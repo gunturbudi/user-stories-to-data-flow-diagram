@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Reporting" as thingreporting
+	entity "Custom Query" as thingcustomquery #grey
+	entity "Report" as thingreport
+	entity "Common ,\nQuery Functionality" as thingcommonqueryingfunctionality
+	actor "County ,\nStaff Member" as actorcountystaffmember
+	boundary "Reporting\nInterface" as thingreportinginterface #grey
+	boundary "Query\nInterface" as thingqueryinterface #grey
+	boundary "Functionality\nInterface" as thingfunctionalityinterface #grey
+	control "Create Outside\nReport Of\nReporting" as controlcreatereportreporting
+	control "Create A\nCustom Query" as controlcreatecustomquery
+	control "Create Outside\nReport Of\nThe Common,\nQuerying Functionality" as controlcreatereport
+
+	thingcommonqueryingfunctionality *-- thingreport
+	thingreporting *-- thingreport
+	actorcountystaffmember --- thingreportinginterface
+	actorcountystaffmember --- thingqueryinterface
+	actorcountystaffmember --- thingfunctionalityinterface
+	thingreporting --- controlcreatereportreporting
+	thingreportinginterface --> controlcreatereportreporting
+	thingreport --- controlcreatereportreporting
+	thingcustomquery --- controlcreatecustomquery
+	thingqueryinterface --> controlcreatecustomquery
+	thingreport --- controlcreatereport
+	thingcommonqueryingfunctionality --- controlcreatereport
+	thingfunctionalityinterface --> controlcreatereport
+
+@enduml

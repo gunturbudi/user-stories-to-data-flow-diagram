@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource Component" as thingresourcecomponent
+	entity "Description" as thingdescription
+	entity "Value" as thingvalue
+	entity "Level" as thinglevel
+	entity "Resource" as thingresource
+	actor "Archivist" as actorarchivist
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	control "Specify Another\nValue" as controlspecifyvalue #grey
+	control "Assign A\nLevel Of\nDescription To\nA Resource\nComponent" as controlassignlevelresourcecomponent
+	control "Assign A\nLevel Of\nDescription To\nResource" as controlassignlevelresource
+
+	thingresourcecomponent <.. thingdescription
+	thingresource <.. thingdescription
+	thingdescription *-- thinglevel
+	actorarchivist --- thingcomponentinterface
+	actorarchivist --- thingresourceinterface
+	thingvalue --- controlspecifyvalue
+	thinglevel --- controlassignlevelresourcecomponent
+	thingdescription --- controlassignlevelresourcecomponent
+	thingresourcecomponent --- controlassignlevelresourcecomponent
+	thingcomponentinterface --> controlassignlevelresourcecomponent
+	thingresource --- controlassignlevelresource
+	thingresourceinterface --> controlassignlevelresource
+	thingdescription --- controlassignlevelresource
+	thinglevel --- controlassignlevelresource
+
+@enduml

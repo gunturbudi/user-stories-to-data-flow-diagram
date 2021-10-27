@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	entity "Way" as thingway
+	actor "Researcherpublisher" as actorResearcherPublisher
+	boundary "Data\nInterface" as thingdatainterface #grey
+	control "Understand The\nWays In\nWhich Data\nIs Invalid" as controlunderstandway
+
+	thingdata <.. thingway
+	actorResearcherPublisher --- thingdatainterface
+	thingway --- controlunderstandway
+	thingdata --- controlunderstandway
+	thingdatainterface --> controlunderstandway
+
+@enduml

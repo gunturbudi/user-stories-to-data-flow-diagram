@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Detailed Restriction" as thingdetailedrestriction
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	circle "Group" as thinggroup
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Add Detailed\nRestrictions To\nGroups Of\nFiles" as controladddetailedrestrictiongroup
+
+	thinggroup <.. thingdetailedrestriction
+	thingfile *-- thinggroup
+	actorarchivist --- thingfileinterface
+	thingdetailedrestriction --- controladddetailedrestrictiongroup
+	thinggroup --- controladddetailedrestrictiongroup
+	thingfile --- controladddetailedrestrictiongroup
+	thingfileinterface --> controladddetailedrestrictiongroup
+
+@enduml

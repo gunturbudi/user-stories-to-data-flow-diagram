@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Glance" as thingglance
+	actor "Datum Reuser" as actordatareuser
+	circle "Different Version" as thingdifferentversion
+	boundary "Glance\nInterface" as thingglanceinterface #grey
+	control "See Different\nVersions Of\nA Dataset\nAt A\nGlance" as controlseedifferentversionglance
+
+	thingglance <.. thingdataset
+	thingdataset *-- thingdifferentversion
+	actordatareuser --- thingglanceinterface
+	thingdifferentversion --- controlseedifferentversionglance
+	thingdataset --- controlseedifferentversionglance
+	thingglance --- controlseedifferentversionglance
+	thingglanceinterface --> controlseedifferentversionglance
+
+@enduml

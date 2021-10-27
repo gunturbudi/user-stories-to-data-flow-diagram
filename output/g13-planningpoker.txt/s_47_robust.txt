@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "W3C Guideline" as thingw3cguideline
+	actor "Developer" as actordeveloper
+	control "Have" as controlhave
+
+
+@enduml

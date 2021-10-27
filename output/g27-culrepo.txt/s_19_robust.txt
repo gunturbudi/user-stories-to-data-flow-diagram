@@ -1,0 +1,62 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Useful Statistic" as thingusefulstatistic #grey
+	entity "Repository" as thingrepository
+	entity "Altmetric" as thingaltmetric
+	entity "Item Level" as thingitemlevel #grey
+	entity "Analytic" as thinganalytic
+	entity "Comprehensive" as thingcomprehensive
+	entity "Author" as thingauthor
+	entity "Collection" as thingcollection
+	entity "Usage Statistic" as thingusagestatistic
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Analytic\nInterface" as thinganalyticinterface #grey
+	boundary "Comprehensive\nInterface" as thingcomprehensiveinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Access Analytic" as controlaccessanalytic
+	control "Access Comprehensive" as controlaccesscomprehensive
+	control "Access Useful\nStatistics Including\nAltmetrics At\nCollection" as controlaccessusefulstatisticcollection
+	control "Access Useful\nStatistics Including\nAltmetrics At\nAuthor" as controlaccessusefulstatisticauthor
+	control "Access Useful\nStatistics Including\nAltmetrics At\nItem Level" as controlaccessusefulstatisticitemlevel
+	control "Access Useful\nUsage Statistics\nIncluding Altmetrics\nAt The\nRepository" as controlaccessusefulusagestatisticsrepository
+
+	thingaltmetric <.. thingusefulstatistic
+	thingrepository <.. thingaltmetric
+	thingitemlevel <.. thingaltmetric
+	thingcollection <.. thingaltmetric
+	thingauthor <.. thingaltmetric
+	thingaltmetric <.. thingusagestatistic
+	actorlibrarystaffmember --- thinganalyticinterface
+	actorlibrarystaffmember --- thingcomprehensiveinterface
+	actorlibrarystaffmember --- thingcollectioninterface
+	actorlibrarystaffmember --- thingauthorinterface
+	actorlibrarystaffmember --- thinglevelinterface
+	actorlibrarystaffmember --- thingrepositoryinterface
+	thinganalytic --- controlaccessanalytic
+	thinganalyticinterface --> controlaccessanalytic
+	thingcomprehensive --- controlaccesscomprehensive
+	thingcomprehensiveinterface --> controlaccesscomprehensive
+	thingcollection --- controlaccessusefulstatisticcollection
+	thingcollectioninterface --> controlaccessusefulstatisticcollection
+	thingusefulstatistic --- controlaccessusefulstatisticcollection
+	thingaltmetric --- controlaccessusefulstatisticcollection
+	thingusefulstatistic --- controlaccessusefulstatisticauthor
+	thingauthor --- controlaccessusefulstatisticauthor
+	thingauthorinterface --> controlaccessusefulstatisticauthor
+	thingaltmetric --- controlaccessusefulstatisticauthor
+	thingitemlevel --- controlaccessusefulstatisticitemlevel
+	thinglevelinterface --> controlaccessusefulstatisticitemlevel
+	thingusefulstatistic --- controlaccessusefulstatisticitemlevel
+	thingaltmetric --- controlaccessusefulstatisticitemlevel
+	thingusagestatistic --- controlaccessusefulusagestatisticsrepository
+	thingaltmetric --- controlaccessusefulusagestatisticsrepository
+	thingrepository --- controlaccessusefulusagestatisticsrepository
+	thingrepositoryinterface --> controlaccessusefulusagestatisticsrepository
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> System " ];
+201 [label="<f0>  |<f1> Digital Item " ];
+202 [label="Library , Staff Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Make Digital Items In External, Trusted System Searchable Within System }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Digital Item"]
+203 -> 200 [label="System"]
+}

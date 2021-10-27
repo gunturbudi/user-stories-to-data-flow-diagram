@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archive " color=red];
+201 [label="<f0>  |<f1> Primo " ];
+202 [label="Datum Reuser" shape=box];
+203 [label="{<f0> 1.0|<f1> Search The Archive Through Primo }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Search books, articles and data all in one place }" shape=Mrecord];
+1000 [label="Data reuser" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Articles " color=red];
+2 -> 1002 [label="Articles"]
+1004 [label="<f0>  |<f1> Data " color=red];
+2 -> 1004 [label="Data"]
+202 -> 203
+203 -> 200 [label="Archive"]
+203 -> 201 [label="Primo"]
+}

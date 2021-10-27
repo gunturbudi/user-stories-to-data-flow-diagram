@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingresearcher
+	entity "Archival ,\nRobust Plan" as thingarchivalrobustplan
+	entity "Datum" as thingdatum
+	actor "Fundingbody" as actorfundingbody
+	control "Reassured" as controlreassure
+
+	thingdatum <.. thingarchivalrobustplan
+
+@enduml

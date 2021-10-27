@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Experiment " color=red];
+202 [label="<f0>  |<f1> Later Stage " ];
+203 [label="<f0>  |<f1> Library " ];
+204 [label="<f0>  |<f1> Multiple " ];
+205 [label="Researcher" shape=box];
+206 [label="{<f0> 1.0|<f1> Collect Data As A Library Of Data Then Used Multiple }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Collect Data As A Library Of Data Then Used Experiments Defined At A Later Stage }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 204 [label="Multiple"]
+206 -> 200 [label="Datum"]
+206 -> 203 [label="Library"]
+207 -> 203 [label="Library"]
+207 -> 201 [label="Experiment"]
+207 -> 202 [label="Later Stage"]
+207 -> 200 [label="Datum"]
+}

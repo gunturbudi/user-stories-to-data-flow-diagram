@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Facility" as thingfacility
+	actor "Admin" as actoradmin
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	control "Communicate With\nFacilities" as controlcommunicatefacility
+
+	actoradmin --- thingfacilityinterface
+	thingfacility --- controlcommunicatefacility
+	thingfacilityinterface --> controlcommunicatefacility
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Point " ];
+201 [label="<f0>  |<f1> Time " color=red];
+202 [label="<f0>  |<f1> Group " color=red];
+203 [label="<f0>  |<f1> Meta Datum " ];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Associate Meta Data To The Group As A Whole At Some Point In Time }" shape=Mrecord];
+204 -> 205
+205 -> 203 [label="Meta Datum"]
+205 -> 202 [label="Group"]
+205 -> 200 [label="Point"]
+205 -> 201 [label="Time"]
+}

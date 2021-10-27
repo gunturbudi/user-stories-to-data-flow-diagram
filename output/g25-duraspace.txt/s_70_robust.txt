@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	entity "Record" as thingrecord #grey
+	entity "Unique Identity" as thinguniqueidentity
+	entity "Object" as thingobject
+	entity "Name" as thingname #grey
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Register A\nName Record\nFor Each\nUnique Identity\nWith Repository's\nCollections" as controlregisternamerecord
+	control "Register A\nRecord For\nEach Unique\nIdentity With\nObject" as controlregisterrecordobject
+
+	thingrepository <.. thingcollection
+	thingname <.. thingrecord
+	thinguniqueidentity <.. thingrecord
+	thingcollection <.. thinguniqueidentity
+	thingobject <.. thinguniqueidentity
+	actorrepositorymanager --- thingcollectioninterface
+	actorrepositorymanager --- thingobjectinterface
+	thinguniqueidentity --- controlregisternamerecord
+	thingcollection --- controlregisternamerecord
+	thingcollectioninterface --> controlregisternamerecord
+	thingrecord --- controlregisternamerecord
+	thingrecord --- controlregisterrecordobject
+	thingobject --- controlregisterrecordobject
+	thingobjectinterface --> controlregisterrecordobject
+	thinguniqueidentity --- controlregisterrecordobject
+
+@enduml

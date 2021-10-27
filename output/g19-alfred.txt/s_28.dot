@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Device " ];
+201 [label="<f0>  |<f1> Family " color=red];
+202 [label="<f0>  |<f1> Friend " color=red];
+203 [label="<f0>  |<f1> Alfred " ];
+204 [label="Olderperson" shape=box];
+205 [label="{<f0> 1.0|<f1> Have An Alfred Device An Device Helps }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Communicate With Family }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Have An Device Helps }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Communicate With }" shape=Mrecord];
+209 [label="{<f0> 5.0|<f1> Communicate With Friends }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 209
+205 -> 209
+205 -> 200 [label="Device"]
+206 -> 201 [label="Family"]
+207 -> 206
+207 -> 208
+207 -> 200 [label="Device"]
+209 -> 202 [label="Friend"]
+205 -> 203 [label="Alfred"]
+}

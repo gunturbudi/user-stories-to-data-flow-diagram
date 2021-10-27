@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Activity Fee" as thingactivityfee
+	actor "Company Accountant" as actorcompanyaccountant
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "View All\nAvailable Activity\nFees" as controlviewavailableactivityfees
+
+	actorcompanyaccountant --- thingfeeinterface
+	thingactivityfee --- controlviewavailableactivityfees
+	thingfeeinterface --> controlviewavailableactivityfees
+
+@enduml

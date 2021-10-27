@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Web Socket\nProtocol" as thingwebsocketprotocol #grey
+	entity "Frictionless Data\nTool" as thingfrictionlessdatatool
+	actor "Developer" as actordeveloper
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Create A\nWeb Socket\nProtocol For\nFrictionless Data\nTools" as controlcreatewebsocketprotocol
+
+	thingfrictionlessdatatool <.. thingwebsocketprotocol
+	actordeveloper --- thingtoolinterface
+	thingwebsocketprotocol --- controlcreatewebsocketprotocol
+	thingfrictionlessdatatool --- controlcreatewebsocketprotocol
+	thingtoolinterface --> controlcreatewebsocketprotocol
+
+@enduml

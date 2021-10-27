@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Workstation " color=red];
+201 [label="<f0>  |<f1> Network Drive " color=red];
+202 [label="<f0>  |<f1> Neurohub Workspace " color=red];
+203 [label="<f0>  |<f1> File " color=red];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Access Files In Neurohub Workspace Using A Network Drive To Workstation }" shape=Mrecord];
+204 -> 205
+205 -> 203 [label="File"]
+205 -> 202 [label="Neurohub Workspace"]
+205 -> 201 [label="Network Drive"]
+205 -> 200 [label="Workstation"]
+}

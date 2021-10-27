@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visual Support" as thingvisualsupport
+	actor "Olderperson" as actorOlderPerson
+	boundary "Support\nInterface" as thingsupportinterface #grey
+	control "Receive Visual\nSupport When\nEspecially Looking\nAt A\nList" as controlreceivevisualsupport
+	control "Receive Visual\nSupport When\nEspecially Agenda\nLooking At\nA List" as controlreceivevisualsupportlist
+
+	actorOlderPerson --- thingsupportinterface
+	thingvisualsupport --- controlreceivevisualsupport
+	thingsupportinterface --> controlreceivevisualsupport
+	thingvisualsupport --- controlreceivevisualsupportlist
+	thingsupportinterface --> controlreceivevisualsupportlist
+
+@enduml

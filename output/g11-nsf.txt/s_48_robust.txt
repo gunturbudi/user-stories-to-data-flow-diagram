@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Github" as thinggithub
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Github\nInterface" as thinggithubinterface #grey
+	control "Join Github" as controljoingithub
+
+	actornsfemployee --- thinggithubinterface
+	thinggithub --- controljoingithub
+	thinggithubinterface --> controljoingithub
+
+@enduml

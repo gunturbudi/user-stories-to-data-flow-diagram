@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project Timeline" as thingprojecttimeline #grey
+	entity "Level Sense" as thinglevelsense
+	actor "Team Member" as actorteammember
+	boundary "Timeline\nInterface" as thingtimelineinterface #grey
+	control "Have A\nHigh Level\nSense Of\nThe Project\nTimeline" as controlhavehighlevelsense
+
+	thingprojecttimeline <.. thinglevelsense
+	actorteammember --- thingtimelineinterface
+	thinglevelsense --- controlhavehighlevelsense
+	thingprojecttimeline --- controlhavehighlevelsense
+	thingtimelineinterface --> controlhavehighlevelsense
+
+@enduml

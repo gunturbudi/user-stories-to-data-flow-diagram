@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fpds Datum" as thingfpdsdatum
+	actor "Agency User" as actoragencyuser
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Provided With\nHistorical Fpds\nData" as controlprovidehistoricalfpdsdata
+
+	actoragencyuser --- thingdatuminterface
+	thingfpdsdatum --- controlprovidehistoricalfpdsdata
+	thingdatuminterface --> controlprovidehistoricalfpdsdata
+
+@enduml

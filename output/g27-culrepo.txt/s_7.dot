@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Name Dataset\nChange " color=red];
+201 [label="<f0>  |<f1> Report " color=red];
+202 [label="Db" shape=box];
+203 [label="Ir Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Manage Report }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Manage Name Dataset Change }" shape=Mrecord];
+202 -> 204
+202 -> 205
+203 -> 204
+203 -> 205
+204 -> 201 [label="Report"]
+205 -> 200 [label="Name Dataset\nChange"]
+}

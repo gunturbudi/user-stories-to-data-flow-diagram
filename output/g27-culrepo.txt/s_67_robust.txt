@@ -1,0 +1,45 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Associated File" as thingassociatedfile
+	entity "Record" as thingrecord
+	entity "System" as thingsystem
+	entity "Uniform Error" as thinguniformerror
+	entity "Datum" as thingdatum
+	entity "Collection" as thingcollection
+	actor "Repository ,\nSupport ,\nTeam Member" as actorrepositorysupportteammember
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Export A\nSet Of\nRecords" as controlexportset
+	control "Export A\nSet Of\nAssociated File" as controlexportsetassociatedfile
+	control "Manipulate" as controlmanipulatereloadsystem
+	control "Reload Into\nThe System" as controlreloadsystem
+	control "Manipulate This\nData" as controlmanipulatedatum
+	control "Am Aware\nOf A\nUniform Error\nIn A\nCollection" as controlbeuniformerror
+
+	thingcollection <.. thinguniformerror
+	actorrepositorysupportteammember --- thingrecordinterface
+	actorrepositorysupportteammember --- thingfileinterface
+	actorrepositorysupportteammember --- thingsysteminterface
+	actorrepositorysupportteammember --- thingdatuminterface
+	actorrepositorysupportteammember --- thingcollectioninterface
+	thingrecord --- controlexportset
+	thingrecordinterface --> controlexportset
+	thingassociatedfile --- controlexportsetassociatedfile
+	thingfileinterface --> controlexportsetassociatedfile
+	thingsysteminterface --> controlmanipulatereloadsystem
+	controlmanipulatereloadsystem --> controlreloadsystem
+	thingsystem --- controlreloadsystem
+	thingsysteminterface --> controlreloadsystem
+	thingdatum --- controlmanipulatedatum
+	thingdatuminterface --> controlmanipulatedatum
+	thinguniformerror --- controlbeuniformerror
+	thingcollection --- controlbeuniformerror
+	thingcollectioninterface --> controlbeuniformerror
+
+@enduml

@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Quick Response " color=red];
+201 [label="<f0>  |<f1> Reasonable Resolution " ];
+202 [label="<f0>  |<f1> Tech Support\nIssue " ];
+203 [label="Library , Staff Member" shape=box];
+204 [label="{<f0> 1.0|<f1> Receive A Reasonable Resolution To Tech Support Issues }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Receive A Quick Response }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Reasonable Resolution"]
+204 -> 202 [label="Tech Support\nIssue"]
+205 -> 200 [label="Quick Response"]
+}

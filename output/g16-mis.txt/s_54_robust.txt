@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Feedback" as thingfeedback
+	entity "Format Specification" as thingformatspecification
+	actor "Depositor" as actordepositor
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	boundary "Specification\nInterface" as thingspecificationinterface #grey
+	control "Get Feedback\nAlerting" as controlgetfeedbackfeedbackconformfileformatspecifications
+	control "Files Not\nConform To\nFormat Specifications" as controlconformfileformatspecifications
+
+	thingformatspecification <.. thingfile
+	actordepositor --- thingfeedbackinterface
+	actordepositor --- thingspecificationinterface
+	thingfeedback --- controlgetfeedbackfeedbackconformfileformatspecifications
+	thingfeedbackinterface --> controlgetfeedbackfeedbackconformfileformatspecifications
+	controlgetfeedbackfeedbackconformfileformatspecifications --> controlconformfileformatspecifications
+	thingfile --- controlconformfileformatspecifications
+	thingformatspecification --- controlconformfileformatspecifications
+	thingspecificationinterface --> controlconformfileformatspecifications
+
+@enduml

@@ -1,0 +1,23 @@
+id,value,style,source,target,type
+200,Date,shape=partialRectangle,null,null,data_base
+201,Configuration,shape=partialRectangle,null,null,data_base
+202,Item,shape=partialRectangle,null,null,data_base
+203,Embargo,shape=partialRectangle,null,null,data_base
+204,Access Control,shape=partialRectangle,null,null,data_base
+205,Release,shape=partialRectangle,null,null,data_base
+206,Digitalrecords Archivist,rounded=0,null,null,external_entity
+207,Lift Embargoes On The Release Date,ellipse,null,null,process
+208,Set The Access Controls To The Configuration On Item On That Date,ellipse,null,null,process
+209,Have,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,Embargo,endArrow=classic,207,203,endArrow=classic
+215,Date,endArrow=classic,207,200,endArrow=classic
+216,Access Control,endArrow=classic,208,204,endArrow=classic
+217,Configuration,endArrow=classic,208,201,endArrow=classic
+218,Item,endArrow=classic,208,202,endArrow=classic
+219,Date,endArrow=classic,208,200,endArrow=classic
+220,,endArrow=classic,209,207,endArrow=classic
+221,,endArrow=classic,209,208,endArrow=classic
+222,Release,endArrow=classic,207,205,endArrow=classic

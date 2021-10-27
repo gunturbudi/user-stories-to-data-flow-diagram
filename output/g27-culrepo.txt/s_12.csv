@@ -1,0 +1,64 @@
+id,value,style,source,target,type
+200,Organization,shape=partialRectangle,null,null,data_base
+201,Place,shape=partialRectangle,null,null,data_base
+202,Material,shape=partialRectangle,null,null,data_base
+203,Range,shape=partialRectangle,null,null,data_base
+204,Tagging,shape=partialRectangle,null,null,data_base
+205,Option,shape=partialRectangle,null,null,data_base
+206,"Internal ,\nPrivate Group",shape=partialRectangle,null,null,data_base
+207,University,shape=partialRectangle,null,null,data_base
+208,Public,shape=partialRectangle,null,null,data_base
+209,Access,shape=partialRectangle,null,null,data_base
+210,Project,shape=partialRectangle,null,null,data_base
+211,Crossdeptprojteammember,rounded=0,null,null,external_entity
+212,Have A Better Place With A Range Of Access,ellipse,null,null,process
+213,Have A Better Place With University,ellipse,null,null,process
+214,Have A Better Place With Public,ellipse,null,null,process
+215,Collect Materials,ellipse,null,null,process
+216,"Have A Better Place With Option Internal, Private Group Only Use",ellipse,null,null,process
+217,Collect Project Materials,ellipse,null,null,process
+218,Have A Better Place With A Range Of Organization,ellipse,null,null,process
+219,Have A Better Place With A Range Of Tagging,ellipse,null,null,process
+220,Share Project Materials,ellipse,null,null,process
+221,Share Materials,ellipse,null,null,process
+223,,endArrow=classic,211,212,endArrow=classic
+224,,endArrow=classic,211,213,endArrow=classic
+225,,endArrow=classic,211,214,endArrow=classic
+226,,endArrow=classic,211,216,endArrow=classic
+227,,endArrow=classic,211,217,endArrow=classic
+228,,endArrow=classic,211,218,endArrow=classic
+229,,endArrow=classic,211,219,endArrow=classic
+230,,endArrow=classic,211,220,endArrow=classic
+231,,endArrow=classic,212,215,endArrow=classic
+232,,endArrow=classic,212,221,endArrow=classic
+233,Access,endArrow=classic,212,209,endArrow=classic
+234,Place,endArrow=classic,212,201,endArrow=classic
+235,Range,endArrow=classic,212,203,endArrow=classic
+236,,endArrow=classic,213,215,endArrow=classic
+237,,endArrow=classic,213,221,endArrow=classic
+238,University,endArrow=classic,213,207,endArrow=classic
+239,Place,endArrow=classic,213,201,endArrow=classic
+240,,endArrow=classic,214,215,endArrow=classic
+241,,endArrow=classic,214,221,endArrow=classic
+242,Public,endArrow=classic,214,208,endArrow=classic
+243,Place,endArrow=classic,214,201,endArrow=classic
+244,Material,endArrow=classic,215,202,endArrow=classic
+245,,endArrow=classic,216,215,endArrow=classic
+246,,endArrow=classic,216,221,endArrow=classic
+247,Option,endArrow=classic,216,205,endArrow=classic
+248,"Internal ,\nPrivate Group",endArrow=classic,216,206,endArrow=classic
+249,Place,endArrow=classic,216,201,endArrow=classic
+250,Material,endArrow=classic,217,202,endArrow=classic
+251,,endArrow=classic,218,217,endArrow=classic
+252,,endArrow=classic,218,220,endArrow=classic
+253,Place,endArrow=classic,218,201,endArrow=classic
+254,Range,endArrow=classic,218,203,endArrow=classic
+255,Organization,endArrow=classic,218,200,endArrow=classic
+256,,endArrow=classic,219,215,endArrow=classic
+257,,endArrow=classic,219,221,endArrow=classic
+258,Tagging,endArrow=classic,219,204,endArrow=classic
+259,Place,endArrow=classic,219,201,endArrow=classic
+260,Range,endArrow=classic,219,203,endArrow=classic
+261,Material,endArrow=classic,220,202,endArrow=classic
+262,Material,endArrow=classic,221,202,endArrow=classic
+268,Project,endArrow=classic,217,210,endArrow=classic

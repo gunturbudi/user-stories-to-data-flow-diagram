@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype #grey
+	entity "Multiple Application" as thingmultipleapplication
+	entity "Code" as thingcode
+	entity "Artifact" as thingartifact
+	actor "App Developer" as actorappdeveloper
+	boundary "Artifact\nInterface" as thingartifactinterface #grey
+	control "Share A\nDataset Type\nAcross Multiple\nApplications Include\nThe Dataset\nType's Code\nIn Artifacts" as controlsharedatasettypemultipleapplication
+
+	thingmultipleapplication <.. thingdatasettype
+	thingcode <.. thingmultipleapplication
+	thingdatasettype <.. thingcode
+	thingartifact <.. thingcode
+	actorappdeveloper --- thingartifactinterface
+	thingmultipleapplication --- controlsharedatasettypemultipleapplication
+	thingcode --- controlsharedatasettypemultipleapplication
+	thingartifact --- controlsharedatasettypemultipleapplication
+	thingartifactinterface --> controlsharedatasettypemultipleapplication
+	thingdatasettype --- controlsharedatasettypemultipleapplication
+
+@enduml

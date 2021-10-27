@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ldap" as thingLDAP
+	actor "User" as actoruser
+	boundary "Ldap\nInterface" as thingldapinterface #grey
+	control "Using Ldap" as controluseLDAP
+	control "Authenticate" as controlauthenticateuseLDAP
+
+	actoruser --- thingldapinterface
+	thingLDAP --- controluseLDAP
+	controlauthenticateuseLDAP --> controluseLDAP
+	thingldapinterface --> controluseLDAP
+	thingldapinterface --> controlauthenticateuseLDAP
+
+@enduml

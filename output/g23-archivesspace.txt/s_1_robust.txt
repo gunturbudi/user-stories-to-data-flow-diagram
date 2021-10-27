@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Find Aid" as thingfindingaid
+	entity "Particular Collection" as thingparticularcollection
+	entity "Resource" as thingresource
+	actor "Researcher" as actorresearcher
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "View A\nFinding Aid\nFor Resource" as controlviewfindingaidresource
+	control "View A\nFinding Aid\nFor A\nParticular Collection" as controlviewfindingaid
+
+	thingparticularcollection <.. thingfindingaid
+	thingresource <.. thingfindingaid
+	actorresearcher --- thingresourceinterface
+	actorresearcher --- thingcollectioninterface
+	thingresource --- controlviewfindingaidresource
+	thingresourceinterface --> controlviewfindingaidresource
+	thingfindingaid --- controlviewfindingaidresource
+	thingfindingaid --- controlviewfindingaid
+	thingparticularcollection --- controlviewfindingaid
+	thingcollectioninterface --> controlviewfindingaid
+
+@enduml

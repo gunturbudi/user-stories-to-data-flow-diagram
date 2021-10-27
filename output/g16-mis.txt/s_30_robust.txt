@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository Administrator" as thingrepositoryadministrator
+	entity "Embargo Privilege" as thingembargoprivilege
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	boundary "Administrator\nInterface" as thingadministratorinterface #grey
+	control "Grant Embargo\nPrivileges To\nOther Repository\nAdministrators" as controlgrantembargoprivilegesotherrepositoryadministrators
+
+	thingrepositoryadministrator <.. thingembargoprivilege
+	actordigitalrecordsarchivist --- thingadministratorinterface
+	thingembargoprivilege --- controlgrantembargoprivilegesotherrepositoryadministrators
+	thingrepositoryadministrator --- controlgrantembargoprivilegesotherrepositoryadministrators
+	thingadministratorinterface --> controlgrantembargoprivilegesotherrepositoryadministrators
+
+@enduml

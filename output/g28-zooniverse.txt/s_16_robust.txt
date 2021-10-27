@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Picture" as thingpicture
+	actor "User" as actoruser
+	boundary "Picture\nInterface" as thingpictureinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Take A\nPicture" as controltakepicture
+	control "Upload An\nImage" as controluploadimage
+
+	actoruser --- thingpictureinterface
+	actoruser --- thingimageinterface
+	thingpicture --- controltakepicture
+	thingpictureinterface --> controltakepicture
+	thingimageinterface --> controluploadimage
+	thingpicture --- controluploadimage
+
+@enduml

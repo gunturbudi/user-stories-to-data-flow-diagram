@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Statement" as thingstatement
+	entity "Rights Status" as thingrightsstatus
+	actor "Archivist" as actorarchivist
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Statement\nInterface" as thingstatementinterface #grey
+	control "Select Existing\nRights Statuses" as controlselectexistingrightsstatuses
+	control "Select Statement" as controlselectstatement
+
+	actorarchivist --- thingstatusinterface
+	actorarchivist --- thingstatementinterface
+	thingrightsstatus --- controlselectexistingrightsstatuses
+	thingstatusinterface --> controlselectexistingrightsstatuses
+	thingstatement --- controlselectstatement
+	thingstatementinterface --> controlselectstatement
+
+@enduml

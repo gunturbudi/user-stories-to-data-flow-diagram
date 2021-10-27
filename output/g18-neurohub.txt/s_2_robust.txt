@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub Installation" as thingneurohubinstallation
+	entity "Script" as thingscript
+	actor "System Administrator" as actorsystemadministrator
+	boundary "Installation\nInterface" as thinginstallationinterface #grey
+	control "See" as controlsee
+	control "Run A\nScript Tests\nA Neurohub\nInstallation Is\nCorrectly Functioning" as controlrunscriptseeneurohubinstallation
+
+	thingneurohubinstallation <.. thingscript
+	actorsystemadministrator --- thinginstallationinterface
+	controlrunscriptseeneurohubinstallation --> controlsee
+	thinginstallationinterface --> controlsee
+	thingscript --- controlrunscriptseeneurohubinstallation
+	thingneurohubinstallation --- controlrunscriptseeneurohubinstallation
+	thinginstallationinterface --> controlrunscriptseeneurohubinstallation
+
+@enduml

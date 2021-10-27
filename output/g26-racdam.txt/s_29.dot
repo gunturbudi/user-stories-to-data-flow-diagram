@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Scan File " color=red];
+201 [label="<f0>  |<f1> Contrast ,\nAutomatic Operation " color=red];
+202 [label="<f0>  |<f1> Level " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Apply Contrast, Automatic Operations To A Scanned File }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Apply Level }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Contrast ,\nAutomatic Operation"]
+204 -> 200 [label="Scan File"]
+205 -> 202 [label="Level"]
+}

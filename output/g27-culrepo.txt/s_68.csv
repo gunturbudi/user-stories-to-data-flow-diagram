@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Researcherid,shape=partialRectangle,null,null,data_base
+201,Submission,shape=partialRectangle,null,null,data_base
+202,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+203,Associate A Researcherid With A Submission,ellipse,null,null,process
+204,Associate Orcid,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Researcherid,endArrow=classic,203,200,endArrow=classic
+209,Submission,endArrow=classic,203,201,endArrow=classic
+210,Researcherid,endArrow=classic,204,200,endArrow=classic

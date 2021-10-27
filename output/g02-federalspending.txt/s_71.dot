@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fpds " ];
+201 [label="<f0>  |<f1> Feed Datum " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Include Fpds }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Include Both Historical, Data, Extracted Feed Data }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200
+204 -> 201
+}

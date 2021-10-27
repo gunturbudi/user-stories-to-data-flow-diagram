@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publishing Decision" as thingpublishingdecision #grey
+	entity "Gap" as thinggap #grey
+	entity "Duplicate Transaction" as thingduplicatetransaction
+	entity "Validation" as thingvalidation
+	entity "Time" as thingtime #grey
+	actor "Developer" as actordeveloper
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Transaction\nInterface" as thingtransactioninterface #grey
+	control "Deal With\nThe Gap\nBetween The\nPublishing Decision" as controldealgappublishingdecision
+	control "Deal With\nThe Time\nGap Between\nValidation" as controldealtimegap #grey
+	control "Prevent Duplicate\nTransactions Published" as controlpreventduplicatetransaction
+
+	thingpublishingdecision <.. thinggap
+	thingtime <.. thinggap
+	actordeveloper --- thingdecisioninterface
+	actordeveloper --- thingtransactioninterface
+	thinggap --- controldealgappublishingdecision
+	thingpublishingdecision --- controldealgappublishingdecision
+	thingdecisioninterface --> controldealgappublishingdecision
+	thingvalidation --- controldealtimegap
+	thinggap --- controldealtimegap
+	thingduplicatetransaction --- controlpreventduplicatetransaction
+	thingtransactioninterface --> controlpreventduplicatetransaction
+
+@enduml

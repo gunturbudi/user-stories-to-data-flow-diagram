@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Meta Datum,shape=partialRectangle,null,null,data_base
+201,Physiology Image,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Have Physiology Images To Annotated With Standard Meta Data,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Physiology Image,endArrow=classic,203,201,endArrow=classic
+207,Meta Datum,endArrow=classic,203,200,endArrow=classic

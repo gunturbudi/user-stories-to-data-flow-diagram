@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Superuser Scope" as thingsuperuserscope #grey
+	actor "Superuser" as actorsuperuser
+	boundary "Scope\nInterface" as thingscopeinterface #grey
+	control "Enter The\nSuperuser Scope" as controlentersuperuserscope
+	control "Exit The\nSuperuser Scope" as controlexitsuperuserscope
+
+	actorsuperuser --- thingscopeinterface
+	thingsuperuserscope --- controlentersuperuserscope
+	thingscopeinterface --> controlentersuperuserscope
+	thingsuperuserscope --- controlexitsuperuserscope
+	thingscopeinterface --> controlexitsuperuserscope
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hold" as thinghold
+	actor "Staff Member" as actorstaffmember
+	boundary "Hold\nInterface" as thingholdinterface #grey
+	control "Remove A\nHold" as controlremovehold
+
+	actorstaffmember --- thingholdinterface
+	thinghold --- controlremovehold
+	thingholdinterface --> controlremovehold
+
+@enduml

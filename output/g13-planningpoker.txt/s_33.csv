@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Time,shape=partialRectangle,null,null,data_base
+201,Estimate,shape=partialRectangle,null,null,data_base
+202,Participant,rounded=0,null,null,external_entity
+203,Shown All Estimates At The Same Time,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Estimate,endArrow=classic,203,201,endArrow=classic
+207,Time,endArrow=classic,203,200,endArrow=classic

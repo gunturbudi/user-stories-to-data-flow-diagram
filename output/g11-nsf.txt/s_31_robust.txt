@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Editorial Planning\nRecommendation" as thingeditorialplanningrecommendation
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Recommendation\nInterface" as thingrecommendationinterface #grey
+	control "Have Editorial\nPlanning Recommendations" as controlhaveeditorialplanningrecommendations
+
+	actornsfemployee --- thingrecommendationinterface
+	thingeditorialplanningrecommendation --- controlhaveeditorialplanningrecommendations
+	thingrecommendationinterface --> controlhaveeditorialplanningrecommendations
+
+@enduml

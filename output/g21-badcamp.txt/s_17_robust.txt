@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage #grey
+	entity "Intro Section" as thingintrosection #grey
+	entity "Training" as thingtraining
+	actor "Anonymoususer" as actoranonymoususer
+	circle "Offering" as thingoffering #grey
+	circle "Landing" as thinglanding #grey
+	boundary "Section\nInterface" as thingsectioninterface #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	control "Have A\nTraining Landing\nPage With\nAn Intro\nSection" as controlhavetraininglandingpageintrosection
+	control "Have A\nPage With\nA List\nOf All\nTraining Offerings" as controlhavepagelist
+	control "Promote Call\nFor Trainings" as controlpromotecall
+
+	thingoffering <.. thingpage
+	thinglanding <.. thingpage
+	thingintrosection <.. thingpage
+	thingtraining *-- thingoffering
+	thingtraining *-- thinglanding
+	actoranonymoususer --- thingsectioninterface
+	actoranonymoususer --- thingtraininginterface
+	thingintrosection --- controlhavetraininglandingpageintrosection
+	thingsectioninterface --> controlhavetraininglandingpageintrosection
+	thingpage --- controlhavetraininglandingpageintrosection
+	thingpage --- controlhavepagelist
+	thingoffering --- controlhavepagelist
+	thingtraininginterface --> controlhavepagelist
+	thingtraining --- controlpromotecall
+	thingtraininginterface --> controlpromotecall
+
+@enduml

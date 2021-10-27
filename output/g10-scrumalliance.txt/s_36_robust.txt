@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Upcoming Course" as thingupcomingcourse
+	entity "Feed" as thingfeed #grey
+	entity "Rss" as thingrss #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Subscribe To\nAn Rss\nFeed Of\nUpcoming Courses" as controlsubscriberssfeed
+	control "Subscribe To\nAn Feed\nOf Event" as controlsubscribefeedevent
+
+	thingevent <.. thingfeed
+	thingrss <.. thingfeed
+	thingupcomingcourse <.. thingfeed
+	actorsitevisitor --- thingcourseinterface
+	actorsitevisitor --- thingeventinterface
+	thingupcomingcourse --- controlsubscriberssfeed
+	thingcourseinterface --> controlsubscriberssfeed
+	thingfeed --- controlsubscriberssfeed
+	thingfeed --- controlsubscribefeedevent
+	thingevent --- controlsubscribefeedevent
+	thingeventinterface --> controlsubscribefeedevent
+
+@enduml

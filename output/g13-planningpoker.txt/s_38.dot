@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Timer " ];
+201 [label="<f0>  |<f1> -pron- " ];
+202 [label="<f0>  |<f1> Estimate " color=red];
+203 [label="<f0>  |<f1> Minute " ];
+204 [label="Participant" shape=box];
+205 [label="{<f0> 1.0|<f1> The Minute Timer Soon As Reset Play An Estimate }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> The Timer Soon As Reset Itself All Play }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Have }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 207
+205 -> 202 [label="Estimate"]
+205 -> 200 [label="Timer"]
+206 -> 207
+206 -> 200 [label="Timer"]
+206 -> 201 [label="-pron-"]
+205 -> 203 [label="Minute"]
+}

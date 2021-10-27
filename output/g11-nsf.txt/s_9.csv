@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,User Research\nPlan,shape=partialRectangle,null,null,data_base
+201,User Researcher,rounded=0,null,null,external_entity
+202,Test The User Research Plan,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,User Research\nPlan,endArrow=classic,202,200,endArrow=classic

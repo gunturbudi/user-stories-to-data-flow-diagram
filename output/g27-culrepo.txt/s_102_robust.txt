@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Institution" as thinginstitution
+	entity "Asset" as thingasset
+	entity "Deposit" as thingdeposit
+	actor "Asset Manager" as actorassetmanager
+	circle "Time" as thingtime
+	boundary "Intellectual Value" as thingintellectualvalueassetassetmanager
+	control "What Is\nTo The\nInstitution At\nThe Time\nOf Deposit" as controlbeintellectualvalueassetassetmanagerinstitutiontime
+	control "Know" as controlknowbeintellectualvalueassetassetmanagerinstitutiontime
+
+	thingdeposit *-- thingtime
+	actorassetmanager --- thingintellectualvalueassetassetmanager
+	thingintellectualvalueassetassetmanager --> controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingasset --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thinginstitution --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingtime --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingdeposit --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	controlknowbeintellectualvalueassetassetmanagerinstitutiontime --> controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingintellectualvalueassetassetmanager --> controlknowbeintellectualvalueassetassetmanagerinstitutiontime
+
+@enduml

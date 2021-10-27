@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Repository Operator" as actorrepositoryoperator
+	circle "Kind" as thingkind
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Know About\nThe Kind\nOf Data" as controlknowkind
+
+	thingdatum *-- thingkind
+	actorrepositoryoperator --- thingdatuminterface
+	thingkind --- controlknowkind
+	thingdatum --- controlknowkind
+	thingdatuminterface --> controlknowkind
+
+@enduml

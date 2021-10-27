@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Geojson ,\nAdditional Source" as thinggeojsonadditionalsource
+	entity "Platform Administrator" as thingplatformadministrator #grey
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Provide The\nPlatform Administrator\nWith Geojson,\nAdditional Sources" as controlprovideplatformadministratorgeojsonadditionalsource
+
+	thinggeojsonadditionalsource <.. thingplatformadministrator
+	actordatapublishinguser --- thingsourceinterface
+	thingplatformadministrator --- controlprovideplatformadministratorgeojsonadditionalsource
+	thinggeojsonadditionalsource --- controlprovideplatformadministratorgeojsonadditionalsource
+	thingsourceinterface --> controlprovideplatformadministratorgeojsonadditionalsource
+
+@enduml

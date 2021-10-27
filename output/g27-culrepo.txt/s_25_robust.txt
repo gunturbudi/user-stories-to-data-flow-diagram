@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Archival" as thingarchival
+	entity "Rare Material" as thingrarematerial
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Archival\nInterface" as thingarchivalinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Create Collections\nHighlight Archival" as controlcreatecollectionarchival
+	control "Create Collections\nHighlight Rare\nMaterial" as controlcreatecollection
+	control "Endanger" as controlendanger
+	control "Create Collections\nHighlight" as controlcreatecollectionendanger
+
+	thingrarematerial <.. thingcollection
+	thingarchival <.. thingcollection
+	actorlibrarystaffmember --- thingarchivalinterface
+	actorlibrarystaffmember --- thingmaterialinterface
+	actorlibrarystaffmember --- thingcollectioninterface
+	thingarchival --- controlcreatecollectionarchival
+	thingarchivalinterface --> controlcreatecollectionarchival
+	thingcollection --- controlcreatecollectionarchival
+	thingcollection --- controlcreatecollection
+	thingrarematerial --- controlcreatecollection
+	thingmaterialinterface --> controlcreatecollection
+	controlcreatecollectionendanger --> controlendanger
+	thingcollectioninterface --> controlendanger
+	thingcollectioninterface --> controlcreatecollectionendanger
+	thingcollection --- controlcreatecollectionendanger
+
+@enduml

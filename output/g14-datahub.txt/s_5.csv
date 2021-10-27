@@ -1,0 +1,5 @@
+id,value,style,source,target,type
+200,Publisher,rounded=0,null,null,external_entity
+201,Know,ellipse,null,null,process
+202,Signing Up,ellipse,null,null,process
+204,,endArrow=classic,202,201,endArrow=classic

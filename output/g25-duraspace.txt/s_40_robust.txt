@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Name" as thingname
+	entity "Component" as thingcomponent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Indicate Any\nName Is\nPertinent To\nThe Component" as controlindicatename
+
+	thingcomponent <.. thingname
+	actorrepositorymanager --- thingcomponentinterface
+	thingname --- controlindicatename
+	thingcomponent --- controlindicatename
+	thingcomponentinterface --> controlindicatename
+
+@enduml

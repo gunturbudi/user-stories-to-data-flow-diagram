@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Scrum" as thingscrum #grey
+	entity "Alliance" as thingalliance
+	entity "Earth" as thingearth #grey
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Alliance\nInterface" as thingallianceinterface #grey
+	control "Need An\nAlliance" as controlneedalliance
+	control "Visit" as controlvisitmoinsPRONmoinsneedalliance
+	control "Know" as controlknow
+
+	thingearth <.. thingscrum
+	actorsitevisitor --- thingallianceinterface
+	thingalliance --- controlneedalliance
+	controlvisitmoinsPRONmoinsneedalliance --> controlneedalliance
+	thingallianceinterface --> controlneedalliance
+	thingallianceinterface --> controlvisitmoinsPRONmoinsneedalliance
+	controlvisitmoinsPRONmoinsneedalliance --> controlknow
+
+@enduml

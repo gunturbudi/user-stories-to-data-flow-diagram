@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Log Book\nPage " color=red];
+201 [label="<f0>  |<f1> Table " ];
+202 [label="<f0>  |<f1> Html Tag " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Draw Tables Using Html Tags As Part Of The Content Of A Log Book Page }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Table"]
+204 -> 202 [label="Html Tag"]
+204 -> 200 [label="Log Book\nPage"]
+}

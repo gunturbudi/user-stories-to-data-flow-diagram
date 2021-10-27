@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publication" as thingpublication
+	entity "Repository" as thingrepository
+	entity "Access Point" as thingaccesspoint
+	actor "Faculty Member" as actorfacultymember
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	boundary "Point\nInterface" as thingpointinterface #grey
+	control "Collect Publications" as controlcollectpublication
+	control "Collect Those\nWithin The\nRepository Into\nA Online,\nSingle Access\nPoint" as controlcollectthose
+	control "Collect Those\nWithout" as controlcollectthosewithout
+
+	thingaccesspoint <.. thingrepository
+	actorfacultymember --- thingpublicationinterface
+	actorfacultymember --- thingpointinterface
+	thingpublication --- controlcollectpublication
+	thingpublicationinterface --> controlcollectpublication
+	thingrepository --- controlcollectthose
+	thingaccesspoint --- controlcollectthose
+	thingpointinterface --> controlcollectthose
+
+@enduml

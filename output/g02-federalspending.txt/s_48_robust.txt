@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Office Code" as thingofficecode
+	entity "Office Name" as thingofficename
+	actor "Datum User" as actordatauser
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "See The\nOffice Names\nFrom Office\nCodes" as controlseeofficenames
+
+	thingofficecode <.. thingofficename
+	actordatauser --- thingcodeinterface
+	thingofficename --- controlseeofficenames
+	thingofficecode --- controlseeofficenames
+	thingcodeinterface --> controlseeofficenames
+
+@enduml

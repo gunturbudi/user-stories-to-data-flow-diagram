@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Second" as thingsecond
+	entity "Julia" as thingjulia
+	entity "Data Package" as thingdatapackage #grey
+	actor "Researcher" as actorresearcher
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto Julia\nIn Seconds" as controlgetdatapackagejuliasecond
+
+	thingsecond <.. thingjulia
+	thingjulia <.. thingdatapackage
+	actorresearcher --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackagejuliasecond
+	thingjulia --- controlgetdatapackagejuliasecond
+	thingsecond --- controlgetdatapackagejuliasecond
+	thingsecondinterface --> controlgetdatapackagejuliasecond
+
+@enduml

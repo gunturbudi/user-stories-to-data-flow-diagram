@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Error Page" as thingerrorpage
+	actor "User" as actoruser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Have Nice\nError Pages" as controlhaveniceerrorpages
+
+	actoruser --- thingpageinterface
+	thingerrorpage --- controlhaveniceerrorpages
+	thingpageinterface --> controlhaveniceerrorpages
+
+@enduml

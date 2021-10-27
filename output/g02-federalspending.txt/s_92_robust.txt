@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Vice Versa" as thingviceversa #grey
+	entity "Dabs Banner\nMessage" as thingdabsbannermessage
+	actor "Fabs User" as actorfabsuser
+	boundary "Versa\nInterface" as thingversainterface #grey
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	control "Provided With\nVice Versa" as controlprovideviceversa
+	control "Provided With\nDabs Banner\nMessages" as controlprovidedabsbannermessages
+
+	actorfabsuser --- thingversainterface
+	actorfabsuser --- thingmessageinterface
+	thingviceversa --- controlprovideviceversa
+	thingversainterface --> controlprovideviceversa
+	thingdabsbannermessage --- controlprovidedabsbannermessages
+	thingmessageinterface --> controlprovidedabsbannermessages
+
+@enduml

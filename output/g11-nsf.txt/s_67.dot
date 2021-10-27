@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Platform " ];
+201 [label="<f0>  |<f1> Html Idea " ];
+202 [label="Team Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Have A Platform Allows }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Prototype Html Ideas }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 200 [label="Platform"]
+204 -> 201 [label="Html Idea"]
+}

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ad" as thingad
+	entity "Posting" as thingposting
+	entity "Site" as thingsite
+	entity "Day" as thingday
+	actor "Recruiter" as actorrecruiter
+	boundary "Posting\nInterface" as thingpostinginterface #grey
+	boundary "Day\nInterface" as thingdayinterface #grey
+	control "Updating Visiting\nThe Site\nThe Posting" as controlvisitextendadsiteposting
+	control "Extend An\nAd For\nAnother Days" as controlextendad
+
+	thingday <.. thingad
+	thingposting <.. thingsite
+	actorrecruiter --- thingpostinginterface
+	actorrecruiter --- thingdayinterface
+	thingsite --- controlvisitextendadsiteposting
+	thingposting --- controlvisitextendadsiteposting
+	thingpostinginterface --> controlvisitextendadsiteposting
+	controlvisitextendadsiteposting --> controlextendad
+	thingad --- controlextendad
+	thingday --- controlextendad
+	thingdayinterface --> controlextendad
+
+@enduml

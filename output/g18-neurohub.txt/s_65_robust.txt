@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Web Page" as thingwebpage #grey
+	entity "Group" as thinggroup
+	entity "Neurohub Node" as thingneurohubnode
+	entity "Mobile Device" as thingmobiledevice
+	entity "Share Calendar" as thingsharedcalendar
+	actor "User" as actoruser
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "View The\nGroup Shared\nCalendars On\nMobile Device" as controlviewsharedcalendaron
+	control "View The\nGroup's Shared\nCalendars As\nWell Via\nThe Neurohub\nNodes' Web\nPage" as controlviewsharedcalendar
+
+	thinggroup <.. thingsharedcalendar
+	thingwebpage <.. thingsharedcalendar
+	thingmobiledevice <.. thingsharedcalendar
+	actoruser --- thingdeviceinterface
+	actoruser --- thingpageinterface
+	thingmobiledevice --- controlviewsharedcalendaron
+	thingdeviceinterface --> controlviewsharedcalendaron
+	thingsharedcalendar --- controlviewsharedcalendaron
+	thingsharedcalendar --- controlviewsharedcalendar
+	thingwebpage --- controlviewsharedcalendar
+	thingpageinterface --> controlviewsharedcalendar
+
+@enduml

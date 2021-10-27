@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ead Datum" as thingeaddatum
+	actor "Archivist" as actorarchivist
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Import Ead\nData" as controlimporteaddata
+
+	actorarchivist --- thingdatuminterface
+	thingeaddatum --- controlimporteaddata
+	thingdatuminterface --> controlimporteaddata
+
+@enduml

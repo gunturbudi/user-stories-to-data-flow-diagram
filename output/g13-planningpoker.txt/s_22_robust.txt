@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Password" as thingpassword
+	entity "Account Name" as thingaccountname #grey
+	actor "Moderator" as actormoderator
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	control "Log" as controllog
+	control "Using Password" as controluselogpassword
+	control "Using Account\nName" as controluselogaccountname
+
+	actormoderator --- thingnameinterface
+	actormoderator --- thingpasswordinterface
+	controluselogaccountname --> controllog
+	thingnameinterface --> controllog
+	controluselogpassword --> controllog
+	thingpassword --- controluselogpassword
+	thingpasswordinterface --> controluselogpassword
+	thingaccountname --- controluselogaccountname
+	thingnameinterface --> controluselogaccountname
+
+@enduml

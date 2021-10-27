@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset Type " color=red];
+201 [label="<f0>  |<f1> Multiple Application " color=red];
+202 [label="<f0>  |<f1> Code " color=red];
+203 [label="<f0>  |<f1> Artifact " color=red];
+204 [label="App Developer" shape=box];
+205 [label="{<f0> 1.0|<f1> Share A Dataset Type Across Multiple Applications Include The Dataset Type's Code In Artifacts }" shape=Mrecord];
+204 -> 205
+205 -> 201 [label="Multiple Application"]
+205 -> 202 [label="Code"]
+205 -> 203 [label="Artifact"]
+205 -> 200 [label="Dataset Type"]
+}

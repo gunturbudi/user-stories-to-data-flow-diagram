@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Code" as thingcode
+	entity "Dataset Type" as thingdatasettype
+	actor "Datum Scientist" as actordatascientist
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Create A\nDataset Instance\nOf An\nExisting Dataset\nType Writing\nCode" as controlcreatedatasetinstance
+
+	thingdatasettype <.. thingdatasetinstance
+	thingcode <.. thingdatasettype
+	actordatascientist --- thingcodeinterface
+	thingdatasetinstance --- controlcreatedatasetinstance
+	thingdatasettype --- controlcreatedatasetinstance
+	thingcode --- controlcreatedatasetinstance
+	thingcodeinterface --> controlcreatedatasetinstance
+
+@enduml

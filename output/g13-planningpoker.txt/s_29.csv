@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Page,shape=partialRectangle,null,null,data_base
+201,Name,shape=partialRectangle,null,null,data_base
+202,Game,shape=partialRectangle,null,null,data_base
+203,Estimator,rounded=0,null,null,external_entity
+204,Join A Game,ellipse,null,null,process
+205,Entering Name On The Page,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Game,endArrow=classic,204,202,endArrow=classic
+210,,endArrow=classic,205,204,endArrow=classic
+211,Name,endArrow=classic,205,201,endArrow=classic
+212,Page,endArrow=classic,205,200,endArrow=classic

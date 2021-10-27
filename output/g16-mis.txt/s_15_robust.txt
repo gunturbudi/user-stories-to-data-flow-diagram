@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fedora Connector" as thingfedoraconnector #grey
+	entity "Object" as thingobject
+	entity "Ddr" as thingDDR
+	entity "Hydra" as thinghydra
+	entity "Symplectic Element" as thingsymplecticelement
+	entity "Emory" as thingemory
+	entity "Fedora Instance" as thingfedorainstance
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Connector\nInterface" as thingconnectorinterface #grey
+	boundary "Emory\nInterface" as thingemoryinterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	control "Have" as controlhaveintegrateDDRintegrateDDRemory
+	control "Integrate With\nDdr Provide\nEmory" as controlintegrateDDRemory
+	control "Integrate With\nDdr Provide\nA Fedora\nConnector" as controlintegrateDDR
+	control "Have Bidirectionally\nSymplectic Elements" as controlhavesymplecticelement
+
+	thingfedoraconnector <.. thingDDR
+	thingemory <.. thingDDR
+	actorrepoadmin --- thingconnectorinterface
+	actorrepoadmin --- thingemoryinterface
+	actorrepoadmin --- thingelementinterface
+	thingDDR --- controlhaveintegrateDDRintegrateDDRemory
+	thingconnectorinterface --> controlhaveintegrateDDRintegrateDDRemory
+	controlhaveintegrateDDRintegrateDDRemory --> controlintegrateDDRemory
+	thingemory --- controlintegrateDDRemory
+	thingemoryinterface --> controlintegrateDDRemory
+	thingDDR --- controlintegrateDDRemory
+	thingDDR --- controlintegrateDDR
+	thingfedoraconnector --- controlintegrateDDR
+	thingconnectorinterface --> controlintegrateDDR
+	controlhaveintegrateDDRintegrateDDRemory --> controlintegrateDDR
+	thingsymplecticelement --- controlhavesymplecticelement
+	thingelementinterface --> controlhavesymplecticelement
+
+@enduml

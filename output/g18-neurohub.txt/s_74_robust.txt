@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Remote Access" as thingremoteaccess
+	entity "Off Site\nWorking" as thingoffsiteworking #grey
+	entity "Datum" as thingdatum
+	actor "Researcher" as actorresearcher
+	boundary "Working\nInterface" as thingworkinginterface #grey
+	control "Have Remote\nAccess To\nData For\nOff Site\nWorking" as controlhaveremoteaccess
+
+	thingdatum <.. thingremoteaccess
+	thingoffsiteworking <.. thingdatum
+	actorresearcher --- thingworkinginterface
+	thingremoteaccess --- controlhaveremoteaccess
+	thingdatum --- controlhaveremoteaccess
+	thingoffsiteworking --- controlhaveremoteaccess
+	thingworkinginterface --> controlhaveremoteaccess
+
+@enduml

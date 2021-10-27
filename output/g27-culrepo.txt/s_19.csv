@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+200,Useful Statistic,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Altmetric,shape=partialRectangle,null,null,data_base
+203,Item Level,shape=partialRectangle,null,null,data_base
+204,Analytic,shape=partialRectangle,null,null,data_base
+205,Comprehensive,shape=partialRectangle,null,null,data_base
+206,Author,shape=partialRectangle,null,null,data_base
+207,Collection,shape=partialRectangle,null,null,data_base
+208,Usage Statistic,shape=partialRectangle,null,null,data_base
+209,"Library , Staff Member",rounded=0,null,null,external_entity
+210,Access Analytic,ellipse,null,null,process
+211,Access Comprehensive,ellipse,null,null,process
+212,Access Useful Statistics Including Altmetrics At Collection,ellipse,null,null,process
+213,Access Useful Statistics Including Altmetrics At Author,ellipse,null,null,process
+214,Access Useful Statistics Including Altmetrics At Item Level,ellipse,null,null,process
+215,Access Useful Usage Statistics Including Altmetrics At The Repository,ellipse,null,null,process
+217,,endArrow=classic,209,210,endArrow=classic
+218,,endArrow=classic,209,211,endArrow=classic
+219,,endArrow=classic,209,212,endArrow=classic
+220,,endArrow=classic,209,213,endArrow=classic
+221,,endArrow=classic,209,214,endArrow=classic
+222,,endArrow=classic,209,215,endArrow=classic
+223,Analytic,endArrow=classic,210,204,endArrow=classic
+224,Comprehensive,endArrow=classic,211,205,endArrow=classic
+225,Collection,endArrow=classic,212,207,endArrow=classic
+226,Useful Statistic,endArrow=classic,212,200,endArrow=classic
+227,Altmetric,endArrow=classic,212,202,endArrow=classic
+228,Useful Statistic,endArrow=classic,213,200,endArrow=classic
+229,Author,endArrow=classic,213,206,endArrow=classic
+230,Altmetric,endArrow=classic,213,202,endArrow=classic
+231,Item Level,endArrow=classic,214,203,endArrow=classic
+232,Useful Statistic,endArrow=classic,214,200,endArrow=classic
+233,Altmetric,endArrow=classic,214,202,endArrow=classic
+234,Usage Statistic,endArrow=classic,215,208,endArrow=classic
+235,Altmetric,endArrow=classic,215,202,endArrow=classic
+236,Repository,endArrow=classic,215,201,endArrow=classic

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cli" as thingcli
+	entity "Publishing" as thingpublishing
+	actor "Publisher" as actorpublisher
+	circle "View" as thingview
+	boundary "Current Datum\nPackage" as thingcurrentdatapackageuseclipublishingpublisher #grey
+	control "Preview The\nViews Of" as controlpreviewview
+	control "Use Cli\nTo Publishing" as controluseclipublishing
+
+	actorpublisher --- thingcurrentdatapackageuseclipublishingpublisher
+	thingview --- controlpreviewview
+	thingcurrentdatapackageuseclipublishingpublisher --> controlpreviewview
+	controlpreviewview --> controluseclipublishing
+	thingcli --- controluseclipublishing
+	thingpublishing --- controluseclipublishing
+	thingcurrentdatapackageuseclipublishingpublisher --> controluseclipublishing
+
+@enduml

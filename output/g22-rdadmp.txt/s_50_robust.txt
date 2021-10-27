@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Pi" as actorpi
+	circle "Kind" as thingkind
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Plan" as controlplan
+	control "What Kind\nOf Data\nStore" as controlstorekind
+
+	thingdatum *-- thingkind
+	actorpi --- thingdatuminterface
+	thingkind --- controlstorekind
+	thingdatum --- controlstorekind
+	thingdatuminterface --> controlstorekind
+
+@enduml

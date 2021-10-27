@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage
+	actor "Researcherpublisher" as actorResearcherPublisher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Ckan" as controlckan
+	control "Publish Data\nPackages" as controlpublishdatapackagesckan
+
+	actorResearcherPublisher --- thingpackageinterface
+	controlpublishdatapackagesckan --> controlckan
+	thingpackageinterface --> controlckan
+	thingdatapackage --- controlpublishdatapackagesckan
+	thingpackageinterface --> controlpublishdatapackagesckan
+
+@enduml

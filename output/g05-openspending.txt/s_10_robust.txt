@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Map" as thingmap
+	entity "Datum" as thingdatum
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Map\nInterface" as thingmapinterface #grey
+	control "Visualised On\nA Map" as controlvisualisemap
+	control "Know" as controlknow
+
+	actordatapublishinguser --- thingmapinterface
+	thingmap --- controlvisualisemap
+	thingmapinterface --> controlvisualisemap
+
+@enduml

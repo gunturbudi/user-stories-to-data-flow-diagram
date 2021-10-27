@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Goal " color=red];
+201 [label="<f0>  |<f1> Work " color=red];
+202 [label="<f0>  |<f1> Alfred Api " ];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Achieve Goals }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Reduce The Work }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Have The Alfred Api }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Goal"]
+205 -> 204
+205 -> 201 [label="Work"]
+206 -> 205
+206 -> 202 [label="Alfred Api"]
+}

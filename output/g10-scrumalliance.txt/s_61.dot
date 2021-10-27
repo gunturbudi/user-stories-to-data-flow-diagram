@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access " ];
+201 [label="<f0>  |<f1> Article " color=red];
+202 [label="Site Member" shape=box];
+203 [label="{<f0> 1.0|<f1> Have Full Access To All Articles }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Access"]
+203 -> 201 [label="Article"]
+}

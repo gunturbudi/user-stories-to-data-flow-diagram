@@ -1,0 +1,61 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Class " color=red];
+201 [label="<f0>  |<f1> Dedicated Page " ];
+202 [label="<f0>  |<f1> Location " color=red];
+203 [label="<f0>  |<f1> View " ];
+204 [label="<f0>  |<f1> Trainer " ];
+205 [label="<f0>  |<f1> Datetime " ];
+206 [label="<f0>  |<f1> Skill Level " ];
+207 [label="<f0>  |<f1> Logo " color=red];
+208 [label="<f0>  |<f1> Title " ];
+209 [label="<f0>  |<f1> Follow Information " ];
+210 [label="<f0>  |<f1> Offering " ];
+211 [label="<f0>  |<f1> Registration " color=red];
+212 [label="<f0>  |<f1> Map " ];
+213 [label="Anonymoususer" shape=box];
+214 [label="{<f0> 1.0|<f1> Learn More About }" shape=Mrecord];
+215 [label="{<f0> 2.0|<f1> Learn More About Location }" shape=Mrecord];
+216 [label="{<f0> 3.0|<f1> Have A Dedicated Page For Each Class }" shape=Mrecord];
+217 [label="{<f0> 4.0|<f1> Learn More About Title }" shape=Mrecord];
+218 [label="{<f0> 5.0|<f1> Learn More About Possibly A Map View }" shape=Mrecord];
+219 [label="{<f0> 6.0|<f1> Learn More About Trainer }" shape=Mrecord];
+220 [label="{<f0> 7.0|<f1> Register For Class }" shape=Mrecord];
+221 [label="{<f0> 8.0|<f1> Learn More About The Offering The Following Information Shown Registrations Remaining }" shape=Mrecord];
+222 [label="{<f0> 9.0|<f1> Learn More About Skill Level }" shape=Mrecord];
+223 [label="{<f0> 10.0|<f1> Learn More About Possibly A View }" shape=Mrecord];
+224 [label="{<f0> 11.0|<f1> Learn More About Logo }" shape=Mrecord];
+225 [label="{<f0> 12.0|<f1> Learn More About Datetime }" shape=Mrecord];
+213 -> 215
+213 -> 216
+213 -> 217
+213 -> 218
+213 -> 219
+213 -> 220
+213 -> 221
+213 -> 222
+213 -> 224
+213 -> 225
+215 -> 202 [label="Location"]
+216 -> 214
+216 -> 215
+216 -> 217
+216 -> 219
+216 -> 221
+216 -> 224
+216 -> 201 [label="Dedicated Page"]
+216 -> 200 [label="Class"]
+216 -> 202 [label="Location"]
+217 -> 208 [label="Title"]
+218 -> 203 [label="View"]
+219 -> 204 [label="Trainer"]
+220 -> 200 [label="Class"]
+221 -> 210 [label="Offering"]
+221 -> 209 [label="Follow Information"]
+221 -> 211 [label="Registration"]
+222 -> 206 [label="Skill Level"]
+223 -> 203 [label="View"]
+224 -> 207 [label="Logo"]
+225 -> 205 [label="Datetime"]
+218 -> 212 [label="Map"]
+}

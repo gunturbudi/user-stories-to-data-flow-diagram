@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Insight,shape=partialRectangle,null,null,data_base
+201,Paper,shape=partialRectangle,null,null,data_base
+202,Influential Judge,shape=partialRectangle,null,null,data_base
+203,Legal Thinker,shape=partialRectangle,null,null,data_base
+204,Initial Scholarship,shape=partialRectangle,null,null,data_base
+205,Thesis,shape=partialRectangle,null,null,data_base
+206,Academicresearcher,rounded=0,null,null,external_entity
+207,Gain Insight Initial Scholarship How Started,ellipse,null,null,process
+209,,endArrow=classic,206,207,endArrow=classic
+210,Insight,endArrow=classic,207,200,endArrow=classic
+211,Initial Scholarship,endArrow=classic,207,204,endArrow=classic

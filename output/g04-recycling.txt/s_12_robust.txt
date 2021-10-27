@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Flexible Pick" as thingflexiblepick
+	actor "User" as actoruser
+	boundary "Pick\nInterface" as thingpickinterface #grey
+	control "Time Choose\nA Flexible\nPick Up" as controlchooseflexiblepick
+
+	actoruser --- thingpickinterface
+	thingflexiblepick --- controlchooseflexiblepick
+	thingpickinterface --> controlchooseflexiblepick
+
+@enduml

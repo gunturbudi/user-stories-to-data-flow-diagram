@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Collection Component" as thingcollectioncomponent
+	actor "User" as actoruser
+	circle "Geographical Context" as thinggeographicalcontext
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "See The\nGeographical Context\nOf A\nCollection Component\nWhere Pertinent" as controlseegeographicalcontext
+	control "See The\nGeographical Context\nOf Object" as controlseegeographicalcontextobject
+
+	thingcollectioncomponent *-- thinggeographicalcontext
+	thingobject *-- thinggeographicalcontext
+	actoruser --- thingcomponentinterface
+	actoruser --- thingobjectinterface
+	thinggeographicalcontext --- controlseegeographicalcontext
+	thingcollectioncomponent --- controlseegeographicalcontext
+	thingcomponentinterface --> controlseegeographicalcontext
+	thingobject --- controlseegeographicalcontextobject
+	thingobjectinterface --> controlseegeographicalcontextobject
+	thinggeographicalcontext --- controlseegeographicalcontextobject
+
+@enduml

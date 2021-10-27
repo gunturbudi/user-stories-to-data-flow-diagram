@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> System " ];
+201 [label="<f0>  |<f1> Metadata " color=red];
+202 [label="<f0>  |<f1> Pointer " ];
+203 [label="<f0>  |<f1> Dmp " color=red];
+204 [label="Data Librarian" shape=box];
+205 [label="{<f0> 1.0|<f1> Extract Pointers From The Dmp To Metadata In Other Systems }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Import this metadata into a data catalogue }" shape=Mrecord];
+205 -> 2
+2 -> 201  [label="Metadata"]
+204 -> 205
+205 -> 202 [label="Pointer"]
+205 -> 203 [label="Dmp"]
+205 -> 201 [label="Metadata"]
+205 -> 200 [label="System"]
+}

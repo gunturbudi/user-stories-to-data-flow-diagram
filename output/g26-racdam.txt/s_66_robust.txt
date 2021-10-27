@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Staff Use" as thingstaffuse #grey
+	entity "Collection File" as thingcollectionfile
+	actor "Archivist" as actorarchivist
+	circle "Electronic Version" as thingelectronicversion
+	boundary "Use\nInterface" as thinguseinterface #grey
+	control "Have Electronic\nVersions Of\nThe Available\nCollection Files\nFor Staff\nUse" as controlhaveelectronicversion
+
+	thingstaffuse <.. thingcollectionfile
+	thingcollectionfile *-- thingelectronicversion
+	actorarchivist --- thinguseinterface
+	thingelectronicversion --- controlhaveelectronicversion
+	thingcollectionfile --- controlhaveelectronicversion
+	thingstaffuse --- controlhaveelectronicversion
+	thinguseinterface --> controlhaveelectronicversion
+
+@enduml

@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,Title,shape=partialRectangle,null,null,data_base
+201,Author Name,shape=partialRectangle,null,null,data_base
+202,Article Body,shape=partialRectangle,null,null,data_base
+203,Search,shape=partialRectangle,null,null,data_base
+204,Text Search,shape=partialRectangle,null,null,data_base
+205,Site Visitor,rounded=0,null,null,external_entity
+206,Do A Full Search Of Author Name,ellipse,null,null,process
+207,Do A Full Text Search Of Article Body,ellipse,null,null,process
+208,Do A Full Search Of Title,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Author Name,endArrow=classic,206,201,endArrow=classic
+214,Search,endArrow=classic,206,203,endArrow=classic
+215,Text Search,endArrow=classic,207,204,endArrow=classic
+216,Article Body,endArrow=classic,207,202,endArrow=classic
+217,Search,endArrow=classic,208,203,endArrow=classic
+218,Title,endArrow=classic,208,200,endArrow=classic

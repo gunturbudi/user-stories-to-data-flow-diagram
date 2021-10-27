@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Specific Language" as thingspecificlanguage
+	entity "Search" as thingsearch
+	entity "Object" as thingobject
+	actor "User" as actoruser
+	circle "Component" as thingcomponent #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	control "Scope Searches\nFor Object\nComponent" as controlscopesearchobjectcomponent
+	control "Scope Searches\nFor Collections\nTo A\nSpecific Language" as controlscopesearchspecificlanguage
+	control "Scope Searches\nFor Object" as controlscopesearchobject
+
+	thingspecificlanguage <.. thingcollection
+	thingcollection <.. thingsearch
+	thingcomponent <.. thingsearch
+	thingobject <.. thingsearch
+	thingobject *-- thingcomponent
+	actoruser --- thingobjectinterface
+	actoruser --- thinglanguageinterface
+	thingcomponent --- controlscopesearchobjectcomponent
+	thingobjectinterface --> controlscopesearchobjectcomponent
+	thingsearch --- controlscopesearchobjectcomponent
+	thingsearch --- controlscopesearchspecificlanguage
+	thingcollection --- controlscopesearchspecificlanguage
+	thinglanguageinterface --> controlscopesearchspecificlanguage
+	thingspecificlanguage --- controlscopesearchspecificlanguage
+	thingobject --- controlscopesearchobject
+	thingobjectinterface --> controlscopesearchobject
+	thingsearch --- controlscopesearchobject
+
+@enduml

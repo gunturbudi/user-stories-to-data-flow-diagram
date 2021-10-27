@@ -1,0 +1,25 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Site " ];
+201 [label="<f0>  |<f1> Trainer " ];
+202 [label="<f0>  |<f1> Practitioner " ];
+203 [label="<f0>  |<f1> Scrum Product\nOwner " ];
+204 [label="<f0>  |<f1> Scrum Master " ];
+205 [label="Site Visitor" shape=box];
+206 [label="{<f0> 1.0|<f1> View Lists On The Site Of Trainer }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> View Lists On The Site Of All Certified Scrum Masters }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> View Lists On The Site Of Certified Scrum Product Owner }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> View Lists On The Site Of Practitioner }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 201 [label="Trainer"]
+206 -> 200 [label="Site"]
+207 -> 200 [label="Site"]
+207 -> 204 [label="Scrum Master"]
+208 -> 203 [label="Scrum Product\nOwner"]
+208 -> 200 [label="Site"]
+209 -> 202 [label="Practitioner"]
+209 -> 200 [label="Site"]
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Venue" as thingvenue
+	actor "Administrator" as actoradministrator
+	boundary "Venue\nInterface" as thingvenueinterface #grey
+	control "Create Venues" as controlcreatevenue
+	control "Maintain Venues" as controlmaintainvenue
+
+	actoradministrator --- thingvenueinterface
+	thingvenue --- controlcreatevenue
+	thingvenueinterface --> controlcreatevenue
+	thingvenue --- controlmaintainvenue
+	thingvenueinterface --> controlmaintainvenue
+
+@enduml

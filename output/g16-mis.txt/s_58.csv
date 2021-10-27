@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Permission,shape=partialRectangle,null,null,data_base
+201,Easy Way,shape=partialRectangle,null,null,data_base
+202,Repository,shape=partialRectangle,null,null,data_base
+203,User,shape=partialRectangle,null,null,data_base
+204,Collection Curator,rounded=0,null,null,external_entity
+205,Manage Permissions In The Repository In An Easy Way,ellipse,null,null,process
+206,Create Groups Of Users,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Permission,endArrow=classic,205,200,endArrow=classic
+211,Repository,endArrow=classic,205,202,endArrow=classic
+212,Easy Way,endArrow=classic,205,201,endArrow=classic
+213,,endArrow=classic,206,205,endArrow=classic
+214,User,endArrow=classic,206,203,endArrow=classic

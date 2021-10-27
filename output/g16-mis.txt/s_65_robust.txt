@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Staff Interface" as thingstaffinterface #grey
+	entity "Version" as thingversion
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Available Version" as thingavailableversion
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	control "View Available\nVersions Of\nAn Object" as controlviewavailableversion
+	control "Restore A\nVersion From\nThe Staff\nInterface" as controlrestoreversion
+
+	thingstaffinterface <.. thingversion
+	thingobject *-- thingavailableversion
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thinginterfaceinterface
+	thingavailableversion --- controlviewavailableversion
+	thingobject --- controlviewavailableversion
+	thingobjectinterface --> controlviewavailableversion
+	thingversion --- controlrestoreversion
+	thingstaffinterface --- controlrestoreversion
+	thinginterfaceinterface --> controlrestoreversion
+
+@enduml

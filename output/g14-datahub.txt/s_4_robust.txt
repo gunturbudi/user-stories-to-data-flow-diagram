@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Google" as thinggoogle
+	entity "Github" as thinggithub
+	actor "Visitor" as actorvisitor
+	boundary "Google\nInterface" as thinggoogleinterface #grey
+	boundary "Github\nInterface" as thinggithubinterface #grey
+	control "Sign Up\nVia Google" as controlsigngoogle
+	control "Sign Up\nVia Github" as controlsigngithub
+
+	actorvisitor --- thinggoogleinterface
+	actorvisitor --- thinggithubinterface
+	thinggoogle --- controlsigngoogle
+	thinggoogleinterface --> controlsigngoogle
+	thinggithub --- controlsigngithub
+	thinggithubinterface --> controlsigngithub
+
+@enduml

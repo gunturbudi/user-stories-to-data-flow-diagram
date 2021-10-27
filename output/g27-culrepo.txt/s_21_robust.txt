@@ -1,0 +1,10 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	control "Notified" as controlnotify
+
+
+@enduml

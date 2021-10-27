@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,Registry Server,shape=partialRectangle,null,null,data_base
+201,Datapackage,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Publisher,rounded=0,null,null,external_entity
+204,Tag Datapackage,ellipse,null,null,process
+205,Create A Snapshot Of Data On The Registry Server,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Datapackage,endArrow=classic,204,201,endArrow=classic
+211,Datum,endArrow=classic,205,202,endArrow=classic
+212,Registry Server,endArrow=classic,205,200,endArrow=classic

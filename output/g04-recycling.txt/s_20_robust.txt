@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Electronic Device" as thingelectronicdevice
+	entity "Stuff" as thingotherstuff
+	actor "User" as actoruser
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	control "Access The\nSite" as controlaccesssite
+	control "Do The\nOther Stuffs\nOn All\nOf Electronic\nDevices" as controldootherstuff
+
+	thingelectronicdevice <.. thingotherstuff
+	actoruser --- thingsiteinterface
+	actoruser --- thingdeviceinterface
+	thingsite --- controlaccesssite
+	thingsiteinterface --> controlaccesssite
+	thingotherstuff --- controldootherstuff
+	thingelectronicdevice --- controldootherstuff
+	thingdeviceinterface --> controldootherstuff
+
+@enduml

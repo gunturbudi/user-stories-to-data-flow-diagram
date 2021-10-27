@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Protocol " color=red];
+201 [label="<f0>  |<f1> Stag " ];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Create A Protocol }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Assign Metadata To Any Stag }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Protocol"]
+205 -> 202 [label="Metadata"]
+205 -> 201 [label="Stag"]
+}

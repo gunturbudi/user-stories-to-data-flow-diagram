@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Issue" as thingissue
+	entity "Tech" as thingtech
+	actor "Ui Designer" as actoruidesigner
+	boundary "Tech\nInterface" as thingtechinterface #grey
+	control "Track The\nIssues Thursday\nCome Up\nIn Tech" as controltrackissue
+
+	thingtech <.. thingissue
+	actoruidesigner --- thingtechinterface
+	thingissue --- controltrackissue
+	thingtech --- controltrackissue
+	thingtechinterface --> controltrackissue
+
+@enduml

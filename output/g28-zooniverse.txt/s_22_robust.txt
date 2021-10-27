@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Audio Material" as thingaudiomaterial
+	entity "Quick Assessment" as thingquickassessment
+	entity "Upload" as thingupload
+	actor "Admin" as actoradmin
+	boundary "Upload\nInterface" as thinguploadinterface #grey
+	control "Get A\nQuick Assessment\nAudio Material\nHas Edited\nBefore The\nUpload" as controlgetquickassessment
+
+	thingupload <.. thingaudiomaterial
+	thingaudiomaterial <.. thingquickassessment
+	thingupload <.. thingquickassessment
+	actoradmin --- thinguploadinterface
+	thingquickassessment --- controlgetquickassessment
+	thingaudiomaterial --- controlgetquickassessment
+	thingupload --- controlgetquickassessment
+	thinguploadinterface --> controlgetquickassessment
+
+@enduml

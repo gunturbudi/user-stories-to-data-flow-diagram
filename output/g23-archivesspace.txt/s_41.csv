@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Rights Management\nStatement,shape=partialRectangle,null,null,data_base
+201,Archivist,rounded=0,null,null,external_entity
+202,Create Rights Management Statements,ellipse,null,null,process
+203,Edit Rights Management Statements,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Rights Management\nStatement,endArrow=classic,202,200,endArrow=classic
+208,Rights Management\nStatement,endArrow=classic,203,200,endArrow=classic

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Description" as thingdescription
+	entity "Project Lifecycle" as thingprojectlifecycle #grey
+	entity "Data Set" as thingdataset
+	actor "Data Manager" as actordatamanager
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Set\nInterface" as thingsetinterface #grey
+	control "Update Throughout\nThe Project\nLifecycle" as controlupdateprojectlifecycle
+	control "Have The\nDescription Of\nCollected Data\nSets Used" as controlhavedescription
+	control "Have The\nDescription Of\nCollected Sets" as controlhavedescriptionupdateprojectlifecycle
+
+	thingdataset *-- thingdescription
+	actordatamanager --- thingdescriptioninterface
+	actordatamanager --- thingsetinterface
+	thingprojectlifecycle --- controlupdateprojectlifecycle
+	controlhavedescriptionupdateprojectlifecycle --> controlupdateprojectlifecycle
+	thingdescriptioninterface --> controlupdateprojectlifecycle
+	thingdescription --- controlhavedescription
+	thingdataset --- controlhavedescription
+	thingsetinterface --> controlhavedescription
+	thingdescriptioninterface --> controlhavedescriptionupdateprojectlifecycle
+	thingdescription --- controlhavedescriptionupdateprojectlifecycle
+
+@enduml

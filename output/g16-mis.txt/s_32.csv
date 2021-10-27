@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Tool,shape=partialRectangle,null,null,data_base
+201,Author Authority\nControl,shape=partialRectangle,null,null,data_base
+202,Collection Curator,rounded=0,null,null,external_entity
+203,Have A Tool,ellipse,null,null,process
+204,Perform Author Authority Control,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Tool,endArrow=classic,203,200,endArrow=classic
+210,Author Authority\nControl,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Experiment" as thingexperiment
+	entity "Later Stage" as thinglaterstage
+	entity "Library" as thinglibrary
+	entity "Multiple" as thingmultiple
+	actor "Researcher" as actorresearcher
+	boundary "Multiple\nInterface" as thingmultipleinterface #grey
+	boundary "Stage\nInterface" as thingstageinterface #grey
+	control "Collect Data\nAs A\nLibrary Of\nData Then\nUsed Multiple" as controlcollectdatumlibrarymultiple
+	control "Collect Data\nAs A\nLibrary Of\nData Then\nUsed Experiments\nDefined At\nA Later\nStage" as controlcollectdatumlibrary
+
+	thinglibrary <.. thingdatum
+	thinglaterstage <.. thingexperiment
+	thingdatum *-- thinglibrary
+	thingexperiment *-- thinglibrary
+	thingmultiple *-- thinglibrary
+	actorresearcher --- thingmultipleinterface
+	actorresearcher --- thingstageinterface
+	thingmultiple --- controlcollectdatumlibrarymultiple
+	thingmultipleinterface --> controlcollectdatumlibrarymultiple
+	thingdatum --- controlcollectdatumlibrarymultiple
+	thinglibrary --- controlcollectdatumlibrarymultiple
+	thinglibrary --- controlcollectdatumlibrary
+	thingexperiment --- controlcollectdatumlibrary
+	thinglaterstage --- controlcollectdatumlibrary
+	thingstageinterface --> controlcollectdatumlibrary
+	thingdatum --- controlcollectdatumlibrary
+
+@enduml

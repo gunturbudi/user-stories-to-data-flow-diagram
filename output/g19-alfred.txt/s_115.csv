@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Monitor the users’ state of health but also have some fun time,ellipse,null,null,process
+200,User,shape=partialRectangle,null,null,data_base
+201,Carer,shape=partialRectangle,null,null,data_base
+202,Game,shape=partialRectangle,null,null,data_base
+203,Informalcaregiver,rounded=0,null,null,external_entity
+204,Have A Game That The Carer Together Play With The User,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Game,endArrow=classic,204,202,endArrow=classic
+208,Carer,endArrow=classic,204,201,endArrow=classic
+209,User,endArrow=classic,204,200,endArrow=classic
+1000,,endArrow=classic,204,2,endArrow=classic
+1001,State of health,rounded=0,null,null,external_entity
+1002,State of health,endArrow=classic,2,1001,endArrow=classic

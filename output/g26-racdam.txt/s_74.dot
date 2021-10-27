@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Question " color=red];
+201 [label="<f0>  |<f1> Specific File " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Ask A Question About A Specific File }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Question"]
+203 -> 201 [label="Specific File"]
+}

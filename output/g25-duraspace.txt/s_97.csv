@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Event,shape=partialRectangle,null,null,data_base
+201,Dam,shape=partialRectangle,null,null,data_base
+202,Record,shape=partialRectangle,null,null,data_base
+203,Dams Manager,rounded=0,null,null,external_entity
+204,Track All Events For Recording In The Dams,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Event,endArrow=classic,204,200,endArrow=classic
+208,Record,endArrow=classic,204,202,endArrow=classic
+209,Dam,endArrow=classic,204,201,endArrow=classic

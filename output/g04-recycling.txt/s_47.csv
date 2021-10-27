@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Keep them updated about features we have on our website.,ellipse,null,null,process
+200,Facility,shape=partialRectangle,null,null,data_base
+201,Admin,rounded=0,null,null,external_entity
+202,Communicate With Facilities,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Facility,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Features,rounded=0,null,null,external_entity
+1002,Features,endArrow=classic,2,1001,endArrow=classic

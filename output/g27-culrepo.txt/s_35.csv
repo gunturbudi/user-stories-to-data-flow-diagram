@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+200,Descriptive Metadata,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Repository,shape=partialRectangle,null,null,data_base
+203,Pdf,shape=partialRectangle,null,null,data_base
+204,Researcher,rounded=0,null,null,external_entity
+205,See Descriptive Metadata For The Item,ellipse,null,null,process
+206,Come To The Item Directly To The Pdf,ellipse,null,null,process
+207,Come To The Item Through The Repository,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,207,endArrow=classic
+211,Descriptive Metadata,endArrow=classic,205,200,endArrow=classic
+212,Item,endArrow=classic,205,201,endArrow=classic
+213,,endArrow=classic,206,205,endArrow=classic
+214,Pdf,endArrow=classic,206,203,endArrow=classic
+215,Item,endArrow=classic,206,201,endArrow=classic
+216,,endArrow=classic,207,205,endArrow=classic
+217,Repository,endArrow=classic,207,202,endArrow=classic
+218,Item,endArrow=classic,207,201,endArrow=classic

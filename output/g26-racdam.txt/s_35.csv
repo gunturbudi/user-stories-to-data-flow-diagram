@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Link,shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Social Medium,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Share A Link To A File On Social Media,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Link,endArrow=classic,204,200,endArrow=classic
+208,File,endArrow=classic,204,201,endArrow=classic
+209,Social Medium,endArrow=classic,204,202,endArrow=classic

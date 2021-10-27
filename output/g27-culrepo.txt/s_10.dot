@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Cornell " ];
+201 [label="<f0>  |<f1> Topic " color=red];
+202 [label="<f0>  |<f1> School " color=red];
+203 [label="<f0>  |<f1> Date " color=red];
+204 [label="<f0>  |<f1> Research " color=red];
+205 [label="<f0>  |<f1> Department " ];
+206 [label="Researcher" shape=box];
+207 [label="{<f0> 1.0|<f1> Stay Up To Date On Research To A Given Topic At Cornell Including Those In School }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Stay Up To Date On Research To A Given Topic At Cornell Including Those In Other Departments }" shape=Mrecord];
+206 -> 207
+206 -> 208
+207 -> 202 [label="School"]
+207 -> 201 [label="Topic"]
+207 -> 200 [label="Cornell"]
+207 -> 203 [label="Date"]
+207 -> 204 [label="Research"]
+208 -> 203 [label="Date"]
+208 -> 204 [label="Research"]
+208 -> 201 [label="Topic"]
+208 -> 200 [label="Cornell"]
+208 -> 205 [label="Department"]
+}

@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Publisher" as actorpublisher
+	control "Know" as controlknow
+	control "Signing Up" as controlsignknow
+
+	controlsignknow --> controlknow
+
+@enduml

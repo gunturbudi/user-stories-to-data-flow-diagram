@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Previous Version" as thingpreviousversion
+	actor "Publisher" as actorpublisher
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Get Access\nTo A\nPrevious Version" as controlgetaccess
+
+	thingpreviousversion <.. thingaccess
+	actorpublisher --- thingversioninterface
+	thingaccess --- controlgetaccess
+	thingpreviousversion --- controlgetaccess
+	thingversioninterface --> controlgetaccess
+
+@enduml

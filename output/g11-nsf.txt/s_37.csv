@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Prototype Strategy,shape=partialRectangle,null,null,data_base
+201,Team Member,rounded=0,null,null,external_entity
+202,Have A Prototype Strategy,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Prototype Strategy,endArrow=classic,202,200,endArrow=classic

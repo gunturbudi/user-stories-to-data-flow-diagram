@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Multiple Dimension" as thingmultipledimension
+	entity "Multiple Measure" as thingmultiplemeasure #grey
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	boundary "Dimension\nInterface" as thingdimensioninterface #grey
+	control "Sort Aggregate\nData By\nMultiple Dimensions" as controlaggregatedatum #grey
+	control "Sort Filter\nData By\nMultiple Dimensions" as controlfilterdatum
+
+	thingmultipledimension <.. thingdatum
+	thingmultiplemeasure <.. thingdatum
+	actordataconsuminguser --- thingdimensioninterface
+	thingmultipledimension --- controlaggregatedatum
+	thingmultiplemeasure --- controlaggregatedatum
+	thingdatum --- controlaggregatedatum
+	thingdatum --- controlfilterdatum
+	thingmultipledimension --- controlfilterdatum
+	thingdimensioninterface --> controlfilterdatum
+	thingmultiplemeasure --- controlfilterdatum
+
+@enduml

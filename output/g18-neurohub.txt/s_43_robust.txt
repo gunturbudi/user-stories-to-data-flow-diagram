@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Protocol" as thingprotocol
+	entity "Stag" as thingstag
+	entity "Metadata" as thingmetadata
+	actor "User" as actoruser
+	boundary "Protocol\nInterface" as thingprotocolinterface #grey
+	control "Create A\nProtocol" as controlcreateprotocol
+	control "Assign Metadata\nTo Any\nStag" as controlassignmetadatastag #grey
+
+	actoruser --- thingprotocolinterface
+	thingprotocol --- controlcreateprotocol
+	thingprotocolinterface --> controlcreateprotocol
+	thingmetadata --- controlassignmetadatastag
+	thingstag --- controlassignmetadatastag
+
+@enduml

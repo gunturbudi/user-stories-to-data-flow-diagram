@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Classifiable Plankton" as thingclassifiableplankton
+	entity "Plankton Portal\nImage" as thingplanktonportalimage
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Plankton Portal\nImages" as thingplanktonportalimageszooniverseadmin
+	control "Detect Plankton\nPortal Images\nWith No\nClassifiable Plankton\nIn" as controldetectplanktonportalimages
+
+	actorzooniverseadmin --- thingplanktonportalimageszooniverseadmin
+	thingplanktonportalimage --- controldetectplanktonportalimages
+	thingclassifiableplankton --- controldetectplanktonportalimages
+	thingplanktonportalimageszooniverseadmin --> controldetectplanktonportalimages
+
+@enduml

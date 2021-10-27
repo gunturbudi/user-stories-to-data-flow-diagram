@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Pipeline,shape=partialRectangle,null,null,data_base
+201,Dataset Instance,shape=partialRectangle,null,null,data_base
+202,Hydrator User,rounded=0,null,null,external_entity
+203,Create A Pipeline Reads,ellipse,null,null,process
+204,Write A New Dataset Instance,ellipse,null,null,process
+205,Create A Pipeline,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,Pipeline,endArrow=classic,203,200,endArrow=classic
+211,Dataset Instance,endArrow=classic,204,201,endArrow=classic
+212,,endArrow=classic,205,204,endArrow=classic
+213,Pipeline,endArrow=classic,205,200,endArrow=classic

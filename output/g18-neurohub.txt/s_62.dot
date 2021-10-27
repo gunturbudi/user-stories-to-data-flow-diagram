@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Logbook Entry " color=red];
+201 [label="<f0>  |<f1> Individual " color=red];
+202 [label="<f0>  |<f1> Group " color=red];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Keep A Private Logbook Entry }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Share A Logbook Entry With Individuals Rather Than Groups }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Logbook Entry"]
+205 -> 201 [label="Individual"]
+205 -> 202 [label="Group"]
+205 -> 200 [label="Logbook Entry"]
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event Audit\nService" as thingeventauditservice
+	actor "Developer" as actordeveloper
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	control "Determine" as controldetermine
+	control "Use The\nIn Fedora,\nBuilt Event\nAudit Services" as controlusedeterminefedorabuilteventauditservices
+
+	actordeveloper --- thingserviceinterface
+	controlusedeterminefedorabuilteventauditservices --> controldetermine
+	thingserviceinterface --> controldetermine
+	thingeventauditservice --- controlusedeterminefedorabuilteventauditservices
+	thingserviceinterface --> controlusedeterminefedorabuilteventauditservices
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity ", Collection" as thingthanmorecollection
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Assign An\nItem To\nThan, More\nCollection" as controlassignitemthanmorecollection
+
+	thingthanmorecollection <.. thingitem
+	actorlibrarystaffmember --- thingcollectioninterface
+	thingitem --- controlassignitemthanmorecollection
+	thingthanmorecollection --- controlassignitemthanmorecollection
+	thingcollectioninterface --> controlassignitemthanmorecollection
+
+@enduml

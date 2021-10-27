@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Testing" as thingusertesting #grey
+	actor "Ui Designer" as actoruidesigner
+	boundary "Testing\nInterface" as thingtestinginterface #grey
+	control "Begin User\nTesting" as controlbeginusertesting
+
+	actoruidesigner --- thingtestinginterface
+	thingusertesting --- controlbeginusertesting
+	thingtestinginterface --> controlbeginusertesting
+
+@enduml

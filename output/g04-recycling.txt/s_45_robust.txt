@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Question" as thinguserquestion
+	actor "Superuser" as actorsuperuser
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	control "Reply To\nUser Questions" as controlreplyuserquestions
+
+	actorsuperuser --- thingquestioninterface
+	thinguserquestion --- controlreplyuserquestions
+	thingquestioninterface --> controlreplyuserquestions
+
+@enduml

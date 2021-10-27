@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Point,shape=partialRectangle,null,null,data_base
+201,Dialog,shape=partialRectangle,null,null,data_base
+202,Correct File,shape=partialRectangle,null,null,data_base
+203,Sample File,shape=partialRectangle,null,null,data_base
+204,Fabs User,rounded=0,null,null,external_entity
+205,What Submit Dialog,ellipse,null,null,process
+206,Link The Sample File On Want The To Point To The Correct File,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Dialog,endArrow=classic,205,201,endArrow=classic
+211,,endArrow=classic,206,205,endArrow=classic
+212,Sample File,endArrow=classic,206,203,endArrow=classic
+213,Point,endArrow=classic,206,200,endArrow=classic
+214,Correct File,endArrow=classic,206,202,endArrow=classic

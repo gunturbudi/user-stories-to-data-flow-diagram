@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Trainer" as thingtrainer
+	entity "Relevance" as thingrelevance
+	actor "Trainer" as actortrainer
+	circle "Information" as thinginformation
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	control "Read Information\nOf Relevance\nOnly To\nTrainers" as controlreadinformationtrainer
+
+	thingtrainer <.. thingrelevance
+	thingrelevance *-- thinginformation
+	actortrainer --- thingtrainerinterface
+	thinginformation --- controlreadinformationtrainer
+	thingrelevance --- controlreadinformationtrainer
+	thingtrainer --- controlreadinformationtrainer
+	thingtrainerinterface --> controlreadinformationtrainer
+
+@enduml

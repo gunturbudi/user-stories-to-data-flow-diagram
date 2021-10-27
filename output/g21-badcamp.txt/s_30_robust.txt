@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Payment Information" as thingpaymentinformation #grey
+	entity "Individual Sponsorship" as thingindividualsponsorship
+	entity "Card" as thingcard
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Sponsorship\nInterface" as thingsponsorshipinterface #grey
+	control "Enter Payment\nInformation" as controlenterpaymentinformation
+	control "Have Card\nFor An\nIndividual Sponsorship" as controlhavecard
+
+	thingindividualsponsorship <.. thingcard
+	actorauthenticateduser --- thinginformationinterface
+	actorauthenticateduser --- thingsponsorshipinterface
+	thingpaymentinformation --- controlenterpaymentinformation
+	thinginformationinterface --> controlenterpaymentinformation
+	thingcard --- controlhavecard
+	thingindividualsponsorship --- controlhavecard
+	thingsponsorshipinterface --> controlhavecard
+
+@enduml

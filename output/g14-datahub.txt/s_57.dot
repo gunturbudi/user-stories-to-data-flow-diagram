@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publisher " color=red];
+201 [label="<f0>  |<f1> Email " color=red];
+202 [label="Owner" shape=box];
+203 [label="{<f0> 1.0|<f1> Invite Someone }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Sign Up A Member Of Publisher }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Using Email }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Become A Member Of Publisher }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 205
+204 -> 200 [label="Publisher"]
+205 -> 204
+205 -> 206
+205 -> 201 [label="Email"]
+206 -> 200 [label="Publisher"]
+}

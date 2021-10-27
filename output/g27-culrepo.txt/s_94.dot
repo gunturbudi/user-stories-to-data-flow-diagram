@@ -1,0 +1,31 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Email Address " color=red];
+201 [label="<f0>  |<f1> Etc " ];
+202 [label="<f0>  |<f1> Password " color=red];
+203 [label="<f0>  |<f1> Purpose " ];
+204 [label="<f0>  |<f1> Subscription " color=red];
+205 [label="<f0>  |<f1> Account " color=red];
+206 [label="<f0>  |<f1> Closing " ];
+207 [label="<f0>  |<f1> Patron " color=red];
+208 [label="Db" shape=box];
+209 [label="Ir Administrator" shape=box];
+210 [label="{<f0> 1.0|<f1> Viewing, Changing, Resetting, Changing Administrate Accounts For Purpose Of Accounts Subscriptions Subscriptions Passwords Etc }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Viewing, Changing, Resetting, Changing Administrate Patron Accounts For Purpose Of Closing Accounts Subscriptions Subscriptions Passwords Email Address }" shape=Mrecord];
+208 -> 210
+208 -> 211
+209 -> 210
+209 -> 211
+210 -> 201 [label="Etc"]
+210 -> 205 [label="Account"]
+210 -> 202 [label="Password"]
+210 -> 203 [label="Purpose"]
+210 -> 204 [label="Subscription"]
+211 -> 203 [label="Purpose"]
+211 -> 204 [label="Subscription"]
+211 -> 202 [label="Password"]
+211 -> 200 [label="Email Address"]
+211 -> 205 [label="Account"]
+211 -> 206 [label="Closing"]
+211 -> 207 [label="Patron"]
+}

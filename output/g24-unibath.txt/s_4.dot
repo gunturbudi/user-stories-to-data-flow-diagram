@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Research Environment " ];
+202 [label="<f0>  |<f1> Workflow Tool " color=red];
+203 [label="Depositor" shape=box];
+204 [label="{<f0> 1.0|<f1> Deposit Datasets Through Virtual Research Environments }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Deposit Datasets Through Other Workflow Tool }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Maintain Datasets Through Other Workflow Tool }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Maintain Datasets Through Virtual Research Environments }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+204 -> 200 [label="Dataset"]
+204 -> 201 [label="Research Environment"]
+205 -> 202 [label="Workflow Tool"]
+205 -> 200 [label="Dataset"]
+206 -> 200 [label="Dataset"]
+206 -> 202 [label="Workflow Tool"]
+207 -> 200 [label="Dataset"]
+207 -> 201 [label="Research Environment"]
+}

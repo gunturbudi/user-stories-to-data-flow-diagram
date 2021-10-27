@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Correspondence" as thingcorrespondence
+	entity "Documentation" as thingdocumentation #grey
+	entity "Form" as thingform
+	entity "Preservation Photo" as thingpreservationphoto
+	entity "Loan" as thingloan #grey
+	actor "Archivist" as actorarchivist
+	boundary "Correspondence\nInterface" as thingcorrespondenceinterface #grey
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	boundary "Form\nInterface" as thingforminterface #grey
+	control "Manage Documentation\nIncluding Correspondence" as controlmanagedocumentationcorrespondence
+	control "Manage Loan\nDocumentation Including\nPreservation Photos" as controlmanageloandocumentation
+	control "Manage Documentation\nIncluding Form" as controlmanagedocumentationform
+
+	thingform <.. thingdocumentation
+	thingcorrespondence <.. thingdocumentation
+	thingloan <.. thingdocumentation
+	thingpreservationphoto <.. thingdocumentation
+	actorarchivist --- thingcorrespondenceinterface
+	actorarchivist --- thingphotointerface
+	actorarchivist --- thingforminterface
+	thingcorrespondence --- controlmanagedocumentationcorrespondence
+	thingcorrespondenceinterface --> controlmanagedocumentationcorrespondence
+	thingdocumentation --- controlmanagedocumentationcorrespondence
+	thingpreservationphoto --- controlmanageloandocumentation
+	thingphotointerface --> controlmanageloandocumentation
+	thingdocumentation --- controlmanageloandocumentation
+	thingdocumentation --- controlmanagedocumentationform
+	thingform --- controlmanagedocumentationform
+	thingforminterface --> controlmanagedocumentationform
+
+@enduml

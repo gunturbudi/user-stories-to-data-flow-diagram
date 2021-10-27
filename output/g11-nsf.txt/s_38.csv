@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Recommendation,shape=partialRectangle,null,null,data_base
+201,Content Design,shape=partialRectangle,null,null,data_base
+202,Content Designer,rounded=0,null,null,external_entity
+203,Ensure,ellipse,null,null,process
+204,"Demonstrate The Value Of User, Centered Content Design 'S An Integral Part Of Recommendations",ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,204,203,endArrow=classic
+209,Content Design,endArrow=classic,204,201,endArrow=classic
+210,Recommendation,endArrow=classic,204,200,endArrow=classic

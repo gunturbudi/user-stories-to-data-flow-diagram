@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Previous Experience,shape=partialRectangle,null,null,data_base
+201,Different Project,shape=partialRectangle,null,null,data_base
+202,Volunteer,shape=partialRectangle,null,null,data_base
+203,Zooniverse Admin,rounded=0,null,null,external_entity
+204,Recommend Different Projects To Volunteers On Previous Experiences,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Different Project,endArrow=classic,204,201,endArrow=classic
+208,Volunteer,endArrow=classic,204,202,endArrow=classic
+209,Previous Experience,endArrow=classic,204,200,endArrow=classic

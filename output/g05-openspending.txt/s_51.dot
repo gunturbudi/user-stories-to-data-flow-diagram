@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Embed Visualisation " ];
+201 [label="<f0>  |<f1> Platform " ];
+202 [label="Api User" shape=box];
+203 [label="{<f0> 1.0|<f1> Change The Colors Of The Embedded Visualisations In Own Platform }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

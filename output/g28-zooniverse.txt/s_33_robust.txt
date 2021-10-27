@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Snapshot Serengeti" as thingsnapshotserengeti
+	entity "Animal Species\nPreclassification" as thinganimalspeciespreclassification
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Serengeti\nInterface" as thingserengetiinterface #grey
+	control "Perform Automatic\nAnimal Species\nPreclassification In\nSnapshot Serengeti" as controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+
+	thingsnapshotserengeti <.. thinganimalspeciespreclassification
+	actorzooniverseadmin --- thingserengetiinterface
+	thinganimalspeciespreclassification --- controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	thingsnapshotserengeti --- controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	thingserengetiinterface --> controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+
+@enduml

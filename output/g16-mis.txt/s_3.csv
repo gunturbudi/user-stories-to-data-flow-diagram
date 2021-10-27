@@ -1,0 +1,34 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Address,shape=partialRectangle,null,null,data_base
+203,Phone,shape=partialRectangle,null,null,data_base
+204,Email,shape=partialRectangle,null,null,data_base
+205,Name,shape=partialRectangle,null,null,data_base
+206,Title,shape=partialRectangle,null,null,data_base
+207,Repository Manager,rounded=0,null,null,external_entity
+208,Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Address,ellipse,null,null,process
+209,Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Email,ellipse,null,null,process
+210,Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Maybe Title,ellipse,null,null,process
+211,Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Phone,ellipse,null,null,process
+212,Track Financially Responsible For Each Item In The Repository Probably Be A Person Contact Including Name,ellipse,null,null,process
+214,,endArrow=classic,207,208,endArrow=classic
+215,,endArrow=classic,207,209,endArrow=classic
+216,,endArrow=classic,207,210,endArrow=classic
+217,,endArrow=classic,207,211,endArrow=classic
+218,,endArrow=classic,207,212,endArrow=classic
+219,Address,endArrow=classic,208,202,endArrow=classic
+220,Repository,endArrow=classic,208,200,endArrow=classic
+221,Item,endArrow=classic,208,201,endArrow=classic
+222,Email,endArrow=classic,209,204,endArrow=classic
+223,Repository,endArrow=classic,209,200,endArrow=classic
+224,Item,endArrow=classic,209,201,endArrow=classic
+225,Title,endArrow=classic,210,206,endArrow=classic
+226,Repository,endArrow=classic,210,200,endArrow=classic
+227,Item,endArrow=classic,210,201,endArrow=classic
+228,Phone,endArrow=classic,211,203,endArrow=classic
+229,Repository,endArrow=classic,211,200,endArrow=classic
+230,Item,endArrow=classic,211,201,endArrow=classic
+231,Item,endArrow=classic,212,201,endArrow=classic
+232,Repository,endArrow=classic,212,200,endArrow=classic
+233,Name,endArrow=classic,212,205,endArrow=classic

@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Type" as thingdatasettype
+	entity "App" as thingapp
+	entity "System" as thingsystem
+	entity "Implementation" as thingimplementation
+	entity "Runtime" as thingruntime
+	actor "App Developer" as actorappdeveloper
+	circle "Interface" as thinginterface
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Depend On\nThe Interface\nOf A\nDataset Type\nIn App" as controldependinterface
+	control "Have" as controlhave
+
+	thingapp <.. thingdatasettype
+	thingdatasettype *-- thinginterface
+	actorappdeveloper --- thingappinterface
+	thinginterface --- controldependinterface
+	thingdatasettype --- controldependinterface
+	thingapp --- controldependinterface
+	thingappinterface --> controldependinterface
+
+@enduml

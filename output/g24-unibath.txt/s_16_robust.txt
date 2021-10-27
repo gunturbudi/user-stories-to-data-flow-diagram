@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Depositor" as actordepositor
+	circle "Citation" as thingcitation
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Track Citations\nOf Data" as controltrackcitation
+
+	thingdatum *-- thingcitation
+	actordepositor --- thingdatuminterface
+	thingcitation --- controltrackcitation
+	thingdatum --- controltrackcitation
+	thingdatuminterface --> controltrackcitation
+
+@enduml

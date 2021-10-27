@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Deletion,shape=partialRectangle,null,null,data_base
+201,Datum User,rounded=0,null,null,external_entity
+202,Have The Deletions,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Deletion,endArrow=classic,202,200,endArrow=classic

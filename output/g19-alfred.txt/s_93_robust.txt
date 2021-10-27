@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Alfred" as thingALFRED
+	entity "Breathing Frequency" as thingbreathingfrequency #grey
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Frequency\nInterface" as thingfrequencyinterface #grey
+	control "Have Alfred" as controlhaveALFREDdeterminebreathingfrequency
+	control "Determine The\nUser's Breathing\nFrequency" as controldeterminebreathingfrequency
+
+	thinguser <.. thingbreathingfrequency
+	actorMedicalCaregiver --- thingalfredinterface
+	actorMedicalCaregiver --- thingfrequencyinterface
+	thingALFRED --- controlhaveALFREDdeterminebreathingfrequency
+	thingalfredinterface --> controlhaveALFREDdeterminebreathingfrequency
+	controlhaveALFREDdeterminebreathingfrequency --> controldeterminebreathingfrequency
+	thingbreathingfrequency --- controldeterminebreathingfrequency
+	thingfrequencyinterface --> controldeterminebreathingfrequency
+
+@enduml

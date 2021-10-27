@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	actor "Admin" as actoradmin
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Invite Someone" as controlinvitesomeonejoinplatform
+	control "Join The\nPlatform" as controljoinplatform
+
+	actoradmin --- thingplatforminterface
+	thingplatforminterface --> controlinvitesomeonejoinplatform
+	controlinvitesomeonejoinplatform --> controljoinplatform
+	thingplatform --- controljoinplatform
+	thingplatforminterface --> controljoinplatform
+
+@enduml

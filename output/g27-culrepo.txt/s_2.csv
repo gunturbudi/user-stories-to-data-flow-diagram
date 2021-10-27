@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Link to content),ellipse,null,null,process
+200,Item,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Student,shape=partialRectangle,null,null,data_base
+203,Faculty Member,rounded=0,null,null,external_entity
+204,Direct Students To An Item Within The Repository,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Student,endArrow=classic,204,202,endArrow=classic
+208,Item,endArrow=classic,204,200,endArrow=classic
+209,Repository,endArrow=classic,204,201,endArrow=classic
+1000,,endArrow=classic,204,2,endArrow=classic
+1001,Teaching,rounded=0,null,null,external_entity
+1002,Teaching,endArrow=classic,2,1001,endArrow=classic

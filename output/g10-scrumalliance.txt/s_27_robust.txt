@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "Fee" as thingfee #grey
+	entity "Course" as thingothercourse
+	entity "Listing" as thinglisting #grey
+	actor "Site Administrator" as actorsiteadministrator
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	control "Set The\nFee Per\nEvent" as controlsetfeeevent
+	control "Set The\nListing Fee\nPer Other\nCourse" as controlsetlistingfeeothercourse
+
+	thingevent <.. thingfee
+	thinglisting <.. thingfee
+	thingothercourse <.. thingfee
+	actorsiteadministrator --- thingeventinterface
+	actorsiteadministrator --- thingcourseinterface
+	thingfee --- controlsetfeeevent
+	thingevent --- controlsetfeeevent
+	thingeventinterface --> controlsetfeeevent
+	thingothercourse --- controlsetlistingfeeothercourse
+	thingcourseinterface --> controlsetlistingfeeothercourse
+	thingfee --- controlsetlistingfeeothercourse
+
+@enduml

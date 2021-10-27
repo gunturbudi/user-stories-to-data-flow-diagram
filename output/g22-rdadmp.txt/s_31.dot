@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Time Plan " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="Data Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> Collecting Data }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Know The Time Plan }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201 [label="Datum"]
+204 -> 200 [label="Time Plan"]
+}

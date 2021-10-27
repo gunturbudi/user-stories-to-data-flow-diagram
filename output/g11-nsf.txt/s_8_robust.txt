@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Design Direction" as thingdesigndirection #grey
+	entity "Beta Page" as thingbetapage
+	actor "Team Member" as actorteammember
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Determine A\nDesign Direction\nFor The\nSocial Beta\nPage" as controldeterminedesigndirection
+
+	thingbetapage <.. thingdesigndirection
+	actorteammember --- thingpageinterface
+	thingdesigndirection --- controldeterminedesigndirection
+	thingbetapage --- controldeterminedesigndirection
+	thingpageinterface --> controldeterminedesigndirection
+
+@enduml

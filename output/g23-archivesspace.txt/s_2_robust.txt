@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Password" as thingpassword
+	entity "User" as thinguser
+	actor "Application Administrator" as actorapplicationadministrator
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	control "Reset A\nUser's Password\nFor A\nUser's Password" as controlresetpassword
+
+	thinguser <.. thingpassword
+	thingpassword <.. thingpassword
+	actorapplicationadministrator --- thingpasswordinterface
+	thingpassword --- controlresetpassword
+	thingpasswordinterface --> controlresetpassword
+
+@enduml

@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archival Material " color=red];
+201 [label="<f0>  |<f1> Online Form " ];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Have An Online Form }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Licensing Archival Material }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Online Form"]
+204 -> 203
+204 -> 200 [label="Archival Material"]
+}

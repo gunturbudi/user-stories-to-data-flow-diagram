@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Folder" as thingfolder
+	entity "Process" as thingprocess
+	actor "Batch Submitter" as actorbatchsubmitter
+	boundary "Documentation" as thingdocumentationdescribefolderbatchsubmitter #grey
+	control "Describe The\nFolder" as controldescribefolder
+	control "Access" as controlaccessdocumentationdescribefolderbatchsubmitter
+
+	actorbatchsubmitter --- thingdocumentationdescribefolderbatchsubmitter
+	thingfolder --- controldescribefolder
+	controlaccessdocumentationdescribefolderbatchsubmitter --> controldescribefolder
+	thingdocumentationdescribefolderbatchsubmitter --> controldescribefolder
+	thingdocumentationdescribefolderbatchsubmitter --> controlaccessdocumentationdescribefolderbatchsubmitter
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Persistent Url " ];
+202 [label="Datum Reuser" shape=box];
+203 [label="{<f0> 1.0|<f1> Get A Persistent Url For A Dataset }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Persistent Url"]
+203 -> 200 [label="Dataset"]
+}

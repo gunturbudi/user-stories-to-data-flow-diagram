@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "People" as thingpeople
+	entity "Role" as thingrole
+	entity "Organization" as thingorganization
+	actor "Owner" as actorowner
+	boundary "Organization\nInterface" as thingorganizationinterface #grey
+	control "View The\nPeople In\nOrganization" as controlviewpeople
+
+	thingorganization <.. thingpeople
+	actorowner --- thingorganizationinterface
+	thingpeople --- controlviewpeople
+	thingorganization --- controlviewpeople
+	thingorganizationinterface --> controlviewpeople
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Demo Database" as thingdemodatabase #grey
+	actor "Systems Administrator" as actorsystemsadministrator
+	circle "Location" as thinglocation
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	control "Control The\nLocation Of\nThe Demo\nDatabase" as controlcontrollocation
+
+	thingdemodatabase *-- thinglocation
+	actorsystemsadministrator --- thingdatabaseinterface
+	thinglocation --- controlcontrollocation
+	thingdemodatabase --- controlcontrollocation
+	thingdatabaseinterface --> controlcontrollocation
+
+@enduml

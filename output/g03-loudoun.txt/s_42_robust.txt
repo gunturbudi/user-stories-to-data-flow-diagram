@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan Review" as thingplanreview
+	actor "Plan ,\nReview ,\nStaff Member" as actorplanreviewstaffmember
+	circle "Completion" as thingcompletion
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	control "Track The\nCompletion Of\nRequired Plan\nReviews" as controltrackcompletion
+
+	thingplanreview *-- thingcompletion
+	actorplanreviewstaffmember --- thingreviewinterface
+	thingcompletion --- controltrackcompletion
+	thingplanreview --- controltrackcompletion
+	thingreviewinterface --> controltrackcompletion
+
+@enduml

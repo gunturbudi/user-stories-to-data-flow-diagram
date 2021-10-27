@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Level" as thinglevel
+	entity "Contrast" as thingcontrast
+	entity "Manipulation" as thingothermanipulation
+	actor "Archivist" as actorarchivist
+	boundary "Manipulation\nInterface" as thingmanipulationinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Contrast\nInterface" as thingcontrastinterface #grey
+	control "Perform Manually\nOther Manipulation" as controlperformothermanipulation
+	control "Perform Level" as controlperformlevel
+	control "Perform Contrast" as controlperformcontrast
+
+	actorarchivist --- thingmanipulationinterface
+	actorarchivist --- thinglevelinterface
+	actorarchivist --- thingcontrastinterface
+	thingothermanipulation --- controlperformothermanipulation
+	thingmanipulationinterface --> controlperformothermanipulation
+	thinglevel --- controlperformlevel
+	thinglevelinterface --> controlperformlevel
+	thingcontrast --- controlperformcontrast
+	thingcontrastinterface --> controlperformcontrast
+
+@enduml

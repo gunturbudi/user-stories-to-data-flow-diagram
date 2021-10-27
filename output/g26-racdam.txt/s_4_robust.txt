@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "View" as thingview
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	boundary "View\nInterface" as thingviewinterface #grey
+	control "Restrict A\nFile From\nView" as controlrestrictfile
+
+	thingview <.. thingfile
+	actorarchivist --- thingviewinterface
+	thingfile --- controlrestrictfile
+	thingview --- controlrestrictfile
+	thingviewinterface --> controlrestrictfile
+
+@enduml

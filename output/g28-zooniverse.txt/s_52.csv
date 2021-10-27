@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Video,shape=partialRectangle,null,null,data_base
+201,Text,shape=partialRectangle,null,null,data_base
+202,Volunteer,shape=partialRectangle,null,null,data_base
+203,Image,shape=partialRectangle,null,null,data_base
+204,Zooniverse Admin,rounded=0,null,null,external_entity
+205,Know,ellipse,null,null,process
+206,Educate A Volunteer With Text,ellipse,null,null,process
+207,Educate A Volunteer With An Image,ellipse,null,null,process
+208,Educate A Volunteer With A Video,ellipse,null,null,process
+210,,endArrow=classic,204,205,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,,endArrow=classic,206,205,endArrow=classic
+213,Volunteer,endArrow=classic,206,202,endArrow=classic
+214,Text,endArrow=classic,206,201,endArrow=classic
+215,,endArrow=classic,207,205,endArrow=classic
+216,Image,endArrow=classic,207,203,endArrow=classic
+217,Volunteer,endArrow=classic,207,202,endArrow=classic
+218,,endArrow=classic,208,205,endArrow=classic
+219,Video,endArrow=classic,208,200,endArrow=classic
+220,Volunteer,endArrow=classic,208,202,endArrow=classic

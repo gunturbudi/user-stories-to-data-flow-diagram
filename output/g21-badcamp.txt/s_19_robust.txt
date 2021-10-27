@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Code Lounge" as thingcodinglounge
+	actor "Anonymoususer" as actoranonymoususer
+	control "Find Out" as controlfind
+
+
+@enduml

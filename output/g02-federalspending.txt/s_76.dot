@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Frec Paradigm " ];
+201 [label="<f0>  |<f1> Fabs Group " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Provide Fabs Groups Function Under The Frec Paradigm }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Detailed Direction" as thingdetaileddirection
+	entity "Summit Venue" as thingsummitvenue #grey
+	actor "Attendee" as actorattendee
+	boundary "Venue\nInterface" as thingvenueinterface #grey
+	control "Get Detailed\nDirections To\nThe Summit\nVenue" as controlgetdetaileddirection
+
+	thingsummitvenue <.. thingdetaileddirection
+	actorattendee --- thingvenueinterface
+	thingdetaileddirection --- controlgetdetaileddirection
+	thingsummitvenue --- controlgetdetaileddirection
+	thingvenueinterface --> controlgetdetaileddirection
+
+@enduml

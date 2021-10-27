@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+2,Perform management actions on my own datasets.,ellipse,null,null,process
+200,View,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,"Datum , Publishing User",rounded=0,null,null,external_entity
+203,Have A View On The Datasets,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,View,endArrow=classic,203,200,endArrow=classic
+207,Dataset,endArrow=classic,203,201,endArrow=classic
+1000,Data publishing user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Datasets,rounded=0,null,null,external_entity
+1003,Datasets,endArrow=classic,2,1002,endArrow=classic

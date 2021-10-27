@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	actor "Moderator" as actormoderator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Edit An\nItem In\nThe List\nOf Items\nTo Estimated" as controledititemlist
+
+	actormoderator --- thingiteminterface
+	thingitem --- controledititemlist
+	thingiteminterface --> controledititemlist
+
+@enduml

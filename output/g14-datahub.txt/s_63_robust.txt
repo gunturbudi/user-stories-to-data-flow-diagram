@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Usage" as thingusage
+	entity "Key Metric" as thingkeymetric
+	entity "User" as thinguser
+	entity "Download" as thingdownload
+	entity "Api" as thingapi #grey
+	actor "Admin" as actoradmin
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Download\nInterface" as thingdownloadinterface #grey
+	boundary "Usage\nInterface" as thingusageinterface #grey
+	control "See Key\nMetrics About\nUsage Such\nAs Users" as controlseekeymetric
+	control "See Key\nMetrics About\nUsage Such\nAs Download" as controlseekeymetricdownload
+	control "See Key\nMetrics About\nUsage Such\nAs Api\nUsage" as controlseekeymetricapiusage
+
+	thinguser <.. thingusage
+	thingdownload <.. thingusage
+	thingapi <.. thingusage
+	thingusage <.. thingkeymetric
+	actoradmin --- thinguserinterface
+	actoradmin --- thingdownloadinterface
+	actoradmin --- thingusageinterface
+	thingkeymetric --- controlseekeymetric
+	thingusage --- controlseekeymetric
+	thinguser --- controlseekeymetric
+	thinguserinterface --> controlseekeymetric
+	thingdownload --- controlseekeymetricdownload
+	thingdownloadinterface --> controlseekeymetricdownload
+	thingkeymetric --- controlseekeymetricdownload
+	thingusage --- controlseekeymetricdownload
+	thingusageinterface --> controlseekeymetricapiusage
+	thingkeymetric --- controlseekeymetricapiusage
+	thingusage --- controlseekeymetricapiusage
+
+@enduml

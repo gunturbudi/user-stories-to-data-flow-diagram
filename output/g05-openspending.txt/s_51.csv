@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Embed Visualisation,shape=partialRectangle,null,null,data_base
+201,Platform,shape=partialRectangle,null,null,data_base
+202,Api User,rounded=0,null,null,external_entity
+203,Change The Colors Of The Embedded Visualisations In Own Platform,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Embed Visualisation,endArrow=classic,203,200,endArrow=classic
+207,Platform,endArrow=classic,203,201,endArrow=classic

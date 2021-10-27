@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ead " color=red];
+201 [label="<f0>  |<f1> Import " ];
+202 [label="<f0>  |<f1> Frontend Application " ];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Upload An Ead For Import Within The Frontend Application }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Ead"]
+204 -> 201 [label="Import"]
+204 -> 202 [label="Frontend Application"]
+}

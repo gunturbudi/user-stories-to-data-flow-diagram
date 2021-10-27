@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Browse Through\nFiles In\nA Collection" as controlbrowsefilecollection
+
+	thingcollection <.. thingfile
+	actorarchivist --- thingcollectioninterface
+	thingfile --- controlbrowsefilecollection
+	thingcollection --- controlbrowsefilecollection
+	thingcollectioninterface --> controlbrowsefilecollection
+
+@enduml

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fisma Low" as thingfismalow #grey
+	entity "Prototype" as thingprototype
+	entity "Process" as thingprocess
+	entity "Hosting Plan" as thinghostingplan
+	actor "Nsf Employee" as actornsfemployee
+	boundary "Low\nInterface" as thinglowinterface #grey
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	control "Switching The\nCloud.Gov Hosting\nPlan Over\nFrom Prototype\nTo Fisma\nLow" as controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	control "Understand The\nProcess" as controlunderstandprocess
+
+	thingfismalow <.. thingprototype
+	thingprototype <.. thinghostingplan
+	actornsfemployee --- thinglowinterface
+	actornsfemployee --- thingprocessinterface
+	thinghostingplan --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thingprototype --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thingfismalow --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thinglowinterface --> controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	controlswitchunderstandprocesscloud.govhostingplanprototypefismalow --> controlunderstandprocess
+	thingprocess --- controlunderstandprocess
+	thingprocessinterface --> controlunderstandprocess
+
+@enduml

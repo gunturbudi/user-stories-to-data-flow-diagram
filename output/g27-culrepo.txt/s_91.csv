@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Calendar,shape=partialRectangle,null,null,data_base
+201,Future Date,shape=partialRectangle,null,null,data_base
+202,Dataset,shape=partialRectangle,null,null,data_base
+203,Report,shape=partialRectangle,null,null,data_base
+204,Patron Fyi,shape=partialRectangle,null,null,data_base
+205,Release Date,shape=partialRectangle,null,null,data_base
+206,Db,rounded=0,null,null,external_entity
+207,Ir Administrator,rounded=0,null,null,external_entity
+208,Add Future Release Dates Of Reports To Calendar For Patron Fyi,ellipse,null,null,process
+209,Add Future Dates Of Dataset,ellipse,null,null,process
+211,,endArrow=classic,206,208,endArrow=classic
+212,,endArrow=classic,206,209,endArrow=classic
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,Release Date,endArrow=classic,208,205,endArrow=classic
+216,Report,endArrow=classic,208,203,endArrow=classic
+217,Patron Fyi,endArrow=classic,208,204,endArrow=classic
+218,Calendar,endArrow=classic,208,200,endArrow=classic
+219,Future Date,endArrow=classic,209,201,endArrow=classic
+220,Dataset,endArrow=classic,209,202,endArrow=classic

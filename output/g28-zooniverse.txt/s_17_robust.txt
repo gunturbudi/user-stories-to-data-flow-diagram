@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Geographical Map" as thinggeographicalmap
+	actor "User" as actoruser
+	boundary "Map\nInterface" as thingmapinterface #grey
+	control "Informed, Content\nAccess Walk" as controlwalkusegeographicalmap
+	control "Use A\nGeographical Map" as controlusegeographicalmap
+
+	actoruser --- thingmapinterface
+	thingmapinterface --> controlwalkusegeographicalmap
+	controlwalkusegeographicalmap --> controlusegeographicalmap
+	thinggeographicalmap --- controlusegeographicalmap
+	thingmapinterface --> controlusegeographicalmap
+
+@enduml

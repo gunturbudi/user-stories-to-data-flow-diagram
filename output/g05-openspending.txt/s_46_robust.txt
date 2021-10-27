@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Python Client" as thingpythonclient
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Client\nInterface" as thingclientinterface #grey
+	control "Have A\nFunctioning Python\nClient" as controlhavefunctioningpythonclient
+
+	actordatapublishinguser --- thingclientinterface
+	thingpythonclient --- controlhavefunctioningpythonclient
+	thingclientinterface --> controlhavefunctioningpythonclient
+
+@enduml

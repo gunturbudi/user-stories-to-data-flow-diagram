@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Pdf,shape=partialRectangle,null,null,data_base
+201,Presentation,shape=partialRectangle,null,null,data_base
+202,Etc,shape=partialRectangle,null,null,data_base
+203,Visitor,rounded=0,null,null,external_entity
+204,Download Pdf,ellipse,null,null,process
+205,Download Presentations,ellipse,null,null,process
+206,Download Etc,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Pdf,endArrow=classic,204,200,endArrow=classic
+212,Presentation,endArrow=classic,205,201,endArrow=classic
+213,Etc,endArrow=classic,206,202,endArrow=classic

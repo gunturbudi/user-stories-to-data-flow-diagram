@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	actor "Archivist" as actorarchivist
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Search Images" as controlsearchimage
+	control "Uploading An\nImage" as controluploadsearchimageimage
+
+	actorarchivist --- thingimageinterface
+	thingimage --- controlsearchimage
+	controluploadsearchimageimage --> controlsearchimage
+	thingimageinterface --> controlsearchimage
+	thingimage --- controluploadsearchimageimage
+	thingimageinterface --> controluploadsearchimageimage
+
+@enduml

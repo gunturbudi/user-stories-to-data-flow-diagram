@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingotherapp
+	entity "Type" as thingtype
+	entity "App" as thingapp
+	entity "Dataset Type" as thingdatasettype
+	entity "Version Conflict\nError" as thingversionconflicterror #grey
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	actor "App Developer" as actorappdeveloper
+	circle "New Version" as thingnewversion
+	circle "Different Version" as thingdifferentversion
+	boundary "Deployment" as thingdeployment
+	control "Shares Deploy\nA New\nVersion Of\nAn App\nIncludes A\nDifferent Version\nOf Dataset\nType Another\nApp This\nApp A\nDataset Instance\nOf This\nType With\nThe Other\nApp The\nDeployment Fail\nWith A\nVersion Conflict\nError" as controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	control "Ensure" as controlensure
+
+	thingotherapp <.. thingtype
+	thingdifferentversion <.. thingapp
+	thingdatasetinstance <.. thingdatasettype
+	thingapp <.. thingdatasettype
+	thingnewversion <.. thingversionconflicterror
+	thingtype <.. thingdatasetinstance
+	thingapp *-- thingnewversion
+	thingdatasettype *-- thingdifferentversion
+	actorappdeveloper --- thingdeployment
+	thingdeployment --> controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingversionconflicterror --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingnewversion --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdifferentversion --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdatasettype --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdatasetinstance --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingtype --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingotherapp --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingapp --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp --> controlensure
+	thingdeployment --> controlensure
+
+@enduml

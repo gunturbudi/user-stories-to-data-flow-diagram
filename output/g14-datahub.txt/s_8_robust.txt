@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Client" as thingclient
+	actor "Publisher" as actorpublisher
+	boundary "Client\nInterface" as thingclientinterface #grey
+	control "Configure Client" as controlconfigureclient
+
+	actorpublisher --- thingclientinterface
+	thingclient --- controlconfigureclient
+	thingclientinterface --> controlconfigureclient
+
+@enduml

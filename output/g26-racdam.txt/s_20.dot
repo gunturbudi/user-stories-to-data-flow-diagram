@@ -1,0 +1,6 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Working Paper " color=red];
+201 [label="Assistant Archivist" shape=box];
+202 [label="{<f0> 1.0|<f1> Tag Staff }" shape=Mrecord];
+}

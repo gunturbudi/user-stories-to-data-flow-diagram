@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Link " color=red];
+201 [label="<f0>  |<f1> Contextual Help " color=red];
+202 [label="<f0>  |<f1> Access " color=red];
+203 [label="Authenticated User" shape=box];
+204 [label="{<f0> 1.0|<f1> Get Access To Links To Contextual Help }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Access"]
+204 -> 200 [label="Link"]
+204 -> 201 [label="Contextual Help"]
+}

@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Useful Metadata" as thingusefulmetadata
+	entity "Dataset" as thingdataset
+	entity "Data Column" as thingdatacolumn
+	actor "Publisher" as actorpublisher
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Column\nInterface" as thingcolumninterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Add Useful\nMetadata" as controladdusefulmetadata
+	control "Add In\nNew Data\nColumns" as controladdnewdatacolumnsmakedataset
+	control "Make The\nDataset" as controlmakedataset
+
+	actorpublisher --- thingmetadatainterface
+	actorpublisher --- thingcolumninterface
+	actorpublisher --- thingdatasetinterface
+	thingusefulmetadata --- controladdusefulmetadata
+	thingmetadatainterface --> controladdusefulmetadata
+	thingdatacolumn --- controladdnewdatacolumnsmakedataset
+	thingcolumninterface --> controladdnewdatacolumnsmakedataset
+	controladdnewdatacolumnsmakedataset --> controlmakedataset
+	thingdataset --- controlmakedataset
+	thingdatasetinterface --> controlmakedataset
+
+@enduml

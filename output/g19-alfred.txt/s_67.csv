@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Appointment,shape=partialRectangle,null,null,data_base
+201,Reminder,shape=partialRectangle,null,null,data_base
+202,Olderperson,rounded=0,null,null,external_entity
+203,Receive Reminders On Appointments,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Reminder,endArrow=classic,203,201,endArrow=classic
+207,Appointment,endArrow=classic,203,200,endArrow=classic

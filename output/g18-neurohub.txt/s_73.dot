@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Display " ];
+201 [label="<f0>  |<f1> Associated Image " color=red];
+202 [label="<f0>  |<f1> Data File " color=red];
+203 [label="<f0>  |<f1> Timeline " ];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Have A Display Of Associated Image }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Have A Timeline Display Of Multiple Data Files }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Compare the data taken from experiments on particular dates }" shape=Mrecord];
+206 -> 3
+1001 [label="<f0>  |<f1> Data taken " color=red];
+3 -> 1001 [label="Data taken"]
+204 -> 205
+204 -> 206
+205 -> 200 [label="Display"]
+205 -> 201 [label="Associated Image"]
+206 -> 202 [label="Data File"]
+206 -> 200 [label="Display"]
+206 -> 203 [label="Timeline"]
+}

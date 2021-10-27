@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Learn more about my research,ellipse,null,null,process
+200,Author,shape=partialRectangle,null,null,data_base
+201,Work,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Contact The Author Of A Work Interests,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Author,endArrow=classic,203,200,endArrow=classic
+207,Work,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Research,rounded=0,null,null,external_entity
+1002,Research,endArrow=classic,2,1001,endArrow=classic

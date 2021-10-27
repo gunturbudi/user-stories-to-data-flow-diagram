@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Good Battery" as thinggoodbattery
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Have A\nVery Good\nBattery For\nAlfred" as controlhavegoodbatteryALFRED
+
+	thingALFRED <.. thinggoodbattery
+	actorOlderPerson --- thingalfredinterface
+	thinggoodbattery --- controlhavegoodbatteryALFRED
+	thingALFRED --- controlhavegoodbatteryALFRED
+	thingalfredinterface --> controlhavegoodbatteryALFRED
+
+@enduml

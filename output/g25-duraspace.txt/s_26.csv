@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Probable Importance,shape=partialRectangle,null,null,data_base
+201,User,shape=partialRectangle,null,null,data_base
+202,Description,shape=partialRectangle,null,null,data_base
+203,Object,shape=partialRectangle,null,null,data_base
+204,Repository Manager,rounded=0,null,null,external_entity
+205,Be Of Probable Importance To An User,ellipse,null,null,process
+206,Indicate Description,ellipse,null,null,process
+207,Indicate Any External Versions Of An Object,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Probable Importance,endArrow=classic,205,200,endArrow=classic
+213,User,endArrow=classic,205,201,endArrow=classic
+214,Description,endArrow=classic,206,202,endArrow=classic
+215,,endArrow=classic,207,205,endArrow=classic
+216,Object,endArrow=classic,207,203,endArrow=classic

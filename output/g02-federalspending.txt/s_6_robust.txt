@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Edit" as thingedit
+	actor "Ui Designer" as actoruidesigner
+	circle "3" as thing3
+	boundary "Help" as thinghelppageedituidesigner #grey
+	boundary "3\nInterface" as thing3interface #grey
+	control "Page Edits" as controlpageedit
+	control "Round 3\nOf" as controlround3
+	control "Move On" as controlmoveround3
+
+	actoruidesigner --- thinghelppageedituidesigner
+	actoruidesigner --- thing3interface
+	thingedit --- controlpageedit
+	controlround3 --> controlpageedit
+	thinghelppageedituidesigner --> controlpageedit
+	thing3 --- controlround3
+	thinghelppageedituidesigner --> controlround3
+	controlmoveround3 --> controlround3
+	thing3interface --> controlmoveround3
+
+@enduml

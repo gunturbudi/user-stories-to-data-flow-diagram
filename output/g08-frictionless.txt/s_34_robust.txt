@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hdf5 Integration" as thinghdf5integration #grey
+	actor "Developer" as actordeveloper
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	control "Provided With\nHdf5 Integration" as controlprovidehdf5integration
+
+	actordeveloper --- thingintegrationinterface
+	thinghdf5integration --- controlprovidehdf5integration
+	thingintegrationinterface --> controlprovidehdf5integration
+
+@enduml

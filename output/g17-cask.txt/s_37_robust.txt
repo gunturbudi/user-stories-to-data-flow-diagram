@@ -1,0 +1,49 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Option" as thingoption
+	entity "Upgrade" as thingupgrade
+	entity "Instance" as thinginstance #grey
+	entity "Type" as thingtype
+	entity "Procedure" as thingprocedure #grey
+	entity "Migration" as thingmigration #grey
+	entity "Dataset" as thingdataset #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "New Version" as thingnewversion
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Implementing A\nMigration Procedure\nRun After\nAn Upgrade\nOf A\nDataset Instance\nTo A\nNew Version\nOf" as controlimplementhaveoptionmigrationprocedure
+	control "Have The\nOption" as controlhaveoption
+	control "Implementing A\nProcedure Run\nAfter An\nUpgrade Of\nA Instance\nTo A\nNew Version\nOf Type" as controlimplementhaveoptionproceduretype
+
+	thingnewversion *-- thingupgrade
+	thinginstance *-- thingupgrade
+	thingdataset <.. thinginstance
+	thingnewversion <.. thinginstance
+	thingmigration <.. thingprocedure
+	thingupgrade <.. thingprocedure
+	thingtype *-- thingnewversion
+	thingnewversion *-- thingnewversion
+	actordatasetdeveloper --- thingversioninterface
+	actordatasetdeveloper --- thingoptioninterface
+	actordatasetdeveloper --- thingtypeinterface
+	thingupgrade --- controlimplementhaveoptionmigrationprocedure
+	thingnewversion --- controlimplementhaveoptionmigrationprocedure
+	thingversioninterface --> controlimplementhaveoptionmigrationprocedure
+	thinginstance --- controlimplementhaveoptionmigrationprocedure
+	thingprocedure --- controlimplementhaveoptionmigrationprocedure
+	controlimplementhaveoptionmigrationprocedure --> controlhaveoption
+	thingoption --- controlhaveoption
+	thingoptioninterface --> controlhaveoption
+	controlimplementhaveoptionproceduretype --> controlhaveoption
+	thingprocedure --- controlimplementhaveoptionproceduretype
+	thinginstance --- controlimplementhaveoptionproceduretype
+	thingtype --- controlimplementhaveoptionproceduretype
+	thingtypeinterface --> controlimplementhaveoptionproceduretype
+	thingnewversion --- controlimplementhaveoptionproceduretype
+	thingupgrade --- controlimplementhaveoptionproceduretype
+
+@enduml

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Ingest " color=red];
+202 [label="<f0>  |<f1> Repository Staff " ];
+203 [label="<f0>  |<f1> Document ,\nSimple Format " ];
+204 [label="<f0>  |<f1> Metadata " color=red];
+205 [label="Batch Submitter" shape=box];
+206 [label="{<f0> 1.0|<f1> Provide Metadata }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Provide Data In A Documented, Simple Format To The Repository Staff For Ingest }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 204 [label="Metadata"]
+207 -> 200 [label="Datum"]
+207 -> 203 [label="Document ,\nSimple Format"]
+207 -> 202 [label="Repository Staff"]
+207 -> 201 [label="Ingest"]
+}

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingpage
+	entity "Search Result" as thingsearchresult
+	actor "User" as actoruser
+	circle "Provenance" as thingprovenance
+	boundary "Result\nInterface" as thingresultinterface #grey
+	control "See The\nProvenance Of\nThe Page\nAs Part\nOf The\nSearch Results" as controlseeprovenancepart
+
+	thingsearchresult <.. thingpage
+	thingpage *-- thingprovenance
+	actoruser --- thingresultinterface
+	thingprovenance --- controlseeprovenancepart
+	thingpage --- controlseeprovenancepart
+	thingsearchresult --- controlseeprovenancepart
+	thingresultinterface --> controlseeprovenancepart
+
+@enduml

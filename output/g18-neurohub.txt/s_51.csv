@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Multiple File,shape=partialRectangle,null,null,data_base
+201,Log Book\nPage,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Attach Multiple Files To A Log Book Page,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Multiple File,endArrow=classic,203,200,endArrow=classic
+207,Log Book\nPage,endArrow=classic,203,201,endArrow=classic

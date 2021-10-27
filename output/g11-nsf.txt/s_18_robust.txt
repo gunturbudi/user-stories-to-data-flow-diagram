@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cms Implementation" as thingcmsimplementation #grey
+	actor "Nsf Administrator" as actornsfadministrator
+	boundary "Implementation\nInterface" as thingimplementationinterface #grey
+	control "Shadow The\nCms Implementation" as controlshadowcmsimplementation
+
+	actornsfadministrator --- thingimplementationinterface
+	thingcmsimplementation --- controlshadowcmsimplementation
+	thingimplementationinterface --> controlshadowcmsimplementation
+
+@enduml

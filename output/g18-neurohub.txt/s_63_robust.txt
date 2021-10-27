@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Workflow" as thingworkflow
+	entity "Log Book" as thinglogbook
+	actor "User" as actoruser
+	circle "Detail" as thingdetail
+	circle "Execution" as thingexecution #grey
+	boundary "Workflow\nInterface" as thingworkflowinterface #grey
+	control "Have The\nDetails Of\nThe Workflow\nExecution To\nRecorded In\nA Neurohub\nLog Book\nExecuting A\nWorkflow" as controlhavedetail
+
+	thinglogbook <.. thingworkflow
+	thingworkflow <.. thingworkflow
+	thingworkflow <.. thinglogbook
+	thingexecution *-- thingdetail
+	thingworkflow *-- thingdetail
+	thinglogbook *-- thingexecution
+	thingworkflow *-- thingexecution
+	actoruser --- thingworkflowinterface
+	thingdetail --- controlhavedetail
+	thingexecution --- controlhavedetail
+	thinglogbook --- controlhavedetail
+	thingworkflow --- controlhavedetail
+	thingworkflowinterface --> controlhavedetail
+
+@enduml

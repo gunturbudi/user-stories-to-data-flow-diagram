@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "New Content" as thingnewcontent
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Come To\nThe Site" as controlcomeseenewcontentsite
+	control "See New\nContent" as controlseenewcontent
+
+	actorsitevisitor --- thingsiteinterface
+	actorsitevisitor --- thingcontentinterface
+	thingsite --- controlcomeseenewcontentsite
+	thingsiteinterface --> controlcomeseenewcontentsite
+	controlcomeseenewcontentsite --> controlseenewcontent
+	thingnewcontent --- controlseenewcontent
+	thingcontentinterface --> controlseenewcontent
+
+@enduml

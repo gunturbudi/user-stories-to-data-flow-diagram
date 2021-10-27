@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Subject " color=red];
+201 [label="<f0>  |<f1> Name " color=red];
+202 [label="<f0>  |<f1> Creator " ];
+203 [label="<f0>  |<f1> Collection " color=red];
+204 [label="<f0>  |<f1> Source " color=red];
+205 [label="Repository Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Indicate Names To The Collection As Source }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Indicate Names To The Collection As Creator }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Indicate Names To The Collection As Subject }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 204 [label="Source"]
+206 -> 201 [label="Name"]
+206 -> 203 [label="Collection"]
+207 -> 201 [label="Name"]
+207 -> 203 [label="Collection"]
+207 -> 202 [label="Creator"]
+208 -> 200 [label="Subject"]
+208 -> 201 [label="Name"]
+208 -> 203 [label="Collection"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	actor "Data Manager" as actordatamanager
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Know Which\nInformation Necessary" as controlknowinformation
+
+	actordatamanager --- thinginformationinterface
+	thinginformation --- controlknowinformation
+	thinginformationinterface --> controlknowinformation
+
+@enduml

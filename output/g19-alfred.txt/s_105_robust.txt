@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Medication" as thingmedication
+	entity "Specific Tip" as thingspecifictip
+	entity "Health Impairment" as thinghealthimpairment
+	actor "Olderperson" as actorOlderPerson
+	boundary "Tip\nInterface" as thingtipinterface #grey
+	control "Reduce Health\nImpairments Without\nMedication" as controlreducehealthimpairmentsmedication
+	control "Receive Specific\nTips" as controlreceivespecifictipreducehealthimpairmentsmedication
+
+	thingmedication <.. thinghealthimpairment
+	actorOlderPerson --- thingtipinterface
+	thinghealthimpairment --- controlreducehealthimpairmentsmedication
+	thingmedication --- controlreducehealthimpairmentsmedication
+	controlreceivespecifictipreducehealthimpairmentsmedication --> controlreducehealthimpairmentsmedication
+	thingtipinterface --> controlreducehealthimpairmentsmedication
+	thingspecifictip --- controlreceivespecifictipreducehealthimpairmentsmedication
+	thingtipinterface --> controlreceivespecifictipreducehealthimpairmentsmedication
+
+@enduml

@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Incremental Accrual,shape=partialRectangle,null,null,data_base
+201,New Collection,shape=partialRectangle,null,null,data_base
+202,Donor Representative,rounded=0,null,null,external_entity
+203,Supply Incremental Accruals To,ellipse,null,null,process
+204,Exist,ellipse,null,null,process
+205,Supply Incremental Accruals To New Collections,ellipse,null,null,process
+207,,endArrow=classic,202,203,endArrow=classic
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,,endArrow=classic,203,204,endArrow=classic
+211,Incremental Accrual,endArrow=classic,203,200,endArrow=classic
+212,Incremental Accrual,endArrow=classic,205,200,endArrow=classic
+213,New Collection,endArrow=classic,205,201,endArrow=classic

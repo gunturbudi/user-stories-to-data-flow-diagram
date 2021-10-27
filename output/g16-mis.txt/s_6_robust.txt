@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search String" as thingsearchstring #grey
+	entity "Date Delimiter" as thingdatedelimiter #grey
+	actor "Faculty Member" as actorfacultymember
+	boundary "String\nInterface" as thingstringinterface #grey
+	control "Add A\nDate Delimiter\nTo A\nSearch String" as controladddatedelimitersearchstring
+
+	thingsearchstring <.. thingdatedelimiter
+	actorfacultymember --- thingstringinterface
+	thingdatedelimiter --- controladddatedelimitersearchstring
+	thingsearchstring --- controladddatedelimitersearchstring
+	thingstringinterface --> controladddatedelimitersearchstring
+
+@enduml

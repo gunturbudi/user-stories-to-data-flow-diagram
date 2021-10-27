@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Web Page " ];
+201 [label="<f0>  |<f1> Group " color=red];
+202 [label="<f0>  |<f1> Neurohub Node " ];
+203 [label="<f0>  |<f1> Mobile Device " color=red];
+204 [label="<f0>  |<f1> Share Calendar " ];
+205 [label="User" shape=box];
+206 [label="{<f0> 1.0|<f1> View The Group Shared Calendars On Mobile Device }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> View The Group's Shared Calendars As Well Via The Neurohub Nodes' Web Page }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 203 [label="Mobile Device"]
+206 -> 204 [label="Share Calendar"]
+207 -> 204 [label="Share Calendar"]
+207 -> 200 [label="Web Page"]
+206 -> 201 [label="Group"]
+207 -> 202 [label="Neurohub Node"]
+}

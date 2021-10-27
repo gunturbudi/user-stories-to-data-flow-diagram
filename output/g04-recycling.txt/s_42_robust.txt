@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	entity "Recycling Center" as thingrecyclingcenter
+	actor "Admin" as actoradmin
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Onboard Recycling\nCenters On\nThe Platform" as controlonboardrecyclingcentersplatform
+
+	thingplatform <.. thingrecyclingcenter
+	actoradmin --- thingplatforminterface
+	thingrecyclingcenter --- controlonboardrecyclingcentersplatform
+	thingplatform --- controlonboardrecyclingcentersplatform
+	thingplatforminterface --> controlonboardrecyclingcentersplatform
+
+@enduml

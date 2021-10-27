@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "New App" as thingnewapp
+	entity "Alfredo Platform" as thingalfredoplatform #grey
+	entity "Alfred Device" as thingalfreddevice #grey
+	actor "Olderperson" as actorOlderPerson
+	circle "Change Demand" as thingchangingdemand
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Have An\nAlfred Device\nResponds To\nThe Changing\nDemand Of\nThe Users" as controlhavealfreddevice
+	control "Offering New\nApps In\nThe Alfredo\nPlatform" as controlofferhavealfreddevicenewapp
+
+	thingalfredoplatform <.. thingnewapp
+	thingchangingdemand <.. thingalfreddevice
+	thinguser *-- thingchangingdemand
+	actorOlderPerson --- thingplatforminterface
+	thingalfreddevice --- controlhavealfreddevice
+	thingchangingdemand --- controlhavealfreddevice
+	thinguser --- controlhavealfreddevice
+	controlofferhavealfreddevicenewapp --> controlhavealfreddevice
+	thingplatforminterface --> controlhavealfreddevice
+	thingnewapp --- controlofferhavealfreddevicenewapp
+	thingalfredoplatform --- controlofferhavealfreddevicenewapp
+	thingplatforminterface --> controlofferhavealfreddevicenewapp
+
+@enduml

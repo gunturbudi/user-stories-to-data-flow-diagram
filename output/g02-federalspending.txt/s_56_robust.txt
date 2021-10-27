@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Schema" as thingschema
+	entity "Maximum Length" as thingmaximumlength
+	entity "Legalentityaddressline3" as thingLegalEntityAddressLine3
+	actor "Agency User" as actoragencyuser
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	control "Legalentityaddressline3 Match\nSchema" as controlmatchLegalEntityAddressLine3schema
+
+	thingschema <.. thingLegalEntityAddressLine3
+	actoragencyuser --- thingschemainterface
+	thingLegalEntityAddressLine3 --- controlmatchLegalEntityAddressLine3schema
+	thingschema --- controlmatchLegalEntityAddressLine3schema
+	thingschemainterface --> controlmatchLegalEntityAddressLine3schema
+
+@enduml

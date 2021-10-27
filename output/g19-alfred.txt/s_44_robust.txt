@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "Light" as thinglight
+	actor "Olderperson" as actorOlderPerson
+	boundary "Light\nInterface" as thinglightinterface #grey
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "Use Alfred" as controluseALFREDturnturnoff
+	control "Turn Off\nThe Lights" as controlturnoff
+	control "Turn On" as controlturn
+
+	actorOlderPerson --- thinglightinterface
+	actorOlderPerson --- thingalfredinterface
+	thingALFRED --- controluseALFREDturnturnoff
+	thingalfredinterface --> controluseALFREDturnturnoff
+	controluseALFREDturnturnoff --> controlturnoff
+	thinglight --- controlturnoff
+	thinglightinterface --> controlturnoff
+	thingalfredinterface --> controlturn
+	controluseALFREDturnturnoff --> controlturn
+
+@enduml

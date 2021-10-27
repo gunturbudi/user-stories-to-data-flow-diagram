@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Statement,shape=partialRectangle,null,null,data_base
+201,Rights Status,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Select Existing Rights Statuses,ellipse,null,null,process
+204,Select Statement,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Rights Status,endArrow=classic,203,201,endArrow=classic
+209,Statement,endArrow=classic,204,200,endArrow=classic

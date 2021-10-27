@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Level" as thingsponsorshiplevel
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	control "Learn About\nSponsorship Levels" as controllearnsponsorshiplevels
+
+	actoranonymoususer --- thinglevelinterface
+	thingsponsorshiplevel --- controllearnsponsorshiplevels
+	thinglevelinterface --> controllearnsponsorshiplevels
+
+@enduml

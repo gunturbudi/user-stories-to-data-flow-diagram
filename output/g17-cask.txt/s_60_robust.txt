@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Explore Table" as thingexploretable #grey
+	actor "User" as actoruser
+	circle "Correspond Update" as thingcorrespondingupdate
+	control "Ensure" as controlensure
+
+	thingexploretable *-- thingcorrespondingupdate
+
+@enduml

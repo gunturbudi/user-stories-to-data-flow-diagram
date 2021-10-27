@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Schedule,shape=partialRectangle,null,null,data_base
+201,Week,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,Upload Week's Schedule,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Schedule,endArrow=classic,203,200,endArrow=classic
+207,Week,endArrow=classic,203,201,endArrow=classic

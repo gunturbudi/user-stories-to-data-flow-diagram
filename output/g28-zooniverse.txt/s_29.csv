@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Volunteer Type,shape=partialRectangle,null,null,data_base
+201,Zooniverse Admin,rounded=0,null,null,external_entity
+202,Identify Volunteer Types,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Volunteer Type,endArrow=classic,202,200,endArrow=classic

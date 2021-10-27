@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Submission" as thingsubmission
+	actor "Agency User" as actoragencyuser
+	control "See" as controlsee
+
+
+@enduml

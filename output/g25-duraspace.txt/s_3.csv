@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Curatorial Access,shape=partialRectangle,null,null,data_base
+201,Unit,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,Constrain Curatorial Access To Units,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Curatorial Access,endArrow=classic,203,200,endArrow=classic
+207,Unit,endArrow=classic,203,201,endArrow=classic

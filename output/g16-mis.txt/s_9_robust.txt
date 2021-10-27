@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Replication Policy" as thingreplicationpolicy
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Specify The\nRemote Replication\nPolicy For\nEach Collection" as controlspecifyremotereplicationpolicy
+
+	thingcollection <.. thingreplicationpolicy
+	actorrepositorymanager --- thingcollectioninterface
+	thingreplicationpolicy --- controlspecifyremotereplicationpolicy
+	thingcollection --- controlspecifyremotereplicationpolicy
+	thingcollectioninterface --> controlspecifyremotereplicationpolicy
+
+@enduml

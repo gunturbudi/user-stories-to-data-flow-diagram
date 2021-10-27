@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	entity "Publisher" as thingpublisher
+	actor "Consumer" as actorconsumer
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "View A\nPublisher's Profile" as controlviewprofile
+
+	thingpublisher <.. thingprofile
+	actorconsumer --- thingprofileinterface
+	thingprofile --- controlviewprofile
+	thingprofileinterface --> controlviewprofile
+
+@enduml

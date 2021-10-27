@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Detail" as thingdetail
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Type" as thingtype
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Provided With\nDetails On\nThe Type\nOf Data" as controlprovidedetail
+
+	thingtype <.. thingdetail
+	thingdatum *-- thingtype
+	actorrepositorymanager --- thingdatuminterface
+	thingdetail --- controlprovidedetail
+	thingtype --- controlprovidedetail
+	thingdatum --- controlprovidedetail
+	thingdatuminterface --> controlprovidedetail
+
+@enduml

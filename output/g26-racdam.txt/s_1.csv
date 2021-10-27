@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,License Statement,shape=partialRectangle,null,null,data_base
+201,Right,shape=partialRectangle,null,null,data_base
+202,Archivist,rounded=0,null,null,external_entity
+203,Apply A License Statement,ellipse,null,null,process
+204,Apply Right,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,License Statement,endArrow=classic,203,200,endArrow=classic
+209,Right,endArrow=classic,204,201,endArrow=classic

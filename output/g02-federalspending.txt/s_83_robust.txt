@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Logic" as thinglogic
+	entity "Code" as thingcode #grey
+	entity "Information" as thingenoughinformation
+	entity "Error" as thingerror #grey
+	actor "Broker User" as actorbrokeruser
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Logic\nInterface" as thinglogicinterface #grey
+	control "Provide Enough\nInformation" as controlprovideenoughinformation
+	control "Updated Error\nCodes Accurately\nReflect The\nLogic" as controlupdateerrorcodes
+	control "Updated Codes" as controlupdatecodeprovideenoughinformation
+
+	thingerror <.. thingcode
+	thinglogic <.. thingcode
+	actorbrokeruser --- thingcodeinterface
+	actorbrokeruser --- thinglogicinterface
+	thingenoughinformation --- controlprovideenoughinformation
+	controlupdatecodeprovideenoughinformation --> controlprovideenoughinformation
+	thingcodeinterface --> controlprovideenoughinformation
+	thinglogic --- controlupdateerrorcodes
+	thinglogicinterface --> controlupdateerrorcodes
+	thingcode --- controlupdateerrorcodes
+	thingcode --- controlupdatecodeprovideenoughinformation
+	thingcodeinterface --> controlupdatecodeprovideenoughinformation
+
+@enduml

@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Mechanism,shape=partialRectangle,null,null,data_base
+201,Note,shape=partialRectangle,null,null,data_base
+202,Researcher,shape=partialRectangle,null,null,data_base
+203,Sharing Paper,shape=partialRectangle,null,null,data_base
+204,User,rounded=0,null,null,external_entity
+205,Provided With A Mechanism For Note With Other Researchers,ellipse,null,null,process
+206,Provided With A Mechanism For Electronically Sharing Papers,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Note,endArrow=classic,205,201,endArrow=classic
+211,Researcher,endArrow=classic,205,202,endArrow=classic
+212,Mechanism,endArrow=classic,205,200,endArrow=classic
+213,Mechanism,endArrow=classic,206,200,endArrow=classic
+214,Sharing Paper,endArrow=classic,206,203,endArrow=classic

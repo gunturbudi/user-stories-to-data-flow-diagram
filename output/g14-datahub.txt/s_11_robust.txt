@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	actor "Publisher" as actorpublisher
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "Delete A\nData Package" as controldeletedatapackage
+
+	actorpublisher --- thingpackageinterface
+	thingdatapackage --- controldeletedatapackage
+	thingpackageinterface --> controldeletedatapackage
+
+@enduml

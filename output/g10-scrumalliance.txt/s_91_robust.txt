@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fee" as thingfee
+	entity "Practitioner Status" as thingpractitionerstatus #grey
+	actor "Csm" as actorcsm
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "Approved For\nPractitioner Status" as controlapprovechargefeepractitionerstatus
+	control "Charged A\nFee" as controlchargefee
+
+	actorcsm --- thingstatusinterface
+	actorcsm --- thingfeeinterface
+	thingpractitionerstatus --- controlapprovechargefeepractitionerstatus
+	thingstatusinterface --> controlapprovechargefeepractitionerstatus
+	controlapprovechargefeepractitionerstatus --> controlchargefee
+	thingfee --- controlchargefee
+	thingfeeinterface --> controlchargefee
+
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publication" as thingpublication
+	entity "Researcher" as thingresearcher
+	entity "Citation" as thingcitation
+	actor "Archivist" as actorarchivist
+	circle "Electronic Version" as thingelectronicversion
+	boundary "Citation\nInterface" as thingcitationinterface #grey
+	control "Link Electronic\nVersions Of\nResearchers' Publications\nTo Citations" as controllinkelectronicversioncitation
+
+	thingresearcher <.. thingpublication
+	thingcitation <.. thingpublication
+	thingpublication *-- thingelectronicversion
+	actorarchivist --- thingcitationinterface
+	thingelectronicversion --- controllinkelectronicversioncitation
+	thingpublication --- controllinkelectronicversioncitation
+	thingcitation --- controllinkelectronicversioncitation
+	thingcitationinterface --> controllinkelectronicversioncitation
+
+@enduml

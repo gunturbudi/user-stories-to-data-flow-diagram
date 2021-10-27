@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Link" as thinglink
+	entity "Sponsorships Page" as thingsponsorshipspage #grey
+	actor "Authenticateduser" as actorauthenticateduser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Find A\nTo Link\nOn The\nSponsorships Page\nA $\nLevel Sponsor" as controlfindlink
+
+	thingsponsorshipspage <.. thinglink
+	actorauthenticateduser --- thingpageinterface
+	thinglink --- controlfindlink
+	thingsponsorshipspage --- controlfindlink
+	thingpageinterface --> controlfindlink
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "Search Results\nPage" as thingsearchresultspage #grey
+	actor "User" as actoruser
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Download Files\nFrom The\nSearch Results\nPage" as controldownloadfilesearchresultspage
+
+	thingsearchresultspage <.. thingfile
+	actoruser --- thingpageinterface
+	thingfile --- controldownloadfilesearchresultspage
+	thingsearchresultspage --- controldownloadfilesearchresultspage
+	thingpageinterface --> controldownloadfilesearchresultspage
+
+@enduml

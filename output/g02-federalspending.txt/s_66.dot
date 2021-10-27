@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Wrong Extension " ];
+201 [label="<f0>  |<f1> File " color=red];
+202 [label="Agency User" shape=box];
+203 [label="{<f0> 1.0|<f1> Upload A File With The Wrong Extension }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Receive A More Helpful File Level Error }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+203 -> 201
+203 -> 200
+}

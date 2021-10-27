@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Available Tag " ];
+201 [label="<f0>  |<f1> Tag Video " ];
+202 [label="<f0>  |<f1> Processing Step " ];
+203 [label="User" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Available Tags For All Further Processing Steps }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Upload Tagged Videos }" shape=Mrecord];
+203 -> 205
+204 -> 200 [label="Available Tag"]
+204 -> 202 [label="Processing Step"]
+205 -> 201 [label="Tag Video"]
+}

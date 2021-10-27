@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Audit " color=red];
+201 [label="<f0>  |<f1> Ui Sme " ];
+202 [label="Owner" shape=box];
+203 [label="{<f0> 1.0|<f1> Design An Audit From The Ui Sme }" shape=Mrecord];
+202 -> 203
+203 -> 200
+203 -> 201
+}

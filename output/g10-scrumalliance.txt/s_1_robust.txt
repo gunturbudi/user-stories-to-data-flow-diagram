@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingownpage
+	entity "Structured Way" as thingstructuredway
+	actor "Site Member" as actorsitemember
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Describe On\nOwn Page\nIn A\nStructured Way" as controldescribeownpage
+
+	thingstructuredway <.. thingownpage
+	actorsitemember --- thingwayinterface
+	thingownpage --- controldescribeownpage
+	thingstructuredway --- controldescribeownpage
+	thingwayinterface --> controldescribeownpage
+
+@enduml

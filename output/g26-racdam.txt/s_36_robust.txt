@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Image" as thingimage
+	actor "Researcher" as actorresearcher
+	circle "Copyright Status" as thingcopyrightstatus
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Understand The\nCopyright Status\nOf The\nImage" as controlunderstandcopyrightstatus
+
+	thingimage *-- thingcopyrightstatus
+	actorresearcher --- thingimageinterface
+	thingcopyrightstatus --- controlunderstandcopyrightstatus
+	thingimage --- controlunderstandcopyrightstatus
+	thingimageinterface --> controlunderstandcopyrightstatus
+
+@enduml

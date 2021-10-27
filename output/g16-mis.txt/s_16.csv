@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Permission,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Collection Curator,rounded=0,null,null,external_entity
+203,Have Items,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Item,endArrow=classic,203,201,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Frec Paradigm" as thingfrecparadigm
+	entity "Fabs Group" as thingfabsgroup
+	actor "Developer" as actordeveloper
+	boundary "Paradigm\nInterface" as thingparadigminterface #grey
+	control "Provide Fabs\nGroups Function\nUnder The\nFrec Paradigm" as controlprovidefabsgroups
+
+	thingfrecparadigm <.. thingfabsgroup
+	actordeveloper --- thingparadigminterface
+	thingfabsgroup --- controlprovidefabsgroups
+	thingfrecparadigm --- controlprovidefabsgroups
+	thingparadigminterface --> controlprovidefabsgroups
+
+@enduml

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Vital Parameter" as thingvitalparameter
+	entity "Phone" as thingphone
+	entity "-pron-" as thingmoinsPRONmoins
+	actor "Olderperson" as actorOlderPerson
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	control "See -Pron-" as controlseemoinsPRONmoins
+	control "See Vital\nParameters On\nThe Phone" as controlseevitalparameter
+
+	thingphone <.. thingvitalparameter
+	actorOlderPerson --- thingproninterface
+	actorOlderPerson --- thingphoneinterface
+	thingmoinsPRONmoins --- controlseemoinsPRONmoins
+	thingproninterface --> controlseemoinsPRONmoins
+	thingvitalparameter --- controlseevitalparameter
+	thingphone --- controlseevitalparameter
+	thingphoneinterface --> controlseevitalparameter
+
+@enduml

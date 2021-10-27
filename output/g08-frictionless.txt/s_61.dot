@@ -1,0 +1,21 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Source " ];
+201 [label="<f0>  |<f1> Proxy Package " ];
+202 [label="<f0>  |<f1> Know Datum " ];
+203 [label="<f0>  |<f1> App " ];
+204 [label="<f0>  |<f1> Reliable " ];
+205 [label="<f0>  |<f1> Data Package " color=red];
+206 [label="Researcher" shape=box];
+207 [label="{<f0> 1.0|<f1> Provided With An App Create Proxy Data Packages For Well Know Data Sources }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Provided With An App Create Proxy Packages For Reliable }" shape=Mrecord];
+206 -> 207
+206 -> 208
+207 -> 203 [label="App"]
+207 -> 205 [label="Data Package"]
+207 -> 202 [label="Know Datum"]
+207 -> 200 [label="Source"]
+208 -> 201 [label="Proxy Package"]
+208 -> 204 [label="Reliable"]
+208 -> 203 [label="App"]
+}

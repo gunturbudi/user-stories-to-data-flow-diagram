@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	circle "Model" as thingmodel
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Edit The\nModel Of\nData" as controleditmodel
+
+	thingdatum *-- thingmodel
+	actordatapublishinguser --- thingdatuminterface
+	thingmodel --- controleditmodel
+	thingdatum --- controleditmodel
+	thingdatuminterface --> controleditmodel
+
+@enduml

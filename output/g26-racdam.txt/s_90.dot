@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="Archivist" shape=box];
+202 [label="{<f0> 1.0|<f1> Find Files Not Publicly Made }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="File"]
+}

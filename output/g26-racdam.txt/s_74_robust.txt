@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Question" as thingquestion
+	entity "Specific File" as thingspecificfile
+	actor "Researcher" as actorresearcher
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Ask A\nQuestion About\nA Specific\nFile" as controlaskquestion
+
+	thingspecificfile <.. thingquestion
+	actorresearcher --- thingfileinterface
+	thingquestion --- controlaskquestion
+	thingspecificfile --- controlaskquestion
+	thingfileinterface --> controlaskquestion
+
+@enduml

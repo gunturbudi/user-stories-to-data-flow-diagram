@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Date " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="Collection Curator" shape=box];
+203 [label="{<f0> 1.0|<f1> Set A Date }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Delete }" shape=Mrecord];
+205 [label="{<f0> 3.0|<f1> Hide }" shape=Mrecord];
+206 [label="{<f0> 4.0|<f1> Set A Date Which Data Expire }" shape=Mrecord];
+202 -> 203
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 204
+203 -> 205
+203 -> 200 [label="Date"]
+206 -> 200 [label="Date"]
+206 -> 201 [label="Datum"]
+}

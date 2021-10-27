@@ -1,0 +1,7 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Current Round " ];
+201 [label="<f0>  |<f1> Estimate " color=red];
+202 [label="Participant" shape=box];
+203 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+}

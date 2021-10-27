@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Public Dataset " ];
+201 [label="Platform Administrator" shape=box];
+202 [label="{<f0> 1.0|<f1> Hide Any Already Public Dataset }" shape=Mrecord];
+201 -> 202
+202 -> 200
+}

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Website" as thingwebsite
+	entity "Scrum" as thingscrum
+	entity "Basic" as thingbasic
+	actor "Site Visitor" as actorsitevisitor
+	circle "Section" as thingsection
+	boundary "Scrum\nInterface" as thingscruminterface #grey
+	control "View A\nSection Of\nThe Website\nTeaches Me\nThe Basics\nWhat Scrum\nIs" as controlviewsection
+
+	thingbasic <.. thingwebsite
+	thingscrum <.. thingbasic
+	thingwebsite *-- thingsection
+	actorsitevisitor --- thingscruminterface
+	thingsection --- controlviewsection
+	thingwebsite --- controlviewsection
+	thingbasic --- controlviewsection
+	thingscrum --- controlviewsection
+	thingscruminterface --> controlviewsection
+
+@enduml

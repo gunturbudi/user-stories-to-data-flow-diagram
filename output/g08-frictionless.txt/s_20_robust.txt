@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "C++" as thingcplusplus
+	entity "Second" as thingsecond
+	entity "Data Package" as thingdatapackage #grey
+	actor "Developer" as actordeveloper
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto C++\nIn Seconds" as controlgetdatapackagecplusplussecond
+
+	thingsecond <.. thingcplusplus
+	thingcplusplus <.. thingdatapackage
+	actordeveloper --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackagecplusplussecond
+	thingcplusplus --- controlgetdatapackagecplusplussecond
+	thingsecond --- controlgetdatapackagecplusplussecond
+	thingsecondinterface --> controlgetdatapackagecplusplussecond
+
+@enduml

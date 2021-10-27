@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Comment" as thingcomment
+	entity "Article" as thingarticle
+	actor "Site Visitor" as actorsitevisitor
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Post Comments\nAbout Articles" as controlpostcomment
+
+	thingarticle <.. thingcomment
+	actorsitevisitor --- thingarticleinterface
+	thingcomment --- controlpostcomment
+	thingarticle --- controlpostcomment
+	thingarticleinterface --> controlpostcomment
+
+@enduml

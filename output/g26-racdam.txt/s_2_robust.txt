@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Individual File" as thingindividualfile
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Mark Individual\nFiles" as controlmarkindividualfile
+
+	actorarchivist --- thingfileinterface
+	thingindividualfile --- controlmarkindividualfile
+	thingfileinterface --> controlmarkindividualfile
+
+@enduml

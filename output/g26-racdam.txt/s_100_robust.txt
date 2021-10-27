@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata Field" as thingmetadatafield
+	actor "Administrator" as actoradministrator
+	control "Limit" as controllimit
+
+
+@enduml

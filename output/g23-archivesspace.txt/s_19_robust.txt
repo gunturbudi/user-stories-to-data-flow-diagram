@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agent Record" as thingagentrecord
+	entity "Eac Cpf" as thingeaccpf
+	actor "Archivist" as actorarchivist
+	boundary "Cpf\nInterface" as thingcpfinterface #grey
+	control "Export Agent\nRecords As\nEac Cpf" as controlexportagentrecordseacCPF
+
+	thingeaccpf <.. thingagentrecord
+	actorarchivist --- thingcpfinterface
+	thingagentrecord --- controlexportagentrecordseacCPF
+	thingeaccpf --- controlexportagentrecordseacCPF
+	thingcpfinterface --> controlexportagentrecordseacCPF
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	actor "Owner" as actorowner
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Edit Profile" as controleditprofile
+
+	actorowner --- thingprofileinterface
+	thingprofile --- controleditprofile
+	thingprofileinterface --> controleditprofile
+
+@enduml

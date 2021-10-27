@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Time" as thingsametime
+	entity "Estimate" as thingestimate
+	actor "Participant" as actorparticipant
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	control "Shown All\nEstimates At\nThe Same\nTime" as controlshowestimatesametime
+
+	thingsametime <.. thingestimate
+	actorparticipant --- thingtimeinterface
+	thingestimate --- controlshowestimatesametime
+	thingsametime --- controlshowestimatesametime
+	thingtimeinterface --> controlshowestimatesametime
+
+@enduml

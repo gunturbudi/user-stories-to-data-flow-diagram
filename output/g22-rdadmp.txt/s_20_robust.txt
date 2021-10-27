@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Conservation Period" as thingconservationperiod #grey
+	entity "Advance" as thingadvance
+	actor "Archivemanager" as actorarchivemanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Know In\nAdvance The\nConservation Period\nOf Data" as controlknowadvanceconservationperiod
+
+	thingdatum <.. thingconservationperiod
+	thingconservationperiod <.. thingadvance
+	actorarchivemanager --- thingdatuminterface
+	thingadvance --- controlknowadvanceconservationperiod
+	thingconservationperiod --- controlknowadvanceconservationperiod
+	thingdatum --- controlknowadvanceconservationperiod
+	thingdatuminterface --> controlknowadvanceconservationperiod
+
+@enduml

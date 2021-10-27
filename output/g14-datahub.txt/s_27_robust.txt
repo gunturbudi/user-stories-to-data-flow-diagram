@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish Package" as thingpublishedpackage
+	actor "Publisher" as actorpublisher
+	circle "Real Example" as thingrealexample
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	control "See Real\nExamples Of\nPublished Packages" as controlseerealexample
+
+	thingpublishedpackage *-- thingrealexample
+	actorpublisher --- thingpackageinterface
+	thingrealexample --- controlseerealexample
+	thingpublishedpackage --- controlseerealexample
+	thingpackageinterface --> controlseerealexample
+
+@enduml

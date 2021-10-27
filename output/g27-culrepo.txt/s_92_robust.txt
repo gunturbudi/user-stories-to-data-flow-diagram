@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Digital Collection" as thingdigitalcollection
+	entity "Repository" as thingrepository
+	actor "Faculty Member" as actorfacultymember
+	control "Recommend" as controlrecommend
+
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interface" as thinginterface
+	entity "Dataset Type" as thingdatasettype #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Implementation" as thingimplementation
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Separate The\nInterface From\nThe Implementation\nOf A\nDataset Type" as controlseparateinterfaceimplementation
+
+	thingimplementation <.. thinginterface
+	thingdatasettype *-- thingimplementation
+	actordatasetdeveloper --- thingtypeinterface
+	thinginterface --- controlseparateinterfaceimplementation
+	thingimplementation --- controlseparateinterfaceimplementation
+	thingdatasettype --- controlseparateinterfaceimplementation
+	thingtypeinterface --> controlseparateinterfaceimplementation
+
+@enduml

@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Content File" as thingcontentfile
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Know For\nAny Of\nRepository's Content\nFiles Have\nChanged" as controlknowany
+
+	actorrepositorymanager --- thingfileinterface
+	thingcontentfile --- controlknowany
+	thingfileinterface --> controlknowany
+
+@enduml

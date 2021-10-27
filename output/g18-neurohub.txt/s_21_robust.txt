@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Gb" as thingoverGB
+	entity "Size" as thingsize
+	actor "User" as actoruser
+	circle "Large File" as thinglargefile
+	boundary "Size\nInterface" as thingsizeinterface #grey
+	control "Upload Large\nFiles Of\nOver Gb\nIn Size" as controluploadlargefile
+
+	thingsize <.. thingoverGB
+	thingoverGB *-- thinglargefile
+	actoruser --- thingsizeinterface
+	thinglargefile --- controluploadlargefile
+	thingoverGB --- controluploadlargefile
+	thingsize --- controluploadlargefile
+	thingsizeinterface --> controluploadlargefile
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Doi" as thingdoi
+	actor "Researcherpublisher" as actorResearcherPublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Add A\nDoi To\nA Dataset" as controladddoidataset
+
+	thingdataset <.. thingdoi
+	actorResearcherPublisher --- thingdatasetinterface
+	thingdoi --- controladddoidataset
+	thingdataset --- controladddoidataset
+	thingdatasetinterface --> controladddoidataset
+
+@enduml

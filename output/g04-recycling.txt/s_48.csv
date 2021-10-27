@@ -1,0 +1,7 @@
+id,value,style,source,target,type
+200,Facolitie,shape=partialRectangle,null,null,data_base
+201,User,rounded=0,null,null,external_entity
+202,Browse Through The List Of Facolities,ellipse,null,null,process
+203,Environment See Which Ones,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,Facolitie,endArrow=classic,202,200,endArrow=classic

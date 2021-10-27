@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Complete ,\nHold Datum" as thingcompletehelddatum
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Include Records\nFor Externally\nComplete, Held\nData" as controlincluderecord
+
+	thingcompletehelddatum <.. thingrecord
+	actorresearchinformationmanager --- thingdatuminterface
+	thingrecord --- controlincluderecord
+	thingcompletehelddatum --- controlincluderecord
+	thingdatuminterface --> controlincluderecord
+
+@enduml

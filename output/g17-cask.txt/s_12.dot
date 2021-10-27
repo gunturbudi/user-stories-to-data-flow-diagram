@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Runtime " ];
+201 [label="<f0>  |<f1> Option " ];
+202 [label="<f0>  |<f1> Dataset Code " color=red];
+203 [label="Dataset Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Have The Option }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Forcing }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Have The Dataset Code At Runtime }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 201 [label="Option"]
+205 -> 204
+205 -> 206
+206 -> 202 [label="Dataset Code"]
+206 -> 200 [label="Runtime"]
+}

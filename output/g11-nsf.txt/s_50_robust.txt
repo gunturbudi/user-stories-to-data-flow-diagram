@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interview Participant" as thinginterviewparticipant
+	actor "User Researcher" as actoruserresearcher
+	boundary "Participant\nInterface" as thingparticipantinterface #grey
+	control "Begin" as controlbeginidentifyinterviewparticipants
+	control "Identifying Interview\nParticipants" as controlidentifyinterviewparticipants
+
+	actoruserresearcher --- thingparticipantinterface
+	thingparticipantinterface --> controlbeginidentifyinterviewparticipants
+	controlbeginidentifyinterviewparticipants --> controlidentifyinterviewparticipants
+	thinginterviewparticipant --- controlidentifyinterviewparticipants
+	thingparticipantinterface --> controlidentifyinterviewparticipants
+
+@enduml

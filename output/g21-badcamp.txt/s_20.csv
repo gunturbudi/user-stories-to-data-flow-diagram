@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Sponsorship Money,shape=partialRectangle,null,null,data_base
+201,Stripe,shape=partialRectangle,null,null,data_base
+202,Administrator,rounded=0,null,null,external_entity
+203,Refund Sponsorship Money Processed Stripe,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Sponsorship Money,endArrow=classic,203,200,endArrow=classic
+207,Stripe,endArrow=classic,203,201,endArrow=classic

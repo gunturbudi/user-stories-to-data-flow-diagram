@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject
+	actor "Metadata Manager" as actormetadatamanager
+	circle "Short Description" as thingshortdescription
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Have A\nShort Description\nOf Project" as controlhaveshortdescription
+
+	thingproject *-- thingshortdescription
+	actormetadatamanager --- thingprojectinterface
+	thingshortdescription --- controlhaveshortdescription
+	thingproject --- controlhaveshortdescription
+	thingprojectinterface --> controlhaveshortdescription
+
+@enduml

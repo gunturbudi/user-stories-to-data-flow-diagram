@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Node" as thingnode
+	entity "Data Package" as thingdatapackage #grey
+	actor "Developer" as actordeveloper
+	boundary "Node\nInterface" as thingnodeinterface #grey
+	control "Get A\nData Package\nInto Node" as controlgetdatapackagenode
+
+	thingnode <.. thingdatapackage
+	actordeveloper --- thingnodeinterface
+	thingdatapackage --- controlgetdatapackagenode
+	thingnode --- controlgetdatapackagenode
+	thingnodeinterface --> controlgetdatapackagenode
+
+@enduml

@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Platform " ];
+201 [label="<f0>  |<f1> Recycling Center " ];
+202 [label="Admin" shape=box];
+203 [label="{<f0> 1.0|<f1> Onboard Recycling Centers On The Platform }" shape=Mrecord];
+202 -> 203
+203 -> 201
+203 -> 200
+}

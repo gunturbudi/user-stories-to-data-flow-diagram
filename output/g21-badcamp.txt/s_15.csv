@@ -1,0 +1,59 @@
+id,value,style,source,target,type
+200,Class,shape=partialRectangle,null,null,data_base
+201,Dedicated Page,shape=partialRectangle,null,null,data_base
+202,Location,shape=partialRectangle,null,null,data_base
+203,View,shape=partialRectangle,null,null,data_base
+204,Trainer,shape=partialRectangle,null,null,data_base
+205,Datetime,shape=partialRectangle,null,null,data_base
+206,Skill Level,shape=partialRectangle,null,null,data_base
+207,Logo,shape=partialRectangle,null,null,data_base
+208,Title,shape=partialRectangle,null,null,data_base
+209,Follow Information,shape=partialRectangle,null,null,data_base
+210,Offering,shape=partialRectangle,null,null,data_base
+211,Registration,shape=partialRectangle,null,null,data_base
+212,Map,shape=partialRectangle,null,null,data_base
+213,Anonymoususer,rounded=0,null,null,external_entity
+214,Learn More About,ellipse,null,null,process
+215,Learn More About Location,ellipse,null,null,process
+216,Have A Dedicated Page For Each Class,ellipse,null,null,process
+217,Learn More About Title,ellipse,null,null,process
+218,Learn More About Possibly A Map View,ellipse,null,null,process
+219,Learn More About Trainer,ellipse,null,null,process
+220,Register For Class,ellipse,null,null,process
+221,Learn More About The Offering The Following Information Shown Registrations Remaining,ellipse,null,null,process
+222,Learn More About Skill Level,ellipse,null,null,process
+223,Learn More About Possibly A View,ellipse,null,null,process
+224,Learn More About Logo,ellipse,null,null,process
+225,Learn More About Datetime,ellipse,null,null,process
+227,,endArrow=classic,213,215,endArrow=classic
+228,,endArrow=classic,213,216,endArrow=classic
+229,,endArrow=classic,213,217,endArrow=classic
+230,,endArrow=classic,213,218,endArrow=classic
+231,,endArrow=classic,213,219,endArrow=classic
+232,,endArrow=classic,213,220,endArrow=classic
+233,,endArrow=classic,213,221,endArrow=classic
+234,,endArrow=classic,213,222,endArrow=classic
+235,,endArrow=classic,213,224,endArrow=classic
+236,,endArrow=classic,213,225,endArrow=classic
+237,Location,endArrow=classic,215,202,endArrow=classic
+238,,endArrow=classic,216,214,endArrow=classic
+239,,endArrow=classic,216,215,endArrow=classic
+240,,endArrow=classic,216,217,endArrow=classic
+241,,endArrow=classic,216,219,endArrow=classic
+242,,endArrow=classic,216,221,endArrow=classic
+243,,endArrow=classic,216,224,endArrow=classic
+244,Dedicated Page,endArrow=classic,216,201,endArrow=classic
+245,Class,endArrow=classic,216,200,endArrow=classic
+246,Location,endArrow=classic,216,202,endArrow=classic
+247,Title,endArrow=classic,217,208,endArrow=classic
+248,View,endArrow=classic,218,203,endArrow=classic
+249,Trainer,endArrow=classic,219,204,endArrow=classic
+250,Class,endArrow=classic,220,200,endArrow=classic
+251,Offering,endArrow=classic,221,210,endArrow=classic
+252,Follow Information,endArrow=classic,221,209,endArrow=classic
+253,Registration,endArrow=classic,221,211,endArrow=classic
+254,Skill Level,endArrow=classic,222,206,endArrow=classic
+255,View,endArrow=classic,223,203,endArrow=classic
+256,Logo,endArrow=classic,224,207,endArrow=classic
+257,Datetime,endArrow=classic,225,205,endArrow=classic
+262,Map,endArrow=classic,218,212,endArrow=classic

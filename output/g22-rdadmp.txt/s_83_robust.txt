@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dmp" as thingdmp
+	actor "Data Manager" as actordatamanager
+	control "Know" as controlknow
+
+
+@enduml

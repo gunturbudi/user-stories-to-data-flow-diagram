@@ -1,0 +1,9 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Zooniverse Admin" as actorzooniverseadmin
+
+
+@enduml

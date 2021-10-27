@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Example Citation" as thingexamplecitation #grey
+	entity "Dataset" as thingdataset
+	actor "Datum Reuser" as actordatareuser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "View An\nExample Citation\nFor A\nDataset" as controlviewexamplecitation
+
+	thingdataset <.. thingexamplecitation
+	actordatareuser --- thingdatasetinterface
+	thingexamplecitation --- controlviewexamplecitation
+	thingdataset --- controlviewexamplecitation
+	thingdatasetinterface --> controlviewexamplecitation
+
+@enduml

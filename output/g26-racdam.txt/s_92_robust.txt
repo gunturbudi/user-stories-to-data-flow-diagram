@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Material Type" as thingmaterialtype
+	actor "Archivist" as actorarchivist
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Search Individual\nMaterial Types" as controlsearchindividualmaterialtypes
+
+	actorarchivist --- thingtypeinterface
+	thingmaterialtype --- controlsearchindividualmaterialtypes
+	thingtypeinterface --> controlsearchindividualmaterialtypes
+
+@enduml

@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thingmoreinformation
+	entity "Row" as thingmanyrow
+	actor "User" as actoruser
+	control "Publish" as controlpublish
+
+	thingmanyrow <.. thingmoreinformation
+
+@enduml

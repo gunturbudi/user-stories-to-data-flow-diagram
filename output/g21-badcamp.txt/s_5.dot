@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Training Node " color=red];
+201 [label="<f0>  |<f1> -pron- " ];
+202 [label="Trainer" shape=box];
+203 [label="{<f0> 1.0|<f1> Edit Training Node }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Edit -Pron- }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Training Node"]
+204 -> 201 [label="-pron-"]
+}

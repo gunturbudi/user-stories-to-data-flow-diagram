@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Zip Code" as thingzipcode #grey
+	entity "Recycling Facility" as thingrecyclingfacility
+	actor "User" as actoruser
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	control "Enter Zip\nCode" as controlenterzipcode
+	control "Get A\nList Of\nNearby Recycling\nFacilities" as controlgetlist
+
+	actoruser --- thingcodeinterface
+	actoruser --- thingfacilityinterface
+	thingzipcode --- controlenterzipcode
+	thingcodeinterface --> controlenterzipcode
+	thingrecyclingfacility --- controlgetlist
+	thingfacilityinterface --> controlgetlist
+
+@enduml

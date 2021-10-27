@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Localization" as thinglocalization
+	entity "Plankton" as thingplankton
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Automatic Segmentation" as thingautomaticsegmentation
+	boundary "Plankton Portal" as thingplanktonportalzooniverseadmin
+	boundary "Localization\nInterface" as thinglocalizationinterface #grey
+	control "Perform Automatic\nSegmentation Of\nPlankton In" as controlperformautomaticsegmentation
+	control "Perform Localization" as controlperformlocalization
+
+	thingplankton *-- thingautomaticsegmentation
+	actorzooniverseadmin --- thingplanktonportalzooniverseadmin
+	actorzooniverseadmin --- thinglocalizationinterface
+	thingautomaticsegmentation --- controlperformautomaticsegmentation
+	thingplankton --- controlperformautomaticsegmentation
+	thingplanktonportalzooniverseadmin --> controlperformautomaticsegmentation
+	thinglocalization --- controlperformlocalization
+	thinglocalizationinterface --> controlperformlocalization
+
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Corrective Feedback" as thingcorrectivefeedback
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	control "Give Corrective\nFeedback" as controlgivecorrectivefeedback
+
+	actorMedicalCaregiver --- thingfeedbackinterface
+	thingcorrectivefeedback --- controlgivecorrectivefeedback
+	thingfeedbackinterface --> controlgivecorrectivefeedback
+
+@enduml

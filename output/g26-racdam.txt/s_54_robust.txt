@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Institution" as thinginstitution
+	entity "Image" as thingimage
+	entity "Descriptive Information" as thingdescriptiveinformation
+	actor "Donor Representative" as actordonorrepresentative
+	boundary "Institution\nInterface" as thinginstitutioninterface #grey
+	control "Access The\nDescriptive Information\nAbout The\nImages Institutions\nNeeds" as controlaccessdescriptiveinformation
+
+	thinginstitution <.. thingimage
+	thingimage <.. thingdescriptiveinformation
+	thinginstitution <.. thingdescriptiveinformation
+	actordonorrepresentative --- thinginstitutioninterface
+	thingdescriptiveinformation --- controlaccessdescriptiveinformation
+	thingimage --- controlaccessdescriptiveinformation
+	thinginstitution --- controlaccessdescriptiveinformation
+	thinginstitutioninterface --> controlaccessdescriptiveinformation
+
+@enduml

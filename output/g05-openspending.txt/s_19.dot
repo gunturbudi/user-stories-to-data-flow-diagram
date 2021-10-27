@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Social Network " color=red];
+201 [label="<f0>  |<f1> View State " ];
+202 [label="<f0>  |<f1> Url " ];
+203 [label="Datum , Consume User" shape=box];
+204 [label="{<f0> 1.0|<f1> Share A View State As A Url To Social Networks }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Share data that i have found with others. }" shape=Mrecord];
+1000 [label="Data consuming user" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Data " color=red];
+2 -> 1002
+203 -> 204
+204 -> 201
+204 -> 202
+204 -> 200
+}

@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pertain ,\nRight" as thingpertainotherright
+	entity "Object" as thingobject
+	entity "Component" as thingcomponent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	control "Indicate Apart\nPertain, Other\nRights To\nThe Component\nFrom The\nObject As\nA Whole" as controlindicatepertainotherright
+
+	thingcomponent <.. thingpertainotherright
+	thingobject <.. thingpertainotherright
+	thingobject <.. thingcomponent
+	actorrepositorymanager --- thingobjectinterface
+	thingpertainotherright --- controlindicatepertainotherright
+	thingcomponent --- controlindicatepertainotherright
+	thingobject --- controlindicatepertainotherright
+	thingobjectinterface --> controlindicatepertainotherright
+
+@enduml

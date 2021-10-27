@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fabs Page " ];
+201 [label="Agency User" shape=box];
+202 [label="{<f0> 1.0|<f1> Dabs }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Navigate To }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Navigate To Fabs Pages }" shape=Mrecord];
+201 -> 203
+201 -> 204
+203 -> 202
+204 -> 200
+}

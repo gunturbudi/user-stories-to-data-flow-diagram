@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Unprocessed Material" as thingunprocessedmaterial
+	actor "Archivist" as actorarchivist
+	circle "Digital Copy" as thingdigitalcopy
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "Provide Access\nTo Digital\nCopies Of\nUnprocessed Material" as controlprovideaccess
+
+	thingdigitalcopy <.. thingaccess
+	thingunprocessedmaterial *-- thingdigitalcopy
+	actorarchivist --- thingmaterialinterface
+	thingaccess --- controlprovideaccess
+	thingdigitalcopy --- controlprovideaccess
+	thingunprocessedmaterial --- controlprovideaccess
+	thingmaterialinterface --> controlprovideaccess
+
+@enduml

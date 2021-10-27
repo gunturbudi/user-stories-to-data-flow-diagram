@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	actor "Faculty Member" as actorfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Access A\nCollection Within\nThe Repository" as controlaccesscollectionrepository
+
+	thingrepository <.. thingcollection
+	actorfacultymember --- thingrepositoryinterface
+	thingcollection --- controlaccesscollectionrepository
+	thingrepository --- controlaccesscollectionrepository
+	thingrepositoryinterface --> controlaccesscollectionrepository
+
+@enduml

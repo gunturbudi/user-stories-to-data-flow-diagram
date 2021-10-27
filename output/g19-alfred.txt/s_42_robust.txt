@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Door" as thingdoor
+	entity "Alfred" as thingALFRED
+	actor "Olderperson" as actorOlderPerson
+	boundary "Door\nInterface" as thingdoorinterface #grey
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	control "See" as controlsee
+	control "Open The\nDoor" as controlopendoor
+	control "Use Alfred" as controluseALFREDopendoor
+	control "Use Alfred\nIs Standing\nAt Door" as controluseALFREDseedoor
+
+	thingdoor <.. thingALFRED
+	actorOlderPerson --- thingdoorinterface
+	actorOlderPerson --- thingalfredinterface
+	controluseALFREDseedoor --> controlsee
+	thingdoorinterface --> controlsee
+	thingdoor --- controlopendoor
+	controluseALFREDopendoor --> controlopendoor
+	thingalfredinterface --> controlopendoor
+	thingalfredinterface --> controluseALFREDopendoor
+	thingALFRED --- controluseALFREDopendoor
+	thingALFRED --- controluseALFREDseedoor
+	thingdoor --- controluseALFREDseedoor
+	thingdoorinterface --> controluseALFREDseedoor
+
+@enduml

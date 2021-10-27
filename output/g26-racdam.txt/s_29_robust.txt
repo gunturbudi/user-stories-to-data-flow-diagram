@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Scan File" as thingscannedfile
+	entity "Contrast ,\nAutomatic Operation" as thingcontrastautomaticoperation
+	entity "Level" as thinglevel
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	control "Apply Contrast,\nAutomatic Operations\nTo A\nScanned File" as controlapplycontrastautomaticoperationscannedfile
+	control "Apply Level" as controlapplylevel
+
+	thingscannedfile <.. thingcontrastautomaticoperation
+	actorarchivist --- thingfileinterface
+	actorarchivist --- thinglevelinterface
+	thingcontrastautomaticoperation --- controlapplycontrastautomaticoperationscannedfile
+	thingscannedfile --- controlapplycontrastautomaticoperationscannedfile
+	thingfileinterface --> controlapplycontrastautomaticoperationscannedfile
+	thinglevel --- controlapplylevel
+	thinglevelinterface --> controlapplylevel
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Collection Level,shape=partialRectangle,null,null,data_base
+201,Dashboard,shape=partialRectangle,null,null,data_base
+202,Replication Status,shape=partialRectangle,null,null,data_base
+203,Collection Curator,rounded=0,null,null,external_entity
+204,Have A Summary Of All Remote Replication Status At Collection Level On Dashboard,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Replication Status,endArrow=classic,204,202,endArrow=classic
+208,Collection Level,endArrow=classic,204,200,endArrow=classic
+209,Dashboard,endArrow=classic,204,201,endArrow=classic

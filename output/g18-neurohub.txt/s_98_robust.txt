@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Revision Control\nSystem" as thingrevisioncontrolsystem #grey
+	entity "Ability" as thingability
+	actor "Researcher" as actorresearcher
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Have The\nTo Ability\nWith A\nRevision Control\nSystem" as controlhaveability
+
+	thingrevisioncontrolsystem <.. thingability
+	actorresearcher --- thingsysteminterface
+	thingability --- controlhaveability
+	thingrevisioncontrolsystem --- controlhaveability
+	thingsysteminterface --> controlhaveability
+
+@enduml

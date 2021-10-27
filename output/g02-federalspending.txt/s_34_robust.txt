@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish Button" as thingpublishbutton #grey
+	entity "Fabs" as thingFABS
+	entity "Derivation" as thingderivation
+	actor "User" as actoruser
+	boundary "Publish Button" as thingpublishbuttonFABSuser
+	boundary "Derivation\nInterface" as thingderivationinterface #grey
+	control "Click The\nPublish Button\nIn Fabs\nThe Derivations\nAre Happening" as controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	control "Deactivate" as controldeactivatepublishbuttonFABSuser
+
+	thingFABS <.. thingpublishbutton
+	thingderivation <.. thingFABS
+	actoruser --- thingpublishbuttonFABSuser
+	actoruser --- thingderivationinterface
+	thingpublishbutton --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingFABS --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingderivation --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingderivationinterface --> controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation --> controldeactivatepublishbuttonFABSuser
+	thingpublishbuttonFABSuser --> controldeactivatepublishbuttonFABSuser
+	thingFABS --- controldeactivatepublishbuttonFABSuser
+
+@enduml

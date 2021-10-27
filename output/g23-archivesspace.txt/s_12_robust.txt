@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "Marcxml Record" as thingmarcxmlrecord
+	actor "Archivist" as actorarchivist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Import Resources\nFrom Marcxml\nRecords" as controlimportresourcemarcxmlrecords
+
+	thingmarcxmlrecord <.. thingresource
+	actorarchivist --- thingrecordinterface
+	thingresource --- controlimportresourcemarcxmlrecords
+	thingmarcxmlrecord --- controlimportresourcemarcxmlrecords
+	thingrecordinterface --> controlimportresourcemarcxmlrecords
+
+@enduml

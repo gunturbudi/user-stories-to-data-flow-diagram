@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+4,Correct,ellipse,null,null,process
+200,Publisher,rounded=0,null,null,external_entity
+201,Publish,ellipse,null,null,process
+202,Validated,ellipse,null,null,process
+203,Data,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,200,4,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,4,1001,endArrow=classic

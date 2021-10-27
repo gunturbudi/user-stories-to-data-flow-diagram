@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Step,shape=partialRectangle,null,null,data_base
+201,Key Consideration,shape=partialRectangle,null,null,data_base
+202,Cms Option,shape=partialRectangle,null,null,data_base
+203,Nsf Employee,rounded=0,null,null,external_entity
+204,Narrow Down The Universe Of Cms Options,ellipse,null,null,process
+205,Identify,ellipse,null,null,process
+206,Prioritize Key Considerations,ellipse,null,null,process
+207,Getting To The Next Step,ellipse,null,null,process
+209,,endArrow=classic,203,204,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,203,207,endArrow=classic
+212,Cms Option,endArrow=classic,204,202,endArrow=classic
+213,Key Consideration,endArrow=classic,206,201,endArrow=classic
+214,,endArrow=classic,207,206,endArrow=classic
+215,Step,endArrow=classic,207,200,endArrow=classic

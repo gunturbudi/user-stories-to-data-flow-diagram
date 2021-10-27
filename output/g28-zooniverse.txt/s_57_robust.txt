@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Volunteer" as thingvolunteer
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	boundary "Zoonibot" as thingzoonibotzooniverseadmin
+	control "Know" as controlknowsaywhatzoonibotzooniverseadminvolunteer
+	control "What Say\nTo A\nVolunteer" as controlsaywhatzoonibotzooniverseadminvolunteer
+
+	actorzooniverseadmin --- thingzoonibotzooniverseadmin
+	thingzoonibotzooniverseadmin --> controlknowsaywhatzoonibotzooniverseadminvolunteer
+	controlknowsaywhatzoonibotzooniverseadminvolunteer --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingzoonibotzooniverseadmin --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingvolunteer --- controlsaywhatzoonibotzooniverseadminvolunteer
+
+@enduml

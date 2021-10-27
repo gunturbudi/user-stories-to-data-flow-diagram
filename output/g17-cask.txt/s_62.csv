@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Explore,shape=partialRectangle,null,null,data_base
+201,Silent Loss,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,"Never Leads To Available, Silent Loss Of Data For Explore",ellipse,null,null,process
+205,Ensure,ellipse,null,null,process
+206,Never Leads To Silent Loss Of Datum,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Explore,endArrow=classic,204,200,endArrow=classic
+212,Datum,endArrow=classic,204,202,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,,endArrow=classic,205,206,endArrow=classic
+215,Silent Loss,endArrow=classic,205,201,endArrow=classic
+216,Explore,endArrow=classic,205,200,endArrow=classic
+217,Silent Loss,endArrow=classic,206,201,endArrow=classic
+218,Datum,endArrow=classic,206,202,endArrow=classic
+219,Explore,endArrow=classic,206,200,endArrow=classic

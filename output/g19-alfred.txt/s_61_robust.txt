@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Interest" as thinginterest
+	entity "Domain" as thingdomain
+	entity "Cinema" as thingcinema
+	entity "Exhibition" as thingexhibition
+	entity "Question" as thingquestion
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Initiate Questions" as controlinitiateALFREDOlderPersonquestion
+	control "Have" as controlhaveinitiateALFREDOlderPersonquestion
+
+	thingcinema <.. thinginterest
+	thingexhibition <.. thinginterest
+	thinginterest *-- thingdomain
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingALFREDOlderPerson --> controlinitiateALFREDOlderPersonquestion
+	thingquestion --- controlinitiateALFREDOlderPersonquestion
+	controlhaveinitiateALFREDOlderPersonquestion --> controlinitiateALFREDOlderPersonquestion
+	thingALFREDOlderPerson --> controlhaveinitiateALFREDOlderPersonquestion
+
+@enduml

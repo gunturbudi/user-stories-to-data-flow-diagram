@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "Resource Component" as thingresourcecomponent
+	entity "Instance" as thinginstance
+	actor "Archivist" as actorarchivist
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Associate An\nInstance With\nResource" as controlassociateinstanceresource
+	control "Associate An\nInstance With\nA Resource\nComponent" as controlassociateinstance
+
+	thingresourcecomponent <.. thinginstance
+	thingresource <.. thinginstance
+	actorarchivist --- thingresourceinterface
+	actorarchivist --- thingcomponentinterface
+	thingresource --- controlassociateinstanceresource
+	thingresourceinterface --> controlassociateinstanceresource
+	thinginstance --- controlassociateinstanceresource
+	thinginstance --- controlassociateinstance
+	thingresourcecomponent --- controlassociateinstance
+	thingcomponentinterface --> controlassociateinstance
+
+@enduml

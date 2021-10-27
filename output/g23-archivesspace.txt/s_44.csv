@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Archival Description,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Repository Manager,rounded=0,null,null,external_entity
+203,Create,ellipse,null,null,process
+204,Delete Archival Descriptions In Repository,ellipse,null,null,process
+205,Update Archival Descriptions In Repository,ellipse,null,null,process
+207,,endArrow=classic,202,205,endArrow=classic
+208,Archival Description,endArrow=classic,204,200,endArrow=classic
+209,Repository,endArrow=classic,204,201,endArrow=classic
+210,Archival Description,endArrow=classic,205,200,endArrow=classic
+211,Repository,endArrow=classic,205,201,endArrow=classic

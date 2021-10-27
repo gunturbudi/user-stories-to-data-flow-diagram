@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Consumption " ];
+201 [label="<f0>  |<f1> Drupal Planet " ];
+202 [label="<f0>  |<f1> Blog Post " color=red];
+203 [label="Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Tag Blog Posts For Consumption By Drupal Planet }" shape=Mrecord];
+203 -> 204
+204 -> 202 [label="Blog Post"]
+204 -> 200 [label="Consumption"]
+204 -> 201 [label="Drupal Planet"]
+}

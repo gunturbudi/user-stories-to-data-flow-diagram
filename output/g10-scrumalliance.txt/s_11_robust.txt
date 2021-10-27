@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Email Address" as thingemailaddress #grey
+	actor "Site Member" as actorsitemember
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Private Mark\nEmail Address" as controlmarkemailaddress
+
+	actorsitemember --- thingaddressinterface
+	thingemailaddress --- controlmarkemailaddress
+	thingaddressinterface --> controlmarkemailaddress
+
+@enduml

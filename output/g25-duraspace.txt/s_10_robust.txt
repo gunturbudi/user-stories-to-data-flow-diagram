@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Title" as thingtitle
+	entity "Collection" as thingcollection
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	control "Describe A\nCollection Including\nTitle" as controldescribecollection
+
+	thingtitle <.. thingcollection
+	actorrepositorymanager --- thingtitleinterface
+	thingcollection --- controldescribecollection
+	thingtitle --- controldescribecollection
+	thingtitleinterface --> controldescribecollection
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Possible ,\nPeople" as thingpossiblemanypeople
+	entity "App" as thingapp
+	actor "Developer" as actordeveloper
+	boundary "People\nInterface" as thingpeopleinterface #grey
+	control "Present App\nTo As\nPossible, Many\nPeople" as controlpresentapppossiblemanypeople
+
+	thingpossiblemanypeople <.. thingapp
+	actordeveloper --- thingpeopleinterface
+	thingapp --- controlpresentapppossiblemanypeople
+	thingpossiblemanypeople --- controlpresentapppossiblemanypeople
+	thingpeopleinterface --> controlpresentapppossiblemanypeople
+
+@enduml

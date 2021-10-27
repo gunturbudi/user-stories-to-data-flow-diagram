@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Understand how useful and simple the datapackage format and the registry is,ellipse,null,null,process
+200,Publish Package,shape=partialRectangle,null,null,data_base
+201,Publisher,rounded=0,null,null,external_entity
+202,See Real Examples Of Published Packages,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Publish Package,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Datapackage format,rounded=0,null,null,external_entity
+1002,Datapackage format,endArrow=classic,2,1001,endArrow=classic

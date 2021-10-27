@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Tout my drupal credentials,ellipse,null,null,process
+200,Brand,shape=partialRectangle,null,null,data_base
+201,Summit,shape=partialRectangle,null,null,data_base
+202,Sponsor,rounded=0,null,null,external_entity
+203,Sponsor A Summit Matches Brand,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Summit,endArrow=classic,203,201,endArrow=classic
+207,Brand,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Drupal credentials,rounded=0,null,null,external_entity
+1002,Drupal credentials,endArrow=classic,2,1001,endArrow=classic

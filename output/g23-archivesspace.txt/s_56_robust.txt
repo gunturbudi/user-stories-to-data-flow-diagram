@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Container" as thingcontainer
+	entity "Instance" as thinginstance
+	actor "Archivist" as actorarchivist
+	boundary "Container\nInterface" as thingcontainerinterface #grey
+	control "Associate An\nInstance With\nA Container" as controlassociateinstance
+
+	thingcontainer <.. thinginstance
+	actorarchivist --- thingcontainerinterface
+	thinginstance --- controlassociateinstance
+	thingcontainer --- controlassociateinstance
+	thingcontainerinterface --> controlassociateinstance
+
+@enduml

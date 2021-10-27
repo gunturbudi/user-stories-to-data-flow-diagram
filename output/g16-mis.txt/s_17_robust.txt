@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Deposit Form" as thingdepositform
+	actor "Collection Curator" as actorcollectioncurator
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Create Specific\nDeposit Forms\nTo The\nCollection" as controlcreatespecificdepositforms
+
+	thingcollection <.. thingdepositform
+	actorcollectioncurator --- thingcollectioninterface
+	thingdepositform --- controlcreatespecificdepositforms
+	thingcollection --- controlcreatespecificdepositforms
+	thingcollectioninterface --> controlcreatespecificdepositforms
+
+@enduml

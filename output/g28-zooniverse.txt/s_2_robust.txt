@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Music" as thingmusic
+	entity "Profile" as thingprofile
+	actor "User" as actoruser
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Search Music\nOn Profile" as controlsearchmusic
+	control "Discover Music\nOn Profile" as controldiscovermusic
+
+	thingprofile <.. thingmusic
+	actoruser --- thingprofileinterface
+	thingmusic --- controlsearchmusic
+	thingprofile --- controlsearchmusic
+	thingprofileinterface --> controlsearchmusic
+	thingmusic --- controldiscovermusic
+	thingprofile --- controldiscovermusic
+	thingprofileinterface --> controldiscovermusic
+
+@enduml

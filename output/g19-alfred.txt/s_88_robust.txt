@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred Shirt" as thingalfredshirt #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Shirt\nInterface" as thingshirtinterface #grey
+	control "Have The\nAlfred Shirt\nGood" as controlhavealfredshirt
+
+	actorOlderPerson --- thingshirtinterface
+	thingalfredshirt --- controlhavealfredshirt
+	thingshirtinterface --> controlhavealfredshirt
+
+@enduml

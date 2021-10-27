@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Log Book\nPage,shape=partialRectangle,null,null,data_base
+202,Network Drive,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Having Files To A Log Book Page,ellipse,null,null,process
+205,Upload Files,ellipse,null,null,process
+206,Using A Mapped Network Drive,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,205,endArrow=classic
+212,,endArrow=classic,204,206,endArrow=classic
+213,File,endArrow=classic,204,200,endArrow=classic
+214,Log Book\nPage,endArrow=classic,204,201,endArrow=classic
+215,File,endArrow=classic,205,200,endArrow=classic
+216,Network Drive,endArrow=classic,206,202,endArrow=classic

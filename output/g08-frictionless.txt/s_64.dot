@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Publication " ];
+201 [label="<f0>  |<f1> Data Availability\nPersistence " color=red];
+202 [label="Publisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Check Data Availability Persistence After Publication }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Data Availability\nPersistence"]
+203 -> 200 [label="Publication"]
+}

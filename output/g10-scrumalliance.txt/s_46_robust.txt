@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Job" as thingjob
+	entity "Rss Feed" as thingrssfeed
+	actor "Site Member" as actorsitemember
+	boundary "Job\nInterface" as thingjobinterface #grey
+	control "Subscribe To\nAn Available\nRss Feed\nOf Jobs" as controlsubscribeavailablerssfeed
+
+	thingjob <.. thingrssfeed
+	actorsitemember --- thingjobinterface
+	thingrssfeed --- controlsubscribeavailablerssfeed
+	thingjob --- controlsubscribeavailablerssfeed
+	thingjobinterface --> controlsubscribeavailablerssfeed
+
+@enduml

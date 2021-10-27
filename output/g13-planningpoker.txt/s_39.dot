@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Story " color=red];
+201 [label="<f0>  |<f1> Estimate " color=red];
+202 [label="<f0>  |<f1> Prior Round " ];
+203 [label="Participant" shape=box];
+204 [label="{<f0> 1.0|<f1> Scroll Through Estimate }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Scroll Through The Stories From Prior Rounds }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Use this information when i estimate the item of the current round }" shape=Mrecord];
+205 -> 3
+1001 [label="<f0>  |<f1> Information " color=red];
+3 -> 1001 [label="Information"]
+203 -> 204
+203 -> 205
+204 -> 201 [label="Estimate"]
+205 -> 200 [label="Story"]
+205 -> 202 [label="Prior Round"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Assistance Datum" as thingassistancedatum
+	actor "Website User" as actorwebsiteuser
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "See Financial,\nUpdated Assistance\nData" as controlseefinancialupdatedassistancedata
+
+	actorwebsiteuser --- thingdatuminterface
+	thingassistancedatum --- controlseefinancialupdatedassistancedata
+	thingdatuminterface --> controlseefinancialupdatedassistancedata
+
+@enduml

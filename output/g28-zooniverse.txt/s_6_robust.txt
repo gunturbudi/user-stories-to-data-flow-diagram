@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Available Tag" as thingavailabletag
+	entity "Tag Video" as thingtaggedvideo
+	entity "Processing Step" as thingprocessingstep
+	actor "User" as actoruser
+	boundary "Video\nInterface" as thingvideointerface #grey
+	control "Have Available\nTags For\nAll Further\nProcessing Steps" as controlhaveavailabletag #grey
+	control "Upload Tagged\nVideos" as controluploadtaggedvideo
+
+	thingprocessingstep <.. thingavailabletag
+	actoruser --- thingvideointerface
+	thingavailabletag --- controlhaveavailabletag
+	thingprocessingstep --- controlhaveavailabletag
+	thingtaggedvideo --- controluploadtaggedvideo
+	thingvideointerface --> controluploadtaggedvideo
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Type Information" as thingtypeinformation #grey
+	entity "Datum" as thingdatum
+	actor "Publisher" as actorpublisher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Add Type\nInformation To\nData" as controladdtypeinformationdatum
+
+	thingdatum <.. thingtypeinformation
+	actorpublisher --- thingdatuminterface
+	thingtypeinformation --- controladdtypeinformationdatum
+	thingdatum --- controladdtypeinformationdatum
+	thingdatuminterface --> controladdtypeinformationdatum
+
+@enduml

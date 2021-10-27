@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingfullaccess
+	entity "Article" as thingarticle
+	actor "Site Member" as actorsitemember
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Have Full\nAccess To\nAll Articles" as controlhavefullaccess
+
+	thingarticle <.. thingfullaccess
+	actorsitemember --- thingarticleinterface
+	thingfullaccess --- controlhavefullaccess
+	thingarticle --- controlhavefullaccess
+	thingarticleinterface --> controlhavefullaccess
+
+@enduml

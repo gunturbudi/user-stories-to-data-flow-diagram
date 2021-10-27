@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Neurohub Node " ];
+201 [label="<f0>  |<f1> Script " ];
+202 [label="<f0>  |<f1> Ubuntu Operating\nSystem " ];
+203 [label="System Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Run A Script Installs The Neurohub Node Onto A Virgin Ubuntu Operating System }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Script"]
+204 -> 200 [label="Neurohub Node"]
+204 -> 202 [label="Ubuntu Operating\nSystem"]
+}

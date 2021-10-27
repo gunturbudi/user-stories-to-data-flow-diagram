@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Entire Archive" as thingentirearchive
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	boundary "Archive\nInterface" as thingarchiveinterface #grey
+	control "Query The\nEntire Archive" as controlqueryentirearchive
+
+	actorbathdataarchiveadministrator --- thingarchiveinterface
+	thingentirearchive --- controlqueryentirearchive
+	thingarchiveinterface --> controlqueryentirearchive
+
+@enduml

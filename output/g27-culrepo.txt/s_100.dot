@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Redundant Copy " ];
+201 [label="<f0>  |<f1> Original Object " ];
+202 [label="<f0>  |<f1> Unwanted Change " ];
+203 [label="<f0>  |<f1> Change " ];
+204 [label="<f0>  |<f1> Copy " color=red];
+205 [label="Asset Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Assured }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Changes Occur }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> By Which Restore The Original Object To All Copies }" shape=Mrecord];
+205 -> 207
+205 -> 208
+207 -> 203 [label="Change"]
+208 -> 204 [label="Copy"]
+208 -> 201 [label="Original Object"]
+}

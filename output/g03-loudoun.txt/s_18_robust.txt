@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Ordinance" as thingordinance
+	actor "Staff Member" as actorstaffmember
+	boundary "Ordinance\nInterface" as thingordinanceinterface #grey
+	control "Manage Ordinances" as controlmanageordinance
+
+	actorstaffmember --- thingordinanceinterface
+	thingordinance --- controlmanageordinance
+	thingordinanceinterface --> controlmanageordinance
+
+@enduml

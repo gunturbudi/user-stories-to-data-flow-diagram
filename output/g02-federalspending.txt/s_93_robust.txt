@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	actor "Fabs User" as actorfabsuser
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	control "Read Access\nTo Dabs" as controlreadaccess
+
+	actorfabsuser --- thingaccessinterface
+	thingaccess --- controlreadaccess
+	thingaccessinterface --> controlreadaccess
+
+@enduml

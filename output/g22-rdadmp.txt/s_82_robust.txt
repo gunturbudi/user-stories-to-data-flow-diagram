@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Additional Language" as thingadditionallanguage
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	control "Have Metadata\nIn Additional\nLanguages" as controlhavemetadataadditionallanguage
+
+	thingadditionallanguage <.. thingmetadata
+	actorrepositorymanager --- thinglanguageinterface
+	thingmetadata --- controlhavemetadataadditionallanguage
+	thingadditionallanguage --- controlhavemetadataadditionallanguage
+	thinglanguageinterface --> controlhavemetadataadditionallanguage
+
+@enduml

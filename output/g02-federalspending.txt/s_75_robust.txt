@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File Level\nError" as thingfilelevelerror
+	actor "Agency User" as actoragencyuser
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	control "Understand File\nLevel Errors" as controlunderstandfilelevelerrors
+
+	actoragencyuser --- thingerrorinterface
+	thingfilelevelerror --- controlunderstandfilelevelerrors
+	thingerrorinterface --> controlunderstandfilelevelerrors
+
+@enduml

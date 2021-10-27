@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Drive " ];
+201 [label="<f0>  |<f1> Digital File " color=red];
+202 [label="Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Access The Digital Files On The Drive }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Digital File"]
+203 -> 200 [label="Drive"]
+}

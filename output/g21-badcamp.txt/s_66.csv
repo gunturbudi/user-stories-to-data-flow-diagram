@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Registration,shape=partialRectangle,null,null,data_base
+201,Idividual Sponsorship,shape=partialRectangle,null,null,data_base
+202,Authenticateduser,rounded=0,null,null,external_entity
+203,Offered Several Choices Of Idividual Sponsorship On The Second Page Of Registration,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Idividual Sponsorship,endArrow=classic,203,201,endArrow=classic
+207,Registration,endArrow=classic,203,200,endArrow=classic

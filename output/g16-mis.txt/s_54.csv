@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,File,shape=partialRectangle,null,null,data_base
+201,Feedback,shape=partialRectangle,null,null,data_base
+202,Format Specification,shape=partialRectangle,null,null,data_base
+203,Depositor,rounded=0,null,null,external_entity
+204,Get Feedback Alerting,ellipse,null,null,process
+205,Files Not Conform To Format Specifications,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,Feedback,endArrow=classic,204,201,endArrow=classic
+211,File,endArrow=classic,205,200,endArrow=classic
+212,Format Specification,endArrow=classic,205,202,endArrow=classic

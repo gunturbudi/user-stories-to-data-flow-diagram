@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Badcamp,shape=partialRectangle,null,null,data_base
+201,Anonymoususer,rounded=0,null,null,external_entity
+202,Register,ellipse,null,null,process
+203,Speak At Badcamp,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,,endArrow=classic,202,203,endArrow=classic
+208,Badcamp,endArrow=classic,203,200,endArrow=classic

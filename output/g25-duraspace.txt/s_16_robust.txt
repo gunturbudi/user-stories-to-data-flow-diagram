@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Search" as thingsearch
+	actor "User" as actoruser
+	boundary "Search\nInterface" as thingsearchinterface #grey
+	control "Limit Search" as controllimitsearchspecify
+	control "Specified" as controlspecify
+
+	actoruser --- thingsearchinterface
+	thingsearch --- controllimitsearchspecify
+	thingsearchinterface --> controllimitsearchspecify
+	controllimitsearchspecify --> controlspecify
+	thingsearchinterface --> controlspecify
+
+@enduml

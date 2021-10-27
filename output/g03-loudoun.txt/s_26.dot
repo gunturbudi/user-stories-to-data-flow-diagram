@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Zoning ,\nRelated Permit " ];
+201 [label="Zoning , Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Issue The Zoning, Related Permits }" shape=Mrecord];
+201 -> 202
+202 -> 200
+}

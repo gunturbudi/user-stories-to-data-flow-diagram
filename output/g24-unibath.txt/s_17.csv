@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Fulfil funder requirements for archival,ellipse,null,null,process
+200,Guarantee,shape=partialRectangle,null,null,data_base
+201,Data Integrity,shape=partialRectangle,null,null,data_base
+202,Depositor,rounded=0,null,null,external_entity
+203,Have Guarantees About Data Integrity,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Guarantee,endArrow=classic,203,200,endArrow=classic
+207,Data Integrity,endArrow=classic,203,201,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,2,1001,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Upload An\nItem To\nThe Repository\nOnly Become\nVisible" as controluploaditemrepository
+
+	thingrepository <.. thingitem
+	actorlibrarystaffmember --- thingrepositoryinterface
+	thingitem --- controluploaditemrepository
+	thingrepository --- controluploaditemrepository
+	thingrepositoryinterface --> controluploaditemrepository
+
+@enduml

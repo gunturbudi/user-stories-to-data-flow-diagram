@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Ingest,shape=partialRectangle,null,null,data_base
+202,Repository Staff,shape=partialRectangle,null,null,data_base
+203,"Document ,\nSimple Format",shape=partialRectangle,null,null,data_base
+204,Metadata,shape=partialRectangle,null,null,data_base
+205,Batch Submitter,rounded=0,null,null,external_entity
+206,Provide Metadata,ellipse,null,null,process
+207,"Provide Data In A Documented, Simple Format To The Repository Staff For Ingest",ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Metadata,endArrow=classic,206,204,endArrow=classic
+212,Datum,endArrow=classic,207,200,endArrow=classic
+213,"Document ,\nSimple Format",endArrow=classic,207,203,endArrow=classic
+214,Repository Staff,endArrow=classic,207,202,endArrow=classic
+215,Ingest,endArrow=classic,207,201,endArrow=classic

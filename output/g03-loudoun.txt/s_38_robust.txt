@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan Review" as thingplanreview #grey
+	entity "Applicant" as thingapplicant
+	entity "Outcome" as thingoutcome
+	actor "Plan ,\nReview ,\nStaff Member" as actorplanreviewstaffmember
+	boundary "Applicant\nInterface" as thingapplicantinterface #grey
+	boundary "Outcome\nInterface" as thingoutcomeinterface #grey
+	control "Conduct A\nPlan Review\nWith The\nApplicant" as controlconductplanreview
+	control "Record The\nOutcome" as controlrecordoutcome
+
+	thingapplicant <.. thingplanreview
+	actorplanreviewstaffmember --- thingapplicantinterface
+	actorplanreviewstaffmember --- thingoutcomeinterface
+	thingplanreview --- controlconductplanreview
+	thingapplicant --- controlconductplanreview
+	thingapplicantinterface --> controlconductplanreview
+	thingoutcome --- controlrecordoutcome
+	thingoutcomeinterface --> controlrecordoutcome
+
+@enduml

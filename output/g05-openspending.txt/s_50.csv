@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+200,Default,shape=partialRectangle,null,null,data_base
+201,Bubble Tree,shape=partialRectangle,null,null,data_base
+202,Treemap,shape=partialRectangle,null,null,data_base
+203,Recent Year,shape=partialRectangle,null,null,data_base
+204,Multiple Year,shape=partialRectangle,null,null,data_base
+205,Dataset,shape=partialRectangle,null,null,data_base
+206,Pivot Table,shape=partialRectangle,null,null,data_base
+207,"Datum , Consume User",rounded=0,null,null,external_entity
+208,Visualize By Default In Treemap,ellipse,null,null,process
+209,Visualize By Default In Bubble Tree,ellipse,null,null,process
+210,Visualize By Default In Pivot Table,ellipse,null,null,process
+211,Visualize By Default In Treemap The Most Recent Year Dataset When Contain Multiple Years,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Default,endArrow=classic,208,200,endArrow=classic
+218,Treemap,endArrow=classic,208,202,endArrow=classic
+219,Bubble Tree,endArrow=classic,209,201,endArrow=classic
+220,Default,endArrow=classic,209,200,endArrow=classic
+221,Pivot Table,endArrow=classic,210,206,endArrow=classic
+222,Default,endArrow=classic,210,200,endArrow=classic
+223,Default,endArrow=classic,211,200,endArrow=classic
+224,Treemap,endArrow=classic,211,202,endArrow=classic
+225,Recent Year,endArrow=classic,211,203,endArrow=classic
+226,Multiple Year,endArrow=classic,211,204,endArrow=classic
+227,Dataset,endArrow=classic,211,205,endArrow=classic

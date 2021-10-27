@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Laboratory,shape=partialRectangle,null,null,data_base
+201,Neurohub Node,shape=partialRectangle,null,null,data_base
+202,Remote Access,shape=partialRectangle,null,null,data_base
+203,Researcher,rounded=0,null,null,external_entity
+204,Secure Remote Access To The Neurohub Node When Away Working From The Laboratory,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,Remote Access,endArrow=classic,204,202,endArrow=classic
+208,Neurohub Node,endArrow=classic,204,201,endArrow=classic
+209,Laboratory,endArrow=classic,204,200,endArrow=classic

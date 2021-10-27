@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content" as thingcontent
+	actor "Content Editor" as actorcontenteditor
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Find Content" as controlfindcontent
+
+	actorcontenteditor --- thingcontentinterface
+	thingcontent --- controlfindcontent
+	thingcontentinterface --> controlfindcontent
+
+@enduml

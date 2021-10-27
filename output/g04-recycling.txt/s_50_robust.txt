@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Schedule" as thingschedule
+	entity "User Stat" as thinguserstat
+	actor "Recyclingfacility Representative" as actorrecyclingfacilityrepresentative
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	control "Have Access\nTo Schedule" as controlhaveaccessschedule
+	control "Have Access\nTo User\nStats" as controlhaveaccess
+
+	thinguserstat <.. thingaccess
+	thingschedule <.. thingaccess
+	actorrecyclingfacilityrepresentative --- thingscheduleinterface
+	actorrecyclingfacilityrepresentative --- thingstatinterface
+	thingschedule --- controlhaveaccessschedule
+	thingscheduleinterface --> controlhaveaccessschedule
+	thingaccess --- controlhaveaccessschedule
+	thingaccess --- controlhaveaccess
+	thinguserstat --- controlhaveaccess
+	thingstatinterface --> controlhaveaccess
+
+@enduml

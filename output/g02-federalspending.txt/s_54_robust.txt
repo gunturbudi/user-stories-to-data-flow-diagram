@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Sam" as thingSAM
+	entity "Actiondate" as thingActionDates
+	entity "Registration Date" as thingregistrationdate
+	actor "User" as actoruser
+	boundary "Duns Validations" as thingdunsvalidationsuser
+	control "After Accept\nRecords Actiondates\nAre Before\nThe Current\nRegistration Date\nIn Sam\nThe Initial\nRegistration Date" as controlacceptdunsvalidationsuserrecordinitialregistrationdate
+
+	thingActionDates <.. thingrecord
+	thingregistrationdate <.. thingrecord
+	thingSAM <.. thingregistrationdate
+	actoruser --- thingdunsvalidationsuser
+	thingdunsvalidationsuser --> controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingrecord --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingActionDates --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingregistrationdate --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingSAM --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+
+@enduml

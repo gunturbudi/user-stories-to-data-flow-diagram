@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Object " color=red];
+201 [label="<f0>  |<f1> Library Unit " color=red];
+202 [label="<f0>  |<f1> Collection " color=red];
+203 [label="<f0>  |<f1> Dam " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> List The Collections In The Dams Belong To A Library Unit }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> List Object }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Collection"]
+205 -> 203 [label="Dam"]
+205 -> 201 [label="Library Unit"]
+206 -> 200 [label="Object"]
+}

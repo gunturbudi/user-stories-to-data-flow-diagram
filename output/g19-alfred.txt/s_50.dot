@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Emergency " color=red];
+201 [label="<f0>  |<f1> Video Call " color=red];
+202 [label="Medicalcaregiver" shape=box];
+203 [label="{<f0> 1.0|<f1> Use Video Calls In Case Of Emergency }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Video Call"]
+203 -> 200 [label="Emergency"]
+}

@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Explore Schema" as thingexploreschema #grey
+	actor "User" as actoruser
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	control "Specify The\nExplore Schema" as controlspecifyexploreschema
+
+	actoruser --- thingschemainterface
+	thingexploreschema --- controlspecifyexploreschema
+	thingschemainterface --> controlspecifyexploreschema
+
+@enduml

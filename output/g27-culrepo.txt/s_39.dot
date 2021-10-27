@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sortable Spot " ];
+201 [label="<f0>  |<f1> Particular Author " ];
+202 [label="Academicresearcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Find The Works Of A Particular Author In Easily Sortable Spot }" shape=Mrecord];
+202 -> 203
+203 -> 201 [label="Particular Author"]
+203 -> 200 [label="Sortable Spot"]
+}

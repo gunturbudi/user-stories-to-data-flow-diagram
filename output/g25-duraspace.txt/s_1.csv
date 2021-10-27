@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Object,shape=partialRectangle,null,null,data_base
+201,Dam,shape=partialRectangle,null,null,data_base
+202,Collection,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,Know Object,ellipse,null,null,process
+205,Know The Collections In The Dams,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Object,endArrow=classic,204,200,endArrow=classic
+210,Collection,endArrow=classic,205,202,endArrow=classic
+211,Dam,endArrow=classic,205,201,endArrow=classic

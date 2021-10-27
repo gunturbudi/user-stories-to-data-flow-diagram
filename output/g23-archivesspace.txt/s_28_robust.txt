@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Configuration" as thingconfiguration
+	actor "Developer" as actordeveloper
+	circle "Build Version" as thingbuiltversion
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	control "Use A\nConfiguration Not\nPrepackaged Within\nA Built\nVersion Of\nApplication" as controluseconfiguration
+
+	thingbuiltversion <.. thingconfiguration
+	thingapplication *-- thingbuiltversion
+	actordeveloper --- thingapplicationinterface
+	thingconfiguration --- controluseconfiguration
+	thingbuiltversion --- controluseconfiguration
+	thingapplication --- controluseconfiguration
+	thingapplicationinterface --> controluseconfiguration
+
+@enduml

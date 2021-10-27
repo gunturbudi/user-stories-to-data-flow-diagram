@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+200,System,shape=partialRectangle,null,null,data_base
+201,News Item,shape=partialRectangle,null,null,data_base
+202,Mailing List,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,Have The System,ellipse,null,null,process
+205,Forward Important News Items To An External Mailing List,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,,endArrow=classic,204,205,endArrow=classic
+210,System,endArrow=classic,204,200,endArrow=classic
+211,News Item,endArrow=classic,205,201,endArrow=classic
+212,Mailing List,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publisher" as thingpublisher
+	entity "Membership" as thingmembership
+	actor "Owner" as actorowner
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	control "Remove Someone\nFrom Membership\nIn Publisher" as controlremovesomeonemembership
+
+	thingpublisher <.. thingmembership
+	actorowner --- thingpublisherinterface
+	thingmembership --- controlremovesomeonemembership
+	thingpublisher --- controlremovesomeonemembership
+	thingpublisherinterface --> controlremovesomeonemembership
+
+@enduml

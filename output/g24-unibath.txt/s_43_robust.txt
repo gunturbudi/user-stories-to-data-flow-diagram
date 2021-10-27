@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish Dataset" as thingpublisheddataset
+	entity "Citation Count" as thingcitationcount
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Track Citation\nCounts For\nPublished Datasets" as controltrackcitationcountspublisheddataset
+
+	thingpublisheddataset <.. thingcitationcount
+	actorresearchinformationmanager --- thingdatasetinterface
+	thingcitationcount --- controltrackcitationcountspublisheddataset
+	thingpublisheddataset --- controltrackcitationcountspublisheddataset
+	thingdatasetinterface --> controltrackcitationcountspublisheddataset
+
+@enduml

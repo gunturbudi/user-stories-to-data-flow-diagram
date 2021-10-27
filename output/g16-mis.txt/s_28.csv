@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Embargo,shape=partialRectangle,null,null,data_base
+201,Digitalrecords Archivist,rounded=0,null,null,external_entity
+202,Edit The Length Of Embargoes,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Embargo,endArrow=classic,202,200,endArrow=classic

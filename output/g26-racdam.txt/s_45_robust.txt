@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Donor" as thingdonor
+	entity "Information" as thinginformation
+	entity "Available Right" as thingavailableright
+	entity "Researcher" as thingresearcher
+	actor "Archivist" as actorarchivist
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Donor\nInterface" as thingdonorinterface #grey
+	control "Make Information\nAbout Available\nRights To\nResearchers" as controlmakeinformation
+	control "Make Information\nAbout Available\nRights To\nDonor" as controlmakeinformationdonor
+
+	thingavailableright <.. thinginformation
+	thingresearcher <.. thingavailableright
+	thingdonor <.. thingavailableright
+	actorarchivist --- thingresearcherinterface
+	actorarchivist --- thingdonorinterface
+	thinginformation --- controlmakeinformation
+	thingavailableright --- controlmakeinformation
+	thingresearcher --- controlmakeinformation
+	thingresearcherinterface --> controlmakeinformation
+	thingdonor --- controlmakeinformationdonor
+	thingdonorinterface --> controlmakeinformationdonor
+	thingavailableright --- controlmakeinformationdonor
+	thinginformation --- controlmakeinformationdonor
+
+@enduml

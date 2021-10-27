@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Name Form " ];
+201 [label="<f0>  |<f1> Source " color=red];
+202 [label="<f0>  |<f1> Agent " color=red];
+203 [label="<f0>  |<f1> New Source " color=red];
+204 [label="<f0>  |<f1> Exist Source " color=red];
+205 [label="Archivist" shape=box];
+206 [label="{<f0> 1.0|<f1> Specify The Source For A Name Form Of An Agent }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Add New Sources }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Edit Existing Sources }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 201 [label="Source"]
+206 -> 200 [label="Name Form"]
+206 -> 202 [label="Agent"]
+207 -> 203 [label="New Source"]
+208 -> 204 [label="Exist Source"]
+}

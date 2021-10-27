@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Spss" as thingSPSS
+	entity "Second" as thingsecond
+	actor "Researcher" as actorresearcher
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	control "Get A\nData Package\nInto Spss\nIn Seconds" as controlgetdatapackageSPSSsecond
+
+	thingSPSS <.. thingdatapackage
+	thingsecond <.. thingSPSS
+	actorresearcher --- thingsecondinterface
+	thingdatapackage --- controlgetdatapackageSPSSsecond
+	thingSPSS --- controlgetdatapackageSPSSsecond
+	thingsecond --- controlgetdatapackageSPSSsecond
+	thingsecondinterface --> controlgetdatapackageSPSSsecond
+
+@enduml

@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Code " ];
+201 [label="<f0>  |<f1> Country " ];
+202 [label="<f0>  |<f1> City " ];
+203 [label="<f0>  |<f1> Region " color=red];
+204 [label="<f0>  |<f1> Hasc " ];
+205 [label="Api User" shape=box];
+206 [label="{<f0> 1.0|<f1> Use Hasc Codes For Countries }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Use Codes For }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Use Codes For City }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Have }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Use Codes For Region }" shape=Mrecord];
+205 -> 206
+205 -> 208
+205 -> 209
+205 -> 210
+206 -> 201
+206 -> 200
+207 -> 200
+208 -> 202
+208 -> 200
+209 -> 206
+209 -> 207
+209 -> 208
+209 -> 210
+210 -> 200
+210 -> 203
+206 -> 204
+}

@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Card,shape=partialRectangle,null,null,data_base
+201,Thumbnail Photo,shape=partialRectangle,null,null,data_base
+202,Participant,rounded=0,null,null,external_entity
+203,Have A Small Thumbnail Photo Cards Where Played,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Thumbnail Photo,endArrow=classic,203,201,endArrow=classic
+207,Card,endArrow=classic,203,200,endArrow=classic

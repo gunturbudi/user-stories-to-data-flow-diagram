@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Experiment" as thingexperiment
+	entity "Page" as thingpage
+	entity "File" as thingfile
+	entity "Log Book" as thinglogbook #grey
+	actor "Researcher" as actorresearcher
+	boundary "Experiment\nInterface" as thingexperimentinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Create A\nLog Book\nPage For\nAn Experiment" as controlcreatelogbookpageexperiment
+	control "Attach A\nFile To\nThis Page" as controlattachfilepage
+
+	thinglogbook <.. thingpage
+	thingexperiment <.. thingpage
+	thingpage <.. thingfile
+	actorresearcher --- thingexperimentinterface
+	actorresearcher --- thingpageinterface
+	thingexperiment --- controlcreatelogbookpageexperiment
+	thingexperimentinterface --> controlcreatelogbookpageexperiment
+	thingpage --- controlcreatelogbookpageexperiment
+	thingfile --- controlattachfilepage
+	thingpage --- controlattachfilepage
+	thingpageinterface --> controlattachfilepage
+
+@enduml

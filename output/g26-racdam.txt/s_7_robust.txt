@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "File" as thingfile
+	entity "End Restriction\nDate Information" as thingendrestrictiondateinformation #grey
+	actor "Archivist" as actorarchivist
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Add End\nRestriction Date\nInformation To\nFiles" as controladdendrestrictiondateinformationfile
+
+	thingfile <.. thingendrestrictiondateinformation
+	actorarchivist --- thingfileinterface
+	thingendrestrictiondateinformation --- controladdendrestrictiondateinformationfile
+	thingfile --- controladdendrestrictiondateinformationfile
+	thingfileinterface --> controladdendrestrictiondateinformationfile
+
+@enduml

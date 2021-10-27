@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Support Documentation" as thingsupportingdocumentation
+	actor "Applicant" as actorapplicant
+	boundary "Documentation\nInterface" as thingdocumentationinterface #grey
+	control "Submit Supporting\nDocumentation" as controlsubmitsupportingdocumentation
+
+	actorapplicant --- thingdocumentationinterface
+	thingsupportingdocumentation --- controlsubmitsupportingdocumentation
+	thingdocumentationinterface --> controlsubmitsupportingdocumentation
+
+@enduml

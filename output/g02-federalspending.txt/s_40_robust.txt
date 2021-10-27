@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Production" as thingproduction
+	entity "Fabs" as thingFABS
+	entity "Assistance Datum" as thingassistancedatum
+	actor "Agency User" as actoragencyuser
+
+
+@enduml

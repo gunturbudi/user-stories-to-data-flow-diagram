@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Basic Metadata " color=red];
+201 [label="<f0>  |<f1> Tool " ];
+202 [label="<f0>  |<f1> Researcher " ];
+203 [label="<f0>  |<f1> User " ];
+204 [label="<f0>  |<f1> Research Datum " ];
+205 [label="Repository Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Researchers Add Basic Metadata To Research Data }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> User Add }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 202 [label="Researcher"]
+206 -> 200 [label="Basic Metadata"]
+206 -> 204 [label="Research Datum"]
+207 -> 203 [label="User"]
+}

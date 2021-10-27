@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Image Feature " color=red];
+201 [label="Zooniverse Admin" shape=box];
+202 [label="{<f0> 1.0|<f1> Preclassify }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Use Simple Image Features }" shape=Mrecord];
+201 -> 202
+201 -> 203
+202 -> 203
+203 -> 200 [label="Image Feature"]
+}

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> File " color=red];
+201 [label="<f0>  |<f1> Access " color=red];
+202 [label="<f0>  |<f1> Ip Address " color=red];
+203 [label="Archivist" shape=box];
+204 [label="{<f0> 1.0|<f1> Restrict Access To Some Files By Ip Address }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="Access"]
+204 -> 200 [label="File"]
+204 -> 202 [label="Ip Address"]
+}

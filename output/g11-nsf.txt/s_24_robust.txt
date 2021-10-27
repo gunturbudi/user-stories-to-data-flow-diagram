@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Step" as thingnextstep
+	entity "Key Consideration" as thingkeyconsideration
+	entity "Cms Option" as thingcmsoption
+	actor "Nsf Employee" as actornsfemployee
+	circle "Universe" as thinguniverse
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	boundary "Step\nInterface" as thingstepinterface #grey
+	control "Narrow Down\nThe Universe\nOf Cms\nOptions" as controlnarrowuniverse
+	control "Identify" as controlidentify
+	control "Prioritize Key\nConsiderations" as controlprioritizekeyconsideration
+	control "Getting To\nThe Next\nStep" as controlgetprioritizekeyconsiderationnextstep
+
+	thingcmsoption *-- thinguniverse
+	actornsfemployee --- thingoptioninterface
+	actornsfemployee --- thingstepinterface
+	thinguniverse --- controlnarrowuniverse
+	thingcmsoption --- controlnarrowuniverse
+	thingoptioninterface --> controlnarrowuniverse
+	thingkeyconsideration --- controlprioritizekeyconsideration
+	controlgetprioritizekeyconsiderationnextstep --> controlprioritizekeyconsideration
+	thingstepinterface --> controlprioritizekeyconsideration
+	thingnextstep --- controlgetprioritizekeyconsiderationnextstep
+	thingstepinterface --> controlgetprioritizekeyconsiderationnextstep
+
+@enduml

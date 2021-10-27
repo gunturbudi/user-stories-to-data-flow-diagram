@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "R" as thingr
+	entity "Data Package" as thingdatapackage #grey
+	actor "Consumer" as actorconsumer
+	boundary "R\nInterface" as thingrinterface #grey
+	control "Load A\nData Package\nFrom R" as controlloaddatapackager
+
+	thingr <.. thingdatapackage
+	actorconsumer --- thingrinterface
+	thingdatapackage --- controlloaddatapackager
+	thingr --- controlloaddatapackager
+	thingrinterface --> controlloaddatapackager
+
+@enduml

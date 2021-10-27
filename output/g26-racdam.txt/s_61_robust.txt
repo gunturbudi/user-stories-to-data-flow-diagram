@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Keyword" as thingkeyword
+	entity "File" as thingfile
+	actor "Archivist" as actorarchivist
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	control "Search All\nFiles By\nKeyword" as controlsearchfile
+
+	thingkeyword <.. thingfile
+	actorarchivist --- thingkeywordinterface
+	thingfile --- controlsearchfile
+	thingkeyword --- controlsearchfile
+	thingkeywordinterface --> controlsearchfile
+
+@enduml

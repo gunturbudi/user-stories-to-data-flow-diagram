@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Limit" as thinglimit
+	entity "Games Duration" as thinggamesduration #grey
+	actor "Olderperson" as actorOlderPerson
+	boundary "Alfred" as thingALFREDOlderPerson
+	control "Have" as controlhavesetALFREDOlderPersonlimitgamesduration
+	control "Set Limits\nIn The\nGames Duration" as controlsetALFREDOlderPersonlimitgamesduration
+
+	actorOlderPerson --- thingALFREDOlderPerson
+	thingALFREDOlderPerson --> controlhavesetALFREDOlderPersonlimitgamesduration
+	controlhavesetALFREDOlderPersonlimitgamesduration --> controlsetALFREDOlderPersonlimitgamesduration
+	thingALFREDOlderPerson --> controlsetALFREDOlderPersonlimitgamesduration
+	thinglimit --- controlsetALFREDOlderPersonlimitgamesduration
+	thinggamesduration --- controlsetALFREDOlderPersonlimitgamesduration
+
+@enduml

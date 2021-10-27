@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archived Datum" as thingarchiveddatum
+	entity "Storage System" as thingstoragesystem
+	actor "Univitservice" as actorUnivITservice
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Store Archived\nData On\nExisting Storage\nSystems" as controlstorearchiveddatum
+
+	thingstoragesystem <.. thingarchiveddatum
+	actorUnivITservice --- thingsysteminterface
+	thingarchiveddatum --- controlstorearchiveddatum
+	thingstoragesystem --- controlstorearchiveddatum
+	thingsysteminterface --> controlstorearchiveddatum
+
+@enduml

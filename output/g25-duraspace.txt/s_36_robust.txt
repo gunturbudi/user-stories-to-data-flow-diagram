@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Logical" as thinglogical
+	entity "Object" as thingobject
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Physical Structure" as thingphysicalstructure
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Logical\nInterface" as thinglogicalinterface #grey
+	control "Represent The\nPhysical Structure\nOf An\nObject" as controlrepresentphysicalstructure
+	control "Represent Logical" as controlrepresentlogical
+
+	thingobject *-- thingphysicalstructure
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thinglogicalinterface
+	thingphysicalstructure --- controlrepresentphysicalstructure
+	thingobject --- controlrepresentphysicalstructure
+	thingobjectinterface --> controlrepresentphysicalstructure
+	thinglogical --- controlrepresentlogical
+	thinglogicalinterface --> controlrepresentlogical
+
+@enduml

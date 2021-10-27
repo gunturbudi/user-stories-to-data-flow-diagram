@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity ", Trainers\nSection" as thingonlytrainerssection
+	actor "Site Editor" as actorsiteeditor
+	boundary "Section\nInterface" as thingsectioninterface #grey
+	control "Post Information\nIn A\nOnly, Trainers\nSection" as controlpostinformationonlytrainerssection
+
+	thingonlytrainerssection <.. thinginformation
+	actorsiteeditor --- thingsectioninterface
+	thinginformation --- controlpostinformationonlytrainerssection
+	thingonlytrainerssection --- controlpostinformationonlytrainerssection
+	thingsectioninterface --> controlpostinformationonlytrainerssection
+
+@enduml

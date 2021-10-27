@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="Repository Manager" shape=box];
+202 [label="{<f0> 1.0|<f1> Know The Collections }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Collection"]
+}

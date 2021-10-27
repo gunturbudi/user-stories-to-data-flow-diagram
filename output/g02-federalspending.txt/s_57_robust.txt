@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Header" as thingheader
+	entity "Schema" as thingschema
+	entity "Fabs File" as thingfabsfile #grey
+	actor "Agency User" as actoragencyuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Use The\nSchema Headers\nIn Fabs\nFile" as controluseschemaheader
+
+	thingfabsfile <.. thingheader
+	thingheader <.. thingschema
+	actoragencyuser --- thingfileinterface
+	thingschema --- controluseschemaheader
+	thingheader --- controluseschemaheader
+	thingfabsfile --- controluseschemaheader
+	thingfileinterface --> controluseschemaheader
+
+@enduml

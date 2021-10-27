@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agreement" as thingagreement
+	entity "Project" as thingproject
+	entity "Party Datum" as thingpartydatum
+	actor "Researcher" as actorresearcher
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Store Agreements\nTo Third\nParty Data\nIn A\nProject" as controlstoreagreement
+
+	thingpartydatum <.. thingagreement
+	thingproject <.. thingpartydatum
+	actorresearcher --- thingprojectinterface
+	thingagreement --- controlstoreagreement
+	thingpartydatum --- controlstoreagreement
+	thingproject --- controlstoreagreement
+	thingprojectinterface --> controlstoreagreement
+
+@enduml

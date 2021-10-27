@@ -1,0 +1,51 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publication" as thingpublication
+	entity "." as thing. #grey
+	entity "Edition" as thingedition #grey
+	entity "Object" as thingobject
+	entity "Place" as thingplace
+	entity "Publisher" as thingpublisher #grey
+	entity "Object Component" as thingobjectcomponent
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	control "Indicate For\nThe The\nEdition" as controlindicateedition #grey
+	control "Indicate For\nThe The\nPublisher" as controlindicatepublisher #grey
+	control "Indicate For\nObject" as controlindicateobject
+	control "Indicate For\nAn Object\nComponent The\nPlace Of\nPublication When\nPertinent" as controlindicateobjectcomponentplace
+	control "Indicate For\nThe The\n. The\nPlace" as controlindicateplace. #grey
+	control "Indicate For\nThe The\nPublisher The\n." as controlindicatepublisher. #grey
+	control "Indicate For\nThe The\nPublisher The\nPlace" as controlindicateplacepublisherplace #grey
+	control "Indicate For\nThe The\n." as controlindicate. #grey
+	control "Indicate For\nThe The\nPublisher The\nEdition" as controlindicatepublisheredition #grey
+	control "Indicate For\nThe The\nEdition The\nPlace" as controlindicateplaceedition #grey
+
+	thingpublication <.. thingplace
+	thingplace <.. thingobjectcomponent
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingpublicationinterface
+	thingedition --- controlindicateedition
+	thingpublisher --- controlindicatepublisher
+	thingobject --- controlindicateobject
+	thingobjectinterface --> controlindicateobject
+	thingobjectcomponent --- controlindicateobjectcomponentplace
+	thingpublicationinterface --> controlindicateobjectcomponentplace
+	thingpublication --- controlindicateobjectcomponentplace
+	thingplace --- controlindicateobjectcomponentplace
+	thing. --- controlindicateplace.
+	thingplace --- controlindicateplace.
+	thing. --- controlindicatepublisher.
+	thingpublisher --- controlindicatepublisher.
+	thingpublisher --- controlindicateplacepublisherplace
+	thingplace --- controlindicateplacepublisherplace
+	thing. --- controlindicate.
+	thingedition --- controlindicatepublisheredition
+	thingpublisher --- controlindicatepublisheredition
+	thingedition --- controlindicateplaceedition
+	thingplace --- controlindicateplaceedition
+
+@enduml

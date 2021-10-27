@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> Alfred " ];
+202 [label="<f0>  |<f1> Breathing Frequency " color=red];
+203 [label="Medicalcaregiver" shape=box];
+204 [label="{<f0> 1.0|<f1> Have Alfred }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Determine The User's Breathing Frequency }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 205
+204 -> 201 [label="Alfred"]
+205 -> 202 [label="Breathing Frequency"]
+205 -> 200 [label="User"]
+}

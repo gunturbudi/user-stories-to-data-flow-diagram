@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Website,shape=partialRectangle,null,null,data_base
+201,User Documentation,shape=partialRectangle,null,null,data_base
+202,User,rounded=0,null,null,external_entity
+203,View User Documentation For The Website,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,User Documentation,endArrow=classic,203,201,endArrow=classic
+207,Website,endArrow=classic,203,200,endArrow=classic

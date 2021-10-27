@@ -1,0 +1,16 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Agency" as thingagency
+	entity "Fabs" as thingFABS
+	entity "Fpds Datum" as thingfpdsdatum #grey
+	entity "D File" as thingdfile
+	actor "Developer" as actordeveloper
+	control "Determine" as controldetermine
+
+	thingFABS <.. thingdfile
+	thingfpdsdatum <.. thingdfile
+
+@enduml

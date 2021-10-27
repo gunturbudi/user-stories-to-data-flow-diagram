@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Excel" as thingexcel
+	entity "Integration" as thingintegration
+	actor "Publisher" as actorpublisher
+	boundary "Excel\nInterface" as thingexcelinterface #grey
+	control "Provided With\nAn Integration\nWith Excel" as controlprovideintegration
+
+	thingexcel <.. thingintegration
+	actorpublisher --- thingexcelinterface
+	thingintegration --- controlprovideintegration
+	thingexcel --- controlprovideintegration
+	thingexcelinterface --> controlprovideintegration
+
+@enduml

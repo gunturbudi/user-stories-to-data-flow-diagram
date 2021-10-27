@@ -1,0 +1,84 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Class" as thingclass
+	entity "Dedicated Page" as thingdedicatedpage
+	entity "Location" as thinglocation
+	entity "View" as thingview #grey
+	entity "Trainer" as thingtrainer
+	entity "Datetime" as thingdatetime
+	entity "Skill Level" as thingskilllevel #grey
+	entity "Logo" as thinglogo
+	entity "Title" as thingtitle
+	entity "Follow Information" as thingfollowinginformation
+	entity "Offering" as thingoffering
+	entity "Registration" as thingregistration
+	entity "Map" as thingmap #grey
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Class\nInterface" as thingclassinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	boundary "Registration\nInterface" as thingregistrationinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Logo\nInterface" as thinglogointerface #grey
+	boundary "Datetime\nInterface" as thingdatetimeinterface #grey
+	control "Learn More\nAbout" as controllearnmore #grey
+	control "Learn More\nAbout Location" as controllearnmorelocation
+	control "Have A\nDedicated Page\nFor Each\nClass" as controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer
+	control "Learn More\nAbout Title" as controllearnmoretitle
+	control "Learn More\nAbout Possibly\nA Map\nView" as controllearnmoremapview
+	control "Learn More\nAbout Trainer" as controllearnmoretrainer
+	control "Register For\nClass" as controlregisterclass
+	control "Learn More\nAbout The\nOffering The\nFollowing Information\nShown Registrations\nRemaining" as controllearnmoreoffering
+	control "Learn More\nAbout Skill\nLevel" as controllearnmoreskilllevel
+	control "Learn More\nAbout Possibly\nA View" as controllearnmoreview #grey
+	control "Learn More\nAbout Logo" as controllearnmorelogo
+	control "Learn More\nAbout Datetime" as controllearnmoredatetime
+
+	thingclass <.. thingdedicatedpage
+	thingmap <.. thingview
+	thingregistration <.. thingfollowinginformation
+	thingfollowinginformation <.. thingoffering
+	thingregistration <.. thingoffering
+	actoranonymoususer --- thingclassinterface
+	actoranonymoususer --- thingviewinterface
+	actoranonymoususer --- thingtrainerinterface
+	actoranonymoususer --- thingregistrationinterface
+	actoranonymoususer --- thinglevelinterface
+	actoranonymoususer --- thinglogointerface
+	actoranonymoususer --- thingdatetimeinterface
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmore
+	thinglocation --- controllearnmorelocation
+	thingclassinterface --> controllearnmorelocation
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmorelocation
+	thingdedicatedpage --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer
+	thingclass --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer
+	thinglocation --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer
+	thingclassinterface --> controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer
+	thingtitle --- controllearnmoretitle
+	thingclassinterface --> controllearnmoretitle
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmoretitle
+	thingviewinterface --> controllearnmoremapview
+	thingview --- controllearnmoremapview
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmoretrainer
+	thingtrainer --- controllearnmoretrainer
+	thingtrainerinterface --> controllearnmoretrainer
+	thingclass --- controlregisterclass
+	thingclassinterface --> controlregisterclass
+	thingoffering --- controllearnmoreoffering
+	thingfollowinginformation --- controllearnmoreoffering
+	thingregistration --- controllearnmoreoffering
+	thingregistrationinterface --> controllearnmoreoffering
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmoreoffering
+	thingskilllevel --- controllearnmoreskilllevel
+	thinglevelinterface --> controllearnmoreskilllevel
+	thingview --- controllearnmoreview
+	thinglogo --- controllearnmorelogo
+	thinglogointerface --> controllearnmorelogo
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmoretrainer --> controllearnmorelogo
+	thingdatetime --- controllearnmoredatetime
+	thingdatetimeinterface --> controllearnmoredatetime
+
+@enduml

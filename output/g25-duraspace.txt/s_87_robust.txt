@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Object" as thingobject
+	entity "Pertinent Statute" as thingpertinentstatute
+	entity "Object Component" as thingobjectcomponent
+	actor "Dams Manager" as actordamsmanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	control "Know The\nPertinent Statutes\nTo Object" as controlknowpertinentstatuteobject
+	control "Know The\nPertinent Statutes\nTo An\nObject Component" as controlknowpertinentstatute
+
+	thingobjectcomponent <.. thingpertinentstatute
+	thingobject <.. thingpertinentstatute
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingcomponentinterface
+	thingobject --- controlknowpertinentstatuteobject
+	thingobjectinterface --> controlknowpertinentstatuteobject
+	thingpertinentstatute --- controlknowpertinentstatuteobject
+	thingpertinentstatute --- controlknowpertinentstatute
+	thingobjectcomponent --- controlknowpertinentstatute
+	thingcomponentinterface --> controlknowpertinentstatute
+
+@enduml

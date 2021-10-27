@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sortable Spot" as thingsortablespot
+	entity "Particular Author" as thingparticularauthor
+	actor "Academicresearcher" as actoracademicresearcher
+	circle "Work" as thingwork
+	boundary "Spot\nInterface" as thingspotinterface #grey
+	control "Find The\nWorks Of\nA Particular\nAuthor In\nEasily Sortable\nSpot" as controlfindwork
+
+	thingsortablespot <.. thingparticularauthor
+	thingparticularauthor *-- thingwork
+	thingsortablespot *-- thingwork
+	actoracademicresearcher --- thingspotinterface
+	thingwork --- controlfindwork
+	thingparticularauthor --- controlfindwork
+	thingsortablespot --- controlfindwork
+	thingspotinterface --> controlfindwork
+
+@enduml

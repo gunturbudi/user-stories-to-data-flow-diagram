@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Market Place,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Developer,rounded=0,null,null,external_entity
+203,Maintain Apps Within The Market Place,ellipse,null,null,process
+204,Create Apps Within The Market Place,ellipse,null,null,process
+206,,endArrow=classic,202,204,endArrow=classic
+207,Market Place,endArrow=classic,203,200,endArrow=classic
+208,App,endArrow=classic,203,201,endArrow=classic
+209,App,endArrow=classic,204,201,endArrow=classic
+210,Market Place,endArrow=classic,204,200,endArrow=classic

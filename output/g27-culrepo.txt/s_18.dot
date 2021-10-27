@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Scholarly ,\nFaculty Output " ];
+201 [label="<f0>  |<f1> Symplectic Element " ];
+202 [label="<f0>  |<f1> Activity Insight " color=red];
+203 [label="<f0>  |<f1> Repository " ];
+204 [label="<f0>  |<f1> System " ];
+205 [label="Administrator" shape=box];
+206 [label="{<f0> 1.0|<f1> Use Systems Such As Symplectic Elements }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Track Scholarly, Faculty Output In The Repositories }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Use Systems Such As Activity Insight }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 207
+206 -> 204 [label="System"]
+206 -> 201 [label="Symplectic Element"]
+207 -> 200 [label="Scholarly ,\nFaculty Output"]
+207 -> 203 [label="Repository"]
+208 -> 202 [label="Activity Insight"]
+208 -> 204 [label="System"]
+}

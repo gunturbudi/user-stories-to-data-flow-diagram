@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Visual Content" as thingvisualcontent
+	actor "Olderperson" as actorOlderPerson
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Zoom Into\nVisual Content" as controlzoomvisualcontent
+
+	actorOlderPerson --- thingcontentinterface
+	thingvisualcontent --- controlzoomvisualcontent
+	thingcontentinterface --> controlzoomvisualcontent
+
+@enduml

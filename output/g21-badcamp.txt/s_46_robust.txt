@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summit" as thingsummit
+	entity "Specific Detail" as thingspecificdetail
+	actor "Anonymoususer" as actoranonymoususer
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "See Specific\nDetails On\nSummits" as controlseespecificdetail
+
+	thingsummit <.. thingspecificdetail
+	actoranonymoususer --- thingsummitinterface
+	thingspecificdetail --- controlseespecificdetail
+	thingsummit --- controlseespecificdetail
+	thingsummitinterface --> controlseespecificdetail
+
+@enduml

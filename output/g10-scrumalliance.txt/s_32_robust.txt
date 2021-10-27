@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Course" as thingcourse
+	entity "Event" as thingevent
+	actor "Site Editor" as actorsiteeditor
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Update Any\nCourse" as controlupdatecourse
+	control "Update Event" as controlupdateevent
+
+	actorsiteeditor --- thingcourseinterface
+	actorsiteeditor --- thingeventinterface
+	thingcourse --- controlupdatecourse
+	thingcourseinterface --> controlupdatecourse
+	thingevent --- controlupdateevent
+	thingeventinterface --> controlupdateevent
+
+@enduml

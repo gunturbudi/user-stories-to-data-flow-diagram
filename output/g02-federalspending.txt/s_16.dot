@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Validation Broker\nRule Table " ];
+201 [label="<f0>  |<f1> Db-2213 " ];
+202 [label="<f0>  |<f1> Rule Update " ];
+203 [label="Developer" shape=box];
+204 [label="{<f0> 1.0|<f1> Account For The Rule Updates In Db-2213 }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Update The Validation Broker Rule Table }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 202
+204 -> 201
+205 -> 204
+205 -> 200
+}

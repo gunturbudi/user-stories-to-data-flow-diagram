@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Visualisation" as thingvisualisation
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	circle "Csv" as thingcsv
+	boundary "Visualisation\nInterface" as thingvisualisationinterface #grey
+	control "Download A\nCsv Of\nThe Data\nUsed In\nAny Visualisation" as controldownloadcsv
+
+	thingvisualisation <.. thingdatum
+	thingdatum *-- thingcsv
+	actordataconsuminguser --- thingvisualisationinterface
+	thingcsv --- controldownloadcsv
+	thingdatum --- controldownloadcsv
+	thingvisualisation --- controldownloadcsv
+	thingvisualisationinterface --> controldownloadcsv
+
+@enduml

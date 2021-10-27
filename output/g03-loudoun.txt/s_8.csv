@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,"Understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results.",ellipse,null,null,process
+200,Transaction,shape=partialRectangle,null,null,data_base
+201,Applicant,rounded=0,null,null,external_entity
+202,Check The Status Of A Transaction,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Transaction,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Service,rounded=0,null,null,external_entity
+1002,Service,endArrow=classic,2,1001,endArrow=classic

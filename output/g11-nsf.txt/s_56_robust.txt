@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User Interview" as thinguserinterview
+	actor "User Researcher" as actoruserresearcher
+	boundary "Correct Nsf\nPeople" as thingcorrectnsfpeopleuserresearcher
+	control "Invited To\nUser Interviews" as controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	control "Make" as controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews
+
+	actoruserresearcher --- thingcorrectnsfpeopleuserresearcher
+	thingcorrectnsfpeopleuserresearcher --> controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	thinguserinterview --- controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews --> controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	thingcorrectnsfpeopleuserresearcher --> controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews
+
+@enduml
