@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Recycling Center\nInformation" as thingrecyclingcenterinformation #grey
+	entity "Stat" as thingstat
+	entity "User" as thinguser
+	actor "Superuser" as actorsuperuser
+	circle "Question" as thingquestion #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Update The\nRecycling Center\nInformation" as controlupdaterecyclingcenterinformation
+	control "View Users'\nStats" as controlviewstat
+	control "Reply To\nUser Questions" as controlreplyuserquestions
+
+	thinguser <.. thingstat
+	thinguser *-- thingquestion
+	actorsuperuser --- thinginformationinterface
+	actorsuperuser --- thingstatinterface
+	actorsuperuser --- thinguserinterface
+	thingrecyclingcenterinformation --- controlupdaterecyclingcenterinformation
+	thinginformationinterface --> controlupdaterecyclingcenterinformation
+	thingstat --- controlviewstat
+	thingstatinterface --> controlviewstat
+	thingquestion --- controlreplyuserquestions
+	thinguserinterface --> controlreplyuserquestions
+
+@enduml

@@ -1,0 +1,39 @@
+[
+  {
+    "text": "As a Staff member, I want to Send or Post Citations and Fines, so that I can successfully send the Notice Of Violation document to the property owner and log information about the action.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Send",
+        "label": "Processing"
+      },
+      {
+        "text": "Post",
+        "label": "Processing"
+      },
+      {
+        "text": "Citations",
+        "label": "PII"
+      },
+      {
+        "text": "Fines",
+        "label": "PII"
+      },
+      {
+        "text": "Notice Of Violation document",
+        "label": "PII"
+      },
+      {
+        "text": "property owner",
+        "label": "Data"
+      },
+      {
+        "text": "log",
+        "label": "Processing"
+      }
+    ]
+  }
+]

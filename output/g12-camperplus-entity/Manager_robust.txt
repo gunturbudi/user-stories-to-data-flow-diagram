@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inappropriate Behavior" as thinginappropriatebehavior
+	entity "Manager" as thingmanager
+	entity "Camper" as thingcamper
+	entity "Camp" as thingcamp
+	entity "Supply" as thingsupply
+	entity "Necessary Repair" as thingnecessaryrepair
+	actor "Camp Worker" as actorcampworker
+	boundary "Behavior\nInterface" as thingbehaviorinterface #grey
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	control "Report A\nCamper To\nThe Manager\nWith An\nInappropriate Behavior" as controlreportcampermanagerinappropriatebehavior
+	control "Report A\nList Of\nSupplies To\nThe Manager\nThe Camp\nShort" as controlreportlistmanagercamp
+	control "Report Necessary\nRepairs To\nThe Manager\nThe Camp" as controlreportnecessaryrepair
+
+	thinginappropriatebehavior <.. thingmanager
+	thingcamp <.. thingmanager
+	thingmanager <.. thingcamper
+	thingmanager <.. thingsupply
+	thingmanager <.. thingnecessaryrepair
+	thingcamp <.. thingnecessaryrepair
+	actorcampworker --- thingbehaviorinterface
+	actorcampworker --- thingcampinterface
+	actorcampworker --- thingmanagerinterface
+	thingcamper --- controlreportcampermanagerinappropriatebehavior
+	thingmanager --- controlreportcampermanagerinappropriatebehavior
+	thinginappropriatebehavior --- controlreportcampermanagerinappropriatebehavior
+	thingbehaviorinterface --> controlreportcampermanagerinappropriatebehavior
+	thingsupply --- controlreportlistmanagercamp
+	thingcamp --- controlreportlistmanagercamp
+	thingcampinterface --> controlreportlistmanagercamp
+	thingmanager --- controlreportlistmanagercamp
+	thingnecessaryrepair --- controlreportnecessaryrepair
+	thingmanagerinterface --> controlreportnecessaryrepair
+	thingmanager --- controlreportnecessaryrepair
+
+@enduml

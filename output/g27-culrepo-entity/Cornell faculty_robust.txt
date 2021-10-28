@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Research Material" as thingresearchmaterial
+	entity "Cornell Faculty" as thingcornellfaculty #grey
+	entity "Particular Topic" as thingparticulartopic
+	entity "Educational" as thingeducational
+	actor "Externaluser" as actorexternaluser
+	boundary "Educational\nInterface" as thingeducationalinterface #grey
+	boundary "Topic\nInterface" as thingtopicinterface #grey
+	control "Find" as controlfind
+	control "Access Educational" as controlaccesseducational
+	control "Access Research\nMaterials From\nCornell Faculty\nTo A\nParticular Topic" as controlaccessresearchmaterialcornellfaculty
+
+	thingcornellfaculty <.. thingresearchmaterial
+	thingparticulartopic <.. thingcornellfaculty
+	actorexternaluser --- thingeducationalinterface
+	actorexternaluser --- thingtopicinterface
+	thingeducational --- controlaccesseducational
+	thingeducationalinterface --> controlaccesseducational
+	thingresearchmaterial --- controlaccessresearchmaterialcornellfaculty
+	thingcornellfaculty --- controlaccessresearchmaterialcornellfaculty
+	thingparticulartopic --- controlaccessresearchmaterialcornellfaculty
+	thingtopicinterface --> controlaccessresearchmaterialcornellfaculty
+
+@enduml

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Description Information,shape=partialRectangle,null,null,data_base
+201,"Datum , Basic , Entry User",rounded=0,null,null,external_entity
+202,"Create Archival, Basic Description Information",ellipse,null,null,process
+203,"Update Archival, Basic Description Information",ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,Description Information,endArrow=classic,202,200,endArrow=classic
+208,Description Information,endArrow=classic,203,200,endArrow=classic

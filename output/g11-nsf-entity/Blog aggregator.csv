@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Blog Aggregator,shape=partialRectangle,null,null,data_base
+201,Beta,shape=partialRectangle,null,null,data_base
+202,Decision,shape=partialRectangle,null,null,data_base
+203,Stakeholder,rounded=0,null,null,external_entity
+204,Have A Decision,ellipse,null,null,process
+205,Have A Decision Not The Blog Aggregator Work For Beta,ellipse,null,null,process
+206,Not Will,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,Decision,endArrow=classic,204,202,endArrow=classic
+213,Decision,endArrow=classic,205,202,endArrow=classic
+214,Blog Aggregator,endArrow=classic,205,200,endArrow=classic
+215,Beta,endArrow=classic,205,201,endArrow=classic

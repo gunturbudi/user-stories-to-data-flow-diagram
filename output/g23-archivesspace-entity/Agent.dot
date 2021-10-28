@@ -1,0 +1,33 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Subject Information " color=red];
+201 [label="<f0>  |<f1> Agent " color=red];
+202 [label="<f0>  |<f1> Resource " color=red];
+203 [label="<f0>  |<f1> Source " color=red];
+204 [label="<f0>  |<f1> Accession Component " color=red];
+205 [label="<f0>  |<f1> Subject " color=red];
+206 [label="<f0>  |<f1> Name Form " ];
+207 [label="<f0>  |<f1> Exist Source " color=red];
+208 [label="<f0>  |<f1> New Source " color=red];
+209 [label="<f0>  |<f1> Marcxml Record " ];
+210 [label="Archivist" shape=box];
+211 [label="{<f0> 1.0|<f1> Import Subject Information }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Import Only Agent From Marcxml Records }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Indicate }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Specify The Source For A Name Form Of An Agent }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> Edit Existing Sources }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> Add New Sources }" shape=Mrecord];
+210 -> 211
+210 -> 212
+210 -> 214
+210 -> 216
+211 -> 200 [label="Subject Information"]
+212 -> 201 [label="Agent"]
+212 -> 209 [label="Marcxml Record"]
+214 -> 206 [label="Name Form"]
+214 -> 201 [label="Agent"]
+214 -> 203 [label="Source"]
+215 -> 207 [label="Exist Source"]
+216 -> 208 [label="New Source"]
+211 -> 205 [label="Subject"]
+}

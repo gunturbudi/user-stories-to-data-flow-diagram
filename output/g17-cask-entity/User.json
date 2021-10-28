@@ -1,0 +1,358 @@
+[
+  {
+    "text": "As a user, I want to find out what properties are supported by the dataset type what values are allowed and what the defaults are when creating a dataset instance.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "creating",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to specify the schema of a dataset in a uniform way across all dataset types.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to specify schema as a JSON string.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to specify schema as a SQL schema string.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to configure time-to-live in a uniform way across all dataset types.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "configure",
+        "label": "Processing"
+      },
+      {
+        "text": "time-to-live",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to see the properties that were used to configure a dataset instance.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      },
+      {
+        "text": "configure",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to find out what properties of a dataset can be updated.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to update the properties of a dataset instance and I expect this to fail if the new properties are not compatible with a meaningful error message.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to update a single property of a dataset instance without knowing all other properties.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "property",
+        "label": "PII"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to remove a single property of a dataset instance without knowing all other properties.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "property",
+        "label": "PII"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to trigger a migration process for a dataset if updating its properties requires that.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "trigger",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to ensure that if reconfiguration of a dataset fails then no changes have taken effect, so that all steps required to reconfigure a dataset must be done as a single atomic action.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "reconfiguration",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "reconfigure",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to specify as part of dataset configuration whether it is explorable.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset configuration",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to specify the explore schema separately.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to ensure that dataset creation fails if the dataset cannot be enabled for explore.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to ensure that dataset reconfiguration fails if the corresponding update of the explore table fails.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "reconfiguration",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to ensure that a dataset operation fails if it fails to make its required changes to explore.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to ensure that an update of explore never leads to silent loss of data or data available for explore.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to enable explore for a dataset that was not configured for explore initially.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "enable explore",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to disable explore for a dataset that was configured for explore initially.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "disable explore",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

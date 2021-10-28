@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Product Owner " ];
+201 [label="<f0>  |<f1> Email " color=red];
+202 [label="<f0>  |<f1> Content " ];
+203 [label="<f0>  |<f1> Scrum Master " ];
+204 [label="Site Editor" shape=box];
+205 [label="{<f0> 1.0|<f1> Edit The Content Of The Automatically Email To Certified, New Scrum Masters }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Edit The Content Of The Automatically Email To Product Owner }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Content"]
+205 -> 201 [label="Email"]
+205 -> 203 [label="Scrum Master"]
+206 -> 200 [label="Product Owner"]
+206 -> 201 [label="Email"]
+206 -> 202 [label="Content"]
+}

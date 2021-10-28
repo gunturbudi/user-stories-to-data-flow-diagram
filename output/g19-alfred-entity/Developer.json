@@ -1,0 +1,353 @@
+[
+  {
+    "text": "As a developer, I want to present my app to as many people as Possible.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      },
+      {
+        "text": "app",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the accounting to be as simple and clear as Possible.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "accounting",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to easily create and to maintain my apps within the market place.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "apps",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to enable customers to provide feedback about my App and need an easy way to watch this feedback.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "customers",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "App",
+        "label": "PII"
+      },
+      {
+        "text": "watch",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have an easy way to manage the pricing modality of my Apps.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Apps",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the API to be well defined and well documented.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to obtain Apps development support.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "obtain",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to know the fees the provider of the market place charges for using the platform.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "fees",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to be notified as soon as possible when the state of any of my Apps changes.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      },
+      {
+        "text": "Apps",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have detailed information of what happened when my App crashes on the user\u00e2\u20ac\u2122s device.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "what happened",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to present my App in several ways.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      },
+      {
+        "text": "App",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to be able to design my App on my own - though there will be a few rules I have to stand to.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "design",
+        "label": "Processing"
+      },
+      {
+        "text": "App",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have an easy way to define questions the user can ask and perform.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "define",
+        "label": "Processing"
+      },
+      {
+        "text": "questions",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "ask",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have my App to be granted access to several operating system features.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "App",
+        "label": "PII"
+      },
+      {
+        "text": "granted access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the API components to be on a high level so that I don\u00e2\u20ac\u2122t have to deal with their details.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "don\u00e2",
+        "label": "Processing"
+      },
+      {
+        "text": "\u20ac\u2122",
+        "label": "Data"
+      },
+      {
+        "text": "deal",
+        "label": "Processing"
+      },
+      {
+        "text": "details",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have an easy way to read data from health sensors the user is wearing.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "health sensors",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to provide an easy way to manage the user Settings.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "user Settings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the ALFRED API to reduce the work to achieve my goals.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "goals",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the ALFRED API to reduce the work to achieve my goals.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "goals",
+        "label": "PII"
+      }
+    ]
+  }
+]

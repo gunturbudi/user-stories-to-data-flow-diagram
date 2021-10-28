@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " color=red];
+201 [label="<f0>  |<f1> Archival Description " color=red];
+202 [label="<f0>  |<f1> Record " color=red];
+203 [label="Repository Manager" shape=box];
+204 [label="{<f0> 1.0|<f1> Create }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Delete Archival Descriptions In Repository }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Update Archival Descriptions In Repository }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Create Any Records In Repository }" shape=Mrecord];
+208 [label="{<f0> 5.0|<f1> Update Any Records In Repository }" shape=Mrecord];
+209 [label="{<f0> 6.0|<f1> Delete Any Records In Repository }" shape=Mrecord];
+203 -> 206
+203 -> 207
+203 -> 208
+203 -> 209
+205 -> 201 [label="Archival Description"]
+205 -> 200 [label="Repository"]
+206 -> 201 [label="Archival Description"]
+206 -> 200 [label="Repository"]
+207 -> 202 [label="Record"]
+207 -> 200 [label="Repository"]
+208 -> 200 [label="Repository"]
+208 -> 202 [label="Record"]
+209 -> 200 [label="Repository"]
+209 -> 202 [label="Record"]
+}

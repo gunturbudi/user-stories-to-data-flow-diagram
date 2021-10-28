@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+3,View just the dataset with a few people.,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Role,shape=partialRectangle,null,null,data_base
+202,Organization,shape=partialRectangle,null,null,data_base
+203,People,shape=partialRectangle,null,null,data_base
+204,Publisher,rounded=0,null,null,external_entity
+205,Owner,rounded=0,null,null,external_entity
+206,Publish A Dataset,ellipse,null,null,process
+207,View The People In Organization,ellipse,null,null,process
+209,,endArrow=classic,204,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Dataset,endArrow=classic,206,200,endArrow=classic
+212,People,endArrow=classic,207,203,endArrow=classic
+213,Organization,endArrow=classic,207,202,endArrow=classic
+1000,,endArrow=classic,206,3,endArrow=classic
+1001,"Publisher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,3,endArrow=classic
+1003,Dataset,endArrow=classic,3,200,endArrow=classic

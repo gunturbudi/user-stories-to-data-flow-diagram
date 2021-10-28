@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Topic" as thingtopic
+	entity "Dmp" as thingdmp
+	actor "Researcher" as actorresearcher
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Similar Know\nWhich Topics\nIn All\nDmps" as controlknowtopicdmp
+
+	thingdmp <.. thingtopic
+	actorresearcher --- thingdmpinterface
+	thingtopic --- controlknowtopicdmp
+	thingdmp --- controlknowtopicdmp
+	thingdmpinterface --> controlknowtopicdmp
+
+@enduml

@@ -1,0 +1,51 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan" as thingplan
+	entity "Review" as thingreview
+	entity "Applicant" as thingapplicant
+	entity "Outcome" as thingoutcome
+	entity "Code Modification" as thingcodemodification
+	actor "Plan ,\nReview ,\nStaff Member" as actorplanreviewstaffmember
+	circle "Completion" as thingcompletion
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	boundary "Applicant\nInterface" as thingapplicantinterface #grey
+	boundary "Outcome\nInterface" as thingoutcomeinterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Modification\nInterface" as thingmodificationinterface #grey
+	control "Assign Plans\nFor Review" as controlassignplan
+	control "Conduct A\nPlan Review\nWith The\nApplicant" as controlconductplanreview
+	control "Record The\nOutcome" as controlrecordoutcome
+	control "Review Plans" as controlreviewplan
+	control "Track The\nCompletion Of\nRequired Plan\nReviews" as controltrackcompletion
+	control "Review The\nCode Modifications\nThe Applicant" as controlreviewcodemodifications
+
+	thingreview <.. thingplan
+	thingapplicant <.. thingreview
+	thingplan <.. thingreview
+	thingplan *-- thingcompletion
+	thingreview *-- thingcompletion
+	actorplanreviewstaffmember --- thingreviewinterface
+	actorplanreviewstaffmember --- thingapplicantinterface
+	actorplanreviewstaffmember --- thingoutcomeinterface
+	actorplanreviewstaffmember --- thingplaninterface
+	actorplanreviewstaffmember --- thingmodificationinterface
+	thingplan --- controlassignplan
+	thingreview --- controlassignplan
+	thingreviewinterface --> controlassignplan
+	thingapplicant --- controlconductplanreview
+	thingapplicantinterface --> controlconductplanreview
+	thingreview --- controlconductplanreview
+	thingoutcome --- controlrecordoutcome
+	thingoutcomeinterface --> controlrecordoutcome
+	thingplaninterface --> controlreviewplan
+	thingplan --- controlreviewplan
+	thingcompletion --- controltrackcompletion
+	thingplaninterface --> controltrackcompletion
+	thingreview --- controltrackcompletion
+	thingcodemodification --- controlreviewcodemodifications
+	thingmodificationinterface --> controlreviewcodemodifications
+
+@enduml

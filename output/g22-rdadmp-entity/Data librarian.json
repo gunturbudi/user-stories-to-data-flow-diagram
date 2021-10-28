@@ -1,0 +1,52 @@
+[
+  {
+    "text": "As a data librarian, I want to extract pointers from the DMP to metadata held in other systems, so that I can import this metadata into a data catalogue.",
+    "entities": [
+      {
+        "text": "data librarian",
+        "label": "Data"
+      },
+      {
+        "text": "extract",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data librarian, I want to import administrative information regarding a project into DMP, so that I can prepopulate the DMP.",
+    "entities": [
+      {
+        "text": "data librarian",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "administrative information",
+        "label": "PII"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      },
+      {
+        "text": "prepopulate",
+        "label": "Processing"
+      }
+    ]
+  }
+]

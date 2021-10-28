@@ -1,0 +1,142 @@
+id,value,style,source,target,type
+21,Determine what basic support services and functionalities are required.,ellipse,null,null,process
+22,Use the data.,ellipse,null,null,process
+23,Determine whether and how the data has to be stored.,ellipse,null,null,process
+24,Check whether the data can be kept secure.,ellipse,null,null,process
+25,Share data manager posts.,ellipse,null,null,process
+26,Share data manager posts.,ellipse,null,null,process
+27,Share data manager posts.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Description,shape=partialRectangle,null,null,data_base
+202,Project Lifecycle,shape=partialRectangle,null,null,data_base
+203,Kind,shape=partialRectangle,null,null,data_base
+204,Type,shape=partialRectangle,null,null,data_base
+205,Necessary Right,shape=partialRectangle,null,null,data_base
+206,Time Plan,shape=partialRectangle,null,null,data_base
+207,Documentation,shape=partialRectangle,null,null,data_base
+208,Reference,shape=partialRectangle,null,null,data_base
+209,Creation Process,shape=partialRectangle,null,null,data_base
+210,Collect Datum,shape=partialRectangle,null,null,data_base
+211,Institution,shape=partialRectangle,null,null,data_base
+212,Information,shape=partialRectangle,null,null,data_base
+213,Format,shape=partialRectangle,null,null,data_base
+214,Technology,shape=partialRectangle,null,null,data_base
+215,Software,shape=partialRectangle,null,null,data_base
+216,Department,shape=partialRectangle,null,null,data_base
+217,Section,shape=partialRectangle,null,null,data_base
+218,Researcher,shape=partialRectangle,null,null,data_base
+219,Role,shape=partialRectangle,null,null,data_base
+220,Responsibility,shape=partialRectangle,null,null,data_base
+221,Dmp,shape=partialRectangle,null,null,data_base
+222,Security Requirement,shape=partialRectangle,null,null,data_base
+223,Data Manager,rounded=0,null,null,external_entity
+224,Researcher,rounded=0,null,null,external_entity
+225,Know,ellipse,null,null,process
+226,Update Throughout The Project Lifecycle,ellipse,null,null,process
+227,Have The Description Of Collected Sets,ellipse,null,null,process
+228,Have The Description Of Collected Data Sets Used,ellipse,null,null,process
+229,Document All Necessary Rights,ellipse,null,null,process
+230,Managing The Data,ellipse,null,null,process
+231,Know The Time Plan,ellipse,null,null,process
+232,Collecting Data,ellipse,null,null,process
+233,Have References To Documentation Of Creation Process,ellipse,null,null,process
+234,Have References To Documentation Of The Data,ellipse,null,null,process
+235,Know Which Information Necessary,ellipse,null,null,process
+236,Use,ellipse,null,null,process
+237,Know Which Software The Data Produced,ellipse,null,null,process
+238,Know Technology Produced,ellipse,null,null,process
+239,Know The Security Requirements Of The Data,ellipse,null,null,process
+240,See The Sections,ellipse,null,null,process
+241,Costing By Other Researchers In Department,ellipse,null,null,process
+242,Using The Data,ellipse,null,null,process
+243,Clarify The Necessary Rights,ellipse,null,null,process
+244,Plan The Anonymization Of Data,ellipse,null,null,process
+246,,endArrow=classic,223,226,endArrow=classic
+247,,endArrow=classic,223,227,endArrow=classic
+248,,endArrow=classic,223,228,endArrow=classic
+249,,endArrow=classic,223,229,endArrow=classic
+250,,endArrow=classic,223,230,endArrow=classic
+251,,endArrow=classic,223,231,endArrow=classic
+252,,endArrow=classic,223,232,endArrow=classic
+253,,endArrow=classic,223,233,endArrow=classic
+254,,endArrow=classic,223,234,endArrow=classic
+255,,endArrow=classic,223,235,endArrow=classic
+256,,endArrow=classic,223,237,endArrow=classic
+257,,endArrow=classic,223,238,endArrow=classic
+258,,endArrow=classic,223,239,endArrow=classic
+259,,endArrow=classic,223,242,endArrow=classic
+260,,endArrow=classic,223,243,endArrow=classic
+261,,endArrow=classic,223,244,endArrow=classic
+262,,endArrow=classic,224,240,endArrow=classic
+263,,endArrow=classic,224,241,endArrow=classic
+264,,endArrow=classic,225,236,endArrow=classic
+265,Project Lifecycle,endArrow=classic,226,202,endArrow=classic
+266,,endArrow=classic,227,226,endArrow=classic
+267,Description,endArrow=classic,227,201,endArrow=classic
+268,Description,endArrow=classic,228,201,endArrow=classic
+269,Datum,endArrow=classic,228,200,endArrow=classic
+270,Necessary Right,endArrow=classic,229,205,endArrow=classic
+271,,endArrow=classic,230,229,endArrow=classic
+272,Datum,endArrow=classic,230,200,endArrow=classic
+273,Time Plan,endArrow=classic,231,206,endArrow=classic
+274,,endArrow=classic,232,231,endArrow=classic
+275,Datum,endArrow=classic,232,200,endArrow=classic
+276,Creation Process,endArrow=classic,233,209,endArrow=classic
+277,Documentation,endArrow=classic,233,207,endArrow=classic
+278,Reference,endArrow=classic,233,208,endArrow=classic
+279,Reference,endArrow=classic,234,208,endArrow=classic
+280,Documentation,endArrow=classic,234,207,endArrow=classic
+281,Datum,endArrow=classic,234,200,endArrow=classic
+282,Information,endArrow=classic,235,212,endArrow=classic
+283,Software,endArrow=classic,237,215,endArrow=classic
+284,Datum,endArrow=classic,237,200,endArrow=classic
+285,Technology,endArrow=classic,238,214,endArrow=classic
+286,Security Requirement,endArrow=classic,239,222,endArrow=classic
+287,Datum,endArrow=classic,239,200,endArrow=classic
+288,Section,endArrow=classic,240,217,endArrow=classic
+289,Role,endArrow=classic,240,219,endArrow=classic
+290,Responsibility,endArrow=classic,240,220,endArrow=classic
+291,Department,endArrow=classic,240,216,endArrow=classic
+292,,endArrow=classic,241,240,endArrow=classic
+293,Researcher,endArrow=classic,241,218,endArrow=classic
+294,Department,endArrow=classic,241,216,endArrow=classic
+295,,endArrow=classic,242,243,endArrow=classic
+296,Datum,endArrow=classic,242,200,endArrow=classic
+297,Necessary Right,endArrow=classic,243,205,endArrow=classic
+298,Datum,endArrow=classic,244,200,endArrow=classic
+389,Format,endArrow=classic,235,213,endArrow=classic
+1000,,endArrow=classic,223,21,endArrow=classic
+1001,Data manager,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,21,endArrow=classic
+1003,Support services,rounded=0,null,null,external_entity
+1004,Support services,endArrow=classic,21,1003,endArrow=classic
+1005,,endArrow=classic,223,22,endArrow=classic
+1006,Data manager,rounded=0,null,null,external_entity
+1007,,endArrow=classic,1006,22,endArrow=classic
+1008,Background information,rounded=0,null,null,external_entity
+1009,Background information,endArrow=classic,22,1008,endArrow=classic
+1010,,endArrow=classic,223,23,endArrow=classic
+1011,Data manager,rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,23,endArrow=classic
+1013,Data,rounded=0,null,null,external_entity
+1014,Data,endArrow=classic,23,1013,endArrow=classic
+1015,,endArrow=classic,239,24,endArrow=classic
+1016,Data manager,rounded=0,null,null,external_entity
+1017,,endArrow=classic,1016,24,endArrow=classic
+1018,Data,rounded=0,null,null,external_entity
+1019,Data,endArrow=classic,24,1018,endArrow=classic
+1020,Researcher,rounded=0,null,null,external_entity
+1021,,endArrow=classic,1020,25,endArrow=classic
+1022,,endArrow=classic,240,25,endArrow=classic
+1023,Posts,rounded=0,null,null,external_entity
+1024,Posts,endArrow=classic,25,1023,endArrow=classic
+1025,Researcher,rounded=0,null,null,external_entity
+1026,,endArrow=classic,1025,26,endArrow=classic
+1027,,endArrow=classic,240,26,endArrow=classic
+1028,Posts,rounded=0,null,null,external_entity
+1029,Posts,endArrow=classic,26,1028,endArrow=classic
+1030,Researcher,rounded=0,null,null,external_entity
+1031,,endArrow=classic,1030,27,endArrow=classic
+1032,,endArrow=classic,240,27,endArrow=classic
+1033,Posts,rounded=0,null,null,external_entity
+1034,Posts,endArrow=classic,27,1033,endArrow=classic

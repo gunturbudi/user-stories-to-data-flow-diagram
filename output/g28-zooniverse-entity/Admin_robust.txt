@@ -1,0 +1,138 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Video" as thingvideo
+	entity "Segment" as thingsegment
+	entity "Topic" as thingtopic
+	entity "Quick Assessment" as thingquickassessment
+	entity "Upload" as thingupload
+	entity "Audio Material" as thingaudiomaterial
+	entity "Content" as thingcontent
+	entity "Search" as thingsearch
+	entity "Copyright Infringement" as thingcopyrightinfringement #grey
+	entity "Ingested Content" as thingingestedcontent
+	entity "Information" as thinginformation #grey
+	entity "Metadata" as thingmetadata
+	entity "Tag" as thingtag
+	entity "High­level" as thinghigh­level
+	entity "Article" as thingarticle
+	entity "Quality Aspect" as thingqualityaspect
+	entity "News" as thingnews #grey
+	entity "Nudity" as thingnudity #grey
+	entity "Asset" as thingasset #grey
+	actor "Admin" as actoradmin
+	circle "Segmentation" as thingsegmentation
+	circle "Summary" as thingsummary
+	boundary "Content" as thingcontentusesearchadmin #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	boundary "Aspect\nInterface" as thingaspectinterface #grey
+	boundary "Upload\nInterface" as thinguploadinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Infringement\nInterface" as thinginfringementinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "See Segmentation\nOf Videos" as controlseesegmentation
+	control "Validate Segmentation\nOf Videos" as controlvalidatesegmentation
+	control "Edit Segmentation\nOf Videos" as controleditsegmentation
+	control "Annotate News\nVideo Segments" as controlannotatenewsvideosegments
+	control "Extract A\nTopic For\nEach Segment" as controlextracttopicsegment
+	control "Filter Videos\nOn Quality\nAspects" as controlfiltervideo
+	control "Filter Videos\nOn" as controlfiltervideoV
+	control "V" as controlV
+	control "Rank Videos\nOn" as controlrankvideoV
+	control "Rank Videos\nOn Quality\nAspects" as controlrankvideo
+	control "Get A\nQuick Assessment\nAudio Material\nHas Edited\nBefore The\nUpload" as controlgetquickassessment
+	control "Prefilter Nudity\nContent" as controlprefilternuditycontent
+	control "Prefilter Content\nUsing Search\nOn Asset\nInformation" as controlprefiltercontentsearchassetinformation
+	control "Validated The\nIngested Contents\nFor Copyright\nInfringement" as controlvalidatedingestedcontentcopyrightinfringement
+	control "Prefilter" as controlprefiltercontentusesearchcontentusesearchtagadmin
+	control "Use Search\nOn High­Level\nInformation Such\nAs Tag" as controlusesearchtag
+	control "Use Search\nOn High­Level\nAsset Information\nSuch As\nMetadata" as controlusesearch
+	control "See A\nSummary Of\nArticles" as controlseesummary
+
+	thingqualityaspect <.. thingvideo
+	thingnews <.. thingvideo
+	thingvideo <.. thingsegment
+	thingsegment <.. thingtopic
+	thingaudiomaterial <.. thingquickassessment
+	thingupload <.. thingquickassessment
+	thingupload <.. thingaudiomaterial
+	thingsearch <.. thingcontent
+	thingnudity <.. thingcontent
+	thinghigh­level <.. thingsearch
+	thinginformation <.. thingsearch
+	thingcopyrightinfringement <.. thingingestedcontent
+	thingasset <.. thinginformation
+	thingmetadata <.. thinginformation
+	thingvideo *-- thingsegmentation
+	thingarticle *-- thingsummary
+	actoradmin --- thingcontentusesearchadmin
+	actoradmin --- thingvideointerface
+	actoradmin --- thingsegmentinterface
+	actoradmin --- thingaspectinterface
+	actoradmin --- thinguploadinterface
+	actoradmin --- thingcontentinterface
+	actoradmin --- thinginformationinterface
+	actoradmin --- thinginfringementinterface
+	actoradmin --- thingarticleinterface
+	thingsegmentation --- controlseesegmentation
+	thingvideo --- controlseesegmentation
+	thingvideointerface --> controlseesegmentation
+	thingsegmentation --- controlvalidatesegmentation
+	thingvideo --- controlvalidatesegmentation
+	thingvideointerface --> controlvalidatesegmentation
+	thingsegmentation --- controleditsegmentation
+	thingvideo --- controleditsegmentation
+	thingvideointerface --> controleditsegmentation
+	thingvideointerface --> controlannotatenewsvideosegments
+	thingsegment --- controlannotatenewsvideosegments
+	thingtopic --- controlextracttopicsegment
+	thingsegment --- controlextracttopicsegment
+	thingsegmentinterface --> controlextracttopicsegment
+	thingqualityaspect --- controlfiltervideo
+	thingaspectinterface --> controlfiltervideo
+	thingvideo --- controlfiltervideo
+	thingvideointerface --> controlfiltervideoV
+	thingvideo --- controlfiltervideoV
+	controlfiltervideoV --> controlV
+	controlrankvideoV --> controlV
+	thingvideointerface --> controlV
+	thingvideointerface --> controlrankvideoV
+	thingvideo --- controlrankvideoV
+	thingvideo --- controlrankvideo
+	thingaspectinterface --> controlrankvideo
+	thingqualityaspect --- controlrankvideo
+	thingquickassessment --- controlgetquickassessment
+	thingaudiomaterial --- controlgetquickassessment
+	thingupload --- controlgetquickassessment
+	thinguploadinterface --> controlgetquickassessment
+	thingcontentinterface --> controlprefilternuditycontent
+	thingcontent --- controlprefilternuditycontent
+	thingcontent --- controlprefiltercontentsearchassetinformation
+	thingsearch --- controlprefiltercontentsearchassetinformation
+	thinginformationinterface --> controlprefiltercontentsearchassetinformation
+	thinginformation --- controlprefiltercontentsearchassetinformation
+	thingingestedcontent --- controlvalidatedingestedcontentcopyrightinfringement
+	thingcopyrightinfringement --- controlvalidatedingestedcontentcopyrightinfringement
+	thinginfringementinterface --> controlvalidatedingestedcontentcopyrightinfringement
+	thingcontentusesearchadmin --> controlprefiltercontentusesearchcontentusesearchtagadmin
+	controlprefiltercontentusesearchcontentusesearchtagadmin --> controlusesearchtag
+	thingtag --- controlusesearchtag
+	thinginformation --- controlusesearchtag
+	thingsearch --- controlusesearchtag
+	thinghigh­level --- controlusesearchtag
+	thingcontentusesearchadmin --> controlusesearchtag
+	thingcontentusesearchadmin --> controlusesearch
+	thinghigh­level --- controlusesearch
+	thingmetadata --- controlusesearch
+	thingsearch --- controlusesearch
+	controlprefiltercontentusesearchcontentusesearchtagadmin --> controlusesearch
+	thinginformation --- controlusesearch
+	thingsummary --- controlseesummary
+	thingarticle --- controlseesummary
+	thingarticleinterface --> controlseesummary
+
+@enduml

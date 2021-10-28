@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, so that I have the opportunty to post my job listing on the BADCamp site.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship person",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "job listing",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Hypothesis " ];
+201 [label="<f0>  |<f1> Content Guide " color=red];
+202 [label="<f0>  |<f1> Design Guide " ];
+203 [label="<f0>  |<f1> Style Guide " ];
+204 [label="<f0>  |<f1> Media Wireframe " color=red];
+205 [label="Designer" shape=box];
+206 [label="{<f0> 1.0|<f1> Have A Social, New Media Wireframe }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Know }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Have Content Guide }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Have A Style Guide }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Have Design Guide }" shape=Mrecord];
+205 -> 206
+205 -> 208
+205 -> 209
+205 -> 210
+206 -> 204 [label="Media Wireframe"]
+208 -> 201 [label="Content Guide"]
+209 -> 203 [label="Style Guide"]
+210 -> 202 [label="Design Guide"]
+}

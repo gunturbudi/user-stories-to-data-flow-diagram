@@ -1,0 +1,186 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Type" as thingtype
+	entity "Option" as thingoption
+	entity "Runtime" as thingruntime
+	entity "Dataset Type" as thingdatasettype
+	entity "Archetype" as thingarchetype
+	entity "Interface" as thinginterface
+	entity "Explicit Version" as thingexplicitversion
+	entity "Instance" as thinginstance #grey
+	entity "Upgrade Step" as thingupgradestep
+	entity "Upgrade" as thingupgrade
+	entity "Way" as thingway
+	entity "Procedure" as thingprocedure #grey
+	entity "Compaction" as thingcompaction
+	entity "Administrative ,\nCustom Operation" as thingadministrativecustomoperation
+	entity "Dataset" as thingdataset #grey
+	entity "Migration" as thingmigration #grey
+	actor "Dataset Developer" as actordatasetdeveloper
+	circle "Dataset Instance" as thingdatasetinstance
+	circle "Implementation" as thingimplementation
+	circle "Code" as thingcode
+	circle "New Version" as thingnewversion
+	circle "Outdate Version" as thingoutdatedversion
+	circle "Specific Version" as thingspecificversion
+	boundary "App" as thingappdatasetdeveloper
+	boundary "Application" as thingapplicationhavedatasetcodedatasetdeveloper #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Operation\nInterface" as thingoperationinterface #grey
+	boundary "Compaction\nInterface" as thingcompactioninterface #grey
+	control "Deploy A\nIndependent Dataset\nType From\nAny App" as controldeployindependentdatasettype
+	control "Allow" as controlallowcreateappdatasetdeveloperdatasetinstance
+	control "Create Dataset\nInstances Of\nThat Type" as controlcreateappdatasetdeveloperdatasetinstance
+	control "Use Dataset\nInstances Of\nThat Type" as controluseappdatasetdeveloperdatasetinstance
+	control "Have The\nDataset Code\nAt Runtime" as controlhavedatasetcode
+	control "Have The\nOption" as controlhaveoption
+	control "Forcing" as controlforcehaveoptionapplicationhavedatasetcodedatasetdeveloper
+	control "Have An\nArchetype Helps\nProperly Package\nDataset Type" as controlhavearchetype
+	control "Separate The\nInterface From\nThe Implementation\nOf A\nDataset Type" as controlseparateinterfaceimplementation
+	control "Assign Explicit\nVersions To\nThe Code\nOf A\nDataset Type" as controlassignexplicitversioncode
+	control "Deploy A\nNew Version\nOf A\nDataset Type" as controldeploynewversion
+	control "Affecting The\nDataset Instances\nOf That\nType" as controlaffectdeploynewversiondatasetinstance
+	control "Explore A\nDataset Instance\nFrom A\nDataset Type\nA Type\nDeployed" as controlexploredatasetinstance
+	control "Fail" as controlfail
+	control "Delete Outdated\nVersions Of\nA Dataset\nType" as controldeleteoutdatedversion
+	control "List All\nDataset Instances\nUse A\nDataset Type" as controllistdatasetinstances
+	control "List All\nInstances Use\nA Specific\nVersion Of\nA Type" as controllistinstancespecificversion
+	control "Implementing An\nUpgrade Step\nA Dataset\nInstance When\nUpgraded To\nA New\nVersion Of\nThe Dataset\nType" as controlimplementhaveoptionupgradestep
+	control "Have A\nWay" as controlhavewayrejectupgradenewerversion
+	control "Reject An\nUpgrade Of\nA Dataset\nInstance To\nA Newer\nVersion Of" as controlrejectupgradenewerversion
+	control "Implementing A\nMigration Procedure\nRun After\nAn Upgrade\nOf A\nDataset Instance\nTo A\nNew Version\nOf" as controlimplementhaveoptionmigrationprocedure
+	control "Implementing A\nProcedure Run\nAfter An\nUpgrade Of\nA Instance\nTo A\nNew Version\nOf Type" as controlimplementhaveoptionproceduretype
+	control "Implement Administrative,\nCustom Operations\nSuch As" as controlimplementadministrativecustomoperationrebalance
+	control "Rebalance" as controlrebalance
+	control "Implement Administrative,\nCustom Operations\nSuch As\nCompaction" as controlimplementadministrativecustomoperation
+
+	thingdataset <.. thingtype
+	thingapp <.. thingtype
+	thingtype <.. thingtype
+	thingtype <.. thingarchetype
+	thingimplementation <.. thinginterface
+	thingcode <.. thingexplicitversion
+	thingspecificversion <.. thinginstance
+	thingdatasettype <.. thinginstance
+	thingnewversion <.. thinginstance
+	thingtype <.. thinginstance
+	thingdataset <.. thinginstance
+	thingnewversion <.. thingupgradestep
+	thinginstance <.. thingupgradestep
+	thingnewversion *-- thingupgrade
+	thinginstance *-- thingupgrade
+	thingmigration <.. thingprocedure
+	thingupgrade <.. thingprocedure
+	thingcompaction <.. thingadministrativecustomoperation
+	thingtype *-- thingdatasetinstance
+	thingtype *-- thingimplementation
+	thingtype *-- thingcode
+	thingruntime *-- thingcode
+	thingdataset *-- thingcode
+	thingnewversion *-- thingnewversion
+	thingtype *-- thingnewversion
+	thingdatasettype *-- thingoutdatedversion
+	thingtype *-- thingspecificversion
+	actordatasetdeveloper --- thingappdatasetdeveloper
+	actordatasetdeveloper --- thingapplicationhavedatasetcodedatasetdeveloper
+	actordatasetdeveloper --- thingappinterface
+	actordatasetdeveloper --- thingoptioninterface
+	actordatasetdeveloper --- thingtypeinterface
+	actordatasetdeveloper --- thingwayinterface
+	actordatasetdeveloper --- thingversioninterface
+	actordatasetdeveloper --- thingoperationinterface
+	actordatasetdeveloper --- thingcompactioninterface
+	thingapp --- controldeployindependentdatasettype
+	thingappinterface --> controldeployindependentdatasettype
+	thingtype --- controldeployindependentdatasettype
+	thingappdatasetdeveloper --> controlallowcreateappdatasetdeveloperdatasetinstance
+	controlallowcreateappdatasetdeveloperdatasetinstance --> controlcreateappdatasetdeveloperdatasetinstance
+	thingappdatasetdeveloper --> controlcreateappdatasetdeveloperdatasetinstance
+	thingdatasetinstance --- controlcreateappdatasetdeveloperdatasetinstance
+	thingtype --- controlcreateappdatasetdeveloperdatasetinstance
+	thingdatasetinstance --- controluseappdatasetdeveloperdatasetinstance
+	thingappdatasetdeveloper --> controluseappdatasetdeveloperdatasetinstance
+	thingtype --- controluseappdatasetdeveloperdatasetinstance
+	controlallowcreateappdatasetdeveloperdatasetinstance --> controluseappdatasetdeveloperdatasetinstance
+	thingruntime --- controlhavedatasetcode
+	controlforcehaveoptionapplicationhavedatasetcodedatasetdeveloper --> controlhavedatasetcode
+	thingapplicationhavedatasetcodedatasetdeveloper --> controlhavedatasetcode
+	thingcode --- controlhavedatasetcode
+	thingoption --- controlhaveoption
+	controlforcehaveoptionapplicationhavedatasetcodedatasetdeveloper --> controlhaveoption
+	thingoptioninterface --> controlhaveoption
+	controlimplementhaveoptionupgradestep --> controlhaveoption
+	controlimplementhaveoptionmigrationprocedure --> controlhaveoption
+	controlimplementhaveoptionproceduretype --> controlhaveoption
+	thingapplicationhavedatasetcodedatasetdeveloper --> controlforcehaveoptionapplicationhavedatasetcodedatasetdeveloper
+	thingarchetype --- controlhavearchetype
+	thingtypeinterface --> controlhavearchetype
+	thingtype --- controlhavearchetype
+	thinginterface --- controlseparateinterfaceimplementation
+	thingimplementation --- controlseparateinterfaceimplementation
+	thingtypeinterface --> controlseparateinterfaceimplementation
+	thingtype --- controlseparateinterfaceimplementation
+	thingexplicitversion --- controlassignexplicitversioncode
+	thingcode --- controlassignexplicitversioncode
+	thingtypeinterface --> controlassignexplicitversioncode
+	thingtype --- controlassignexplicitversioncode
+	thingnewversion --- controldeploynewversion
+	controlaffectdeploynewversiondatasetinstance --> controldeploynewversion
+	thingtypeinterface --> controldeploynewversion
+	thingtype --- controldeploynewversion
+	thingdatasetinstance --- controlaffectdeploynewversiondatasetinstance
+	thingtype --- controlaffectdeploynewversiondatasetinstance
+	thingtypeinterface --> controlaffectdeploynewversiondatasetinstance
+	thinginstance --- controlexploredatasetinstance
+	thingtypeinterface --> controlexploredatasetinstance
+	thingtype --- controlexploredatasetinstance
+	thingoutdatedversion --- controldeleteoutdatedversion
+	thingdatasettype --- controldeleteoutdatedversion
+	thingtypeinterface --> controldeleteoutdatedversion
+	thingdatasettype --- controllistdatasetinstances
+	thinginstance --- controllistdatasetinstances
+	thingtypeinterface --> controllistdatasetinstances
+	thinginstance --- controllistinstancespecificversion
+	thingspecificversion --- controllistinstancespecificversion
+	thingtype --- controllistinstancespecificversion
+	thingtypeinterface --> controllistinstancespecificversion
+	thingupgradestep --- controlimplementhaveoptionupgradestep
+	thingnewversion --- controlimplementhaveoptionupgradestep
+	thinginstance --- controlimplementhaveoptionupgradestep
+	thingtypeinterface --> controlimplementhaveoptionupgradestep
+	thingtype --- controlimplementhaveoptionupgradestep
+	thingway --- controlhavewayrejectupgradenewerversion
+	thingwayinterface --> controlhavewayrejectupgradenewerversion
+	controlhavewayrejectupgradenewerversion --> controlrejectupgradenewerversion
+	thingupgrade --- controlrejectupgradenewerversion
+	thingversioninterface --> controlrejectupgradenewerversion
+	thinginstance --- controlrejectupgradenewerversion
+	thingnewversion --- controlrejectupgradenewerversion
+	thingnewversion --- controlimplementhaveoptionmigrationprocedure
+	thinginstance --- controlimplementhaveoptionmigrationprocedure
+	thingupgrade --- controlimplementhaveoptionmigrationprocedure
+	thingprocedure --- controlimplementhaveoptionmigrationprocedure
+	thingversioninterface --> controlimplementhaveoptionmigrationprocedure
+	thingprocedure --- controlimplementhaveoptionproceduretype
+	thingtype --- controlimplementhaveoptionproceduretype
+	thingnewversion --- controlimplementhaveoptionproceduretype
+	thinginstance --- controlimplementhaveoptionproceduretype
+	thingtypeinterface --> controlimplementhaveoptionproceduretype
+	thingupgrade --- controlimplementhaveoptionproceduretype
+	thingoperationinterface --> controlimplementadministrativecustomoperationrebalance
+	thingadministrativecustomoperation --- controlimplementadministrativecustomoperationrebalance
+	controlimplementadministrativecustomoperationrebalance --> controlrebalance
+	thingoperationinterface --> controlrebalance
+	thingadministrativecustomoperation --- controlimplementadministrativecustomoperation
+	thingcompaction --- controlimplementadministrativecustomoperation
+	thingcompactioninterface --> controlimplementadministrativecustomoperation
+
+@enduml

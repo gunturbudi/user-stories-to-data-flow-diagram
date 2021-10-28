@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Manager" as thingmanager
+	entity "Checksum" as thingchecksum
+	entity "Master File" as thingmasterfile #grey
+	entity "Checksum Method" as thingchecksummethod
+	entity "Object" as thinggivenobject
+	actor "Dams Manager" as actordamsmanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	control "Preservation Managers\nThe Checksum\nMethod For\nEach Master\nFile For\nA Given\nObject" as controlpreservationmanagerchecksummethod
+	control "Indicate" as controlindicatepreservationmanagerchecksummethod
+	control "Preservation Managers\nChecksum" as controlpreservationmanagerchecksum
+
+	thingchecksummethod <.. thingmanager
+	thingchecksum <.. thingmanager
+	thinggivenobject <.. thingmasterfile
+	thingmasterfile <.. thingchecksummethod
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingmanagerinterface
+	thingmanager --- controlpreservationmanagerchecksummethod
+	thingchecksummethod --- controlpreservationmanagerchecksummethod
+	thingmasterfile --- controlpreservationmanagerchecksummethod
+	thinggivenobject --- controlpreservationmanagerchecksummethod
+	controlindicatepreservationmanagerchecksummethod --> controlpreservationmanagerchecksummethod
+	thingobjectinterface --> controlpreservationmanagerchecksummethod
+	thingobjectinterface --> controlindicatepreservationmanagerchecksummethod
+	thingmanager --- controlindicatepreservationmanagerchecksummethod
+	thingchecksum --- controlpreservationmanagerchecksum
+	thingmanagerinterface --> controlpreservationmanagerchecksum
+	thingmanager --- controlpreservationmanagerchecksum
+	controlindicatepreservationmanagerchecksummethod --> controlpreservationmanagerchecksum
+
+@enduml

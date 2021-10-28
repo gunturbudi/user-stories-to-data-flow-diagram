@@ -1,0 +1,75 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Specific License " ];
+201 [label="<f0>  |<f1> Submitter " ];
+202 [label="<f0>  |<f1> License " ];
+203 [label="<f0>  |<f1> Selection " ];
+204 [label="<f0>  |<f1> Deposit " color=red];
+205 [label="<f0>  |<f1> Collection " color=red];
+206 [label="<f0>  |<f1> Thing " ];
+207 [label="<f0>  |<f1> Upcoming Downtime " ];
+208 [label="<f0>  |<f1> Message " color=red];
+209 [label="<f0>  |<f1> User " color=red];
+210 [label="<f0>  |<f1> Page " ];
+211 [label="<f0>  |<f1> Select Time " ];
+212 [label="<f0>  |<f1> Repository " ];
+213 [label="<f0>  |<f1> Restrict Object " ];
+214 [label="<f0>  |<f1> Access " ];
+215 [label="Repoadmin" shape=box];
+216 [label="Repository Manager" shape=box];
+217 [label="Collection Curator" shape=box];
+218 [label="{<f0> 1.0|<f1> Presented With A License }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> The Submitter Not Accept The License }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Have }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Denied }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Presented With A Selection Of Specific Licenses To Deposit }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> Presented With A Selection Of Specific Licenses To The Collection }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Schedule A Message To Users }" shape=Mrecord];
+225 [label="{<f0> 8.0|<f1> Displayed On Each Page On The Repository Between Select Times For Things Like Notification Of Upcoming Downtime }" shape=Mrecord];
+226 [label="{<f0> 9.0|<f1> Contact From The Repository }" shape=Mrecord];
+227 [label="{<f0> 10.0|<f1> Request Access To Restricted Objects }" shape=Mrecord];
+215 -> 218
+215 -> 219
+215 -> 220
+215 -> 221
+215 -> 222
+215 -> 223
+215 -> 226
+215 -> 227
+216 -> 224
+216 -> 225
+217 -> 218
+217 -> 220
+217 -> 222
+217 -> 223
+217 -> 226
+217 -> 227
+218 -> 221
+218 -> 202 [label="License"]
+219 -> 201 [label="Submitter"]
+219 -> 202 [label="License"]
+220 -> 218
+220 -> 222
+220 -> 223
+220 -> 200 [label="Specific License"]
+220 -> 203 [label="Selection"]
+221 -> 219
+222 -> 204 [label="Deposit"]
+222 -> 200 [label="Specific License"]
+222 -> 203 [label="Selection"]
+223 -> 203 [label="Selection"]
+223 -> 200 [label="Specific License"]
+223 -> 205 [label="Collection"]
+224 -> 225
+224 -> 208 [label="Message"]
+224 -> 209 [label="User"]
+225 -> 210 [label="Page"]
+225 -> 212 [label="Repository"]
+225 -> 211 [label="Select Time"]
+225 -> 206 [label="Thing"]
+225 -> 207 [label="Upcoming Downtime"]
+226 -> 227
+226 -> 212 [label="Repository"]
+227 -> 214 [label="Access"]
+227 -> 213 [label="Restrict Object"]
+}

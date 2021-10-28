@@ -1,0 +1,103 @@
+[
+  {
+    "text": "As a Platform Administrator, I want to have a view on all datasets published by all users, So that I can perform management actions on any dataset.",
+    "entities": [
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to understand if a user is a Publisher, So that I can offer functionality based on Dataset Publisher privileges.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to understand if a user is an Administrator, So that I can offer functionality based on Platform Administration privileges.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a User, I want to be able to set my own username, So that my data is more easily discoverable.",
+    "entities": [
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "username",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Platform administrator, I want to be able to translate the data types hierarchies of the Viewer while in embed mode, So that my users can understand the interface in their native language.",
+    "entities": [
+      {
+        "text": "Platform administrator",
+        "label": "Data"
+      },
+      {
+        "text": "translate",
+        "label": "Processing"
+      },
+      {
+        "text": "data types",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

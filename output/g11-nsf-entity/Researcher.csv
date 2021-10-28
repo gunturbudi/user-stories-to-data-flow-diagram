@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+3,Synthesize results.,ellipse,null,null,process
+200,Internal Workflow,shape=partialRectangle,null,null,data_base
+201,User Research,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Develop The User Research Protocol For Internal Workflows,ellipse,null,null,process
+204,Recruit For The Last Round Of User Research,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Internal Workflow,endArrow=classic,203,200,endArrow=classic
+209,User Research,endArrow=classic,204,201,endArrow=classic
+1000,We,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,3,endArrow=classic
+1002,Findings,rounded=0,null,null,external_entity
+1003,Findings,endArrow=classic,3,1002,endArrow=classic

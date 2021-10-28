@@ -1,0 +1,129 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> App " color=red];
+202 [label="<f0>  |<f1> Type " color=red];
+203 [label="<f0>  |<f1> Dataset Instance " color=red];
+204 [label="<f0>  |<f1> Artifact " color=red];
+205 [label="<f0>  |<f1> Instance " color=red];
+206 [label="<f0>  |<f1> Multiple Application " color=red];
+207 [label="<f0>  |<f1> App " color=red];
+208 [label="<f0>  |<f1> New Code " ];
+209 [label="<f0>  |<f1> Version Conflict\nError " ];
+210 [label="<f0>  |<f1> Implementation " ];
+211 [label="<f0>  |<f1> System " ];
+212 [label="<f0>  |<f1> Runtime " ];
+213 [label="<f0>  |<f1> Ui " ];
+214 [label="<f0>  |<f1> Administrative ,\nCustom Operation " ];
+215 [label="<f0>  |<f1> Cli " ];
+216 [label="<f0>  |<f1> Rest " ];
+217 [label="<f0>  |<f1> Exist Dataset " color=red];
+218 [label="<f0>  |<f1> Unit Test " color=red];
+219 [label="<f0>  |<f1> Hydrator Pipeline " ];
+220 [label="App Developer" shape=box];
+221 [label="{<f0> 1.0|<f1> Include The Code Of A Dataset Type In App Artifact }" shape=Mrecord];
+222 [label="{<f0> 2.0|<f1> Create A Dataset Of That Type When Deploying The App }" shape=Mrecord];
+223 [label="{<f0> 3.0|<f1> Deploying A New Version Of The App Includes }" shape=Mrecord];
+224 [label="{<f0> 4.0|<f1> Deploy A New Version Of A Dataset Type As Part }" shape=Mrecord];
+225 [label="{<f0> 5.0|<f1> Affecting Other Datasets Of This Type }" shape=Mrecord];
+226 [label="{<f0> 6.0|<f1> Explore A Dataset Instance Of A Type Deployed As Part Of An App }" shape=Mrecord];
+227 [label="{<f0> 7.0|<f1> Deploy An Artifact }" shape=Mrecord];
+228 [label="{<f0> 8.0|<f1> Creating An App Not Create Instance }" shape=Mrecord];
+229 [label="{<f0> 9.0|<f1> Ensure That }" shape=Mrecord];
+230 [label="{<f0> 10.0|<f1> Creating An App Not Create Any Dataset Types }" shape=Mrecord];
+231 [label="{<f0> 11.0|<f1> Share A Dataset Type Across Multiple Applications Include The Dataset Type's Code In Artifacts }" shape=Mrecord];
+232 [label="{<f0> 12.0|<f1> Using The New Code }" shape=Mrecord];
+233 [label="{<f0> 13.0|<f1> Deploy A New Version Of An App Includes A Shared Dataset Type That Dataset Instances This App Start Dataset Instances Other Apps Unchanged }" shape=Mrecord];
+234 [label="{<f0> 14.0|<f1> Deploy A New Version Of An App Includes An Older Version Of Dataset Type Another App }" shape=Mrecord];
+235 [label="{<f0> 15.0|<f1> Ensure }" shape=Mrecord];
+236 [label="{<f0> 16.0|<f1> Shares Deploy A New Version Of An App Includes A Different Version Of Dataset Type Another App This App A Dataset Instance Of This Type With The Other App The Deployment Fail With A Version Conflict Error }" shape=Mrecord];
+237 [label="{<f0> 17.0|<f1> Share A Dataset Type }" shape=Mrecord];
+238 [label="{<f0> 18.0|<f1> Depend On The Interface Of A Dataset Type In App }" shape=Mrecord];
+239 [label="{<f0> 19.0|<f1> Have }" shape=Mrecord];
+240 [label="{<f0> 20.0|<f1> Write Unit Tests For An App Depends On The Interface Of A Dataset Type }" shape=Mrecord];
+241 [label="{<f0> 21.0|<f1> Create A Dataset Instance With A Specific Version Of A Dataset Type }" shape=Mrecord];
+242 [label="{<f0> 22.0|<f1> Ensure Dataset Instances Hydrator Pipelines Accessible To The App }" shape=Mrecord];
+243 [label="{<f0> 23.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From App }" shape=Mrecord];
+244 [label="{<f0> 24.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From The Cli }" shape=Mrecord];
+245 [label="{<f0> 25.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From The Ui }" shape=Mrecord];
+246 [label="{<f0> 26.0|<f1> Perform Administrative, Custom Operations On Dataset Instances From Rest }" shape=Mrecord];
+247 [label="{<f0> 27.0|<f1> Tolerate Existing Datasets }" shape=Mrecord];
+220 -> 221
+220 -> 224
+220 -> 225
+220 -> 227
+220 -> 228
+220 -> 229
+220 -> 231
+220 -> 232
+220 -> 233
+220 -> 234
+220 -> 234
+220 -> 236
+220 -> 236
+220 -> 237
+220 -> 237
+220 -> 238
+220 -> 244
+220 -> 245
+220 -> 246
+221 -> 201 [label="App"]
+222 -> 200 [label="Dataset"]
+222 -> 202 [label="Type"]
+222 -> 201 [label="App"]
+223 -> 224
+223 -> 201 [label="App"]
+224 -> 204 [label="Artifact"]
+225 -> 224
+225 -> 202 [label="Type"]
+226 -> 201 [label="App"]
+226 -> 202 [label="Type"]
+226 -> 205 [label="Instance"]
+227 -> 229
+227 -> 204 [label="Artifact"]
+228 -> 227
+228 -> 205 [label="Instance"]
+228 -> 201 [label="App"]
+230 -> 227
+230 -> 201 [label="App"]
+230 -> 202 [label="Type"]
+231 -> 206 [label="Multiple Application"]
+231 -> 204 [label="Artifact"]
+231 -> 202 [label="Type"]
+232 -> 208 [label="New Code"]
+233 -> 229
+233 -> 232
+233 -> 203 [label="Dataset Instance"]
+233 -> 201 [label="App"]
+233 -> 202 [label="Type"]
+234 -> 229
+234 -> 201 [label="App"]
+236 -> 235
+236 -> 209 [label="Version Conflict\nError"]
+236 -> 201 [label="App"]
+236 -> 202 [label="Type"]
+236 -> 207 [label="App"]
+236 -> 205 [label="Instance"]
+238 -> 201 [label="App"]
+240 -> 218 [label="Unit Test"]
+240 -> 201 [label="App"]
+240 -> 202 [label="Type"]
+241 -> 202 [label="Type"]
+241 -> 205 [label="Instance"]
+242 -> 201 [label="App"]
+242 -> 203 [label="Dataset Instance"]
+243 -> 214 [label="Administrative ,\nCustom Operation"]
+243 -> 201 [label="App"]
+243 -> 203 [label="Dataset Instance"]
+244 -> 215 [label="Cli"]
+244 -> 203 [label="Dataset Instance"]
+244 -> 214 [label="Administrative ,\nCustom Operation"]
+245 -> 213 [label="Ui"]
+245 -> 203 [label="Dataset Instance"]
+245 -> 214 [label="Administrative ,\nCustom Operation"]
+246 -> 216 [label="Rest"]
+246 -> 203 [label="Dataset Instance"]
+246 -> 214 [label="Administrative ,\nCustom Operation"]
+247 -> 217 [label="Exist Dataset"]
+242 -> 219 [label="Hydrator Pipeline"]
+}

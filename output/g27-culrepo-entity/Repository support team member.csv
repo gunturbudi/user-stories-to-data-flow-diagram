@@ -1,0 +1,48 @@
+id,value,style,source,target,type
+200,Item,shape=partialRectangle,null,null,data_base
+201,Collection,shape=partialRectangle,null,null,data_base
+202,Record,shape=partialRectangle,null,null,data_base
+203,Associated File,shape=partialRectangle,null,null,data_base
+204,Uniform Error,shape=partialRectangle,null,null,data_base
+205,Datum,shape=partialRectangle,null,null,data_base
+206,System,shape=partialRectangle,null,null,data_base
+207,"Repository , Support , Team Member",rounded=0,null,null,external_entity
+208,Alias An Item From Collection To Another,ellipse,null,null,process
+209,Belong To Both Collections,ellipse,null,null,process
+210,The Collection Owner Asked Both Collections,ellipse,null,null,process
+211,To,ellipse,null,null,process
+212,Map,ellipse,null,null,process
+213,Export A Set Of Records,ellipse,null,null,process
+214,Export A Set Of Associated File,ellipse,null,null,process
+215,Manipulate This Data,ellipse,null,null,process
+216,Reload Into The System,ellipse,null,null,process
+217,Am Aware Of A Uniform Error In A Collection,ellipse,null,null,process
+218,Manipulate,ellipse,null,null,process
+219,Move A Collection,ellipse,null,null,process
+220,Rename A Collection,ellipse,null,null,process
+222,,endArrow=classic,207,208,endArrow=classic
+223,,endArrow=classic,207,209,endArrow=classic
+224,,endArrow=classic,207,210,endArrow=classic
+225,,endArrow=classic,207,211,endArrow=classic
+226,,endArrow=classic,207,213,endArrow=classic
+227,,endArrow=classic,207,214,endArrow=classic
+228,,endArrow=classic,207,215,endArrow=classic
+229,,endArrow=classic,207,216,endArrow=classic
+230,,endArrow=classic,207,217,endArrow=classic
+231,,endArrow=classic,207,218,endArrow=classic
+232,,endArrow=classic,207,219,endArrow=classic
+233,,endArrow=classic,207,220,endArrow=classic
+234,Item,endArrow=classic,208,200,endArrow=classic
+235,Collection,endArrow=classic,208,201,endArrow=classic
+236,Collection,endArrow=classic,209,201,endArrow=classic
+237,,endArrow=classic,210,211,endArrow=classic
+238,Collection,endArrow=classic,210,201,endArrow=classic
+239,Record,endArrow=classic,213,202,endArrow=classic
+240,Associated File,endArrow=classic,214,203,endArrow=classic
+241,Datum,endArrow=classic,215,205,endArrow=classic
+242,System,endArrow=classic,216,206,endArrow=classic
+243,Uniform Error,endArrow=classic,217,204,endArrow=classic
+244,Collection,endArrow=classic,217,201,endArrow=classic
+245,,endArrow=classic,218,216,endArrow=classic
+246,Collection,endArrow=classic,219,201,endArrow=classic
+247,Collection,endArrow=classic,220,201,endArrow=classic

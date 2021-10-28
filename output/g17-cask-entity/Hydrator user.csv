@@ -1,0 +1,47 @@
+id,value,style,source,target,type
+200,Pipeline,shape=partialRectangle,null,null,data_base
+201,App,shape=partialRectangle,null,null,data_base
+202,Exist Instance,shape=partialRectangle,null,null,data_base
+203,Dataset,shape=partialRectangle,null,null,data_base
+204,Instance,shape=partialRectangle,null,null,data_base
+205,App,shape=partialRectangle,null,null,data_base
+206,Source,shape=partialRectangle,null,null,data_base
+207,Sink,shape=partialRectangle,null,null,data_base
+208,Hydrator User,rounded=0,null,null,external_entity
+209,Create A Pipeline,ellipse,null,null,process
+210,Create A Pipeline Reads,ellipse,null,null,process
+211,Write An Existing Dataset Instance,ellipse,null,null,process
+212,Write A New Dataset Instance,ellipse,null,null,process
+213,Specify An Explicit Version Of The Dataset Types Of The Dataset Instances Pipeline,ellipse,null,null,process
+214,Fail,ellipse,null,null,process
+215,Explore The Datasets Pipeline,ellipse,null,null,process
+216,Ensure All Instances Apps Available As Source,ellipse,null,null,process
+217,Ensure All Dataset Instances Apps Available As Sinks For Pipelines,ellipse,null,null,process
+219,,endArrow=classic,208,209,endArrow=classic
+220,,endArrow=classic,208,210,endArrow=classic
+221,,endArrow=classic,208,211,endArrow=classic
+222,,endArrow=classic,208,212,endArrow=classic
+223,,endArrow=classic,208,213,endArrow=classic
+224,,endArrow=classic,208,214,endArrow=classic
+225,,endArrow=classic,208,214,endArrow=classic
+226,,endArrow=classic,208,215,endArrow=classic
+227,,endArrow=classic,208,216,endArrow=classic
+228,,endArrow=classic,208,217,endArrow=classic
+229,,endArrow=classic,209,211,endArrow=classic
+230,,endArrow=classic,209,212,endArrow=classic
+231,Pipeline,endArrow=classic,209,200,endArrow=classic
+232,Pipeline,endArrow=classic,210,200,endArrow=classic
+233,Instance,endArrow=classic,211,204,endArrow=classic
+234,Dataset,endArrow=classic,211,203,endArrow=classic
+235,Instance,endArrow=classic,212,204,endArrow=classic
+236,Dataset,endArrow=classic,212,203,endArrow=classic
+237,Instance,endArrow=classic,213,204,endArrow=classic
+238,Dataset,endArrow=classic,213,203,endArrow=classic
+239,Dataset,endArrow=classic,215,203,endArrow=classic
+240,Instance,endArrow=classic,216,204,endArrow=classic
+241,Source,endArrow=classic,216,206,endArrow=classic
+242,Sink,endArrow=classic,217,207,endArrow=classic
+243,Pipeline,endArrow=classic,217,200,endArrow=classic
+244,Instance,endArrow=classic,217,204,endArrow=classic
+252,App,endArrow=classic,216,201,endArrow=classic
+269,App,endArrow=classic,216,205,endArrow=classic

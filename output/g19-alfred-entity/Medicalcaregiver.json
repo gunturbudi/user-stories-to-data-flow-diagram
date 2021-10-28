@@ -1,0 +1,328 @@
+[
+  {
+    "text": "As a MedicalCaregiver, I want to have videophone.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have a simple ALFRED unit that is expandable in is functions.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "expandable",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to use video calls in case of emergency.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "video calls",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to be able to see if the patient has taken her medicine.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "patient",
+        "label": "Data"
+      },
+      {
+        "text": "medicine",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to be sure that the user can decide who has access to her data.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "decide",
+        "label": "Processing"
+      },
+      {
+        "text": "who has access",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's blood pressure.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "determine",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "blood pressure",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's body temperature.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "determine",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "body temperature",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's heart rate.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "determine",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "heart rate",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's breathing frequency.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "determine",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "breathing frequency",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have feedback on the activity level of the user.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "feedback",
+        "label": "Processing"
+      },
+      {
+        "text": "activity level",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to locate the ALFRED user.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "user.",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to remind people to exercise regularly.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "remind",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to offer training for specific muscle groups.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "offer training",
+        "label": "Processing"
+      },
+      {
+        "text": "muscle groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to propose me games that require the combination of mental and physical exercise, such as opposing motion exercises of the arms and legs.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "propose",
+        "label": "Processing"
+      },
+      {
+        "text": "games",
+        "label": "PII"
+      },
+      {
+        "text": "physical exercise",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to control if the user does the exercise correct.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have a regular summary on how much exercise is performed by the user.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "exercise",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to propose training that promotes complex thinking.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "propose",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to give corrective feedback if exercises are performed wrong, too much or in any other way harmful to the user.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "give",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  }
+]

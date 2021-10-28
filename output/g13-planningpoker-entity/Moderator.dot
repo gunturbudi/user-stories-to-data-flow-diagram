@@ -1,0 +1,223 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> New Game " ];
+201 [label="<f0>  |<f1> Optional Description " color=red];
+202 [label="<f0>  |<f1> Name " color=red];
+203 [label="<f0>  |<f1> Estimator " ];
+204 [label="<f0>  |<f1> Game " color=red];
+205 [label="<f0>  |<f1> Url " ];
+206 [label="<f0>  |<f1> Item " color=red];
+207 [label="<f0>  |<f1> Round " ];
+208 [label="<f0>  |<f1> Estimate " color=red];
+209 [label="<f0>  |<f1> Estimate Field " color=red];
+210 [label="<f0>  |<f1> Agree Estimate " color=red];
+211 [label="<f0>  |<f1> Story " color=red];
+212 [label="<f0>  |<f1> Previous Game " ];
+213 [label="<f0>  |<f1> Html File " ];
+214 [label="<f0>  |<f1> Csv File " ];
+215 [label="<f0>  |<f1> Application " ];
+216 [label="<f0>  |<f1> Account " color=red];
+217 [label="<f0>  |<f1> Password " color=red];
+218 [label="<f0>  |<f1> Username " color=red];
+219 [label="<f0>  |<f1> Email " color=red];
+220 [label="<f0>  |<f1> Team " ];
+221 [label="<f0>  |<f1> 2 " ];
+222 [label="<f0>  |<f1> 1 " ];
+223 [label="<f0>  |<f1> 3 " ];
+224 [label="<f0>  |<f1> 5 " ];
+225 [label="<f0>  |<f1> 8 " ];
+226 [label="<f0>  |<f1> Etc " ];
+227 [label="<f0>  |<f1> , Estimator " ];
+228 [label="<f0>  |<f1> Spreadsheet " ];
+229 [label="<f0>  |<f1> Time " color=red];
+230 [label="<f0>  |<f1> Date " color=red];
+231 [label="<f0>  |<f1> Local Timezone " color=red];
+232 [label="<f0>  |<f1> Text Field " ];
+233 [label="Moderator" shape=box];
+234 [label="{<f0> 1.0|<f1> Entering An Optional Description }" shape=Mrecord];
+235 [label="{<f0> 2.0|<f1> Entering A Name }" shape=Mrecord];
+236 [label="{<f0> 3.0|<f1> Create A New Game }" shape=Mrecord];
+237 [label="{<f0> 4.0|<f1> Giving Them A Url Where Access The Game }" shape=Mrecord];
+238 [label="{<f0> 5.0|<f1> Invite Estimators }" shape=Mrecord];
+239 [label="{<f0> 6.0|<f1> Entering An Item In A Line, Single Text Field }" shape=Mrecord];
+240 [label="{<f0> 7.0|<f1> Start A Round }" shape=Mrecord];
+241 [label="{<f0> 8.0|<f1> See All Items }" shape=Mrecord];
+242 [label="{<f0> 9.0|<f1> Select An Item }" shape=Mrecord];
+243 [label="{<f0> 10.0|<f1> Select An Item To Estimated }" shape=Mrecord];
+244 [label="{<f0> 11.0|<f1> Estimate }" shape=Mrecord];
+245 [label="{<f0> 12.0|<f1> Add An Item To The List Of Items }" shape=Mrecord];
+246 [label="{<f0> 13.0|<f1> Edit An Item In The List Of Items To Estimated }" shape=Mrecord];
+247 [label="{<f0> 14.0|<f1> Delete An Item From The List Of Items To Estimated }" shape=Mrecord];
+248 [label="{<f0> 15.0|<f1> Show All Estimates }" shape=Mrecord];
+249 [label="{<f0> 16.0|<f1> Accept The Average Of All Estimates }" shape=Mrecord];
+250 [label="{<f0> 17.0|<f1> Have The Automatically Estimate Field }" shape=Mrecord];
+251 [label="{<f0> 18.0|<f1> Enter Upon The Agreed Estimate }" shape=Mrecord];
+252 [label="{<f0> 19.0|<f1> Estimate A Story }" shape=Mrecord];
+253 [label="{<f0> 20.0|<f1> Browse Through Previous Games }" shape=Mrecord];
+254 [label="{<f0> 21.0|<f1> View A Transcript Of A Game }" shape=Mrecord];
+255 [label="{<f0> 22.0|<f1> Export A Transcript Of A Game As A Html File }" shape=Mrecord];
+256 [label="{<f0> 23.0|<f1> Delete A Game }" shape=Mrecord];
+257 [label="{<f0> 24.0|<f1> Create An Account For The Application }" shape=Mrecord];
+258 [label="{<f0> 25.0|<f1> Entering A Password }" shape=Mrecord];
+259 [label="{<f0> 26.0|<f1> Entering Name }" shape=Mrecord];
+260 [label="{<f0> 27.0|<f1> Entering Email Address }" shape=Mrecord];
+261 [label="{<f0> 28.0|<f1> Entering A Username }" shape=Mrecord];
+262 [label="{<f0> 29.0|<f1> Log }" shape=Mrecord];
+263 [label="{<f0> 30.0|<f1> Using Account Name }" shape=Mrecord];
+264 [label="{<f0> 31.0|<f1> Using Password }" shape=Mrecord];
+265 [label="{<f0> 32.0|<f1> Change Account Details }" shape=Mrecord];
+266 [label="{<f0> 33.0|<f1> Delete Account }" shape=Mrecord];
+267 [label="{<f0> 34.0|<f1> Get A Password Reminder By Email }" shape=Mrecord];
+268 [label="{<f0> 35.0|<f1> Have The Team With }" shape=Mrecord];
+269 [label="{<f0> 36.0|<f1> Select }" shape=Mrecord];
+270 [label="{<f0> 37.0|<f1> Have The Team With 5 }" shape=Mrecord];
+271 [label="{<f0> 38.0|<f1> Have The Team With 2 }" shape=Mrecord];
+272 [label="{<f0> 39.0|<f1> Have The Team With 3 }" shape=Mrecord];
+273 [label="{<f0> 40.0|<f1> Have The Team With 1 }" shape=Mrecord];
+274 [label="{<f0> 41.0|<f1> Have The Team With Etc }" shape=Mrecord];
+275 [label="{<f0> 42.0|<f1> Have The Team With 8 }" shape=Mrecord];
+276 [label="{<f0> 43.0|<f1> Invite To, Up Estimators }" shape=Mrecord];
+277 [label="{<f0> 44.0|<f1> Import Stories From A Spreadsheet }" shape=Mrecord];
+278 [label="{<f0> 45.0|<f1> Copy Stories From A Spreadsheet }" shape=Mrecord];
+279 [label="{<f0> 46.0|<f1> Paste Stories From A Spreadsheet }" shape=Mrecord];
+280 [label="{<f0> 47.0|<f1> See Time }" shape=Mrecord];
+281 [label="{<f0> 48.0|<f1> See Dates In Local Timezone }" shape=Mrecord];
+49 [label="{<f0> 49.0|<f1> See the stories and estimates. }" shape=Mrecord];
+254 -> 49
+1001 [label="<f0>  |<f1> Stories " color=red];
+49 -> 1001 [label="Stories"]
+50 [label="{<f0> 50.0|<f1> Save the stories and estimates locally. }" shape=Mrecord];
+254 -> 50
+1004 [label="<f0>  |<f1> Stories " color=red];
+50 -> 1004 [label="Stories"]
+51 [label="{<f0> 51.0|<f1> Process the stories and estimates. }" shape=Mrecord];
+254 -> 51
+1007 [label="<f0>  |<f1> Stories " color=red];
+51 -> 1007 [label="Stories"]
+52 [label="{<f0> 52.0|<f1> Keep my account details up-to-date. }" shape=Mrecord];
+233 -> 52
+1010 [label="<f0>  |<f1> Account details " color=red];
+52 -> 1010 [label="Account details"]
+233 -> 234
+233 -> 235
+233 -> 236
+233 -> 237
+233 -> 238
+233 -> 239
+233 -> 240
+233 -> 241
+233 -> 242
+233 -> 243
+233 -> 244
+233 -> 245
+233 -> 246
+233 -> 247
+233 -> 248
+233 -> 249
+233 -> 250
+233 -> 251
+233 -> 252
+233 -> 253
+233 -> 254
+233 -> 255
+233 -> 256
+233 -> 257
+233 -> 258
+233 -> 259
+233 -> 260
+233 -> 261
+233 -> 262
+233 -> 263
+233 -> 264
+233 -> 265
+233 -> 266
+233 -> 267
+233 -> 269
+233 -> 270
+233 -> 271
+233 -> 272
+233 -> 273
+233 -> 274
+233 -> 275
+233 -> 276
+233 -> 277
+233 -> 278
+233 -> 279
+233 -> 280
+233 -> 281
+234 -> 236
+234 -> 201 [label="Optional Description"]
+235 -> 236
+235 -> 202 [label="Name"]
+236 -> 200 [label="New Game"]
+237 -> 238
+237 -> 205 [label="Url"]
+237 -> 204 [label="Game"]
+238 -> 203 [label="Estimator"]
+239 -> 240
+239 -> 206 [label="Item"]
+239 -> 232 [label="Text Field"]
+240 -> 207 [label="Round"]
+241 -> 206 [label="Item"]
+242 -> 244
+242 -> 206 [label="Item"]
+243 -> 206 [label="Item"]
+245 -> 244
+245 -> 206 [label="Item"]
+246 -> 206 [label="Item"]
+247 -> 206 [label="Item"]
+248 -> 208 [label="Estimate"]
+249 -> 208 [label="Estimate"]
+250 -> 209 [label="Estimate Field"]
+251 -> 210 [label="Agree Estimate"]
+252 -> 211 [label="Story"]
+253 -> 212 [label="Previous Game"]
+254 -> 204 [label="Game"]
+255 -> 213 [label="Html File"]
+255 -> 204 [label="Game"]
+255 -> 214 [label="Csv File"]
+256 -> 204 [label="Game"]
+257 -> 216 [label="Account"]
+257 -> 215 [label="Application"]
+258 -> 257
+258 -> 217 [label="Password"]
+259 -> 257
+259 -> 202 [label="Name"]
+260 -> 257
+261 -> 257
+261 -> 218 [label="Username"]
+263 -> 262
+263 -> 202 [label="Name"]
+264 -> 262
+264 -> 217 [label="Password"]
+266 -> 216 [label="Account"]
+267 -> 219 [label="Email"]
+268 -> 220 [label="Team"]
+269 -> 268
+269 -> 271
+269 -> 275
+269 -> 220 [label="Team"]
+269 -> 221 [label="2"]
+270 -> 224 [label="5"]
+270 -> 220 [label="Team"]
+271 -> 221 [label="2"]
+271 -> 220 [label="Team"]
+272 -> 223 [label="3"]
+272 -> 220 [label="Team"]
+273 -> 222 [label="1"]
+273 -> 220 [label="Team"]
+274 -> 226 [label="Etc"]
+274 -> 220 [label="Team"]
+275 -> 220 [label="Team"]
+275 -> 225 [label="8"]
+276 -> 227 [label=", Estimator"]
+277 -> 228 [label="Spreadsheet"]
+277 -> 211 [label="Story"]
+278 -> 211 [label="Story"]
+278 -> 228 [label="Spreadsheet"]
+279 -> 211 [label="Story"]
+279 -> 228 [label="Spreadsheet"]
+280 -> 229 [label="Time"]
+281 -> 230 [label="Date"]
+281 -> 231 [label="Local Timezone"]
+}

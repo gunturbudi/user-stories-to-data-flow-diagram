@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Role" as thingrole
+	entity "Organization" as thingorganization
+	entity "People" as thingpeople
+	actor "Publisher" as actorpublisher
+	actor "Owner" as actorowner
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Organization\nInterface" as thingorganizationinterface #grey
+	control "Publish A\nDataset" as controlpublishdataset
+	control "View The\nPeople In\nOrganization" as controlviewpeople
+
+	thingorganization <.. thingpeople
+	actorpublisher --- thingdatasetinterface
+	actorowner --- thingorganizationinterface
+	thingdataset --- controlpublishdataset
+	thingdatasetinterface --> controlpublishdataset
+	thingpeople --- controlviewpeople
+	thingorganization --- controlviewpeople
+	thingorganizationinterface --> controlviewpeople
+
+@enduml

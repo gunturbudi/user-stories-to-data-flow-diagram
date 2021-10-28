@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a developer, I want to take a dataset offline, so that I can perform a long-running maintenance or migration procedure.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "take",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

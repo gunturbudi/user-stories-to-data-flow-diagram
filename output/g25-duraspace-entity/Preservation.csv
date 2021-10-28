@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Manager,shape=partialRectangle,null,null,data_base
+201,Checksum,shape=partialRectangle,null,null,data_base
+202,Master File,shape=partialRectangle,null,null,data_base
+203,Checksum Method,shape=partialRectangle,null,null,data_base
+204,Object,shape=partialRectangle,null,null,data_base
+205,Dams Manager,rounded=0,null,null,external_entity
+206,Preservation Managers The Checksum Method For Each Master File For A Given Object,ellipse,null,null,process
+207,Indicate,ellipse,null,null,process
+208,Preservation Managers Checksum,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Manager,endArrow=classic,206,200,endArrow=classic
+214,Checksum Method,endArrow=classic,206,203,endArrow=classic
+215,Master File,endArrow=classic,206,202,endArrow=classic
+216,Object,endArrow=classic,206,204,endArrow=classic
+217,,endArrow=classic,207,206,endArrow=classic
+218,,endArrow=classic,207,208,endArrow=classic
+219,Manager,endArrow=classic,207,200,endArrow=classic
+220,Checksum,endArrow=classic,208,201,endArrow=classic
+221,Manager,endArrow=classic,208,200,endArrow=classic

@@ -1,0 +1,90 @@
+[
+  {
+    "text": "As a Practitioner, I want to include additional details about me in my profile page, so that I can showcase my experience.",
+    "entities": [
+      {
+        "text": "Practitioner,",
+        "label": "Data"
+      },
+      {
+        "text": "include",
+        "label": "Processing"
+      },
+      {
+        "text": "profile page",
+        "label": "PII"
+      },
+      {
+        "text": "experience",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Practitioner, I want to write an article for the site with a small graphic shown with the article showing my CSP or CST status, so that others know my certifications when reading.",
+    "entities": [
+      {
+        "text": "Practitioner,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "certifications",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, so that fees can be set without involving a programmer.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "annual fees",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  }
+]

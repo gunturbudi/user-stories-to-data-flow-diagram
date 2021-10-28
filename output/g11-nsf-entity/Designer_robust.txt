@@ -1,0 +1,33 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Hypothesis" as thinghypothesis
+	entity "Content Guide" as thingcontentguide #grey
+	entity "Design Guide" as thingdesignguide #grey
+	entity "Style Guide" as thingstyleguide #grey
+	entity "Media Wireframe" as thingmediawireframe
+	actor "Designer" as actordesigner
+	circle "Early Indication" as thingearlyindication
+	boundary "Wireframe\nInterface" as thingwireframeinterface #grey
+	boundary "Guide\nInterface" as thingguideinterface #grey
+	control "Have A\nSocial, New\nMedia Wireframe" as controlhavesocialnewmediawireframe
+	control "Know" as controlknow
+	control "Have Content\nGuide" as controlhavecontentguide
+	control "Have A\nStyle Guide" as controlhavestyleguide
+	control "Have Design\nGuide" as controlhavedesignguide
+
+	thinghypothesis *-- thingearlyindication
+	actordesigner --- thingwireframeinterface
+	actordesigner --- thingguideinterface
+	thingmediawireframe --- controlhavesocialnewmediawireframe
+	thingwireframeinterface --> controlhavesocialnewmediawireframe
+	thingcontentguide --- controlhavecontentguide
+	thingguideinterface --> controlhavecontentguide
+	thingstyleguide --- controlhavestyleguide
+	thingguideinterface --> controlhavestyleguide
+	thingdesignguide --- controlhavedesignguide
+	thingguideinterface --> controlhavedesignguide
+
+@enduml

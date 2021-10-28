@@ -1,0 +1,182 @@
+id,value,style,source,target,type
+200,Report,shape=partialRectangle,null,null,data_base
+201,New Version,shape=partialRectangle,null,null,data_base
+202,Time,shape=partialRectangle,null,null,data_base
+203,Old Format,shape=partialRectangle,null,null,data_base
+204,Multiple Format,shape=partialRectangle,null,null,data_base
+205,Content,shape=partialRectangle,null,null,data_base
+206,Partial Title,shape=partialRectangle,null,null,data_base
+207,Complete,shape=partialRectangle,null,null,data_base
+208,Keyword,shape=partialRectangle,null,null,data_base
+209,Need Report,shape=partialRectangle,null,null,data_base
+210,Need Resource,shape=partialRectangle,null,null,data_base
+211,Subject Area,shape=partialRectangle,null,null,data_base
+212,Author,shape=partialRectangle,null,null,data_base
+213,Historical,shape=partialRectangle,null,null,data_base
+214,Timely Information,shape=partialRectangle,null,null,data_base
+215,"Related ,\nInformation",shape=partialRectangle,null,null,data_base
+216,Version,shape=partialRectangle,null,null,data_base
+217,Previous Range,shape=partialRectangle,null,null,data_base
+218,Personal Account,shape=partialRectangle,null,null,data_base
+219,Email Notification,shape=partialRectangle,null,null,data_base
+220,Calendar,shape=partialRectangle,null,null,data_base
+221,Issue,shape=partialRectangle,null,null,data_base
+222,System Provider,shape=partialRectangle,null,null,data_base
+223,Question,shape=partialRectangle,null,null,data_base
+224,Lotus Work,shape=partialRectangle,null,null,data_base
+225,Publication Date\nRange,shape=partialRectangle,null,null,data_base
+226,Name,shape=partialRectangle,null,null,data_base
+227,Patron,rounded=0,null,null,external_entity
+228,Db,rounded=0,null,null,external_entity
+229,Ir Administrator,rounded=0,null,null,external_entity
+230,Know,ellipse,null,null,process
+231,Select Reports To Emailed Possibly Many At Time New Versions When Are Available,ellipse,null,null,process
+232,Select Dataset,ellipse,null,null,process
+233,Deselect Dataset,ellipse,null,null,process
+234,Deselect Reports To Emailed Possibly Many At Time New Versions When Are Available,ellipse,null,null,process
+235,View Content In Multiple Formats Including Old Formats Such As Lotus Works,ellipse,null,null,process
+236,Upload Content In Multiple Formats Including Old Formats Such As Lotus Works,ellipse,null,null,process
+237,Locate Dataset,ellipse,null,null,process
+238,Search For Dataset With A Partial Title,ellipse,null,null,process
+239,Locate Needed Report,ellipse,null,null,process
+240,Search For Report,ellipse,null,null,process
+241,Search For Dataset With Complete,ellipse,null,null,process
+242,Search For Dataset With Keywords,ellipse,null,null,process
+243,Locate Needed Resources,ellipse,null,null,process
+244,Browse Content By Subject Area,ellipse,null,null,process
+245,Browse Content By Author,ellipse,null,null,process
+246,View Multiple Versions Of A Report,ellipse,null,null,process
+247,Dataset,ellipse,null,null,process
+248,Get Timely Information,ellipse,null,null,process
+249,Get Historical,ellipse,null,null,process
+250,Know Other Report S,ellipse,null,null,process
+251,Report,ellipse,null,null,process
+252,"Find Related, Other Information",ellipse,null,null,process
+253,Viewed For,ellipse,null,null,process
+254,Know Other Dataset S E.G. Also Related,ellipse,null,null,process
+255,Request Email Notification,ellipse,null,null,process
+256,Create A Personal Account,ellipse,null,null,process
+257,Download Dataset Release Calendar,ellipse,null,null,process
+258,Load Into Own Calendar,ellipse,null,null,process
+259,Download Report,ellipse,null,null,process
+260,Report Issues,ellipse,null,null,process
+261,Email System Provider,ellipse,null,null,process
+262,Ask Questions,ellipse,null,null,process
+263,Manage Report,ellipse,null,null,process
+264,Manage Name Dataset Change,ellipse,null,null,process
+266,,endArrow=classic,227,231,endArrow=classic
+267,,endArrow=classic,227,232,endArrow=classic
+268,,endArrow=classic,227,233,endArrow=classic
+269,,endArrow=classic,227,234,endArrow=classic
+270,,endArrow=classic,227,235,endArrow=classic
+271,,endArrow=classic,227,237,endArrow=classic
+272,,endArrow=classic,227,238,endArrow=classic
+273,,endArrow=classic,227,239,endArrow=classic
+274,,endArrow=classic,227,240,endArrow=classic
+275,,endArrow=classic,227,241,endArrow=classic
+276,,endArrow=classic,227,242,endArrow=classic
+277,,endArrow=classic,227,243,endArrow=classic
+278,,endArrow=classic,227,244,endArrow=classic
+279,,endArrow=classic,227,245,endArrow=classic
+280,,endArrow=classic,227,246,endArrow=classic
+281,,endArrow=classic,227,247,endArrow=classic
+282,,endArrow=classic,227,247,endArrow=classic
+283,,endArrow=classic,227,248,endArrow=classic
+284,,endArrow=classic,227,249,endArrow=classic
+285,,endArrow=classic,227,250,endArrow=classic
+286,,endArrow=classic,227,252,endArrow=classic
+287,,endArrow=classic,227,253,endArrow=classic
+288,,endArrow=classic,227,254,endArrow=classic
+289,,endArrow=classic,227,255,endArrow=classic
+290,,endArrow=classic,227,256,endArrow=classic
+291,,endArrow=classic,227,257,endArrow=classic
+292,,endArrow=classic,227,258,endArrow=classic
+293,,endArrow=classic,227,259,endArrow=classic
+294,,endArrow=classic,227,260,endArrow=classic
+295,,endArrow=classic,227,261,endArrow=classic
+296,,endArrow=classic,227,262,endArrow=classic
+297,,endArrow=classic,227,263,endArrow=classic
+298,,endArrow=classic,227,264,endArrow=classic
+299,,endArrow=classic,228,232,endArrow=classic
+300,,endArrow=classic,228,233,endArrow=classic
+301,,endArrow=classic,228,237,endArrow=classic
+302,,endArrow=classic,228,238,endArrow=classic
+303,,endArrow=classic,228,239,endArrow=classic
+304,,endArrow=classic,228,240,endArrow=classic
+305,,endArrow=classic,228,241,endArrow=classic
+306,,endArrow=classic,228,242,endArrow=classic
+307,,endArrow=classic,228,246,endArrow=classic
+308,,endArrow=classic,228,247,endArrow=classic
+309,,endArrow=classic,228,250,endArrow=classic
+310,,endArrow=classic,228,254,endArrow=classic
+311,,endArrow=classic,228,257,endArrow=classic
+312,,endArrow=classic,228,258,endArrow=classic
+313,,endArrow=classic,228,259,endArrow=classic
+314,,endArrow=classic,228,263,endArrow=classic
+315,,endArrow=classic,228,264,endArrow=classic
+316,,endArrow=classic,229,232,endArrow=classic
+317,,endArrow=classic,229,233,endArrow=classic
+318,,endArrow=classic,229,237,endArrow=classic
+319,,endArrow=classic,229,238,endArrow=classic
+320,,endArrow=classic,229,239,endArrow=classic
+321,,endArrow=classic,229,240,endArrow=classic
+322,,endArrow=classic,229,241,endArrow=classic
+323,,endArrow=classic,229,242,endArrow=classic
+324,,endArrow=classic,229,246,endArrow=classic
+325,,endArrow=classic,229,247,endArrow=classic
+326,,endArrow=classic,229,250,endArrow=classic
+327,,endArrow=classic,229,254,endArrow=classic
+328,,endArrow=classic,229,257,endArrow=classic
+329,,endArrow=classic,229,258,endArrow=classic
+330,,endArrow=classic,229,259,endArrow=classic
+331,,endArrow=classic,229,263,endArrow=classic
+332,,endArrow=classic,229,264,endArrow=classic
+333,Time,endArrow=classic,231,202,endArrow=classic
+334,New Version,endArrow=classic,231,201,endArrow=classic
+335,Report,endArrow=classic,231,200,endArrow=classic
+336,Report,endArrow=classic,234,200,endArrow=classic
+337,New Version,endArrow=classic,234,201,endArrow=classic
+338,Time,endArrow=classic,234,202,endArrow=classic
+339,Content,endArrow=classic,235,205,endArrow=classic
+340,Multiple Format,endArrow=classic,235,204,endArrow=classic
+341,Old Format,endArrow=classic,235,203,endArrow=classic
+342,Lotus Work,endArrow=classic,235,224,endArrow=classic
+343,Lotus Work,endArrow=classic,236,224,endArrow=classic
+344,Old Format,endArrow=classic,236,203,endArrow=classic
+345,Multiple Format,endArrow=classic,236,204,endArrow=classic
+346,Content,endArrow=classic,236,205,endArrow=classic
+347,,endArrow=classic,238,237,endArrow=classic
+348,,endArrow=classic,238,239,endArrow=classic
+349,Partial Title,endArrow=classic,238,206,endArrow=classic
+350,Need Report,endArrow=classic,239,209,endArrow=classic
+351,Report,endArrow=classic,240,200,endArrow=classic
+352,Complete,endArrow=classic,241,207,endArrow=classic
+353,Keyword,endArrow=classic,242,208,endArrow=classic
+354,Need Resource,endArrow=classic,243,210,endArrow=classic
+355,Subject Area,endArrow=classic,244,211,endArrow=classic
+356,Content,endArrow=classic,244,205,endArrow=classic
+357,,endArrow=classic,245,243,endArrow=classic
+358,Author,endArrow=classic,245,212,endArrow=classic
+359,Content,endArrow=classic,245,205,endArrow=classic
+360,Report,endArrow=classic,246,200,endArrow=classic
+361,,endArrow=classic,247,248,endArrow=classic
+362,,endArrow=classic,247,249,endArrow=classic
+363,,endArrow=classic,247,253,endArrow=classic
+364,Timely Information,endArrow=classic,248,214,endArrow=classic
+365,Historical,endArrow=classic,249,213,endArrow=classic
+366,"Related ,\nInformation",endArrow=classic,252,215,endArrow=classic
+367,,endArrow=classic,253,252,endArrow=classic
+368,,endArrow=classic,254,247,endArrow=classic
+369,Email Notification,endArrow=classic,255,219,endArrow=classic
+370,,endArrow=classic,256,255,endArrow=classic
+371,Personal Account,endArrow=classic,256,218,endArrow=classic
+372,Calendar,endArrow=classic,258,220,endArrow=classic
+373,,endArrow=classic,259,258,endArrow=classic
+374,Report,endArrow=classic,259,200,endArrow=classic
+375,Issue,endArrow=classic,260,221,endArrow=classic
+376,,endArrow=classic,261,260,endArrow=classic
+377,System Provider,endArrow=classic,261,222,endArrow=classic
+378,Question,endArrow=classic,262,223,endArrow=classic
+379,Report,endArrow=classic,263,200,endArrow=classic
+381,Version,endArrow=classic,231,216,endArrow=classic
+486,Name,endArrow=classic,264,226,endArrow=classic

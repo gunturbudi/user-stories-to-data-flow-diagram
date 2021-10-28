@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+4,Process cases the first time.,ellipse,null,null,process
+200,Route Planning\nSystem,shape=partialRectangle,null,null,data_base
+201,Work,shape=partialRectangle,null,null,data_base
+202,Access,shape=partialRectangle,null,null,data_base
+203,Business,shape=partialRectangle,null,null,data_base
+204,Employee,shape=partialRectangle,null,null,data_base
+205,Quick Notification,shape=partialRectangle,null,null,data_base
+206,Employee,rounded=0,null,null,external_entity
+207,Hr Department,rounded=0,null,null,external_entity
+208,Access The Route Planning System During Work,ellipse,null,null,process
+209,Have Access To The Full Information Of All Employees For This Business,ellipse,null,null,process
+210,Get Quick Notifications,ellipse,null,null,process
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,,endArrow=classic,206,210,endArrow=classic
+215,,endArrow=classic,207,209,endArrow=classic
+216,Route Planning\nSystem,endArrow=classic,208,200,endArrow=classic
+217,Work,endArrow=classic,208,201,endArrow=classic
+218,Access,endArrow=classic,209,202,endArrow=classic
+219,Employee,endArrow=classic,209,204,endArrow=classic
+220,Business,endArrow=classic,209,203,endArrow=classic
+221,Quick Notification,endArrow=classic,210,205,endArrow=classic
+1000,,endArrow=classic,210,4,endArrow=classic
+1001,Employee,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,4,endArrow=classic
+1003,Cases,rounded=0,null,null,external_entity
+1004,Cases,endArrow=classic,4,1003,endArrow=classic

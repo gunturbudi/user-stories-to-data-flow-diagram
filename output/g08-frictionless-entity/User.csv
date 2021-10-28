@@ -1,0 +1,68 @@
+id,value,style,source,target,type
+8,Show my work to users of the data.,ellipse,null,null,process
+9,Preview the data and be encouraged that this is the correct data for them.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Tool,shape=partialRectangle,null,null,data_base
+203,Basic Metadata,shape=partialRectangle,null,null,data_base
+204,Researcher,shape=partialRectangle,null,null,data_base
+205,User,shape=partialRectangle,null,null,data_base
+206,Site,shape=partialRectangle,null,null,data_base
+207,Preview Button,shape=partialRectangle,null,null,data_base
+208,Dataset,shape=partialRectangle,null,null,data_base
+209,Exist Wizard,shape=partialRectangle,null,null,data_base
+210,Research,shape=partialRectangle,null,null,data_base
+211,Publisher,rounded=0,null,null,external_entity
+212,Repository Manager,rounded=0,null,null,external_entity
+213,Developer,rounded=0,null,null,external_entity
+214,Provide A Visualization Of Data In The Data Package,ellipse,null,null,process
+215,Researchers Add Basic Metadata To Research Data,ellipse,null,null,process
+216,User Add,ellipse,null,null,process
+217,Embed An Interactive Preview Of Data On Site,ellipse,null,null,process
+218,Embed A Preview Button On Site,ellipse,null,null,process
+219,Know,ellipse,null,null,process
+220,Customize An Existing Wizard For Specific Type Of Data,ellipse,null,null,process
+222,,endArrow=classic,211,214,endArrow=classic
+223,,endArrow=classic,211,217,endArrow=classic
+224,,endArrow=classic,211,218,endArrow=classic
+225,,endArrow=classic,212,215,endArrow=classic
+226,,endArrow=classic,212,216,endArrow=classic
+227,,endArrow=classic,212,220,endArrow=classic
+228,,endArrow=classic,213,215,endArrow=classic
+229,,endArrow=classic,213,220,endArrow=classic
+230,Datum,endArrow=classic,214,200,endArrow=classic
+231,Data Package,endArrow=classic,214,201,endArrow=classic
+232,Researcher,endArrow=classic,215,204,endArrow=classic
+233,Basic Metadata,endArrow=classic,215,203,endArrow=classic
+234,Datum,endArrow=classic,215,200,endArrow=classic
+235,User,endArrow=classic,216,205,endArrow=classic
+236,Site,endArrow=classic,217,206,endArrow=classic
+237,Datum,endArrow=classic,217,200,endArrow=classic
+238,Preview Button,endArrow=classic,218,207,endArrow=classic
+239,Site,endArrow=classic,218,206,endArrow=classic
+240,Exist Wizard,endArrow=classic,220,209,endArrow=classic
+241,Datum,endArrow=classic,220,200,endArrow=classic
+257,Research,endArrow=classic,215,210,endArrow=classic
+1000,,endArrow=classic,214,8,endArrow=classic
+1001,"Publisher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,8,endArrow=classic
+1003,"Publisher,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,8,endArrow=classic
+1005,Analysis,rounded=0,null,null,external_entity
+1006,Analysis,endArrow=classic,8,1005,endArrow=classic
+1007,Work,rounded=0,null,null,external_entity
+1008,Work,endArrow=classic,8,1007,endArrow=classic
+1009,Users,rounded=0,null,null,external_entity
+1010,,endArrow=classic,1009,9,endArrow=classic
+1011,This,rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,9,endArrow=classic
+1013,Users,rounded=0,null,null,external_entity
+1014,,endArrow=classic,1013,9,endArrow=classic
+1015,This,rounded=0,null,null,external_entity
+1016,,endArrow=classic,1015,9,endArrow=classic
+1017,Users,rounded=0,null,null,external_entity
+1018,,endArrow=classic,1017,9,endArrow=classic
+1019,This,rounded=0,null,null,external_entity
+1020,,endArrow=classic,1019,9,endArrow=classic
+1021,Data,rounded=0,null,null,external_entity
+1022,Data,endArrow=classic,9,1021,endArrow=classic

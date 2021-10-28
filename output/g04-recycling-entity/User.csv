@@ -1,0 +1,224 @@
+id,value,style,source,target,type
+39,Arrange drop-offs on my off days or during after-work hours.,ellipse,null,null,process
+40,Receive notifications for new events as they are posted.,ellipse,null,null,process
+41,Create my own profile.,ellipse,null,null,process
+42,Ask for help.,ellipse,null,null,process
+43,Review any issues that are being faced by users of the system.,ellipse,null,null,process
+200,Address,shape=partialRectangle,null,null,data_base
+201,Public Information,shape=partialRectangle,null,null,data_base
+202,Zip Code,shape=partialRectangle,null,null,data_base
+203,Facility,shape=partialRectangle,null,null,data_base
+204,Type,shape=partialRectangle,null,null,data_base
+205,Recyclable Waste,shape=partialRectangle,null,null,data_base
+206,Profile,shape=partialRectangle,null,null,data_base
+207,Favorite,shape=partialRectangle,null,null,data_base
+208,Area,shape=partialRectangle,null,null,data_base
+209,Site,shape=partialRectangle,null,null,data_base
+210,Flexible Pick,shape=partialRectangle,null,null,data_base
+211,Feedback,shape=partialRectangle,null,null,data_base
+212,Acocunt,shape=partialRectangle,null,null,data_base
+213,Transaction History,shape=partialRectangle,null,null,data_base
+214,Great Ui,shape=partialRectangle,null,null,data_base
+215,Ux,shape=partialRectangle,null,null,data_base
+216,Electronic Device,shape=partialRectangle,null,null,data_base
+217,Stuff,shape=partialRectangle,null,null,data_base
+218,Tempting Reward,shape=partialRectangle,null,null,data_base
+219,Personal Information,shape=partialRectangle,null,null,data_base
+220,Map,shape=partialRectangle,null,null,data_base
+221,Schedule,shape=partialRectangle,null,null,data_base
+222,Week,shape=partialRectangle,null,null,data_base
+223,Email Account,shape=partialRectangle,null,null,data_base
+224,Administrator,shape=partialRectangle,null,null,data_base
+225,Facolitie,shape=partialRectangle,null,null,data_base
+226,Complaint,shape=partialRectangle,null,null,data_base
+227,User,shape=partialRectangle,null,null,data_base
+228,Activity,shape=partialRectangle,null,null,data_base
+229,Stat,shape=partialRectangle,null,null,data_base
+230,Specific User,shape=partialRectangle,null,null,data_base
+231,Information,shape=partialRectangle,null,null,data_base
+232,Material,shape=partialRectangle,null,null,data_base
+233,Donation Center,shape=partialRectangle,null,null,data_base
+234,Email Id,shape=partialRectangle,null,null,data_base
+235,Waste Drop,shape=partialRectangle,null,null,data_base
+236,Recycling Center,shape=partialRectangle,null,null,data_base
+237,Recycling Bin,shape=partialRectangle,null,null,data_base
+238,Disposal Event,shape=partialRectangle,null,null,data_base
+239,Recycling,shape=partialRectangle,null,null,data_base
+240,Opening,shape=partialRectangle,null,null,data_base
+241,Ip,shape=partialRectangle,null,null,data_base
+242,User,rounded=0,null,null,external_entity
+243,Admin,rounded=0,null,null,external_entity
+244,Superuser,rounded=0,null,null,external_entity
+245,Recyclingfacility Representative,rounded=0,null,null,external_entity
+246,Click On The Address,ellipse,null,null,process
+247,View Public Information,ellipse,null,null,process
+248,Enter Zip Code,ellipse,null,null,process
+249,Get A List Of Nearby Recycling Facilities,ellipse,null,null,process
+250,Get The Hours Of Each Recycling Facility,ellipse,null,null,process
+251,Have Pick A,ellipse,null,null,process
+252,Select Different Types Of Recyclable Waste,ellipse,null,null,process
+253,Add Donation Centers As Favorites On Profile,ellipse,null,null,process
+254,Give Email Id,ellipse,null,null,process
+255,View A Map Display Of The Special Waste Drop Off Sites Around Area,ellipse,null,null,process
+256,Time Choose A Flexible Pick Up,ellipse,null,null,process
+257,View User Documentation For The Website,ellipse,null,null,process
+258,Get Feedback,ellipse,null,null,process
+259,Enter An Invalid Zip Code,ellipse,null,null,process
+260,Create An Acocunt,ellipse,null,null,process
+261,Check Transaction History,ellipse,null,null,process
+262,Keep A Record Of Transaction History,ellipse,null,null,process
+263,Have A Great Ui From The Sites,ellipse,null,null,process
+264,Have Ux,ellipse,null,null,process
+265,Access The Site,ellipse,null,null,process
+266,Do The Other Stuffs On All Of Electronic Devices,ellipse,null,null,process
+267,Receive Tempting Rewards,ellipse,null,null,process
+268,Have,ellipse,null,null,process
+269,View All Locations Of Recycling Centers On A Map,ellipse,null,null,process
+270,Upload Week's Schedule,ellipse,null,null,process
+271,Link Email Account To Profile,ellipse,null,null,process
+272,Contact The Administrators,ellipse,null,null,process
+273,View User Error Logs,ellipse,null,null,process
+274,View The Currently Safe Disposal Events Around Area,ellipse,null,null,process
+275,Browse Through The List Of Facolities,ellipse,null,null,process
+276,Environment See Which Ones,ellipse,null,null,process
+277,Read Complaint,ellipse,null,null,process
+278,Read Users' Feedback,ellipse,null,null,process
+279,Handle All Users' Activities,ellipse,null,null,process
+280,View Users' Stats,ellipse,null,null,process
+281,Block Specific Users On Ip Address,ellipse,null,null,process
+282,Update Information,ellipse,null,null,process
+283,Update The Type Of Material,ellipse,null,null,process
+285,,endArrow=classic,242,246,endArrow=classic
+286,,endArrow=classic,242,247,endArrow=classic
+287,,endArrow=classic,242,248,endArrow=classic
+288,,endArrow=classic,242,249,endArrow=classic
+289,,endArrow=classic,242,250,endArrow=classic
+290,,endArrow=classic,242,252,endArrow=classic
+291,,endArrow=classic,242,253,endArrow=classic
+292,,endArrow=classic,242,254,endArrow=classic
+293,,endArrow=classic,242,255,endArrow=classic
+294,,endArrow=classic,242,256,endArrow=classic
+295,,endArrow=classic,242,257,endArrow=classic
+296,,endArrow=classic,242,258,endArrow=classic
+297,,endArrow=classic,242,259,endArrow=classic
+298,,endArrow=classic,242,260,endArrow=classic
+299,,endArrow=classic,242,261,endArrow=classic
+300,,endArrow=classic,242,262,endArrow=classic
+301,,endArrow=classic,242,263,endArrow=classic
+302,,endArrow=classic,242,264,endArrow=classic
+303,,endArrow=classic,242,265,endArrow=classic
+304,,endArrow=classic,242,266,endArrow=classic
+305,,endArrow=classic,242,267,endArrow=classic
+306,,endArrow=classic,242,269,endArrow=classic
+307,,endArrow=classic,242,270,endArrow=classic
+308,,endArrow=classic,242,271,endArrow=classic
+309,,endArrow=classic,242,272,endArrow=classic
+310,,endArrow=classic,242,274,endArrow=classic
+311,,endArrow=classic,242,275,endArrow=classic
+312,,endArrow=classic,242,281,endArrow=classic
+313,,endArrow=classic,242,282,endArrow=classic
+314,,endArrow=classic,243,246,endArrow=classic
+315,,endArrow=classic,243,273,endArrow=classic
+316,,endArrow=classic,243,277,endArrow=classic
+317,,endArrow=classic,243,278,endArrow=classic
+318,,endArrow=classic,243,279,endArrow=classic
+319,,endArrow=classic,243,281,endArrow=classic
+320,,endArrow=classic,244,280,endArrow=classic
+321,,endArrow=classic,245,247,endArrow=classic
+322,,endArrow=classic,245,282,endArrow=classic
+323,,endArrow=classic,245,283,endArrow=classic
+324,Address,endArrow=classic,246,200,endArrow=classic
+325,Public Information,endArrow=classic,247,201,endArrow=classic
+326,Zip Code,endArrow=classic,248,202,endArrow=classic
+327,Facility,endArrow=classic,249,203,endArrow=classic
+328,Facility,endArrow=classic,250,203,endArrow=classic
+329,Recyclable Waste,endArrow=classic,252,205,endArrow=classic
+330,Donation Center,endArrow=classic,253,233,endArrow=classic
+331,Favorite,endArrow=classic,253,207,endArrow=classic
+332,Profile,endArrow=classic,253,206,endArrow=classic
+333,Email Id,endArrow=classic,254,234,endArrow=classic
+334,Waste Drop,endArrow=classic,255,235,endArrow=classic
+335,Site,endArrow=classic,255,209,endArrow=classic
+336,Area,endArrow=classic,255,208,endArrow=classic
+337,Recycling Bin,endArrow=classic,255,237,endArrow=classic
+338,Flexible Pick,endArrow=classic,256,210,endArrow=classic
+339,Site,endArrow=classic,257,209,endArrow=classic
+340,Feedback,endArrow=classic,258,211,endArrow=classic
+341,,endArrow=classic,259,258,endArrow=classic
+342,Zip Code,endArrow=classic,259,202,endArrow=classic
+343,Acocunt,endArrow=classic,260,212,endArrow=classic
+344,Transaction History,endArrow=classic,261,213,endArrow=classic
+345,Transaction History,endArrow=classic,262,213,endArrow=classic
+346,Great Ui,endArrow=classic,263,214,endArrow=classic
+347,Site,endArrow=classic,263,209,endArrow=classic
+348,Ux,endArrow=classic,264,215,endArrow=classic
+349,Site,endArrow=classic,265,209,endArrow=classic
+350,Stuff,endArrow=classic,266,217,endArrow=classic
+351,Electronic Device,endArrow=classic,266,216,endArrow=classic
+352,Tempting Reward,endArrow=classic,267,218,endArrow=classic
+353,Recycling Center,endArrow=classic,269,236,endArrow=classic
+354,Map,endArrow=classic,269,220,endArrow=classic
+355,Schedule,endArrow=classic,270,221,endArrow=classic
+356,Email Account,endArrow=classic,271,223,endArrow=classic
+357,Profile,endArrow=classic,271,206,endArrow=classic
+358,Administrator,endArrow=classic,272,224,endArrow=classic
+359,Disposal Event,endArrow=classic,274,238,endArrow=classic
+360,Area,endArrow=classic,274,208,endArrow=classic
+361,Facolitie,endArrow=classic,275,225,endArrow=classic
+362,Complaint,endArrow=classic,277,226,endArrow=classic
+363,Feedback,endArrow=classic,278,211,endArrow=classic
+364,Activity,endArrow=classic,279,228,endArrow=classic
+365,Stat,endArrow=classic,280,229,endArrow=classic
+366,Specific User,endArrow=classic,281,230,endArrow=classic
+367,Address,endArrow=classic,281,200,endArrow=classic
+368,Information,endArrow=classic,282,231,endArrow=classic
+369,Material,endArrow=classic,283,232,endArrow=classic
+370,Type,endArrow=classic,283,204,endArrow=classic
+433,Week,endArrow=classic,270,222,endArrow=classic
+445,User,endArrow=classic,257,227,endArrow=classic
+449,Recycling,endArrow=classic,249,239,endArrow=classic
+490,Ip,endArrow=classic,248,241,endArrow=classic
+1000,,endArrow=classic,250,39,endArrow=classic
+1001,User,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,39,endArrow=classic
+1003,User,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,39,endArrow=classic
+1005,User,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,39,endArrow=classic
+1007,Off days,rounded=0,null,null,external_entity
+1008,Off days,endArrow=classic,39,1007,endArrow=classic
+1009,,endArrow=classic,242,40,endArrow=classic
+1010,User,rounded=0,null,null,external_entity
+1011,,endArrow=classic,1010,40,endArrow=classic
+1012,User,rounded=0,null,null,external_entity
+1013,,endArrow=classic,1012,40,endArrow=classic
+1014,User,rounded=0,null,null,external_entity
+1015,,endArrow=classic,1014,40,endArrow=classic
+1016,Events,rounded=0,null,null,external_entity
+1017,Events,endArrow=classic,40,1016,endArrow=classic
+1018,,endArrow=classic,260,41,endArrow=classic
+1019,User,rounded=0,null,null,external_entity
+1020,,endArrow=classic,1019,41,endArrow=classic
+1021,User,rounded=0,null,null,external_entity
+1022,,endArrow=classic,1021,41,endArrow=classic
+1023,User,rounded=0,null,null,external_entity
+1024,,endArrow=classic,1023,41,endArrow=classic
+1025,Own profile,rounded=0,null,null,external_entity
+1026,Own profile,endArrow=classic,41,1025,endArrow=classic
+1027,,endArrow=classic,272,42,endArrow=classic
+1028,User,rounded=0,null,null,external_entity
+1029,,endArrow=classic,1028,42,endArrow=classic
+1030,User,rounded=0,null,null,external_entity
+1031,,endArrow=classic,1030,42,endArrow=classic
+1032,User,rounded=0,null,null,external_entity
+1033,,endArrow=classic,1032,42,endArrow=classic
+1034,Feedback,endArrow=classic,42,211,endArrow=classic
+1035,"Admin,",rounded=0,null,null,external_entity
+1036,,endArrow=classic,1035,43,endArrow=classic
+1037,,endArrow=classic,273,43,endArrow=classic
+1038,"Admin,",rounded=0,null,null,external_entity
+1039,,endArrow=classic,1038,43,endArrow=classic
+1040,"Admin,",rounded=0,null,null,external_entity
+1041,,endArrow=classic,1040,43,endArrow=classic
+1042,Issues,rounded=0,null,null,external_entity
+1043,Issues,endArrow=classic,43,1042,endArrow=classic

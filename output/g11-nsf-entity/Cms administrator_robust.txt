@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Role" as thingrole
+	actor "Cms Administrator" as actorcmsadministrator
+	boundary "Role\nInterface" as thingroleinterface #grey
+	control "Have Roles" as controlhaverole
+
+	actorcmsadministrator --- thingroleinterface
+	thingrole --- controlhaverole
+	thingroleinterface --> controlhaverole
+
+@enduml

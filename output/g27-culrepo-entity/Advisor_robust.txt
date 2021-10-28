@@ -1,0 +1,14 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Particular Topic" as thingparticulartopic
+	entity "Cornell" as thingcornell
+	entity "Research" as thingresearch
+	actor "Student" as actorstudent
+	control "Learn" as controllearn
+
+	thingparticulartopic <.. thingresearch
+
+@enduml

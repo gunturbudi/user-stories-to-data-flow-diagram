@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As an Administrator, I want to create a new User account for someone else.",
+    "entities": [
+      {
+        "text": "Administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "User account",
+        "label": "PII"
+      }
+    ]
+  }
+]

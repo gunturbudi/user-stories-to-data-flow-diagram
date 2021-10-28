@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fabs File " color=red];
+201 [label="<f0>  |<f1> Assistance Datum " ];
+202 [label="Website User" shape=box];
+203 [label="{<f0> 1.0|<f1> Access Published Fabs Files }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> See Financial, Updated Assistance Data }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Fabs File"]
+204 -> 201 [label="Assistance Datum"]
+}

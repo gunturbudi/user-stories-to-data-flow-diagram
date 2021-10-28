@@ -1,0 +1,291 @@
+[
+  {
+    "text": "As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "log",
+        "label": "Processing"
+      },
+      {
+        "text": "submissions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.",
+    "entities": [
+      {
+        "text": "Developer,",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.",
+    "entities": [
+      {
+        "text": "Developer,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "managed",
+        "label": "Processing"
+      },
+      {
+        "text": "cached",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.",
+    "entities": [
+      {
+        "text": "Developer,",
+        "label": "Data"
+      },
+      {
+        "text": "prevent",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "double publishing",
+        "label": "Processing"
+      },
+      {
+        "text": "FABS submissions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to ensure that attempts to correct or delete non-existent records don't create new published data.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "correct",
+        "label": "Processing"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "non-existent records",
+        "label": "PII"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "clarify",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "domain models",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "loaded",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "D Files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "historical data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to provide FABS groups that function under the FREC paradigm.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "FABS groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "prevent",
+        "label": "Processing"
+      },
+      {
+        "text": "transactions",
+        "label": "PII"
+      },
+      {
+        "text": "validation",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer I want to quickly access Broker application data, so that I can investigate issues.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "Broker",
+        "label": "Data"
+      },
+      {
+        "text": "application data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "load",
+        "label": "Processing"
+      },
+      {
+        "text": "FPDS data",
+        "label": "PII"
+      },
+      {
+        "text": "load",
+        "label": "Processing"
+      }
+    ]
+  }
+]

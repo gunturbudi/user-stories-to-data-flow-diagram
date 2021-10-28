@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "Agent" as thingagent
+	entity "Accession Component" as thingaccessioncomponent
+	entity "Subject" as thingsubject
+	entity "Source" as thingsource
+	actor "Archivist" as actorarchivist
+	control "Indicate" as controlindicate
+
+
+@enduml

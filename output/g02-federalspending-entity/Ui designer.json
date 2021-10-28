@@ -1,0 +1,136 @@
+[
+  {
+    "text": "As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "redesign",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "user testing",
+        "label": "PII"
+      },
+      {
+        "text": "contributions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "Homepage edits",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "Homepage edits",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "issues",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "user testing",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.",
+    "entities": [
+      {
+        "text": "UI designer",
+        "label": "Data"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "user testing",
+        "label": "PII"
+      }
+    ]
+  }
+]

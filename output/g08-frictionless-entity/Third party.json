@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "data repository",
+        "label": "PII"
+      },
+      {
+        "text": "data validation",
+        "label": "Processing"
+      },
+      {
+        "text": "third party",
+        "label": "Data"
+      }
+    ]
+  }
+]

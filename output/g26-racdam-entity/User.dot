@@ -1,0 +1,44 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Particular User " color=red];
+201 [label="<f0>  |<f1> Right " color=red];
+202 [label="<f0>  |<f1> Role " color=red];
+203 [label="<f0>  |<f1> User Group " color=red];
+204 [label="<f0>  |<f1> Directory Credential " ];
+205 [label="<f0>  |<f1> User " color=red];
+206 [label="Archivist" shape=box];
+207 [label="Administrator" shape=box];
+208 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Create User Roles }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Assign Rights To User Groups }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Assign Rights To Role }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Allow }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Using Active Directory Credentials }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Log }" shape=Mrecord];
+8 [label="{<f0> 8.0|<f1> Track use of assets. }" shape=Mrecord];
+206 -> 8
+1001 [label="Archivist," shape=box];
+1001 -> 8
+1003 [label="<f0>  |<f1> Use of assets " color=red];
+8 -> 1003 [label="Use of assets"]
+9 [label="{<f0> 9.0|<f1> Group users by role. }" shape=Mrecord];
+1005 [label="Administrator" shape=box];
+1005 -> 9
+209 -> 9
+9 -> 202  [label="Role"]
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+207 -> 213
+207 -> 214
+209 -> 202 [label="Role"]
+210 -> 201 [label="Right"]
+210 -> 203 [label="User Group"]
+211 -> 202 [label="Role"]
+211 -> 201 [label="Right"]
+212 -> 213
+213 -> 214
+213 -> 204 [label="Directory Credential"]
+209 -> 205 [label="User"]
+}

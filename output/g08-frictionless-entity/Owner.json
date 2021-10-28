@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a RepositoryManagerResearcher, I want an app that acts as a match-making service for packaging data, so that owners are paired with data packagers.",
+    "entities": [
+      {
+        "text": "RepositoryManagerResearcher,",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "owners",
+        "label": "Data"
+      }
+    ]
+  }
+]

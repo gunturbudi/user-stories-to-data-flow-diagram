@@ -1,0 +1,65 @@
+[
+  {
+    "text": "As a visitor, I want to download presentations, PDFs, etc. on Scrum, so that I can learn from them or use them.",
+    "entities": [
+      {
+        "text": "visitor",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "presentations",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to be able to indicate whether an article is publicly available or for members only, so that visitors are incentivized to become members.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to see the upcoming courses are what I want visitors to notice, so that they register and there's a benefit to my membership.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "visitors",
+        "label": "Data"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      }
+    ]
+  }
+]

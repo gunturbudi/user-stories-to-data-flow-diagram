@@ -1,0 +1,98 @@
+id,value,style,source,target,type
+19,Find their class on on one page.,ellipse,null,null,process
+200,Update,shape=partialRectangle,null,null,data_base
+201,Info,shape=partialRectangle,null,null,data_base
+202,Trainer,shape=partialRectangle,null,null,data_base
+203,Website,shape=partialRectangle,null,null,data_base
+204,View,shape=partialRectangle,null,null,data_base
+205,Location,shape=partialRectangle,null,null,data_base
+206,Dedicated Page,shape=partialRectangle,null,null,data_base
+207,Class,shape=partialRectangle,null,null,data_base
+208,Datetime,shape=partialRectangle,null,null,data_base
+209,Logo,shape=partialRectangle,null,null,data_base
+210,Registration,shape=partialRectangle,null,null,data_base
+211,Title,shape=partialRectangle,null,null,data_base
+212,Follow Information,shape=partialRectangle,null,null,data_base
+213,Offering,shape=partialRectangle,null,null,data_base
+214,Skill Level,shape=partialRectangle,null,null,data_base
+215,Training,shape=partialRectangle,null,null,data_base
+216,Short Summary,shape=partialRectangle,null,null,data_base
+217,Link,shape=partialRectangle,null,null,data_base
+218,Remain Registration,shape=partialRectangle,null,null,data_base
+219,Day Register,shape=partialRectangle,null,null,data_base
+220,-pron-,shape=partialRectangle,null,null,data_base
+221,Information Attendee,shape=partialRectangle,null,null,data_base
+222,Map,shape=partialRectangle,null,null,data_base
+223,Trainingcoordinator,rounded=0,null,null,external_entity
+224,Trainer,rounded=0,null,null,external_entity
+225,Email The Trainers Once From The Website For Info,ellipse,null,null,process
+226,Email The Trainers Once From The Website For Update,ellipse,null,null,process
+227,Have A View Attached To Training Node Shows All Information Attendee Trainers See All Class Attendance First,ellipse,null,null,process
+228,Learn More About,ellipse,null,null,process
+229,Learn More About Skill Level,ellipse,null,null,process
+230,Learn More About Datetime,ellipse,null,null,process
+231,Have A Dedicated Page For Each Class,ellipse,null,null,process
+232,Learn More About Logo,ellipse,null,null,process
+233,Learn More About Possibly A Map View,ellipse,null,null,process
+234,Register For Class,ellipse,null,null,process
+235,Learn More About The Offering The Following Information Shown Registrations Remaining,ellipse,null,null,process
+236,Learn More About Location,ellipse,null,null,process
+237,Learn More About Title,ellipse,null,null,process
+238,Learn More About Trainer,ellipse,null,null,process
+239,Learn More About Possibly A View,ellipse,null,null,process
+240,Have,ellipse,null,null,process
+241,Edit Training Node,ellipse,null,null,process
+242,Edit -Pron-,ellipse,null,null,process
+244,,endArrow=classic,223,225,endArrow=classic
+245,,endArrow=classic,223,226,endArrow=classic
+246,,endArrow=classic,223,229,endArrow=classic
+247,,endArrow=classic,223,230,endArrow=classic
+248,,endArrow=classic,223,233,endArrow=classic
+249,,endArrow=classic,224,227,endArrow=classic
+250,,endArrow=classic,224,231,endArrow=classic
+251,,endArrow=classic,224,232,endArrow=classic
+252,,endArrow=classic,224,234,endArrow=classic
+253,,endArrow=classic,224,235,endArrow=classic
+254,,endArrow=classic,224,236,endArrow=classic
+255,,endArrow=classic,224,237,endArrow=classic
+256,,endArrow=classic,224,238,endArrow=classic
+257,,endArrow=classic,224,241,endArrow=classic
+258,,endArrow=classic,224,242,endArrow=classic
+259,Trainer,endArrow=classic,225,202,endArrow=classic
+260,Website,endArrow=classic,225,203,endArrow=classic
+261,Info,endArrow=classic,225,201,endArrow=classic
+262,Update,endArrow=classic,226,200,endArrow=classic
+263,Trainer,endArrow=classic,226,202,endArrow=classic
+264,Website,endArrow=classic,226,203,endArrow=classic
+265,View,endArrow=classic,227,204,endArrow=classic
+266,Trainer,endArrow=classic,227,202,endArrow=classic
+267,Skill Level,endArrow=classic,229,214,endArrow=classic
+268,Datetime,endArrow=classic,230,208,endArrow=classic
+269,,endArrow=classic,231,228,endArrow=classic
+270,,endArrow=classic,231,232,endArrow=classic
+271,,endArrow=classic,231,235,endArrow=classic
+272,,endArrow=classic,231,236,endArrow=classic
+273,,endArrow=classic,231,237,endArrow=classic
+274,,endArrow=classic,231,238,endArrow=classic
+275,Dedicated Page,endArrow=classic,231,206,endArrow=classic
+276,Class,endArrow=classic,231,207,endArrow=classic
+277,Location,endArrow=classic,231,205,endArrow=classic
+278,Logo,endArrow=classic,232,209,endArrow=classic
+279,View,endArrow=classic,233,204,endArrow=classic
+280,Class,endArrow=classic,234,207,endArrow=classic
+281,Offering,endArrow=classic,235,213,endArrow=classic
+282,Follow Information,endArrow=classic,235,212,endArrow=classic
+283,Registration,endArrow=classic,235,210,endArrow=classic
+284,Location,endArrow=classic,236,205,endArrow=classic
+285,Title,endArrow=classic,237,211,endArrow=classic
+286,Trainer,endArrow=classic,238,202,endArrow=classic
+287,View,endArrow=classic,239,204,endArrow=classic
+288,-pron-,endArrow=classic,242,220,endArrow=classic
+291,Training,endArrow=classic,227,215,endArrow=classic
+366,Information Attendee,endArrow=classic,227,221,endArrow=classic
+375,Map,endArrow=classic,233,222,endArrow=classic
+1000,"Anonymoususer,",rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,19,endArrow=classic
+1002,"Anonymoususer,",rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,19,endArrow=classic
+1004,Class,endArrow=classic,19,207,endArrow=classic

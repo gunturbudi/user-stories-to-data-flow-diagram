@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+6,Design my website.,ellipse,null,null,process
+200,Website,shape=partialRectangle,null,null,data_base
+201,Api,shape=partialRectangle,null,null,data_base
+202,Bootstrap,shape=partialRectangle,null,null,data_base
+203,Process,shape=partialRectangle,null,null,data_base
+204,Ux Lesson,shape=partialRectangle,null,null,data_base
+205,Ui,shape=partialRectangle,null,null,data_base
+206,Developer,rounded=0,null,null,external_entity
+207,Access An Api From The Website,ellipse,null,null,process
+208,Developing,ellipse,null,null,process
+209,Use Bootstrap In The Process,ellipse,null,null,process
+210,Attend Some Ui,ellipse,null,null,process
+211,Attend Ux Lesson,ellipse,null,null,process
+213,,endArrow=classic,206,207,endArrow=classic
+214,,endArrow=classic,206,208,endArrow=classic
+215,,endArrow=classic,206,209,endArrow=classic
+216,,endArrow=classic,206,210,endArrow=classic
+217,,endArrow=classic,206,211,endArrow=classic
+218,Api,endArrow=classic,207,201,endArrow=classic
+219,Website,endArrow=classic,207,200,endArrow=classic
+220,,endArrow=classic,208,209,endArrow=classic
+221,Bootstrap,endArrow=classic,209,202,endArrow=classic
+222,Process,endArrow=classic,209,203,endArrow=classic
+223,Ui,endArrow=classic,210,205,endArrow=classic
+224,Ux Lesson,endArrow=classic,211,204,endArrow=classic
+1000,,endArrow=classic,208,6,endArrow=classic
+1001,Website,endArrow=classic,6,200,endArrow=classic

@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sortable Spot " ];
+201 [label="<f0>  |<f1> Particular Author " ];
+202 [label="<f0>  |<f1> Paper " color=red];
+203 [label="<f0>  |<f1> Influential Judge " ];
+204 [label="<f0>  |<f1> Legal Thinker " ];
+205 [label="<f0>  |<f1> Initial Scholarship " color=red];
+206 [label="<f0>  |<f1> Insight " color=red];
+207 [label="<f0>  |<f1> Thesis " color=red];
+208 [label="Academicresearcher" shape=box];
+209 [label="{<f0> 1.0|<f1> Find The Works Of A Particular Author In Easily Sortable Spot }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Gain Insight Initial Scholarship How Started }" shape=Mrecord];
+208 -> 209
+208 -> 210
+209 -> 201 [label="Particular Author"]
+209 -> 200 [label="Sortable Spot"]
+210 -> 206 [label="Insight"]
+210 -> 205 [label="Initial Scholarship"]
+}

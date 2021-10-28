@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Section " ];
+201 [label="<f0>  |<f1> Costing " ];
+202 [label="<f0>  |<f1> Role " color=red];
+203 [label="<f0>  |<f1> Responsibility " ];
+204 [label="Faculty , Data Steward" shape=box];
+205 [label="{<f0> 1.0|<f1> See The Sections On Costing }" shape=Mrecord];
+204 -> 205
+204 -> 205
+204 -> 205
+205 -> 200 [label="Section"]
+205 -> 201 [label="Costing"]
+205 -> 202 [label="Role"]
+205 -> 203 [label="Responsibility"]
+}

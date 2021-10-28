@@ -1,0 +1,39 @@
+id,value,style,source,target,type
+200,Resources Page,shape=partialRectangle,null,null,data_base
+201,Agency,shape=partialRectangle,null,null,data_base
+202,User Testing,shape=partialRectangle,null,null,data_base
+203,Edit,shape=partialRectangle,null,null,data_base
+204,Issue,shape=partialRectangle,null,null,data_base
+205,Tech,shape=partialRectangle,null,null,data_base
+206,Landing Page,shape=partialRectangle,null,null,data_base
+207,Ui Designer,rounded=0,null,null,external_entity
+208,Redesign The Resources Page,ellipse,null,null,process
+209,Report To The Agencies About User Testing,ellipse,null,null,process
+210,Move On Landing Page Edits,ellipse,null,null,process
+211,Move On,ellipse,null,null,process
+212,Round 3 Of,ellipse,null,null,process
+213,Page Edits,ellipse,null,null,process
+214,Track The Issues Thursday Come Up In Tech,ellipse,null,null,process
+215,Begin User Testing,ellipse,null,null,process
+216,Schedule User Testing,ellipse,null,null,process
+218,,endArrow=classic,207,208,endArrow=classic
+219,,endArrow=classic,207,209,endArrow=classic
+220,,endArrow=classic,207,210,endArrow=classic
+221,,endArrow=classic,207,211,endArrow=classic
+222,,endArrow=classic,207,212,endArrow=classic
+223,,endArrow=classic,207,213,endArrow=classic
+224,,endArrow=classic,207,214,endArrow=classic
+225,,endArrow=classic,207,215,endArrow=classic
+226,,endArrow=classic,207,216,endArrow=classic
+227,Resources Page,endArrow=classic,208,200,endArrow=classic
+228,Agency,endArrow=classic,209,201,endArrow=classic
+229,User Testing,endArrow=classic,209,202,endArrow=classic
+230,Edit,endArrow=classic,210,203,endArrow=classic
+231,,endArrow=classic,211,212,endArrow=classic
+232,,endArrow=classic,212,213,endArrow=classic
+233,Edit,endArrow=classic,213,203,endArrow=classic
+234,Issue,endArrow=classic,214,204,endArrow=classic
+235,Tech,endArrow=classic,214,205,endArrow=classic
+236,User Testing,endArrow=classic,215,202,endArrow=classic
+237,User Testing,endArrow=classic,216,202,endArrow=classic
+240,Landing Page,endArrow=classic,210,206,endArrow=classic

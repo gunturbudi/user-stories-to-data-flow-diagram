@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Internal Workflow " color=red];
+201 [label="<f0>  |<f1> User Research " color=red];
+202 [label="Researcher" shape=box];
+203 [label="{<f0> 1.0|<f1> Develop The User Research Protocol For Internal Workflows }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Recruit For The Last Round Of User Research }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Synthesize results. }" shape=Mrecord];
+1000 [label="We" shape=box];
+1000 -> 3
+1002 [label="<f0>  |<f1> Findings " color=red];
+3 -> 1002 [label="Findings"]
+202 -> 203
+202 -> 204
+203 -> 200 [label="Internal Workflow"]
+204 -> 201 [label="User Research"]
+}

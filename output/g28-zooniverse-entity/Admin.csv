@@ -1,0 +1,94 @@
+id,value,style,source,target,type
+200,Video,shape=partialRectangle,null,null,data_base
+201,Segment,shape=partialRectangle,null,null,data_base
+202,Topic,shape=partialRectangle,null,null,data_base
+203,Quick Assessment,shape=partialRectangle,null,null,data_base
+204,Upload,shape=partialRectangle,null,null,data_base
+205,Audio Material,shape=partialRectangle,null,null,data_base
+206,Content,shape=partialRectangle,null,null,data_base
+207,Search,shape=partialRectangle,null,null,data_base
+208,Copyright Infringement,shape=partialRectangle,null,null,data_base
+209,Ingested Content,shape=partialRectangle,null,null,data_base
+210,Information,shape=partialRectangle,null,null,data_base
+211,Metadata,shape=partialRectangle,null,null,data_base
+212,Tag,shape=partialRectangle,null,null,data_base
+213,High­level,shape=partialRectangle,null,null,data_base
+214,Article,shape=partialRectangle,null,null,data_base
+215,Quality Aspect,shape=partialRectangle,null,null,data_base
+216,News,shape=partialRectangle,null,null,data_base
+217,Nudity,shape=partialRectangle,null,null,data_base
+218,Asset,shape=partialRectangle,null,null,data_base
+219,Admin,rounded=0,null,null,external_entity
+220,See Segmentation Of Videos,ellipse,null,null,process
+221,Validate Segmentation Of Videos,ellipse,null,null,process
+222,Edit Segmentation Of Videos,ellipse,null,null,process
+223,Annotate News Video Segments,ellipse,null,null,process
+224,Extract A Topic For Each Segment,ellipse,null,null,process
+225,Filter Videos On Quality Aspects,ellipse,null,null,process
+226,Filter Videos On,ellipse,null,null,process
+227,V,ellipse,null,null,process
+228,Rank Videos On,ellipse,null,null,process
+229,Rank Videos On Quality Aspects,ellipse,null,null,process
+230,Get A Quick Assessment Audio Material Has Edited Before The Upload,ellipse,null,null,process
+231,Prefilter Nudity Content,ellipse,null,null,process
+232,Prefilter Content Using Search On Asset Information,ellipse,null,null,process
+233,Validated The Ingested Contents For Copyright Infringement,ellipse,null,null,process
+234,Prefilter,ellipse,null,null,process
+235,Use Search On High­Level Information Such As Tag,ellipse,null,null,process
+236,Use Search On High­Level Asset Information Such As Metadata,ellipse,null,null,process
+237,See A Summary Of Articles,ellipse,null,null,process
+239,,endArrow=classic,219,220,endArrow=classic
+240,,endArrow=classic,219,221,endArrow=classic
+241,,endArrow=classic,219,222,endArrow=classic
+242,,endArrow=classic,219,223,endArrow=classic
+243,,endArrow=classic,219,224,endArrow=classic
+244,,endArrow=classic,219,225,endArrow=classic
+245,,endArrow=classic,219,226,endArrow=classic
+246,,endArrow=classic,219,227,endArrow=classic
+247,,endArrow=classic,219,228,endArrow=classic
+248,,endArrow=classic,219,229,endArrow=classic
+249,,endArrow=classic,219,230,endArrow=classic
+250,,endArrow=classic,219,231,endArrow=classic
+251,,endArrow=classic,219,232,endArrow=classic
+252,,endArrow=classic,219,233,endArrow=classic
+253,,endArrow=classic,219,234,endArrow=classic
+254,,endArrow=classic,219,235,endArrow=classic
+255,,endArrow=classic,219,236,endArrow=classic
+256,,endArrow=classic,219,237,endArrow=classic
+257,Video,endArrow=classic,220,200,endArrow=classic
+258,Video,endArrow=classic,221,200,endArrow=classic
+259,Video,endArrow=classic,222,200,endArrow=classic
+260,Segment,endArrow=classic,223,201,endArrow=classic
+261,Topic,endArrow=classic,224,202,endArrow=classic
+262,Segment,endArrow=classic,224,201,endArrow=classic
+263,Quality Aspect,endArrow=classic,225,215,endArrow=classic
+264,Video,endArrow=classic,225,200,endArrow=classic
+265,,endArrow=classic,226,227,endArrow=classic
+266,Video,endArrow=classic,226,200,endArrow=classic
+267,,endArrow=classic,228,227,endArrow=classic
+268,Video,endArrow=classic,228,200,endArrow=classic
+269,Video,endArrow=classic,229,200,endArrow=classic
+270,Quality Aspect,endArrow=classic,229,215,endArrow=classic
+271,Quick Assessment,endArrow=classic,230,203,endArrow=classic
+272,Audio Material,endArrow=classic,230,205,endArrow=classic
+273,Upload,endArrow=classic,230,204,endArrow=classic
+274,Content,endArrow=classic,231,206,endArrow=classic
+275,Content,endArrow=classic,232,206,endArrow=classic
+276,Search,endArrow=classic,232,207,endArrow=classic
+277,Information,endArrow=classic,232,210,endArrow=classic
+278,Ingested Content,endArrow=classic,233,209,endArrow=classic
+279,Copyright Infringement,endArrow=classic,233,208,endArrow=classic
+280,,endArrow=classic,234,235,endArrow=classic
+281,,endArrow=classic,234,236,endArrow=classic
+282,Tag,endArrow=classic,235,212,endArrow=classic
+283,Information,endArrow=classic,235,210,endArrow=classic
+284,Search,endArrow=classic,235,207,endArrow=classic
+285,High­level,endArrow=classic,235,213,endArrow=classic
+286,High­level,endArrow=classic,236,213,endArrow=classic
+287,Metadata,endArrow=classic,236,211,endArrow=classic
+288,Search,endArrow=classic,236,207,endArrow=classic
+289,Information,endArrow=classic,236,210,endArrow=classic
+290,Article,endArrow=classic,237,214,endArrow=classic
+294,News,endArrow=classic,223,216,endArrow=classic
+306,Nudity,endArrow=classic,231,217,endArrow=classic
+319,Asset,endArrow=classic,232,218,endArrow=classic

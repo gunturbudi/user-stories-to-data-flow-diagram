@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As an Inspection Staff member, I want to Create an Inspection, so that I can schedule and assign the inspection.",
+    "entities": [
+      {
+        "text": "Inspection Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Create",
+        "label": "Processing"
+      },
+      {
+        "text": "Inspection",
+        "label": "PII"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      }
+    ]
+  }
+]

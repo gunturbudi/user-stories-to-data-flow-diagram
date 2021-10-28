@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a repository manager, I want to indicate names related to the collection either as creator, source, or subject.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "names",
+        "label": "PII"
+      },
+      {
+        "text": "creator",
+        "label": "Data"
+      }
+    ]
+  }
+]

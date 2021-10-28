@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a data scientist, I want to be able to create a dataset instance of an existing dataset type without writing code.",
+    "entities": [
+      {
+        "text": "data scientist",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data scientist, I want to be able to upgrade a dataset instance to a new version of its code.",
+    "entities": [
+      {
+        "text": "data scientist",
+        "label": "Data"
+      },
+      {
+        "text": "upgrade",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  }
+]

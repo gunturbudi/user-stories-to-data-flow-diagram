@@ -1,0 +1,116 @@
+[
+  {
+    "text": "As a Bath Data Archive administrator, I want to make some checks on deposited datasets before they are made public, so that consistent quality of metadata is maintained, compliance with policies can be checked and details of licensing can be checked.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "checks",
+        "label": "Processing"
+      },
+      {
+        "text": "deposited datasets",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "checked",
+        "label": "Processing"
+      },
+      {
+        "text": "licensing",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Bath Data Archive administrator, I want to require a minimum set of metadata, so that consistent quality of metadata is maintained.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Bath Data Archive administrator, I want to approve scheduled disposal of data, so that data which is still required is not destroyed.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "approve",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Bath Data Archive administrator, I want to query the entire archive , so that I can report on particular aspects of the archive holdings.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "query",
+        "label": "Processing"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Bath Data Archive administrator, I want to import Bath data from an external data centre wholesale, so that Bath data holdings in external archives are not lost if they close down.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Bath data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Bath Data Archive administrator, I want to encourage and promote the use of open standards for deposit, so that data is as reusable as possible.",
+    "entities": [
+      {
+        "text": "Bath Data Archive administrator",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

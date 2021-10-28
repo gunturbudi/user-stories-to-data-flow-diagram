@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As a Visitor, I want to sign up via github or google, so that that I don't have to enter lots of information and remember my password for yet another website.",
+    "entities": [
+      {
+        "text": "Visitor",
+        "label": "Data"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      },
+      {
+        "text": "google",
+        "label": "PII"
+      },
+      {
+        "text": "enter",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "remember",
+        "label": "Processing"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  }
+]

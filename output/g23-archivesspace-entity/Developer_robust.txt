@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Configuration" as thingconfiguration
+	entity "Custom Importer" as thingcustomimporter #grey
+	actor "Developer" as actordeveloper
+	circle "Build Version" as thingbuiltversion
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Importer\nInterface" as thingimporterinterface #grey
+	control "Use A\nConfiguration Not\nPrepackaged Within\nA Built\nVersion Of\nApplication" as controluseconfiguration
+	control "Develop A\nCustom Importer" as controldevelopcustomimporter
+
+	thingbuiltversion <.. thingconfiguration
+	thingapplication *-- thingbuiltversion
+	actordeveloper --- thingapplicationinterface
+	actordeveloper --- thingimporterinterface
+	thingconfiguration --- controluseconfiguration
+	thingbuiltversion --- controluseconfiguration
+	thingapplication --- controluseconfiguration
+	thingapplicationinterface --> controluseconfiguration
+	thingcustomimporter --- controldevelopcustomimporter
+	thingimporterinterface --> controldevelopcustomimporter
+
+@enduml

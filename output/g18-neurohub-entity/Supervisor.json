@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As a supervisor, I want to view what my researchers were doing on a given date or period of time.",
+    "entities": [
+      {
+        "text": "supervisor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "given date",
+        "label": "PII"
+      },
+      {
+        "text": "period of time",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a supervisor, I want to create feedback forms within Neurohub, that my students can fill in and submit, in order to provide me with feedback about the course that they attended.",
+    "entities": [
+      {
+        "text": "supervisor,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback forms",
+        "label": "PII"
+      },
+      {
+        "text": "students",
+        "label": "Data"
+      },
+      {
+        "text": "fill in",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  }
+]

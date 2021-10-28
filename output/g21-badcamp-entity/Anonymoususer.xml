@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1106" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+ <root>
+ <mxCell id="0"/>
+  <mxCell id="1" parent="0"/>
+  <mxCell id= "41" value= "Find their class on on one page." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "42" value= "Code with my friends." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "43" value= "Reserve my spot." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "44" value= "Help me get to the location." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "45" value= "Determine the right level of sponsorship for my organization." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "46" value= "Post my job listing on the badcamp site." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "47" value= "Go!." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "48" value= "Register for the camp and get an account on the website." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "200" value= "Sponsor" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "201" value= "Dedicated Page" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "202" value= "Class" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "203" value= "Location" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "204" value= "View" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "205" value= "Offering" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "206" value= "Trainer" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "207" value= "Title" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "208" value= "Datetime" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "209" value= "Follow Information" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "210" value= "Skill Level" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "211" value= "Registration" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "212" value= "Logo" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "213" value= "Day Level" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "214" value= "Link" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "215" value= "Training" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "216" value= "Day Register" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "217" value= "Remain Registration" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "218" value= "Short Summary" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "219" value= "Intro Section" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "220" value= "Page" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "221" value= "Code Lounge" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "222" value= "Company" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "223" value= "Attendee" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "224" value= "Session" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "225" value= "Summit" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "226" value= "Event" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "227" value= "Blog" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "228" value= "Seat" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "229" value= "Specific Detail" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "230" value= "Sponsorship Person" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "231" value= "Job" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "232" value= "Schedule" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "233" value= "Badcamp" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "234" value= "Menu" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "235" value= "Notification" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "236" value= "User Profile" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "237" value= "Venue Detail" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "238" value= "Sponsorship Level" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "239" value= "Map" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "240" value= "Home" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "241" value= "User" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "242" value= "Anonymoususer" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "243" value= "View A List Of Sponsors" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "244" value= "Learn More About" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "245" value= "Learn More About Datetime" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "246" value= "Have A Dedicated Page For Each Class" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "247" value= "Learn More About Location" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "248" value= "Learn More About Possibly A View" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "249" value= "Learn More About Skill Level" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "250" value= "Register For Class" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "251" value= "Learn More About Trainer" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "252" value= "Learn More About Title" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "253" value= "Learn More About Logo" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "254" value= "Learn More About Possibly A Map View" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "255" value= "Learn More About The Offering The Following Information Shown Registrations Remaining" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "256" value= "Have" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "257" value= "Have A Page With A List Of All Training Offerings" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "258" value= "Have A Training Landing Page With An Intro Section" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "259" value= "Promote Call For Trainings" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "260" value= "Have A Link On The Home Page To A List Of Training Options" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "261" value= "Find Out" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "262" value= "See A List Of Attendees With This Company" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "263" value= "View Venue Details" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "264" value= "See Training" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "265" value= "See Summit" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "266" value= "See All Events That A Sponsor Is Sponsoring" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "267" value= "Sign Up For The Badcamp Newsletter" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "268" value= "Read The Blog" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "269" value= "See" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "270" value= "See Specific Details On Summits" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "271" value= "Learn About Sponsorship Levels" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "272" value= "Contact Jobs As A Sponsor The Sponsorship Person" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "273" value= "Learn" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "274" value= "Posting Jobs As A Sponsor" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "275" value= "See The Schedule" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "276" value= "Speak At Badcamp" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "277" value= "Register" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "278" value= "Find A Link In The Menu Links To The Registration Form" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "279" value= "Fill Out A User Registration Form" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "280" value= "Receive A Notification" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "281" value= "Submit A Session" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "282" value= "Find Session Information" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "284" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "243" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "285" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "245" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "286" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "246" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "287" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "247" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "288" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "249" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "289" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "250" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "290" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "251" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "291" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "252" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "292" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "253" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "293" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "254" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "294" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "255" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "295" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "257" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "296" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "258" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "297" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "259" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "298" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "260" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "299" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "262" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "300" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "263" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "301" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "264" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "302" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "265" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "303" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "266" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "304" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "267" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "305" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "268" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "306" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "270" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "307" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "271" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "308" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "273" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "309" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "274" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "310" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "275" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "311" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "276" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "312" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "277" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "313" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "278" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "314" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "279" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "315" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "280" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "316" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "281" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "317" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "282" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "318" value= "Sponsor" style= "endArrow=classic;whiteSpace=wrap;" source= "243" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "319" value= "User Profile" style= "endArrow=classic;whiteSpace=wrap;" source= "243" target= "236" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "320" value= "Datetime" style= "endArrow=classic;whiteSpace=wrap;" source= "245" target= "208" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "321" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "244" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "322" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "247" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "323" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "251" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "324" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "252" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "325" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "253" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "326" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "255" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "327" value= "Dedicated Page" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "201" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "328" value= "Class" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "202" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "329" value= "Location" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "330" value= "Location" style= "endArrow=classic;whiteSpace=wrap;" source= "247" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "331" value= "View" style= "endArrow=classic;whiteSpace=wrap;" source= "248" target= "204" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "332" value= "Skill Level" style= "endArrow=classic;whiteSpace=wrap;" source= "249" target= "210" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "333" value= "Class" style= "endArrow=classic;whiteSpace=wrap;" source= "250" target= "202" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "334" value= "Trainer" style= "endArrow=classic;whiteSpace=wrap;" source= "251" target= "206" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "335" value= "Title" style= "endArrow=classic;whiteSpace=wrap;" source= "252" target= "207" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "336" value= "Logo" style= "endArrow=classic;whiteSpace=wrap;" source= "253" target= "212" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "337" value= "View" style= "endArrow=classic;whiteSpace=wrap;" source= "254" target= "204" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "338" value= "Offering" style= "endArrow=classic;whiteSpace=wrap;" source= "255" target= "205" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "339" value= "Follow Information" style= "endArrow=classic;whiteSpace=wrap;" source= "255" target= "209" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "340" value= "Registration" style= "endArrow=classic;whiteSpace=wrap;" source= "255" target= "211" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "341" value= "Page" style= "endArrow=classic;whiteSpace=wrap;" source= "257" target= "220" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "342" value= "Offering" style= "endArrow=classic;whiteSpace=wrap;" source= "257" target= "205" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "343" value= "Intro Section" style= "endArrow=classic;whiteSpace=wrap;" source= "258" target= "219" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "344" value= "Page" style= "endArrow=classic;whiteSpace=wrap;" source= "258" target= "220" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "345" value= "Training" style= "endArrow=classic;whiteSpace=wrap;" source= "259" target= "215" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "346" value= "Link" style= "endArrow=classic;whiteSpace=wrap;" source= "260" target= "214" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "347" value= "Page" style= "endArrow=classic;whiteSpace=wrap;" source= "260" target= "220" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "348" value= "Attendee" style= "endArrow=classic;whiteSpace=wrap;" source= "262" target= "223" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "349" value= "Company" style= "endArrow=classic;whiteSpace=wrap;" source= "262" target= "222" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "350" value= "Session" style= "endArrow=classic;whiteSpace=wrap;" source= "262" target= "224" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "351" value= "Summit" style= "endArrow=classic;whiteSpace=wrap;" source= "262" target= "225" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "352" value= "Venue Detail" style= "endArrow=classic;whiteSpace=wrap;" source= "263" target= "237" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "353" value= "Training" style= "endArrow=classic;whiteSpace=wrap;" source= "264" target= "215" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "354" value= "Summit" style= "endArrow=classic;whiteSpace=wrap;" source= "265" target= "225" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "355" value= "Event" style= "endArrow=classic;whiteSpace=wrap;" source= "266" target= "226" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "356" value= "Sponsor" style= "endArrow=classic;whiteSpace=wrap;" source= "266" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "357" value= "Blog" style= "endArrow=classic;whiteSpace=wrap;" source= "268" target= "227" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "358" value= "Specific Detail" style= "endArrow=classic;whiteSpace=wrap;" source= "270" target= "229" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "359" value= "Summit" style= "endArrow=classic;whiteSpace=wrap;" source= "270" target= "225" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "360" value= "Sponsorship Level" style= "endArrow=classic;whiteSpace=wrap;" source= "271" target= "238" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "361" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "272" target= "273" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "362" value= "Sponsorship Person" style= "endArrow=classic;whiteSpace=wrap;" source= "272" target= "230" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "363" value= "Sponsor" style= "endArrow=classic;whiteSpace=wrap;" source= "272" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "364" value= "Job" style= "endArrow=classic;whiteSpace=wrap;" source= "272" target= "231" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "365" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "274" target= "273" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "366" value= "Job" style= "endArrow=classic;whiteSpace=wrap;" source= "274" target= "231" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "367" value= "Sponsor" style= "endArrow=classic;whiteSpace=wrap;" source= "274" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "368" value= "Schedule" style= "endArrow=classic;whiteSpace=wrap;" source= "275" target= "232" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "369" value= "Badcamp" style= "endArrow=classic;whiteSpace=wrap;" source= "276" target= "233" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "370" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "277" target= "276" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "371" value= "Menu" style= "endArrow=classic;whiteSpace=wrap;" source= "278" target= "234" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "372" value= "Link" style= "endArrow=classic;whiteSpace=wrap;" source= "278" target= "214" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "373" value= "Notification" style= "endArrow=classic;whiteSpace=wrap;" source= "280" target= "235" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "374" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "281" target= "280" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "375" value= "Session" style= "endArrow=classic;whiteSpace=wrap;" source= "281" target= "224" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "627" value= "Map" style= "endArrow=classic;whiteSpace=wrap;" source= "254" target= "239" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "645" value= "Home" style= "endArrow=classic;whiteSpace=wrap;" source= "260" target= "240" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "682" value= "User" style= "endArrow=classic;whiteSpace=wrap;" source= "279" target= "241" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1000" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "277" target= "41" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1001" value= "Class" style= "endArrow=classic;whiteSpace=wrap;" source= "41" target= "202" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1002" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "42" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1003" value= "Friends" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1004" value= "Friends" style= "endArrow=classic;whiteSpace=wrap;" source= "42" target= "1003" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1005" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "43" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1006" value= "Spot" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1007" value= "Spot" style= "endArrow=classic;whiteSpace=wrap;" source= "43" target= "1006" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1008" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "270" target= "44" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1009" value= "Interests" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1010" value= "Interests" style= "endArrow=classic;whiteSpace=wrap;" source= "44" target= "1009" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1011" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "271" target= "45" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1012" value= "Organization" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1013" value= "Organization" style= "endArrow=classic;whiteSpace=wrap;" source= "45" target= "1012" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1014" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "273" target= "46" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1015" value= "Job listing" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1016" value= "Job listing" style= "endArrow=classic;whiteSpace=wrap;" source= "46" target= "1015" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1017" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "275" target= "47" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1018" value= "Day" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1019" value= "Day" style= "endArrow=classic;whiteSpace=wrap;" source= "47" target= "1018" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1020" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "279" target= "48" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1021" value= "Account" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1022" value= "Account" style= "endArrow=classic;whiteSpace=wrap;" source= "48" target= "1021" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+</root>
+</mxGraphModel>

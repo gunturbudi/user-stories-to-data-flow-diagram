@@ -1,0 +1,436 @@
+id,value,style,source,target,type
+79,Compare the data taken from experiments on particular dates.,ellipse,null,null,process
+80,Replicate my work.,ellipse,null,null,process
+81,Keep track of changes to files over time.,ellipse,null,null,process
+200,Experiment,shape=partialRectangle,null,null,data_base
+201,Page,shape=partialRectangle,null,null,data_base
+202,File,shape=partialRectangle,null,null,data_base
+203,Multiple File,shape=partialRectangle,null,null,data_base
+204,Directory,shape=partialRectangle,null,null,data_base
+205,Attach File,shape=partialRectangle,null,null,data_base
+206,Workspace,shape=partialRectangle,null,null,data_base
+207,Web Browser,shape=partialRectangle,null,null,data_base
+208,Network Drive,shape=partialRectangle,null,null,data_base
+209,Workstation,shape=partialRectangle,null,null,data_base
+210,Greek Symbol,shape=partialRectangle,null,null,data_base
+211,Notification,shape=partialRectangle,null,null,data_base
+212,Mendeley,shape=partialRectangle,null,null,data_base
+213,Track,shape=partialRectangle,null,null,data_base
+214,Electronic Support,shape=partialRectangle,null,null,data_base
+215,Output,shape=partialRectangle,null,null,data_base
+216,Particular Experiment,shape=partialRectangle,null,null,data_base
+217,Service,shape=partialRectangle,null,null,data_base
+218,Datum,shape=partialRectangle,null,null,data_base
+219,Display,shape=partialRectangle,null,null,data_base
+220,Associated Image,shape=partialRectangle,null,null,data_base
+221,Off Site\nWorking,shape=partialRectangle,null,null,data_base
+222,Remote Access,shape=partialRectangle,null,null,data_base
+223,Researcher,shape=partialRectangle,null,null,data_base
+224,Later Stage,shape=partialRectangle,null,null,data_base
+225,Multiple,shape=partialRectangle,null,null,data_base
+226,Library,shape=partialRectangle,null,null,data_base
+227,System,shape=partialRectangle,null,null,data_base
+228,Experimental Datum,shape=partialRectangle,null,null,data_base
+229,Bad Datum,shape=partialRectangle,null,null,data_base
+230,Electronic Book,shape=partialRectangle,null,null,data_base
+231,Centre,shape=partialRectangle,null,null,data_base
+232,Standard Metadata,shape=partialRectangle,null,null,data_base
+233,Standard Datum,shape=partialRectangle,null,null,data_base
+234,Video,shape=partialRectangle,null,null,data_base
+235,Behavioural Observation,shape=partialRectangle,null,null,data_base
+236,Ability,shape=partialRectangle,null,null,data_base
+237,New Datum,shape=partialRectangle,null,null,data_base
+238,Detailed Datum,shape=partialRectangle,null,null,data_base
+239,Entry,shape=partialRectangle,null,null,data_base
+240,Populated Template,shape=partialRectangle,null,null,data_base
+241,Meta Data,shape=partialRectangle,null,null,data_base
+242,Object,shape=partialRectangle,null,null,data_base
+243,Link,shape=partialRectangle,null,null,data_base
+244,Example,shape=partialRectangle,null,null,data_base
+245,Input,shape=partialRectangle,null,null,data_base
+246,Format,shape=partialRectangle,null,null,data_base
+247,Minimal Effort,shape=partialRectangle,null,null,data_base
+248,Group,shape=partialRectangle,null,null,data_base
+249,Point,shape=partialRectangle,null,null,data_base
+250,Time,shape=partialRectangle,null,null,data_base
+251,Colleague,shape=partialRectangle,null,null,data_base
+252,Neurohub Node,shape=partialRectangle,null,null,data_base
+253,Laboratory,shape=partialRectangle,null,null,data_base
+254,Paper,shape=partialRectangle,null,null,data_base
+255,Repository,shape=partialRectangle,null,null,data_base
+256,Review,shape=partialRectangle,null,null,data_base
+257,Comment,shape=partialRectangle,null,null,data_base
+258,Neurohub,shape=partialRectangle,null,null,data_base
+259,Detail,shape=partialRectangle,null,null,data_base
+260,Workflow,shape=partialRectangle,null,null,data_base
+261,Execution History,shape=partialRectangle,null,null,data_base
+262,Result,shape=partialRectangle,null,null,data_base
+263,Date,shape=partialRectangle,null,null,data_base
+264,Note,shape=partialRectangle,null,null,data_base
+265,Mechanism,shape=partialRectangle,null,null,data_base
+266,Data Set,shape=partialRectangle,null,null,data_base
+267,Term Curation,shape=partialRectangle,null,null,data_base
+268,Write Up,shape=partialRectangle,null,null,data_base
+269,Log Book,shape=partialRectangle,null,null,data_base
+270,Drug Response,shape=partialRectangle,null,null,data_base
+271,Twitter Tweet,shape=partialRectangle,null,null,data_base
+272,Research,shape=partialRectangle,null,null,data_base
+273,Timeline,shape=partialRectangle,null,null,data_base
+274,Data,shape=partialRectangle,null,null,data_base
+275,Meta,shape=partialRectangle,null,null,data_base
+276,Physiology,shape=partialRectangle,null,null,data_base
+277,Upload,shape=partialRectangle,null,null,data_base
+278,Revision Control,shape=partialRectangle,null,null,data_base
+279,Sharing,shape=partialRectangle,null,null,data_base
+280,Researcher,rounded=0,null,null,external_entity
+281,Supervisor,rounded=0,null,null,external_entity
+282,User,rounded=0,null,null,external_entity
+283,Create A Log Book Page For An Experiment,ellipse,null,null,process
+284,Attach A File To This Page,ellipse,null,null,process
+285,Attach A Directory Contains Multiple Files,ellipse,null,null,process
+286,Upload Files,ellipse,null,null,process
+287,Having Files To A Log Book Page,ellipse,null,null,process
+288,Having,ellipse,null,null,process
+289,Using A Mapped Network Drive,ellipse,null,null,process
+290,Attach Currently Attached Files To A Log Book Page,ellipse,null,null,process
+291,Receive An Alert Of Any Unattached Files Are In Workspace,ellipse,null,null,process
+292,Download Files To,ellipse,null,null,process
+293,Use Web Browser,ellipse,null,null,process
+294,Access Files In Neurohub Workspace Using A Network Drive To Workstation,ellipse,null,null,process
+295,Create A Log Book Page,ellipse,null,null,process
+296,Insert Greek Symbols Into Logbook Entries,ellipse,null,null,process
+297,Have,ellipse,null,null,process
+298,"Point Mendeley Client At A Shared, Group, Wide Repository Of Research Papers",ellipse,null,null,process
+299,Get Notifications Via Mendeley,ellipse,null,null,process
+300,Have Electronic Support,ellipse,null,null,process
+301,Modify As Part Of A Particular Experiment,ellipse,null,null,process
+302,Keeping Track Of Which Data Sets Used,ellipse,null,null,process
+303,Keeping Track,ellipse,null,null,process
+304,Keeping Track Output,ellipse,null,null,process
+305,Support The Long Term Curation Of Data,ellipse,null,null,process
+306,Have Services,ellipse,null,null,process
+307,Have A Display Of Associated Image,ellipse,null,null,process
+308,Have A Timeline Display Of Multiple Data Files,ellipse,null,null,process
+309,Have Remote Access To Data For Off Site Working,ellipse,null,null,process
+310,Share Experiment Write Ups With Other Researchers,ellipse,null,null,process
+311,Collect Data As A Library Of Data Then Used Multiple,ellipse,null,null,process
+312,Collect Data As A Library Of Data Then Used Experiments Defined At A Later Stage,ellipse,null,null,process
+313,Bad Indicate Within Electronic Book Experimental Data,ellipse,null,null,process
+314,Keep Which The Bad Data In The System,ellipse,null,null,process
+315,Indicate Within Electronic Log Book Experimental Data,ellipse,null,null,process
+316,Hide The Bad Data,ellipse,null,null,process
+317,Provide Standard Metadata,ellipse,null,null,process
+318,Have The System,ellipse,null,null,process
+319,Have Physiology Images To Annotated With Standard Meta Data,ellipse,null,null,process
+320,Attach Standard Data For Video,ellipse,null,null,process
+321,Attach Standard Meta Data For Behavioural Observations,ellipse,null,null,process
+322,Attach Standard Data For,ellipse,null,null,process
+323,Attach Standard Meta Data For Drug Responses,ellipse,null,null,process
+324,Have The To Ability For Images Of,ellipse,null,null,process
+325,Use Standard Meta Data,ellipse,null,null,process
+326,New Data Added To The System,ellipse,null,null,process
+327,Inserted,ellipse,null,null,process
+328,Attach Detailed Meta Data To The Data,ellipse,null,null,process
+329,Attach Detailed Data To Entry,ellipse,null,null,process
+330,Attach Detailed Data To,ellipse,null,null,process
+331,Select A Partially Populated Template Already Contains,ellipse,null,null,process
+332,Form Links Between Objects,ellipse,null,null,process
+333,Have Those Files Where Located,ellipse,null,null,process
+334,Use Meta Data,ellipse,null,null,process
+335,Locate,ellipse,null,null,process
+336,Have Any Data,ellipse,null,null,process
+337,Store The Inputs For An Experiment,ellipse,null,null,process
+338,Have The To Ability For Files By Format,ellipse,null,null,process
+339,Bulk File,ellipse,null,null,process
+340,Bulk Upload Directories With Minimal Effort,ellipse,null,null,process
+341,Bulk,ellipse,null,null,process
+342,Associate Meta Data To The Group As A Whole At Some Point In Time,ellipse,null,null,process
+343,Restrict The Data,ellipse,null,null,process
+344,That Share,ellipse,null,null,process
+345,Locate Data Colleagues Want,ellipse,null,null,process
+346,Access Data Colleagues Want,ellipse,null,null,process
+347,Secure Remote Access To The Neurohub Node When Away Working From The Laboratory,ellipse,null,null,process
+348,Have A Repository,ellipse,null,null,process
+349,Sharing Review,ellipse,null,null,process
+350,Sharing Papers With Other Researchers,ellipse,null,null,process
+351,Sharing Comment,ellipse,null,null,process
+352,Have A Group Level Repository,ellipse,null,null,process
+353,Have The Details Of The As Well Workflow Plan,ellipse,null,null,process
+354,Have The Details Of The Execution History In Neurohub Executing A Workflow,ellipse,null,null,process
+355,Have The Details Of Result,ellipse,null,null,process
+356,View,ellipse,null,null,process
+357,Appear In Neurohub,ellipse,null,null,process
+358,Have That Twitter Tweets,ellipse,null,null,process
+359,Provided With A Mechanism For Note With Other Researchers,ellipse,null,null,process
+360,Provided With A Mechanism For Electronically Sharing Papers,ellipse,null,null,process
+362,,endArrow=classic,280,283,endArrow=classic
+363,,endArrow=classic,280,284,endArrow=classic
+364,,endArrow=classic,280,285,endArrow=classic
+365,,endArrow=classic,280,286,endArrow=classic
+366,,endArrow=classic,280,287,endArrow=classic
+367,,endArrow=classic,280,288,endArrow=classic
+368,,endArrow=classic,280,289,endArrow=classic
+369,,endArrow=classic,280,290,endArrow=classic
+370,,endArrow=classic,280,291,endArrow=classic
+371,,endArrow=classic,280,292,endArrow=classic
+372,,endArrow=classic,280,293,endArrow=classic
+373,,endArrow=classic,280,294,endArrow=classic
+374,,endArrow=classic,280,295,endArrow=classic
+375,,endArrow=classic,280,296,endArrow=classic
+376,,endArrow=classic,280,297,endArrow=classic
+377,,endArrow=classic,280,297,endArrow=classic
+378,,endArrow=classic,280,298,endArrow=classic
+379,,endArrow=classic,280,299,endArrow=classic
+380,,endArrow=classic,280,300,endArrow=classic
+381,,endArrow=classic,280,301,endArrow=classic
+382,,endArrow=classic,280,302,endArrow=classic
+383,,endArrow=classic,280,303,endArrow=classic
+384,,endArrow=classic,280,304,endArrow=classic
+385,,endArrow=classic,280,305,endArrow=classic
+386,,endArrow=classic,280,306,endArrow=classic
+387,,endArrow=classic,280,307,endArrow=classic
+388,,endArrow=classic,280,308,endArrow=classic
+389,,endArrow=classic,280,309,endArrow=classic
+390,,endArrow=classic,280,310,endArrow=classic
+391,,endArrow=classic,280,311,endArrow=classic
+392,,endArrow=classic,280,312,endArrow=classic
+393,,endArrow=classic,280,315,endArrow=classic
+394,,endArrow=classic,280,317,endArrow=classic
+395,,endArrow=classic,280,318,endArrow=classic
+396,,endArrow=classic,280,319,endArrow=classic
+397,,endArrow=classic,280,320,endArrow=classic
+398,,endArrow=classic,280,321,endArrow=classic
+399,,endArrow=classic,280,323,endArrow=classic
+400,,endArrow=classic,280,324,endArrow=classic
+401,,endArrow=classic,280,324,endArrow=classic
+402,,endArrow=classic,280,325,endArrow=classic
+403,,endArrow=classic,280,326,endArrow=classic
+404,,endArrow=classic,280,327,endArrow=classic
+405,,endArrow=classic,280,328,endArrow=classic
+406,,endArrow=classic,280,329,endArrow=classic
+407,,endArrow=classic,280,331,endArrow=classic
+408,,endArrow=classic,280,332,endArrow=classic
+409,,endArrow=classic,280,333,endArrow=classic
+410,,endArrow=classic,280,334,endArrow=classic
+411,,endArrow=classic,280,335,endArrow=classic
+412,,endArrow=classic,280,336,endArrow=classic
+413,,endArrow=classic,280,337,endArrow=classic
+414,,endArrow=classic,280,338,endArrow=classic
+415,,endArrow=classic,280,339,endArrow=classic
+416,,endArrow=classic,280,340,endArrow=classic
+417,,endArrow=classic,280,342,endArrow=classic
+418,,endArrow=classic,280,343,endArrow=classic
+419,,endArrow=classic,280,344,endArrow=classic
+420,,endArrow=classic,280,345,endArrow=classic
+421,,endArrow=classic,280,346,endArrow=classic
+422,,endArrow=classic,280,347,endArrow=classic
+423,,endArrow=classic,280,349,endArrow=classic
+424,,endArrow=classic,280,350,endArrow=classic
+425,,endArrow=classic,280,351,endArrow=classic
+426,,endArrow=classic,280,352,endArrow=classic
+427,,endArrow=classic,280,353,endArrow=classic
+428,,endArrow=classic,280,354,endArrow=classic
+429,,endArrow=classic,280,355,endArrow=classic
+430,,endArrow=classic,280,359,endArrow=classic
+431,,endArrow=classic,280,360,endArrow=classic
+432,,endArrow=classic,282,298,endArrow=classic
+433,,endArrow=classic,282,310,endArrow=classic
+434,,endArrow=classic,282,350,endArrow=classic
+435,,endArrow=classic,282,357,endArrow=classic
+436,,endArrow=classic,282,358,endArrow=classic
+437,,endArrow=classic,282,359,endArrow=classic
+438,,endArrow=classic,282,360,endArrow=classic
+439,Experiment,endArrow=classic,283,200,endArrow=classic
+440,Page,endArrow=classic,283,201,endArrow=classic
+441,File,endArrow=classic,284,202,endArrow=classic
+442,Page,endArrow=classic,284,201,endArrow=classic
+443,Directory,endArrow=classic,285,204,endArrow=classic
+444,Multiple File,endArrow=classic,285,203,endArrow=classic
+445,File,endArrow=classic,286,202,endArrow=classic
+446,,endArrow=classic,287,286,endArrow=classic
+447,,endArrow=classic,287,289,endArrow=classic
+448,File,endArrow=classic,287,202,endArrow=classic
+449,Page,endArrow=classic,287,201,endArrow=classic
+450,,endArrow=classic,288,286,endArrow=classic
+451,Network Drive,endArrow=classic,289,208,endArrow=classic
+452,Attach File,endArrow=classic,290,205,endArrow=classic
+453,Page,endArrow=classic,290,201,endArrow=classic
+454,Workspace,endArrow=classic,291,206,endArrow=classic
+455,File,endArrow=classic,291,202,endArrow=classic
+456,,endArrow=classic,292,293,endArrow=classic
+457,File,endArrow=classic,292,202,endArrow=classic
+458,Web Browser,endArrow=classic,293,207,endArrow=classic
+459,Workstation,endArrow=classic,294,209,endArrow=classic
+460,File,endArrow=classic,294,202,endArrow=classic
+461,Network Drive,endArrow=classic,294,208,endArrow=classic
+462,Workspace,endArrow=classic,294,206,endArrow=classic
+463,Page,endArrow=classic,295,201,endArrow=classic
+464,Greek Symbol,endArrow=classic,296,210,endArrow=classic
+465,Entry,endArrow=classic,296,239,endArrow=classic
+466,,endArrow=classic,297,296,endArrow=classic
+467,,endArrow=classic,297,320,endArrow=classic
+468,,endArrow=classic,297,321,endArrow=classic
+469,,endArrow=classic,297,322,endArrow=classic
+470,,endArrow=classic,297,323,endArrow=classic
+471,,endArrow=classic,297,327,endArrow=classic
+472,,endArrow=classic,297,328,endArrow=classic
+473,,endArrow=classic,297,329,endArrow=classic
+474,,endArrow=classic,297,330,endArrow=classic
+475,,endArrow=classic,297,331,endArrow=classic
+476,,endArrow=classic,297,332,endArrow=classic
+477,,endArrow=classic,297,337,endArrow=classic
+478,,endArrow=classic,297,339,endArrow=classic
+479,,endArrow=classic,297,340,endArrow=classic
+480,,endArrow=classic,297,341,endArrow=classic
+481,,endArrow=classic,297,343,endArrow=classic
+482,,endArrow=classic,297,345,endArrow=classic
+483,,endArrow=classic,297,346,endArrow=classic
+484,Paper,endArrow=classic,298,254,endArrow=classic
+485,Notification,endArrow=classic,299,211,endArrow=classic
+486,Mendeley,endArrow=classic,299,212,endArrow=classic
+487,Electronic Support,endArrow=classic,300,214,endArrow=classic
+488,Particular Experiment,endArrow=classic,301,216,endArrow=classic
+489,,endArrow=classic,302,300,endArrow=classic
+490,Track,endArrow=classic,302,213,endArrow=classic
+491,Data Set,endArrow=classic,302,266,endArrow=classic
+492,,endArrow=classic,303,300,endArrow=classic
+493,,endArrow=classic,303,301,endArrow=classic
+494,Track,endArrow=classic,303,213,endArrow=classic
+495,,endArrow=classic,304,300,endArrow=classic
+496,Output,endArrow=classic,304,215,endArrow=classic
+497,Track,endArrow=classic,304,213,endArrow=classic
+498,Term Curation,endArrow=classic,305,267,endArrow=classic
+499,Datum,endArrow=classic,305,218,endArrow=classic
+500,,endArrow=classic,306,305,endArrow=classic
+501,Service,endArrow=classic,306,217,endArrow=classic
+502,Display,endArrow=classic,307,219,endArrow=classic
+503,Associated Image,endArrow=classic,307,220,endArrow=classic
+504,Display,endArrow=classic,308,219,endArrow=classic
+505,File,endArrow=classic,308,202,endArrow=classic
+506,Remote Access,endArrow=classic,309,222,endArrow=classic
+507,Off Site\nWorking,endArrow=classic,309,221,endArrow=classic
+508,Datum,endArrow=classic,309,218,endArrow=classic
+509,Write Up,endArrow=classic,310,268,endArrow=classic
+510,Researcher,endArrow=classic,310,223,endArrow=classic
+511,Multiple,endArrow=classic,311,225,endArrow=classic
+512,Datum,endArrow=classic,311,218,endArrow=classic
+513,Library,endArrow=classic,311,226,endArrow=classic
+514,Library,endArrow=classic,312,226,endArrow=classic
+515,Later Stage,endArrow=classic,312,224,endArrow=classic
+516,Experiment,endArrow=classic,312,200,endArrow=classic
+517,Datum,endArrow=classic,312,218,endArrow=classic
+518,Electronic Book,endArrow=classic,313,230,endArrow=classic
+519,Experimental Datum,endArrow=classic,313,228,endArrow=classic
+520,System,endArrow=classic,314,227,endArrow=classic
+521,Bad Datum,endArrow=classic,314,229,endArrow=classic
+522,Log Book,endArrow=classic,315,269,endArrow=classic
+523,Experimental Datum,endArrow=classic,315,228,endArrow=classic
+524,Bad Datum,endArrow=classic,316,229,endArrow=classic
+525,Standard Metadata,endArrow=classic,317,232,endArrow=classic
+526,,endArrow=classic,318,317,endArrow=classic
+527,System,endArrow=classic,318,227,endArrow=classic
+528,Datum,endArrow=classic,319,218,endArrow=classic
+529,Standard Datum,endArrow=classic,320,233,endArrow=classic
+530,Video,endArrow=classic,320,234,endArrow=classic
+531,Meta Data,endArrow=classic,321,241,endArrow=classic
+532,Behavioural Observation,endArrow=classic,321,235,endArrow=classic
+533,Standard Datum,endArrow=classic,322,233,endArrow=classic
+534,Drug Response,endArrow=classic,323,270,endArrow=classic
+535,Meta Data,endArrow=classic,323,241,endArrow=classic
+536,,endArrow=classic,324,325,endArrow=classic
+537,Ability,endArrow=classic,324,236,endArrow=classic
+538,File,endArrow=classic,324,202,endArrow=classic
+539,System,endArrow=classic,324,227,endArrow=classic
+540,Datum,endArrow=classic,325,218,endArrow=classic
+541,New Datum,endArrow=classic,326,237,endArrow=classic
+542,System,endArrow=classic,326,227,endArrow=classic
+543,,endArrow=classic,327,326,endArrow=classic
+544,Datum,endArrow=classic,328,218,endArrow=classic
+545,Detailed Datum,endArrow=classic,329,238,endArrow=classic
+546,Entry,endArrow=classic,329,239,endArrow=classic
+547,Detailed Datum,endArrow=classic,330,238,endArrow=classic
+548,Populated Template,endArrow=classic,331,240,endArrow=classic
+549,Link,endArrow=classic,332,243,endArrow=classic
+550,Object,endArrow=classic,332,242,endArrow=classic
+551,,endArrow=classic,333,335,endArrow=classic
+552,File,endArrow=classic,333,202,endArrow=classic
+553,Datum,endArrow=classic,334,218,endArrow=classic
+554,,endArrow=classic,335,334,endArrow=classic
+555,Datum,endArrow=classic,336,218,endArrow=classic
+556,Input,endArrow=classic,337,245,endArrow=classic
+557,Experiment,endArrow=classic,337,200,endArrow=classic
+558,Format,endArrow=classic,338,246,endArrow=classic
+559,File,endArrow=classic,338,202,endArrow=classic
+560,Ability,endArrow=classic,338,236,endArrow=classic
+561,File,endArrow=classic,339,202,endArrow=classic
+562,Minimal Effort,endArrow=classic,340,247,endArrow=classic
+563,Directory,endArrow=classic,340,204,endArrow=classic
+564,Group,endArrow=classic,342,248,endArrow=classic
+565,Point,endArrow=classic,342,249,endArrow=classic
+566,Time,endArrow=classic,342,250,endArrow=classic
+567,Datum,endArrow=classic,342,218,endArrow=classic
+568,Datum,endArrow=classic,343,218,endArrow=classic
+569,,endArrow=classic,345,344,endArrow=classic
+570,Colleague,endArrow=classic,345,251,endArrow=classic
+571,Datum,endArrow=classic,345,218,endArrow=classic
+572,,endArrow=classic,346,344,endArrow=classic
+573,Datum,endArrow=classic,346,218,endArrow=classic
+574,Colleague,endArrow=classic,346,251,endArrow=classic
+575,Neurohub Node,endArrow=classic,347,252,endArrow=classic
+576,Laboratory,endArrow=classic,347,253,endArrow=classic
+577,Remote Access,endArrow=classic,347,222,endArrow=classic
+578,Repository,endArrow=classic,348,255,endArrow=classic
+579,,endArrow=classic,349,348,endArrow=classic
+580,Review,endArrow=classic,349,256,endArrow=classic
+581,,endArrow=classic,350,352,endArrow=classic
+582,Paper,endArrow=classic,350,254,endArrow=classic
+583,Researcher,endArrow=classic,350,223,endArrow=classic
+584,,endArrow=classic,351,348,endArrow=classic
+585,Comment,endArrow=classic,351,257,endArrow=classic
+586,Repository,endArrow=classic,352,255,endArrow=classic
+587,Group,endArrow=classic,352,248,endArrow=classic
+588,Detail,endArrow=classic,353,259,endArrow=classic
+589,Workflow,endArrow=classic,353,260,endArrow=classic
+590,Execution History,endArrow=classic,354,261,endArrow=classic
+591,Neurohub,endArrow=classic,354,258,endArrow=classic
+592,Workflow,endArrow=classic,354,260,endArrow=classic
+593,Detail,endArrow=classic,354,259,endArrow=classic
+594,Result,endArrow=classic,355,262,endArrow=classic
+595,Detail,endArrow=classic,355,259,endArrow=classic
+596,Neurohub,endArrow=classic,357,258,endArrow=classic
+597,,endArrow=classic,358,357,endArrow=classic
+598,Twitter Tweet,endArrow=classic,358,271,endArrow=classic
+599,Note,endArrow=classic,359,264,endArrow=classic
+600,Researcher,endArrow=classic,359,223,endArrow=classic
+601,Mechanism,endArrow=classic,359,265,endArrow=classic
+602,Mechanism,endArrow=classic,360,265,endArrow=classic
+603,Paper,endArrow=classic,360,254,endArrow=classic
+853,Research,endArrow=classic,298,272,endArrow=classic
+879,Timeline,endArrow=classic,308,273,endArrow=classic
+899,Data,endArrow=classic,302,274,endArrow=classic
+934,Meta,endArrow=classic,317,275,endArrow=classic
+971,Physiology,endArrow=classic,319,276,endArrow=classic
+975,Upload,endArrow=classic,286,277,endArrow=classic
+1000,,endArrow=classic,297,79,endArrow=classic
+1001,"Researcher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,79,endArrow=classic
+1003,"Researcher,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,79,endArrow=classic
+1005,Data taken,rounded=0,null,null,external_entity
+1006,Data taken,endArrow=classic,79,1005,endArrow=classic
+1007,Others,rounded=0,null,null,external_entity
+1008,,endArrow=classic,1007,80,endArrow=classic
+1009,Others,rounded=0,null,null,external_entity
+1010,,endArrow=classic,1009,80,endArrow=classic
+1011,Others,rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,80,endArrow=classic
+1013,Work,rounded=0,null,null,external_entity
+1014,Work,endArrow=classic,80,1013,endArrow=classic
+1015,,endArrow=classic,297,81,endArrow=classic
+1016,"Researcher,",rounded=0,null,null,external_entity
+1017,,endArrow=classic,1016,81,endArrow=classic
+1018,"Researcher,",rounded=0,null,null,external_entity
+1019,,endArrow=classic,1018,81,endArrow=classic
+1020,Files,rounded=0,null,null,external_entity
+1021,Files,endArrow=classic,81,1020,endArrow=classic
+1120,Sharing,endArrow=classic,349,279,endArrow=classic

@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a Machine Learning expert, I would like to package ML datasets as data packages, so that I can easily import them into my ML platform, so that I can start using the data in doing analysis.",
+    "entities": [
+      {
+        "text": "Machine Learning expert",
+        "label": "Data"
+      },
+      {
+        "text": "package",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

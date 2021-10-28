@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Content,shape=partialRectangle,null,null,data_base
+201,Video,shape=partialRectangle,null,null,data_base
+202,Brightcove,shape=partialRectangle,null,null,data_base
+203,Content Editor,rounded=0,null,null,external_entity
+204,Find Content,ellipse,null,null,process
+205,Add Videos From Brightcove,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Content,endArrow=classic,204,200,endArrow=classic
+210,Video,endArrow=classic,205,201,endArrow=classic
+211,Brightcove,endArrow=classic,205,202,endArrow=classic

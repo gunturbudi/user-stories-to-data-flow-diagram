@@ -1,0 +1,97 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Money" as thingsponsorshipmoney #grey
+	entity "Stripe" as thingstripe
+	entity "Venue" as thingvenue
+	entity "Training" as thingtraining
+	entity "Sponsor" as thingsponsor
+	entity "Event" as thingevent
+	entity "Summit" as thingsummit
+	entity "Drupal Planet" as thingdrupalplanet
+	entity "Consumption" as thingconsumption
+	entity "Location" as thinglocation
+	entity "Time Slot" as thingtimeslot #grey
+	entity "Room" as thingroom
+	entity "Session" as thingsession
+	entity "Blog Post" as thingblogpost
+	entity "Approve" as thingapprove #grey
+	actor "Administrator" as actoradministrator
+	boundary "Stripe\nInterface" as thingstripeinterface #grey
+	boundary "Venue\nInterface" as thingvenueinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	boundary "Planet\nInterface" as thingplanetinterface #grey
+	boundary "Post\nInterface" as thingpostinterface #grey
+	boundary "Slot\nInterface" as thingslotinterface #grey
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	control "Refund Sponsorship\nMoney Processed\nStripe" as controlrefundsponsorshipmoney
+	control "Create Venues" as controlcreatevenue
+	control "Maintain Venues" as controlmaintainvenue
+	control "Assign Sponsors\nTo Events" as controlassignsponsorevent
+	control "Assign Sponsors\nTo Training" as controlassignsponsortraining
+	control "Assign Sponsors\nTo Summit" as controlassignsponsorsummit
+	control "Tag Blog\nPosts For\nConsumption By\nDrupal Planet" as controltagblogpostsdrupalplanet
+	control "Create Blog\nPosts" as controlcreateblogposts
+	control "Assign A\nRoom To\nA Time\nSlot" as controlassignroomtimeslot
+	control "Assign A\nRoom To\nA Location" as controlassignroomlocation
+	control "Mark A\nSession" as controlmarksession
+	control "Bulk Approve\nSessions" as controlbulkapprovesessions
+
+	thingstripe <.. thingsponsorshipmoney
+	thingevent <.. thingsponsor
+	thingtraining <.. thingsponsor
+	thingsummit <.. thingsponsor
+	thingdrupalplanet <.. thingconsumption
+	thingtimeslot <.. thingroom
+	thinglocation <.. thingroom
+	thingapprove <.. thingsession
+	thingconsumption <.. thingblogpost
+	actoradministrator --- thingstripeinterface
+	actoradministrator --- thingvenueinterface
+	actoradministrator --- thingeventinterface
+	actoradministrator --- thingtraininginterface
+	actoradministrator --- thingsummitinterface
+	actoradministrator --- thingplanetinterface
+	actoradministrator --- thingpostinterface
+	actoradministrator --- thingslotinterface
+	actoradministrator --- thinglocationinterface
+	actoradministrator --- thingsessioninterface
+	thingsponsorshipmoney --- controlrefundsponsorshipmoney
+	thingstripe --- controlrefundsponsorshipmoney
+	thingstripeinterface --> controlrefundsponsorshipmoney
+	thingvenue --- controlcreatevenue
+	thingvenueinterface --> controlcreatevenue
+	thingvenue --- controlmaintainvenue
+	thingvenueinterface --> controlmaintainvenue
+	thingsponsor --- controlassignsponsorevent
+	thingevent --- controlassignsponsorevent
+	thingeventinterface --> controlassignsponsorevent
+	thingtraining --- controlassignsponsortraining
+	thingtraininginterface --> controlassignsponsortraining
+	thingsponsor --- controlassignsponsortraining
+	thingsummit --- controlassignsponsorsummit
+	thingsummitinterface --> controlassignsponsorsummit
+	thingsponsor --- controlassignsponsorsummit
+	thingblogpost --- controltagblogpostsdrupalplanet
+	thingconsumption --- controltagblogpostsdrupalplanet
+	thingdrupalplanet --- controltagblogpostsdrupalplanet
+	thingplanetinterface --> controltagblogpostsdrupalplanet
+	thingpostinterface --> controlcreateblogposts
+	thingblogpost --- controlcreateblogposts
+	thingroom --- controlassignroomtimeslot
+	thingtimeslot --- controlassignroomtimeslot
+	thingslotinterface --> controlassignroomtimeslot
+	thinglocation --- controlassignroomlocation
+	thinglocationinterface --> controlassignroomlocation
+	thingroom --- controlassignroomlocation
+	thingsession --- controlmarksession
+	thingsessioninterface --> controlmarksession
+	thingsessioninterface --> controlbulkapprovesessions
+	thingsession --- controlbulkapprovesessions
+
+@enduml

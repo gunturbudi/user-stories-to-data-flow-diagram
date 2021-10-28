@@ -1,0 +1,82 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Type Information " color=red];
+202 [label="<f0>  |<f1> Data Package " color=red];
+203 [label="<f0>  |<f1> Open Refine " ];
+204 [label="<f0>  |<f1> Integration " ];
+205 [label="<f0>  |<f1> Excel " color=red];
+206 [label="<f0>  |<f1> User " ];
+207 [label="<f0>  |<f1> Dataset " color=red];
+208 [label="<f0>  |<f1> Useful Metadata " color=red];
+209 [label="<f0>  |<f1> Data Availability\nPersistence " color=red];
+210 [label="<f0>  |<f1> Publication " ];
+211 [label="<f0>  |<f1> Site " color=red];
+212 [label="<f0>  |<f1> Preview Button " ];
+213 [label="<f0>  |<f1> Methodology " ];
+214 [label="<f0>  |<f1> Reproducible Step " ];
+215 [label="<f0>  |<f1> Data Column " color=red];
+216 [label="<f0>  |<f1> Data State " color=red];
+217 [label="Publisher" shape=box];
+218 [label="{<f0> 1.0|<f1> Add Type Information To Data }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> Provide A Visualization Of Data In The Data Package }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Provided With An Integration With Open Refine }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Online Store Data }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Know }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> Add Useful Metadata }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Add In New Data Columns }" shape=Mrecord];
+225 [label="{<f0> 8.0|<f1> Make The Dataset }" shape=Mrecord];
+226 [label="{<f0> 9.0|<f1> Check Data Availability Persistence After Publication }" shape=Mrecord];
+227 [label="{<f0> 10.0|<f1> Time Check Good }" shape=Mrecord];
+228 [label="{<f0> 11.0|<f1> Embed An Interactive Preview Of Data On Site }" shape=Mrecord];
+229 [label="{<f0> 12.0|<f1> Embed A Preview Button On Site }" shape=Mrecord];
+230 [label="{<f0> 13.0|<f1> Package Reproducible Steps }" shape=Mrecord];
+231 [label="{<f0> 14.0|<f1> Get A Certain Data State }" shape=Mrecord];
+15 [label="{<f0> 15.0|<f1> Show my work to users of the data. }" shape=Mrecord];
+219 -> 15
+1001 [label="<f0>  |<f1> Analysis " color=red];
+15 -> 1001 [label="Analysis"]
+1003 [label="<f0>  |<f1> Work " color=red];
+15 -> 1003 [label="Work"]
+16 [label="{<f0> 16.0|<f1> Preview the data and be encouraged that this is the correct data for them. }" shape=Mrecord];
+1005 [label="Users" shape=box];
+1005 -> 16
+1007 [label="This" shape=box];
+1007 -> 16
+1009 [label="<f0>  |<f1> Data " color=red];
+16 -> 1009 [label="Data"]
+217 -> 218
+217 -> 219
+217 -> 220
+217 -> 220
+217 -> 221
+217 -> 223
+217 -> 224
+217 -> 225
+217 -> 226
+217 -> 228
+217 -> 229
+217 -> 230
+217 -> 231
+218 -> 201 [label="Type Information"]
+218 -> 200 [label="Datum"]
+219 -> 202 [label="Data Package"]
+219 -> 200 [label="Datum"]
+220 -> 204 [label="Integration"]
+220 -> 203 [label="Open Refine"]
+220 -> 205 [label="Excel"]
+221 -> 200 [label="Datum"]
+223 -> 208 [label="Useful Metadata"]
+224 -> 225
+224 -> 215 [label="Data Column"]
+225 -> 207 [label="Dataset"]
+226 -> 209 [label="Data Availability\nPersistence"]
+226 -> 210 [label="Publication"]
+228 -> 211 [label="Site"]
+228 -> 200 [label="Datum"]
+229 -> 212 [label="Preview Button"]
+229 -> 211 [label="Site"]
+230 -> 231
+230 -> 214 [label="Reproducible Step"]
+231 -> 216 [label="Data State"]
+}

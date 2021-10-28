@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan " ];
+201 [label="<f0>  |<f1> Grant Proposal " ];
+202 [label="<f0>  |<f1> Data Management " color=red];
+203 [label="<f0>  |<f1> Disaster Recovery " ];
+204 [label="Data Contributor" shape=box];
+205 [label="{<f0> 1.0|<f1> Refer To The Plan In Data Management Plan }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Refer To The Disaster Recovery Plan In Grant Proposals }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 200 [label="Plan"]
+206 -> 201 [label="Grant Proposal"]
+206 -> 200 [label="Plan"]
+205 -> 202 [label="Data Management"]
+206 -> 203 [label="Disaster Recovery"]
+}

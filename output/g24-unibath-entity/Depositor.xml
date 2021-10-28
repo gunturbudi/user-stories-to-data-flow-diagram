@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1106" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+ <root>
+ <mxCell id="0"/>
+  <mxCell id="1" parent="0"/>
+  <mxCell id= "30" value= "Fulfil my confidentiality responsibilities." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "31" value= "Receive credit." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "32" value= "Demonstrate the impact of my work." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "33" value= "Demonstrate the impact of my work" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "34" value= "Fulfil funder requirements for archival." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "35" value= "Find my data more easily." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "200" value= "Dataset" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "201" value= "User Interface" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "202" value= "File" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "203" value= "Datum" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "204" value= "Embargo" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "205" value= "License" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "206" value= "Collaborator" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "207" value= "Access" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "208" value= "Large File" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "209" value= "Opus" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "210" value= "Publication" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "211" value= "Doi" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "212" value= "Previous Deposit" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "213" value= "Metadata" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "214" value= "External Repository" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "215" value= "Disposal Policy" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "216" value= "Data Integrity" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "217" value= "Guarantee" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "218" value= "Record" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "219" value= "Dataset" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "220" value= "Behalf" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "221" value= "Web Interface" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "222" value= "Workflow Tool" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "223" value= "Research Environment" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "224" value= "University System" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "225" value= "Project Dmp" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "226" value= "Discoverability" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "227" value= "Research" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "228" value= "Depositor" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "229" value= "Deposit Datasets Through A Simple Web Interface" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "230" value= "Maintain Datasets Through A Simple Web Interface" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "231" value= "Have A User Interface Is Familiar To" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "232" value= "Pure Deposit Datasets" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "233" value= "Pure Maintain Datasets" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "234" value= "Deposit Datasets Through Other Workflow Tool" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "235" value= "Deposit Datasets Through Virtual Research Environments" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "236" value= "Maintain Datasets Through Other Workflow Tool" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "237" value= "Maintain Datasets Through Virtual Research Environments" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "238" value= "Deposit The Files" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "239" value= "Place Data Under An Embargo" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "240" value= "Apply Licenses To Datasets" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "241" value= "Allow Collaborators Access To Datasets" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "242" value= "Deposit Arbitrarily Large Files" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "243" value= "Link Datasets To Publications In Opus" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "244" value= "Mint Dois For Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "245" value= "Have Automatically Metadata From Other University Systems" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "246" value= "Link To Data In External Repositories" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "247" value= "Specify A Disposal Policy For Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "248" value= "Track Downloads Of Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "249" value= "Track Citations Of Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "250" value= "Have Guarantees About Data Integrity" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "251" value= "Attach Specific, Subject Discoverability Metadata To Records" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "252" value= "Link Datasets With The Project Dmp" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "253" value= "Manage Live Research Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "254" value= "Share Live Research Data" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "255" value= "Manage Multiple Versions Of The Same Dataset" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "256" value= "Deposit On Behalf" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "257" value= "Allow" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "259" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "229" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "260" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "230" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "261" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "231" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "262" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "232" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "263" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "233" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "264" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "234" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "265" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "235" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "266" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "236" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "267" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "237" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "268" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "238" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "269" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "239" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "270" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "240" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "271" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "241" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "272" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "242" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "273" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "243" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "274" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "244" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "275" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "245" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "276" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "246" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "277" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "247" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "278" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "248" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "279" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "249" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "280" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "250" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "281" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "251" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "282" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "252" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "283" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "253" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "284" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "254" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "285" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "255" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "286" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "256" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "287" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "228" target= "257" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "288" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "229" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "289" value= "Web Interface" style= "endArrow=classic;whiteSpace=wrap;" source= "229" target= "221" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "290" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "230" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "291" value= "Web Interface" style= "endArrow=classic;whiteSpace=wrap;" source= "230" target= "221" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "292" value= "User Interface" style= "endArrow=classic;whiteSpace=wrap;" source= "231" target= "201" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "293" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "232" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "294" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "233" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "295" value= "Workflow Tool" style= "endArrow=classic;whiteSpace=wrap;" source= "234" target= "222" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "296" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "234" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "297" value= "Research Environment" style= "endArrow=classic;whiteSpace=wrap;" source= "235" target= "223" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "298" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "235" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "299" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "236" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "300" value= "Workflow Tool" style= "endArrow=classic;whiteSpace=wrap;" source= "236" target= "222" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "301" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "237" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "302" value= "Research Environment" style= "endArrow=classic;whiteSpace=wrap;" source= "237" target= "223" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "303" value= "File" style= "endArrow=classic;whiteSpace=wrap;" source= "238" target= "202" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "304" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "239" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "305" value= "Embargo" style= "endArrow=classic;whiteSpace=wrap;" source= "239" target= "204" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "306" value= "License" style= "endArrow=classic;whiteSpace=wrap;" source= "240" target= "205" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "307" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "240" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "308" value= "Collaborator" style= "endArrow=classic;whiteSpace=wrap;" source= "241" target= "206" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "309" value= "Access" style= "endArrow=classic;whiteSpace=wrap;" source= "241" target= "207" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "310" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "241" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "311" value= "Large File" style= "endArrow=classic;whiteSpace=wrap;" source= "242" target= "208" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "312" value= "Publication" style= "endArrow=classic;whiteSpace=wrap;" source= "243" target= "210" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "313" value= "Opus" style= "endArrow=classic;whiteSpace=wrap;" source= "243" target= "209" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "314" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "243" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "315" value= "Doi" style= "endArrow=classic;whiteSpace=wrap;" source= "244" target= "211" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "316" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "244" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "317" value= "Metadata" style= "endArrow=classic;whiteSpace=wrap;" source= "245" target= "213" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "318" value= "University System" style= "endArrow=classic;whiteSpace=wrap;" source= "245" target= "224" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "319" value= "External Repository" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "214" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "320" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "246" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "321" value= "Disposal Policy" style= "endArrow=classic;whiteSpace=wrap;" source= "247" target= "215" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "322" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "247" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "323" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "248" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "324" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "249" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "325" value= "Guarantee" style= "endArrow=classic;whiteSpace=wrap;" source= "250" target= "217" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "326" value= "Data Integrity" style= "endArrow=classic;whiteSpace=wrap;" source= "250" target= "216" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "327" value= "Record" style= "endArrow=classic;whiteSpace=wrap;" source= "251" target= "218" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "328" value= "Metadata" style= "endArrow=classic;whiteSpace=wrap;" source= "251" target= "213" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "329" value= "Project Dmp" style= "endArrow=classic;whiteSpace=wrap;" source= "252" target= "225" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "330" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "252" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "331" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "253" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "332" value= "Datum" style= "endArrow=classic;whiteSpace=wrap;" source= "254" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "333" value= "Dataset" style= "endArrow=classic;whiteSpace=wrap;" source= "255" target= "219" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "334" value= "Behalf" style= "endArrow=classic;whiteSpace=wrap;" source= "256" target= "220" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "335" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "257" target= "256" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "387" value= "Discoverability" style= "endArrow=classic;whiteSpace=wrap;" source= "251" target= "226" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "394" value= "Research" style= "endArrow=classic;whiteSpace=wrap;" source= "235" target= "227" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1000" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "239" target= "30" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1001" value= "Confidentiality responsibilities" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1002" value= "Confidentiality responsibilities" style= "endArrow=classic;whiteSpace=wrap;" source= "30" target= "1001" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1003" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "244" target= "31" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1004" value= "Credit" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1005" value= "Credit" style= "endArrow=classic;whiteSpace=wrap;" source= "31" target= "1004" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1006" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "248" target= "32" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1007" value= "Work" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1008" value= "Work" style= "endArrow=classic;whiteSpace=wrap;" source= "32" target= "1007" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1009" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "249" target= "33" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1010" value= "Work" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1011" value= "Work" style= "endArrow=classic;whiteSpace=wrap;" source= "33" target= "1010" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1012" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "250" target= "34" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1013" value= "Data" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1014" value= "Data" style= "endArrow=classic;whiteSpace=wrap;" source= "34" target= "1013" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1015" value= "Researchers" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1016" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "1015" target= "35" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1017" value= "Discipline" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1018" value= "Discipline" style= "endArrow=classic;whiteSpace=wrap;" source= "35" target= "1017" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1019" value= "Data" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1020" value= "Data" style= "endArrow=classic;whiteSpace=wrap;" source= "35" target= "1019" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+</root>
+</mxGraphModel>

@@ -1,0 +1,438 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Experiment " color=red];
+201 [label="<f0>  |<f1> Page " color=red];
+202 [label="<f0>  |<f1> File " color=red];
+203 [label="<f0>  |<f1> Multiple File " ];
+204 [label="<f0>  |<f1> Directory " ];
+205 [label="<f0>  |<f1> Attach File " ];
+206 [label="<f0>  |<f1> Workspace " color=red];
+207 [label="<f0>  |<f1> Web Browser " ];
+208 [label="<f0>  |<f1> Network Drive " color=red];
+209 [label="<f0>  |<f1> Workstation " color=red];
+210 [label="<f0>  |<f1> Greek Symbol " color=red];
+211 [label="<f0>  |<f1> Notification " ];
+212 [label="<f0>  |<f1> Mendeley " color=red];
+213 [label="<f0>  |<f1> Track " ];
+214 [label="<f0>  |<f1> Electronic Support " ];
+215 [label="<f0>  |<f1> Output " ];
+216 [label="<f0>  |<f1> Particular Experiment " color=red];
+217 [label="<f0>  |<f1> Service " ];
+218 [label="<f0>  |<f1> Datum " ];
+219 [label="<f0>  |<f1> Display " ];
+220 [label="<f0>  |<f1> Associated Image " color=red];
+221 [label="<f0>  |<f1> Off Site\nWorking " color=red];
+222 [label="<f0>  |<f1> Remote Access " ];
+223 [label="<f0>  |<f1> Researcher " color=red];
+224 [label="<f0>  |<f1> Later Stage " ];
+225 [label="<f0>  |<f1> Multiple " ];
+226 [label="<f0>  |<f1> Library " ];
+227 [label="<f0>  |<f1> System " ];
+228 [label="<f0>  |<f1> Experimental Datum " color=red];
+229 [label="<f0>  |<f1> Bad Datum " ];
+230 [label="<f0>  |<f1> Electronic Book " ];
+231 [label="<f0>  |<f1> Centre " ];
+232 [label="<f0>  |<f1> Standard Metadata " color=red];
+233 [label="<f0>  |<f1> Standard Datum " ];
+234 [label="<f0>  |<f1> Video " color=red];
+235 [label="<f0>  |<f1> Behavioural Observation " color=red];
+236 [label="<f0>  |<f1> Ability " ];
+237 [label="<f0>  |<f1> New Datum " ];
+238 [label="<f0>  |<f1> Detailed Datum " ];
+239 [label="<f0>  |<f1> Entry " color=red];
+240 [label="<f0>  |<f1> Populated Template " ];
+241 [label="<f0>  |<f1> Meta Data " color=red];
+242 [label="<f0>  |<f1> Object " ];
+243 [label="<f0>  |<f1> Link " color=red];
+244 [label="<f0>  |<f1> Example " ];
+245 [label="<f0>  |<f1> Input " color=red];
+246 [label="<f0>  |<f1> Format " color=red];
+247 [label="<f0>  |<f1> Minimal Effort " ];
+248 [label="<f0>  |<f1> Group " color=red];
+249 [label="<f0>  |<f1> Point " ];
+250 [label="<f0>  |<f1> Time " color=red];
+251 [label="<f0>  |<f1> Colleague " ];
+252 [label="<f0>  |<f1> Neurohub Node " ];
+253 [label="<f0>  |<f1> Laboratory " ];
+254 [label="<f0>  |<f1> Paper " color=red];
+255 [label="<f0>  |<f1> Repository " ];
+256 [label="<f0>  |<f1> Review " color=red];
+257 [label="<f0>  |<f1> Comment " color=red];
+258 [label="<f0>  |<f1> Neurohub " color=red];
+259 [label="<f0>  |<f1> Detail " ];
+260 [label="<f0>  |<f1> Workflow " color=red];
+261 [label="<f0>  |<f1> Execution History " ];
+262 [label="<f0>  |<f1> Result " color=red];
+263 [label="<f0>  |<f1> Date " color=red];
+264 [label="<f0>  |<f1> Note " color=red];
+265 [label="<f0>  |<f1> Mechanism " ];
+266 [label="<f0>  |<f1> Data Set " color=red];
+267 [label="<f0>  |<f1> Term Curation " ];
+268 [label="<f0>  |<f1> Write Up " ];
+269 [label="<f0>  |<f1> Log Book " color=red];
+270 [label="<f0>  |<f1> Drug Response " color=red];
+271 [label="<f0>  |<f1> Twitter Tweet " color=red];
+272 [label="<f0>  |<f1> Research " color=red];
+273 [label="<f0>  |<f1> Timeline " ];
+274 [label="<f0>  |<f1> Data " color=red];
+275 [label="<f0>  |<f1> Meta " color=red];
+276 [label="<f0>  |<f1> Physiology " color=red];
+277 [label="<f0>  |<f1> Upload " color=red];
+278 [label="<f0>  |<f1> Revision Control " ];
+279 [label="<f0>  |<f1> Sharing " ];
+280 [label="Researcher" shape=box];
+281 [label="Supervisor" shape=box];
+282 [label="User" shape=box];
+283 [label="{<f0> 1.0|<f1> Create A Log Book Page For An Experiment }" shape=Mrecord];
+284 [label="{<f0> 2.0|<f1> Attach A File To This Page }" shape=Mrecord];
+285 [label="{<f0> 3.0|<f1> Attach A Directory Contains Multiple Files }" shape=Mrecord];
+286 [label="{<f0> 4.0|<f1> Upload Files }" shape=Mrecord];
+287 [label="{<f0> 5.0|<f1> Having Files To A Log Book Page }" shape=Mrecord];
+288 [label="{<f0> 6.0|<f1> Having }" shape=Mrecord];
+289 [label="{<f0> 7.0|<f1> Using A Mapped Network Drive }" shape=Mrecord];
+290 [label="{<f0> 8.0|<f1> Attach Currently Attached Files To A Log Book Page }" shape=Mrecord];
+291 [label="{<f0> 9.0|<f1> Receive An Alert Of Any Unattached Files Are In Workspace }" shape=Mrecord];
+292 [label="{<f0> 10.0|<f1> Download Files To }" shape=Mrecord];
+293 [label="{<f0> 11.0|<f1> Use Web Browser }" shape=Mrecord];
+294 [label="{<f0> 12.0|<f1> Access Files In Neurohub Workspace Using A Network Drive To Workstation }" shape=Mrecord];
+295 [label="{<f0> 13.0|<f1> Create A Log Book Page }" shape=Mrecord];
+296 [label="{<f0> 14.0|<f1> Insert Greek Symbols Into Logbook Entries }" shape=Mrecord];
+297 [label="{<f0> 15.0|<f1> Have }" shape=Mrecord];
+298 [label="{<f0> 16.0|<f1> Point Mendeley Client At A Shared, Group, Wide Repository Of Research Papers }" shape=Mrecord];
+299 [label="{<f0> 17.0|<f1> Get Notifications Via Mendeley }" shape=Mrecord];
+300 [label="{<f0> 18.0|<f1> Have Electronic Support }" shape=Mrecord];
+301 [label="{<f0> 19.0|<f1> Modify As Part Of A Particular Experiment }" shape=Mrecord];
+302 [label="{<f0> 20.0|<f1> Keeping Track Of Which Data Sets Used }" shape=Mrecord];
+303 [label="{<f0> 21.0|<f1> Keeping Track }" shape=Mrecord];
+304 [label="{<f0> 22.0|<f1> Keeping Track Output }" shape=Mrecord];
+305 [label="{<f0> 23.0|<f1> Support The Long Term Curation Of Data }" shape=Mrecord];
+306 [label="{<f0> 24.0|<f1> Have Services }" shape=Mrecord];
+307 [label="{<f0> 25.0|<f1> Have A Display Of Associated Image }" shape=Mrecord];
+308 [label="{<f0> 26.0|<f1> Have A Timeline Display Of Multiple Data Files }" shape=Mrecord];
+309 [label="{<f0> 27.0|<f1> Have Remote Access To Data For Off Site Working }" shape=Mrecord];
+310 [label="{<f0> 28.0|<f1> Share Experiment Write Ups With Other Researchers }" shape=Mrecord];
+311 [label="{<f0> 29.0|<f1> Collect Data As A Library Of Data Then Used Multiple }" shape=Mrecord];
+312 [label="{<f0> 30.0|<f1> Collect Data As A Library Of Data Then Used Experiments Defined At A Later Stage }" shape=Mrecord];
+313 [label="{<f0> 31.0|<f1> Bad Indicate Within Electronic Book Experimental Data }" shape=Mrecord];
+314 [label="{<f0> 32.0|<f1> Keep Which The Bad Data In The System }" shape=Mrecord];
+315 [label="{<f0> 33.0|<f1> Indicate Within Electronic Log Book Experimental Data }" shape=Mrecord];
+316 [label="{<f0> 34.0|<f1> Hide The Bad Data }" shape=Mrecord];
+317 [label="{<f0> 35.0|<f1> Provide Standard Metadata }" shape=Mrecord];
+318 [label="{<f0> 36.0|<f1> Have The System }" shape=Mrecord];
+319 [label="{<f0> 37.0|<f1> Have Physiology Images To Annotated With Standard Meta Data }" shape=Mrecord];
+320 [label="{<f0> 38.0|<f1> Attach Standard Data For Video }" shape=Mrecord];
+321 [label="{<f0> 39.0|<f1> Attach Standard Meta Data For Behavioural Observations }" shape=Mrecord];
+322 [label="{<f0> 40.0|<f1> Attach Standard Data For }" shape=Mrecord];
+323 [label="{<f0> 41.0|<f1> Attach Standard Meta Data For Drug Responses }" shape=Mrecord];
+324 [label="{<f0> 42.0|<f1> Have The To Ability For Images Of }" shape=Mrecord];
+325 [label="{<f0> 43.0|<f1> Use Standard Meta Data }" shape=Mrecord];
+326 [label="{<f0> 44.0|<f1> New Data Added To The System }" shape=Mrecord];
+327 [label="{<f0> 45.0|<f1> Inserted }" shape=Mrecord];
+328 [label="{<f0> 46.0|<f1> Attach Detailed Meta Data To The Data }" shape=Mrecord];
+329 [label="{<f0> 47.0|<f1> Attach Detailed Data To Entry }" shape=Mrecord];
+330 [label="{<f0> 48.0|<f1> Attach Detailed Data To }" shape=Mrecord];
+331 [label="{<f0> 49.0|<f1> Select A Partially Populated Template Already Contains }" shape=Mrecord];
+332 [label="{<f0> 50.0|<f1> Form Links Between Objects }" shape=Mrecord];
+333 [label="{<f0> 51.0|<f1> Have Those Files Where Located }" shape=Mrecord];
+334 [label="{<f0> 52.0|<f1> Use Meta Data }" shape=Mrecord];
+335 [label="{<f0> 53.0|<f1> Locate }" shape=Mrecord];
+336 [label="{<f0> 54.0|<f1> Have Any Data }" shape=Mrecord];
+337 [label="{<f0> 55.0|<f1> Store The Inputs For An Experiment }" shape=Mrecord];
+338 [label="{<f0> 56.0|<f1> Have The To Ability For Files By Format }" shape=Mrecord];
+339 [label="{<f0> 57.0|<f1> Bulk File }" shape=Mrecord];
+340 [label="{<f0> 58.0|<f1> Bulk Upload Directories With Minimal Effort }" shape=Mrecord];
+341 [label="{<f0> 59.0|<f1> Bulk }" shape=Mrecord];
+342 [label="{<f0> 60.0|<f1> Associate Meta Data To The Group As A Whole At Some Point In Time }" shape=Mrecord];
+343 [label="{<f0> 61.0|<f1> Restrict The Data }" shape=Mrecord];
+344 [label="{<f0> 62.0|<f1> That Share }" shape=Mrecord];
+345 [label="{<f0> 63.0|<f1> Locate Data Colleagues Want }" shape=Mrecord];
+346 [label="{<f0> 64.0|<f1> Access Data Colleagues Want }" shape=Mrecord];
+347 [label="{<f0> 65.0|<f1> Secure Remote Access To The Neurohub Node When Away Working From The Laboratory }" shape=Mrecord];
+348 [label="{<f0> 66.0|<f1> Have A Repository }" shape=Mrecord];
+349 [label="{<f0> 67.0|<f1> Sharing Review }" shape=Mrecord];
+350 [label="{<f0> 68.0|<f1> Sharing Papers With Other Researchers }" shape=Mrecord];
+351 [label="{<f0> 69.0|<f1> Sharing Comment }" shape=Mrecord];
+352 [label="{<f0> 70.0|<f1> Have A Group Level Repository }" shape=Mrecord];
+353 [label="{<f0> 71.0|<f1> Have The Details Of The As Well Workflow Plan }" shape=Mrecord];
+354 [label="{<f0> 72.0|<f1> Have The Details Of The Execution History In Neurohub Executing A Workflow }" shape=Mrecord];
+355 [label="{<f0> 73.0|<f1> Have The Details Of Result }" shape=Mrecord];
+356 [label="{<f0> 74.0|<f1> View }" shape=Mrecord];
+357 [label="{<f0> 75.0|<f1> Appear In Neurohub }" shape=Mrecord];
+358 [label="{<f0> 76.0|<f1> Have That Twitter Tweets }" shape=Mrecord];
+359 [label="{<f0> 77.0|<f1> Provided With A Mechanism For Note With Other Researchers }" shape=Mrecord];
+360 [label="{<f0> 78.0|<f1> Provided With A Mechanism For Electronically Sharing Papers }" shape=Mrecord];
+79 [label="{<f0> 79.0|<f1> Compare the data taken from experiments on particular dates. }" shape=Mrecord];
+297 -> 79
+1001 [label="Researcher," shape=box];
+1001 -> 79
+1003 [label="Researcher," shape=box];
+1003 -> 79
+1005 [label="<f0>  |<f1> Data taken " color=red];
+79 -> 1005 [label="Data taken"]
+80 [label="{<f0> 80.0|<f1> Replicate my work. }" shape=Mrecord];
+1007 [label="Others" shape=box];
+1007 -> 80
+1009 [label="Others" shape=box];
+1009 -> 80
+1011 [label="Others" shape=box];
+1011 -> 80
+1013 [label="<f0>  |<f1> Work " color=red];
+80 -> 1013 [label="Work"]
+81 [label="{<f0> 81.0|<f1> Keep track of changes to files over time. }" shape=Mrecord];
+297 -> 81
+1016 [label="Researcher," shape=box];
+1016 -> 81
+1018 [label="Researcher," shape=box];
+1018 -> 81
+1020 [label="<f0>  |<f1> Files " color=red];
+81 -> 1020 [label="Files"]
+280 -> 283
+280 -> 284
+280 -> 285
+280 -> 286
+280 -> 287
+280 -> 288
+280 -> 289
+280 -> 290
+280 -> 291
+280 -> 292
+280 -> 293
+280 -> 294
+280 -> 295
+280 -> 296
+280 -> 297
+280 -> 297
+280 -> 298
+280 -> 299
+280 -> 300
+280 -> 301
+280 -> 302
+280 -> 303
+280 -> 304
+280 -> 305
+280 -> 306
+280 -> 307
+280 -> 308
+280 -> 309
+280 -> 310
+280 -> 311
+280 -> 312
+280 -> 315
+280 -> 317
+280 -> 318
+280 -> 319
+280 -> 320
+280 -> 321
+280 -> 323
+280 -> 324
+280 -> 324
+280 -> 325
+280 -> 326
+280 -> 327
+280 -> 328
+280 -> 329
+280 -> 331
+280 -> 332
+280 -> 333
+280 -> 334
+280 -> 335
+280 -> 336
+280 -> 337
+280 -> 338
+280 -> 339
+280 -> 340
+280 -> 342
+280 -> 343
+280 -> 344
+280 -> 345
+280 -> 346
+280 -> 347
+280 -> 349
+280 -> 350
+280 -> 351
+280 -> 352
+280 -> 353
+280 -> 354
+280 -> 355
+280 -> 359
+280 -> 360
+282 -> 298
+282 -> 310
+282 -> 350
+282 -> 357
+282 -> 358
+282 -> 359
+282 -> 360
+283 -> 200 [label="Experiment"]
+283 -> 201 [label="Page"]
+284 -> 202 [label="File"]
+284 -> 201 [label="Page"]
+285 -> 204 [label="Directory"]
+285 -> 203 [label="Multiple File"]
+286 -> 202 [label="File"]
+287 -> 286
+287 -> 289
+287 -> 202 [label="File"]
+287 -> 201 [label="Page"]
+288 -> 286
+289 -> 208 [label="Network Drive"]
+290 -> 205 [label="Attach File"]
+290 -> 201 [label="Page"]
+291 -> 206 [label="Workspace"]
+291 -> 202 [label="File"]
+292 -> 293
+292 -> 202 [label="File"]
+293 -> 207 [label="Web Browser"]
+294 -> 209 [label="Workstation"]
+294 -> 202 [label="File"]
+294 -> 208 [label="Network Drive"]
+294 -> 206 [label="Workspace"]
+295 -> 201 [label="Page"]
+296 -> 210 [label="Greek Symbol"]
+296 -> 239 [label="Entry"]
+297 -> 296
+297 -> 320
+297 -> 321
+297 -> 322
+297 -> 323
+297 -> 327
+297 -> 328
+297 -> 329
+297 -> 330
+297 -> 331
+297 -> 332
+297 -> 337
+297 -> 339
+297 -> 340
+297 -> 341
+297 -> 343
+297 -> 345
+297 -> 346
+298 -> 254 [label="Paper"]
+299 -> 211 [label="Notification"]
+299 -> 212 [label="Mendeley"]
+300 -> 214 [label="Electronic Support"]
+301 -> 216 [label="Particular Experiment"]
+302 -> 300
+302 -> 213 [label="Track"]
+302 -> 266 [label="Data Set"]
+303 -> 300
+303 -> 301
+303 -> 213 [label="Track"]
+304 -> 300
+304 -> 215 [label="Output"]
+304 -> 213 [label="Track"]
+305 -> 267 [label="Term Curation"]
+305 -> 218 [label="Datum"]
+306 -> 305
+306 -> 217 [label="Service"]
+307 -> 219 [label="Display"]
+307 -> 220 [label="Associated Image"]
+308 -> 219 [label="Display"]
+308 -> 202 [label="File"]
+309 -> 222 [label="Remote Access"]
+309 -> 221 [label="Off Site\nWorking"]
+309 -> 218 [label="Datum"]
+310 -> 268 [label="Write Up"]
+310 -> 223 [label="Researcher"]
+311 -> 225 [label="Multiple"]
+311 -> 218 [label="Datum"]
+311 -> 226 [label="Library"]
+312 -> 226 [label="Library"]
+312 -> 224 [label="Later Stage"]
+312 -> 200 [label="Experiment"]
+312 -> 218 [label="Datum"]
+313 -> 230 [label="Electronic Book"]
+313 -> 228 [label="Experimental Datum"]
+314 -> 227 [label="System"]
+314 -> 229 [label="Bad Datum"]
+315 -> 269 [label="Log Book"]
+315 -> 228 [label="Experimental Datum"]
+316 -> 229 [label="Bad Datum"]
+317 -> 232 [label="Standard Metadata"]
+318 -> 317
+318 -> 227 [label="System"]
+319 -> 218 [label="Datum"]
+320 -> 233 [label="Standard Datum"]
+320 -> 234 [label="Video"]
+321 -> 241 [label="Meta Data"]
+321 -> 235 [label="Behavioural Observation"]
+322 -> 233 [label="Standard Datum"]
+323 -> 270 [label="Drug Response"]
+323 -> 241 [label="Meta Data"]
+324 -> 325
+324 -> 236 [label="Ability"]
+324 -> 202 [label="File"]
+324 -> 227 [label="System"]
+325 -> 218 [label="Datum"]
+326 -> 237 [label="New Datum"]
+326 -> 227 [label="System"]
+327 -> 326
+328 -> 218 [label="Datum"]
+329 -> 238 [label="Detailed Datum"]
+329 -> 239 [label="Entry"]
+330 -> 238 [label="Detailed Datum"]
+331 -> 240 [label="Populated Template"]
+332 -> 243 [label="Link"]
+332 -> 242 [label="Object"]
+333 -> 335
+333 -> 202 [label="File"]
+334 -> 218 [label="Datum"]
+335 -> 334
+336 -> 218 [label="Datum"]
+337 -> 245 [label="Input"]
+337 -> 200 [label="Experiment"]
+338 -> 246 [label="Format"]
+338 -> 202 [label="File"]
+338 -> 236 [label="Ability"]
+339 -> 202 [label="File"]
+340 -> 247 [label="Minimal Effort"]
+340 -> 204 [label="Directory"]
+342 -> 248 [label="Group"]
+342 -> 249 [label="Point"]
+342 -> 250 [label="Time"]
+342 -> 218 [label="Datum"]
+343 -> 218 [label="Datum"]
+345 -> 344
+345 -> 251 [label="Colleague"]
+345 -> 218 [label="Datum"]
+346 -> 344
+346 -> 218 [label="Datum"]
+346 -> 251 [label="Colleague"]
+347 -> 252 [label="Neurohub Node"]
+347 -> 253 [label="Laboratory"]
+347 -> 222 [label="Remote Access"]
+348 -> 255 [label="Repository"]
+349 -> 348
+349 -> 256 [label="Review"]
+350 -> 352
+350 -> 254 [label="Paper"]
+350 -> 223 [label="Researcher"]
+351 -> 348
+351 -> 257 [label="Comment"]
+352 -> 255 [label="Repository"]
+352 -> 248 [label="Group"]
+353 -> 259 [label="Detail"]
+353 -> 260 [label="Workflow"]
+354 -> 261 [label="Execution History"]
+354 -> 258 [label="Neurohub"]
+354 -> 260 [label="Workflow"]
+354 -> 259 [label="Detail"]
+355 -> 262 [label="Result"]
+355 -> 259 [label="Detail"]
+357 -> 258 [label="Neurohub"]
+358 -> 357
+358 -> 271 [label="Twitter Tweet"]
+359 -> 264 [label="Note"]
+359 -> 223 [label="Researcher"]
+359 -> 265 [label="Mechanism"]
+360 -> 265 [label="Mechanism"]
+360 -> 254 [label="Paper"]
+298 -> 272 [label="Research"]
+308 -> 273 [label="Timeline"]
+302 -> 274 [label="Data"]
+317 -> 275 [label="Meta"]
+319 -> 276 [label="Physiology"]
+286 -> 277 [label="Upload"]
+349 -> 279 [label="Sharing"]
+}

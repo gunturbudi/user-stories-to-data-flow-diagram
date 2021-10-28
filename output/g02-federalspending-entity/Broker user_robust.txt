@@ -1,0 +1,93 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Error Message" as thingerrormessage #grey
+	entity "Accurate Text" as thingaccuratetext
+	entity "Fpds Data\nLoad" as thingfpdsdataload #grey
+	entity "Work" as thingsamework
+	entity "Record" as thingrecord
+	entity "Duns Error" as thingdunserror #grey
+	entity "Individual Recipient" as thingindividualrecipient
+	entity "Logic" as thinglogic
+	entity "Information" as thingenoughinformation
+	entity "Code" as thingcode #grey
+	entity "Field" as thingfield
+	entity "Content Mockup" as thingcontentmockup
+	entity "Entity Zip\nValidation" as thingentityzipvalidation
+	entity "Error" as thingerror #grey
+	actor "Broker User" as actorbrokeruser
+	boundary "File D1\nGeneration" as thingfiled1generationbrokeruser
+	boundary "Historical Fabs\nLoader" as thinghistoricalfabsloaderbrokeruser
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	boundary "Text\nInterface" as thingtextinterface #grey
+	boundary "Mockup\nInterface" as thingmockupinterface #grey
+	boundary "Validation\nInterface" as thingvalidationinterface #grey
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	boundary "Logic\nInterface" as thinglogicinterface #grey
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Upload The\nError Message" as controluploaderrormessagehaveaccuratetext
+	control "Have Accurate\nText" as controlhaveaccuratetext
+	control "Validate The\nError Message" as controlvalidateerrormessagehaveaccuratetext
+	control "Synced With\nThe Fpds\nData Load" as controlsyncfiled1generationbrokeruserfpdsdataload
+	control "Help" as controlhelpcreatecontentmockups
+	control "Create Content\nMockups" as controlcreatecontentmockups
+	control "Have The\nSame Work\nAs The\nLegal Entity\nZip Validations" as controlhavesameworklegalentityzipvalidations
+	control "Submit Records\nFor Individual\nRecipients" as controlsubmitrecord
+	control "Receiving A\nDuns Error" as controlreceivesubmitrecorddunserror
+	control "Updated Error\nCodes Accurately\nReflect The\nLogic" as controlupdateerrorcodes
+	control "Updated Codes" as controlupdatecodeprovideenoughinformation
+	control "Provide Enough\nInformation" as controlprovideenoughinformation
+	control "Derive Fields" as controlderivehistoricalfabsloaderbrokeruserfield
+
+	thingentityzipvalidation <.. thingsamework
+	thingindividualrecipient <.. thingrecord
+	thingerror <.. thingcode
+	thinglogic <.. thingcode
+	actorbrokeruser --- thingfiled1generationbrokeruser
+	actorbrokeruser --- thinghistoricalfabsloaderbrokeruser
+	actorbrokeruser --- thingmessageinterface
+	actorbrokeruser --- thingtextinterface
+	actorbrokeruser --- thingmockupinterface
+	actorbrokeruser --- thingvalidationinterface
+	actorbrokeruser --- thingerrorinterface
+	actorbrokeruser --- thinglogicinterface
+	actorbrokeruser --- thingcodeinterface
+	actorbrokeruser --- thinginformationinterface
+	thingerrormessage --- controluploaderrormessagehaveaccuratetext
+	thingmessageinterface --> controluploaderrormessagehaveaccuratetext
+	controluploaderrormessagehaveaccuratetext --> controlhaveaccuratetext
+	thingaccuratetext --- controlhaveaccuratetext
+	thingtextinterface --> controlhaveaccuratetext
+	controlvalidateerrormessagehaveaccuratetext --> controlhaveaccuratetext
+	thingerrormessage --- controlvalidateerrormessagehaveaccuratetext
+	thingmessageinterface --> controlvalidateerrormessagehaveaccuratetext
+	thingfiled1generationbrokeruser --> controlsyncfiled1generationbrokeruserfpdsdataload
+	thingfpdsdataload --- controlsyncfiled1generationbrokeruserfpdsdataload
+	thingmockupinterface --> controlhelpcreatecontentmockups
+	controlhelpcreatecontentmockups --> controlcreatecontentmockups
+	thingcontentmockup --- controlcreatecontentmockups
+	thingmockupinterface --> controlcreatecontentmockups
+	thingsamework --- controlhavesameworklegalentityzipvalidations
+	thingentityzipvalidation --- controlhavesameworklegalentityzipvalidations
+	thingvalidationinterface --> controlhavesameworklegalentityzipvalidations
+	thingrecord --- controlsubmitrecord
+	thingindividualrecipient --- controlsubmitrecord
+	controlreceivesubmitrecorddunserror --> controlsubmitrecord
+	thingerrorinterface --> controlsubmitrecord
+	thingdunserror --- controlreceivesubmitrecorddunserror
+	thingerrorinterface --> controlreceivesubmitrecorddunserror
+	thinglogic --- controlupdateerrorcodes
+	thinglogicinterface --> controlupdateerrorcodes
+	thingcode --- controlupdateerrorcodes
+	thingcode --- controlupdatecodeprovideenoughinformation
+	thingcodeinterface --> controlupdatecodeprovideenoughinformation
+	controlupdatecodeprovideenoughinformation --> controlprovideenoughinformation
+	thingenoughinformation --- controlprovideenoughinformation
+	thinginformationinterface --> controlprovideenoughinformation
+	thinghistoricalfabsloaderbrokeruser --> controlderivehistoricalfabsloaderbrokeruserfield
+	thingfield --- controlderivehistoricalfabsloaderbrokeruserfield
+
+@enduml

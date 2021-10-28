@@ -1,0 +1,106 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Format Version" as thingformatversion #grey
+	entity "Integrity" as thingintegrity
+	entity "File Format" as thingfileformat #grey
+	entity "Creation Date" as thingcreationdate #grey
+	entity "Useful File" as thingusefulfile #grey
+	entity "Aspect" as thingaspect #grey
+	entity "Obsolescence" as thingobsolescence
+	entity "File Size" as thingfilesize #grey
+	entity "Object" as thingobject
+	entity "Authenticity" as thingauthenticity
+	entity "Preservation Managers" as thingpreservationmanagers #grey
+	entity "Question" as thingquestion
+	entity "Master File" as thingmasterfile
+	entity "Preservation Manager" as thingpreservationmanager
+	actor "Dams Manager" as actordamsmanager
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Managers\nInterface" as thingmanagersinterface #grey
+	boundary "Size\nInterface" as thingsizeinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	boundary "Authenticity\nInterface" as thingauthenticityinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Creation\nDate" as controlmonitorindicateaspectintegrityobsolescencecreationdate
+	control "Indicate To\nPreservation Managers\nAspects Of\nA Useful\nMaster File" as controlindicatepreservationmanagersaspects
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nSize" as controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	control "Indicate To\nAspects Of\nA Useful\nFile" as controlindicateaspect #grey
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Format\nVersion" as controlmonitorindicateaspectintegrityobsolescenceformatversion
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nFormat" as controlmonitorindicateaspectintegrityobsolescencefileformat
+	control "Know Via\nPreservation Managers" as controlknowpreservationmanagers
+	control "Know Of\nAny Object\nFor Which\nAuthenticity Is" as controlknowofauthenticity
+	control "Update To\nA More\nCurrent File\nFormat" as controlupdatecurrentfileformat
+	control "Know Of\nAny Object" as controlknowofupdatecurrentfileformat
+	control "Know Of\nAny Object\nFor Which\nIntegrity Is\nIn Question" as controlknowof
+
+	thingobsolescence <.. thingintegrity
+	thingquestion <.. thingintegrity
+	thingusefulfile <.. thingaspect
+	thingpreservationmanagers <.. thingaspect
+	thingmasterfile <.. thingaspect
+	thingfilesize <.. thingobsolescence
+	thingformatversion <.. thingobsolescence
+	thingcreationdate <.. thingobsolescence
+	thingfileformat <.. thingobsolescence
+	thingquestion <.. thingobject
+	thingintegrity <.. thingobject
+	thingauthenticity <.. thingobject
+	thingmasterfile <.. thingpreservationmanagers
+	thingpreservationmanagers <.. thingmasterfile
+	actordamsmanager --- thingdateinterface
+	actordamsmanager --- thingmanagersinterface
+	actordamsmanager --- thingsizeinterface
+	actordamsmanager --- thingversioninterface
+	actordamsmanager --- thingformatinterface
+	actordamsmanager --- thingmanagerinterface
+	actordamsmanager --- thingauthenticityinterface
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingquestioninterface
+	thingcreationdate --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingdateinterface --> controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingmasterfile --- controlindicatepreservationmanagersaspects
+	controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence --> controlindicatepreservationmanagersaspects
+	thingpreservationmanagers --- controlindicatepreservationmanagersaspects
+	thingmanagersinterface --> controlindicatepreservationmanagersaspects
+	thingaspect --- controlindicatepreservationmanagersaspects
+	thingintegrity --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingobsolescence --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingfilesize --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingsizeinterface --> controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	controlmonitorindicateaspectintegrityobsolescencefileformat --> controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescenceformatversion --> controlindicateaspect
+	thingaspect --- controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescencecreationdate --> controlindicateaspect
+	thingusefulfile --- controlindicateaspect
+	thingformatversion --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingversioninterface --> controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingfileformat --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingformatinterface --> controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingpreservationmanager --- controlknowpreservationmanagers
+	thingmanagerinterface --> controlknowpreservationmanagers
+	thingauthenticity --- controlknowofauthenticity
+	thingauthenticityinterface --> controlknowofauthenticity
+	thingobject --- controlknowofauthenticity
+	controlknowofupdatecurrentfileformat --> controlupdatecurrentfileformat
+	thingobjectinterface --> controlupdatecurrentfileformat
+	thingfileformat --- controlupdatecurrentfileformat
+	thingobjectinterface --> controlknowofupdatecurrentfileformat
+	thingobject --- controlknowofupdatecurrentfileformat
+	thingobject --- controlknowof
+	thingquestion --- controlknowof
+	thingquestioninterface --> controlknowof
+	thingintegrity --- controlknowof
+
+@enduml

@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Route Planning\nSystem " ];
+201 [label="<f0>  |<f1> Work " color=red];
+202 [label="<f0>  |<f1> Access " ];
+203 [label="<f0>  |<f1> Business " ];
+204 [label="<f0>  |<f1> Employee " ];
+205 [label="<f0>  |<f1> Quick Notification " ];
+206 [label="Employee" shape=box];
+207 [label="Hr Department" shape=box];
+208 [label="{<f0> 1.0|<f1> Access The Route Planning System During Work }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Have Access To The Full Information Of All Employees For This Business }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Get Quick Notifications }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Process cases the first time. }" shape=Mrecord];
+210 -> 4
+1001 [label="Employee" shape=box];
+1001 -> 4
+1003 [label="<f0>  |<f1> Cases " color=red];
+4 -> 1003 [label="Cases"]
+206 -> 208
+206 -> 209
+206 -> 210
+207 -> 209
+208 -> 200 [label="Route Planning\nSystem"]
+208 -> 201 [label="Work"]
+209 -> 202 [label="Access"]
+209 -> 204 [label="Employee"]
+209 -> 203 [label="Business"]
+210 -> 205 [label="Quick Notification"]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "text": "As an archivist, I want to make information about rights available to researchers and donors, so that they know what they can do with images.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "make information",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "provide access",
+        "label": "Processing"
+      },
+      {
+        "text": "digital copies",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to access inventories for unprocessed collections, so that I can provide reference services to donors.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "inventories",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to view physical locations for non-archival material, so that I can provide research services to donors.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "physical locations",
+        "label": "PII"
+      },
+      {
+        "text": "non-archival material",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Citation" as thingcitation
+	entity "Fine" as thingfine
+	actor "Staff Member" as actorstaffmember
+	boundary "Citation\nInterface" as thingcitationinterface #grey
+	boundary "Fine\nInterface" as thingfineinterface #grey
+	control "Send Citations" as controlsendcitation
+	control "Send Fine" as controlsendfine
+	control "Post Fine" as controlpostfine
+	control "Post Citations" as controlpostcitation
+
+	actorstaffmember --- thingcitationinterface
+	actorstaffmember --- thingfineinterface
+	thingcitation --- controlsendcitation
+	thingcitationinterface --> controlsendcitation
+	thingfine --- controlsendfine
+	thingfineinterface --> controlsendfine
+	thingfine --- controlpostfine
+	thingfineinterface --> controlpostfine
+	thingcitation --- controlpostcitation
+	thingcitationinterface --> controlpostcitation
+
+@enduml

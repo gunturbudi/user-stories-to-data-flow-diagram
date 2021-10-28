@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Research Material " color=red];
+201 [label="<f0>  |<f1> Cornell Faculty " ];
+202 [label="<f0>  |<f1> Particular Topic " ];
+203 [label="<f0>  |<f1> Educational " color=red];
+204 [label="Externaluser" shape=box];
+205 [label="{<f0> 1.0|<f1> Find }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Access Educational }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Access Research Materials From Cornell Faculty To A Particular Topic }" shape=Mrecord];
+204 -> 206
+204 -> 207
+206 -> 203 [label="Educational"]
+207 -> 200 [label="Research Material"]
+207 -> 201 [label="Cornell Faculty"]
+207 -> 202 [label="Particular Topic"]
+}

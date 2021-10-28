@@ -1,0 +1,93 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Place" as thingbetterplace
+	entity "Internal ,\nPrivate Group" as thinginternalprivategroup
+	entity "Range" as thingrange
+	entity "University" as thinguniversity
+	entity "Material" as thingmaterial #grey
+	entity "Public" as thingpublic
+	entity "Tagging" as thingtagging
+	entity "Access" as thingaccess
+	entity "Option" as thingoption
+	entity "Organization" as thingorganization
+	entity "Project" as thingproject #grey
+	actor "Crossdeptprojteammember" as actorcrossdeptprojteammember
+	boundary "Tagging\nInterface" as thingtagginginterface #grey
+	boundary "Public\nInterface" as thingpublicinterface #grey
+	boundary "Organization\nInterface" as thingorganizationinterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "University\nInterface" as thinguniversityinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "Have A\nBetter Place\nWith A\nRange Of\nTagging" as controlhavebetterplacecollectmaterialrangetagging
+	control "Collect Materials" as controlcollectmaterial #grey
+	control "Have A\nBetter Place\nWith Public" as controlhavebetterplacecollectmaterialpublic
+	control "Have A\nBetter Place\nWith A\nRange Of\nOrganization" as controlhavebetterplacecollectprojectmaterialsrange
+	control "Have A\nBetter Place\nWith A\nRange Of\nAccess" as controlhavebetterplacecollectmaterialrangeaccess
+	control "Have A\nBetter Place\nWith Option\nInternal, Private\nGroup Only\nUse" as controlhavebetterplacecollectmaterialoption
+	control "Have A\nBetter Place\nWith University" as controlhavebetterplacecollectmaterialuniversity
+	control "Collect Project\nMaterials" as controlcollectprojectmaterials
+	control "Share Materials" as controlsharematerial #grey
+	control "Share Project\nMaterials" as controlshareprojectmaterials
+
+	thingrange <.. thingbetterplace
+	thingpublic <.. thingbetterplace
+	thinguniversity <.. thingbetterplace
+	thingoption <.. thingbetterplace
+	thingorganization *-- thingrange
+	thingtagging *-- thingrange
+	thingaccess *-- thingrange
+	thingproject <.. thingmaterial
+	thinginternalprivategroup <.. thingoption
+	actorcrossdeptprojteammember --- thingtagginginterface
+	actorcrossdeptprojteammember --- thingpublicinterface
+	actorcrossdeptprojteammember --- thingorganizationinterface
+	actorcrossdeptprojteammember --- thingaccessinterface
+	actorcrossdeptprojteammember --- thinggroupinterface
+	actorcrossdeptprojteammember --- thinguniversityinterface
+	actorcrossdeptprojteammember --- thingmaterialinterface
+	thingtagging --- controlhavebetterplacecollectmaterialrangetagging
+	thingtagginginterface --> controlhavebetterplacecollectmaterialrangetagging
+	thingbetterplace --- controlhavebetterplacecollectmaterialrangetagging
+	thingrange --- controlhavebetterplacecollectmaterialrangetagging
+	controlhavebetterplacecollectmaterialrangeaccess --> controlcollectmaterial
+	controlhavebetterplacecollectmaterialoption --> controlcollectmaterial
+	controlhavebetterplacecollectmaterialrangetagging --> controlcollectmaterial
+	controlhavebetterplacecollectmaterialpublic --> controlcollectmaterial
+	controlhavebetterplacecollectmaterialuniversity --> controlcollectmaterial
+	thingmaterial --- controlcollectmaterial
+	thingpublic --- controlhavebetterplacecollectmaterialpublic
+	thingpublicinterface --> controlhavebetterplacecollectmaterialpublic
+	thingbetterplace --- controlhavebetterplacecollectmaterialpublic
+	thingbetterplace --- controlhavebetterplacecollectprojectmaterialsrange
+	thingrange --- controlhavebetterplacecollectprojectmaterialsrange
+	thingorganization --- controlhavebetterplacecollectprojectmaterialsrange
+	thingorganizationinterface --> controlhavebetterplacecollectprojectmaterialsrange
+	thingaccess --- controlhavebetterplacecollectmaterialrangeaccess
+	thingaccessinterface --> controlhavebetterplacecollectmaterialrangeaccess
+	thingbetterplace --- controlhavebetterplacecollectmaterialrangeaccess
+	thingrange --- controlhavebetterplacecollectmaterialrangeaccess
+	thingoption --- controlhavebetterplacecollectmaterialoption
+	thinginternalprivategroup --- controlhavebetterplacecollectmaterialoption
+	thinggroupinterface --> controlhavebetterplacecollectmaterialoption
+	thingbetterplace --- controlhavebetterplacecollectmaterialoption
+	thinguniversity --- controlhavebetterplacecollectmaterialuniversity
+	thinguniversityinterface --> controlhavebetterplacecollectmaterialuniversity
+	thingbetterplace --- controlhavebetterplacecollectmaterialuniversity
+	controlhavebetterplacecollectprojectmaterialsrange --> controlcollectprojectmaterials
+	thingmaterialinterface --> controlcollectprojectmaterials
+	thingmaterial --- controlcollectprojectmaterials
+	thingmaterial --- controlsharematerial
+	controlhavebetterplacecollectmaterialrangetagging --> controlsharematerial
+	controlhavebetterplacecollectmaterialpublic --> controlsharematerial
+	controlhavebetterplacecollectmaterialrangeaccess --> controlsharematerial
+	controlhavebetterplacecollectmaterialoption --> controlsharematerial
+	controlhavebetterplacecollectmaterialuniversity --> controlsharematerial
+	thingmaterial --- controlshareprojectmaterials
+	thingmaterialinterface --> controlshareprojectmaterials
+	controlhavebetterplacecollectprojectmaterialsrange --> controlshareprojectmaterials
+
+@enduml

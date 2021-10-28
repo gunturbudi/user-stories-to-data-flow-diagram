@@ -1,0 +1,166 @@
+[
+  {
+    "text": "As a administrator, I want to refund sponsorship money that was processed via stripe, so that people get their monies back.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "refund",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsorship money",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to create and maintain venues, so that I can provide location details to help users find what they're looking for.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "venues",
+        "label": "PII"
+      },
+      {
+        "text": "location details",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to assign sponsors to events, trainings and summits so that They will be featured on the sponsor detail page.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      },
+      {
+        "text": "trainings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to tag my blog posts for consumption by Drupal Planet, so that they will be listed on the Drupal Planet blog.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "blog posts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to create blog posts, so that I can share the latest information about BADCamp with the public.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "blog posts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to assign a room to a time slot and a location, so that I can populate the schedule .",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "room",
+        "label": "PII"
+      },
+      {
+        "text": "time slot",
+        "label": "PII"
+      },
+      {
+        "text": "location",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to bulk approve sessions as accepted, so that I can save time.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "bulk approve",
+        "label": "Processing"
+      },
+      {
+        "text": "sessions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a administrator, I want to mark a session as accepted, so that I can populate the schedule .",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "session",
+        "label": "PII"
+      }
+    ]
+  }
+]

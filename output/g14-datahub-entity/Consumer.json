@@ -1,0 +1,486 @@
+[
+  {
+    "text": "As a Consumer, I want to know that the data I am downloading is good and can be relied on, so that that I don't have to check it myself or run into annoying bugs later on.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "relied",
+        "label": "Processing"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed, so that that I can still use is and my app or analysis keeps working.",
+    "entities": [
+      {
+        "text": "Consumer,",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "original data",
+        "label": "PII"
+      },
+      {
+        "text": "app",
+        "label": "PII"
+      },
+      {
+        "text": "analysis",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a publisher, I want to show the world how my published data is, so that that it immediately catches consumer's attention.",
+    "entities": [
+      {
+        "text": "publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "published data",
+        "label": "PII"
+      },
+      {
+        "text": "consumer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a consumer, I want to view the data package, so that that I can get a sense of whether I want this dataset or not.",
+    "entities": [
+      {
+        "text": "consumer",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to see how much the data has been downloaded, so that that I can choose most popular in the case when there are several alternatives for my use case.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "use case",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to see some example data packages quickly, so that I get a sense of what is on this site and if it is useful to look further.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to search data packages, so that that I can find the ones I want.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to search based on description of data package, so that that I can find package which related to some key words.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "key words",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to download the data package in one file, so that that I don't have to download descriptor and each resource by hand.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "resource",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to load a Data Package from R, so that that I can immediately start playing with it.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "load",
+        "label": "Processing"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to download a DataPackage's data one coherent SQLite database, so that that I can get it easily in one form.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "DataPackage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that that consumers can refer to it.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "consumers",
+        "label": "Data"
+      },
+      {
+        "text": "refer",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that that I don't accidentally overwrite stable tagged data which is relied on by consumers.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "overwrite",
+        "label": "Processing"
+      },
+      {
+        "text": "consumers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to know full details of how the data package schema has changed, so that that I can adjust my scripts to handle it.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "adjust",
+        "label": "Processing"
+      },
+      {
+        "text": "scripts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before, so that that I can decide if I should update or not.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "age",
+        "label": "PII"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to view a Datapackage at a particular version online, so that that I can present/discuss the particular data timeslice of interest with other people.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "Datapackage",
+        "label": "PII"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to download a Data package at a particular version, so that that I know it is compatible with my scripts and system.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "Data package",
+        "label": "PII"
+      },
+      {
+        "text": "scripts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to be notified of changes to a package I care about, so that that I can check out what has changed and take action.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to see how active the site is, so that I can decide if I should get involved.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to browse and find publishers, so that that I can find interesting publishers and their packages.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "publishers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to see a publisher's profile, so that that I can discover their packages and get a sense of how active and good they are.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "publisher",
+        "label": "Data"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to view a publisher's profile, so that that I can see who is behind a particular package or to see what other packages they produce.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "publisher",
+        "label": "Data"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to search among all data packages owned by a publisher, so that that I can easily find one data package amongst all the data packages by this publisher.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  }
+]

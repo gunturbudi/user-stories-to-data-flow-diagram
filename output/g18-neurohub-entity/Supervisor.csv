@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Time,shape=partialRectangle,null,null,data_base
+201,Researcher,shape=partialRectangle,null,null,data_base
+202,Date,shape=partialRectangle,null,null,data_base
+203,Neurohub,shape=partialRectangle,null,null,data_base
+204,Student,shape=partialRectangle,null,null,data_base
+205,Form,shape=partialRectangle,null,null,data_base
+206,Course,shape=partialRectangle,null,null,data_base
+207,Feedback,shape=partialRectangle,null,null,data_base
+208,Supervisor,rounded=0,null,null,external_entity
+209,View,ellipse,null,null,process
+210,Create Feedback Forms Within Neurohub,ellipse,null,null,process
+211,Forms Provide With Feedback About The Course That Attended,ellipse,null,null,process
+213,,endArrow=classic,208,210,endArrow=classic
+214,,endArrow=classic,208,211,endArrow=classic
+215,Neurohub,endArrow=classic,210,203,endArrow=classic
+216,Form,endArrow=classic,210,205,endArrow=classic
+217,Form,endArrow=classic,211,205,endArrow=classic
+218,Feedback,endArrow=classic,211,207,endArrow=classic
+219,Course,endArrow=classic,211,206,endArrow=classic

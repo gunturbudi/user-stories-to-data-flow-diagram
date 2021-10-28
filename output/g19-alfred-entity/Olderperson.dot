@@ -1,0 +1,646 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Personal Datum " ];
+201 [label="<f0>  |<f1> Specific Permission " color=red];
+202 [label="<f0>  |<f1> Alfred " ];
+203 [label="<f0>  |<f1> Information " color=red];
+204 [label="<f0>  |<f1> Visible Button " ];
+205 [label="<f0>  |<f1> Control " ];
+206 [label="<f0>  |<f1> Small Device " ];
+207 [label="<f0>  |<f1> Easy " ];
+208 [label="<f0>  |<f1> Phone " color=red];
+209 [label="<f0>  |<f1> Computer " color=red];
+210 [label="<f0>  |<f1> Tablet " color=red];
+211 [label="<f0>  |<f1> Bracelet " color=red];
+212 [label="<f0>  |<f1> Necklace " color=red];
+213 [label="<f0>  |<f1> Sale " color=red];
+214 [label="<f0>  |<f1> Trouble " ];
+215 [label="<f0>  |<f1> Clear Instruction " ];
+216 [label="<f0>  |<f1> Service " color=red];
+217 [label="<f0>  |<f1> Clearly " ];
+218 [label="<f0>  |<f1> Device " ];
+219 [label="<f0>  |<f1> Introduction Conversation " color=red];
+220 [label="<f0>  |<f1> Senior Shop " color=red];
+221 [label="<f0>  |<f1> Low Price " ];
+222 [label="<f0>  |<f1> Visual Support " color=red];
+223 [label="<f0>  |<f1> Good Battery " ];
+224 [label="<f0>  |<f1> House " ];
+225 [label="<f0>  |<f1> Low Battery " ];
+226 [label="<f0>  |<f1> Hearing " ];
+227 [label="<f0>  |<f1> Visual " color=red];
+228 [label="<f0>  |<f1> User " color=red];
+229 [label="<f0>  |<f1> Visual Trouble " ];
+230 [label="<f0>  |<f1> Phrase " ];
+231 [label="<f0>  |<f1> Visual Content " ];
+232 [label="<f0>  |<f1> Alfredo Platform " ];
+233 [label="<f0>  |<f1> New App " color=red];
+234 [label="<f0>  |<f1> Friend " color=red];
+235 [label="<f0>  |<f1> Family " color=red];
+236 [label="<f0>  |<f1> Video Conversation " color=red];
+237 [label="<f0>  |<f1> Real Interaction " ];
+238 [label="<f0>  |<f1> Human " ];
+239 [label="<f0>  |<f1> Interest " color=red];
+240 [label="<f0>  |<f1> Exist App " color=red];
+241 [label="<f0>  |<f1> Solution " ];
+242 [label="<f0>  |<f1> Preference " color=red];
+243 [label="<f0>  |<f1> Datum " ];
+244 [label="<f0>  |<f1> Morning " ];
+245 [label="<f0>  |<f1> Night " ];
+246 [label="<f0>  |<f1> Public Transport " ];
+247 [label="<f0>  |<f1> Navigation " ];
+248 [label="<f0>  |<f1> Explanation " ];
+249 [label="<f0>  |<f1> Historical Sight " ];
+250 [label="<f0>  |<f1> Touristic Walk " color=red];
+251 [label="<f0>  |<f1> Cultural " ];
+252 [label="<f0>  |<f1> Taxi " color=red];
+253 [label="<f0>  |<f1> Time " ];
+254 [label="<f0>  |<f1> Door " color=red];
+255 [label="<f0>  |<f1> Light " ];
+256 [label="<f0>  |<f1> Heating " ];
+257 [label="<f0>  |<f1> Tv " color=red];
+258 [label="<f0>  |<f1> Radio " color=red];
+259 [label="<f0>  |<f1> Movie " color=red];
+260 [label="<f0>  |<f1> News " color=red];
+261 [label="<f0>  |<f1> Emergency " color=red];
+262 [label="<f0>  |<f1> Help " color=red];
+263 [label="<f0>  |<f1> Nearest Caregiver " ];
+264 [label="<f0>  |<f1> Urgent Help " color=red];
+265 [label="<f0>  |<f1> Message " color=red];
+266 [label="<f0>  |<f1> Pill " color=red];
+267 [label="<f0>  |<f1> Grocery Shopping " color=red];
+268 [label="<f0>  |<f1> Fall " color=red];
+269 [label="<f0>  |<f1> Specific Contact " color=red];
+270 [label="<f0>  |<f1> Healthy Recipe " ];
+271 [label="<f0>  |<f1> Day " ];
+272 [label="<f0>  |<f1> Spontaneous Question " color=red];
+273 [label="<f0>  |<f1> Exhibition " ];
+274 [label="<f0>  |<f1> Cinema " ];
+275 [label="<f0>  |<f1> Domain " ];
+276 [label="<f0>  |<f1> Question " color=red];
+277 [label="<f0>  |<f1> Specific Button " ];
+278 [label="<f0>  |<f1> Agenda " color=red];
+279 [label="<f0>  |<f1> Speech " color=red];
+280 [label="<f0>  |<f1> Meeting " color=red];
+281 [label="<f0>  |<f1> Appointment " color=red];
+282 [label="<f0>  |<f1> Reminder " color=red];
+283 [label="<f0>  |<f1> Thing " color=red];
+284 [label="<f0>  |<f1> Similar Disease " ];
+285 [label="<f0>  |<f1> People " ];
+286 [label="<f0>  |<f1> Circle " color=red];
+287 [label="<f0>  |<f1> Museum " ];
+288 [label="<f0>  |<f1> Neighborhood " color=red];
+289 [label="<f0>  |<f1> Social Activity " ];
+290 [label="<f0>  |<f1> Social Event " color=red];
+291 [label="<f0>  |<f1> Personalize Invitation " ];
+292 [label="<f0>  |<f1> Concert " color=red];
+293 [label="<f0>  |<f1> Event " color=red];
+294 [label="<f0>  |<f1> Cognitive ,\nMild Impairment " ];
+295 [label="<f0>  |<f1> Certain Place " ];
+296 [label="<f0>  |<f1> Online Game " ];
+297 [label="<f0>  |<f1> Suggestion " ];
+298 [label="<f0>  |<f1> Face " ];
+299 [label="<f0>  |<f1> Body Weight " color=red];
+300 [label="<f0>  |<f1> Caregiver " color=red];
+301 [label="<f0>  |<f1> Button " ];
+302 [label="<f0>  |<f1> Access " color=red];
+303 [label="<f0>  |<f1> Vital Datum " ];
+304 [label="<f0>  |<f1> Wearable " ];
+305 [label="<f0>  |<f1> Integrate Sensor " ];
+306 [label="<f0>  |<f1> Vital Parameter " color=red];
+307 [label="<f0>  |<f1> -pron- " ];
+308 [label="<f0>  |<f1> Alfred Shirt " ];
+309 [label="<f0>  |<f1> Games Duration " color=red];
+310 [label="<f0>  |<f1> Limit " ];
+311 [label="<f0>  |<f1> Game " color=red];
+312 [label="<f0>  |<f1> Sensor " color=red];
+313 [label="<f0>  |<f1> Exercise " color=red];
+314 [label="<f0>  |<f1> Guide Exercise " color=red];
+315 [label="<f0>  |<f1> Favourite Sport " color=red];
+316 [label="<f0>  |<f1> Medication " ];
+317 [label="<f0>  |<f1> Specific Tip " ];
+318 [label="<f0>  |<f1> Physical " color=red];
+319 [label="<f0>  |<f1> Memory Health " color=red];
+320 [label="<f0>  |<f1> Training " color=red];
+321 [label="<f0>  |<f1> Week " ];
+322 [label="<f0>  |<f1> Leg " ];
+323 [label="<f0>  |<f1> Arm " ];
+324 [label="<f0>  |<f1> Mental Exercise " color=red];
+325 [label="<f0>  |<f1> Combination " ];
+326 [label="<f0>  |<f1> Interaction " color=red];
+327 [label="<f0>  |<f1> Data Setting " color=red];
+328 [label="<f0>  |<f1> Client Support " color=red];
+329 [label="<f0>  |<f1> Ict Tool " ];
+330 [label="<f0>  |<f1> Rythm Support " color=red];
+331 [label="<f0>  |<f1> Contact List " color=red];
+332 [label="<f0>  |<f1> Art Exposition " color=red];
+333 [label="<f0>  |<f1> Sports Class " ];
+334 [label="<f0>  |<f1> Body Posture " ];
+335 [label="<f0>  |<f1> Health Impairment " color=red];
+336 [label="<f0>  |<f1> Alfred " ];
+337 [label="<f0>  |<f1> Health " color=red];
+338 [label="<f0>  |<f1> Muscle " color=red];
+339 [label="<f0>  |<f1> Motion " ];
+340 [label="Olderperson" shape=box];
+341 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+342 [label="{<f0> 2.0|<f1> Receive Information From Alfred By Speech Technology }" shape=Mrecord];
+343 [label="{<f0> 3.0|<f1> Use Only Well Visible Buttons }" shape=Mrecord];
+344 [label="{<f0> 4.0|<f1> Use Alfred As Possible Much With Speech Interaction }" shape=Mrecord];
+345 [label="{<f0> 5.0|<f1> Keep Control On The Activities Of Alfred }" shape=Mrecord];
+346 [label="{<f0> 6.0|<f1> Manage Privacy Data Settings }" shape=Mrecord];
+347 [label="{<f0> 7.0|<f1> Have }" shape=Mrecord];
+348 [label="{<f0> 8.0|<f1> Have A Small Device Easy }" shape=Mrecord];
+349 [label="{<f0> 9.0|<f1> Carry With }" shape=Mrecord];
+350 [label="{<f0> 10.0|<f1> Have A Small Alfred Device Is }" shape=Mrecord];
+351 [label="{<f0> 11.0|<f1> Have Alfred On Computers }" shape=Mrecord];
+352 [label="{<f0> 12.0|<f1> Have Alfred On Phone }" shape=Mrecord];
+353 [label="{<f0> 13.0|<f1> Have Alfred On Tablet }" shape=Mrecord];
+354 [label="{<f0> 14.0|<f1> Have Alfred On A Necklace }" shape=Mrecord];
+355 [label="{<f0> 15.0|<f1> Have Alfred On A Bracelet }" shape=Mrecord];
+356 [label="{<f0> 16.0|<f1> Clear Instructions Guide Have Trouble }" shape=Mrecord];
+357 [label="{<f0> 17.0|<f1> Using Alfred }" shape=Mrecord];
+358 [label="{<f0> 18.0|<f1> Have Clear Instructions After Sales }" shape=Mrecord];
+359 [label="{<f0> 19.0|<f1> Have Service }" shape=Mrecord];
+360 [label="{<f0> 20.0|<f1> Have An Alfred Device Slowly Very Speaks }" shape=Mrecord];
+361 [label="{<f0> 21.0|<f1> Have An Device Clearly }" shape=Mrecord];
+362 [label="{<f0> 22.0|<f1> An Device Only Listens To Ask }" shape=Mrecord];
+363 [label="{<f0> 23.0|<f1> To }" shape=Mrecord];
+364 [label="{<f0> 24.0|<f1> Have An Introduction Conversation With Alfred }" shape=Mrecord];
+365 [label="{<f0> 25.0|<f1> Buy Alfred In A Senior Shop With Special Client Support }" shape=Mrecord];
+366 [label="{<f0> 26.0|<f1> Buy Alfred For A Low Price }" shape=Mrecord];
+367 [label="{<f0> 27.0|<f1> Receive Visual Support When Especially Looking At A List }" shape=Mrecord];
+368 [label="{<f0> 28.0|<f1> Receive Visual Support When Especially Agenda Looking At A List }" shape=Mrecord];
+369 [label="{<f0> 29.0|<f1> Pay For Small Amounts }" shape=Mrecord];
+370 [label="{<f0> 30.0|<f1> Use Alfred }" shape=Mrecord];
+371 [label="{<f0> 31.0|<f1> Have A Very Good Battery For Alfred }" shape=Mrecord];
+372 [label="{<f0> 32.0|<f1> Have An Device Easily Adapted For User Have Hearing Troubles }" shape=Mrecord];
+373 [label="{<f0> 33.0|<f1> Zoom Into Visual Content }" shape=Mrecord];
+374 [label="{<f0> 34.0|<f1> Offering New Apps In The Alfredo Platform }" shape=Mrecord];
+375 [label="{<f0> 35.0|<f1> Communicate With Friends }" shape=Mrecord];
+376 [label="{<f0> 36.0|<f1> Communicate With Family }" shape=Mrecord];
+377 [label="{<f0> 37.0|<f1> Communicate With }" shape=Mrecord];
+378 [label="{<f0> 38.0|<f1> Have An Device Helps }" shape=Mrecord];
+379 [label="{<f0> 39.0|<f1> Have Video Conversation With Others }" shape=Mrecord];
+380 [label="{<f0> 40.0|<f1> Have An Aflred Device Encourages Users For Real Interaction Between Humans Only With Ict Tools }" shape=Mrecord];
+381 [label="{<f0> 41.0|<f1> Customize Preferences In The Different Functionalities Of The Solution }" shape=Mrecord];
+382 [label="{<f0> 42.0|<f1> Have Directly Data On The Phone }" shape=Mrecord];
+383 [label="{<f0> 43.0|<f1> Receive Up A Wake Call From Alfred In The Morning Checking On }" shape=Mrecord];
+384 [label="{<f0> 44.0|<f1> Am Ok }" shape=Mrecord];
+385 [label="{<f0> 45.0|<f1> Receive Night }" shape=Mrecord];
+386 [label="{<f0> 46.0|<f1> Receive Day Rythm Support With Agenda Reminders }" shape=Mrecord];
+387 [label="{<f0> 47.0|<f1> Receive }" shape=Mrecord];
+388 [label="{<f0> 48.0|<f1> Use The Public Transport }" shape=Mrecord];
+389 [label="{<f0> 49.0|<f1> Use Alfred For Navigation }" shape=Mrecord];
+390 [label="{<f0> 50.0|<f1> Indications Alfred For Touristic Walks With Explanations On Historical Sights }" shape=Mrecord];
+391 [label="{<f0> 51.0|<f1> Indications Alfred For Touristic Walks With Explanations On Cultural }" shape=Mrecord];
+392 [label="{<f0> 52.0|<f1> Have A Taxi On Time }" shape=Mrecord];
+393 [label="{<f0> 53.0|<f1> Use Alfred Is Standing At Door }" shape=Mrecord];
+394 [label="{<f0> 54.0|<f1> Open The Door }" shape=Mrecord];
+395 [label="{<f0> 55.0|<f1> See }" shape=Mrecord];
+396 [label="{<f0> 56.0|<f1> Pick The Phone Up }" shape=Mrecord];
+397 [label="{<f0> 57.0|<f1> Am At Home }" shape=Mrecord];
+398 [label="{<f0> 58.0|<f1> Turn Off The Lights }" shape=Mrecord];
+399 [label="{<f0> 59.0|<f1> Turn On }" shape=Mrecord];
+400 [label="{<f0> 60.0|<f1> Control The Heating }" shape=Mrecord];
+401 [label="{<f0> 61.0|<f1> Control Radio }" shape=Mrecord];
+402 [label="{<f0> 62.0|<f1> Control The Tv }" shape=Mrecord];
+403 [label="{<f0> 63.0|<f1> Watch Movies }" shape=Mrecord];
+404 [label="{<f0> 64.0|<f1> Hear About The News }" shape=Mrecord];
+405 [label="{<f0> 65.0|<f1> Contact Help In Case Of An Emergency }" shape=Mrecord];
+406 [label="{<f0> 66.0|<f1> Ask Alfred For Urgent Help }" shape=Mrecord];
+407 [label="{<f0> 67.0|<f1> Receive A Message }" shape=Mrecord];
+408 [label="{<f0> 68.0|<f1> Receive A Medicine Reminder From Alfred }" shape=Mrecord];
+409 [label="{<f0> 69.0|<f1> Taken Pills }" shape=Mrecord];
+410 [label="{<f0> 70.0|<f1> Do Grocery Shopping }" shape=Mrecord];
+411 [label="{<f0> 71.0|<f1> Send Messages }" shape=Mrecord];
+412 [label="{<f0> 72.0|<f1> Detect Falls }" shape=Mrecord];
+413 [label="{<f0> 73.0|<f1> Send An Emergency To A Specific Contact }" shape=Mrecord];
+414 [label="{<f0> 74.0|<f1> Suggest Healthy Recipes }" shape=Mrecord];
+415 [label="{<f0> 75.0|<f1> Spontaneous Questions Programme During Certain Times Of The Day }" shape=Mrecord];
+416 [label="{<f0> 76.0|<f1> Initiate Questions }" shape=Mrecord];
+417 [label="{<f0> 77.0|<f1> Call Someone With Alfred }" shape=Mrecord];
+418 [label="{<f0> 78.0|<f1> Activate The Vocal Interaction Mode Of Alfred }" shape=Mrecord];
+419 [label="{<f0> 79.0|<f1> Pushing A Specific Button }" shape=Mrecord];
+420 [label="{<f0> 80.0|<f1> Maintain Contact List In Phone }" shape=Mrecord];
+421 [label="{<f0> 81.0|<f1> Manage Agenda }" shape=Mrecord];
+422 [label="{<f0> 82.0|<f1> Insert Meetings Into Alfred Using Speech }" shape=Mrecord];
+423 [label="{<f0> 83.0|<f1> Receive Reminders On Appointments }" shape=Mrecord];
+424 [label="{<f0> 84.0|<f1> Leave The House }" shape=Mrecord];
+425 [label="{<f0> 85.0|<f1> The Things Bring With }" shape=Mrecord];
+426 [label="{<f0> 86.0|<f1> Receive A Reminder From Alfred On The Things }" shape=Mrecord];
+427 [label="{<f0> 87.0|<f1> Set Up Social Groups Of People With Similar Diseases }" shape=Mrecord];
+428 [label="{<f0> 88.0|<f1> Contact People From Own Circle }" shape=Mrecord];
+429 [label="{<f0> 89.0|<f1> Learn About A Museum }" shape=Mrecord];
+430 [label="{<f0> 90.0|<f1> Learn About Art Expositions }" shape=Mrecord];
+431 [label="{<f0> 91.0|<f1> Learn About The Social Activities Organized In Neighborhood }" shape=Mrecord];
+432 [label="{<f0> 92.0|<f1> Get A Personalized Invitation To A Social Event }" shape=Mrecord];
+433 [label="{<f0> 93.0|<f1> Navigate To An Event }" shape=Mrecord];
+434 [label="{<f0> 94.0|<f1> Navigate To Concert }" shape=Mrecord];
+435 [label="{<f0> 95.0|<f1> Lost }" shape=Mrecord];
+436 [label="{<f0> 96.0|<f1> Alfred Help }" shape=Mrecord];
+437 [label="{<f0> 97.0|<f1> Help }" shape=Mrecord];
+438 [label="{<f0> 98.0|<f1> Use Alfred Navigate Despite Cognitive, Mild Impairments }" shape=Mrecord];
+439 [label="{<f0> 99.0|<f1> Organize A Meeting With A Group Of Friends At A Certain Place }" shape=Mrecord];
+440 [label="{<f0> 100.0|<f1> Play Online Games Together With Other Users }" shape=Mrecord];
+441 [label="{<f0> 101.0|<f1> Get Suggestions For Sports Classes In Neighbourhood }" shape=Mrecord];
+442 [label="{<f0> 102.0|<f1> Enable }" shape=Mrecord];
+443 [label="{<f0> 103.0|<f1> Have Face }" shape=Mrecord];
+444 [label="{<f0> 104.0|<f1> Control Body Weight }" shape=Mrecord];
+445 [label="{<f0> 105.0|<f1> Press Button }" shape=Mrecord];
+446 [label="{<f0> 106.0|<f1> Call Caregiver }" shape=Mrecord];
+447 [label="{<f0> 107.0|<f1> Decide }" shape=Mrecord];
+448 [label="{<f0> 108.0|<f1> Have The Wearables With Integrated Sensors Good Not Stigmatizing }" shape=Mrecord];
+449 [label="{<f0> 109.0|<f1> See -Pron- }" shape=Mrecord];
+450 [label="{<f0> 110.0|<f1> See Vital Parameters On The Phone }" shape=Mrecord];
+451 [label="{<f0> 111.0|<f1> Have The Alfred Shirt Good }" shape=Mrecord];
+452 [label="{<f0> 112.0|<f1> Set Limits In The Games Duration }" shape=Mrecord];
+453 [label="{<f0> 113.0|<f1> Play Games }" shape=Mrecord];
+454 [label="{<f0> 114.0|<f1> Capture Health Data Am Doing Exercises }" shape=Mrecord];
+455 [label="{<f0> 115.0|<f1> Do Guided Exercises With Alfred }" shape=Mrecord];
+456 [label="{<f0> 116.0|<f1> Have Games Include Favourite Sports }" shape=Mrecord];
+457 [label="{<f0> 117.0|<f1> Receive Suggestions About Local Sport Classes }" shape=Mrecord];
+458 [label="{<f0> 118.0|<f1> Keep A Good Body Posture }" shape=Mrecord];
+459 [label="{<f0> 119.0|<f1> Remind }" shape=Mrecord];
+460 [label="{<f0> 120.0|<f1> Receive Specific Tips }" shape=Mrecord];
+461 [label="{<f0> 121.0|<f1> Reduce Health Impairments Without Medication }" shape=Mrecord];
+462 [label="{<f0> 122.0|<f1> Have Some Games How Show Physical }" shape=Mrecord];
+463 [label="{<f0> 123.0|<f1> Have Training For Specific Muscle Groups }" shape=Mrecord];
+464 [label="{<f0> 124.0|<f1> See Training Performance }" shape=Mrecord];
+465 [label="{<f0> 125.0|<f1> Motivate During The Week }" shape=Mrecord];
+466 [label="{<f0> 126.0|<f1> Do Exercise Daily Change }" shape=Mrecord];
+340 -> 342
+340 -> 343
+340 -> 344
+340 -> 345
+340 -> 346
+340 -> 347
+340 -> 347
+340 -> 348
+340 -> 349
+340 -> 350
+340 -> 351
+340 -> 352
+340 -> 353
+340 -> 354
+340 -> 355
+340 -> 356
+340 -> 357
+340 -> 358
+340 -> 359
+340 -> 360
+340 -> 361
+340 -> 362
+340 -> 363
+340 -> 364
+340 -> 365
+340 -> 366
+340 -> 367
+340 -> 368
+340 -> 369
+340 -> 370
+340 -> 371
+340 -> 372
+340 -> 373
+340 -> 375
+340 -> 376
+340 -> 379
+340 -> 380
+340 -> 381
+340 -> 382
+340 -> 383
+340 -> 384
+340 -> 385
+340 -> 386
+340 -> 387
+340 -> 388
+340 -> 389
+340 -> 390
+340 -> 391
+340 -> 392
+340 -> 393
+340 -> 394
+340 -> 395
+340 -> 396
+340 -> 397
+340 -> 398
+340 -> 399
+340 -> 400
+340 -> 401
+340 -> 402
+340 -> 403
+340 -> 404
+340 -> 405
+340 -> 406
+340 -> 407
+340 -> 408
+340 -> 409
+340 -> 410
+340 -> 411
+340 -> 412
+340 -> 413
+340 -> 414
+340 -> 415
+340 -> 416
+340 -> 417
+340 -> 418
+340 -> 419
+340 -> 420
+340 -> 421
+340 -> 422
+340 -> 423
+340 -> 424
+340 -> 425
+340 -> 426
+340 -> 427
+340 -> 428
+340 -> 429
+340 -> 430
+340 -> 431
+340 -> 432
+340 -> 433
+340 -> 434
+340 -> 435
+340 -> 436
+340 -> 437
+340 -> 437
+340 -> 437
+340 -> 438
+340 -> 439
+340 -> 440
+340 -> 441
+340 -> 442
+340 -> 443
+340 -> 444
+340 -> 445
+340 -> 446
+340 -> 448
+340 -> 449
+340 -> 450
+340 -> 451
+340 -> 452
+340 -> 453
+340 -> 454
+340 -> 455
+340 -> 456
+340 -> 456
+340 -> 457
+340 -> 458
+340 -> 459
+340 -> 460
+340 -> 461
+340 -> 462
+340 -> 463
+340 -> 464
+340 -> 465
+340 -> 466
+342 -> 203 [label="Information"]
+342 -> 202 [label="Alfred"]
+343 -> 204 [label="Visible Button"]
+344 -> 326 [label="Interaction"]
+344 -> 202 [label="Alfred"]
+345 -> 205 [label="Control"]
+345 -> 202 [label="Alfred"]
+346 -> 327 [label="Data Setting"]
+347 -> 412
+347 -> 413
+347 -> 414
+347 -> 416
+347 -> 437
+347 -> 442
+347 -> 452
+347 -> 459
+348 -> 206 [label="Small Device"]
+348 -> 207 [label="Easy"]
+350 -> 349
+350 -> 218 [label="Device"]
+351 -> 209 [label="Computer"]
+351 -> 202 [label="Alfred"]
+352 -> 208 [label="Phone"]
+352 -> 202 [label="Alfred"]
+353 -> 210 [label="Tablet"]
+353 -> 202 [label="Alfred"]
+354 -> 212 [label="Necklace"]
+354 -> 202 [label="Alfred"]
+355 -> 211 [label="Bracelet"]
+355 -> 202 [label="Alfred"]
+356 -> 214 [label="Trouble"]
+356 -> 215 [label="Clear Instruction"]
+357 -> 356
+357 -> 202 [label="Alfred"]
+358 -> 215 [label="Clear Instruction"]
+358 -> 213 [label="Sale"]
+359 -> 216 [label="Service"]
+360 -> 375
+360 -> 225 [label="Low Battery"]
+360 -> 224 [label="House"]
+360 -> 228 [label="User"]
+360 -> 227 [label="Visual"]
+360 -> 229 [label="Visual Trouble"]
+360 -> 214 [label="Trouble"]
+360 -> 230 [label="Phrase"]
+360 -> 240 [label="Exist App"]
+360 -> 239 [label="Interest"]
+360 -> 203 [label="Information"]
+360 -> 218 [label="Device"]
+361 -> 218 [label="Device"]
+361 -> 217 [label="Clearly"]
+362 -> 363
+362 -> 218 [label="Device"]
+364 -> 219 [label="Introduction Conversation"]
+364 -> 202 [label="Alfred"]
+365 -> 220 [label="Senior Shop"]
+365 -> 328 [label="Client Support"]
+365 -> 202 [label="Alfred"]
+366 -> 221 [label="Low Price"]
+366 -> 202 [label="Alfred"]
+367 -> 222 [label="Visual Support"]
+368 -> 222 [label="Visual Support"]
+370 -> 369
+370 -> 394
+370 -> 397
+370 -> 398
+370 -> 399
+370 -> 400
+370 -> 401
+370 -> 402
+370 -> 403
+370 -> 404
+370 -> 405
+370 -> 410
+370 -> 411
+370 -> 420
+370 -> 421
+370 -> 427
+370 -> 428
+370 -> 429
+370 -> 430
+370 -> 431
+370 -> 432
+370 -> 433
+370 -> 434
+370 -> 435
+370 -> 439
+370 -> 202 [label="Alfred"]
+371 -> 223 [label="Good Battery"]
+371 -> 202 [label="Alfred"]
+372 -> 226 [label="Hearing"]
+372 -> 218 [label="Device"]
+372 -> 228 [label="User"]
+373 -> 231 [label="Visual Content"]
+374 -> 360
+374 -> 233 [label="New App"]
+374 -> 232 [label="Alfredo Platform"]
+375 -> 234 [label="Friend"]
+376 -> 235 [label="Family"]
+378 -> 376
+378 -> 377
+378 -> 218 [label="Device"]
+379 -> 236 [label="Video Conversation"]
+380 -> 237 [label="Real Interaction"]
+380 -> 238 [label="Human"]
+380 -> 329 [label="Ict Tool"]
+380 -> 218 [label="Device"]
+380 -> 228 [label="User"]
+381 -> 242 [label="Preference"]
+381 -> 241 [label="Solution"]
+382 -> 243 [label="Datum"]
+382 -> 208 [label="Phone"]
+383 -> 244 [label="Morning"]
+383 -> 202 [label="Alfred"]
+384 -> 383
+385 -> 245 [label="Night"]
+386 -> 330 [label="Rythm Support"]
+386 -> 282 [label="Reminder"]
+387 -> 388
+387 -> 392
+388 -> 246 [label="Public Transport"]
+389 -> 247 [label="Navigation"]
+389 -> 202 [label="Alfred"]
+390 -> 250 [label="Touristic Walk"]
+390 -> 248 [label="Explanation"]
+390 -> 249 [label="Historical Sight"]
+390 -> 202 [label="Alfred"]
+391 -> 251 [label="Cultural"]
+391 -> 250 [label="Touristic Walk"]
+391 -> 202 [label="Alfred"]
+391 -> 248 [label="Explanation"]
+392 -> 252 [label="Taxi"]
+392 -> 253 [label="Time"]
+393 -> 395
+393 -> 202 [label="Alfred"]
+393 -> 254 [label="Door"]
+394 -> 254 [label="Door"]
+396 -> 208 [label="Phone"]
+397 -> 396
+397 -> 224 [label="House"]
+398 -> 255 [label="Light"]
+400 -> 256 [label="Heating"]
+401 -> 258 [label="Radio"]
+402 -> 257 [label="Tv"]
+403 -> 259 [label="Movie"]
+404 -> 260 [label="News"]
+405 -> 262 [label="Help"]
+405 -> 261 [label="Emergency"]
+406 -> 347
+406 -> 264 [label="Urgent Help"]
+406 -> 202 [label="Alfred"]
+407 -> 265 [label="Message"]
+408 -> 202 [label="Alfred"]
+408 -> 282 [label="Reminder"]
+409 -> 395
+409 -> 266 [label="Pill"]
+410 -> 267 [label="Grocery Shopping"]
+411 -> 265 [label="Message"]
+412 -> 268 [label="Fall"]
+413 -> 269 [label="Specific Contact"]
+413 -> 261 [label="Emergency"]
+414 -> 270 [label="Healthy Recipe"]
+415 -> 271 [label="Day"]
+415 -> 272 [label="Spontaneous Question"]
+416 -> 276 [label="Question"]
+417 -> 202 [label="Alfred"]
+418 -> 202 [label="Alfred"]
+418 -> 326 [label="Interaction"]
+419 -> 418
+419 -> 277 [label="Specific Button"]
+420 -> 331 [label="Contact List"]
+420 -> 208 [label="Phone"]
+421 -> 278 [label="Agenda"]
+422 -> 280 [label="Meeting"]
+422 -> 279 [label="Speech"]
+422 -> 202 [label="Alfred"]
+423 -> 282 [label="Reminder"]
+423 -> 281 [label="Appointment"]
+424 -> 425
+424 -> 224 [label="House"]
+425 -> 283 [label="Thing"]
+426 -> 424
+426 -> 283 [label="Thing"]
+426 -> 202 [label="Alfred"]
+426 -> 282 [label="Reminder"]
+427 -> 285 [label="People"]
+427 -> 284 [label="Similar Disease"]
+428 -> 286 [label="Circle"]
+428 -> 285 [label="People"]
+429 -> 287 [label="Museum"]
+430 -> 332 [label="Art Exposition"]
+431 -> 289 [label="Social Activity"]
+431 -> 288 [label="Neighborhood"]
+432 -> 291 [label="Personalize Invitation"]
+432 -> 290 [label="Social Event"]
+433 -> 293 [label="Event"]
+434 -> 292 [label="Concert"]
+435 -> 436
+436 -> 202 [label="Alfred"]
+437 -> 444
+437 -> 465
+438 -> 437
+438 -> 294 [label="Cognitive ,\nMild Impairment"]
+438 -> 202 [label="Alfred"]
+439 -> 295 [label="Certain Place"]
+439 -> 234 [label="Friend"]
+439 -> 280 [label="Meeting"]
+440 -> 296 [label="Online Game"]
+440 -> 228 [label="User"]
+441 -> 297 [label="Suggestion"]
+441 -> 333 [label="Sports Class"]
+441 -> 288 [label="Neighborhood"]
+442 -> 443
+443 -> 298 [label="Face"]
+444 -> 299 [label="Body Weight"]
+445 -> 446
+445 -> 301 [label="Button"]
+446 -> 300 [label="Caregiver"]
+448 -> 304 [label="Wearable"]
+448 -> 305 [label="Integrate Sensor"]
+449 -> 307 [label="-pron-"]
+450 -> 306 [label="Vital Parameter"]
+450 -> 208 [label="Phone"]
+451 -> 308 [label="Alfred Shirt"]
+452 -> 310 [label="Limit"]
+452 -> 309 [label="Games Duration"]
+453 -> 311 [label="Game"]
+454 -> 313 [label="Exercise"]
+454 -> 243 [label="Datum"]
+455 -> 202 [label="Alfred"]
+455 -> 314 [label="Guide Exercise"]
+456 -> 315 [label="Favourite Sport"]
+456 -> 311 [label="Game"]
+456 -> 319 [label="Memory Health"]
+457 -> 297 [label="Suggestion"]
+457 -> 333 [label="Sports Class"]
+458 -> 334 [label="Body Posture"]
+459 -> 458
+460 -> 461
+460 -> 317 [label="Specific Tip"]
+461 -> 335 [label="Health Impairment"]
+461 -> 316 [label="Medication"]
+462 -> 318 [label="Physical"]
+462 -> 311 [label="Game"]
+463 -> 320 [label="Training"]
+465 -> 466
+465 -> 321 [label="Week"]
+466 -> 313 [label="Exercise"]
+448 -> 312 [label="Sensor"]
+414 -> 337 [label="Health"]
+463 -> 338 [label="Muscle"]
+}

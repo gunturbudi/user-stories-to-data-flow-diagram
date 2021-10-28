@@ -1,0 +1,201 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Method" as thingmethod
+	entity "Etd" as thingetd
+	entity "Group" as thinggroup
+	entity "Collection" as thingcollection
+	entity "Multiple People" as thingmultiplepeople
+	entity "Date" as thingdate
+	entity "Specific Collection" as thingspecificcollection
+	entity "Depositor" as thingdepositor
+	entity "Permission" as thingpermission
+	entity "Deposit Window" as thingdepositwindow #grey
+	entity "Embargo" as thingembargo
+	entity "Tool" as thingtool
+	entity "Batch" as thingbatch
+	entity "File" as thingfile
+	entity "Metadata Curator" as thingmetadatacurator
+	entity "Embargoed Item" as thingembargoeditem
+	entity "Item" as thingitem
+	entity "Configuration" as thingconfiguration
+	entity "Descriptive Record" as thingdescriptiverecord
+	entity "Fedora" as thingfedora
+	entity "Use External" as thinguseexternal
+	entity "Individual People" as thingindividualpeople
+	entity "Repository" as thingrepository
+	entity "Access Control" as thingaccesscontrol
+	entity "Default" as thingdefault #grey
+	entity "Release" as thingrelease #grey
+	entity "Deposit" as thingdeposit #grey
+	entity "Summary" as thingsummary #grey
+	actor "Digitalrecords Archivist" as actordigitalrecordsarchivist
+	circle "Length" as thinglength
+	circle "Administrator" as thingadministrator #grey
+	circle "Privilege" as thingprivilege #grey
+	circle "Metadata" as thingmetadata #grey
+	boundary "Method" as thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist #grey
+	boundary "Repository" as thingrepositoryliftembargodigitalrecordsarchivist #grey
+	boundary "Etd\nInterface" as thingetdinterface #grey
+	boundary "Depositor\nInterface" as thingdepositorinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Window\nInterface" as thingwindowinterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Curator\nInterface" as thingcuratorinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Embargo\nInterface" as thingembargointerface #grey
+	boundary "Fedora\nInterface" as thingfedorainterface #grey
+	control "Batch" as controlbatch
+	control "Have A\nMethod Etds" as controlhavemethodbatchetd
+	control "Add Multiple\nPeople" as controladdmultiplepeopledepositgroup
+	control "Have" as controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission
+	control "Deposit Groups\nIn Specific\nCollections" as controldepositgroup
+	control "Set A\nDate To\nHave These\nPermissions On\nThese Depositors\nPick Up\nOn The\nCollection's Default\nPermission" as controlsetdatehavepermissiondefaultpermission
+	control "Set A\nDate The\nDeposit Window\nCloses" as controlsetdate
+	control "Remove Multiple\nPeople" as controlremovemultiplepeopledepositgroup
+	control "Recognize Embargoes" as controlrecognizeembargo
+	control "View Collection" as controlvieweveryonecollection
+	control "View Repository\nAdministrator" as controlvieweveryonerepositoryadministrator
+	control "Download The\nFiles" as controldownloadfile
+	control "Have The\nBatch Tool" as controlhavebatchtoolrecognizeembargo
+	control "View Metadata\nCurator" as controlvieweveryonemetadatacuratordownloadfile
+	control "Set Embargoes" as controlsetembargo
+	control "Lift Embargoes\nOn The\nRelease Date" as controlliftembargo
+	control "Set The\nAccess Controls\nTo The\nConfiguration On\nItem On\nThat Date" as controlsetaccesscontrolsconfiguration
+	control "Edit The\nLength Of\nEmbargoes" as controleditlength
+	control "Expose The\nDescriptive Record\nFor Each\nEtd Item\nFor Use\nExternal To\nFedora" as controlexposedescriptiverecordfedora
+	control "Grant Embargo\nPrivileges To\nOther Repository\nAdministrators" as controlgrantembargoprivilegesotherrepositoryadministrators
+	control "Add Individual\nPeople From\nDeposit Groups" as controladdindividualpeopledepositgroups
+	control "Remove Individual\nPeople From\nDeposit Groups" as controlremoveindividualpeopledepositgroups
+	control "View Summary\nEmbargo Metadata\nFor All\nEtds In\nThe Repository" as controlviewsummaryembargometadataetd
+	control "Download Summary\nEmbargo Metadata\nFor All\nEtds In\nThe Repository" as controldownloadsummaryembargometadataetd
+
+	thingetd <.. thingmethod
+	thingrepository <.. thingetd
+	thinguseexternal <.. thingetd
+	thingspecificcollection <.. thinggroup
+	thingdeposit <.. thinggroup
+	thingdepositwindow <.. thingdate
+	thingpermission <.. thingdate
+	thingrelease <.. thingdate
+	thingdepositor <.. thingpermission
+	thingembargoeditem <.. thingpermission
+	thingdefault <.. thingpermission
+	thingcollection <.. thingpermission
+	thingdate <.. thingembargo
+	thingsummary <.. thingembargo
+	thingtool <.. thingbatch
+	thingdate <.. thingitem
+	thingetd <.. thingitem
+	thingitem <.. thingconfiguration
+	thingdate <.. thingconfiguration
+	thingetd <.. thingdescriptiverecord
+	thingitem <.. thingdescriptiverecord
+	thingfedora <.. thinguseexternal
+	thingconfiguration <.. thingaccesscontrol
+	thingembargo *-- thinglength
+	thingrepository *-- thingadministrator
+	thingadministrator *-- thingprivilege
+	thingembargo *-- thingprivilege
+	thingetd *-- thingmetadata
+	thingembargo *-- thingmetadata
+	actordigitalrecordsarchivist --- thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist
+	actordigitalrecordsarchivist --- thingrepositoryliftembargodigitalrecordsarchivist
+	actordigitalrecordsarchivist --- thingetdinterface
+	actordigitalrecordsarchivist --- thingdepositorinterface
+	actordigitalrecordsarchivist --- thingcollectioninterface
+	actordigitalrecordsarchivist --- thingwindowinterface
+	actordigitalrecordsarchivist --- thingtoolinterface
+	actordigitalrecordsarchivist --- thingrepositoryinterface
+	actordigitalrecordsarchivist --- thingcuratorinterface
+	actordigitalrecordsarchivist --- thingdateinterface
+	actordigitalrecordsarchivist --- thingembargointerface
+	actordigitalrecordsarchivist --- thingfedorainterface
+	controlhavemethodbatchetd --> controlbatch
+	thingetdinterface --> controlbatch
+	thingmethod --- controlhavemethodbatchetd
+	thingetd --- controlhavemethodbatchetd
+	thingetdinterface --> controlhavemethodbatchetd
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controladdmultiplepeopledepositgroup
+	thingmultiplepeople --- controladdmultiplepeopledepositgroup
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controladdmultiplepeopledepositgroup
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission
+	thingdate --- controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission
+	thingrepositoryliftembargodigitalrecordsarchivist --> controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission
+	controladdmultiplepeopledepositgroup --> controldepositgroup
+	thinggroup --- controldepositgroup
+	thingspecificcollection --- controldepositgroup
+	thingcollectioninterface --> controldepositgroup
+	controlremovemultiplepeopledepositgroup --> controldepositgroup
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlsetdatehavepermissiondefaultpermission
+	thingpermission --- controlsetdatehavepermissiondefaultpermission
+	thingdepositor --- controlsetdatehavepermissiondefaultpermission
+	thingdepositorinterface --> controlsetdatehavepermissiondefaultpermission
+	thingdate --- controlsetdatehavepermissiondefaultpermission
+	thingdate --- controlsetdate
+	thingdepositwindow --- controlsetdate
+	thingwindowinterface --> controlsetdate
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlsetdate
+	thingmultiplepeople --- controlremovemultiplepeopledepositgroup
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controlremovemultiplepeopledepositgroup
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlremovemultiplepeopledepositgroup
+	thingembargo --- controlrecognizeembargo
+	controlhavebatchtoolrecognizeembargo --> controlrecognizeembargo
+	thingtoolinterface --> controlrecognizeembargo
+	thingcollection --- controlvieweveryonecollection
+	thingcollectioninterface --> controlvieweveryonecollection
+	thingadministrator --- controlvieweveryonerepositoryadministrator
+	thingrepositoryinterface --> controlvieweveryonerepositoryadministrator
+	thingfile --- controldownloadfile
+	controlvieweveryonemetadatacuratordownloadfile --> controldownloadfile
+	thingcuratorinterface --> controldownloadfile
+	thingbatch --- controlhavebatchtoolrecognizeembargo
+	thingtool --- controlhavebatchtoolrecognizeembargo
+	thingtoolinterface --> controlhavebatchtoolrecognizeembargo
+	thingmetadatacurator --- controlvieweveryonemetadatacuratordownloadfile
+	thingcuratorinterface --> controlvieweveryonemetadatacuratordownloadfile
+	thingembargo --- controlsetembargo
+	thingtoolinterface --> controlsetembargo
+	controlhavebatchtoolrecognizeembargo --> controlsetembargo
+	thingrepositoryliftembargodigitalrecordsarchivist --> controlliftembargo
+	thingembargo --- controlliftembargo
+	thingdate --- controlliftembargo
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlliftembargo
+	thingaccesscontrol --- controlsetaccesscontrolsconfiguration
+	thingconfiguration --- controlsetaccesscontrolsconfiguration
+	thingitem --- controlsetaccesscontrolsconfiguration
+	thingdateinterface --> controlsetaccesscontrolsconfiguration
+	thingdate --- controlsetaccesscontrolsconfiguration
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlsetaccesscontrolsconfiguration
+	thinglength --- controleditlength
+	thingembargointerface --> controleditlength
+	thingembargo --- controleditlength
+	thingdescriptiverecord --- controlexposedescriptiverecordfedora
+	thinguseexternal --- controlexposedescriptiverecordfedora
+	thingfedora --- controlexposedescriptiverecordfedora
+	thingfedorainterface --> controlexposedescriptiverecordfedora
+	thingetd --- controlexposedescriptiverecordfedora
+	thingprivilege --- controlgrantembargoprivilegesotherrepositoryadministrators
+	thingadministrator --- controlgrantembargoprivilegesotherrepositoryadministrators
+	thingrepositoryinterface --> controlgrantembargoprivilegesotherrepositoryadministrators
+	thingindividualpeople --- controladdindividualpeopledepositgroups
+	thinggroup --- controladdindividualpeopledepositgroups
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controladdindividualpeopledepositgroups
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controladdindividualpeopledepositgroups
+	thingindividualpeople --- controlremoveindividualpeopledepositgroups
+	thinggroup --- controlremoveindividualpeopledepositgroups
+	thingmethodaddmultiplepeopledepositgroupdigitalrecordsarchivist --> controlremoveindividualpeopledepositgroups
+	controlhavemethodaddmultiplepeopledepositgroupdigitalrecordsarchivistsetdatesetdatehavepermissiondefaultpermission --> controlremoveindividualpeopledepositgroups
+	thingmetadata --- controlviewsummaryembargometadataetd
+	thingrepository --- controlviewsummaryembargometadataetd
+	thingetd --- controlviewsummaryembargometadataetd
+	thingrepositoryinterface --> controlviewsummaryembargometadataetd
+	thingetd --- controldownloadsummaryembargometadataetd
+	thingrepository --- controldownloadsummaryembargometadataetd
+	thingmetadata --- controldownloadsummaryembargometadataetd
+	thingrepositoryinterface --> controldownloadsummaryembargometadataetd
+
+@enduml

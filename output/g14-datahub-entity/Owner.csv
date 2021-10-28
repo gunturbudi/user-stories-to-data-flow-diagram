@@ -1,0 +1,47 @@
+id,value,style,source,target,type
+200,Profile,shape=partialRectangle,null,null,data_base
+201,Exist User,shape=partialRectangle,null,null,data_base
+202,Publisher,shape=partialRectangle,null,null,data_base
+203,Email,shape=partialRectangle,null,null,data_base
+204,Membership,shape=partialRectangle,null,null,data_base
+205,Role,shape=partialRectangle,null,null,data_base
+206,People,shape=partialRectangle,null,null,data_base
+207,Organization,shape=partialRectangle,null,null,data_base
+208,User,shape=partialRectangle,null,null,data_base
+209,Owner,shape=partialRectangle,null,null,data_base
+210,Owner,rounded=0,null,null,external_entity
+211,Edit Profile,ellipse,null,null,process
+212,Invite An Existing User,ellipse,null,null,process
+213,Using Email,ellipse,null,null,process
+214,Invite Someone,ellipse,null,null,process
+215,Sign Up A Member Of Publisher,ellipse,null,null,process
+216,Become A Member Of Publisher,ellipse,null,null,process
+217,Remove Someone From Membership In Publisher,ellipse,null,null,process
+218,View The People In Organization,ellipse,null,null,process
+219,Make A User,ellipse,null,null,process
+220,Remove A User As An Owner,ellipse,null,null,process
+222,,endArrow=classic,210,211,endArrow=classic
+223,,endArrow=classic,210,212,endArrow=classic
+224,,endArrow=classic,210,213,endArrow=classic
+225,,endArrow=classic,210,214,endArrow=classic
+226,,endArrow=classic,210,215,endArrow=classic
+227,,endArrow=classic,210,216,endArrow=classic
+228,,endArrow=classic,210,217,endArrow=classic
+229,,endArrow=classic,210,218,endArrow=classic
+230,,endArrow=classic,210,219,endArrow=classic
+231,,endArrow=classic,210,220,endArrow=classic
+232,Profile,endArrow=classic,211,200,endArrow=classic
+233,Exist User,endArrow=classic,212,201,endArrow=classic
+234,,endArrow=classic,213,215,endArrow=classic
+235,,endArrow=classic,213,216,endArrow=classic
+236,Email,endArrow=classic,213,203,endArrow=classic
+237,,endArrow=classic,214,213,endArrow=classic
+238,Publisher,endArrow=classic,215,202,endArrow=classic
+239,Publisher,endArrow=classic,216,202,endArrow=classic
+240,Membership,endArrow=classic,217,204,endArrow=classic
+241,Publisher,endArrow=classic,217,202,endArrow=classic
+242,People,endArrow=classic,218,206,endArrow=classic
+243,Organization,endArrow=classic,218,207,endArrow=classic
+244,User,endArrow=classic,219,208,endArrow=classic
+245,Owner,endArrow=classic,220,209,endArrow=classic
+246,User,endArrow=classic,220,208,endArrow=classic

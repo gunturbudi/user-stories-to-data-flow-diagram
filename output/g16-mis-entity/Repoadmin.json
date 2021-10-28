@@ -1,0 +1,127 @@
+[
+  {
+    "text": "As a repoadmin, I want to have Symplectic Elements bidirectionally communicate and integrate with DDR, which  provide a Fedora Connector and Emory is using a hidden Fedora instance that Hydra collects objects for.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to have users to be presented with a license or a selection of licenses, specific to the collection, and deposit to be denied if the submitter does not accept the license.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "presented",
+        "label": "Processing"
+      },
+      {
+        "text": "deposit",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to have the license be recorded in metadata and displayed alongside the item.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "recorded",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to expose repository contents via OAI-PMH.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "expose",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to continue to provide access to the repository in the event that the server fails.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "provide access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to provide the server SLA to data contributors.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "data contributors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to update the repository index without disrupting access to the public interface.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to provide a Linked Data interface to the repository.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repoadmin, I want to have Symplectic Elements to communicate",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      }
+    ]
+  }
+]

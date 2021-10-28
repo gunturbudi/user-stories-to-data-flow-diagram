@@ -1,0 +1,80 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Trainer" as thingtrainer
+	entity "Website" as thingwebsite
+	entity "Info" as thinginfo
+	entity "Update" as thingupdate
+	entity "Attendee" as thingattendee
+	entity "Deadline" as thingdeadline #grey
+	entity "Cancellation Workflow" as thingcancellationworkflow #grey
+	entity "Registration" as thingregistration
+	entity "Trainee Information" as thingtraineeinformation #grey
+	entity "View" as thingview #grey
+	entity "Training Session" as thingtrainingsession
+	entity "Admin" as thingadmin #grey
+	entity "Cancellation" as thingcancellation #grey
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	circle "Status" as thingstatus #grey
+	boundary "Info\nInterface" as thinginfointerface #grey
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Registration\nInterface" as thingregistrationinterface #grey
+	boundary "Workflow\nInterface" as thingworkflowinterface #grey
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nInfo" as controlemailtrainerwebsite
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nUpdate" as controlemailtrainerwebsiteupdate
+	control "Track Registration\nStatus For\nEach Attendee" as controltrackregistrationstatusattendee
+	control "Have An\nAdmin View\nHelps" as controlhaveadminview
+	control "Tie In\nA Cancellation\nDeadline Whatever\nRegistration Exists" as controltiecancellationdeadline
+	control "Tie In\nA Deadline\nWhatever Cancellation\nWorkflow Exists" as controltiedeadlinecancellationworkflow
+	control "Show A\nSingle Training\nSession" as controlshowsingletrainingsession
+	control "Have An\nView" as controlhaveviewfiltershowsingletrainingsession
+	control "Filter" as controlfiltershowsingletrainingsession
+
+	thingwebsite <.. thingtrainer
+	thinginfo <.. thingwebsite
+	thingupdate <.. thingwebsite
+	thingcancellationworkflow <.. thingdeadline
+	thingcancellation <.. thingdeadline
+	thingregistration <.. thingdeadline
+	thingadmin <.. thingview
+	thingtraineeinformation <.. thingview
+	thingattendee *-- thingstatus
+	thingregistration *-- thingstatus
+	actortrainingcoordinator --- thinginfointerface
+	actortrainingcoordinator --- thingupdateinterface
+	actortrainingcoordinator --- thingviewinterface
+	actortrainingcoordinator --- thingregistrationinterface
+	actortrainingcoordinator --- thingworkflowinterface
+	thingtrainer --- controlemailtrainerwebsite
+	thingwebsite --- controlemailtrainerwebsite
+	thinginfo --- controlemailtrainerwebsite
+	thinginfointerface --> controlemailtrainerwebsite
+	thingupdate --- controlemailtrainerwebsiteupdate
+	thingupdateinterface --> controlemailtrainerwebsiteupdate
+	thingtrainer --- controlemailtrainerwebsiteupdate
+	thingwebsite --- controlemailtrainerwebsiteupdate
+	thingstatus --- controltrackregistrationstatusattendee
+	thingattendee --- controltrackregistrationstatusattendee
+	controlhaveadminview --> controltrackregistrationstatusattendee
+	thingviewinterface --> controltrackregistrationstatusattendee
+	thingtraineeinformation --- controlhaveadminview
+	thingview --- controlhaveadminview
+	thingviewinterface --> controlhaveadminview
+	thingregistration --- controltiecancellationdeadline
+	thingregistrationinterface --> controltiecancellationdeadline
+	thingdeadline --- controltiecancellationdeadline
+	thingdeadline --- controltiedeadlinecancellationworkflow
+	thingcancellationworkflow --- controltiedeadlinecancellationworkflow
+	thingworkflowinterface --> controltiedeadlinecancellationworkflow
+	thingtrainingsession --- controlshowsingletrainingsession
+	controlfiltershowsingletrainingsession --> controlshowsingletrainingsession
+	thingviewinterface --> controlshowsingletrainingsession
+	thingview --- controlhaveviewfiltershowsingletrainingsession
+	thingviewinterface --> controlhaveviewfiltershowsingletrainingsession
+	controlhaveviewfiltershowsingletrainingsession --> controlfiltershowsingletrainingsession
+	thingviewinterface --> controlfiltershowsingletrainingsession
+
+@enduml

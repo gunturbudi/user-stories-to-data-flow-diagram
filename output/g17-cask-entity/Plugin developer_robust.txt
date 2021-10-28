@@ -1,0 +1,71 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Code" as thingcode
+	entity "Dataset Type" as thingdatasettype
+	entity "Plugin" as thingplugin
+	entity "Type" as thingtype #grey
+	entity "App" as thingapp
+	entity "Version" as thingversion
+	entity "Pipeline" as thingpipeline
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Custom Dataset" as thingcustomdataset #grey
+	entity "Dataset" as thingdataset #grey
+	actor "Plugin Developer" as actorplugindeveloper
+	circle "New Version" as thingnewversion
+	circle "Artifact" as thingartifact #grey
+	boundary "Plugin\nInterface" as thingplugininterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Include The\nCode For\nA Dataset\nType In\nThe Plugin\nArtifact" as controlincludecode
+	control "Use A\nType As\nPart Of\nAn App\nInside The\nPlugin" as controlusetypeas
+	control "Use A\nCustom Dataset\nType Independently\nDeployed" as controlusecustomdatasettype
+	control "Upgrade The\nCode Of\nA Dataset\nType" as controlupgradecode
+	control "A Dataset\nInstance That\nPlugin Deploy\nA New\nVersion Of\nThe Plugin" as controldeploydatasetinstancenewversion
+	control "Use That\nVersion" as controluseversion
+	control "Update The\nPipeline" as controlupdatepipelineuseversion
+	control "Upgrade The\nCode Of\nA Type" as controlupgradecodeupdatepipelineuseversion
+
+	thingdatasettype <.. thingcode
+	thingtype <.. thingcode
+	thingartifact <.. thingdatasettype
+	thingplugin <.. thingdatasettype
+	thingapp <.. thingtype
+	thingcustomdataset <.. thingtype
+	thingdataset <.. thingtype
+	thingplugin <.. thingapp
+	thingnewversion <.. thingdatasetinstance
+	thingplugin <.. thingdatasetinstance
+	thingplugin *-- thingnewversion
+	thingplugin *-- thingartifact
+	actorplugindeveloper --- thingplugininterface
+	actorplugindeveloper --- thingtypeinterface
+	thingcode --- controlincludecode
+	thingdatasettype --- controlincludecode
+	thingartifact --- controlincludecode
+	thingplugininterface --> controlincludecode
+	thingtype --- controlusetypeas
+	thingapp --- controlusetypeas
+	thingplugin --- controlusetypeas
+	thingplugininterface --> controlusetypeas
+	thingtypeinterface --> controlusecustomdatasettype
+	thingtype --- controlusecustomdatasettype
+	thingcode --- controlupgradecode
+	thingtype --- controlupgradecode
+	thingtypeinterface --> controlupgradecode
+	thingdatasetinstance --- controldeploydatasetinstancenewversion
+	thingnewversion --- controldeploydatasetinstancenewversion
+	thingplugin --- controldeploydatasetinstancenewversion
+	thingplugininterface --> controldeploydatasetinstancenewversion
+	thingversion --- controluseversion
+	controlupdatepipelineuseversion --> controluseversion
+	thingtypeinterface --> controluseversion
+	thingpipeline --- controlupdatepipelineuseversion
+	controlupgradecodeupdatepipelineuseversion --> controlupdatepipelineuseversion
+	thingtypeinterface --> controlupdatepipelineuseversion
+	thingtype --- controlupgradecodeupdatepipelineuseversion
+	thingtypeinterface --> controlupgradecodeupdatepipelineuseversion
+	thingcode --- controlupgradecodeupdatepipelineuseversion
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Change my mind based on information i hear.,ellipse,null,null,process
+200,Estimate,shape=partialRectangle,null,null,data_base
+201,Participant,rounded=0,null,null,external_entity
+202,Change Estimate Up,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Estimate,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Mind,rounded=0,null,null,external_entity
+1002,Mind,endArrow=classic,2,1001,endArrow=classic

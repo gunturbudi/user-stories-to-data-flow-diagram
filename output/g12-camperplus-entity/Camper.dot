@@ -1,0 +1,115 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Camper " color=red];
+201 [label="<f0>  |<f1> Camp " color=red];
+202 [label="<f0>  |<f1> Activity " color=red];
+203 [label="<f0>  |<f1> Nametag " color=red];
+204 [label="<f0>  |<f1> Rule " color=red];
+205 [label="<f0>  |<f1> Campers Worker " ];
+206 [label="<f0>  |<f1> Group " color=red];
+207 [label="<f0>  |<f1> Database " ];
+208 [label="<f0>  |<f1> Behavioral Problem " color=red];
+209 [label="<f0>  |<f1> Information " color=red];
+210 [label="<f0>  |<f1> Immediate Parent " color=red];
+211 [label="<f0>  |<f1> Guardian " color=red];
+212 [label="<f0>  |<f1> Parent " color=red];
+213 [label="<f0>  |<f1> Weekly Feedback " color=red];
+214 [label="<f0>  |<f1> Inappropriate Behavior " ];
+215 [label="<f0>  |<f1> Manager " ];
+216 [label="<f0>  |<f1> Consent Form " color=red];
+217 [label="<f0>  |<f1> Emergency " color=red];
+218 [label="Camp Administrator" shape=box];
+219 [label="Camp Worker" shape=box];
+220 [label="{<f0> 1.0|<f1> Add Campers }" shape=Mrecord];
+221 [label="{<f0> 2.0|<f1> Remove Campers }" shape=Mrecord];
+222 [label="{<f0> 3.0|<f1> Attend The Camp }" shape=Mrecord];
+223 [label="{<f0> 4.0|<f1> Upload Consent Forms }" shape=Mrecord];
+224 [label="{<f0> 5.0|<f1> Schedule Activities For Campers }" shape=Mrecord];
+225 [label="{<f0> 6.0|<f1> Create Nametags For Campers }" shape=Mrecord];
+226 [label="{<f0> 7.0|<f1> Follow }" shape=Mrecord];
+227 [label="{<f0> 8.0|<f1> Create Rules Camp Has }" shape=Mrecord];
+228 [label="{<f0> 9.0|<f1> Create Rules Campers Workers Has }" shape=Mrecord];
+229 [label="{<f0> 10.0|<f1> Modify Rules Campers Workers Has }" shape=Mrecord];
+230 [label="{<f0> 11.0|<f1> Modify Rules Camp Has }" shape=Mrecord];
+231 [label="{<f0> 12.0|<f1> Create Groups }" shape=Mrecord];
+232 [label="{<f0> 13.0|<f1> Add Campers To The Groups }" shape=Mrecord];
+233 [label="{<f0> 14.0|<f1> Delete Campers From The Database }" shape=Mrecord];
+234 [label="{<f0> 15.0|<f1> See }" shape=Mrecord];
+235 [label="{<f0> 16.0|<f1> Suspend A Camper Had Behavioral Problems }" shape=Mrecord];
+236 [label="{<f0> 17.0|<f1> Store Guardian's Information }" shape=Mrecord];
+237 [label="{<f0> 18.0|<f1> Store Camper's Immediate Parent Information }" shape=Mrecord];
+238 [label="{<f0> 19.0|<f1> Provide Weekly Feedback To Camper's Parents }" shape=Mrecord];
+239 [label="{<f0> 20.0|<f1> Report A Camper To The Manager With An Inappropriate Behavior }" shape=Mrecord];
+240 [label="{<f0> 21.0|<f1> Store Campers' Emergency Information In A Database }" shape=Mrecord];
+22 [label="{<f0> 22.0|<f1> Keep track of each individual camper }" shape=Mrecord];
+220 -> 22
+1001 [label="Camp administrator" shape=box];
+1001 -> 22
+1003 [label="<f0>  |<f1> Individual camper " color=red];
+22 -> 1003 [label="Individual camper"]
+23 [label="{<f0> 23.0|<f1> Keep track of who is where at all times }" shape=Mrecord];
+1005 [label="Camp workers" shape=box];
+1005 -> 23
+1007 [label="Camp workers" shape=box];
+1007 -> 23
+1009 [label="<f0>  |<f1> Who is where " color=red];
+23 -> 1009 [label="Who is where"]
+218 -> 220
+218 -> 221
+218 -> 222
+218 -> 223
+218 -> 224
+218 -> 225
+218 -> 226
+218 -> 227
+218 -> 228
+218 -> 229
+218 -> 230
+218 -> 231
+218 -> 232
+218 -> 233
+218 -> 235
+218 -> 236
+218 -> 237
+218 -> 238
+218 -> 240
+219 -> 239
+220 -> 200 [label="Camper"]
+221 -> 222
+221 -> 200 [label="Camper"]
+222 -> 201 [label="Camp"]
+223 -> 216 [label="Consent Form"]
+224 -> 202 [label="Activity"]
+224 -> 200 [label="Camper"]
+225 -> 203 [label="Nametag"]
+225 -> 200 [label="Camper"]
+227 -> 201 [label="Camp"]
+227 -> 204 [label="Rule"]
+228 -> 226
+228 -> 204 [label="Rule"]
+228 -> 205 [label="Campers Worker"]
+229 -> 226
+229 -> 204 [label="Rule"]
+229 -> 205 [label="Campers Worker"]
+230 -> 201 [label="Camp"]
+230 -> 204 [label="Rule"]
+231 -> 206 [label="Group"]
+232 -> 200 [label="Camper"]
+232 -> 206 [label="Group"]
+233 -> 207 [label="Database"]
+233 -> 200 [label="Camper"]
+235 -> 208 [label="Behavioral Problem"]
+235 -> 200 [label="Camper"]
+236 -> 211 [label="Guardian"]
+236 -> 209 [label="Information"]
+237 -> 209 [label="Information"]
+238 -> 213 [label="Weekly Feedback"]
+238 -> 212 [label="Parent"]
+239 -> 215 [label="Manager"]
+239 -> 214 [label="Inappropriate Behavior"]
+239 -> 200 [label="Camper"]
+240 -> 207 [label="Database"]
+240 -> 209 [label="Information"]
+237 -> 210 [label="Immediate Parent"]
+240 -> 217 [label="Emergency"]
+}

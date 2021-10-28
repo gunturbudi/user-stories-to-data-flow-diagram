@@ -1,0 +1,80 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Information " color=red];
+201 [label="<f0>  |<f1> Complaint " color=red];
+202 [label="<f0>  |<f1> Feedback " color=red];
+203 [label="<f0>  |<f1> User " color=red];
+204 [label="<f0>  |<f1> Specific User " ];
+205 [label="<f0>  |<f1> Ip Address " color=red];
+206 [label="<f0>  |<f1> Dashboard " ];
+207 [label="<f0>  |<f1> Status " ];
+208 [label="<f0>  |<f1> Site " color=red];
+209 [label="<f0>  |<f1> Datum " ];
+210 [label="<f0>  |<f1> Activity " color=red];
+211 [label="<f0>  |<f1> Platform " ];
+212 [label="<f0>  |<f1> Location " color=red];
+213 [label="<f0>  |<f1> Facility " ];
+214 [label="<f0>  |<f1> Recycling Center " ];
+215 [label="<f0>  |<f1> Usage Stat " color=red];
+216 [label="<f0>  |<f1> Recycling " ];
+217 [label="Admin" shape=box];
+218 [label="{<f0> 1.0|<f1> Add Recycling Facilities' Information }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> Remove Recycling Facilities' Information }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Read Users' Feedback }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Read Complaint }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Block Specific Users On Ip Address }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> View A Dashboard Monitors The Sites' Statuses }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Have }" shape=Mrecord];
+225 [label="{<f0> 8.0|<f1> Handle All Users' Activities }" shape=Mrecord];
+226 [label="{<f0> 9.0|<f1> Add Recycling Center Information }" shape=Mrecord];
+227 [label="{<f0> 10.0|<f1> View User Error Logs }" shape=Mrecord];
+228 [label="{<f0> 11.0|<f1> Onboard Recycling Centers On The Platform }" shape=Mrecord];
+229 [label="{<f0> 12.0|<f1> Have A Dashboard Shows Location }" shape=Mrecord];
+230 [label="{<f0> 13.0|<f1> Have A Dashboard Shows Usage Stats }" shape=Mrecord];
+231 [label="{<f0> 14.0|<f1> Communicate With Facilities }" shape=Mrecord];
+15 [label="{<f0> 15.0|<f1> Review any issues that are being faced by users of the system. }" shape=Mrecord];
+227 -> 15
+1001 [label="<f0>  |<f1> Issues " color=red];
+15 -> 1001 [label="Issues"]
+16 [label="{<f0> 16.0|<f1> Try getting more facilities involved. }" shape=Mrecord];
+217 -> 16
+1004 [label="<f0>  |<f1> Neighbourhoods " color=red];
+16 -> 1004 [label="Neighbourhoods"]
+17 [label="{<f0> 17.0|<f1> Keep them updated about features we have on our website. }" shape=Mrecord];
+217 -> 17
+1007 [label="<f0>  |<f1> Features " color=red];
+17 -> 1007 [label="Features"]
+217 -> 218
+217 -> 219
+217 -> 220
+217 -> 221
+217 -> 222
+217 -> 223
+217 -> 225
+217 -> 226
+217 -> 227
+217 -> 228
+217 -> 229
+217 -> 230
+217 -> 231
+218 -> 200 [label="Information"]
+219 -> 200 [label="Information"]
+220 -> 202 [label="Feedback"]
+221 -> 201 [label="Complaint"]
+222 -> 204 [label="Specific User"]
+222 -> 205 [label="Ip Address"]
+223 -> 206 [label="Dashboard"]
+223 -> 207 [label="Status"]
+225 -> 210 [label="Activity"]
+226 -> 200 [label="Information"]
+228 -> 214 [label="Recycling Center"]
+228 -> 211 [label="Platform"]
+229 -> 212 [label="Location"]
+229 -> 206 [label="Dashboard"]
+230 -> 215 [label="Usage Stat"]
+230 -> 206 [label="Dashboard"]
+231 -> 213 [label="Facility"]
+220 -> 203 [label="User"]
+223 -> 208 [label="Site"]
+218 -> 216 [label="Recycling"]
+}

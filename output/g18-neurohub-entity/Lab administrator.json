@@ -1,0 +1,62 @@
+[
+  {
+    "text": "As a lab administrator, I want to theme the Web interface graphics/colours.",
+    "entities": [
+      {
+        "text": "lab administrator",
+        "label": "Data"
+      },
+      {
+        "text": "theme",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As lab administrator, I want to have increased access to the system to support regular users.",
+    "entities": [
+      {
+        "text": "lab administrator",
+        "label": "Data"
+      },
+      {
+        "text": "increased access",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a lab administrator, I want to create page templates with bespoke metadata fields.",
+    "entities": [
+      {
+        "text": "lab administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a lab administrator, I want a way of managing worm strain stocks that is integrated with Wormbase.",
+    "entities": [
+      {
+        "text": "lab administrator",
+        "label": "Data"
+      },
+      {
+        "text": "managing",
+        "label": "Processing"
+      },
+      {
+        "text": "worm strain stocks",
+        "label": "PII"
+      }
+    ]
+  }
+]

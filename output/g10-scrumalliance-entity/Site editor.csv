@@ -1,0 +1,94 @@
+id,value,style,source,target,type
+200,Follow Date,shape=partialRectangle,null,null,data_base
+201,Date,shape=partialRectangle,null,null,data_base
+202,Faq Section,shape=partialRectangle,null,null,data_base
+203,Teaser,shape=partialRectangle,null,null,data_base
+204,Article,shape=partialRectangle,null,null,data_base
+205,Site,shape=partialRectangle,null,null,data_base
+206,Home Page,shape=partialRectangle,null,null,data_base
+207,Good Control,shape=partialRectangle,null,null,data_base
+208,Member,shape=partialRectangle,null,null,data_base
+209,News,shape=partialRectangle,null,null,data_base
+210,Prominent Area,shape=partialRectangle,null,null,data_base
+211,Content,shape=partialRectangle,null,null,data_base
+212,", Trainers\nSection",shape=partialRectangle,null,null,data_base
+213,Information,shape=partialRectangle,null,null,data_base
+214,Course,shape=partialRectangle,null,null,data_base
+215,Event,shape=partialRectangle,null,null,data_base
+216,Thing,shape=partialRectangle,null,null,data_base
+217,Flexibility,shape=partialRectangle,null,null,data_base
+218,Email,shape=partialRectangle,null,null,data_base
+219,Product Owner,shape=partialRectangle,null,null,data_base
+220,Priority Number,shape=partialRectangle,null,null,data_base
+221,Scrum Master,shape=partialRectangle,null,null,data_base
+222,Publishing,shape=partialRectangle,null,null,data_base
+223,Site Editor,rounded=0,null,null,external_entity
+224,Set The Following Dates On A News Item,ellipse,null,null,process
+225,Publishing Date,ellipse,null,null,process
+226,Maintain A Faq Section,ellipse,null,null,process
+227,Include A Teaser With Each Article,ellipse,null,null,process
+228,Add An Article To The Site,ellipse,null,null,process
+229,Designate,ellipse,null,null,process
+230,Have Pretty Good Control Over How The Article,ellipse,null,null,process
+231,For Indicate An Article Members,ellipse,null,null,process
+232,Have A Prominent Area On The Home Page,ellipse,null,null,process
+233,Create The Content Of The,ellipse,null,null,process
+234,"Post Information In A Only, Trainers Section",ellipse,null,null,process
+235,Assign Priority Numbers To News Items,ellipse,null,null,process
+236,Update Any Course,ellipse,null,null,process
+237,Update Event,ellipse,null,null,process
+238,Set Start Publishing Dates,ellipse,null,null,process
+239,Stop,ellipse,null,null,process
+240,Have Some Flexibility Things Where Appear,ellipse,null,null,process
+241,"Edit The Content Of The Automatically Email To Certified, New Scrum Masters",ellipse,null,null,process
+242,Edit The Content Of The Automatically Email To Product Owner,ellipse,null,null,process
+244,,endArrow=classic,223,224,endArrow=classic
+245,,endArrow=classic,223,225,endArrow=classic
+246,,endArrow=classic,223,226,endArrow=classic
+247,,endArrow=classic,223,227,endArrow=classic
+248,,endArrow=classic,223,228,endArrow=classic
+249,,endArrow=classic,223,230,endArrow=classic
+250,,endArrow=classic,223,231,endArrow=classic
+251,,endArrow=classic,223,232,endArrow=classic
+252,,endArrow=classic,223,233,endArrow=classic
+253,,endArrow=classic,223,234,endArrow=classic
+254,,endArrow=classic,223,235,endArrow=classic
+255,,endArrow=classic,223,236,endArrow=classic
+256,,endArrow=classic,223,237,endArrow=classic
+257,,endArrow=classic,223,238,endArrow=classic
+258,,endArrow=classic,223,239,endArrow=classic
+259,,endArrow=classic,223,240,endArrow=classic
+260,,endArrow=classic,223,241,endArrow=classic
+261,,endArrow=classic,223,242,endArrow=classic
+262,Follow Date,endArrow=classic,224,200,endArrow=classic
+263,Date,endArrow=classic,225,201,endArrow=classic
+264,Article,endArrow=classic,225,204,endArrow=classic
+265,Faq Section,endArrow=classic,226,202,endArrow=classic
+266,Teaser,endArrow=classic,227,203,endArrow=classic
+267,Article,endArrow=classic,227,204,endArrow=classic
+268,Site,endArrow=classic,228,205,endArrow=classic
+269,Article,endArrow=classic,228,204,endArrow=classic
+270,Good Control,endArrow=classic,230,207,endArrow=classic
+271,Article,endArrow=classic,230,204,endArrow=classic
+272,Member,endArrow=classic,231,208,endArrow=classic
+273,Article,endArrow=classic,231,204,endArrow=classic
+274,Prominent Area,endArrow=classic,232,210,endArrow=classic
+275,Home Page,endArrow=classic,232,206,endArrow=classic
+276,Content,endArrow=classic,233,211,endArrow=classic
+277,Information,endArrow=classic,234,213,endArrow=classic
+278,", Trainers\nSection",endArrow=classic,234,212,endArrow=classic
+279,Priority Number,endArrow=classic,235,220,endArrow=classic
+280,Course,endArrow=classic,236,214,endArrow=classic
+281,Event,endArrow=classic,237,215,endArrow=classic
+282,Date,endArrow=classic,238,201,endArrow=classic
+283,,endArrow=classic,239,225,endArrow=classic
+284,Flexibility,endArrow=classic,240,217,endArrow=classic
+285,Thing,endArrow=classic,240,216,endArrow=classic
+286,Email,endArrow=classic,241,218,endArrow=classic
+287,Scrum Master,endArrow=classic,241,221,endArrow=classic
+288,Content,endArrow=classic,241,211,endArrow=classic
+289,Product Owner,endArrow=classic,242,219,endArrow=classic
+290,Content,endArrow=classic,242,211,endArrow=classic
+291,Email,endArrow=classic,242,218,endArrow=classic
+292,News,endArrow=classic,224,209,endArrow=classic
+294,Publishing,endArrow=classic,225,222,endArrow=classic

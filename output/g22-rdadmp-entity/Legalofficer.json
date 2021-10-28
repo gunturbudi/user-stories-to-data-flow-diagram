@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a legalofficer, I want to know about data sensitivity, so that I can establish sharing options.",
+    "entities": [
+      {
+        "text": "legalofficer,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data sensitivity",
+        "label": "PII"
+      }
+    ]
+  }
+]

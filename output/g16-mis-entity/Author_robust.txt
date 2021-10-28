@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Unique Identifier" as thinguniqueidentifier
+	entity "Creator" as thingcreator
+	entity "Item" as thingitem
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Author" as thingauthor
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	boundary "Creator\nInterface" as thingcreatorinterface #grey
+	control "Identify Authors\nOf Items\nBy Unique\nIdentifier" as controlidentifyauthoruniqueidentifier
+	control "Identify Creator" as controlidentifycreator
+
+	thinguniqueidentifier <.. thingitem
+	thingitem *-- thingauthor
+	actorcollectioncurator --- thingidentifierinterface
+	actorcollectioncurator --- thingcreatorinterface
+	thingauthor --- controlidentifyauthoruniqueidentifier
+	thingitem --- controlidentifyauthoruniqueidentifier
+	thinguniqueidentifier --- controlidentifyauthoruniqueidentifier
+	thingidentifierinterface --> controlidentifyauthoruniqueidentifier
+	thingcreator --- controlidentifycreator
+	thingcreatorinterface --> controlidentifycreator
+
+@enduml

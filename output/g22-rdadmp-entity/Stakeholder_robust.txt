@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan" as thingplan #grey
+	entity "Dmp" as thingdmp
+	entity "Project Proposal" as thingprojectproposal #grey
+	entity "Reference" as thingreference
+	entity "Data Management" as thingdatamanagement #grey
+	actor "Stakeholder" as actorstakeholder
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	boundary "Proposal\nInterface" as thingproposalinterface #grey
+	control "Know" as controlknow
+	control "Know Responsible\nFor The\nDmp" as controlknowdmp
+	control "Have References\nTo The\nProject Proposal" as controlhavereference
+
+	thingdatamanagement <.. thingplan
+	thingprojectproposal <.. thingreference
+	actorstakeholder --- thingdmpinterface
+	actorstakeholder --- thingproposalinterface
+	thingdmp --- controlknowdmp
+	thingdmpinterface --> controlknowdmp
+	thingreference --- controlhavereference
+	thingprojectproposal --- controlhavereference
+	thingproposalinterface --> controlhavereference
+
+@enduml

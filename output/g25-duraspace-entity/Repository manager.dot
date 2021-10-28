@@ -1,0 +1,368 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Dam " ];
+202 [label="<f0>  |<f1> Object " color=red];
+203 [label="<f0>  |<f1> Place " ];
+204 [label="<f0>  |<f1> Relevant Place " ];
+205 [label="<f0>  |<f1> Curatorial Access " ];
+206 [label="<f0>  |<f1> Unit " color=red];
+207 [label="<f0>  |<f1> Singular Provenance " ];
+208 [label="<f0>  |<f1> Assembly " ];
+209 [label="<f0>  |<f1> Provenance " ];
+210 [label="<f0>  |<f1> Title " color=red];
+211 [label="<f0>  |<f1> Source " color=red];
+212 [label="<f0>  |<f1> Name " color=red];
+213 [label="<f0>  |<f1> Subject " color=red];
+214 [label="<f0>  |<f1> Creator " ];
+215 [label="<f0>  |<f1> Probable Importance " ];
+216 [label="<f0>  |<f1> User " ];
+217 [label="<f0>  |<f1> Event " color=red];
+218 [label="<f0>  |<f1> Component " color=red];
+219 [label="<f0>  |<f1> File " color=red];
+220 [label="<f0>  |<f1> Aspect " ];
+221 [label="<f0>  |<f1> Pertinent Statute " ];
+222 [label="<f0>  |<f1> License " color=red];
+223 [label="<f0>  |<f1> Pertinent ,\nRight " ];
+224 [label="<f0>  |<f1> Description " ];
+225 [label="<f0>  |<f1> Life Cycle " ];
+226 [label="<f0>  |<f1> Logical " ];
+227 [label="<f0>  |<f1> Appropriate Order " ];
+228 [label="<f0>  |<f1> Different ,\nCopyright Status " ];
+229 [label="<f0>  |<f1> Pertain ,\nRight " ];
+230 [label="<f0>  |<f1> Repository " color=red];
+231 [label="<f0>  |<f1> Object Component " color=red];
+232 [label="<f0>  |<f1> Useful Form " ];
+233 [label="<f0>  |<f1> Change " ];
+234 [label="<f0>  |<f1> Edition " ];
+235 [label="<f0>  |<f1> . " ];
+236 [label="<f0>  |<f1> Publisher " ];
+237 [label="<f0>  |<f1> Publication " ];
+238 [label="<f0>  |<f1> Origin Info " color=red];
+239 [label="<f0>  |<f1> Collection Component " ];
+240 [label="<f0>  |<f1> Title Entity " color=red];
+241 [label="<f0>  |<f1> Date " color=red];
+242 [label="<f0>  |<f1> Modification " color=red];
+243 [label="<f0>  |<f1> Note " color=red];
+244 [label="<f0>  |<f1> Unique Identity " color=red];
+245 [label="<f0>  |<f1> Record " color=red];
+246 [label="<f0>  |<f1> Pertinent Name " color=red];
+247 [label="<f0>  |<f1> Etc " ];
+248 [label="<f0>  |<f1> Specific Role " color=red];
+249 [label="<f0>  |<f1> Illustrator " ];
+250 [label="<f0>  |<f1> Photographer " ];
+251 [label="<f0>  |<f1> Resource " ];
+252 [label="<f0>  |<f1> Software " ];
+253 [label="<f0>  |<f1> Hardware " ];
+254 [label="<f0>  |<f1> Content " color=red];
+255 [label="<f0>  |<f1> End " ];
+256 [label="Repository Manager" shape=box];
+257 [label="{<f0> 1.0|<f1> Know Object }" shape=Mrecord];
+258 [label="{<f0> 2.0|<f1> Know The Collections In The Dams }" shape=Mrecord];
+259 [label="{<f0> 3.0|<f1> Update Repository Information In Place }" shape=Mrecord];
+260 [label="{<f0> 4.0|<f1> Propagated To All Relevant Places }" shape=Mrecord];
+261 [label="{<f0> 5.0|<f1> Constrain Curatorial Access To Units }" shape=Mrecord];
+262 [label="{<f0> 6.0|<f1> Represent A Part Of A Collection }" shape=Mrecord];
+263 [label="{<f0> 7.0|<f1> Compose Collections }" shape=Mrecord];
+264 [label="{<f0> 8.0|<f1> Compose Collections Limiting The Collection To }" shape=Mrecord];
+265 [label="{<f0> 9.0|<f1> Limit The Collection }" shape=Mrecord];
+266 [label="{<f0> 10.0|<f1> Share The Same Provenance }" shape=Mrecord];
+267 [label="{<f0> 11.0|<f1> Related To Another Collection }" shape=Mrecord];
+268 [label="{<f0> 12.0|<f1> Say }" shape=Mrecord];
+269 [label="{<f0> 13.0|<f1> Describe A Collection Including Title }" shape=Mrecord];
+270 [label="{<f0> 14.0|<f1> Indicate Names To The Collection As Creator }" shape=Mrecord];
+271 [label="{<f0> 15.0|<f1> Indicate Names To The Collection As Source }" shape=Mrecord];
+272 [label="{<f0> 16.0|<f1> Indicate Names To The Collection As Subject }" shape=Mrecord];
+273 [label="{<f0> 17.0|<f1> Indicate Subjects To The Collection }" shape=Mrecord];
+274 [label="{<f0> 18.0|<f1> Indicate Other Descriptions Of The Collection Are Of Probable Importance To Users }" shape=Mrecord];
+275 [label="{<f0> 19.0|<f1> Indicate Other Descriptions Of The Collection Are Outside The Dams }" shape=Mrecord];
+276 [label="{<f0> 20.0|<f1> Know All Events To A Collection }" shape=Mrecord];
+277 [label="{<f0> 21.0|<f1> Know The Components To An Object }" shape=Mrecord];
+278 [label="{<f0> 22.0|<f1> Know The Files To An Object }" shape=Mrecord];
+279 [label="{<f0> 23.0|<f1> Describe An Object Including Title }" shape=Mrecord];
+280 [label="{<f0> 24.0|<f1> Describe An Object Including Other Aspect }" shape=Mrecord];
+281 [label="{<f0> 25.0|<f1> Indicate Names To An Object }" shape=Mrecord];
+282 [label="{<f0> 26.0|<f1> Indicate The Copyright Status Of An Object }" shape=Mrecord];
+283 [label="{<f0> 27.0|<f1> Indicate Any Pertinent Statutes To An Object }" shape=Mrecord];
+284 [label="{<f0> 28.0|<f1> Indicate Any License To An Object }" shape=Mrecord];
+285 [label="{<f0> 29.0|<f1> Indicate Any Pertinent, Other Rights To An Object }" shape=Mrecord];
+286 [label="{<f0> 30.0|<f1> Be Of Probable Importance To An User }" shape=Mrecord];
+287 [label="{<f0> 31.0|<f1> Indicate Any External Versions Of An Object }" shape=Mrecord];
+288 [label="{<f0> 32.0|<f1> Indicate Description }" shape=Mrecord];
+289 [label="{<f0> 33.0|<f1> Represent Logical }" shape=Mrecord];
+290 [label="{<f0> 34.0|<f1> Represent The Physical Structure Of An Object }" shape=Mrecord];
+291 [label="{<f0> 35.0|<f1> List The Components In Appropriate Order For An Object }" shape=Mrecord];
+292 [label="{<f0> 36.0|<f1> Link A Component To Another Component }" shape=Mrecord];
+293 [label="{<f0> 37.0|<f1> Link A Component To A File }" shape=Mrecord];
+294 [label="{<f0> 38.0|<f1> Necessary Describe Each Component Including Title }" shape=Mrecord];
+295 [label="{<f0> 39.0|<f1> Necessary Describe Each Component Including Other Facet }" shape=Mrecord];
+296 [label="{<f0> 40.0|<f1> Indicate }" shape=Mrecord];
+297 [label="{<f0> 41.0|<f1> Pertains To The Component From The Object As A Whole }" shape=Mrecord];
+298 [label="{<f0> 42.0|<f1> Indicate Apart Pertain, Other Rights To The Component From The Object As A Whole }" shape=Mrecord];
+299 [label="{<f0> 43.0|<f1> Know The Content Files In The Dams For Repository's Objects }" shape=Mrecord];
+300 [label="{<f0> 44.0|<f1> Associate A File With An Object Component }" shape=Mrecord];
+301 [label="{<f0> 45.0|<f1> Associate A Content File With An Object }" shape=Mrecord];
+302 [label="{<f0> 46.0|<f1> Provide A Title In All Useful Forms For Object Component }" shape=Mrecord];
+303 [label="{<f0> 47.0|<f1> Provide A Title In All Useful Forms For Object }" shape=Mrecord];
+304 [label="{<f0> 48.0|<f1> Provide A Title In All Useful Forms For Repository's Collections }" shape=Mrecord];
+305 [label="{<f0> 49.0|<f1> Know Any Changes To Titles For Object Component }" shape=Mrecord];
+306 [label="{<f0> 50.0|<f1> Know Any Changes To Titles For Repository's Collections }" shape=Mrecord];
+307 [label="{<f0> 51.0|<f1> Know Any Changes To Titles For Object }" shape=Mrecord];
+308 [label="{<f0> 52.0|<f1> Indicate For An Object Component The Place Of Publication When Pertinent }" shape=Mrecord];
+309 [label="{<f0> 53.0|<f1> Indicate For The . The The Publisher }" shape=Mrecord];
+310 [label="{<f0> 54.0|<f1> Indicate For The Place The The . }" shape=Mrecord];
+311 [label="{<f0> 55.0|<f1> Indicate For The The Edition }" shape=Mrecord];
+312 [label="{<f0> 56.0|<f1> Indicate For The Place The The Publisher }" shape=Mrecord];
+313 [label="{<f0> 57.0|<f1> Indicate For The The Publisher }" shape=Mrecord];
+314 [label="{<f0> 58.0|<f1> Indicate For The The . }" shape=Mrecord];
+315 [label="{<f0> 59.0|<f1> Indicate For The Edition The The Publisher }" shape=Mrecord];
+316 [label="{<f0> 60.0|<f1> Indicate For The Place The The Edition }" shape=Mrecord];
+317 [label="{<f0> 61.0|<f1> Indicate For Object }" shape=Mrecord];
+318 [label="{<f0> 62.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Date }" shape=Mrecord];
+319 [label="{<f0> 63.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Name }" shape=Mrecord];
+320 [label="{<f0> 64.0|<f1> Describe Various Facets Of Object }" shape=Mrecord];
+321 [label="{<f0> 65.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Title Entities }" shape=Mrecord];
+322 [label="{<f0> 66.0|<f1> Describe Various Facets Of A Collection Component Are Not Addressable Via Subject }" shape=Mrecord];
+323 [label="{<f0> 67.0|<f1> Know Of All Modifications To Notes For Object }" shape=Mrecord];
+324 [label="{<f0> 68.0|<f1> Know Of All Modifications To Notes For Object Component }" shape=Mrecord];
+325 [label="{<f0> 69.0|<f1> Know Of All Modifications To Notes For Repository's Collections }" shape=Mrecord];
+326 [label="{<f0> 70.0|<f1> Present Indicate In A Collection Component }" shape=Mrecord];
+327 [label="{<f0> 71.0|<f1> Register A Name Record For Each Unique Identity With Repository's Collections }" shape=Mrecord];
+328 [label="{<f0> 72.0|<f1> Register A Record For Each Unique Identity With Object }" shape=Mrecord];
+329 [label="{<f0> 73.0|<f1> Indicate All Subjects Are Pertinent To Object }" shape=Mrecord];
+330 [label="{<f0> 74.0|<f1> Geo Indicate For Any Resource Believe To An End User }" shape=Mrecord];
+331 [label="{<f0> 75.0|<f1> Indicate All Pertinent, Other Versions Of A Resource Are External To The Dams }" shape=Mrecord];
+332 [label="{<f0> 76.0|<f1> Know For Any Of Repository's Content Files Have Changed }" shape=Mrecord];
+333 [label="{<f0> 77.0|<f1> Know }" shape=Mrecord];
+334 [label="{<f0> 78.0|<f1> Generate A Content File }" shape=Mrecord];
+256 -> 257
+256 -> 258
+256 -> 259
+256 -> 260
+256 -> 261
+256 -> 264
+256 -> 266
+256 -> 267
+256 -> 268
+256 -> 269
+256 -> 270
+256 -> 271
+256 -> 272
+256 -> 273
+256 -> 274
+256 -> 275
+256 -> 276
+256 -> 277
+256 -> 278
+256 -> 279
+256 -> 280
+256 -> 281
+256 -> 282
+256 -> 283
+256 -> 284
+256 -> 285
+256 -> 286
+256 -> 287
+256 -> 288
+256 -> 289
+256 -> 290
+256 -> 291
+256 -> 292
+256 -> 293
+256 -> 294
+256 -> 295
+256 -> 296
+256 -> 296
+256 -> 297
+256 -> 297
+256 -> 298
+256 -> 299
+256 -> 300
+256 -> 301
+256 -> 302
+256 -> 303
+256 -> 305
+256 -> 307
+256 -> 308
+256 -> 317
+256 -> 318
+256 -> 319
+256 -> 320
+256 -> 321
+256 -> 322
+256 -> 323
+256 -> 324
+256 -> 326
+256 -> 328
+256 -> 329
+256 -> 330
+256 -> 331
+256 -> 332
+256 -> 334
+257 -> 202 [label="Object"]
+258 -> 200 [label="Collection"]
+258 -> 201 [label="Dam"]
+259 -> 203 [label="Place"]
+260 -> 204 [label="Relevant Place"]
+261 -> 205 [label="Curatorial Access"]
+261 -> 206 [label="Unit"]
+262 -> 200 [label="Collection"]
+263 -> 265
+263 -> 200 [label="Collection"]
+264 -> 266
+264 -> 200 [label="Collection"]
+265 -> 262
+265 -> 200 [label="Collection"]
+266 -> 209 [label="Provenance"]
+267 -> 200 [label="Collection"]
+268 -> 267
+269 -> 210 [label="Title"]
+269 -> 200 [label="Collection"]
+270 -> 212 [label="Name"]
+270 -> 214 [label="Creator"]
+270 -> 200 [label="Collection"]
+271 -> 211 [label="Source"]
+271 -> 200 [label="Collection"]
+271 -> 212 [label="Name"]
+272 -> 213 [label="Subject"]
+272 -> 200 [label="Collection"]
+272 -> 212 [label="Name"]
+273 -> 200 [label="Collection"]
+273 -> 213 [label="Subject"]
+273 -> 202 [label="Object"]
+273 -> 218 [label="Component"]
+273 -> 239 [label="Collection Component"]
+274 -> 215 [label="Probable Importance"]
+274 -> 216 [label="User"]
+274 -> 200 [label="Collection"]
+275 -> 200 [label="Collection"]
+275 -> 201 [label="Dam"]
+276 -> 217 [label="Event"]
+276 -> 200 [label="Collection"]
+276 -> 225 [label="Life Cycle"]
+276 -> 202 [label="Object"]
+276 -> 218 [label="Component"]
+276 -> 219 [label="File"]
+277 -> 218 [label="Component"]
+277 -> 202 [label="Object"]
+278 -> 219 [label="File"]
+278 -> 202 [label="Object"]
+279 -> 202 [label="Object"]
+279 -> 210 [label="Title"]
+280 -> 220 [label="Aspect"]
+280 -> 202 [label="Object"]
+281 -> 202 [label="Object"]
+281 -> 212 [label="Name"]
+281 -> 218 [label="Component"]
+282 -> 202 [label="Object"]
+283 -> 221 [label="Pertinent Statute"]
+283 -> 202 [label="Object"]
+284 -> 222 [label="License"]
+284 -> 202 [label="Object"]
+285 -> 223 [label="Pertinent ,\nRight"]
+285 -> 202 [label="Object"]
+286 -> 215 [label="Probable Importance"]
+286 -> 216 [label="User"]
+287 -> 286
+287 -> 202 [label="Object"]
+288 -> 224 [label="Description"]
+289 -> 226 [label="Logical"]
+290 -> 202 [label="Object"]
+291 -> 227 [label="Appropriate Order"]
+291 -> 202 [label="Object"]
+291 -> 218 [label="Component"]
+292 -> 218 [label="Component"]
+293 -> 219 [label="File"]
+293 -> 218 [label="Component"]
+294 -> 210 [label="Title"]
+294 -> 218 [label="Component"]
+295 -> 218 [label="Component"]
+295 -> 220 [label="Aspect"]
+296 -> 297
+297 -> 202 [label="Object"]
+297 -> 218 [label="Component"]
+298 -> 229 [label="Pertain ,\nRight"]
+298 -> 202 [label="Object"]
+298 -> 218 [label="Component"]
+299 -> 201 [label="Dam"]
+299 -> 202 [label="Object"]
+299 -> 219 [label="File"]
+300 -> 218 [label="Component"]
+300 -> 219 [label="File"]
+301 -> 202 [label="Object"]
+301 -> 219 [label="File"]
+302 -> 232 [label="Useful Form"]
+302 -> 210 [label="Title"]
+302 -> 218 [label="Component"]
+303 -> 202 [label="Object"]
+303 -> 232 [label="Useful Form"]
+303 -> 210 [label="Title"]
+304 -> 232 [label="Useful Form"]
+304 -> 200 [label="Collection"]
+304 -> 210 [label="Title"]
+305 -> 210 [label="Title"]
+305 -> 218 [label="Component"]
+305 -> 233 [label="Change"]
+306 -> 233 [label="Change"]
+306 -> 200 [label="Collection"]
+306 -> 210 [label="Title"]
+306 -> 238 [label="Origin Info"]
+306 -> 202 [label="Object"]
+306 -> 239 [label="Collection Component"]
+307 -> 202 [label="Object"]
+307 -> 210 [label="Title"]
+307 -> 233 [label="Change"]
+308 -> 231 [label="Object Component"]
+308 -> 203 [label="Place"]
+308 -> 237 [label="Publication"]
+309 -> 235 [label="."]
+309 -> 236 [label="Publisher"]
+310 -> 235 [label="."]
+310 -> 203 [label="Place"]
+311 -> 234 [label="Edition"]
+312 -> 236 [label="Publisher"]
+312 -> 203 [label="Place"]
+313 -> 236 [label="Publisher"]
+314 -> 235 [label="."]
+315 -> 234 [label="Edition"]
+315 -> 236 [label="Publisher"]
+316 -> 234 [label="Edition"]
+316 -> 203 [label="Place"]
+317 -> 202 [label="Object"]
+318 -> 241 [label="Date"]
+318 -> 239 [label="Collection Component"]
+319 -> 212 [label="Name"]
+319 -> 239 [label="Collection Component"]
+320 -> 202 [label="Object"]
+321 -> 239 [label="Collection Component"]
+321 -> 240 [label="Title Entity"]
+322 -> 213 [label="Subject"]
+322 -> 239 [label="Collection Component"]
+323 -> 202 [label="Object"]
+323 -> 242 [label="Modification"]
+323 -> 243 [label="Note"]
+324 -> 218 [label="Component"]
+324 -> 242 [label="Modification"]
+324 -> 243 [label="Note"]
+325 -> 242 [label="Modification"]
+325 -> 243 [label="Note"]
+325 -> 200 [label="Collection"]
+326 -> 239 [label="Collection Component"]
+327 -> 244 [label="Unique Identity"]
+327 -> 200 [label="Collection"]
+327 -> 245 [label="Record"]
+328 -> 245 [label="Record"]
+328 -> 202 [label="Object"]
+328 -> 244 [label="Unique Identity"]
+329 -> 202 [label="Object"]
+329 -> 213 [label="Subject"]
+330 -> 251 [label="Resource"]
+330 -> 216 [label="User"]
+331 -> 201 [label="Dam"]
+331 -> 251 [label="Resource"]
+332 -> 219 [label="File"]
+334 -> 219 [label="File"]
+259 -> 230 [label="Repository"]
+299 -> 254 [label="Content"]
+330 -> 255 [label="End"]
+}

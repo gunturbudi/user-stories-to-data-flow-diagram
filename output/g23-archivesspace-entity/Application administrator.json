@@ -1,0 +1,57 @@
+[
+  {
+    "text": "As an Application Administrator, I want to be able to reset a User's password for them.",
+    "entities": [
+      {
+        "text": "Application Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "reset",
+        "label": "Processing"
+      },
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Application Administrator, I want to assign Users to an Advanced Data Entry and ensure that the appropriate permissions are enforced.",
+    "entities": [
+      {
+        "text": "Application Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Users",
+        "label": "Data"
+      },
+      {
+        "text": "Data Entry",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Application Administrator , I want to be able to configure the help center URL and topic mappings.",
+    "entities": [
+      {
+        "text": "Application Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "configure",
+        "label": "Processing"
+      }
+    ]
+  }
+]

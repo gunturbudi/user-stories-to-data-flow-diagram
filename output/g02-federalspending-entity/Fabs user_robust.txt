@@ -1,0 +1,104 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Correct File" as thingcorrectfile
+	entity "Point" as thingpoint
+	entity "Dialog" as thingdialog
+	entity "Error" as thingerror
+	entity "Page" as thingpage
+	entity "Ppopzip" as thingPPoPZIP
+	entity "Citywide" as thingcitywide
+	entity "Validation" as thingvalidation
+	entity "Historical Datum" as thinghistoricaldata
+	entity "Necessary Column" as thingnecessarycolumn
+	entity "Submission Dashboard" as thingsubmissiondashboard #grey
+	entity "Helpful ,\nAdditional Info" as thinghelpfuladditionalinfo
+	entity "Language" as thinglanguage
+	entity "Vice Versa" as thingviceversa #grey
+	entity "Access" as thingaccess
+	entity "Time" as thingtime
+	entity "Sample File" as thingsamplefile
+	entity "Fabs File" as thingfabsfile
+	entity "Dabs Banner\nMessage" as thingdabsbannermessage
+	entity "Status Label" as thingstatuslabel
+	entity "Fabs" as thingfabs #grey
+	actor "Fabs User" as actorfabsuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Ppopzip\nInterface" as thingppopzipinterface #grey
+	boundary "Validation\nInterface" as thingvalidationinterface #grey
+	boundary "Dashboard\nInterface" as thingdashboardinterface #grey
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	boundary "Versa\nInterface" as thingversainterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	control "What Submit\nDialog" as controlsubmitwhatdialog
+	control "Link The\nSample File\nOn Want\nThe To\nPoint To\nThe Correct\nFile" as controllinksampleFILEpoint
+	control "Represent Fabs\nErrors" as controlrepresentfabserrors
+	control "Submission Errors" as controlsubmissionerrorrepresentfabserrors
+	control "Frontend Reflect\nThe Page" as controlreflectpage
+	control "Submit A\nCitywide As\nA Ppopzip" as controlsubmitcitywide
+	control "Pass Validations" as controlpassvalidation
+	control "Make" as controlmake
+	control "Provided With\nHelpful, Additional\nInfo In\nThe Submission\nDashboard" as controlprovidehelpfuladditionalinfo
+	control "Download The\nUploaded Fabs\nFile" as controldownloaduploadedfabsfile
+	control "Provided With\nDabs Banner\nMessages" as controlprovidedabsbannermessages
+	control "Provided With\nVice Versa" as controlprovideviceversa
+	control "Read Access\nTo Dabs" as controlreadaccess
+	control "Have" as controlhave
+	control "See Correct\nStatus Labels\nOn The\nSubmission Dashboard" as controlseecorrectstatuslabels
+
+	thingcorrectfile <.. thingpoint
+	thingfabs <.. thingerror
+	thingfabs <.. thingpage
+	thingPPoPZIP <.. thingcitywide
+	thingsubmissiondashboard <.. thinghelpfuladditionalinfo
+	thingpage <.. thinglanguage
+	thingpoint <.. thingsamplefile
+	thingsubmissiondashboard <.. thingstatuslabel
+	actorfabsuser --- thingfileinterface
+	actorfabsuser --- thingerrorinterface
+	actorfabsuser --- thingpageinterface
+	actorfabsuser --- thingppopzipinterface
+	actorfabsuser --- thingvalidationinterface
+	actorfabsuser --- thingdashboardinterface
+	actorfabsuser --- thingmessageinterface
+	actorfabsuser --- thingversainterface
+	actorfabsuser --- thingaccessinterface
+	thingdialog --- controlsubmitwhatdialog
+	controllinksampleFILEpoint --> controlsubmitwhatdialog
+	thingfileinterface --> controlsubmitwhatdialog
+	thingsamplefile --- controllinksampleFILEpoint
+	thingpoint --- controllinksampleFILEpoint
+	thingcorrectfile --- controllinksampleFILEpoint
+	thingfileinterface --> controllinksampleFILEpoint
+	controlsubmissionerrorrepresentfabserrors --> controlrepresentfabserrors
+	thingerrorinterface --> controlrepresentfabserrors
+	thingerror --- controlrepresentfabserrors
+	thingerror --- controlsubmissionerrorrepresentfabserrors
+	thingerrorinterface --> controlsubmissionerrorrepresentfabserrors
+	thingpage --- controlreflectpage
+	thingpageinterface --> controlreflectpage
+	thingcitywide --- controlsubmitcitywide
+	thingPPoPZIP --- controlsubmitcitywide
+	thingppopzipinterface --> controlsubmitcitywide
+	thingvalidation --- controlpassvalidation
+	thingvalidationinterface --> controlpassvalidation
+	thinghelpfuladditionalinfo --- controlprovidehelpfuladditionalinfo
+	thingsubmissiondashboard --- controlprovidehelpfuladditionalinfo
+	thingdashboardinterface --> controlprovidehelpfuladditionalinfo
+	thingfabsfile --- controldownloaduploadedfabsfile
+	thingfileinterface --> controldownloaduploadedfabsfile
+	thingdabsbannermessage --- controlprovidedabsbannermessages
+	thingmessageinterface --> controlprovidedabsbannermessages
+	thingviceversa --- controlprovideviceversa
+	thingversainterface --> controlprovideviceversa
+	thingaccess --- controlreadaccess
+	thingaccessinterface --> controlreadaccess
+	thingstatuslabel --- controlseecorrectstatuslabels
+	thingsubmissiondashboard --- controlseecorrectstatuslabels
+	thingdashboardinterface --> controlseecorrectstatuslabels
+
+@enduml

@@ -1,0 +1,197 @@
+id,value,style,source,target,type
+40,View just the dataset with a few people.,ellipse,null,null,process
+41,Publish my data package under.,ellipse,null,null,process
+42,Access.,ellipse,null,null,process
+43,Use.,ellipse,null,null,process
+44,Understand how useful and simple the datapackage format and the registry is.,ellipse,null,null,process
+45,Share just with my team.,ellipse,null,null,process
+46,Correct.,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Account,shape=partialRectangle,null,null,data_base
+202,Datapackage,shape=partialRectangle,null,null,data_base
+203,Registry,shape=partialRectangle,null,null,data_base
+204,Client,shape=partialRectangle,null,null,data_base
+205,Publish Command,shape=partialRectangle,null,null,data_base
+206,Server,shape=partialRectangle,null,null,data_base
+207,Datum,shape=partialRectangle,null,null,data_base
+208,Ui,shape=partialRectangle,null,null,data_base
+209,Cli,shape=partialRectangle,null,null,data_base
+210,Publishing,shape=partialRectangle,null,null,data_base
+211,Publish Package,shape=partialRectangle,null,null,data_base
+212,Tag,shape=partialRectangle,null,null,data_base
+213,Multiple Version,shape=partialRectangle,null,null,data_base
+214,Old Version,shape=partialRectangle,null,null,data_base
+215,Previous Version,shape=partialRectangle,null,null,data_base
+216,Access,shape=partialRectangle,null,null,data_base
+217,Site,shape=partialRectangle,null,null,data_base
+218,Price,shape=partialRectangle,null,null,data_base
+219,Pricing Plan,shape=partialRectangle,null,null,data_base
+220,Publish Datum,shape=partialRectangle,null,null,data_base
+221,World,shape=partialRectangle,null,null,data_base
+222,Publisher,shape=partialRectangle,null,null,data_base
+223,Profile,shape=partialRectangle,null,null,data_base
+224,Resource,shape=partialRectangle,null,null,data_base
+225,Publisher,rounded=0,null,null,external_entity
+226,Consumer,rounded=0,null,null,external_entity
+227,Publish A Dataset,ellipse,null,null,process
+228,Sign Up For An Account,ellipse,null,null,process
+229,Know,ellipse,null,null,process
+230,Signing Up,ellipse,null,null,process
+231,Import Data Package Into The Registry,ellipse,null,null,process
+232,Configure Client,ellipse,null,null,process
+233,Use A Publish Command,ellipse,null,null,process
+234,Update A Data Package Already Is In The Registry,ellipse,null,null,process
+235,Unpublish A Data Package,ellipse,null,null,process
+236,Delete A Data Package,ellipse,null,null,process
+237,Publish A Data Package Resource Data Where Stored On Servers,ellipse,null,null,process
+238,Publish A Data Package In The Ui,ellipse,null,null,process
+239,Create A Data Package In The Ui,ellipse,null,null,process
+240,Restore The Deleted Data Package Via Cli,ellipse,null,null,process
+241,Undelete The Deleted Data Packages,ellipse,null,null,process
+242,Preview The Views Of,ellipse,null,null,process
+243,Use Cli To Publishing,ellipse,null,null,process
+244,Preview A Datapackage,ellipse,null,null,process
+245,See Real Examples Of Published Packages,ellipse,null,null,process
+246,Tag Datapackage,ellipse,null,null,process
+247,Create A Snapshot Of Data On The Registry Server,ellipse,null,null,process
+248,Overwrite A Tag,ellipse,null,null,process
+249,A Tag Exists Try,ellipse,null,null,process
+250,Warned,ellipse,null,null,process
+251,Overwrite The Previously Tagged Datapackage,ellipse,null,null,process
+252,Version Data Package,ellipse,null,null,process
+253,Keep Multiple Versions Including Older Versions,ellipse,null,null,process
+254,Get Access To A Previous Version,ellipse,null,null,process
+255,Sign Up For A Given Pricing Plan,ellipse,null,null,process
+256,Have Private Data Packages,ellipse,null,null,process
+257,Validate The Data,ellipse,null,null,process
+258,Data,ellipse,null,null,process
+259,Publish,ellipse,null,null,process
+260,Validated,ellipse,null,null,process
+261,Show The World,ellipse,null,null,process
+262,Browse Publishers,ellipse,null,null,process
+263,Find Publishers,ellipse,null,null,process
+264,See A Publisher's Profile,ellipse,null,null,process
+265,View A Publisher's Profile,ellipse,null,null,process
+267,,endArrow=classic,225,227,endArrow=classic
+268,,endArrow=classic,225,228,endArrow=classic
+269,,endArrow=classic,225,231,endArrow=classic
+270,,endArrow=classic,225,232,endArrow=classic
+271,,endArrow=classic,225,233,endArrow=classic
+272,,endArrow=classic,225,234,endArrow=classic
+273,,endArrow=classic,225,235,endArrow=classic
+274,,endArrow=classic,225,236,endArrow=classic
+275,,endArrow=classic,225,237,endArrow=classic
+276,,endArrow=classic,225,238,endArrow=classic
+277,,endArrow=classic,225,239,endArrow=classic
+278,,endArrow=classic,225,240,endArrow=classic
+279,,endArrow=classic,225,241,endArrow=classic
+280,,endArrow=classic,225,242,endArrow=classic
+281,,endArrow=classic,225,243,endArrow=classic
+282,,endArrow=classic,225,244,endArrow=classic
+283,,endArrow=classic,225,245,endArrow=classic
+284,,endArrow=classic,225,246,endArrow=classic
+285,,endArrow=classic,225,247,endArrow=classic
+286,,endArrow=classic,225,248,endArrow=classic
+287,,endArrow=classic,225,249,endArrow=classic
+288,,endArrow=classic,225,250,endArrow=classic
+289,,endArrow=classic,225,251,endArrow=classic
+290,,endArrow=classic,225,252,endArrow=classic
+291,,endArrow=classic,225,253,endArrow=classic
+292,,endArrow=classic,225,254,endArrow=classic
+293,,endArrow=classic,225,255,endArrow=classic
+294,,endArrow=classic,225,256,endArrow=classic
+295,,endArrow=classic,225,257,endArrow=classic
+296,,endArrow=classic,225,261,endArrow=classic
+297,,endArrow=classic,226,262,endArrow=classic
+298,,endArrow=classic,226,263,endArrow=classic
+299,,endArrow=classic,226,264,endArrow=classic
+300,,endArrow=classic,226,265,endArrow=classic
+301,Dataset,endArrow=classic,227,200,endArrow=classic
+302,Account,endArrow=classic,228,201,endArrow=classic
+303,,endArrow=classic,230,229,endArrow=classic
+304,Registry,endArrow=classic,231,203,endArrow=classic
+305,Datapackage,endArrow=classic,231,202,endArrow=classic
+306,Client,endArrow=classic,232,204,endArrow=classic
+307,,endArrow=classic,233,234,endArrow=classic
+308,Publish Command,endArrow=classic,233,205,endArrow=classic
+309,Registry,endArrow=classic,234,203,endArrow=classic
+310,Datapackage,endArrow=classic,234,202,endArrow=classic
+311,Datapackage,endArrow=classic,235,202,endArrow=classic
+312,Datapackage,endArrow=classic,236,202,endArrow=classic
+313,Server,endArrow=classic,237,206,endArrow=classic
+314,Datapackage,endArrow=classic,237,202,endArrow=classic
+315,Datum,endArrow=classic,237,207,endArrow=classic
+316,Ui,endArrow=classic,238,208,endArrow=classic
+317,Datapackage,endArrow=classic,238,202,endArrow=classic
+318,Ui,endArrow=classic,239,208,endArrow=classic
+319,Datapackage,endArrow=classic,239,202,endArrow=classic
+320,Cli,endArrow=classic,240,209,endArrow=classic
+321,Datapackage,endArrow=classic,240,202,endArrow=classic
+322,Datapackage,endArrow=classic,241,202,endArrow=classic
+323,,endArrow=classic,242,243,endArrow=classic
+324,Publishing,endArrow=classic,243,210,endArrow=classic
+325,Cli,endArrow=classic,243,209,endArrow=classic
+326,Datapackage,endArrow=classic,244,202,endArrow=classic
+327,Publish Package,endArrow=classic,245,211,endArrow=classic
+328,,endArrow=classic,246,247,endArrow=classic
+329,Datapackage,endArrow=classic,246,202,endArrow=classic
+330,Datum,endArrow=classic,247,207,endArrow=classic
+331,Registry,endArrow=classic,247,203,endArrow=classic
+332,Server,endArrow=classic,247,206,endArrow=classic
+333,Tag,endArrow=classic,248,212,endArrow=classic
+334,,endArrow=classic,249,248,endArrow=classic
+335,,endArrow=classic,249,250,endArrow=classic
+336,Tag,endArrow=classic,249,212,endArrow=classic
+337,Tag,endArrow=classic,251,212,endArrow=classic
+338,Datapackage,endArrow=classic,252,202,endArrow=classic
+339,Multiple Version,endArrow=classic,253,213,endArrow=classic
+340,Old Version,endArrow=classic,253,214,endArrow=classic
+341,Access,endArrow=classic,254,216,endArrow=classic
+342,Previous Version,endArrow=classic,254,215,endArrow=classic
+343,Pricing Plan,endArrow=classic,255,219,endArrow=classic
+344,Datapackage,endArrow=classic,256,202,endArrow=classic
+345,Datum,endArrow=classic,257,207,endArrow=classic
+346,,endArrow=classic,258,259,endArrow=classic
+347,,endArrow=classic,259,260,endArrow=classic
+348,World,endArrow=classic,261,221,endArrow=classic
+349,Publisher,endArrow=classic,262,222,endArrow=classic
+350,Publisher,endArrow=classic,263,222,endArrow=classic
+351,Profile,endArrow=classic,264,223,endArrow=classic
+352,Profile,endArrow=classic,265,223,endArrow=classic
+480,Resource,endArrow=classic,237,224,endArrow=classic
+1000,,endArrow=classic,227,40,endArrow=classic
+1001,"Publisher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,40,endArrow=classic
+1003,Dataset,endArrow=classic,40,200,endArrow=classic
+1004,,endArrow=classic,228,41,endArrow=classic
+1005,"Publisher,",rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,41,endArrow=classic
+1007,Data package,rounded=0,null,null,external_entity
+1008,Data package,endArrow=classic,41,1007,endArrow=classic
+1009,Data package,rounded=0,null,null,external_entity
+1010,Data package,endArrow=classic,41,1009,endArrow=classic
+1011,,endArrow=classic,231,42,endArrow=classic
+1012,"Publisher,",rounded=0,null,null,external_entity
+1013,,endArrow=classic,1012,42,endArrow=classic
+1014,Data,rounded=0,null,null,external_entity
+1015,Data,endArrow=classic,42,1014,endArrow=classic
+1016,,endArrow=classic,237,43,endArrow=classic
+1017,"Publisher,",rounded=0,null,null,external_entity
+1018,,endArrow=classic,1017,43,endArrow=classic
+1019,Data,rounded=0,null,null,external_entity
+1020,Data,endArrow=classic,43,1019,endArrow=classic
+1021,,endArrow=classic,245,44,endArrow=classic
+1022,"Publisher,",rounded=0,null,null,external_entity
+1023,,endArrow=classic,1022,44,endArrow=classic
+1024,Datapackage format,rounded=0,null,null,external_entity
+1025,Datapackage format,endArrow=classic,44,1024,endArrow=classic
+1026,,endArrow=classic,256,45,endArrow=classic
+1027,"Publisher,",rounded=0,null,null,external_entity
+1028,,endArrow=classic,1027,45,endArrow=classic
+1029,Team,rounded=0,null,null,external_entity
+1030,Team,endArrow=classic,45,1029,endArrow=classic
+1031,,endArrow=classic,225,46,endArrow=classic
+1032,Publisher,rounded=0,null,null,external_entity
+1033,,endArrow=classic,1032,46,endArrow=classic
+1034,Data,rounded=0,null,null,external_entity
+1035,Data,endArrow=classic,46,1034,endArrow=classic

@@ -1,0 +1,106 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Complaint" as thingcomplaint
+	entity "Feedback" as thingfeedback
+	entity "User" as thinguser
+	entity "Specific User" as thingspecificuser
+	entity "Ip Address" as thingipaddress #grey
+	entity "Dashboard" as thingdashboard
+	entity "Status" as thingstatus
+	entity "Site" as thingsite
+	entity "Datum" as thingdatum
+	entity "Activity" as thingactivity
+	entity "Platform" as thingplatform
+	entity "Location" as thinglocation
+	entity "Facility" as thingfacility
+	entity "Recycling Center" as thingrecyclingcenter
+	entity "Usage Stat" as thingusagestat
+	entity "Recycling" as thingrecycling #grey
+	actor "Admin" as actoradmin
+	circle "Error Log" as thingerrorlog #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	boundary "Complaint\nInterface" as thingcomplaintinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Activity\nInterface" as thingactivityinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	control "Add Recycling\nFacilities' Information" as controladdinformation
+	control "Remove Recycling\nFacilities' Information" as controlremoveinformation
+	control "Read Users'\nFeedback" as controlreadfeedback
+	control "Read Complaint" as controlreadcomplaint
+	control "Block Specific\nUsers On\nIp Address" as controlblockspecificuser
+	control "View A\nDashboard Monitors\nThe Sites'\nStatuses" as controlviewdashboard
+	control "Have" as controlhave
+	control "Handle All\nUsers' Activities" as controlhandleactivity
+	control "Add Recycling\nCenter Information" as controladdrecyclingcenterinformation
+	control "View User\nError Logs" as controlviewusererrorlogs
+	control "Onboard Recycling\nCenters On\nThe Platform" as controlonboardrecyclingcentersplatform
+	control "Have A\nDashboard Shows\nLocation" as controlhavedashboardlocation
+	control "Have A\nDashboard Shows\nUsage Stats" as controlhavedashboard
+	control "Communicate With\nFacilities" as controlcommunicatefacility
+
+	thingfacility <.. thinginformation
+	thingrecyclingcenter <.. thinginformation
+	thinguser <.. thingfeedback
+	thingipaddress <.. thingspecificuser
+	thingstatus <.. thingdashboard
+	thingusagestat <.. thingdashboard
+	thinglocation <.. thingdashboard
+	thingsite <.. thingstatus
+	thinguser <.. thingactivity
+	thingrecycling <.. thingfacility
+	thingplatform <.. thingrecyclingcenter
+	thinguser *-- thingerrorlog
+	actoradmin --- thinginformationinterface
+	actoradmin --- thingfeedbackinterface
+	actoradmin --- thingcomplaintinterface
+	actoradmin --- thingaddressinterface
+	actoradmin --- thingstatusinterface
+	actoradmin --- thingactivityinterface
+	actoradmin --- thinguserinterface
+	actoradmin --- thingplatforminterface
+	actoradmin --- thinglocationinterface
+	actoradmin --- thingstatinterface
+	actoradmin --- thingfacilityinterface
+	thinginformation --- controladdinformation
+	thinginformationinterface --> controladdinformation
+	thinginformation --- controlremoveinformation
+	thinginformationinterface --> controlremoveinformation
+	thingfeedback --- controlreadfeedback
+	thingfeedbackinterface --> controlreadfeedback
+	thingcomplaint --- controlreadcomplaint
+	thingcomplaintinterface --> controlreadcomplaint
+	thingspecificuser --- controlblockspecificuser
+	thingipaddress --- controlblockspecificuser
+	thingaddressinterface --> controlblockspecificuser
+	thingdashboard --- controlviewdashboard
+	thingstatus --- controlviewdashboard
+	thingstatusinterface --> controlviewdashboard
+	thingactivity --- controlhandleactivity
+	thingactivityinterface --> controlhandleactivity
+	thinginformationinterface --> controladdrecyclingcenterinformation
+	thinginformation --- controladdrecyclingcenterinformation
+	thingerrorlog --- controlviewusererrorlogs
+	thinguserinterface --> controlviewusererrorlogs
+	thingrecyclingcenter --- controlonboardrecyclingcentersplatform
+	thingplatform --- controlonboardrecyclingcentersplatform
+	thingplatforminterface --> controlonboardrecyclingcentersplatform
+	thinglocation --- controlhavedashboardlocation
+	thinglocationinterface --> controlhavedashboardlocation
+	thingdashboard --- controlhavedashboardlocation
+	thingusagestat --- controlhavedashboard
+	thingstatinterface --> controlhavedashboard
+	thingdashboard --- controlhavedashboard
+	thingfacility --- controlcommunicatefacility
+	thingfacilityinterface --> controlcommunicatefacility
+
+@enduml

@@ -1,0 +1,36 @@
+id,value,style,source,target,type
+200,Colour,shape=partialRectangle,null,null,data_base
+201,Regular User,shape=partialRectangle,null,null,data_base
+202,Access,shape=partialRectangle,null,null,data_base
+203,System,shape=partialRectangle,null,null,data_base
+204,Worm,shape=partialRectangle,null,null,data_base
+205,Way,shape=partialRectangle,null,null,data_base
+206,Web Interface\nGraphic,shape=partialRectangle,null,null,data_base
+207,Page Template,shape=partialRectangle,null,null,data_base
+208,Metadata Field,shape=partialRectangle,null,null,data_base
+209,Lab Administrator,rounded=0,null,null,external_entity
+210,Theme The Web Interface Graphics,ellipse,null,null,process
+211,Theme Colour,ellipse,null,null,process
+212,Increased Access To The System,ellipse,null,null,process
+213,Support Regular Users,ellipse,null,null,process
+214,Create Page Templates With Bespoke Metadata Fields,ellipse,null,null,process
+215,Managing Worm,ellipse,null,null,process
+216,Provided With A Way,ellipse,null,null,process
+218,,endArrow=classic,209,210,endArrow=classic
+219,,endArrow=classic,209,211,endArrow=classic
+220,,endArrow=classic,209,212,endArrow=classic
+221,,endArrow=classic,209,213,endArrow=classic
+222,,endArrow=classic,209,214,endArrow=classic
+223,,endArrow=classic,209,215,endArrow=classic
+224,,endArrow=classic,209,216,endArrow=classic
+225,Web Interface\nGraphic,endArrow=classic,210,206,endArrow=classic
+226,Colour,endArrow=classic,211,200,endArrow=classic
+227,,endArrow=classic,212,213,endArrow=classic
+228,Access,endArrow=classic,212,202,endArrow=classic
+229,System,endArrow=classic,212,203,endArrow=classic
+230,Regular User,endArrow=classic,213,201,endArrow=classic
+231,Page Template,endArrow=classic,214,207,endArrow=classic
+232,Metadata Field,endArrow=classic,214,208,endArrow=classic
+233,,endArrow=classic,215,216,endArrow=classic
+234,Worm,endArrow=classic,215,204,endArrow=classic
+235,Way,endArrow=classic,216,205,endArrow=classic

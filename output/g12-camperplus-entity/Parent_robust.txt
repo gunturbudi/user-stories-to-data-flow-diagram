@@ -1,0 +1,192 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Avenue" as thingavenue
+	entity "Parent" as thingparent
+	entity "General Concern" as thinggeneralconcern
+	entity "Feedback" as thingfeedback
+	entity "Camper" as thingcamper
+	entity "Weekly Feedback" as thingweeklyfeedback
+	entity "Information" as thinginformation
+	entity "Add Parent" as thingaddedparent
+	entity "Guardian" as thingguardian
+	entity "Immediate Parent" as thingimmediateparent
+	entity "Camp" as thingcamp
+	entity "Activity" as thingactivity
+	entity "Child" as thingchild
+	entity "Schedule" as thingschedule
+	entity "Account" as thingaccount
+	entity "Kid" as thingkid
+	entity "Counselor" as thingcounselor
+	entity "Necessary Payment" as thingnecessarypayment
+	entity "Enrolled Child" as thingenrolledchild
+	entity "Form" as thingform
+	entity "Photo" as thingphoto
+	entity "Staff" as thingstaff
+	entity "Emergency" as thingemergency
+	entity "Consent" as thingconsent #grey
+	actor "Camp Administrator" as actorcampadministrator
+	actor "Parent" as actorparent
+	circle "Type" as thingvarioustype
+	circle "Case" as thingcase
+	circle "Year" as thingyear #grey
+	circle "Management" as thingmanagement #grey
+	boundary "Counselor" as thingcounselorparent
+	boundary "Form\nInterface" as thingforminterface #grey
+	boundary "Parent\nInterface" as thingparentinterface #grey
+	boundary "Avenue\nInterface" as thingavenueinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Guardian\nInterface" as thingguardianinterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	boundary "Camp\nInterface" as thingcampinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Counselor\nInterface" as thingcounselorinterface #grey
+	boundary "Payment\nInterface" as thingpaymentinterface #grey
+	boundary "Child\nInterface" as thingchildinterface #grey
+	boundary "Emergency\nInterface" as thingemergencyinterface #grey
+	control "Upload Consent\nForms" as controluploadconsentforms
+	control "Parents Submit\nGeneral Concern" as controlsubmitparentgeneralconcern
+	control "Parents Submit\nFeedback" as controlsubmitparentfeedback
+	control "Create An\nAvenue" as controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	control "Provide Weekly\nFeedback To\nCamper's Parents" as controlprovideweeklyfeedbackparent
+	control "Notify Parents\nOnce" as controlnotifyparent
+	control "Add Parents" as controladdparent
+	control "Modify The\nInformation Of\nAdded Parents" as controlmodifyinformation
+	control "Store Camper's\nImmediate Parent\nInformation" as controlstoreinformation
+	control "Store Guardian's\nInformation" as controlstoreinformationguardian
+	control "See Which\nConsent Forms" as controlseeconsentforms
+	control "Track Schedule" as controltrackschedule
+	control "Track Child's\nActivity At\nCamp" as controltrackactivitycamp
+	control "Create An\nAccount" as controlcreateaccount
+	control "See" as controlseeassigncounselorparentkid
+	control "Assigned To\nKids" as controlassigncounselorparentkid
+	control "Message Child's\nCounselors" as controlmessagecounselor
+	control "Sign Consent\nForms" as controlsignconsentforms
+	control "Submit Consent\nForms" as controlsubmitconsentforms
+	control "Made The\nNecessary Payments" as controlmakeseenecessarypayment
+	control "Enroll Children" as controlenrollchild
+	control "See Enrolled\nChildren To\nThe Camp\nYear" as controlseeenrolledchildcampyear
+	control "Edit Enrolled\nChildren To\nThe Camp\nYear" as controleditenrolledchildcampyear
+	control "Submit Various\nType Of\nForms To\nThe Camp\nManagement" as controlsubmitvarioustypecampmanagement
+	control "Share Any\nPhotos The\nCamp Has\nTaken Of\nChild" as controlsharephoto
+	control "Connect With\nThe Staff\nIn Case\nOf An\nEmergency" as controlconnectstaffcase
+	control "See A\nSchedule Of\nThe Activities\nChildren Involved\nAt Camp" as controlseeschedule
+
+	thingfeedback <.. thingparent
+	thingcamper <.. thingparent
+	thinggeneralconcern <.. thingparent
+	thingparent <.. thingweeklyfeedback
+	thingaddedparent *-- thinginformation
+	thingimmediateparent *-- thinginformation
+	thingguardian *-- thinginformation
+	thingcamper <.. thingimmediateparent
+	thingchild <.. thingcamp
+	thingchild <.. thingactivity
+	thingcamp <.. thingactivity
+	thingcamp <.. thingchild
+	thingactivity <.. thingschedule
+	thingchild <.. thingcounselor
+	thingyear <.. thingenrolledchild
+	thingmanagement <.. thingform
+	thingconsent <.. thingform
+	thingcamp <.. thingphoto
+	thingchild <.. thingphoto
+	thingcase <.. thingstaff
+	thingform *-- thingvarioustype
+	thingemergency *-- thingcase
+	thingcamp *-- thingyear
+	thingcamp *-- thingmanagement
+	actorparent --- thingcounselorparent
+	actorcampadministrator --- thingforminterface
+	actorparent --- thingforminterface
+	actorcampadministrator --- thingparentinterface
+	actorcampadministrator --- thingavenueinterface
+	actorcampadministrator --- thinginformationinterface
+	actorcampadministrator --- thingguardianinterface
+	actorparent --- thingscheduleinterface
+	actorparent --- thingcampinterface
+	actorparent --- thingaccountinterface
+	actorparent --- thingcounselorinterface
+	actorparent --- thingpaymentinterface
+	actorparent --- thingchildinterface
+	actorparent --- thingemergencyinterface
+	thingforminterface --> controluploadconsentforms
+	thingform --- controluploadconsentforms
+	thinggeneralconcern --- controlsubmitparentgeneralconcern
+	controlcreateavenuesubmitparentsubmitparentgeneralconcern --> controlsubmitparentgeneralconcern
+	thingparentinterface --> controlsubmitparentgeneralconcern
+	thingparent --- controlsubmitparentgeneralconcern
+	thingparent --- controlsubmitparentfeedback
+	thingfeedback --- controlsubmitparentfeedback
+	thingavenueinterface --> controlsubmitparentfeedback
+	controlcreateavenuesubmitparentsubmitparentgeneralconcern --> controlsubmitparentfeedback
+	thingavenue --- controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingparent --- controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingavenueinterface --> controlcreateavenuesubmitparentsubmitparentgeneralconcern
+	thingweeklyfeedback --- controlprovideweeklyfeedbackparent
+	thingparent --- controlprovideweeklyfeedbackparent
+	thingparentinterface --> controlprovideweeklyfeedbackparent
+	thingparent --- controlnotifyparent
+	thingparentinterface --> controlnotifyparent
+	thingparent --- controladdparent
+	thingparentinterface --> controladdparent
+	thinginformation --- controlmodifyinformation
+	thingaddedparent --- controlmodifyinformation
+	thingparentinterface --> controlmodifyinformation
+	thinginformationinterface --> controlstoreinformation
+	thinginformation --- controlstoreinformation
+	thingguardian --- controlstoreinformationguardian
+	thingguardianinterface --> controlstoreinformationguardian
+	thinginformation --- controlstoreinformationguardian
+	thingforminterface --> controlseeconsentforms
+	thingform --- controlseeconsentforms
+	thingschedule --- controltrackschedule
+	thingscheduleinterface --> controltrackschedule
+	thingactivity --- controltrackactivitycamp
+	thingcamp --- controltrackactivitycamp
+	thingcampinterface --> controltrackactivitycamp
+	thingaccount --- controlcreateaccount
+	thingaccountinterface --> controlcreateaccount
+	thingcounselorparent --> controlseeassigncounselorparentkid
+	controlmakeseenecessarypayment --> controlseeassigncounselorparentkid
+	thingpaymentinterface --> controlseeassigncounselorparentkid
+	controlseeassigncounselorparentkid --> controlassigncounselorparentkid
+	thingcounselorparent --> controlassigncounselorparentkid
+	thingkid --- controlassigncounselorparentkid
+	thingcounselor --- controlmessagecounselor
+	thingcounselorinterface --> controlmessagecounselor
+	thingforminterface --> controlsignconsentforms
+	thingform --- controlsignconsentforms
+	thingforminterface --> controlsubmitconsentforms
+	thingform --- controlsubmitconsentforms
+	thingnecessarypayment --- controlmakeseenecessarypayment
+	thingpaymentinterface --> controlmakeseenecessarypayment
+	thingchildinterface --> controlenrollchild
+	thingchild --- controlenrollchild
+	thingenrolledchild --- controlseeenrolledchildcampyear
+	thingyear --- controlseeenrolledchildcampyear
+	thingcampinterface --> controlseeenrolledchildcampyear
+	thingenrolledchild --- controleditenrolledchildcampyear
+	thingyear --- controleditenrolledchildcampyear
+	thingcampinterface --> controleditenrolledchildcampyear
+	thingvarioustype --- controlsubmitvarioustypecampmanagement
+	thingform --- controlsubmitvarioustypecampmanagement
+	thingmanagement --- controlsubmitvarioustypecampmanagement
+	thingcampinterface --> controlsubmitvarioustypecampmanagement
+	thingphoto --- controlsharephoto
+	thingcamp --- controlsharephoto
+	thingchild --- controlsharephoto
+	thingchildinterface --> controlsharephoto
+	thingstaff --- controlconnectstaffcase
+	thingcase --- controlconnectstaffcase
+	thingemergency --- controlconnectstaffcase
+	thingemergencyinterface --> controlconnectstaffcase
+	thingcamp --- controlseeschedule
+	thingactivity --- controlseeschedule
+	thingchild --- controlseeschedule
+	thingschedule --- controlseeschedule
+	thingcampinterface --> controlseeschedule
+
+@enduml

@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As an academicpublisher, I want to make persistent web links between my articles and underlying datasets, so that my journals can be seen to be filled with robust, high quality research.",
+    "entities": [
+      {
+        "text": "academicpublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      },
+      {
+        "text": "journals",
+        "label": "PII"
+      }
+    ]
+  }
+]

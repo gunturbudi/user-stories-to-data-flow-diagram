@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1106" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+ <root>
+ <mxCell id="0"/>
+  <mxCell id="1" parent="0"/>
+  <mxCell id= "7" value= "Record any conditions, clearances, or corrections needed from the applicant." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "8" value= "Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance." style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "200" value= "Plan" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "201" value= "Review" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "202" value= "Applicant" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "203" value= "Outcome" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "204" value= "Code Modification" style= "shape=partialRectangle;whiteSpace=wrap;left=0;right=0;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "205" value= "Plan , Review , Staff Member" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "206" value= "Assign Plans For Review" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "207" value= "Conduct A Plan Review With The Applicant" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "208" value= "Record The Outcome" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "209" value= "Review Plans" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "210" value= "Track The Completion Of Required Plan Reviews" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "211" value= "Review The Code Modifications The Applicant" style= "ellipse;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "213" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "206" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "214" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "207" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "215" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "208" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "216" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "209" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "217" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "210" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "218" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "205" target= "211" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "219" value= "Plan" style= "endArrow=classic;whiteSpace=wrap;" source= "206" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "220" value= "Review" style= "endArrow=classic;whiteSpace=wrap;" source= "206" target= "201" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "221" value= "Applicant" style= "endArrow=classic;whiteSpace=wrap;" source= "207" target= "202" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "222" value= "Review" style= "endArrow=classic;whiteSpace=wrap;" source= "207" target= "201" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "223" value= "Outcome" style= "endArrow=classic;whiteSpace=wrap;" source= "208" target= "203" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "224" value= "Plan" style= "endArrow=classic;whiteSpace=wrap;" source= "209" target= "200" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "225" value= "Review" style= "endArrow=classic;whiteSpace=wrap;" source= "210" target= "201" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "226" value= "Code Modification" style= "endArrow=classic;whiteSpace=wrap;" source= "211" target= "204" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1000" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "209" target= "7" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1001" value= "Plans" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1002" value= "Plans" style= "endArrow=classic;whiteSpace=wrap;" source= "7" target= "1001" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1003" value= "" style= "endArrow=classic;whiteSpace=wrap;" source= "210" target= "8" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1004" value= "Results" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1005" value= "Results" style= "endArrow=classic;whiteSpace=wrap;" source= "8" target= "1004" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+  <mxCell id= "1006" value= "Payment" style= "rounded=0;whiteSpace=wrap;" vertex="1" parent="1" >
+ <mxGeometry x="560" y="480" width="100" height="100" as="geometry"/>
+ </mxCell>
+  <mxCell id= "1007" value= "Payment" style= "endArrow=classic;whiteSpace=wrap;" source= "8" target= "1006" edge="1" parent="1" >
+<mxGeometry width="50" height="50" as="geometry">
+ <mxPoint x="210" y="490" as="sourcePoint"/>
+ <mxPoint x="450" y="410" as="targetPoint"/>
+ </mxGeometry>
+ </mxCell>
+</root>
+</mxGraphModel>

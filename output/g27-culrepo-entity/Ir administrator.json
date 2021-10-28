@@ -1,0 +1,371 @@
+[
+  {
+    "text": "As a DB/IR administrator, I want to mark report/dataset not to be emailed/viewable due to error being discovered.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "report",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "emailed",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "patrons",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "historic reports",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to see list of subscribers for specified report in order research missing report complaints.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "subscribers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to manage subject classifications for ease of patron browsing and searching.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "subject classifications",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to manage customizable relationship groups in support of patron see also option.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "relationship groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to upload revised report/dataset due to error in report/document.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to upload new version of report/dataset while retaining previous versions for patron use.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to have the system recognize/categorize document type (e.g. historical report still published, expired historical report, single topic dataset, broad topic dataset, report with subtopic, computer file), so that report/dataset is processed and displayed properly.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "recognize",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to login to personal account with access to authorized functions.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "login",
+        "label": "Processing"
+      },
+      {
+        "text": "personal account",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to have a personal account with the ability to change passwords to make them more secure or to retrieve forgotten ones.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "personal account",
+        "label": "PII"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to set up or delete accounts for other administrators with various levels of permission.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set up",
+        "label": "Processing"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "administrators",
+        "label": "Data"
+      },
+      {
+        "text": "administering",
+        "label": "Processing"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to have robust searching and tracking features for existing and newly created patron accounts.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "searching",
+        "label": "Processing"
+      },
+      {
+        "text": "tracking",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to unpublish a report/dataset if requested to do so by USDA agency.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "unpublish",
+        "label": "Processing"
+      },
+      {
+        "text": "report",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to add future release dates of reports/datasets to calendar for patron FYI.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to search for administrator accounts using full/partial email or name.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to administrate patron accounts for purpose of closing accounts, viewing subscriptions, changing subscriptions, resetting passwords, changing email address, etc.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "administrate",
+        "label": "Processing"
+      },
+      {
+        "text": "patron accounts",
+        "label": "PII"
+      },
+      {
+        "text": "closing",
+        "label": "Processing"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      },
+      {
+        "text": "viewing",
+        "label": "Processing"
+      },
+      {
+        "text": "subscriptions",
+        "label": "PII"
+      },
+      {
+        "text": "changing",
+        "label": "Processing"
+      },
+      {
+        "text": "subscriptions",
+        "label": "PII"
+      },
+      {
+        "text": "resetting",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      },
+      {
+        "text": "changing",
+        "label": "Processing"
+      },
+      {
+        "text": "email address",
+        "label": "PII"
+      }
+    ]
+  }
+]

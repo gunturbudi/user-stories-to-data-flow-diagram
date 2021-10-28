@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingresearcher
+	entity "Facility" as thingfacility
+	entity "Datum" as thingdatum
+	entity "Archive" as thingarchive
+	actor "Research ,\nFacility Manager" as actorresearchfacilitymanager
+	circle "Behalf" as thingbehalf
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	control "Deposit Data\nFrom Facility\nDirectly Into\nThe Archive\nOn Behalf\nOf Researchers" as controldepositdatumfacilityarchive
+
+	thingarchive <.. thingfacility
+	thingfacility <.. thingdatum
+	thingbehalf <.. thingarchive
+	thingresearcher *-- thingbehalf
+	actorresearchfacilitymanager --- thingresearcherinterface
+	thingdatum --- controldepositdatumfacilityarchive
+	thingfacility --- controldepositdatumfacilityarchive
+	thingarchive --- controldepositdatumfacilityarchive
+	thingbehalf --- controldepositdatumfacilityarchive
+	thingresearcher --- controldepositdatumfacilityarchive
+	thingresearcherinterface --> controldepositdatumfacilityarchive
+
+@enduml

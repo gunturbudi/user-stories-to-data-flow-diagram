@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Colleague,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Have,ellipse,null,null,process
+204,That Share,ellipse,null,null,process
+205,Locate Data Colleagues Want,ellipse,null,null,process
+206,Access Data Colleagues Want,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,,endArrow=classic,202,206,endArrow=classic
+212,,endArrow=classic,203,205,endArrow=classic
+213,,endArrow=classic,203,206,endArrow=classic
+214,,endArrow=classic,205,204,endArrow=classic
+215,Datum,endArrow=classic,205,200,endArrow=classic
+216,Colleague,endArrow=classic,205,201,endArrow=classic
+217,,endArrow=classic,206,204,endArrow=classic
+218,Datum,endArrow=classic,206,200,endArrow=classic
+219,Colleague,endArrow=classic,206,201,endArrow=classic

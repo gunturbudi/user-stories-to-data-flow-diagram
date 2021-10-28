@@ -1,0 +1,32 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Person " color=red];
+201 [label="<f0>  |<f1> Thing " color=red];
+202 [label="<f0>  |<f1> Alfred " ];
+203 [label="<f0>  |<f1> Pain " color=red];
+204 [label="<f0>  |<f1> Step Counter " color=red];
+205 [label="<f0>  |<f1> Skin Conduction\nSensor " ];
+206 [label="Socialcaregiver" shape=box];
+207 [label="{<f0> 1.0|<f1> Remind Of The Things }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Bring To The Person }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Recognize Pain }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Using Skin Conduction Sensors }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Stress Alfred }" shape=Mrecord];
+212 [label="{<f0> 6.0|<f1> Have A Step Counter Into Alfred }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+206 -> 212
+207 -> 208
+207 -> 201 [label="Thing"]
+208 -> 200 [label="Person"]
+209 -> 203 [label="Pain"]
+210 -> 211
+210 -> 205 [label="Skin Conduction\nSensor"]
+211 -> 209
+211 -> 202 [label="Alfred"]
+212 -> 204 [label="Step Counter"]
+212 -> 202 [label="Alfred"]
+}

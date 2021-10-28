@@ -1,0 +1,163 @@
+[
+  {
+    "text": "As a DigitalRecords Archivist, I want to have a method to batch ingest ETDs we receive from ProQuest.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "batch ingest",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to have the batch ingest tool to recognize and set embargoes, permissions for embargoed items should be allow everyone to view metadata, and collection curator and repository administrators to download the files.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to have the repository to lift embargoes on the release date and set the access controls to the configuration set on item on that date.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "lift embargoes",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to have a method to add and remove multiple people to deposit groups in specific collections, to set a date that the deposit window closes, and to have these permissions conferred on these depositors should pick up on the collection's default permission.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "deposit groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to edit the length of embargoes.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to expose the descriptive record for each ETD item for re-use external to Fedora.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "expose",
+        "label": "Processing"
+      },
+      {
+        "text": "descriptive record",
+        "label": "PII"
+      },
+      {
+        "text": "ETD item",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to grant embargo privileges to other repository administrators.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "grant embargo privileges",
+        "label": "Processing"
+      },
+      {
+        "text": "repository administrators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to have a method to add and remove individual people from deposit groups.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "individual people",
+        "label": "Data"
+      },
+      {
+        "text": "deposit groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DigitalRecords Archivist, I want to view and download summary embargo metadata for all ETDs in the repository.",
+    "entities": [
+      {
+        "text": "DigitalRecords Archivist",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      }
+    ]
+  }
+]

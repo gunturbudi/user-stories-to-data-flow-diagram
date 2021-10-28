@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Suitable ,\nTimely Research" as thingsuitabletimelyresearch
+	entity "New Research" as thingnewresearch
+	entity "Curriculum" as thingcurriculum
+	entity "Content" as thingcontent
+	entity "Use" as thinguse
+	entity "Relevant" as thingrelevant
+	actor "Teachingfacultymember" as actorteachingfacultymember
+	boundary "Relevant\nInterface" as thingrelevantinterface #grey
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	control "Identify Relevant" as controlidentifyrelevant
+	control "Notified Identify\nSuitable, Timely\nResearch For\nUse In\nCurriculum Of\nNew Research" as controlidentifysuitabletimelyresearchnewresearch
+	control "Notified Identify\nSuitable, Timely\nResearch For\nUse In\nCurriculum Of\nContent" as controlidentifysuitabletimelyresearchcontent
+
+	thinguse <.. thingsuitabletimelyresearch
+	thingnewresearch <.. thingcurriculum
+	thingcontent <.. thingcurriculum
+	thingcurriculum <.. thinguse
+	actorteachingfacultymember --- thingrelevantinterface
+	actorteachingfacultymember --- thingresearchinterface
+	actorteachingfacultymember --- thingcontentinterface
+	thingrelevant --- controlidentifyrelevant
+	thingrelevantinterface --> controlidentifyrelevant
+	thingsuitabletimelyresearch --- controlidentifysuitabletimelyresearchnewresearch
+	thinguse --- controlidentifysuitabletimelyresearchnewresearch
+	thingcurriculum --- controlidentifysuitabletimelyresearchnewresearch
+	thingnewresearch --- controlidentifysuitabletimelyresearchnewresearch
+	thingresearchinterface --> controlidentifysuitabletimelyresearchnewresearch
+	thingcontent --- controlidentifysuitabletimelyresearchcontent
+	thingcontentinterface --> controlidentifysuitabletimelyresearchcontent
+	thingsuitabletimelyresearch --- controlidentifysuitabletimelyresearchcontent
+	thingcurriculum --- controlidentifysuitabletimelyresearchcontent
+	thinguse --- controlidentifysuitabletimelyresearchcontent
+
+@enduml

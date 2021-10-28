@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As an administrator, I want to assign RAC staff to different user groups, so that I can control read/write access.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "RAC staff",
+        "label": "Data"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      }
+    ]
+  }
+]

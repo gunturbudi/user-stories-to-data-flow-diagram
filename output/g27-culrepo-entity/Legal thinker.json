@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As an academicresearcher, I want to the thesis paper of an influential judge or legal thinker to gain insight into how their initial scholarship got started.",
+    "entities": [
+      {
+        "text": "academicresearcher,",
+        "label": "Data"
+      },
+      {
+        "text": "thesis paper",
+        "label": "PII"
+      },
+      {
+        "text": "influential judge",
+        "label": "Data"
+      },
+      {
+        "text": "legal thinker",
+        "label": "Data"
+      },
+      {
+        "text": "gain insight",
+        "label": "Processing"
+      }
+    ]
+  }
+]

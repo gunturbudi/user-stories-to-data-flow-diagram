@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As an executive, I want to have full access to data related to my company, so that I can have a sense of my company's performance.",
+    "entities": [
+      {
+        "text": "executive,",
+        "label": "Data"
+      },
+      {
+        "text": "full access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "company",
+        "label": "PII"
+      }
+    ]
+  }
+]

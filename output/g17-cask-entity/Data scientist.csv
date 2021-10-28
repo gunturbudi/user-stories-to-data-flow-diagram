@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Dataset Instance,shape=partialRectangle,null,null,data_base
+201,Code,shape=partialRectangle,null,null,data_base
+202,Dataset Type,shape=partialRectangle,null,null,data_base
+203,Datum Scientist,rounded=0,null,null,external_entity
+204,Create A Dataset Instance Of An Existing Dataset Type Writing Code,ellipse,null,null,process
+205,Upgrade A Dataset Instance To A New Version Of Code,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Dataset Instance,endArrow=classic,204,200,endArrow=classic
+210,Dataset Type,endArrow=classic,204,202,endArrow=classic
+211,Code,endArrow=classic,204,201,endArrow=classic
+212,Dataset Instance,endArrow=classic,205,200,endArrow=classic
+213,Code,endArrow=classic,205,201,endArrow=classic

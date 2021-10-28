@@ -1,0 +1,114 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Project " color=red];
+202 [label="<f0>  |<f1> Dmp " color=red];
+203 [label="<f0>  |<f1> Topic " color=red];
+204 [label="<f0>  |<f1> Information " color=red];
+205 [label="<f0>  |<f1> Resource " color=red];
+206 [label="<f0>  |<f1> Agreement " color=red];
+207 [label="<f0>  |<f1> Archive " ];
+208 [label="<f0>  |<f1> Metadata " color=red];
+209 [label="<f0>  |<f1> Cris " ];
+210 [label="<f0>  |<f1> Publication " color=red];
+211 [label="<f0>  |<f1> Institutional Repository " ];
+212 [label="<f0>  |<f1> Cost " color=red];
+213 [label="<f0>  |<f1> Section " ];
+214 [label="<f0>  |<f1> Researcher " color=red];
+215 [label="<f0>  |<f1> Department " color=red];
+216 [label="<f0>  |<f1> Role " color=red];
+217 [label="<f0>  |<f1> Responsibility " ];
+218 [label="<f0>  |<f1> Party " ];
+219 [label="<f0>  |<f1> Research " color=red];
+220 [label="Researcher" shape=box];
+221 [label="Data Manager" shape=box];
+222 [label="{<f0> 1.0|<f1> Indicate }" shape=Mrecord];
+223 [label="{<f0> 2.0|<f1> Similar Know Which Topics In All Dmps }" shape=Mrecord];
+224 [label="{<f0> 3.0|<f1> Prepopulate Information }" shape=Mrecord];
+225 [label="{<f0> 4.0|<f1> Know }" shape=Mrecord];
+226 [label="{<f0> 5.0|<f1> Store Agreements To Third Party Data In A Project }" shape=Mrecord];
+227 [label="{<f0> 6.0|<f1> Take To Archive }" shape=Mrecord];
+228 [label="{<f0> 7.0|<f1> Share Data }" shape=Mrecord];
+229 [label="{<f0> 8.0|<f1> Record }" shape=Mrecord];
+230 [label="{<f0> 9.0|<f1> Import Metadata }" shape=Mrecord];
+231 [label="{<f0> 10.0|<f1> Extract The Description Of The Data }" shape=Mrecord];
+232 [label="{<f0> 11.0|<f1> Record Publications In Cris }" shape=Mrecord];
+233 [label="{<f0> 12.0|<f1> Record Research Publications In The Institutional Repository With Dmp Records }" shape=Mrecord];
+234 [label="{<f0> 13.0|<f1> Link Publications In Cris }" shape=Mrecord];
+235 [label="{<f0> 14.0|<f1> Link Research Publications In The Institutional Repository With Dmp Records }" shape=Mrecord];
+236 [label="{<f0> 15.0|<f1> Know About Costs }" shape=Mrecord];
+237 [label="{<f0> 16.0|<f1> See The Sections }" shape=Mrecord];
+238 [label="{<f0> 17.0|<f1> Costing By Other Researchers In Department }" shape=Mrecord];
+239 [label="{<f0> 18.0|<f1> Know Which Information Necessary }" shape=Mrecord];
+19 [label="{<f0> 19.0|<f1> Plan my research. }" shape=Mrecord];
+225 -> 19
+1001 [label="Researcher" shape=box];
+1001 -> 19
+19 -> 219  [label="Research"]
+20 [label="{<f0> 20.0|<f1> Share data manager posts. }" shape=Mrecord];
+237 -> 20
+1005 [label="Researcher" shape=box];
+1005 -> 20
+1007 [label="<f0>  |<f1> Posts " color=red];
+20 -> 1007 [label="Posts"]
+21 [label="{<f0> 21.0|<f1> Share data manager posts. }" shape=Mrecord];
+237 -> 21
+1010 [label="Researcher" shape=box];
+1010 -> 21
+1012 [label="<f0>  |<f1> Posts " color=red];
+21 -> 1012 [label="Posts"]
+22 [label="{<f0> 22.0|<f1> Share data manager posts. }" shape=Mrecord];
+237 -> 22
+1015 [label="Researcher" shape=box];
+1015 -> 22
+1017 [label="<f0>  |<f1> Posts " color=red];
+22 -> 1017 [label="Posts"]
+220 -> 223
+220 -> 224
+220 -> 225
+220 -> 226
+220 -> 227
+220 -> 228
+220 -> 229
+220 -> 230
+220 -> 231
+220 -> 232
+220 -> 233
+220 -> 234
+220 -> 235
+220 -> 236
+220 -> 237
+220 -> 238
+221 -> 239
+223 -> 203 [label="Topic"]
+223 -> 202 [label="Dmp"]
+224 -> 204 [label="Information"]
+225 -> 227
+226 -> 206 [label="Agreement"]
+226 -> 201 [label="Project"]
+226 -> 200 [label="Datum"]
+227 -> 207 [label="Archive"]
+228 -> 200 [label="Datum"]
+229 -> 228
+230 -> 208 [label="Metadata"]
+231 -> 200 [label="Datum"]
+232 -> 210 [label="Publication"]
+232 -> 209 [label="Cris"]
+233 -> 211 [label="Institutional Repository"]
+233 -> 210 [label="Publication"]
+234 -> 209 [label="Cris"]
+234 -> 210 [label="Publication"]
+235 -> 210 [label="Publication"]
+235 -> 211 [label="Institutional Repository"]
+236 -> 212 [label="Cost"]
+237 -> 213 [label="Section"]
+237 -> 216 [label="Role"]
+237 -> 215 [label="Department"]
+237 -> 217 [label="Responsibility"]
+238 -> 237
+238 -> 214 [label="Researcher"]
+238 -> 215 [label="Department"]
+239 -> 204 [label="Information"]
+226 -> 218 [label="Party"]
+233 -> 219 [label="Research"]
+}

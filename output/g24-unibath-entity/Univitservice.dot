@@ -1,0 +1,27 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archived Datum " ];
+201 [label="<f0>  |<f1> Archive " color=red];
+202 [label="<f0>  |<f1> Ldap " ];
+203 [label="<f0>  |<f1> Datum " ];
+204 [label="<f0>  |<f1> Different System " ];
+205 [label="<f0>  |<f1> Storage System " ];
+206 [label="<f0>  |<f1> University System " ];
+207 [label="Univitservice" shape=box];
+208 [label="{<f0> 1.0|<f1> Store Archived Data On Existing Storage Systems }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Integrate The Archive With Existing University Systems Such As Ldap }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Store Archived Data On The Hcp Object Store }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Export All Data To A Different System }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 200 [label="Archived Datum"]
+208 -> 205 [label="Storage System"]
+209 -> 201 [label="Archive"]
+209 -> 206 [label="University System"]
+209 -> 202 [label="Ldap"]
+210 -> 200 [label="Archived Datum"]
+211 -> 203 [label="Datum"]
+211 -> 204 [label="Different System"]
+}

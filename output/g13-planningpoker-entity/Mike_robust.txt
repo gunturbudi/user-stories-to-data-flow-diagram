@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	entity "Metric" as thingmetric
+	actor "Mike" as actormike
+	circle "Use" as thinguse
+	boundary "Game\nInterface" as thinggameinterface #grey
+	control "See Some\nMetrics On\nUse Of\nThe Game" as controlseemetricuse
+
+	thinguse <.. thingmetric
+	thinggame *-- thinguse
+	actormike --- thinggameinterface
+	thingmetric --- controlseemetricuse
+	thinguse --- controlseemetricuse
+	thinggame --- controlseemetricuse
+	thinggameinterface --> controlseemetricuse
+
+@enduml

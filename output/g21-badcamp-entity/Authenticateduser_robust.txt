@@ -1,0 +1,105 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorships Page" as thingsponsorshipspage #grey
+	entity "Link" as thinglink
+	entity "Payment Page" as thingpaymentpage #grey
+	entity "Individual Sponsorship" as thingindividualsponsorship
+	entity "Wysiwyg Editor" as thingwysiwygeditor #grey
+	entity "Job Board" as thingjobboard #grey
+	entity "Idividual Sponsorship" as thingidividualsponsorship
+	entity "Registration" as thingregistration
+	entity "Payment Information" as thingpaymentinformation #grey
+	entity "Card" as thingcard
+	entity "User Profile" as thinguserprofile #grey
+	entity "Session" as thingsession
+	entity "Badcamp" as thingBADCAMP
+	entity "Company Sponsorship" as thingcompanysponsorship
+	entity "Form Content" as thingformcontent
+	actor "Authenticateduser" as actorauthenticateduser
+	circle "Step" as thingthirdstep
+	circle "Choice" as thingseveralchoice
+	circle "Second Page" as thingsecondpage
+	circle "Process" as thingprocess #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Sponsorship\nInterface" as thingsponsorshipinterface #grey
+	boundary "Registration\nInterface" as thingregistrationinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Board\nInterface" as thingboardinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	boundary "Badcamp\nInterface" as thingbadcampinterface #grey
+	control "Find A\nTo Link\nOn The\nSponsorships Page\nA $\nLevel Sponsor" as controlfindlink
+	control "Identify" as controlidentify
+	control "Pay For\nA $\nCompany Sponsorship" as controlpaydollarcompanysponsorship
+	control "See A\nPayment Page" as controlseepaymentpagepayindividualsponsorship
+	control "Pay For\nIndividual Sponsorships\nAs The\nThird Step\nOf The\nRegistration Process" as controlpayindividualsponsorship
+	control "Use A\nWysiwyg Editor\nFor All\nLong Form\nContent" as controlusewysiwygeditor
+	control "View The\nJob Board" as controlviewjobboard
+	control "Offered Several\nChoices Of\nIdividual Sponsorship\nOn The\nSecond Page\nOf Registration" as controlofferseveralchoicesecondpage
+	control "Enter Payment\nInformation" as controlenterpaymentinformation
+	control "Have Card\nFor An\nIndividual Sponsorship" as controlhavecard
+	control "Update User\nProfile" as controlupdateuserprofile
+	control "Edit Session" as controleditsession
+	control "Submit A\nSession At\nBadcamp" as controlsubmitsessionBADCAMP
+
+	thingsponsorshipspage <.. thinglink
+	thingthirdstep <.. thingindividualsponsorship
+	thingformcontent <.. thingwysiwygeditor
+	thingsecondpage <.. thingidividualsponsorship
+	thingindividualsponsorship <.. thingcard
+	thingBADCAMP <.. thingsession
+	thingprocess *-- thingthirdstep
+	thingregistration *-- thingthirdstep
+	thingidividualsponsorship *-- thingseveralchoice
+	thingregistration *-- thingsecondpage
+	thingregistration *-- thingprocess
+	actorauthenticateduser --- thingpageinterface
+	actorauthenticateduser --- thingsponsorshipinterface
+	actorauthenticateduser --- thingregistrationinterface
+	actorauthenticateduser --- thingcontentinterface
+	actorauthenticateduser --- thingboardinterface
+	actorauthenticateduser --- thinginformationinterface
+	actorauthenticateduser --- thingprofileinterface
+	actorauthenticateduser --- thingsessioninterface
+	actorauthenticateduser --- thingbadcampinterface
+	thinglink --- controlfindlink
+	thingsponsorshipspage --- controlfindlink
+	thingpageinterface --> controlfindlink
+	thingcompanysponsorship --- controlpaydollarcompanysponsorship
+	thingsponsorshipinterface --> controlpaydollarcompanysponsorship
+	thingpaymentpage --- controlseepaymentpagepayindividualsponsorship
+	thingpageinterface --> controlseepaymentpagepayindividualsponsorship
+	controlseepaymentpagepayindividualsponsorship --> controlpayindividualsponsorship
+	thingindividualsponsorship --- controlpayindividualsponsorship
+	thingthirdstep --- controlpayindividualsponsorship
+	thingprocess --- controlpayindividualsponsorship
+	thingregistrationinterface --> controlpayindividualsponsorship
+	thingregistration --- controlpayindividualsponsorship
+	thingwysiwygeditor --- controlusewysiwygeditor
+	thingformcontent --- controlusewysiwygeditor
+	thingcontentinterface --> controlusewysiwygeditor
+	thingjobboard --- controlviewjobboard
+	thingboardinterface --> controlviewjobboard
+	thingseveralchoice --- controlofferseveralchoicesecondpage
+	thingidividualsponsorship --- controlofferseveralchoicesecondpage
+	thingsecondpage --- controlofferseveralchoicesecondpage
+	thingregistration --- controlofferseveralchoicesecondpage
+	thingregistrationinterface --> controlofferseveralchoicesecondpage
+	thingpaymentinformation --- controlenterpaymentinformation
+	thinginformationinterface --> controlenterpaymentinformation
+	thingcard --- controlhavecard
+	thingindividualsponsorship --- controlhavecard
+	thingsponsorshipinterface --> controlhavecard
+	thinguserprofile --- controlupdateuserprofile
+	thingprofileinterface --> controlupdateuserprofile
+	thingsession --- controleditsession
+	thingsessioninterface --> controleditsession
+	thingBADCAMP --- controlsubmitsessionBADCAMP
+	thingbadcampinterface --> controlsubmitsessionBADCAMP
+	thingsession --- controlsubmitsessionBADCAMP
+
+@enduml

@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	actor "Dpc" as actorDPC
+	boundary "Event" as thingeventDPC
+	control "Created" as controlcreateeventDPC
+
+	actorDPC --- thingeventDPC
+	thingeventDPC --> controlcreateeventDPC
+
+@enduml

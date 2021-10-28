@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,"See things like whether estimates converged around the first opinion given by ""estimator a"" for example.",ellipse,null,null,process
+200,Identifiable Way,shape=partialRectangle,null,null,data_base
+201,Researcher,rounded=0,null,null,external_entity
+202,Stored In A Identifiable Way,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Identifiable Way,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,201,2,endArrow=classic
+1001,Opinion,rounded=0,null,null,external_entity
+1002,Opinion,endArrow=classic,2,1001,endArrow=classic

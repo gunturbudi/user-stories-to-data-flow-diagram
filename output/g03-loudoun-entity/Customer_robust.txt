@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Customer Portal\nUser Account" as thingcustomerportaluseraccount #grey
+	entity "Inspection" as thinginspection
+	actor "Customer" as actorcustomer
+	actor "Inspector" as actorinspector
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Inspection\nInterface" as thinginspectioninterface #grey
+	control "Create A\nCustomer Portal\nUser Account" as controlcreatecustomerportaluseraccount
+	control "Request Inspection" as controlrequestinspection
+	control "Conduct Inspections" as controlconductinspection
+
+	actorcustomer --- thingaccountinterface
+	actorcustomer --- thinginspectioninterface
+	actorinspector --- thinginspectioninterface
+	thingcustomerportaluseraccount --- controlcreatecustomerportaluseraccount
+	thingaccountinterface --> controlcreatecustomerportaluseraccount
+	thinginspection --- controlrequestinspection
+	thinginspectioninterface --> controlrequestinspection
+	thinginspection --- controlconductinspection
+	thinginspectioninterface --> controlconductinspection
+
+@enduml

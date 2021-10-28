@@ -1,0 +1,41 @@
+id,value,style,source,target,type
+200,User,shape=partialRectangle,null,null,data_base
+201,Owner,shape=partialRectangle,null,null,data_base
+202,Usage,shape=partialRectangle,null,null,data_base
+203,Key Metric,shape=partialRectangle,null,null,data_base
+204,Download,shape=partialRectangle,null,null,data_base
+205,Billing System,shape=partialRectangle,null,null,data_base
+206,Pricing Plan,shape=partialRectangle,null,null,data_base
+207,Api,shape=partialRectangle,null,null,data_base
+208,Owner,rounded=0,null,null,external_entity
+209,Admin,rounded=0,null,null,external_entity
+210,Make A User,ellipse,null,null,process
+211,Remove A User As An Owner,ellipse,null,null,process
+212,See Key Metrics About Usage Such As Users,ellipse,null,null,process
+213,See Key Metrics About Usage Such As Api Usage,ellipse,null,null,process
+214,See Key Metrics About Usage Such As Download,ellipse,null,null,process
+215,Have A Pricing Plan,ellipse,null,null,process
+216,Have Billing System,ellipse,null,null,process
+218,,endArrow=classic,208,210,endArrow=classic
+219,,endArrow=classic,208,211,endArrow=classic
+220,,endArrow=classic,208,212,endArrow=classic
+221,,endArrow=classic,209,210,endArrow=classic
+222,,endArrow=classic,209,212,endArrow=classic
+223,,endArrow=classic,209,213,endArrow=classic
+224,,endArrow=classic,209,214,endArrow=classic
+225,,endArrow=classic,209,215,endArrow=classic
+226,,endArrow=classic,209,216,endArrow=classic
+227,User,endArrow=classic,210,200,endArrow=classic
+228,Owner,endArrow=classic,211,201,endArrow=classic
+229,User,endArrow=classic,211,200,endArrow=classic
+230,Key Metric,endArrow=classic,212,203,endArrow=classic
+231,Usage,endArrow=classic,212,202,endArrow=classic
+232,User,endArrow=classic,212,200,endArrow=classic
+233,Key Metric,endArrow=classic,213,203,endArrow=classic
+234,Usage,endArrow=classic,213,202,endArrow=classic
+235,Download,endArrow=classic,214,204,endArrow=classic
+236,Key Metric,endArrow=classic,214,203,endArrow=classic
+237,Usage,endArrow=classic,214,202,endArrow=classic
+238,Pricing Plan,endArrow=classic,215,206,endArrow=classic
+239,Billing System,endArrow=classic,216,205,endArrow=classic
+243,Api,endArrow=classic,213,207,endArrow=classic

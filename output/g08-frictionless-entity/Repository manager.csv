@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Basic Metadata,shape=partialRectangle,null,null,data_base
+201,Researcher,shape=partialRectangle,null,null,data_base
+202,Tool,shape=partialRectangle,null,null,data_base
+203,User,shape=partialRectangle,null,null,data_base
+204,Research Datum,shape=partialRectangle,null,null,data_base
+205,Repository Manager,rounded=0,null,null,external_entity
+206,User Add,ellipse,null,null,process
+207,Researchers Add Basic Metadata To Research Data,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,User,endArrow=classic,206,203,endArrow=classic
+212,Researcher,endArrow=classic,207,201,endArrow=classic
+213,Basic Metadata,endArrow=classic,207,200,endArrow=classic
+214,Research Datum,endArrow=classic,207,204,endArrow=classic

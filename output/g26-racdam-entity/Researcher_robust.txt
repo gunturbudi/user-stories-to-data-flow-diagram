@@ -1,0 +1,281 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photo" as thingphoto
+	entity "Document" as thingdocument
+	entity "Report" as thingreport
+	entity "File" as thingfile
+	entity "Common Material" as thingcommonmaterial
+	entity "Collection" as thingcollection
+	entity "Folder" as thingfolder
+	entity "Publication" as thingpublication
+	entity "Researcher" as thingresearcher
+	entity "Citation" as thingcitation
+	entity "Donor" as thingdonor
+	entity "Available Right" as thingavailableright
+	entity "Information" as thinginformation
+	entity "Visual" as thingvisual
+	entity "Password" as thingownpassword
+	entity "Link" as thinglink
+	entity "Social Medium" as thingsocialmedium
+	entity "Image" as thingimage
+	entity "Digital Object" as thingdigitalobject
+	entity "Notification" as thingnotification
+	entity "Web Browser" as thingwebbrowser #grey
+	entity "Video" as thingvideo
+	entity "Audio File" as thingaudiofile
+	entity "Common Format" as thingcommonformat
+	entity "Descriptive Datum" as thingdescriptivedatum
+	entity "Keyword" as thingkeyword
+	entity "Structured Datum" as thingstructureddatum
+	entity "Mediation" as thingmediation
+	entity "Archival ,\nDigitized Material" as thingarchivaldigitizedmaterial
+	entity "Specific File" as thingspecificfile
+	entity "Question" as thingquestion
+	entity "Date" as thingdate
+	entity "Program Rf\nOfficer" as thingprogramrfofficer #grey
+	entity "Scan Diary" as thingscanneddiary
+	entity "Search" as thingsearch
+	entity "Working Paper" as thingworkingpaper
+	entity "Index Card" as thingindexcard
+	entity "Analog Version" as thinganalogversion
+	entity "Outreach Material" as thingoutreachmaterial
+	entity "Diary Segment" as thingdiarysegment
+	entity "Film Clip" as thingfilmclip
+	actor "Archivist" as actorarchivist
+	actor "Researcher" as actorresearcher
+	actor "Assistant Archivist" as actorassistantarchivist
+	actor "Administrator" as actoradministrator
+	circle "Thumbnail" as thingthumbnail
+	circle "Electronic Version" as thingelectronicversion
+	circle "Metadata Representation" as thingmetadatarepresentation
+	circle "Copyright Status" as thingcopyrightstatus
+	circle "Copy" as thingcopy
+	circle "Datum" as thingdatum #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	boundary "Citation\nInterface" as thingcitationinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Donor\nInterface" as thingdonorinterface #grey
+	boundary "Visual\nInterface" as thingvisualinterface #grey
+	boundary "Card\nInterface" as thingcardinterface #grey
+	boundary "Medium\nInterface" as thingmediuminterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Photograph\nInterface" as thingphotographinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Notification\nInterface" as thingnotificationinterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Browser\nInterface" as thingbrowserinterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Mediation\nInterface" as thingmediationinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Diary\nInterface" as thingdiaryinterface #grey
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	boundary "Clip\nInterface" as thingclipinterface #grey
+	control "Know" as controlknow
+	control "Provided With\nClear Citation\nInformation On\nEach Document" as controlprovideclearcitationinformation
+	control "Share Reports" as controlsharereport
+	control "Download A\nFile" as controldownloadfile
+	control "See Common\nMaterial Across\nCollections" as controlseecommonmaterialcollection
+	control "Access Tagged\nWorking Papers" as controlaccesstaggedworkingpapers
+	control "View Thumbnails\nOf Photos" as controlviewthumbnail
+	control "Tag Staff" as controlstaff
+	control "Link Electronic\nVersions Of\nResearchers' Publications\nTo Citations" as controllinkelectronicversioncitation
+	control "Make Information\nAbout Available\nRights To\nResearchers" as controlmakeinformation
+	control "Make Information\nAbout Available\nRights To\nDonor" as controlmakeinformationdonor
+	control "Access Visual" as controlaccessvisual
+	control "Access Metadata\nRepresentations Of\nIndex Cards" as controlaccessmetadatarepresentation
+	control "Have" as controlhave
+	control "Generate Structured\nCitation Data" as controlgeneratestructuredcitationdata
+	control "Share A\nLink To\nA File\nOn Social\nMedia" as controlsharelink
+	control "Understand The\nCopyright Status\nOf The\nImage" as controlunderstandcopyrightstatus
+	control "Download Reports" as controldownloadreport
+	control "Locate Photographs" as controllocatephotograph
+	control "Locate Document" as controllocatedocument
+	control "Request Analog\nVersions Of\nDigital Objects" as controlrequestanalogversions
+	control "Order Copies\nOf Photos" as controlordercopy
+	control "Receive A\nNotification" as controlreceivenotification
+	control "Stream Video" as controlstreamvideo
+	control "Stream Audio\nFiles In\nWeb Browser" as controlstreamaudiofilewebbrowser
+	control "Export Descriptive\nData In\nA Common\nFormat" as controlexportdescriptivedatum
+	control "Search All\nFiles By\nKeyword" as controlsearchfile
+	control "Search By\nKeyword" as controlsearchkeyword
+	control "Browse Through\nFiles In\nA Collection" as controlbrowsefilecollection
+	control "Search Across\nPhoto Collection\nImages" as controlsearchphotocollectionimages
+	control "Using Structured\nData" as controlusestructureddatum
+	control "Search" as controlsearchusestructureddatum
+	control "Access Educational\nOutreach Materials" as controlaccesseducationaloutreachmaterials
+	control "Have Collection,\nAccurate Citation\nInformation" as controlhavecollectionaccuratecitationinformation
+	control "Access Archival,\nDigitized Materials\nWithout Mediation" as controlaccessarchivaldigitizedmaterialmediation
+	control "Ask A\nQuestion About\nA Specific\nFile" as controlaskquestion
+	control "Know The\nDate On\nWhich Something\nDigitized" as controlknowdate
+	control "Keyword Search\nAcross All\nOf An\nProgram Rf\nOfficer's Scanned\nDiaries" as controlkeywordsearchall
+	control "Search Each\nScanned Diary\nSegment" as controlsearchscanneddiarysegment
+	control "Having" as controlhavekeywordsearchallsearchscanneddiarysegment
+	control "View Film\nClips" as controlviewfilmclips
+
+	thingsocialmedium <.. thingfile
+	thingkeyword <.. thingfile
+	thingcollection <.. thingfile
+	thingcollection <.. thingcommonmaterial
+	thingphoto <.. thingcollection
+	thingresearcher <.. thingpublication
+	thingcitation <.. thingpublication
+	thingresearcher <.. thingavailableright
+	thingdonor <.. thingavailableright
+	thingavailableright <.. thinginformation
+	thingdocument <.. thinginformation
+	thingcitation <.. thinginformation
+	thingfile <.. thinglink
+	thingcollection <.. thingimage
+	thingwebbrowser <.. thingaudiofile
+	thingcommonformat <.. thingdescriptivedatum
+	thingmediation <.. thingarchivaldigitizedmaterial
+	thingspecificfile <.. thingquestion
+	thingprogramrfofficer <.. thingscanneddiary
+	thingscanneddiary <.. thingsearch
+	thingdigitalobject <.. thinganalogversion
+	thingphoto *-- thingthumbnail
+	thingpublication *-- thingelectronicversion
+	thingindexcard *-- thingmetadatarepresentation
+	thingimage *-- thingcopyrightstatus
+	thingphoto *-- thingcopy
+	thingcitation *-- thingdatum
+	actorresearcher --- thingdocumentinterface
+	actorresearcher --- thingreportinterface
+	actorresearcher --- thingfileinterface
+	actorresearcher --- thingcollectioninterface
+	actorresearcher --- thingpaperinterface
+	actorresearcher --- thingphotointerface
+	actorarchivist --- thingcitationinterface
+	actorresearcher --- thingcitationinterface
+	actorarchivist --- thingresearcherinterface
+	actorarchivist --- thingdonorinterface
+	actorarchivist --- thingvisualinterface
+	actorarchivist --- thingcardinterface
+	actorresearcher --- thingmediuminterface
+	actorresearcher --- thingimageinterface
+	actorresearcher --- thingphotographinterface
+	actorresearcher --- thingobjectinterface
+	actorresearcher --- thingnotificationinterface
+	actorresearcher --- thingvideointerface
+	actorresearcher --- thingbrowserinterface
+	actorresearcher --- thingformatinterface
+	actorresearcher --- thingkeywordinterface
+	actorresearcher --- thingdatuminterface
+	actorresearcher --- thingmaterialinterface
+	actorresearcher --- thingmediationinterface
+	actorresearcher --- thingdateinterface
+	actorresearcher --- thingdiaryinterface
+	actorresearcher --- thingsegmentinterface
+	actorresearcher --- thingclipinterface
+	thingdocument --- controlprovideclearcitationinformation
+	thingdocumentinterface --> controlprovideclearcitationinformation
+	thinginformation --- controlprovideclearcitationinformation
+	thingreport --- controlsharereport
+	thingreportinterface --> controlsharereport
+	thingfile --- controldownloadfile
+	thingfileinterface --> controldownloadfile
+	thingcommonmaterial --- controlseecommonmaterialcollection
+	thingcollection --- controlseecommonmaterialcollection
+	thingcollectioninterface --> controlseecommonmaterialcollection
+	thingworkingpaper --- controlaccesstaggedworkingpapers
+	thingpaperinterface --> controlaccesstaggedworkingpapers
+	thingthumbnail --- controlviewthumbnail
+	thingphotointerface --> controlviewthumbnail
+	thingphoto --- controlviewthumbnail
+	thingelectronicversion --- controllinkelectronicversioncitation
+	thingpublication --- controllinkelectronicversioncitation
+	thingcitation --- controllinkelectronicversioncitation
+	thingcitationinterface --> controllinkelectronicversioncitation
+	thinginformation --- controlmakeinformation
+	thingavailableright --- controlmakeinformation
+	thingresearcherinterface --> controlmakeinformation
+	thingresearcher --- controlmakeinformation
+	thingdonor --- controlmakeinformationdonor
+	thingdonorinterface --> controlmakeinformationdonor
+	thingavailableright --- controlmakeinformationdonor
+	thinginformation --- controlmakeinformationdonor
+	thingvisual --- controlaccessvisual
+	thingvisualinterface --> controlaccessvisual
+	thingmetadatarepresentation --- controlaccessmetadatarepresentation
+	thingindexcard --- controlaccessmetadatarepresentation
+	thingcardinterface --> controlaccessmetadatarepresentation
+	thingdatum --- controlgeneratestructuredcitationdata
+	thingcitationinterface --> controlgeneratestructuredcitationdata
+	thinglink --- controlsharelink
+	thingsocialmedium --- controlsharelink
+	thingmediuminterface --> controlsharelink
+	thingfile --- controlsharelink
+	thingcopyrightstatus --- controlunderstandcopyrightstatus
+	thingimage --- controlunderstandcopyrightstatus
+	thingimageinterface --> controlunderstandcopyrightstatus
+	thingreport --- controldownloadreport
+	thingreportinterface --> controldownloadreport
+	thingphotographinterface --> controllocatephotograph
+	thingphoto --- controllocatephotograph
+	thingdocument --- controllocatedocument
+	thingdocumentinterface --> controllocatedocument
+	thinganalogversion --- controlrequestanalogversions
+	thingdigitalobject --- controlrequestanalogversions
+	thingobjectinterface --> controlrequestanalogversions
+	thingcopy --- controlordercopy
+	thingphoto --- controlordercopy
+	thingphotointerface --> controlordercopy
+	thingnotification --- controlreceivenotification
+	thingnotificationinterface --> controlreceivenotification
+	thingvideo --- controlstreamvideo
+	thingvideointerface --> controlstreamvideo
+	thingaudiofile --- controlstreamaudiofilewebbrowser
+	thingwebbrowser --- controlstreamaudiofilewebbrowser
+	thingbrowserinterface --> controlstreamaudiofilewebbrowser
+	thingdescriptivedatum --- controlexportdescriptivedatum
+	thingcommonformat --- controlexportdescriptivedatum
+	thingformatinterface --> controlexportdescriptivedatum
+	thingkeyword --- controlsearchfile
+	thingkeywordinterface --> controlsearchfile
+	thingfile --- controlsearchfile
+	thingkeyword --- controlsearchkeyword
+	thingkeywordinterface --> controlsearchkeyword
+	thingfile --- controlbrowsefilecollection
+	thingcollection --- controlbrowsefilecollection
+	thingcollectioninterface --> controlbrowsefilecollection
+	thingphotointerface --> controlsearchphotocollectionimages
+	thingimage --- controlsearchphotocollectionimages
+	thingstructureddatum --- controlusestructureddatum
+	controlsearchusestructureddatum --> controlusestructureddatum
+	thingdatuminterface --> controlusestructureddatum
+	thingdatuminterface --> controlsearchusestructureddatum
+	thingoutreachmaterial --- controlaccesseducationaloutreachmaterials
+	thingmaterialinterface --> controlaccesseducationaloutreachmaterials
+	thingcitationinterface --> controlhavecollectionaccuratecitationinformation
+	thinginformation --- controlhavecollectionaccuratecitationinformation
+	thingarchivaldigitizedmaterial --- controlaccessarchivaldigitizedmaterialmediation
+	thingmediation --- controlaccessarchivaldigitizedmaterialmediation
+	thingmediationinterface --> controlaccessarchivaldigitizedmaterialmediation
+	thingquestion --- controlaskquestion
+	thingspecificfile --- controlaskquestion
+	thingfileinterface --> controlaskquestion
+	thingdate --- controlknowdate
+	thingdateinterface --> controlknowdate
+	thingsearch --- controlkeywordsearchall
+	thingscanneddiary --- controlkeywordsearchall
+	controlhavekeywordsearchallsearchscanneddiarysegment --> controlkeywordsearchall
+	thingdiaryinterface --> controlkeywordsearchall
+	thingdiarysegment --- controlsearchscanneddiarysegment
+	controlhavekeywordsearchallsearchscanneddiarysegment --> controlsearchscanneddiarysegment
+	thingsegmentinterface --> controlsearchscanneddiarysegment
+	thingsegmentinterface --> controlhavekeywordsearchallsearchscanneddiarysegment
+	thingfilmclip --- controlviewfilmclips
+	thingclipinterface --> controlviewfilmclips
+
+@enduml

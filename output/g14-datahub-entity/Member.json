@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As an owner, I want to remove a user as an owner, so that they are just a member and no longer have full control.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "full control",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "text": "As a trainee, I want to limit to one registration per day per authenticated user, so that we don't have duplicate spaces.",
+    "entities": [
+      {
+        "text": "trainee",
+        "label": "Data"
+      },
+      {
+        "text": "limit",
+        "label": "Processing"
+      },
+      {
+        "text": "registration",
+        "label": "PII"
+      },
+      {
+        "text": "authenticated user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainee, I want to must accept the cancellation terms with a checkbox, so that they can be accountable..",
+    "entities": [
+      {
+        "text": "trainee,",
+        "label": "Data"
+      },
+      {
+        "text": "accept",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a trainee, I want to add to \"my schedule\" if there is a schedule feature on the site, so that they can schedule their event experience.",
+    "entities": [
+      {
+        "text": "trainee,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "schedule",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainee, I want to see which trainings I have signed up for, so that they can schedule their event experience.",
+    "entities": [
+      {
+        "text": "trainee",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "trainings",
+        "label": "PII"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      }
+    ]
+  }
+]

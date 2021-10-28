@@ -1,0 +1,226 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Talk " color=red];
+201 [label="<f0>  |<f1> Picture " color=red];
+202 [label="<f0>  |<f1> Comment " color=red];
+203 [label="<f0>  |<f1> Automated Analysis " ];
+204 [label="<f0>  |<f1> Classifiable Animal " ];
+205 [label="<f0>  |<f1> Case " ];
+206 [label="<f0>  |<f1> Malfunction " ];
+207 [label="<f0>  |<f1> Snapshot Serengeti " color=red];
+208 [label="<f0>  |<f1> Plankton " color=red];
+209 [label="<f0>  |<f1> Localization " ];
+210 [label="<f0>  |<f1> Classifiable Plankton " ];
+211 [label="<f0>  |<f1> Orientation " color=red];
+212 [label="<f0>  |<f1> Worm " ];
+213 [label="<f0>  |<f1> Time " ];
+214 [label="<f0>  |<f1> Egg " ];
+215 [label="<f0>  |<f1> Area " color=red];
+216 [label="<f0>  |<f1> Temporary Shelter " ];
+217 [label="<f0>  |<f1> Damage " ];
+218 [label="<f0>  |<f1> Flooding " ];
+219 [label="<f0>  |<f1> Important Feature " ];
+220 [label="<f0>  |<f1> Experience " color=red];
+221 [label="<f0>  |<f1> Volunteer " ];
+222 [label="<f0>  |<f1> Classification " ];
+223 [label="<f0>  |<f1> Weight " color=red];
+224 [label="<f0>  |<f1> Artefact " ];
+225 [label="<f0>  |<f1> Bright Star " ];
+226 [label="<f0>  |<f1> Prefiltering " ];
+227 [label="<f0>  |<f1> Camera " ];
+228 [label="<f0>  |<f1> Read Error " ];
+229 [label="<f0>  |<f1> Number " color=red];
+230 [label="<f0>  |<f1> Audio ,\nSingle File " ];
+231 [label="<f0>  |<f1> Whale " color=red];
+232 [label="<f0>  |<f1> Text " color=red];
+233 [label="<f0>  |<f1> Video " color=red];
+234 [label="<f0>  |<f1> Interesting Comment " color=red];
+235 [label="<f0>  |<f1> Subject " color=red];
+236 [label="<f0>  |<f1> Explanation " ];
+237 [label="<f0>  |<f1> Previous Experience " color=red];
+238 [label="<f0>  |<f1> Different Project " ];
+239 [label="<f0>  |<f1> Transient " ];
+240 [label="<f0>  |<f1> Object " ];
+241 [label="<f0>  |<f1> Audio File " ];
+242 [label="<f0>  |<f1> Sound " ];
+243 [label="<f0>  |<f1> Background Noise " color=red];
+244 [label="<f0>  |<f1> Similarity " color=red];
+245 [label="<f0>  |<f1> Animal Species\nPreclassification " color=red];
+246 [label="<f0>  |<f1> Animal Attribute\nPreclassification " color=red];
+247 [label="<f0>  |<f1> Roads Etc " ];
+248 [label="<f0>  |<f1> Serengeti " color=red];
+249 [label="<f0>  |<f1> Animal " color=red];
+250 [label="<f0>  |<f1> Satellite " ];
+251 [label="<f0>  |<f1> Group " ];
+252 [label="Zooniverse Admin" shape=box];
+253 [label="{<f0> 1.0|<f1> Assess }" shape=Mrecord];
+254 [label="{<f0> 2.0|<f1> Detect }" shape=Mrecord];
+255 [label="{<f0> 3.0|<f1> Preclassify }" shape=Mrecord];
+256 [label="{<f0> 4.0|<f1> Use Simple Image Features }" shape=Mrecord];
+257 [label="{<f0> 5.0|<f1> Detect Snapshot Serengeti Images With No Classifiable Animals In Snapshot Serengeti Images }" shape=Mrecord];
+258 [label="{<f0> 6.0|<f1> Perform Automatic Image Series Detection For The Case Timestamping Malfunction In Snapshot Serengeti Images }" shape=Mrecord];
+259 [label="{<f0> 7.0|<f1> Perform Automatic Animal Species Preclassification In Snapshot Serengeti }" shape=Mrecord];
+260 [label="{<f0> 8.0|<f1> Perform Automatic Animal Attribute Preclassification In Snapshot Serengeti }" shape=Mrecord];
+261 [label="{<f0> 9.0|<f1> Perform Automatic Animal Number Detection In Snapshot Serengeti }" shape=Mrecord];
+262 [label="{<f0> 10.0|<f1> Perform Automatic Segmentation Of Plankton In }" shape=Mrecord];
+263 [label="{<f0> 11.0|<f1> Perform Localization }" shape=Mrecord];
+264 [label="{<f0> 12.0|<f1> Detect Plankton Portal Images With No Classifiable Plankton In }" shape=Mrecord];
+265 [label="{<f0> 13.0|<f1> Perform Automatic Detection Of Plankton Size In Plankton Portal Images }" shape=Mrecord];
+266 [label="{<f0> 14.0|<f1> Perform Automatic Detection Of Orientation }" shape=Mrecord];
+267 [label="{<f0> 15.0|<f1> Perform Automatic Preclassification Of Plankton Species In Plankton Portal Images }" shape=Mrecord];
+268 [label="{<f0> 16.0|<f1> Perform Automatic Worm Motion Analysis }" shape=Mrecord];
+269 [label="{<f0> 17.0|<f1> Reduce Video Duration In Worm Watch Lab }" shape=Mrecord];
+270 [label="{<f0> 18.0|<f1> Detect The Time In A Worm Watch Lab Video The Worm Where Lays An Egg }" shape=Mrecord];
+271 [label="{<f0> 19.0|<f1> Detect Important Features Such As Areas Of Blocked Roads Etc }" shape=Mrecord];
+272 [label="{<f0> 20.0|<f1> Detect Important Features Such As Areas Of Temporary Shelter }" shape=Mrecord];
+273 [label="{<f0> 21.0|<f1> Detect Important Features Such As Areas Of Flooding In The Satellite Images }" shape=Mrecord];
+274 [label="{<f0> 22.0|<f1> Detect Important Features Such As Areas Of Damage }" shape=Mrecord];
+275 [label="{<f0> 23.0|<f1> Assess The Probability Of A Volunteer’s Classification On Experience }" shape=Mrecord];
+276 [label="{<f0> 24.0|<f1> Assess Weight }" shape=Mrecord];
+277 [label="{<f0> 25.0|<f1> Perform Prefiltering Of The Images }" shape=Mrecord];
+278 [label="{<f0> 26.0|<f1> Remove Artefacts Such As Camera }" shape=Mrecord];
+279 [label="{<f0> 27.0|<f1> Remove Artefacts Such As Read Error }" shape=Mrecord];
+280 [label="{<f0> 28.0|<f1> Remove Artefacts Such As Bright Stars }" shape=Mrecord];
+281 [label="{<f0> 29.0|<f1> Identify The Number Of Whales In A Audio, Single File }" shape=Mrecord];
+282 [label="{<f0> 30.0|<f1> Know }" shape=Mrecord];
+283 [label="{<f0> 31.0|<f1> Interrupt A Volunteer }" shape=Mrecord];
+284 [label="{<f0> 32.0|<f1> Interrupt A Volunteer With An Image }" shape=Mrecord];
+285 [label="{<f0> 33.0|<f1> Interrupt A Volunteer With A Video }" shape=Mrecord];
+286 [label="{<f0> 34.0|<f1> Educate A Volunteer }" shape=Mrecord];
+287 [label="{<f0> 35.0|<f1> Educate A Volunteer With An Image }" shape=Mrecord];
+288 [label="{<f0> 36.0|<f1> Educate A Volunteer With A Video }" shape=Mrecord];
+289 [label="{<f0> 37.0|<f1> What Say To A Volunteer }" shape=Mrecord];
+290 [label="{<f0> 38.0|<f1> Recommend Different Projects To Volunteers On Previous Experiences }" shape=Mrecord];
+291 [label="{<f0> 39.0|<f1> Identify Volunteer Types }" shape=Mrecord];
+292 [label="{<f0> 40.0|<f1> Detect Transient }" shape=Mrecord];
+293 [label="{<f0> 41.0|<f1> Detect Moving Objects In The Images }" shape=Mrecord];
+294 [label="{<f0> 42.0|<f1> Distracting Remove Background Noise Sounds From The Audio Files }" shape=Mrecord];
+252 -> 255
+252 -> 256
+252 -> 257
+252 -> 258
+252 -> 259
+252 -> 260
+252 -> 261
+252 -> 262
+252 -> 263
+252 -> 264
+252 -> 265
+252 -> 266
+252 -> 267
+252 -> 268
+252 -> 269
+252 -> 270
+252 -> 271
+252 -> 272
+252 -> 273
+252 -> 274
+252 -> 275
+252 -> 276
+252 -> 277
+252 -> 278
+252 -> 279
+252 -> 280
+252 -> 281
+252 -> 282
+252 -> 282
+252 -> 283
+252 -> 284
+252 -> 285
+252 -> 286
+252 -> 287
+252 -> 288
+252 -> 289
+252 -> 290
+252 -> 291
+252 -> 292
+252 -> 293
+252 -> 294
+255 -> 256
+256 -> 201 [label="Picture"]
+257 -> 204 [label="Classifiable Animal"]
+257 -> 201 [label="Picture"]
+258 -> 205 [label="Case"]
+258 -> 206 [label="Malfunction"]
+258 -> 201 [label="Picture"]
+259 -> 245 [label="Animal Species\nPreclassification"]
+259 -> 207 [label="Snapshot Serengeti"]
+260 -> 246 [label="Animal Attribute\nPreclassification"]
+260 -> 207 [label="Snapshot Serengeti"]
+261 -> 207 [label="Snapshot Serengeti"]
+262 -> 208 [label="Plankton"]
+263 -> 209 [label="Localization"]
+264 -> 210 [label="Classifiable Plankton"]
+264 -> 201 [label="Picture"]
+265 -> 201 [label="Picture"]
+266 -> 211 [label="Orientation"]
+267 -> 208 [label="Plankton"]
+267 -> 201 [label="Picture"]
+268 -> 269
+269 -> 233 [label="Video"]
+270 -> 213 [label="Time"]
+270 -> 214 [label="Egg"]
+270 -> 212 [label="Worm"]
+271 -> 247 [label="Roads Etc"]
+271 -> 219 [label="Important Feature"]
+271 -> 215 [label="Area"]
+272 -> 216 [label="Temporary Shelter"]
+272 -> 219 [label="Important Feature"]
+272 -> 215 [label="Area"]
+273 -> 219 [label="Important Feature"]
+273 -> 215 [label="Area"]
+273 -> 218 [label="Flooding"]
+273 -> 201 [label="Picture"]
+274 -> 217 [label="Damage"]
+274 -> 219 [label="Important Feature"]
+274 -> 215 [label="Area"]
+275 -> 222 [label="Classification"]
+275 -> 220 [label="Experience"]
+276 -> 223 [label="Weight"]
+277 -> 278
+277 -> 280
+277 -> 224 [label="Artefact"]
+277 -> 226 [label="Prefiltering"]
+277 -> 201 [label="Picture"]
+278 -> 227 [label="Camera"]
+278 -> 224 [label="Artefact"]
+279 -> 228 [label="Read Error"]
+279 -> 224 [label="Artefact"]
+280 -> 224 [label="Artefact"]
+280 -> 225 [label="Bright Star"]
+281 -> 229 [label="Number"]
+281 -> 231 [label="Whale"]
+281 -> 230 [label="Audio ,\nSingle File"]
+282 -> 289
+283 -> 282
+283 -> 221 [label="Volunteer"]
+283 -> 232 [label="Text"]
+284 -> 282
+284 -> 221 [label="Volunteer"]
+284 -> 201 [label="Picture"]
+285 -> 282
+285 -> 233 [label="Video"]
+285 -> 221 [label="Volunteer"]
+286 -> 282
+286 -> 221 [label="Volunteer"]
+286 -> 232 [label="Text"]
+287 -> 282
+287 -> 221 [label="Volunteer"]
+287 -> 201 [label="Picture"]
+288 -> 282
+288 -> 233 [label="Video"]
+288 -> 221 [label="Volunteer"]
+289 -> 221 [label="Volunteer"]
+290 -> 238 [label="Different Project"]
+290 -> 237 [label="Previous Experience"]
+290 -> 221 [label="Volunteer"]
+292 -> 239 [label="Transient"]
+293 -> 240 [label="Object"]
+293 -> 201 [label="Picture"]
+294 -> 243 [label="Background Noise"]
+294 -> 242 [label="Sound"]
+294 -> 241 [label="Audio File"]
+257 -> 248 [label="Serengeti"]
+257 -> 249 [label="Animal"]
+273 -> 250 [label="Satellite"]
+}

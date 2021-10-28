@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Time " color=red];
+201 [label="<f0>  |<f1> Researcher " color=red];
+202 [label="<f0>  |<f1> Date " color=red];
+203 [label="<f0>  |<f1> Neurohub " color=red];
+204 [label="<f0>  |<f1> Student " ];
+205 [label="<f0>  |<f1> Form " color=red];
+206 [label="<f0>  |<f1> Course " ];
+207 [label="<f0>  |<f1> Feedback " color=red];
+208 [label="Supervisor" shape=box];
+209 [label="{<f0> 1.0|<f1> View }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Create Feedback Forms Within Neurohub }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Forms Provide With Feedback About The Course That Attended }" shape=Mrecord];
+208 -> 210
+208 -> 211
+210 -> 203 [label="Neurohub"]
+210 -> 205 [label="Form"]
+211 -> 205 [label="Form"]
+211 -> 207 [label="Feedback"]
+211 -> 206 [label="Course"]
+}

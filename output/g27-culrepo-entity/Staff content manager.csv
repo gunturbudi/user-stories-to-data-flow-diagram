@@ -1,0 +1,33 @@
+id,value,style,source,target,type
+200,Historical,shape=partialRectangle,null,null,data_base
+201,Periodic Reminder,shape=partialRectangle,null,null,data_base
+202,Ingestion,shape=partialRectangle,null,null,data_base
+203,Attention,shape=partialRectangle,null,null,data_base
+204,Approval Step,shape=partialRectangle,null,null,data_base
+205,Knowledge Collection,shape=partialRectangle,null,null,data_base
+206,Ir Reminder,shape=partialRectangle,null,null,data_base
+207,Extension Administrator,rounded=0,null,null,external_entity
+208,"Staff , Content Manager",rounded=0,null,null,external_entity
+209,Get Periodic Reminders Something When Needs Attention Including Something Need,ellipse,null,null,process
+210,Move From A Current Knowledge Collection To Historical,ellipse,null,null,process
+211,Get Periodic Ir Reminders Something When Needs Attention Including Next Ingestion,ellipse,null,null,process
+212,Get Periodic Reminders Something When Needs Attention Including Approval Step,ellipse,null,null,process
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,,endArrow=classic,207,212,endArrow=classic
+218,,endArrow=classic,208,209,endArrow=classic
+219,,endArrow=classic,208,210,endArrow=classic
+220,,endArrow=classic,208,211,endArrow=classic
+221,,endArrow=classic,208,212,endArrow=classic
+222,,endArrow=classic,209,210,endArrow=classic
+223,Periodic Reminder,endArrow=classic,209,201,endArrow=classic
+224,Attention,endArrow=classic,209,203,endArrow=classic
+225,Knowledge Collection,endArrow=classic,210,205,endArrow=classic
+226,Historical,endArrow=classic,210,200,endArrow=classic
+227,Ir Reminder,endArrow=classic,211,206,endArrow=classic
+228,Attention,endArrow=classic,211,203,endArrow=classic
+229,Ingestion,endArrow=classic,211,202,endArrow=classic
+230,Approval Step,endArrow=classic,212,204,endArrow=classic
+231,Periodic Reminder,endArrow=classic,212,201,endArrow=classic
+232,Attention,endArrow=classic,212,203,endArrow=classic

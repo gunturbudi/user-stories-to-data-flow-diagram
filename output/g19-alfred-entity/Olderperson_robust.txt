@@ -1,0 +1,903 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Personal Datum" as thingpersonaldatum
+	entity "Specific Permission" as thingspecificpermission
+	entity "Alfred" as thingALFRED
+	entity "Information" as thinginformation
+	entity "Visible Button" as thingvisiblebutton
+	entity "Control" as thingcontrol
+	entity "Small Device" as thingsmalldevice #grey
+	entity "Easy" as thingeasy
+	entity "Phone" as thingphone
+	entity "Computer" as thingcomputer
+	entity "Tablet" as thingtablet
+	entity "Bracelet" as thingbracelet
+	entity "Necklace" as thingnecklace
+	entity "Sale" as thingsale
+	entity "Trouble" as thingtrouble
+	entity "Clear Instruction" as thingclearinstruction
+	entity "Service" as thingservice
+	entity "Clearly" as thingclearly
+	entity "Device" as thingdevice #grey
+	entity "Introduction Conversation" as thingintroductionconversation #grey
+	entity "Senior Shop" as thingseniorshop
+	entity "Low Price" as thinglowprice
+	entity "Visual Support" as thingvisualsupport
+	entity "Good Battery" as thinggoodbattery
+	entity "House" as thinghouse
+	entity "Low Battery" as thinglowbattery
+	entity "Hearing" as thinghearing
+	entity "Visual" as thingvisual
+	entity "User" as thinguser
+	entity "Visual Trouble" as thingvisualtrouble
+	entity "Phrase" as thinglastphrase
+	entity "Visual Content" as thingvisualcontent
+	entity "Alfredo Platform" as thingalfredoplatform #grey
+	entity "New App" as thingnewapp
+	entity "Friend" as thingfriend
+	entity "Family" as thingfamily
+	entity "Video Conversation" as thingvideoconversation #grey
+	entity "Real Interaction" as thingrealinteraction
+	entity "Human" as thinghuman
+	entity "Interest" as thinginterest
+	entity "Exist App" as thingexistingapp
+	entity "Solution" as thingsolution
+	entity "Preference" as thingpreference
+	entity "Datum" as thingdatum
+	entity "Morning" as thingmorning
+	entity "Night" as thingnight
+	entity "Public Transport" as thingpublictransport
+	entity "Navigation" as thingnavigation
+	entity "Explanation" as thingexplanation
+	entity "Historical Sight" as thinghistoricalsight
+	entity "Touristic Walk" as thingtouristicwalk
+	entity "Cultural" as thingcultural
+	entity "Taxi" as thingtaxi
+	entity "Time" as thingtime
+	entity "Door" as thingdoor
+	entity "Light" as thinglight
+	entity "Heating" as thingheating
+	entity "Tv" as thingtv
+	entity "Radio" as thingradio
+	entity "Movie" as thingmovie
+	entity "News" as thingnews
+	entity "Emergency" as thingemergency
+	entity "Help" as thinghelp
+	entity "Nearest Caregiver" as thingnearestcaregiver
+	entity "Urgent Help" as thingurgenthelp
+	entity "Message" as thingmessage
+	entity "Pill" as thingpill
+	entity "Grocery Shopping" as thinggroceryshopping #grey
+	entity "Fall" as thingfall
+	entity "Specific Contact" as thingspecificcontact
+	entity "Healthy Recipe" as thinghealthyrecipe
+	entity "Day" as thingday
+	entity "Spontaneous Question" as thingspontaneousquestion
+	entity "Exhibition" as thingexhibition
+	entity "Cinema" as thingcinema
+	entity "Domain" as thingdomain
+	entity "Question" as thingquestion
+	entity "Specific Button" as thingspecificbutton
+	entity "Agenda" as thingagenda
+	entity "Speech" as thingspeech
+	entity "Meeting" as thingmeeting
+	entity "Appointment" as thingappointment
+	entity "Reminder" as thingreminder
+	entity "Thing" as thingthing
+	entity "Similar Disease" as thingsimilardisease
+	entity "People" as thingpeople
+	entity "Circle" as thingowncircle
+	entity "Museum" as thingmuseum
+	entity "Neighborhood" as thingneighborhood
+	entity "Social Activity" as thingsocialactivity
+	entity "Social Event" as thingsocialevent
+	entity "Personalize Invitation" as thingpersonalizedinvitation
+	entity "Concert" as thingconcert
+	entity "Event" as thingevent
+	entity "Cognitive ,\nMild Impairment" as thingcognitivemildimpairment
+	entity "Certain Place" as thingcertainplace
+	entity "Online Game" as thingonlinegame
+	entity "Suggestion" as thingsuggestion
+	entity "Face" as thingface
+	entity "Body Weight" as thingbodyweight #grey
+	entity "Caregiver" as thingcaregiver
+	entity "Button" as thingbutton
+	entity "Access" as thingaccess
+	entity "Vital Datum" as thingvitaldatum
+	entity "Wearable" as thingwearable
+	entity "Integrate Sensor" as thingintegratedsensor
+	entity "Vital Parameter" as thingvitalparameter
+	entity "-pron-" as thingmoinsPRONmoins
+	entity "Alfred Shirt" as thingalfredshirt #grey
+	entity "Games Duration" as thinggamesduration #grey
+	entity "Limit" as thinglimit
+	entity "Game" as thinggame
+	entity "Sensor" as thingsensor
+	entity "Exercise" as thingexercise
+	entity "Guide Exercise" as thingguidedexercise
+	entity "Favourite Sport" as thingfavouritesport
+	entity "Medication" as thingmedication
+	entity "Specific Tip" as thingspecifictip
+	entity "Physical" as thingphysical
+	entity "Memory Health" as thingmemoryhealth
+	entity "Training" as thingtraining
+	entity "Week" as thingweek
+	entity "Leg" as thingleg
+	entity "Arm" as thingarm
+	entity "Mental Exercise" as thingmentalexercise
+	entity "Combination" as thingcombination #grey
+	entity "Interaction" as thinginteraction #grey
+	entity "Data Setting" as thingdatasetting
+	entity "Client Support" as thingclientsupport
+	entity "Ict Tool" as thingicttool
+	entity "Rythm Support" as thingrythmsupport
+	entity "Contact List" as thingcontactlist
+	entity "Art Exposition" as thingartexposition
+	entity "Sports Class" as thingsportsclass
+	entity "Body Posture" as thingbodyposture
+	entity "Health Impairment" as thinghealthimpairment
+	entity "Alfred" as thingalfred #grey
+	entity "Health" as thinghealth #grey
+	entity "Muscle" as thingmuscle #grey
+	entity "Motion" as thingmotion #grey
+	actor "Olderperson" as actorOlderPerson
+	circle "Activity" as thingactivity
+	circle "Change Demand" as thingchangingdemand
+	circle "Different Functionality" as thingdifferentfunctionality
+	circle "Case" as thingcase
+	circle "Certain Time" as thingcertaintime
+	circle "Social Group" as thingsocialgroup
+	circle "Group" as thinggroup
+	circle "Combination" as thingsuchcombination
+	circle "Technology" as thingtechnology #grey
+	circle "Mode" as thingmode #grey
+	circle "Performance" as thingperformance #grey
+	boundary "Support" as thingsupportusepublictransportOlderPerson #grey
+	boundary "Alfred" as thingALFREDOlderPerson
+	boundary "Speech\nInterface" as thingspeechinterface #grey
+	boundary "Button\nInterface" as thingbuttoninterface #grey
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Setting\nInterface" as thingsettinginterface #grey
+	boundary "Easy\nInterface" as thingeasyinterface #grey
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	boundary "Computer\nInterface" as thingcomputerinterface #grey
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	boundary "Tablet\nInterface" as thingtabletinterface #grey
+	boundary "Necklace\nInterface" as thingnecklaceinterface #grey
+	boundary "Bracelet\nInterface" as thingbraceletinterface #grey
+	boundary "Sale\nInterface" as thingsaleinterface #grey
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	boundary "Clearly\nInterface" as thingclearlyinterface #grey
+	boundary "Support\nInterface" as thingsupportinterface #grey
+	boundary "Price\nInterface" as thingpriceinterface #grey
+	boundary "Hearing\nInterface" as thinghearinginterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Conversation\nInterface" as thingconversationinterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Solution\nInterface" as thingsolutioninterface #grey
+	boundary "Morning\nInterface" as thingmorninginterface #grey
+	boundary "Night\nInterface" as thingnightinterface #grey
+	boundary "Agenda\nInterface" as thingagendainterface #grey
+	boundary "Navigation\nInterface" as thingnavigationinterface #grey
+	boundary "Sight\nInterface" as thingsightinterface #grey
+	boundary "Cultural\nInterface" as thingculturalinterface #grey
+	boundary "Door\nInterface" as thingdoorinterface #grey
+	boundary "Home\nInterface" as thinghomeinterface #grey
+	boundary "Light\nInterface" as thinglightinterface #grey
+	boundary "Heating\nInterface" as thingheatinginterface #grey
+	boundary "Movie\nInterface" as thingmovieinterface #grey
+	boundary "Help\nInterface" as thinghelpinterface #grey
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	boundary "Pill\nInterface" as thingpillinterface #grey
+	boundary "Day\nInterface" as thingdayinterface #grey
+	boundary "Interaction\nInterface" as thinginteractioninterface #grey
+	boundary "Appointment\nInterface" as thingappointmentinterface #grey
+	boundary "Thing\nInterface" as thingthinginterface #grey
+	boundary "Circle\nInterface" as thingcircleinterface #grey
+	boundary "Exposition\nInterface" as thingexpositioninterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Concert\nInterface" as thingconcertinterface #grey
+	boundary "Impairment\nInterface" as thingimpairmentinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Neighbourhood\nInterface" as thingneighbourhoodinterface #grey
+	boundary "Weight\nInterface" as thingweightinterface #grey
+	boundary "Caregiver\nInterface" as thingcaregiverinterface #grey
+	boundary "Sensor\nInterface" as thingsensorinterface #grey
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	boundary "Shirt\nInterface" as thingshirtinterface #grey
+	boundary "Game\nInterface" as thinggameinterface #grey
+	boundary "Exercise\nInterface" as thingexerciseinterface #grey
+	boundary "Sport\nInterface" as thingsportinterface #grey
+	boundary "Class\nInterface" as thingclassinterface #grey
+	boundary "Tip\nInterface" as thingtipinterface #grey
+	boundary "Medication\nInterface" as thingmedicationinterface #grey
+	boundary "Health\nInterface" as thinghealthinterface #grey
+	boundary "Physical\nInterface" as thingphysicalinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	control "Know" as controlknow
+	control "Receive Information\nFrom Alfred\nBy Speech\nTechnology" as controlreceiveinformationALFREDspeechtechnology
+	control "Use Only\nWell Visible\nButtons" as controlusevisiblebutton
+	control "Use Alfred\nAs Possible\nMuch With\nSpeech Interaction" as controluseALFREDpossiblemuchspeechinteraction
+	control "Keep Control\nOn The\nActivities Of\nAlfred" as controlkeepcontrolactivity
+	control "Manage Privacy\nData Settings" as controlmanageprivacydatasettings
+	control "Have" as controlhave
+	control "Have A\nSmall Device\nEasy" as controlhavesmalldeviceeasy
+	control "Carry With" as controlcarry
+	control "Have A\nSmall Alfred\nDevice Is" as controlhavesmallalfreddevice
+	control "Have Alfred\nOn Computers" as controlhaveALFREDcomputer
+	control "Have Alfred\nOn Phone" as controlhaveALFREDphone
+	control "Have Alfred\nOn Tablet" as controlhaveALFREDtablet
+	control "Have Alfred\nOn A\nNecklace" as controlhaveALFREDnecklace
+	control "Have Alfred\nOn A\nBracelet" as controlhaveALFREDbracelet
+	control "Clear Instructions\nGuide Have\nTrouble" as controlhaveclearinstructiontrouble
+	control "Using Alfred" as controlusehaveclearinstructiontroubleALFRED
+	control "Have Clear\nInstructions After\nSales" as controlhaveclearinstructionsale
+	control "Have Service" as controlhaveservice
+	control "Have An\nAlfred Device\nSlowly Very\nSpeaks" as controlhavealfreddevice
+	control "Have An\nDevice Clearly" as controlhavedeviceclearly
+	control "An Device\nOnly Listens\nTo Ask" as controlaskdeviceto
+	control "To" as controlto
+	control "Have An\nIntroduction Conversation\nWith Alfred" as controlhaveintroductionconversation
+	control "Buy Alfred\nIn A\nSenior Shop\nWith Special\nClient Support" as controlbuyALFREDseniorshop
+	control "Buy Alfred\nFor A\nLow Price" as controlbuyALFREDlowprice
+	control "Receive Visual\nSupport When\nEspecially Looking\nAt A\nList" as controlreceivevisualsupport
+	control "Receive Visual\nSupport When\nEspecially Agenda\nLooking At\nA List" as controlreceivevisualsupportlist
+	control "Pay For\nSmall Amounts" as controlpaysmallamount
+	control "Use Alfred" as controluseALFREDpaysmallamount
+	control "Have A\nVery Good\nBattery For\nAlfred" as controlhavegoodbatteryALFRED
+	control "Have An\nDevice Easily\nAdapted For\nUser Have\nHearing Troubles" as controlhavedevicehearing
+	control "Zoom Into\nVisual Content" as controlzoomvisualcontent
+	control "Offering New\nApps In\nThe Alfredo\nPlatform" as controlofferhavealfreddevicenewapp
+	control "Communicate With\nFriends" as controlcommunicatefriend
+	control "Communicate With\nFamily" as controlcommunicatefamily
+	control "Communicate With" as controlcommunicate #grey
+	control "Have An\nDevice Helps" as controlhavedevicedevice #grey
+	control "Have Video\nConversation With\nOthers" as controlhavevideoconversation
+	control "Have An\nAflred Device\nEncourages Users\nFor Real\nInteraction Between\nHumans Only\nWith Ict\nTools" as controlhaveaflreddevice
+	control "Customize Preferences\nIn The\nDifferent Functionalities\nOf The\nSolution" as controlcustomizepreference
+	control "Have Directly\nData On\nThe Phone" as controlhavedatum
+	control "Receive Up\nA Wake\nCall From\nAlfred In\nThe Morning\nChecking On" as controlreceivewakecallmorningmorning
+	control "Am Ok" as controlbereceivewakecallmorningmorning
+	control "Receive Night" as controlreceivenight
+	control "Receive Day\nRythm Support\nWith Agenda\nReminders" as controlreceivedayrythmsupport
+	control "Receive" as controlreceivesupportusepublictransportOlderPerson
+	control "Use The\nPublic Transport" as controlusepublictransport
+	control "Use Alfred\nFor Navigation" as controluseALFREDnavigation
+	control "Indications Alfred\nFor Touristic\nWalks With\nExplanations On\nHistorical Sights" as controlindicationALFREDtouristicwalkexplanation
+	control "Indications Alfred\nFor Touristic\nWalks With\nExplanations On\nCultural" as controlindicationALFREDtouristicwalkexplanationcultural
+	control "Have A\nTaxi On\nTime" as controlhavetaxitime
+	control "Use Alfred\nIs Standing\nAt Door" as controluseALFREDseedoor
+	control "Open The\nDoor" as controlopendoor
+	control "See" as controlsee
+	control "Pick The\nPhone Up" as controlpickphone
+	control "Am At\nHome" as controlbepickphonehome
+	control "Turn Off\nThe Lights" as controlturnoff
+	control "Turn On" as controlturn
+	control "Control The\nHeating" as controlcontrolheating
+	control "Control Radio" as controlcontrolradio
+	control "Control The\nTv" as controlcontroltv
+	control "Watch Movies" as controlwatchmovie
+	control "Hear About\nThe News" as controlhearnews
+	control "Contact Help\nIn Case\nOf An\nEmergency" as controlcontacthelpcase
+	control "Ask Alfred\nFor Urgent\nHelp" as controlaskhaveALFREDurgenthelp
+	control "Receive A\nMessage" as controlreceivemessage
+	control "Receive A\nMedicine Reminder\nFrom Alfred" as controlreceivemedicinereminderALFRED
+	control "Taken Pills" as controltakeseepill
+	control "Do Grocery\nShopping" as controldogroceryshopping
+	control "Send Messages" as controlsendmessage
+	control "Detect Falls" as controldetectALFREDOlderPersonfall
+	control "Send An\nEmergency To\nA Specific\nContact" as controlsendALFREDOlderPersonemergencyspecificcontact
+	control "Suggest Healthy\nRecipes" as controlsuggestALFREDOlderPersonhealthyrecipe
+	control "Spontaneous Questions\nProgramme During\nCertain Times\nOf The\nDay" as controlprogrammespontaneousquestioncertaintime
+	control "Initiate Questions" as controlinitiateALFREDOlderPersonquestion
+	control "Call Someone\nWith Alfred" as controlcallsomeoneALFRED
+	control "Activate The\nVocal Interaction\nMode Of\nAlfred" as controlactivatevocalinteractionmode
+	control "Pushing A\nSpecific Button" as controlpushactivatevocalinteractionmodespecificbutton
+	control "Maintain Contact\nList In\nPhone" as controlmaintaincontactlistphone
+	control "Manage Agenda" as controlmanageagenda
+	control "Insert Meetings\nInto Alfred\nUsing Speech" as controlinsertmeetingALFREDspeech
+	control "Receive Reminders\nOn Appointments" as controlreceivereminderappointment
+	control "Leave The\nHouse" as controlleavebringthinghouse
+	control "The Things\nBring With" as controlbringthing
+	control "Receive A\nReminder From\nAlfred On\nThe Things" as controlreceivereminderALFREDthingleavebringthinghouse
+	control "Set Up\nSocial Groups\nOf People\nWith Similar\nDiseases" as controlsetsocialgroup
+	control "Contact People\nFrom Own\nCircle" as controlcontactpeopleowncircle
+	control "Learn About\nA Museum" as controllearnmuseum
+	control "Learn About\nArt Expositions" as controllearnartexpositions
+	control "Learn About\nThe Social\nActivities Organized\nIn Neighborhood" as controllearnsocialactivity
+	control "Get A\nPersonalized Invitation\nTo A\nSocial Event" as controlgetpersonalizedinvitation
+	control "Navigate To\nAn Event" as controlnavigateevent
+	control "Navigate To\nConcert" as controlnavigateconcert
+	control "Lost" as controllosehelpALFRED
+	control "Alfred Help" as controlhelpALFRED
+	control "Help" as controlhelp
+	control "Use Alfred\nNavigate Despite\nCognitive, Mild\nImpairments" as controluseALFREDhelpcognitivemildimpairment
+	control "Organize A\nMeeting With\nA Group\nOf Friends\nAt A\nCertain Place" as controlorganizemeetingcertainplace
+	control "Play Online\nGames Together\nWith Other\nUsers" as controlplayonlinegameotheruser
+	control "Get Suggestions\nFor Sports\nClasses In\nNeighbourhood" as controlgetsuggestion
+	control "Enable" as controlenableALFREDOlderPersonhaveface
+	control "Have Face" as controlhaveface
+	control "Control Body\nWeight" as controlcontrolbodyweight
+	control "Press Button" as controlpressbuttoncallcaregiver
+	control "Call Caregiver" as controlcallcaregiver
+	control "Decide" as controldecide
+	control "Have The\nWearables With\nIntegrated Sensors\nGood Not\nStigmatizing" as controlhavewearable
+	control "See -Pron-" as controlseemoinsPRONmoins
+	control "See Vital\nParameters On\nThe Phone" as controlseevitalparameter
+	control "Have The\nAlfred Shirt\nGood" as controlhavealfredshirt
+	control "Set Limits\nIn The\nGames Duration" as controlsetALFREDOlderPersonlimitgamesduration
+	control "Play Games" as controlplaygame
+	control "Capture Health\nData Am\nDoing Exercises" as controlcapturehealthdataexercise
+	control "Do Guided\nExercises With\nAlfred" as controldoguidedexerciseALFRED
+	control "Have Games\nInclude Favourite\nSports" as controlhavegame
+	control "Receive Suggestions\nAbout Local\nSport Classes" as controlreceivesuggestion
+	control "Keep A\nGood Body\nPosture" as controlkeepgoodbodyposture
+	control "Remind" as controlremindALFREDOlderPersonkeepgoodbodyposture
+	control "Receive Specific\nTips" as controlreceivespecifictipreducehealthimpairmentsmedication
+	control "Reduce Health\nImpairments Without\nMedication" as controlreducehealthimpairmentsmedication
+	control "Have Some\nGames How\nShow Physical" as controlhavegamephysical
+	control "Have Training\nFor Specific\nMuscle Groups" as controlhavetraining
+	control "See Training\nPerformance" as controlseetrainingperformance
+	control "Motivate During\nThe Week" as controlmotivateweekdoexercise
+	control "Do Exercise\nDaily Change" as controldoexercise
+
+	thingtechnology <.. thingALFRED
+	thinginteraction <.. thingALFRED
+	thingcomputer <.. thingALFRED
+	thingbracelet <.. thingALFRED
+	thingseniorshop <.. thingALFRED
+	thinglowprice <.. thingALFRED
+	thingmorning <.. thingALFRED
+	thingnavigation <.. thingALFRED
+	thingtouristicwalk <.. thingALFRED
+	thingurgenthelp <.. thingALFRED
+	thingspeech <.. thingALFRED
+	thingthing <.. thingALFRED
+	thingcognitivemildimpairment <.. thingALFRED
+	thingdoor <.. thingALFRED
+	thingphone <.. thingALFRED
+	thingtablet <.. thingALFRED
+	thingnecklace <.. thingALFRED
+	thingALFRED <.. thinginformation
+	thingexistingapp <.. thinginformation
+	thingactivity <.. thingcontrol
+	thingeasy <.. thingsmalldevice
+	thingsale <.. thingclearinstruction
+	thingtrouble <.. thingclearinstruction
+	thingclearly <.. thingdevice
+	thingdevice <.. thingdevice
+	thingalfred <.. thingdevice
+	thinglowbattery <.. thingdevice
+	thinglastphrase <.. thingdevice
+	thingchangingdemand <.. thingdevice
+	thinginformation <.. thingdevice
+	thinguser <.. thingdevice
+	thingmoinsPRONmoins <.. thingdevice
+	thingALFRED <.. thingintroductionconversation
+	thingclientsupport <.. thingseniorshop
+	thingALFRED <.. thinggoodbattery
+	thinghouse <.. thinglowbattery
+	thingtrouble <.. thinghearing
+	thingvisual <.. thinguser
+	thingvisualtrouble <.. thinguser
+	thingtrouble <.. thinguser
+	thingrealinteraction <.. thinguser
+	thinghearing <.. thinguser
+	thingalfredoplatform <.. thingnewapp
+	thingcertainplace <.. thingfriend
+	thinghuman <.. thingrealinteraction
+	thingicttool <.. thinghuman
+	thingcinema <.. thinginterest
+	thingexhibition <.. thinginterest
+	thinginterest <.. thingexistingapp
+	thingdifferentfunctionality <.. thingpreference
+	thingphone <.. thingdatum
+	thinghealth <.. thingdatum
+	thingexercise <.. thingdatum
+	thinghistoricalsight <.. thingexplanation
+	thingcultural <.. thingexplanation
+	thingexplanation <.. thingtouristicwalk
+	thingcase <.. thinghelp
+	thingcertaintime <.. thingspontaneousquestion
+	thinginterest *-- thingdomain
+	thingALFRED <.. thingmeeting
+	thinggroup <.. thingmeeting
+	thingappointment <.. thingreminder
+	thingALFRED <.. thingreminder
+	thingagenda <.. thingreminder
+	thingmedication <.. thingreminder
+	thingsimilardisease <.. thingpeople
+	thingowncircle <.. thingpeople
+	thingneighborhood <.. thingsocialactivity
+	thingsocialevent <.. thingpersonalizedinvitation
+	thinguser <.. thingonlinegame
+	thingsportsclass <.. thingsuggestion
+	thingvitaldatum <.. thingaccess
+	thingintegratedsensor <.. thingwearable
+	thingphone <.. thingvitalparameter
+	thingfavouritesport <.. thinggame
+	thingmemoryhealth <.. thinggame
+	thingsuchcombination <.. thinggame
+	thingphysical <.. thinggame
+	thingcombination <.. thinggame
+	thinggame <.. thinggame
+	thingleg <.. thingexercise
+	thingmotion <.. thingexercise
+	thingALFRED <.. thingguidedexercise
+	thinggroup <.. thingtraining
+	thingphysical <.. thingcombination
+	thingALFRED <.. thinginteraction
+	thingspeech <.. thinginteraction
+	thingreminder <.. thingrythmsupport
+	thingphone <.. thingcontactlist
+	thingneighborhood <.. thingsportsclass
+	thingmedication <.. thinghealthimpairment
+	thingALFRED *-- thingactivity
+	thinguser *-- thingchangingdemand
+	thingsolution *-- thingdifferentfunctionality
+	thingemergency *-- thingcase
+	thingday *-- thingcertaintime
+	thingpeople *-- thingsocialgroup
+	thingfriend *-- thinggroup
+	thingmuscle *-- thinggroup
+	thingmentalexercise *-- thingsuchcombination
+	thingexercise *-- thingsuchcombination
+	thingspeech *-- thingtechnology
+	thingALFRED *-- thingmode
+	thinginteraction *-- thingmode
+	thingtraining *-- thingperformance
+	actorOlderPerson --- thingsupportusepublictransportOlderPerson
+	actorOlderPerson --- thingALFREDOlderPerson
+	actorOlderPerson --- thingspeechinterface
+	actorOlderPerson --- thingbuttoninterface
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingsettinginterface
+	actorOlderPerson --- thingeasyinterface
+	actorOlderPerson --- thingdeviceinterface
+	actorOlderPerson --- thingcomputerinterface
+	actorOlderPerson --- thingphoneinterface
+	actorOlderPerson --- thingtabletinterface
+	actorOlderPerson --- thingnecklaceinterface
+	actorOlderPerson --- thingbraceletinterface
+	actorOlderPerson --- thingsaleinterface
+	actorOlderPerson --- thingserviceinterface
+	actorOlderPerson --- thingclearlyinterface
+	actorOlderPerson --- thingsupportinterface
+	actorOlderPerson --- thingpriceinterface
+	actorOlderPerson --- thinghearinginterface
+	actorOlderPerson --- thingcontentinterface
+	actorOlderPerson --- thingconversationinterface
+	actorOlderPerson --- thingtoolinterface
+	actorOlderPerson --- thingsolutioninterface
+	actorOlderPerson --- thingmorninginterface
+	actorOlderPerson --- thingnightinterface
+	actorOlderPerson --- thingagendainterface
+	actorOlderPerson --- thingnavigationinterface
+	actorOlderPerson --- thingsightinterface
+	actorOlderPerson --- thingculturalinterface
+	actorOlderPerson --- thingdoorinterface
+	actorOlderPerson --- thinghomeinterface
+	actorOlderPerson --- thinglightinterface
+	actorOlderPerson --- thingheatinginterface
+	actorOlderPerson --- thingmovieinterface
+	actorOlderPerson --- thinghelpinterface
+	actorOlderPerson --- thingmessageinterface
+	actorOlderPerson --- thingpillinterface
+	actorOlderPerson --- thingdayinterface
+	actorOlderPerson --- thinginteractioninterface
+	actorOlderPerson --- thingappointmentinterface
+	actorOlderPerson --- thingthinginterface
+	actorOlderPerson --- thingcircleinterface
+	actorOlderPerson --- thingexpositioninterface
+	actorOlderPerson --- thingeventinterface
+	actorOlderPerson --- thingconcertinterface
+	actorOlderPerson --- thingimpairmentinterface
+	actorOlderPerson --- thinguserinterface
+	actorOlderPerson --- thingneighbourhoodinterface
+	actorOlderPerson --- thingweightinterface
+	actorOlderPerson --- thingcaregiverinterface
+	actorOlderPerson --- thingsensorinterface
+	actorOlderPerson --- thingproninterface
+	actorOlderPerson --- thingshirtinterface
+	actorOlderPerson --- thinggameinterface
+	actorOlderPerson --- thingexerciseinterface
+	actorOlderPerson --- thingsportinterface
+	actorOlderPerson --- thingclassinterface
+	actorOlderPerson --- thingtipinterface
+	actorOlderPerson --- thingmedicationinterface
+	actorOlderPerson --- thinghealthinterface
+	actorOlderPerson --- thingphysicalinterface
+	actorOlderPerson --- thinggroupinterface
+	actorOlderPerson --- thingtraininginterface
+	thinginformation --- controlreceiveinformationALFREDspeechtechnology
+	thingtechnology --- controlreceiveinformationALFREDspeechtechnology
+	thingspeechinterface --> controlreceiveinformationALFREDspeechtechnology
+	thingALFRED --- controlreceiveinformationALFREDspeechtechnology
+	thingvisiblebutton --- controlusevisiblebutton
+	thingbuttoninterface --> controlusevisiblebutton
+	thinginteraction --- controluseALFREDpossiblemuchspeechinteraction
+	thingALFRED --- controluseALFREDpossiblemuchspeechinteraction
+	thingspeechinterface --> controluseALFREDpossiblemuchspeechinteraction
+	thingcontrol --- controlkeepcontrolactivity
+	thingactivity --- controlkeepcontrolactivity
+	thingalfredinterface --> controlkeepcontrolactivity
+	thingALFRED --- controlkeepcontrolactivity
+	thingdatasetting --- controlmanageprivacydatasettings
+	thingsettinginterface --> controlmanageprivacydatasettings
+	controlaskhaveALFREDurgenthelp --> controlhave
+	thinghelpinterface --> controlhave
+	thingALFREDOlderPerson --> controlhave
+	thingsmalldevice --- controlhavesmalldeviceeasy
+	thingeasy --- controlhavesmalldeviceeasy
+	thingeasyinterface --> controlhavesmalldeviceeasy
+	controlhavesmallalfreddevice --> controlcarry
+	thingdeviceinterface --> controlcarry
+	thingdevice --- controlhavesmallalfreddevice
+	thingdeviceinterface --> controlhavesmallalfreddevice
+	thingcomputer --- controlhaveALFREDcomputer
+	thingcomputerinterface --> controlhaveALFREDcomputer
+	thingALFRED --- controlhaveALFREDcomputer
+	thingphone --- controlhaveALFREDphone
+	thingphoneinterface --> controlhaveALFREDphone
+	thingALFRED --- controlhaveALFREDphone
+	thingtablet --- controlhaveALFREDtablet
+	thingtabletinterface --> controlhaveALFREDtablet
+	thingALFRED --- controlhaveALFREDtablet
+	thingnecklace --- controlhaveALFREDnecklace
+	thingnecklaceinterface --> controlhaveALFREDnecklace
+	thingALFRED --- controlhaveALFREDnecklace
+	thingbracelet --- controlhaveALFREDbracelet
+	thingbraceletinterface --> controlhaveALFREDbracelet
+	thingALFRED --- controlhaveALFREDbracelet
+	thingtrouble --- controlhaveclearinstructiontrouble
+	controlusehaveclearinstructiontroubleALFRED --> controlhaveclearinstructiontrouble
+	thingclearinstruction --- controlhaveclearinstructiontrouble
+	thingalfredinterface --> controlhaveclearinstructiontrouble
+	thingALFRED --- controlusehaveclearinstructiontroubleALFRED
+	thingalfredinterface --> controlusehaveclearinstructiontroubleALFRED
+	thingclearinstruction --- controlhaveclearinstructionsale
+	thingsale --- controlhaveclearinstructionsale
+	thingsaleinterface --> controlhaveclearinstructionsale
+	thingservice --- controlhaveservice
+	thingserviceinterface --> controlhaveservice
+	thinglowbattery --- controlhavealfreddevice
+	thinghouse --- controlhavealfreddevice
+	thinguser --- controlhavealfreddevice
+	thingvisual --- controlhavealfreddevice
+	thingvisualtrouble --- controlhavealfreddevice
+	thingtrouble --- controlhavealfreddevice
+	thinglastphrase --- controlhavealfreddevice
+	thingchangingdemand --- controlhavealfreddevice
+	controlofferhavealfreddevicenewapp --> controlhavealfreddevice
+	thingexistingapp --- controlhavealfreddevice
+	thinginterest --- controlhavealfreddevice
+	thinginformation --- controlhavealfreddevice
+	thingdevice --- controlhavealfreddevice
+	thingdeviceinterface --> controlhavealfreddevice
+	thingdevice --- controlhavedeviceclearly
+	thingclearly --- controlhavedeviceclearly
+	thingclearlyinterface --> controlhavedeviceclearly
+	thingdevice --- controlaskdeviceto
+	thingdeviceinterface --> controlaskdeviceto
+	controlaskdeviceto --> controlto
+	thingdeviceinterface --> controlto
+	thingintroductionconversation --- controlhaveintroductionconversation
+	thingALFRED --- controlhaveintroductionconversation
+	thingalfredinterface --> controlhaveintroductionconversation
+	thingseniorshop --- controlbuyALFREDseniorshop
+	thingclientsupport --- controlbuyALFREDseniorshop
+	thingsupportinterface --> controlbuyALFREDseniorshop
+	thingALFRED --- controlbuyALFREDseniorshop
+	thinglowprice --- controlbuyALFREDlowprice
+	thingpriceinterface --> controlbuyALFREDlowprice
+	thingALFRED --- controlbuyALFREDlowprice
+	thingvisualsupport --- controlreceivevisualsupport
+	thingsupportinterface --> controlreceivevisualsupport
+	thingvisualsupport --- controlreceivevisualsupportlist
+	thingsupportinterface --> controlreceivevisualsupportlist
+	controluseALFREDpaysmallamount --> controlpaysmallamount
+	thingalfredinterface --> controlpaysmallamount
+	thingALFRED --- controluseALFREDpaysmallamount
+	thingalfredinterface --> controluseALFREDpaysmallamount
+	thinggoodbattery --- controlhavegoodbatteryALFRED
+	thingALFRED --- controlhavegoodbatteryALFRED
+	thingalfredinterface --> controlhavegoodbatteryALFRED
+	thinghearing --- controlhavedevicehearing
+	thinghearinginterface --> controlhavedevicehearing
+	thingdevice --- controlhavedevicehearing
+	thinguser --- controlhavedevicehearing
+	thingvisualcontent --- controlzoomvisualcontent
+	thingcontentinterface --> controlzoomvisualcontent
+	thingnewapp --- controlofferhavealfreddevicenewapp
+	thingalfredoplatform --- controlofferhavealfreddevicenewapp
+	thingplatforminterface --> controlofferhavealfreddevicenewapp
+	thingfriend --- controlcommunicatefriend
+	controlhavealfreddevice --> controlcommunicatefriend
+	thingdeviceinterface --> controlcommunicatefriend
+	thingfamily --- controlcommunicatefamily
+	controlhavedevicedevice --> controlcommunicatefamily
+	thingdeviceinterface --> controlcommunicatefamily
+	controlhavedevicedevice --> controlcommunicate
+	thingdevice --- controlhavedevicedevice
+	thingvideoconversation --- controlhavevideoconversation
+	thingconversationinterface --> controlhavevideoconversation
+	thingrealinteraction --- controlhaveaflreddevice
+	thinghuman --- controlhaveaflreddevice
+	thingicttool --- controlhaveaflreddevice
+	thingtoolinterface --> controlhaveaflreddevice
+	thingdevice --- controlhaveaflreddevice
+	thinguser --- controlhaveaflreddevice
+	thingpreference --- controlcustomizepreference
+	thingdifferentfunctionality --- controlcustomizepreference
+	thingsolution --- controlcustomizepreference
+	thingsolutioninterface --> controlcustomizepreference
+	thingdatum --- controlhavedatum
+	thingphone --- controlhavedatum
+	thingphoneinterface --> controlhavedatum
+	thingmorning --- controlreceivewakecallmorningmorning
+	controlbereceivewakecallmorningmorning --> controlreceivewakecallmorningmorning
+	thingmorninginterface --> controlreceivewakecallmorningmorning
+	thingALFRED --- controlreceivewakecallmorningmorning
+	thingmorninginterface --> controlbereceivewakecallmorningmorning
+	thingnight --- controlreceivenight
+	thingnightinterface --> controlreceivenight
+	thingrythmsupport --- controlreceivedayrythmsupport
+	thingagendainterface --> controlreceivedayrythmsupport
+	thingreminder --- controlreceivedayrythmsupport
+	thingsupportusepublictransportOlderPerson --> controlreceivesupportusepublictransportOlderPerson
+	controlreceivesupportusepublictransportOlderPerson --> controlusepublictransport
+	thingpublictransport --- controlusepublictransport
+	thingsupportusepublictransportOlderPerson --> controlusepublictransport
+	thingnavigation --- controluseALFREDnavigation
+	thingnavigationinterface --> controluseALFREDnavigation
+	thingALFRED --- controluseALFREDnavigation
+	thingtouristicwalk --- controlindicationALFREDtouristicwalkexplanation
+	thingexplanation --- controlindicationALFREDtouristicwalkexplanation
+	thinghistoricalsight --- controlindicationALFREDtouristicwalkexplanation
+	thingsightinterface --> controlindicationALFREDtouristicwalkexplanation
+	thingALFRED --- controlindicationALFREDtouristicwalkexplanation
+	thingcultural --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingculturalinterface --> controlindicationALFREDtouristicwalkexplanationcultural
+	thingtouristicwalk --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingALFRED --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingexplanation --- controlindicationALFREDtouristicwalkexplanationcultural
+	thingtaxi --- controlhavetaxitime
+	thingtime --- controlhavetaxitime
+	thingsupportusepublictransportOlderPerson --> controlhavetaxitime
+	controlreceivesupportusepublictransportOlderPerson --> controlhavetaxitime
+	thingdoorinterface --> controluseALFREDseedoor
+	thingALFRED --- controluseALFREDseedoor
+	thingdoor --- controluseALFREDseedoor
+	thingdoor --- controlopendoor
+	thingalfredinterface --> controlopendoor
+	controluseALFREDpaysmallamount --> controlopendoor
+	controluseALFREDseedoor --> controlsee
+	controltakeseepill --> controlsee
+	thingdoorinterface --> controlsee
+	controlbepickphonehome --> controlpickphone
+	thinghomeinterface --> controlpickphone
+	thingphone --- controlpickphone
+	thinghomeinterface --> controlbepickphonehome
+	thinghouse --- controlbepickphonehome
+	controluseALFREDpaysmallamount --> controlbepickphonehome
+	thinglight --- controlturnoff
+	thinglightinterface --> controlturnoff
+	controluseALFREDpaysmallamount --> controlturnoff
+	thingalfredinterface --> controlturn
+	controluseALFREDpaysmallamount --> controlturn
+	thingheating --- controlcontrolheating
+	thingheatinginterface --> controlcontrolheating
+	controluseALFREDpaysmallamount --> controlcontrolheating
+	thingradio --- controlcontrolradio
+	thingalfredinterface --> controlcontrolradio
+	controluseALFREDpaysmallamount --> controlcontrolradio
+	thingtv --- controlcontroltv
+	thingalfredinterface --> controlcontroltv
+	controluseALFREDpaysmallamount --> controlcontroltv
+	thingmovie --- controlwatchmovie
+	thingmovieinterface --> controlwatchmovie
+	controluseALFREDpaysmallamount --> controlwatchmovie
+	thingnews --- controlhearnews
+	thingalfredinterface --> controlhearnews
+	controluseALFREDpaysmallamount --> controlhearnews
+	thinghelp --- controlcontacthelpcase
+	thingcase --- controlcontacthelpcase
+	thingemergency --- controlcontacthelpcase
+	thingalfredinterface --> controlcontacthelpcase
+	controluseALFREDpaysmallamount --> controlcontacthelpcase
+	thingurgenthelp --- controlaskhaveALFREDurgenthelp
+	thinghelpinterface --> controlaskhaveALFREDurgenthelp
+	thingALFRED --- controlaskhaveALFREDurgenthelp
+	thingmessage --- controlreceivemessage
+	thingmessageinterface --> controlreceivemessage
+	thingALFRED --- controlreceivemedicinereminderALFRED
+	thingalfredinterface --> controlreceivemedicinereminderALFRED
+	thingreminder --- controlreceivemedicinereminderALFRED
+	thingpill --- controltakeseepill
+	thingpillinterface --> controltakeseepill
+	thinggroceryshopping --- controldogroceryshopping
+	thingalfredinterface --> controldogroceryshopping
+	controluseALFREDpaysmallamount --> controldogroceryshopping
+	thingmessage --- controlsendmessage
+	thingalfredinterface --> controlsendmessage
+	controluseALFREDpaysmallamount --> controlsendmessage
+	thingALFREDOlderPerson --> controldetectALFREDOlderPersonfall
+	thingfall --- controldetectALFREDOlderPersonfall
+	controlhave --> controldetectALFREDOlderPersonfall
+	thingspecificcontact --- controlsendALFREDOlderPersonemergencyspecificcontact
+	thingemergency --- controlsendALFREDOlderPersonemergencyspecificcontact
+	thingALFREDOlderPerson --> controlsendALFREDOlderPersonemergencyspecificcontact
+	controlhave --> controlsendALFREDOlderPersonemergencyspecificcontact
+	thinghealthyrecipe --- controlsuggestALFREDOlderPersonhealthyrecipe
+	thingALFREDOlderPerson --> controlsuggestALFREDOlderPersonhealthyrecipe
+	controlhave --> controlsuggestALFREDOlderPersonhealthyrecipe
+	thingcertaintime --- controlprogrammespontaneousquestioncertaintime
+	thingday --- controlprogrammespontaneousquestioncertaintime
+	thingdayinterface --> controlprogrammespontaneousquestioncertaintime
+	thingspontaneousquestion --- controlprogrammespontaneousquestioncertaintime
+	thingquestion --- controlinitiateALFREDOlderPersonquestion
+	thingALFREDOlderPerson --> controlinitiateALFREDOlderPersonquestion
+	controlhave --> controlinitiateALFREDOlderPersonquestion
+	thingALFRED --- controlcallsomeoneALFRED
+	thingalfredinterface --> controlcallsomeoneALFRED
+	thingmode --- controlactivatevocalinteractionmode
+	controlpushactivatevocalinteractionmodespecificbutton --> controlactivatevocalinteractionmode
+	thinginteractioninterface --> controlactivatevocalinteractionmode
+	thingALFRED --- controlactivatevocalinteractionmode
+	thinginteraction --- controlactivatevocalinteractionmode
+	thingspecificbutton --- controlpushactivatevocalinteractionmodespecificbutton
+	thingbuttoninterface --> controlpushactivatevocalinteractionmodespecificbutton
+	thingcontactlist --- controlmaintaincontactlistphone
+	thingphone --- controlmaintaincontactlistphone
+	thingalfredinterface --> controlmaintaincontactlistphone
+	controluseALFREDpaysmallamount --> controlmaintaincontactlistphone
+	thingagenda --- controlmanageagenda
+	thingalfredinterface --> controlmanageagenda
+	controluseALFREDpaysmallamount --> controlmanageagenda
+	thingmeeting --- controlinsertmeetingALFREDspeech
+	thingspeech --- controlinsertmeetingALFREDspeech
+	thingALFRED --- controlinsertmeetingALFREDspeech
+	thingspeechinterface --> controlinsertmeetingALFREDspeech
+	thingreminder --- controlreceivereminderappointment
+	thingappointment --- controlreceivereminderappointment
+	thingappointmentinterface --> controlreceivereminderappointment
+	controlreceivereminderALFREDthingleavebringthinghouse --> controlleavebringthinghouse
+	thingthinginterface --> controlleavebringthinghouse
+	thinghouse --- controlleavebringthinghouse
+	controlleavebringthinghouse --> controlbringthing
+	thingthinginterface --> controlbringthing
+	thingthing --- controlbringthing
+	thingthing --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingALFRED --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingreminder --- controlreceivereminderALFREDthingleavebringthinghouse
+	thingthinginterface --> controlreceivereminderALFREDthingleavebringthinghouse
+	thingsocialgroup --- controlsetsocialgroup
+	thingpeople --- controlsetsocialgroup
+	thingsimilardisease --- controlsetsocialgroup
+	thingalfredinterface --> controlsetsocialgroup
+	controluseALFREDpaysmallamount --> controlsetsocialgroup
+	thingowncircle --- controlcontactpeopleowncircle
+	thingcircleinterface --> controlcontactpeopleowncircle
+	thingpeople --- controlcontactpeopleowncircle
+	controluseALFREDpaysmallamount --> controlcontactpeopleowncircle
+	thingmuseum --- controllearnmuseum
+	thingalfredinterface --> controllearnmuseum
+	controluseALFREDpaysmallamount --> controllearnmuseum
+	thingartexposition --- controllearnartexpositions
+	thingexpositioninterface --> controllearnartexpositions
+	controluseALFREDpaysmallamount --> controllearnartexpositions
+	thingsocialactivity --- controllearnsocialactivity
+	thingneighborhood --- controllearnsocialactivity
+	thingalfredinterface --> controllearnsocialactivity
+	controluseALFREDpaysmallamount --> controllearnsocialactivity
+	thingpersonalizedinvitation --- controlgetpersonalizedinvitation
+	thingsocialevent --- controlgetpersonalizedinvitation
+	thingalfredinterface --> controlgetpersonalizedinvitation
+	controluseALFREDpaysmallamount --> controlgetpersonalizedinvitation
+	thingevent --- controlnavigateevent
+	thingeventinterface --> controlnavigateevent
+	controluseALFREDpaysmallamount --> controlnavigateevent
+	thingconcert --- controlnavigateconcert
+	thingconcertinterface --> controlnavigateconcert
+	controluseALFREDpaysmallamount --> controlnavigateconcert
+	thingalfredinterface --> controllosehelpALFRED
+	controluseALFREDpaysmallamount --> controllosehelpALFRED
+	controllosehelpALFRED --> controlhelpALFRED
+	thingalfredinterface --> controlhelpALFRED
+	thingALFRED --- controlhelpALFRED
+	controluseALFREDhelpcognitivemildimpairment --> controlhelp
+	thingimpairmentinterface --> controlhelp
+	thingweightinterface --> controlhelp
+	thingALFREDOlderPerson --> controlhelp
+	controlhave --> controlhelp
+	thingcognitivemildimpairment --- controluseALFREDhelpcognitivemildimpairment
+	thingALFRED --- controluseALFREDhelpcognitivemildimpairment
+	thingimpairmentinterface --> controluseALFREDhelpcognitivemildimpairment
+	thinggroup --- controlorganizemeetingcertainplace
+	thingcertainplace --- controlorganizemeetingcertainplace
+	thingfriend --- controlorganizemeetingcertainplace
+	thingmeeting --- controlorganizemeetingcertainplace
+	thingalfredinterface --> controlorganizemeetingcertainplace
+	controluseALFREDpaysmallamount --> controlorganizemeetingcertainplace
+	thingonlinegame --- controlplayonlinegameotheruser
+	thinguserinterface --> controlplayonlinegameotheruser
+	thinguser --- controlplayonlinegameotheruser
+	thingsuggestion --- controlgetsuggestion
+	thingsportsclass --- controlgetsuggestion
+	thingneighbourhoodinterface --> controlgetsuggestion
+	thingneighborhood --- controlgetsuggestion
+	thingALFREDOlderPerson --> controlenableALFREDOlderPersonhaveface
+	controlhave --> controlenableALFREDOlderPersonhaveface
+	controlenableALFREDOlderPersonhaveface --> controlhaveface
+	thingface --- controlhaveface
+	thingALFREDOlderPerson --> controlhaveface
+	thingbodyweight --- controlcontrolbodyweight
+	thingweightinterface --> controlcontrolbodyweight
+	controlhelp --> controlcontrolbodyweight
+	thingbutton --- controlpressbuttoncallcaregiver
+	thingbuttoninterface --> controlpressbuttoncallcaregiver
+	controlpressbuttoncallcaregiver --> controlcallcaregiver
+	thingcaregiver --- controlcallcaregiver
+	thingcaregiverinterface --> controlcallcaregiver
+	thingwearable --- controlhavewearable
+	thingintegratedsensor --- controlhavewearable
+	thingsensorinterface --> controlhavewearable
+	thingmoinsPRONmoins --- controlseemoinsPRONmoins
+	thingproninterface --> controlseemoinsPRONmoins
+	thingvitalparameter --- controlseevitalparameter
+	thingphone --- controlseevitalparameter
+	thingphoneinterface --> controlseevitalparameter
+	thingalfredshirt --- controlhavealfredshirt
+	thingshirtinterface --> controlhavealfredshirt
+	thinglimit --- controlsetALFREDOlderPersonlimitgamesduration
+	thinggamesduration --- controlsetALFREDOlderPersonlimitgamesduration
+	thingALFREDOlderPerson --> controlsetALFREDOlderPersonlimitgamesduration
+	controlhave --> controlsetALFREDOlderPersonlimitgamesduration
+	thinggame --- controlplaygame
+	thinggameinterface --> controlplaygame
+	thingexercise --- controlcapturehealthdataexercise
+	thingexerciseinterface --> controlcapturehealthdataexercise
+	thingdatum --- controlcapturehealthdataexercise
+	thingALFRED --- controldoguidedexerciseALFRED
+	thingguidedexercise --- controldoguidedexerciseALFRED
+	thingalfredinterface --> controldoguidedexerciseALFRED
+	thingfavouritesport --- controlhavegame
+	thingsportinterface --> controlhavegame
+	thinggame --- controlhavegame
+	thingmemoryhealth --- controlhavegame
+	thinghealthinterface --> controlhavegame
+	thingclassinterface --> controlreceivesuggestion
+	thingsuggestion --- controlreceivesuggestion
+	thingsportsclass --- controlreceivesuggestion
+	controlremindALFREDOlderPersonkeepgoodbodyposture --> controlkeepgoodbodyposture
+	thingbodyposture --- controlkeepgoodbodyposture
+	thingALFREDOlderPerson --> controlkeepgoodbodyposture
+	thingALFREDOlderPerson --> controlremindALFREDOlderPersonkeepgoodbodyposture
+	controlhave --> controlremindALFREDOlderPersonkeepgoodbodyposture
+	thingspecifictip --- controlreceivespecifictipreducehealthimpairmentsmedication
+	thingtipinterface --> controlreceivespecifictipreducehealthimpairmentsmedication
+	controlreceivespecifictipreducehealthimpairmentsmedication --> controlreducehealthimpairmentsmedication
+	thinghealthimpairment --- controlreducehealthimpairmentsmedication
+	thingmedication --- controlreducehealthimpairmentsmedication
+	thingmedicationinterface --> controlreducehealthimpairmentsmedication
+	thingphysical --- controlhavegamephysical
+	thingphysicalinterface --> controlhavegamephysical
+	thinggame --- controlhavegamephysical
+	thingtraining --- controlhavetraining
+	thinggroupinterface --> controlhavetraining
+	thinggroup --- controlhavetraining
+	thingperformance --- controlseetrainingperformance
+	thingtraininginterface --> controlseetrainingperformance
+	thingweek --- controlmotivateweekdoexercise
+	thingALFREDOlderPerson --> controlmotivateweekdoexercise
+	controlhelp --> controlmotivateweekdoexercise
+	controlmotivateweekdoexercise --> controldoexercise
+	thingALFREDOlderPerson --> controldoexercise
+	thingexercise --- controldoexercise
+
+@enduml

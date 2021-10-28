@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a repository manager, I want to constrain curatorial access to my units assets to staff members of my unit and to DAMS managers having universal access.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "constrain",
+        "label": "Processing"
+      },
+      {
+        "text": "units assets",
+        "label": "PII"
+      },
+      {
+        "text": "staff members",
+        "label": "Data"
+      },
+      {
+        "text": "unit",
+        "label": "PII"
+      }
+    ]
+  }
+]

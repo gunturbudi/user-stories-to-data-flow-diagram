@@ -1,0 +1,153 @@
+[
+  {
+    "text": "As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want to understand the ways in which my data is invalid, so that I can know how to fix it.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don\u00e2\u20ac\u2122t have to retype descriptive information about my dataset.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "don\u00e2",
+        "label": "Processing"
+      },
+      {
+        "text": "\u20ac\u2122",
+        "label": "Data"
+      },
+      {
+        "text": "retype",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want to publish Data Packages to CKAN, so that my data is findable, and I can have a data API.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "Data Packages",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want validate my data with a minimum of clicks, so that I can feel trust in the validity and usefulness of the data.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher",
+        "label": "Data"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want to specify the funding that contributed to the creation of a given dataset, so that funding agencies can identify the funding, source for a given dataset.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "funding",
+        "label": "PII"
+      },
+      {
+        "text": "given dataset",
+        "label": "PII"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherPublisher, I want to add a DOI to a dataset, so that I can cite it in papers stored  with the data.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "cite",
+        "label": "Processing"
+      }
+    ]
+  }
+]

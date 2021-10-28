@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Similarity" as thingsimilarity
+	entity "Group Subject" as thinggroupsubject
+	actor "Zooniverse Admin" as actorzooniverseadmin
+
+
+@enduml

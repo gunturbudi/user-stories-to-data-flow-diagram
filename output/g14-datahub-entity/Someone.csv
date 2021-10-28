@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+7,Start contributing or using data.,ellipse,null,null,process
+200,Platform,shape=partialRectangle,null,null,data_base
+201,Email,shape=partialRectangle,null,null,data_base
+202,Publisher,shape=partialRectangle,null,null,data_base
+203,Membership,shape=partialRectangle,null,null,data_base
+204,Admin,rounded=0,null,null,external_entity
+205,Owner,rounded=0,null,null,external_entity
+206,Join The Platform,ellipse,null,null,process
+207,Invite Someone,ellipse,null,null,process
+208,Using Email,ellipse,null,null,process
+209,Sign Up A Member Of Publisher,ellipse,null,null,process
+210,Become A Member Of Publisher,ellipse,null,null,process
+211,Remove Someone From Membership In Publisher,ellipse,null,null,process
+213,,endArrow=classic,204,206,endArrow=classic
+214,,endArrow=classic,204,207,endArrow=classic
+215,,endArrow=classic,205,207,endArrow=classic
+216,,endArrow=classic,205,208,endArrow=classic
+217,,endArrow=classic,205,209,endArrow=classic
+218,,endArrow=classic,205,210,endArrow=classic
+219,,endArrow=classic,205,211,endArrow=classic
+220,Platform,endArrow=classic,206,200,endArrow=classic
+221,,endArrow=classic,207,206,endArrow=classic
+222,,endArrow=classic,207,208,endArrow=classic
+223,,endArrow=classic,208,209,endArrow=classic
+224,,endArrow=classic,208,210,endArrow=classic
+225,Email,endArrow=classic,208,201,endArrow=classic
+226,Publisher,endArrow=classic,209,202,endArrow=classic
+227,Publisher,endArrow=classic,210,202,endArrow=classic
+228,Membership,endArrow=classic,211,203,endArrow=classic
+229,Publisher,endArrow=classic,211,202,endArrow=classic
+1000,They,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,7,endArrow=classic
+1002,They,rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,7,endArrow=classic
+1004,Data,rounded=0,null,null,external_entity
+1005,Data,endArrow=classic,7,1004,endArrow=classic

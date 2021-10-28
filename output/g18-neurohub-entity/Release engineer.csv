@@ -1,0 +1,39 @@
+id,value,style,source,target,type
+200,Script,shape=partialRectangle,null,null,data_base
+201,Neurohub Installation,shape=partialRectangle,null,null,data_base
+202,Result,shape=partialRectangle,null,null,data_base
+203,Interaction,shape=partialRectangle,null,null,data_base
+204,Test,shape=partialRectangle,null,null,data_base
+205,Manual Input,shape=partialRectangle,null,null,data_base
+206,Nightly Build,shape=partialRectangle,null,null,data_base
+207,Operating System,shape=partialRectangle,null,null,data_base
+208,Acceptance,shape=partialRectangle,null,null,data_base
+209,Release Engineer,rounded=0,null,null,external_entity
+210,Call A Script,ellipse,null,null,process
+211,Execute Acceptance Tests Against A Neurohub Installation,ellipse,null,null,process
+212,Report Back The Results,ellipse,null,null,process
+213,Execute Tests,ellipse,null,null,process
+214,Requiring Any Manual Input,ellipse,null,null,process
+215,Requiring Interaction,ellipse,null,null,process
+216,Configure Nightly Builds Automatically Perform A Neurohub Installation On A Virgin Operating System,ellipse,null,null,process
+218,,endArrow=classic,209,210,endArrow=classic
+219,,endArrow=classic,209,211,endArrow=classic
+220,,endArrow=classic,209,212,endArrow=classic
+221,,endArrow=classic,209,214,endArrow=classic
+222,,endArrow=classic,209,215,endArrow=classic
+223,,endArrow=classic,209,216,endArrow=classic
+224,,endArrow=classic,210,211,endArrow=classic
+225,,endArrow=classic,210,212,endArrow=classic
+226,Script,endArrow=classic,210,200,endArrow=classic
+227,Neurohub Installation,endArrow=classic,211,201,endArrow=classic
+228,Test,endArrow=classic,211,204,endArrow=classic
+229,Result,endArrow=classic,212,202,endArrow=classic
+230,Test,endArrow=classic,213,204,endArrow=classic
+231,,endArrow=classic,214,213,endArrow=classic
+232,Manual Input,endArrow=classic,214,205,endArrow=classic
+233,,endArrow=classic,215,213,endArrow=classic
+234,Interaction,endArrow=classic,215,203,endArrow=classic
+235,Nightly Build,endArrow=classic,216,206,endArrow=classic
+236,Operating System,endArrow=classic,216,207,endArrow=classic
+237,Neurohub Installation,endArrow=classic,216,201,endArrow=classic
+239,Acceptance,endArrow=classic,211,208,endArrow=classic

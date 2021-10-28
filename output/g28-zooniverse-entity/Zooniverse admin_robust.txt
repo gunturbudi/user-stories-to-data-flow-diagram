@@ -1,0 +1,370 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Talk" as thingtalk
+	entity "Picture" as thingpicture
+	entity "Comment" as thingcomment
+	entity "Automated Analysis" as thingautomatedanalysis
+	entity "Classifiable Animal" as thingclassifiableanimal
+	entity "Case" as thingcase
+	entity "Malfunction" as thingmalfunction
+	entity "Snapshot Serengeti" as thingsnapshotserengeti
+	entity "Plankton" as thingplankton
+	entity "Localization" as thinglocalization
+	entity "Classifiable Plankton" as thingclassifiableplankton
+	entity "Orientation" as thingorientation
+	entity "Worm" as thingworm
+	entity "Time" as thingtime
+	entity "Egg" as thingegg
+	entity "Area" as thingarea
+	entity "Temporary Shelter" as thingtemporaryshelter
+	entity "Damage" as thingdamage
+	entity "Flooding" as thingflooding
+	entity "Important Feature" as thingimportantfeature
+	entity "Experience" as thingexperience
+	entity "Volunteer" as thingvolunteer
+	entity "Classification" as thingclassification
+	entity "Weight" as thingweight
+	entity "Artefact" as thingartefact
+	entity "Bright Star" as thingbrightstar
+	entity "Prefiltering" as thingprefiltering
+	entity "Camera" as thingcamera
+	entity "Read Error" as thingreaderror #grey
+	entity "Number" as thingnumber
+	entity "Audio ,\nSingle File" as thingaudiosinglefile
+	entity "Whale" as thingwhale
+	entity "Text" as thingtext
+	entity "Video" as thingvideo
+	entity "Interesting Comment" as thinginterestingcomment
+	entity "Subject" as thingsubject
+	entity "Explanation" as thingexplanation
+	entity "Previous Experience" as thingpreviousexperience
+	entity "Different Project" as thingdifferentproject
+	entity "Transient" as thingtransient
+	entity "Object" as thingmovingobject
+	entity "Audio File" as thingaudiofile
+	entity "Sound" as thingsound
+	entity "Background Noise" as thingbackgroundnoise #grey
+	entity "Similarity" as thingsimilarity
+	entity "Animal Species\nPreclassification" as thinganimalspeciespreclassification
+	entity "Animal Attribute\nPreclassification" as thinganimalattributepreclassification
+	entity "Roads Etc" as thingroadsetc
+	entity "Serengeti" as thingserengeti #grey
+	entity "Animal" as thinganimal #grey
+	entity "Satellite" as thingsatellite #grey
+	entity "Group" as thinggroup #grey
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Automatic Segmentation" as thingautomaticsegmentation
+	circle "Automatic Detection" as thingautomaticdetection
+	circle "Automatic Preclassification" as thingautomaticpreclassification
+	circle "Probability" as thingprobability
+	circle "Feature" as thingfeature #grey
+	circle "Series Detection" as thingseriesdetection #grey
+	circle "Detection" as thingdetection #grey
+	circle "Size" as thingsize #grey
+	circle "Specie" as thingspecie #grey
+	circle "Watch Lab" as thingwatchlab #grey
+	circle "Motion Analysis" as thingmotionanalysis #grey
+	circle "Duration" as thingduration #grey
+	circle "Type" as thingtype #grey
+	circle "Portal" as thingportal #grey
+	boundary "Galaxy Zoo\nImages" as thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin #grey
+	boundary "Plankton Portal" as thingplanktonportalzooniverseadmin
+	boundary "Plankton Portal\nImages" as thingplanktonportalimageszooniverseadmin
+	boundary "Zoonibot" as thingzoonibotzooniverseadmin
+	boundary "Animal\nInterface" as thinganimalinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Serengeti\nInterface" as thingserengetiinterface #grey
+	boundary "Localization\nInterface" as thinglocalizationinterface #grey
+	boundary "Plankton\nInterface" as thingplanktoninterface #grey
+	boundary "Orientation\nInterface" as thingorientationinterface #grey
+	boundary "Worm\nInterface" as thingworminterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Egg\nInterface" as thingegginterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Shelter\nInterface" as thingshelterinterface #grey
+	boundary "Damage\nInterface" as thingdamageinterface #grey
+	boundary "Experience\nInterface" as thingexperienceinterface #grey
+	boundary "Weight\nInterface" as thingweightinterface #grey
+	boundary "Camera\nInterface" as thingcamerainterface #grey
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	boundary "Star\nInterface" as thingstarinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Volunteer\nInterface" as thingvolunteerinterface #grey
+	boundary "Transient\nInterface" as thingtransientinterface #grey
+	control "Assess" as controlassess
+	control "Detect" as controldetect
+	control "Preclassify" as controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	control "Use Simple\nImage Features" as controlusesimpleimagefeatures
+	control "Detect Snapshot\nSerengeti Images\nWith No\nClassifiable Animals\nIn Snapshot\nSerengeti Images" as controldetectsnapshotserengetiimages
+	control "Perform Automatic\nImage Series\nDetection For\nThe Case\nTimestamping Malfunction\nIn Snapshot\nSerengeti Images" as controlperformautomaticimageseriesdetectioncase
+	control "Perform Automatic\nAnimal Species\nPreclassification In\nSnapshot Serengeti" as controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	control "Perform Automatic\nAnimal Attribute\nPreclassification In\nSnapshot Serengeti" as controlperformautomaticanimalattributepreclassificationsnapshotserengeti
+	control "Perform Automatic\nAnimal Number\nDetection In\nSnapshot Serengeti" as controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	control "Perform Automatic\nSegmentation Of\nPlankton In" as controlperformautomaticsegmentation
+	control "Perform Localization" as controlperformlocalization
+	control "Detect Plankton\nPortal Images\nWith No\nClassifiable Plankton\nIn" as controldetectplanktonportalimages
+	control "Perform Automatic\nDetection Of\nPlankton Size\nIn Plankton\nPortal Images" as controlperformautomaticdetection
+	control "Perform Automatic\nDetection Of\nOrientation" as controlperformautomaticdetectionorientation
+	control "Perform Automatic\nPreclassification Of\nPlankton Species\nIn Plankton\nPortal Images" as controlperformautomaticpreclassificationplanktonportalimages
+	control "Perform Automatic\nWorm Motion\nAnalysis" as controlperformautomaticwormmotionanalysisreducevideoduration
+	control "Reduce Video\nDuration In\nWorm Watch\nLab" as controlreducevideoduration
+	control "Detect The\nTime In\nA Worm\nWatch Lab\nVideo The\nWorm Where\nLays An\nEgg" as controldetecttime
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Blocked\nRoads Etc" as controldetectimportantfeatureblockedroadsetc
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Temporary\nShelter" as controldetectimportantfeaturetemporaryshelter
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Flooding\nIn The\nSatellite Images" as controldetectimportantfeature
+	control "Detect Important\nFeatures Such\nAs Areas\nOf Damage" as controldetectimportantfeaturedamage
+	control "Assess The\nProbability Of\nA Volunteer’s\nClassification On\nExperience" as controlassessprobability
+	control "Assess Weight" as controlassessweight
+	control "Perform Prefiltering\nOf The\nImages" as controlperformprefilteringremoveartefactremoveartefactcamera
+	control "Remove Artefacts\nSuch As\nCamera" as controlremoveartefactcamera
+	control "Remove Artefacts\nSuch As\nRead Error" as controlremoveartefactreaderror
+	control "Remove Artefacts\nSuch As\nBright Stars" as controlremoveartefact
+	control "Identify The\nNumber Of\nWhales In\nA Audio,\nSingle File" as controlidentifynumber
+	control "Know" as controlknow
+	control "Interrupt A\nVolunteer" as controlinterruptknowvolunteer
+	control "Interrupt A\nVolunteer With\nAn Image" as controlinterruptknowmoinsPRONmoinsvolunteerimage
+	control "Interrupt A\nVolunteer With\nA Video" as controlinterruptknowmoinsPRONmoinsvolunteervideo
+	control "Educate A\nVolunteer" as controleducateknowvolunteer
+	control "Educate A\nVolunteer With\nAn Image" as controleducateknowmoinsPRONmoinsvolunteerimage
+	control "Educate A\nVolunteer With\nA Video" as controleducateknowmoinsPRONmoinsvolunteervideo
+	control "What Say\nTo A\nVolunteer" as controlsaywhatzoonibotzooniverseadminvolunteer
+	control "Recommend Different\nProjects To\nVolunteers On\nPrevious Experiences" as controlrecommenddifferentprojectvolunteer
+	control "Identify Volunteer\nTypes" as controlidentifyvolunteertypes
+	control "Detect Transient" as controldetecttransient
+	control "Detect Moving\nObjects In\nThe Images" as controldetectmovingobject
+	control "Distracting Remove\nBackground Noise\nSounds From\nThe Audio\nFiles" as controlremovebackgroundnoisesound
+
+	thingserengeti <.. thingpicture
+	thingclassifiableanimal <.. thingpicture
+	thingportal <.. thingpicture
+	thingsatellite <.. thingpicture
+	thingtalk <.. thingcomment
+	thingpicture <.. thingclassifiableanimal
+	thingmalfunction <.. thingcase
+	thingpicture <.. thingmalfunction
+	thingclassifiableplankton <.. thingplankton
+	thingpicture <.. thingplankton
+	thingworm <.. thingworm
+	thingegg <.. thingworm
+	thingworm <.. thingtime
+	thingvideo <.. thingtime
+	thingflooding *-- thingarea
+	thingroadsetc *-- thingarea
+	thingdamage *-- thingarea
+	thingtemporaryshelter *-- thingarea
+	thingpicture *-- thingarea
+	thingpicture <.. thingflooding
+	thingarea <.. thingimportantfeature
+	thingtext <.. thingvolunteer
+	thingpreviousexperience <.. thingvolunteer
+	thingvideo <.. thingvolunteer
+	thingpicture <.. thingvolunteer
+	thingvolunteer <.. thingclassification
+	thingexperience <.. thingclassification
+	thingbrightstar <.. thingartefact
+	thingreaderror <.. thingartefact
+	thingcamera <.. thingartefact
+	thingpicture *-- thingprefiltering
+	thingwhale *-- thingnumber
+	thingaudiosinglefile *-- thingnumber
+	thinganimal *-- thingnumber
+	thingaudiosinglefile <.. thingwhale
+	thingwatchlab <.. thingvideo
+	thingsubject <.. thinginterestingcomment
+	thinggroup <.. thingsubject
+	thingvolunteer <.. thingdifferentproject
+	thingpicture <.. thingmovingobject
+	thingaudiofile <.. thingsound
+	thingsound <.. thingbackgroundnoise
+	thingsnapshotserengeti <.. thinganimalspeciespreclassification
+	thingsnapshotserengeti <.. thinganimalattributepreclassification
+	thingplankton *-- thingautomaticsegmentation
+	thingsize *-- thingautomaticdetection
+	thingorientation *-- thingautomaticdetection
+	thingplankton *-- thingautomaticdetection
+	thingspecie *-- thingautomaticpreclassification
+	thingplankton *-- thingautomaticpreclassification
+	thingclassification *-- thingprobability
+	thingexperience *-- thingprobability
+	thingpicture *-- thingfeature
+	thingcase *-- thingseriesdetection
+	thingpicture *-- thingseriesdetection
+	thingsnapshotserengeti *-- thingdetection
+	thingnumber *-- thingdetection
+	thingplankton *-- thingsize
+	thingpicture *-- thingsize
+	thingplankton *-- thingspecie
+	thingworm *-- thingwatchlab
+	thingvideo *-- thingwatchlab
+	thingworm *-- thingmotionanalysis
+	thingwatchlab *-- thingduration
+	thingvideo *-- thingduration
+	thingvolunteer *-- thingtype
+	thingplankton *-- thingportal
+	actorzooniverseadmin --- thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	actorzooniverseadmin --- thingplanktonportalzooniverseadmin
+	actorzooniverseadmin --- thingplanktonportalimageszooniverseadmin
+	actorzooniverseadmin --- thingzoonibotzooniverseadmin
+	actorzooniverseadmin --- thinganimalinterface
+	actorzooniverseadmin --- thingimageinterface
+	actorzooniverseadmin --- thingserengetiinterface
+	actorzooniverseadmin --- thinglocalizationinterface
+	actorzooniverseadmin --- thingplanktoninterface
+	actorzooniverseadmin --- thingorientationinterface
+	actorzooniverseadmin --- thingworminterface
+	actorzooniverseadmin --- thingvideointerface
+	actorzooniverseadmin --- thingegginterface
+	actorzooniverseadmin --- thingetcinterface
+	actorzooniverseadmin --- thingshelterinterface
+	actorzooniverseadmin --- thingdamageinterface
+	actorzooniverseadmin --- thingexperienceinterface
+	actorzooniverseadmin --- thingweightinterface
+	actorzooniverseadmin --- thingcamerainterface
+	actorzooniverseadmin --- thingerrorinterface
+	actorzooniverseadmin --- thingstarinterface
+	actorzooniverseadmin --- thingfileinterface
+	actorzooniverseadmin --- thingvolunteerinterface
+	actorzooniverseadmin --- thingtransientinterface
+	thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin
+	thinggalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlusesimpleimagefeatures
+	thingfeature --- controlusesimpleimagefeatures
+	controlpreclassifygalaxyzooimagesusesimpleimagefeatureszooniverseadmin --> controlusesimpleimagefeatures
+	thingpicture --- controlusesimpleimagefeatures
+	thingclassifiableanimal --- controldetectsnapshotserengetiimages
+	thinganimalinterface --> controldetectsnapshotserengetiimages
+	thingpicture --- controldetectsnapshotserengetiimages
+	thingseriesdetection --- controlperformautomaticimageseriesdetectioncase
+	thingcase --- controlperformautomaticimageseriesdetectioncase
+	thingmalfunction --- controlperformautomaticimageseriesdetectioncase
+	thingimageinterface --> controlperformautomaticimageseriesdetectioncase
+	thingpicture --- controlperformautomaticimageseriesdetectioncase
+	thinganimalspeciespreclassification --- controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	thingsnapshotserengeti --- controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	thingserengetiinterface --> controlperformautomaticanimalspeciespreclassificationsnapshotserengeti
+	thinganimalattributepreclassification --- controlperformautomaticanimalattributepreclassificationsnapshotserengeti
+	thingsnapshotserengeti --- controlperformautomaticanimalattributepreclassificationsnapshotserengeti
+	thingserengetiinterface --> controlperformautomaticanimalattributepreclassificationsnapshotserengeti
+	thingdetection --- controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	thingsnapshotserengeti --- controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	thingserengetiinterface --> controlperformautomaticanimalnumberdetectionsnapshotserengeti
+	thingautomaticsegmentation --- controlperformautomaticsegmentation
+	thingplankton --- controlperformautomaticsegmentation
+	thingplanktonportalzooniverseadmin --> controlperformautomaticsegmentation
+	thinglocalization --- controlperformlocalization
+	thinglocalizationinterface --> controlperformlocalization
+	thingclassifiableplankton --- controldetectplanktonportalimages
+	thingplanktonportalimageszooniverseadmin --> controldetectplanktonportalimages
+	thingpicture --- controldetectplanktonportalimages
+	thingautomaticdetection --- controlperformautomaticdetection
+	thingsize --- controlperformautomaticdetection
+	thingplanktoninterface --> controlperformautomaticdetection
+	thingpicture --- controlperformautomaticdetection
+	thingorientation --- controlperformautomaticdetectionorientation
+	thingorientationinterface --> controlperformautomaticdetectionorientation
+	thingautomaticdetection --- controlperformautomaticdetectionorientation
+	thingautomaticpreclassification --- controlperformautomaticpreclassificationplanktonportalimages
+	thingplanktoninterface --> controlperformautomaticpreclassificationplanktonportalimages
+	thingplankton --- controlperformautomaticpreclassificationplanktonportalimages
+	thingpicture --- controlperformautomaticpreclassificationplanktonportalimages
+	thingmotionanalysis --- controlperformautomaticwormmotionanalysisreducevideoduration
+	thingworminterface --> controlperformautomaticwormmotionanalysisreducevideoduration
+	controlperformautomaticwormmotionanalysisreducevideoduration --> controlreducevideoduration
+	thingduration --- controlreducevideoduration
+	thingwatchlab --- controlreducevideoduration
+	thingvideointerface --> controlreducevideoduration
+	thingvideo --- controlreducevideoduration
+	thingtime --- controldetecttime
+	thingegg --- controldetecttime
+	thingegginterface --> controldetecttime
+	thingworm --- controldetecttime
+	thingroadsetc --- controldetectimportantfeatureblockedroadsetc
+	thingetcinterface --> controldetectimportantfeatureblockedroadsetc
+	thingimportantfeature --- controldetectimportantfeatureblockedroadsetc
+	thingarea --- controldetectimportantfeatureblockedroadsetc
+	thingtemporaryshelter --- controldetectimportantfeaturetemporaryshelter
+	thingshelterinterface --> controldetectimportantfeaturetemporaryshelter
+	thingimportantfeature --- controldetectimportantfeaturetemporaryshelter
+	thingarea --- controldetectimportantfeaturetemporaryshelter
+	thingimportantfeature --- controldetectimportantfeature
+	thingarea --- controldetectimportantfeature
+	thingflooding --- controldetectimportantfeature
+	thingimageinterface --> controldetectimportantfeature
+	thingpicture --- controldetectimportantfeature
+	thingdamage --- controldetectimportantfeaturedamage
+	thingdamageinterface --> controldetectimportantfeaturedamage
+	thingimportantfeature --- controldetectimportantfeaturedamage
+	thingarea --- controldetectimportantfeaturedamage
+	thingprobability --- controlassessprobability
+	thingclassification --- controlassessprobability
+	thingexperience --- controlassessprobability
+	thingexperienceinterface --> controlassessprobability
+	thingweight --- controlassessweight
+	thingweightinterface --> controlassessweight
+	thingartefact --- controlperformprefilteringremoveartefactremoveartefactcamera
+	thingprefiltering --- controlperformprefilteringremoveartefactremoveartefactcamera
+	thingpicture --- controlperformprefilteringremoveartefactremoveartefactcamera
+	thingimageinterface --> controlperformprefilteringremoveartefactremoveartefactcamera
+	controlperformprefilteringremoveartefactremoveartefactcamera --> controlremoveartefactcamera
+	thingcamera --- controlremoveartefactcamera
+	thingcamerainterface --> controlremoveartefactcamera
+	thingartefact --- controlremoveartefactcamera
+	thingreaderror --- controlremoveartefactreaderror
+	thingerrorinterface --> controlremoveartefactreaderror
+	thingartefact --- controlremoveartefactreaderror
+	thingartefact --- controlremoveartefact
+	thingbrightstar --- controlremoveartefact
+	thingstarinterface --> controlremoveartefact
+	controlperformprefilteringremoveartefactremoveartefactcamera --> controlremoveartefact
+	thingnumber --- controlidentifynumber
+	thingwhale --- controlidentifynumber
+	thingaudiosinglefile --- controlidentifynumber
+	thingfileinterface --> controlidentifynumber
+	controlinterruptknowvolunteer --> controlknow
+	thingvolunteerinterface --> controlknow
+	controleducateknowvolunteer --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteervideo --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteerimage --> controlknow
+	controleducateknowmoinsPRONmoinsvolunteerimage --> controlknow
+	controleducateknowmoinsPRONmoinsvolunteervideo --> controlknow
+	thingzoonibotzooniverseadmin --> controlknow
+	thingvolunteer --- controlinterruptknowvolunteer
+	thingtext --- controlinterruptknowvolunteer
+	thingvolunteerinterface --> controlinterruptknowvolunteer
+	thingimageinterface --> controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingpicture --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvideo --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvideointerface --> controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controleducateknowvolunteer
+	thingtext --- controleducateknowvolunteer
+	thingvolunteerinterface --> controleducateknowvolunteer
+	thingimageinterface --> controleducateknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controleducateknowmoinsPRONmoinsvolunteerimage
+	thingpicture --- controleducateknowmoinsPRONmoinsvolunteerimage
+	thingvideo --- controleducateknowmoinsPRONmoinsvolunteervideo
+	thingvideointerface --> controleducateknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controleducateknowmoinsPRONmoinsvolunteervideo
+	thingzoonibotzooniverseadmin --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingvolunteer --- controlsaywhatzoonibotzooniverseadminvolunteer
+	controlknow --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingdifferentproject --- controlrecommenddifferentprojectvolunteer
+	thingpreviousexperience --- controlrecommenddifferentprojectvolunteer
+	thingvolunteer --- controlrecommenddifferentprojectvolunteer
+	thingexperienceinterface --> controlrecommenddifferentprojectvolunteer
+	thingtype --- controlidentifyvolunteertypes
+	thingvolunteerinterface --> controlidentifyvolunteertypes
+	thingtransient --- controldetecttransient
+	thingtransientinterface --> controldetecttransient
+	thingmovingobject --- controldetectmovingobject
+	thingimageinterface --> controldetectmovingobject
+	thingpicture --- controldetectmovingobject
+	thingbackgroundnoise --- controlremovebackgroundnoisesound
+	thingsound --- controlremovebackgroundnoisesound
+	thingaudiofile --- controlremovebackgroundnoisesound
+	thingfileinterface --> controlremovebackgroundnoisesound
+
+@enduml

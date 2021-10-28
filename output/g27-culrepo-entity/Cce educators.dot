@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Versioning " ];
+201 [label="<f0>  |<f1> Faq " ];
+202 [label="<f0>  |<f1> Etc " ];
+203 [label="<f0>  |<f1> Extension Brochure " color=red];
+204 [label="Faculty Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Maintain Versioning Of Faq }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Maintain Versioning Of Etc }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Maintain Versioning Of Extension Brochures }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 201 [label="Faq"]
+205 -> 200 [label="Versioning"]
+206 -> 202 [label="Etc"]
+206 -> 200 [label="Versioning"]
+207 -> 200 [label="Versioning"]
+207 -> 203 [label="Extension Brochure"]
+}

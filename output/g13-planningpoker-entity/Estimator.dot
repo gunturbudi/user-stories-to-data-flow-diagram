@@ -1,0 +1,55 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Game " color=red];
+201 [label="<f0>  |<f1> Url " ];
+202 [label="<f0>  |<f1> Estimator " ];
+203 [label="<f0>  |<f1> Estimate " color=red];
+204 [label="<f0>  |<f1> , Estimator " ];
+205 [label="<f0>  |<f1> Time " color=red];
+206 [label="<f0>  |<f1> Page " ];
+207 [label="<f0>  |<f1> Name " color=red];
+208 [label="<f0>  |<f1> Item " color=red];
+209 [label="<f0>  |<f1> Prior Estimate " color=red];
+210 [label="<f0>  |<f1> Story " color=red];
+211 [label="Moderator" shape=box];
+212 [label="Participant" shape=box];
+213 [label="Estimator" shape=box];
+214 [label="{<f0> 1.0|<f1> Giving Them A Url Where Access The Game }" shape=Mrecord];
+215 [label="{<f0> 2.0|<f1> Invite Estimators }" shape=Mrecord];
+216 [label="{<f0> 3.0|<f1> Show All Estimates }" shape=Mrecord];
+217 [label="{<f0> 4.0|<f1> Invite To, Up Estimators }" shape=Mrecord];
+218 [label="{<f0> 5.0|<f1> Shown All Estimates At The Same Time }" shape=Mrecord];
+219 [label="{<f0> 6.0|<f1> Join A Game }" shape=Mrecord];
+220 [label="{<f0> 7.0|<f1> Entering Name On The Page }" shape=Mrecord];
+221 [label="{<f0> 8.0|<f1> See The Item }" shape=Mrecord];
+222 [label="{<f0> 9.0|<f1> See }" shape=Mrecord];
+10 [label="{<f0> 10.0|<f1> Ask questions. }" shape=Mrecord];
+1000 [label="Participant" shape=box];
+1000 -> 10
+212 -> 10
+1003 [label="Participant" shape=box];
+1003 -> 10
+1005 [label="<f0>  |<f1> Opinion " color=red];
+10 -> 1005 [label="Opinion"]
+211 -> 214
+211 -> 215
+211 -> 216
+211 -> 217
+212 -> 218
+213 -> 219
+213 -> 220
+213 -> 221
+214 -> 215
+214 -> 201 [label="Url"]
+214 -> 200 [label="Game"]
+215 -> 202 [label="Estimator"]
+216 -> 203 [label="Estimate"]
+217 -> 204 [label=", Estimator"]
+218 -> 205 [label="Time"]
+218 -> 203 [label="Estimate"]
+219 -> 200 [label="Game"]
+220 -> 219
+220 -> 207 [label="Name"]
+220 -> 206 [label="Page"]
+221 -> 208 [label="Item"]
+}

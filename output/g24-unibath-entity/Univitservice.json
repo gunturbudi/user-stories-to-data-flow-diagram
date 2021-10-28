@@ -1,0 +1,70 @@
+[
+  {
+    "text": "As an UnivITservice, I want to store archived data on existing storage systems, so that university data storage is consistent and maintainable and future availability of data can be guaranteed.",
+    "entities": [
+      {
+        "text": "UnivITservice,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "archived data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an UnivITservice, I want to integrate the archive with existing university systems such as LDAP, so that the cost of administering the system can be kept low.",
+    "entities": [
+      {
+        "text": "UnivITservice,",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an UnivITservice, I want to store archived data directly on the HCP object store, so that  features can be made.",
+    "entities": [
+      {
+        "text": "UnivITservice,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "archived data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an UnivITservice, I want to be able to export all data to a different system, so that I am not tied into one system which may not be the most appropriate at some point in the future.",
+    "entities": [
+      {
+        "text": "UnivITservice,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

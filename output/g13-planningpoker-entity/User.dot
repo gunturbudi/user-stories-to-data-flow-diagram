@@ -1,0 +1,31 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Action " color=red];
+201 [label="<f0>  |<f1> Unicode " ];
+202 [label="<f0>  |<f1> Predictable " ];
+203 [label="<f0>  |<f1> Sensible Url " ];
+204 [label="<f0>  |<f1> Error Page " ];
+205 [label="User" shape=box];
+206 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Respond To Actions }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Use Unicode }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> See Predictable }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> See Sensible Urls }" shape=Mrecord];
+211 [label="{<f0> 6.0|<f1> Have Nice Error Pages }" shape=Mrecord];
+7 [label="{<f0> 7.0|<f1> Use any language i like. }" shape=Mrecord];
+208 -> 7
+1001 [label="<f0>  |<f1> Language " color=red];
+7 -> 1001 [label="Language"]
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+205 -> 211
+206 -> 207
+207 -> 200 [label="Action"]
+208 -> 201 [label="Unicode"]
+209 -> 202 [label="Predictable"]
+210 -> 203 [label="Sensible Url"]
+211 -> 204 [label="Error Page"]
+}

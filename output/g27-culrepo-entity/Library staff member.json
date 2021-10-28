@@ -1,0 +1,448 @@
+[
+  {
+    "text": "As a library staff member, I want to apply or remove an access embargo to an item when asked to do this by an item author.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "apply",
+        "label": "Processing"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to access useful and comprehensive usage statistics and analytics, including altmetrics, at the repository, collection, author, and item level, so that I can assess the results of this service.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "usage statistics",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to create collections which highlight rare, archival, or endangered material, so that I can preserve and provide access to this material.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "highlight",
+        "label": "Processing"
+      },
+      {
+        "text": "rare",
+        "label": "PII"
+      },
+      {
+        "text": "endangered material",
+        "label": "PII"
+      },
+      {
+        "text": "provide access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to be able to tell the researchers I'm helping with DMPs that Cornell has a repository system I can use for archiving and sharing results of their research, so that I can easily meet the needs of funder DMP requirements.",
+    "entities": [
+      {
+        "text": "library staff member,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "sharing",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to make digital items held in trusted external system searchable within our system, so that I can provide seamless access to disparate collections.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to upload material to the repository on the author's behalf, so that I can fulfill a service obligation.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "material",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "'s behalf",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to create metadata for items within the repository that includes document title, description, author, document type, status, file locations, subscribable flag, subject area, release frequency, and keywords for searching.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "subject area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to upload large batches of items simultaneously, including descriptive metadata, so that I can offer service to authors efficiently.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "descriptive metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to upload an item to the repository that will only become visible after a specific embargo period has expired, so that I can comply with author or publisher requirements.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "specific embargo period",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to include supplementary files such as datasets, slideshows, etc. \u00e2\u20ac\u201c with DOIs for each, as needed \u00e2\u20ac\u201c when uploading a given work, so that I can provide a robust image of the work in question.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "uploading",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to deliver streaming media from within the repository, so that I can deliver such content in the manner expected and ensure continued access to said content.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "deliver",
+        "label": "Processing"
+      },
+      {
+        "text": "streaming media",
+        "label": "PII"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to be able to assign an item to more than one collection.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to be able to add custom metadata fields for deposits I make on behalf of researchers to allow for better search capabilities.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      },
+      {
+        "text": "deposits",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to have customizable metadata fields, so that each project is described in the most accurate way possible.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "customizable",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to use content and metadata from the repository in other systems and/or web pages easily, so that I can deliver such content in the manner best fit to the audience or occasion.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "audience",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to quickly correct errors in uploaded metadata, and even uploaded documents, while leaving a record of my revisions (and possibly the reasons behind them), so that I can present correct versions of content and to locate points of error.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "correct",
+        "label": "Processing"
+      },
+      {
+        "text": "uploaded metadata",
+        "label": "PII"
+      },
+      {
+        "text": "uploaded documents",
+        "label": "PII"
+      },
+      {
+        "text": "revisions",
+        "label": "PII"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to receive a quick response and a reasonable resolution to tech support issues, so that service can proceed with minimal interruption.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "response",
+        "label": "PII"
+      },
+      {
+        "text": "tech support issues",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to create custom metadata fields for certain collections, and allow searching of those fields, so that I can best reflect and deliver diverse content.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to preserve both the content and the metadata within the repository in a robust manner, so that I can provide stable, long-term access to this material.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "preserve",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to preserve the scholarship of the law school by using sustainable links that will not succumb to link rot, so that I can create a permanent digital archive for the scholarship of my institution.",
+    "entities": [
+      {
+        "text": "library staff member,",
+        "label": "Data"
+      },
+      {
+        "text": "preserve",
+        "label": "Processing"
+      },
+      {
+        "text": "scholarship",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to create a collection, sometimes with custom metadata fields, so that I can house digital material for wider distribution.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      },
+      {
+        "text": "house",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to trace the list of revisors to determine who uploaded an item to the repository, so that I can confirm that proper procedures were followed.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "trace",
+        "label": "Processing"
+      },
+      {
+        "text": "who uploaded",
+        "label": "PII"
+      }
+    ]
+  }
+]

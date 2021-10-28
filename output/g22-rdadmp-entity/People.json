@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a data manager, I want to plan the anonymization of data, so that we protect the privacy of the people participating in the research as good as possible and still ensure reusability of data.",
+    "entities": [
+      {
+        "text": "data manager",
+        "label": "Data"
+      },
+      {
+        "text": "plan",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  }
+]

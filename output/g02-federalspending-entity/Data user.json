@@ -1,0 +1,58 @@
+[
+  {
+    "text": "\u00ef\u00bb\u00bfAs a Data user, I want to have the 12-19-2017 deletions processed.",
+    "entities": [
+      {
+        "text": "Data user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an data user, I want to receive updates to FABS records.",
+    "entities": [
+      {
+        "text": "data user",
+        "label": "Data"
+      },
+      {
+        "text": "receive updates",
+        "label": "Processing"
+      },
+      {
+        "text": "FABS records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.",
+    "entities": [
+      {
+        "text": "data user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "office names",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data user, I want to access two additional fields from the FPDS data pull.",
+    "entities": [
+      {
+        "text": "data user",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  }
+]

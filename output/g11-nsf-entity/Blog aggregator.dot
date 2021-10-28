@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Blog Aggregator " ];
+201 [label="<f0>  |<f1> Beta " ];
+202 [label="<f0>  |<f1> Decision " ];
+203 [label="Stakeholder" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Decision }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Have A Decision Not The Blog Aggregator Work For Beta }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Not Will }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 206
+204 -> 202 [label="Decision"]
+205 -> 202 [label="Decision"]
+205 -> 200 [label="Blog Aggregator"]
+205 -> 201 [label="Beta"]
+}

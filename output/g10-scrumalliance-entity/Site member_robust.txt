@@ -1,0 +1,120 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Page" as thingownpage
+	entity "Structured Way" as thingstructuredway
+	entity "Application" as thingapplication
+	entity "Member" as thingothermember
+	entity "Field" as thingfewfield
+	entity "Name" as thingname
+	entity "Email" as thingemail
+	entity "Form" as thingform
+	entity "Rss Feed" as thingrssfeed #grey
+	entity "News" as thingnews
+	entity "Methodology" as thingmethodology
+	entity "Job" as thingjob
+	entity "Entire Article" as thingentirearticle
+	entity "Article" as thingarticle
+	entity "Access" as thingfullaccess
+	entity "Training Pdf" as thingtrainingpdf
+	actor "Site Member" as actorsitemember
+	actor "Page" as actorfrontpage
+	actor "Teaser" as actorteaser
+	circle "Profile" as thingprofile
+	circle "Listing" as thinglisting
+	circle "Address" as thingaddress #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Form\nInterface" as thingforminterface #grey
+	boundary "News\nInterface" as thingnewsinterface #grey
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	boundary "Methodology\nInterface" as thingmethodologyinterface #grey
+	boundary "Job\nInterface" as thingjobinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	control "Describe On\nOwn Page\nIn A\nStructured Way" as controldescribeownpage
+	control "Fill Out\nAn Application" as controlfillapplicationbecome
+	control "Become A\nCertified Scrum\nPractitioner" as controlbecome
+	control "View The\nProfiles Of\nOther Members" as controlviewprofile
+	control "Search For\nProfiles On\nA Few\nFields" as controlsearchprofile
+	control "Mark Profile" as controlmarkprofile
+	control "Private Mark\nEmail Address" as controlmarkemailaddress
+	control "Send An\nEmail To\nAny Member\nVia A\nForm" as controlsendemailmemberform
+	control "Subscribe To\nAn Rss\nFeed Of\nNews" as controlsubscriberssfeed
+	control "Download The\nMaterial, Latest\nTraining Pdfs" as controldownloadmateriallatesttrainingPDFs
+	control "Download Methodology" as controldownloadmethodology
+	control "Scroll Through\nA Listing\nOf Jobs" as controlscrolllisting
+	control "Subscribe To\nAn Available\nRss Feed\nOf Jobs" as controlsubscribeavailablerssfeed
+	control "Read The\nEntire Article" as controlreadentirearticle
+	control "Have Full\nAccess To\nAll Articles" as controlhavefullaccess
+
+	thingstructuredway <.. thingownpage
+	thingform <.. thingothermember
+	thingothermember <.. thingemail
+	thingnews <.. thingrssfeed
+	thingjob <.. thingrssfeed
+	thingarticle <.. thingfullaccess
+	thingothermember *-- thingprofile
+	thingfewfield *-- thingprofile
+	thingjob *-- thinglisting
+	thingemail *-- thingaddress
+	actorsitemember --- thingwayinterface
+	actorsitemember --- thingapplicationinterface
+	actorsitemember --- thingmemberinterface
+	actorsitemember --- thingfieldinterface
+	actorsitemember --- thingprofileinterface
+	actorsitemember --- thingemailinterface
+	actorsitemember --- thingforminterface
+	actorsitemember --- thingnewsinterface
+	actorsitemember --- thingpdfinterface
+	actorsitemember --- thingmethodologyinterface
+	actorsitemember --- thingjobinterface
+	actorfrontpage --- thingarticleinterface
+	actorteaser --- thingarticleinterface
+	actorsitemember --- thingarticleinterface
+	thingownpage --- controldescribeownpage
+	thingstructuredway --- controldescribeownpage
+	thingwayinterface --> controldescribeownpage
+	thingapplication --- controlfillapplicationbecome
+	thingapplicationinterface --> controlfillapplicationbecome
+	controlfillapplicationbecome --> controlbecome
+	thingapplicationinterface --> controlbecome
+	thingprofile --- controlviewprofile
+	thingothermember --- controlviewprofile
+	thingmemberinterface --> controlviewprofile
+	thingfewfield --- controlsearchprofile
+	thingfieldinterface --> controlsearchprofile
+	thingprofile --- controlsearchprofile
+	thingprofileinterface --> controlmarkprofile
+	thingprofile --- controlmarkprofile
+	thingaddress --- controlmarkemailaddress
+	thingemailinterface --> controlmarkemailaddress
+	thingemail --- controlsendemailmemberform
+	thingform --- controlsendemailmemberform
+	thingforminterface --> controlsendemailmemberform
+	thingothermember --- controlsendemailmemberform
+	thingrssfeed --- controlsubscriberssfeed
+	thingnews --- controlsubscriberssfeed
+	thingnewsinterface --> controlsubscriberssfeed
+	thingtrainingpdf --- controldownloadmateriallatesttrainingPDFs
+	thingpdfinterface --> controldownloadmateriallatesttrainingPDFs
+	thingmethodology --- controldownloadmethodology
+	thingmethodologyinterface --> controldownloadmethodology
+	thinglisting --- controlscrolllisting
+	thingjob --- controlscrolllisting
+	thingjobinterface --> controlscrolllisting
+	thingrssfeed --- controlsubscribeavailablerssfeed
+	thingjob --- controlsubscribeavailablerssfeed
+	thingjobinterface --> controlsubscribeavailablerssfeed
+	thingentirearticle --- controlreadentirearticle
+	thingarticleinterface --> controlreadentirearticle
+	thingfullaccess --- controlhavefullaccess
+	thingarticle --- controlhavefullaccess
+	thingarticleinterface --> controlhavefullaccess
+
+@enduml

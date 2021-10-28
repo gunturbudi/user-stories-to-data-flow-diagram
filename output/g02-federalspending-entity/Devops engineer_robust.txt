@@ -1,0 +1,17 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Useful Datum" as thingusefuldatum
+	actor "Devops Engineer" as actordevopsengineer
+	boundary "New Relic" as thingnewrelicdevopsengineer
+	control "Provide Useful\nData Across\nAll Applications" as controlprovidenewrelicdevopsengineerusefuldatumapplication
+
+	actordevopsengineer --- thingnewrelicdevopsengineer
+	thingnewrelicdevopsengineer --> controlprovidenewrelicdevopsengineerusefuldatumapplication
+	thingusefuldatum --- controlprovidenewrelicdevopsengineerusefuldatumapplication
+	thingapplication --- controlprovidenewrelicdevopsengineerusefuldatumapplication
+
+@enduml

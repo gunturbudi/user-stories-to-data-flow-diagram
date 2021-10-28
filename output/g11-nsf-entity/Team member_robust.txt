@@ -1,0 +1,139 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Beta" as thingbeta
+	entity "Cloud .\nGov" as thingcloud.gov
+	entity "Element" as thingelement
+	entity "Design Direction" as thingdesigndirection #grey
+	entity "Dis" as thingDIS
+	entity "Mvp" as thingMVP
+	entity "Overlap" as thingoverlap
+	entity "Plan" as thingplan
+	entity "User Research" as thinguserresearch #grey
+	entity "Hypothesis" as thingfirsthypothesis
+	entity "Prototype Strategy" as thingprototypestrategy #grey
+	entity "Project Timeline" as thingprojecttimeline #grey
+	entity "Platform" as thingplatform
+	entity "Meeting" as thingmeeting
+	entity "Visual ,\nUx Design" as thingvisualuxdesign
+	entity "Content >" as thingcontent>
+	entity "Work" as thingwork
+	entity "Acquisitions Roadmap" as thingacquisitionsroadmap
+	entity "Coworking Slot" as thingcoworkingslot
+	entity "Recruiting Email\nTemplate" as thingrecruitingemailtemplate
+	entity "Level Sense" as thinglevelsense
+	entity "Html Idea" as thinghtmlidea
+	actor "Team Member" as actorteammember
+	circle "Iteration" as thingfirstiteration
+	circle "Feature" as thingfeature
+	circle "Schedule" as thingschedule
+	circle "Page" as thingpage #grey
+	boundary "Cloud.Gov\nInterface" as thingcloudgovinterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "Beta\nInterface" as thingbetainterface #grey
+	boundary "Dis\nInterface" as thingdisinterface #grey
+	boundary "Roadmap\nInterface" as thingroadmapinterface #grey
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	boundary "Strategy\nInterface" as thingstrategyinterface #grey
+	boundary "Slot\nInterface" as thingslotinterface #grey
+	boundary "Template\nInterface" as thingtemplateinterface #grey
+	boundary "Timeline\nInterface" as thingtimelineinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary ">\nInterface" as thinginterface #grey
+	boundary "Design\nInterface" as thingdesigninterface #grey
+	control "See The\nFirst Iteration\nOf Beta\nUp On\nCloud.Gov" as controlseefirstiteration
+	control "Have A\nPrioritized List\nOf Features\nOf A\nSocial, Future\nElement Page" as controlhaveprioritizedlist
+	control "Have A\nPrioritized List\nOf Element" as controlhaveprioritizedlistelement
+	control "Determine A\nDesign Direction\nFor The\nSocial Beta\nPage" as controldeterminedesigndirection
+	control "Meet With\nCloud.Gov" as controlmeetcloud.gov
+	control "Meet With\nDis" as controlmeetDIS
+	control "Understand" as controlunderstand
+	control "Have An\nUpdated Acquisitions\nRoadmap" as controlhaveupdatedacquisitionsroadmap
+	control "How, Time\nUnderstand Overlaps\nWith Plans\nAround The\nUser Research" as controlunderstandoverlap
+	control "Know" as controlknow
+	control "Have A\nPrototype Strategy" as controlhaveprototypestrategy
+	control "Have A\nSchedule Of\nMore Coworking\nSlots" as controlhaveschedule
+	control "Have Recruiting\nEmail Templates" as controlhaverecruitingemailtemplatesgo
+	control "Go" as controlgo
+	control "Have A\nHigh Level\nSense Of\nThe Project\nTimeline" as controlhavehighlevelsense
+	control "Prototype Html\nIdeas" as controlprototypehtmlideas
+	control "Have A\nPlatform Allows" as controlhaveplatformprototypehtmlideas
+	control "Understand Work\nBetween Content\n>" as controlunderstandworkcontent>
+	control "Understand Work\nBetween Visual,\nUx Design" as controlunderstandworkvisualuxdesign
+
+	thingcloud.gov <.. thingbeta
+	thingpage <.. thingdesigndirection
+	thingbeta <.. thingdesigndirection
+	thingplan <.. thingoverlap
+	thinguserresearch <.. thingplan
+	thingvisualuxdesign <.. thingwork
+	thingcontent> <.. thingwork
+	thingprojecttimeline <.. thinglevelsense
+	thingbeta *-- thingfirstiteration
+	thingpage *-- thingfeature
+	thingelement *-- thingfeature
+	thingcoworkingslot *-- thingschedule
+	thingbeta *-- thingpage
+	thingelement *-- thingpage
+	actorteammember --- thingcloudgovinterface
+	actorteammember --- thingelementinterface
+	actorteammember --- thingbetainterface
+	actorteammember --- thingdisinterface
+	actorteammember --- thingroadmapinterface
+	actorteammember --- thingresearchinterface
+	actorteammember --- thingstrategyinterface
+	actorteammember --- thingslotinterface
+	actorteammember --- thingtemplateinterface
+	actorteammember --- thingtimelineinterface
+	actorteammember --- thingplatforminterface
+	actorteammember --- thinginterface
+	actorteammember --- thingdesigninterface
+	thingfirstiteration --- controlseefirstiteration
+	thingbeta --- controlseefirstiteration
+	thingcloud.gov --- controlseefirstiteration
+	thingcloudgovinterface --> controlseefirstiteration
+	thingfeature --- controlhaveprioritizedlist
+	thingpage --- controlhaveprioritizedlist
+	thingelementinterface --> controlhaveprioritizedlist
+	thingelement --- controlhaveprioritizedlistelement
+	thingelementinterface --> controlhaveprioritizedlistelement
+	thingdesigndirection --- controldeterminedesigndirection
+	thingbetainterface --> controldeterminedesigndirection
+	thingpage --- controldeterminedesigndirection
+	thingcloud.gov --- controlmeetcloud.gov
+	thingcloudgovinterface --> controlmeetcloud.gov
+	thingDIS --- controlmeetDIS
+	thingdisinterface --> controlmeetDIS
+	thingacquisitionsroadmap --- controlhaveupdatedacquisitionsroadmap
+	thingroadmapinterface --> controlhaveupdatedacquisitionsroadmap
+	thingoverlap --- controlunderstandoverlap
+	thingplan --- controlunderstandoverlap
+	thinguserresearch --- controlunderstandoverlap
+	thingresearchinterface --> controlunderstandoverlap
+	thingprototypestrategy --- controlhaveprototypestrategy
+	thingstrategyinterface --> controlhaveprototypestrategy
+	thingschedule --- controlhaveschedule
+	thingcoworkingslot --- controlhaveschedule
+	thingslotinterface --> controlhaveschedule
+	thingrecruitingemailtemplate --- controlhaverecruitingemailtemplatesgo
+	thingtemplateinterface --> controlhaverecruitingemailtemplatesgo
+	controlhaverecruitingemailtemplatesgo --> controlgo
+	thingtemplateinterface --> controlgo
+	thinglevelsense --- controlhavehighlevelsense
+	thingprojecttimeline --- controlhavehighlevelsense
+	thingtimelineinterface --> controlhavehighlevelsense
+	thinghtmlidea --- controlprototypehtmlideas
+	controlhaveplatformprototypehtmlideas --> controlprototypehtmlideas
+	thingplatforminterface --> controlprototypehtmlideas
+	thingplatform --- controlhaveplatformprototypehtmlideas
+	thingplatforminterface --> controlhaveplatformprototypehtmlideas
+	thingcontent> --- controlunderstandworkcontent>
+	thinginterface --> controlunderstandworkcontent>
+	thingwork --- controlunderstandworkcontent>
+	thingwork --- controlunderstandworkvisualuxdesign
+	thingvisualuxdesign --- controlunderstandworkvisualuxdesign
+	thingdesigninterface --> controlunderstandworkvisualuxdesign
+
+@enduml

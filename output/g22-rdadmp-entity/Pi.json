@@ -1,0 +1,112 @@
+[
+  {
+    "text": "As a PI, I want to properly record all metadata, so that I can ensure proper running of the project in case of staff changes.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a PI, I want to plan what kind of data I want to record/store, so that I can ensure it will possible to store it.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "plan",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a PI, I want to record information about my DMP, so that an Ethics Committee can review this for compliance with ethical standards.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      },
+      {
+        "text": "DMP",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a PI, I want to plan what kind of data I want to store, so that I can ensure it will be possible to store it.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "plan",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a PI, I want to know how secure data is, so that I can ensure legal compliance.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a PI, I want to know who owns the data, so that I know what I am allowed to do with it.",
+    "entities": [
+      {
+        "text": "PI,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "who owns the data",
+        "label": "PII"
+      }
+    ]
+  }
+]

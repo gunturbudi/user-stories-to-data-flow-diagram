@@ -1,0 +1,61 @@
+[
+  {
+    "text": "As a user, I want to add a video to my article.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF person interested in attending user interviews, I want to know when they are scheduled and the type of user that will be interviewed.",
+    "entities": [
+      {
+        "text": "NSF person",
+        "label": "Data"
+      },
+      {
+        "text": "attending",
+        "label": "Processing"
+      },
+      {
+        "text": "user interviews",
+        "label": "PII"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to set up a website recruitment test, so that I can see if we can recruit users in real time from the website.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "recruit",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

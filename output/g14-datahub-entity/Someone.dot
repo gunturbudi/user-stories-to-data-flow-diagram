@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Platform " ];
+201 [label="<f0>  |<f1> Email " color=red];
+202 [label="<f0>  |<f1> Publisher " color=red];
+203 [label="<f0>  |<f1> Membership " color=red];
+204 [label="Admin" shape=box];
+205 [label="Owner" shape=box];
+206 [label="{<f0> 1.0|<f1> Join The Platform }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Invite Someone }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Using Email }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Sign Up A Member Of Publisher }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Become A Member Of Publisher }" shape=Mrecord];
+211 [label="{<f0> 6.0|<f1> Remove Someone From Membership In Publisher }" shape=Mrecord];
+7 [label="{<f0> 7.0|<f1> Start contributing or using data. }" shape=Mrecord];
+1000 [label="They" shape=box];
+1000 -> 7
+1002 [label="They" shape=box];
+1002 -> 7
+1004 [label="<f0>  |<f1> Data " color=red];
+7 -> 1004 [label="Data"]
+204 -> 206
+204 -> 207
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+205 -> 211
+206 -> 200 [label="Platform"]
+207 -> 206
+207 -> 208
+208 -> 209
+208 -> 210
+208 -> 201 [label="Email"]
+209 -> 202 [label="Publisher"]
+210 -> 202 [label="Publisher"]
+211 -> 203 [label="Membership"]
+211 -> 202 [label="Publisher"]
+}

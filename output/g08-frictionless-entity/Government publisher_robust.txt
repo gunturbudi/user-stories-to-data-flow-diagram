@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Publish Datum" as thingpublisheddata
+	actor "Government Publisher" as actorgovernmentpublisher
+	boundary "Data\nInterface" as thingdatainterface #grey
+	control "Make" as controlmakeprovepublisheddata
+	control "Prove Published\nData Valid" as controlprovepublisheddata
+
+	actorgovernmentpublisher --- thingdatainterface
+	thingdatainterface --> controlmakeprovepublisheddata
+	controlmakeprovepublisheddata --> controlprovepublisheddata
+	thingpublisheddata --- controlprovepublisheddata
+	thingdatainterface --> controlprovepublisheddata
+
+@enduml

@@ -1,0 +1,50 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Collection " color=red];
+202 [label="<f0>  |<f1> Record " color=red];
+203 [label="<f0>  |<f1> Associated File " color=red];
+204 [label="<f0>  |<f1> Uniform Error " ];
+205 [label="<f0>  |<f1> Datum " ];
+206 [label="<f0>  |<f1> System " ];
+207 [label="Repository , Support , Team Member" shape=box];
+208 [label="{<f0> 1.0|<f1> Alias An Item From Collection To Another }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Belong To Both Collections }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> The Collection Owner Asked Both Collections }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> To }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Map }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Export A Set Of Records }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Export A Set Of Associated File }" shape=Mrecord];
+215 [label="{<f0> 8.0|<f1> Manipulate This Data }" shape=Mrecord];
+216 [label="{<f0> 9.0|<f1> Reload Into The System }" shape=Mrecord];
+217 [label="{<f0> 10.0|<f1> Am Aware Of A Uniform Error In A Collection }" shape=Mrecord];
+218 [label="{<f0> 11.0|<f1> Manipulate }" shape=Mrecord];
+219 [label="{<f0> 12.0|<f1> Move A Collection }" shape=Mrecord];
+220 [label="{<f0> 13.0|<f1> Rename A Collection }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 213
+207 -> 214
+207 -> 215
+207 -> 216
+207 -> 217
+207 -> 218
+207 -> 219
+207 -> 220
+208 -> 200 [label="Item"]
+208 -> 201 [label="Collection"]
+209 -> 201 [label="Collection"]
+210 -> 211
+210 -> 201 [label="Collection"]
+213 -> 202 [label="Record"]
+214 -> 203 [label="Associated File"]
+215 -> 205 [label="Datum"]
+216 -> 206 [label="System"]
+217 -> 204 [label="Uniform Error"]
+217 -> 201 [label="Collection"]
+218 -> 216
+219 -> 201 [label="Collection"]
+220 -> 201 [label="Collection"]
+}

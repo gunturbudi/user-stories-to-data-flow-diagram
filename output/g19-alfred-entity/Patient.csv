@@ -1,0 +1,5 @@
+id,value,style,source,target,type
+200,Medicine,shape=partialRectangle,null,null,data_base
+201,Patient,shape=partialRectangle,null,null,data_base
+202,Medicalcaregiver,rounded=0,null,null,external_entity
+203,See,ellipse,null,null,process

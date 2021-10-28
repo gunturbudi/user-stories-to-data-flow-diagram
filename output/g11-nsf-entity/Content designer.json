@@ -1,0 +1,24 @@
+[
+  {
+    "text": "As a content designer, I want to develop a better understanding of NSF's content types and editorial plan, so that I can make more informed recommendations going forward.",
+    "entities": [
+      {
+        "text": "content designer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a content designer, I want to demonstrate the value of user-centered content design to ensure it's an integral part of our recommendations.",
+    "entities": [
+      {
+        "text": "content designer",
+        "label": "Data"
+      },
+      {
+        "text": "recommendations",
+        "label": "PII"
+      }
+    ]
+  }
+]

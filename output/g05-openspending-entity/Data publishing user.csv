@@ -1,0 +1,112 @@
+id,value,style,source,target,type
+19,Make enhancements in the api built for my data.,ellipse,null,null,process
+20,Make enhancements in the api built for my data.,ellipse,null,null,process
+21,Improve the map-based visualisations of my data.,ellipse,null,null,process
+22,Work on a dataset before having it discoverable via openspending user interfaces.,ellipse,null,null,process
+23,Fix my mistakes or have a dataset primarily for my own use.,ellipse,null,null,process
+24,Perform management actions on my own datasets.,ellipse,null,null,process
+25,Fix possible data issues before publishing it on open spending.,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Data Source,shape=partialRectangle,null,null,data_base
+203,Constant,shape=partialRectangle,null,null,data_base
+204,Packager,shape=partialRectangle,null,null,data_base
+205,Excel,shape=partialRectangle,null,null,data_base
+206,Map,shape=partialRectangle,null,null,data_base
+207,Json,shape=partialRectangle,null,null,data_base
+208,Google Spreadsheet,shape=partialRectangle,null,null,data_base
+209,"Geojson ,\nAdditional Source",shape=partialRectangle,null,null,data_base
+210,Platform Administrator,shape=partialRectangle,null,null,data_base
+211,Hide State,shape=partialRectangle,null,null,data_base
+212,View,shape=partialRectangle,null,null,data_base
+213,Csv File,shape=partialRectangle,null,null,data_base
+214,Python Client,shape=partialRectangle,null,null,data_base
+215,"Datum , Publishing User",rounded=0,null,null,external_entity
+216,Edit A Dataset,ellipse,null,null,process
+217,Edit The Model Of Data,ellipse,null,null,process
+218,Delete A Dataset,ellipse,null,null,process
+219,Edit The Data Source Of Data,ellipse,null,null,process
+220,Have The Packager Constants,ellipse,null,null,process
+221,Import Data In Excel,ellipse,null,null,process
+222,Visualised On A Map,ellipse,null,null,process
+223,Know,ellipse,null,null,process
+224,Import Data In Json,ellipse,null,null,process
+225,Import Data From A Google Spreadsheet,ellipse,null,null,process
+226,Import Data From,ellipse,null,null,process
+227,"Provide The Platform Administrator With Geojson, Additional Sources",ellipse,null,null,process
+228,Have Dataset,ellipse,null,null,process
+229,Add A Dataset In A Hidden State,ellipse,null,null,process
+230,Hide A Dataset,ellipse,null,null,process
+231,Have A View On The Datasets,ellipse,null,null,process
+232,Have A Functioning Python Client,ellipse,null,null,process
+233,Know Csv File Valid,ellipse,null,null,process
+235,,endArrow=classic,215,216,endArrow=classic
+236,,endArrow=classic,215,217,endArrow=classic
+237,,endArrow=classic,215,218,endArrow=classic
+238,,endArrow=classic,215,219,endArrow=classic
+239,,endArrow=classic,215,220,endArrow=classic
+240,,endArrow=classic,215,221,endArrow=classic
+241,,endArrow=classic,215,222,endArrow=classic
+242,,endArrow=classic,215,224,endArrow=classic
+243,,endArrow=classic,215,225,endArrow=classic
+244,,endArrow=classic,215,226,endArrow=classic
+245,,endArrow=classic,215,227,endArrow=classic
+246,,endArrow=classic,215,228,endArrow=classic
+247,,endArrow=classic,215,229,endArrow=classic
+248,,endArrow=classic,215,230,endArrow=classic
+249,,endArrow=classic,215,231,endArrow=classic
+250,,endArrow=classic,215,232,endArrow=classic
+251,,endArrow=classic,215,233,endArrow=classic
+252,Dataset,endArrow=classic,216,200,endArrow=classic
+253,Datum,endArrow=classic,217,201,endArrow=classic
+254,Dataset,endArrow=classic,218,200,endArrow=classic
+255,Data Source,endArrow=classic,219,202,endArrow=classic
+256,Datum,endArrow=classic,219,201,endArrow=classic
+257,Packager,endArrow=classic,220,204,endArrow=classic
+258,Constant,endArrow=classic,220,203,endArrow=classic
+259,Excel,endArrow=classic,221,205,endArrow=classic
+260,Datum,endArrow=classic,221,201,endArrow=classic
+261,Map,endArrow=classic,222,206,endArrow=classic
+262,Json,endArrow=classic,224,207,endArrow=classic
+263,Datum,endArrow=classic,224,201,endArrow=classic
+264,Google Spreadsheet,endArrow=classic,225,208,endArrow=classic
+265,Datum,endArrow=classic,225,201,endArrow=classic
+266,Datum,endArrow=classic,226,201,endArrow=classic
+267,Platform Administrator,endArrow=classic,227,210,endArrow=classic
+268,"Geojson ,\nAdditional Source",endArrow=classic,227,209,endArrow=classic
+269,Dataset,endArrow=classic,228,200,endArrow=classic
+270,Hide State,endArrow=classic,229,211,endArrow=classic
+271,Dataset,endArrow=classic,229,200,endArrow=classic
+272,Dataset,endArrow=classic,230,200,endArrow=classic
+273,View,endArrow=classic,231,212,endArrow=classic
+274,Dataset,endArrow=classic,231,200,endArrow=classic
+275,Python Client,endArrow=classic,232,214,endArrow=classic
+276,Csv File,endArrow=classic,233,213,endArrow=classic
+1000,Data publishing user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,19,endArrow=classic
+1002,Data,rounded=0,null,null,external_entity
+1003,Data,endArrow=classic,19,1002,endArrow=classic
+1004,Data publishing user,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,20,endArrow=classic
+1006,Data,rounded=0,null,null,external_entity
+1007,Data,endArrow=classic,20,1006,endArrow=classic
+1008,Data publishing user,rounded=0,null,null,external_entity
+1009,,endArrow=classic,1008,21,endArrow=classic
+1010,Data,rounded=0,null,null,external_entity
+1011,Data,endArrow=classic,21,1010,endArrow=classic
+1012,Data publishing user,rounded=0,null,null,external_entity
+1013,,endArrow=classic,1012,22,endArrow=classic
+1014,Dataset,endArrow=classic,22,200,endArrow=classic
+1015,Data publishing user,rounded=0,null,null,external_entity
+1016,,endArrow=classic,1015,23,endArrow=classic
+1017,Mistakes,rounded=0,null,null,external_entity
+1018,Mistakes,endArrow=classic,23,1017,endArrow=classic
+1019,Dataset,endArrow=classic,23,200,endArrow=classic
+1020,Data publishing user,rounded=0,null,null,external_entity
+1021,,endArrow=classic,1020,24,endArrow=classic
+1022,Datasets,rounded=0,null,null,external_entity
+1023,Datasets,endArrow=classic,24,1022,endArrow=classic
+1024,Data publishing user,rounded=0,null,null,external_entity
+1025,,endArrow=classic,1024,25,endArrow=classic
+1026,Data issues,rounded=0,null,null,external_entity
+1027,Data issues,endArrow=classic,25,1026,endArrow=classic

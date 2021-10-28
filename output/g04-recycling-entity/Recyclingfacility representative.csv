@@ -1,0 +1,29 @@
+id,value,style,source,target,type
+5,Accomodate larger amounts of recyclable materials.,ellipse,null,null,process
+200,Information,shape=partialRectangle,null,null,data_base
+201,Material,shape=partialRectangle,null,null,data_base
+202,Access,shape=partialRectangle,null,null,data_base
+203,Schedule,shape=partialRectangle,null,null,data_base
+204,User Stat,shape=partialRectangle,null,null,data_base
+205,Recyclingfacility Representative,rounded=0,null,null,external_entity
+206,Update Information,ellipse,null,null,process
+207,Update The Type Of Material,ellipse,null,null,process
+208,Have Access To Schedule,ellipse,null,null,process
+209,Have Access To User Stats,ellipse,null,null,process
+211,,endArrow=classic,205,206,endArrow=classic
+212,,endArrow=classic,205,207,endArrow=classic
+213,,endArrow=classic,205,208,endArrow=classic
+214,,endArrow=classic,205,209,endArrow=classic
+215,Information,endArrow=classic,206,200,endArrow=classic
+216,Material,endArrow=classic,207,201,endArrow=classic
+217,Schedule,endArrow=classic,208,203,endArrow=classic
+218,Access,endArrow=classic,208,202,endArrow=classic
+219,Access,endArrow=classic,209,202,endArrow=classic
+220,User Stat,endArrow=classic,209,204,endArrow=classic
+1000,,endArrow=classic,209,5,endArrow=classic
+1001,Hours,rounded=0,null,null,external_entity
+1002,Hours,endArrow=classic,5,1001,endArrow=classic
+1003,Equipment,rounded=0,null,null,external_entity
+1004,Equipment,endArrow=classic,5,1003,endArrow=classic
+1005,Capacity,rounded=0,null,null,external_entity
+1006,Capacity,endArrow=classic,5,1005,endArrow=classic

@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Oai" as thingOAI
+	entity "Repository" as thingrepository
+	entity "Useful Metadata" as thingusefulmetadata
+	actor "Librarydiscoveryoperator" as actorlibrarydiscoveryoperator
+	boundary "Oai\nInterface" as thingoaiinterface #grey
+	control "Harvest Useful\nMetadata From\nThe Repository\nVia Oai" as controlharvestusefulmetadatarepository
+	control "Do" as controldo
+	control "Continue" as controlcontinuedo
+
+	thingOAI <.. thingrepository
+	thingrepository <.. thingusefulmetadata
+	actorlibrarydiscoveryoperator --- thingoaiinterface
+	thingusefulmetadata --- controlharvestusefulmetadatarepository
+	thingrepository --- controlharvestusefulmetadatarepository
+	thingOAI --- controlharvestusefulmetadatarepository
+	thingoaiinterface --> controlharvestusefulmetadatarepository
+	controlcontinuedo --> controldo
+
+@enduml

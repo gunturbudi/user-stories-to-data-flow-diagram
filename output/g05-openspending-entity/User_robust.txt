@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "View" as thingview
+	entity "Dataset" as thingdataset
+	entity "User" as thinguser
+	entity "Viewer" as thingviewer
+	entity "Username" as thingownusername
+	entity "Data Types\nHierarchy" as thingdatatypeshierarchy
+	actor "Platform Administrator" as actorplatformadministrator
+	actor "Api User" as actorapiuser
+	actor "User" as actoruser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Viewer\nInterface" as thingviewerinterface #grey
+	boundary "Username\nInterface" as thingusernameinterface #grey
+	control "Have A\nView On\nAll Datasets\nAll Users" as controlhaveview
+	control "Translate The\nData Types\nHierarchies Of\nThe Viewer" as controltranslatedatatypeshierarchies
+	control "Understand" as controlunderstand
+	control "Set Own\nUsername" as controlsetownusername
+
+	thingdataset <.. thingview
+	thinguser <.. thingdataset
+	thingviewer <.. thingdatatypeshierarchy
+	actorplatformadministrator --- thingdatasetinterface
+	actorplatformadministrator --- thingviewerinterface
+	actoruser --- thingusernameinterface
+	thingview --- controlhaveview
+	thingdataset --- controlhaveview
+	thingdatasetinterface --> controlhaveview
+	thingdatatypeshierarchy --- controltranslatedatatypeshierarchies
+	thingviewer --- controltranslatedatatypeshierarchies
+	thingviewerinterface --> controltranslatedatatypeshierarchies
+	thingownusername --- controlsetownusername
+	thingusernameinterface --> controlsetownusername
+
+@enduml

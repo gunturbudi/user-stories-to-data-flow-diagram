@@ -1,8 +1,0 @@
-digraph dfd2{ 
-node[shape=record]
-200 [label="<f0>  |<f1> Assigned Kid " color=red];
-201 [label="Camp Counselor" shape=box];
-202 [label="{<f0> 1.0|<f1> Take Attendance Of Assigned Kids }" shape=Mrecord];
-201 -> 202
-202 -> 200 [label="Assigned Kid"]
-}

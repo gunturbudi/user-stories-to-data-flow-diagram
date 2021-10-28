@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	actor "Ethics Manager" as actorethicsmanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Informed About\nThe Data" as controlinformdatum
+
+	actorethicsmanager --- thingdatuminterface
+	thingdatum --- controlinformdatum
+	thingdatuminterface --> controlinformdatum
+
+@enduml

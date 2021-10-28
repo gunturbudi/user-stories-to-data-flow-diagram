@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a Public User, I want to Search for Information, so that I can obtain publicly available information concerning properties, County services, processes and other general information.",
+    "entities": [
+      {
+        "text": "Public User",
+        "label": "Data"
+      },
+      {
+        "text": "Search",
+        "label": "Processing"
+      },
+      {
+        "text": "Information",
+        "label": "PII"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      },
+      {
+        "text": "County services",
+        "label": "PII"
+      },
+      {
+        "text": "processes",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Current News" as thingcurrentnews
+	entity "Home Page" as thinghomepage #grey
+	entity "Old News" as thingoldnews
+	entity "Editor" as thingeditor
+	entity ", Upcoming\nCourse" as thingotherupcomingcourse
+	entity "Upcoming Event" as thingupcomingevent
+	entity "Course" as thingcourse
+	entity "Event" as thingevent
+	entity "Feed" as thingfeed #grey
+	entity "Upcoming Course" as thingupcomingcourse
+	entity "Faq" as thingfaq
+	entity "New Article" as thingnewarticle
+	entity "Page" as thingfrontpage
+	entity "Link" as thinglink
+	entity "Article" as thingarticle
+	entity "Search" as thingfullsearch #grey
+	entity "Author Name" as thingauthorname #grey
+	entity "Title" as thingtitle
+	entity "Comment" as thingcomment
+	entity "New Content" as thingnewcontent
+	entity "Site" as thingsite
+	entity "Scrum" as thingscrum
+	entity "Alliance" as thingalliance
+	entity "Csm" as thingcsm
+	entity "Earth" as thingearth
+	entity "Popular Item" as thingpopularitem
+	entity "Rating" as thingrating
+	entity "Trainer" as thingtrainer
+	entity "Basic" as thingbasic
+	entity "Practitioner" as thingpractitioner
+	entity "News Item" as thingnewsitem
+	entity "Search Criterion" as thingsearchcriterion
+	entity "Search Option" as thingsearchoption
+	entity "Text Search" as thingtextsearch
+	entity "Certification" as thingcertification #grey
+	entity "Rss" as thingrss #grey
+	actor "Site Visitor" as actorsitevisitor
+	circle "Form" as thingform
+	circle "Body" as thingbody
+	circle "Section" as thingsection
+	circle "Teaser" as thingteaser #grey
+	circle "Master" as thingmaster #grey
+	circle "Product Owner" as thingproductowner #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Editor\nInterface" as thingeditorinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Criterion\nInterface" as thingcriterioninterface #grey
+	boundary "Faq\nInterface" as thingfaqinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Alliance\nInterface" as thingallianceinterface #grey
+	boundary "Rating\nInterface" as thingratinginterface #grey
+	boundary "Scrum\nInterface" as thingscruminterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	control "Read Current\nNews On\nThe Home\nPage" as controlreadcurrentnews
+	control "Access Old\nNews Longer\nIs No\nOn The\nHome Page" as controlaccessoldnews
+	control "Email News\nItems To\nThe Editor" as controlemailnewsitemseditor
+	control "See A\nList Of\nAll Upcoming\nCertification Courses" as controlseelist
+	control "Have An\nAdvanced Search\nOption Lets\nFill In\nA Form\nOf Search\nCriteria" as controlhaveadvancedsearchoption
+	control "View A\nCourse" as controlviewcourse
+	control "Subscribe To\nAn Rss\nFeed Of\nUpcoming Courses" as controlsubscriberssfeed
+	control "Subscribe To\nAn Feed\nOf Event" as controlsubscribefeedevent
+	control "Read Faqs" as controlreadfaq
+	control "Do A\nFull Text\nSearch Of\nThe Faqs" as controldofulltextsearch
+	control "Week Read\nA New\nArticle On\nThe Front\nPage" as controlreadnewarticle
+	control "Click The\nLink From\nThe Article\nTeaser" as controlclicklinktakelinkbody
+	control "The Link\nTake To\nThe Body\nOf The\nArticle" as controltakelinkbody
+	control "Read Some\nOf Articles" as controlreadsome
+	control "Do A\nFull Search\nOf Author\nName" as controldofullsearchauthorname
+	control "Do A\nFull Search\nOf Title" as controldofullsearchtitle
+	control "Post Comments\nAbout Articles" as controlpostcomment
+	control "See New\nContent" as controlseenewcontent
+	control "Come To\nThe Site" as controlcomeseenewcontentsite
+	control "Get" as controlget
+	control "Have Articles\nInterest" as controlhavearticle
+	control "Know" as controlknow
+	control "Visit" as controlvisitknow
+	control "Need An\nAlliance" as controlneedalliance
+	control "Be One" as controlbe
+	control "Glance Around\nThe Home\nPage" as controlglanceknowhomepage
+	control "Easily Get\nTo The\nHome Page" as controlgethomepage
+	control "See A\nTrainer's Rating" as controlseerating
+	control "View A\nSection Of\nThe Website\nTeaches Me\nThe Basics\nWhat Scrum\nIs" as controlviewsection
+	control "View Lists\nOn The\nSite Of\nTrainer" as controlviewlisttrainer
+	control "View Lists\nOn The\nSite Of\nPractitioner" as controlviewlistpractitioner
+	control "View Lists\nOn The\nSite Of\nAll Certified\nScrum Masters" as controlviewlist
+	control "View Lists\nOn The\nSite Of\nCertified Scrum\nProduct Owner" as controlviewlistcertifiedscrumproductowner
+
+	thinghomepage <.. thingcurrentnews
+	thinghomepage <.. thingoldnews
+	thingcertification <.. thingcourse
+	thingevent <.. thingfeed
+	thingrss <.. thingfeed
+	thingupcomingcourse <.. thingfeed
+	thingarticle <.. thingfeed
+	thingfrontpage <.. thingnewarticle
+	thingteaser <.. thinglink
+	thingbody <.. thinglink
+	thingarticle <.. thinglink
+	thingarticle <.. thingarticle
+	thingauthorname <.. thingfullsearch
+	thingtitle <.. thingfullsearch
+	thingarticle <.. thingcomment
+	thingmaster <.. thingsite
+	thingproductowner <.. thingsite
+	thingpractitioner <.. thingsite
+	thingtrainer <.. thingsite
+	thingscrum <.. thingsite
+	thingbasic <.. thingsite
+	thingearth <.. thingscrum
+	thingsite <.. thingpopularitem
+	thingtrainer <.. thingrating
+	thingscrum <.. thingbasic
+	thingeditor <.. thingnewsitem
+	thingform <.. thingsearchoption
+	thingfaq <.. thingtextsearch
+	thingbody <.. thingtextsearch
+	thingarticle <.. thingtextsearch
+	thingsearchcriterion *-- thingform
+	thingarticle *-- thingbody
+	thingsite *-- thingsection
+	thingarticle *-- thingteaser
+	thingscrum *-- thingmaster
+	thingscrum *-- thingproductowner
+	actorsitevisitor --- thingpageinterface
+	actorsitevisitor --- thingeditorinterface
+	actorsitevisitor --- thingcourseinterface
+	actorsitevisitor --- thingcriterioninterface
+	actorsitevisitor --- thingfaqinterface
+	actorsitevisitor --- thingarticleinterface
+	actorsitevisitor --- thingnameinterface
+	actorsitevisitor --- thingtitleinterface
+	actorsitevisitor --- thingsiteinterface
+	actorsitevisitor --- thingallianceinterface
+	actorsitevisitor --- thingratinginterface
+	actorsitevisitor --- thingscruminterface
+	actorsitevisitor --- thingtrainerinterface
+	actorsitevisitor --- thingpractitionerinterface
+	thingcurrentnews --- controlreadcurrentnews
+	thinghomepage --- controlreadcurrentnews
+	thingpageinterface --> controlreadcurrentnews
+	thingoldnews --- controlaccessoldnews
+	thinghomepage --- controlaccessoldnews
+	thingpageinterface --> controlaccessoldnews
+	thingnewsitem --- controlemailnewsitemseditor
+	thingeditor --- controlemailnewsitemseditor
+	thingeditorinterface --> controlemailnewsitemseditor
+	thingcourseinterface --> controlseelist
+	thingupcomingevent --- controlseelist
+	thingpopularitem --- controlseelist
+	thingotherupcomingcourse --- controlseelist
+	thingsite --- controlseelist
+	thingcourse --- controlseelist
+	thingsearchoption --- controlhaveadvancedsearchoption
+	thingform --- controlhaveadvancedsearchoption
+	thingsearchcriterion --- controlhaveadvancedsearchoption
+	thingcriterioninterface --> controlhaveadvancedsearchoption
+	thingcourse --- controlviewcourse
+	thingcourseinterface --> controlviewcourse
+	thingupcomingcourse --- controlsubscriberssfeed
+	thingfeed --- controlsubscriberssfeed
+	thingarticle --- controlsubscriberssfeed
+	thingcourseinterface --> controlsubscriberssfeed
+	thingfeed --- controlsubscribefeedevent
+	thingevent --- controlsubscribefeedevent
+	thingeventinterface --> controlsubscribefeedevent
+	thingfaq --- controlreadfaq
+	thingfaqinterface --> controlreadfaq
+	thingtextsearch --- controldofulltextsearch
+	thingfaq --- controldofulltextsearch
+	thingfaqinterface --> controldofulltextsearch
+	thingbody --- controldofulltextsearch
+	thingnewarticle --- controlreadnewarticle
+	thingfrontpage --- controlreadnewarticle
+	thingpageinterface --> controlreadnewarticle
+	thinglink --- controlclicklinktakelinkbody
+	thingarticleinterface --> controlclicklinktakelinkbody
+	thingarticle --- controlclicklinktakelinkbody
+	controlclicklinktakelinkbody --> controltakelinkbody
+	thingbody --- controltakelinkbody
+	thingarticle --- controltakelinkbody
+	thingarticleinterface --> controltakelinkbody
+	thinglink --- controltakelinkbody
+	thingarticle --- controlreadsome
+	thingarticleinterface --> controlreadsome
+	thingfullsearch --- controldofullsearchauthorname
+	thingauthorname --- controldofullsearchauthorname
+	thingnameinterface --> controldofullsearchauthorname
+	thingtitle --- controldofullsearchtitle
+	thingtitleinterface --> controldofullsearchtitle
+	thingfullsearch --- controldofullsearchtitle
+	thingcomment --- controlpostcomment
+	thingarticle --- controlpostcomment
+	thingarticleinterface --> controlpostcomment
+	thingnewcontent --- controlseenewcontent
+	controlcomeseenewcontentsite --> controlseenewcontent
+	thingsiteinterface --> controlseenewcontent
+	thingsite --- controlcomeseenewcontentsite
+	thingsiteinterface --> controlcomeseenewcontentsite
+	thingarticle --- controlhavearticle
+	thingarticleinterface --> controlhavearticle
+	controlvisitknow --> controlknow
+	controlglanceknowhomepage --> controlknow
+	thingpageinterface --> controlknow
+	thingallianceinterface --> controlvisitknow
+	thingalliance --- controlneedalliance
+	thingallianceinterface --> controlneedalliance
+	controlvisitknow --> controlneedalliance
+	thinghomepage --- controlglanceknowhomepage
+	thingpageinterface --> controlglanceknowhomepage
+	thinghomepage --- controlgethomepage
+	thingpageinterface --> controlgethomepage
+	thingrating --- controlseerating
+	thingratinginterface --> controlseerating
+	thingsection --- controlviewsection
+	thingbasic --- controlviewsection
+	thingscrum --- controlviewsection
+	thingscruminterface --> controlviewsection
+	thingsite --- controlviewsection
+	thingtrainerinterface --> controlviewlisttrainer
+	thingtrainer --- controlviewlisttrainer
+	thingsite --- controlviewlisttrainer
+	thingpractitioner --- controlviewlistpractitioner
+	thingpractitionerinterface --> controlviewlistpractitioner
+	thingsite --- controlviewlistpractitioner
+	thingsite --- controlviewlist
+	thingscruminterface --> controlviewlist
+	thingscrum --- controlviewlist
+	thingproductowner --- controlviewlistcertifiedscrumproductowner
+	thingscruminterface --> controlviewlistcertifiedscrumproductowner
+	thingsite --- controlviewlistcertifiedscrumproductowner
+
+@enduml

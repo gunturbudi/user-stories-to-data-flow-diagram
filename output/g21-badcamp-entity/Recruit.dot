@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsorship Profile " color=red];
+201 [label="<f0>  |<f1> Job Listing " color=red];
+202 [label="Sponsor" shape=box];
+203 [label="{<f0> 1.0|<f1> Link To Sponsorship Profile From Job Listings }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Learn more about my organization. }" shape=Mrecord];
+1000 [label="Recruits" shape=box];
+1000 -> 2
+1002 [label="<f0>  |<f1> Organization " color=red];
+2 -> 1002 [label="Organization"]
+202 -> 203
+203 -> 200 [label="Sponsorship Profile"]
+203 -> 201 [label="Job Listing"]
+}

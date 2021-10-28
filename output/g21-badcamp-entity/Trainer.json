@@ -1,0 +1,143 @@
+[
+  {
+    "text": "As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, so that It is easier to use.",
+    "entities": [
+      {
+        "text": "trainingcoordinator",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to edit my training node myself, so that the training coordinators don't have to and links to slides.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "training node",
+        "label": "PII"
+      },
+      {
+        "text": "links",
+        "label": "Processing"
+      },
+      {
+        "text": "slides",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, so that the training coordinator doesn't have to do all the work to get login info for environment setup.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "attendee information",
+        "label": "PII"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "class attendance",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "trusted",
+        "label": "Processing"
+      },
+      {
+        "text": "privacy",
+        "label": "PII"
+      },
+      {
+        "text": "training coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "login info",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title, so that I can choose the right class, AND the trainer can tweet and promote their class.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "Logo",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "location",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link, so that I can shop for training all with one page AND find their class on on one page.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "day and time of training",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "shop",
+        "label": "Processing"
+      },
+      {
+        "text": "class",
+        "label": "PII"
+      }
+    ]
+  }
+]

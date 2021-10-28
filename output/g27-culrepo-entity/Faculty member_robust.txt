@@ -1,0 +1,87 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	entity "Student" as thingstudent
+	entity "Item" as thingitem
+	entity "Publication" as thingpublication
+	entity "Scholarly Work" as thingscholarlywork
+	entity "Faq" as thingfaq
+	entity "Etc" as thingetc
+	entity "Versioning" as thingversioning
+	entity "File" as thingfile
+	entity ", Scholarly\nWork" as thingsuchscholarlywork
+	entity "Access" as thingaccess
+	entity "Digital Collection" as thingdigitalcollection
+	entity "Extension Brochure" as thingextensionbrochure
+	actor "Faculty Member" as actorfacultymember
+	circle "Point" as thingpoint #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	boundary "Brochure\nInterface" as thingbrochureinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Faq\nInterface" as thingfaqinterface #grey
+	boundary "Work\nInterface" as thingworkinterface #grey
+	control "Access A\nCollection Within\nThe Repository" as controlaccesscollectionrepository
+	control "Direct Students\nTo An\nItem Within\nThe Repository" as controldirectstudentitem
+	control "Collect Those\nWithin The\nRepository Into\nA Online,\nSingle Access\nPoint" as controlcollectthose
+	control "Collect Those\nWithout" as controlcollectthosewithout
+	control "Collect Publications" as controlcollectpublication
+	control "Upload Scholarly\nWork To\nThe Repository" as controluploadscholarlyworkrepository
+	control "Maintain Versioning\nOf Extension\nBrochures" as controlmaintainversioning
+	control "Maintain Versioning\nOf Etc" as controlmaintainversioningetc
+	control "Maintain Versioning\nOf Faq" as controlmaintainversioningfaq
+	control "Associate Files\nWith Such,\nScholarly Works" as controlassociatefile
+	control "Access The\nLatter" as controlaccesslatter
+	control "Recommend" as controlrecommend
+
+	thingrepository <.. thingcollection
+	thingpoint <.. thingrepository
+	thingitem <.. thingstudent
+	thingrepository <.. thingitem
+	thingrepository <.. thingscholarlywork
+	thingextensionbrochure *-- thingversioning
+	thingfaq *-- thingversioning
+	thingetc *-- thingversioning
+	thingsuchscholarlywork <.. thingfile
+	thingaccess *-- thingpoint
+	actorfacultymember --- thingrepositoryinterface
+	actorfacultymember --- thingaccessinterface
+	actorfacultymember --- thingpublicationinterface
+	actorfacultymember --- thingbrochureinterface
+	actorfacultymember --- thingetcinterface
+	actorfacultymember --- thingfaqinterface
+	actorfacultymember --- thingworkinterface
+	thingcollection --- controlaccesscollectionrepository
+	thingrepository --- controlaccesscollectionrepository
+	thingrepositoryinterface --> controlaccesscollectionrepository
+	thingstudent --- controldirectstudentitem
+	thingitem --- controldirectstudentitem
+	thingrepository --- controldirectstudentitem
+	thingrepositoryinterface --> controldirectstudentitem
+	thingpoint --- controlcollectthose
+	thingaccessinterface --> controlcollectthose
+	thingrepository --- controlcollectthose
+	thingpublication --- controlcollectpublication
+	thingpublicationinterface --> controlcollectpublication
+	thingscholarlywork --- controluploadscholarlyworkrepository
+	thingrepository --- controluploadscholarlyworkrepository
+	thingrepositoryinterface --> controluploadscholarlyworkrepository
+	thingversioning --- controlmaintainversioning
+	thingextensionbrochure --- controlmaintainversioning
+	thingbrochureinterface --> controlmaintainversioning
+	thingetc --- controlmaintainversioningetc
+	thingetcinterface --> controlmaintainversioningetc
+	thingversioning --- controlmaintainversioningetc
+	thingfaq --- controlmaintainversioningfaq
+	thingfaqinterface --> controlmaintainversioningfaq
+	thingversioning --- controlmaintainversioningfaq
+	thingfile --- controlassociatefile
+	thingsuchscholarlywork --- controlassociatefile
+	thingworkinterface --> controlassociatefile
+
+@enduml

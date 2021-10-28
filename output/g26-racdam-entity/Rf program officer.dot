@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Search " color=red];
+201 [label="<f0>  |<f1> Scan Diary " ];
+202 [label="<f0>  |<f1> Program Rf\nOfficer " ];
+203 [label="<f0>  |<f1> Diary Segment " color=red];
+204 [label="Researcher" shape=box];
+205 [label="{<f0> 1.0|<f1> Having }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Keyword Search Across All Of An Program Rf Officer's Scanned Diaries }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Search Each Scanned Diary Segment }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Locate diary entries relevant to my research. }" shape=Mrecord];
+205 -> 4
+1001 [label="<f0>  |<f1> Research " color=red];
+4 -> 1001 [label="Research"]
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 206
+205 -> 207
+206 -> 200 [label="Search"]
+206 -> 201 [label="Scan Diary"]
+207 -> 203 [label="Diary Segment"]
+}

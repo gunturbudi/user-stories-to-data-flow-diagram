@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Website" as thingwebsite
+	entity "Api" as thingapi
+	entity "Bootstrap" as thingbootstrap
+	entity "Process" as thingprocess
+	entity "Ux Lesson" as thinguxlesson #grey
+	entity "Ui" as thingUI
+	actor "Developer" as actordeveloper
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	boundary "Lesson\nInterface" as thinglessoninterface #grey
+	control "Access An\nApi From\nThe Website" as controlaccessapiwebsite
+	control "Developing" as controldevelopusebootstrap
+	control "Use Bootstrap\nIn The\nProcess" as controlusebootstrap
+	control "Attend Some\nUi" as controlattendUI
+	control "Attend Ux\nLesson" as controlattenduxlesson
+
+	thingwebsite <.. thingapi
+	thingprocess <.. thingbootstrap
+	actordeveloper --- thingwebsiteinterface
+	actordeveloper --- thingprocessinterface
+	actordeveloper --- thinguiinterface
+	actordeveloper --- thinglessoninterface
+	thingapi --- controlaccessapiwebsite
+	thingwebsite --- controlaccessapiwebsite
+	thingwebsiteinterface --> controlaccessapiwebsite
+	thingprocessinterface --> controldevelopusebootstrap
+	controldevelopusebootstrap --> controlusebootstrap
+	thingbootstrap --- controlusebootstrap
+	thingprocess --- controlusebootstrap
+	thingprocessinterface --> controlusebootstrap
+	thingUI --- controlattendUI
+	thinguiinterface --> controlattendUI
+	thinguxlesson --- controlattenduxlesson
+	thinglessoninterface --> controlattenduxlesson
+
+@enduml

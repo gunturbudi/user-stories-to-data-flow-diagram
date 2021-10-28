@@ -1,0 +1,30 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Detail" as thingdetail
+	entity "Datum" as thingdatum
+	entity "Metadata" as thingmetadata
+	entity "Additional Language" as thingadditionallanguage
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Type" as thingtype
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	control "Provided With\nDetails On\nThe Type\nOf Data" as controlprovidedetail
+	control "Have Metadata\nIn Additional\nLanguages" as controlhavemetadataadditionallanguage
+
+	thingtype <.. thingdetail
+	thingadditionallanguage <.. thingmetadata
+	thingdatum *-- thingtype
+	actorrepositorymanager --- thingdatuminterface
+	actorrepositorymanager --- thinglanguageinterface
+	thingdetail --- controlprovidedetail
+	thingtype --- controlprovidedetail
+	thingdatum --- controlprovidedetail
+	thingdatuminterface --> controlprovidedetail
+	thingmetadata --- controlhavemetadataadditionallanguage
+	thingadditionallanguage --- controlhavemetadataadditionallanguage
+	thinglanguageinterface --> controlhavemetadataadditionallanguage
+
+@enduml

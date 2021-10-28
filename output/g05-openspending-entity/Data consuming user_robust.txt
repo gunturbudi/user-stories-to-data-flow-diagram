@@ -1,0 +1,155 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Multiple Dimension" as thingmultipledimension
+	entity "Datum" as thingdatum
+	entity "Multiple Measure" as thingmultiplemeasure #grey
+	entity "Visualisation" as thingvisualisation
+	entity "Currency" as thingcurrency
+	entity "Monetary Measure" as thingmonetarymeasure
+	entity "Embed Visualisation" as thingembeddedvisualisation
+	entity "Textual Description" as thingtextualdescription
+	entity "View State" as thingviewstate #grey
+	entity "Social Network" as thingsocialnetwork
+	entity "Url" as thingurl
+	entity "Colour" as thingcolour
+	entity "Accessible" as thingaccessible
+	entity "Title" as thingtitle
+	entity "Metadata" as thingmetadata
+	entity "Dataset" as thingdataset
+	entity "Bubble Tree" as thingbubbletree #grey
+	entity "Default" as thingdefault
+	entity "Treemap" as thingtreemap
+	entity "Multiple Year" as thingmultipleyear
+	entity "Recent Year" as thingrecentyear
+	entity "Pivot Table" as thingpivottable #grey
+	entity "Map" as thingmap #grey
+	actor "Datum ,\nConsume User" as actordataconsuminguser
+	circle "Csv" as thingcsv
+	circle "Display" as thingdisplay
+	circle "Image" as thingimage
+	circle "Consistent Use" as thingconsistentuse
+	boundary "Dimension\nInterface" as thingdimensioninterface #grey
+	boundary "Visualisation\nInterface" as thingvisualisationinterface #grey
+	boundary "Currency\nInterface" as thingcurrencyinterface #grey
+	boundary "Network\nInterface" as thingnetworkinterface #grey
+	boundary "State\nInterface" as thingstateinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Tree\nInterface" as thingtreeinterface #grey
+	boundary "Treemap\nInterface" as thingtreemapinterface #grey
+	boundary "Table\nInterface" as thingtableinterface #grey
+	boundary "Year\nInterface" as thingyearinterface #grey
+	control "Sort Filter\nData By\nMultiple Dimensions" as controlfilterdatum
+	control "Sort Aggregate\nData By\nMultiple Measures" as controlaggregatedatum #grey
+	control "Download A\nCsv Of\nThe Data\nUsed In\nAny Visualisation" as controldownloadcsv
+	control "Change The\nDisplay Of\nAll Monetary\nMeasures Across\nA Set\nOf Currencies" as controlchangedisplayset
+	control "See Textual\nDescriptions Accompany\nEmbedded Visualisations" as controlseetextualdescription
+	control "Share A\nView State\nAs A\nUrl To\nSocial Networks" as controlshareviewstateurl
+	control "Download An\nImage, Ofa,\nParticular View\nState" as controldownloadimageofaparticularviewstate
+	control "Share An\nImage Of\nA Particular\nView State\nTo The\nSocial Networks\nSupport This" as controlshareimagesocialnetwork
+	control "Stepped" as controlstep
+	control "Have Consistent\nUse Of\nColour On\nMap Visualisations" as controlhaveconsistentusemapvisualisations
+	control "Search Any\nDataset" as controlsearchdataset
+	control "Search Publicly\nAccessible By\nTitle" as controlsearchaccessible
+	control "Search Publicly\nAccessible By\nMetadata" as controlsearchaccessiblemetadata
+	control "Visualize By\nDefault In\nBubble Tree" as controlvisualizedefaultbubbletree
+	control "Visualize By\nDefault In\nTreemap" as controlvisualizedefault
+	control "Visualize By\nDefault In\nPivot Table" as controlvisualizedefaultpivottable
+	control "Visualize By\nDefault In\nTreemap The\nMost Recent\nYear Dataset\nWhen Contain\nMultiple Years" as controlvisualizedefaultrecentyear
+
+	thingmultipledimension <.. thingdatum
+	thingvisualisation <.. thingdatum
+	thingmultiplemeasure <.. thingdatum
+	thingmap <.. thingvisualisation
+	thingcurrency <.. thingmonetarymeasure
+	thingembeddedvisualisation <.. thingtextualdescription
+	thingurl <.. thingviewstate
+	thingsocialnetwork <.. thingviewstate
+	thingsocialnetwork <.. thingurl
+	thingvisualisation <.. thingcolour
+	thingtitle <.. thingaccessible
+	thingmetadata <.. thingaccessible
+	thingmultipleyear <.. thingdataset
+	thingtreemap <.. thingdefault
+	thingbubbletree <.. thingdefault
+	thingpivottable <.. thingdefault
+	thingrecentyear <.. thingtreemap
+	thingmultipleyear <.. thingrecentyear
+	thingdataset <.. thingrecentyear
+	thingdatum *-- thingcsv
+	thingmonetarymeasure *-- thingdisplay
+	thingviewstate *-- thingimage
+	thingcolour *-- thingconsistentuse
+	actordataconsuminguser --- thingdimensioninterface
+	actordataconsuminguser --- thingvisualisationinterface
+	actordataconsuminguser --- thingcurrencyinterface
+	actordataconsuminguser --- thingnetworkinterface
+	actordataconsuminguser --- thingstateinterface
+	actordataconsuminguser --- thingdatasetinterface
+	actordataconsuminguser --- thingtitleinterface
+	actordataconsuminguser --- thingmetadatainterface
+	actordataconsuminguser --- thingtreeinterface
+	actordataconsuminguser --- thingtreemapinterface
+	actordataconsuminguser --- thingtableinterface
+	actordataconsuminguser --- thingyearinterface
+	thingdatum --- controlfilterdatum
+	thingmultipledimension --- controlfilterdatum
+	thingdimensioninterface --> controlfilterdatum
+	thingmultiplemeasure --- controlfilterdatum
+	thingmultipledimension --- controlaggregatedatum
+	thingmultiplemeasure --- controlaggregatedatum
+	thingdatum --- controlaggregatedatum
+	thingcsv --- controldownloadcsv
+	thingvisualisation --- controldownloadcsv
+	thingvisualisationinterface --> controldownloadcsv
+	thingdatum --- controldownloadcsv
+	thingdisplay --- controlchangedisplayset
+	thingmonetarymeasure --- controlchangedisplayset
+	thingcurrency --- controlchangedisplayset
+	thingcurrencyinterface --> controlchangedisplayset
+	thingtextualdescription --- controlseetextualdescription
+	thingembeddedvisualisation --- controlseetextualdescription
+	thingvisualisationinterface --> controlseetextualdescription
+	thingviewstate --- controlshareviewstateurl
+	thingurl --- controlshareviewstateurl
+	thingsocialnetwork --- controlshareviewstateurl
+	thingnetworkinterface --> controlshareviewstateurl
+	thingstateinterface --> controldownloadimageofaparticularviewstate
+	thingviewstate --- controldownloadimageofaparticularviewstate
+	thingimage --- controlshareimagesocialnetwork
+	thingviewstate --- controlshareimagesocialnetwork
+	thingsocialnetwork --- controlshareimagesocialnetwork
+	thingnetworkinterface --> controlshareimagesocialnetwork
+	thingconsistentuse --- controlhaveconsistentusemapvisualisations
+	thingcolour --- controlhaveconsistentusemapvisualisations
+	thingvisualisationinterface --> controlhaveconsistentusemapvisualisations
+	thingvisualisation --- controlhaveconsistentusemapvisualisations
+	thingdataset --- controlsearchdataset
+	thingdatasetinterface --> controlsearchdataset
+	thingaccessible --- controlsearchaccessible
+	thingtitle --- controlsearchaccessible
+	thingtitleinterface --> controlsearchaccessible
+	thingmetadata --- controlsearchaccessiblemetadata
+	thingmetadatainterface --> controlsearchaccessiblemetadata
+	thingaccessible --- controlsearchaccessiblemetadata
+	thingbubbletree --- controlvisualizedefaultbubbletree
+	thingtreeinterface --> controlvisualizedefaultbubbletree
+	thingdefault --- controlvisualizedefaultbubbletree
+	thingdefault --- controlvisualizedefault
+	thingtreemap --- controlvisualizedefault
+	thingtreemapinterface --> controlvisualizedefault
+	thingpivottable --- controlvisualizedefaultpivottable
+	thingtableinterface --> controlvisualizedefaultpivottable
+	thingdefault --- controlvisualizedefaultpivottable
+	thingyearinterface --> controlvisualizedefaultrecentyear
+	thingdefault --- controlvisualizedefaultrecentyear
+	thingtreemap --- controlvisualizedefaultrecentyear
+	thingmultipleyear --- controlvisualizedefaultrecentyear
+	thingrecentyear --- controlvisualizedefaultrecentyear
+	thingdataset --- controlvisualizedefaultrecentyear
+
+@enduml

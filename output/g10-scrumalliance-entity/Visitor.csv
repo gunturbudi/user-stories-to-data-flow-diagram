@@ -1,0 +1,26 @@
+id,value,style,source,target,type
+200,Presentation,shape=partialRectangle,null,null,data_base
+201,Etc,shape=partialRectangle,null,null,data_base
+202,Pdf,shape=partialRectangle,null,null,data_base
+203,Member,shape=partialRectangle,null,null,data_base
+204,Article,shape=partialRectangle,null,null,data_base
+205,Upcoming Course,shape=partialRectangle,null,null,data_base
+206,Visitor,rounded=0,null,null,external_entity
+207,Site Editor,rounded=0,null,null,external_entity
+208,Trainer,rounded=0,null,null,external_entity
+209,Download Presentations,ellipse,null,null,process
+210,Download Etc,ellipse,null,null,process
+211,Download Pdf,ellipse,null,null,process
+212,For Indicate An Article Members,ellipse,null,null,process
+213,Notice,ellipse,null,null,process
+214,See,ellipse,null,null,process
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,206,210,endArrow=classic
+218,,endArrow=classic,206,211,endArrow=classic
+219,,endArrow=classic,207,212,endArrow=classic
+220,,endArrow=classic,208,213,endArrow=classic
+221,Presentation,endArrow=classic,209,200,endArrow=classic
+222,Etc,endArrow=classic,210,201,endArrow=classic
+223,Pdf,endArrow=classic,211,202,endArrow=classic
+224,Article,endArrow=classic,212,204,endArrow=classic
+225,Member,endArrow=classic,212,203,endArrow=classic

@@ -1,0 +1,54 @@
+id,value,style,source,target,type
+200,Password,shape=partialRectangle,null,null,data_base
+201,User,shape=partialRectangle,null,null,data_base
+202,Ldap,shape=partialRectangle,null,null,data_base
+203,Database,shape=partialRectangle,null,null,data_base
+204,Enum Value,shape=partialRectangle,null,null,data_base
+205,Bulk,shape=partialRectangle,null,null,data_base
+206,Repository,shape=partialRectangle,null,null,data_base
+207,Additional Property,shape=partialRectangle,null,null,data_base
+208,Appropriate Permission,shape=partialRectangle,null,null,data_base
+209,Backend Change,shape=partialRectangle,null,null,data_base
+210,Enum List,shape=partialRectangle,null,null,data_base
+211,Frontend Change,shape=partialRectangle,null,null,data_base
+212,Data Entry,shape=partialRectangle,null,null,data_base
+213,Application Administrator,rounded=0,null,null,external_entity
+214,User,rounded=0,null,null,external_entity
+215,System Administrator,rounded=0,null,null,external_entity
+216,Reset A User's Password For A User's Password,ellipse,null,null,process
+217,Using Ldap,ellipse,null,null,process
+218,Authenticate,ellipse,null,null,process
+219,Log In,ellipse,null,null,process
+220,Provided With Backend Changes,ellipse,null,null,process
+221,Managing Enum Lists,ellipse,null,null,process
+222,Provided With Frontend Changes,ellipse,null,null,process
+223,Loading Enum Value Lists From The Database,ellipse,null,null,process
+224,Update Enum Value To Another,ellipse,null,null,process
+225,Add Additional Properties For Repositories,ellipse,null,null,process
+226,Declare,ellipse,null,null,process
+227,Assign Users To An Advanced Data Entry,ellipse,null,null,process
+228,Ensure,ellipse,null,null,process
+230,,endArrow=classic,213,216,endArrow=classic
+231,,endArrow=classic,213,227,endArrow=classic
+232,,endArrow=classic,214,217,endArrow=classic
+233,,endArrow=classic,214,218,endArrow=classic
+234,,endArrow=classic,214,220,endArrow=classic
+235,,endArrow=classic,214,221,endArrow=classic
+236,,endArrow=classic,214,222,endArrow=classic
+237,,endArrow=classic,214,223,endArrow=classic
+238,,endArrow=classic,214,224,endArrow=classic
+239,,endArrow=classic,214,225,endArrow=classic
+240,Password,endArrow=classic,216,200,endArrow=classic
+241,Ldap,endArrow=classic,217,202,endArrow=classic
+242,,endArrow=classic,218,217,endArrow=classic
+243,Backend Change,endArrow=classic,220,209,endArrow=classic
+244,,endArrow=classic,221,220,endArrow=classic
+245,,endArrow=classic,221,222,endArrow=classic
+246,Enum List,endArrow=classic,221,210,endArrow=classic
+247,Frontend Change,endArrow=classic,222,211,endArrow=classic
+248,Database,endArrow=classic,223,203,endArrow=classic
+249,Enum Value,endArrow=classic,224,204,endArrow=classic
+250,Additional Property,endArrow=classic,225,207,endArrow=classic
+251,Repository,endArrow=classic,225,206,endArrow=classic
+252,Data Entry,endArrow=classic,227,212,endArrow=classic
+253,User,endArrow=classic,227,201,endArrow=classic

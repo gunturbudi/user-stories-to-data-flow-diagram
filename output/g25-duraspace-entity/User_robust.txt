@@ -1,0 +1,409 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dam" as thingDAMS
+	entity "Object" as thingobject
+	entity "Library Unit" as thinglibraryunit #grey
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	entity "Search" as thingsearch
+	entity "Description" as thingdescription
+	entity "Probable Importance" as thingprobableimportance
+	entity "User" as thinguser
+	entity "Access" as thingaccess
+	entity "Rights Status" as thingrightsstatus #grey
+	entity "Use" as thinguse
+	entity "Metadata" as thingmetadata
+	entity "Component Hierarchy" as thingcomponenthierarchy #grey
+	entity "Object Component" as thingobjectcomponent
+	entity "Title" as thingtitle
+	entity "Publication" as thingpublication
+	entity "Place" as thingplace
+	entity "Etc Publisher" as thingetcpublisher #grey
+	entity "Collection Component" as thingcollectioncomponent
+	entity "Scope" as thingscope
+	entity "Condition" as thingcondition
+	entity "Identifier" as thingvariousidentifier
+	entity "Etc" as thingetc
+	entity "Content" as thingcontent
+	entity "Specific Language" as thingspecificlanguage
+	entity "Name" as thingname
+	entity "Specific Role" as thingspecificrole
+	entity "Photographer" as thingphotographer
+	entity "Illustrator" as thingillustrator
+	entity "Geographical Etc" as thinggeographicaletc #grey
+	entity "Topic" as thingtopic #grey
+	entity "Form" as thingform #grey
+	entity ", Pertinent\nHeading" as thingsuchpertinentheading
+	entity "Genre" as thinggenre #grey
+	entity "Geographical Function" as thinggeographicalfunction #grey
+	entity "Function" as thingfunction #grey
+	entity "Geographical Name" as thinggeographicalname #grey
+	entity "Occupation" as thingoccupation #grey
+	entity "Geographical Cartographic" as thinggeographicalcartographic #grey
+	entity "Cartographic" as thingcartographic #grey
+	entity "Geographical Occupation" as thinggeographicaloccupation #grey
+	entity "Resource" as thingresource
+	entity "Copyright" as thingcopyright
+	entity "Component Part" as thingcomponentpart
+	actor "User" as actoruser
+	actor "Repository Manager" as actorrepositorymanager
+	circle "External Version" as thingexternalversion
+	circle "Version" as thingotherversion
+	circle "Facet" as thingvariousfacet
+	circle "Geographical Context" as thinggeographicalcontext
+	circle "Pertinent ,\nVersion" as thingpertinentotherversion
+	circle "Description" as thingotherdescription
+	circle "File" as thingfile #grey
+	circle "Component" as thingcomponent #grey
+	boundary "Object" as thingobjectuser
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	boundary "Search\nInterface" as thingsearchinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Use\nInterface" as thinguseinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	boundary "Scope\nInterface" as thingscopeinterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Condition\nInterface" as thingconditioninterface #grey
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Photographer\nInterface" as thingphotographerinterface #grey
+	boundary "Illustrator\nInterface" as thingillustratorinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	control "List Object" as controllistobject
+	control "List The\nCollections In\nThe Dams\nBelong To\nA Library\nUnit" as controllistcollection
+	control "Contact Repositories" as controlcontactrepository
+	control "Browse By\nCollections In\nThe Dams" as controlbrowsecollection
+	control "Specified" as controlspecify
+	control "Limit Search" as controllimitsearchspecify
+	control "Indicate Any\nExternal Versions\nOf An\nObject" as controlindicateexternalversionbeprobableimportanceuser
+	control "Be Of\nProbable Importance\nTo An\nUser" as controlbeprobableimportanceuser
+	control "Indicate Description" as controlindicatedescription
+	control "What Repository\nBelongs To" as controlbelongobjectuserrepository
+	control "Know" as controlknowbelongobjectuserrepository
+	control "See The\nComponent Parts\nOf An\nObject" as controlseecomponentparts
+	control "Have Access\nTo The\nContent Files\nFor An\nObject" as controlhaveaccess
+	control "Know The\nRights Status\nOf An\nObject" as controlknowrightsstatus
+	control "Know About\nMetadata Be\nOf Use\nTo" as controlknowmetadata
+	control "Know About\nOther Versions\nOf The\nObject" as controlknowotherversion
+	control "See The\nComponent Hierarchy\nOf An\nObject" as controlseecomponenthierarchy
+	control "Navigate The\nComponent Hierarchy\nOf An\nObject" as controlnavigatecomponenthierarchy
+	control "Search Object\nComponent" as controlsearchobjectcomponent
+	control "Search Object" as controlsearchobject
+	control "Search Collections\nBy Title" as controlsearchcollectiontitle
+	control "Know For\nAn Object\nThe Place\nOf Publication" as controlknowobjectplace
+	control "Know For\nThe Place\nOf The\nEtc Publisher" as controlknowplace #grey
+	control "Know For" as controlknowpart
+	control "Know For\nThe Place\nOf The\nEtc Publisher\nPublication" as controlknowplaceplace #grey
+	control "Component Part" as controlpart
+	control "Govern" as controlgovern #grey
+	control "Govern Use" as controlgovernuse
+	control "Govern Access" as controlgovernaccess
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nScope" as controlknowvariousfacet
+	control "Know About\nVarious Facets\nOf Object" as controlknowvariousfacetobject
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nCondition" as controlknowvariousfacetconditionconditionconditioncondition
+	control "Govern Etc" as controlgovernetc
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nVarious Identifier" as controlknowvariousfacetvariousidentifier
+	control "Know About\nVarious Facets\nOf A\nCollection Component\nSuch As\nContent" as controlknowvariousfacetcontent
+	control "Scope Searches\nFor Object" as controlscopesearchobject
+	control "Scope Searches\nFor Collections\nTo A\nSpecific Language" as controlscopesearchspecificlanguage
+	control "Scope Searches\nFor Object\nComponent" as controlscopesearchobjectcomponent
+	control "Search For\nCollections By\nName" as controlsearchcollectionname
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Etc" as controlscopesearchspecificroleetc
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Photographer" as controlscopesearchspecificrolephotographer
+	control "Scope By\nSearches By\nName To\nA Specific\nRole Such\nAs Illustrator" as controlscopesearchspecificrole
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Form\nGeographical Name\nTopic" as controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Form\nGeographical Name" as controlsearchsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Form\nGeographical Function\nGeographical Occupation\nTitle" as controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading #grey
+	control "Search For\nBy Such,\nPertinent Headings\nIncluding Genre" as controlsearchsuchpertinentheading #grey
+	control "Search For\nCollections By\nSuch, Pertinent\nHeadings Including\nTitle" as controlsearchcollectionsuchpertinentheading
+	control "See The\nGeographical Context\nOf Object" as controlseegeographicalcontextobject
+	control "See The\nGeographical Context\nOf A\nCollection Component\nWhere Pertinent" as controlseegeographicalcontext
+	control "Know Of\nAll Pertinent,\nOther Versions\nOf The\nResource" as controlknowpertinentotherversion
+	control "Know Of\nDescription" as controlknowdescription
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Of\nProbable Importance\nTo Users" as controlindicateotherdescriptionof
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Outside\nThe Dams" as controlindicateotherdescription
+
+	thinglibraryunit <.. thingDAMS
+	thingplace <.. thingobject
+	thingDAMS <.. thingcollection
+	thinglibraryunit <.. thingcollection
+	thingtitle <.. thingcollection
+	thingspecificlanguage <.. thingcollection
+	thingsuchpertinentheading <.. thingcollection
+	thingprobableimportance <.. thingcollection
+	thingname <.. thingcollection
+	thingcollection <.. thingsearch
+	thingname <.. thingsearch
+	thingobject <.. thingsearch
+	thingcomponent <.. thingsearch
+	thinguser <.. thingprobableimportance
+	thingfile <.. thingaccess
+	thingobject <.. thingaccess
+	thingcontent <.. thingaccess
+	thingobject <.. thingrightsstatus
+	thinguse <.. thinguse
+	thinguse <.. thingmetadata
+	thingobject <.. thingcomponenthierarchy
+	thingpublication <.. thingplace
+	thingetcpublisher <.. thingplace
+	thingscope <.. thingcollectioncomponent
+	thingcontent <.. thingcollectioncomponent
+	thingcondition <.. thingcollectioncomponent
+	thingvariousidentifier <.. thingcollectioncomponent
+	thingobject <.. thingcontent
+	thingspecificrole <.. thingname
+	thingillustrator <.. thingspecificrole
+	thingphotographer <.. thingspecificrole
+	thingetc <.. thingspecificrole
+	thingtitle <.. thingsuchpertinentheading
+	thinggenre <.. thingsuchpertinentheading
+	thingfunction <.. thingsuchpertinentheading
+	thinggeographicaletc <.. thingsuchpertinentheading
+	thingtopic <.. thingsuchpertinentheading
+	thingform <.. thingsuchpertinentheading
+	thinggeographicalfunction <.. thingsuchpertinentheading
+	thinggeographicalname <.. thingsuchpertinentheading
+	thingoccupation <.. thingsuchpertinentheading
+	thinggeographicalcartographic <.. thingsuchpertinentheading
+	thingcartographic <.. thingsuchpertinentheading
+	thinggeographicaloccupation <.. thingsuchpertinentheading
+	thingetc <.. thingsuchpertinentheading
+	thingname <.. thingsuchpertinentheading
+	thingobject <.. thingcomponentpart
+	thingobject *-- thingexternalversion
+	thingobject *-- thingotherversion
+	thingcollectioncomponent *-- thingvariousfacet
+	thingobject *-- thingvariousfacet
+	thingcollectioncomponent *-- thinggeographicalcontext
+	thingobject *-- thinggeographicalcontext
+	thingresource *-- thingpertinentotherversion
+	thingcollection *-- thingotherdescription
+	thingcontent *-- thingfile
+	thingobject *-- thingcomponent
+	actoruser --- thingobjectuser
+	actoruser --- thingobjectinterface
+	actorrepositorymanager --- thingobjectinterface
+	actoruser --- thingunitinterface
+	actoruser --- thingrepositoryinterface
+	actoruser --- thingdamsinterface
+	actorrepositorymanager --- thingdamsinterface
+	actoruser --- thingsearchinterface
+	actorrepositorymanager --- thinguserinterface
+	actorrepositorymanager --- thingdescriptioninterface
+	actoruser --- thingdescriptioninterface
+	actoruser --- thinguseinterface
+	actoruser --- thingtitleinterface
+	actoruser --- thingpublicationinterface
+	actoruser --- thingscopeinterface
+	actoruser --- thingaccessinterface
+	actoruser --- thingetcinterface
+	actoruser --- thingconditioninterface
+	actoruser --- thingidentifierinterface
+	actoruser --- thingcontentinterface
+	actoruser --- thinglanguageinterface
+	actoruser --- thingnameinterface
+	actoruser --- thingphotographerinterface
+	actoruser --- thingillustratorinterface
+	actoruser --- thingcomponentinterface
+	actoruser --- thingresourceinterface
+	thingobject --- controllistobject
+	thingobjectinterface --> controllistobject
+	thingcollection --- controllistcollection
+	thingDAMS --- controllistcollection
+	thinglibraryunit --- controllistcollection
+	thingunitinterface --> controllistcollection
+	thingrepository --- controlcontactrepository
+	thingrepositoryinterface --> controlcontactrepository
+	thingdamsinterface --> controlbrowsecollection
+	thingDAMS --- controlbrowsecollection
+	thingcollection --- controlbrowsecollection
+	controllimitsearchspecify --> controlspecify
+	thingsearchinterface --> controlspecify
+	thingsearch --- controllimitsearchspecify
+	thingsearchinterface --> controllimitsearchspecify
+	thingexternalversion --- controlindicateexternalversionbeprobableimportanceuser
+	thingobject --- controlindicateexternalversionbeprobableimportanceuser
+	thingobjectinterface --> controlindicateexternalversionbeprobableimportanceuser
+	controlindicateexternalversionbeprobableimportanceuser --> controlbeprobableimportanceuser
+	thingprobableimportance --- controlbeprobableimportanceuser
+	thinguser --- controlbeprobableimportanceuser
+	thinguserinterface --> controlbeprobableimportanceuser
+	thingdescription --- controlindicatedescription
+	thingdescriptioninterface --> controlindicatedescription
+	thingobjectuser --> controlbelongobjectuserrepository
+	controlknowbelongobjectuserrepository --> controlbelongobjectuserrepository
+	thingrepository --- controlbelongobjectuserrepository
+	thingobjectuser --> controlknowbelongobjectuserrepository
+	thingcomponentpart --- controlseecomponentparts
+	thingobject --- controlseecomponentparts
+	thingobjectinterface --> controlseecomponentparts
+	thingaccess --- controlhaveaccess
+	thingobject --- controlhaveaccess
+	thingobjectinterface --> controlhaveaccess
+	thingcontent --- controlhaveaccess
+	thingrightsstatus --- controlknowrightsstatus
+	thingobject --- controlknowrightsstatus
+	thingobjectinterface --> controlknowrightsstatus
+	thingmetadata --- controlknowmetadata
+	thinguse --- controlknowmetadata
+	thinguseinterface --> controlknowmetadata
+	thingotherversion --- controlknowotherversion
+	thingobject --- controlknowotherversion
+	thingobjectinterface --> controlknowotherversion
+	thingcomponenthierarchy --- controlseecomponenthierarchy
+	thingobject --- controlseecomponenthierarchy
+	thingobjectinterface --> controlseecomponenthierarchy
+	thingobject --- controlnavigatecomponenthierarchy
+	thingcomponenthierarchy --- controlnavigatecomponenthierarchy
+	thingobjectinterface --> controlnavigatecomponenthierarchy
+	thingcomponent --- controlsearchobjectcomponent
+	thingobjectinterface --> controlsearchobjectcomponent
+	thingobject --- controlsearchobject
+	thingobjectinterface --> controlsearchobject
+	thingtitle --- controlsearchcollectiontitle
+	thingtitleinterface --> controlsearchcollectiontitle
+	thingcollection --- controlsearchcollectiontitle
+	thingpublicationinterface --> controlknowobjectplace
+	thingobject --- controlknowobjectplace
+	thingpublication --- controlknowobjectplace
+	thingplace --- controlknowobjectplace
+	thingetcpublisher --- controlknowplace
+	thingplace --- controlknowplace
+	thingetcpublisher --- controlknowplaceplace
+	thingpublication --- controlknowplaceplace
+	thingplace --- controlknowplaceplace
+	controlknowpart --> controlpart
+	controlknowvariousfacetconditionconditionconditioncondition --> controlgovern
+	thinguse --- controlgovernuse
+	thinguseinterface --> controlgovernuse
+	thingaccessinterface --> controlgovernaccess
+	thingaccess --- controlgovernaccess
+	controlknowvariousfacetconditionconditionconditioncondition --> controlgovernaccess
+	thingvariousfacet --- controlknowvariousfacet
+	thingcollectioncomponent --- controlknowvariousfacet
+	thingscope --- controlknowvariousfacet
+	thingscopeinterface --> controlknowvariousfacet
+	thingobject --- controlknowvariousfacetobject
+	thingvariousfacet --- controlknowvariousfacetobject
+	thingobjectinterface --> controlknowvariousfacetobject
+	thingcollectioncomponent --- controlknowvariousfacetconditionconditionconditioncondition
+	thingvariousfacet --- controlknowvariousfacetconditionconditionconditioncondition
+	thingcondition --- controlknowvariousfacetconditionconditionconditioncondition
+	thingconditioninterface --> controlknowvariousfacetconditionconditionconditioncondition
+	thingetc --- controlgovernetc
+	thingetcinterface --> controlgovernetc
+	thingvariousidentifier --- controlknowvariousfacetvariousidentifier
+	thingidentifierinterface --> controlknowvariousfacetvariousidentifier
+	thingcollectioncomponent --- controlknowvariousfacetvariousidentifier
+	thingvariousfacet --- controlknowvariousfacetvariousidentifier
+	thingcontent --- controlknowvariousfacetcontent
+	thingcontentinterface --> controlknowvariousfacetcontent
+	thingcollectioncomponent --- controlknowvariousfacetcontent
+	thingvariousfacet --- controlknowvariousfacetcontent
+	thingobject --- controlscopesearchobject
+	thingobjectinterface --> controlscopesearchobject
+	thingsearch --- controlscopesearchobject
+	thinglanguageinterface --> controlscopesearchspecificlanguage
+	thingcollection --- controlscopesearchspecificlanguage
+	thingsearch --- controlscopesearchspecificlanguage
+	thingspecificlanguage --- controlscopesearchspecificlanguage
+	thingcomponent --- controlscopesearchobjectcomponent
+	thingobjectinterface --> controlscopesearchobjectcomponent
+	thingsearch --- controlscopesearchobjectcomponent
+	thingnameinterface --> controlsearchcollectionname
+	thingcollection --- controlsearchcollectionname
+	thingname --- controlsearchcollectionname
+	thingetc --- controlscopesearchspecificroleetc
+	thingspecificrole --- controlscopesearchspecificroleetc
+	thingetcinterface --> controlscopesearchspecificroleetc
+	thingsearch --- controlscopesearchspecificroleetc
+	thingname --- controlscopesearchspecificroleetc
+	thingphotographer --- controlscopesearchspecificrolephotographer
+	thingphotographerinterface --> controlscopesearchspecificrolephotographer
+	thingspecificrole --- controlscopesearchspecificrolephotographer
+	thingsearch --- controlscopesearchspecificrolephotographer
+	thingname --- controlscopesearchspecificrolephotographer
+	thingspecificrole --- controlscopesearchspecificrole
+	thingillustrator --- controlscopesearchspecificrole
+	thingillustratorinterface --> controlscopesearchspecificrole
+	thingsearch --- controlscopesearchspecificrole
+	thingname --- controlscopesearchspecificrole
+	thinggenre --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingoccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingetc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggenre --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingoccupation --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingcartographic --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingetc --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thingname --- controlsearchsuchpertinentheadingsuchpertinentheading
+	thinggeographicalname --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaletc --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalfunction --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicalcartographic --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggeographicaloccupation --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thingtitle --- controlsearchsuchpertinentheadingsuchpertinentheadingsuchpertinentheadingsuchpertinentheading
+	thinggenre --- controlsearchsuchpertinentheading
+	thingtopic --- controlsearchsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchsuchpertinentheading
+	thingform --- controlsearchsuchpertinentheading
+	thingcollection --- controlsearchcollectionsuchpertinentheading
+	thingsuchpertinentheading --- controlsearchcollectionsuchpertinentheading
+	thingtitleinterface --> controlsearchcollectionsuchpertinentheading
+	thingtitle --- controlsearchcollectionsuchpertinentheading
+	thingobject --- controlseegeographicalcontextobject
+	thinggeographicalcontext --- controlseegeographicalcontextobject
+	thingobjectinterface --> controlseegeographicalcontextobject
+	thinggeographicalcontext --- controlseegeographicalcontext
+	thingcomponentinterface --> controlseegeographicalcontext
+	thingcollectioncomponent --- controlseegeographicalcontext
+	thingpertinentotherversion --- controlknowpertinentotherversion
+	thingresource --- controlknowpertinentotherversion
+	thingresourceinterface --> controlknowpertinentotherversion
+	thingdescription --- controlknowdescription
+	thingdescriptioninterface --> controlknowdescription
+	thingprobableimportance --- controlindicateotherdescriptionof
+	thinguser --- controlindicateotherdescriptionof
+	thingotherdescription --- controlindicateotherdescriptionof
+	thinguserinterface --> controlindicateotherdescriptionof
+	thingcollection --- controlindicateotherdescriptionof
+	thingotherdescription --- controlindicateotherdescription
+	thingDAMS --- controlindicateotherdescription
+	thingcollection --- controlindicateotherdescription
+	thingdamsinterface --> controlindicateotherdescription
+
+@enduml

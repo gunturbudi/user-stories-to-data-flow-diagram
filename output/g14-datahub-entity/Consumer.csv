@@ -1,0 +1,144 @@
+id,value,style,source,target,type
+28,Choose most popular in the case when there are several alternatives for my use case.,ellipse,null,null,process
+29,Find package which related to some key words.,ellipse,null,null,process
+30,Handle it.,ellipse,null,null,process
+31,Find one data package amongst all the data packages by this publisher.,ellipse,null,null,process
+32,Use is and my app or analysis keeps working.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Datapackage,shape=partialRectangle,null,null,data_base
+202,File,shape=partialRectangle,null,null,data_base
+203,R,shape=partialRectangle,null,null,data_base
+204,Detail,shape=partialRectangle,null,null,data_base
+205,Particular Version,shape=partialRectangle,null,null,data_base
+206,Package,shape=partialRectangle,null,null,data_base
+207,Change,shape=partialRectangle,null,null,data_base
+208,Site,shape=partialRectangle,null,null,data_base
+209,Publisher,shape=partialRectangle,null,null,data_base
+210,Profile,shape=partialRectangle,null,null,data_base
+211,Publish Datum,shape=partialRectangle,null,null,data_base
+212,World,shape=partialRectangle,null,null,data_base
+213,Registry Server,shape=partialRectangle,null,null,data_base
+214,Tag,shape=partialRectangle,null,null,data_base
+215,Sqlite Database,shape=partialRectangle,null,null,data_base
+216,Example,shape=partialRectangle,null,null,data_base
+217,Consumer,rounded=0,null,null,external_entity
+218,Publisher,rounded=0,null,null,external_entity
+219,Relied Know The Data Good,ellipse,null,null,process
+220,View A Data Package,ellipse,null,null,process
+221,See,ellipse,null,null,process
+222,See Some Example Data Packages,ellipse,null,null,process
+223,Search Data Packages,ellipse,null,null,process
+224,Search On Description Of Data Package,ellipse,null,null,process
+225,Download The Data Package In File,ellipse,null,null,process
+226,Load A Data Package From R,ellipse,null,null,process
+227,Download Coherent Sqlite Database,ellipse,null,null,process
+228,Download A Datapackage's Data,ellipse,null,null,process
+229,Know Full Details The Data Package Schema How Has Changed,ellipse,null,null,process
+230,Get A Sense Of The Age Of The Datapackage,ellipse,null,null,process
+231,View A Datapackage At A Online Particular Version,ellipse,null,null,process
+232,Download A Data Package At A Particular Version,ellipse,null,null,process
+233,Notified Of Changes To A Package,ellipse,null,null,process
+234,See The Site,ellipse,null,null,process
+235,Browse Publishers,ellipse,null,null,process
+236,Find Publishers,ellipse,null,null,process
+237,See A Publisher's Profile,ellipse,null,null,process
+238,View A Publisher's Profile,ellipse,null,null,process
+239,Get The Data For A Data Package,ellipse,null,null,process
+240,Show The World,ellipse,null,null,process
+241,Create A Snapshot Of Data On The Registry Server,ellipse,null,null,process
+242,Tag Datapackage,ellipse,null,null,process
+243,Overwrite A Tag,ellipse,null,null,process
+244,A Tag Exists Try,ellipse,null,null,process
+245,Warned,ellipse,null,null,process
+247,,endArrow=classic,217,219,endArrow=classic
+248,,endArrow=classic,217,220,endArrow=classic
+249,,endArrow=classic,217,222,endArrow=classic
+250,,endArrow=classic,217,223,endArrow=classic
+251,,endArrow=classic,217,224,endArrow=classic
+252,,endArrow=classic,217,225,endArrow=classic
+253,,endArrow=classic,217,226,endArrow=classic
+254,,endArrow=classic,217,227,endArrow=classic
+255,,endArrow=classic,217,228,endArrow=classic
+256,,endArrow=classic,217,229,endArrow=classic
+257,,endArrow=classic,217,230,endArrow=classic
+258,,endArrow=classic,217,231,endArrow=classic
+259,,endArrow=classic,217,232,endArrow=classic
+260,,endArrow=classic,217,233,endArrow=classic
+261,,endArrow=classic,217,234,endArrow=classic
+262,,endArrow=classic,217,235,endArrow=classic
+263,,endArrow=classic,217,236,endArrow=classic
+264,,endArrow=classic,217,237,endArrow=classic
+265,,endArrow=classic,217,238,endArrow=classic
+266,,endArrow=classic,217,239,endArrow=classic
+267,,endArrow=classic,217,241,endArrow=classic
+268,,endArrow=classic,217,242,endArrow=classic
+269,,endArrow=classic,218,230,endArrow=classic
+270,,endArrow=classic,218,240,endArrow=classic
+271,,endArrow=classic,218,241,endArrow=classic
+272,,endArrow=classic,218,242,endArrow=classic
+273,,endArrow=classic,218,243,endArrow=classic
+274,,endArrow=classic,218,244,endArrow=classic
+275,,endArrow=classic,218,245,endArrow=classic
+276,Datum,endArrow=classic,219,200,endArrow=classic
+277,Package,endArrow=classic,220,206,endArrow=classic
+278,Package,endArrow=classic,222,206,endArrow=classic
+279,Package,endArrow=classic,223,206,endArrow=classic
+280,Package,endArrow=classic,224,206,endArrow=classic
+281,File,endArrow=classic,225,202,endArrow=classic
+282,Package,endArrow=classic,225,206,endArrow=classic
+283,R,endArrow=classic,226,203,endArrow=classic
+284,Package,endArrow=classic,226,206,endArrow=classic
+285,Sqlite Database,endArrow=classic,227,215,endArrow=classic
+286,Datum,endArrow=classic,228,200,endArrow=classic
+287,Detail,endArrow=classic,229,204,endArrow=classic
+288,Datum,endArrow=classic,229,200,endArrow=classic
+289,Datapackage,endArrow=classic,230,201,endArrow=classic
+290,Particular Version,endArrow=classic,231,205,endArrow=classic
+291,Datapackage,endArrow=classic,231,201,endArrow=classic
+292,Particular Version,endArrow=classic,232,205,endArrow=classic
+293,Package,endArrow=classic,232,206,endArrow=classic
+294,Change,endArrow=classic,233,207,endArrow=classic
+295,Package,endArrow=classic,233,206,endArrow=classic
+296,Site,endArrow=classic,234,208,endArrow=classic
+297,Publisher,endArrow=classic,235,209,endArrow=classic
+298,Publisher,endArrow=classic,236,209,endArrow=classic
+299,Profile,endArrow=classic,237,210,endArrow=classic
+300,Profile,endArrow=classic,238,210,endArrow=classic
+301,Datum,endArrow=classic,239,200,endArrow=classic
+302,World,endArrow=classic,240,212,endArrow=classic
+303,Registry Server,endArrow=classic,241,213,endArrow=classic
+304,Datum,endArrow=classic,241,200,endArrow=classic
+305,,endArrow=classic,242,241,endArrow=classic
+306,Datapackage,endArrow=classic,242,201,endArrow=classic
+307,Tag,endArrow=classic,243,214,endArrow=classic
+308,,endArrow=classic,244,243,endArrow=classic
+309,,endArrow=classic,244,245,endArrow=classic
+310,Tag,endArrow=classic,244,214,endArrow=classic
+341,Example,endArrow=classic,222,216,endArrow=classic
+1000,,endArrow=classic,217,28,endArrow=classic
+1001,Consumer,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,28,endArrow=classic
+1003,Use case,rounded=0,null,null,external_entity
+1004,Use case,endArrow=classic,28,1003,endArrow=classic
+1005,,endArrow=classic,224,29,endArrow=classic
+1006,Consumer,rounded=0,null,null,external_entity
+1007,,endArrow=classic,1006,29,endArrow=classic
+1008,Key words,rounded=0,null,null,external_entity
+1009,Key words,endArrow=classic,29,1008,endArrow=classic
+1010,,endArrow=classic,229,30,endArrow=classic
+1011,Consumer,rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,30,endArrow=classic
+1013,Scripts,rounded=0,null,null,external_entity
+1014,Scripts,endArrow=classic,30,1013,endArrow=classic
+1015,,endArrow=classic,217,31,endArrow=classic
+1016,Consumer,rounded=0,null,null,external_entity
+1017,,endArrow=classic,1016,31,endArrow=classic
+1018,Data package,rounded=0,null,null,external_entity
+1019,Data package,endArrow=classic,31,1018,endArrow=classic
+1020,,endArrow=classic,239,32,endArrow=classic
+1021,"Consumer,",rounded=0,null,null,external_entity
+1022,,endArrow=classic,1021,32,endArrow=classic
+1023,App,rounded=0,null,null,external_entity
+1024,App,endArrow=classic,32,1023,endArrow=classic
+1025,Analysis,rounded=0,null,null,external_entity
+1026,Analysis,endArrow=classic,32,1025,endArrow=classic

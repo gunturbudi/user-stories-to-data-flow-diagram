@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Identifiable Way " ];
+201 [label="Researcher" shape=box];
+202 [label="{<f0> 1.0|<f1> Stored In A Identifiable Way }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> See things like whether estimates converged around the first opinion given by "estimator a" for example. }" shape=Mrecord];
+201 -> 2
+1001 [label="<f0>  |<f1> Opinion " color=red];
+2 -> 1001 [label="Opinion"]
+201 -> 202
+202 -> 200 [label="Identifiable Way"]
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "text": "As a trainer, I want to create a new course or event, so that site visitors can see it.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As the site editor, I want to include a teaser with each article, so that site visitors can decide if they want to read the rest.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "teaser",
+        "label": "PII"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to show my rating up on my profile page, so that site visitors can choose wisely.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "rating",
+        "label": "PII"
+      },
+      {
+        "text": "profile page",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  }
+]

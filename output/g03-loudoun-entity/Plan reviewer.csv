@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+3,Ensure service levels are met,ellipse,null,null,process
+200,Plan,shape=partialRectangle,null,null,data_base
+201,Review,shape=partialRectangle,null,null,data_base
+202,"Plan , Review , Staff Member",rounded=0,null,null,external_entity
+203,"Plan , Review , Staff Supervisor",rounded=0,null,null,external_entity
+204,Assign Plans For Review,ellipse,null,null,process
+205,Manage Plan Reviewer Workload,ellipse,null,null,process
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Plan,endArrow=classic,204,200,endArrow=classic
+210,Review,endArrow=classic,204,201,endArrow=classic
+1000,Plan review staff supervisor,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,3,endArrow=classic
+1002,,endArrow=classic,205,3,endArrow=classic
+1003,Workload,rounded=0,null,null,external_entity
+1004,Workload,endArrow=classic,3,1003,endArrow=classic

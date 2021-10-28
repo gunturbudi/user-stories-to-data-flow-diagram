@@ -1,0 +1,80 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Pipeline" as thingpipeline
+	entity "App" as thingotherapp
+	entity "Exist Instance" as thingexistinginstance #grey
+	entity "Dataset" as thingdataset
+	entity "Instance" as thinginstance #grey
+	entity "App" as thingapp
+	entity "Source" as thingsource
+	entity "Sink" as thingsink
+	actor "Hydrator User" as actorhydratoruser
+	circle "Explicit Version" as thingexplicitversion
+	circle "Incompatible Upgrade" as thingincompatibleupgrade
+	circle "Type" as thingtype #grey
+	boundary "Pipeline Creation" as thingpipelinecreationhydratoruser
+	boundary "Creation" as thingcreationhydratoruser #grey
+	boundary "Pipeline\nInterface" as thingpipelineinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Create A\nPipeline" as controlcreatepipelinewriteexistingdatasetinstance
+	control "Create A\nPipeline Reads" as controlcreatepipeline
+	control "Write An\nExisting Dataset\nInstance" as controlwriteexistingdatasetinstance
+	control "Write A\nNew Dataset\nInstance" as controlwritenewdatasetinstance
+	control "Specify An\nExplicit Version\nOf The\nDataset Types\nOf The\nDataset Instances\nPipeline" as controlspecifyexplicitversion
+	control "Fail" as controlfailcreationhydratoruser
+	control "Explore The\nDatasets Pipeline" as controlexploredataset
+	control "Ensure All\nInstances Apps\nAvailable As\nSource" as controlensureinstancesource
+	control "Ensure All\nDataset Instances\nApps Available\nAs Sinks\nFor Pipelines" as controlensuredatasetinstancessink
+
+	thingpipeline <.. thingexistinginstance
+	thingpipeline <.. thingdataset
+	thinginstance <.. thingdataset
+	thingdataset <.. thingdataset
+	thingsource <.. thinginstance
+	thingsink <.. thinginstance
+	thingdataset <.. thinginstance
+	thingapp <.. thinginstance
+	thingpipeline <.. thingsink
+	thingtype *-- thingexplicitversion
+	thingdataset *-- thingexplicitversion
+	thingexistinginstance *-- thingincompatibleupgrade
+	thinginstance *-- thingincompatibleupgrade
+	thingdataset *-- thingtype
+	actorhydratoruser --- thingpipelinecreationhydratoruser
+	actorhydratoruser --- thingcreationhydratoruser
+	actorhydratoruser --- thingpipelineinterface
+	actorhydratoruser --- thingdatasetinterface
+	actorhydratoruser --- thingsourceinterface
+	thingpipelineinterface --> controlcreatepipelinewriteexistingdatasetinstance
+	thingpipeline --- controlcreatepipelinewriteexistingdatasetinstance
+	thingpipeline --- controlcreatepipeline
+	thingpipelineinterface --> controlcreatepipeline
+	controlcreatepipelinewriteexistingdatasetinstance --> controlwriteexistingdatasetinstance
+	thingdatasetinterface --> controlwriteexistingdatasetinstance
+	thinginstance --- controlwriteexistingdatasetinstance
+	thingdataset --- controlwriteexistingdatasetinstance
+	thinginstance --- controlwritenewdatasetinstance
+	thingdatasetinterface --> controlwritenewdatasetinstance
+	thingdataset --- controlwritenewdatasetinstance
+	controlcreatepipelinewriteexistingdatasetinstance --> controlwritenewdatasetinstance
+	thingexplicitversion --- controlspecifyexplicitversion
+	thinginstance --- controlspecifyexplicitversion
+	thingdatasetinterface --> controlspecifyexplicitversion
+	thingdataset --- controlspecifyexplicitversion
+	thingcreationhydratoruser --> controlfailcreationhydratoruser
+	thingpipelinecreationhydratoruser --> controlfailcreationhydratoruser
+	thingdataset --- controlexploredataset
+	thingdatasetinterface --> controlexploredataset
+	thinginstance --- controlensureinstancesource
+	thingsource --- controlensureinstancesource
+	thingsourceinterface --> controlensureinstancesource
+	thingsink --- controlensuredatasetinstancessink
+	thingpipeline --- controlensuredatasetinstancessink
+	thinginstance --- controlensuredatasetinstancessink
+	thingpipelineinterface --> controlensuredatasetinstancessink
+
+@enduml

@@ -1,0 +1,31 @@
+id,value,style,source,target,type
+200,Subject Information,shape=partialRectangle,null,null,data_base
+201,Agent,shape=partialRectangle,null,null,data_base
+202,Resource,shape=partialRectangle,null,null,data_base
+203,Source,shape=partialRectangle,null,null,data_base
+204,Accession Component,shape=partialRectangle,null,null,data_base
+205,Subject,shape=partialRectangle,null,null,data_base
+206,Name Form,shape=partialRectangle,null,null,data_base
+207,Exist Source,shape=partialRectangle,null,null,data_base
+208,New Source,shape=partialRectangle,null,null,data_base
+209,Marcxml Record,shape=partialRectangle,null,null,data_base
+210,Archivist,rounded=0,null,null,external_entity
+211,Import Subject Information,ellipse,null,null,process
+212,Import Only Agent From Marcxml Records,ellipse,null,null,process
+213,Indicate,ellipse,null,null,process
+214,Specify The Source For A Name Form Of An Agent,ellipse,null,null,process
+215,Edit Existing Sources,ellipse,null,null,process
+216,Add New Sources,ellipse,null,null,process
+218,,endArrow=classic,210,211,endArrow=classic
+219,,endArrow=classic,210,212,endArrow=classic
+220,,endArrow=classic,210,214,endArrow=classic
+221,,endArrow=classic,210,216,endArrow=classic
+222,Subject Information,endArrow=classic,211,200,endArrow=classic
+223,Agent,endArrow=classic,212,201,endArrow=classic
+224,Marcxml Record,endArrow=classic,212,209,endArrow=classic
+225,Name Form,endArrow=classic,214,206,endArrow=classic
+226,Agent,endArrow=classic,214,201,endArrow=classic
+227,Source,endArrow=classic,214,203,endArrow=classic
+228,Exist Source,endArrow=classic,215,207,endArrow=classic
+229,New Source,endArrow=classic,216,208,endArrow=classic
+242,Subject,endArrow=classic,211,205,endArrow=classic

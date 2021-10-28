@@ -1,0 +1,62 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Registry" as thingregistry
+	entity "Name" as thingname
+	entity "Membership" as thingmembership
+	entity "Scrum Alliance" as thingscrumalliance #grey
+	entity "Fee" as thingfee
+	entity "Practitioner Status" as thingpractitionerstatus #grey
+	actor "Csm" as actorcsm
+	boundary "Email" as thingemailwelcomescrumalliancecsm #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	control "Becoming A\nMember Of\nThe Site" as controlbecomehavenamesite
+	control "Have Name\nIn The\nRegistry" as controlhavename
+	control "Register Membership" as controlregistermembershiploadnameregistry
+	control "With Sent" as controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm
+	control "Name Loaded\nTo The\nRegistry" as controlloadnameregistry
+	control "Welcome To\nThe Scrum\nAlliance" as controlwelcomescrumalliance
+	control "Activate Membership" as controlactivatemembershiploadnameregistry
+	control "Approved For\nPractitioner Status" as controlapprovechargefeepractitionerstatus
+	control "Charged A\nFee" as controlchargefee
+
+	thingregistry <.. thingname
+	actorcsm --- thingemailwelcomescrumalliancecsm
+	actorcsm --- thingsiteinterface
+	actorcsm --- thingregistryinterface
+	actorcsm --- thingstatusinterface
+	actorcsm --- thingfeeinterface
+	thingsite --- controlbecomehavenamesite
+	thingsiteinterface --> controlbecomehavenamesite
+	controlbecomehavenamesite --> controlhavename
+	thingname --- controlhavename
+	thingregistry --- controlhavename
+	thingregistryinterface --> controlhavename
+	thingmembership --- controlregistermembershiploadnameregistry
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlregistermembershiploadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlregistermembershiploadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm
+	controlregistermembershiploadnameregistry --> controlloadnameregistry
+	thingregistry --- controlloadnameregistry
+	thingname --- controlloadnameregistry
+	controlactivatemembershiploadnameregistry --> controlloadnameregistry
+	thingregistryinterface --> controlloadnameregistry
+	thingemailwelcomescrumalliancecsm --> controlwelcomescrumalliance
+	thingscrumalliance --- controlwelcomescrumalliance
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlwelcomescrumalliance
+	thingemailwelcomescrumalliancecsm --> controlactivatemembershiploadnameregistry
+	thingmembership --- controlactivatemembershiploadnameregistry
+	controlsendemailwelcomescrumalliancecsminstructionregistermembershiploadnameregistrycsm --> controlactivatemembershiploadnameregistry
+	thingpractitionerstatus --- controlapprovechargefeepractitionerstatus
+	thingstatusinterface --> controlapprovechargefeepractitionerstatus
+	controlapprovechargefeepractitionerstatus --> controlchargefee
+	thingfee --- controlchargefee
+	thingfeeinterface --> controlchargefee
+
+@enduml

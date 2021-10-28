@@ -1,0 +1,216 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "App" as thingapp
+	entity "Type" as thingtype
+	entity "Dataset Instance" as thingdatasetinstance
+	entity "Artifact" as thingartifact
+	entity "Instance" as thinginstance
+	entity "Multiple Application" as thingmultipleapplication
+	entity "App" as thingotherapp
+	entity "New Code" as thingnewcode
+	entity "Version Conflict\nError" as thingversionconflicterror #grey
+	entity "Implementation" as thingimplementation
+	entity "System" as thingsystem
+	entity "Runtime" as thingruntime
+	entity "Ui" as thingUI
+	entity "Administrative ,\nCustom Operation" as thingadministrativecustomoperation
+	entity "Cli" as thingCLI
+	entity "Rest" as thingREST
+	entity "Exist Dataset" as thingexistingdataset
+	entity "Unit Test" as thingunittest
+	entity "Hydrator Pipeline" as thinghydratorpipeline
+	actor "App Developer" as actorappdeveloper
+	circle "Code" as thingcode
+	circle "New Version" as thingnewversion
+	circle "Dataset" as thingotherdataset
+	circle "Old Version" as thingolderversion
+	circle "Different Version" as thingdifferentversion
+	circle "Interface" as thinginterface
+	circle "Specific Version" as thingspecificversion
+	boundary "Dataset Type" as thingdatasettype
+	boundary "Deployment" as thingdeployment
+	boundary "App\nInterface" as thingappinterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Instance\nInterface" as thinginstanceinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Artifact\nInterface" as thingartifactinterface #grey
+	boundary "Cli\nInterface" as thingcliinterface #grey
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	boundary "Rest\nInterface" as thingrestinterface #grey
+	control "Include The\nCode Of\nA Dataset\nType In\nApp Artifact" as controlincludecode
+	control "Create A\nDataset Of\nThat Type\nWhen Deploying\nThe App" as controlcreatedatasetapp
+	control "Deploying A\nNew Version\nOf The\nApp Includes" as controldeploydeploynewversionpartnewversion
+	control "Deploy A\nNew Version\nOf A\nDataset Type\nAs Part" as controldeploynewversionpart
+	control "Affecting Other\nDatasets Of\nThis Type" as controlaffectdeploynewversionpartotherdataset
+	control "Explore A\nDataset Instance\nOf A\nType Deployed\nAs Part\nOf An\nApp" as controlexploredatasetinstance
+	control "Deploy An\nArtifact" as controldeployensurethatmoinsPRONmoinsartifact
+	control "Creating An\nApp Not\nCreate Instance" as controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	control "Ensure That" as controlensurethat
+	control "Creating An\nApp Not\nCreate Any\nDataset Types" as controlcreatedeployensurethatartifactapp
+	control "Share A\nDataset Type\nAcross Multiple\nApplications Include\nThe Dataset\nType's Code\nIn Artifacts" as controlsharedatasettypemultipleapplication
+	control "Using The\nNew Code" as controlusenewcode
+	control "Deploy A\nNew Version\nOf An\nApp Includes\nA Shared\nDataset Type\nThat Dataset\nInstances This\nApp Start\nDataset Instances\nOther Apps\nUnchanged" as controldeployensurethatnewversiondatasetinstance
+	control "Deploy A\nNew Version\nOf An\nApp Includes\nAn Older\nVersion Of\nDataset Type\nAnother App" as controldeployensurethatnewversion
+	control "Ensure" as controlensure
+	control "Shares Deploy\nA New\nVersion Of\nAn App\nIncludes A\nDifferent Version\nOf Dataset\nType Another\nApp This\nApp A\nDataset Instance\nOf This\nType With\nThe Other\nApp The\nDeployment Fail\nWith A\nVersion Conflict\nError" as controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	control "Share A\nDataset Type" as controlsharedatasettype
+	control "Depend On\nThe Interface\nOf A\nDataset Type\nIn App" as controldependinterface
+	control "Have" as controlhave
+	control "Write Unit\nTests For\nAn App\nDepends On\nThe Interface\nOf A\nDataset Type" as controlwriteunittestsapp
+	control "Create A\nDataset Instance\nWith A\nSpecific Version\nOf A\nDataset Type" as controlcreatedatasetinstancespecificversion
+	control "Ensure Dataset\nInstances Hydrator\nPipelines Accessible\nTo The\nApp" as controlensuredatasetinstanceapp
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nApp" as controlperformadministrativecustomoperationdatasetinstance
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nThe Cli" as controlperformadministrativecustomoperationdatasetinstanceCLI
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nThe Ui" as controlperformadministrativecustomoperationdatasetinstanceUI
+	control "Perform Administrative,\nCustom Operations\nOn Dataset\nInstances From\nRest" as controlperformadministrativecustomoperationdatasetinstanceREST
+	control "Tolerate Existing\nDatasets" as controltolerateexistingdataset
+
+	thingtype *-- thingdataset
+	thingolderversion <.. thingapp
+	thingdifferentversion <.. thingapp
+	thingnewversion <.. thingapp
+	thinginterface <.. thingapp
+	thinginstance <.. thingapp
+	thingtype <.. thingapp
+	thingapp <.. thingtype
+	thingotherapp <.. thingtype
+	thingmultipleapplication <.. thingtype
+	thingdatasetinstance <.. thingtype
+	thingdataset <.. thingtype
+	thingapp <.. thingdatasetinstance
+	thingotherapp <.. thingdatasetinstance
+	thinghydratorpipeline <.. thingdatasetinstance
+	thingUI <.. thingdatasetinstance
+	thingREST <.. thingdatasetinstance
+	thingCLI <.. thingdatasetinstance
+	thingapp <.. thingartifact
+	thingtype <.. thinginstance
+	thingspecificversion <.. thinginstance
+	thingdataset <.. thinginstance
+	thingcode <.. thingmultipleapplication
+	thingnewversion <.. thingversionconflicterror
+	thingdatasetinstance <.. thingadministrativecustomoperation
+	thingapp <.. thingunittest
+	thingtype *-- thingcode
+	thingartifact *-- thingcode
+	thingapp *-- thingnewversion
+	thingtype *-- thingotherdataset
+	thingtype *-- thinginterface
+	thingdataset *-- thingspecificversion
+	thingtype *-- thingspecificversion
+	actorappdeveloper --- thingdatasettype
+	actorappdeveloper --- thingdeployment
+	actorappdeveloper --- thingtypeinterface
+	actorappdeveloper --- thinginstanceinterface
+	actorappdeveloper --- thingartifactinterface
+	actorappdeveloper --- thingcliinterface
+	actorappdeveloper --- thinguiinterface
+	actorappdeveloper --- thingrestinterface
+	thingcode --- controlincludecode
+	thingdatasettype --> controlincludecode
+	thingapp --- controlincludecode
+	thingdataset --- controlcreatedatasetapp
+	thingtype --- controlcreatedatasetapp
+	thingapp --- controlcreatedatasetapp
+	thingappinterface --> controlcreatedatasetapp
+	thingapp --- controldeploydeploynewversionpartnewversion
+	thingnewversion --- controldeploydeploynewversionpartnewversion
+	thingappinterface --> controldeploydeploynewversionpartnewversion
+	controldeploydeploynewversionpartnewversion --> controldeploynewversionpart
+	thingnewversion --- controldeploynewversionpart
+	thingdatasettype --> controldeploynewversionpart
+	controlaffectdeploynewversionpartotherdataset --> controldeploynewversionpart
+	thingartifact --- controldeploynewversionpart
+	thingotherdataset --- controlaffectdeploynewversionpartotherdataset
+	thingtype --- controlaffectdeploynewversionpartotherdataset
+	thingtypeinterface --> controlaffectdeploynewversionpartotherdataset
+	thingapp --- controlexploredatasetinstance
+	thingtype --- controlexploredatasetinstance
+	thingappinterface --> controlexploredatasetinstance
+	thinginstance --- controlexploredatasetinstance
+	controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance --> controldeployensurethatmoinsPRONmoinsartifact
+	thinginstanceinterface --> controldeployensurethatmoinsPRONmoinsartifact
+	thingartifact --- controldeployensurethatmoinsPRONmoinsartifact
+	controlcreatedeployensurethatartifactapp --> controldeployensurethatmoinsPRONmoinsartifact
+	thingdatasetinterface --> controldeployensurethatmoinsPRONmoinsartifact
+	thinginstance --- controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	thinginstanceinterface --> controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	thingapp --- controlcreatedeployensurethatmoinsPRONmoinsartifactappinstance
+	controldeployensurethatnewversiondatasetinstance --> controlensurethat
+	controldeployensurethatnewversion --> controlensurethat
+	thingtypeinterface --> controlensurethat
+	controldeployensurethatmoinsPRONmoinsartifact --> controlensurethat
+	thingapp --- controlcreatedeployensurethatartifactapp
+	thingdatasetinterface --> controlcreatedeployensurethatartifactapp
+	thingtype --- controlcreatedeployensurethatartifactapp
+	thingmultipleapplication --- controlsharedatasettypemultipleapplication
+	thingartifactinterface --> controlsharedatasettypemultipleapplication
+	thingcode --- controlsharedatasettypemultipleapplication
+	thingartifact --- controlsharedatasettypemultipleapplication
+	thingtype --- controlsharedatasettypemultipleapplication
+	thingnewcode --- controlusenewcode
+	controldeployensurethatnewversiondatasetinstance --> controlusenewcode
+	thinginstanceinterface --> controlusenewcode
+	thingdatasetinstance --- controldeployensurethatnewversiondatasetinstance
+	thingapp --- controldeployensurethatnewversiondatasetinstance
+	thingnewversion --- controldeployensurethatnewversiondatasetinstance
+	thinginstanceinterface --> controldeployensurethatnewversiondatasetinstance
+	thingtype --- controldeployensurethatnewversiondatasetinstance
+	thingolderversion --- controldeployensurethatnewversion
+	thingdatasettype --> controldeployensurethatnewversion
+	thingapp --- controldeployensurethatnewversion
+	thingnewversion --- controldeployensurethatnewversion
+	thingtypeinterface --> controldeployensurethatnewversion
+	controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp --> controlensure
+	thingappinterface --> controlensure
+	thingdeployment --> controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingversionconflicterror --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdifferentversion --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdatasettype --> controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingapp --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingtype --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingnewversion --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingotherapp --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thinginstance --- controldeployensuredeploymentversionconflicterrornewversionappdatasetinstanceotherapp
+	thingdatasettype --> controlsharedatasettype
+	thingtypeinterface --> controlsharedatasettype
+	thinginterface --- controldependinterface
+	thingdatasettype --> controldependinterface
+	thingapp --- controldependinterface
+	thingappinterface --> controldependinterface
+	thingunittest --- controlwriteunittestsapp
+	thingapp --- controlwriteunittestsapp
+	thinginterface --- controlwriteunittestsapp
+	thingdatasetinterface --> controlwriteunittestsapp
+	thingtype --- controlwriteunittestsapp
+	thingspecificversion --- controlcreatedatasetinstancespecificversion
+	thingdatasetinterface --> controlcreatedatasetinstancespecificversion
+	thingtype --- controlcreatedatasetinstancespecificversion
+	thinginstance --- controlcreatedatasetinstancespecificversion
+	thingapp --- controlensuredatasetinstanceapp
+	thingdatasetinstance --- controlensuredatasetinstanceapp
+	thingappinterface --> controlensuredatasetinstanceapp
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstance
+	thingapp --- controlperformadministrativecustomoperationdatasetinstance
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstance
+	thingappinterface --> controlperformadministrativecustomoperationdatasetinstance
+	thingCLI --- controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingcliinterface --> controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceCLI
+	thingUI --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thinguiinterface --> controlperformadministrativecustomoperationdatasetinstanceUI
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceUI
+	thingREST --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingrestinterface --> controlperformadministrativecustomoperationdatasetinstanceREST
+	thingdatasetinstance --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingadministrativecustomoperation --- controlperformadministrativecustomoperationdatasetinstanceREST
+	thingexistingdataset --- controltolerateexistingdataset
+	thingdatasetinterface --> controltolerateexistingdataset
+
+@enduml

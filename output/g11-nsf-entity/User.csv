@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Article,shape=partialRectangle,null,null,data_base
+201,Video,shape=partialRectangle,null,null,data_base
+202,Website Recruitment\nTest,shape=partialRectangle,null,null,data_base
+203,User,rounded=0,null,null,external_entity
+204,"Interested , Nsf Person",rounded=0,null,null,external_entity
+205,User Interview,rounded=0,null,null,external_entity
+206,User Researcher,rounded=0,null,null,external_entity
+207,Add A Video To Article,ellipse,null,null,process
+208,Know,ellipse,null,null,process
+209,Set Up A Website Recruitment Test,ellipse,null,null,process
+211,,endArrow=classic,203,207,endArrow=classic
+212,,endArrow=classic,206,209,endArrow=classic
+213,Video,endArrow=classic,207,201,endArrow=classic
+214,Article,endArrow=classic,207,200,endArrow=classic
+215,Website Recruitment\nTest,endArrow=classic,209,202,endArrow=classic

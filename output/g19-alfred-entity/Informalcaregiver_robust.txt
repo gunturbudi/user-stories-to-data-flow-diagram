@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Carer" as thingcarer
+	entity "Game" as thinggame
+	actor "Informalcaregiver" as actorInformalCaregiver
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Have A\nGame That\nThe Carer\nTogether Play\nWith The\nUser" as controlhavegame
+
+	thinguser <.. thingcarer
+	thingcarer <.. thinggame
+	thinguser <.. thinggame
+	actorInformalCaregiver --- thinguserinterface
+	thinggame --- controlhavegame
+	thingcarer --- controlhavegame
+	thinguser --- controlhavegame
+	thinguserinterface --> controlhavegame
+
+@enduml

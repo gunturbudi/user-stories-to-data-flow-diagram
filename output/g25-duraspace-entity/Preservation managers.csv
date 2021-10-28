@@ -1,0 +1,67 @@
+id,value,style,source,target,type
+200,Format Version,shape=partialRectangle,null,null,data_base
+201,Integrity,shape=partialRectangle,null,null,data_base
+202,File Format,shape=partialRectangle,null,null,data_base
+203,Creation Date,shape=partialRectangle,null,null,data_base
+204,Useful File,shape=partialRectangle,null,null,data_base
+205,Aspect,shape=partialRectangle,null,null,data_base
+206,Obsolescence,shape=partialRectangle,null,null,data_base
+207,File Size,shape=partialRectangle,null,null,data_base
+208,Object,shape=partialRectangle,null,null,data_base
+209,Authenticity,shape=partialRectangle,null,null,data_base
+210,Preservation Managers,shape=partialRectangle,null,null,data_base
+211,Question,shape=partialRectangle,null,null,data_base
+212,Master File,shape=partialRectangle,null,null,data_base
+213,Preservation Manager,shape=partialRectangle,null,null,data_base
+214,Dams Manager,rounded=0,null,null,external_entity
+215,Impending Monitoring Integrity Obsolescence Including Creation Date,ellipse,null,null,process
+216,Indicate To Preservation Managers Aspects Of A Useful Master File,ellipse,null,null,process
+217,Impending Monitoring Integrity Obsolescence Including File Size,ellipse,null,null,process
+218,Indicate To Aspects Of A Useful File,ellipse,null,null,process
+219,Impending Monitoring Integrity Obsolescence Including Format Version,ellipse,null,null,process
+220,Impending Monitoring Integrity Obsolescence Including File Format,ellipse,null,null,process
+221,Know Via Preservation Managers,ellipse,null,null,process
+222,Know Of Any Object For Which Authenticity Is,ellipse,null,null,process
+223,Update To A More Current File Format,ellipse,null,null,process
+224,Know Of Any Object,ellipse,null,null,process
+225,Know Of Any Object For Which Integrity Is In Question,ellipse,null,null,process
+227,,endArrow=classic,214,215,endArrow=classic
+228,,endArrow=classic,214,216,endArrow=classic
+229,,endArrow=classic,214,217,endArrow=classic
+230,,endArrow=classic,214,219,endArrow=classic
+231,,endArrow=classic,214,220,endArrow=classic
+232,,endArrow=classic,214,221,endArrow=classic
+233,,endArrow=classic,214,222,endArrow=classic
+234,,endArrow=classic,214,223,endArrow=classic
+235,,endArrow=classic,214,224,endArrow=classic
+236,,endArrow=classic,214,225,endArrow=classic
+237,,endArrow=classic,215,218,endArrow=classic
+238,Creation Date,endArrow=classic,215,203,endArrow=classic
+239,Integrity,endArrow=classic,215,201,endArrow=classic
+240,Obsolescence,endArrow=classic,215,206,endArrow=classic
+241,Master File,endArrow=classic,216,212,endArrow=classic
+242,Preservation Managers,endArrow=classic,216,210,endArrow=classic
+243,Aspect,endArrow=classic,216,205,endArrow=classic
+244,,endArrow=classic,217,216,endArrow=classic
+245,Integrity,endArrow=classic,217,201,endArrow=classic
+246,Obsolescence,endArrow=classic,217,206,endArrow=classic
+247,File Size,endArrow=classic,217,207,endArrow=classic
+248,Aspect,endArrow=classic,218,205,endArrow=classic
+249,Useful File,endArrow=classic,218,204,endArrow=classic
+250,,endArrow=classic,219,218,endArrow=classic
+251,Format Version,endArrow=classic,219,200,endArrow=classic
+252,Integrity,endArrow=classic,219,201,endArrow=classic
+253,Obsolescence,endArrow=classic,219,206,endArrow=classic
+254,,endArrow=classic,220,218,endArrow=classic
+255,File Format,endArrow=classic,220,202,endArrow=classic
+256,Integrity,endArrow=classic,220,201,endArrow=classic
+257,Obsolescence,endArrow=classic,220,206,endArrow=classic
+258,Preservation Manager,endArrow=classic,221,213,endArrow=classic
+259,Authenticity,endArrow=classic,222,209,endArrow=classic
+260,Object,endArrow=classic,222,208,endArrow=classic
+261,File Format,endArrow=classic,223,202,endArrow=classic
+262,,endArrow=classic,224,223,endArrow=classic
+263,Object,endArrow=classic,224,208,endArrow=classic
+264,Object,endArrow=classic,225,208,endArrow=classic
+265,Question,endArrow=classic,225,211,endArrow=classic
+266,Integrity,endArrow=classic,225,201,endArrow=classic

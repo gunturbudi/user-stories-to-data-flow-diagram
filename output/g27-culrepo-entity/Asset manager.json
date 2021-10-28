@@ -1,0 +1,151 @@
+[
+  {
+    "text": "As an asset manager, I want to be assured that the digital copy I deposit is stored redundantly, so that when one copy suffers destruction or unwanted changes, I still have other good copies to restore from.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "digital copy",
+        "label": "PII"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "restore",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to be assured that threats to copies in one repository are not automatically incurred by the redundant copies.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "copies",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to be assured that the redundant copies are continuously monitored for unwanted changes, and that if/when changes do occur, there is a mechanism by which I can determine the original object and restore it to all copies.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "determine",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to be assured that the assets can be taken out of the repository, and that the assets taken out are the same as those that are put in.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "assets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to know what the intellectual value of the asset is to the institution at the time of deposit, so that I obtain guidance in the evaluation of it for current value for the institution.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "intellectual value",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to have a mechanism to obtain a listing or understanding of all the assets that have been deposited, and their current status.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "obtain",
+        "label": "Processing"
+      },
+      {
+        "text": "assets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to be assured that funding and staffing of the IR have a commitment to longevity of the repository through published plans and/or explicit contract clauses.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "funding",
+        "label": "PII"
+      },
+      {
+        "text": "staffing",
+        "label": "Data"
+      },
+      {
+        "text": "plans",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to be assured that there is a formal plan for the disposition of assets if the IR should cease.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "disposition of assets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an asset manager, I want to have mechanism to pass ownership/management of the assets to a successor.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "pass",
+        "label": "Processing"
+      },
+      {
+        "text": "ownership",
+        "label": "PII"
+      },
+      {
+        "text": "assets",
+        "label": "PII"
+      }
+    ]
+  }
+]

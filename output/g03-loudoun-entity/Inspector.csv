@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+2,Provide results of the inspection to the customer.,ellipse,null,null,process
+200,Inspection,shape=partialRectangle,null,null,data_base
+201,Inspector,rounded=0,null,null,external_entity
+202,Conduct Inspections,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Inspection,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Customer compliance,rounded=0,null,null,external_entity
+1002,Customer compliance,endArrow=classic,2,1001,endArrow=classic
+1003,Results of the inspection,rounded=0,null,null,external_entity
+1004,Results of the inspection,endArrow=classic,2,1003,endArrow=classic

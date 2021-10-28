@@ -1,0 +1,249 @@
+[
+  {
+    "text": "As a site editor, I want to set the following dates on a news item: Start Publishing Date, Old News Date, Stop Publishing Date, so that articles are published on and through appropriate dates.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "Old News Date",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to assign priority numbers to news items, so that I can indicate which articles I want featured most prominently on the site.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "news items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "course",
+        "label": "PII"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      },
+      {
+        "text": "original author",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to maintain a FAQ section, so that support gets fewer easily answered questions.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As the site editor, I want to include a teaser with each article, so that site visitors can decide if they want to read the rest.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "teaser",
+        "label": "PII"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As the site editor, I want to add an article to the site, so that the site has plenty of content.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to set start publishing dates, old article date, and stop publishing dates for articles, so that articles appear only during appropriate periods.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      },
+      {
+        "text": "old article date",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to be able to designate whether or not an ever makes the home page, so that the best content is featured most prominently.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "designate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As the site editor, I want to have pretty good control over how the article, so that articles are visually appealing.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to be able to indicate whether an article is publicly available or for members only, so that visitors are incentivized to become members.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to have a prominent area on the home page where I can put special announcements not necessarily news or articles, so that I can give them additional exposure.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "news",
+        "label": "PII"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to have some flexibility as to where things appear, so that I can accommodate different types of content.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to create the content of the What Is Scrum section, so that it's there for visitors.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to edit the content of the email automatically sent to new Certified Scrum Masters and Product Owners, so that I don't need to involve a programmer on simple email edits.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "Product Owners",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to post information in a trainers-only section, so that only trainers see it.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      }
+    ]
+  }
+]

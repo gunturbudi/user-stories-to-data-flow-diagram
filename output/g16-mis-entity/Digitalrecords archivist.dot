@@ -1,0 +1,137 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Method " ];
+201 [label="<f0>  |<f1> Etd " color=red];
+202 [label="<f0>  |<f1> Group " color=red];
+203 [label="<f0>  |<f1> Collection " color=red];
+204 [label="<f0>  |<f1> Multiple People " ];
+205 [label="<f0>  |<f1> Date " color=red];
+206 [label="<f0>  |<f1> Specific Collection " color=red];
+207 [label="<f0>  |<f1> Depositor " color=red];
+208 [label="<f0>  |<f1> Permission " color=red];
+209 [label="<f0>  |<f1> Deposit Window " color=red];
+210 [label="<f0>  |<f1> Embargo " ];
+211 [label="<f0>  |<f1> Tool " ];
+212 [label="<f0>  |<f1> Batch " ];
+213 [label="<f0>  |<f1> File " color=red];
+214 [label="<f0>  |<f1> Metadata Curator " color=red];
+215 [label="<f0>  |<f1> Embargoed Item " ];
+216 [label="<f0>  |<f1> Item " color=red];
+217 [label="<f0>  |<f1> Configuration " ];
+218 [label="<f0>  |<f1> Descriptive Record " color=red];
+219 [label="<f0>  |<f1> Fedora " ];
+220 [label="<f0>  |<f1> Use External " ];
+221 [label="<f0>  |<f1> Individual People " ];
+222 [label="<f0>  |<f1> Repository " ];
+223 [label="<f0>  |<f1> Access Control " ];
+224 [label="<f0>  |<f1> Default " ];
+225 [label="<f0>  |<f1> Release " color=red];
+226 [label="<f0>  |<f1> Deposit " color=red];
+227 [label="<f0>  |<f1> Summary " ];
+228 [label="Digitalrecords Archivist" shape=box];
+229 [label="{<f0> 1.0|<f1> Batch }" shape=Mrecord];
+230 [label="{<f0> 2.0|<f1> Have A Method Etds }" shape=Mrecord];
+231 [label="{<f0> 3.0|<f1> Add Multiple People }" shape=Mrecord];
+232 [label="{<f0> 4.0|<f1> Have }" shape=Mrecord];
+233 [label="{<f0> 5.0|<f1> Deposit Groups In Specific Collections }" shape=Mrecord];
+234 [label="{<f0> 6.0|<f1> Set A Date To Have These Permissions On These Depositors Pick Up On The Collection's Default Permission }" shape=Mrecord];
+235 [label="{<f0> 7.0|<f1> Set A Date The Deposit Window Closes }" shape=Mrecord];
+236 [label="{<f0> 8.0|<f1> Remove Multiple People }" shape=Mrecord];
+237 [label="{<f0> 9.0|<f1> Recognize Embargoes }" shape=Mrecord];
+238 [label="{<f0> 10.0|<f1> View Collection }" shape=Mrecord];
+239 [label="{<f0> 11.0|<f1> View Repository Administrator }" shape=Mrecord];
+240 [label="{<f0> 12.0|<f1> Download The Files }" shape=Mrecord];
+241 [label="{<f0> 13.0|<f1> Have The Batch Tool }" shape=Mrecord];
+242 [label="{<f0> 14.0|<f1> View Metadata Curator }" shape=Mrecord];
+243 [label="{<f0> 15.0|<f1> Set Embargoes }" shape=Mrecord];
+244 [label="{<f0> 16.0|<f1> Lift Embargoes On The Release Date }" shape=Mrecord];
+245 [label="{<f0> 17.0|<f1> Set The Access Controls To The Configuration On Item On That Date }" shape=Mrecord];
+246 [label="{<f0> 18.0|<f1> Edit The Length Of Embargoes }" shape=Mrecord];
+247 [label="{<f0> 19.0|<f1> Expose The Descriptive Record For Each Etd Item For Use External To Fedora }" shape=Mrecord];
+248 [label="{<f0> 20.0|<f1> Grant Embargo Privileges To Other Repository Administrators }" shape=Mrecord];
+249 [label="{<f0> 21.0|<f1> Add Individual People From Deposit Groups }" shape=Mrecord];
+250 [label="{<f0> 22.0|<f1> Remove Individual People From Deposit Groups }" shape=Mrecord];
+251 [label="{<f0> 23.0|<f1> View Summary Embargo Metadata For All Etds In The Repository }" shape=Mrecord];
+252 [label="{<f0> 24.0|<f1> Download Summary Embargo Metadata For All Etds In The Repository }" shape=Mrecord];
+228 -> 229
+228 -> 230
+228 -> 231
+228 -> 232
+228 -> 232
+228 -> 233
+228 -> 234
+228 -> 235
+228 -> 236
+228 -> 237
+228 -> 238
+228 -> 239
+228 -> 240
+228 -> 241
+228 -> 242
+228 -> 243
+228 -> 244
+228 -> 245
+228 -> 246
+228 -> 247
+228 -> 248
+228 -> 249
+228 -> 250
+228 -> 251
+228 -> 252
+230 -> 229
+230 -> 200 [label="Method"]
+230 -> 201 [label="Etd"]
+231 -> 233
+231 -> 204 [label="Multiple People"]
+232 -> 231
+232 -> 234
+232 -> 235
+232 -> 236
+232 -> 244
+232 -> 245
+232 -> 249
+232 -> 250
+232 -> 205 [label="Date"]
+233 -> 202 [label="Group"]
+233 -> 206 [label="Specific Collection"]
+234 -> 208 [label="Permission"]
+234 -> 207 [label="Depositor"]
+234 -> 205 [label="Date"]
+235 -> 205 [label="Date"]
+235 -> 209 [label="Deposit Window"]
+236 -> 233
+236 -> 204 [label="Multiple People"]
+237 -> 210 [label="Embargo"]
+238 -> 203 [label="Collection"]
+240 -> 213 [label="File"]
+241 -> 237
+241 -> 243
+241 -> 212 [label="Batch"]
+241 -> 211 [label="Tool"]
+242 -> 240
+242 -> 214 [label="Metadata Curator"]
+243 -> 210 [label="Embargo"]
+244 -> 210 [label="Embargo"]
+244 -> 205 [label="Date"]
+245 -> 223 [label="Access Control"]
+245 -> 217 [label="Configuration"]
+245 -> 216 [label="Item"]
+245 -> 205 [label="Date"]
+246 -> 210 [label="Embargo"]
+247 -> 218 [label="Descriptive Record"]
+247 -> 220 [label="Use External"]
+247 -> 219 [label="Fedora"]
+247 -> 201 [label="Etd"]
+249 -> 221 [label="Individual People"]
+249 -> 202 [label="Group"]
+250 -> 221 [label="Individual People"]
+250 -> 202 [label="Group"]
+251 -> 222 [label="Repository"]
+251 -> 201 [label="Etd"]
+252 -> 201 [label="Etd"]
+252 -> 222 [label="Repository"]
+234 -> 224 [label="Default"]
+244 -> 225 [label="Release"]
+233 -> 226 [label="Deposit"]
+251 -> 227 [label="Summary"]
+}

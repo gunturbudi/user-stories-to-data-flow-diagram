@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Student" as thingformerstudent
+	entity "Dissertation" as thingdissertation
+	entity "Work" as thingwork
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Student\nInterface" as thingstudentinterface #grey
+	control "Search For\nThe Dissertations\nIn The\nRepository" as controlsearchdissertationfindworkformerstudent
+	control "Find Work\nBy A\nFormer Student" as controlfindworkformerstudent
+
+	thingrepository <.. thingdissertation
+	thingformerstudent <.. thingwork
+	actorcornellfacultymember --- thingrepositoryinterface
+	actorcornellfacultymember --- thingstudentinterface
+	thingdissertation --- controlsearchdissertationfindworkformerstudent
+	thingrepository --- controlsearchdissertationfindworkformerstudent
+	thingrepositoryinterface --> controlsearchdissertationfindworkformerstudent
+	controlsearchdissertationfindworkformerstudent --> controlfindworkformerstudent
+	thingwork --- controlfindworkformerstudent
+	thingformerstudent --- controlfindworkformerstudent
+	thingstudentinterface --> controlfindworkformerstudent
+
+@enduml

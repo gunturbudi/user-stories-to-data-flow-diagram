@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Event" as thingevent
+	entity "New Course" as thingnewcourse
+	entity "Article" as thingarticle
+	entity "Teaser" as thingteaser
+	entity "Profile Page" as thingprofilepage #grey
+	entity "Rating" as thingrating
+	actor "Trainer" as actortrainer
+	actor "Site Editor" as actorsiteeditor
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Create Event" as controlcreateevent
+	control "Create A\nNew Course" as controlcreatenewcourse
+	control "Include A\nTeaser With\nEach Article" as controlincludeteaser
+	control "Show Rating\nUp On\nProfile Page" as controlshowrating
+
+	thingarticle <.. thingteaser
+	thingprofilepage <.. thingrating
+	actortrainer --- thingeventinterface
+	actortrainer --- thingcourseinterface
+	actorsiteeditor --- thingarticleinterface
+	actortrainer --- thingpageinterface
+	thingevent --- controlcreateevent
+	thingeventinterface --> controlcreateevent
+	thingnewcourse --- controlcreatenewcourse
+	thingcourseinterface --> controlcreatenewcourse
+	thingteaser --- controlincludeteaser
+	thingarticle --- controlincludeteaser
+	thingarticleinterface --> controlincludeteaser
+	thingrating --- controlshowrating
+	thingprofilepage --- controlshowrating
+	thingpageinterface --> controlshowrating
+
+@enduml

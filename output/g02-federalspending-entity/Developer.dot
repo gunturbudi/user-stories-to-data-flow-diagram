@@ -1,0 +1,120 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fabs Submission " color=red];
+201 [label="<f0>  |<f1> Update " color=red];
+202 [label="<f0>  |<f1> Fundingagencycode " color=red];
+203 [label="<f0>  |<f1> Fabs Sample\nFile " ];
+204 [label="<f0>  |<f1> Historical Fabs " ];
+205 [label="<f0>  |<f1> Datum " ];
+206 [label="<f0>  |<f1> Frec Derivation " ];
+207 [label="<f0>  |<f1> Frec Paradigm " ];
+208 [label="<f0>  |<f1> Validation " color=red];
+209 [label="<f0>  |<f1> Gap " ];
+210 [label="<f0>  |<f1> Duplicate Transaction " ];
+211 [label="<f0>  |<f1> Publishing Decision " ];
+212 [label="<f0>  |<f1> Database " color=red];
+213 [label="<f0>  |<f1> User " color=red];
+214 [label="<f0>  |<f1> Publish ,\nNew Datum " ];
+215 [label="<f0>  |<f1> Existent Record " color=red];
+216 [label="<f0>  |<f1> Case " color=red];
+217 [label="<f0>  |<f1> Agency " color=red];
+218 [label="<f0>  |<f1> Fabs " color=red];
+219 [label="<f0>  |<f1> D File " color=red];
+220 [label="<f0>  |<f1> Good Way " ];
+221 [label="<f0>  |<f1> Fabs Group " color=red];
+222 [label="<f0>  |<f1> Time " color=red];
+223 [label="<f0>  |<f1> Broker Application " color=red];
+224 [label="<f0>  |<f1> Rule " ];
+225 [label="<f0>  |<f1> Gtas Window " ];
+226 [label="<f0>  |<f1> Feed " ];
+227 [label="Developer" shape=box];
+228 [label="{<f0> 1.0|<f1> Log }" shape=Mrecord];
+229 [label="{<f0> 2.0|<f1> Add The Updates On A Fabs Submission To Modified }" shape=Mrecord];
+230 [label="{<f0> 3.0|<f1> Cached Managed }" shape=Mrecord];
+231 [label="{<f0> 4.0|<f1> Remove Fundingagencycode }" shape=Mrecord];
+232 [label="{<f0> 5.0|<f1> Update The Fabs Sample File }" shape=Mrecord];
+233 [label="{<f0> 6.0|<f1> Indexed }" shape=Mrecord];
+234 [label="{<f0> 7.0|<f1> Include The Frec Derivations }" shape=Mrecord];
+235 [label="{<f0> 8.0|<f1> Provide Fabs Groups Function Under The Frec Paradigm }" shape=Mrecord];
+236 [label="{<f0> 9.0|<f1> Deal With The Gap Between The Publishing Decision }" shape=Mrecord];
+237 [label="{<f0> 10.0|<f1> Prevent Duplicate Transactions Published }" shape=Mrecord];
+238 [label="{<f0> 11.0|<f1> Deal With The Time Gap Between Validation }" shape=Mrecord];
+239 [label="{<f0> 12.0|<f1> Access Broker Application Data }" shape=Mrecord];
+240 [label="{<f0> 13.0|<f1> Update The Validation Broker Rule Table }" shape=Mrecord];
+241 [label="{<f0> 14.0|<f1> Account For The Rule Updates In Db-2213 }" shape=Mrecord];
+242 [label="{<f0> 15.0|<f1> Add The Gtas Window Data To The Database }" shape=Mrecord];
+243 [label="{<f0> 16.0|<f1> Prevent Users From Publishing, Double Fabs Submissions Refreshing }" shape=Mrecord];
+244 [label="{<f0> 17.0|<f1> Correct Existent Records }" shape=Mrecord];
+245 [label="{<f0> 18.0|<f1> Ensure }" shape=Mrecord];
+246 [label="{<f0> 19.0|<f1> Delete Existent Records }" shape=Mrecord];
+247 [label="{<f0> 20.0|<f1> Clarify To Users }" shape=Mrecord];
+248 [label="{<f0> 21.0|<f1> Determine }" shape=Mrecord];
+249 [label="{<f0> 22.0|<f1> Include Fpds }" shape=Mrecord];
+250 [label="{<f0> 23.0|<f1> Include Both Historical, Data, Extracted Feed Data }" shape=Mrecord];
+251 [label="{<f0> 24.0|<f1> Load Historical Fpds Data }" shape=Mrecord];
+252 [label="{<f0> 25.0|<f1> Determine The Best Way }" shape=Mrecord];
+26 [label="{<f0> 26.0|<f1> Troubleshoot issues with particular submissions and functions. }" shape=Mrecord];
+227 -> 26
+1001 [label="<f0>  |<f1> Submissions " color=red];
+26 -> 1001 [label="Submissions"]
+227 -> 229
+227 -> 230
+227 -> 231
+227 -> 232
+227 -> 233
+227 -> 234
+227 -> 235
+227 -> 236
+227 -> 237
+227 -> 239
+227 -> 240
+227 -> 241
+227 -> 242
+227 -> 243
+227 -> 244
+227 -> 245
+227 -> 246
+227 -> 247
+227 -> 249
+227 -> 250
+227 -> 251
+227 -> 252
+229 -> 201 [label="Update"]
+229 -> 200 [label="Fabs Submission"]
+231 -> 202 [label="Fundingagencycode"]
+232 -> 231
+232 -> 203 [label="Fabs Sample\nFile"]
+234 -> 206 [label="Frec Derivation"]
+235 -> 221 [label="Fabs Group"]
+235 -> 207 [label="Frec Paradigm"]
+236 -> 209 [label="Gap"]
+236 -> 211 [label="Publishing Decision"]
+237 -> 210 [label="Duplicate Transaction"]
+238 -> 208 [label="Validation"]
+238 -> 209 [label="Gap"]
+239 -> 205 [label="Datum"]
+240 -> 241
+241 -> 201 [label="Update"]
+241 -> 202 [label="Fundingagencycode"]
+242 -> 212 [label="Database"]
+242 -> 205 [label="Datum"]
+243 -> 213 [label="User"]
+243 -> 200 [label="Fabs Submission"]
+244 -> 215 [label="Existent Record"]
+245 -> 244
+245 -> 246
+246 -> 215 [label="Existent Record"]
+247 -> 213 [label="User"]
+249 -> 202 [label="Fundingagencycode"]
+250 -> 205 [label="Datum"]
+251 -> 205 [label="Datum"]
+252 -> 251
+252 -> 220 [label="Good Way"]
+231 -> 217 [label="Agency"]
+229 -> 218 [label="Fabs"]
+238 -> 222 [label="Time"]
+239 -> 223 [label="Broker Application"]
+240 -> 224 [label="Rule"]
+242 -> 225 [label="Gtas Window"]
+250 -> 226 [label="Feed"]
+}

@@ -1,0 +1,244 @@
+id,value,style,source,target,type
+200,Archon,shape=partialRectangle,null,null,data_base
+201,"Unique ,\nComponent Identifier",shape=partialRectangle,null,null,data_base
+202,Resource Component,shape=partialRectangle,null,null,data_base
+203,Subject Heading,shape=partialRectangle,null,null,data_base
+204,Standard Identifier,shape=partialRectangle,null,null,data_base
+205,Import,shape=partialRectangle,null,null,data_base
+206,Error,shape=partialRectangle,null,null,data_base
+207,Csv,shape=partialRectangle,null,null,data_base
+208,Resource,shape=partialRectangle,null,null,data_base
+209,Subject,shape=partialRectangle,null,null,data_base
+210,Read,shape=partialRectangle,null,null,data_base
+211,View,shape=partialRectangle,null,null,data_base
+212,Accession,shape=partialRectangle,null,null,data_base
+213,Date,shape=partialRectangle,null,null,data_base
+214,Extent,shape=partialRectangle,null,null,data_base
+215,Subject Information,shape=partialRectangle,null,null,data_base
+216,Agent,shape=partialRectangle,null,null,data_base
+217,Note,shape=partialRectangle,null,null,data_base
+218,"Aid ,\nRelated Datum",shape=partialRectangle,null,null,data_base
+219,Administrative Datum,shape=partialRectangle,null,null,data_base
+220,Level,shape=partialRectangle,null,null,data_base
+221,Value,shape=partialRectangle,null,null,data_base
+222,Description,shape=partialRectangle,null,null,data_base
+223,Archivist,shape=partialRectangle,null,null,data_base
+224,Toolkit,shape=partialRectangle,null,null,data_base
+225,"Keyboard ,\nBased Navigation",shape=partialRectangle,null,null,data_base
+226,Archival Object,shape=partialRectangle,null,null,data_base
+227,Hierarchy,shape=partialRectangle,null,null,data_base
+228,Different Position,shape=partialRectangle,null,null,data_base
+229,Source,shape=partialRectangle,null,null,data_base
+230,Accession Component,shape=partialRectangle,null,null,data_base
+231,Ead,shape=partialRectangle,null,null,data_base
+232,Digital Object,shape=partialRectangle,null,null,data_base
+233,Instance,shape=partialRectangle,null,null,data_base
+234,Record,shape=partialRectangle,null,null,data_base
+235,Change,shape=partialRectangle,null,null,data_base
+236,Ead,shape=partialRectangle,null,null,data_base
+237,Frontend Application,shape=partialRectangle,null,null,data_base
+238,Name Form,shape=partialRectangle,null,null,data_base
+239,New Source,shape=partialRectangle,null,null,data_base
+240,Exist Source,shape=partialRectangle,null,null,data_base
+241,Subject Record,shape=partialRectangle,null,null,data_base
+242,Container,shape=partialRectangle,null,null,data_base
+243,Repository,shape=partialRectangle,null,null,data_base
+244,Collection Management\nSubrecord,shape=partialRectangle,null,null,data_base
+245,Accessions Datum,shape=partialRectangle,null,null,data_base
+246,Information,shape=partialRectangle,null,null,data_base
+247,Eac Cpf,shape=partialRectangle,null,null,data_base
+248,Rights Management\nStatement,shape=partialRectangle,null,null,data_base
+249,Marcxml,shape=partialRectangle,null,null,data_base
+250,Archival,shape=partialRectangle,null,null,data_base
+251,Object,shape=partialRectangle,null,null,data_base
+252,Event,shape=partialRectangle,null,null,data_base
+253,Location,shape=partialRectangle,null,null,data_base
+254,Archivist,rounded=0,null,null,external_entity
+255,Import Ead Files Exported Archon,ellipse,null,null,process
+256,"Assign A Unique, Component Identifier To A Resource Component",ellipse,null,null,process
+257,Associate A Standard Identifier With A Subject Heading,ellipse,null,null,process
+258,Understand,ellipse,null,null,process
+259,Import Accessions Data In Csv,ellipse,null,null,process
+260,Import Resources From Marcxml Records,ellipse,null,null,process
+261,See Dates In,ellipse,null,null,process
+262,See Dates In The Read,ellipse,null,null,process
+263,See Extent,ellipse,null,null,process
+264,Edit Views For Accessions Before The List Of Subjects,ellipse,null,null,process
+265,Edit Views For Resource,ellipse,null,null,process
+266,Import Agent Information From Eac Cpf Records,ellipse,null,null,process
+267,Export Agent Records As Eac Cpf,ellipse,null,null,process
+268,Import Only Agent From Marcxml Records,ellipse,null,null,process
+269,Import Subject Information,ellipse,null,null,process
+270,Add Notes To Other Record Types,ellipse,null,null,process
+271,"Finding Add Administrative Data About The Archival Description Aid, Related Data To A Top Level Resource",ellipse,null,null,process
+272,Specify Another Value,ellipse,null,null,process
+273,Assign A Level Of Description To A Resource Component,ellipse,null,null,process
+274,Assign A Level Of Description To Resource,ellipse,null,null,process
+275,Rearrange Digital Object Hierarchy,ellipse,null,null,process
+276,"Rearrange The Resource Using Keyboard, Based Navigation",ellipse,null,null,process
+277,Dragging An Archival Object To A Different Position In The Hierarchy,ellipse,null,null,process
+278,Rearrange The Resource Description Hierarchy,ellipse,null,null,process
+279,Indicate,ellipse,null,null,process
+280,Export A Description As Ead,ellipse,null,null,process
+281,Create Event Records,ellipse,null,null,process
+282,Edit Event Records,ellipse,null,null,process
+283,Manage Digital Objects,ellipse,null,null,process
+284,Associate An Instance With Resource,ellipse,null,null,process
+285,Associate An Instance With A Resource Component,ellipse,null,null,process
+286,Overwrite Changes To A Record,ellipse,null,null,process
+287,Create Rights Management Statements,ellipse,null,null,process
+288,Edit Rights Management Statements,ellipse,null,null,process
+289,Upload An Ead For Import Within The Frontend Application,ellipse,null,null,process
+290,Import Ead Data,ellipse,null,null,process
+291,Specify The Source For A Name Form Of An Agent,ellipse,null,null,process
+292,Edit Existing Sources,ellipse,null,null,process
+293,Add New Sources,ellipse,null,null,process
+294,Create Agent Records,ellipse,null,null,process
+295,Edit Agent Records,ellipse,null,null,process
+296,Create A Resource Record,ellipse,null,null,process
+297,Edit A Resource Record,ellipse,null,null,process
+298,Associate A Subject Record With A Resource Description,ellipse,null,null,process
+299,Assign Location Information To A Container,ellipse,null,null,process
+300,Search Within A Repository For Accession,ellipse,null,null,process
+301,Search Within A Repository For Digital Object,ellipse,null,null,process
+302,Search Within A Repository For Resource Records,ellipse,null,null,process
+303,Create A Collection Management Subrecord,ellipse,null,null,process
+304,Edit A Collection Management Subrecord,ellipse,null,null,process
+306,,endArrow=classic,254,255,endArrow=classic
+307,,endArrow=classic,254,255,endArrow=classic
+308,,endArrow=classic,254,256,endArrow=classic
+309,,endArrow=classic,254,257,endArrow=classic
+310,,endArrow=classic,254,259,endArrow=classic
+311,,endArrow=classic,254,260,endArrow=classic
+312,,endArrow=classic,254,261,endArrow=classic
+313,,endArrow=classic,254,262,endArrow=classic
+314,,endArrow=classic,254,263,endArrow=classic
+315,,endArrow=classic,254,264,endArrow=classic
+316,,endArrow=classic,254,265,endArrow=classic
+317,,endArrow=classic,254,266,endArrow=classic
+318,,endArrow=classic,254,267,endArrow=classic
+319,,endArrow=classic,254,268,endArrow=classic
+320,,endArrow=classic,254,269,endArrow=classic
+321,,endArrow=classic,254,270,endArrow=classic
+322,,endArrow=classic,254,271,endArrow=classic
+323,,endArrow=classic,254,273,endArrow=classic
+324,,endArrow=classic,254,274,endArrow=classic
+325,,endArrow=classic,254,275,endArrow=classic
+326,,endArrow=classic,254,276,endArrow=classic
+327,,endArrow=classic,254,277,endArrow=classic
+328,,endArrow=classic,254,278,endArrow=classic
+329,,endArrow=classic,254,280,endArrow=classic
+330,,endArrow=classic,254,281,endArrow=classic
+331,,endArrow=classic,254,282,endArrow=classic
+332,,endArrow=classic,254,283,endArrow=classic
+333,,endArrow=classic,254,284,endArrow=classic
+334,,endArrow=classic,254,285,endArrow=classic
+335,,endArrow=classic,254,286,endArrow=classic
+336,,endArrow=classic,254,287,endArrow=classic
+337,,endArrow=classic,254,288,endArrow=classic
+338,,endArrow=classic,254,289,endArrow=classic
+339,,endArrow=classic,254,290,endArrow=classic
+340,,endArrow=classic,254,291,endArrow=classic
+341,,endArrow=classic,254,293,endArrow=classic
+342,,endArrow=classic,254,294,endArrow=classic
+343,,endArrow=classic,254,295,endArrow=classic
+344,,endArrow=classic,254,296,endArrow=classic
+345,,endArrow=classic,254,297,endArrow=classic
+346,,endArrow=classic,254,298,endArrow=classic
+347,,endArrow=classic,254,300,endArrow=classic
+348,,endArrow=classic,254,301,endArrow=classic
+349,,endArrow=classic,254,302,endArrow=classic
+350,,endArrow=classic,254,303,endArrow=classic
+351,,endArrow=classic,254,304,endArrow=classic
+352,Archon,endArrow=classic,255,200,endArrow=classic
+353,Toolkit,endArrow=classic,255,224,endArrow=classic
+354,"Unique ,\nComponent Identifier",endArrow=classic,256,201,endArrow=classic
+355,Standard Identifier,endArrow=classic,257,204,endArrow=classic
+356,Subject Heading,endArrow=classic,257,203,endArrow=classic
+357,Accessions Datum,endArrow=classic,259,245,endArrow=classic
+358,Csv,endArrow=classic,259,207,endArrow=classic
+359,Resource,endArrow=classic,260,208,endArrow=classic
+360,Record,endArrow=classic,260,234,endArrow=classic
+361,,endArrow=classic,261,264,endArrow=classic
+362,,endArrow=classic,261,265,endArrow=classic
+363,Date,endArrow=classic,261,213,endArrow=classic
+364,View,endArrow=classic,261,211,endArrow=classic
+365,Date,endArrow=classic,262,213,endArrow=classic
+366,Read,endArrow=classic,262,210,endArrow=classic
+367,Extent,endArrow=classic,263,214,endArrow=classic
+368,View,endArrow=classic,264,211,endArrow=classic
+369,Accession,endArrow=classic,264,212,endArrow=classic
+370,Subject,endArrow=classic,264,209,endArrow=classic
+371,Resource,endArrow=classic,265,208,endArrow=classic
+372,View,endArrow=classic,265,211,endArrow=classic
+373,Information,endArrow=classic,266,246,endArrow=classic
+374,Record,endArrow=classic,266,234,endArrow=classic
+375,Eac Cpf,endArrow=classic,267,247,endArrow=classic
+376,Record,endArrow=classic,267,234,endArrow=classic
+377,Agent,endArrow=classic,268,216,endArrow=classic
+378,Record,endArrow=classic,268,234,endArrow=classic
+379,Subject Information,endArrow=classic,269,215,endArrow=classic
+380,Note,endArrow=classic,270,217,endArrow=classic
+381,Administrative Datum,endArrow=classic,271,219,endArrow=classic
+382,"Aid ,\nRelated Datum",endArrow=classic,271,218,endArrow=classic
+383,Resource,endArrow=classic,271,208,endArrow=classic
+384,Description,endArrow=classic,271,222,endArrow=classic
+385,Value,endArrow=classic,272,221,endArrow=classic
+386,Level,endArrow=classic,273,220,endArrow=classic
+387,Description,endArrow=classic,273,222,endArrow=classic
+388,Resource Component,endArrow=classic,273,202,endArrow=classic
+389,Resource,endArrow=classic,274,208,endArrow=classic
+390,Level,endArrow=classic,274,220,endArrow=classic
+391,Description,endArrow=classic,274,222,endArrow=classic
+392,Hierarchy,endArrow=classic,275,227,endArrow=classic
+393,"Keyboard ,\nBased Navigation",endArrow=classic,276,225,endArrow=classic
+394,Resource,endArrow=classic,276,208,endArrow=classic
+395,,endArrow=classic,277,278,endArrow=classic
+396,Archival Object,endArrow=classic,277,226,endArrow=classic
+397,Different Position,endArrow=classic,277,228,endArrow=classic
+398,Hierarchy,endArrow=classic,277,227,endArrow=classic
+399,Hierarchy,endArrow=classic,278,227,endArrow=classic
+400,Ead,endArrow=classic,280,231,endArrow=classic
+401,Description,endArrow=classic,280,222,endArrow=classic
+402,Record,endArrow=classic,281,234,endArrow=classic
+403,Record,endArrow=classic,282,234,endArrow=classic
+404,Digital Object,endArrow=classic,283,232,endArrow=classic
+405,Resource,endArrow=classic,284,208,endArrow=classic
+406,Instance,endArrow=classic,284,233,endArrow=classic
+407,Instance,endArrow=classic,285,233,endArrow=classic
+408,Resource Component,endArrow=classic,285,202,endArrow=classic
+409,Container,endArrow=classic,285,242,endArrow=classic
+410,Change,endArrow=classic,286,235,endArrow=classic
+411,Record,endArrow=classic,286,234,endArrow=classic
+412,Rights Management\nStatement,endArrow=classic,287,248,endArrow=classic
+413,Rights Management\nStatement,endArrow=classic,288,248,endArrow=classic
+414,Ead,endArrow=classic,289,236,endArrow=classic
+415,Frontend Application,endArrow=classic,289,237,endArrow=classic
+416,Import,endArrow=classic,289,205,endArrow=classic
+417,Name Form,endArrow=classic,291,238,endArrow=classic
+418,Agent,endArrow=classic,291,216,endArrow=classic
+419,Source,endArrow=classic,291,229,endArrow=classic
+420,Exist Source,endArrow=classic,292,240,endArrow=classic
+421,New Source,endArrow=classic,293,239,endArrow=classic
+422,Record,endArrow=classic,294,234,endArrow=classic
+423,Record,endArrow=classic,295,234,endArrow=classic
+424,Record,endArrow=classic,296,234,endArrow=classic
+425,Record,endArrow=classic,297,234,endArrow=classic
+426,Subject Record,endArrow=classic,298,241,endArrow=classic
+427,Description,endArrow=classic,298,222,endArrow=classic
+428,Container,endArrow=classic,299,242,endArrow=classic
+429,Information,endArrow=classic,299,246,endArrow=classic
+430,Accession,endArrow=classic,300,212,endArrow=classic
+431,Repository,endArrow=classic,300,243,endArrow=classic
+432,Digital Object,endArrow=classic,301,232,endArrow=classic
+433,Repository,endArrow=classic,301,243,endArrow=classic
+434,Repository,endArrow=classic,302,243,endArrow=classic
+435,Resource,endArrow=classic,302,208,endArrow=classic
+436,Record,endArrow=classic,302,234,endArrow=classic
+437,Collection Management\nSubrecord,endArrow=classic,303,244,endArrow=classic
+438,Collection Management\nSubrecord,endArrow=classic,304,244,endArrow=classic
+594,Marcxml,endArrow=classic,260,249,endArrow=classic
+611,Archival,endArrow=classic,271,250,endArrow=classic
+632,Object,endArrow=classic,275,251,endArrow=classic
+659,Event,endArrow=classic,281,252,endArrow=classic
+704,Location,endArrow=classic,299,253,endArrow=classic

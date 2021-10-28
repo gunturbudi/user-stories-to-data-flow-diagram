@@ -1,0 +1,48 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Feedback" as thingfeedback
+	entity "File" as thingfile
+	entity "Format" as thingformat
+	entity "Repository" as thingrepository
+	entity "Thing" as thingthing
+	entity "Information" as thinginformation
+	entity "Datum" as thingdatum
+	entity "Metadata" as thingmetadata
+	actor "Depositor" as actordepositor
+	circle "Kind" as thingkind
+	circle "Specification" as thingspecification #grey
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	control "Get Feedback\nAlerting" as controlgetfeedbackfeedbackconformfileformatspecifications
+	control "Files Not\nConform To\nFormat Specifications" as controlconformfileformatspecifications
+	control "See" as controlsee
+	control "Get One" as controlgetone
+	control "Find Information\nWhich Data\nA Assigned\nWhat Metadata\nRequired" as controlfindinformationgetonemetadata
+
+	thingspecification <.. thingfile
+	thingrepository <.. thingthing
+	thingdatum <.. thinginformation
+	thingmetadata <.. thingdatum
+	thingthing *-- thingkind
+	thingformat *-- thingspecification
+	actordepositor --- thingfeedbackinterface
+	actordepositor --- thingformatinterface
+	actordepositor --- thingmetadatainterface
+	thingfeedback --- controlgetfeedbackfeedbackconformfileformatspecifications
+	thingfeedbackinterface --> controlgetfeedbackfeedbackconformfileformatspecifications
+	controlgetfeedbackfeedbackconformfileformatspecifications --> controlconformfileformatspecifications
+	thingfile --- controlconformfileformatspecifications
+	thingspecification --- controlconformfileformatspecifications
+	thingformatinterface --> controlconformfileformatspecifications
+	controlfindinformationgetonemetadata --> controlgetone
+	thingmetadatainterface --> controlgetone
+	thinginformation --- controlfindinformationgetonemetadata
+	thingdatum --- controlfindinformationgetonemetadata
+	thingmetadata --- controlfindinformationgetonemetadata
+	thingmetadatainterface --> controlfindinformationgetonemetadata
+
+@enduml

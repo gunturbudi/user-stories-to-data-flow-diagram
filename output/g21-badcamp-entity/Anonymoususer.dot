@@ -1,0 +1,212 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsor " color=red];
+201 [label="<f0>  |<f1> Dedicated Page " ];
+202 [label="<f0>  |<f1> Class " color=red];
+203 [label="<f0>  |<f1> Location " color=red];
+204 [label="<f0>  |<f1> View " ];
+205 [label="<f0>  |<f1> Offering " ];
+206 [label="<f0>  |<f1> Trainer " ];
+207 [label="<f0>  |<f1> Title " ];
+208 [label="<f0>  |<f1> Datetime " ];
+209 [label="<f0>  |<f1> Follow Information " ];
+210 [label="<f0>  |<f1> Skill Level " ];
+211 [label="<f0>  |<f1> Registration " color=red];
+212 [label="<f0>  |<f1> Logo " color=red];
+213 [label="<f0>  |<f1> Day Level " color=red];
+214 [label="<f0>  |<f1> Link " ];
+215 [label="<f0>  |<f1> Training " color=red];
+216 [label="<f0>  |<f1> Day Register " color=red];
+217 [label="<f0>  |<f1> Remain Registration " color=red];
+218 [label="<f0>  |<f1> Short Summary " ];
+219 [label="<f0>  |<f1> Intro Section " ];
+220 [label="<f0>  |<f1> Page " color=red];
+221 [label="<f0>  |<f1> Code Lounge " ];
+222 [label="<f0>  |<f1> Company " ];
+223 [label="<f0>  |<f1> Attendee " color=red];
+224 [label="<f0>  |<f1> Session " color=red];
+225 [label="<f0>  |<f1> Summit " color=red];
+226 [label="<f0>  |<f1> Event " color=red];
+227 [label="<f0>  |<f1> Blog " color=red];
+228 [label="<f0>  |<f1> Seat " color=red];
+229 [label="<f0>  |<f1> Specific Detail " ];
+230 [label="<f0>  |<f1> Sponsorship Person " color=red];
+231 [label="<f0>  |<f1> Job " color=red];
+232 [label="<f0>  |<f1> Schedule " color=red];
+233 [label="<f0>  |<f1> Badcamp " ];
+234 [label="<f0>  |<f1> Menu " ];
+235 [label="<f0>  |<f1> Notification " color=red];
+236 [label="<f0>  |<f1> User Profile " color=red];
+237 [label="<f0>  |<f1> Venue Detail " color=red];
+238 [label="<f0>  |<f1> Sponsorship Level " color=red];
+239 [label="<f0>  |<f1> Map " ];
+240 [label="<f0>  |<f1> Home " ];
+241 [label="<f0>  |<f1> User " color=red];
+242 [label="Anonymoususer" shape=box];
+243 [label="{<f0> 1.0|<f1> View A List Of Sponsors }" shape=Mrecord];
+244 [label="{<f0> 2.0|<f1> Learn More About }" shape=Mrecord];
+245 [label="{<f0> 3.0|<f1> Learn More About Datetime }" shape=Mrecord];
+246 [label="{<f0> 4.0|<f1> Have A Dedicated Page For Each Class }" shape=Mrecord];
+247 [label="{<f0> 5.0|<f1> Learn More About Location }" shape=Mrecord];
+248 [label="{<f0> 6.0|<f1> Learn More About Possibly A View }" shape=Mrecord];
+249 [label="{<f0> 7.0|<f1> Learn More About Skill Level }" shape=Mrecord];
+250 [label="{<f0> 8.0|<f1> Register For Class }" shape=Mrecord];
+251 [label="{<f0> 9.0|<f1> Learn More About Trainer }" shape=Mrecord];
+252 [label="{<f0> 10.0|<f1> Learn More About Title }" shape=Mrecord];
+253 [label="{<f0> 11.0|<f1> Learn More About Logo }" shape=Mrecord];
+254 [label="{<f0> 12.0|<f1> Learn More About Possibly A Map View }" shape=Mrecord];
+255 [label="{<f0> 13.0|<f1> Learn More About The Offering The Following Information Shown Registrations Remaining }" shape=Mrecord];
+256 [label="{<f0> 14.0|<f1> Have }" shape=Mrecord];
+257 [label="{<f0> 15.0|<f1> Have A Page With A List Of All Training Offerings }" shape=Mrecord];
+258 [label="{<f0> 16.0|<f1> Have A Training Landing Page With An Intro Section }" shape=Mrecord];
+259 [label="{<f0> 17.0|<f1> Promote Call For Trainings }" shape=Mrecord];
+260 [label="{<f0> 18.0|<f1> Have A Link On The Home Page To A List Of Training Options }" shape=Mrecord];
+261 [label="{<f0> 19.0|<f1> Find Out }" shape=Mrecord];
+262 [label="{<f0> 20.0|<f1> See A List Of Attendees With This Company }" shape=Mrecord];
+263 [label="{<f0> 21.0|<f1> View Venue Details }" shape=Mrecord];
+264 [label="{<f0> 22.0|<f1> See Training }" shape=Mrecord];
+265 [label="{<f0> 23.0|<f1> See Summit }" shape=Mrecord];
+266 [label="{<f0> 24.0|<f1> See All Events That A Sponsor Is Sponsoring }" shape=Mrecord];
+267 [label="{<f0> 25.0|<f1> Sign Up For The Badcamp Newsletter }" shape=Mrecord];
+268 [label="{<f0> 26.0|<f1> Read The Blog }" shape=Mrecord];
+269 [label="{<f0> 27.0|<f1> See }" shape=Mrecord];
+270 [label="{<f0> 28.0|<f1> See Specific Details On Summits }" shape=Mrecord];
+271 [label="{<f0> 29.0|<f1> Learn About Sponsorship Levels }" shape=Mrecord];
+272 [label="{<f0> 30.0|<f1> Contact Jobs As A Sponsor The Sponsorship Person }" shape=Mrecord];
+273 [label="{<f0> 31.0|<f1> Learn }" shape=Mrecord];
+274 [label="{<f0> 32.0|<f1> Posting Jobs As A Sponsor }" shape=Mrecord];
+275 [label="{<f0> 33.0|<f1> See The Schedule }" shape=Mrecord];
+276 [label="{<f0> 34.0|<f1> Speak At Badcamp }" shape=Mrecord];
+277 [label="{<f0> 35.0|<f1> Register }" shape=Mrecord];
+278 [label="{<f0> 36.0|<f1> Find A Link In The Menu Links To The Registration Form }" shape=Mrecord];
+279 [label="{<f0> 37.0|<f1> Fill Out A User Registration Form }" shape=Mrecord];
+280 [label="{<f0> 38.0|<f1> Receive A Notification }" shape=Mrecord];
+281 [label="{<f0> 39.0|<f1> Submit A Session }" shape=Mrecord];
+282 [label="{<f0> 40.0|<f1> Find Session Information }" shape=Mrecord];
+41 [label="{<f0> 41.0|<f1> Find their class on on one page. }" shape=Mrecord];
+277 -> 41
+41 -> 202  [label="Class"]
+42 [label="{<f0> 42.0|<f1> Code with my friends. }" shape=Mrecord];
+242 -> 42
+1003 [label="<f0>  |<f1> Friends " color=red];
+42 -> 1003 [label="Friends"]
+43 [label="{<f0> 43.0|<f1> Reserve my spot. }" shape=Mrecord];
+242 -> 43
+1006 [label="<f0>  |<f1> Spot " color=red];
+43 -> 1006 [label="Spot"]
+44 [label="{<f0> 44.0|<f1> Help me get to the location. }" shape=Mrecord];
+270 -> 44
+1009 [label="<f0>  |<f1> Interests " color=red];
+44 -> 1009 [label="Interests"]
+45 [label="{<f0> 45.0|<f1> Determine the right level of sponsorship for my organization. }" shape=Mrecord];
+271 -> 45
+1012 [label="<f0>  |<f1> Organization " color=red];
+45 -> 1012 [label="Organization"]
+46 [label="{<f0> 46.0|<f1> Post my job listing on the badcamp site. }" shape=Mrecord];
+273 -> 46
+1015 [label="<f0>  |<f1> Job listing " color=red];
+46 -> 1015 [label="Job listing"]
+47 [label="{<f0> 47.0|<f1> Go!. }" shape=Mrecord];
+275 -> 47
+1018 [label="<f0>  |<f1> Day " color=red];
+47 -> 1018 [label="Day"]
+48 [label="{<f0> 48.0|<f1> Register for the camp and get an account on the website. }" shape=Mrecord];
+279 -> 48
+1021 [label="<f0>  |<f1> Account " color=red];
+48 -> 1021 [label="Account"]
+242 -> 243
+242 -> 245
+242 -> 246
+242 -> 247
+242 -> 249
+242 -> 250
+242 -> 251
+242 -> 252
+242 -> 253
+242 -> 254
+242 -> 255
+242 -> 257
+242 -> 258
+242 -> 259
+242 -> 260
+242 -> 262
+242 -> 263
+242 -> 264
+242 -> 265
+242 -> 266
+242 -> 267
+242 -> 268
+242 -> 270
+242 -> 271
+242 -> 273
+242 -> 274
+242 -> 275
+242 -> 276
+242 -> 277
+242 -> 278
+242 -> 279
+242 -> 280
+242 -> 281
+242 -> 282
+243 -> 200 [label="Sponsor"]
+243 -> 236 [label="User Profile"]
+245 -> 208 [label="Datetime"]
+246 -> 244
+246 -> 247
+246 -> 251
+246 -> 252
+246 -> 253
+246 -> 255
+246 -> 201 [label="Dedicated Page"]
+246 -> 202 [label="Class"]
+246 -> 203 [label="Location"]
+247 -> 203 [label="Location"]
+248 -> 204 [label="View"]
+249 -> 210 [label="Skill Level"]
+250 -> 202 [label="Class"]
+251 -> 206 [label="Trainer"]
+252 -> 207 [label="Title"]
+253 -> 212 [label="Logo"]
+254 -> 204 [label="View"]
+255 -> 205 [label="Offering"]
+255 -> 209 [label="Follow Information"]
+255 -> 211 [label="Registration"]
+257 -> 220 [label="Page"]
+257 -> 205 [label="Offering"]
+258 -> 219 [label="Intro Section"]
+258 -> 220 [label="Page"]
+259 -> 215 [label="Training"]
+260 -> 214 [label="Link"]
+260 -> 220 [label="Page"]
+262 -> 223 [label="Attendee"]
+262 -> 222 [label="Company"]
+262 -> 224 [label="Session"]
+262 -> 225 [label="Summit"]
+263 -> 237 [label="Venue Detail"]
+264 -> 215 [label="Training"]
+265 -> 225 [label="Summit"]
+266 -> 226 [label="Event"]
+266 -> 200 [label="Sponsor"]
+268 -> 227 [label="Blog"]
+270 -> 229 [label="Specific Detail"]
+270 -> 225 [label="Summit"]
+271 -> 238 [label="Sponsorship Level"]
+272 -> 273
+272 -> 230 [label="Sponsorship Person"]
+272 -> 200 [label="Sponsor"]
+272 -> 231 [label="Job"]
+274 -> 273
+274 -> 231 [label="Job"]
+274 -> 200 [label="Sponsor"]
+275 -> 232 [label="Schedule"]
+276 -> 233 [label="Badcamp"]
+277 -> 276
+278 -> 234 [label="Menu"]
+278 -> 214 [label="Link"]
+280 -> 235 [label="Notification"]
+281 -> 280
+281 -> 224 [label="Session"]
+254 -> 239 [label="Map"]
+260 -> 240 [label="Home"]
+279 -> 241 [label="User"]
+}

@@ -1,0 +1,27 @@
+id,value,style,source,target,type
+200,Feedback,shape=partialRectangle,null,null,data_base
+201,File,shape=partialRectangle,null,null,data_base
+202,Format,shape=partialRectangle,null,null,data_base
+203,Repository,shape=partialRectangle,null,null,data_base
+204,Thing,shape=partialRectangle,null,null,data_base
+205,Information,shape=partialRectangle,null,null,data_base
+206,Datum,shape=partialRectangle,null,null,data_base
+207,Metadata,shape=partialRectangle,null,null,data_base
+208,Depositor,rounded=0,null,null,external_entity
+209,Get Feedback Alerting,ellipse,null,null,process
+210,Files Not Conform To Format Specifications,ellipse,null,null,process
+211,See,ellipse,null,null,process
+212,Get One,ellipse,null,null,process
+213,Find Information Which Data A Assigned What Metadata Required,ellipse,null,null,process
+215,,endArrow=classic,208,209,endArrow=classic
+216,,endArrow=classic,208,210,endArrow=classic
+217,,endArrow=classic,208,212,endArrow=classic
+218,,endArrow=classic,208,213,endArrow=classic
+219,,endArrow=classic,209,210,endArrow=classic
+220,Feedback,endArrow=classic,209,200,endArrow=classic
+221,File,endArrow=classic,210,201,endArrow=classic
+222,,endArrow=classic,213,212,endArrow=classic
+223,Information,endArrow=classic,213,205,endArrow=classic
+224,Datum,endArrow=classic,213,206,endArrow=classic
+225,Metadata,endArrow=classic,213,207,endArrow=classic
+227,Format,endArrow=classic,210,202,endArrow=classic

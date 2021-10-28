@@ -1,0 +1,76 @@
+id,value,style,source,target,type
+16,See my submission history.,ellipse,null,null,process
+200,Correct File,shape=partialRectangle,null,null,data_base
+201,Point,shape=partialRectangle,null,null,data_base
+202,Dialog,shape=partialRectangle,null,null,data_base
+203,Error,shape=partialRectangle,null,null,data_base
+204,Page,shape=partialRectangle,null,null,data_base
+205,Ppopzip,shape=partialRectangle,null,null,data_base
+206,Citywide,shape=partialRectangle,null,null,data_base
+207,Validation,shape=partialRectangle,null,null,data_base
+208,Historical Datum,shape=partialRectangle,null,null,data_base
+209,Necessary Column,shape=partialRectangle,null,null,data_base
+210,Submission Dashboard,shape=partialRectangle,null,null,data_base
+211,"Helpful ,\nAdditional Info",shape=partialRectangle,null,null,data_base
+212,Language,shape=partialRectangle,null,null,data_base
+213,Vice Versa,shape=partialRectangle,null,null,data_base
+214,Access,shape=partialRectangle,null,null,data_base
+215,Time,shape=partialRectangle,null,null,data_base
+216,Sample File,shape=partialRectangle,null,null,data_base
+217,Fabs File,shape=partialRectangle,null,null,data_base
+218,Dabs Banner\nMessage,shape=partialRectangle,null,null,data_base
+219,Status Label,shape=partialRectangle,null,null,data_base
+220,Fabs,shape=partialRectangle,null,null,data_base
+221,Fabs User,rounded=0,null,null,external_entity
+222,What Submit Dialog,ellipse,null,null,process
+223,Link The Sample File On Want The To Point To The Correct File,ellipse,null,null,process
+224,Represent Fabs Errors,ellipse,null,null,process
+225,Submission Errors,ellipse,null,null,process
+226,Frontend Reflect The Page,ellipse,null,null,process
+227,Submit A Citywide As A Ppopzip,ellipse,null,null,process
+228,Pass Validations,ellipse,null,null,process
+229,Make,ellipse,null,null,process
+230,"Provided With Helpful, Additional Info In The Submission Dashboard",ellipse,null,null,process
+231,Download The Uploaded Fabs File,ellipse,null,null,process
+232,Provided With Dabs Banner Messages,ellipse,null,null,process
+233,Provided With Vice Versa,ellipse,null,null,process
+234,Read Access To Dabs,ellipse,null,null,process
+235,Have,ellipse,null,null,process
+236,See Correct Status Labels On The Submission Dashboard,ellipse,null,null,process
+238,,endArrow=classic,221,222,endArrow=classic
+239,,endArrow=classic,221,223,endArrow=classic
+240,,endArrow=classic,221,224,endArrow=classic
+241,,endArrow=classic,221,225,endArrow=classic
+242,,endArrow=classic,221,226,endArrow=classic
+243,,endArrow=classic,221,227,endArrow=classic
+244,,endArrow=classic,221,228,endArrow=classic
+245,,endArrow=classic,221,230,endArrow=classic
+246,,endArrow=classic,221,231,endArrow=classic
+247,,endArrow=classic,221,232,endArrow=classic
+248,,endArrow=classic,221,233,endArrow=classic
+249,,endArrow=classic,221,234,endArrow=classic
+250,,endArrow=classic,221,236,endArrow=classic
+251,Dialog,endArrow=classic,222,202,endArrow=classic
+252,,endArrow=classic,223,222,endArrow=classic
+253,Sample File,endArrow=classic,223,216,endArrow=classic
+254,Point,endArrow=classic,223,201,endArrow=classic
+255,Correct File,endArrow=classic,223,200,endArrow=classic
+256,Error,endArrow=classic,224,203,endArrow=classic
+257,,endArrow=classic,225,224,endArrow=classic
+258,Error,endArrow=classic,225,203,endArrow=classic
+259,Page,endArrow=classic,226,204,endArrow=classic
+260,Citywide,endArrow=classic,227,206,endArrow=classic
+261,Ppopzip,endArrow=classic,227,205,endArrow=classic
+262,Validation,endArrow=classic,228,207,endArrow=classic
+263,"Helpful ,\nAdditional Info",endArrow=classic,230,211,endArrow=classic
+264,Submission Dashboard,endArrow=classic,230,210,endArrow=classic
+265,Fabs File,endArrow=classic,231,217,endArrow=classic
+266,Dabs Banner\nMessage,endArrow=classic,232,218,endArrow=classic
+267,Vice Versa,endArrow=classic,233,213,endArrow=classic
+268,Access,endArrow=classic,234,214,endArrow=classic
+269,Status Label,endArrow=classic,236,219,endArrow=classic
+270,Submission Dashboard,endArrow=classic,236,210,endArrow=classic
+333,Fabs,endArrow=classic,224,220,endArrow=classic
+1000,,endArrow=classic,236,16,endArrow=classic
+1001,Submission history,rounded=0,null,null,external_entity
+1002,Submission history,endArrow=classic,16,1001,endArrow=classic

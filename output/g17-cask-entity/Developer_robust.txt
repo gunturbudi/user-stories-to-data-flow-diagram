@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	actor "Developer" as actordeveloper
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	control "Take A\nDataset" as controltakedataset
+
+	actordeveloper --- thingdatasetinterface
+	thingdataset --- controltakedataset
+	thingdatasetinterface --> controltakedataset
+
+@enduml

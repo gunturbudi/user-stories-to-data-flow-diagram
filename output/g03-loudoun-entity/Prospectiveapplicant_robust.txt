@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Requirement" as thingrequirement
+	entity "Service" as thingservice
+	actor "Prospectiveapplicant" as actorprospectiveapplicant
+	boundary "Requirement\nInterface" as thingrequirementinterface #grey
+	control "Research Requirements" as controlresearchrequirement
+	control "Select A\nService" as controlselectservice #grey
+
+	actorprospectiveapplicant --- thingrequirementinterface
+	thingrequirement --- controlresearchrequirement
+	thingrequirementinterface --> controlresearchrequirement
+	thingservice --- controlselectservice
+
+@enduml

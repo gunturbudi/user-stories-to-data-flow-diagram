@@ -1,0 +1,48 @@
+[
+  {
+    "text": "As an assistant archivist, I want to upload and tag staff generated working papers, so that staff and researchers are able to easily access them.",
+    "entities": [
+      {
+        "text": "assistant archivist",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an assistant archivist, I want to easily access interdepartmental forms.",
+    "entities": [
+      {
+        "text": "assistant archivist",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "interdepartmental forms",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a site administrator, I want to edit any site member profile, so that I can correct problems for members.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "site",
+        "label": "Data"
+      },
+      {
+        "text": "member profile",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      }
+    ]
+  }
+]

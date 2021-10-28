@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Plan,shape=partialRectangle,null,null,data_base
+201,Grant Proposal,shape=partialRectangle,null,null,data_base
+202,Data Management,shape=partialRectangle,null,null,data_base
+203,Disaster Recovery,shape=partialRectangle,null,null,data_base
+204,Data Contributor,rounded=0,null,null,external_entity
+205,Refer To The Plan In Data Management Plan,ellipse,null,null,process
+206,Refer To The Disaster Recovery Plan In Grant Proposals,ellipse,null,null,process
+208,,endArrow=classic,204,205,endArrow=classic
+209,,endArrow=classic,204,206,endArrow=classic
+210,Plan,endArrow=classic,205,200,endArrow=classic
+211,Grant Proposal,endArrow=classic,206,201,endArrow=classic
+212,Plan,endArrow=classic,206,200,endArrow=classic
+213,Data Management,endArrow=classic,205,202,endArrow=classic
+215,Disaster Recovery,endArrow=classic,206,203,endArrow=classic

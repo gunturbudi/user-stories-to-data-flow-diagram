@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Description Information" as thingdescriptioninformation
+	actor "Datum ,\nBasic ,\nEntry User" as actordatabasicentryuser
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Create Archival,\nBasic Description\nInformation" as controlcreatearchivalbasicdescriptioninformation
+	control "Update Archival,\nBasic Description\nInformation" as controlupdatearchivalbasicdescriptioninformation
+
+	actordatabasicentryuser --- thinginformationinterface
+	thingdescriptioninformation --- controlcreatearchivalbasicdescriptioninformation
+	thinginformationinterface --> controlcreatearchivalbasicdescriptioninformation
+	thinginformationinterface --> controlupdatearchivalbasicdescriptioninformation
+	thingdescriptioninformation --- controlupdatearchivalbasicdescriptioninformation
+
+@enduml

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Github " ];
+201 [label="<f0>  |<f1> Google " color=red];
+202 [label="Visitor" shape=box];
+203 [label="{<f0> 1.0|<f1> Sign Up Via Github }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Sign Up Via Google }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 200 [label="Github"]
+204 -> 201 [label="Google"]
+}

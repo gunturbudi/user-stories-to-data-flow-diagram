@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Administrator" as thingadministrator
+	actor "User" as actoruser
+	boundary "Administrator\nInterface" as thingadministratorinterface #grey
+	control "Contact The\nAdministrators" as controlcontactadministrator
+
+	actoruser --- thingadministratorinterface
+	thingadministrator --- controlcontactadministrator
+	thingadministratorinterface --> controlcontactadministrator
+
+@enduml

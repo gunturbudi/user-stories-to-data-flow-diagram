@@ -1,0 +1,148 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> App " color=red];
+201 [label="<f0>  |<f1> Possible ,\nPeople " ];
+202 [label="<f0>  |<f1> Market Place " ];
+203 [label="<f0>  |<f1> Customer " ];
+204 [label="<f0>  |<f1> Feedback " color=red];
+205 [label="<f0>  |<f1> Easy Way " ];
+206 [label="<f0>  |<f1> Api " ];
+207 [label="<f0>  |<f1> Apps Development\nSupport " color=red];
+208 [label="<f0>  |<f1> Way " ];
+209 [label="<f0>  |<f1> Access " color=red];
+210 [label="<f0>  |<f1> High Level " ];
+211 [label="<f0>  |<f1> Goal " color=red];
+212 [label="<f0>  |<f1> Work " color=red];
+213 [label="<f0>  |<f1> Accounting " color=red];
+214 [label="<f0>  |<f1> Clear " ];
+215 [label="<f0>  |<f1> Pricing Modality " ];
+216 [label="<f0>  |<f1> Fee " color=red];
+217 [label="<f0>  |<f1> Platform " ];
+218 [label="<f0>  |<f1> Detailed Information " color=red];
+219 [label="<f0>  |<f1> User " color=red];
+220 [label="<f0>  |<f1> Question " color=red];
+221 [label="<f0>  |<f1> Datum " ];
+222 [label="<f0>  |<f1> Apps Change " color=red];
+223 [label="<f0>  |<f1> Operating System\nFeature " ];
+224 [label="<f0>  |<f1> Health Sensor " color=red];
+225 [label="<f0>  |<f1> Alfred " ];
+226 [label="Developer" shape=box];
+227 [label="{<f0> 1.0|<f1> Present App To As Possible, Many People }" shape=Mrecord];
+228 [label="{<f0> 2.0|<f1> Create Apps Within The Market Place }" shape=Mrecord];
+229 [label="{<f0> 3.0|<f1> Maintain Apps Within The Market Place }" shape=Mrecord];
+230 [label="{<f0> 4.0|<f1> Enable Customers }" shape=Mrecord];
+231 [label="{<f0> 5.0|<f1> Provide Feedback About App }" shape=Mrecord];
+232 [label="{<f0> 6.0|<f1> Watch This Feedback }" shape=Mrecord];
+233 [label="{<f0> 7.0|<f1> Need An Easy Way }" shape=Mrecord];
+234 [label="{<f0> 8.0|<f1> Documented Have The Api }" shape=Mrecord];
+235 [label="{<f0> 9.0|<f1> Obtain Apps Development Support }" shape=Mrecord];
+236 [label="{<f0> 10.0|<f1> Possible Notified }" shape=Mrecord];
+237 [label="{<f0> 11.0|<f1> Present App In Several Ways }" shape=Mrecord];
+238 [label="{<f0> 12.0|<f1> Have App To Granted Access To Several Operating System Features }" shape=Mrecord];
+239 [label="{<f0> 13.0|<f1> Have }" shape=Mrecord];
+240 [label="{<f0> 14.0|<f1> Be On A High Level }" shape=Mrecord];
+241 [label="{<f0> 15.0|<f1> Provide An Easy Way }" shape=Mrecord];
+242 [label="{<f0> 16.0|<f1> Manage The User Settings }" shape=Mrecord];
+243 [label="{<f0> 17.0|<f1> Reduce The Work }" shape=Mrecord];
+244 [label="{<f0> 18.0|<f1> Have The Alfred Api }" shape=Mrecord];
+245 [label="{<f0> 19.0|<f1> Achieve Goals }" shape=Mrecord];
+246 [label="{<f0> 20.0|<f1> Have The Accounting As Possible Simple }" shape=Mrecord];
+247 [label="{<f0> 21.0|<f1> Have The Accounting Clear }" shape=Mrecord];
+248 [label="{<f0> 22.0|<f1> Have An Easy Way }" shape=Mrecord];
+249 [label="{<f0> 23.0|<f1> Manage The Pricing Modality Of Apps }" shape=Mrecord];
+250 [label="{<f0> 24.0|<f1> Know The Provider Of The Market Place Charges }" shape=Mrecord];
+251 [label="{<f0> 25.0|<f1> Using The Platform }" shape=Mrecord];
+252 [label="{<f0> 26.0|<f1> Know The Fees }" shape=Mrecord];
+253 [label="{<f0> 27.0|<f1> Have Detailed Information Happened }" shape=Mrecord];
+254 [label="{<f0> 28.0|<f1> Design App On Own }" shape=Mrecord];
+255 [label="{<f0> 29.0|<f1> Be A, Few Rules }" shape=Mrecord];
+256 [label="{<f0> 30.0|<f1> Define Questions The User Ask }" shape=Mrecord];
+257 [label="{<f0> 31.0|<f1> Have An Easy Way The User Is Wearing }" shape=Mrecord];
+258 [label="{<f0> 32.0|<f1> Read Data From Health Sensors }" shape=Mrecord];
+33 [label="{<f0> 33.0|<f1> Deal with their details. }" shape=Mrecord];
+239 -> 33
+1001 [label="<f0>  |<f1> Details " color=red];
+33 -> 1001 [label="Details"]
+226 -> 227
+226 -> 228
+226 -> 230
+226 -> 231
+226 -> 232
+226 -> 233
+226 -> 234
+226 -> 235
+226 -> 237
+226 -> 238
+226 -> 239
+226 -> 240
+226 -> 241
+226 -> 242
+226 -> 243
+226 -> 244
+226 -> 245
+226 -> 246
+226 -> 247
+226 -> 248
+226 -> 249
+226 -> 250
+226 -> 251
+226 -> 252
+226 -> 253
+226 -> 254
+226 -> 256
+226 -> 257
+226 -> 258
+227 -> 200 [label="App"]
+227 -> 201 [label="Possible ,\nPeople"]
+228 -> 200 [label="App"]
+228 -> 202 [label="Market Place"]
+229 -> 202 [label="Market Place"]
+229 -> 200 [label="App"]
+230 -> 231
+230 -> 233
+230 -> 203 [label="Customer"]
+231 -> 204 [label="Feedback"]
+231 -> 200 [label="App"]
+232 -> 204 [label="Feedback"]
+233 -> 232
+233 -> 205 [label="Easy Way"]
+234 -> 206 [label="Api"]
+235 -> 207 [label="Apps Development\nSupport"]
+237 -> 208 [label="Way"]
+237 -> 200 [label="App"]
+238 -> 209 [label="Access"]
+238 -> 223 [label="Operating System\nFeature"]
+238 -> 200 [label="App"]
+239 -> 240
+240 -> 210 [label="High Level"]
+241 -> 242
+241 -> 205 [label="Easy Way"]
+242 -> 219 [label="User"]
+243 -> 245
+243 -> 212 [label="Work"]
+244 -> 243
+244 -> 206 [label="Api"]
+245 -> 211 [label="Goal"]
+246 -> 213 [label="Accounting"]
+247 -> 214 [label="Clear"]
+247 -> 213 [label="Accounting"]
+248 -> 249
+248 -> 256
+248 -> 205 [label="Easy Way"]
+249 -> 215 [label="Pricing Modality"]
+249 -> 200 [label="App"]
+250 -> 202 [label="Market Place"]
+251 -> 250
+251 -> 217 [label="Platform"]
+252 -> 216 [label="Fee"]
+253 -> 218 [label="Detailed Information"]
+254 -> 200 [label="App"]
+256 -> 220 [label="Question"]
+256 -> 219 [label="User"]
+257 -> 258
+257 -> 205 [label="Easy Way"]
+257 -> 219 [label="User"]
+258 -> 221 [label="Datum"]
+258 -> 224 [label="Health Sensor"]
+244 -> 225 [label="Alfred"]
+}

@@ -1,0 +1,68 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Game" as thinggame
+	entity "Url" as thingurl
+	entity "Estimator" as thingestimator
+	entity "Estimate" as thingestimate
+	entity ", Estimator" as thingtoupestimator
+	entity "Time" as thingsametime
+	entity "Page" as thingpage
+	entity "Name" as thingname
+	entity "Item" as thingitem
+	entity "Prior Estimate" as thingpriorestimate
+	entity "Story" as thingstory
+	actor "Moderator" as actormoderator
+	actor "Participant" as actorparticipant
+	actor "Estimator" as actorestimator
+	boundary "Game\nInterface" as thinggameinterface #grey
+	boundary "Estimator\nInterface" as thingestimatorinterface #grey
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	control "Giving Them\nA Url\nWhere Access\nThe Game" as controlgiveinviteestimatorurl
+	control "Invite Estimators" as controlinviteestimator
+	control "Show All\nEstimates" as controlshowestimate
+	control "Invite To,\nUp Estimators" as controlinvitetoupestimator
+	control "Shown All\nEstimates At\nThe Same\nTime" as controlshowestimatesametime
+	control "Join A\nGame" as controljoingame
+	control "Entering Name\nOn The\nPage" as controlenterjoingamenamepage
+	control "See The\nItem" as controlseeitem
+	control "See" as controlsee
+
+	thinggame <.. thingurl
+	thingsametime <.. thingestimate
+	thingpage <.. thingname
+	thingestimator <.. thingpriorestimate
+	actormoderator --- thinggameinterface
+	actormoderator --- thingestimatorinterface
+	actormoderator --- thingestimateinterface
+	actorparticipant --- thingtimeinterface
+	actorestimator --- thingpageinterface
+	actorestimator --- thingiteminterface
+	thingurl --- controlgiveinviteestimatorurl
+	thinggame --- controlgiveinviteestimatorurl
+	thinggameinterface --> controlgiveinviteestimatorurl
+	controlgiveinviteestimatorurl --> controlinviteestimator
+	thingestimator --- controlinviteestimator
+	thingestimatorinterface --> controlinviteestimator
+	thingestimate --- controlshowestimate
+	thingestimateinterface --> controlshowestimate
+	thingtoupestimator --- controlinvitetoupestimator
+	thingestimatorinterface --> controlinvitetoupestimator
+	thingsametime --- controlshowestimatesametime
+	thingtimeinterface --> controlshowestimatesametime
+	thingestimate --- controlshowestimatesametime
+	controlenterjoingamenamepage --> controljoingame
+	thingpageinterface --> controljoingame
+	thinggame --- controljoingame
+	thingname --- controlenterjoingamenamepage
+	thingpage --- controlenterjoingamenamepage
+	thingpageinterface --> controlenterjoingamenamepage
+	thingitem --- controlseeitem
+	thingiteminterface --> controlseeitem
+
+@enduml

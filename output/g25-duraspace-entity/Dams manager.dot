@@ -1,0 +1,246 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Appropriate Relationship " ];
+201 [label="<f0>  |<f1> Formal Collection " color=red];
+202 [label="<f0>  |<f1> Dam " ];
+203 [label="<f0>  |<f1> Repository " color=red];
+204 [label="<f0>  |<f1> Object " color=red];
+205 [label="<f0>  |<f1> Assigned Order " ];
+206 [label="<f0>  |<f1> Aspect " ];
+207 [label="<f0>  |<f1> Obsolescence " ];
+208 [label="<f0>  |<f1> Integrity " ];
+209 [label="<f0>  |<f1> Format Version " ];
+210 [label="<f0>  |<f1> Useful File " ];
+211 [label="<f0>  |<f1> Manager " ];
+212 [label="<f0>  |<f1> Checksum " ];
+213 [label="<f0>  |<f1> Checksum Method " ];
+214 [label="<f0>  |<f1> File " color=red];
+215 [label="<f0>  |<f1> Source Capture\nInformation " ];
+216 [label="<f0>  |<f1> Preservation Managers " ];
+217 [label="<f0>  |<f1> Authenticity " ];
+218 [label="<f0>  |<f1> Question " ];
+219 [label="<f0>  |<f1> Object Component " color=red];
+220 [label="<f0>  |<f1> Collection " color=red];
+221 [label="<f0>  |<f1> Title " color=red];
+222 [label="<f0>  |<f1> Register " ];
+223 [label="<f0>  |<f1> Risk " ];
+224 [label="<f0>  |<f1> License " color=red];
+225 [label="<f0>  |<f1> Copyright " color=red];
+226 [label="<f0>  |<f1> Status " ];
+227 [label="<f0>  |<f1> Pertinent Statute " ];
+228 [label="<f0>  |<f1> Statute " color=red];
+229 [label="<f0>  |<f1> Pertinence " ];
+230 [label="<f0>  |<f1> Application " ];
+231 [label="<f0>  |<f1> Applicable License " color=red];
+232 [label="<f0>  |<f1> Copyright Content " color=red];
+233 [label="<f0>  |<f1> Way " ];
+234 [label="<f0>  |<f1> Access " ];
+235 [label="<f0>  |<f1> Policy " ];
+236 [label="<f0>  |<f1> Use " color=red];
+237 [label="<f0>  |<f1> Permission " color=red];
+238 [label="<f0>  |<f1> Date " color=red];
+239 [label="<f0>  |<f1> Restriction " ];
+240 [label="<f0>  |<f1> Active Date " color=red];
+241 [label="<f0>  |<f1> Permit Act " ];
+242 [label="<f0>  |<f1> Record " color=red];
+243 [label="<f0>  |<f1> Event " color=red];
+244 [label="<f0>  |<f1> Master " color=red];
+245 [label="<f0>  |<f1> Creation " ];
+246 [label="<f0>  |<f1> Preservation " ];
+247 [label="<f0>  |<f1> Library " ];
+248 [label="<f0>  |<f1> Rights " color=red];
+249 [label="Dams Manager" shape=box];
+250 [label="{<f0> 1.0|<f1> Browsing All Formal Collections In The Dams With The Appropriate Relationships }" shape=Mrecord];
+251 [label="{<f0> 2.0|<f1> List }" shape=Mrecord];
+252 [label="{<f0> 3.0|<f1> What Repository Belongs To }" shape=Mrecord];
+253 [label="{<f0> 4.0|<f1> Know }" shape=Mrecord];
+254 [label="{<f0> 5.0|<f1> Present In Assigned Order }" shape=Mrecord];
+255 [label="{<f0> 6.0|<f1> Comprise An Object }" shape=Mrecord];
+256 [label="{<f0> 7.0|<f1> Impending Monitoring Integrity Obsolescence Including File Size }" shape=Mrecord];
+257 [label="{<f0> 8.0|<f1> Impending Monitoring Integrity Obsolescence Including Format Version }" shape=Mrecord];
+258 [label="{<f0> 9.0|<f1> Impending Monitoring Integrity Obsolescence Including Creation Date }" shape=Mrecord];
+259 [label="{<f0> 10.0|<f1> Indicate To Aspects Of A Useful File }" shape=Mrecord];
+260 [label="{<f0> 11.0|<f1> Impending Monitoring Integrity Obsolescence Including File Format }" shape=Mrecord];
+261 [label="{<f0> 12.0|<f1> Indicate To Preservation Managers Aspects Of A Useful Master File }" shape=Mrecord];
+262 [label="{<f0> 13.0|<f1> Preservation Managers The Checksum Method For Each Master File For A Given Object }" shape=Mrecord];
+263 [label="{<f0> 14.0|<f1> Indicate }" shape=Mrecord];
+264 [label="{<f0> 15.0|<f1> Preservation Managers Checksum }" shape=Mrecord];
+265 [label="{<f0> 16.0|<f1> Do }" shape=Mrecord];
+266 [label="{<f0> 17.0|<f1> Indicate The Source Capture Information For A File Where Is Useful }" shape=Mrecord];
+267 [label="{<f0> 18.0|<f1> Know Of Any Object For Which Integrity Is In Question }" shape=Mrecord];
+268 [label="{<f0> 19.0|<f1> Update To A More Current File Format }" shape=Mrecord];
+269 [label="{<f0> 20.0|<f1> Know Via Preservation Managers }" shape=Mrecord];
+270 [label="{<f0> 21.0|<f1> Know Of Any Object For Which Authenticity Is }" shape=Mrecord];
+271 [label="{<f0> 22.0|<f1> Know Of Any Object }" shape=Mrecord];
+272 [label="{<f0> 23.0|<f1> Present Object }" shape=Mrecord];
+273 [label="{<f0> 24.0|<f1> Present Collections By Title }" shape=Mrecord];
+274 [label="{<f0> 25.0|<f1> Present Object Component }" shape=Mrecord];
+275 [label="{<f0> 26.0|<f1> Know Via The Preservation Manager Of All Files For Which The Checksum Has Changed Since Last Registered }" shape=Mrecord];
+276 [label="{<f0> 27.0|<f1> Incur Risk }" shape=Mrecord];
+277 [label="{<f0> 28.0|<f1> Expire Per Jurisdictional Copyright Statute }" shape=Mrecord];
+278 [label="{<f0> 29.0|<f1> Know Copyright For Object }" shape=Mrecord];
+279 [label="{<f0> 30.0|<f1> Know Copyright For An Object Component }" shape=Mrecord];
+280 [label="{<f0> 31.0|<f1> Know The Pertinent Statutes To An Object Component }" shape=Mrecord];
+281 [label="{<f0> 32.0|<f1> Know The Pertinent Statutes To Object }" shape=Mrecord];
+282 [label="{<f0> 33.0|<f1> Expire }" shape=Mrecord];
+283 [label="{<f0> 34.0|<f1> Know Object }" shape=Mrecord];
+284 [label="{<f0> 35.0|<f1> Know An Object Component Subject To A Library Policy Restricts Access In Any Way }" shape=Mrecord];
+285 [label="{<f0> 36.0|<f1> Know The Uses For An Object Component Permitted }" shape=Mrecord];
+286 [label="{<f0> 37.0|<f1> Know The Uses For Object }" shape=Mrecord];
+287 [label="{<f0> 38.0|<f1> Know The Uses For An Object Component }" shape=Mrecord];
+288 [label="{<f0> 39.0|<f1> Restrict Per The Status Of Object Component }" shape=Mrecord];
+289 [label="{<f0> 40.0|<f1> Restrict Per The Rights Status Of The Object }" shape=Mrecord];
+290 [label="{<f0> 41.0|<f1> Provided Know The Dates A Permission When Is Active }" shape=Mrecord];
+291 [label="{<f0> 42.0|<f1> Provided Know The Dates Restriction When Is }" shape=Mrecord];
+292 [label="{<f0> 43.0|<f1> Restrict }" shape=Mrecord];
+293 [label="{<f0> 44.0|<f1> Know When Permitted Acts }" shape=Mrecord];
+294 [label="{<f0> 45.0|<f1> Track All Events For Recording In The Dams }" shape=Mrecord];
+295 [label="{<f0> 46.0|<f1> Carrying Out An Event }" shape=Mrecord];
+296 [label="{<f0> 47.0|<f1> Know The Outcome Of The Event }" shape=Mrecord];
+249 -> 250
+249 -> 251
+249 -> 252
+249 -> 253
+249 -> 253
+249 -> 254
+249 -> 255
+249 -> 256
+249 -> 257
+249 -> 258
+249 -> 260
+249 -> 261
+249 -> 262
+249 -> 263
+249 -> 264
+249 -> 265
+249 -> 266
+249 -> 267
+249 -> 268
+249 -> 269
+249 -> 270
+249 -> 271
+249 -> 272
+249 -> 273
+249 -> 274
+249 -> 275
+249 -> 276
+249 -> 277
+249 -> 278
+249 -> 279
+249 -> 280
+249 -> 281
+249 -> 283
+249 -> 284
+249 -> 285
+249 -> 286
+249 -> 287
+249 -> 288
+249 -> 289
+249 -> 290
+249 -> 291
+249 -> 293
+249 -> 294
+249 -> 295
+249 -> 296
+250 -> 251
+250 -> 201 [label="Formal Collection"]
+250 -> 202 [label="Dam"]
+250 -> 200 [label="Appropriate Relationship"]
+252 -> 203 [label="Repository"]
+253 -> 252
+253 -> 292
+254 -> 255
+254 -> 205 [label="Assigned Order"]
+255 -> 204 [label="Object"]
+256 -> 261
+256 -> 208 [label="Integrity"]
+256 -> 207 [label="Obsolescence"]
+257 -> 259
+257 -> 209 [label="Format Version"]
+257 -> 207 [label="Obsolescence"]
+257 -> 208 [label="Integrity"]
+258 -> 259
+258 -> 207 [label="Obsolescence"]
+258 -> 208 [label="Integrity"]
+258 -> 238 [label="Date"]
+259 -> 206 [label="Aspect"]
+259 -> 210 [label="Useful File"]
+260 -> 259
+260 -> 207 [label="Obsolescence"]
+260 -> 208 [label="Integrity"]
+261 -> 216 [label="Preservation Managers"]
+261 -> 206 [label="Aspect"]
+261 -> 214 [label="File"]
+262 -> 211 [label="Manager"]
+262 -> 213 [label="Checksum Method"]
+262 -> 214 [label="File"]
+262 -> 204 [label="Object"]
+263 -> 262
+263 -> 264
+263 -> 211 [label="Manager"]
+264 -> 212 [label="Checksum"]
+264 -> 211 [label="Manager"]
+266 -> 265
+266 -> 215 [label="Source Capture\nInformation"]
+266 -> 214 [label="File"]
+267 -> 218 [label="Question"]
+267 -> 204 [label="Object"]
+267 -> 208 [label="Integrity"]
+269 -> 211 [label="Manager"]
+270 -> 217 [label="Authenticity"]
+270 -> 204 [label="Object"]
+271 -> 268
+271 -> 204 [label="Object"]
+272 -> 204 [label="Object"]
+273 -> 220 [label="Collection"]
+273 -> 221 [label="Title"]
+275 -> 222 [label="Register"]
+275 -> 212 [label="Checksum"]
+275 -> 214 [label="File"]
+275 -> 211 [label="Manager"]
+276 -> 223 [label="Risk"]
+277 -> 228 [label="Statute"]
+278 -> 204 [label="Object"]
+278 -> 225 [label="Copyright"]
+279 -> 277
+279 -> 219 [label="Object Component"]
+279 -> 225 [label="Copyright"]
+280 -> 227 [label="Pertinent Statute"]
+280 -> 219 [label="Object Component"]
+281 -> 204 [label="Object"]
+281 -> 227 [label="Pertinent Statute"]
+283 -> 204 [label="Object"]
+284 -> 234 [label="Access"]
+284 -> 233 [label="Way"]
+284 -> 219 [label="Object Component"]
+284 -> 235 [label="Policy"]
+285 -> 236 [label="Use"]
+285 -> 219 [label="Object Component"]
+286 -> 204 [label="Object"]
+286 -> 236 [label="Use"]
+287 -> 288
+287 -> 289
+287 -> 219 [label="Object Component"]
+287 -> 226 [label="Status"]
+287 -> 236 [label="Use"]
+288 -> 226 [label="Status"]
+288 -> 204 [label="Object"]
+289 -> 204 [label="Object"]
+289 -> 226 [label="Status"]
+290 -> 238 [label="Date"]
+290 -> 237 [label="Permission"]
+291 -> 239 [label="Restriction"]
+291 -> 238 [label="Date"]
+293 -> 241 [label="Permit Act"]
+294 -> 243 [label="Event"]
+294 -> 242 [label="Record"]
+294 -> 202 [label="Dam"]
+295 -> 253
+295 -> 243 [label="Event"]
+296 -> 243 [label="Event"]
+261 -> 244 [label="Master"]
+258 -> 245 [label="Creation"]
+261 -> 246 [label="Preservation"]
+284 -> 247 [label="Library"]
+289 -> 248 [label="Rights"]
+}

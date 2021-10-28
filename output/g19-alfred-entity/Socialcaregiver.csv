@@ -1,0 +1,30 @@
+id,value,style,source,target,type
+200,Person,shape=partialRectangle,null,null,data_base
+201,Thing,shape=partialRectangle,null,null,data_base
+202,Alfred,shape=partialRectangle,null,null,data_base
+203,Pain,shape=partialRectangle,null,null,data_base
+204,Step Counter,shape=partialRectangle,null,null,data_base
+205,Skin Conduction\nSensor,shape=partialRectangle,null,null,data_base
+206,Socialcaregiver,rounded=0,null,null,external_entity
+207,Remind Of The Things,ellipse,null,null,process
+208,Bring To The Person,ellipse,null,null,process
+209,Recognize Pain,ellipse,null,null,process
+210,Using Skin Conduction Sensors,ellipse,null,null,process
+211,Stress Alfred,ellipse,null,null,process
+212,Have A Step Counter Into Alfred,ellipse,null,null,process
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,,endArrow=classic,206,210,endArrow=classic
+218,,endArrow=classic,206,211,endArrow=classic
+219,,endArrow=classic,206,212,endArrow=classic
+220,,endArrow=classic,207,208,endArrow=classic
+221,Thing,endArrow=classic,207,201,endArrow=classic
+222,Person,endArrow=classic,208,200,endArrow=classic
+223,Pain,endArrow=classic,209,203,endArrow=classic
+224,,endArrow=classic,210,211,endArrow=classic
+225,Skin Conduction\nSensor,endArrow=classic,210,205,endArrow=classic
+226,,endArrow=classic,211,209,endArrow=classic
+227,Alfred,endArrow=classic,211,202,endArrow=classic
+228,Step Counter,endArrow=classic,212,204,endArrow=classic
+229,Alfred,endArrow=classic,212,202,endArrow=classic

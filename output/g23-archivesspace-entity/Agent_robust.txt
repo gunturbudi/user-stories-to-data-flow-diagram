@@ -1,0 +1,48 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Subject Information" as thingsubjectinformation
+	entity "Agent" as thingagent
+	entity "Resource" as thingresource
+	entity "Source" as thingsource
+	entity "Accession Component" as thingaccessioncomponent
+	entity "Subject" as thingsubject
+	entity "Name Form" as thingnameform #grey
+	entity "Exist Source" as thingexistingsource
+	entity "New Source" as thingnewsource
+	entity "Marcxml Record" as thingmarcxmlrecord
+	actor "Archivist" as actorarchivist
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Agent\nInterface" as thingagentinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Import Subject\nInformation" as controlimportsubjectinformation
+	control "Import Only\nAgent From\nMarcxml Records" as controlimportagentmarcxmlrecords
+	control "Indicate" as controlindicate
+	control "Specify The\nSource For\nA Name\nForm Of\nAn Agent" as controlspecifysource
+	control "Edit Existing\nSources" as controleditexistingsource #grey
+	control "Add New\nSources" as controladdnewsource
+
+	thingmarcxmlrecord <.. thingagent
+	thingnameform <.. thingsource
+	thingagent <.. thingnameform
+	actorarchivist --- thinginformationinterface
+	actorarchivist --- thingrecordinterface
+	actorarchivist --- thingagentinterface
+	actorarchivist --- thingsourceinterface
+	thingsubjectinformation --- controlimportsubjectinformation
+	thinginformationinterface --> controlimportsubjectinformation
+	thingagent --- controlimportagentmarcxmlrecords
+	thingmarcxmlrecord --- controlimportagentmarcxmlrecords
+	thingrecordinterface --> controlimportagentmarcxmlrecords
+	thingnameform --- controlspecifysource
+	thingagentinterface --> controlspecifysource
+	thingagent --- controlspecifysource
+	thingsource --- controlspecifysource
+	thingexistingsource --- controleditexistingsource
+	thingnewsource --- controladdnewsource
+	thingsourceinterface --> controladdnewsource
+
+@enduml

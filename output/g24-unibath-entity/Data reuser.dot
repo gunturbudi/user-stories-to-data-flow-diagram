@@ -1,0 +1,68 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Archive " color=red];
+201 [label="<f0>  |<f1> Web " ];
+202 [label="<f0>  |<f1> Native Language " color=red];
+203 [label="<f0>  |<f1> System " ];
+204 [label="<f0>  |<f1> Deposit File " ];
+205 [label="<f0>  |<f1> Example Citation " ];
+206 [label="<f0>  |<f1> Dataset " color=red];
+207 [label="<f0>  |<f1> Doi " ];
+208 [label="<f0>  |<f1> Persistent Url " ];
+209 [label="<f0>  |<f1> Primo " ];
+210 [label="<f0>  |<f1> Glance " ];
+211 [label="Datum Reuser" shape=box];
+212 [label="{<f0> 1.0|<f1> Search The Archive Through The Web }" shape=Mrecord];
+213 [label="{<f0> 2.0|<f1> Access The System In Native Language }" shape=Mrecord];
+214 [label="{<f0> 3.0|<f1> Examine Deposited Files }" shape=Mrecord];
+215 [label="{<f0> 4.0|<f1> Identify Deposited Files }" shape=Mrecord];
+216 [label="{<f0> 5.0|<f1> View An Example Citation For A Dataset }" shape=Mrecord];
+217 [label="{<f0> 6.0|<f1> View A Doi For A Dataset }" shape=Mrecord];
+218 [label="{<f0> 7.0|<f1> Get A Persistent Url For A Dataset }" shape=Mrecord];
+219 [label="{<f0> 8.0|<f1> Search The Archive Through Primo }" shape=Mrecord];
+220 [label="{<f0> 9.0|<f1> See Different Versions Of A Dataset At A Glance }" shape=Mrecord];
+10 [label="{<f0> 10.0|<f1> Find data relevant to my needs. }" shape=Mrecord];
+1000 [label="Data reuser" shape=box];
+1000 -> 10
+1002 [label="<f0>  |<f1> Needs " color=red];
+10 -> 1002 [label="Needs"]
+11 [label="{<f0> 11.0|<f1> Import the dataset into my referencemanagement software automatically. }" shape=Mrecord];
+1004 [label="Data reuser" shape=box];
+1004 -> 11
+1006 [label="<f0>  |<f1> Data " color=red];
+11 -> 1006 [label="Data"]
+1008 [label="<f0>  |<f1> Referencemanagement software " color=red];
+11 -> 1008 [label="Referencemanagement software"]
+12 [label="{<f0> 12.0|<f1> Search books, articles and data all in one place. }" shape=Mrecord];
+1010 [label="Data reuser" shape=box];
+1010 -> 12
+1012 [label="<f0>  |<f1> Articles " color=red];
+12 -> 1012 [label="Articles"]
+1014 [label="<f0>  |<f1> Data " color=red];
+12 -> 1014 [label="Data"]
+211 -> 212
+211 -> 213
+211 -> 214
+211 -> 215
+211 -> 216
+211 -> 217
+211 -> 218
+211 -> 219
+211 -> 220
+212 -> 200 [label="Archive"]
+212 -> 201 [label="Web"]
+213 -> 203 [label="System"]
+213 -> 202 [label="Native Language"]
+214 -> 204 [label="Deposit File"]
+215 -> 204 [label="Deposit File"]
+216 -> 205 [label="Example Citation"]
+216 -> 206 [label="Dataset"]
+217 -> 207 [label="Doi"]
+217 -> 206 [label="Dataset"]
+218 -> 208 [label="Persistent Url"]
+218 -> 206 [label="Dataset"]
+219 -> 209 [label="Primo"]
+219 -> 200 [label="Archive"]
+220 -> 210 [label="Glance"]
+220 -> 206 [label="Dataset"]
+}

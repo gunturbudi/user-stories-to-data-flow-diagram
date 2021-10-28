@@ -1,0 +1,144 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Description " ];
+202 [label="<f0>  |<f1> Project Lifecycle " color=red];
+203 [label="<f0>  |<f1> Kind " ];
+204 [label="<f0>  |<f1> Type " color=red];
+205 [label="<f0>  |<f1> Necessary Right " ];
+206 [label="<f0>  |<f1> Time Plan " ];
+207 [label="<f0>  |<f1> Documentation " color=red];
+208 [label="<f0>  |<f1> Reference " ];
+209 [label="<f0>  |<f1> Creation Process " ];
+210 [label="<f0>  |<f1> Collect Datum " ];
+211 [label="<f0>  |<f1> Institution " ];
+212 [label="<f0>  |<f1> Information " color=red];
+213 [label="<f0>  |<f1> Format " color=red];
+214 [label="<f0>  |<f1> Technology " ];
+215 [label="<f0>  |<f1> Software " ];
+216 [label="<f0>  |<f1> Department " color=red];
+217 [label="<f0>  |<f1> Section " ];
+218 [label="<f0>  |<f1> Researcher " color=red];
+219 [label="<f0>  |<f1> Role " color=red];
+220 [label="<f0>  |<f1> Responsibility " ];
+221 [label="<f0>  |<f1> Dmp " color=red];
+222 [label="<f0>  |<f1> Security Requirement " ];
+223 [label="Data Manager" shape=box];
+224 [label="Researcher" shape=box];
+225 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+226 [label="{<f0> 2.0|<f1> Update Throughout The Project Lifecycle }" shape=Mrecord];
+227 [label="{<f0> 3.0|<f1> Have The Description Of Collected Sets }" shape=Mrecord];
+228 [label="{<f0> 4.0|<f1> Have The Description Of Collected Data Sets Used }" shape=Mrecord];
+229 [label="{<f0> 5.0|<f1> Document All Necessary Rights }" shape=Mrecord];
+230 [label="{<f0> 6.0|<f1> Managing The Data }" shape=Mrecord];
+231 [label="{<f0> 7.0|<f1> Know The Time Plan }" shape=Mrecord];
+232 [label="{<f0> 8.0|<f1> Collecting Data }" shape=Mrecord];
+233 [label="{<f0> 9.0|<f1> Have References To Documentation Of Creation Process }" shape=Mrecord];
+234 [label="{<f0> 10.0|<f1> Have References To Documentation Of The Data }" shape=Mrecord];
+235 [label="{<f0> 11.0|<f1> Know Which Information Necessary }" shape=Mrecord];
+236 [label="{<f0> 12.0|<f1> Use }" shape=Mrecord];
+237 [label="{<f0> 13.0|<f1> Know Which Software The Data Produced }" shape=Mrecord];
+238 [label="{<f0> 14.0|<f1> Know Technology Produced }" shape=Mrecord];
+239 [label="{<f0> 15.0|<f1> Know The Security Requirements Of The Data }" shape=Mrecord];
+240 [label="{<f0> 16.0|<f1> See The Sections }" shape=Mrecord];
+241 [label="{<f0> 17.0|<f1> Costing By Other Researchers In Department }" shape=Mrecord];
+242 [label="{<f0> 18.0|<f1> Using The Data }" shape=Mrecord];
+243 [label="{<f0> 19.0|<f1> Clarify The Necessary Rights }" shape=Mrecord];
+244 [label="{<f0> 20.0|<f1> Plan The Anonymization Of Data }" shape=Mrecord];
+21 [label="{<f0> 21.0|<f1> Determine what basic support services and functionalities are required. }" shape=Mrecord];
+223 -> 21
+1001 [label="Data manager" shape=box];
+1001 -> 21
+1003 [label="<f0>  |<f1> Support services " color=red];
+21 -> 1003 [label="Support services"]
+22 [label="{<f0> 22.0|<f1> Use the data. }" shape=Mrecord];
+223 -> 22
+1006 [label="Data manager" shape=box];
+1006 -> 22
+1008 [label="<f0>  |<f1> Background information " color=red];
+22 -> 1008 [label="Background information"]
+23 [label="{<f0> 23.0|<f1> Determine whether and how the data has to be stored. }" shape=Mrecord];
+223 -> 23
+1011 [label="Data manager" shape=box];
+1011 -> 23
+1013 [label="<f0>  |<f1> Data " color=red];
+23 -> 1013 [label="Data"]
+24 [label="{<f0> 24.0|<f1> Check whether the data can be kept secure. }" shape=Mrecord];
+239 -> 24
+1016 [label="Data manager" shape=box];
+1016 -> 24
+1018 [label="<f0>  |<f1> Data " color=red];
+24 -> 1018 [label="Data"]
+25 [label="{<f0> 25.0|<f1> Share data manager posts. }" shape=Mrecord];
+1020 [label="Researcher" shape=box];
+1020 -> 25
+240 -> 25
+1023 [label="<f0>  |<f1> Posts " color=red];
+25 -> 1023 [label="Posts"]
+26 [label="{<f0> 26.0|<f1> Share data manager posts. }" shape=Mrecord];
+1025 [label="Researcher" shape=box];
+1025 -> 26
+240 -> 26
+1028 [label="<f0>  |<f1> Posts " color=red];
+26 -> 1028 [label="Posts"]
+27 [label="{<f0> 27.0|<f1> Share data manager posts. }" shape=Mrecord];
+1030 [label="Researcher" shape=box];
+1030 -> 27
+240 -> 27
+1033 [label="<f0>  |<f1> Posts " color=red];
+27 -> 1033 [label="Posts"]
+223 -> 226
+223 -> 227
+223 -> 228
+223 -> 229
+223 -> 230
+223 -> 231
+223 -> 232
+223 -> 233
+223 -> 234
+223 -> 235
+223 -> 237
+223 -> 238
+223 -> 239
+223 -> 242
+223 -> 243
+223 -> 244
+224 -> 240
+224 -> 241
+225 -> 236
+226 -> 202 [label="Project Lifecycle"]
+227 -> 226
+227 -> 201 [label="Description"]
+228 -> 201 [label="Description"]
+228 -> 200 [label="Datum"]
+229 -> 205 [label="Necessary Right"]
+230 -> 229
+230 -> 200 [label="Datum"]
+231 -> 206 [label="Time Plan"]
+232 -> 231
+232 -> 200 [label="Datum"]
+233 -> 209 [label="Creation Process"]
+233 -> 207 [label="Documentation"]
+233 -> 208 [label="Reference"]
+234 -> 208 [label="Reference"]
+234 -> 207 [label="Documentation"]
+234 -> 200 [label="Datum"]
+235 -> 212 [label="Information"]
+237 -> 215 [label="Software"]
+237 -> 200 [label="Datum"]
+238 -> 214 [label="Technology"]
+239 -> 222 [label="Security Requirement"]
+239 -> 200 [label="Datum"]
+240 -> 217 [label="Section"]
+240 -> 219 [label="Role"]
+240 -> 220 [label="Responsibility"]
+240 -> 216 [label="Department"]
+241 -> 240
+241 -> 218 [label="Researcher"]
+241 -> 216 [label="Department"]
+242 -> 243
+242 -> 200 [label="Datum"]
+243 -> 205 [label="Necessary Right"]
+244 -> 200 [label="Datum"]
+235 -> 213 [label="Format"]
+}

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Primary Color " color=red];
+201 [label="<f0>  |<f1> Brand Name " color=red];
+202 [label="<f0>  |<f1> Icon " ];
+203 [label="<f0>  |<f1> Frontend Javascript\nApp " ];
+204 [label="Developer" shape=box];
+205 [label="{<f0> 1.0|<f1> Customise Primary Color }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Customise The Brand Name Of All Frontend Javascript Apps }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Customise Icon }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200 [label="Primary Color"]
+206 -> 201 [label="Brand Name"]
+206 -> 203 [label="Frontend Javascript\nApp"]
+207 -> 202 [label="Icon"]
+}

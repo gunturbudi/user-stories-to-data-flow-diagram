@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Security,shape=partialRectangle,null,null,data_base
+202,"Institutional , Data Manager",rounded=0,null,null,external_entity
+203,Know About The Privacy Requirements Of The Data,ellipse,null,null,process
+204,Know About Security,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Datum,endArrow=classic,203,200,endArrow=classic
+209,Security,endArrow=classic,204,201,endArrow=classic

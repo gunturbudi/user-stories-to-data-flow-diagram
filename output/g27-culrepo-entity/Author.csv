@@ -1,0 +1,55 @@
+id,value,style,source,target,type
+8,Learn more about my research.,ellipse,null,null,process
+200,Work,shape=partialRectangle,null,null,data_base
+201,Author,shape=partialRectangle,null,null,data_base
+202,Update,shape=partialRectangle,null,null,data_base
+203,Sortable Spot,shape=partialRectangle,null,null,data_base
+204,Particular Author,shape=partialRectangle,null,null,data_base
+205,Subject Area,shape=partialRectangle,null,null,data_base
+206,Content,shape=partialRectangle,null,null,data_base
+207,Need Resource,shape=partialRectangle,null,null,data_base
+208,Material,shape=partialRectangle,null,null,data_base
+209,Repository,shape=partialRectangle,null,null,data_base
+210,Behalf,shape=partialRectangle,null,null,data_base
+211,Researcher,rounded=0,null,null,external_entity
+212,Academicresearcher,rounded=0,null,null,external_entity
+213,Patron,rounded=0,null,null,external_entity
+214,"Library , Staff Member",rounded=0,null,null,external_entity
+215,Contact The Author Of A Work Interests,ellipse,null,null,process
+216,Receive Updates,ellipse,null,null,process
+217,Find The Works Of A Particular Author In Easily Sortable Spot,ellipse,null,null,process
+218,Locate Needed Resources,ellipse,null,null,process
+219,Browse Content By Subject Area,ellipse,null,null,process
+220,Browse Content By Author,ellipse,null,null,process
+221,Upload Material To The Repository On The Author's Behalf,ellipse,null,null,process
+223,,endArrow=classic,211,215,endArrow=classic
+224,,endArrow=classic,211,216,endArrow=classic
+225,,endArrow=classic,212,217,endArrow=classic
+226,,endArrow=classic,213,218,endArrow=classic
+227,,endArrow=classic,213,219,endArrow=classic
+228,,endArrow=classic,213,220,endArrow=classic
+229,,endArrow=classic,214,221,endArrow=classic
+230,Author,endArrow=classic,215,201,endArrow=classic
+231,Work,endArrow=classic,215,200,endArrow=classic
+232,Update,endArrow=classic,216,202,endArrow=classic
+233,Particular Author,endArrow=classic,217,204,endArrow=classic
+234,Sortable Spot,endArrow=classic,217,203,endArrow=classic
+235,Work,endArrow=classic,217,200,endArrow=classic
+236,Need Resource,endArrow=classic,218,207,endArrow=classic
+237,Subject Area,endArrow=classic,219,205,endArrow=classic
+238,Content,endArrow=classic,219,206,endArrow=classic
+239,,endArrow=classic,220,218,endArrow=classic
+240,Content,endArrow=classic,220,206,endArrow=classic
+241,Author,endArrow=classic,220,201,endArrow=classic
+242,Material,endArrow=classic,221,208,endArrow=classic
+243,Repository,endArrow=classic,221,209,endArrow=classic
+244,Behalf,endArrow=classic,221,210,endArrow=classic
+1000,,endArrow=classic,215,8,endArrow=classic
+1001,"Researcher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,8,endArrow=classic
+1003,"Researcher,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,8,endArrow=classic
+1005,"Researcher,",rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,8,endArrow=classic
+1007,Research,rounded=0,null,null,external_entity
+1008,Research,endArrow=classic,8,1007,endArrow=classic

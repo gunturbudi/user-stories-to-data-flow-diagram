@@ -1,0 +1,165 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs Submission" as thingfabssubmission #grey
+	entity "Update" as thingupdate
+	entity "Fundingagencycode" as thingFundingAgencyCode
+	entity "Fabs Sample\nFile" as thingfabssamplefile #grey
+	entity "Historical Fabs" as thinghistoricalFABS
+	entity "Datum" as thingdatum
+	entity "Frec Derivation" as thingfrecderivation
+	entity "Frec Paradigm" as thingfrecparadigm
+	entity "Validation" as thingvalidation
+	entity "Gap" as thinggap #grey
+	entity "Duplicate Transaction" as thingduplicatetransaction
+	entity "Publishing Decision" as thingpublishingdecision #grey
+	entity "Database" as thingdatabase
+	entity "User" as thinguser
+	entity "Publish ,\nNew Datum" as thingpublishednewdatum
+	entity "Existent Record" as thingexistentrecord
+	entity "Case" as thingcase
+	entity "Agency" as thingagency
+	entity "Fabs" as thingFABS
+	entity "D File" as thingdfile
+	entity "Good Way" as thingbestway
+	entity "Fabs Group" as thingfabsgroup
+	entity "Time" as thingtime #grey
+	entity "Broker Application" as thingbrokerapplication #grey
+	entity "Rule" as thingrule #grey
+	entity "Gtas Window" as thinggtaswindow #grey
+	entity "Feed" as thingfeed #grey
+	actor "Developer" as actordeveloper
+	circle "Broker Rule\nTable" as thingbrokerruletable #grey
+	boundary "D Files\nGeneration Request" as thingdfilesgenerationrequestsdeveloper
+	boundary "Domain Model" as thingdomainmodelsdeveloper
+	boundary "Attempt" as thingattemptcorrectexistentrecorddeveloper #grey
+	boundary "Historical Loader" as thinghistoricalloaderdeveloper #grey
+	boundary "Historical Data\nFpds Loader" as thinghistoricaldatafpdsloaderdeveloper
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Derivation\nInterface" as thingderivationinterface #grey
+	boundary "Paradigm\nInterface" as thingparadigminterface #grey
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Transaction\nInterface" as thingtransactioninterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Validation\nInterface" as thingvalidationinterface #grey
+	boundary "Db-2213\nInterface" as thingdb2213interface #grey
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Log" as controllog
+	control "Add The\nUpdates On\nA Fabs\nSubmission To\nModified" as controladdupdatefabssubmission
+	control "Cached Managed" as controlmanagedfilesgenerationrequestsdeveloper
+	control "Remove Fundingagencycode" as controlremoveFundingAgencyCode
+	control "Update The\nFabs Sample\nFile" as controlupdatefabssamplefileremoveFundingAgencyCode
+	control "Indexed" as controlindexdomainmodelsdeveloper
+	control "Include The\nFrec Derivations" as controlincludefrecderivation
+	control "Provide Fabs\nGroups Function\nUnder The\nFrec Paradigm" as controlprovidefabsgroups
+	control "Deal With\nThe Gap\nBetween The\nPublishing Decision" as controldealgappublishingdecision
+	control "Prevent Duplicate\nTransactions Published" as controlpreventduplicatetransaction
+	control "Deal With\nThe Time\nGap Between\nValidation" as controldealtimegap #grey
+	control "Access Broker\nApplication Data" as controlaccessbrokerapplicationdata
+	control "Update The\nValidation Broker\nRule Table" as controlupdatevalidationbrokerruletableaccountruleupdates
+	control "Account For\nThe Rule\nUpdates In\nDb-2213" as controlaccountruleupdates
+	control "Add The\nGtas Window\nData To\nThe Database" as controladdgtaswindowdatadatabase
+	control "Prevent Users\nFrom Publishing,\nDouble Fabs\nSubmissions Refreshing" as controlpreventuserpublishingdoublefabssubmissions
+	control "Correct Existent\nRecords" as controlcorrectexistentrecord
+	control "Ensure" as controlensureattemptcorrectexistentrecorddeveloper
+	control "Delete Existent\nRecords" as controldeleteexistentrecord
+	control "Clarify To\nUsers" as controlclarifyuser
+	control "Determine" as controldetermine
+	control "Include Fpds" as controlincludehistoricalloaderdeveloperFPDS
+	control "Include Both\nHistorical, Data,\nExtracted Feed\nData" as controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+	control "Load Historical\nFpds Data" as controlloadhistoricalfpdsdata
+	control "Determine The\nBest Way" as controldeterminebestwayloadhistoricalfpdsdata
+
+	thingfabssubmission <.. thingupdate
+	thingrule <.. thingupdate
+	thingFundingAgencyCode <.. thingupdate
+	thingbrokerapplication <.. thingdatum
+	thinggtaswindow <.. thingdatum
+	thingdatabase <.. thingdatum
+	thingfeed <.. thingdatum
+	thingFundingAgencyCode <.. thingdatum
+	thingpublishingdecision <.. thinggap
+	thingtime <.. thinggap
+	thingfabssubmission <.. thinguser
+	thingFABS <.. thingdfile
+	thingdatum <.. thingdfile
+	thingfrecparadigm <.. thingfabsgroup
+	thingvalidation *-- thingbrokerruletable
+	actordeveloper --- thingdfilesgenerationrequestsdeveloper
+	actordeveloper --- thingdomainmodelsdeveloper
+	actordeveloper --- thingattemptcorrectexistentrecorddeveloper
+	actordeveloper --- thinghistoricalloaderdeveloper
+	actordeveloper --- thinghistoricaldatafpdsloaderdeveloper
+	actordeveloper --- thingsubmissioninterface
+	actordeveloper --- thingfileinterface
+	actordeveloper --- thingderivationinterface
+	actordeveloper --- thingparadigminterface
+	actordeveloper --- thingdecisioninterface
+	actordeveloper --- thingtransactioninterface
+	actordeveloper --- thingdatuminterface
+	actordeveloper --- thingvalidationinterface
+	actordeveloper --- thingdb2213interface
+	actordeveloper --- thingdatabaseinterface
+	actordeveloper --- thinguserinterface
+	actordeveloper --- thingwayinterface
+	thingupdate --- controladdupdatefabssubmission
+	thingfabssubmission --- controladdupdatefabssubmission
+	thingsubmissioninterface --> controladdupdatefabssubmission
+	thingdfilesgenerationrequestsdeveloper --> controlmanagedfilesgenerationrequestsdeveloper
+	thingFundingAgencyCode --- controlremoveFundingAgencyCode
+	controlupdatefabssamplefileremoveFundingAgencyCode --> controlremoveFundingAgencyCode
+	thingfileinterface --> controlremoveFundingAgencyCode
+	thingfabssamplefile --- controlupdatefabssamplefileremoveFundingAgencyCode
+	thingfileinterface --> controlupdatefabssamplefileremoveFundingAgencyCode
+	thingdomainmodelsdeveloper --> controlindexdomainmodelsdeveloper
+	thingfrecderivation --- controlincludefrecderivation
+	thingderivationinterface --> controlincludefrecderivation
+	thingfabsgroup --- controlprovidefabsgroups
+	thingfrecparadigm --- controlprovidefabsgroups
+	thingparadigminterface --> controlprovidefabsgroups
+	thinggap --- controldealgappublishingdecision
+	thingpublishingdecision --- controldealgappublishingdecision
+	thingdecisioninterface --> controldealgappublishingdecision
+	thingduplicatetransaction --- controlpreventduplicatetransaction
+	thingtransactioninterface --> controlpreventduplicatetransaction
+	thingvalidation --- controldealtimegap
+	thinggap --- controldealtimegap
+	thingdatuminterface --> controlaccessbrokerapplicationdata
+	thingdatum --- controlaccessbrokerapplicationdata
+	thingbrokerruletable --- controlupdatevalidationbrokerruletableaccountruleupdates
+	thingvalidationinterface --> controlupdatevalidationbrokerruletableaccountruleupdates
+	controlupdatevalidationbrokerruletableaccountruleupdates --> controlaccountruleupdates
+	thingdb2213interface --> controlaccountruleupdates
+	thingupdate --- controlaccountruleupdates
+	thingFundingAgencyCode --- controlaccountruleupdates
+	thingdatabase --- controladdgtaswindowdatadatabase
+	thingdatabaseinterface --> controladdgtaswindowdatadatabase
+	thingdatum --- controladdgtaswindowdatadatabase
+	thinguser --- controlpreventuserpublishingdoublefabssubmissions
+	thingfabssubmission --- controlpreventuserpublishingdoublefabssubmissions
+	thingsubmissioninterface --> controlpreventuserpublishingdoublefabssubmissions
+	thingexistentrecord --- controlcorrectexistentrecord
+	controlensureattemptcorrectexistentrecorddeveloper --> controlcorrectexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controlcorrectexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controlensureattemptcorrectexistentrecorddeveloper
+	thingexistentrecord --- controldeleteexistentrecord
+	thingattemptcorrectexistentrecorddeveloper --> controldeleteexistentrecord
+	controlensureattemptcorrectexistentrecorddeveloper --> controldeleteexistentrecord
+	thinguserinterface --> controlclarifyuser
+	thinguser --- controlclarifyuser
+	thinghistoricalloaderdeveloper --> controlincludehistoricalloaderdeveloperFPDS
+	thingFundingAgencyCode --- controlincludehistoricalloaderdeveloperFPDS
+	thinghistoricaldatafpdsloaderdeveloper --> controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+	thingdatum --- controlincludehistoricaldatafpdsloaderdeveloperhistoricaldataextractedfeeddata
+	controldeterminebestwayloadhistoricalfpdsdata --> controlloadhistoricalfpdsdata
+	thingwayinterface --> controlloadhistoricalfpdsdata
+	thingdatum --- controlloadhistoricalfpdsdata
+	thingbestway --- controldeterminebestwayloadhistoricalfpdsdata
+	thingwayinterface --> controldeterminebestwayloadhistoricalfpdsdata
+
+@enduml

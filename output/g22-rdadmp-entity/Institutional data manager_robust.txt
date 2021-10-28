@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Security" as thingsecurity
+	actor "Institutional ,\nData Manager" as actorinstitutionaldatamanager
+	circle "Privacy Requirement" as thingprivacyrequirement
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Security\nInterface" as thingsecurityinterface #grey
+	control "Know About\nThe Privacy\nRequirements Of\nThe Data" as controlknowprivacyrequirement
+	control "Know About\nSecurity" as controlknowsecurity
+
+	thingdatum *-- thingprivacyrequirement
+	actorinstitutionaldatamanager --- thingdatuminterface
+	actorinstitutionaldatamanager --- thingsecurityinterface
+	thingprivacyrequirement --- controlknowprivacyrequirement
+	thingdatum --- controlknowprivacyrequirement
+	thingdatuminterface --> controlknowprivacyrequirement
+	thingsecurity --- controlknowsecurity
+	thingsecurityinterface --> controlknowsecurity
+
+@enduml

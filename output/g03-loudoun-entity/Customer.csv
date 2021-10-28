@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+4,Perform transactions that first require user authentication.,ellipse,null,null,process
+5,Perform an inspection of my project.,ellipse,null,null,process
+6,Provide results of the inspection to the customer.,ellipse,null,null,process
+200,Customer Portal\nUser Account,shape=partialRectangle,null,null,data_base
+201,Inspection,shape=partialRectangle,null,null,data_base
+202,Customer,rounded=0,null,null,external_entity
+203,Inspector,rounded=0,null,null,external_entity
+204,Create A Customer Portal User Account,ellipse,null,null,process
+205,Request Inspection,ellipse,null,null,process
+206,Conduct Inspections,ellipse,null,null,process
+208,,endArrow=classic,202,204,endArrow=classic
+209,,endArrow=classic,202,205,endArrow=classic
+210,,endArrow=classic,202,206,endArrow=classic
+211,,endArrow=classic,203,205,endArrow=classic
+212,,endArrow=classic,203,206,endArrow=classic
+213,Customer Portal\nUser Account,endArrow=classic,204,200,endArrow=classic
+214,Inspection,endArrow=classic,205,201,endArrow=classic
+215,Inspection,endArrow=classic,206,201,endArrow=classic
+1000,,endArrow=classic,204,4,endArrow=classic
+1001,Customer,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,4,endArrow=classic
+1003,Transactions,rounded=0,null,null,external_entity
+1004,Transactions,endArrow=classic,4,1003,endArrow=classic
+1005,County inspector,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,5,endArrow=classic
+1007,County inspector,rounded=0,null,null,external_entity
+1008,,endArrow=classic,1007,5,endArrow=classic
+1009,Project,rounded=0,null,null,external_entity
+1010,Project,endArrow=classic,5,1009,endArrow=classic
+1011,"Inspector,",rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,6,endArrow=classic
+1013,,endArrow=classic,206,6,endArrow=classic
+1014,Customer compliance,rounded=0,null,null,external_entity
+1015,Customer compliance,endArrow=classic,6,1014,endArrow=classic
+1016,Results of the inspection,rounded=0,null,null,external_entity
+1017,Results of the inspection,endArrow=classic,6,1016,endArrow=classic

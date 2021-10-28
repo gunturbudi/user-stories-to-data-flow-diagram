@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Thing,shape=partialRectangle,null,null,data_base
+201,Person,shape=partialRectangle,null,null,data_base
+202,Socialcaregiver,rounded=0,null,null,external_entity
+203,Remind Of The Things,ellipse,null,null,process
+204,Bring To The Person,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Thing,endArrow=classic,203,200,endArrow=classic
+210,Person,endArrow=classic,204,201,endArrow=classic

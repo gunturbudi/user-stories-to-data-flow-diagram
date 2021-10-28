@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Item,shape=partialRectangle,null,null,data_base
+201,Record,shape=partialRectangle,null,null,data_base
+202,Mechanism,shape=partialRectangle,null,null,data_base
+203,Data Curator,rounded=0,null,null,external_entity
+204,Accessed,ellipse,null,null,process
+205,Upload A New Version Of An Item Has Changed Still Allowing,ellipse,null,null,process
+206,Stored,ellipse,null,null,process
+207,Have A Mechanism,ellipse,null,null,process
+208,Allow For Records For Items Not Do Need,ellipse,null,null,process
+210,,endArrow=classic,203,204,endArrow=classic
+211,,endArrow=classic,203,205,endArrow=classic
+212,,endArrow=classic,203,206,endArrow=classic
+213,,endArrow=classic,203,207,endArrow=classic
+214,,endArrow=classic,203,208,endArrow=classic
+215,,endArrow=classic,205,204,endArrow=classic
+216,Item,endArrow=classic,205,200,endArrow=classic
+217,,endArrow=classic,207,208,endArrow=classic
+218,Mechanism,endArrow=classic,207,202,endArrow=classic
+219,,endArrow=classic,208,206,endArrow=classic
+220,Record,endArrow=classic,208,201,endArrow=classic
+221,Item,endArrow=classic,208,200,endArrow=classic

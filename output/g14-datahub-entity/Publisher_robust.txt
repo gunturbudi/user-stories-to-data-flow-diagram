@@ -1,0 +1,217 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Account" as thingaccount
+	entity "Datapackage" as thingdatapackage
+	entity "Registry" as thingregistry
+	entity "Client" as thingclient
+	entity "Publish Command" as thingpublishcommand
+	entity "Server" as thingserver
+	entity "Datum" as thingdatum
+	entity "Ui" as thingUI
+	entity "Cli" as thingcli
+	entity "Publishing" as thingpublishing
+	entity "Publish Package" as thingpublishedpackage
+	entity "Tag" as thingtag
+	entity "Multiple Version" as thingmultipleversion
+	entity "Old Version" as thingolderversion
+	entity "Previous Version" as thingpreviousversion
+	entity "Access" as thingaccess
+	entity "Site" as thingsite
+	entity "Price" as thingprice
+	entity "Pricing Plan" as thingpricingplan #grey
+	entity "Publish Datum" as thingpublisheddata
+	entity "World" as thingworld
+	entity "Publisher" as thingpublisher
+	entity "Profile" as thingprofile
+	entity "Resource" as thingresource #grey
+	actor "Publisher" as actorpublisher
+	actor "Consumer" as actorconsumer
+	circle "Copy" as thingcopy
+	circle "View" as thingview
+	circle "Real Example" as thingrealexample
+	circle "Snapshot" as thingsnapshot
+	boundary "Current Datum\nPackage" as thingcurrentdatapackageuseclipublishingpublisher #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Registry\nInterface" as thingregistryinterface #grey
+	boundary "Client\nInterface" as thingclientinterface #grey
+	boundary "Command\nInterface" as thingcommandinterface #grey
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Server\nInterface" as thingserverinterface #grey
+	boundary "Ui\nInterface" as thinguiinterface #grey
+	boundary "Cli\nInterface" as thingcliinterface #grey
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "World\nInterface" as thingworldinterface #grey
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Publish A\nDataset" as controlpublishdataset
+	control "Sign Up\nFor An\nAccount" as controlsignaccount
+	control "Know" as controlknow
+	control "Signing Up" as controlsignknow
+	control "Import Data\nPackage Into\nThe Registry" as controlimportdatapackageregistry
+	control "Configure Client" as controlconfigureclient
+	control "Use A\nPublish Command" as controlusepublishcommandupdatedatapackage
+	control "Update A\nData Package\nAlready Is\nIn The\nRegistry" as controlupdatedatapackage
+	control "Unpublish A\nData Package" as controlunpublishdatapackage
+	control "Delete A\nData Package" as controldeletedatapackage
+	control "Publish A\nData Package\nResource Data\nWhere Stored\nOn Servers" as controlpublishdatapackage
+	control "Publish A\nData Package\nIn The\nUi" as controlpublishdatapackageUI
+	control "Create A\nData Package\nIn The\nUi" as controlcreatedatapackage
+	control "Restore The\nDeleted Data\nPackage Via\nCli" as controlrestoredeleteddatapackagecli
+	control "Undelete The\nDeleted Data\nPackages" as controlundeletedeleteddatapackages
+	control "Preview The\nViews Of" as controlpreviewview
+	control "Use Cli\nTo Publishing" as controluseclipublishing
+	control "Preview A\nDatapackage" as controlpreviewdatapackage
+	control "See Real\nExamples Of\nPublished Packages" as controlseerealexample
+	control "Tag Datapackage" as controltagdatapackagecreatesnapshot
+	control "Create A\nSnapshot Of\nData On\nThe Registry\nServer" as controlcreatesnapshot
+	control "Overwrite A\nTag" as controloverwritetag
+	control "A Tag\nExists Try" as controltrywarntagoverwritetag
+	control "Warned" as controlwarn
+	control "Overwrite The\nPreviously Tagged\nDatapackage" as controloverwritetaggeddatapackage
+	control "Version Data\nPackage" as controlversiondatapackage
+	control "Keep Multiple\nVersions Including\nOlder Versions" as controlkeepmultipleversion
+	control "Get Access\nTo A\nPrevious Version" as controlgetaccess
+	control "Sign Up\nFor A\nGiven Pricing\nPlan" as controlsigngivenpricingplan
+	control "Have Private\nData Packages" as controlhaveprivatedatapackages
+	control "Validate The\nData" as controlvalidatedatum
+	control "Data" as controldatumpublishvalidate
+	control "Publish" as controlpublishvalidate
+	control "Validated" as controlvalidate
+	control "Show The\nWorld" as controlshowworld
+	control "Browse Publishers" as controlbrowsepublisher
+	control "Find Publishers" as controlfindpublisher
+	control "See A\nPublisher's Profile" as controlseeprofile
+	control "View A\nPublisher's Profile" as controlviewprofile
+
+	thingregistry <.. thingdatapackage
+	thingUI <.. thingdatapackage
+	thingcli <.. thingdatapackage
+	thingdatum <.. thingdatapackage
+	thingregistry <.. thingserver
+	thingregistry <.. thingdatum
+	thingresource <.. thingdatum
+	thingserver <.. thingdatum
+	thingolderversion <.. thingmultipleversion
+	thingpreviousversion <.. thingaccess
+	thingpublisher <.. thingprofile
+	thingdatum *-- thingcopy
+	thingpublishedpackage *-- thingrealexample
+	thingdatum *-- thingsnapshot
+	actorpublisher --- thingcurrentdatapackageuseclipublishingpublisher
+	actorpublisher --- thingdatasetinterface
+	actorpublisher --- thingaccountinterface
+	actorpublisher --- thingregistryinterface
+	actorpublisher --- thingclientinterface
+	actorpublisher --- thingcommandinterface
+	actorpublisher --- thingpackageinterface
+	actorpublisher --- thingserverinterface
+	actorpublisher --- thinguiinterface
+	actorpublisher --- thingcliinterface
+	actorpublisher --- thingdatapackageinterface
+	actorpublisher --- thingtaginterface
+	actorpublisher --- thingversioninterface
+	actorpublisher --- thingplaninterface
+	actorpublisher --- thingdatuminterface
+	actorpublisher --- thingworldinterface
+	actorconsumer --- thingpublisherinterface
+	actorconsumer --- thingprofileinterface
+	thingdataset --- controlpublishdataset
+	thingdatasetinterface --> controlpublishdataset
+	thingaccount --- controlsignaccount
+	thingaccountinterface --> controlsignaccount
+	controlsignknow --> controlknow
+	thingregistry --- controlimportdatapackageregistry
+	thingregistryinterface --> controlimportdatapackageregistry
+	thingdatapackage --- controlimportdatapackageregistry
+	thingclient --- controlconfigureclient
+	thingclientinterface --> controlconfigureclient
+	thingpublishcommand --- controlusepublishcommandupdatedatapackage
+	thingcommandinterface --> controlusepublishcommandupdatedatapackage
+	controlusepublishcommandupdatedatapackage --> controlupdatedatapackage
+	thingregistry --- controlupdatedatapackage
+	thingregistryinterface --> controlupdatedatapackage
+	thingdatapackage --- controlupdatedatapackage
+	thingpackageinterface --> controlunpublishdatapackage
+	thingdatapackage --- controlunpublishdatapackage
+	thingpackageinterface --> controldeletedatapackage
+	thingdatapackage --- controldeletedatapackage
+	thingserver --- controlpublishdatapackage
+	thingserverinterface --> controlpublishdatapackage
+	thingdatapackage --- controlpublishdatapackage
+	thingdatum --- controlpublishdatapackage
+	thingUI --- controlpublishdatapackageUI
+	thinguiinterface --> controlpublishdatapackageUI
+	thingdatapackage --- controlpublishdatapackageUI
+	thingUI --- controlcreatedatapackage
+	thinguiinterface --> controlcreatedatapackage
+	thingdatapackage --- controlcreatedatapackage
+	thingcli --- controlrestoredeleteddatapackagecli
+	thingcliinterface --> controlrestoredeleteddatapackagecli
+	thingdatapackage --- controlrestoredeleteddatapackagecli
+	thingpackageinterface --> controlundeletedeleteddatapackages
+	thingdatapackage --- controlundeletedeleteddatapackages
+	thingview --- controlpreviewview
+	thingcurrentdatapackageuseclipublishingpublisher --> controlpreviewview
+	thingcurrentdatapackageuseclipublishingpublisher --> controluseclipublishing
+	thingpublishing --- controluseclipublishing
+	controlpreviewview --> controluseclipublishing
+	thingcli --- controluseclipublishing
+	thingdatapackage --- controlpreviewdatapackage
+	thingdatapackageinterface --> controlpreviewdatapackage
+	thingrealexample --- controlseerealexample
+	thingpublishedpackage --- controlseerealexample
+	thingpackageinterface --> controlseerealexample
+	thingdatapackage --- controltagdatapackagecreatesnapshot
+	thingdatapackageinterface --> controltagdatapackagecreatesnapshot
+	controltagdatapackagecreatesnapshot --> controlcreatesnapshot
+	thingsnapshot --- controlcreatesnapshot
+	thingdatum --- controlcreatesnapshot
+	thingregistryinterface --> controlcreatesnapshot
+	thingregistry --- controlcreatesnapshot
+	thingserver --- controlcreatesnapshot
+	controltrywarntagoverwritetag --> controloverwritetag
+	thingtaginterface --> controloverwritetag
+	thingtag --- controloverwritetag
+	thingtag --- controltrywarntagoverwritetag
+	thingtaginterface --> controltrywarntagoverwritetag
+	controltrywarntagoverwritetag --> controlwarn
+	thingtaginterface --> controlwarn
+	thingdatapackageinterface --> controloverwritetaggeddatapackage
+	thingtag --- controloverwritetaggeddatapackage
+	thingpackageinterface --> controlversiondatapackage
+	thingdatapackage --- controlversiondatapackage
+	thingmultipleversion --- controlkeepmultipleversion
+	thingolderversion --- controlkeepmultipleversion
+	thingversioninterface --> controlkeepmultipleversion
+	thingaccess --- controlgetaccess
+	thingpreviousversion --- controlgetaccess
+	thingversioninterface --> controlgetaccess
+	thingplaninterface --> controlsigngivenpricingplan
+	thingpricingplan --- controlsigngivenpricingplan
+	thingpackageinterface --> controlhaveprivatedatapackages
+	thingdatapackage --- controlhaveprivatedatapackages
+	thingdatuminterface --> controlvalidatedatum
+	thingdatum --- controlvalidatedatum
+	controldatumpublishvalidate --> controlpublishvalidate
+	controlpublishvalidate --> controlvalidate
+	thingworld --- controlshowworld
+	thingworldinterface --> controlshowworld
+	thingpublisher --- controlbrowsepublisher
+	thingpublisherinterface --> controlbrowsepublisher
+	thingpublisher --- controlfindpublisher
+	thingpublisherinterface --> controlfindpublisher
+	thingprofile --- controlseeprofile
+	thingprofileinterface --> controlseeprofile
+	thingprofile --- controlviewprofile
+	thingprofileinterface --> controlviewprofile
+
+@enduml

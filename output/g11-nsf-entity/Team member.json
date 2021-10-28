@@ -1,0 +1,207 @@
+[
+  {
+    "text": "As a team member, I want to see the first iteration of beta up on cloud.gov.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have a prioritized list of features and elements of a future social element page, so that I can work with the engineers to determine feasibility.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to determine a design direction for the beta social page, so that we can implement a beta site quickly without established brand guidelines.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "social page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to meet with DIS / cloud.gov, so that I can determine the requirements for the beta.nsf.gov ATO.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "meet",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to understand what the MVP should look like, so that I can begin understanding workflow needs as they pertain to any CMS decision.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "MVP",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have an updated acquisitions roadmap, so that I can plan accordingly.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to understand how time off overlaps with plans around the user research.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "time off",
+        "label": "PII"
+      },
+      {
+        "text": "plans",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to know what the first hypothesis is, so that I can start developing a prototype to test.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have a prototype strategy, so that I understand how we will gain understandings from tests that will drive recommendations.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have a schedule of more coworking slots, so that I can work in tandem with the rest of the team on a more regular basis.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "coworking slots",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to know when the mid-point checkin is and what will be covered, so that I can plan accordingly.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to know what visual design related tasks we might need to plan for this sprint, so that I can assign tasks as necessary.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have recruiting-email templates ready to go, so that I can start recruiting interviewees ASAP!.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "recruiting",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have a high-level sense of the project timeline, so that I can plan my work.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "plan",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to have a platform that allows me to rapidly prototype HTML ideas.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "rapidly prototype",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to know when meetings are, so that I can plan accordingly.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "meetings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a team member, I want to understand how work moves between UX/content > visual design > front end dev for a sprint cycle.",
+    "entities": [
+      {
+        "text": "team member",
+        "label": "Data"
+      }
+    ]
+  }
+]

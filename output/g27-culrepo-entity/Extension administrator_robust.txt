@@ -1,0 +1,93 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Workflow" as thingworkflow
+	entity "Easy" as thingeasy
+	entity "Specific Project" as thingspecificproject
+	entity "Educator" as thingeducator
+	entity "Resource" as thingresource
+	entity "Available ,\nGeographic Area" as thingavailablegeographicarea
+	entity "Nys" as thingNYS
+	entity "Faculty" as thingotherfaculty
+	entity "Ingestion" as thingnextingestion
+	entity "Approval Step" as thingapprovalstep #grey
+	entity "Historical" as thinghistorical
+	entity "Attention" as thingattention
+	entity "Periodic Reminder" as thingperiodicreminder #grey
+	entity "Knowledge Collection" as thingknowledgecollection
+	entity "Ir Reminder" as thingirreminder
+	actor "Extension Administrator" as actorextensionadministrator
+	actor "Staff ,\nContent Manager" as actorstaffcontentmanager
+	boundary "Easy\nInterface" as thingeasyinterface #grey
+	boundary "Nys\nInterface" as thingnysinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	boundary "Educator\nInterface" as thingeducatorinterface #grey
+	boundary "Step\nInterface" as thingstepinterface #grey
+	boundary "Attention\nInterface" as thingattentioninterface #grey
+	boundary "Ingestion\nInterface" as thingingestioninterface #grey
+	boundary "Historical\nInterface" as thinghistoricalinterface #grey
+	control "Have Easy" as controlhaveeasy
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nOther Faculty\nAcross Nys" as controlmakeresourceavailablegeographicarea
+	control "Make Resources\nDeveloped For\nSpecific Projects" as controlmakeresource
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nEducator" as controlmakeresourceavailablegeographicareaeducator
+	control "Get Periodic\nReminders Something\nWhen Needs\nAttention Including\nApproval Step" as controlgetperiodicreminderapprovalstep
+	control "Get Periodic\nReminders Something\nWhen Needs\nAttention Including\nSomething Need" as controlgetperiodicremindersomething
+	control "Get Periodic\nIr Reminders\nSomething When\nNeeds Attention\nIncluding Next\nIngestion" as controlgetperiodicirreminders
+	control "Move From\nA Current\nKnowledge Collection\nTo Historical" as controlmovecurrentknowledgecollectionhistorical
+
+	thingspecificproject <.. thingresource
+	thingavailablegeographicarea <.. thingresource
+	thingotherfaculty <.. thingavailablegeographicarea
+	thingeducator <.. thingavailablegeographicarea
+	thingNYS <.. thingotherfaculty
+	thingnextingestion <.. thingattention
+	thingapprovalstep <.. thingattention
+	thingattention <.. thingperiodicreminder
+	thinghistorical <.. thingknowledgecollection
+	thingattention <.. thingirreminder
+	thingnextingestion <.. thingirreminder
+	actorextensionadministrator --- thingeasyinterface
+	actorextensionadministrator --- thingnysinterface
+	actorextensionadministrator --- thingprojectinterface
+	actorextensionadministrator --- thingeducatorinterface
+	actorextensionadministrator --- thingstepinterface
+	actorstaffcontentmanager --- thingstepinterface
+	actorextensionadministrator --- thingattentioninterface
+	actorstaffcontentmanager --- thingattentioninterface
+	actorextensionadministrator --- thingingestioninterface
+	actorstaffcontentmanager --- thingingestioninterface
+	actorextensionadministrator --- thinghistoricalinterface
+	actorstaffcontentmanager --- thinghistoricalinterface
+	thingeasy --- controlhaveeasy
+	thingeasyinterface --> controlhaveeasy
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicarea
+	thingotherfaculty --- controlmakeresourceavailablegeographicarea
+	thingNYS --- controlmakeresourceavailablegeographicarea
+	thingnysinterface --> controlmakeresourceavailablegeographicarea
+	thingresource --- controlmakeresourceavailablegeographicarea
+	thingresource --- controlmakeresource
+	thingspecificproject --- controlmakeresource
+	thingprojectinterface --> controlmakeresource
+	thingeducator --- controlmakeresourceavailablegeographicareaeducator
+	thingeducatorinterface --> controlmakeresourceavailablegeographicareaeducator
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicareaeducator
+	thingresource --- controlmakeresourceavailablegeographicareaeducator
+	thingperiodicreminder --- controlgetperiodicreminderapprovalstep
+	thingapprovalstep --- controlgetperiodicreminderapprovalstep
+	thingstepinterface --> controlgetperiodicreminderapprovalstep
+	thingattention --- controlgetperiodicreminderapprovalstep
+	thingattentioninterface --> controlgetperiodicremindersomething
+	thingperiodicreminder --- controlgetperiodicremindersomething
+	thingattention --- controlgetperiodicremindersomething
+	thingirreminder --- controlgetperiodicirreminders
+	thingattention --- controlgetperiodicirreminders
+	thingnextingestion --- controlgetperiodicirreminders
+	thingingestioninterface --> controlgetperiodicirreminders
+	controlgetperiodicremindersomething --> controlmovecurrentknowledgecollectionhistorical
+	thingknowledgecollection --- controlmovecurrentknowledgecollectionhistorical
+	thinghistorical --- controlmovecurrentknowledgecollectionhistorical
+	thinghistoricalinterface --> controlmovecurrentknowledgecollectionhistorical
+
+@enduml

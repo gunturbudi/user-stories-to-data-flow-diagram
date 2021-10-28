@@ -1,0 +1,62 @@
+[
+  {
+    "text": "As a broker team member, I want to make some updates to the SQL codes for clarity.",
+    "entities": [
+      {
+        "text": "broker team member",
+        "label": "Data"
+      },
+      {
+        "text": "updates",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.",
+    "entities": [
+      {
+        "text": "broker team member",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "PPoPCode cases",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a broker team member, I want to ensure the Broker resources, validations, and P&P pages are updated appropriately for the launch of FABS and DAIMS v1.1.",
+    "entities": [
+      {
+        "text": "broker team member",
+        "label": "Data"
+      },
+      {
+        "text": "P&P pages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.",
+    "entities": [
+      {
+        "text": "broker team member",
+        "label": "Data"
+      },
+      {
+        "text": "derive",
+        "label": "Processing"
+      },
+      {
+        "text": "FundingAgencyCode",
+        "label": "PII"
+      }
+    ]
+  }
+]

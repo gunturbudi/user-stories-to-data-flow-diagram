@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	entity "Code" as thingcode
+	entity "Dataset Type" as thingdatasettype
+	actor "Datum Scientist" as actordatascientist
+	circle "New Version" as thingnewversion
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Create A\nDataset Instance\nOf An\nExisting Dataset\nType Writing\nCode" as controlcreatedatasetinstance
+	control "Upgrade A\nDataset Instance\nTo A\nNew Version\nOf Code" as controlupgradedatasetinstancenewversion
+
+	thingdatasettype <.. thingdatasetinstance
+	thingnewversion <.. thingdatasetinstance
+	thingcode <.. thingdatasettype
+	thingcode *-- thingnewversion
+	actordatascientist --- thingcodeinterface
+	thingdatasetinstance --- controlcreatedatasetinstance
+	thingdatasettype --- controlcreatedatasetinstance
+	thingcode --- controlcreatedatasetinstance
+	thingcodeinterface --> controlcreatedatasetinstance
+	thingnewversion --- controlupgradedatasetinstancenewversion
+	thingdatasetinstance --- controlupgradedatasetinstancenewversion
+	thingcode --- controlupgradedatasetinstancenewversion
+	thingcodeinterface --> controlupgradedatasetinstancenewversion
+
+@enduml

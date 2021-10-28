@@ -1,0 +1,38 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Colour " ];
+201 [label="<f0>  |<f1> Regular User " ];
+202 [label="<f0>  |<f1> Access " ];
+203 [label="<f0>  |<f1> System " ];
+204 [label="<f0>  |<f1> Worm " color=red];
+205 [label="<f0>  |<f1> Way " ];
+206 [label="<f0>  |<f1> Web Interface\nGraphic " ];
+207 [label="<f0>  |<f1> Page Template " ];
+208 [label="<f0>  |<f1> Metadata Field " color=red];
+209 [label="Lab Administrator" shape=box];
+210 [label="{<f0> 1.0|<f1> Theme The Web Interface Graphics }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Theme Colour }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Increased Access To The System }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Support Regular Users }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Create Page Templates With Bespoke Metadata Fields }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Managing Worm }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Provided With A Way }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+209 -> 216
+210 -> 206 [label="Web Interface\nGraphic"]
+211 -> 200 [label="Colour"]
+212 -> 213
+212 -> 202 [label="Access"]
+212 -> 203 [label="System"]
+213 -> 201 [label="Regular User"]
+214 -> 207 [label="Page Template"]
+214 -> 208 [label="Metadata Field"]
+215 -> 216
+215 -> 204 [label="Worm"]
+216 -> 205 [label="Way"]
+}

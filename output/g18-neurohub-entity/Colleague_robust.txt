@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Colleague" as thingcolleague
+	actor "Researcher" as actorresearcher
+	boundary "Ability" as thingabilitylocatedatumresearcher #grey
+	boundary "Colleague\nInterface" as thingcolleagueinterface #grey
+	control "Have" as controlhaveabilitylocatedatumresearcher
+	control "That Share" as controlsharethat
+	control "Locate Data\nColleagues Want" as controllocatedatum
+	control "Access Data\nColleagues Want" as controlaccessdatum
+
+	thingcolleague <.. thingdatum
+	actorresearcher --- thingabilitylocatedatumresearcher
+	actorresearcher --- thingcolleagueinterface
+	thingabilitylocatedatumresearcher --> controlhaveabilitylocatedatumresearcher
+	controllocatedatum --> controlsharethat
+	thingcolleagueinterface --> controlsharethat
+	controlaccessdatum --> controlsharethat
+	thingabilitylocatedatumresearcher --> controllocatedatum
+	thingdatum --- controllocatedatum
+	thingcolleague --- controllocatedatum
+	controlhaveabilitylocatedatumresearcher --> controllocatedatum
+	thingdatum --- controlaccessdatum
+	thingcolleague --- controlaccessdatum
+	thingabilitylocatedatumresearcher --> controlaccessdatum
+	controlhaveabilitylocatedatumresearcher --> controlaccessdatum
+
+@enduml

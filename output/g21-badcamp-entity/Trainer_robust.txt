@@ -1,0 +1,152 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Update" as thingupdate
+	entity "Info" as thinginfo
+	entity "Trainer" as thingtrainer
+	entity "Website" as thingwebsite
+	entity "View" as thingview
+	entity "Location" as thinglocation
+	entity "Dedicated Page" as thingdedicatedpage
+	entity "Class" as thingclass
+	entity "Datetime" as thingdatetime
+	entity "Logo" as thinglogo
+	entity "Registration" as thingregistration
+	entity "Title" as thingtitle
+	entity "Follow Information" as thingfollowinginformation
+	entity "Offering" as thingoffering
+	entity "Skill Level" as thingskilllevel #grey
+	entity "Training" as thingtraining
+	entity "Short Summary" as thingshortsummary
+	entity "Link" as thinglink #grey
+	entity "Remain Registration" as thingremainingregistration
+	entity "Day Register" as thingdayregister #grey
+	entity "-pron-" as thingmoinsPRONmoins
+	entity "Information Attendee" as thinginformationattendee #grey
+	entity "Map" as thingmap #grey
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	actor "Trainer" as actortrainer
+	circle "Day Level" as thingdaylevel
+	circle "Detail" as thingfulldetail
+	circle "Number" as thingnumber #grey
+	circle "Node" as thingnode #grey
+	circle "Attendance" as thingattendance #grey
+	circle "Option" as thingoption #grey
+	boundary "Info\nInterface" as thinginfointerface #grey
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	boundary "Class\nInterface" as thingclassinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Datetime\nInterface" as thingdatetimeinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nInfo" as controlemailtrainerwebsite
+	control "Email The\nTrainers Once\nFrom The\nWebsite For\nUpdate" as controlemailtrainerwebsiteupdate
+	control "Have A\nView Attached\nTo Training\nNode Shows\nAll Information\nAttendee Trainers\nSee All\nClass Attendance\nFirst" as controlhaveview
+	control "Learn More\nAbout" as controllearnmore #grey
+	control "Learn More\nAbout Skill\nLevel" as controllearnmoreskilllevel
+	control "Learn More\nAbout Datetime" as controllearnmoredatetime
+	control "Have A\nDedicated Page\nFor Each\nClass" as controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	control "Learn More\nAbout Logo" as controllearnmorelogo
+	control "Learn More\nAbout Possibly\nA Map\nView" as controllearnmoremapview
+	control "Register For\nClass" as controlregisterclass
+	control "Learn More\nAbout The\nOffering The\nFollowing Information\nShown Registrations\nRemaining" as controllearnmoreoffering
+	control "Learn More\nAbout Location" as controllearnmorelocation
+	control "Learn More\nAbout Title" as controllearnmoretitle
+	control "Learn More\nAbout Trainer" as controllearnmoretrainer
+	control "Learn More\nAbout Possibly\nA View" as controllearnmoreview #grey
+	control "Have" as controlhave
+	control "Edit Training\nNode" as controledittrainingnode
+	control "Edit -Pron-" as controleditmoinsPRONmoins
+
+	thingwebsite <.. thingtrainer
+	thinginformationattendee <.. thingtrainer
+	thingattendance <.. thingtrainer
+	thinginfo <.. thingwebsite
+	thingupdate <.. thingwebsite
+	thingnode <.. thingview
+	thingtrainer <.. thingview
+	thingmap <.. thingview
+	thingclass <.. thingview
+	thingtraining <.. thingview
+	thingtraining <.. thinglocation
+	thingclass <.. thingdedicatedpage
+	thingregistration <.. thingfollowinginformation
+	thingfollowinginformation <.. thingoffering
+	thingregistration <.. thingoffering
+	thingfulldetail <.. thinglink
+	thingnumber *-- thingdaylevel
+	thinglink *-- thingdaylevel
+	thingdayregister *-- thingdaylevel
+	thingtraining *-- thingdaylevel
+	thinglocation *-- thingdaylevel
+	thingremainingregistration *-- thingdaylevel
+	thingshortsummary *-- thingdaylevel
+	thingtitle *-- thingdaylevel
+	thingtrainer *-- thingdaylevel
+	thingtraining *-- thingfulldetail
+	thingregistration *-- thingnumber
+	thingtrainer *-- thingnode
+	thingtraining *-- thingnode
+	thingclass *-- thingattendance
+	thingtraining *-- thingoption
+	actortrainingcoordinator --- thinginfointerface
+	actortrainingcoordinator --- thingupdateinterface
+	actortrainer --- thingclassinterface
+	actortrainingcoordinator --- thinglevelinterface
+	actortrainingcoordinator --- thingdatetimeinterface
+	actortrainingcoordinator --- thingviewinterface
+	actortrainer --- thingtraininginterface
+	actortrainer --- thingproninterface
+	thingtrainer --- controlemailtrainerwebsite
+	thingwebsite --- controlemailtrainerwebsite
+	thinginfo --- controlemailtrainerwebsite
+	thinginfointerface --> controlemailtrainerwebsite
+	thingupdate --- controlemailtrainerwebsiteupdate
+	thingupdateinterface --> controlemailtrainerwebsiteupdate
+	thingtrainer --- controlemailtrainerwebsiteupdate
+	thingwebsite --- controlemailtrainerwebsiteupdate
+	thingview --- controlhaveview
+	thingnode --- controlhaveview
+	thingattendance --- controlhaveview
+	thingclassinterface --> controlhaveview
+	thingtrainer --- controlhaveview
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmore
+	thingskilllevel --- controllearnmoreskilllevel
+	thinglevelinterface --> controllearnmoreskilllevel
+	thingdatetime --- controllearnmoredatetime
+	thingdatetimeinterface --> controllearnmoredatetime
+	thingdedicatedpage --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thingclass --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thinglocation --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thingclassinterface --> controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thinglogo --- controllearnmorelogo
+	thingclassinterface --> controllearnmorelogo
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmorelogo
+	thingviewinterface --> controllearnmoremapview
+	thingview --- controllearnmoremapview
+	thingclass --- controlregisterclass
+	thingclassinterface --> controlregisterclass
+	thingoffering --- controllearnmoreoffering
+	thingfollowinginformation --- controllearnmoreoffering
+	thingregistration --- controllearnmoreoffering
+	thingclassinterface --> controllearnmoreoffering
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoreoffering
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmorelocation
+	thinglocation --- controllearnmorelocation
+	thingclassinterface --> controllearnmorelocation
+	thingtitle --- controllearnmoretitle
+	thingclassinterface --> controllearnmoretitle
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoretitle
+	thingtrainer --- controllearnmoretrainer
+	thingclassinterface --> controllearnmoretrainer
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoretrainer
+	thingview --- controllearnmoreview
+	thingtraininginterface --> controledittrainingnode
+	thingnode --- controledittrainingnode
+	thingmoinsPRONmoins --- controleditmoinsPRONmoins
+	thingproninterface --> controleditmoinsPRONmoins
+
+@enduml

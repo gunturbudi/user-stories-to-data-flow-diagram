@@ -1,0 +1,609 @@
+[
+  {
+    "text": "As a user, I want to click on the address, so that it takes me to a new tab with Google Maps.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "click",
+        "label": "Processing"
+      },
+      {
+        "text": "address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to anonymously view public information, so that I know about recycling centers near me before creating an account.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "anonymously view",
+        "label": "Processing"
+      },
+      {
+        "text": "public information",
+        "label": "PII"
+      },
+      {
+        "text": "creating",
+        "label": "Processing"
+      },
+      {
+        "text": "account",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to enter my zip code and get a list of nearby recycling facilities, so that I can determine which ones I should consider.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "enter",
+        "label": "Processing"
+      },
+      {
+        "text": "zip code",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to get the hours of each recycling facility, so that I can arrange drop-offs on my off days or during after-work hours.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "hours",
+        "label": "PII"
+      },
+      {
+        "text": "off days",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have a flexible pick up time, so that I can more conveniently use the website.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "pick up",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to select different types of recyclable waste, so I have and get a list of facilities that accept each type and their opening hours, so that I can find an optimal route and schedule.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "select",
+        "label": "Processing"
+      },
+      {
+        "text": "recyclable waste",
+        "label": "PII"
+      },
+      {
+        "text": "opening hours",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to add donation centers as favorites on my profile, so that I can view them later.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "favorites",
+        "label": "PII"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to give my email ID, so that I can receive notifications for new events as they are posted.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "give",
+        "label": "Processing"
+      },
+      {
+        "text": "email ID",
+        "label": "PII"
+      },
+      {
+        "text": "receive notifications",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to view a map display of the public recycling bins around my area.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to view a map display of the special waste drop off sites around my area.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to view the safe disposal events currently being organised around my area.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to choose a flexible pick up time, so that I can more conveniently use the website.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "pick up time",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view user documentation for the website, so that I know how to use the web app.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "user documentation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to get feedback when I enter an invalid zip code.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "enter",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to create an acocunt, so that I can create my own profile.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "acocunt",
+        "label": "PII"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "own profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to read users' feedback and complaints, so that we can add more features and keep improving the service we provide to them.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "complaints",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to check transaction history and keep a record of it, so that I can go back when needed.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      },
+      {
+        "text": "transaction history",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have a great UI and UX from the sites, so that I have a pleasant experience when navigating through them.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to access the site and do all the other stuffs on all of my electronic devices.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "electronic devices",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to block specific users based on IP address, so that I can prevent spamming on the websites.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "block",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "IP address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to receive tempting rewards, so that I have a reason to use the website.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "rewards",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have my personal information kept securely in the database of the website, so that I will not suffer from identity theft or telephone harassment.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "personal information",
+        "label": "PII"
+      },
+      {
+        "text": "kept securely",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to handle all users' activities, so that I can manage more efficiently.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "handle",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "activities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view all locations of recycling centers on a map, so that I can check which routes to take to drop off waste.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "locations",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to upload my week's schedule, so that I can get recommendations for recycling centers that best fit my availability.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "week's schedule",
+        "label": "PII"
+      },
+      {
+        "text": "availability",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to link my email account to my profile, so that I can get a temporary password in case I forget my own one.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "email account",
+        "label": "PII"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to contact the administrators, so that I can give feedback or ask for help.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "administrators",
+        "label": "Data"
+      },
+      {
+        "text": "give",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to view user error logs, so that I can fix or review any issues that are being faced by users of the system.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "error logs",
+        "label": "PII"
+      },
+      {
+        "text": "issues",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a superuser, I want to view users' stats, so that I can view in real-time how many users have visited my recycling center information and their recyclable waste.",
+    "entities": [
+      {
+        "text": "superuser,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "stats",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to browse through the list of facolities and see which ones are environment-friendly, so that I can know for sure my waste is not going to leave a negative ecological footprint.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "waste",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a recyclingfacility representative, I want to be able to update my information and the type of material I accept, so that I can avoid any miscommunication with users.",
+    "entities": [
+      {
+        "text": "recyclingfacility representative",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

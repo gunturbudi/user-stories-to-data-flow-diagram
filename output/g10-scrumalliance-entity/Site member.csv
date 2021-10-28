@@ -1,0 +1,73 @@
+id,value,style,source,target,type
+200,Page,shape=partialRectangle,null,null,data_base
+201,Structured Way,shape=partialRectangle,null,null,data_base
+202,Application,shape=partialRectangle,null,null,data_base
+203,Member,shape=partialRectangle,null,null,data_base
+204,Field,shape=partialRectangle,null,null,data_base
+205,Name,shape=partialRectangle,null,null,data_base
+206,Email,shape=partialRectangle,null,null,data_base
+207,Form,shape=partialRectangle,null,null,data_base
+208,Rss Feed,shape=partialRectangle,null,null,data_base
+209,News,shape=partialRectangle,null,null,data_base
+210,Methodology,shape=partialRectangle,null,null,data_base
+211,Job,shape=partialRectangle,null,null,data_base
+212,Entire Article,shape=partialRectangle,null,null,data_base
+213,Article,shape=partialRectangle,null,null,data_base
+214,Access,shape=partialRectangle,null,null,data_base
+215,Training Pdf,shape=partialRectangle,null,null,data_base
+216,Site Member,rounded=0,null,null,external_entity
+217,Page,rounded=0,null,null,external_entity
+218,Teaser,rounded=0,null,null,external_entity
+219,Describe On Own Page In A Structured Way,ellipse,null,null,process
+220,Fill Out An Application,ellipse,null,null,process
+221,Become A Certified Scrum Practitioner,ellipse,null,null,process
+222,View The Profiles Of Other Members,ellipse,null,null,process
+223,Search For Profiles On A Few Fields,ellipse,null,null,process
+224,Mark Profile,ellipse,null,null,process
+225,Private Mark Email Address,ellipse,null,null,process
+226,Send An Email To Any Member Via A Form,ellipse,null,null,process
+227,Subscribe To An Rss Feed Of News,ellipse,null,null,process
+228,"Download The Material, Latest Training Pdfs",ellipse,null,null,process
+229,Download Methodology,ellipse,null,null,process
+230,Scroll Through A Listing Of Jobs,ellipse,null,null,process
+231,Subscribe To An Available Rss Feed Of Jobs,ellipse,null,null,process
+232,Read The Entire Article,ellipse,null,null,process
+233,Have Full Access To All Articles,ellipse,null,null,process
+235,,endArrow=classic,216,219,endArrow=classic
+236,,endArrow=classic,216,220,endArrow=classic
+237,,endArrow=classic,216,221,endArrow=classic
+238,,endArrow=classic,216,222,endArrow=classic
+239,,endArrow=classic,216,223,endArrow=classic
+240,,endArrow=classic,216,224,endArrow=classic
+241,,endArrow=classic,216,225,endArrow=classic
+242,,endArrow=classic,216,226,endArrow=classic
+243,,endArrow=classic,216,227,endArrow=classic
+244,,endArrow=classic,216,228,endArrow=classic
+245,,endArrow=classic,216,229,endArrow=classic
+246,,endArrow=classic,216,230,endArrow=classic
+247,,endArrow=classic,216,231,endArrow=classic
+248,,endArrow=classic,216,232,endArrow=classic
+249,,endArrow=classic,216,233,endArrow=classic
+250,,endArrow=classic,217,232,endArrow=classic
+251,,endArrow=classic,217,233,endArrow=classic
+252,,endArrow=classic,218,232,endArrow=classic
+253,,endArrow=classic,218,233,endArrow=classic
+254,Page,endArrow=classic,219,200,endArrow=classic
+255,Structured Way,endArrow=classic,219,201,endArrow=classic
+256,,endArrow=classic,220,221,endArrow=classic
+257,Application,endArrow=classic,220,202,endArrow=classic
+258,Member,endArrow=classic,222,203,endArrow=classic
+259,Field,endArrow=classic,223,204,endArrow=classic
+260,Email,endArrow=classic,226,206,endArrow=classic
+261,Form,endArrow=classic,226,207,endArrow=classic
+262,Member,endArrow=classic,226,203,endArrow=classic
+263,Rss Feed,endArrow=classic,227,208,endArrow=classic
+264,News,endArrow=classic,227,209,endArrow=classic
+265,Training Pdf,endArrow=classic,228,215,endArrow=classic
+266,Methodology,endArrow=classic,229,210,endArrow=classic
+267,Job,endArrow=classic,230,211,endArrow=classic
+268,Rss Feed,endArrow=classic,231,208,endArrow=classic
+269,Job,endArrow=classic,231,211,endArrow=classic
+270,Entire Article,endArrow=classic,232,212,endArrow=classic
+271,Access,endArrow=classic,233,214,endArrow=classic
+272,Article,endArrow=classic,233,213,endArrow=classic

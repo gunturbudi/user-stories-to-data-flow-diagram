@@ -1,0 +1,48 @@
+[
+  {
+    "text": "As a DAMS manager, I want to indicate to preservation managers aspects of a master file useful for monitoring its integrity, and impending obsolescence, including file size, creation date, file format and format version.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation managers",
+        "label": "Data"
+      },
+      {
+        "text": "master file",
+        "label": "PII"
+      },
+      {
+        "text": "monitoring",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know, via preservation managers, of any object for which integrity or authenticity is in question or that has been updated to a more current file format.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation managers",
+        "label": "Data"
+      },
+      {
+        "text": "object",
+        "label": "PII"
+      }
+    ]
+  }
+]

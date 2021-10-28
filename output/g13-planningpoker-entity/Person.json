@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a participant, I want to be able to change my estimate up until the last person selects a card and all are shown, so that I can change my mind based on information I hear.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "estimate",
+        "label": "PII"
+      },
+      {
+        "text": "person",
+        "label": "Data"
+      },
+      {
+        "text": "selects",
+        "label": "Processing"
+      },
+      {
+        "text": "mind",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Site " ];
+201 [label="<f0>  |<f1> Xhtml Standard " ];
+202 [label="<f0>  |<f1> Css " ];
+203 [label="<f0>  |<f1> 7 " ];
+204 [label="<f0>  |<f1> Internet Explorer " ];
+205 [label="<f0>  |<f1> Function " ];
+206 [label="<f0>  |<f1> W3C Guideline " ];
+207 [label="<f0>  |<f1> Application " ];
+208 [label="Developer" shape=box];
+209 [label="{<f0> 1.0|<f1> Written A Site Is Compliant With Css }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Written A Site Is Compliant With Xhtml Standards }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Have The Function In 7 }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> Have The Application Function In Internet Explorer }" shape=Mrecord];
+213 [label="{<f0> 5.0|<f1> Have }" shape=Mrecord];
+208 -> 209
+208 -> 210
+208 -> 211
+208 -> 212
+209 -> 202 [label="Css"]
+209 -> 200 [label="Site"]
+210 -> 200 [label="Site"]
+210 -> 201 [label="Xhtml Standard"]
+211 -> 205 [label="Function"]
+211 -> 203 [label="7"]
+212 -> 204 [label="Internet Explorer"]
+212 -> 205 [label="Function"]
+212 -> 207 [label="Application"]
+}

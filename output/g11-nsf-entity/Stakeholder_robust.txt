@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Decision" as thingdecision
+	entity "Beta" as thingbeta
+	entity "Blog Aggregator" as thingblogaggregator #grey
+	entity "User Research" as thinguserresearch #grey
+	actor "Stakeholder" as actorstakeholder
+	circle "Result" as thingresult
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Beta\nInterface" as thingbetainterface #grey
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	control "Have A\nDecision" as controlhavedecisionwill
+	control "Have A\nDecision Not\nThe Blog\nAggregator Work\nFor Beta" as controlhavedecision
+	control "Not Will" as controlwill
+	control "See The\nResults Of\nUser Research" as controlseeresult
+
+	thingblogaggregator <.. thingdecision
+	thingbeta <.. thingdecision
+	thingbeta <.. thingblogaggregator
+	thinguserresearch *-- thingresult
+	actorstakeholder --- thingdecisioninterface
+	actorstakeholder --- thingbetainterface
+	actorstakeholder --- thingresearchinterface
+	thingdecisioninterface --> controlhavedecisionwill
+	thingdecision --- controlhavedecisionwill
+	thingdecision --- controlhavedecision
+	thingblogaggregator --- controlhavedecision
+	thingbeta --- controlhavedecision
+	thingbetainterface --> controlhavedecision
+	controlhavedecisionwill --> controlwill
+	thingdecisioninterface --> controlwill
+	thingresult --- controlseeresult
+	thinguserresearch --- controlseeresult
+	thingresearchinterface --> controlseeresult
+
+@enduml

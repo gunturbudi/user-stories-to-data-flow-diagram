@@ -1,0 +1,555 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Experiment" as thingexperiment
+	entity "Page" as thingpage
+	entity "File" as thingfile
+	entity "Multiple File" as thingmultiplefile
+	entity "Directory" as thingdirectory
+	entity "Attach File" as thingattachedfile
+	entity "Workspace" as thingworkspace
+	entity "Web Browser" as thingwebbrowser #grey
+	entity "Network Drive" as thingnetworkdrive #grey
+	entity "Workstation" as thingworkstation
+	entity "Greek Symbol" as thinggreeksymbol
+	entity "Notification" as thingnotification
+	entity "Mendeley" as thingmendeley
+	entity "Track" as thingtrack
+	entity "Electronic Support" as thingelectronicsupport
+	entity "Output" as thingoutput
+	entity "Particular Experiment" as thingparticularexperiment
+	entity "Service" as thingservice
+	entity "Datum" as thingdatum
+	entity "Display" as thingdisplay #grey
+	entity "Associated Image" as thingassociatedimage
+	entity "Off Site\nWorking" as thingoffsiteworking #grey
+	entity "Remote Access" as thingremoteaccess
+	entity "Researcher" as thingotherresearcher
+	entity "Later Stage" as thinglaterstage
+	entity "Multiple" as thingmultiple
+	entity "Library" as thinglibrary
+	entity "System" as thingsystem
+	entity "Experimental Datum" as thingexperimentaldata
+	entity "Bad Datum" as thingbaddatum
+	entity "Electronic Book" as thingelectronicbook #grey
+	entity "Centre" as thingcentre
+	entity "Standard Metadata" as thingstandardmetadata
+	entity "Standard Datum" as thingstandarddata #grey
+	entity "Video" as thingvideo
+	entity "Behavioural Observation" as thingbehaviouralobservation
+	entity "Ability" as thingability
+	entity "New Datum" as thingnewdatum
+	entity "Detailed Datum" as thingdetaileddatum #grey
+	entity "Entry" as thingentry
+	entity "Populated Template" as thingpopulatedtemplate
+	entity "Meta Data" as thingmetadata #grey
+	entity "Object" as thingobject
+	entity "Link" as thinglink
+	entity "Example" as thingexample
+	entity "Input" as thinginput
+	entity "Format" as thingformat
+	entity "Minimal Effort" as thingminimaleffort
+	entity "Group" as thinggroup
+	entity "Point" as thingpoint
+	entity "Time" as thingtime
+	entity "Colleague" as thingcolleague
+	entity "Neurohub Node" as thingneurohubnode
+	entity "Laboratory" as thinglaboratory
+	entity "Paper" as thingpaper
+	entity "Repository" as thingrepository #grey
+	entity "Review" as thingreview
+	entity "Comment" as thingcomment
+	entity "Neurohub" as thingneurohub
+	entity "Detail" as thingdetail
+	entity "Workflow" as thingworkflow
+	entity "Execution History" as thingexecutionhistory #grey
+	entity "Result" as thingresult
+	entity "Date" as thinggivendate
+	entity "Note" as thingnote
+	entity "Mechanism" as thingmechanism
+	entity "Data Set" as thingdataset
+	entity "Term Curation" as thingtermcuration
+	entity "Write Up" as thingwriteup
+	entity "Log Book" as thinglogbook
+	entity "Drug Response" as thingdrugresponse
+	entity "Twitter Tweet" as thingtwittertweet
+	entity "Research" as thingresearch #grey
+	entity "Timeline" as thingtimeline #grey
+	entity "Data" as thingdata #grey
+	entity "Meta" as thingmeta #grey
+	entity "Physiology" as thingphysiology #grey
+	entity "Upload" as thingupload #grey
+	entity "Revision Control" as thingrevisioncontrol #grey
+	entity "Sharing" as thingsharing #grey
+	actor "Researcher" as actorresearcher
+	actor "Supervisor" as actorsupervisor
+	actor "User" as actoruser
+	circle "Alert" as thingalert
+	circle "Shared ,\nGroup ,\nWide Repository" as thingsharedgroupwiderepository
+	circle "Image" as thingimage
+	circle "Period" as thingperiod
+	circle "Client" as thingclient #grey
+	circle "Plan" as thingplan #grey
+	circle "Level" as thinglevel #grey
+	boundary "Experiment" as thingexperimentusewebbrowserresearcher #grey
+	boundary "Ability" as thingabilityinsertgreeksymbollogbookentriesresearcher #grey
+	boundary "Meta Data" as thingmetadataresearcher
+	boundary "Experiment File" as thingexperimentfilesusemetadataresearcher #grey
+	boundary "File Type" as thingfiletyperesearcher
+	boundary "Experiment\nInterface" as thingexperimentinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Drive\nInterface" as thingdriveinterface #grey
+	boundary "Workspace\nInterface" as thingworkspaceinterface #grey
+	boundary "Workstation\nInterface" as thingworkstationinterface #grey
+	boundary "Paper\nInterface" as thingpaperinterface #grey
+	boundary "Mendeley\nInterface" as thingmendeleyinterface #grey
+	boundary "Set\nInterface" as thingsetinterface #grey
+	boundary "Track\nInterface" as thingtrackinterface #grey
+	boundary "Output\nInterface" as thingoutputinterface #grey
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Working\nInterface" as thingworkinginterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Multiple\nInterface" as thingmultipleinterface #grey
+	boundary "Stage\nInterface" as thingstageinterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	boundary "Colleague\nInterface" as thingcolleagueinterface #grey
+	boundary "Laboratory\nInterface" as thinglaboratoryinterface #grey
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	boundary "Comment\nInterface" as thingcommentinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "Workflow\nInterface" as thingworkflowinterface #grey
+	boundary "Result\nInterface" as thingresultinterface #grey
+	boundary "Tweet\nInterface" as thingtweetinterface #grey
+	control "Create A\nLog Book\nPage For\nAn Experiment" as controlcreatelogbookpageexperiment
+	control "Attach A\nFile To\nThis Page" as controlattachfilepage
+	control "Attach A\nDirectory Contains\nMultiple Files" as controlattachdirectory
+	control "Upload Files" as controluploadfile
+	control "Having Files\nTo A\nLog Book\nPage" as controlhaveuploadfilefile
+	control "Having" as controlhaveuploadfile
+	control "Using A\nMapped Network\nDrive" as controlusemappednetworkdrive
+	control "Attach Currently\nAttached Files\nTo A\nLog Book\nPage" as controlattachattachedfilelogbookpage
+	control "Receive An\nAlert Of\nAny Unattached\nFiles Are\nIn Workspace" as controlreceivealert
+	control "Download Files\nTo" as controldownloadfile
+	control "Use Web\nBrowser" as controlusewebbrowser
+	control "Access Files\nIn Neurohub\nWorkspace Using\nA Network\nDrive To\nWorkstation" as controlaccessfilenetworkdrive
+	control "Create A\nLog Book\nPage" as controlcreatelogbookpage
+	control "Insert Greek\nSymbols Into\nLogbook Entries" as controlinsertgreeksymbollogbookentries
+	control "Have" as controlhaveabilityinsertgreeksymbollogbookentriesresearcher
+	control "Point Mendeley\nClient At\nA Shared,\nGroup, Wide\nRepository Of\nResearch Papers" as controlpointmendeleyclientsharedgroupwiderepository
+	control "Get Notifications\nVia Mendeley" as controlgetnotification
+	control "Have Electronic\nSupport" as controlhaveelectronicsupport
+	control "Modify As\nPart Of\nA Particular\nExperiment" as controlmodifypart
+	control "Keeping Track\nOf Which\nData Sets\nUsed" as controlkeephaveelectronicsupporttrack
+	control "Keeping Track" as controlkeephaveelectronicsupporttrackmodifypart
+	control "Keeping Track\nOutput" as controlkeephaveelectronicsupporttrackoutput
+	control "Support The\nLong Term\nCuration Of\nData" as controlsupportlongtermcuration
+	control "Have Services" as controlhaveservicesupportlongtermcuration
+	control "Have A\nDisplay Of\nAssociated Image" as controlhavedisplayassociatedimage
+	control "Have A\nTimeline Display\nOf Multiple\nData Files" as controlhavetimelinedisplay
+	control "Have Remote\nAccess To\nData For\nOff Site\nWorking" as controlhaveremoteaccess
+	control "Share Experiment\nWrite Ups\nWith Other\nResearchers" as controlshareexperimentwriteups
+	control "Collect Data\nAs A\nLibrary Of\nData Then\nUsed Multiple" as controlcollectdatumlibrarymultiple
+	control "Collect Data\nAs A\nLibrary Of\nData Then\nUsed Experiments\nDefined At\nA Later\nStage" as controlcollectdatumlibrary
+	control "Bad Indicate\nWithin Electronic\nBook Experimental\nData" as controlindicateelectronicbookexperimentaldata #grey
+	control "Keep Which\nThe Bad\nData In\nThe System" as controlkeepbaddatumwhichsystem #grey
+	control "Indicate Within\nElectronic Log\nBook Experimental\nData" as controlindicateelectroniclogbookexperimentaldata
+	control "Hide The\nBad Data" as controlhidebaddatum #grey
+	control "Provide Standard\nMetadata" as controlprovidestandardmetadata
+	control "Have The\nSystem" as controlhavesystemprovidestandardmetadata
+	control "Have Physiology\nImages To\nAnnotated With\nStandard Meta\nData" as controlhavephysiologyimages
+	control "Attach Standard\nData For\nVideo" as controlattachstandarddatavideo
+	control "Attach Standard\nMeta Data\nFor Behavioural\nObservations" as controlattachstandardmetadatabehaviouralobservation
+	control "Attach Standard\nData For" as controlattachstandarddata #grey
+	control "Attach Standard\nMeta Data\nFor Drug\nResponses" as controlattachstandardmetadata
+	control "Have The\nTo Ability\nFor Images\nOf" as controlhaveability
+	control "Use Standard\nMeta Data" as controlusestandardmetadata
+	control "New Data\nAdded To\nThe System" as controladdnewdatumsystem
+	control "Inserted" as controlinsertmetadataresearcheraddnewdatumsystem
+	control "Attach Detailed\nMeta Data\nTo The\nData" as controlattachdetailedmetadatadatum
+	control "Attach Detailed\nData To\nEntry" as controlattachdetaileddatumentry
+	control "Attach Detailed\nData To" as controlattachdetaileddatum #grey
+	control "Select A\nPartially Populated\nTemplate Already\nContains" as controlselectpopulatedtemplate
+	control "Form Links\nBetween Objects" as controlformlink
+	control "Have Those\nFiles Where\nLocated" as controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	control "Use Meta\nData" as controlusemetadata
+	control "Locate" as controllocateexperimentfilesusemetadataresearcher
+	control "Have Any\nData" as controlhavedatum
+	control "Store The\nInputs For\nAn Experiment" as controlstoreinput
+	control "Have The\nTo Ability\nFor Files\nBy Format" as controlhaveabilityformat
+	control "Bulk File" as controlbulkfile
+	control "Bulk Upload\nDirectories With\nMinimal Effort" as controlbulkuploaddirectoriesminimaleffort
+	control "Bulk" as controlbulk #grey
+	control "Associate Meta\nData To\nThe Group\nAs A\nWhole At\nSome Point\nIn Time" as controlassociatemetadatagroupwholepointtime
+	control "Restrict The\nData" as controlrestrictdatum
+	control "That Share" as controlsharethat
+	control "Locate Data\nColleagues Want" as controllocatedatum
+	control "Access Data\nColleagues Want" as controlaccessdatum
+	control "Secure Remote\nAccess To\nThe Neurohub\nNode When\nAway Working\nFrom The\nLaboratory" as controlsecureremoteaccesslaboratory
+	control "Have A\nRepository" as controlhaverepository #grey
+	control "Sharing Review" as controlsharehaverepositoryreview
+	control "Sharing Papers\nWith Other\nResearchers" as controlsharehavegrouplevelrepositorypaperotherresearcher
+	control "Sharing Comment" as controlsharehaverepositorycomment
+	control "Have A\nGroup Level\nRepository" as controlhavegrouplevelrepository
+	control "Have The\nDetails Of\nThe As\nWell Workflow\nPlan" as controlhavedetail
+	control "Have The\nDetails Of\nThe Execution\nHistory In\nNeurohub Executing\nA Workflow" as controlhavedetailexecutionhistory
+	control "Have The\nDetails Of\nResult" as controlhavedetailresult
+	control "View" as controlview
+	control "Appear In\nNeurohub" as controlappearneurohub
+	control "Have That\nTwitter Tweets" as controlhavethattwittertweetsappearneurohub
+	control "Provided With\nA Mechanism\nFor Note\nWith Other\nResearchers" as controlprovidemechanismnote
+	control "Provided With\nA Mechanism\nFor Electronically\nSharing Papers" as controlprovidemechanism
+
+	thinglaterstage <.. thingexperiment
+	thingexperiment <.. thingpage
+	thinglogbook <.. thingpage
+	thingpage <.. thingfile
+	thingformat <.. thingfile
+	thingdata <.. thingfile
+	thingworkspace <.. thingfile
+	thingmultiplefile <.. thingdirectory
+	thingupload <.. thingdirectory
+	thingpage <.. thingattachedfile
+	thingnetworkdrive <.. thingworkspace
+	thingworkstation <.. thingnetworkdrive
+	thingmendeley <.. thingnotification
+	thingdataset <.. thingtrack
+	thingoutput <.. thingtrack
+	thingoffsiteworking <.. thingdatum
+	thinglibrary <.. thingdatum
+	thingcolleague <.. thingdatum
+	thingmeta <.. thingdatum
+	thinggroup <.. thingdatum
+	thingassociatedimage <.. thingdisplay
+	thingtimeline <.. thingdisplay
+	thingfile <.. thingdisplay
+	thingdatum <.. thingremoteaccess
+	thingneurohubnode <.. thingremoteaccess
+	thingcentre <.. thingotherresearcher
+	thingexperiment *-- thinglibrary
+	thingdatum *-- thinglibrary
+	thingmultiple *-- thinglibrary
+	thingrevisioncontrol <.. thingsystem
+	thingimage <.. thingability
+	thingfile <.. thingability
+	thingsystem <.. thingability
+	thingsystem <.. thingnewdatum
+	thinglogbook <.. thingentry
+	thingobject <.. thinglink
+	thingexperiment <.. thinginput
+	thingpoint <.. thinggroup
+	thingtime <.. thingpoint
+	thinglaboratory <.. thingneurohubnode
+	thingotherresearcher <.. thingpaper
+	thingresearch <.. thingpaper
+	thingsharing <.. thingpaper
+	thinglevel <.. thingrepository
+	thinggroup <.. thingrepository
+	thingworkflow <.. thingneurohub
+	thingplan *-- thingdetail
+	thingresult *-- thingdetail
+	thingexecutionhistory *-- thingdetail
+	thingworkflow *-- thingdetail
+	thingneurohub <.. thingexecutionhistory
+	thingotherresearcher <.. thingnote
+	thingpaper <.. thingmechanism
+	thingnote <.. thingmechanism
+	thingdatum <.. thingtermcuration
+	thingotherresearcher <.. thingwriteup
+	thingexperimentaldata <.. thinglogbook
+	thingfile *-- thingalert
+	thingpaper *-- thingsharedgroupwiderepository
+	thingphysiology *-- thingimage
+	thingdatum *-- thingimage
+	thingtime *-- thingperiod
+	thingsharedgroupwiderepository *-- thingclient
+	thingmendeley *-- thingclient
+	thingworkflow *-- thingplan
+	thinggroup *-- thinglevel
+	actorresearcher --- thingexperimentusewebbrowserresearcher
+	actorresearcher --- thingabilityinsertgreeksymbollogbookentriesresearcher
+	actorresearcher --- thingmetadataresearcher
+	actorresearcher --- thingfiletyperesearcher
+	actorresearcher --- thingexperimentinterface
+	actorresearcher --- thingpageinterface
+	actorresearcher --- thingfileinterface
+	actorresearcher --- thingdriveinterface
+	actorresearcher --- thingworkspaceinterface
+	actorresearcher --- thingworkstationinterface
+	actorresearcher --- thingpaperinterface
+	actoruser --- thingpaperinterface
+	actorresearcher --- thingmendeleyinterface
+	actorresearcher --- thingsetinterface
+	actorresearcher --- thingtrackinterface
+	actorresearcher --- thingoutputinterface
+	actorresearcher --- thingserviceinterface
+	actorresearcher --- thingimageinterface
+	actorresearcher --- thingworkinginterface
+	actorresearcher --- thingresearcherinterface
+	actoruser --- thingresearcherinterface
+	actorresearcher --- thingmultipleinterface
+	actorresearcher --- thingstageinterface
+	actorresearcher --- thingdatainterface
+	actorresearcher --- thingsysteminterface
+	actorresearcher --- thingdatuminterface
+	actorresearcher --- thingformatinterface
+	actorresearcher --- thingtimeinterface
+	actorresearcher --- thingcolleagueinterface
+	actorresearcher --- thinglaboratoryinterface
+	actorresearcher --- thingreviewinterface
+	actorresearcher --- thingcommentinterface
+	actorresearcher --- thinggroupinterface
+	actorresearcher --- thingworkflowinterface
+	actorresearcher --- thingresultinterface
+	actoruser --- thingtweetinterface
+	thingexperiment --- controlcreatelogbookpageexperiment
+	thingexperimentinterface --> controlcreatelogbookpageexperiment
+	thingpage --- controlcreatelogbookpageexperiment
+	thingfile --- controlattachfilepage
+	thingpage --- controlattachfilepage
+	thingpageinterface --> controlattachfilepage
+	thingdirectory --- controlattachdirectory
+	thingmultiplefile --- controlattachdirectory
+	thingfileinterface --> controlattachdirectory
+	controlhaveuploadfilefile --> controluploadfile
+	thingfile --- controluploadfile
+	controlhaveuploadfile --> controluploadfile
+	thingpageinterface --> controluploadfile
+	thingfile --- controlhaveuploadfilefile
+	thingpageinterface --> controlhaveuploadfilefile
+	thingpage --- controlhaveuploadfilefile
+	thingfileinterface --> controlhaveuploadfile
+	thingnetworkdrive --- controlusemappednetworkdrive
+	thingdriveinterface --> controlusemappednetworkdrive
+	controlhaveuploadfilefile --> controlusemappednetworkdrive
+	thingattachedfile --- controlattachattachedfilelogbookpage
+	thingpageinterface --> controlattachattachedfilelogbookpage
+	thingpage --- controlattachattachedfilelogbookpage
+	thingalert --- controlreceivealert
+	thingworkspace --- controlreceivealert
+	thingworkspaceinterface --> controlreceivealert
+	thingfile --- controlreceivealert
+	thingexperimentusewebbrowserresearcher --> controldownloadfile
+	thingfile --- controldownloadfile
+	controldownloadfile --> controlusewebbrowser
+	thingwebbrowser --- controlusewebbrowser
+	thingexperimentusewebbrowserresearcher --> controlusewebbrowser
+	thingworkstation --- controlaccessfilenetworkdrive
+	thingworkstationinterface --> controlaccessfilenetworkdrive
+	thingfile --- controlaccessfilenetworkdrive
+	thingnetworkdrive --- controlaccessfilenetworkdrive
+	thingworkspace --- controlaccessfilenetworkdrive
+	thingpageinterface --> controlcreatelogbookpage
+	thingpage --- controlcreatelogbookpage
+	thinggreeksymbol --- controlinsertgreeksymbollogbookentries
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlinsertgreeksymbollogbookentries
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlinsertgreeksymbollogbookentries
+	thingentry --- controlinsertgreeksymbollogbookentries
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlhaveabilityinsertgreeksymbollogbookentriesresearcher
+	thingmetadataresearcher --> controlhaveabilityinsertgreeksymbollogbookentriesresearcher
+	thingclient --- controlpointmendeleyclientsharedgroupwiderepository
+	thingsharedgroupwiderepository --- controlpointmendeleyclientsharedgroupwiderepository
+	thingpaperinterface --> controlpointmendeleyclientsharedgroupwiderepository
+	thingpaper --- controlpointmendeleyclientsharedgroupwiderepository
+	thingnotification --- controlgetnotification
+	thingmendeley --- controlgetnotification
+	thingmendeleyinterface --> controlgetnotification
+	thingelectronicsupport --- controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrack --> controlhaveelectronicsupport
+	thingsetinterface --> controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrackoutput --> controlhaveelectronicsupport
+	controlkeephaveelectronicsupporttrackmodifypart --> controlhaveelectronicsupport
+	thingparticularexperiment --- controlmodifypart
+	controlkeephaveelectronicsupporttrackmodifypart --> controlmodifypart
+	thingtrackinterface --> controlmodifypart
+	thingtrack --- controlkeephaveelectronicsupporttrack
+	thingdataset --- controlkeephaveelectronicsupporttrack
+	thingsetinterface --> controlkeephaveelectronicsupporttrack
+	thingtrackinterface --> controlkeephaveelectronicsupporttrackmodifypart
+	thingtrack --- controlkeephaveelectronicsupporttrackmodifypart
+	thingoutput --- controlkeephaveelectronicsupporttrackoutput
+	thingoutputinterface --> controlkeephaveelectronicsupporttrackoutput
+	thingtrack --- controlkeephaveelectronicsupporttrackoutput
+	thingtermcuration --- controlsupportlongtermcuration
+	thingdatum --- controlsupportlongtermcuration
+	controlhaveservicesupportlongtermcuration --> controlsupportlongtermcuration
+	thingserviceinterface --> controlsupportlongtermcuration
+	thingservice --- controlhaveservicesupportlongtermcuration
+	thingserviceinterface --> controlhaveservicesupportlongtermcuration
+	thingdisplay --- controlhavedisplayassociatedimage
+	thingassociatedimage --- controlhavedisplayassociatedimage
+	thingimageinterface --> controlhavedisplayassociatedimage
+	thingdisplay --- controlhavetimelinedisplay
+	thingfileinterface --> controlhavetimelinedisplay
+	thingfile --- controlhavetimelinedisplay
+	thingremoteaccess --- controlhaveremoteaccess
+	thingoffsiteworking --- controlhaveremoteaccess
+	thingworkinginterface --> controlhaveremoteaccess
+	thingdatum --- controlhaveremoteaccess
+	thingwriteup --- controlshareexperimentwriteups
+	thingotherresearcher --- controlshareexperimentwriteups
+	thingresearcherinterface --> controlshareexperimentwriteups
+	thingmultiple --- controlcollectdatumlibrarymultiple
+	thingmultipleinterface --> controlcollectdatumlibrarymultiple
+	thingdatum --- controlcollectdatumlibrarymultiple
+	thinglibrary --- controlcollectdatumlibrarymultiple
+	thinglibrary --- controlcollectdatumlibrary
+	thinglaterstage --- controlcollectdatumlibrary
+	thingstageinterface --> controlcollectdatumlibrary
+	thingexperiment --- controlcollectdatumlibrary
+	thingdatum --- controlcollectdatumlibrary
+	thingelectronicbook --- controlindicateelectronicbookexperimentaldata
+	thingexperimentaldata --- controlindicateelectronicbookexperimentaldata
+	thingsystem --- controlkeepbaddatumwhichsystem
+	thingbaddatum --- controlkeepbaddatumwhichsystem
+	thinglogbook --- controlindicateelectroniclogbookexperimentaldata
+	thingexperimentaldata --- controlindicateelectroniclogbookexperimentaldata
+	thingdatainterface --> controlindicateelectroniclogbookexperimentaldata
+	thingbaddatum --- controlhidebaddatum
+	thingstandardmetadata --- controlprovidestandardmetadata
+	controlhavesystemprovidestandardmetadata --> controlprovidestandardmetadata
+	thingsysteminterface --> controlprovidestandardmetadata
+	thingsystem --- controlhavesystemprovidestandardmetadata
+	thingsysteminterface --> controlhavesystemprovidestandardmetadata
+	thingdatuminterface --> controlhavephysiologyimages
+	thingdatum --- controlhavephysiologyimages
+	thingimage --- controlhavephysiologyimages
+	thingstandarddata --- controlattachstandarddatavideo
+	thingvideo --- controlattachstandarddatavideo
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandarddatavideo
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandarddatavideo
+	thingmetadata --- controlattachstandardmetadatabehaviouralobservation
+	thingbehaviouralobservation --- controlattachstandardmetadatabehaviouralobservation
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandardmetadatabehaviouralobservation
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandardmetadatabehaviouralobservation
+	thingstandarddata --- controlattachstandarddata
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandarddata
+	thingdrugresponse --- controlattachstandardmetadata
+	thingmetadata --- controlattachstandardmetadata
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandardmetadata
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachstandardmetadata
+	thingability --- controlhaveability
+	thingimage --- controlhaveability
+	thingfiletyperesearcher --> controlhaveability
+	thingfile --- controlhaveability
+	thingsysteminterface --> controlhaveability
+	thingsystem --- controlhaveability
+	controlhaveability --> controlusestandardmetadata
+	thingsysteminterface --> controlusestandardmetadata
+	thingdatum --- controlusestandardmetadata
+	thingnewdatum --- controladdnewdatumsystem
+	controlinsertmetadataresearcheraddnewdatumsystem --> controladdnewdatumsystem
+	thingmetadataresearcher --> controladdnewdatumsystem
+	thingsystem --- controladdnewdatumsystem
+	thingmetadataresearcher --> controlinsertmetadataresearcheraddnewdatumsystem
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlinsertmetadataresearcheraddnewdatumsystem
+	thingdatum --- controlattachdetailedmetadatadatum
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlattachdetailedmetadatadatum
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachdetailedmetadatadatum
+	thingdetaileddatum --- controlattachdetaileddatumentry
+	thingentry --- controlattachdetaileddatumentry
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlattachdetaileddatumentry
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachdetaileddatumentry
+	thingdetaileddatum --- controlattachdetaileddatum
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlattachdetaileddatum
+	thingpopulatedtemplate --- controlselectpopulatedtemplate
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlselectpopulatedtemplate
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlselectpopulatedtemplate
+	thinglink --- controlformlink
+	thingobject --- controlformlink
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlformlink
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlformlink
+	thingfile --- controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile
+	controllocateexperimentfilesusemetadataresearcher --> controlusemetadata
+	thingdatum --- controlusemetadata
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlusemetadata
+	controlhaveabilitylocateexperimentfilesusemetadataresearcherresearcherfile --> controllocateexperimentfilesusemetadataresearcher
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controllocateexperimentfilesusemetadataresearcher
+	thingdatum --- controlhavedatum
+	thingdatuminterface --> controlhavedatum
+	thinginput --- controlstoreinput
+	thingexperiment --- controlstoreinput
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlstoreinput
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlstoreinput
+	thingformat --- controlhaveabilityformat
+	thingformatinterface --> controlhaveabilityformat
+	thingfile --- controlhaveabilityformat
+	thingability --- controlhaveabilityformat
+	thingfile --- controlbulkfile
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlbulkfile
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlbulkfile
+	thingminimaleffort --- controlbulkuploaddirectoriesminimaleffort
+	thingdirectory --- controlbulkuploaddirectoriesminimaleffort
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlbulkuploaddirectoriesminimaleffort
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlbulkuploaddirectoriesminimaleffort
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlbulk
+	thinggroup --- controlassociatemetadatagroupwholepointtime
+	thingpoint --- controlassociatemetadatagroupwholepointtime
+	thingtime --- controlassociatemetadatagroupwholepointtime
+	thingtimeinterface --> controlassociatemetadatagroupwholepointtime
+	thingdatum --- controlassociatemetadatagroupwholepointtime
+	thingdatum --- controlrestrictdatum
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlrestrictdatum
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlrestrictdatum
+	controllocatedatum --> controlsharethat
+	thingcolleagueinterface --> controlsharethat
+	controlaccessdatum --> controlsharethat
+	thingcolleague --- controllocatedatum
+	thingdatum --- controllocatedatum
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controllocatedatum
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controllocatedatum
+	thingdatum --- controlaccessdatum
+	thingcolleague --- controlaccessdatum
+	thingabilityinsertgreeksymbollogbookentriesresearcher --> controlaccessdatum
+	controlhaveabilityinsertgreeksymbollogbookentriesresearcher --> controlaccessdatum
+	thingneurohubnode --- controlsecureremoteaccesslaboratory
+	thinglaboratory --- controlsecureremoteaccesslaboratory
+	thinglaboratoryinterface --> controlsecureremoteaccesslaboratory
+	thingremoteaccess --- controlsecureremoteaccesslaboratory
+	controlsharehaverepositorycomment --> controlhaverepository
+	controlsharehaverepositoryreview --> controlhaverepository
+	thingrepository --- controlhaverepository
+	thingreview --- controlsharehaverepositoryreview
+	thingreviewinterface --> controlsharehaverepositoryreview
+	thingpaper --- controlsharehavegrouplevelrepositorypaperotherresearcher
+	thingotherresearcher --- controlsharehavegrouplevelrepositorypaperotherresearcher
+	thingresearcherinterface --> controlsharehavegrouplevelrepositorypaperotherresearcher
+	thingcomment --- controlsharehaverepositorycomment
+	thingcommentinterface --> controlsharehaverepositorycomment
+	controlsharehavegrouplevelrepositorypaperotherresearcher --> controlhavegrouplevelrepository
+	thinggroupinterface --> controlhavegrouplevelrepository
+	thingrepository --- controlhavegrouplevelrepository
+	thinggroup --- controlhavegrouplevelrepository
+	thingdetail --- controlhavedetail
+	thingworkflowinterface --> controlhavedetail
+	thingworkflow --- controlhavedetail
+	thingexecutionhistory --- controlhavedetailexecutionhistory
+	thingneurohub --- controlhavedetailexecutionhistory
+	thingworkflow --- controlhavedetailexecutionhistory
+	thingworkflowinterface --> controlhavedetailexecutionhistory
+	thingdetail --- controlhavedetailexecutionhistory
+	thingresult --- controlhavedetailresult
+	thingresultinterface --> controlhavedetailresult
+	thingdetail --- controlhavedetailresult
+	controlhavethattwittertweetsappearneurohub --> controlappearneurohub
+	thingtweetinterface --> controlappearneurohub
+	thingneurohub --- controlappearneurohub
+	thingtwittertweet --- controlhavethattwittertweetsappearneurohub
+	thingtweetinterface --> controlhavethattwittertweetsappearneurohub
+	thingnote --- controlprovidemechanismnote
+	thingotherresearcher --- controlprovidemechanismnote
+	thingresearcherinterface --> controlprovidemechanismnote
+	thingmechanism --- controlprovidemechanismnote
+	thingmechanism --- controlprovidemechanism
+	thingpaperinterface --> controlprovidemechanism
+	thingpaper --- controlprovidemechanism
+
+@enduml

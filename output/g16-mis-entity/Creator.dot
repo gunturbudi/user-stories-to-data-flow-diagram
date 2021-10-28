@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Creator " ];
+202 [label="<f0>  |<f1> Unique Identifier " color=red];
+203 [label="Collection Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Identify Creator }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Identify Authors Of Items By Unique Identifier }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Creator"]
+205 -> 200 [label="Item"]
+205 -> 202 [label="Unique Identifier"]
+}

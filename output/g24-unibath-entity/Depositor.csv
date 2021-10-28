@@ -1,0 +1,165 @@
+id,value,style,source,target,type
+30,Fulfil my confidentiality responsibilities.,ellipse,null,null,process
+31,Receive credit.,ellipse,null,null,process
+32,Demonstrate the impact of my work.,ellipse,null,null,process
+33,Demonstrate the impact of my work,ellipse,null,null,process
+34,Fulfil funder requirements for archival.,ellipse,null,null,process
+35,Find my data more easily.,ellipse,null,null,process
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,User Interface,shape=partialRectangle,null,null,data_base
+202,File,shape=partialRectangle,null,null,data_base
+203,Datum,shape=partialRectangle,null,null,data_base
+204,Embargo,shape=partialRectangle,null,null,data_base
+205,License,shape=partialRectangle,null,null,data_base
+206,Collaborator,shape=partialRectangle,null,null,data_base
+207,Access,shape=partialRectangle,null,null,data_base
+208,Large File,shape=partialRectangle,null,null,data_base
+209,Opus,shape=partialRectangle,null,null,data_base
+210,Publication,shape=partialRectangle,null,null,data_base
+211,Doi,shape=partialRectangle,null,null,data_base
+212,Previous Deposit,shape=partialRectangle,null,null,data_base
+213,Metadata,shape=partialRectangle,null,null,data_base
+214,External Repository,shape=partialRectangle,null,null,data_base
+215,Disposal Policy,shape=partialRectangle,null,null,data_base
+216,Data Integrity,shape=partialRectangle,null,null,data_base
+217,Guarantee,shape=partialRectangle,null,null,data_base
+218,Record,shape=partialRectangle,null,null,data_base
+219,Dataset,shape=partialRectangle,null,null,data_base
+220,Behalf,shape=partialRectangle,null,null,data_base
+221,Web Interface,shape=partialRectangle,null,null,data_base
+222,Workflow Tool,shape=partialRectangle,null,null,data_base
+223,Research Environment,shape=partialRectangle,null,null,data_base
+224,University System,shape=partialRectangle,null,null,data_base
+225,Project Dmp,shape=partialRectangle,null,null,data_base
+226,Discoverability,shape=partialRectangle,null,null,data_base
+227,Research,shape=partialRectangle,null,null,data_base
+228,Depositor,rounded=0,null,null,external_entity
+229,Deposit Datasets Through A Simple Web Interface,ellipse,null,null,process
+230,Maintain Datasets Through A Simple Web Interface,ellipse,null,null,process
+231,Have A User Interface Is Familiar To,ellipse,null,null,process
+232,Pure Deposit Datasets,ellipse,null,null,process
+233,Pure Maintain Datasets,ellipse,null,null,process
+234,Deposit Datasets Through Other Workflow Tool,ellipse,null,null,process
+235,Deposit Datasets Through Virtual Research Environments,ellipse,null,null,process
+236,Maintain Datasets Through Other Workflow Tool,ellipse,null,null,process
+237,Maintain Datasets Through Virtual Research Environments,ellipse,null,null,process
+238,Deposit The Files,ellipse,null,null,process
+239,Place Data Under An Embargo,ellipse,null,null,process
+240,Apply Licenses To Datasets,ellipse,null,null,process
+241,Allow Collaborators Access To Datasets,ellipse,null,null,process
+242,Deposit Arbitrarily Large Files,ellipse,null,null,process
+243,Link Datasets To Publications In Opus,ellipse,null,null,process
+244,Mint Dois For Data,ellipse,null,null,process
+245,Have Automatically Metadata From Other University Systems,ellipse,null,null,process
+246,Link To Data In External Repositories,ellipse,null,null,process
+247,Specify A Disposal Policy For Data,ellipse,null,null,process
+248,Track Downloads Of Data,ellipse,null,null,process
+249,Track Citations Of Data,ellipse,null,null,process
+250,Have Guarantees About Data Integrity,ellipse,null,null,process
+251,"Attach Specific, Subject Discoverability Metadata To Records",ellipse,null,null,process
+252,Link Datasets With The Project Dmp,ellipse,null,null,process
+253,Manage Live Research Data,ellipse,null,null,process
+254,Share Live Research Data,ellipse,null,null,process
+255,Manage Multiple Versions Of The Same Dataset,ellipse,null,null,process
+256,Deposit On Behalf,ellipse,null,null,process
+257,Allow,ellipse,null,null,process
+259,,endArrow=classic,228,229,endArrow=classic
+260,,endArrow=classic,228,230,endArrow=classic
+261,,endArrow=classic,228,231,endArrow=classic
+262,,endArrow=classic,228,232,endArrow=classic
+263,,endArrow=classic,228,233,endArrow=classic
+264,,endArrow=classic,228,234,endArrow=classic
+265,,endArrow=classic,228,235,endArrow=classic
+266,,endArrow=classic,228,236,endArrow=classic
+267,,endArrow=classic,228,237,endArrow=classic
+268,,endArrow=classic,228,238,endArrow=classic
+269,,endArrow=classic,228,239,endArrow=classic
+270,,endArrow=classic,228,240,endArrow=classic
+271,,endArrow=classic,228,241,endArrow=classic
+272,,endArrow=classic,228,242,endArrow=classic
+273,,endArrow=classic,228,243,endArrow=classic
+274,,endArrow=classic,228,244,endArrow=classic
+275,,endArrow=classic,228,245,endArrow=classic
+276,,endArrow=classic,228,246,endArrow=classic
+277,,endArrow=classic,228,247,endArrow=classic
+278,,endArrow=classic,228,248,endArrow=classic
+279,,endArrow=classic,228,249,endArrow=classic
+280,,endArrow=classic,228,250,endArrow=classic
+281,,endArrow=classic,228,251,endArrow=classic
+282,,endArrow=classic,228,252,endArrow=classic
+283,,endArrow=classic,228,253,endArrow=classic
+284,,endArrow=classic,228,254,endArrow=classic
+285,,endArrow=classic,228,255,endArrow=classic
+286,,endArrow=classic,228,256,endArrow=classic
+287,,endArrow=classic,228,257,endArrow=classic
+288,Dataset,endArrow=classic,229,200,endArrow=classic
+289,Web Interface,endArrow=classic,229,221,endArrow=classic
+290,Dataset,endArrow=classic,230,200,endArrow=classic
+291,Web Interface,endArrow=classic,230,221,endArrow=classic
+292,User Interface,endArrow=classic,231,201,endArrow=classic
+293,Dataset,endArrow=classic,232,200,endArrow=classic
+294,Dataset,endArrow=classic,233,200,endArrow=classic
+295,Workflow Tool,endArrow=classic,234,222,endArrow=classic
+296,Dataset,endArrow=classic,234,200,endArrow=classic
+297,Research Environment,endArrow=classic,235,223,endArrow=classic
+298,Dataset,endArrow=classic,235,200,endArrow=classic
+299,Dataset,endArrow=classic,236,200,endArrow=classic
+300,Workflow Tool,endArrow=classic,236,222,endArrow=classic
+301,Dataset,endArrow=classic,237,200,endArrow=classic
+302,Research Environment,endArrow=classic,237,223,endArrow=classic
+303,File,endArrow=classic,238,202,endArrow=classic
+304,Datum,endArrow=classic,239,203,endArrow=classic
+305,Embargo,endArrow=classic,239,204,endArrow=classic
+306,License,endArrow=classic,240,205,endArrow=classic
+307,Dataset,endArrow=classic,240,200,endArrow=classic
+308,Collaborator,endArrow=classic,241,206,endArrow=classic
+309,Access,endArrow=classic,241,207,endArrow=classic
+310,Dataset,endArrow=classic,241,200,endArrow=classic
+311,Large File,endArrow=classic,242,208,endArrow=classic
+312,Publication,endArrow=classic,243,210,endArrow=classic
+313,Opus,endArrow=classic,243,209,endArrow=classic
+314,Dataset,endArrow=classic,243,200,endArrow=classic
+315,Doi,endArrow=classic,244,211,endArrow=classic
+316,Datum,endArrow=classic,244,203,endArrow=classic
+317,Metadata,endArrow=classic,245,213,endArrow=classic
+318,University System,endArrow=classic,245,224,endArrow=classic
+319,External Repository,endArrow=classic,246,214,endArrow=classic
+320,Datum,endArrow=classic,246,203,endArrow=classic
+321,Disposal Policy,endArrow=classic,247,215,endArrow=classic
+322,Datum,endArrow=classic,247,203,endArrow=classic
+323,Datum,endArrow=classic,248,203,endArrow=classic
+324,Datum,endArrow=classic,249,203,endArrow=classic
+325,Guarantee,endArrow=classic,250,217,endArrow=classic
+326,Data Integrity,endArrow=classic,250,216,endArrow=classic
+327,Record,endArrow=classic,251,218,endArrow=classic
+328,Metadata,endArrow=classic,251,213,endArrow=classic
+329,Project Dmp,endArrow=classic,252,225,endArrow=classic
+330,Dataset,endArrow=classic,252,200,endArrow=classic
+331,Datum,endArrow=classic,253,203,endArrow=classic
+332,Datum,endArrow=classic,254,203,endArrow=classic
+333,Dataset,endArrow=classic,255,219,endArrow=classic
+334,Behalf,endArrow=classic,256,220,endArrow=classic
+335,,endArrow=classic,257,256,endArrow=classic
+387,Discoverability,endArrow=classic,251,226,endArrow=classic
+394,Research,endArrow=classic,235,227,endArrow=classic
+1000,,endArrow=classic,239,30,endArrow=classic
+1001,Confidentiality responsibilities,rounded=0,null,null,external_entity
+1002,Confidentiality responsibilities,endArrow=classic,30,1001,endArrow=classic
+1003,,endArrow=classic,244,31,endArrow=classic
+1004,Credit,rounded=0,null,null,external_entity
+1005,Credit,endArrow=classic,31,1004,endArrow=classic
+1006,,endArrow=classic,248,32,endArrow=classic
+1007,Work,rounded=0,null,null,external_entity
+1008,Work,endArrow=classic,32,1007,endArrow=classic
+1009,,endArrow=classic,249,33,endArrow=classic
+1010,Work,rounded=0,null,null,external_entity
+1011,Work,endArrow=classic,33,1010,endArrow=classic
+1012,,endArrow=classic,250,34,endArrow=classic
+1013,Data,rounded=0,null,null,external_entity
+1014,Data,endArrow=classic,34,1013,endArrow=classic
+1015,Researchers,rounded=0,null,null,external_entity
+1016,,endArrow=classic,1015,35,endArrow=classic
+1017,Discipline,rounded=0,null,null,external_entity
+1018,Discipline,endArrow=classic,35,1017,endArrow=classic
+1019,Data,rounded=0,null,null,external_entity
+1020,Data,endArrow=classic,35,1019,endArrow=classic

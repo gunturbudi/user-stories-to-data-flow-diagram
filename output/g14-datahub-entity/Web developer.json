@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a Web Developer, I want to be able to install multiple versions of the same datapackage separately, so that that all my projects could be developed independently and deployed locally.",
+    "entities": [
+      {
+        "text": "Web Developer",
+        "label": "Data"
+      },
+      {
+        "text": "install",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      }
+    ]
+  }
+]

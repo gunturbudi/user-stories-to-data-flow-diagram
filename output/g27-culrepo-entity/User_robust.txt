@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Way" as thingway
+	entity "Gb" as thingGB
+	entity "Repository File" as thingrepositoryfile
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "User" as thinguser
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Want" as controlwantdownloadusercornellfacultymemberuseruseuser
+	control "Use Users" as controluseuser
+	control "Share On\nThe Repository\nFiles Are\nLarger Than\nGb In\nA Way\nStill Allows" as controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	control "Download Users" as controldownloadusercornellfacultymemberuser
+
+	thingway <.. thingGB
+	thingGB <.. thingrepositoryfile
+	actorcornellfacultymember --- thinguser
+	actorcornellfacultymember --- thingwayinterface
+	controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser --> controlwantdownloadusercornellfacultymemberuseruseuser
+	thingwayinterface --> controlwantdownloadusercornellfacultymemberuseruseuser
+	controlwantdownloadusercornellfacultymemberuseruseuser --> controluseuser
+	thinguser --> controluseuser
+	thingrepositoryfile --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingGB --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingway --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingwayinterface --> controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	controlwantdownloadusercornellfacultymemberuseruseuser --> controldownloadusercornellfacultymemberuser
+	thinguser --> controldownloadusercornellfacultymemberuser
+
+@enduml

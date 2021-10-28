@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Active ,\nAuthenticated User " ];
+201 [label="<f0>  |<f1> Anonymous User " ];
+202 [label="Repository Manager" shape=box];
+203 [label="{<f0> 1.0|<f1> View Anonymous User }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> View Active, Authenticated Users }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 201 [label="Anonymous User"]
+204 -> 200 [label="Active ,\nAuthenticated User"]
+}

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Registration " color=red];
+201 [label="<f0>  |<f1> Authenticated User " ];
+202 [label="<f0>  |<f1> Day " color=red];
+203 [label="Trainee" shape=box];
+204 [label="{<f0> 1.0|<f1> Limit To Registration Per Day Per Authenticated User }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Registration"]
+204 -> 202 [label="Day"]
+204 -> 201 [label="Authenticated User"]
+}

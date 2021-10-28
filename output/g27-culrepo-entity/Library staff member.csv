@@ -1,0 +1,282 @@
+id,value,style,source,target,type
+52,Ensure continued access to said content.,ellipse,null,null,process
+53,Deliver such content in the manner best fit to the audience or occasion.,ellipse,null,null,process
+200,Access Embargo,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Analytic,shape=partialRectangle,null,null,data_base
+203,Useful Statistic,shape=partialRectangle,null,null,data_base
+204,Comprehensive,shape=partialRectangle,null,null,data_base
+205,Altmetric,shape=partialRectangle,null,null,data_base
+206,Collection,shape=partialRectangle,null,null,data_base
+207,Repository,shape=partialRectangle,null,null,data_base
+208,Author,shape=partialRectangle,null,null,data_base
+209,Rare Material,shape=partialRectangle,null,null,data_base
+210,Archival,shape=partialRectangle,null,null,data_base
+211,System,shape=partialRectangle,null,null,data_base
+212,Digital Item,shape=partialRectangle,null,null,data_base
+213,Material,shape=partialRectangle,null,null,data_base
+214,Behalf,shape=partialRectangle,null,null,data_base
+215,Metadata,shape=partialRectangle,null,null,data_base
+216,Description,shape=partialRectangle,null,null,data_base
+217,Subscribable Flag,shape=partialRectangle,null,null,data_base
+218,Document Title,shape=partialRectangle,null,null,data_base
+219,Subject Area,shape=partialRectangle,null,null,data_base
+220,Keyword,shape=partialRectangle,null,null,data_base
+221,Document Type,shape=partialRectangle,null,null,data_base
+222,Release Frequency,shape=partialRectangle,null,null,data_base
+223,Status,shape=partialRectangle,null,null,data_base
+224,File Location,shape=partialRectangle,null,null,data_base
+225,Descriptive Metadata,shape=partialRectangle,null,null,data_base
+226,Etc,shape=partialRectangle,null,null,data_base
+227,Supplementary File,shape=partialRectangle,null,null,data_base
+228,Slideshow,shape=partialRectangle,null,null,data_base
+229,Dataset,shape=partialRectangle,null,null,data_base
+230,Stream Medium,shape=partialRectangle,null,null,data_base
+231,", Collection",shape=partialRectangle,null,null,data_base
+232,Deposit,shape=partialRectangle,null,null,data_base
+233,Content,shape=partialRectangle,null,null,data_base
+234,Web Page,shape=partialRectangle,null,null,data_base
+235,Upload Metadata,shape=partialRectangle,null,null,data_base
+236,"Upload ,\nCorrect Document",shape=partialRectangle,null,null,data_base
+237,Revision,shape=partialRectangle,null,null,data_base
+238,Reason,shape=partialRectangle,null,null,data_base
+239,Error,shape=partialRectangle,null,null,data_base
+240,Quick Response,shape=partialRectangle,null,null,data_base
+241,Reasonable Resolution,shape=partialRectangle,null,null,data_base
+242,Certain Collection,shape=partialRectangle,null,null,data_base
+243,Field,shape=partialRectangle,null,null,data_base
+244,Robust Manner,shape=partialRectangle,null,null,data_base
+245,Revisor,shape=partialRectangle,null,null,data_base
+246,Cornell,shape=partialRectangle,null,null,data_base
+247,Researcher,shape=partialRectangle,null,null,data_base
+248,Sharing,shape=partialRectangle,null,null,data_base
+249,Research,shape=partialRectangle,null,null,data_base
+250,Rot,shape=partialRectangle,null,null,data_base
+251,Law School,shape=partialRectangle,null,null,data_base
+252,Usage Statistic,shape=partialRectangle,null,null,data_base
+253,Search Capability,shape=partialRectangle,null,null,data_base
+254,Tech Support\nIssue,shape=partialRectangle,null,null,data_base
+255,Custom,shape=partialRectangle,null,null,data_base
+256,"Library , Staff Member",rounded=0,null,null,external_entity
+257,Apply An Access Embargo To An Item,ellipse,null,null,process
+258,Remove An Access Embargo To An Item,ellipse,null,null,process
+259,Access Useful Statistics Including Altmetrics At Item Level,ellipse,null,null,process
+260,Access Useful Statistics Including Altmetrics At Collection,ellipse,null,null,process
+261,Access Comprehensive,ellipse,null,null,process
+262,Access Useful Statistics Including Altmetrics At Author,ellipse,null,null,process
+263,Access Analytic,ellipse,null,null,process
+264,Access Useful Usage Statistics Including Altmetrics At The Repository,ellipse,null,null,process
+265,Create Collections Highlight,ellipse,null,null,process
+266,Endanger,ellipse,null,null,process
+267,Create Collections Highlight Rare Material,ellipse,null,null,process
+268,Create Collections Highlight Archival,ellipse,null,null,process
+269,"Make Digital Items In External, Trusted System Searchable Within System",ellipse,null,null,process
+270,Upload Material To The Repository On The Author's Behalf,ellipse,null,null,process
+271,Create Metadata For Items Within The Repository Includes File Location,ellipse,null,null,process
+272,Create Metadata For Items Within The Repository Includes Subscribable Flag,ellipse,null,null,process
+273,Create Metadata For Items Within The Repository Includes Document Title,ellipse,null,null,process
+274,Create Metadata For Items Within The Repository Includes Description,ellipse,null,null,process
+275,Create Metadata For Items Within The Repository Includes Author,ellipse,null,null,process
+276,Create Metadata For Items Within The Repository Includes Subject Area,ellipse,null,null,process
+277,Create Metadata For Items Within The Repository Includes Document Type,ellipse,null,null,process
+278,Create Metadata For Items Within The Repository Includes Release Frequency,ellipse,null,null,process
+279,Create Metadata For Items Within The Repository Includes Status,ellipse,null,null,process
+280,Searching,ellipse,null,null,process
+281,Create Metadata For Items Within The Repository Includes Keyword,ellipse,null,null,process
+282,Upload Large Batches Of Items Including Descriptive Metadata,ellipse,null,null,process
+283,Upload An Item To The Repository Only Become Visible,ellipse,null,null,process
+284,Include Supplementary Files Such As Slideshow,ellipse,null,null,process
+285,Include Supplementary Files Such As Etc,ellipse,null,null,process
+286,Include Supplementary Files Such As Datasets,ellipse,null,null,process
+287,Deliver Streaming Media Within The Repository,ellipse,null,null,process
+288,"Assign An Item To Than, More Collection",ellipse,null,null,process
+289,Add Custom Metadata Fields For Deposits,ellipse,null,null,process
+290,Allow For Better Search Capabilities,ellipse,null,null,process
+291,Have Customizable Metadata Fields,ellipse,null,null,process
+292,Use Metadata,ellipse,null,null,process
+293,Use Content From The Repository In Other Systems,ellipse,null,null,process
+294,Use Content From Easily Web Page,ellipse,null,null,process
+295,Receive A Reasonable Resolution To Tech Support Issues,ellipse,null,null,process
+296,Receive A Quick Response,ellipse,null,null,process
+297,Create Custom Metadata Fields For Certain Collections,ellipse,null,null,process
+298,Allow Searching Of Those Fields,ellipse,null,null,process
+299,Preserve The Metadata Within The Repository,ellipse,null,null,process
+300,Preserve The Content In A Robust Manner,ellipse,null,null,process
+301,Create A Collection Sometimes With Custom Metadata Fields,ellipse,null,null,process
+302,Determine,ellipse,null,null,process
+303,Trace The List Of Revisors,ellipse,null,null,process
+304,Tell The Researchers,ellipse,null,null,process
+305,Using Sustainable Links Not Succumb,ellipse,null,null,process
+306,Link Rot,ellipse,null,null,process
+307,Preserve The Scholarship Of The Law School,ellipse,null,null,process
+309,,endArrow=classic,256,257,endArrow=classic
+310,,endArrow=classic,256,258,endArrow=classic
+311,,endArrow=classic,256,259,endArrow=classic
+312,,endArrow=classic,256,260,endArrow=classic
+313,,endArrow=classic,256,261,endArrow=classic
+314,,endArrow=classic,256,262,endArrow=classic
+315,,endArrow=classic,256,263,endArrow=classic
+316,,endArrow=classic,256,264,endArrow=classic
+317,,endArrow=classic,256,265,endArrow=classic
+318,,endArrow=classic,256,266,endArrow=classic
+319,,endArrow=classic,256,267,endArrow=classic
+320,,endArrow=classic,256,268,endArrow=classic
+321,,endArrow=classic,256,269,endArrow=classic
+322,,endArrow=classic,256,270,endArrow=classic
+323,,endArrow=classic,256,271,endArrow=classic
+324,,endArrow=classic,256,272,endArrow=classic
+325,,endArrow=classic,256,273,endArrow=classic
+326,,endArrow=classic,256,274,endArrow=classic
+327,,endArrow=classic,256,275,endArrow=classic
+328,,endArrow=classic,256,276,endArrow=classic
+329,,endArrow=classic,256,277,endArrow=classic
+330,,endArrow=classic,256,278,endArrow=classic
+331,,endArrow=classic,256,279,endArrow=classic
+332,,endArrow=classic,256,280,endArrow=classic
+333,,endArrow=classic,256,281,endArrow=classic
+334,,endArrow=classic,256,282,endArrow=classic
+335,,endArrow=classic,256,283,endArrow=classic
+336,,endArrow=classic,256,284,endArrow=classic
+337,,endArrow=classic,256,285,endArrow=classic
+338,,endArrow=classic,256,286,endArrow=classic
+339,,endArrow=classic,256,287,endArrow=classic
+340,,endArrow=classic,256,288,endArrow=classic
+341,,endArrow=classic,256,289,endArrow=classic
+342,,endArrow=classic,256,290,endArrow=classic
+343,,endArrow=classic,256,291,endArrow=classic
+344,,endArrow=classic,256,292,endArrow=classic
+345,,endArrow=classic,256,293,endArrow=classic
+346,,endArrow=classic,256,294,endArrow=classic
+347,,endArrow=classic,256,295,endArrow=classic
+348,,endArrow=classic,256,296,endArrow=classic
+349,,endArrow=classic,256,297,endArrow=classic
+350,,endArrow=classic,256,298,endArrow=classic
+351,,endArrow=classic,256,299,endArrow=classic
+352,,endArrow=classic,256,300,endArrow=classic
+353,,endArrow=classic,256,301,endArrow=classic
+354,,endArrow=classic,256,304,endArrow=classic
+355,,endArrow=classic,256,305,endArrow=classic
+356,,endArrow=classic,256,305,endArrow=classic
+357,,endArrow=classic,256,306,endArrow=classic
+358,,endArrow=classic,256,307,endArrow=classic
+359,Access Embargo,endArrow=classic,257,200,endArrow=classic
+360,Item,endArrow=classic,257,201,endArrow=classic
+361,Access Embargo,endArrow=classic,258,200,endArrow=classic
+362,Item,endArrow=classic,258,201,endArrow=classic
+363,Useful Statistic,endArrow=classic,259,203,endArrow=classic
+364,Altmetric,endArrow=classic,259,205,endArrow=classic
+365,Collection,endArrow=classic,260,206,endArrow=classic
+366,Useful Statistic,endArrow=classic,260,203,endArrow=classic
+367,Altmetric,endArrow=classic,260,205,endArrow=classic
+368,Comprehensive,endArrow=classic,261,204,endArrow=classic
+369,Author,endArrow=classic,262,208,endArrow=classic
+370,Useful Statistic,endArrow=classic,262,203,endArrow=classic
+371,Altmetric,endArrow=classic,262,205,endArrow=classic
+372,Analytic,endArrow=classic,263,202,endArrow=classic
+373,Usage Statistic,endArrow=classic,264,252,endArrow=classic
+374,Altmetric,endArrow=classic,264,205,endArrow=classic
+375,Repository,endArrow=classic,264,207,endArrow=classic
+376,,endArrow=classic,265,266,endArrow=classic
+377,Collection,endArrow=classic,265,206,endArrow=classic
+378,Rare Material,endArrow=classic,267,209,endArrow=classic
+379,Collection,endArrow=classic,267,206,endArrow=classic
+380,Archival,endArrow=classic,268,210,endArrow=classic
+381,Collection,endArrow=classic,268,206,endArrow=classic
+382,Digital Item,endArrow=classic,269,212,endArrow=classic
+383,System,endArrow=classic,269,211,endArrow=classic
+384,Material,endArrow=classic,270,213,endArrow=classic
+385,Behalf,endArrow=classic,270,214,endArrow=classic
+386,Repository,endArrow=classic,270,207,endArrow=classic
+387,File Location,endArrow=classic,271,224,endArrow=classic
+388,Item,endArrow=classic,271,201,endArrow=classic
+389,Repository,endArrow=classic,271,207,endArrow=classic
+390,Metadata,endArrow=classic,271,215,endArrow=classic
+391,Subscribable Flag,endArrow=classic,272,217,endArrow=classic
+392,Item,endArrow=classic,272,201,endArrow=classic
+393,Repository,endArrow=classic,272,207,endArrow=classic
+394,Metadata,endArrow=classic,272,215,endArrow=classic
+395,Metadata,endArrow=classic,273,215,endArrow=classic
+396,Document Title,endArrow=classic,273,218,endArrow=classic
+397,Item,endArrow=classic,273,201,endArrow=classic
+398,Repository,endArrow=classic,273,207,endArrow=classic
+399,Description,endArrow=classic,274,216,endArrow=classic
+400,Item,endArrow=classic,274,201,endArrow=classic
+401,Repository,endArrow=classic,274,207,endArrow=classic
+402,Metadata,endArrow=classic,274,215,endArrow=classic
+403,Author,endArrow=classic,275,208,endArrow=classic
+404,Item,endArrow=classic,275,201,endArrow=classic
+405,Repository,endArrow=classic,275,207,endArrow=classic
+406,Metadata,endArrow=classic,275,215,endArrow=classic
+407,Subject Area,endArrow=classic,276,219,endArrow=classic
+408,Item,endArrow=classic,276,201,endArrow=classic
+409,Repository,endArrow=classic,276,207,endArrow=classic
+410,Metadata,endArrow=classic,276,215,endArrow=classic
+411,Document Type,endArrow=classic,277,221,endArrow=classic
+412,Item,endArrow=classic,277,201,endArrow=classic
+413,Repository,endArrow=classic,277,207,endArrow=classic
+414,Metadata,endArrow=classic,277,215,endArrow=classic
+415,Release Frequency,endArrow=classic,278,222,endArrow=classic
+416,Item,endArrow=classic,278,201,endArrow=classic
+417,Repository,endArrow=classic,278,207,endArrow=classic
+418,Metadata,endArrow=classic,278,215,endArrow=classic
+419,Status,endArrow=classic,279,223,endArrow=classic
+420,Item,endArrow=classic,279,201,endArrow=classic
+421,Repository,endArrow=classic,279,207,endArrow=classic
+422,Metadata,endArrow=classic,279,215,endArrow=classic
+423,,endArrow=classic,280,281,endArrow=classic
+424,Keyword,endArrow=classic,281,220,endArrow=classic
+425,Item,endArrow=classic,281,201,endArrow=classic
+426,Repository,endArrow=classic,281,207,endArrow=classic
+427,Metadata,endArrow=classic,281,215,endArrow=classic
+428,Descriptive Metadata,endArrow=classic,282,225,endArrow=classic
+429,Item,endArrow=classic,282,201,endArrow=classic
+430,Item,endArrow=classic,283,201,endArrow=classic
+431,Repository,endArrow=classic,283,207,endArrow=classic
+432,Slideshow,endArrow=classic,284,228,endArrow=classic
+433,Supplementary File,endArrow=classic,284,227,endArrow=classic
+434,Etc,endArrow=classic,285,226,endArrow=classic
+435,Supplementary File,endArrow=classic,285,227,endArrow=classic
+436,Supplementary File,endArrow=classic,286,227,endArrow=classic
+437,Dataset,endArrow=classic,286,229,endArrow=classic
+438,Stream Medium,endArrow=classic,287,230,endArrow=classic
+439,Repository,endArrow=classic,287,207,endArrow=classic
+440,", Collection",endArrow=classic,288,231,endArrow=classic
+441,Item,endArrow=classic,288,201,endArrow=classic
+442,,endArrow=classic,289,290,endArrow=classic
+443,Deposit,endArrow=classic,289,232,endArrow=classic
+444,Field,endArrow=classic,289,243,endArrow=classic
+445,Search Capability,endArrow=classic,290,253,endArrow=classic
+446,Field,endArrow=classic,291,243,endArrow=classic
+447,Metadata,endArrow=classic,292,215,endArrow=classic
+448,Content,endArrow=classic,293,233,endArrow=classic
+449,Repository,endArrow=classic,293,207,endArrow=classic
+450,System,endArrow=classic,293,211,endArrow=classic
+451,Web Page,endArrow=classic,294,234,endArrow=classic
+452,Content,endArrow=classic,294,233,endArrow=classic
+453,Reasonable Resolution,endArrow=classic,295,241,endArrow=classic
+454,Tech Support\nIssue,endArrow=classic,295,254,endArrow=classic
+455,Quick Response,endArrow=classic,296,240,endArrow=classic
+456,Certain Collection,endArrow=classic,297,242,endArrow=classic
+457,Field,endArrow=classic,297,243,endArrow=classic
+458,Field,endArrow=classic,298,243,endArrow=classic
+459,Repository,endArrow=classic,299,207,endArrow=classic
+460,Metadata,endArrow=classic,299,215,endArrow=classic
+461,Robust Manner,endArrow=classic,300,244,endArrow=classic
+462,Content,endArrow=classic,300,233,endArrow=classic
+463,Collection,endArrow=classic,301,206,endArrow=classic
+464,Field,endArrow=classic,301,243,endArrow=classic
+465,,endArrow=classic,302,283,endArrow=classic
+466,,endArrow=classic,303,302,endArrow=classic
+467,Revisor,endArrow=classic,303,245,endArrow=classic
+468,Researcher,endArrow=classic,304,247,endArrow=classic
+469,,endArrow=classic,305,306,endArrow=classic
+470,,endArrow=classic,305,307,endArrow=classic
+471,Rot,endArrow=classic,306,250,endArrow=classic
+472,Law School,endArrow=classic,307,251,endArrow=classic
+664,Reason,endArrow=classic,295,238,endArrow=classic
+865,Research,endArrow=classic,304,249,endArrow=classic
+898,Custom,endArrow=classic,289,255,endArrow=classic
+1000,,endArrow=classic,287,52,endArrow=classic
+1001,Content,endArrow=classic,52,233,endArrow=classic
+1002,,endArrow=classic,256,53,endArrow=classic
+1003,Content,endArrow=classic,53,233,endArrow=classic

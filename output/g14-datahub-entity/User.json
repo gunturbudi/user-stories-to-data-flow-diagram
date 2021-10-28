@@ -1,0 +1,98 @@
+[
+  {
+    "text": "As an owner, I want to make a user an owner, so that they have full control.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "full control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to remove a user as an owner, so that they are just a member and no longer have full control.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "full control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Admin, I want to see key metrics about usage such as users, API usage, downloads, so that that I know how things are going.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "usage",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "API usage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Admin, I want to have a pricing plan and billing system, so that that I can charge users and make my platform sustainable.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "charge",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

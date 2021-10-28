@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Compliance,shape=partialRectangle,null,null,data_base
+201,Fundersâ€ Rule,shape=partialRectangle,null,null,data_base
+202,"Research , Support Officer",rounded=0,null,null,external_entity
+203,Ensure Compliance To The Fundersâ€ Rules,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Compliance,endArrow=classic,203,200,endArrow=classic
+207,Fundersâ€ Rule,endArrow=classic,203,201,endArrow=classic

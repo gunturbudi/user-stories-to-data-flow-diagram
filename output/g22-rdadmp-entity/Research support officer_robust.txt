@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Compliance" as thingcompliance
+	entity "Fundersâ€ Rule" as thingfundersâ€rule
+	actor "Research ,\nSupport Officer" as actorresearchsupportofficer
+	boundary "Rule\nInterface" as thingruleinterface #grey
+	control "Ensure Compliance\nTo The\nFundersâ€ Rules" as controlensurecompliance
+
+	thingfundersâ€rule <.. thingcompliance
+	actorresearchsupportofficer --- thingruleinterface
+	thingcompliance --- controlensurecompliance
+	thingfundersâ€rule --- controlensurecompliance
+	thingruleinterface --> controlensurecompliance
+
+@enduml

@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Project " color=red];
+201 [label="<f0>  |<f1> Data Package " color=red];
+202 [label="<f0>  |<f1> Node Lib " ];
+203 [label="<f0>  |<f1> File " color=red];
+204 [label="<f0>  |<f1> Datapackage " color=red];
+205 [label="<f0>  |<f1> Datapackages Requirement " color=red];
+206 [label="Developer" shape=box];
+207 [label="{<f0> 1.0|<f1> Use Data Package As A Node Lib In Project }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> List All Datapackages Requirements For Project In The File }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Pin The Exact Versions Of Any Datapackage }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 201 [label="Data Package"]
+207 -> 202 [label="Node Lib"]
+207 -> 200 [label="Project"]
+208 -> 205 [label="Datapackages Requirement"]
+208 -> 203 [label="File"]
+208 -> 200 [label="Project"]
+209 -> 204 [label="Datapackage"]
+}

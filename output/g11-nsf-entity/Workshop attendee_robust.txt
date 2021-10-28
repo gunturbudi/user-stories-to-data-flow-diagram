@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summary" as thingsummary
+	entity "Event" as thingevent
+	entity "Major Finding" as thingmajorfinding
+	actor "Workshop Attendee" as actorworkshopattendee
+	boundary "Summary\nInterface" as thingsummaryinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Have A\nSummary What\nLearned" as controlhavesummary
+	control "See A\nSummary On\nMajor Findings\nFrom The\nEvent" as controlseesummary
+
+	thingmajorfinding <.. thingsummary
+	thingevent <.. thingmajorfinding
+	actorworkshopattendee --- thingsummaryinterface
+	actorworkshopattendee --- thingeventinterface
+	thingsummary --- controlhavesummary
+	thingsummaryinterface --> controlhavesummary
+	thingmajorfinding --- controlseesummary
+	thingevent --- controlseesummary
+	thingeventinterface --> controlseesummary
+	thingsummary --- controlseesummary
+
+@enduml

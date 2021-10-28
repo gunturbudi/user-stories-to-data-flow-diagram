@@ -1,0 +1,371 @@
+[
+  {
+    "text": "As a Data Publishing User, I want to be able to edit a dataset I have published, So that I can correct or enhance existing data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "correct",
+        "label": "Processing"
+      },
+      {
+        "text": "enhance",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to edit the model of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "make enhancements",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to delete a dataset I have published, So that I can remove unwanted data from OpenSpending.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to edit the data source of data I have already imported, So that I can fix bugs or make enhancements in the API built for my data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "data source",
+        "label": "PII"
+      },
+      {
+        "text": "make enhancements",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to have the Packager support Constants, So that I can model dimensions that may not exist in the source file.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to import data in Excel, So that I do not have to convert data formats in order to use the data packager.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "convert",
+        "label": "Processing"
+      },
+      {
+        "text": "data formats",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to know what my data needs to be able to be visualised on a map, So that I can visualise it on a map.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "visualised",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to import data in JSON, So that I do not have to convert data formats in order to use the data packager.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "convert",
+        "label": "Processing"
+      },
+      {
+        "text": "data formats",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to import data from a Google Spreadsheet, So that I do not have to convert data formats in order to use the data packager.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "convert",
+        "label": "Processing"
+      },
+      {
+        "text": "data formats",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to import data from Fiscal Data Package descriptor file, So that I do not have to convert data formats in order to use the data packager.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "convert",
+        "label": "Processing"
+      },
+      {
+        "text": "data formats",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to provide the Platform Administrator with additional GeoJSON sources, So that I can improve the map-based visualisations of my data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "GeoJSON sources",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to have my dataset update automatically as the source file/files changes, So that OpenSpending always shows current data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "update automatically",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to add a dataset in a Hidden state, So that I can work on a dataset before having it discoverable via OpenSpending user interfaces.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "work",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "discoverable",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to Hide a dataset that I have already added as Public, So that I can fix my mistakes or have a dataset primarily for my own use.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "Hide",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "mistakes",
+        "label": "PII"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to have a view on all the datasets I have published, So that I can perform management actions on my own datasets.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to have a functioning Python Client, So that I can add data to the datastore in bulk from the command line or my own programs.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "add data",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to know if my CSV file is valid, So that I can fix possible data issues before publishing it on Open Spending.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "CSV file",
+        "label": "PII"
+      },
+      {
+        "text": "data issues",
+        "label": "PII"
+      }
+    ]
+  }
+]

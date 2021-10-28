@@ -1,0 +1,160 @@
+id,value,style,source,target,type
+200,Current News,shape=partialRectangle,null,null,data_base
+201,Home Page,shape=partialRectangle,null,null,data_base
+202,Old News,shape=partialRectangle,null,null,data_base
+203,Editor,shape=partialRectangle,null,null,data_base
+204,", Upcoming\nCourse",shape=partialRectangle,null,null,data_base
+205,Upcoming Event,shape=partialRectangle,null,null,data_base
+206,Course,shape=partialRectangle,null,null,data_base
+207,Event,shape=partialRectangle,null,null,data_base
+208,Feed,shape=partialRectangle,null,null,data_base
+209,Upcoming Course,shape=partialRectangle,null,null,data_base
+210,Faq,shape=partialRectangle,null,null,data_base
+211,New Article,shape=partialRectangle,null,null,data_base
+212,Page,shape=partialRectangle,null,null,data_base
+213,Link,shape=partialRectangle,null,null,data_base
+214,Article,shape=partialRectangle,null,null,data_base
+215,Search,shape=partialRectangle,null,null,data_base
+216,Author Name,shape=partialRectangle,null,null,data_base
+217,Title,shape=partialRectangle,null,null,data_base
+218,Comment,shape=partialRectangle,null,null,data_base
+219,New Content,shape=partialRectangle,null,null,data_base
+220,Site,shape=partialRectangle,null,null,data_base
+221,Scrum,shape=partialRectangle,null,null,data_base
+222,Alliance,shape=partialRectangle,null,null,data_base
+223,Csm,shape=partialRectangle,null,null,data_base
+224,Earth,shape=partialRectangle,null,null,data_base
+225,Popular Item,shape=partialRectangle,null,null,data_base
+226,Rating,shape=partialRectangle,null,null,data_base
+227,Trainer,shape=partialRectangle,null,null,data_base
+228,Basic,shape=partialRectangle,null,null,data_base
+229,Practitioner,shape=partialRectangle,null,null,data_base
+230,News Item,shape=partialRectangle,null,null,data_base
+231,Search Criterion,shape=partialRectangle,null,null,data_base
+232,Search Option,shape=partialRectangle,null,null,data_base
+233,Text Search,shape=partialRectangle,null,null,data_base
+234,Certification,shape=partialRectangle,null,null,data_base
+235,Rss,shape=partialRectangle,null,null,data_base
+236,Site Visitor,rounded=0,null,null,external_entity
+237,Read Current News On The Home Page,ellipse,null,null,process
+238,Access Old News Longer Is No On The Home Page,ellipse,null,null,process
+239,Email News Items To The Editor,ellipse,null,null,process
+240,See A List Of All Upcoming Certification Courses,ellipse,null,null,process
+241,Have An Advanced Search Option Lets Fill In A Form Of Search Criteria,ellipse,null,null,process
+242,View A Course,ellipse,null,null,process
+243,Subscribe To An Rss Feed Of Upcoming Courses,ellipse,null,null,process
+244,Subscribe To An Feed Of Event,ellipse,null,null,process
+245,Read Faqs,ellipse,null,null,process
+246,Do A Full Text Search Of The Faqs,ellipse,null,null,process
+247,Week Read A New Article On The Front Page,ellipse,null,null,process
+248,Click The Link From The Article Teaser,ellipse,null,null,process
+249,The Link Take To The Body Of The Article,ellipse,null,null,process
+250,Read Some Of Articles,ellipse,null,null,process
+251,Do A Full Search Of Author Name,ellipse,null,null,process
+252,Do A Full Search Of Title,ellipse,null,null,process
+253,Post Comments About Articles,ellipse,null,null,process
+254,See New Content,ellipse,null,null,process
+255,Come To The Site,ellipse,null,null,process
+256,Get,ellipse,null,null,process
+257,Have Articles Interest,ellipse,null,null,process
+258,Know,ellipse,null,null,process
+259,Visit,ellipse,null,null,process
+260,Need An Alliance,ellipse,null,null,process
+261,Be One,ellipse,null,null,process
+262,Glance Around The Home Page,ellipse,null,null,process
+263,Easily Get To The Home Page,ellipse,null,null,process
+264,See A Trainer's Rating,ellipse,null,null,process
+265,View A Section Of The Website Teaches Me The Basics What Scrum Is,ellipse,null,null,process
+266,View Lists On The Site Of Trainer,ellipse,null,null,process
+267,View Lists On The Site Of Practitioner,ellipse,null,null,process
+268,View Lists On The Site Of All Certified Scrum Masters,ellipse,null,null,process
+269,View Lists On The Site Of Certified Scrum Product Owner,ellipse,null,null,process
+271,,endArrow=classic,236,237,endArrow=classic
+272,,endArrow=classic,236,238,endArrow=classic
+273,,endArrow=classic,236,239,endArrow=classic
+274,,endArrow=classic,236,240,endArrow=classic
+275,,endArrow=classic,236,241,endArrow=classic
+276,,endArrow=classic,236,242,endArrow=classic
+277,,endArrow=classic,236,243,endArrow=classic
+278,,endArrow=classic,236,245,endArrow=classic
+279,,endArrow=classic,236,246,endArrow=classic
+280,,endArrow=classic,236,247,endArrow=classic
+281,,endArrow=classic,236,248,endArrow=classic
+282,,endArrow=classic,236,249,endArrow=classic
+283,,endArrow=classic,236,250,endArrow=classic
+284,,endArrow=classic,236,251,endArrow=classic
+285,,endArrow=classic,236,252,endArrow=classic
+286,,endArrow=classic,236,253,endArrow=classic
+287,,endArrow=classic,236,254,endArrow=classic
+288,,endArrow=classic,236,255,endArrow=classic
+289,,endArrow=classic,236,257,endArrow=classic
+290,,endArrow=classic,236,258,endArrow=classic
+291,,endArrow=classic,236,259,endArrow=classic
+292,,endArrow=classic,236,260,endArrow=classic
+293,,endArrow=classic,236,262,endArrow=classic
+294,,endArrow=classic,236,263,endArrow=classic
+295,,endArrow=classic,236,264,endArrow=classic
+296,,endArrow=classic,236,265,endArrow=classic
+297,,endArrow=classic,236,266,endArrow=classic
+298,,endArrow=classic,236,267,endArrow=classic
+299,,endArrow=classic,236,268,endArrow=classic
+300,,endArrow=classic,236,269,endArrow=classic
+301,Current News,endArrow=classic,237,200,endArrow=classic
+302,Home Page,endArrow=classic,237,201,endArrow=classic
+303,Old News,endArrow=classic,238,202,endArrow=classic
+304,Home Page,endArrow=classic,238,201,endArrow=classic
+305,News Item,endArrow=classic,239,230,endArrow=classic
+306,Editor,endArrow=classic,239,203,endArrow=classic
+307,Upcoming Event,endArrow=classic,240,205,endArrow=classic
+308,Popular Item,endArrow=classic,240,225,endArrow=classic
+309,", Upcoming\nCourse",endArrow=classic,240,204,endArrow=classic
+310,Site,endArrow=classic,240,220,endArrow=classic
+311,Course,endArrow=classic,240,206,endArrow=classic
+312,Search Option,endArrow=classic,241,232,endArrow=classic
+313,Search Criterion,endArrow=classic,241,231,endArrow=classic
+314,Course,endArrow=classic,242,206,endArrow=classic
+315,Upcoming Course,endArrow=classic,243,209,endArrow=classic
+316,Feed,endArrow=classic,243,208,endArrow=classic
+317,Article,endArrow=classic,243,214,endArrow=classic
+318,Feed,endArrow=classic,244,208,endArrow=classic
+319,Event,endArrow=classic,244,207,endArrow=classic
+320,Faq,endArrow=classic,245,210,endArrow=classic
+321,Text Search,endArrow=classic,246,233,endArrow=classic
+322,Faq,endArrow=classic,246,210,endArrow=classic
+323,New Article,endArrow=classic,247,211,endArrow=classic
+324,Page,endArrow=classic,247,212,endArrow=classic
+325,,endArrow=classic,248,249,endArrow=classic
+326,Link,endArrow=classic,248,213,endArrow=classic
+327,Article,endArrow=classic,248,214,endArrow=classic
+328,Article,endArrow=classic,249,214,endArrow=classic
+329,Link,endArrow=classic,249,213,endArrow=classic
+330,Article,endArrow=classic,250,214,endArrow=classic
+331,Search,endArrow=classic,251,215,endArrow=classic
+332,Author Name,endArrow=classic,251,216,endArrow=classic
+333,Title,endArrow=classic,252,217,endArrow=classic
+334,Search,endArrow=classic,252,215,endArrow=classic
+335,Comment,endArrow=classic,253,218,endArrow=classic
+336,Article,endArrow=classic,253,214,endArrow=classic
+337,New Content,endArrow=classic,254,219,endArrow=classic
+338,,endArrow=classic,255,254,endArrow=classic
+339,Site,endArrow=classic,255,220,endArrow=classic
+340,Article,endArrow=classic,257,214,endArrow=classic
+341,,endArrow=classic,259,258,endArrow=classic
+342,,endArrow=classic,259,260,endArrow=classic
+343,Alliance,endArrow=classic,260,222,endArrow=classic
+344,,endArrow=classic,262,258,endArrow=classic
+345,Home Page,endArrow=classic,262,201,endArrow=classic
+346,Home Page,endArrow=classic,263,201,endArrow=classic
+347,Rating,endArrow=classic,264,226,endArrow=classic
+348,Basic,endArrow=classic,265,228,endArrow=classic
+349,Scrum,endArrow=classic,265,221,endArrow=classic
+350,Site,endArrow=classic,265,220,endArrow=classic
+351,Trainer,endArrow=classic,266,227,endArrow=classic
+352,Site,endArrow=classic,266,220,endArrow=classic
+353,Practitioner,endArrow=classic,267,229,endArrow=classic
+354,Site,endArrow=classic,267,220,endArrow=classic
+355,Site,endArrow=classic,268,220,endArrow=classic
+356,Scrum,endArrow=classic,268,221,endArrow=classic
+357,Site,endArrow=classic,269,220,endArrow=classic
+427,Certification,endArrow=classic,240,234,endArrow=classic
+434,Rss,endArrow=classic,243,235,endArrow=classic

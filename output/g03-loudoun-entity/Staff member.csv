@@ -1,0 +1,151 @@
+id,value,style,source,target,type
+30,Preserve the history of draft proffer statements submitted by the applicant.,ellipse,null,null,process
+31,Maintain accurate ordinance information in the system.,ellipse,null,null,process
+32,Address an issue.,ellipse,null,null,process
+33,Track hearing-related activities and due dates.,ellipse,null,null,process
+34,Present the application to the appropriate governing body within the timelines dictated by the relevant county rules and procedures.,ellipse,null,null,process
+35,Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing.,ellipse,null,null,process
+36,Manage bonds throughout the lifecycle of the project until release.,ellipse,null,null,process
+37,Associate it to the child parcel and address after the condominiums are recorded in the system.,ellipse,null,null,process
+38,Send the notice of violation document to the property owner and log information about the action.,ellipse,null,null,process
+200,Completeness Review,shape=partialRectangle,null,null,data_base
+201,Internal Note,shape=partialRectangle,null,null,data_base
+202,Detailed Review,shape=partialRectangle,null,null,data_base
+203,Application,shape=partialRectangle,null,null,data_base
+204,Hold,shape=partialRectangle,null,null,data_base
+205,Formal Response,shape=partialRectangle,null,null,data_base
+206,Applicant,shape=partialRectangle,null,null,data_base
+207,Approve Proffer,shape=partialRectangle,null,null,data_base
+208,Ordinance,shape=partialRectangle,null,null,data_base
+209,Meeting,shape=partialRectangle,null,null,data_base
+210,Staff Review,shape=partialRectangle,null,null,data_base
+211,Staff Report,shape=partialRectangle,null,null,data_base
+212,Calendar,shape=partialRectangle,null,null,data_base
+213,Hearing Date,shape=partialRectangle,null,null,data_base
+214,Affidavit,shape=partialRectangle,null,null,data_base
+215,Execution,shape=partialRectangle,null,null,data_base
+216,Hearing Decision,shape=partialRectangle,null,null,data_base
+217,Appeal,shape=partialRectangle,null,null,data_base
+218,Bond,shape=partialRectangle,null,null,data_base
+219,Condo Unit,shape=partialRectangle,null,null,data_base
+220,Citation,shape=partialRectangle,null,null,data_base
+221,Fine,shape=partialRectangle,null,null,data_base
+222,Draft Proffer,shape=partialRectangle,null,null,data_base
+223,Action Status,shape=partialRectangle,null,null,data_base
+224,Staff Member,rounded=0,null,null,external_entity
+225,Perform A Completeness Review,ellipse,null,null,process
+226,Record An Internal Note,ellipse,null,null,process
+227,Assign An Application For Detailed Review,ellipse,null,null,process
+228,Apply A Hold,ellipse,null,null,process
+229,Remove A Hold,ellipse,null,null,process
+230,Send A Formal Response To Applicant,ellipse,null,null,process
+231,Track The Draft Proffers,ellipse,null,null,process
+232,Manage Approved Proffers,ellipse,null,null,process
+233,Manage Ordinances,ellipse,null,null,process
+234,Schedule A Meeting,ellipse,null,null,process
+235,Perform A Staff Review,ellipse,null,null,process
+236,Develop A Staff Report,ellipse,null,null,process
+237,Hearing Calendars,ellipse,null,null,process
+238,Manage,ellipse,null,null,process
+239,Assign A Hearing Date,ellipse,null,null,process
+240,Manage Affidavits,ellipse,null,null,process
+241,Hearing Execution,ellipse,null,null,process
+242,Support,ellipse,null,null,process
+243,Prepare,ellipse,null,null,process
+244,Capture A Hearing Decision,ellipse,null,null,process
+245,Process The Appeals,ellipse,null,null,process
+246,Manage Bonds,ellipse,null,null,process
+247,Notified,ellipse,null,null,process
+248,Create Each Condo Unit,ellipse,null,null,process
+249,Send Citations,ellipse,null,null,process
+250,Send Fine,ellipse,null,null,process
+251,Post Fine,ellipse,null,null,process
+252,Post Citations,ellipse,null,null,process
+253,Denote An Application With A Final Action Status,ellipse,null,null,process
+255,,endArrow=classic,224,225,endArrow=classic
+256,,endArrow=classic,224,226,endArrow=classic
+257,,endArrow=classic,224,227,endArrow=classic
+258,,endArrow=classic,224,228,endArrow=classic
+259,,endArrow=classic,224,229,endArrow=classic
+260,,endArrow=classic,224,230,endArrow=classic
+261,,endArrow=classic,224,231,endArrow=classic
+262,,endArrow=classic,224,232,endArrow=classic
+263,,endArrow=classic,224,233,endArrow=classic
+264,,endArrow=classic,224,234,endArrow=classic
+265,,endArrow=classic,224,235,endArrow=classic
+266,,endArrow=classic,224,236,endArrow=classic
+267,,endArrow=classic,224,237,endArrow=classic
+268,,endArrow=classic,224,238,endArrow=classic
+269,,endArrow=classic,224,239,endArrow=classic
+270,,endArrow=classic,224,240,endArrow=classic
+271,,endArrow=classic,224,241,endArrow=classic
+272,,endArrow=classic,224,243,endArrow=classic
+273,,endArrow=classic,224,244,endArrow=classic
+274,,endArrow=classic,224,245,endArrow=classic
+275,,endArrow=classic,224,246,endArrow=classic
+276,,endArrow=classic,224,248,endArrow=classic
+277,,endArrow=classic,224,249,endArrow=classic
+278,,endArrow=classic,224,250,endArrow=classic
+279,,endArrow=classic,224,251,endArrow=classic
+280,,endArrow=classic,224,252,endArrow=classic
+281,,endArrow=classic,224,253,endArrow=classic
+282,Completeness Review,endArrow=classic,225,200,endArrow=classic
+283,Internal Note,endArrow=classic,226,201,endArrow=classic
+284,Application,endArrow=classic,227,203,endArrow=classic
+285,Detailed Review,endArrow=classic,227,202,endArrow=classic
+286,Hold,endArrow=classic,228,204,endArrow=classic
+287,Hold,endArrow=classic,229,204,endArrow=classic
+288,Formal Response,endArrow=classic,230,205,endArrow=classic
+289,Applicant,endArrow=classic,230,206,endArrow=classic
+290,Draft Proffer,endArrow=classic,231,222,endArrow=classic
+291,Approve Proffer,endArrow=classic,232,207,endArrow=classic
+292,Ordinance,endArrow=classic,233,208,endArrow=classic
+293,Meeting,endArrow=classic,234,209,endArrow=classic
+294,Staff Review,endArrow=classic,235,210,endArrow=classic
+295,Staff Report,endArrow=classic,236,211,endArrow=classic
+296,Calendar,endArrow=classic,237,212,endArrow=classic
+297,,endArrow=classic,238,237,endArrow=classic
+298,Hearing Date,endArrow=classic,239,213,endArrow=classic
+299,Affidavit,endArrow=classic,240,214,endArrow=classic
+300,Execution,endArrow=classic,241,215,endArrow=classic
+301,,endArrow=classic,242,241,endArrow=classic
+302,,endArrow=classic,243,241,endArrow=classic
+303,Hearing Decision,endArrow=classic,244,216,endArrow=classic
+304,Appeal,endArrow=classic,245,217,endArrow=classic
+305,Bond,endArrow=classic,246,218,endArrow=classic
+306,Condo Unit,endArrow=classic,248,219,endArrow=classic
+307,Citation,endArrow=classic,249,220,endArrow=classic
+308,Fine,endArrow=classic,250,221,endArrow=classic
+309,Fine,endArrow=classic,251,221,endArrow=classic
+310,Citation,endArrow=classic,252,220,endArrow=classic
+311,Action Status,endArrow=classic,253,223,endArrow=classic
+312,Application,endArrow=classic,253,203,endArrow=classic
+1000,,endArrow=classic,231,30,endArrow=classic
+1001,Draft proffer statements,endArrow=classic,30,222,endArrow=classic
+1002,,endArrow=classic,233,31,endArrow=classic
+1003,Ordinance information,rounded=0,null,null,external_entity
+1004,Ordinance information,endArrow=classic,31,1003,endArrow=classic
+1005,,endArrow=classic,234,32,endArrow=classic
+1006,Required parties,rounded=0,null,null,external_entity
+1007,Required parties,endArrow=classic,32,1006,endArrow=classic
+1008,,endArrow=classic,237,33,endArrow=classic
+1009,Due dates,rounded=0,null,null,external_entity
+1010,Due dates,endArrow=classic,33,1009,endArrow=classic
+1011,,endArrow=classic,239,34,endArrow=classic
+1012,Application,endArrow=classic,34,203,endArrow=classic
+1013,Governing body,rounded=0,null,null,external_entity
+1014,Governing body,endArrow=classic,34,1013,endArrow=classic
+1015,,endArrow=classic,241,35,endArrow=classic
+1016,Pre-hearing requirements,rounded=0,null,null,external_entity
+1017,Pre-hearing requirements,endArrow=classic,35,1016,endArrow=classic
+1018,,endArrow=classic,238,36,endArrow=classic
+1019,Bonds,rounded=0,null,null,external_entity
+1020,Bonds,endArrow=classic,36,1019,endArrow=classic
+1021,,endArrow=classic,248,37,endArrow=classic
+1022,Child parcel,rounded=0,null,null,external_entity
+1023,Child parcel,endArrow=classic,37,1022,endArrow=classic
+1024,Address,rounded=0,null,null,external_entity
+1025,Address,endArrow=classic,37,1024,endArrow=classic
+1026,,endArrow=classic,252,38,endArrow=classic
+1027,Notice of violation document,rounded=0,null,null,external_entity
+1028,Notice of violation document,endArrow=classic,38,1027,endArrow=classic

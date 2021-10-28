@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a teachingfacultymember, I want to identify timely and relevant research suitable for use in my curriculum, and be notified of new research/content.",
+    "entities": [
+      {
+        "text": "teachingfacultymember",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      },
+      {
+        "text": "curriculum",
+        "label": "PII"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Way,shape=partialRectangle,null,null,data_base
+202,Zenodo,shape=partialRectangle,null,null,data_base
+203,Integration,shape=partialRectangle,null,null,data_base
+204,Funding,shape=partialRectangle,null,null,data_base
+205,Dataset,shape=partialRectangle,null,null,data_base
+206,Click,shape=partialRectangle,null,null,data_base
+207,Dataset,shape=partialRectangle,null,null,data_base
+208,Doi,shape=partialRectangle,null,null,data_base
+209,Researcherpublisher,rounded=0,null,null,external_entity
+210,Know,ellipse,null,null,process
+211,Conforms To Data Package Profile,ellipse,null,null,process
+212,Understand The Ways In Which Data Is Invalid,ellipse,null,null,process
+213,Provided With An Integration With Zenodo,ellipse,null,null,process
+214,Specify The Funding Contributed To The Creation Of A Given Dataset,ellipse,null,null,process
+215,Publish Data Packages,ellipse,null,null,process
+216,Ckan,ellipse,null,null,process
+217,Provided Validate Data With A Minimum Of Clicks,ellipse,null,null,process
+218,Add A Doi To A Dataset,ellipse,null,null,process
+220,,endArrow=classic,209,210,endArrow=classic
+221,,endArrow=classic,209,211,endArrow=classic
+222,,endArrow=classic,209,212,endArrow=classic
+223,,endArrow=classic,209,213,endArrow=classic
+224,,endArrow=classic,209,214,endArrow=classic
+225,,endArrow=classic,209,215,endArrow=classic
+226,,endArrow=classic,209,216,endArrow=classic
+227,,endArrow=classic,209,217,endArrow=classic
+228,,endArrow=classic,209,218,endArrow=classic
+229,,endArrow=classic,210,211,endArrow=classic
+230,Datum,endArrow=classic,211,200,endArrow=classic
+231,Way,endArrow=classic,212,201,endArrow=classic
+232,Datum,endArrow=classic,212,200,endArrow=classic
+233,Integration,endArrow=classic,213,203,endArrow=classic
+234,Zenodo,endArrow=classic,213,202,endArrow=classic
+235,Funding,endArrow=classic,214,204,endArrow=classic
+236,Dataset,endArrow=classic,214,205,endArrow=classic
+237,,endArrow=classic,215,216,endArrow=classic
+238,Click,endArrow=classic,217,206,endArrow=classic
+239,Datum,endArrow=classic,217,200,endArrow=classic
+240,Doi,endArrow=classic,218,208,endArrow=classic
+241,Dataset,endArrow=classic,218,207,endArrow=classic

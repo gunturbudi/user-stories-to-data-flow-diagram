@@ -1,0 +1,122 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Date " color=red];
+201 [label="<f0>  |<f1> Department " ];
+202 [label="<f0>  |<f1> Topic " color=red];
+203 [label="<f0>  |<f1> Research " color=red];
+204 [label="<f0>  |<f1> Cornell " ];
+205 [label="<f0>  |<f1> School " color=red];
+206 [label="<f0>  |<f1> Item " color=red];
+207 [label="<f0>  |<f1> Repository " ];
+208 [label="<f0>  |<f1> Library " ];
+209 [label="<f0>  |<f1> Google " ];
+210 [label="<f0>  |<f1> Pdf " ];
+211 [label="<f0>  |<f1> Descriptive Metadata " color=red];
+212 [label="<f0>  |<f1> Work " color=red];
+213 [label="<f0>  |<f1> Author " color=red];
+214 [label="<f0>  |<f1> Update " ];
+215 [label="<f0>  |<f1> Subset " ];
+216 [label="<f0>  |<f1> Collection " color=red];
+217 [label="<f0>  |<f1> Effective Manner " ];
+218 [label="<f0>  |<f1> Information " color=red];
+219 [label="<f0>  |<f1> Faculty " ];
+220 [label="<f0>  |<f1> Interactive Map " ];
+221 [label="<f0>  |<f1> Researcher " color=red];
+222 [label="<f0>  |<f1> Dmps " ];
+223 [label="<f0>  |<f1> Sharing " ];
+224 [label="<f0>  |<f1> System " ];
+225 [label="<f0>  |<f1> Deposit " color=red];
+226 [label="<f0>  |<f1> Search Capability " ];
+227 [label="<f0>  |<f1> Metadata Field " color=red];
+228 [label="<f0>  |<f1> Discovery " ];
+229 [label="Researcher" shape=box];
+230 [label="Library , Staff Member" shape=box];
+231 [label="{<f0> 1.0|<f1> Stay Up To Date On Research To A Given Topic At Cornell Including Those In Other Departments }" shape=Mrecord];
+232 [label="{<f0> 2.0|<f1> Stay Up To Date On Research To A Given Topic At Cornell Including Those In School }" shape=Mrecord];
+233 [label="{<f0> 3.0|<f1> Discover Items In The Repository Through The Library's Discovery System }" shape=Mrecord];
+234 [label="{<f0> 4.0|<f1> Discover Items In The Repository Through Google }" shape=Mrecord];
+235 [label="{<f0> 5.0|<f1> See Descriptive Metadata For The Item }" shape=Mrecord];
+236 [label="{<f0> 6.0|<f1> Come To The Item Through The Repository }" shape=Mrecord];
+237 [label="{<f0> 7.0|<f1> Come To The Item Directly To The Pdf }" shape=Mrecord];
+238 [label="{<f0> 8.0|<f1> Contact The Author Of A Work Interests }" shape=Mrecord];
+239 [label="{<f0> 9.0|<f1> Receive Updates }" shape=Mrecord];
+240 [label="{<f0> 10.0|<f1> Search Within Collection }" shape=Mrecord];
+241 [label="{<f0> 11.0|<f1> Search Within A Repository In An Effective Manner Searching Within Subsets Of A Given Collection }" shape=Mrecord];
+242 [label="{<f0> 12.0|<f1> Have Information Help Identify Other Faculty }" shape=Mrecord];
+243 [label="{<f0> 13.0|<f1> Promote Work Through Interactive Maps }" shape=Mrecord];
+244 [label="{<f0> 14.0|<f1> Share Work Through Interactive Maps }" shape=Mrecord];
+245 [label="{<f0> 15.0|<f1> Tell The Researchers }" shape=Mrecord];
+246 [label="{<f0> 16.0|<f1> Allow For Better Search Capabilities }" shape=Mrecord];
+247 [label="{<f0> 17.0|<f1> Add Custom Metadata Fields For Deposits }" shape=Mrecord];
+18 [label="{<f0> 18.0|<f1> Learn more about my research. }" shape=Mrecord];
+238 -> 18
+1001 [label="Researcher," shape=box];
+1001 -> 18
+18 -> 203  [label="Research"]
+19 [label="{<f0> 19.0|<f1> Display the range and extent of my work graphically. }" shape=Mrecord];
+243 -> 19
+1005 [label="Researcher," shape=box];
+1005 -> 19
+19 -> 212  [label="Work"]
+229 -> 231
+229 -> 232
+229 -> 233
+229 -> 234
+229 -> 235
+229 -> 236
+229 -> 238
+229 -> 239
+229 -> 240
+229 -> 241
+229 -> 242
+229 -> 243
+229 -> 244
+230 -> 245
+230 -> 246
+230 -> 247
+231 -> 200 [label="Date"]
+231 -> 203 [label="Research"]
+231 -> 202 [label="Topic"]
+231 -> 204 [label="Cornell"]
+231 -> 201 [label="Department"]
+232 -> 205 [label="School"]
+232 -> 202 [label="Topic"]
+232 -> 200 [label="Date"]
+232 -> 203 [label="Research"]
+232 -> 204 [label="Cornell"]
+233 -> 206 [label="Item"]
+233 -> 207 [label="Repository"]
+233 -> 224 [label="System"]
+234 -> 209 [label="Google"]
+234 -> 206 [label="Item"]
+234 -> 207 [label="Repository"]
+235 -> 211 [label="Descriptive Metadata"]
+235 -> 206 [label="Item"]
+236 -> 235
+236 -> 206 [label="Item"]
+236 -> 207 [label="Repository"]
+237 -> 235
+237 -> 210 [label="Pdf"]
+237 -> 206 [label="Item"]
+238 -> 213 [label="Author"]
+238 -> 212 [label="Work"]
+239 -> 214 [label="Update"]
+240 -> 216 [label="Collection"]
+241 -> 207 [label="Repository"]
+241 -> 216 [label="Collection"]
+241 -> 217 [label="Effective Manner"]
+241 -> 215 [label="Subset"]
+242 -> 218 [label="Information"]
+242 -> 219 [label="Faculty"]
+243 -> 220 [label="Interactive Map"]
+243 -> 212 [label="Work"]
+244 -> 212 [label="Work"]
+244 -> 220 [label="Interactive Map"]
+245 -> 221 [label="Researcher"]
+246 -> 226 [label="Search Capability"]
+247 -> 246
+247 -> 227 [label="Metadata Field"]
+247 -> 225 [label="Deposit"]
+233 -> 208 [label="Library"]
+233 -> 228 [label="Discovery"]
+}

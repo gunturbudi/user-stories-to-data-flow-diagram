@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Property Information " color=red];
+201 [label="L , Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Search For Property Information }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Obtain all associated current and historic owners, permits, and applications. }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Historic owners " color=red];
+2 -> 1001 [label="Historic owners"]
+1003 [label="<f0>  |<f1> Applications " color=red];
+2 -> 1003 [label="Applications"]
+201 -> 202
+202 -> 200 [label="Property Information"]
+}

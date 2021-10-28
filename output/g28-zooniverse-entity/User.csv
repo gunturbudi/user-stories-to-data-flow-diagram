@@ -1,0 +1,171 @@
+id,value,style,source,target,type
+200,Content Identification,shape=partialRectangle,null,null,data_base
+201,Fingerprinting,shape=partialRectangle,null,null,data_base
+202,Music,shape=partialRectangle,null,null,data_base
+203,Profile,shape=partialRectangle,null,null,data_base
+204,"Similar ,\nUser",shape=partialRectangle,null,null,data_base
+205,Content Similarity,shape=partialRectangle,null,null,data_base
+206,"Similar ,\nMusic Tone",shape=partialRectangle,null,null,data_base
+207,Ringback,shape=partialRectangle,null,null,data_base
+208,Enriched Metadata,shape=partialRectangle,null,null,data_base
+209,Available Tag,shape=partialRectangle,null,null,data_base
+210,Tag Video,shape=partialRectangle,null,null,data_base
+211,Segment,shape=partialRectangle,null,null,data_base
+212,Info,shape=partialRectangle,null,null,data_base
+213,Similar Profile,shape=partialRectangle,null,null,data_base
+214,Area,shape=partialRectangle,null,null,data_base
+215,Video,shape=partialRectangle,null,null,data_base
+216,Person,shape=partialRectangle,null,null,data_base
+217,Related Information,shape=partialRectangle,null,null,data_base
+218,Product,shape=partialRectangle,null,null,data_base
+219,Brand,shape=partialRectangle,null,null,data_base
+220,Picture,shape=partialRectangle,null,null,data_base
+221,High­level,shape=partialRectangle,null,null,data_base
+222,Metadata,shape=partialRectangle,null,null,data_base
+223,Search,shape=partialRectangle,null,null,data_base
+224,Tag,shape=partialRectangle,null,null,data_base
+225,Geographical Map,shape=partialRectangle,null,null,data_base
+226,Processing Step,shape=partialRectangle,null,null,data_base
+227,Thumbnail Sequence,shape=partialRectangle,null,null,data_base
+228,Content Recommendation,shape=partialRectangle,null,null,data_base
+229,News Event,shape=partialRectangle,null,null,data_base
+230,Broadcaster Logo,shape=partialRectangle,null,null,data_base
+231,Speech Recognition,shape=partialRectangle,null,null,data_base
+232,Asset,shape=partialRectangle,null,null,data_base
+233,User,rounded=0,null,null,external_entity
+234,Admin,rounded=0,null,null,external_entity
+235,Use Content Identification,ellipse,null,null,process
+236,Search,ellipse,null,null,process
+237,Use Fingerprinting,ellipse,null,null,process
+238,Use,ellipse,null,null,process
+239,Discover Music,ellipse,null,null,process
+240,Search Music On Profile,ellipse,null,null,process
+241,Discover Music On Profile,ellipse,null,null,process
+242,"Discover Music On Similar, Other Users To",ellipse,null,null,process
+243,Search Similar Ringback Tone To A Given Music Video On Content Similarity,ellipse,null,null,process
+244,"Discover Similar, Music Tones To A Given Music Video On Content Similarity",ellipse,null,null,process
+245,Discover Ringback,ellipse,null,null,process
+246,Exploiting Enriched Metadata,ellipse,null,null,process
+247,Exploiting Image Tag,ellipse,null,null,process
+248,Upload Tagged Videos,ellipse,null,null,process
+249,Have Available Tags For All Further Processing Steps,ellipse,null,null,process
+250,View Thumbnail Sequences Of Video Segments,ellipse,null,null,process
+251,Get Info About Segment,ellipse,null,null,process
+252,Get Info About Similar Video Items,ellipse,null,null,process
+253,Receive Content Recommendations From Similar Profiles,ellipse,null,null,process
+254,Identify Persons In Videos,ellipse,null,null,process
+255,Receive Related Information About Persons In Videos,ellipse,null,null,process
+256,Identify Products In Videos,ellipse,null,null,process
+257,Identify Broadcaster Logos In Videos,ellipse,null,null,process
+258,Identify Brands In Videos,ellipse,null,null,process
+259,Take A Picture,ellipse,null,null,process
+260,Upload An Image,ellipse,null,null,process
+261,Use Automatic Speech Recognition,ellipse,null,null,process
+262,Use Search On High­Level Asset Information Such As Metadata,ellipse,null,null,process
+263,Prefilter,ellipse,null,null,process
+264,Use Search On High­Level Information Such As Tag,ellipse,null,null,process
+265,Use A Geographical Map,ellipse,null,null,process
+266,"Informed, Content Access Walk",ellipse,null,null,process
+268,,endArrow=classic,233,235,endArrow=classic
+269,,endArrow=classic,233,235,endArrow=classic
+270,,endArrow=classic,233,236,endArrow=classic
+271,,endArrow=classic,233,236,endArrow=classic
+272,,endArrow=classic,233,236,endArrow=classic
+273,,endArrow=classic,233,237,endArrow=classic
+274,,endArrow=classic,233,239,endArrow=classic
+275,,endArrow=classic,233,240,endArrow=classic
+276,,endArrow=classic,233,241,endArrow=classic
+277,,endArrow=classic,233,243,endArrow=classic
+278,,endArrow=classic,233,244,endArrow=classic
+279,,endArrow=classic,233,245,endArrow=classic
+280,,endArrow=classic,233,246,endArrow=classic
+281,,endArrow=classic,233,247,endArrow=classic
+282,,endArrow=classic,233,248,endArrow=classic
+283,,endArrow=classic,233,250,endArrow=classic
+284,,endArrow=classic,233,251,endArrow=classic
+285,,endArrow=classic,233,252,endArrow=classic
+286,,endArrow=classic,233,253,endArrow=classic
+287,,endArrow=classic,233,254,endArrow=classic
+288,,endArrow=classic,233,255,endArrow=classic
+289,,endArrow=classic,233,256,endArrow=classic
+290,,endArrow=classic,233,257,endArrow=classic
+291,,endArrow=classic,233,258,endArrow=classic
+292,,endArrow=classic,233,259,endArrow=classic
+293,,endArrow=classic,233,260,endArrow=classic
+294,,endArrow=classic,233,261,endArrow=classic
+295,,endArrow=classic,233,265,endArrow=classic
+296,,endArrow=classic,233,266,endArrow=classic
+297,,endArrow=classic,234,262,endArrow=classic
+298,,endArrow=classic,234,263,endArrow=classic
+299,,endArrow=classic,234,264,endArrow=classic
+300,Content Identification,endArrow=classic,235,200,endArrow=classic
+301,,endArrow=classic,236,235,endArrow=classic
+302,,endArrow=classic,236,237,endArrow=classic
+303,,endArrow=classic,236,238,endArrow=classic
+304,,endArrow=classic,236,261,endArrow=classic
+305,Fingerprinting,endArrow=classic,237,201,endArrow=classic
+306,,endArrow=classic,239,235,endArrow=classic
+307,,endArrow=classic,239,237,endArrow=classic
+308,Music,endArrow=classic,239,202,endArrow=classic
+309,Profile,endArrow=classic,240,203,endArrow=classic
+310,Music,endArrow=classic,240,202,endArrow=classic
+311,"Similar ,\nUser",endArrow=classic,240,204,endArrow=classic
+312,Music,endArrow=classic,241,202,endArrow=classic
+313,Profile,endArrow=classic,241,203,endArrow=classic
+314,Music,endArrow=classic,242,202,endArrow=classic
+315,"Similar ,\nUser",endArrow=classic,242,204,endArrow=classic
+316,Content Similarity,endArrow=classic,243,205,endArrow=classic
+317,Video,endArrow=classic,243,215,endArrow=classic
+318,"Similar ,\nMusic Tone",endArrow=classic,244,206,endArrow=classic
+319,Content Similarity,endArrow=classic,244,205,endArrow=classic
+320,Music,endArrow=classic,244,202,endArrow=classic
+321,Ringback,endArrow=classic,245,207,endArrow=classic
+322,,endArrow=classic,246,240,endArrow=classic
+323,,endArrow=classic,246,241,endArrow=classic
+324,Enriched Metadata,endArrow=classic,246,208,endArrow=classic
+325,,endArrow=classic,247,240,endArrow=classic
+326,,endArrow=classic,247,241,endArrow=classic
+327,Tag,endArrow=classic,247,224,endArrow=classic
+328,Tag Video,endArrow=classic,248,210,endArrow=classic
+329,Available Tag,endArrow=classic,249,209,endArrow=classic
+330,Processing Step,endArrow=classic,249,226,endArrow=classic
+331,Thumbnail Sequence,endArrow=classic,250,227,endArrow=classic
+332,Segment,endArrow=classic,250,211,endArrow=classic
+333,Segment,endArrow=classic,251,211,endArrow=classic
+334,Info,endArrow=classic,251,212,endArrow=classic
+335,Info,endArrow=classic,252,212,endArrow=classic
+336,Video,endArrow=classic,252,215,endArrow=classic
+337,Content Recommendation,endArrow=classic,253,228,endArrow=classic
+338,Similar Profile,endArrow=classic,253,213,endArrow=classic
+339,News Event,endArrow=classic,253,229,endArrow=classic
+340,Area,endArrow=classic,253,214,endArrow=classic
+341,Person,endArrow=classic,254,216,endArrow=classic
+342,Video,endArrow=classic,254,215,endArrow=classic
+343,Related Information,endArrow=classic,255,217,endArrow=classic
+344,Video,endArrow=classic,255,215,endArrow=classic
+345,Person,endArrow=classic,255,216,endArrow=classic
+346,Product,endArrow=classic,255,218,endArrow=classic
+347,Brand,endArrow=classic,255,219,endArrow=classic
+348,Broadcaster Logo,endArrow=classic,255,230,endArrow=classic
+349,Product,endArrow=classic,256,218,endArrow=classic
+350,Video,endArrow=classic,256,215,endArrow=classic
+351,Broadcaster Logo,endArrow=classic,257,230,endArrow=classic
+352,Video,endArrow=classic,257,215,endArrow=classic
+353,Brand,endArrow=classic,258,219,endArrow=classic
+354,Video,endArrow=classic,258,215,endArrow=classic
+355,Picture,endArrow=classic,259,220,endArrow=classic
+356,Picture,endArrow=classic,260,220,endArrow=classic
+357,Speech Recognition,endArrow=classic,261,231,endArrow=classic
+358,Search,endArrow=classic,262,223,endArrow=classic
+359,High­level,endArrow=classic,262,221,endArrow=classic
+360,Metadata,endArrow=classic,262,222,endArrow=classic
+361,Info,endArrow=classic,262,212,endArrow=classic
+362,,endArrow=classic,263,262,endArrow=classic
+363,,endArrow=classic,263,264,endArrow=classic
+364,Tag,endArrow=classic,264,224,endArrow=classic
+365,High­level,endArrow=classic,264,221,endArrow=classic
+366,Search,endArrow=classic,264,223,endArrow=classic
+367,Info,endArrow=classic,264,212,endArrow=classic
+368,Geographical Map,endArrow=classic,265,225,endArrow=classic
+369,,endArrow=classic,266,265,endArrow=classic
+397,Asset,endArrow=classic,262,232,endArrow=classic

@@ -1,0 +1,173 @@
+[
+  {
+    "text": "As a site member, I want to view the profiles of other members, so that I can find others I might want to connect with.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "others",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to send an email to any member via a form, so that we can connect.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "form",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to edit any site member profile, so that I can correct problems for members.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "site",
+        "label": "Data"
+      },
+      {
+        "text": "member profile",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site editor, I want to be able to indicate whether an article is publicly available or for members only, so that visitors are incentivized to become members.",
+    "entities": [
+      {
+        "text": "site editor,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "article",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, so that fees can be set without involving a programmer.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "annual fees",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a member, I want to receive a reminder and a link, so that I can renew my membership.",
+    "entities": [
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "receive a reminder",
+        "label": "Processing"
+      },
+      {
+        "text": "renew",
+        "label": "Processing"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a member, I want to have the system email me a new password or a password reminder since i have short-term memory problems.",
+    "entities": [
+      {
+        "text": "member,",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  }
+]

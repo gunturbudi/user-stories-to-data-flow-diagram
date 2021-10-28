@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As an asset manager, I want to be assured that funding and staffing of the IR have a commitment to longevity of the repository through published plans and/or explicit contract clauses.",
+    "entities": [
+      {
+        "text": "asset manager",
+        "label": "Data"
+      },
+      {
+        "text": "funding",
+        "label": "PII"
+      },
+      {
+        "text": "staffing",
+        "label": "Data"
+      },
+      {
+        "text": "plans",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "text": "As a researcher, I want to contact the author of a work that interests me, so that I can learn more about my research.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to receive updates when new works are published in a given collection or by a given author, so that I can discover more of their work.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "receive updates",
+        "label": "Processing"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an academicresearcher, I want to find the works of a particular author in one easily sortable spot, so that I can see the evolution of their scholarship over time.",
+    "entities": [
+      {
+        "text": "academicresearcher,",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "works",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to browse content by author or subject area to locate needed resources.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "subject area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to upload material to the repository on the author's behalf, so that I can fulfill a service obligation.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "material",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "'s behalf",
+        "label": "PII"
+      }
+    ]
+  }
+]

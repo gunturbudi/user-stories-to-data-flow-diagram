@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Neurohub Dependency " ];
+201 [label="<f0>  |<f1> Lts Machine " ];
+202 [label="<f0>  |<f1> Ubuntu Package\nManagement Tool " ];
+203 [label="Systems Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Install Neurohub Dependencies Into An Ubuntu Lts Machine Using The Normal Ubuntu Package Management Tools }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Neurohub Dependency"]
+204 -> 201 [label="Lts Machine"]
+204 -> 202 [label="Ubuntu Package\nManagement Tool"]
+}

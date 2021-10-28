@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As an IT officer, I want to know how secure data is, so that I can ensure legal compliance.",
+    "entities": [
+      {
+        "text": "IT officer",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

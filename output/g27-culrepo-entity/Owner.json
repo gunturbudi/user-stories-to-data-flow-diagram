@@ -1,0 +1,57 @@
+[
+  {
+    "text": "As a repository support team member, I want to alias (or map) an item from one collection to another (so the item will appear to belong to both collections), because the collection owner has asked them to.",
+    "entities": [
+      {
+        "text": "repository support team member",
+        "label": "Data"
+      },
+      {
+        "text": "alias",
+        "label": "Processing"
+      },
+      {
+        "text": "map",
+        "label": "Processing"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository support team member, I want to move a collection, so that I can fulfill the collection owner's request.",
+    "entities": [
+      {
+        "text": "repository support team member",
+        "label": "Data"
+      },
+      {
+        "text": "move",
+        "label": "Processing"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository support team member, I want to rename a collection, so that I can fulfill the collection owner's request.",
+    "entities": [
+      {
+        "text": "repository support team member",
+        "label": "Data"
+      },
+      {
+        "text": "rename",
+        "label": "Processing"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      }
+    ]
+  }
+]

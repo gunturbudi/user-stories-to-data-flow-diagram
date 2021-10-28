@@ -1,0 +1,43 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Kind " ];
+202 [label="<f0>  |<f1> Type " color=red];
+203 [label="<f0>  |<f1> Format " color=red];
+204 [label="<f0>  |<f1> Software " ];
+205 [label="<f0>  |<f1> Technology " ];
+206 [label="<f0>  |<f1> Security Requirement " ];
+207 [label=", Staff Member" shape=box];
+208 [label="{<f0> 1.0|<f1> Know The Security Requirements Of The Data }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Have An Estimate Of The Produced Data Volume }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Know }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Use }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Know Which Software The Data Produced }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Know Technology Produced }" shape=Mrecord];
+7 [label="{<f0> 7.0|<f1> Determine what basic support services and functionalities are required. }" shape=Mrecord];
+207 -> 7
+1001 [label="<f0>  |<f1> Support services " color=red];
+7 -> 1001 [label="Support services"]
+8 [label="{<f0> 8.0|<f1> Determine what kind of basic services and functionalities are required. }" shape=Mrecord];
+207 -> 8
+1004 [label="<f0>  |<f1> Basic services " color=red];
+8 -> 1004 [label="Basic services"]
+9 [label="{<f0> 9.0|<f1> Determine what kind of technical services and functionalities are required. }" shape=Mrecord];
+207 -> 9
+1007 [label="<f0>  |<f1> Technical services " color=red];
+9 -> 1007 [label="Technical services"]
+10 [label="{<f0> 10.0|<f1> Determine what kind of technical services and functionalities are required. }" shape=Mrecord];
+207 -> 10
+1010 [label="<f0>  |<f1> Technical services " color=red];
+10 -> 1010 [label="Technical services"]
+207 -> 208
+207 -> 209
+207 -> 212
+207 -> 213
+208 -> 206 [label="Security Requirement"]
+208 -> 200 [label="Datum"]
+210 -> 211
+212 -> 204 [label="Software"]
+212 -> 200 [label="Datum"]
+213 -> 205 [label="Technology"]
+}

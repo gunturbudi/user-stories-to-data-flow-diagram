@@ -1,0 +1,211 @@
+[
+  {
+    "text": "As a administrator, I want to assign sponsors to events, trainings and summits so that They will be featured on the sponsor detail page.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      },
+      {
+        "text": "trainings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring so that I know where I can engage with this sponsor and where they are thought leaders.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      },
+      {
+        "text": "trainings",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a sponsor, I want to link BADCamp attendees to my sponsorship page, so that I can show off our level of attendance.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "BADCamp attendees",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a sponsor, I want to sponsor a summit that matches my brand, so that I can get exposure to potential customers and otherwise tout my Drupal credentials.",
+    "entities": [
+      {
+        "text": "sponsor,",
+        "label": "Data"
+      },
+      {
+        "text": "sponsor",
+        "label": "Processing"
+      },
+      {
+        "text": "brand",
+        "label": "PII"
+      },
+      {
+        "text": "customers",
+        "label": "Data"
+      },
+      {
+        "text": "Drupal credentials",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list sponsors for my summit, so that I can make sure sponsors feel rewarded and will be interested in sponsoring in future years.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a sponsor, I want to Link to my sponsorship profile from my job listings, so that recruits can learn more about my organization.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "Link",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsorship profile",
+        "label": "PII"
+      },
+      {
+        "text": "job listings",
+        "label": "PII"
+      },
+      {
+        "text": "recruits",
+        "label": "Data"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, so that I have the opportunty to post my job listing on the BADCamp site.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship person",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "job listing",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a sponsor, I want to post a job, so that I can hire top-tier Drupal talent.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "job",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a sponsor, I want to personalize my sponsorship page, so that I can promote my brand.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "personalize",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsorship page",
+        "label": "PII"
+      }
+    ]
+  }
+]

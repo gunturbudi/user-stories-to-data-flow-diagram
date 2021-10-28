@@ -1,0 +1,169 @@
+[
+  {
+    "text": "As an Application Administrator, I want to be able to reset a User's password for them.",
+    "entities": [
+      {
+        "text": "Application Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "reset",
+        "label": "Processing"
+      },
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want backend changes for managing enum lists.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "managing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a User , I want to authenticate using LDAP.",
+    "entities": [
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "authenticate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want frontend changes for managing enum lists.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "managing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want backend changes to support loading enum value lists from the database.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "loading",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want backend changes for bulk updating one enum value to another.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "enum value",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Application Administrator, I want to assign Users to an Advanced Data Entry and ensure that the appropriate permissions are enforced.",
+    "entities": [
+      {
+        "text": "Application Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Users",
+        "label": "Data"
+      },
+      {
+        "text": "Data Entry",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to add additional properties for repositories.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "properties",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an System Administrator, I want to declare that a user is has the Repository Manager role for a given Repository.",
+    "entities": [
+      {
+        "text": "System Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "declare",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a User, I want to authenticate locally.",
+    "entities": [
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "authenticate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As User, I want to be able to log in.",
+    "entities": [
+      {
+        "text": "User",
+        "label": "Data"
+      },
+      {
+        "text": "log in",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "text": "As a Plan Review Staff member, I want to Assign Plans for Review, so that I can ensure plans have been assigned to the appropriate Plan Reviewer.",
+    "entities": [
+      {
+        "text": "Plan Review Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Plans",
+        "label": "PII"
+      },
+      {
+        "text": "Plan Reviewer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Plan Review Staff member, I want to successfully Conduct a Plan Review Meeting with the Applicant and record the outcome, so that I can listen to it again.",
+    "entities": [
+      {
+        "text": "Plan Review Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Conduct",
+        "label": "Processing"
+      },
+      {
+        "text": "Review Meeting",
+        "label": "PII"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Plan Review Staff member, I want to Review Plans, so that I can review them for compliance and either approve, or fail or deny the plans and record any conditions, clearances, or corrections needed from the Applicant.",
+    "entities": [
+      {
+        "text": "Plan Review Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Review",
+        "label": "Processing"
+      },
+      {
+        "text": "Plans",
+        "label": "PII"
+      },
+      {
+        "text": "plans",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Plan Review Staff Member, I want to Review the Code Modifications submitted by the Applicant, so that I can review the request and if approved, associate it with the appropriate project.",
+    "entities": [
+      {
+        "text": "Plan Review Staff Member",
+        "label": "Data"
+      },
+      {
+        "text": "Review",
+        "label": "Processing"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Plan Review Staff member, I want to Track the Completion of Required Plan Reviews, so that I can ensure all plan review tasks are completed, results have been sent to the Applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",
+    "entities": [
+      {
+        "text": "Plan Review Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Track",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      },
+      {
+        "text": "payment",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan Reviewer\nWorkload " color=red];
+201 [label="Plan , Review , Staff Supervisor" shape=box];
+202 [label="{<f0> 1.0|<f1> Manage Plan Reviewer Workload }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Ensure service levels are met }" shape=Mrecord];
+202 -> 2
+1001 [label="<f0>  |<f1> Workload " color=red];
+2 -> 1001 [label="Workload"]
+201 -> 202
+202 -> 200 [label="Plan Reviewer\nWorkload"]
+}

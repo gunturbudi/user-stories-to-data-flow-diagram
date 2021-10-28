@@ -1,0 +1,130 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fisma Low" as thingfismalow #grey
+	entity "Process" as thingprocess
+	entity "Prototype" as thingprototype
+	entity "Key Consideration" as thingkeyconsideration
+	entity "Step" as thingnextstep
+	entity "Key Lesson" as thingkeylesson
+	entity "Content Management\nSystem Decision" as thingcontentmanagementsystemdecision #grey
+	entity "Final Workshop" as thingfinalworkshop
+	entity "Feature" as thingfeature
+	entity "Work" as thingwork
+	entity "Conjunction" as thingconjunction
+	entity "New Cms" as thingnewCMS
+	entity "Github" as thinggithub
+	entity "Person" as thingperson
+	entity ", Initial\nMeeting" as thingininitialmeeting
+	entity "Hosting Plan" as thinghostingplan
+	entity "Roadmap Document" as thingroadmapdocument
+	entity "Cms Option" as thingcmsoption
+	entity "Level Strategy\nRecommendation" as thinglevelstrategyrecommendation
+	entity "Editorial Planning\nRecommendation" as thingeditorialplanningrecommendation
+	entity "Brand Guideline" as thingbrandguideline
+	entity "Design Direction" as thingdesigndirection
+	actor "Nsf Employee" as actornsfemployee
+	circle "Universe" as thinguniverse
+	circle "Check In" as thingcheckin #grey
+	boundary "Low\nInterface" as thinglowinterface #grey
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	boundary "Step\nInterface" as thingstepinterface #grey
+	boundary "Consideration\nInterface" as thingconsiderationinterface #grey
+	boundary "Workshop\nInterface" as thingworkshopinterface #grey
+	boundary "Lesson\nInterface" as thinglessoninterface #grey
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Recommendation\nInterface" as thingrecommendationinterface #grey
+	boundary "Cms\nInterface" as thingcmsinterface #grey
+	boundary "Person\nInterface" as thingpersoninterface #grey
+	boundary "Github\nInterface" as thinggithubinterface #grey
+	control "Switching The\nCloud.Gov Hosting\nPlan Over\nFrom Prototype\nTo Fisma\nLow" as controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	control "Understand The\nProcess" as controlunderstandprocess
+	control "Have An\nUpdated Roadmap\nDocument" as controlhaveupdatedroadmapdocument
+	control "Narrow Down\nThe Universe\nOf Cms\nOptions" as controlnarrowuniverse
+	control "Identify" as controlidentify
+	control "Getting To\nThe Next\nStep" as controlgetprioritizekeyconsiderationnextstep
+	control "Prioritize Key\nConsiderations" as controlprioritizekeyconsideration
+	control "Have A\nFinal Workshop" as controlhavefinalworkshopidentifykeylesson
+	control "Identify Key\nLessons" as controlidentifykeylesson
+	control "Have A\nFinal Workshop\nFeature For\nThe Content\nManagement System\nDecision" as controlhavefinalworkshopfeature
+	control "Understand Work" as controlunderstandwork
+	control "Have High\nLevel Strategy\nRecommendations" as controlhavehighlevelstrategyrecommendationsimplementconjunction
+	control "Implement In\nConjunction With\nThe New\nCms" as controlimplementconjunction
+	control "Have Editorial\nPlanning Recommendations" as controlhaveeditorialplanningrecommendations
+	control "Know" as controlknow
+	control "Schedule In,\nRegular Person\nCheck Ins" as controlscheduleinregularpersoncheckins
+	control "Join Github" as controljoingithub
+	control "Learn Github\nHow Used" as controllearngithub
+	control "See" as controlsee
+
+	thingfismalow <.. thingprototype
+	thingfeature <.. thingfinalworkshop
+	thingcontentmanagementsystemdecision <.. thingfeature
+	thingnewCMS <.. thingconjunction
+	thingperson <.. thingininitialmeeting
+	thingprototype <.. thinghostingplan
+	thingcmsoption *-- thinguniverse
+	thingperson *-- thingcheckin
+	actornsfemployee --- thinglowinterface
+	actornsfemployee --- thingprocessinterface
+	actornsfemployee --- thingdocumentinterface
+	actornsfemployee --- thingoptioninterface
+	actornsfemployee --- thingstepinterface
+	actornsfemployee --- thingconsiderationinterface
+	actornsfemployee --- thingworkshopinterface
+	actornsfemployee --- thinglessoninterface
+	actornsfemployee --- thingdecisioninterface
+	actornsfemployee --- thingworkinterface
+	actornsfemployee --- thingrecommendationinterface
+	actornsfemployee --- thingcmsinterface
+	actornsfemployee --- thingpersoninterface
+	actornsfemployee --- thinggithubinterface
+	thinghostingplan --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thingprototype --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thingfismalow --- controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	thinglowinterface --> controlswitchunderstandprocesscloud.govhostingplanprototypefismalow
+	controlswitchunderstandprocesscloud.govhostingplanprototypefismalow --> controlunderstandprocess
+	thingprocess --- controlunderstandprocess
+	thingprocessinterface --> controlunderstandprocess
+	thingroadmapdocument --- controlhaveupdatedroadmapdocument
+	thingdocumentinterface --> controlhaveupdatedroadmapdocument
+	thinguniverse --- controlnarrowuniverse
+	thingcmsoption --- controlnarrowuniverse
+	thingoptioninterface --> controlnarrowuniverse
+	thingnextstep --- controlgetprioritizekeyconsiderationnextstep
+	thingstepinterface --> controlgetprioritizekeyconsiderationnextstep
+	controlgetprioritizekeyconsiderationnextstep --> controlprioritizekeyconsideration
+	thingkeyconsideration --- controlprioritizekeyconsideration
+	thingconsiderationinterface --> controlprioritizekeyconsideration
+	thingfinalworkshop --- controlhavefinalworkshopidentifykeylesson
+	thingworkshopinterface --> controlhavefinalworkshopidentifykeylesson
+	controlhavefinalworkshopidentifykeylesson --> controlidentifykeylesson
+	thingkeylesson --- controlidentifykeylesson
+	thinglessoninterface --> controlidentifykeylesson
+	thingfeature --- controlhavefinalworkshopfeature
+	thingcontentmanagementsystemdecision --- controlhavefinalworkshopfeature
+	thingdecisioninterface --> controlhavefinalworkshopfeature
+	thingfinalworkshop --- controlhavefinalworkshopfeature
+	thingwork --- controlunderstandwork
+	thingworkinterface --> controlunderstandwork
+	thinglevelstrategyrecommendation --- controlhavehighlevelstrategyrecommendationsimplementconjunction
+	thingrecommendationinterface --> controlhavehighlevelstrategyrecommendationsimplementconjunction
+	controlhavehighlevelstrategyrecommendationsimplementconjunction --> controlimplementconjunction
+	thingconjunction --- controlimplementconjunction
+	thingnewCMS --- controlimplementconjunction
+	thingcmsinterface --> controlimplementconjunction
+	thingeditorialplanningrecommendation --- controlhaveeditorialplanningrecommendations
+	thingrecommendationinterface --> controlhaveeditorialplanningrecommendations
+	thingcheckin --- controlscheduleinregularpersoncheckins
+	thingpersoninterface --> controlscheduleinregularpersoncheckins
+	thinggithub --- controljoingithub
+	thinggithubinterface --> controljoingithub
+	thinggithub --- controllearngithub
+	thinggithubinterface --> controllearngithub
+
+@enduml

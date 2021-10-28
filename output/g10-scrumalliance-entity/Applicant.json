@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a site administrator, I want to read practicing and training applications and approve or reject them, so that only applicants who qualify can become CSPs or CSTs.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "practicing",
+        "label": "PII"
+      },
+      {
+        "text": "applications",
+        "label": "PII"
+      },
+      {
+        "text": "approve",
+        "label": "Processing"
+      },
+      {
+        "text": "applicants",
+        "label": "Data"
+      }
+    ]
+  }
+]

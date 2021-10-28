@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Zenodo " ];
+201 [label="<f0>  |<f1> Integration " ];
+202 [label="Researcherpublisher" shape=box];
+203 [label="{<f0> 1.0|<f1> Provided With An Integration With Zenodo }" shape=Mrecord];
+2 [label="{<f0> 2.0|<f1> Retype descriptive information about my dataset. }" shape=Mrecord];
+203 -> 2
+1001 [label="<f0>  |<f1> Dataset " color=red];
+2 -> 1001 [label="Dataset"]
+1003 [label="<f0>  |<f1> Dataset " color=red];
+2 -> 1003 [label="Dataset"]
+202 -> 203
+203 -> 201 [label="Integration"]
+203 -> 200 [label="Zenodo"]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a systems administrator, I want to be able to control the location of the demo database and I want it to be backed up.",
+    "entities": [
+      {
+        "text": "systems administrator",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "location",
+        "label": "PII"
+      },
+      {
+        "text": "backed up",
+        "label": "Processing"
+      }
+    ]
+  }
+]

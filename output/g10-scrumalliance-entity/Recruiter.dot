@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Ad " color=red];
+201 [label="<f0>  |<f1> Site " ];
+202 [label="<f0>  |<f1> Posting " ];
+203 [label="<f0>  |<f1> Day " ];
+204 [label="Recruiter" shape=box];
+205 [label="{<f0> 1.0|<f1> Post }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Want Ad }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Extend An Ad For Another Days }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Updating Visiting The Site The Posting }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+204 -> 208
+205 -> 206
+206 -> 200 [label="Ad"]
+207 -> 203 [label="Day"]
+207 -> 200 [label="Ad"]
+208 -> 207
+208 -> 201 [label="Site"]
+208 -> 202 [label="Posting"]
+}

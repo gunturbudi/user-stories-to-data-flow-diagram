@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation manager",
+        "label": "Data"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  }
+]

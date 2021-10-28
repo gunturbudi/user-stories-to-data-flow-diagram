@@ -1,0 +1,35 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Record " color=red];
+201 [label="<f0>  |<f1> Archive " color=red];
+202 [label="<f0>  |<f1> Facility " color=red];
+203 [label="<f0>  |<f1> Researcher " ];
+204 [label="<f0>  |<f1> Datum " ];
+205 [label="<f0>  |<f1> Archival ,\nRobust Plan " ];
+206 [label="<f0>  |<f1> Discoverability Metadata " color=red];
+207 [label="Depositor" shape=box];
+208 [label="Research , Facility Manager" shape=box];
+209 [label="Fundingbody" shape=box];
+210 [label="{<f0> 1.0|<f1> Attach Specific, Subject Discoverability Metadata To Records }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Deposit Data From Facility Directly Into The Archive On Behalf Of Researchers }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Reassured }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Find my data more easily. }" shape=Mrecord];
+1000 [label="Researchers" shape=box];
+1000 -> 4
+1002 [label="Researchers" shape=box];
+1002 -> 4
+1004 [label="Researchers" shape=box];
+1004 -> 4
+1006 [label="<f0>  |<f1> Discipline " color=red];
+4 -> 1006 [label="Discipline"]
+1008 [label="<f0>  |<f1> Data " color=red];
+4 -> 1008 [label="Data"]
+207 -> 210
+208 -> 211
+210 -> 206 [label="Discoverability Metadata"]
+210 -> 200 [label="Record"]
+211 -> 204 [label="Datum"]
+211 -> 202 [label="Facility"]
+211 -> 201 [label="Archive"]
+211 -> 203 [label="Researcher"]
+}

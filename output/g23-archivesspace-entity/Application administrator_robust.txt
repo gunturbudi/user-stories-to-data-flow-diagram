@@ -1,0 +1,40 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Password" as thingpassword
+	entity "Appropriate Permission" as thingappropriatepermission
+	entity "Topic" as thingtopic
+	entity "Center ,\nUrl ,\nHelp Mapping" as thingcenterurlhelpmapping
+	entity "Data Entry" as thingdataentry
+	actor "Application Administrator" as actorapplicationadministrator
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	boundary "Entry\nInterface" as thingentryinterface #grey
+	boundary "Topic\nInterface" as thingtopicinterface #grey
+	boundary "Mapping\nInterface" as thingmappinginterface #grey
+	control "Reset A\nUser's Password\nFor A\nUser's Password" as controlresetpassword
+	control "Assign Users\nTo An\nAdvanced Data\nEntry" as controlassignuseradvanceddataentry
+	control "Ensure" as controlensure
+	control "Configure Topic" as controlconfiguretopic
+	control "Configure The\nCenter, Url,\nHelp Mappings" as controlconfigurecenterurlhelpmapping
+
+	thingdataentry <.. thinguser
+	thinguser <.. thingpassword
+	thingpassword <.. thingpassword
+	actorapplicationadministrator --- thingpasswordinterface
+	actorapplicationadministrator --- thingentryinterface
+	actorapplicationadministrator --- thingtopicinterface
+	actorapplicationadministrator --- thingmappinginterface
+	thingpasswordinterface --> controlresetpassword
+	thingpassword --- controlresetpassword
+	thingdataentry --- controlassignuseradvanceddataentry
+	thingentryinterface --> controlassignuseradvanceddataentry
+	thinguser --- controlassignuseradvanceddataentry
+	thingtopic --- controlconfiguretopic
+	thingtopicinterface --> controlconfiguretopic
+	thingcenterurlhelpmapping --- controlconfigurecenterurlhelpmapping
+	thingmappinginterface --> controlconfigurecenterurlhelpmapping
+
+@enduml

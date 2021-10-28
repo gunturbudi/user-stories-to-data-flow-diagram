@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a student, I want to learn who at Cornell has or is engaged in research related to a particular topic, so that I can find an appropriate advisor, choose which courses to enroll in, and identify work/internship opportunities.",
+    "entities": [
+      {
+        "text": "student,",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "who",
+        "label": "PII"
+      },
+      {
+        "text": "advisor",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  }
+]

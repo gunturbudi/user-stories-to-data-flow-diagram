@@ -1,0 +1,62 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resources Page" as thingresourcespage #grey
+	entity "Agency" as thingagency
+	entity "User Testing" as thingusertesting #grey
+	entity "Edit" as thingedit
+	entity "Issue" as thingissue
+	entity "Tech" as thingtech
+	entity "Landing Page" as thinglandingpage #grey
+	actor "Ui Designer" as actoruidesigner
+	circle "3" as thing3
+	boundary "Help" as thinghelppageedituidesigner #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Testing\nInterface" as thingtestinginterface #grey
+	boundary "Edit\nInterface" as thingeditinterface #grey
+	boundary "3\nInterface" as thing3interface #grey
+	boundary "Tech\nInterface" as thingtechinterface #grey
+	control "Redesign The\nResources Page" as controlredesignresourcespage
+	control "Report To\nThe Agencies\nAbout User\nTesting" as controlreportagency
+	control "Move On\nLanding Page\nEdits" as controlmovelandingpageedits
+	control "Move On" as controlmove
+	control "Round 3\nOf" as controlround3
+	control "Page Edits" as controlpageedit
+	control "Track The\nIssues Thursday\nCome Up\nIn Tech" as controltrackissue
+	control "Begin User\nTesting" as controlbeginusertesting
+	control "Schedule User\nTesting" as controlscheduleusertesting
+
+	thingusertesting <.. thingagency
+	thinglandingpage <.. thingedit
+	thingtech <.. thingissue
+	actoruidesigner --- thinghelppageedituidesigner
+	actoruidesigner --- thingpageinterface
+	actoruidesigner --- thingtestinginterface
+	actoruidesigner --- thingeditinterface
+	actoruidesigner --- thing3interface
+	actoruidesigner --- thingtechinterface
+	thingresourcespage --- controlredesignresourcespage
+	thingpageinterface --> controlredesignresourcespage
+	thingagency --- controlreportagency
+	thingusertesting --- controlreportagency
+	thingtestinginterface --> controlreportagency
+	thingeditinterface --> controlmovelandingpageedits
+	thingedit --- controlmovelandingpageedits
+	thing3interface --> controlmove
+	thing3 --- controlround3
+	thinghelppageedituidesigner --> controlround3
+	controlmove --> controlround3
+	thinghelppageedituidesigner --> controlpageedit
+	thingedit --- controlpageedit
+	controlround3 --> controlpageedit
+	thingissue --- controltrackissue
+	thingtech --- controltrackissue
+	thingtechinterface --> controltrackissue
+	thingusertesting --- controlbeginusertesting
+	thingtestinginterface --> controlbeginusertesting
+	thingusertesting --- controlscheduleusertesting
+	thingtestinginterface --> controlscheduleusertesting
+
+@enduml

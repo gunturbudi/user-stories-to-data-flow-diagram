@@ -1,0 +1,27 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Plan" as thingplan #grey
+	entity "Grant Proposal" as thinggrantproposal
+	entity "Data Management" as thingdatamanagement #grey
+	entity "Disaster Recovery" as thingdisasterrecovery #grey
+	actor "Data Contributor" as actordatacontributor
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Proposal\nInterface" as thingproposalinterface #grey
+	control "Refer To\nThe Plan\nIn Data\nManagement Plan" as controlreferplandatamanagementplan
+	control "Refer To\nThe Disaster\nRecovery Plan\nIn Grant\nProposals" as controlreferdisasterrecoveryplangrantproposals
+
+	thingdatamanagement <.. thingplan
+	thingdisasterrecovery <.. thingplan
+	thinggrantproposal <.. thingplan
+	actordatacontributor --- thingplaninterface
+	actordatacontributor --- thingproposalinterface
+	thingplan --- controlreferplandatamanagementplan
+	thingplaninterface --> controlreferplandatamanagementplan
+	thinggrantproposal --- controlreferdisasterrecoveryplangrantproposals
+	thingproposalinterface --> controlreferdisasterrecoveryplangrantproposals
+	thingplan --- controlreferdisasterrecoveryplangrantproposals
+
+@enduml

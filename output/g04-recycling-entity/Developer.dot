@@ -1,0 +1,30 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Website " color=red];
+201 [label="<f0>  |<f1> Api " ];
+202 [label="<f0>  |<f1> Bootstrap " ];
+203 [label="<f0>  |<f1> Process " ];
+204 [label="<f0>  |<f1> Ux Lesson " ];
+205 [label="<f0>  |<f1> Ui " color=red];
+206 [label="Developer" shape=box];
+207 [label="{<f0> 1.0|<f1> Access An Api From The Website }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Developing }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Use Bootstrap In The Process }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Attend Some Ui }" shape=Mrecord];
+211 [label="{<f0> 5.0|<f1> Attend Ux Lesson }" shape=Mrecord];
+6 [label="{<f0> 6.0|<f1> Design my website. }" shape=Mrecord];
+208 -> 6
+6 -> 200  [label="Website"]
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+207 -> 201 [label="Api"]
+207 -> 200 [label="Website"]
+208 -> 209
+209 -> 202 [label="Bootstrap"]
+209 -> 203 [label="Process"]
+210 -> 205 [label="Ui"]
+211 -> 204 [label="Ux Lesson"]
+}

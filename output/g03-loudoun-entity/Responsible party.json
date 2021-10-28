@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As an Enforcement Staff member, I want to Issue a Notice of Violation, so that I can provide formal communication to the responsible party.",
+    "entities": [
+      {
+        "text": "Enforcement Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Issue",
+        "label": "Processing"
+      },
+      {
+        "text": "Notice of Violation",
+        "label": "PII"
+      },
+      {
+        "text": "communication",
+        "label": "PII"
+      },
+      {
+        "text": "responsible party",
+        "label": "Data"
+      }
+    ]
+  }
+]

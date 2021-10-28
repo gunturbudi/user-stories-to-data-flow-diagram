@@ -1,0 +1,20 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access " ];
+201 [label="<f0>  |<f1> Environment " ];
+202 [label="<f0>  |<f1> Fabs " color=red];
+203 [label="<f0>  |<f1> Field " color=red];
+204 [label="<f0>  |<f1> Follow Check " ];
+205 [label="<f0>  |<f1> Test Feature " ];
+206 [label="<f0>  |<f1> Test File " ];
+207 [label="Tester" shape=box];
+208 [label="{<f0> 1.0|<f1> Have Access To Test Features In Other Environments }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Staging }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Ensure }" shape=Mrecord];
+207 -> 208
+207 -> 209
+208 -> 200 [label="Access"]
+208 -> 205 [label="Test Feature"]
+208 -> 201 [label="Environment"]
+209 -> 208
+}

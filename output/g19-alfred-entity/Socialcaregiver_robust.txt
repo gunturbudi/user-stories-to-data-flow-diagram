@@ -1,0 +1,44 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Person" as thingperson
+	entity "Thing" as thingthing
+	entity "Alfred" as thingALFRED
+	entity "Pain" as thingpain
+	entity "Step Counter" as thingstepcounter #grey
+	entity "Skin Conduction\nSensor" as thingskinconductionsensor
+	actor "Socialcaregiver" as actorSocialCaregiver
+	boundary "Alfred" as thingALFREDSocialCaregiver
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Sensor\nInterface" as thingsensorinterface #grey
+	control "Remind Of\nThe Things" as controlremindALFREDSocialCaregiverthingbringperson
+	control "Bring To\nThe Person" as controlbringperson
+	control "Recognize Pain" as controlrecognizepain
+	control "Using Skin\nConduction Sensors" as controlusestressALFREDrecognizepainskinconductionsensors
+	control "Stress Alfred" as controlstressALFREDrecognizepain
+	control "Have A\nStep Counter\nInto Alfred" as controlhavestepcounter
+
+	thingALFRED <.. thingstepcounter
+	actorSocialCaregiver --- thingALFREDSocialCaregiver
+	actorSocialCaregiver --- thingalfredinterface
+	actorSocialCaregiver --- thingsensorinterface
+	thingALFREDSocialCaregiver --> controlremindALFREDSocialCaregiverthingbringperson
+	thingthing --- controlremindALFREDSocialCaregiverthingbringperson
+	controlremindALFREDSocialCaregiverthingbringperson --> controlbringperson
+	thingperson --- controlbringperson
+	thingALFREDSocialCaregiver --> controlbringperson
+	thingpain --- controlrecognizepain
+	controlstressALFREDrecognizepain --> controlrecognizepain
+	thingalfredinterface --> controlrecognizepain
+	thingskinconductionsensor --- controlusestressALFREDrecognizepainskinconductionsensors
+	thingsensorinterface --> controlusestressALFREDrecognizepainskinconductionsensors
+	controlusestressALFREDrecognizepainskinconductionsensors --> controlstressALFREDrecognizepain
+	thingALFRED --- controlstressALFREDrecognizepain
+	thingalfredinterface --> controlstressALFREDrecognizepain
+	thingstepcounter --- controlhavestepcounter
+	thingALFRED --- controlhavestepcounter
+	thingalfredinterface --> controlhavestepcounter
+
+@enduml

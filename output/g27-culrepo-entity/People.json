@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a Cornell faculty member, I want to upload data and provide a cut and paste formatted citation for people who use it, so that I receive proper attribution for my work.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  }
+]

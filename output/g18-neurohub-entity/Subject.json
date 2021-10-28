@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As an MRI operator, I want to digitally record the responses that subjects make when completing paper-based forms.",
+    "entities": [
+      {
+        "text": "MRI operator",
+        "label": "Data"
+      },
+      {
+        "text": "digitally record",
+        "label": "Processing"
+      },
+      {
+        "text": "responses",
+        "label": "PII"
+      },
+      {
+        "text": "subjects",
+        "label": "Data"
+      }
+    ]
+  }
+]

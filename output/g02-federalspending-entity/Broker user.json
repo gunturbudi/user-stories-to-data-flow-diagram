@@ -1,0 +1,129 @@
+[
+  {
+    "text": "As a Broker user, I want to Upload and Validate the error message to have accurate text.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      },
+      {
+        "text": "Upload",
+        "label": "Processing"
+      },
+      {
+        "text": "Validate",
+        "label": "Processing"
+      },
+      {
+        "text": "error message",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don't have to regenerate a file if no data has been updated.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      },
+      {
+        "text": "synced",
+        "label": "Processing"
+      },
+      {
+        "text": "regenerate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.",
+    "entities": [
+      {
+        "text": "broker user",
+        "label": "Data"
+      },
+      {
+        "text": "derive",
+        "label": "Processing"
+      },
+      {
+        "text": "agency codes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "records",
+        "label": "PII"
+      },
+      {
+        "text": "individual recipients",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.",
+    "entities": [
+      {
+        "text": "Broker user",
+        "label": "Data"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "submission",
+        "label": "PII"
+      }
+    ]
+  }
+]

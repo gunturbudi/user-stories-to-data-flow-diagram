@@ -1,0 +1,198 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "User Interface" as thinguserinterface #grey
+	entity "File" as thingfile
+	entity "Datum" as thingdatum
+	entity "Embargo" as thingembargo
+	entity "License" as thinglicense
+	entity "Collaborator" as thingcollaborator
+	entity "Access" as thingaccess
+	entity "Large File" as thinglargefile
+	entity "Opus" as thingopus
+	entity "Publication" as thingpublication
+	entity "Doi" as thingdoi
+	entity "Previous Deposit" as thingpreviousdeposit
+	entity "Metadata" as thingmetadata
+	entity "External Repository" as thingexternalrepository
+	entity "Disposal Policy" as thingdisposalpolicy #grey
+	entity "Data Integrity" as thingdataintegrity #grey
+	entity "Guarantee" as thingguarantee
+	entity "Record" as thingrecord
+	entity "Dataset" as thingsamedataset
+	entity "Behalf" as thingbehalf
+	entity "Web Interface" as thingwebinterface
+	entity "Workflow Tool" as thingworkflowtool
+	entity "Research Environment" as thingresearchenvironment
+	entity "University System" as thinguniversitysystem
+	entity "Project Dmp" as thingprojectdmp
+	entity "Discoverability" as thingdiscoverability #grey
+	entity "Research" as thingresearch #grey
+	actor "Depositor" as actordepositor
+	circle "Download" as thingdownload
+	circle "Citation" as thingcitation
+	circle "Multiple Version" as thingmultipleversion
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Environment\nInterface" as thingenvironmentinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Embargo\nInterface" as thingembargointerface #grey
+	boundary "Opus\nInterface" as thingopusinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Integrity\nInterface" as thingintegrityinterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	boundary "Behalf\nInterface" as thingbehalfinterface #grey
+	control "Deposit Datasets\nThrough A\nSimple Web\nInterface" as controldepositdatasetsimplewebinterface
+	control "Maintain Datasets\nThrough A\nSimple Web\nInterface" as controlmaintaindatasetsimplewebinterface
+	control "Have A\nUser Interface\nIs Familiar\nTo" as controlhaveuserinterface
+	control "Pure Deposit\nDatasets" as controldepositdataset
+	control "Pure Maintain\nDatasets" as controlmaintaindataset
+	control "Deposit Datasets\nThrough Other\nWorkflow Tool" as controldepositdatasetotherworkflowtool
+	control "Deposit Datasets\nThrough Virtual\nResearch Environments" as controldepositdatasetvirtualresearchenvironments
+	control "Maintain Datasets\nThrough Other\nWorkflow Tool" as controlmaintaindatasetotherworkflowtool
+	control "Maintain Datasets\nThrough Virtual\nResearch Environments" as controlmaintaindatasetvirtualresearchenvironments
+	control "Deposit The\nFiles" as controldepositfile
+	control "Place Data\nUnder An\nEmbargo" as controlplacedatumembargo
+	control "Apply Licenses\nTo Datasets" as controlapplylicensedataset
+	control "Allow Collaborators\nAccess To\nDatasets" as controlallowcollaboratoraccess
+	control "Deposit Arbitrarily\nLarge Files" as controldepositlargefile
+	control "Link Datasets\nTo Publications\nIn Opus" as controllinkdatasetpublication
+	control "Mint Dois\nFor Data" as controlmintdoidatum
+	control "Have Automatically\nMetadata From\nOther University\nSystems" as controlhavemetadata
+	control "Link To\nData In\nExternal Repositories" as controllinkdatum
+	control "Specify A\nDisposal Policy\nFor Data" as controlspecifydisposalpolicy
+	control "Track Downloads\nOf Data" as controltrackdownload
+	control "Track Citations\nOf Data" as controltrackcitation
+	control "Have Guarantees\nAbout Data\nIntegrity" as controlhaveguarantee
+	control "Attach Specific,\nSubject Discoverability\nMetadata To\nRecords" as controlattachspecificsubjectdiscoverabilitymetadatarecord
+	control "Link Datasets\nWith The\nProject Dmp" as controllinkdatasetprojectDMP
+	control "Manage Live\nResearch Data" as controlmanageliveresearchdata
+	control "Share Live\nResearch Data" as controlshareliveresearchdata
+	control "Manage Multiple\nVersions Of\nThe Same\nDataset" as controlmanagemultipleversion
+	control "Deposit On\nBehalf" as controldepositotherbehalf
+	control "Allow" as controlallowdepositotherbehalf
+
+	thingwebinterface <.. thingdataset
+	thingresearchenvironment <.. thingdataset
+	thingpublication <.. thingdataset
+	thingprojectdmp <.. thingdataset
+	thingworkflowtool <.. thingdataset
+	thingembargo <.. thingdatum
+	thingexternalrepository <.. thingdatum
+	thingresearch <.. thingdatum
+	thingdataset <.. thinglicense
+	thingaccess <.. thingcollaborator
+	thingdataset <.. thingaccess
+	thingopus <.. thingpublication
+	thingdatum <.. thingdoi
+	thinguniversitysystem <.. thingmetadata
+	thingdiscoverability <.. thingmetadata
+	thingrecord <.. thingmetadata
+	thingdatum <.. thingdisposalpolicy
+	thingdataintegrity <.. thingguarantee
+	thingdatum *-- thingdownload
+	thingdatum *-- thingcitation
+	thingsamedataset *-- thingmultipleversion
+	actordepositor --- thinginterfaceinterface
+	actordepositor --- thingdatasetinterface
+	actordepositor --- thingtoolinterface
+	actordepositor --- thingenvironmentinterface
+	actordepositor --- thingfileinterface
+	actordepositor --- thingembargointerface
+	actordepositor --- thingopusinterface
+	actordepositor --- thingdatuminterface
+	actordepositor --- thingsysteminterface
+	actordepositor --- thingrepositoryinterface
+	actordepositor --- thingintegrityinterface
+	actordepositor --- thingrecordinterface
+	actordepositor --- thingdmpinterface
+	actordepositor --- thingbehalfinterface
+	thingdataset --- controldepositdatasetsimplewebinterface
+	thingwebinterface --- controldepositdatasetsimplewebinterface
+	thinginterfaceinterface --> controldepositdatasetsimplewebinterface
+	thingdataset --- controlmaintaindatasetsimplewebinterface
+	thinginterfaceinterface --> controlmaintaindatasetsimplewebinterface
+	thingwebinterface --- controlmaintaindatasetsimplewebinterface
+	thinguserinterface --- controlhaveuserinterface
+	thinginterfaceinterface --> controlhaveuserinterface
+	thingdatasetinterface --> controldepositdataset
+	thingdataset --- controldepositdataset
+	thingdataset --- controlmaintaindataset
+	thingdatasetinterface --> controlmaintaindataset
+	thingworkflowtool --- controldepositdatasetotherworkflowtool
+	thingtoolinterface --> controldepositdatasetotherworkflowtool
+	thingdataset --- controldepositdatasetotherworkflowtool
+	thingresearchenvironment --- controldepositdatasetvirtualresearchenvironments
+	thingenvironmentinterface --> controldepositdatasetvirtualresearchenvironments
+	thingdataset --- controldepositdatasetvirtualresearchenvironments
+	thingtoolinterface --> controlmaintaindatasetotherworkflowtool
+	thingdataset --- controlmaintaindatasetotherworkflowtool
+	thingworkflowtool --- controlmaintaindatasetotherworkflowtool
+	thingdataset --- controlmaintaindatasetvirtualresearchenvironments
+	thingenvironmentinterface --> controlmaintaindatasetvirtualresearchenvironments
+	thingresearchenvironment --- controlmaintaindatasetvirtualresearchenvironments
+	thingfile --- controldepositfile
+	thingfileinterface --> controldepositfile
+	thingdatum --- controlplacedatumembargo
+	thingembargo --- controlplacedatumembargo
+	thingembargointerface --> controlplacedatumembargo
+	thinglicense --- controlapplylicensedataset
+	thingdataset --- controlapplylicensedataset
+	thingdatasetinterface --> controlapplylicensedataset
+	thingcollaborator --- controlallowcollaboratoraccess
+	thingaccess --- controlallowcollaboratoraccess
+	thingdataset --- controlallowcollaboratoraccess
+	thingdatasetinterface --> controlallowcollaboratoraccess
+	thinglargefile --- controldepositlargefile
+	thingfileinterface --> controldepositlargefile
+	thingpublication --- controllinkdatasetpublication
+	thingopus --- controllinkdatasetpublication
+	thingopusinterface --> controllinkdatasetpublication
+	thingdataset --- controllinkdatasetpublication
+	thingdoi --- controlmintdoidatum
+	thingdatuminterface --> controlmintdoidatum
+	thingdatum --- controlmintdoidatum
+	thingmetadata --- controlhavemetadata
+	thinguniversitysystem --- controlhavemetadata
+	thingsysteminterface --> controlhavemetadata
+	thingexternalrepository --- controllinkdatum
+	thingrepositoryinterface --> controllinkdatum
+	thingdatum --- controllinkdatum
+	thingdisposalpolicy --- controlspecifydisposalpolicy
+	thingdatum --- controlspecifydisposalpolicy
+	thingdatuminterface --> controlspecifydisposalpolicy
+	thingdownload --- controltrackdownload
+	thingdatum --- controltrackdownload
+	thingdatuminterface --> controltrackdownload
+	thingcitation --- controltrackcitation
+	thingdatum --- controltrackcitation
+	thingdatuminterface --> controltrackcitation
+	thingguarantee --- controlhaveguarantee
+	thingdataintegrity --- controlhaveguarantee
+	thingintegrityinterface --> controlhaveguarantee
+	thingrecord --- controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingrecordinterface --> controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingmetadata --- controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingprojectdmp --- controllinkdatasetprojectDMP
+	thingdmpinterface --> controllinkdatasetprojectDMP
+	thingdataset --- controllinkdatasetprojectDMP
+	thingdatuminterface --> controlmanageliveresearchdata
+	thingdatum --- controlmanageliveresearchdata
+	thingdatuminterface --> controlshareliveresearchdata
+	thingdatum --- controlshareliveresearchdata
+	thingmultipleversion --- controlmanagemultipleversion
+	thingsamedataset --- controlmanagemultipleversion
+	thingdatasetinterface --> controlmanagemultipleversion
+	thingbehalf --- controldepositotherbehalf
+	controlallowdepositotherbehalf --> controldepositotherbehalf
+	thingbehalfinterface --> controldepositotherbehalf
+	thingbehalfinterface --> controlallowdepositotherbehalf
+
+@enduml

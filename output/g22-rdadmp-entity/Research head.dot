@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Dmp " color=red];
+202 [label="Research Head" shape=box];
+203 [label="{<f0> 1.0|<f1> Access To The Persistent Identifiers Of Datasets In The Dmp }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Dataset"]
+203 -> 201 [label="Dmp"]
+}

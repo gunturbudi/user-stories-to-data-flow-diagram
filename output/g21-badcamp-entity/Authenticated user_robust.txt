@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Registration" as thingregistration
+	entity "Authenticated User" as thingauthenticateduser
+	entity "Day" as thingday
+	actor "Trainee" as actortrainee
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Limit To\nRegistration Per\nDay Per\nAuthenticated User" as controllimitregistration
+
+	thingday <.. thingregistration
+	thingauthenticateduser <.. thingregistration
+	thingauthenticateduser <.. thingday
+	actortrainee --- thinguserinterface
+	thingregistration --- controllimitregistration
+	thingday --- controllimitregistration
+	thingauthenticateduser --- controllimitregistration
+	thinguserinterface --> controllimitregistration
+
+@enduml

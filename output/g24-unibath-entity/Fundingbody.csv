@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Researcher,shape=partialRectangle,null,null,data_base
+201,"Archival ,\nRobust Plan",shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Metadata,shape=partialRectangle,null,null,data_base
+204,Research,shape=partialRectangle,null,null,data_base
+205,Output,shape=partialRectangle,null,null,data_base
+206,Fundingbody,rounded=0,null,null,external_entity
+207,Reassured,ellipse,null,null,process
+208,Harvest Metadata On Outputs From Research,ellipse,null,null,process
+210,,endArrow=classic,206,208,endArrow=classic
+211,Metadata,endArrow=classic,208,203,endArrow=classic
+212,Output,endArrow=classic,208,205,endArrow=classic
+213,Research,endArrow=classic,208,204,endArrow=classic

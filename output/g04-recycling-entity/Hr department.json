@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As an employee from the HR department, I want to have access to the full information of all employees working for this business.",
+    "entities": [
+      {
+        "text": "employee",
+        "label": "Data"
+      },
+      {
+        "text": "HR department",
+        "label": "Data"
+      },
+      {
+        "text": "have access",
+        "label": "Processing"
+      },
+      {
+        "text": "full information",
+        "label": "PII"
+      },
+      {
+        "text": "employees",
+        "label": "Data"
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "text": "As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates, so that It is easier to use.",
+    "entities": [
+      {
+        "text": "trainingcoordinator",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainingcoordinator, I want to have an admin view that helps track registration status for each attendee so that, so that we can see if attendend, refunded, no show.",
+    "entities": [
+      {
+        "text": "trainingcoordinator,",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "registration status",
+        "label": "PII"
+      },
+      {
+        "text": "attendee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainingcoordinator, I want to tie in a cancellation deadline to whatever registration / cancellation workflow exists, so that so we don't loose money or spots.",
+    "entities": [
+      {
+        "text": "trainingcoordinator,",
+        "label": "Data"
+      },
+      {
+        "text": "tie in",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a trainingcoordinator, I want to have an admin view where all trainee information is shown and can be filtered to show a single training session, so that I can see WTF is happening.",
+    "entities": [
+      {
+        "text": "trainingcoordinator,",
+        "label": "Data"
+      },
+      {
+        "text": "trainee information",
+        "label": "PII"
+      },
+      {
+        "text": "training session",
+        "label": "PII"
+      }
+    ]
+  }
+]

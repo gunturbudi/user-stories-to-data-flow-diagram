@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+200,Hypothesis,shape=partialRectangle,null,null,data_base
+201,Content Guide,shape=partialRectangle,null,null,data_base
+202,Design Guide,shape=partialRectangle,null,null,data_base
+203,Style Guide,shape=partialRectangle,null,null,data_base
+204,Media Wireframe,shape=partialRectangle,null,null,data_base
+205,Designer,rounded=0,null,null,external_entity
+206,"Have A Social, New Media Wireframe",ellipse,null,null,process
+207,Know,ellipse,null,null,process
+208,Have Content Guide,ellipse,null,null,process
+209,Have A Style Guide,ellipse,null,null,process
+210,Have Design Guide,ellipse,null,null,process
+212,,endArrow=classic,205,206,endArrow=classic
+213,,endArrow=classic,205,208,endArrow=classic
+214,,endArrow=classic,205,209,endArrow=classic
+215,,endArrow=classic,205,210,endArrow=classic
+216,Media Wireframe,endArrow=classic,206,204,endArrow=classic
+217,Content Guide,endArrow=classic,208,201,endArrow=classic
+218,Style Guide,endArrow=classic,209,203,endArrow=classic
+219,Design Guide,endArrow=classic,210,202,endArrow=classic

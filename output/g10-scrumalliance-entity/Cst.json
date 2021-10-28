@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a CST, I want to pay an annual fee, so that my CST status is active.",
+    "entities": [
+      {
+        "text": "CST",
+        "label": "Data"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      },
+      {
+        "text": "annual fee",
+        "label": "PII"
+      }
+    ]
+  }
+]

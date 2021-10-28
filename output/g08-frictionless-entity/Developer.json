@@ -1,0 +1,308 @@
+[
+  {
+    "text": "As a Developer, I want to get a Data Package into Node, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to get a Data Package into Python in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want a jQuery plugin for Core Data Packages, so that I can use it to apply to form control that uses a core dataset for autocompletion.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "form control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to do exploratory data analysis in R and operationalize that analysis in Python, so that I can use the best tool for the job.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "exploratory",
+        "label": "Processing"
+      },
+      {
+        "text": "data analysis",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to get a Data Package into Clojure in seconds, so that I can start using the data in doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to get a Data Package into Julia in seconds, so that I can start using the data in doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to get a Data Package into C++ in seconds, so that I can start using the data in doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want an Elasticsearch integration, so that I can integrate data-packaged data with pipelines that use Elasticsearch.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want an SPSS integration, so that I can integrate data-packaged data with pipelines that use SPSS.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want an EPrints integration, so that I can integrate data-packaged data with pipelines that use EPrints.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want a Mongo integration, so that I can integrate data-packaged data with pipelines that use Mongo.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want a DAT integration, so that I can integrate data-packaged data with pipelines that use DAT.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want an DSpace integration, so that I can integrate data-packaged data with pipelines that use Dspace.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want Feather integration, so that I can integrate data-packaged data with pipelines that use Feather.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want HDF5 integration, so that I can integrate data-packaged data with pipelines that use HDF5.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "integrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data-packaged data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want an online service that is connected to my data repository that validates data on update, so that I can delegate data validation to a third party.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "data repository",
+        "label": "PII"
+      },
+      {
+        "text": "data validation",
+        "label": "Processing"
+      },
+      {
+        "text": "third party",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to customize an existing wizard for my specific type of data, so that I can give my users a great user experience.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "customize",
+        "label": "Processing"
+      },
+      {
+        "text": "specific type of data",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I would like to create a web socket protocol for Frictionless data tools, so that I can easily use data packages with additional data analysis tools.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      }
+    ]
+  }
+]

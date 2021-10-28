@@ -1,0 +1,28 @@
+[
+  {
+    "text": "As a workshop attendee, I want to have a summary of what we learned, so that I can understand our next steps and how they apply to me.",
+    "entities": [
+      {
+        "text": "workshop attendee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a workshop attendee, I want to see a summary on major findings from the event.",
+    "entities": [
+      {
+        "text": "workshop attendee",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "findings",
+        "label": "PII"
+      }
+    ]
+  }
+]

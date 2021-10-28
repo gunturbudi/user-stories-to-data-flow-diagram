@@ -1,0 +1,266 @@
+[
+  {
+    "text": "As a patron, I want to know which reports/datasets are coming out when, so that I can access latest report/dataset.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to select/deselect reports/datasets to be emailed, possibly many at one time, when new versions are available.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "select",
+        "label": "Processing"
+      },
+      {
+        "text": "deselect",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to manage report/dataset name changes so patrons are able to find historic reports that have a different name from current report.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "patrons",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "historic reports",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to view/upload content in multiple formats, including old formats such as Lotus Works.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to search for report/dataset with keywords or a partial or complete title to locate needed report/dataset.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to browse content by author or subject area to locate needed resources.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "subject area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to view multiple versions of a report/dataset to get both timely and historical information.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "historical information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to know other reports/datasets that are related (e.g. see also) to report/dataset being viewed for the purpose finding other related information.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to know previous name(s) and publication date range (first version-last version) of reports/datasets, so that I can know what historical versions are available and how current more recent version is.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "name(s",
+        "label": "PII"
+      },
+      {
+        "text": "publication date range",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to create a personal account to request email notification when new version of report/dataset is available.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "personal account",
+        "label": "PII"
+      },
+      {
+        "text": "request",
+        "label": "Processing"
+      },
+      {
+        "text": "email notification",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to download report/dataset release calendar to load into own calendar.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a patron, I want to email system provider to report issues and ask questions.",
+    "entities": [
+      {
+        "text": "patron,",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "report",
+        "label": "Processing"
+      },
+      {
+        "text": "issues",
+        "label": "PII"
+      }
+    ]
+  }
+]

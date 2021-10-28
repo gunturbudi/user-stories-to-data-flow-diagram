@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a DPC, I want events to be created when a publication is published and unpublished, who did it, comment, so that I can record when and why something was made unavailable.",
+    "entities": [
+      {
+        "text": "DPC,",
+        "label": "Data"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      },
+      {
+        "text": "who did it",
+        "label": "PII"
+      },
+      {
+        "text": "comment",
+        "label": "PII"
+      }
+    ]
+  }
+]

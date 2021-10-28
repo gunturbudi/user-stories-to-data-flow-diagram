@@ -1,0 +1,79 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Building" as thingbuilding
+	entity "Clear Map" as thingclearmap
+	entity "Room" as thingroom
+	entity "Attendee" as thingattendee
+	entity "Registration Status" as thingregistrationstatus #grey
+	entity "Admin View" as thingadminview #grey
+	entity "Training Waitlist" as thingtrainingwaitlist #grey
+	entity "Summit" as thingsummit
+	entity "Detailed Direction" as thingdetaileddirection
+	entity "Basic Information" as thingbasicinformation
+	entity "Agenda" as thingagenda
+	actor "Attendee" as actorattendee
+	actor "Trainingcoordinator" as actortrainingcoordinator
+	actor "Summit Coordinator" as actorsummitcoordinator
+	circle "Venue" as thingvenue #grey
+	boundary "Room\nInterface" as thingroominterface #grey
+	boundary "Building\nInterface" as thingbuildinginterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Attendee\nInterface" as thingattendeeinterface #grey
+	boundary "Waitlist\nInterface" as thingwaitlistinterface #grey
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	control "Have A\nVery Clear\nMap Room\nWhere Are" as controlhaveclearmaproom
+	control "Have A\nVery Clear\nMap The\nBuildings Where\nAre" as controlhaveclearmap
+	control "Have An\nAdmin View\nHelps" as controlhaveadminview
+	control "Track Registration\nStatus For\nEach Attendee" as controltrackregistrationstatusattendee
+	control "Added To\nA Training\nWaitlist" as controladdtrainingwaitlist
+	control "Register For\nA Summit" as controlregistersummit
+	control "Get Detailed\nDirections To\nThe Summit\nVenue" as controlgetdetaileddirection
+	control "See" as controlsee
+	control "List Basic\nInformation About\nSummit" as controllistbasicinformation
+	control "List An\nAgenda For\nSummit" as controllistagenda
+
+	thingbuilding <.. thingclearmap
+	thingroom <.. thingclearmap
+	thingattendee <.. thingregistrationstatus
+	thingvenue <.. thingdetaileddirection
+	thingsummit <.. thingdetaileddirection
+	thingsummit <.. thingbasicinformation
+	thingsummit <.. thingagenda
+	thingsummit *-- thingvenue
+	actorattendee --- thingroominterface
+	actorattendee --- thingbuildinginterface
+	actortrainingcoordinator --- thingviewinterface
+	actortrainingcoordinator --- thingattendeeinterface
+	actorattendee --- thingwaitlistinterface
+	actorattendee --- thingsummitinterface
+	actorsummitcoordinator --- thingsummitinterface
+	thingroom --- controlhaveclearmaproom
+	thingroominterface --> controlhaveclearmaproom
+	thingclearmap --- controlhaveclearmaproom
+	thingclearmap --- controlhaveclearmap
+	thingbuilding --- controlhaveclearmap
+	thingbuildinginterface --> controlhaveclearmap
+	thingadminview --- controlhaveadminview
+	thingviewinterface --> controlhaveadminview
+	controlhaveadminview --> controltrackregistrationstatusattendee
+	thingregistrationstatus --- controltrackregistrationstatusattendee
+	thingattendee --- controltrackregistrationstatusattendee
+	thingattendeeinterface --> controltrackregistrationstatusattendee
+	thingtrainingwaitlist --- controladdtrainingwaitlist
+	thingwaitlistinterface --> controladdtrainingwaitlist
+	thingsummit --- controlregistersummit
+	thingsummitinterface --> controlregistersummit
+	thingdetaileddirection --- controlgetdetaileddirection
+	thingvenue --- controlgetdetaileddirection
+	thingsummitinterface --> controlgetdetaileddirection
+	thingbasicinformation --- controllistbasicinformation
+	thingsummit --- controllistbasicinformation
+	thingsummitinterface --> controllistbasicinformation
+	thingagenda --- controllistagenda
+	thingsummit --- controllistagenda
+	thingsummitinterface --> controllistagenda
+
+@enduml

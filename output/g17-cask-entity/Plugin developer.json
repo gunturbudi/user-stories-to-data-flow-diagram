@@ -1,0 +1,53 @@
+[
+  {
+    "text": "As a plugin developer, I want to include the code for a dataset type in the plugin artifact, so that when a pipeline using this plugin is created a dataset instance of that type is created and it is explorable and available to apps.",
+    "entities": [
+      {
+        "text": "plugin developer",
+        "label": "Data"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a plugin developer, I want to use a custom dataset type that was deployed independently or as part of an app inside the plugin.",
+    "entities": [
+      {
+        "text": "plugin developer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a plugin developer, I want to upgrade the code of a dataset type used by a dataset instance created by that plugin when I deploy a new version of the plugin and update the pipeline to use that version.",
+    "entities": [
+      {
+        "text": "plugin developer",
+        "label": "Data"
+      },
+      {
+        "text": "upgrade",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Report " color=red];
+201 [label="<f0>  |<f1> New Version " ];
+202 [label="<f0>  |<f1> Time " ];
+203 [label="<f0>  |<f1> Old Format " ];
+204 [label="<f0>  |<f1> Multiple Format " ];
+205 [label="<f0>  |<f1> Content " color=red];
+206 [label="<f0>  |<f1> Partial Title " ];
+207 [label="<f0>  |<f1> Complete " ];
+208 [label="<f0>  |<f1> Keyword " ];
+209 [label="<f0>  |<f1> Need Report " color=red];
+210 [label="<f0>  |<f1> Need Resource " ];
+211 [label="<f0>  |<f1> Subject Area " color=red];
+212 [label="<f0>  |<f1> Author " color=red];
+213 [label="<f0>  |<f1> Historical " color=red];
+214 [label="<f0>  |<f1> Timely Information " color=red];
+215 [label="<f0>  |<f1> Related ,\nInformation " color=red];
+216 [label="<f0>  |<f1> Version " ];
+217 [label="<f0>  |<f1> Previous Range " ];
+218 [label="<f0>  |<f1> Personal Account " color=red];
+219 [label="<f0>  |<f1> Email Notification " color=red];
+220 [label="<f0>  |<f1> Calendar " ];
+221 [label="<f0>  |<f1> Issue " color=red];
+222 [label="<f0>  |<f1> System Provider " ];
+223 [label="<f0>  |<f1> Question " ];
+224 [label="<f0>  |<f1> Lotus Work " color=red];
+225 [label="<f0>  |<f1> Publication Date\nRange " ];
+226 [label="<f0>  |<f1> Name " color=red];
+227 [label="Patron" shape=box];
+228 [label="Db" shape=box];
+229 [label="Ir Administrator" shape=box];
+230 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+231 [label="{<f0> 2.0|<f1> Select Reports To Emailed Possibly Many At Time New Versions When Are Available }" shape=Mrecord];
+232 [label="{<f0> 3.0|<f1> Select Dataset }" shape=Mrecord];
+233 [label="{<f0> 4.0|<f1> Deselect Dataset }" shape=Mrecord];
+234 [label="{<f0> 5.0|<f1> Deselect Reports To Emailed Possibly Many At Time New Versions When Are Available }" shape=Mrecord];
+235 [label="{<f0> 6.0|<f1> View Content In Multiple Formats Including Old Formats Such As Lotus Works }" shape=Mrecord];
+236 [label="{<f0> 7.0|<f1> Upload Content In Multiple Formats Including Old Formats Such As Lotus Works }" shape=Mrecord];
+237 [label="{<f0> 8.0|<f1> Locate Dataset }" shape=Mrecord];
+238 [label="{<f0> 9.0|<f1> Search For Dataset With A Partial Title }" shape=Mrecord];
+239 [label="{<f0> 10.0|<f1> Locate Needed Report }" shape=Mrecord];
+240 [label="{<f0> 11.0|<f1> Search For Report }" shape=Mrecord];
+241 [label="{<f0> 12.0|<f1> Search For Dataset With Complete }" shape=Mrecord];
+242 [label="{<f0> 13.0|<f1> Search For Dataset With Keywords }" shape=Mrecord];
+243 [label="{<f0> 14.0|<f1> Locate Needed Resources }" shape=Mrecord];
+244 [label="{<f0> 15.0|<f1> Browse Content By Subject Area }" shape=Mrecord];
+245 [label="{<f0> 16.0|<f1> Browse Content By Author }" shape=Mrecord];
+246 [label="{<f0> 17.0|<f1> View Multiple Versions Of A Report }" shape=Mrecord];
+247 [label="{<f0> 18.0|<f1> Dataset }" shape=Mrecord];
+248 [label="{<f0> 19.0|<f1> Get Timely Information }" shape=Mrecord];
+249 [label="{<f0> 20.0|<f1> Get Historical }" shape=Mrecord];
+250 [label="{<f0> 21.0|<f1> Know Other Report S }" shape=Mrecord];
+251 [label="{<f0> 22.0|<f1> Report }" shape=Mrecord];
+252 [label="{<f0> 23.0|<f1> Find Related, Other Information }" shape=Mrecord];
+253 [label="{<f0> 24.0|<f1> Viewed For }" shape=Mrecord];
+254 [label="{<f0> 25.0|<f1> Know Other Dataset S E.G. Also Related }" shape=Mrecord];
+255 [label="{<f0> 26.0|<f1> Request Email Notification }" shape=Mrecord];
+256 [label="{<f0> 27.0|<f1> Create A Personal Account }" shape=Mrecord];
+257 [label="{<f0> 28.0|<f1> Download Dataset Release Calendar }" shape=Mrecord];
+258 [label="{<f0> 29.0|<f1> Load Into Own Calendar }" shape=Mrecord];
+259 [label="{<f0> 30.0|<f1> Download Report }" shape=Mrecord];
+260 [label="{<f0> 31.0|<f1> Report Issues }" shape=Mrecord];
+261 [label="{<f0> 32.0|<f1> Email System Provider }" shape=Mrecord];
+262 [label="{<f0> 33.0|<f1> Ask Questions }" shape=Mrecord];
+263 [label="{<f0> 34.0|<f1> Manage Report }" shape=Mrecord];
+264 [label="{<f0> 35.0|<f1> Manage Name Dataset Change }" shape=Mrecord];
+227 -> 231
+227 -> 232
+227 -> 233
+227 -> 234
+227 -> 235
+227 -> 237
+227 -> 238
+227 -> 239
+227 -> 240
+227 -> 241
+227 -> 242
+227 -> 243
+227 -> 244
+227 -> 245
+227 -> 246
+227 -> 247
+227 -> 247
+227 -> 248
+227 -> 249
+227 -> 250
+227 -> 252
+227 -> 253
+227 -> 254
+227 -> 255
+227 -> 256
+227 -> 257
+227 -> 258
+227 -> 259
+227 -> 260
+227 -> 261
+227 -> 262
+227 -> 263
+227 -> 264
+228 -> 232
+228 -> 233
+228 -> 237
+228 -> 238
+228 -> 239
+228 -> 240
+228 -> 241
+228 -> 242
+228 -> 246
+228 -> 247
+228 -> 250
+228 -> 254
+228 -> 257
+228 -> 258
+228 -> 259
+228 -> 263
+228 -> 264
+229 -> 232
+229 -> 233
+229 -> 237
+229 -> 238
+229 -> 239
+229 -> 240
+229 -> 241
+229 -> 242
+229 -> 246
+229 -> 247
+229 -> 250
+229 -> 254
+229 -> 257
+229 -> 258
+229 -> 259
+229 -> 263
+229 -> 264
+231 -> 202 [label="Time"]
+231 -> 201 [label="New Version"]
+231 -> 200 [label="Report"]
+234 -> 200 [label="Report"]
+234 -> 201 [label="New Version"]
+234 -> 202 [label="Time"]
+235 -> 205 [label="Content"]
+235 -> 204 [label="Multiple Format"]
+235 -> 203 [label="Old Format"]
+235 -> 224 [label="Lotus Work"]
+236 -> 224 [label="Lotus Work"]
+236 -> 203 [label="Old Format"]
+236 -> 204 [label="Multiple Format"]
+236 -> 205 [label="Content"]
+238 -> 237
+238 -> 239
+238 -> 206 [label="Partial Title"]
+239 -> 209 [label="Need Report"]
+240 -> 200 [label="Report"]
+241 -> 207 [label="Complete"]
+242 -> 208 [label="Keyword"]
+243 -> 210 [label="Need Resource"]
+244 -> 211 [label="Subject Area"]
+244 -> 205 [label="Content"]
+245 -> 243
+245 -> 212 [label="Author"]
+245 -> 205 [label="Content"]
+246 -> 200 [label="Report"]
+247 -> 248
+247 -> 249
+247 -> 253
+248 -> 214 [label="Timely Information"]
+249 -> 213 [label="Historical"]
+252 -> 215 [label="Related ,\nInformation"]
+253 -> 252
+254 -> 247
+255 -> 219 [label="Email Notification"]
+256 -> 255
+256 -> 218 [label="Personal Account"]
+258 -> 220 [label="Calendar"]
+259 -> 258
+259 -> 200 [label="Report"]
+260 -> 221 [label="Issue"]
+261 -> 260
+261 -> 222 [label="System Provider"]
+262 -> 223 [label="Question"]
+263 -> 200 [label="Report"]
+231 -> 216 [label="Version"]
+264 -> 226 [label="Name"]
+}

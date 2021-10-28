@@ -1,0 +1,42 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Planning Study " ];
+201 [label="<f0>  |<f1> Planning ,\nRelated Report " ];
+202 [label="<f0>  |<f1> Comprehensive Plan " ];
+203 [label="<f0>  |<f1> Consistency " ];
+204 [label="<f0>  |<f1> Plan Amendment " color=red];
+205 [label="Planning , Staff Member" shape=box];
+206 [label="{<f0> 1.0|<f1> Conduct Planning Study }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Conduct Plan Amendments }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Track Planning Study }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Track Plan Amendments }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Generate Planning, Related Reports }" shape=Mrecord];
+211 [label="{<f0> 6.0|<f1> Evaluate Consistency With The Comprehensive Plan }" shape=Mrecord];
+7 [label="{<f0> 7.0|<f1> Record work in process, outcome, and location-based information related to the plan(s). }" shape=Mrecord];
+209 -> 7
+1001 [label="<f0>  |<f1> Work " color=red];
+7 -> 1001 [label="Work"]
+1003 [label="<f0>  |<f1> Location-based information " color=red];
+7 -> 1003 [label="Location-based information"]
+8 [label="{<f0> 8.0|<f1> Export the needed information in the format i requested. }" shape=Mrecord];
+210 -> 8
+1006 [label="<f0>  |<f1> Needed information " color=red];
+8 -> 1006 [label="Needed information"]
+9 [label="{<f0> 9.0|<f1> Complete my required review of a plan set and/or application. }" shape=Mrecord];
+211 -> 9
+1009 [label="<f0>  |<f1> Required review " color=red];
+9 -> 1009 [label="Required review"]
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+205 -> 211
+206 -> 200 [label="Planning Study"]
+207 -> 204 [label="Plan Amendment"]
+208 -> 200 [label="Planning Study"]
+209 -> 204 [label="Plan Amendment"]
+210 -> 201 [label="Planning ,\nRelated Report"]
+211 -> 203 [label="Consistency"]
+211 -> 202 [label="Comprehensive Plan"]
+}

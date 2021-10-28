@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Group" as thinggroup
+	entity "Equipment Booking" as thingequipmentbooking #grey
+	entity "Event" as thingevent
+	actor "Lab Member" as actorlabmember
+	boundary "Booking\nInterface" as thingbookinginterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	control "View Equipment\nBooking" as controlviewequipmentbooking
+	control "View Events\nWithin The\nGroup" as controlviewevent
+
+	thinggroup <.. thingevent
+	actorlabmember --- thingbookinginterface
+	actorlabmember --- thinggroupinterface
+	thingequipmentbooking --- controlviewequipmentbooking
+	thingbookinginterface --> controlviewequipmentbooking
+	thingevent --- controlviewevent
+	thinggroup --- controlviewevent
+	thinggroupinterface --> controlviewevent
+
+@enduml

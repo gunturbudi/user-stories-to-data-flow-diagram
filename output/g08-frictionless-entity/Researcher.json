@@ -1,0 +1,319 @@
+[
+  {
+    "text": "As a Researcher, I want to get a Data Package into Julia in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to be able to save new visualizations, so that I can share them with others or include them in the Data Package.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "save",
+        "label": "Processing"
+      },
+      {
+        "text": "visualizations",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get a Data Package into R in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get a Data Package into Excel in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get a Data Package into SPSS in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get a Data Package into STATA in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to be able to translate my EML dataset to a Data Package, so that I can benefit from the wide array of tools available for Data Packages.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "translate",
+        "label": "Processing"
+      },
+      {
+        "text": "EML dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get a Data Package into LibreOffice/OpenOffice in seconds, so that I can start using the data for doing analysis and visualizations.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to get my Excel spreadsheet into a Data Package, so that I can benefit from better tooling and standardization.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "Excel",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want to be able to reference a remote-controlled vocabulary for my dataset, so that I can be sure that column of my dataset are valid against a single shard list of terms.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "reference",
+        "label": "Processing"
+      },
+      {
+        "text": "remote-controlled vocabulary",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, working with data, I want an Microsoft Power BI integration, so that I can import datasets without downloading them locally.",
+    "entities": [
+      {
+        "text": "Researcher",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, working with data in NetCDF, I want NetCDF integration, so that I can store my data in plaintext while still retaining its metadata.",
+    "entities": [
+      {
+        "text": "Researcher",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want an integration with https://data.mendeley.com/, so that I can validate my data upon ingest to the service.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Repository Manager, I want a tool that makes it easy for researchers/ users to add basic metadata to their research data, so that it is more findable and therefore useful.",
+    "entities": [
+      {
+        "text": "Repository Manager",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "research data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want a tool that can generate basic statistics about a dataset, so that I can get a quick preview of the data.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      },
+      {
+        "text": "statistics",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want an app that generates an OpenRefine reconciliation API endpoint from a Tabular Data Package, so that I can use it to clean messy data.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "clean",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Researcher, I want an app that create proxy Data Packages for well know and reliable data, sources, so that I can load high quality data using Data Package tooling.",
+    "entities": [
+      {
+        "text": "Researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "proxy Data",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "text": "As a Publisher, I want to publish a dataset, so that I can view just the dataset with a few people.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to publish a dataset, so that I can share the dataset publicly with everyone.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to sign up for an account, so that that I can publish my data package to the registry and to have a publisher account to publish my data package under.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      },
+      {
+        "text": "account",
+        "label": "PII"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to know what do next after signing up, so that that I can get going quickly.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to import my data package into the registry, so that my data has a permanent online home to access.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to configure my client, so that I can start publishing data packages.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "configure",
+        "label": "Processing"
+      },
+      {
+        "text": "client",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "unpublish",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to permanently delete a data package, so that that it no longer takes up storage space.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "permanently delete",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to validate the data I am about to publish to the registry, so that that I publish good data and know that I am doing.",
+    "entities": [
+      {
+        "text": "Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to data to be validated when I publish it, so that that I know immediately if I have accidentally broken my data or have bugs and can take action to correct.",
+    "entities": [
+      {
+        "text": "Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "validated",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to publish a data package where its resource data is stored on my servers but the registry caches a copy of that data, so that that if my data is lost or gets broken I still have a copy people can use.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "resource data",
+        "label": "PII"
+      },
+      {
+        "text": "caches",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to publish a data package in the UI, so that that it is available and published.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to create a data package in the UI so that it is available and published.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be able to restore the deleted data package via cli, so that that it is back visible and available to view, download.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "restore",
+        "label": "Processing"
+      },
+      {
+        "text": "deleted data package",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to undelete the deleted data packages, so that that the deleted data packages is now visible again.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "undelete",
+        "label": "Processing"
+      },
+      {
+        "text": "deleted data packages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be able to preview the views of the current data package using cli prior to publishing, so that that I can refine the json declarations of datapackage view section to achieve a great looking result.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "preview",
+        "label": "Processing"
+      },
+      {
+        "text": "views",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a publisher, I want to show the world how my published data is, so that that it immediately catches consumer's attention.",
+    "entities": [
+      {
+        "text": "publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "published data",
+        "label": "PII"
+      },
+      {
+        "text": "consumer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to preview a datapackage I have prepared, so that that I can check it works and share the results.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "preview",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to see real examples of published packages so that I can understand how useful and simple the datapackage format and the registry is.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage format",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that that consumers can refer to it.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "consumers",
+        "label": "Data"
+      },
+      {
+        "text": "refer",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that that I don't accidentally overwrite stable tagged data which is relied on by consumers.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "overwrite",
+        "label": "Processing"
+      },
+      {
+        "text": "consumers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be able to overwrite the previously tagged datapackage, so that that I can fix it if I mess up.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "overwrite",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that that I do not break consumer systems when I change my datapackage.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "version",
+        "label": "Processing"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "datapackage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to be able to get access to a previous version I tagged, so that that I can return to it and review it.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "get access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to browse and find publishers, so that that I can find interesting publishers and their packages.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "publishers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to see a publisher's profile, so that that I can discover their packages and get a sense of how active and good they are.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "publisher",
+        "label": "Data"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Consumer, I want to view a publisher's profile, so that that I can see who is behind a particular package or to see what other packages they produce.",
+    "entities": [
+      {
+        "text": "Consumer",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "publisher",
+        "label": "Data"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to know if this site has a pricing plan and what the prices are, so that that I can work out what this will cost me in the future and have a sense that these guys are sustainable.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to sign up for a given pricing plan, so that that I am entitled to what it allows.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Publisher, I want to have private data packages, so that I can share just with my team.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "private data packages",
+        "label": "PII"
+      },
+      {
+        "text": "team",
+        "label": "PII"
+      }
+    ]
+  }
+]

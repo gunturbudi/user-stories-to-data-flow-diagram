@@ -1,0 +1,364 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Appropriate Relationship" as thingappropriaterelationship
+	entity "Formal Collection" as thingformalcollection
+	entity "Dam" as thingDAMS
+	entity "Repository" as thingrepository
+	entity "Object" as thingobject
+	entity "Assigned Order" as thingassignedorder
+	entity "Aspect" as thingaspect #grey
+	entity "Obsolescence" as thingobsolescence
+	entity "Integrity" as thingintegrity
+	entity "Format Version" as thingformatversion #grey
+	entity "Useful File" as thingusefulfile #grey
+	entity "Manager" as thingmanager
+	entity "Checksum" as thingchecksum
+	entity "Checksum Method" as thingchecksummethod
+	entity "File" as thingfile
+	entity "Source Capture\nInformation" as thingsourcecaptureinformation #grey
+	entity "Preservation Managers" as thingpreservationmanagers #grey
+	entity "Authenticity" as thingauthenticity
+	entity "Question" as thingquestion
+	entity "Object Component" as thingobjectcomponent
+	entity "Collection" as thingcollection
+	entity "Title" as thingtitle
+	entity "Register" as thinglastregister
+	entity "Risk" as thingrisk
+	entity "License" as thinglicense
+	entity "Copyright" as thingcopyright
+	entity "Status" as thingstatus #grey
+	entity "Pertinent Statute" as thingpertinentstatute
+	entity "Statute" as thingstatute
+	entity "Pertinence" as thingpertinence
+	entity "Application" as thingapplication
+	entity "Applicable License" as thingapplicablelicense
+	entity "Copyright Content" as thingcopyrightedcontent
+	entity "Way" as thingway
+	entity "Access" as thingaccess
+	entity "Policy" as thingpolicy #grey
+	entity "Use" as thinguse
+	entity "Permission" as thingpermission
+	entity "Date" as thingdate
+	entity "Restriction" as thingrestriction
+	entity "Active Date" as thingactivedate
+	entity "Permit Act" as thingpermittedact
+	entity "Record" as thingrecord
+	entity "Event" as thingevent
+	entity "Master" as thingmaster #grey
+	entity "Creation" as thingcreation #grey
+	entity "Preservation" as thingpreservation #grey
+	entity "Library" as thinglibrary #grey
+	entity "Rights" as thingrights #grey
+	actor "Dams Manager" as actordamsmanager
+	circle "Outcome" as thingoutcome
+	circle "Size" as thingsize #grey
+	circle "Format" as thingformat #grey
+	circle "Component" as thingcomponent #grey
+	circle "Nn" as thingnn #grey
+	boundary "Object" as thingobjectdamsmanager
+	boundary "Component" as thingcomponentcompriseobjectdamsmanager #grey
+	boundary "Relationship\nInterface" as thingrelationshipinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Managers\nInterface" as thingmanagersinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Manager\nInterface" as thingmanagerinterface #grey
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	boundary "Authenticity\nInterface" as thingauthenticityinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Register\nInterface" as thingregisterinterface #grey
+	boundary "Risk\nInterface" as thingriskinterface #grey
+	boundary "Copyright\nInterface" as thingcopyrightinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	boundary "Restriction\nInterface" as thingrestrictioninterface #grey
+	boundary "Act\nInterface" as thingactinterface #grey
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	control "Browsing All\nFormal Collections\nIn The\nDams With\nThe Appropriate\nRelationships" as controlbrowselistformalcollection
+	control "List" as controllist
+	control "What Repository\nBelongs To" as controlbelongobjectdamsmanagerrepository
+	control "Know" as controlknowbelongobjectdamsmanagerrepository
+	control "Present In\nAssigned Order" as controlpresentassignedordercomponentcompriseobjectdamsmanager
+	control "Comprise An\nObject" as controlcompriseobject
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nSize" as controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Format\nVersion" as controlmonitorindicateaspectintegrityobsolescenceformatversion
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding Creation\nDate" as controlmonitorindicateaspectintegrityobsolescencecreationdate
+	control "Indicate To\nAspects Of\nA Useful\nFile" as controlindicateaspect #grey
+	control "Impending Monitoring\nIntegrity Obsolescence\nIncluding File\nFormat" as controlmonitorindicateaspectintegrityobsolescencefileformat
+	control "Indicate To\nPreservation Managers\nAspects Of\nA Useful\nMaster File" as controlindicatepreservationmanagersaspects
+	control "Preservation Managers\nThe Checksum\nMethod For\nEach Master\nFile For\nA Given\nObject" as controlpreservationmanagerchecksummethod
+	control "Indicate" as controlindicatepreservationmanagerchecksummethod
+	control "Preservation Managers\nChecksum" as controlpreservationmanagerchecksum
+	control "Do" as controldo
+	control "Indicate The\nSource Capture\nInformation For\nA File\nWhere Is\nUseful" as controlindicatesourcecaptureinformation
+	control "Know Of\nAny Object\nFor Which\nIntegrity Is\nIn Question" as controlknowof
+	control "Update To\nA More\nCurrent File\nFormat" as controlupdatecurrentfileformat
+	control "Know Via\nPreservation Managers" as controlknowpreservationmanagers
+	control "Know Of\nAny Object\nFor Which\nAuthenticity Is" as controlknowofauthenticity
+	control "Know Of\nAny Object" as controlknowofupdatecurrentfileformat
+	control "Present Object" as controlpresentobject
+	control "Present Collections\nBy Title" as controlpresentcollection
+	control "Present Object\nComponent" as controlpresentobjectcomponent
+	control "Know Via\nThe Preservation\nManager Of\nAll Files\nFor Which\nThe Checksum\nHas Changed\nSince Last\nRegistered" as controlknowpreservationmanager
+	control "Incur Risk" as controlincurrisk
+	control "Expire Per\nJurisdictional Copyright\nStatute" as controlexpirejurisdictionalcopyrightstatute
+	control "Know Copyright\nFor Object" as controlknowcopyrightobject
+	control "Know Copyright\nFor An\nObject Component" as controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	control "Know The\nPertinent Statutes\nTo An\nObject Component" as controlknowpertinentstatute
+	control "Know The\nPertinent Statutes\nTo Object" as controlknowpertinentstatuteobject
+	control "Expire" as controlexpire
+	control "Know Object" as controlknowobject
+	control "Know An\nObject Component\nSubject To\nA Library\nPolicy Restricts\nAccess In\nAny Way" as controlknowobjectcomponentlibrarypolicy
+	control "Know The\nUses For\nAn Object\nComponent Permitted" as controlknowuse
+	control "Know The\nUses For\nObject" as controlknowuseobject
+	control "Know The\nUses For\nAn Object\nComponent" as controlknowuserestrictstatusrestrictstatusobjectcomponent
+	control "Restrict Per\nThe Status\nOf Object\nComponent" as controlrestrictstatusobjectcomponent
+	control "Restrict Per\nThe Rights\nStatus Of\nThe Object" as controlrestrictrightsstatus
+	control "Provided Know\nThe Dates\nA Permission\nWhen Is\nActive" as controlprovidedate
+	control "Provided Know\nThe Dates\nRestriction When\nIs" as controlprovidedaterestriction
+	control "Restrict" as controlrestrict
+	control "Know When\nPermitted Acts" as controlknowpermittedact
+	control "Track All\nEvents For\nRecording In\nThe Dams" as controltrackevent
+	control "Carrying Out\nAn Event" as controlcarryknowevent
+	control "Know The\nOutcome Of\nThe Event" as controlknowoutcome
+
+	thingDAMS <.. thingformalcollection
+	thingappropriaterelationship <.. thingformalcollection
+	thingappropriaterelationship <.. thingDAMS
+	thingquestion <.. thingobject
+	thingintegrity <.. thingobject
+	thingauthenticity <.. thingobject
+	thingusefulfile <.. thingaspect
+	thingpreservationmanagers <.. thingaspect
+	thingfile <.. thingaspect
+	thingsize <.. thingobsolescence
+	thingformat <.. thingobsolescence
+	thingformatversion <.. thingobsolescence
+	thingfile <.. thingobsolescence
+	thingdate <.. thingobsolescence
+	thingobsolescence <.. thingintegrity
+	thingquestion <.. thingintegrity
+	thingchecksummethod <.. thingmanager
+	thingchecksum <.. thingmanager
+	thingpreservation <.. thingmanager
+	thingfile <.. thingmanager
+	thinglastregister <.. thingchecksum
+	thingfile <.. thingchecksummethod
+	thinglastregister <.. thingfile
+	thingchecksum <.. thingfile
+	thingmaster <.. thingfile
+	thingpreservationmanagers <.. thingfile
+	thingobject <.. thingfile
+	thingfile <.. thingsourcecaptureinformation
+	thingfile <.. thingpreservationmanagers
+	thingpolicy <.. thingobjectcomponent
+	thingtitle <.. thingcollection
+	thingobjectcomponent <.. thingcopyright
+	thingobject <.. thingcopyright
+	thingobjectcomponent <.. thingstatus
+	thingobject <.. thingstatus
+	thingrights <.. thingstatus
+	thingcomponent <.. thingstatus
+	thingcopyright <.. thingstatus
+	thingobjectcomponent <.. thingpertinentstatute
+	thingobject <.. thingpertinentstatute
+	thingcopyright <.. thingstatute
+	thingstatute *-- thingpertinence
+	thingobjectcomponent *-- thingpertinence
+	thingobject *-- thingpertinence
+	thingobjectcomponent *-- thingapplication
+	thingstatute *-- thingapplication
+	thingobject *-- thingapplication
+	thingpolicy *-- thingapplication
+	thingway <.. thingaccess
+	thinglibrary <.. thingpolicy
+	thingaccess <.. thingpolicy
+	thingobjectcomponent <.. thinguse
+	thingobject <.. thinguse
+	thingpermission <.. thingdate
+	thingrestriction <.. thingdate
+	thingcreation <.. thingdate
+	thingDAMS <.. thingrecord
+	thingrecord <.. thingevent
+	thingevent *-- thingoutcome
+	thingfile *-- thingsize
+	thingfile *-- thingformat
+	thingobject *-- thingcomponent
+	thingobject *-- thingnn
+	actordamsmanager --- thingobjectdamsmanager
+	actordamsmanager --- thingcomponentcompriseobjectdamsmanager
+	actordamsmanager --- thingrelationshipinterface
+	actordamsmanager --- thingfileinterface
+	actordamsmanager --- thingversioninterface
+	actordamsmanager --- thingdateinterface
+	actordamsmanager --- thingmanagersinterface
+	actordamsmanager --- thingobjectinterface
+	actordamsmanager --- thingmanagerinterface
+	actordamsmanager --- thingquestioninterface
+	actordamsmanager --- thingauthenticityinterface
+	actordamsmanager --- thingtitleinterface
+	actordamsmanager --- thingregisterinterface
+	actordamsmanager --- thingriskinterface
+	actordamsmanager --- thingcopyrightinterface
+	actordamsmanager --- thingcomponentinterface
+	actordamsmanager --- thingwayinterface
+	actordamsmanager --- thingpermissioninterface
+	actordamsmanager --- thingrestrictioninterface
+	actordamsmanager --- thingactinterface
+	actordamsmanager --- thingdamsinterface
+	actordamsmanager --- thingeventinterface
+	thingformalcollection --- controlbrowselistformalcollection
+	thingDAMS --- controlbrowselistformalcollection
+	thingappropriaterelationship --- controlbrowselistformalcollection
+	thingrelationshipinterface --> controlbrowselistformalcollection
+	controlbrowselistformalcollection --> controllist
+	thingrelationshipinterface --> controllist
+	thingobjectdamsmanager --> controlbelongobjectdamsmanagerrepository
+	thingrepository --- controlbelongobjectdamsmanagerrepository
+	controlknowbelongobjectdamsmanagerrepository --> controlbelongobjectdamsmanagerrepository
+	thingobjectdamsmanager --> controlknowbelongobjectdamsmanagerrepository
+	controlcarryknowevent --> controlknowbelongobjectdamsmanagerrepository
+	thingeventinterface --> controlknowbelongobjectdamsmanagerrepository
+	thingassignedorder --- controlpresentassignedordercomponentcompriseobjectdamsmanager
+	thingcomponentcompriseobjectdamsmanager --> controlpresentassignedordercomponentcompriseobjectdamsmanager
+	controlpresentassignedordercomponentcompriseobjectdamsmanager --> controlcompriseobject
+	thingobject --- controlcompriseobject
+	thingcomponentcompriseobjectdamsmanager --> controlcompriseobject
+	thingintegrity --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingobsolescence --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingsize --- controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingfileinterface --> controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence
+	thingformatversion --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingversioninterface --> controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescenceformatversion
+	thingdateinterface --> controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	thingdate --- controlmonitorindicateaspectintegrityobsolescencecreationdate
+	controlmonitorindicateaspectintegrityobsolescencecreationdate --> controlindicateaspect
+	thingaspect --- controlindicateaspect
+	thingusefulfile --- controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescenceformatversion --> controlindicateaspect
+	controlmonitorindicateaspectintegrityobsolescencefileformat --> controlindicateaspect
+	thingformat --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingfileinterface --> controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingobsolescence --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	thingintegrity --- controlmonitorindicateaspectintegrityobsolescencefileformat
+	controlmonitorindicatepreservationmanagersaspectsintegrityobsolescence --> controlindicatepreservationmanagersaspects
+	thingpreservationmanagers --- controlindicatepreservationmanagersaspects
+	thingmanagersinterface --> controlindicatepreservationmanagersaspects
+	thingaspect --- controlindicatepreservationmanagersaspects
+	thingfile --- controlindicatepreservationmanagersaspects
+	thingmanager --- controlpreservationmanagerchecksummethod
+	thingchecksummethod --- controlpreservationmanagerchecksummethod
+	controlindicatepreservationmanagerchecksummethod --> controlpreservationmanagerchecksummethod
+	thingobjectinterface --> controlpreservationmanagerchecksummethod
+	thingfile --- controlpreservationmanagerchecksummethod
+	thingobject --- controlpreservationmanagerchecksummethod
+	thingobjectinterface --> controlindicatepreservationmanagerchecksummethod
+	thingmanager --- controlindicatepreservationmanagerchecksummethod
+	thingchecksum --- controlpreservationmanagerchecksum
+	thingmanagerinterface --> controlpreservationmanagerchecksum
+	thingmanager --- controlpreservationmanagerchecksum
+	controlindicatepreservationmanagerchecksummethod --> controlpreservationmanagerchecksum
+	controlindicatesourcecaptureinformation --> controldo
+	thingfileinterface --> controldo
+	thingsourcecaptureinformation --- controlindicatesourcecaptureinformation
+	thingfile --- controlindicatesourcecaptureinformation
+	thingfileinterface --> controlindicatesourcecaptureinformation
+	thingquestion --- controlknowof
+	thingquestioninterface --> controlknowof
+	thingobject --- controlknowof
+	thingintegrity --- controlknowof
+	controlknowofupdatecurrentfileformat --> controlupdatecurrentfileformat
+	thingformat --- controlupdatecurrentfileformat
+	thingobjectinterface --> controlupdatecurrentfileformat
+	thingmanagerinterface --> controlknowpreservationmanagers
+	thingmanager --- controlknowpreservationmanagers
+	thingauthenticity --- controlknowofauthenticity
+	thingauthenticityinterface --> controlknowofauthenticity
+	thingobject --- controlknowofauthenticity
+	thingobjectinterface --> controlknowofupdatecurrentfileformat
+	thingobject --- controlknowofupdatecurrentfileformat
+	thingobject --- controlpresentobject
+	thingobjectinterface --> controlpresentobject
+	thingcollection --- controlpresentcollection
+	thingtitle --- controlpresentcollection
+	thingtitleinterface --> controlpresentcollection
+	thingcomponent --- controlpresentobjectcomponent
+	thingobjectinterface --> controlpresentobjectcomponent
+	thinglastregister --- controlknowpreservationmanager
+	thingregisterinterface --> controlknowpreservationmanager
+	thingchecksum --- controlknowpreservationmanager
+	thingfile --- controlknowpreservationmanager
+	thingmanager --- controlknowpreservationmanager
+	thingrisk --- controlincurrisk
+	thingriskinterface --> controlincurrisk
+	thingcopyrightinterface --> controlexpirejurisdictionalcopyrightstatute
+	controlknowcopyrightexpirejurisdictionalcopyrightstatute --> controlexpirejurisdictionalcopyrightstatute
+	thingstatute --- controlexpirejurisdictionalcopyrightstatute
+	thingobject --- controlknowcopyrightobject
+	thingobjectinterface --> controlknowcopyrightobject
+	thingcopyright --- controlknowcopyrightobject
+	thingobjectcomponent --- controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingcomponentinterface --> controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingcopyright --- controlknowcopyrightexpirejurisdictionalcopyrightstatute
+	thingpertinentstatute --- controlknowpertinentstatute
+	thingobjectcomponent --- controlknowpertinentstatute
+	thingcomponentinterface --> controlknowpertinentstatute
+	thingobject --- controlknowpertinentstatuteobject
+	thingpertinentstatute --- controlknowpertinentstatuteobject
+	thingobjectinterface --> controlknowpertinentstatuteobject
+	thingobject --- controlknowobject
+	thingobjectinterface --> controlknowobject
+	thingaccess --- controlknowobjectcomponentlibrarypolicy
+	thingway --- controlknowobjectcomponentlibrarypolicy
+	thingwayinterface --> controlknowobjectcomponentlibrarypolicy
+	thingobjectcomponent --- controlknowobjectcomponentlibrarypolicy
+	thingpolicy --- controlknowobjectcomponentlibrarypolicy
+	thinguse --- controlknowuse
+	thingobjectcomponent --- controlknowuse
+	thingcomponentinterface --> controlknowuse
+	thingobject --- controlknowuseobject
+	thingobjectinterface --> controlknowuseobject
+	thinguse --- controlknowuseobject
+	thingobjectcomponent --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thingstatus --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thinguse --- controlknowuserestrictstatusrestrictstatusobjectcomponent
+	thingcomponentinterface --> controlknowuserestrictstatusrestrictstatusobjectcomponent
+	controlknowuserestrictstatusrestrictstatusobjectcomponent --> controlrestrictstatusobjectcomponent
+	thingstatus --- controlrestrictstatusobjectcomponent
+	thingcomponent --- controlrestrictstatusobjectcomponent
+	thingobjectinterface --> controlrestrictstatusobjectcomponent
+	thingobject --- controlrestrictstatusobjectcomponent
+	thingobject --- controlrestrictrightsstatus
+	thingstatus --- controlrestrictrightsstatus
+	thingcomponentinterface --> controlrestrictrightsstatus
+	controlknowuserestrictstatusrestrictstatusobjectcomponent --> controlrestrictrightsstatus
+	thingdate --- controlprovidedate
+	thingpermission --- controlprovidedate
+	thingpermissioninterface --> controlprovidedate
+	thingrestriction --- controlprovidedaterestriction
+	thingrestrictioninterface --> controlprovidedaterestriction
+	thingdate --- controlprovidedaterestriction
+	controlknowbelongobjectdamsmanagerrepository --> controlrestrict
+	thingpermittedact --- controlknowpermittedact
+	thingactinterface --> controlknowpermittedact
+	thingevent --- controltrackevent
+	thingrecord --- controltrackevent
+	thingdamsinterface --> controltrackevent
+	thingDAMS --- controltrackevent
+	thingevent --- controlcarryknowevent
+	thingeventinterface --> controlcarryknowevent
+	thingoutcome --- controlknowoutcome
+	thingevent --- controlknowoutcome
+	thingeventinterface --> controlknowoutcome
+
+@enduml

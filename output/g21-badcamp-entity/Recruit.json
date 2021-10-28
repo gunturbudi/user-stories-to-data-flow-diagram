@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a sponsor, I want to Link to my sponsorship profile from my job listings, so that recruits can learn more about my organization.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "Link",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsorship profile",
+        "label": "PII"
+      },
+      {
+        "text": "job listings",
+        "label": "PII"
+      },
+      {
+        "text": "recruits",
+        "label": "Data"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      }
+    ]
+  }
+]

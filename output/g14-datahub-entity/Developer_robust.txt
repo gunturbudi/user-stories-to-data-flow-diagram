@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject
+	entity "Data Package" as thingdatapackage #grey
+	entity "Node Lib" as thingnodelib #grey
+	entity "File" as thingfile
+	entity "Datapackage" as thingDataPackage
+	entity "Datapackages Requirement" as thingdatapackagesrequirement
+	actor "Developer" as actordeveloper
+	circle "Exact Version" as thingexactversion
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Use Data\nPackage As\nA Node\nLib In\nProject" as controlusedatapackagenodelib
+	control "List All\nDatapackages Requirements\nFor Project\nIn The\nFile" as controllistdatapackagesrequirements
+	control "Pin The\nExact Versions\nOf Any\nDatapackage" as controlpinexactversion
+
+	thingfile <.. thingproject
+	thingnodelib <.. thingdatapackage
+	thingproject <.. thingnodelib
+	thingproject <.. thingdatapackagesrequirement
+	thingDataPackage *-- thingexactversion
+	actordeveloper --- thingprojectinterface
+	actordeveloper --- thingfileinterface
+	actordeveloper --- thingdatapackageinterface
+	thingdatapackage --- controlusedatapackagenodelib
+	thingnodelib --- controlusedatapackagenodelib
+	thingproject --- controlusedatapackagenodelib
+	thingprojectinterface --> controlusedatapackagenodelib
+	thingdatapackagesrequirement --- controllistdatapackagesrequirements
+	thingfile --- controllistdatapackagesrequirements
+	thingfileinterface --> controllistdatapackagesrequirements
+	thingproject --- controllistdatapackagesrequirements
+	thingexactversion --- controlpinexactversion
+	thingDataPackage --- controlpinexactversion
+	thingdatapackageinterface --> controlpinexactversion
+
+@enduml

@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+2,Perform an inspection of my project.,ellipse,null,null,process
+200,Inspection,shape=partialRectangle,null,null,data_base
+201,Customer,rounded=0,null,null,external_entity
+202,Request Inspection,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Inspection,endArrow=classic,202,200,endArrow=classic
+1000,County inspector,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Project,rounded=0,null,null,external_entity
+1003,Project,endArrow=classic,2,1002,endArrow=classic

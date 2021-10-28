@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Recycling Center\nInformation " color=red];
+201 [label="<f0>  |<f1> Stat " color=red];
+202 [label="<f0>  |<f1> User " color=red];
+203 [label="Superuser" shape=box];
+204 [label="{<f0> 1.0|<f1> Update The Recycling Center Information }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> View Users' Stats }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Reply To User Questions }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+204 -> 200 [label="Recycling Center\nInformation"]
+205 -> 201 [label="Stat"]
+205 -> 202 [label="User"]
+}

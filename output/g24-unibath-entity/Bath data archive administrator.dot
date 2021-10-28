@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Check " ];
+201 [label="<f0>  |<f1> Deposit Dataset " color=red];
+202 [label="<f0>  |<f1> Metadata " color=red];
+203 [label="<f0>  |<f1> Datum " ];
+204 [label="<f0>  |<f1> Entire Archive " ];
+205 [label="<f0>  |<f1> Open Standard " ];
+206 [label="<f0>  |<f1> Deposit " color=red];
+207 [label="<f0>  |<f1> Data Centre " color=red];
+208 [label="<f0>  |<f1> Bath " color=red];
+209 [label="Bath , Data , Archive Administrator" shape=box];
+210 [label="{<f0> 1.0|<f1> Make Some Checks On Deposited Datasets }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Require A Minimum Set Of Metadata }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Approve Scheduled Disposal Of Data }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Query The Entire Archive }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Import Bath Data From An Wholesale, External Data Centre }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Encourage The Use Of Open Standards For Deposit }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Promote The Use Of Open Standards For Deposit }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+209 -> 216
+210 -> 200 [label="Check"]
+210 -> 201 [label="Deposit Dataset"]
+211 -> 202 [label="Metadata"]
+212 -> 203 [label="Datum"]
+213 -> 204 [label="Entire Archive"]
+214 -> 207 [label="Data Centre"]
+214 -> 203 [label="Datum"]
+215 -> 205 [label="Open Standard"]
+215 -> 206 [label="Deposit"]
+216 -> 205 [label="Open Standard"]
+216 -> 206 [label="Deposit"]
+214 -> 208 [label="Bath"]
+}

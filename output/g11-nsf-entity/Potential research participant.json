@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a potential research participant, I want to learn about the research and leave my contact information.",
+    "entities": [
+      {
+        "text": "potential research participant",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "contact information",
+        "label": "PII"
+      }
+    ]
+  }
+]

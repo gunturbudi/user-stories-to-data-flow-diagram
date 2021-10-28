@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsor " color=red];
+201 [label="<f0>  |<f1> Job " color=red];
+202 [label="<f0>  |<f1> Sponsorship Person " color=red];
+203 [label="Anonymoususer" shape=box];
+204 [label="{<f0> 1.0|<f1> Learn }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Posting Jobs As A Sponsor }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Contact Jobs As A Sponsor The Sponsorship Person }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Post my job listing on the badcamp site. }" shape=Mrecord];
+204 -> 4
+1001 [label="<f0>  |<f1> Job listing " color=red];
+4 -> 1001 [label="Job listing"]
+203 -> 204
+203 -> 205
+205 -> 204
+205 -> 201 [label="Job"]
+205 -> 200 [label="Sponsor"]
+206 -> 204
+206 -> 202 [label="Sponsorship Person"]
+206 -> 200 [label="Sponsor"]
+206 -> 201 [label="Job"]
+}

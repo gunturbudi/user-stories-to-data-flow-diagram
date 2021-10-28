@@ -1,0 +1,13 @@
+id,value,style,source,target,type
+2,Learn more about my organization.,ellipse,null,null,process
+200,Sponsorship Profile,shape=partialRectangle,null,null,data_base
+201,Job Listing,shape=partialRectangle,null,null,data_base
+202,Sponsor,rounded=0,null,null,external_entity
+203,Link To Sponsorship Profile From Job Listings,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Sponsorship Profile,endArrow=classic,203,200,endArrow=classic
+207,Job Listing,endArrow=classic,203,201,endArrow=classic
+1000,Recruits,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,2,endArrow=classic
+1002,Organization,rounded=0,null,null,external_entity
+1003,Organization,endArrow=classic,2,1002,endArrow=classic

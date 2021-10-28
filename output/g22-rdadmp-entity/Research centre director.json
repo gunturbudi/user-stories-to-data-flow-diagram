@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a Research Centre Director, I want to receive regular summary reports of research data, so that I understand trends in data use among staff and postgraduate students.",
+    "entities": [
+      {
+        "text": "Research Centre Director",
+        "label": "Data"
+      },
+      {
+        "text": "research data",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "postgraduate students",
+        "label": "Data"
+      }
+    ]
+  }
+]

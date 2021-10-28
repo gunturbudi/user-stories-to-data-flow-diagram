@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Collection" as thingcollection
+	actor "Repository ,\nSupport ,\nTeam Member" as actorrepositorysupportteammember
+	circle "Owner" as thingowner #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "The Collection\nOwner Asked\nBoth Collections" as controlaskcollectionownercollectionto
+	control "Belong To\nBoth Collections" as controlbelongcollection
+	control "Alias An\nItem From\nCollection To\nAnother" as controlaliasitem
+	control "To" as controlto
+	control "Map" as controlmap
+	control "Move A\nCollection" as controlmovecollection
+	control "Rename A\nCollection" as controlrenamecollection
+
+	thingcollection <.. thingitem
+	thingcollection *-- thingowner
+	actorrepositorysupportteammember --- thingcollectioninterface
+	thingowner --- controlaskcollectionownercollectionto
+	thingcollectioninterface --> controlaskcollectionownercollectionto
+	thingcollection --- controlaskcollectionownercollectionto
+	thingcollection --- controlbelongcollection
+	thingcollectioninterface --> controlbelongcollection
+	thingitem --- controlaliasitem
+	thingcollection --- controlaliasitem
+	thingcollectioninterface --> controlaliasitem
+	controlaskcollectionownercollectionto --> controlto
+	thingcollectioninterface --> controlto
+	thingcollection --- controlmovecollection
+	thingcollectioninterface --> controlmovecollection
+	thingcollection --- controlrenamecollection
+	thingcollectioninterface --> controlrenamecollection
+
+@enduml

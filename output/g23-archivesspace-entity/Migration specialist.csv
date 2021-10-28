@@ -1,0 +1,12 @@
+id,value,style,source,target,type
+200,Archon Source,shape=partialRectangle,null,null,data_base
+201,Aspace Record,shape=partialRectangle,null,null,data_base
+202,Record Id,shape=partialRectangle,null,null,data_base
+203,Migration Specialist,rounded=0,null,null,external_entity
+204,Store The At Record Ids In Each Aspace Record,ellipse,null,null,process
+205,Store Archon Source,ellipse,null,null,process
+207,,endArrow=classic,203,204,endArrow=classic
+208,,endArrow=classic,203,205,endArrow=classic
+209,Record Id,endArrow=classic,204,202,endArrow=classic
+210,Aspace Record,endArrow=classic,204,201,endArrow=classic
+211,Archon Source,endArrow=classic,205,200,endArrow=classic

@@ -1,0 +1,117 @@
+id,value,style,source,target,type
+200,App,shape=partialRectangle,null,null,data_base
+201,Type,shape=partialRectangle,null,null,data_base
+202,Option,shape=partialRectangle,null,null,data_base
+203,Runtime,shape=partialRectangle,null,null,data_base
+204,Dataset Type,shape=partialRectangle,null,null,data_base
+205,Archetype,shape=partialRectangle,null,null,data_base
+206,Interface,shape=partialRectangle,null,null,data_base
+207,Explicit Version,shape=partialRectangle,null,null,data_base
+208,Instance,shape=partialRectangle,null,null,data_base
+209,Upgrade Step,shape=partialRectangle,null,null,data_base
+210,Upgrade,shape=partialRectangle,null,null,data_base
+211,Way,shape=partialRectangle,null,null,data_base
+212,Procedure,shape=partialRectangle,null,null,data_base
+213,Compaction,shape=partialRectangle,null,null,data_base
+214,"Administrative ,\nCustom Operation",shape=partialRectangle,null,null,data_base
+215,Dataset,shape=partialRectangle,null,null,data_base
+216,Migration,shape=partialRectangle,null,null,data_base
+217,Dataset Developer,rounded=0,null,null,external_entity
+218,Deploy A Independent Dataset Type From Any App,ellipse,null,null,process
+219,Allow,ellipse,null,null,process
+220,Create Dataset Instances Of That Type,ellipse,null,null,process
+221,Use Dataset Instances Of That Type,ellipse,null,null,process
+222,Have The Dataset Code At Runtime,ellipse,null,null,process
+223,Have The Option,ellipse,null,null,process
+224,Forcing,ellipse,null,null,process
+225,Have An Archetype Helps Properly Package Dataset Type,ellipse,null,null,process
+226,Separate The Interface From The Implementation Of A Dataset Type,ellipse,null,null,process
+227,Assign Explicit Versions To The Code Of A Dataset Type,ellipse,null,null,process
+228,Deploy A New Version Of A Dataset Type,ellipse,null,null,process
+229,Affecting The Dataset Instances Of That Type,ellipse,null,null,process
+230,Explore A Dataset Instance From A Dataset Type A Type Deployed,ellipse,null,null,process
+231,Fail,ellipse,null,null,process
+232,Delete Outdated Versions Of A Dataset Type,ellipse,null,null,process
+233,List All Dataset Instances Use A Dataset Type,ellipse,null,null,process
+234,List All Instances Use A Specific Version Of A Type,ellipse,null,null,process
+235,Implementing An Upgrade Step A Dataset Instance When Upgraded To A New Version Of The Dataset Type,ellipse,null,null,process
+236,Have A Way,ellipse,null,null,process
+237,Reject An Upgrade Of A Dataset Instance To A Newer Version Of,ellipse,null,null,process
+238,Implementing A Migration Procedure Run After An Upgrade Of A Dataset Instance To A New Version Of,ellipse,null,null,process
+239,Implementing A Procedure Run After An Upgrade Of A Instance To A New Version Of Type,ellipse,null,null,process
+240,"Implement Administrative, Custom Operations Such As",ellipse,null,null,process
+241,Rebalance,ellipse,null,null,process
+242,"Implement Administrative, Custom Operations Such As Compaction",ellipse,null,null,process
+244,,endArrow=classic,217,218,endArrow=classic
+245,,endArrow=classic,217,219,endArrow=classic
+246,,endArrow=classic,217,220,endArrow=classic
+247,,endArrow=classic,217,221,endArrow=classic
+248,,endArrow=classic,217,222,endArrow=classic
+249,,endArrow=classic,217,223,endArrow=classic
+250,,endArrow=classic,217,224,endArrow=classic
+251,,endArrow=classic,217,225,endArrow=classic
+252,,endArrow=classic,217,226,endArrow=classic
+253,,endArrow=classic,217,227,endArrow=classic
+254,,endArrow=classic,217,228,endArrow=classic
+255,,endArrow=classic,217,229,endArrow=classic
+256,,endArrow=classic,217,230,endArrow=classic
+257,,endArrow=classic,217,232,endArrow=classic
+258,,endArrow=classic,217,233,endArrow=classic
+259,,endArrow=classic,217,234,endArrow=classic
+260,,endArrow=classic,217,235,endArrow=classic
+261,,endArrow=classic,217,236,endArrow=classic
+262,,endArrow=classic,217,237,endArrow=classic
+263,,endArrow=classic,217,238,endArrow=classic
+264,,endArrow=classic,217,239,endArrow=classic
+265,,endArrow=classic,217,240,endArrow=classic
+266,,endArrow=classic,217,241,endArrow=classic
+267,,endArrow=classic,217,242,endArrow=classic
+268,App,endArrow=classic,218,200,endArrow=classic
+269,Type,endArrow=classic,218,201,endArrow=classic
+270,,endArrow=classic,219,220,endArrow=classic
+271,,endArrow=classic,219,221,endArrow=classic
+272,Type,endArrow=classic,220,201,endArrow=classic
+273,Type,endArrow=classic,221,201,endArrow=classic
+274,Runtime,endArrow=classic,222,203,endArrow=classic
+275,Option,endArrow=classic,223,202,endArrow=classic
+276,,endArrow=classic,224,222,endArrow=classic
+277,,endArrow=classic,224,223,endArrow=classic
+278,Archetype,endArrow=classic,225,205,endArrow=classic
+279,Type,endArrow=classic,225,201,endArrow=classic
+280,Interface,endArrow=classic,226,206,endArrow=classic
+281,Type,endArrow=classic,226,201,endArrow=classic
+282,Explicit Version,endArrow=classic,227,207,endArrow=classic
+283,Type,endArrow=classic,227,201,endArrow=classic
+284,Type,endArrow=classic,228,201,endArrow=classic
+285,,endArrow=classic,229,228,endArrow=classic
+286,Type,endArrow=classic,229,201,endArrow=classic
+287,Instance,endArrow=classic,230,208,endArrow=classic
+288,Type,endArrow=classic,230,201,endArrow=classic
+289,Dataset Type,endArrow=classic,232,204,endArrow=classic
+290,Dataset Type,endArrow=classic,233,204,endArrow=classic
+291,Instance,endArrow=classic,233,208,endArrow=classic
+292,Instance,endArrow=classic,234,208,endArrow=classic
+293,Type,endArrow=classic,234,201,endArrow=classic
+294,,endArrow=classic,235,223,endArrow=classic
+295,Upgrade Step,endArrow=classic,235,209,endArrow=classic
+296,Instance,endArrow=classic,235,208,endArrow=classic
+297,Type,endArrow=classic,235,201,endArrow=classic
+298,,endArrow=classic,236,237,endArrow=classic
+299,Way,endArrow=classic,236,211,endArrow=classic
+300,Upgrade,endArrow=classic,237,210,endArrow=classic
+301,Instance,endArrow=classic,237,208,endArrow=classic
+302,,endArrow=classic,238,223,endArrow=classic
+303,Instance,endArrow=classic,238,208,endArrow=classic
+304,Upgrade,endArrow=classic,238,210,endArrow=classic
+305,Procedure,endArrow=classic,238,212,endArrow=classic
+306,,endArrow=classic,239,223,endArrow=classic
+307,Procedure,endArrow=classic,239,212,endArrow=classic
+308,Type,endArrow=classic,239,201,endArrow=classic
+309,Instance,endArrow=classic,239,208,endArrow=classic
+310,Upgrade,endArrow=classic,239,210,endArrow=classic
+311,,endArrow=classic,240,241,endArrow=classic
+312,"Administrative ,\nCustom Operation",endArrow=classic,240,214,endArrow=classic
+313,"Administrative ,\nCustom Operation",endArrow=classic,242,214,endArrow=classic
+314,Compaction,endArrow=classic,242,213,endArrow=classic
+315,Dataset,endArrow=classic,218,215,endArrow=classic
+336,Migration,endArrow=classic,238,216,endArrow=classic

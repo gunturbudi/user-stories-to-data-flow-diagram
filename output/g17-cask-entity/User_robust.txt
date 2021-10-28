@@ -1,0 +1,156 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Default" as thingdefault
+	entity "Value" as thingvalue
+	entity "Property" as thingproperty
+	entity "Schema" as thingschema
+	entity "Dataset" as thingdataset
+	entity "Uniform Way" as thinguniformway
+	entity "Json String" as thingjsonstring #grey
+	entity "Time" as thingtime
+	entity "Migration Process" as thingmigrationprocess #grey
+	entity "Explore" as thingexplore
+	entity "Effect" as thingeffect
+	entity "Change" as thingchange
+	entity "Dataset Operation" as thingdatasetoperation
+	entity "Datum" as thingdatum
+	entity "Silent Loss" as thingsilentloss #grey
+	entity "Sql" as thingsql #grey
+	actor "User" as actoruser
+	circle "Single Property" as thingsingleproperty
+	circle "Correspond Update" as thingcorrespondingupdate
+	circle "Available ,\nSilent Loss" as thingavailablesilentloss
+	circle "Type" as thingtype #grey
+	circle "Instance" as thinginstance #grey
+	circle "String" as thingstring #grey
+	circle "Configuration" as thingconfiguration #grey
+	circle "Creation" as thingcreation #grey
+	circle "Table" as thingtable #grey
+	circle "Reconfiguration" as thingreconfiguration #grey
+	boundary "Update" as thingupdateexploreuser
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "String\nInterface" as thingstringinterface #grey
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Property\nInterface" as thingpropertyinterface #grey
+	boundary "Explore\nInterface" as thingexploreinterface #grey
+	control "Find Out" as controlfind
+	control "Specify The\nSchema Of\nA Dataset\nIn A\nUniform Way\nAcross All\nDataset Types" as controlspecifyschemauniformway
+	control "Specify Schema\nAs A\nJson String" as controlspecifyschemajsonstring
+	control "Specify Schema\nAs A\nSql Schema\nString" as controlspecifyschemasqlschemastring
+	control "Configure Time\nIn A\nUniform Way\nAcross All\nDataset Types" as controlconfiguretimeliveuniformway
+	control "Live" as controllive
+	control "See The\nProperties Used" as controlseeproperty
+	control "Configure A\nDataset Instance" as controlconfiguredatasetinstance
+	control "Update The\nProperties Of\nA Dataset\nInstance" as controlupdateproperty
+	control "Update A\nSingle Property\nOf A\nDataset Instance" as controlupdatesingleproperty
+	control "Knowing All\nOther Properties" as controlknowupdatesinglepropertyotherproperty
+	control "Remove A\nSingle Property\nOf A\nDataset Instance" as controlremovesingleproperty
+	control "Trigger A\nMigration Process\nFor A\nDataset" as controltriggermigrationprocess
+	control "Specify As\nPart Of\nDataset Configuration\nExplorable" as controlspecifypart
+	control "Specify The\nExplore Schema" as controlspecifyexploreschema
+	control "Enable Explore\nFor A\nDataset Not\nConfigured For\nInitially Explore" as controlenableexplore
+	control "Disable Explore\nFor A\nDataset Configured\nFor Initially\nExplore" as controldisableexplore
+	control "Ensure" as controlensure
+	control "Never Leads\nTo Silent\nLoss Of\nDatum" as controlleadupdateexploreusersilentlossdatum
+	control "Never Leads\nTo Available,\nSilent Loss\nOf Data\nFor Explore" as controlleadupdateexploreuseravailablesilentloss
+
+	thingdataset <.. thingproperty
+	thinginstance <.. thingproperty
+	thingdataset *-- thingschema
+	thingjsonstring *-- thingschema
+	thingstring *-- thingschema
+	thingsql *-- thingschema
+	thingexplore *-- thingschema
+	thinguniformway <.. thingdataset
+	thingexplore <.. thingdataset
+	thingtype <.. thinguniformway
+	thingdataset <.. thinguniformway
+	thinguniformway <.. thingtime
+	thingdataset <.. thingmigrationprocess
+	thingdataset <.. thingexplore
+	thinginstance *-- thingsingleproperty
+	thingdataset *-- thingsingleproperty
+	thingtable *-- thingcorrespondingupdate
+	thingexplore *-- thingavailablesilentloss
+	thingdatum *-- thingavailablesilentloss
+	thingdataset *-- thingtype
+	thingdataset *-- thinginstance
+	thingschema *-- thingstring
+	thingdataset *-- thingconfiguration
+	thingdataset *-- thingcreation
+	thingexplore *-- thingtable
+	thingdataset *-- thingreconfiguration
+	actoruser --- thingupdateexploreuser
+	actoruser --- thingwayinterface
+	actoruser --- thingstringinterface
+	actoruser --- thingschemainterface
+	actoruser --- thingdatasetinterface
+	actoruser --- thingpropertyinterface
+	actoruser --- thingexploreinterface
+	thingschema --- controlspecifyschemauniformway
+	thingdataset --- controlspecifyschemauniformway
+	thinguniformway --- controlspecifyschemauniformway
+	thingwayinterface --> controlspecifyschemauniformway
+	thingjsonstring --- controlspecifyschemajsonstring
+	thingstringinterface --> controlspecifyschemajsonstring
+	thingschema --- controlspecifyschemajsonstring
+	thingstring --- controlspecifyschemasqlschemastring
+	thingschemainterface --> controlspecifyschemasqlschemastring
+	thingschema --- controlspecifyschemasqlschemastring
+	thingtime --- controlconfiguretimeliveuniformway
+	thingdatasetinterface --> controlconfiguretimeliveuniformway
+	thinguniformway --- controlconfiguretimeliveuniformway
+	thingtype --- controlconfiguretimeliveuniformway
+	controlconfiguretimeliveuniformway --> controllive
+	thingdatasetinterface --> controllive
+	thingpropertyinterface --> controlseeproperty
+	thingproperty --- controlseeproperty
+	controlseeproperty --> controlconfiguredatasetinstance
+	thinginstance --- controlconfiguredatasetinstance
+	thingdatasetinterface --> controlconfiguredatasetinstance
+	thingproperty --- controlupdateproperty
+	thinginstance --- controlupdateproperty
+	thingdatasetinterface --> controlupdateproperty
+	thingsingleproperty --- controlupdatesingleproperty
+	controlknowupdatesinglepropertyotherproperty --> controlupdatesingleproperty
+	thinginstance --- controlupdatesingleproperty
+	thingdatasetinterface --> controlupdatesingleproperty
+	thingdataset --- controlupdatesingleproperty
+	thingpropertyinterface --> controlknowupdatesinglepropertyotherproperty
+	thingproperty --- controlknowupdatesinglepropertyotherproperty
+	thingsingleproperty --- controlremovesingleproperty
+	thingdatasetinterface --> controlremovesingleproperty
+	thingdataset --- controlremovesingleproperty
+	controlknowupdatesinglepropertyotherproperty --> controlremovesingleproperty
+	thingmigrationprocess --- controltriggermigrationprocess
+	thingdataset --- controltriggermigrationprocess
+	thingdatasetinterface --> controltriggermigrationprocess
+	thingconfiguration --- controlspecifypart
+	thingdatasetinterface --> controlspecifypart
+	thingexploreinterface --> controlspecifyexploreschema
+	thingschema --- controlspecifyexploreschema
+	thingexplore --- controlenableexplore
+	thingdataset --- controlenableexplore
+	thingdatasetinterface --> controlenableexplore
+	thingdataset --- controldisableexplore
+	thingexplore --- controldisableexplore
+	thingdatasetinterface --> controldisableexplore
+	thingsilentloss --- controlensure
+	thingexplore --- controlensure
+	thingupdateexploreuser --> controlensure
+	thingsilentloss --- controlleadupdateexploreusersilentlossdatum
+	thingdatum --- controlleadupdateexploreusersilentlossdatum
+	thingexplore --- controlleadupdateexploreusersilentlossdatum
+	thingupdateexploreuser --> controlleadupdateexploreusersilentlossdatum
+	controlensure --> controlleadupdateexploreusersilentlossdatum
+	thingupdateexploreuser --> controlleadupdateexploreuseravailablesilentloss
+	thingavailablesilentloss --- controlleadupdateexploreuseravailablesilentloss
+	thingexplore --- controlleadupdateexploreuseravailablesilentloss
+	thingdatum --- controlleadupdateexploreuseravailablesilentloss
+	controlensure --> controlleadupdateexploreuseravailablesilentloss
+
+@enduml

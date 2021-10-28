@@ -1,0 +1,82 @@
+[
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to set up social groups of people with similar diseases.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "set up",
+        "label": "Processing"
+      },
+      {
+        "text": "social groups",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to contact people from my own circle.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "own circle",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a MedicalCaregiver, I want to have ALFRED to remind people to exercise regularly.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "remind",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to present my app to as many people as Possible.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      },
+      {
+        "text": "app",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  }
+]

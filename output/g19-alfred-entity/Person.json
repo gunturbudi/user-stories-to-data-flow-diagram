@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a SocialCaregiver, I want ALFRED to remind me of the things I need to bring to the person I care for.",
+    "entities": [
+      {
+        "text": "SocialCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "remind",
+        "label": "Processing"
+      },
+      {
+        "text": "things",
+        "label": "PII"
+      },
+      {
+        "text": "bring",
+        "label": "Processing"
+      },
+      {
+        "text": "person",
+        "label": "Data"
+      }
+    ]
+  }
+]

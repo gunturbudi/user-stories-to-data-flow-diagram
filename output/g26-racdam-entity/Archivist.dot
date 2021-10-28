@@ -1,0 +1,357 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Right " color=red];
+201 [label="<f0>  |<f1> License Statement " color=red];
+202 [label="<f0>  |<f1> Individual File " color=red];
+203 [label="<f0>  |<f1> File " color=red];
+204 [label="<f0>  |<f1> View " ];
+205 [label="<f0>  |<f1> Restriction " color=red];
+206 [label="<f0>  |<f1> Date " color=red];
+207 [label="<f0>  |<f1> Detailed Restriction " ];
+208 [label="<f0>  |<f1> Ip Address " color=red];
+209 [label="<f0>  |<f1> Access " color=red];
+210 [label="<f0>  |<f1> User " color=red];
+211 [label="<f0>  |<f1> Certain File " color=red];
+212 [label="<f0>  |<f1> Photo " color=red];
+213 [label="<f0>  |<f1> Statement " color=red];
+214 [label="<f0>  |<f1> Information " color=red];
+215 [label="<f0>  |<f1> Digital File " color=red];
+216 [label="<f0>  |<f1> Time " ];
+217 [label="<f0>  |<f1> Online Form " ];
+218 [label="<f0>  |<f1> Archival Material " color=red];
+219 [label="<f0>  |<f1> Single File " color=red];
+220 [label="<f0>  |<f1> Technical Metadata " color=red];
+221 [label="<f0>  |<f1> Digital Object " color=red];
+222 [label="<f0>  |<f1> Researcher " color=red];
+223 [label="<f0>  |<f1> Publication " ];
+224 [label="<f0>  |<f1> Citation " color=red];
+225 [label="<f0>  |<f1> Scan " color=red];
+226 [label="<f0>  |<f1> Image " color=red];
+227 [label="<f0>  |<f1> Document " color=red];
+228 [label="<f0>  |<f1> Unique Identifier " color=red];
+229 [label="<f0>  |<f1> Metadata " color=red];
+230 [label="<f0>  |<f1> Scan File " color=red];
+231 [label="<f0>  |<f1> Level " ];
+232 [label="<f0>  |<f1> Contrast ,\nAutomatic Operation " color=red];
+233 [label="<f0>  |<f1> Manipulation " ];
+234 [label="<f0>  |<f1> Contrast " color=red];
+235 [label="<f0>  |<f1> Educational Visit " ];
+236 [label="<f0>  |<f1> Documentation " color=red];
+237 [label="<f0>  |<f1> Form " color=red];
+238 [label="<f0>  |<f1> Correspondence " color=red];
+239 [label="<f0>  |<f1> Donor " ];
+240 [label="<f0>  |<f1> Available Right " ];
+241 [label="<f0>  |<f1> Email " color=red];
+242 [label="<f0>  |<f1> Specific Object " ];
+243 [label="<f0>  |<f1> Particular User " color=red];
+244 [label="<f0>  |<f1> Unprocessed Material " color=red];
+245 [label="<f0>  |<f1> Available ,\nPossible ,\nArchival ,\nMaterial " color=red];
+246 [label="<f0>  |<f1> Archival Content " color=red];
+247 [label="<f0>  |<f1> Rac Website " ];
+248 [label="<f0>  |<f1> Collection " color=red];
+249 [label="<f0>  |<f1> Keyword " color=red];
+250 [label="<f0>  |<f1> Inventory " ];
+251 [label="<f0>  |<f1> Tag " color=red];
+252 [label="<f0>  |<f1> Drive " ];
+253 [label="<f0>  |<f1> Black " ];
+254 [label="<f0>  |<f1> Color " ];
+255 [label="<f0>  |<f1> White " ];
+256 [label="<f0>  |<f1> Photographer " color=red];
+257 [label="<f0>  |<f1> People " color=red];
+258 [label="<f0>  |<f1> Place " color=red];
+259 [label="<f0>  |<f1> Physical Location " color=red];
+260 [label="<f0>  |<f1> Visual " color=red];
+261 [label="<f0>  |<f1> Rights Status " color=red];
+262 [label="<f0>  |<f1> Preservation Standard " ];
+263 [label="<f0>  |<f1> Research Request " color=red];
+264 [label="<f0>  |<f1> Index Card " color=red];
+265 [label="<f0>  |<f1> Finding Aid " color=red];
+266 [label="<f0>  |<f1> Material Type " color=red];
+267 [label="<f0>  |<f1> End " color=red];
+268 [label="<f0>  |<f1> Edit " ];
+269 [label="<f0>  |<f1> Quality " ];
+270 [label="<f0>  |<f1> Loan " color=red];
+271 [label="<f0>  |<f1> Preservation " color=red];
+272 [label="<f0>  |<f1> Staff " ];
+273 [label="Archivist" shape=box];
+274 [label="{<f0> 1.0|<f1> Apply A License Statement }" shape=Mrecord];
+275 [label="{<f0> 2.0|<f1> Apply Right }" shape=Mrecord];
+276 [label="{<f0> 3.0|<f1> Mark Individual Files }" shape=Mrecord];
+277 [label="{<f0> 4.0|<f1> Mark Groups Of Files }" shape=Mrecord];
+278 [label="{<f0> 5.0|<f1> Restrict A File From View }" shape=Mrecord];
+279 [label="{<f0> 6.0|<f1> Restrict A Group Of Files From View }" shape=Mrecord];
+280 [label="{<f0> 7.0|<f1> Set A Date On Which Restrictions Removed From A File }" shape=Mrecord];
+281 [label="{<f0> 8.0|<f1> Add End Restriction Date Information To Files }" shape=Mrecord];
+282 [label="{<f0> 9.0|<f1> Add Detailed Restrictions To Groups Of Files }" shape=Mrecord];
+283 [label="{<f0> 10.0|<f1> Restrict Access To Some Files By Ip Address }" shape=Mrecord];
+284 [label="{<f0> 11.0|<f1> Restrict Access To Certain Files By User }" shape=Mrecord];
+285 [label="{<f0> 12.0|<f1> Know }" shape=Mrecord];
+286 [label="{<f0> 13.0|<f1> Select Statement }" shape=Mrecord];
+287 [label="{<f0> 14.0|<f1> Select Existing Rights Statuses }" shape=Mrecord];
+288 [label="{<f0> 15.0|<f1> Redact Information In Digital Files For A Period Of Time }" shape=Mrecord];
+289 [label="{<f0> 16.0|<f1> Licensing Archival Material }" shape=Mrecord];
+290 [label="{<f0> 17.0|<f1> Have An Online Form }" shape=Mrecord];
+291 [label="{<f0> 18.0|<f1> Batch Edit Metadata About Files }" shape=Mrecord];
+292 [label="{<f0> 19.0|<f1> Upload A Single File }" shape=Mrecord];
+293 [label="{<f0> 20.0|<f1> Upload Groups Of Files }" shape=Mrecord];
+294 [label="{<f0> 21.0|<f1> Create Access Copies Of Files }" shape=Mrecord];
+295 [label="{<f0> 22.0|<f1> Generate Technical Metadata }" shape=Mrecord];
+296 [label="{<f0> 23.0|<f1> Distinguish Between Digital Objects To Only Those For Access Purposes }" shape=Mrecord];
+297 [label="{<f0> 24.0|<f1> Distinguish Between Digital Objects To Preservation Standards }" shape=Mrecord];
+298 [label="{<f0> 25.0|<f1> Link Electronic Versions Of Researchers' Publications To Citations }" shape=Mrecord];
+299 [label="{<f0> 26.0|<f1> Upload Scans Of Images Answering Research Requests }" shape=Mrecord];
+300 [label="{<f0> 27.0|<f1> Create Quality Scans Of Images }" shape=Mrecord];
+301 [label="{<f0> 28.0|<f1> Create Scans Of Document }" shape=Mrecord];
+302 [label="{<f0> 29.0|<f1> Create Access Derivatives Of Digital Objects }" shape=Mrecord];
+303 [label="{<f0> 30.0|<f1> Assign Unique Identifiers }" shape=Mrecord];
+304 [label="{<f0> 31.0|<f1> Embed Metadata In File Headers }" shape=Mrecord];
+305 [label="{<f0> 32.0|<f1> Rotate Images }" shape=Mrecord];
+306 [label="{<f0> 33.0|<f1> Apply Level }" shape=Mrecord];
+307 [label="{<f0> 34.0|<f1> Apply Contrast, Automatic Operations To A Scanned File }" shape=Mrecord];
+308 [label="{<f0> 35.0|<f1> Perform Contrast }" shape=Mrecord];
+309 [label="{<f0> 36.0|<f1> Perform Manually Other Manipulation }" shape=Mrecord];
+310 [label="{<f0> 37.0|<f1> Perform Level }" shape=Mrecord];
+311 [label="{<f0> 38.0|<f1> Manage Scans Of Archival Material For Educational Visits }" shape=Mrecord];
+312 [label="{<f0> 39.0|<f1> Manage Documentation Including Correspondence }" shape=Mrecord];
+313 [label="{<f0> 40.0|<f1> Manage Documentation Including Form }" shape=Mrecord];
+314 [label="{<f0> 41.0|<f1> Manage Loan Documentation Including Preservation Photos }" shape=Mrecord];
+315 [label="{<f0> 42.0|<f1> Make Information About Available Rights To Donor }" shape=Mrecord];
+316 [label="{<f0> 43.0|<f1> Make Information About Available Rights To Researchers }" shape=Mrecord];
+317 [label="{<f0> 44.0|<f1> Ensure }" shape=Mrecord];
+318 [label="{<f0> 45.0|<f1> Track Use Of A Photo }" shape=Mrecord];
+319 [label="{<f0> 46.0|<f1> See }" shape=Mrecord];
+320 [label="{<f0> 47.0|<f1> Provide Access To Digital Copies Of Unprocessed Material }" shape=Mrecord];
+321 [label="{<f0> 48.0|<f1> Make As Available, Possible, Archival, Much Material For Use }" shape=Mrecord];
+322 [label="{<f0> 49.0|<f1> Use Archival Content On The Rac Website }" shape=Mrecord];
+323 [label="{<f0> 50.0|<f1> Browse Through Files In A Collection }" shape=Mrecord];
+324 [label="{<f0> 51.0|<f1> Search All Files By Keyword }" shape=Mrecord];
+325 [label="{<f0> 52.0|<f1> Upload Inventories }" shape=Mrecord];
+326 [label="{<f0> 53.0|<f1> Search By Tag }" shape=Mrecord];
+327 [label="{<f0> 54.0|<f1> Access The Digital Files On The Drive }" shape=Mrecord];
+328 [label="{<f0> 55.0|<f1> Have Electronic Versions Of The Available Collection Files For Staff Use }" shape=Mrecord];
+329 [label="{<f0> 56.0|<f1> Distinguish Between Images In Color }" shape=Mrecord];
+330 [label="{<f0> 57.0|<f1> Distinguish Between Images In Black }" shape=Mrecord];
+331 [label="{<f0> 58.0|<f1> Distinguish Between Images In White }" shape=Mrecord];
+332 [label="{<f0> 59.0|<f1> Access Inventories For Unprocessed Collections }" shape=Mrecord];
+333 [label="{<f0> 60.0|<f1> Search Images By Photographer }" shape=Mrecord];
+334 [label="{<f0> 61.0|<f1> Search Images By Place The Photo Taken }" shape=Mrecord];
+335 [label="{<f0> 62.0|<f1> Search Index Cards }" shape=Mrecord];
+336 [label="{<f0> 63.0|<f1> Search Public, Other Finding Aid }" shape=Mrecord];
+337 [label="{<f0> 64.0|<f1> View Collection Files }" shape=Mrecord];
+338 [label="{<f0> 65.0|<f1> View Physical Locations For Archival Material }" shape=Mrecord];
+339 [label="{<f0> 66.0|<f1> Find Files Not Publicly Made }" shape=Mrecord];
+340 [label="{<f0> 67.0|<f1> Access Metadata Representations Of Index Cards }" shape=Mrecord];
+341 [label="{<f0> 68.0|<f1> Access Visual }" shape=Mrecord];
+342 [label="{<f0> 69.0|<f1> Search Individual Material Types }" shape=Mrecord];
+343 [label="{<f0> 70.0|<f1> Uploading An Image }" shape=Mrecord];
+71 [label="{<f0> 71.0|<f1> Improve on results from automated tools. }" shape=Mrecord];
+308 -> 71
+1001 [label="<f0>  |<f1> Results " color=red];
+71 -> 1001 [label="Results"]
+72 [label="{<f0> 72.0|<f1> Track use of assets. }" shape=Mrecord];
+273 -> 72
+1004 [label="<f0>  |<f1> Use of assets " color=red];
+72 -> 1004 [label="Use of assets"]
+73 [label="{<f0> 73.0|<f1> Integrate our collections into our web presence. }" shape=Mrecord];
+322 -> 73
+1007 [label="<f0>  |<f1> Collections " color=red];
+73 -> 1007 [label="Collections"]
+74 [label="{<f0> 74.0|<f1> Gain background information for processing a collection. }" shape=Mrecord];
+337 -> 74
+1010 [label="<f0>  |<f1> Background information " color=red];
+74 -> 1010 [label="Background information"]
+75 [label="{<f0> 75.0|<f1> Assist researchers. }" shape=Mrecord];
+340 -> 75
+75 -> 214  [label="Information"]
+76 [label="{<f0> 76.0|<f1> Find images when i don't have any metadata. }" shape=Mrecord];
+343 -> 76
+1015 [label="<f0>  |<f1> Images " color=red];
+76 -> 1015 [label="Images"]
+76 -> 229  [label="Metadata"]
+273 -> 274
+273 -> 275
+273 -> 276
+273 -> 277
+273 -> 278
+273 -> 279
+273 -> 280
+273 -> 281
+273 -> 282
+273 -> 283
+273 -> 284
+273 -> 286
+273 -> 287
+273 -> 288
+273 -> 289
+273 -> 290
+273 -> 291
+273 -> 292
+273 -> 293
+273 -> 294
+273 -> 295
+273 -> 296
+273 -> 297
+273 -> 298
+273 -> 299
+273 -> 300
+273 -> 301
+273 -> 302
+273 -> 303
+273 -> 304
+273 -> 305
+273 -> 306
+273 -> 307
+273 -> 308
+273 -> 309
+273 -> 310
+273 -> 311
+273 -> 312
+273 -> 313
+273 -> 314
+273 -> 315
+273 -> 316
+273 -> 318
+273 -> 320
+273 -> 321
+273 -> 322
+273 -> 323
+273 -> 324
+273 -> 325
+273 -> 326
+273 -> 327
+273 -> 328
+273 -> 329
+273 -> 330
+273 -> 331
+273 -> 332
+273 -> 333
+273 -> 334
+273 -> 335
+273 -> 336
+273 -> 337
+273 -> 338
+273 -> 339
+273 -> 340
+273 -> 341
+273 -> 342
+273 -> 343
+274 -> 201 [label="License Statement"]
+275 -> 200 [label="Right"]
+276 -> 202 [label="Individual File"]
+277 -> 203 [label="File"]
+278 -> 204 [label="View"]
+278 -> 203 [label="File"]
+279 -> 203 [label="File"]
+279 -> 204 [label="View"]
+280 -> 206 [label="Date"]
+280 -> 205 [label="Restriction"]
+280 -> 203 [label="File"]
+281 -> 203 [label="File"]
+281 -> 214 [label="Information"]
+282 -> 207 [label="Detailed Restriction"]
+282 -> 203 [label="File"]
+283 -> 209 [label="Access"]
+283 -> 208 [label="Ip Address"]
+283 -> 203 [label="File"]
+284 -> 211 [label="Certain File"]
+284 -> 210 [label="User"]
+284 -> 209 [label="Access"]
+286 -> 213 [label="Statement"]
+287 -> 261 [label="Rights Status"]
+288 -> 214 [label="Information"]
+288 -> 215 [label="Digital File"]
+288 -> 216 [label="Time"]
+289 -> 290
+289 -> 218 [label="Archival Material"]
+290 -> 217 [label="Online Form"]
+291 -> 203 [label="File"]
+291 -> 229 [label="Metadata"]
+292 -> 219 [label="Single File"]
+293 -> 203 [label="File"]
+294 -> 203 [label="File"]
+295 -> 220 [label="Technical Metadata"]
+296 -> 221 [label="Digital Object"]
+297 -> 221 [label="Digital Object"]
+297 -> 262 [label="Preservation Standard"]
+298 -> 223 [label="Publication"]
+298 -> 224 [label="Citation"]
+299 -> 225 [label="Scan"]
+299 -> 226 [label="Image"]
+299 -> 263 [label="Research Request"]
+300 -> 226 [label="Image"]
+300 -> 225 [label="Scan"]
+301 -> 227 [label="Document"]
+301 -> 225 [label="Scan"]
+302 -> 221 [label="Digital Object"]
+303 -> 228 [label="Unique Identifier"]
+304 -> 229 [label="Metadata"]
+305 -> 226 [label="Image"]
+306 -> 231 [label="Level"]
+307 -> 232 [label="Contrast ,\nAutomatic Operation"]
+307 -> 230 [label="Scan File"]
+308 -> 234 [label="Contrast"]
+309 -> 233 [label="Manipulation"]
+310 -> 231 [label="Level"]
+311 -> 218 [label="Archival Material"]
+311 -> 235 [label="Educational Visit"]
+311 -> 225 [label="Scan"]
+312 -> 238 [label="Correspondence"]
+312 -> 236 [label="Documentation"]
+313 -> 236 [label="Documentation"]
+313 -> 237 [label="Form"]
+314 -> 236 [label="Documentation"]
+314 -> 212 [label="Photo"]
+315 -> 239 [label="Donor"]
+315 -> 240 [label="Available Right"]
+315 -> 214 [label="Information"]
+316 -> 240 [label="Available Right"]
+316 -> 214 [label="Information"]
+316 -> 222 [label="Researcher"]
+318 -> 212 [label="Photo"]
+320 -> 244 [label="Unprocessed Material"]
+320 -> 209 [label="Access"]
+321 -> 245 [label="Available ,\nPossible ,\nArchival ,\nMaterial"]
+322 -> 246 [label="Archival Content"]
+322 -> 247 [label="Rac Website"]
+323 -> 248 [label="Collection"]
+323 -> 203 [label="File"]
+324 -> 249 [label="Keyword"]
+324 -> 203 [label="File"]
+325 -> 250 [label="Inventory"]
+326 -> 251 [label="Tag"]
+327 -> 252 [label="Drive"]
+327 -> 215 [label="Digital File"]
+328 -> 203 [label="File"]
+329 -> 254 [label="Color"]
+329 -> 226 [label="Image"]
+330 -> 253 [label="Black"]
+330 -> 226 [label="Image"]
+331 -> 255 [label="White"]
+331 -> 226 [label="Image"]
+332 -> 250 [label="Inventory"]
+332 -> 248 [label="Collection"]
+333 -> 256 [label="Photographer"]
+333 -> 226 [label="Image"]
+333 -> 200 [label="Right"]
+333 -> 257 [label="People"]
+334 -> 258 [label="Place"]
+334 -> 212 [label="Photo"]
+334 -> 226 [label="Image"]
+335 -> 264 [label="Index Card"]
+336 -> 265 [label="Finding Aid"]
+337 -> 203 [label="File"]
+338 -> 259 [label="Physical Location"]
+338 -> 218 [label="Archival Material"]
+339 -> 203 [label="File"]
+340 -> 264 [label="Index Card"]
+341 -> 260 [label="Visual"]
+342 -> 266 [label="Material Type"]
+343 -> 333
+343 -> 226 [label="Image"]
+281 -> 267 [label="End"]
+291 -> 268 [label="Edit"]
+300 -> 269 [label="Quality"]
+314 -> 270 [label="Loan"]
+297 -> 271 [label="Preservation"]
+328 -> 272 [label="Staff"]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As a trainer, I want to list my upcoming classes in my profile and include a link to a detailed page about each, so that prospective attendees can find my courses.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "upcoming classes",
+        "label": "PII"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      },
+      {
+        "text": "prospective attendees",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "courses",
+        "label": "PII"
+      }
+    ]
+  }
+]

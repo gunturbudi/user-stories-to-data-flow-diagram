@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Compliance " ];
+201 [label="<f0>  |<f1> Fundersâ€ Rule " ];
+202 [label="Research , Support Officer" shape=box];
+203 [label="{<f0> 1.0|<f1> Ensure Compliance To The Fundersâ€ Rules }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Compliance"]
+203 -> 201 [label="Fundersâ€ Rule"]
+}

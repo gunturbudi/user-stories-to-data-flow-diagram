@@ -1,0 +1,68 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Experience " color=red];
+201 [label="<f0>  |<f1> Volunteer " ];
+202 [label="<f0>  |<f1> Classification " ];
+203 [label="<f0>  |<f1> Weight " color=red];
+204 [label="<f0>  |<f1> Text " color=red];
+205 [label="<f0>  |<f1> Video " color=red];
+206 [label="<f0>  |<f1> Image " color=red];
+207 [label="<f0>  |<f1> Education " color=red];
+208 [label="<f0>  |<f1> Subject " color=red];
+209 [label="<f0>  |<f1> Interesting Comment " color=red];
+210 [label="<f0>  |<f1> Previous Experience " color=red];
+211 [label="<f0>  |<f1> Different Project " ];
+212 [label="Zooniverse Admin" shape=box];
+213 [label="{<f0> 1.0|<f1> Identify Volunteer Types }" shape=Mrecord];
+214 [label="{<f0> 2.0|<f1> Assess The Probability Of A Volunteer’s Classification On Experience }" shape=Mrecord];
+215 [label="{<f0> 3.0|<f1> Assess Weight }" shape=Mrecord];
+216 [label="{<f0> 4.0|<f1> Know }" shape=Mrecord];
+217 [label="{<f0> 5.0|<f1> Interrupt A Volunteer }" shape=Mrecord];
+218 [label="{<f0> 6.0|<f1> Interrupt A Volunteer With An Image }" shape=Mrecord];
+219 [label="{<f0> 7.0|<f1> Interrupt A Volunteer With A Video }" shape=Mrecord];
+220 [label="{<f0> 8.0|<f1> Educate A Volunteer }" shape=Mrecord];
+221 [label="{<f0> 9.0|<f1> Educate A Volunteer With A Video }" shape=Mrecord];
+222 [label="{<f0> 10.0|<f1> Educate A Volunteer With An Image }" shape=Mrecord];
+223 [label="{<f0> 11.0|<f1> Which Piece Of Education Give To A Volunteer }" shape=Mrecord];
+224 [label="{<f0> 12.0|<f1> What Say To A Volunteer }" shape=Mrecord];
+225 [label="{<f0> 13.0|<f1> Recommend Different Projects To Volunteers On Previous Experiences }" shape=Mrecord];
+212 -> 213
+212 -> 214
+212 -> 215
+212 -> 216
+212 -> 216
+212 -> 217
+212 -> 220
+212 -> 223
+212 -> 224
+212 -> 225
+214 -> 202 [label="Classification"]
+214 -> 200 [label="Experience"]
+215 -> 203 [label="Weight"]
+216 -> 223
+216 -> 224
+217 -> 216
+217 -> 201 [label="Volunteer"]
+217 -> 204 [label="Text"]
+218 -> 216
+218 -> 206 [label="Image"]
+218 -> 201 [label="Volunteer"]
+219 -> 216
+219 -> 205 [label="Video"]
+219 -> 201 [label="Volunteer"]
+220 -> 216
+220 -> 201 [label="Volunteer"]
+220 -> 204 [label="Text"]
+221 -> 216
+221 -> 205 [label="Video"]
+221 -> 201 [label="Volunteer"]
+222 -> 216
+222 -> 206 [label="Image"]
+222 -> 201 [label="Volunteer"]
+223 -> 207 [label="Education"]
+223 -> 201 [label="Volunteer"]
+224 -> 201 [label="Volunteer"]
+225 -> 211 [label="Different Project"]
+225 -> 210 [label="Previous Experience"]
+225 -> 201 [label="Volunteer"]
+}

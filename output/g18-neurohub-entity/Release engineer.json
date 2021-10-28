@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a release engineer, I want to call a script to execute acceptance tests against a Neurohub installation and report back the results.",
+    "entities": [
+      {
+        "text": "release engineer",
+        "label": "Data"
+      },
+      {
+        "text": "call",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a release engineer, I want to configure nightly builds that automatically perform a Neurohub installation on a virgin operating system, execute tests and report back results, without requiring any manual input/interaction.",
+    "entities": [
+      {
+        "text": "release engineer",
+        "label": "Data"
+      },
+      {
+        "text": "configure",
+        "label": "Processing"
+      },
+      {
+        "text": "execute tests",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      }
+    ]
+  }
+]

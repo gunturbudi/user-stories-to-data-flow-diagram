@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a site visitor, I want to email news items to the editor, so that they can be considered for publication.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "news items",
+        "label": "PII"
+      },
+      {
+        "text": "editor",
+        "label": "Data"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+id,value,style,source,target,type
+200,Sortable Spot,shape=partialRectangle,null,null,data_base
+201,Particular Author,shape=partialRectangle,null,null,data_base
+202,Paper,shape=partialRectangle,null,null,data_base
+203,Influential Judge,shape=partialRectangle,null,null,data_base
+204,Legal Thinker,shape=partialRectangle,null,null,data_base
+205,Initial Scholarship,shape=partialRectangle,null,null,data_base
+206,Insight,shape=partialRectangle,null,null,data_base
+207,Thesis,shape=partialRectangle,null,null,data_base
+208,Academicresearcher,rounded=0,null,null,external_entity
+209,Find The Works Of A Particular Author In Easily Sortable Spot,ellipse,null,null,process
+210,Gain Insight Initial Scholarship How Started,ellipse,null,null,process
+212,,endArrow=classic,208,209,endArrow=classic
+213,,endArrow=classic,208,210,endArrow=classic
+214,Particular Author,endArrow=classic,209,201,endArrow=classic
+215,Sortable Spot,endArrow=classic,209,200,endArrow=classic
+216,Insight,endArrow=classic,210,206,endArrow=classic
+217,Initial Scholarship,endArrow=classic,210,205,endArrow=classic

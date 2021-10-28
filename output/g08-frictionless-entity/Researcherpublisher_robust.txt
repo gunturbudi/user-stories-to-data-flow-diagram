@@ -1,0 +1,76 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	entity "Way" as thingway
+	entity "Zenodo" as thingzenodo
+	entity "Integration" as thingintegration
+	entity "Funding" as thingfunding
+	entity "Dataset" as thinggivendataset
+	entity "Click" as thingclick
+	entity "Dataset" as thingdataset
+	entity "Doi" as thingdoi
+	actor "Researcherpublisher" as actorResearcherPublisher
+	circle "Creation" as thingcreation
+	circle "Minimum" as thingminimum
+	circle "Package Profile" as thingpackageprofile #grey
+	circle "Package" as thingpackage #grey
+	boundary "Datum" as thingdatumResearcherPublisher
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "Zenodo\nInterface" as thingzenodointerface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Click\nInterface" as thingclickinterface #grey
+	control "Know" as controlknowconformdatumResearcherPublisherdatapackageprofile
+	control "Conforms To\nData Package\nProfile" as controlconformdatumResearcherPublisherdatapackageprofile
+	control "Understand The\nWays In\nWhich Data\nIs Invalid" as controlunderstandway
+	control "Provided With\nAn Integration\nWith Zenodo" as controlprovideintegration
+	control "Specify The\nFunding Contributed\nTo The\nCreation Of\nA Given\nDataset" as controlspecifyfunding
+	control "Publish Data\nPackages" as controlpublishdatapackagesckan
+	control "Ckan" as controlckan
+	control "Provided Validate\nData With\nA Minimum\nOf Clicks" as controlprovidedatumminimum
+	control "Add A\nDoi To\nA Dataset" as controladddoidataset
+
+	thingminimum <.. thingdata
+	thingdata <.. thingway
+	thingzenodo <.. thingintegration
+	thingcreation <.. thingfunding
+	thingdataset <.. thingdoi
+	thinggivendataset *-- thingcreation
+	thingclick *-- thingminimum
+	thingdata *-- thingpackageprofile
+	thingdata *-- thingpackage
+	actorResearcherPublisher --- thingdatumResearcherPublisher
+	actorResearcherPublisher --- thingdatainterface
+	actorResearcherPublisher --- thingzenodointerface
+	actorResearcherPublisher --- thingdatasetinterface
+	actorResearcherPublisher --- thingclickinterface
+	thingdatumResearcherPublisher --> controlknowconformdatumResearcherPublisherdatapackageprofile
+	controlknowconformdatumResearcherPublisherdatapackageprofile --> controlconformdatumResearcherPublisherdatapackageprofile
+	thingdatumResearcherPublisher --> controlconformdatumResearcherPublisherdatapackageprofile
+	thingpackageprofile --- controlconformdatumResearcherPublisherdatapackageprofile
+	thingdata --- controlconformdatumResearcherPublisherdatapackageprofile
+	thingway --- controlunderstandway
+	thingdata --- controlunderstandway
+	thingdatainterface --> controlunderstandway
+	thingintegration --- controlprovideintegration
+	thingzenodo --- controlprovideintegration
+	thingzenodointerface --> controlprovideintegration
+	thingfunding --- controlspecifyfunding
+	thingcreation --- controlspecifyfunding
+	thinggivendataset --- controlspecifyfunding
+	thingdatasetinterface --> controlspecifyfunding
+	thingpackage --- controlpublishdatapackagesckan
+	thingdatainterface --> controlpublishdatapackagesckan
+	controlpublishdatapackagesckan --> controlckan
+	thingdatainterface --> controlckan
+	thingminimum --- controlprovidedatumminimum
+	thingclick --- controlprovidedatumminimum
+	thingclickinterface --> controlprovidedatumminimum
+	thingdata --- controlprovidedatumminimum
+	thingdoi --- controladddoidataset
+	thingdataset --- controladddoidataset
+	thingdatasetinterface --> controladddoidataset
+
+@enduml

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Logo,shape=partialRectangle,null,null,data_base
+201,Sponsors Page,shape=partialRectangle,null,null,data_base
+202,Corporatesponsor,rounded=0,null,null,external_entity
+203,Display Logo On A Corporate Sponsors Page,ellipse,null,null,process
+204,Make,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,Logo,endArrow=classic,203,200,endArrow=classic
+208,Sponsors Page,endArrow=classic,203,201,endArrow=classic

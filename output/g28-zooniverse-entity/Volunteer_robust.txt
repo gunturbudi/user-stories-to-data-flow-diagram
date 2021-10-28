@@ -1,0 +1,106 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Experience" as thingexperience
+	entity "Volunteer" as thingvolunteer
+	entity "Classification" as thingclassification
+	entity "Weight" as thingweight
+	entity "Text" as thingtext
+	entity "Video" as thingvideo
+	entity "Image" as thingimage
+	entity "Education" as thingeducation
+	entity "Subject" as thingsubject
+	entity "Interesting Comment" as thinginterestingcomment
+	entity "Previous Experience" as thingpreviousexperience
+	entity "Different Project" as thingdifferentproject
+	actor "Zooniverse Admin" as actorzooniverseadmin
+	circle "Probability" as thingprobability
+	circle "Piece" as thingpiece
+	circle "Type" as thingtype #grey
+	boundary "Zoonibot" as thingzoonibotzooniverseadmin
+	boundary "Volunteer\nInterface" as thingvolunteerinterface #grey
+	boundary "Experience\nInterface" as thingexperienceinterface #grey
+	boundary "Weight\nInterface" as thingweightinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	control "Identify Volunteer\nTypes" as controlidentifyvolunteertypes
+	control "Assess The\nProbability Of\nA Volunteer’s\nClassification On\nExperience" as controlassessprobability
+	control "Assess Weight" as controlassessweight
+	control "Know" as controlknow
+	control "Interrupt A\nVolunteer" as controlinterruptknowvolunteer
+	control "Interrupt A\nVolunteer With\nAn Image" as controlinterruptknowmoinsPRONmoinsvolunteerimage
+	control "Interrupt A\nVolunteer With\nA Video" as controlinterruptknowmoinsPRONmoinsvolunteervideo
+	control "Educate A\nVolunteer" as controleducateknowvolunteer
+	control "Educate A\nVolunteer With\nA Video" as controleducateknowmoinsPRONmoinsvolunteervideo
+	control "Educate A\nVolunteer With\nAn Image" as controleducateknowmoinsPRONmoinsvolunteerimage
+	control "Which Piece\nOf Education\nGive To\nA Volunteer" as controlgivepiecevolunteer
+	control "What Say\nTo A\nVolunteer" as controlsaywhatzoonibotzooniverseadminvolunteer
+	control "Recommend Different\nProjects To\nVolunteers On\nPrevious Experiences" as controlrecommenddifferentprojectvolunteer
+
+	thingtext <.. thingvolunteer
+	thingpreviousexperience <.. thingvolunteer
+	thingimage <.. thingvolunteer
+	thingvideo <.. thingvolunteer
+	thingvolunteer <.. thingclassification
+	thingexperience <.. thingclassification
+	thingvolunteer <.. thingeducation
+	thingsubject <.. thinginterestingcomment
+	thingvolunteer <.. thingdifferentproject
+	thingclassification *-- thingprobability
+	thingexperience *-- thingprobability
+	thingeducation *-- thingpiece
+	thingvolunteer *-- thingtype
+	actorzooniverseadmin --- thingzoonibotzooniverseadmin
+	actorzooniverseadmin --- thingvolunteerinterface
+	actorzooniverseadmin --- thingexperienceinterface
+	actorzooniverseadmin --- thingweightinterface
+	thingtype --- controlidentifyvolunteertypes
+	thingvolunteerinterface --> controlidentifyvolunteertypes
+	thingprobability --- controlassessprobability
+	thingclassification --- controlassessprobability
+	thingexperience --- controlassessprobability
+	thingexperienceinterface --> controlassessprobability
+	thingweight --- controlassessweight
+	thingweightinterface --> controlassessweight
+	controlinterruptknowvolunteer --> controlknow
+	controleducateknowvolunteer --> controlknow
+	thingvolunteerinterface --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteervideo --> controlknow
+	controlinterruptknowmoinsPRONmoinsvolunteerimage --> controlknow
+	controleducateknowmoinsPRONmoinsvolunteerimage --> controlknow
+	controleducateknowmoinsPRONmoinsvolunteervideo --> controlknow
+	thingzoonibotzooniverseadmin --> controlknow
+	thingvolunteer --- controlinterruptknowvolunteer
+	thingtext --- controlinterruptknowvolunteer
+	thingvolunteerinterface --> controlinterruptknowvolunteer
+	thingimage --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingimageinterface --> controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteerimage
+	thingvideo --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvideointerface --> controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controlinterruptknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controleducateknowvolunteer
+	thingtext --- controleducateknowvolunteer
+	thingvolunteerinterface --> controleducateknowvolunteer
+	thingvideo --- controleducateknowmoinsPRONmoinsvolunteervideo
+	thingvideointerface --> controleducateknowmoinsPRONmoinsvolunteervideo
+	thingvolunteer --- controleducateknowmoinsPRONmoinsvolunteervideo
+	thingimage --- controleducateknowmoinsPRONmoinsvolunteerimage
+	thingimageinterface --> controleducateknowmoinsPRONmoinsvolunteerimage
+	thingvolunteer --- controleducateknowmoinsPRONmoinsvolunteerimage
+	thingpiece --- controlgivepiecevolunteer
+	thingeducation --- controlgivepiecevolunteer
+	thingvolunteer --- controlgivepiecevolunteer
+	thingvolunteerinterface --> controlgivepiecevolunteer
+	controlknow --> controlgivepiecevolunteer
+	thingzoonibotzooniverseadmin --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingvolunteer --- controlsaywhatzoonibotzooniverseadminvolunteer
+	controlknow --> controlsaywhatzoonibotzooniverseadminvolunteer
+	thingdifferentproject --- controlrecommenddifferentprojectvolunteer
+	thingpreviousexperience --- controlrecommenddifferentprojectvolunteer
+	thingvolunteer --- controlrecommenddifferentprojectvolunteer
+	thingexperienceinterface --> controlrecommenddifferentprojectvolunteer
+
+@enduml

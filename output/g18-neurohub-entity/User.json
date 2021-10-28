@@ -1,0 +1,832 @@
+[
+  {
+    "text": "As a user, I want to navigate forwards and backwards between log books and log book pages without having to use my browser's back button.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "navigate",
+        "label": "Processing"
+      },
+      {
+        "text": "log books",
+        "label": "PII"
+      },
+      {
+        "text": "log book pages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to upload large files of over 1GB in size.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to assign tags to files that I have uploaded.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "tags",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to assign bespoke information to a file dependent on its type.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "bespoke information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to filter the files I get from search results based on their  type.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "filter",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "search results",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to use the tags that I use are part of a controlled vocabulary.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "tags",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to make uploaded data files to be non-modifiable.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "uploaded data files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to make predicated links between files.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "predicated links",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to restrict what can be entered to a metadata field.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "restrict",
+        "label": "Processing"
+      },
+      {
+        "text": "entered",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have files I might accidentally delete to be restorable.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "restorable",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to revert to an older version of an uploaded file.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "revert",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have a visual way of viewing particular files uploaded over a time period.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "viewing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to associate together files involved in a experiment.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to enter metadata / describe an experiment protocol before a file is even created.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "enter",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "experiment protocol",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As lab administrator, I want to have increased access to the system to support regular users.",
+    "entities": [
+      {
+        "text": "lab administrator",
+        "label": "Data"
+      },
+      {
+        "text": "increased access",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to link together experimental runs to build an experiment.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "experimental runs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to capture the same metadata for each file created in an experimental run.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "capture",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search for and download human-readable experimental protocols.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to modify or branch an experimental protocol, whilst retaining the original.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "modify",
+        "label": "Processing"
+      },
+      {
+        "text": "branch",
+        "label": "Processing"
+      },
+      {
+        "text": "experimental protocol",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view how an experimental protocol has evolved over time.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to create a protocol and assign metadata to any stag.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to prove definitively that I created a page on a certain date.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to manage the references / papers I have investigated.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "references",
+        "label": "PII"
+      },
+      {
+        "text": "papers",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search specifically for files rather than log book pages.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "log book pages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to limit my search to a particular set of log books.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "limit",
+        "label": "Processing"
+      },
+      {
+        "text": "search",
+        "label": "PII"
+      },
+      {
+        "text": "log books",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to limit my search results to one or more log book sections from one or more log books.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "limit",
+        "label": "Processing"
+      },
+      {
+        "text": "search results",
+        "label": "PII"
+      },
+      {
+        "text": "log book sections",
+        "label": "PII"
+      },
+      {
+        "text": "log books",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to download files directly from the search results page.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to see the provenance of the page as part of the search results.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to attach multiple files at once to a log book page.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to download multiple files from the search results in one go.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "search results",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to draw tables using HTML tags as part of the content of a log book page.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "draw",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to store worm behaviour videos with an encoding that can be analysed by the worm analysis software written by Christopher James.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "worm behaviour videos",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have the system to also forward important news items to an external mailing list.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "forward",
+        "label": "Processing"
+      },
+      {
+        "text": "news items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view and update an inventory of of the equipment and consumables that are present in the centre.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have a spreadsheet hosted within the Neurohub Web page, so that I can edit and calculate costs collaboratively with others while working on the proposal.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have the option to tell Neurohub to push posted content to my Twitter feed at the same time.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "push",
+        "label": "Processing"
+      },
+      {
+        "text": "posted content",
+        "label": "PII"
+      },
+      {
+        "text": "Twitter feed",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to either keep a logbook entry private or share it with individuals rather than groups.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "keep",
+        "label": "Processing"
+      },
+      {
+        "text": "logbook entry",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have the details of the workflow execution to be recorded in a neurohub log book while executing a workflow.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "have the details",
+        "label": "Processing"
+      },
+      {
+        "text": "log book",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have that my Twitter Tweets to appear in Neurohub, so that other researchers in the centre can see what I am up to.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "Twitter Tweets",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view the group's shared calendars via the Neurohub Nodes' Web page as well as on my mobile device.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "mobile device",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to sync events created in NeuroHub with a web-based Calendar such as Google Calendar.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "sync",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have the ability to move multiple files around and rearrange them using the Neurohub file browser while processing data.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "move",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want a mechanism for electronically sharing papers and notes with other researchers, so that we can collaborate effectively.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "sharing",
+        "label": "Processing"
+      },
+      {
+        "text": "papers",
+        "label": "PII"
+      },
+      {
+        "text": "notes",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be sure that existing metadata corresponding to the file is not lost when moving a file to a new location.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user,  I want to have the ability to keep my data private on the system, and only share data that I deem should be shared.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "keep",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "private",
+        "label": "Processing"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user,  I want to have the ability to change the sharing and ownership of multiple files.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "ownership",
+        "label": "PII"
+      }
+    ]
+  }
+]

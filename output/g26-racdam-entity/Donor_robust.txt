@@ -1,0 +1,58 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Researcher" as thingresearcher
+	entity "Information" as thinginformation
+	entity "Available Right" as thingavailableright
+	entity "Donor" as thingdonor
+	entity "Unprocessed Material" as thingunprocessedmaterial
+	entity "Access" as thingaccess
+	entity "Unprocesse Collection" as thingunprocessedcollection
+	entity "Inventory" as thinginventory
+	entity "Archival Material" as thingarchivalmaterial
+	entity "Physical Location" as thingphysicallocation
+	actor "Archivist" as actorarchivist
+	circle "Digital Copy" as thingdigitalcopy
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Donor\nInterface" as thingdonorinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	control "Make Information\nAbout Available\nRights To\nResearchers" as controlmakeinformation
+	control "Make Information\nAbout Available\nRights To\nDonor" as controlmakeinformationdonor
+	control "Provide Access\nTo Digital\nCopies Of\nUnprocessed Material" as controlprovideaccess
+	control "Access Inventories\nFor Unprocessed\nCollections" as controlaccessinventory
+	control "View Physical\nLocations For\nArchival Material" as controlviewphysicallocation
+
+	thingavailableright <.. thinginformation
+	thingresearcher <.. thingavailableright
+	thingdonor <.. thingavailableright
+	thingdigitalcopy <.. thingaccess
+	thingunprocessedcollection <.. thinginventory
+	thingarchivalmaterial <.. thingphysicallocation
+	thingunprocessedmaterial *-- thingdigitalcopy
+	actorarchivist --- thingresearcherinterface
+	actorarchivist --- thingdonorinterface
+	actorarchivist --- thingmaterialinterface
+	actorarchivist --- thingcollectioninterface
+	thinginformation --- controlmakeinformation
+	thingavailableright --- controlmakeinformation
+	thingresearcher --- controlmakeinformation
+	thingresearcherinterface --> controlmakeinformation
+	thingdonor --- controlmakeinformationdonor
+	thingdonorinterface --> controlmakeinformationdonor
+	thingavailableright --- controlmakeinformationdonor
+	thinginformation --- controlmakeinformationdonor
+	thingaccess --- controlprovideaccess
+	thingdigitalcopy --- controlprovideaccess
+	thingunprocessedmaterial --- controlprovideaccess
+	thingmaterialinterface --> controlprovideaccess
+	thinginventory --- controlaccessinventory
+	thingunprocessedcollection --- controlaccessinventory
+	thingcollectioninterface --> controlaccessinventory
+	thingphysicallocation --- controlviewphysicallocation
+	thingarchivalmaterial --- controlviewphysicallocation
+	thingmaterialinterface --> controlviewphysicallocation
+
+@enduml

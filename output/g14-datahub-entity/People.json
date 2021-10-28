@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As a Publisher, I want to publish a dataset, so that I can view just the dataset with a few people.",
+    "entities": [
+      {
+        "text": "Publisher,",
+        "label": "Data"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to view all the people in my organization and what roles they have, so that that I can change these if I want.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      },
+      {
+        "text": "roles",
+        "label": "PII"
+      }
+    ]
+  }
+]

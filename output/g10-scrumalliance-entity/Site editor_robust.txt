@@ -1,0 +1,143 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Follow Date" as thingfollowingdate
+	entity "Date" as thingdate
+	entity "Faq Section" as thingfaqsection #grey
+	entity "Teaser" as thingteaser
+	entity "Article" as thingarticle
+	entity "Site" as thingsite
+	entity "Home Page" as thinghomepage #grey
+	entity "Good Control" as thinggoodcontrol
+	entity "Member" as thingmember
+	entity "News" as thingnews
+	entity "Prominent Area" as thingprominentarea
+	entity "Content" as thingcontent
+	entity ", Trainers\nSection" as thingonlytrainerssection
+	entity "Information" as thinginformation
+	entity "Course" as thingcourse
+	entity "Event" as thingevent
+	entity "Thing" as thingthing
+	entity "Flexibility" as thingflexibility
+	entity "Email" as thingemail
+	entity "Product Owner" as thingproductowner #grey
+	entity "Priority Number" as thingprioritynumber
+	entity "Scrum Master" as thingscrummaster
+	entity "Publishing" as thingpublishing #grey
+	actor "Site Editor" as actorsiteeditor
+	circle "Item" as thingitem #grey
+	boundary "News\nInterface" as thingnewsinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Section\nInterface" as thingsectioninterface #grey
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Content\nInterface" as thingcontentinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Thing\nInterface" as thingthinginterface #grey
+	boundary "Master\nInterface" as thingmasterinterface #grey
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	control "Set The\nFollowing Dates\nOn A\nNews Item" as controlsetfollowingdatenewsitem
+	control "Publishing Date" as controlpublishdate
+	control "Maintain A\nFaq Section" as controlmaintainfaqsection
+	control "Include A\nTeaser With\nEach Article" as controlincludeteaser
+	control "Add An\nArticle To\nThe Site" as controladdarticlesite
+	control "Designate" as controldesignate
+	control "Have Pretty\nGood Control\nOver How\nThe Article" as controlhavegoodcontrol
+	control "For Indicate\nAn Article\nMembers" as controlindicatearticlemember
+	control "Have A\nProminent Area\nOn The\nHome Page" as controlhaveprominentarea
+	control "Create The\nContent Of\nThe" as controlcreatecontent
+	control "Post Information\nIn A\nOnly, Trainers\nSection" as controlpostinformationonlytrainerssection
+	control "Assign Priority\nNumbers To\nNews Items" as controlassignprioritynumbersnewsitems
+	control "Update Any\nCourse" as controlupdatecourse
+	control "Update Event" as controlupdateevent
+	control "Set Start\nPublishing Dates" as controlsetstartpublishingdates
+	control "Stop" as controlstoppublishdate
+	control "Have Some\nFlexibility Things\nWhere Appear" as controlhaveflexibilitything
+	control "Edit The\nContent Of\nThe Automatically\nEmail To\nCertified, New\nScrum Masters" as controleditcontent
+	control "Edit The\nContent Of\nThe Automatically\nEmail To\nProduct Owner" as controleditcontentproductowner
+
+	thingitem <.. thingfollowingdate
+	thingarticle <.. thingdate
+	thingpublishing <.. thingdate
+	thingarticle <.. thingteaser
+	thingsite <.. thingarticle
+	thingmember <.. thingarticle
+	thingarticle <.. thinggoodcontrol
+	thinghomepage <.. thingprominentarea
+	thingemail *-- thingcontent
+	thingonlytrainerssection <.. thinginformation
+	thingthing <.. thingflexibility
+	thingscrummaster <.. thingemail
+	thingproductowner <.. thingemail
+	thingitem <.. thingprioritynumber
+	thingnews *-- thingitem
+	actorsiteeditor --- thingnewsinterface
+	actorsiteeditor --- thingdateinterface
+	actorsiteeditor --- thingsectioninterface
+	actorsiteeditor --- thingarticleinterface
+	actorsiteeditor --- thingsiteinterface
+	actorsiteeditor --- thingmemberinterface
+	actorsiteeditor --- thingpageinterface
+	actorsiteeditor --- thingcontentinterface
+	actorsiteeditor --- thingcourseinterface
+	actorsiteeditor --- thingeventinterface
+	actorsiteeditor --- thingthinginterface
+	actorsiteeditor --- thingmasterinterface
+	actorsiteeditor --- thingownerinterface
+	thingfollowingdate --- controlsetfollowingdatenewsitem
+	thingitem --- controlsetfollowingdatenewsitem
+	thingnewsinterface --> controlsetfollowingdatenewsitem
+	thingdate --- controlpublishdate
+	thingdateinterface --> controlpublishdate
+	controlstoppublishdate --> controlpublishdate
+	thingarticle --- controlpublishdate
+	thingfaqsection --- controlmaintainfaqsection
+	thingsectioninterface --> controlmaintainfaqsection
+	thingteaser --- controlincludeteaser
+	thingarticle --- controlincludeteaser
+	thingarticleinterface --> controlincludeteaser
+	thingsite --- controladdarticlesite
+	thingsiteinterface --> controladdarticlesite
+	thingarticle --- controladdarticlesite
+	thinggoodcontrol --- controlhavegoodcontrol
+	thingarticle --- controlhavegoodcontrol
+	thingarticleinterface --> controlhavegoodcontrol
+	thingmember --- controlindicatearticlemember
+	thingmemberinterface --> controlindicatearticlemember
+	thingarticle --- controlindicatearticlemember
+	thingprominentarea --- controlhaveprominentarea
+	thingpageinterface --> controlhaveprominentarea
+	thinghomepage --- controlhaveprominentarea
+	thingcontent --- controlcreatecontent
+	thingcontentinterface --> controlcreatecontent
+	thinginformation --- controlpostinformationonlytrainerssection
+	thingonlytrainerssection --- controlpostinformationonlytrainerssection
+	thingsectioninterface --> controlpostinformationonlytrainerssection
+	thingprioritynumber --- controlassignprioritynumbersnewsitems
+	thingitem --- controlassignprioritynumbersnewsitems
+	thingnewsinterface --> controlassignprioritynumbersnewsitems
+	thingcourse --- controlupdatecourse
+	thingcourseinterface --> controlupdatecourse
+	thingevent --- controlupdateevent
+	thingeventinterface --> controlupdateevent
+	thingdateinterface --> controlsetstartpublishingdates
+	thingdate --- controlsetstartpublishingdates
+	thingarticleinterface --> controlstoppublishdate
+	thingflexibility --- controlhaveflexibilitything
+	thingthing --- controlhaveflexibilitything
+	thingthinginterface --> controlhaveflexibilitything
+	thingemail --- controleditcontent
+	thingscrummaster --- controleditcontent
+	thingmasterinterface --> controleditcontent
+	thingcontent --- controleditcontent
+	thingproductowner --- controleditcontentproductowner
+	thingownerinterface --> controleditcontentproductowner
+	thingcontent --- controleditcontentproductowner
+	thingemail --- controleditcontentproductowner
+
+@enduml

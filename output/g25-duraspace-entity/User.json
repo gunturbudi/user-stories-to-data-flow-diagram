@@ -1,0 +1,430 @@
+[
+  {
+    "text": "As a user, I want to list all the collections and objects in the DAMS that belong to a library unit.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to contact repositories.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate other descriptions of the collection that are outside the DAMS and of probable importance to users.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to browse by collections in the DAMS.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to limit my search to specified collection(s).",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "limit",
+        "label": "Processing"
+      },
+      {
+        "text": "search",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any external versions or descriptions of an object that may be of probable importance to an user.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "external versions",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know what repository an object belongs to.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know what collection(s) an object belongs to.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "collection(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to see all the component parts of an object.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have access to the content files for an object.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "have access",
+        "label": "Processing"
+      },
+      {
+        "text": "content files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know the rights status of an object.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know about other versions of the object or its metadata that might be of use to me.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to see and navigate the component hierarchy of an object.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "navigate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want access to content files that comprise an object, so that I can decide whether a file is too large to download.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "content files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search collections, objects, and object components by title.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know for an object or its component parts the place of publication, the publisher, etc.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "publisher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know about various facets of a collection, object, or object component, such as scope and content, various identifiers, conditions governing use/access, etc.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to scope my searches for collections, objects, or object components to a specific language.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "scope",
+        "label": "Processing"
+      },
+      {
+        "text": "searches",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search by for collections and objects by name.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to scope by searches by name to a specific role such as illustrator, photographer, etc.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "scope",
+        "label": "Processing"
+      },
+      {
+        "text": "searches",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "role",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search for collections, objects, and object components by pertinent such headings, including title, topic, genre/form, geographical name, function, occupation, name, cartographics, etc.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "topic",
+        "label": "PII"
+      },
+      {
+        "text": "genre",
+        "label": "PII"
+      },
+      {
+        "text": "geographical name",
+        "label": "PII"
+      },
+      {
+        "text": "occupation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to see the geographical context of a collection, object, or object component, where pertinent.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "geographical context",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know of all other pertinent versions or descriptions of the resource.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to know if an object or object component is under copyright and, where possible, who the rights holder is.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "who the rights holder",
+        "label": "PII"
+      }
+    ]
+  }
+]

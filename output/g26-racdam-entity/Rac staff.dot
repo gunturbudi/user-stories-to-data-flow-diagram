@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Rac Staff " ];
+201 [label="<f0>  |<f1> User Group " color=red];
+202 [label="Administrator" shape=box];
+203 [label="{<f0> 1.0|<f1> Assign Rac Staff To Different User Groups }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Rac Staff"]
+203 -> 201 [label="User Group"]
+}

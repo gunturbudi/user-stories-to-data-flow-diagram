@@ -1,0 +1,77 @@
+id,value,style,source,target,type
+11,Reserve my seat at the summit.,ellipse,null,null,process
+12,Prevent myself from accidentally double-booking with a training or another summit.,ellipse,null,null,process
+13,Encourage participation.,ellipse,null,null,process
+200,Building,shape=partialRectangle,null,null,data_base
+201,Clear Map,shape=partialRectangle,null,null,data_base
+202,Room,shape=partialRectangle,null,null,data_base
+203,Attendee,shape=partialRectangle,null,null,data_base
+204,Registration Status,shape=partialRectangle,null,null,data_base
+205,Admin View,shape=partialRectangle,null,null,data_base
+206,Training Waitlist,shape=partialRectangle,null,null,data_base
+207,Summit,shape=partialRectangle,null,null,data_base
+208,Detailed Direction,shape=partialRectangle,null,null,data_base
+209,Basic Information,shape=partialRectangle,null,null,data_base
+210,Agenda,shape=partialRectangle,null,null,data_base
+211,Attendee,rounded=0,null,null,external_entity
+212,Trainingcoordinator,rounded=0,null,null,external_entity
+213,Summit Coordinator,rounded=0,null,null,external_entity
+214,Have A Very Clear Map Room Where Are,ellipse,null,null,process
+215,Have A Very Clear Map The Buildings Where Are,ellipse,null,null,process
+216,Have An Admin View Helps,ellipse,null,null,process
+217,Track Registration Status For Each Attendee,ellipse,null,null,process
+218,Added To A Training Waitlist,ellipse,null,null,process
+219,Register For A Summit,ellipse,null,null,process
+220,Get Detailed Directions To The Summit Venue,ellipse,null,null,process
+221,See,ellipse,null,null,process
+222,List Basic Information About Summit,ellipse,null,null,process
+223,List An Agenda For Summit,ellipse,null,null,process
+225,,endArrow=classic,211,214,endArrow=classic
+226,,endArrow=classic,211,215,endArrow=classic
+227,,endArrow=classic,211,218,endArrow=classic
+228,,endArrow=classic,211,219,endArrow=classic
+229,,endArrow=classic,211,220,endArrow=classic
+230,,endArrow=classic,211,222,endArrow=classic
+231,,endArrow=classic,211,223,endArrow=classic
+232,,endArrow=classic,212,216,endArrow=classic
+233,,endArrow=classic,212,217,endArrow=classic
+234,,endArrow=classic,213,219,endArrow=classic
+235,,endArrow=classic,213,220,endArrow=classic
+236,,endArrow=classic,213,222,endArrow=classic
+237,,endArrow=classic,213,223,endArrow=classic
+238,Room,endArrow=classic,214,202,endArrow=classic
+239,Clear Map,endArrow=classic,214,201,endArrow=classic
+240,Clear Map,endArrow=classic,215,201,endArrow=classic
+241,Building,endArrow=classic,215,200,endArrow=classic
+242,,endArrow=classic,216,217,endArrow=classic
+243,Admin View,endArrow=classic,216,205,endArrow=classic
+244,Registration Status,endArrow=classic,217,204,endArrow=classic
+245,Attendee,endArrow=classic,217,203,endArrow=classic
+246,Training Waitlist,endArrow=classic,218,206,endArrow=classic
+247,Summit,endArrow=classic,219,207,endArrow=classic
+248,Detailed Direction,endArrow=classic,220,208,endArrow=classic
+249,Basic Information,endArrow=classic,222,209,endArrow=classic
+250,Summit,endArrow=classic,222,207,endArrow=classic
+251,Agenda,endArrow=classic,223,210,endArrow=classic
+252,Summit,endArrow=classic,223,207,endArrow=classic
+1000,,endArrow=classic,219,11,endArrow=classic
+1001,Attendee,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,11,endArrow=classic
+1003,Attendee,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,11,endArrow=classic
+1005,Seat,rounded=0,null,null,external_entity
+1006,Seat,endArrow=classic,11,1005,endArrow=classic
+1007,,endArrow=classic,211,12,endArrow=classic
+1008,Attendee,rounded=0,null,null,external_entity
+1009,,endArrow=classic,1008,12,endArrow=classic
+1010,Attendee,rounded=0,null,null,external_entity
+1011,,endArrow=classic,1010,12,endArrow=classic
+1012,Attendence,rounded=0,null,null,external_entity
+1013,Attendence,endArrow=classic,12,1012,endArrow=classic
+1014,Summit coordinator,rounded=0,null,null,external_entity
+1015,,endArrow=classic,1014,13,endArrow=classic
+1016,Summit coordinator,rounded=0,null,null,external_entity
+1017,,endArrow=classic,1016,13,endArrow=classic
+1018,,endArrow=classic,223,13,endArrow=classic
+1019,Feedback,rounded=0,null,null,external_entity
+1020,Feedback,endArrow=classic,13,1019,endArrow=classic

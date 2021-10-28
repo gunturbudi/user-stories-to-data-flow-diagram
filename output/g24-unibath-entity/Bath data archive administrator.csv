@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+200,Check,shape=partialRectangle,null,null,data_base
+201,Deposit Dataset,shape=partialRectangle,null,null,data_base
+202,Metadata,shape=partialRectangle,null,null,data_base
+203,Datum,shape=partialRectangle,null,null,data_base
+204,Entire Archive,shape=partialRectangle,null,null,data_base
+205,Open Standard,shape=partialRectangle,null,null,data_base
+206,Deposit,shape=partialRectangle,null,null,data_base
+207,Data Centre,shape=partialRectangle,null,null,data_base
+208,Bath,shape=partialRectangle,null,null,data_base
+209,"Bath , Data , Archive Administrator",rounded=0,null,null,external_entity
+210,Make Some Checks On Deposited Datasets,ellipse,null,null,process
+211,Require A Minimum Set Of Metadata,ellipse,null,null,process
+212,Approve Scheduled Disposal Of Data,ellipse,null,null,process
+213,Query The Entire Archive,ellipse,null,null,process
+214,"Import Bath Data From An Wholesale, External Data Centre",ellipse,null,null,process
+215,Encourage The Use Of Open Standards For Deposit,ellipse,null,null,process
+216,Promote The Use Of Open Standards For Deposit,ellipse,null,null,process
+218,,endArrow=classic,209,210,endArrow=classic
+219,,endArrow=classic,209,211,endArrow=classic
+220,,endArrow=classic,209,212,endArrow=classic
+221,,endArrow=classic,209,213,endArrow=classic
+222,,endArrow=classic,209,214,endArrow=classic
+223,,endArrow=classic,209,215,endArrow=classic
+224,,endArrow=classic,209,216,endArrow=classic
+225,Check,endArrow=classic,210,200,endArrow=classic
+226,Deposit Dataset,endArrow=classic,210,201,endArrow=classic
+227,Metadata,endArrow=classic,211,202,endArrow=classic
+228,Datum,endArrow=classic,212,203,endArrow=classic
+229,Entire Archive,endArrow=classic,213,204,endArrow=classic
+230,Data Centre,endArrow=classic,214,207,endArrow=classic
+231,Datum,endArrow=classic,214,203,endArrow=classic
+232,Open Standard,endArrow=classic,215,205,endArrow=classic
+233,Deposit,endArrow=classic,215,206,endArrow=classic
+234,Open Standard,endArrow=classic,216,205,endArrow=classic
+235,Deposit,endArrow=classic,216,206,endArrow=classic
+240,Bath,endArrow=classic,214,208,endArrow=classic

@@ -1,0 +1,45 @@
+[
+  {
+    "text": "As a data curator, I want to upload a new version of an item that has changed, while still allowing old versions to be accessed.",
+    "entities": [
+      {
+        "text": "data curator",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a data curator, I want to have a mechanism to allow for records scheduling for items that do not need to be stored indefinitely.",
+    "entities": [
+      {
+        "text": "data curator",
+        "label": "Data"
+      },
+      {
+        "text": "scheduling",
+        "label": "Processing"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data curator, I want to upload a new version of an item that has changed, while still allowing old versions to be accessed.",
+    "entities": [
+      {
+        "text": "data curator",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      }
+    ]
+  }
+]

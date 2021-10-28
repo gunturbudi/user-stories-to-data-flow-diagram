@@ -1,0 +1,49 @@
+[
+  {
+    "text": "As a funder, I want to be able to read the costs for data management from the DMP, so that I can check whether our policies work as intended.",
+    "entities": [
+      {
+        "text": "funder,",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "costs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a funder, I want to know how secure data is, so that I can ensure legal compliance.",
+    "entities": [
+      {
+        "text": "funder,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a funder, I want to be able to check all the repositories mentioned in a DMP, so that I can verify whether the project has followed our funding rules.",
+    "entities": [
+      {
+        "text": "funder,",
+        "label": "Data"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      }
+    ]
+  }
+]

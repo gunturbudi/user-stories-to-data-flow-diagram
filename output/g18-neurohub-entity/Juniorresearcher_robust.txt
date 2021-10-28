@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Group" as thinggroup
+	entity "Knowledge" as thingknowledge
+	actor "Juniorresearcher" as actorJuniorResearcher
+	boundary "Ability" as thingabilityharvestknowledgegroupJuniorResearcher #grey
+	control "Harvest Knowledge\nWithin The\nGroup" as controlharvestknowledgegroup
+	control "Have" as controlhaveabilityharvestknowledgegroupJuniorResearcher
+
+	actorJuniorResearcher --- thingabilityharvestknowledgegroupJuniorResearcher
+	thingknowledge --- controlharvestknowledgegroup
+	thinggroup --- controlharvestknowledgegroup
+	controlhaveabilityharvestknowledgegroupJuniorResearcher --> controlharvestknowledgegroup
+	thingabilityharvestknowledgegroupJuniorResearcher --> controlharvestknowledgegroup
+	thingabilityharvestknowledgegroupJuniorResearcher --> controlhaveabilityharvestknowledgegroupJuniorResearcher
+
+@enduml

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "As a camp administrator, I want to be able to create a registration form for both staff and kids, so that I can keep organized",
+    "entities": [
+      {
+        "text": "camp administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "registration form",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "kids",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a parent, I want to be able to connect with the staff in case of an emergency",
+    "entities": [
+      {
+        "text": "parent,",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      }
+    ]
+  }
+]

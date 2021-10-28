@@ -1,0 +1,169 @@
+[
+  {
+    "text": "As a user researcher, I want to test the user research plan, so that I make sure the in-person interviews are effective and capturing the right information.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "test",
+        "label": "Processing"
+      },
+      {
+        "text": "interviews",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to have the finalized OLPA task script, so that I can begin testing with internal users.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "testing",
+        "label": "Processing"
+      },
+      {
+        "text": "internal users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to have the WIG prototype, so that I can finalize the second task script.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to have a list of priority workflow candidates that we might test, so that I can make sure we're capturing the priority areas.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to continue scheduling interviews for hypothesis #1, so that I can be prepared to test our first prototype.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "scheduling",
+        "label": "Processing"
+      },
+      {
+        "text": "interviews",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to know when outreach to lists is successful, so that I can plan on a new release to the next listserv on the priority list.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to begin identifying interview participants, so that I can understand what educators and science influencers need from a future nsf.gov website.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "identifying",
+        "label": "Processing"
+      },
+      {
+        "text": "interview participants",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to set up a website recruitment test, so that I can see if we can recruit users in real time from the website.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "recruit",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to make sure the correct NSF people are invited to user interviews, so that they can observe the interviews and make recommendations accordingly.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "NSF people",
+        "label": "Data"
+      },
+      {
+        "text": "user interviews",
+        "label": "PII"
+      },
+      {
+        "text": "observe",
+        "label": "Processing"
+      },
+      {
+        "text": "interviews",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to begin drafting a research plan, so that I can begin recruiting participants.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "recruiting",
+        "label": "Processing"
+      },
+      {
+        "text": "participants",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user researcher, I want to conduct a user definition workshop with NSF, so that I can better prepare them and the team for future research work.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "conduct",
+        "label": "Processing"
+      }
+    ]
+  }
+]

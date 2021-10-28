@@ -1,0 +1,11 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="<f0>  |<f1> Github " ];
+202 [label="<f0>  |<f1> Ckan " ];
+203 [label="Developerdatawrangler" shape=box];
+204 [label="{<f0> 1.0|<f1> Store Data Package In Github }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Data Package"]
+204 -> 201 [label="Github"]
+}

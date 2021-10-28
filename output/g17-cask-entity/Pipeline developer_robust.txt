@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Code" as thingcode
+	entity "Dataset Instance" as thingdatasetinstance #grey
+	actor "Pipeline Developer" as actorpipelinedeveloper
+	circle "New Version" as thingnewerversion
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	control "Upgrade A\nDataset Instance\nTo A\nNewer Version\nOf The\nCode" as controlupgradedatasetinstancenewerversion
+
+	thingnewerversion <.. thingdatasetinstance
+	thingcode *-- thingnewerversion
+	actorpipelinedeveloper --- thingcodeinterface
+	thingdatasetinstance --- controlupgradedatasetinstancenewerversion
+	thingnewerversion --- controlupgradedatasetinstancenewerversion
+	thingcode --- controlupgradedatasetinstancenewerversion
+	thingcodeinterface --> controlupgradedatasetinstancenewerversion
+
+@enduml

@@ -1,0 +1,145 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdata
+	entity "Description" as thingdescription
+	entity "Project Lifecycle" as thingprojectlifecycle #grey
+	entity "Kind" as thingkind
+	entity "Type" as thingtype #grey
+	entity "Necessary Right" as thingnecessaryright
+	entity "Time Plan" as thingtimeplan #grey
+	entity "Documentation" as thingdocumentation
+	entity "Reference" as thingreference
+	entity "Creation Process" as thingcreationprocess #grey
+	entity "Collect Datum" as thingcollecteddata
+	entity "Institution" as thingowninstitution
+	entity "Information" as thinginformation
+	entity "Format" as thingformat
+	entity "Technology" as thingtechnology
+	entity "Software" as thingsoftware
+	entity "Department" as thingdepartment
+	entity "Section" as thingsection
+	entity "Researcher" as thingotherresearcher
+	entity "Role" as thingrole
+	entity "Responsibility" as thingresponsibility
+	entity "Dmp" as thingdmp
+	entity "Security Requirement" as thingsecurityrequirement
+	actor "Data Manager" as actordatamanager
+	actor "Researcher" as actorresearcher
+	circle "Content" as thingcontent
+	circle "Anonymization" as thinganonymization
+	circle "Set" as thingset #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Process\nInterface" as thingprocessinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Technology\nInterface" as thingtechnologyinterface #grey
+	boundary "Department\nInterface" as thingdepartmentinterface #grey
+	boundary "Right\nInterface" as thingrightinterface #grey
+	control "Know" as controlknow
+	control "Update Throughout\nThe Project\nLifecycle" as controlupdateprojectlifecycle
+	control "Have The\nDescription Of\nCollected Sets" as controlhavedescriptionupdateprojectlifecycle
+	control "Have The\nDescription Of\nCollected Data\nSets Used" as controlhavedescription
+	control "Document All\nNecessary Rights" as controldocumentnecessaryright
+	control "Managing The\nData" as controlmanagedocumentnecessaryrightdatum
+	control "Know The\nTime Plan" as controlknowtimeplan
+	control "Collecting Data" as controlcollectknowtimeplandatum
+	control "Have References\nTo Documentation\nOf Creation\nProcess" as controlhavereferencecreationprocess
+	control "Have References\nTo Documentation\nOf The\nData" as controlhavereference
+	control "Know Which\nInformation Necessary" as controlknowinformation
+	control "Use" as controluse
+	control "Know Which\nSoftware The\nData Produced" as controlknowsoftwaredata
+	control "Know Technology\nProduced" as controlknowtechnology
+	control "Know The\nSecurity Requirements\nOf The\nData" as controlknowsecurityrequirements
+	control "See The\nSections" as controlseesection
+	control "Costing By\nOther Researchers\nIn Department" as controlcostseesectionotherresearcherdepartment
+	control "Using The\nData" as controluseclarifynecessaryrightdatum
+	control "Clarify The\nNecessary Rights" as controlclarifynecessaryright
+	control "Plan The\nAnonymization Of\nData" as controlplananonymization
+
+	thingset *-- thingdescription
+	thingdata *-- thingdescription
+	thingtype *-- thingkind
+	thingdata <.. thingtype
+	thingcreationprocess *-- thingdocumentation
+	thingdata *-- thingdocumentation
+	thingdocumentation <.. thingreference
+	thingdata <.. thingsoftware
+	thingrole <.. thingsection
+	thingresponsibility <.. thingsection
+	thingdepartment <.. thingotherresearcher
+	thingdepartment <.. thingrole
+	thingotherresearcher <.. thingrole
+	thingdepartment <.. thingresponsibility
+	thingotherresearcher <.. thingresponsibility
+	thingdata <.. thingsecurityrequirement
+	thingdata *-- thingcontent
+	thingdata *-- thinganonymization
+	thingdata *-- thingset
+	actordatamanager --- thingdescriptioninterface
+	actordatamanager --- thingdatainterface
+	actordatamanager --- thingdatuminterface
+	actordatamanager --- thingprocessinterface
+	actordatamanager --- thinginformationinterface
+	actordatamanager --- thingtechnologyinterface
+	actorresearcher --- thingdepartmentinterface
+	actordatamanager --- thingrightinterface
+	thingprojectlifecycle --- controlupdateprojectlifecycle
+	controlhavedescriptionupdateprojectlifecycle --> controlupdateprojectlifecycle
+	thingdescriptioninterface --> controlupdateprojectlifecycle
+	thingdescriptioninterface --> controlhavedescriptionupdateprojectlifecycle
+	thingdescription --- controlhavedescriptionupdateprojectlifecycle
+	thingdescription --- controlhavedescription
+	thingdatainterface --> controlhavedescription
+	thingdata --- controlhavedescription
+	thingnecessaryright --- controldocumentnecessaryright
+	controlmanagedocumentnecessaryrightdatum --> controldocumentnecessaryright
+	thingdatuminterface --> controldocumentnecessaryright
+	thingdatuminterface --> controlmanagedocumentnecessaryrightdatum
+	thingdata --- controlmanagedocumentnecessaryrightdatum
+	thingtimeplan --- controlknowtimeplan
+	controlcollectknowtimeplandatum --> controlknowtimeplan
+	thingdatuminterface --> controlknowtimeplan
+	thingdatuminterface --> controlcollectknowtimeplandatum
+	thingdata --- controlcollectknowtimeplandatum
+	thingcreationprocess --- controlhavereferencecreationprocess
+	thingprocessinterface --> controlhavereferencecreationprocess
+	thingdocumentation --- controlhavereferencecreationprocess
+	thingreference --- controlhavereferencecreationprocess
+	thingreference --- controlhavereference
+	thingdocumentation --- controlhavereference
+	thingdatuminterface --> controlhavereference
+	thingdata --- controlhavereference
+	thinginformation --- controlknowinformation
+	thinginformationinterface --> controlknowinformation
+	controlknow --> controluse
+	thingsoftware --- controlknowsoftwaredata
+	thingdata --- controlknowsoftwaredata
+	thingdatainterface --> controlknowsoftwaredata
+	thingtechnology --- controlknowtechnology
+	thingtechnologyinterface --> controlknowtechnology
+	thingsecurityrequirement --- controlknowsecurityrequirements
+	thingdatuminterface --> controlknowsecurityrequirements
+	thingdata --- controlknowsecurityrequirements
+	thingsection --- controlseesection
+	controlcostseesectionotherresearcherdepartment --> controlseesection
+	thingdepartmentinterface --> controlseesection
+	thingrole --- controlseesection
+	thingresponsibility --- controlseesection
+	thingdepartment --- controlseesection
+	thingotherresearcher --- controlcostseesectionotherresearcherdepartment
+	thingdepartment --- controlcostseesectionotherresearcherdepartment
+	thingdepartmentinterface --> controlcostseesectionotherresearcherdepartment
+	thingdatuminterface --> controluseclarifynecessaryrightdatum
+	thingdata --- controluseclarifynecessaryrightdatum
+	controluseclarifynecessaryrightdatum --> controlclarifynecessaryright
+	thingrightinterface --> controlclarifynecessaryright
+	thingnecessaryright --- controlclarifynecessaryright
+	thinganonymization --- controlplananonymization
+	thingdatuminterface --> controlplananonymization
+	thingdata --- controlplananonymization
+
+@enduml

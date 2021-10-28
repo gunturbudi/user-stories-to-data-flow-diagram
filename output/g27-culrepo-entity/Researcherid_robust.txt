@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Orcid" as thingORCID
+	entity "Submission" as thingsubmission
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	boundary "Orcid\nInterface" as thingorcidinterface #grey
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	control "Associate Orcid" as controlassociateORCID
+	control "Associate A\nResearcherid With\nA Submission" as controlassociateresearcherIDsubmission
+
+	thingsubmission <.. thingORCID
+	actorcornellfacultymember --- thingorcidinterface
+	actorcornellfacultymember --- thingsubmissioninterface
+	thingORCID --- controlassociateORCID
+	thingorcidinterface --> controlassociateORCID
+	thingsubmission --- controlassociateresearcherIDsubmission
+	thingsubmissioninterface --> controlassociateresearcherIDsubmission
+	thingORCID --- controlassociateresearcherIDsubmission
+
+@enduml

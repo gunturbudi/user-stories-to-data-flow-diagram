@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsorship Profile" as thingsponsorshipprofile #grey
+	entity "Job Listing" as thingjoblisting
+	actor "Sponsor" as actorsponsor
+	boundary "Listing\nInterface" as thinglistinginterface #grey
+	control "Link To\nSponsorship Profile\nFrom Job\nListings" as controllinksponsorshipprofilejoblistings
+
+	thingjoblisting <.. thingsponsorshipprofile
+	actorsponsor --- thinglistinginterface
+	thingsponsorshipprofile --- controllinksponsorshipprofilejoblistings
+	thingjoblisting --- controllinksponsorshipprofilejoblistings
+	thinglistinginterface --> controllinksponsorshipprofilejoblistings
+
+@enduml

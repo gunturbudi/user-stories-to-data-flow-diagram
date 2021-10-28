@@ -1,0 +1,33 @@
+id,value,style,source,target,type
+5,Communicate with my attendees by email prior to the event.,ellipse,null,null,process
+6,Encourage participation.,ellipse,null,null,process
+200,Attendee,shape=partialRectangle,null,null,data_base
+201,Summit,shape=partialRectangle,null,null,data_base
+202,Basic Information,shape=partialRectangle,null,null,data_base
+203,Sponsor,shape=partialRectangle,null,null,data_base
+204,Agenda,shape=partialRectangle,null,null,data_base
+205,Summit Coordinator,rounded=0,null,null,external_entity
+206,See A List Of Attendees Up For Summit,ellipse,null,null,process
+207,List Basic Information About Summit,ellipse,null,null,process
+208,List Sponsors For Summit,ellipse,null,null,process
+209,List An Agenda For Summit,ellipse,null,null,process
+211,,endArrow=classic,205,206,endArrow=classic
+212,,endArrow=classic,205,207,endArrow=classic
+213,,endArrow=classic,205,208,endArrow=classic
+214,,endArrow=classic,205,209,endArrow=classic
+215,Attendee,endArrow=classic,206,200,endArrow=classic
+216,Summit,endArrow=classic,206,201,endArrow=classic
+217,Basic Information,endArrow=classic,207,202,endArrow=classic
+218,Summit,endArrow=classic,207,201,endArrow=classic
+219,Sponsor,endArrow=classic,208,203,endArrow=classic
+220,Summit,endArrow=classic,208,201,endArrow=classic
+221,Agenda,endArrow=classic,209,204,endArrow=classic
+222,Summit,endArrow=classic,209,201,endArrow=classic
+1000,,endArrow=classic,206,5,endArrow=classic
+1001,Attendees,rounded=0,null,null,external_entity
+1002,Attendees,endArrow=classic,5,1001,endArrow=classic
+1003,Email,rounded=0,null,null,external_entity
+1004,Email,endArrow=classic,5,1003,endArrow=classic
+1005,,endArrow=classic,209,6,endArrow=classic
+1006,Feedback,rounded=0,null,null,external_entity
+1007,Feedback,endArrow=classic,6,1006,endArrow=classic

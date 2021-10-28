@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Nsf " ];
+201 [label="<f0>  |<f1> Editorial Plan " ];
+202 [label="<f0>  |<f1> Recommendation " color=red];
+203 [label="<f0>  |<f1> Content Type " color=red];
+204 [label="<f0>  |<f1> Content Design " color=red];
+205 [label="Content Designer" shape=box];
+206 [label="{<f0> 1.0|<f1> Develop A Better Understanding Of Editorial Plan }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Develop A Better Understanding Of Nsf's Content Types }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Demonstrate The Value Of User, Centered Content Design 'S An Integral Part Of Recommendations }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Ensure }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 201 [label="Editorial Plan"]
+207 -> 203 [label="Content Type"]
+208 -> 209
+208 -> 204 [label="Content Design"]
+208 -> 202 [label="Recommendation"]
+207 -> 200 [label="Nsf"]
+}

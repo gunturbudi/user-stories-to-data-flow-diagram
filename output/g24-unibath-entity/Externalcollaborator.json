@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As an externalcollaborator, I want to gain privileged access to data for projects in which I am involved, so that I can collaborate effectively.",
+    "entities": [
+      {
+        "text": "externalcollaborator,",
+        "label": "Data"
+      },
+      {
+        "text": "gain",
+        "label": "Processing"
+      },
+      {
+        "text": "privileged access",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      },
+      {
+        "text": "collaborate",
+        "label": "Processing"
+      }
+    ]
+  }
+]

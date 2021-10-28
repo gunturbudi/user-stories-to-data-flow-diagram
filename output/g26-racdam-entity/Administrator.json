@@ -1,0 +1,193 @@
+[
+  {
+    "text": "As an administrator, I want to create user groups, so that I can control user permissions.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "user permissions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to create user roles, so that I can group users by role.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "user roles",
+        "label": "PII"
+      },
+      {
+        "text": "group",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "role",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to assign RAC staff to different user groups, so that I can control read/write access.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "RAC staff",
+        "label": "Data"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to assign rights to user groups or roles, so that I can control what users can and can't do.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      },
+      {
+        "text": "roles",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to allow users to log in using Active Directory credentials, so that I don't have to manage another set of usernames and passwords.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "allow",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "log in",
+        "label": "Processing"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "usernames",
+        "label": "PII"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to have researchers reset their own passwords, so that I don't have to send passwords in cleartext.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "reset",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to limit who can see certain metadata fields, so that I can show or hide things from display based on user groups.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "limit",
+        "label": "Processing"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      }
+    ]
+  }
+]

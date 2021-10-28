@@ -1,0 +1,150 @@
+[
+  {
+    "text": "As a moderator, I want to invite estimators by giving them a URL where they can access the game, so that we can start the game.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to show all estimates immediately, so that I can decide to show the estimates that have been given even though not all estimators have given their estimate.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to invite up to 15 estimators, so that we can play with large but not immense teams.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an estimator, I want to join a game by entering my name on the page I received the URL for, so that I can participate.",
+    "entities": [
+      {
+        "text": "estimator,",
+        "label": "Data"
+      },
+      {
+        "text": "entering",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an estimator, I want to see the item we\u2019re estimating, so that I know what I\u2019m giving an estimate for.",
+    "entities": [
+      {
+        "text": "estimator,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an estimator, I want to see all items we will try to estimate this session, so that I have a feel for the sizes of the various items.",
+    "entities": [
+      {
+        "text": "estimator,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      },
+      {
+        "text": "estimate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be shown all estimates at the same time after all estimators have given their estimate, so that I can be sure estimates are independent and not influenced by other estimates given in the same draw.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be able to see each estimator's prior estimates for the story being estimated, so that I can see how his or her opinion has changed so I can ask questions.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "estimator",
+        "label": "Data"
+      },
+      {
+        "text": "prior estimates",
+        "label": "PII"
+      },
+      {
+        "text": "opinion",
+        "label": "PII"
+      }
+    ]
+  }
+]

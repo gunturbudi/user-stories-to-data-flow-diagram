@@ -1,0 +1,89 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "System" as thingsystem
+	entity "Symplectic Element" as thingsymplecticelement
+	entity "Activity Insight" as thingactivityinsight #grey
+	entity "Scholarly ,\nFaculty Output" as thingscholarlyfacultyoutput
+	entity "Digestible Way" as thingdigestibleway
+	entity "Faculty" as thingfaculty
+	entity "Information" as thinginformation
+	entity "Specific Project" as thingspecificproject
+	entity "Nys" as thingNYS
+	entity "Resource" as thingresource
+	entity "Available ,\nGeographic Area" as thingavailablegeographicarea
+	entity "Educator" as thingeducator
+	entity "Tracking Statistic" as thingtrackingstatistic
+	actor "Administrator" as actoradministrator
+	actor "Researcher" as actorresearcher
+	actor "Extension Administrator" as actorextensionadministrator
+	boundary "Insight\nInterface" as thinginsightinterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Faculty\nInterface" as thingfacultyinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	boundary "Nys\nInterface" as thingnysinterface #grey
+	boundary "Educator\nInterface" as thingeducatorinterface #grey
+	control "Use Systems\nSuch As\nActivity Insight" as controlusesystemactivityinsight
+	control "Use Systems\nSuch As\nSymplectic Elements" as controlusesystemtrackscholarlyfacultyoutputrepository
+	control "Track Scholarly,\nFaculty Output\nIn The\nRepositories" as controltrackscholarlyfacultyoutputrepository
+	control "See Comprehensive\nTracking Statistics\nPresented To\nFaculty In\nA Digestible\nWay" as controlseecomprehensivetrackingstatistics
+	control "Have Information\nHelp Identify\nOther Faculty" as controlhaveinformation
+	control "Make Resources\nDeveloped For\nSpecific Projects" as controlmakeresource
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nOther Faculty\nAcross Nys" as controlmakeresourceavailablegeographicarea
+	control "Make Resources\nDeveloped For\nAvailable, Geographic\nArea To\nEducator" as controlmakeresourceavailablegeographicareaeducator
+
+	thingsymplecticelement <.. thingsystem
+	thingactivityinsight <.. thingsystem
+	thingrepository <.. thingscholarlyfacultyoutput
+	thingdigestibleway <.. thingfaculty
+	thingNYS <.. thingfaculty
+	thingfaculty <.. thinginformation
+	thingspecificproject <.. thingresource
+	thingavailablegeographicarea <.. thingresource
+	thingeducator <.. thingavailablegeographicarea
+	thingfaculty <.. thingavailablegeographicarea
+	thingfaculty <.. thingtrackingstatistic
+	actoradministrator --- thinginsightinterface
+	actoradministrator --- thingelementinterface
+	actoradministrator --- thingrepositoryinterface
+	actoradministrator --- thingwayinterface
+	actorresearcher --- thingfacultyinterface
+	actorextensionadministrator --- thingprojectinterface
+	actorextensionadministrator --- thingnysinterface
+	actorextensionadministrator --- thingeducatorinterface
+	thingactivityinsight --- controlusesystemactivityinsight
+	thinginsightinterface --> controlusesystemactivityinsight
+	thingsystem --- controlusesystemactivityinsight
+	thingsystem --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingsymplecticelement --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingelementinterface --> controlusesystemtrackscholarlyfacultyoutputrepository
+	thingscholarlyfacultyoutput --- controltrackscholarlyfacultyoutputrepository
+	thingrepository --- controltrackscholarlyfacultyoutputrepository
+	thingrepositoryinterface --> controltrackscholarlyfacultyoutputrepository
+	controlusesystemtrackscholarlyfacultyoutputrepository --> controltrackscholarlyfacultyoutputrepository
+	thingtrackingstatistic --- controlseecomprehensivetrackingstatistics
+	thingfaculty --- controlseecomprehensivetrackingstatistics
+	thingdigestibleway --- controlseecomprehensivetrackingstatistics
+	thingwayinterface --> controlseecomprehensivetrackingstatistics
+	thinginformation --- controlhaveinformation
+	thingfacultyinterface --> controlhaveinformation
+	thingfaculty --- controlhaveinformation
+	thingresource --- controlmakeresource
+	thingspecificproject --- controlmakeresource
+	thingprojectinterface --> controlmakeresource
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicarea
+	thingNYS --- controlmakeresourceavailablegeographicarea
+	thingnysinterface --> controlmakeresourceavailablegeographicarea
+	thingresource --- controlmakeresourceavailablegeographicarea
+	thingfaculty --- controlmakeresourceavailablegeographicarea
+	thingeducator --- controlmakeresourceavailablegeographicareaeducator
+	thingeducatorinterface --> controlmakeresourceavailablegeographicareaeducator
+	thingavailablegeographicarea --- controlmakeresourceavailablegeographicareaeducator
+	thingresource --- controlmakeresourceavailablegeographicareaeducator
+
+@enduml

@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a Zooniverse admin,I want to know which piece of education I should give to a volunteer.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,I",
+        "label": "Data"
+      },
+      {
+        "text": "piece of education",
+        "label": "PII"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      }
+    ]
+  }
+]

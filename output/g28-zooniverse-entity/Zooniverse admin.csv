@@ -1,0 +1,224 @@
+id,value,style,source,target,type
+200,Talk,shape=partialRectangle,null,null,data_base
+201,Picture,shape=partialRectangle,null,null,data_base
+202,Comment,shape=partialRectangle,null,null,data_base
+203,Automated Analysis,shape=partialRectangle,null,null,data_base
+204,Classifiable Animal,shape=partialRectangle,null,null,data_base
+205,Case,shape=partialRectangle,null,null,data_base
+206,Malfunction,shape=partialRectangle,null,null,data_base
+207,Snapshot Serengeti,shape=partialRectangle,null,null,data_base
+208,Plankton,shape=partialRectangle,null,null,data_base
+209,Localization,shape=partialRectangle,null,null,data_base
+210,Classifiable Plankton,shape=partialRectangle,null,null,data_base
+211,Orientation,shape=partialRectangle,null,null,data_base
+212,Worm,shape=partialRectangle,null,null,data_base
+213,Time,shape=partialRectangle,null,null,data_base
+214,Egg,shape=partialRectangle,null,null,data_base
+215,Area,shape=partialRectangle,null,null,data_base
+216,Temporary Shelter,shape=partialRectangle,null,null,data_base
+217,Damage,shape=partialRectangle,null,null,data_base
+218,Flooding,shape=partialRectangle,null,null,data_base
+219,Important Feature,shape=partialRectangle,null,null,data_base
+220,Experience,shape=partialRectangle,null,null,data_base
+221,Volunteer,shape=partialRectangle,null,null,data_base
+222,Classification,shape=partialRectangle,null,null,data_base
+223,Weight,shape=partialRectangle,null,null,data_base
+224,Artefact,shape=partialRectangle,null,null,data_base
+225,Bright Star,shape=partialRectangle,null,null,data_base
+226,Prefiltering,shape=partialRectangle,null,null,data_base
+227,Camera,shape=partialRectangle,null,null,data_base
+228,Read Error,shape=partialRectangle,null,null,data_base
+229,Number,shape=partialRectangle,null,null,data_base
+230,"Audio ,\nSingle File",shape=partialRectangle,null,null,data_base
+231,Whale,shape=partialRectangle,null,null,data_base
+232,Text,shape=partialRectangle,null,null,data_base
+233,Video,shape=partialRectangle,null,null,data_base
+234,Interesting Comment,shape=partialRectangle,null,null,data_base
+235,Subject,shape=partialRectangle,null,null,data_base
+236,Explanation,shape=partialRectangle,null,null,data_base
+237,Previous Experience,shape=partialRectangle,null,null,data_base
+238,Different Project,shape=partialRectangle,null,null,data_base
+239,Transient,shape=partialRectangle,null,null,data_base
+240,Object,shape=partialRectangle,null,null,data_base
+241,Audio File,shape=partialRectangle,null,null,data_base
+242,Sound,shape=partialRectangle,null,null,data_base
+243,Background Noise,shape=partialRectangle,null,null,data_base
+244,Similarity,shape=partialRectangle,null,null,data_base
+245,Animal Species\nPreclassification,shape=partialRectangle,null,null,data_base
+246,Animal Attribute\nPreclassification,shape=partialRectangle,null,null,data_base
+247,Roads Etc,shape=partialRectangle,null,null,data_base
+248,Serengeti,shape=partialRectangle,null,null,data_base
+249,Animal,shape=partialRectangle,null,null,data_base
+250,Satellite,shape=partialRectangle,null,null,data_base
+251,Group,shape=partialRectangle,null,null,data_base
+252,Zooniverse Admin,rounded=0,null,null,external_entity
+253,Assess,ellipse,null,null,process
+254,Detect,ellipse,null,null,process
+255,Preclassify,ellipse,null,null,process
+256,Use Simple Image Features,ellipse,null,null,process
+257,Detect Snapshot Serengeti Images With No Classifiable Animals In Snapshot Serengeti Images,ellipse,null,null,process
+258,Perform Automatic Image Series Detection For The Case Timestamping Malfunction In Snapshot Serengeti Images,ellipse,null,null,process
+259,Perform Automatic Animal Species Preclassification In Snapshot Serengeti,ellipse,null,null,process
+260,Perform Automatic Animal Attribute Preclassification In Snapshot Serengeti,ellipse,null,null,process
+261,Perform Automatic Animal Number Detection In Snapshot Serengeti,ellipse,null,null,process
+262,Perform Automatic Segmentation Of Plankton In,ellipse,null,null,process
+263,Perform Localization,ellipse,null,null,process
+264,Detect Plankton Portal Images With No Classifiable Plankton In,ellipse,null,null,process
+265,Perform Automatic Detection Of Plankton Size In Plankton Portal Images,ellipse,null,null,process
+266,Perform Automatic Detection Of Orientation,ellipse,null,null,process
+267,Perform Automatic Preclassification Of Plankton Species In Plankton Portal Images,ellipse,null,null,process
+268,Perform Automatic Worm Motion Analysis,ellipse,null,null,process
+269,Reduce Video Duration In Worm Watch Lab,ellipse,null,null,process
+270,Detect The Time In A Worm Watch Lab Video The Worm Where Lays An Egg,ellipse,null,null,process
+271,Detect Important Features Such As Areas Of Blocked Roads Etc,ellipse,null,null,process
+272,Detect Important Features Such As Areas Of Temporary Shelter,ellipse,null,null,process
+273,Detect Important Features Such As Areas Of Flooding In The Satellite Images,ellipse,null,null,process
+274,Detect Important Features Such As Areas Of Damage,ellipse,null,null,process
+275,Assess The Probability Of A Volunteer’s Classification On Experience,ellipse,null,null,process
+276,Assess Weight,ellipse,null,null,process
+277,Perform Prefiltering Of The Images,ellipse,null,null,process
+278,Remove Artefacts Such As Camera,ellipse,null,null,process
+279,Remove Artefacts Such As Read Error,ellipse,null,null,process
+280,Remove Artefacts Such As Bright Stars,ellipse,null,null,process
+281,"Identify The Number Of Whales In A Audio, Single File",ellipse,null,null,process
+282,Know,ellipse,null,null,process
+283,Interrupt A Volunteer,ellipse,null,null,process
+284,Interrupt A Volunteer With An Image,ellipse,null,null,process
+285,Interrupt A Volunteer With A Video,ellipse,null,null,process
+286,Educate A Volunteer,ellipse,null,null,process
+287,Educate A Volunteer With An Image,ellipse,null,null,process
+288,Educate A Volunteer With A Video,ellipse,null,null,process
+289,What Say To A Volunteer,ellipse,null,null,process
+290,Recommend Different Projects To Volunteers On Previous Experiences,ellipse,null,null,process
+291,Identify Volunteer Types,ellipse,null,null,process
+292,Detect Transient,ellipse,null,null,process
+293,Detect Moving Objects In The Images,ellipse,null,null,process
+294,Distracting Remove Background Noise Sounds From The Audio Files,ellipse,null,null,process
+296,,endArrow=classic,252,255,endArrow=classic
+297,,endArrow=classic,252,256,endArrow=classic
+298,,endArrow=classic,252,257,endArrow=classic
+299,,endArrow=classic,252,258,endArrow=classic
+300,,endArrow=classic,252,259,endArrow=classic
+301,,endArrow=classic,252,260,endArrow=classic
+302,,endArrow=classic,252,261,endArrow=classic
+303,,endArrow=classic,252,262,endArrow=classic
+304,,endArrow=classic,252,263,endArrow=classic
+305,,endArrow=classic,252,264,endArrow=classic
+306,,endArrow=classic,252,265,endArrow=classic
+307,,endArrow=classic,252,266,endArrow=classic
+308,,endArrow=classic,252,267,endArrow=classic
+309,,endArrow=classic,252,268,endArrow=classic
+310,,endArrow=classic,252,269,endArrow=classic
+311,,endArrow=classic,252,270,endArrow=classic
+312,,endArrow=classic,252,271,endArrow=classic
+313,,endArrow=classic,252,272,endArrow=classic
+314,,endArrow=classic,252,273,endArrow=classic
+315,,endArrow=classic,252,274,endArrow=classic
+316,,endArrow=classic,252,275,endArrow=classic
+317,,endArrow=classic,252,276,endArrow=classic
+318,,endArrow=classic,252,277,endArrow=classic
+319,,endArrow=classic,252,278,endArrow=classic
+320,,endArrow=classic,252,279,endArrow=classic
+321,,endArrow=classic,252,280,endArrow=classic
+322,,endArrow=classic,252,281,endArrow=classic
+323,,endArrow=classic,252,282,endArrow=classic
+324,,endArrow=classic,252,282,endArrow=classic
+325,,endArrow=classic,252,283,endArrow=classic
+326,,endArrow=classic,252,284,endArrow=classic
+327,,endArrow=classic,252,285,endArrow=classic
+328,,endArrow=classic,252,286,endArrow=classic
+329,,endArrow=classic,252,287,endArrow=classic
+330,,endArrow=classic,252,288,endArrow=classic
+331,,endArrow=classic,252,289,endArrow=classic
+332,,endArrow=classic,252,290,endArrow=classic
+333,,endArrow=classic,252,291,endArrow=classic
+334,,endArrow=classic,252,292,endArrow=classic
+335,,endArrow=classic,252,293,endArrow=classic
+336,,endArrow=classic,252,294,endArrow=classic
+337,,endArrow=classic,255,256,endArrow=classic
+338,Picture,endArrow=classic,256,201,endArrow=classic
+339,Classifiable Animal,endArrow=classic,257,204,endArrow=classic
+340,Picture,endArrow=classic,257,201,endArrow=classic
+341,Case,endArrow=classic,258,205,endArrow=classic
+342,Malfunction,endArrow=classic,258,206,endArrow=classic
+343,Picture,endArrow=classic,258,201,endArrow=classic
+344,Animal Species\nPreclassification,endArrow=classic,259,245,endArrow=classic
+345,Snapshot Serengeti,endArrow=classic,259,207,endArrow=classic
+346,Animal Attribute\nPreclassification,endArrow=classic,260,246,endArrow=classic
+347,Snapshot Serengeti,endArrow=classic,260,207,endArrow=classic
+348,Snapshot Serengeti,endArrow=classic,261,207,endArrow=classic
+349,Plankton,endArrow=classic,262,208,endArrow=classic
+350,Localization,endArrow=classic,263,209,endArrow=classic
+351,Classifiable Plankton,endArrow=classic,264,210,endArrow=classic
+352,Picture,endArrow=classic,264,201,endArrow=classic
+353,Picture,endArrow=classic,265,201,endArrow=classic
+354,Orientation,endArrow=classic,266,211,endArrow=classic
+355,Plankton,endArrow=classic,267,208,endArrow=classic
+356,Picture,endArrow=classic,267,201,endArrow=classic
+357,,endArrow=classic,268,269,endArrow=classic
+358,Video,endArrow=classic,269,233,endArrow=classic
+359,Time,endArrow=classic,270,213,endArrow=classic
+360,Egg,endArrow=classic,270,214,endArrow=classic
+361,Worm,endArrow=classic,270,212,endArrow=classic
+362,Roads Etc,endArrow=classic,271,247,endArrow=classic
+363,Important Feature,endArrow=classic,271,219,endArrow=classic
+364,Area,endArrow=classic,271,215,endArrow=classic
+365,Temporary Shelter,endArrow=classic,272,216,endArrow=classic
+366,Important Feature,endArrow=classic,272,219,endArrow=classic
+367,Area,endArrow=classic,272,215,endArrow=classic
+368,Important Feature,endArrow=classic,273,219,endArrow=classic
+369,Area,endArrow=classic,273,215,endArrow=classic
+370,Flooding,endArrow=classic,273,218,endArrow=classic
+371,Picture,endArrow=classic,273,201,endArrow=classic
+372,Damage,endArrow=classic,274,217,endArrow=classic
+373,Important Feature,endArrow=classic,274,219,endArrow=classic
+374,Area,endArrow=classic,274,215,endArrow=classic
+375,Classification,endArrow=classic,275,222,endArrow=classic
+376,Experience,endArrow=classic,275,220,endArrow=classic
+377,Weight,endArrow=classic,276,223,endArrow=classic
+378,,endArrow=classic,277,278,endArrow=classic
+379,,endArrow=classic,277,280,endArrow=classic
+380,Artefact,endArrow=classic,277,224,endArrow=classic
+381,Prefiltering,endArrow=classic,277,226,endArrow=classic
+382,Picture,endArrow=classic,277,201,endArrow=classic
+383,Camera,endArrow=classic,278,227,endArrow=classic
+384,Artefact,endArrow=classic,278,224,endArrow=classic
+385,Read Error,endArrow=classic,279,228,endArrow=classic
+386,Artefact,endArrow=classic,279,224,endArrow=classic
+387,Artefact,endArrow=classic,280,224,endArrow=classic
+388,Bright Star,endArrow=classic,280,225,endArrow=classic
+389,Number,endArrow=classic,281,229,endArrow=classic
+390,Whale,endArrow=classic,281,231,endArrow=classic
+391,"Audio ,\nSingle File",endArrow=classic,281,230,endArrow=classic
+392,,endArrow=classic,282,289,endArrow=classic
+393,,endArrow=classic,283,282,endArrow=classic
+394,Volunteer,endArrow=classic,283,221,endArrow=classic
+395,Text,endArrow=classic,283,232,endArrow=classic
+396,,endArrow=classic,284,282,endArrow=classic
+397,Volunteer,endArrow=classic,284,221,endArrow=classic
+398,Picture,endArrow=classic,284,201,endArrow=classic
+399,,endArrow=classic,285,282,endArrow=classic
+400,Video,endArrow=classic,285,233,endArrow=classic
+401,Volunteer,endArrow=classic,285,221,endArrow=classic
+402,,endArrow=classic,286,282,endArrow=classic
+403,Volunteer,endArrow=classic,286,221,endArrow=classic
+404,Text,endArrow=classic,286,232,endArrow=classic
+405,,endArrow=classic,287,282,endArrow=classic
+406,Volunteer,endArrow=classic,287,221,endArrow=classic
+407,Picture,endArrow=classic,287,201,endArrow=classic
+408,,endArrow=classic,288,282,endArrow=classic
+409,Video,endArrow=classic,288,233,endArrow=classic
+410,Volunteer,endArrow=classic,288,221,endArrow=classic
+411,Volunteer,endArrow=classic,289,221,endArrow=classic
+412,Different Project,endArrow=classic,290,238,endArrow=classic
+413,Previous Experience,endArrow=classic,290,237,endArrow=classic
+414,Volunteer,endArrow=classic,290,221,endArrow=classic
+415,Transient,endArrow=classic,292,239,endArrow=classic
+416,Object,endArrow=classic,293,240,endArrow=classic
+417,Picture,endArrow=classic,293,201,endArrow=classic
+418,Background Noise,endArrow=classic,294,243,endArrow=classic
+419,Sound,endArrow=classic,294,242,endArrow=classic
+420,Audio File,endArrow=classic,294,241,endArrow=classic
+719,Serengeti,endArrow=classic,257,248,endArrow=classic
+724,Animal,endArrow=classic,257,249,endArrow=classic
+745,Satellite,endArrow=classic,273,250,endArrow=classic

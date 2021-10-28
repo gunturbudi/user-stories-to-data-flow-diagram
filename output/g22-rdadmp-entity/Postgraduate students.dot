@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Summary Report " ];
+201 [label="<f0>  |<f1> Research Datum " color=red];
+202 [label="Research , Centre Director" shape=box];
+203 [label="Postgraduate Convenor" shape=box];
+204 [label="{<f0> 1.0|<f1> Receive Regular Summary Reports Of Research Data }" shape=Mrecord];
+202 -> 204
+203 -> 204
+204 -> 200 [label="Summary Report"]
+204 -> 201 [label="Research Datum"]
+}

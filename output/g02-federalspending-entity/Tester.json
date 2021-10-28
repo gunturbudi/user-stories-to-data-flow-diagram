@@ -1,0 +1,32 @@
+[
+  {
+    "text": "As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.",
+    "entities": [
+      {
+        "text": "tester",
+        "label": "Data"
+      },
+      {
+        "text": "test",
+        "label": "Processing"
+      },
+      {
+        "text": "features",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.",
+    "entities": [
+      {
+        "text": "tester,",
+        "label": "Data"
+      },
+      {
+        "text": "deriving",
+        "label": "Processing"
+      }
+    ]
+  }
+]

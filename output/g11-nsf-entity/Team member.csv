@@ -1,0 +1,86 @@
+id,value,style,source,target,type
+20,Plan my work.,ellipse,null,null,process
+200,Beta,shape=partialRectangle,null,null,data_base
+201,Cloud .\nGov,shape=partialRectangle,null,null,data_base
+202,Element,shape=partialRectangle,null,null,data_base
+203,Design Direction,shape=partialRectangle,null,null,data_base
+204,Dis,shape=partialRectangle,null,null,data_base
+205,Mvp,shape=partialRectangle,null,null,data_base
+206,Overlap,shape=partialRectangle,null,null,data_base
+207,Plan,shape=partialRectangle,null,null,data_base
+208,User Research,shape=partialRectangle,null,null,data_base
+209,Hypothesis,shape=partialRectangle,null,null,data_base
+210,Prototype Strategy,shape=partialRectangle,null,null,data_base
+211,Project Timeline,shape=partialRectangle,null,null,data_base
+212,Platform,shape=partialRectangle,null,null,data_base
+213,Meeting,shape=partialRectangle,null,null,data_base
+214,"Visual ,\nUx Design",shape=partialRectangle,null,null,data_base
+215,Content >,shape=partialRectangle,null,null,data_base
+216,Work,shape=partialRectangle,null,null,data_base
+217,Acquisitions Roadmap,shape=partialRectangle,null,null,data_base
+218,Coworking Slot,shape=partialRectangle,null,null,data_base
+219,Recruiting Email\nTemplate,shape=partialRectangle,null,null,data_base
+220,Level Sense,shape=partialRectangle,null,null,data_base
+221,Html Idea,shape=partialRectangle,null,null,data_base
+222,Team Member,rounded=0,null,null,external_entity
+223,See The First Iteration Of Beta Up On Cloud.Gov,ellipse,null,null,process
+224,"Have A Prioritized List Of Features Of A Social, Future Element Page",ellipse,null,null,process
+225,Have A Prioritized List Of Element,ellipse,null,null,process
+226,Determine A Design Direction For The Social Beta Page,ellipse,null,null,process
+227,Meet With Cloud.Gov,ellipse,null,null,process
+228,Meet With Dis,ellipse,null,null,process
+229,Understand,ellipse,null,null,process
+230,Have An Updated Acquisitions Roadmap,ellipse,null,null,process
+231,"How, Time Understand Overlaps With Plans Around The User Research",ellipse,null,null,process
+232,Know,ellipse,null,null,process
+233,Have A Prototype Strategy,ellipse,null,null,process
+234,Have A Schedule Of More Coworking Slots,ellipse,null,null,process
+235,Have Recruiting Email Templates,ellipse,null,null,process
+236,Go,ellipse,null,null,process
+237,Have A High Level Sense Of The Project Timeline,ellipse,null,null,process
+238,Prototype Html Ideas,ellipse,null,null,process
+239,Have A Platform Allows,ellipse,null,null,process
+240,Understand Work Between Content >,ellipse,null,null,process
+241,"Understand Work Between Visual, Ux Design",ellipse,null,null,process
+243,,endArrow=classic,222,223,endArrow=classic
+244,,endArrow=classic,222,224,endArrow=classic
+245,,endArrow=classic,222,225,endArrow=classic
+246,,endArrow=classic,222,226,endArrow=classic
+247,,endArrow=classic,222,227,endArrow=classic
+248,,endArrow=classic,222,228,endArrow=classic
+249,,endArrow=classic,222,230,endArrow=classic
+250,,endArrow=classic,222,231,endArrow=classic
+251,,endArrow=classic,222,233,endArrow=classic
+252,,endArrow=classic,222,234,endArrow=classic
+253,,endArrow=classic,222,235,endArrow=classic
+254,,endArrow=classic,222,236,endArrow=classic
+255,,endArrow=classic,222,237,endArrow=classic
+256,,endArrow=classic,222,238,endArrow=classic
+257,,endArrow=classic,222,239,endArrow=classic
+258,,endArrow=classic,222,240,endArrow=classic
+259,,endArrow=classic,222,241,endArrow=classic
+260,Beta,endArrow=classic,223,200,endArrow=classic
+261,Cloud .\nGov,endArrow=classic,223,201,endArrow=classic
+262,Element,endArrow=classic,225,202,endArrow=classic
+263,Design Direction,endArrow=classic,226,203,endArrow=classic
+264,Cloud .\nGov,endArrow=classic,227,201,endArrow=classic
+265,Dis,endArrow=classic,228,204,endArrow=classic
+266,Acquisitions Roadmap,endArrow=classic,230,217,endArrow=classic
+267,Overlap,endArrow=classic,231,206,endArrow=classic
+268,Plan,endArrow=classic,231,207,endArrow=classic
+269,User Research,endArrow=classic,231,208,endArrow=classic
+270,Prototype Strategy,endArrow=classic,233,210,endArrow=classic
+271,Coworking Slot,endArrow=classic,234,218,endArrow=classic
+272,,endArrow=classic,235,236,endArrow=classic
+273,Recruiting Email\nTemplate,endArrow=classic,235,219,endArrow=classic
+274,Level Sense,endArrow=classic,237,220,endArrow=classic
+275,Project Timeline,endArrow=classic,237,211,endArrow=classic
+276,Html Idea,endArrow=classic,238,221,endArrow=classic
+277,,endArrow=classic,239,238,endArrow=classic
+278,Platform,endArrow=classic,239,212,endArrow=classic
+279,Content >,endArrow=classic,240,215,endArrow=classic
+280,Work,endArrow=classic,240,216,endArrow=classic
+281,Work,endArrow=classic,241,216,endArrow=classic
+282,"Visual ,\nUx Design",endArrow=classic,241,214,endArrow=classic
+1000,,endArrow=classic,237,20,endArrow=classic
+1001,Work,endArrow=classic,20,216,endArrow=classic

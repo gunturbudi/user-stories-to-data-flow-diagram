@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Property Information" as thingpropertyinformation #grey
+	actor "L ,\nStaff Member" as actorlstaffmember
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Search For\nProperty Information" as controlsearchpropertyinformation
+
+	actorlstaffmember --- thinginformationinterface
+	thingpropertyinformation --- controlsearchpropertyinformation
+	thinginformationinterface --> controlsearchpropertyinformation
+
+@enduml

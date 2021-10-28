@@ -1,0 +1,35 @@
+id,value,style,source,target,type
+200,Alfred,shape=partialRectangle,null,null,data_base
+201,People,shape=partialRectangle,null,null,data_base
+202,Similar Disease,shape=partialRectangle,null,null,data_base
+203,Circle,shape=partialRectangle,null,null,data_base
+204,App,shape=partialRectangle,null,null,data_base
+205,"Possible ,\nPeople",shape=partialRectangle,null,null,data_base
+206,Olderperson,rounded=0,null,null,external_entity
+207,Developer,rounded=0,null,null,external_entity
+208,Use Alfred,ellipse,null,null,process
+209,Set Up Social Groups Of People With Similar Diseases,ellipse,null,null,process
+210,Contact People From Own Circle,ellipse,null,null,process
+211,Have,ellipse,null,null,process
+212,Remind People,ellipse,null,null,process
+213,Exercise,ellipse,null,null,process
+214,"Present App To As Possible, Many People",ellipse,null,null,process
+216,,endArrow=classic,206,208,endArrow=classic
+217,,endArrow=classic,206,209,endArrow=classic
+218,,endArrow=classic,206,210,endArrow=classic
+219,,endArrow=classic,206,211,endArrow=classic
+220,,endArrow=classic,206,212,endArrow=classic
+221,,endArrow=classic,206,213,endArrow=classic
+222,,endArrow=classic,207,214,endArrow=classic
+223,,endArrow=classic,208,209,endArrow=classic
+224,,endArrow=classic,208,210,endArrow=classic
+225,Alfred,endArrow=classic,208,200,endArrow=classic
+226,People,endArrow=classic,209,201,endArrow=classic
+227,Similar Disease,endArrow=classic,209,202,endArrow=classic
+228,Circle,endArrow=classic,210,203,endArrow=classic
+229,People,endArrow=classic,210,201,endArrow=classic
+230,,endArrow=classic,211,212,endArrow=classic
+231,,endArrow=classic,212,213,endArrow=classic
+232,People,endArrow=classic,212,201,endArrow=classic
+233,App,endArrow=classic,214,204,endArrow=classic
+234,"Possible ,\nPeople",endArrow=classic,214,205,endArrow=classic

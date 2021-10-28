@@ -1,0 +1,186 @@
+[
+  {
+    "text": "As a faculty member, I want to access a collection within the repository, so that I can obtain research materials.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to direct students to an item within the repository, so that I can facilitate my teaching (i.e. desires ability to link to content).",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "direct",
+        "label": "Processing"
+      },
+      {
+        "text": "students",
+        "label": "Data"
+      },
+      {
+        "text": "teaching",
+        "label": "PII"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to easily collect my publications -- both those within the repository and without -- into a single online access point, so that I can raise the profile of my work.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "collect",
+        "label": "Processing"
+      },
+      {
+        "text": "publications",
+        "label": "PII"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to upload my scholarly work to the repository, so that I can have a persistent URL that can be used for my personal web page and CV.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "scholarly work",
+        "label": "PII"
+      },
+      {
+        "text": "personal web page",
+        "label": "PII"
+      },
+      {
+        "text": "CV",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to maintain versioning of Extension brochures, FAQs, etc., so that only the most current are used/adapted by other CCE Educators in their work.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "Extension brochures",
+        "label": "PII"
+      },
+      {
+        "text": "adapted",
+        "label": "Processing"
+      },
+      {
+        "text": "CCE Educators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to upload my scholarly work to the repository, so that I can reach a non-academic audience, expand my influence within my academic community, and use it for teaching.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "scholarly work",
+        "label": "PII"
+      },
+      {
+        "text": "non-academic audience",
+        "label": "PII"
+      },
+      {
+        "text": "expand",
+        "label": "Processing"
+      },
+      {
+        "text": "influence",
+        "label": "PII"
+      },
+      {
+        "text": "academic community",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to associate files with my scholarly works such that someone accessing the latter also receives access to the former, so that I can deliver the fullest picture of my research.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "scholarly works",
+        "label": "PII"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to recommend a digital collection be built in the repository, so that I can assist in my research.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "recommend",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  }
+]

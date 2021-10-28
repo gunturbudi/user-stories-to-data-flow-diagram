@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a Cornell faculty member, I want to associate a researcherID or ORCID with a submission, so that there is no ambiguity between my work and someone else with the same name.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "researcherID",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> User Interface " ];
+202 [label="<f0>  |<f1> File " color=red];
+203 [label="<f0>  |<f1> Datum " ];
+204 [label="<f0>  |<f1> Embargo " ];
+205 [label="<f0>  |<f1> License " color=red];
+206 [label="<f0>  |<f1> Collaborator " color=red];
+207 [label="<f0>  |<f1> Access " color=red];
+208 [label="<f0>  |<f1> Large File " ];
+209 [label="<f0>  |<f1> Opus " ];
+210 [label="<f0>  |<f1> Publication " ];
+211 [label="<f0>  |<f1> Doi " ];
+212 [label="<f0>  |<f1> Previous Deposit " ];
+213 [label="<f0>  |<f1> Metadata " color=red];
+214 [label="<f0>  |<f1> External Repository " ];
+215 [label="<f0>  |<f1> Disposal Policy " ];
+216 [label="<f0>  |<f1> Data Integrity " color=red];
+217 [label="<f0>  |<f1> Guarantee " ];
+218 [label="<f0>  |<f1> Record " color=red];
+219 [label="<f0>  |<f1> Dataset " color=red];
+220 [label="<f0>  |<f1> Behalf " color=red];
+221 [label="<f0>  |<f1> Web Interface " ];
+222 [label="<f0>  |<f1> Workflow Tool " color=red];
+223 [label="<f0>  |<f1> Research Environment " ];
+224 [label="<f0>  |<f1> University System " ];
+225 [label="<f0>  |<f1> Project Dmp " ];
+226 [label="<f0>  |<f1> Discoverability " color=red];
+227 [label="<f0>  |<f1> Research " color=red];
+228 [label="Depositor" shape=box];
+229 [label="{<f0> 1.0|<f1> Deposit Datasets Through A Simple Web Interface }" shape=Mrecord];
+230 [label="{<f0> 2.0|<f1> Maintain Datasets Through A Simple Web Interface }" shape=Mrecord];
+231 [label="{<f0> 3.0|<f1> Have A User Interface Is Familiar To }" shape=Mrecord];
+232 [label="{<f0> 4.0|<f1> Pure Deposit Datasets }" shape=Mrecord];
+233 [label="{<f0> 5.0|<f1> Pure Maintain Datasets }" shape=Mrecord];
+234 [label="{<f0> 6.0|<f1> Deposit Datasets Through Other Workflow Tool }" shape=Mrecord];
+235 [label="{<f0> 7.0|<f1> Deposit Datasets Through Virtual Research Environments }" shape=Mrecord];
+236 [label="{<f0> 8.0|<f1> Maintain Datasets Through Other Workflow Tool }" shape=Mrecord];
+237 [label="{<f0> 9.0|<f1> Maintain Datasets Through Virtual Research Environments }" shape=Mrecord];
+238 [label="{<f0> 10.0|<f1> Deposit The Files }" shape=Mrecord];
+239 [label="{<f0> 11.0|<f1> Place Data Under An Embargo }" shape=Mrecord];
+240 [label="{<f0> 12.0|<f1> Apply Licenses To Datasets }" shape=Mrecord];
+241 [label="{<f0> 13.0|<f1> Allow Collaborators Access To Datasets }" shape=Mrecord];
+242 [label="{<f0> 14.0|<f1> Deposit Arbitrarily Large Files }" shape=Mrecord];
+243 [label="{<f0> 15.0|<f1> Link Datasets To Publications In Opus }" shape=Mrecord];
+244 [label="{<f0> 16.0|<f1> Mint Dois For Data }" shape=Mrecord];
+245 [label="{<f0> 17.0|<f1> Have Automatically Metadata From Other University Systems }" shape=Mrecord];
+246 [label="{<f0> 18.0|<f1> Link To Data In External Repositories }" shape=Mrecord];
+247 [label="{<f0> 19.0|<f1> Specify A Disposal Policy For Data }" shape=Mrecord];
+248 [label="{<f0> 20.0|<f1> Track Downloads Of Data }" shape=Mrecord];
+249 [label="{<f0> 21.0|<f1> Track Citations Of Data }" shape=Mrecord];
+250 [label="{<f0> 22.0|<f1> Have Guarantees About Data Integrity }" shape=Mrecord];
+251 [label="{<f0> 23.0|<f1> Attach Specific, Subject Discoverability Metadata To Records }" shape=Mrecord];
+252 [label="{<f0> 24.0|<f1> Link Datasets With The Project Dmp }" shape=Mrecord];
+253 [label="{<f0> 25.0|<f1> Manage Live Research Data }" shape=Mrecord];
+254 [label="{<f0> 26.0|<f1> Share Live Research Data }" shape=Mrecord];
+255 [label="{<f0> 27.0|<f1> Manage Multiple Versions Of The Same Dataset }" shape=Mrecord];
+256 [label="{<f0> 28.0|<f1> Deposit On Behalf }" shape=Mrecord];
+257 [label="{<f0> 29.0|<f1> Allow }" shape=Mrecord];
+30 [label="{<f0> 30.0|<f1> Fulfil my confidentiality responsibilities. }" shape=Mrecord];
+239 -> 30
+1001 [label="<f0>  |<f1> Confidentiality responsibilities " color=red];
+30 -> 1001 [label="Confidentiality responsibilities"]
+31 [label="{<f0> 31.0|<f1> Receive credit. }" shape=Mrecord];
+244 -> 31
+1004 [label="<f0>  |<f1> Credit " color=red];
+31 -> 1004 [label="Credit"]
+32 [label="{<f0> 32.0|<f1> Demonstrate the impact of my work. }" shape=Mrecord];
+248 -> 32
+1007 [label="<f0>  |<f1> Work " color=red];
+32 -> 1007 [label="Work"]
+33 [label="{<f0> 33.0|<f1> Demonstrate the impact of my work }" shape=Mrecord];
+249 -> 33
+1010 [label="<f0>  |<f1> Work " color=red];
+33 -> 1010 [label="Work"]
+34 [label="{<f0> 34.0|<f1> Fulfil funder requirements for archival. }" shape=Mrecord];
+250 -> 34
+1013 [label="<f0>  |<f1> Data " color=red];
+34 -> 1013 [label="Data"]
+35 [label="{<f0> 35.0|<f1> Find my data more easily. }" shape=Mrecord];
+1015 [label="Researchers" shape=box];
+1015 -> 35
+1017 [label="<f0>  |<f1> Discipline " color=red];
+35 -> 1017 [label="Discipline"]
+1019 [label="<f0>  |<f1> Data " color=red];
+35 -> 1019 [label="Data"]
+228 -> 229
+228 -> 230
+228 -> 231
+228 -> 232
+228 -> 233
+228 -> 234
+228 -> 235
+228 -> 236
+228 -> 237
+228 -> 238
+228 -> 239
+228 -> 240
+228 -> 241
+228 -> 242
+228 -> 243
+228 -> 244
+228 -> 245
+228 -> 246
+228 -> 247
+228 -> 248
+228 -> 249
+228 -> 250
+228 -> 251
+228 -> 252
+228 -> 253
+228 -> 254
+228 -> 255
+228 -> 256
+228 -> 257
+229 -> 200 [label="Dataset"]
+229 -> 221 [label="Web Interface"]
+230 -> 200 [label="Dataset"]
+230 -> 221 [label="Web Interface"]
+231 -> 201 [label="User Interface"]
+232 -> 200 [label="Dataset"]
+233 -> 200 [label="Dataset"]
+234 -> 222 [label="Workflow Tool"]
+234 -> 200 [label="Dataset"]
+235 -> 223 [label="Research Environment"]
+235 -> 200 [label="Dataset"]
+236 -> 200 [label="Dataset"]
+236 -> 222 [label="Workflow Tool"]
+237 -> 200 [label="Dataset"]
+237 -> 223 [label="Research Environment"]
+238 -> 202 [label="File"]
+239 -> 203 [label="Datum"]
+239 -> 204 [label="Embargo"]
+240 -> 205 [label="License"]
+240 -> 200 [label="Dataset"]
+241 -> 206 [label="Collaborator"]
+241 -> 207 [label="Access"]
+241 -> 200 [label="Dataset"]
+242 -> 208 [label="Large File"]
+243 -> 210 [label="Publication"]
+243 -> 209 [label="Opus"]
+243 -> 200 [label="Dataset"]
+244 -> 211 [label="Doi"]
+244 -> 203 [label="Datum"]
+245 -> 213 [label="Metadata"]
+245 -> 224 [label="University System"]
+246 -> 214 [label="External Repository"]
+246 -> 203 [label="Datum"]
+247 -> 215 [label="Disposal Policy"]
+247 -> 203 [label="Datum"]
+248 -> 203 [label="Datum"]
+249 -> 203 [label="Datum"]
+250 -> 217 [label="Guarantee"]
+250 -> 216 [label="Data Integrity"]
+251 -> 218 [label="Record"]
+251 -> 213 [label="Metadata"]
+252 -> 225 [label="Project Dmp"]
+252 -> 200 [label="Dataset"]
+253 -> 203 [label="Datum"]
+254 -> 203 [label="Datum"]
+255 -> 219 [label="Dataset"]
+256 -> 220 [label="Behalf"]
+257 -> 256
+251 -> 226 [label="Discoverability"]
+235 -> 227 [label="Research"]
+}

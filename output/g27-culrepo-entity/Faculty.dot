@@ -1,0 +1,57 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Repository " ];
+201 [label="<f0>  |<f1> System " ];
+202 [label="<f0>  |<f1> Symplectic Element " ];
+203 [label="<f0>  |<f1> Activity Insight " color=red];
+204 [label="<f0>  |<f1> Scholarly ,\nFaculty Output " ];
+205 [label="<f0>  |<f1> Digestible Way " ];
+206 [label="<f0>  |<f1> Faculty " ];
+207 [label="<f0>  |<f1> Information " color=red];
+208 [label="<f0>  |<f1> Specific Project " ];
+209 [label="<f0>  |<f1> Nys " ];
+210 [label="<f0>  |<f1> Resource " color=red];
+211 [label="<f0>  |<f1> Available ,\nGeographic Area " ];
+212 [label="<f0>  |<f1> Educator " ];
+213 [label="<f0>  |<f1> Tracking Statistic " color=red];
+214 [label="Administrator" shape=box];
+215 [label="Researcher" shape=box];
+216 [label="Extension Administrator" shape=box];
+217 [label="{<f0> 1.0|<f1> Use Systems Such As Activity Insight }" shape=Mrecord];
+218 [label="{<f0> 2.0|<f1> Use Systems Such As Symplectic Elements }" shape=Mrecord];
+219 [label="{<f0> 3.0|<f1> Track Scholarly, Faculty Output In The Repositories }" shape=Mrecord];
+220 [label="{<f0> 4.0|<f1> See Comprehensive Tracking Statistics Presented To Faculty In A Digestible Way }" shape=Mrecord];
+221 [label="{<f0> 5.0|<f1> Have Information Help Identify Other Faculty }" shape=Mrecord];
+222 [label="{<f0> 6.0|<f1> Make Resources Developed For Specific Projects }" shape=Mrecord];
+223 [label="{<f0> 7.0|<f1> Make Resources Developed For Available, Geographic Area To Other Faculty Across Nys }" shape=Mrecord];
+224 [label="{<f0> 8.0|<f1> Make Resources Developed For Available, Geographic Area To Educator }" shape=Mrecord];
+214 -> 217
+214 -> 218
+214 -> 219
+214 -> 220
+215 -> 221
+216 -> 222
+216 -> 223
+216 -> 224
+217 -> 203 [label="Activity Insight"]
+217 -> 201 [label="System"]
+218 -> 219
+218 -> 201 [label="System"]
+218 -> 202 [label="Symplectic Element"]
+219 -> 204 [label="Scholarly ,\nFaculty Output"]
+219 -> 200 [label="Repository"]
+220 -> 213 [label="Tracking Statistic"]
+220 -> 206 [label="Faculty"]
+220 -> 205 [label="Digestible Way"]
+221 -> 207 [label="Information"]
+221 -> 206 [label="Faculty"]
+222 -> 210 [label="Resource"]
+222 -> 208 [label="Specific Project"]
+223 -> 211 [label="Available ,\nGeographic Area"]
+223 -> 209 [label="Nys"]
+223 -> 210 [label="Resource"]
+223 -> 206 [label="Faculty"]
+224 -> 212 [label="Educator"]
+224 -> 211 [label="Available ,\nGeographic Area"]
+224 -> 210 [label="Resource"]
+}

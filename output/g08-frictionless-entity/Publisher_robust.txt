@@ -1,0 +1,109 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Type Information" as thingtypeinformation #grey
+	entity "Data Package" as thingdatapackage #grey
+	entity "Open Refine" as thingopenrefine
+	entity "Integration" as thingintegration
+	entity "Excel" as thingexcel
+	entity "User" as thingmanyuser
+	entity "Dataset" as thingdataset
+	entity "Useful Metadata" as thingusefulmetadata
+	entity "Data Availability\nPersistence" as thingdataavailabilitypersistence #grey
+	entity "Publication" as thingpublication
+	entity "Site" as thingsite
+	entity "Preview Button" as thingpreviewbutton #grey
+	entity "Methodology" as thingmethodology
+	entity "Reproducible Step" as thingreproduciblestep
+	entity "Data Column" as thingdatacolumn
+	entity "Data State" as thingdatastate
+	actor "Publisher" as actorpublisher
+	circle "Visualization" as thingvisualization
+	circle "Interactive Preview" as thinginteractivepreview
+	boundary "Tool" as thingtoolcheckdataavailabilitypersistencepublicationpublisher
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Refine\nInterface" as thingrefineinterface #grey
+	boundary "Excel\nInterface" as thingexcelinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Column\nInterface" as thingcolumninterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Step\nInterface" as thingstepinterface #grey
+	boundary "State\nInterface" as thingstateinterface #grey
+	control "Add Type\nInformation To\nData" as controladdtypeinformationdatum
+	control "Provide A\nVisualization Of\nData In\nThe Data\nPackage" as controlprovidevisualization
+	control "Provided With\nAn Integration\nWith Open\nRefine" as controlprovideintegration
+	control "Online Store\nData" as controlstoredatum
+	control "Know" as controlknow
+	control "Add Useful\nMetadata" as controladdusefulmetadata
+	control "Add In\nNew Data\nColumns" as controladdnewdatacolumnsmakedataset
+	control "Make The\nDataset" as controlmakedataset
+	control "Check Data\nAvailability Persistence\nAfter Publication" as controlcheckdataavailabilitypersistencepublication
+	control "Time Check\nGood" as controlcheck
+	control "Embed An\nInteractive Preview\nOf Data\nOn Site" as controlembedinteractivepreview
+	control "Embed A\nPreview Button\nOn Site" as controlembedpreviewbutton
+	control "Package Reproducible\nSteps" as controlpackagereproduciblestepgetcertaindatastate
+	control "Get A\nCertain Data\nState" as controlgetcertaindatastate
+
+	thingdatapackage <.. thingdatum
+	thingsite <.. thingdatum
+	thingdatum <.. thingtypeinformation
+	thingopenrefine <.. thingintegration
+	thingexcel <.. thingintegration
+	thingsite <.. thingpreviewbutton
+	thingdatapackage *-- thingvisualization
+	thingdatum *-- thingvisualization
+	thingdatum *-- thinginteractivepreview
+	actorpublisher --- thingtoolcheckdataavailabilitypersistencepublicationpublisher
+	actorpublisher --- thingdatuminterface
+	actorpublisher --- thingpackageinterface
+	actorpublisher --- thingrefineinterface
+	actorpublisher --- thingexcelinterface
+	actorpublisher --- thingmetadatainterface
+	actorpublisher --- thingcolumninterface
+	actorpublisher --- thingdatasetinterface
+	actorpublisher --- thingsiteinterface
+	actorpublisher --- thingstepinterface
+	actorpublisher --- thingstateinterface
+	thingtypeinformation --- controladdtypeinformationdatum
+	thingdatum --- controladdtypeinformationdatum
+	thingdatuminterface --> controladdtypeinformationdatum
+	thingvisualization --- controlprovidevisualization
+	thingdatapackage --- controlprovidevisualization
+	thingpackageinterface --> controlprovidevisualization
+	thingdatum --- controlprovidevisualization
+	thingintegration --- controlprovideintegration
+	thingopenrefine --- controlprovideintegration
+	thingrefineinterface --> controlprovideintegration
+	thingexcel --- controlprovideintegration
+	thingexcelinterface --> controlprovideintegration
+	thingdatum --- controlstoredatum
+	thingdatuminterface --> controlstoredatum
+	thingusefulmetadata --- controladdusefulmetadata
+	thingmetadatainterface --> controladdusefulmetadata
+	thingdatacolumn --- controladdnewdatacolumnsmakedataset
+	thingcolumninterface --> controladdnewdatacolumnsmakedataset
+	controladdnewdatacolumnsmakedataset --> controlmakedataset
+	thingdatasetinterface --> controlmakedataset
+	thingdataset --- controlmakedataset
+	thingdataavailabilitypersistence --- controlcheckdataavailabilitypersistencepublication
+	thingpublication --- controlcheckdataavailabilitypersistencepublication
+	thingtoolcheckdataavailabilitypersistencepublicationpublisher --> controlcheckdataavailabilitypersistencepublication
+	thinginteractivepreview --- controlembedinteractivepreview
+	thingsite --- controlembedinteractivepreview
+	thingsiteinterface --> controlembedinteractivepreview
+	thingdatum --- controlembedinteractivepreview
+	thingpreviewbutton --- controlembedpreviewbutton
+	thingsite --- controlembedpreviewbutton
+	thingsiteinterface --> controlembedpreviewbutton
+	thingreproduciblestep --- controlpackagereproduciblestepgetcertaindatastate
+	thingstepinterface --> controlpackagereproduciblestepgetcertaindatastate
+	controlpackagereproduciblestepgetcertaindatastate --> controlgetcertaindatastate
+	thingdatastate --- controlgetcertaindatastate
+	thingstateinterface --> controlgetcertaindatastate
+
+@enduml

@@ -1,0 +1,117 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Digital Copy" as thingdigitalcopy
+	entity "Repository" as thingrepository
+	entity "Redundant Copy" as thingredundantcopy
+	entity "Threat" as thingthreat
+	entity "Copy" as thingcopy
+	entity "Unwanted Change" as thingunwantedchange
+	entity "Original Object" as thingoriginalobject
+	entity "Change" as thingchange
+	entity "Asset" as thingasset
+	entity "Institution" as thinginstitution
+	entity "Deposit" as thingdeposit
+	entity "Mechanism" as thingmechanism
+	entity "Understanding" as thingunderstanding
+	entity "Listing" as thinglisting
+	entity "Current Status" as thingcurrentstatus
+	entity "Staffing" as thingstaffing
+	entity "Commitment" as thingcommitment
+	entity "Longevity" as thinglongevity
+	entity "Ir" as thingIR
+	entity "Funding" as thingfunding
+	entity "Publish Plan" as thingpublishedplan
+	entity "Successor" as thingsuccessor
+	entity "Management" as thingmanagement
+	entity "Contract Clause" as thingcontractclause
+	actor "Asset Manager" as actorassetmanager
+	circle "Time" as thingtime
+	circle "Disposition" as thingdisposition
+	circle "Ownership" as thingownership
+	boundary "Mechanism" as thingmechanismrestorewhichoriginalobjectcopyassetmanager #grey
+	boundary "Intellectual Value" as thingintellectualvalueassetassetmanager
+	boundary "Change\nInterface" as thingchangeinterface #grey
+	boundary "Mechanism\nInterface" as thingmechanisminterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Ir\nInterface" as thingirinterface #grey
+	boundary "Successor\nInterface" as thingsuccessorinterface #grey
+	boundary "Management\nInterface" as thingmanagementinterface #grey
+	control "Assured" as controlassure
+	control "Changes Occur" as controloccurchange
+	control "By Which\nRestore The\nOriginal Object\nTo All\nCopies" as controlrestorewhichoriginalobjectcopy
+	control "What Is\nTo The\nInstitution At\nThe Time\nOf Deposit" as controlbeintellectualvalueassetassetmanagerinstitutiontime
+	control "Know" as controlknowbeintellectualvalueassetassetmanagerinstitutiontime
+	control "Obtain Understanding" as controlobtainunderstanding
+	control "Have A\nMechanism" as controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	control "Obtain A\nListing Of\nThe Assets\nHave Deposited" as controlobtainlisting
+	control "Obtain A\nListing Of\nCurrent Status" as controlobtainlistingcurrentstatus
+	control "Obtain" as controlobtain #grey
+	control "The Ir\nCease" as controlceaseIR
+	control "Have Mechanism" as controlhavemechanismpassownershipsuccessor
+	control "Pass Ownership\nOf The\nAssets To\nA Successor" as controlpassownershipsuccessor
+	control "Pass Management" as controlpassmanagement
+
+	thingcopy <.. thingthreat
+	thingrepository <.. thingcopy
+	thingsuccessor <.. thingasset
+	thingasset *-- thinglisting
+	thingcurrentstatus *-- thinglisting
+	thinglongevity <.. thingcommitment
+	thingpublishedplan <.. thingcommitment
+	thingcontractclause <.. thingcommitment
+	thingrepository *-- thinglongevity
+	thingIR *-- thingfunding
+	thingdeposit *-- thingtime
+	thingasset *-- thingdisposition
+	thingasset *-- thingownership
+	actorassetmanager --- thingmechanismrestorewhichoriginalobjectcopyassetmanager
+	actorassetmanager --- thingintellectualvalueassetassetmanager
+	actorassetmanager --- thingchangeinterface
+	actorassetmanager --- thingmechanisminterface
+	actorassetmanager --- thingstatusinterface
+	actorassetmanager --- thingirinterface
+	actorassetmanager --- thingsuccessorinterface
+	actorassetmanager --- thingmanagementinterface
+	thingchange --- controloccurchange
+	thingchangeinterface --> controloccurchange
+	thingmechanismrestorewhichoriginalobjectcopyassetmanager --> controlrestorewhichoriginalobjectcopy
+	thingcopy --- controlrestorewhichoriginalobjectcopy
+	thingoriginalobject --- controlrestorewhichoriginalobjectcopy
+	thingintellectualvalueassetassetmanager --> controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thinginstitution --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingtime --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingdeposit --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	controlknowbeintellectualvalueassetassetmanagerinstitutiontime --> controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingasset --- controlbeintellectualvalueassetassetmanagerinstitutiontime
+	thingintellectualvalueassetassetmanager --> controlknowbeintellectualvalueassetassetmanagerinstitutiontime
+	thingunderstanding --- controlobtainunderstanding
+	thingmechanisminterface --> controlobtainunderstanding
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtainunderstanding
+	thingmechanism --- controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thingunderstanding --- controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thingmechanisminterface --> controlhavemechanismobtainobtainunderstandingobtainobtainlisting
+	thinglisting --- controlobtainlisting
+	thingmechanisminterface --> controlobtainlisting
+	thingasset --- controlobtainlisting
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtainlisting
+	thingcurrentstatus --- controlobtainlistingcurrentstatus
+	thingstatusinterface --> controlobtainlistingcurrentstatus
+	thinglisting --- controlobtainlistingcurrentstatus
+	controlhavemechanismobtainobtainunderstandingobtainobtainlisting --> controlobtain
+	thingirinterface --> controlceaseIR
+	thingIR --- controlceaseIR
+	thingmechanism --- controlhavemechanismpassownershipsuccessor
+	thingmechanisminterface --> controlhavemechanismpassownershipsuccessor
+	controlhavemechanismpassownershipsuccessor --> controlpassownershipsuccessor
+	thingownership --- controlpassownershipsuccessor
+	thingsuccessor --- controlpassownershipsuccessor
+	thingsuccessorinterface --> controlpassownershipsuccessor
+	thingasset --- controlpassownershipsuccessor
+	thingmanagement --- controlpassmanagement
+	thingmanagementinterface --> controlpassmanagement
+	controlhavemechanismpassownershipsuccessor --> controlpassmanagement
+
+@enduml

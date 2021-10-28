@@ -1,0 +1,63 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Wig Prototype " ];
+201 [label="<f0>  |<f1> Interview " color=red];
+202 [label="<f0>  |<f1> Hypothesis " ];
+203 [label="<f0>  |<f1> Outreach " ];
+204 [label="<f0>  |<f1> Website Recruitment\nTest " ];
+205 [label="<f0>  |<f1> User Definition\nWorkshop " color=red];
+206 [label="<f0>  |<f1> Nsf " ];
+207 [label="<f0>  |<f1> Olpa Task\nScript " ];
+208 [label="<f0>  |<f1> Priority Workflow\nCandidate " color=red];
+209 [label="<f0>  |<f1> User " color=red];
+210 [label="User Researcher" shape=box];
+211 [label="{<f0> 1.0|<f1> Test The User Research Plan }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Have The Finalized Olpa Task Script }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Have The Wig Prototype }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Have A List Of Priority Workflow Candidates }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> Scheduling Interviews For Hypothesis }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> Continue }" shape=Mrecord];
+217 [label="{<f0> 7.0|<f1> Know Outreach To Lists Successful }" shape=Mrecord];
+218 [label="{<f0> 8.0|<f1> Identifying Interview Participants }" shape=Mrecord];
+219 [label="{<f0> 9.0|<f1> Begin }" shape=Mrecord];
+220 [label="{<f0> 10.0|<f1> Set Up A Website Recruitment Test }" shape=Mrecord];
+221 [label="{<f0> 11.0|<f1> Invited To User Interviews }" shape=Mrecord];
+222 [label="{<f0> 12.0|<f1> Make }" shape=Mrecord];
+223 [label="{<f0> 13.0|<f1> Drafting A Research Plan }" shape=Mrecord];
+224 [label="{<f0> 14.0|<f1> Conduct A User Definition Workshop With Nsf }" shape=Mrecord];
+15 [label="{<f0> 15.0|<f1> Make recommendations accordingly. }" shape=Mrecord];
+1000 [label="Nsf people" shape=box];
+1000 -> 15
+1002 [label="<f0>  |<f1> Interviews " color=red];
+15 -> 1002 [label="Interviews"]
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 216
+210 -> 217
+210 -> 218
+210 -> 219
+210 -> 219
+210 -> 220
+210 -> 221
+210 -> 222
+210 -> 223
+210 -> 224
+212 -> 207 [label="Olpa Task\nScript"]
+213 -> 200 [label="Wig Prototype"]
+214 -> 208 [label="Priority Workflow\nCandidate"]
+215 -> 201 [label="Interview"]
+215 -> 202 [label="Hypothesis"]
+216 -> 215
+217 -> 203 [label="Outreach"]
+219 -> 218
+219 -> 223
+220 -> 204 [label="Website Recruitment\nTest"]
+221 -> 201 [label="Interview"]
+222 -> 221
+224 -> 205 [label="User Definition\nWorkshop"]
+224 -> 206 [label="Nsf"]
+211 -> 209 [label="User"]
+}

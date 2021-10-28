@@ -1,0 +1,69 @@
+[
+  {
+    "text": "As a Planning Staff member, I want to Conduct and Track Plan Amendments and Planning Studies, so that I can record work in process, outcome, and location-based information related to the Plan(s).",
+    "entities": [
+      {
+        "text": "Planning Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Conduct",
+        "label": "Processing"
+      },
+      {
+        "text": "Track",
+        "label": "Processing"
+      },
+      {
+        "text": "Plan Amendments",
+        "label": "PII"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "location-based information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Planning Staff member, I want to Generate Planning-related Reports, so that I can access, analyze and/or export the needed information in the format I requested.",
+    "entities": [
+      {
+        "text": "Planning Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Generate",
+        "label": "Processing"
+      },
+      {
+        "text": "needed information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Planning Staff member, I want to Evaluate Consistency with the Comprehensive Plan, so that I can complete my required review of a plan set and/or application.",
+    "entities": [
+      {
+        "text": "Planning Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Evaluate",
+        "label": "Processing"
+      },
+      {
+        "text": "required review",
+        "label": "PII"
+      }
+    ]
+  }
+]

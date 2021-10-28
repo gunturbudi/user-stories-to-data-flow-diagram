@@ -1,0 +1,235 @@
+id,value,style,source,target,type
+200,Dataset,shape=partialRectangle,null,null,data_base
+201,Viewable,shape=partialRectangle,null,null,data_base
+202,Report,shape=partialRectangle,null,null,data_base
+203,Subscriber,shape=partialRectangle,null,null,data_base
+204,Specified Report,shape=partialRectangle,null,null,data_base
+205,Ease,shape=partialRectangle,null,null,data_base
+206,Subject Classification,shape=partialRectangle,null,null,data_base
+207,Patron,shape=partialRectangle,null,null,data_base
+208,Dataset,shape=partialRectangle,null,null,data_base
+209,Error,shape=partialRectangle,null,null,data_base
+210,Document,shape=partialRectangle,null,null,data_base
+211,Revise Report,shape=partialRectangle,null,null,data_base
+212,Previous Version,shape=partialRectangle,null,null,data_base
+213,"Historical ,\nExpired Report",shape=partialRectangle,null,null,data_base
+214,System,shape=partialRectangle,null,null,data_base
+215,Historical Report,shape=partialRectangle,null,null,data_base
+216,Subtopic,shape=partialRectangle,null,null,data_base
+217,Personal Account,shape=partialRectangle,null,null,data_base
+218,Access,shape=partialRectangle,null,null,data_base
+219,Authorized Function,shape=partialRectangle,null,null,data_base
+220,Password,shape=partialRectangle,null,null,data_base
+221,Administrator,shape=partialRectangle,null,null,data_base
+222,Permission,shape=partialRectangle,null,null,data_base
+223,Account,shape=partialRectangle,null,null,data_base
+224,Tracking,shape=partialRectangle,null,null,data_base
+225,Robust Searching,shape=partialRectangle,null,null,data_base
+226,Feature,shape=partialRectangle,null,null,data_base
+227,Future Date,shape=partialRectangle,null,null,data_base
+228,Calendar,shape=partialRectangle,null,null,data_base
+229,Name,shape=partialRectangle,null,null,data_base
+230,Partial,shape=partialRectangle,null,null,data_base
+231,Email,shape=partialRectangle,null,null,data_base
+232,Subscription,shape=partialRectangle,null,null,data_base
+233,Purpose,shape=partialRectangle,null,null,data_base
+234,Email Address,shape=partialRectangle,null,null,data_base
+235,Etc,shape=partialRectangle,null,null,data_base
+236,Relationship Group,shape=partialRectangle,null,null,data_base
+237,Release Date,shape=partialRectangle,null,null,data_base
+238,Topic,shape=partialRectangle,null,null,data_base
+239,Closing,shape=partialRectangle,null,null,data_base
+240,Db,rounded=0,null,null,external_entity
+241,Ir Administrator,rounded=0,null,null,external_entity
+242,Mark Dataset Viewable To,ellipse,null,null,process
+243,Mark Dataset,ellipse,null,null,process
+244,Mark Report,ellipse,null,null,process
+245,Not Emailed,ellipse,null,null,process
+246,Manage Name Dataset Change,ellipse,null,null,process
+247,Manage Report,ellipse,null,null,process
+248,See List Of Subscribers For Specified Report In,ellipse,null,null,process
+249,Search,ellipse,null,null,process
+250,Manage Subject Classifications For Ease Of,ellipse,null,null,process
+251,Manage Subject Classifications For Ease Of Patron Browsing,ellipse,null,null,process
+252,Manage Customizable Relationship Groups In Support Of Patron,ellipse,null,null,process
+253,Upload Due Dataset To Error In Document,ellipse,null,null,process
+254,Upload Due Dataset To Error In Report,ellipse,null,null,process
+255,Upload Revised Report,ellipse,null,null,process
+256,Upload New Version Of Dataset,ellipse,null,null,process
+257,Upload New Version Of Report Retaining Previous Versions For Patron Use,ellipse,null,null,process
+258,Have,ellipse,null,null,process
+259,Login To Personal Account With Access To Authorized Functions,ellipse,null,null,process
+260,Change Passwords,ellipse,null,null,process
+261,Have A Personal Account With,ellipse,null,null,process
+262,Retrieve Forgotten Ones,ellipse,null,null,process
+263,Make,ellipse,null,null,process
+264,Set Up Accounts For Other Administrators With Various Levels Of Permission,ellipse,null,null,process
+265,Delete Accounts For Other Administrators With Various Levels Of Permission,ellipse,null,null,process
+266,Administering Accounts,ellipse,null,null,process
+267,See A List Of All Administrators For Ease,ellipse,null,null,process
+268,Have Tracking Features For,ellipse,null,null,process
+269,Have Robust Searching,ellipse,null,null,process
+270,Have Tracking Features For Existing Patron Accounts,ellipse,null,null,process
+271,Create,ellipse,null,null,process
+272,Unpublish Dataset,ellipse,null,null,process
+273,Unpublish A Report,ellipse,null,null,process
+274,Add Future Dates Of Dataset,ellipse,null,null,process
+275,Add Future Release Dates Of Reports To Calendar For Patron Fyi,ellipse,null,null,process
+276,Use,ellipse,null,null,process
+277,Use Name,ellipse,null,null,process
+278,Use Full Email,ellipse,null,null,process
+279,Search For,ellipse,null,null,process
+280,Use Partial,ellipse,null,null,process
+281,"Viewing, Changing, Resetting, Changing Administrate Accounts For Purpose Of Accounts Subscriptions Subscriptions Passwords Etc",ellipse,null,null,process
+282,"Viewing, Changing, Resetting, Changing Administrate Patron Accounts For Purpose Of Closing Accounts Subscriptions Subscriptions Passwords Email Address",ellipse,null,null,process
+284,,endArrow=classic,240,242,endArrow=classic
+285,,endArrow=classic,240,243,endArrow=classic
+286,,endArrow=classic,240,244,endArrow=classic
+287,,endArrow=classic,240,246,endArrow=classic
+288,,endArrow=classic,240,247,endArrow=classic
+289,,endArrow=classic,240,248,endArrow=classic
+290,,endArrow=classic,240,249,endArrow=classic
+291,,endArrow=classic,240,250,endArrow=classic
+292,,endArrow=classic,240,251,endArrow=classic
+293,,endArrow=classic,240,252,endArrow=classic
+294,,endArrow=classic,240,253,endArrow=classic
+295,,endArrow=classic,240,254,endArrow=classic
+296,,endArrow=classic,240,255,endArrow=classic
+297,,endArrow=classic,240,256,endArrow=classic
+298,,endArrow=classic,240,257,endArrow=classic
+299,,endArrow=classic,240,259,endArrow=classic
+300,,endArrow=classic,240,260,endArrow=classic
+301,,endArrow=classic,240,261,endArrow=classic
+302,,endArrow=classic,240,262,endArrow=classic
+303,,endArrow=classic,240,263,endArrow=classic
+304,,endArrow=classic,240,264,endArrow=classic
+305,,endArrow=classic,240,265,endArrow=classic
+306,,endArrow=classic,240,266,endArrow=classic
+307,,endArrow=classic,240,267,endArrow=classic
+308,,endArrow=classic,240,268,endArrow=classic
+309,,endArrow=classic,240,269,endArrow=classic
+310,,endArrow=classic,240,270,endArrow=classic
+311,,endArrow=classic,240,271,endArrow=classic
+312,,endArrow=classic,240,272,endArrow=classic
+313,,endArrow=classic,240,273,endArrow=classic
+314,,endArrow=classic,240,274,endArrow=classic
+315,,endArrow=classic,240,275,endArrow=classic
+316,,endArrow=classic,240,276,endArrow=classic
+317,,endArrow=classic,240,277,endArrow=classic
+318,,endArrow=classic,240,278,endArrow=classic
+319,,endArrow=classic,240,279,endArrow=classic
+320,,endArrow=classic,240,279,endArrow=classic
+321,,endArrow=classic,240,280,endArrow=classic
+322,,endArrow=classic,240,281,endArrow=classic
+323,,endArrow=classic,240,282,endArrow=classic
+324,,endArrow=classic,241,242,endArrow=classic
+325,,endArrow=classic,241,243,endArrow=classic
+326,,endArrow=classic,241,244,endArrow=classic
+327,,endArrow=classic,241,246,endArrow=classic
+328,,endArrow=classic,241,247,endArrow=classic
+329,,endArrow=classic,241,248,endArrow=classic
+330,,endArrow=classic,241,249,endArrow=classic
+331,,endArrow=classic,241,250,endArrow=classic
+332,,endArrow=classic,241,251,endArrow=classic
+333,,endArrow=classic,241,252,endArrow=classic
+334,,endArrow=classic,241,253,endArrow=classic
+335,,endArrow=classic,241,254,endArrow=classic
+336,,endArrow=classic,241,255,endArrow=classic
+337,,endArrow=classic,241,256,endArrow=classic
+338,,endArrow=classic,241,257,endArrow=classic
+339,,endArrow=classic,241,259,endArrow=classic
+340,,endArrow=classic,241,260,endArrow=classic
+341,,endArrow=classic,241,261,endArrow=classic
+342,,endArrow=classic,241,262,endArrow=classic
+343,,endArrow=classic,241,263,endArrow=classic
+344,,endArrow=classic,241,264,endArrow=classic
+345,,endArrow=classic,241,265,endArrow=classic
+346,,endArrow=classic,241,266,endArrow=classic
+347,,endArrow=classic,241,267,endArrow=classic
+348,,endArrow=classic,241,268,endArrow=classic
+349,,endArrow=classic,241,269,endArrow=classic
+350,,endArrow=classic,241,270,endArrow=classic
+351,,endArrow=classic,241,271,endArrow=classic
+352,,endArrow=classic,241,272,endArrow=classic
+353,,endArrow=classic,241,273,endArrow=classic
+354,,endArrow=classic,241,274,endArrow=classic
+355,,endArrow=classic,241,275,endArrow=classic
+356,,endArrow=classic,241,276,endArrow=classic
+357,,endArrow=classic,241,277,endArrow=classic
+358,,endArrow=classic,241,278,endArrow=classic
+359,,endArrow=classic,241,279,endArrow=classic
+360,,endArrow=classic,241,279,endArrow=classic
+361,,endArrow=classic,241,280,endArrow=classic
+362,,endArrow=classic,241,281,endArrow=classic
+363,,endArrow=classic,241,282,endArrow=classic
+364,Viewable,endArrow=classic,242,201,endArrow=classic
+365,Dataset,endArrow=classic,242,200,endArrow=classic
+366,Dataset,endArrow=classic,243,200,endArrow=classic
+367,Report,endArrow=classic,244,202,endArrow=classic
+368,Report,endArrow=classic,247,202,endArrow=classic
+369,Subscriber,endArrow=classic,248,203,endArrow=classic
+370,Specified Report,endArrow=classic,248,204,endArrow=classic
+371,,endArrow=classic,250,249,endArrow=classic
+372,Subject Classification,endArrow=classic,250,206,endArrow=classic
+373,Ease,endArrow=classic,250,205,endArrow=classic
+374,Subject Classification,endArrow=classic,251,206,endArrow=classic
+375,Ease,endArrow=classic,251,205,endArrow=classic
+376,Patron,endArrow=classic,251,207,endArrow=classic
+377,Relationship Group,endArrow=classic,252,236,endArrow=classic
+378,Patron,endArrow=classic,252,207,endArrow=classic
+379,Document,endArrow=classic,253,210,endArrow=classic
+380,Dataset,endArrow=classic,253,208,endArrow=classic
+381,Dataset,endArrow=classic,254,208,endArrow=classic
+382,Revise Report,endArrow=classic,255,211,endArrow=classic
+383,Dataset,endArrow=classic,256,200,endArrow=classic
+384,Report,endArrow=classic,257,202,endArrow=classic
+385,Previous Version,endArrow=classic,257,212,endArrow=classic
+386,Patron,endArrow=classic,257,207,endArrow=classic
+387,Personal Account,endArrow=classic,259,217,endArrow=classic
+388,Access,endArrow=classic,259,218,endArrow=classic
+389,Authorized Function,endArrow=classic,259,219,endArrow=classic
+390,,endArrow=classic,260,262,endArrow=classic
+391,,endArrow=classic,260,263,endArrow=classic
+392,Password,endArrow=classic,260,220,endArrow=classic
+393,,endArrow=classic,261,260,endArrow=classic
+394,Personal Account,endArrow=classic,261,217,endArrow=classic
+395,Account,endArrow=classic,264,223,endArrow=classic
+396,Administrator,endArrow=classic,264,221,endArrow=classic
+397,Permission,endArrow=classic,264,222,endArrow=classic
+398,Administrator,endArrow=classic,265,221,endArrow=classic
+399,Permission,endArrow=classic,265,222,endArrow=classic
+400,Account,endArrow=classic,265,223,endArrow=classic
+401,,endArrow=classic,266,267,endArrow=classic
+402,Account,endArrow=classic,266,223,endArrow=classic
+403,Ease,endArrow=classic,267,205,endArrow=classic
+404,Administrator,endArrow=classic,267,221,endArrow=classic
+405,,endArrow=classic,268,271,endArrow=classic
+406,Tracking,endArrow=classic,268,224,endArrow=classic
+407,Robust Searching,endArrow=classic,269,225,endArrow=classic
+408,Tracking,endArrow=classic,270,224,endArrow=classic
+409,Dataset,endArrow=classic,272,200,endArrow=classic
+410,Report,endArrow=classic,273,202,endArrow=classic
+411,Future Date,endArrow=classic,274,227,endArrow=classic
+412,Dataset,endArrow=classic,274,200,endArrow=classic
+413,Release Date,endArrow=classic,275,237,endArrow=classic
+414,Report,endArrow=classic,275,202,endArrow=classic
+415,Calendar,endArrow=classic,275,228,endArrow=classic
+416,Name,endArrow=classic,277,229,endArrow=classic
+417,Email,endArrow=classic,278,231,endArrow=classic
+418,,endArrow=classic,279,276,endArrow=classic
+419,,endArrow=classic,279,278,endArrow=classic
+420,,endArrow=classic,279,280,endArrow=classic
+421,Partial,endArrow=classic,280,230,endArrow=classic
+422,Etc,endArrow=classic,281,235,endArrow=classic
+423,Password,endArrow=classic,281,220,endArrow=classic
+424,Account,endArrow=classic,281,223,endArrow=classic
+425,Subscription,endArrow=classic,281,232,endArrow=classic
+426,Purpose,endArrow=classic,281,233,endArrow=classic
+427,Purpose,endArrow=classic,282,233,endArrow=classic
+428,Email Address,endArrow=classic,282,234,endArrow=classic
+429,Password,endArrow=classic,282,220,endArrow=classic
+430,Subscription,endArrow=classic,282,232,endArrow=classic
+431,Account,endArrow=classic,282,223,endArrow=classic
+443,Error,endArrow=classic,253,209,endArrow=classic
+634,Feature,endArrow=classic,268,226,endArrow=classic
+716,Closing,endArrow=classic,282,239,endArrow=classic

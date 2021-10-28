@@ -1,0 +1,23 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Government" as thinggovernment
+	entity "Datum" as thingdatum
+	actor "Civic ,\nTech Activist" as actorcivictechactivist
+	circle "Quality" as thingquality
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Make" as controlmakeassessquality
+	control "Assess The\nQuality Of\nData The\nGovernment" as controlassessquality
+
+	thinggovernment <.. thingdatum
+	thingdatum *-- thingquality
+	actorcivictechactivist --- thingdatuminterface
+	thingdatuminterface --> controlmakeassessquality
+	controlmakeassessquality --> controlassessquality
+	thingquality --- controlassessquality
+	thingdatum --- controlassessquality
+	thingdatuminterface --> controlassessquality
+
+@enduml

@@ -1,0 +1,26 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Deletion " ];
+201 [label="<f0>  |<f1> Update " color=red];
+202 [label="<f0>  |<f1> Additional Field " ];
+203 [label="<f0>  |<f1> Fabs Record " color=red];
+204 [label="<f0>  |<f1> Office Name " color=red];
+205 [label="<f0>  |<f1> Office Code " ];
+206 [label="<f0>  |<f1> Fpds Datum " ];
+207 [label="Datum User" shape=box];
+208 [label="{<f0> 1.0|<f1> Have The Deletions }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Receive Updates To Fabs Records }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> See The Office Names From Office Codes }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Access Additional Fields From The Fpds Data }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+208 -> 200 [label="Deletion"]
+209 -> 201 [label="Update"]
+209 -> 203 [label="Fabs Record"]
+210 -> 204 [label="Office Name"]
+210 -> 205 [label="Office Code"]
+211 -> 202 [label="Additional Field"]
+211 -> 206 [label="Fpds Datum"]
+}

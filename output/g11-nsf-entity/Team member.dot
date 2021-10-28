@@ -1,0 +1,88 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Beta " ];
+201 [label="<f0>  |<f1> Cloud .\nGov " ];
+202 [label="<f0>  |<f1> Element " ];
+203 [label="<f0>  |<f1> Design Direction " ];
+204 [label="<f0>  |<f1> Dis " ];
+205 [label="<f0>  |<f1> Mvp " ];
+206 [label="<f0>  |<f1> Overlap " ];
+207 [label="<f0>  |<f1> Plan " color=red];
+208 [label="<f0>  |<f1> User Research " color=red];
+209 [label="<f0>  |<f1> Hypothesis " ];
+210 [label="<f0>  |<f1> Prototype Strategy " ];
+211 [label="<f0>  |<f1> Project Timeline " ];
+212 [label="<f0>  |<f1> Platform " ];
+213 [label="<f0>  |<f1> Meeting " color=red];
+214 [label="<f0>  |<f1> Visual ,\nUx Design " ];
+215 [label="<f0>  |<f1> Content > " color=red];
+216 [label="<f0>  |<f1> Work " color=red];
+217 [label="<f0>  |<f1> Acquisitions Roadmap " ];
+218 [label="<f0>  |<f1> Coworking Slot " color=red];
+219 [label="<f0>  |<f1> Recruiting Email\nTemplate " ];
+220 [label="<f0>  |<f1> Level Sense " ];
+221 [label="<f0>  |<f1> Html Idea " ];
+222 [label="Team Member" shape=box];
+223 [label="{<f0> 1.0|<f1> See The First Iteration Of Beta Up On Cloud.Gov }" shape=Mrecord];
+224 [label="{<f0> 2.0|<f1> Have A Prioritized List Of Features Of A Social, Future Element Page }" shape=Mrecord];
+225 [label="{<f0> 3.0|<f1> Have A Prioritized List Of Element }" shape=Mrecord];
+226 [label="{<f0> 4.0|<f1> Determine A Design Direction For The Social Beta Page }" shape=Mrecord];
+227 [label="{<f0> 5.0|<f1> Meet With Cloud.Gov }" shape=Mrecord];
+228 [label="{<f0> 6.0|<f1> Meet With Dis }" shape=Mrecord];
+229 [label="{<f0> 7.0|<f1> Understand }" shape=Mrecord];
+230 [label="{<f0> 8.0|<f1> Have An Updated Acquisitions Roadmap }" shape=Mrecord];
+231 [label="{<f0> 9.0|<f1> How, Time Understand Overlaps With Plans Around The User Research }" shape=Mrecord];
+232 [label="{<f0> 10.0|<f1> Know }" shape=Mrecord];
+233 [label="{<f0> 11.0|<f1> Have A Prototype Strategy }" shape=Mrecord];
+234 [label="{<f0> 12.0|<f1> Have A Schedule Of More Coworking Slots }" shape=Mrecord];
+235 [label="{<f0> 13.0|<f1> Have Recruiting Email Templates }" shape=Mrecord];
+236 [label="{<f0> 14.0|<f1> Go }" shape=Mrecord];
+237 [label="{<f0> 15.0|<f1> Have A High Level Sense Of The Project Timeline }" shape=Mrecord];
+238 [label="{<f0> 16.0|<f1> Prototype Html Ideas }" shape=Mrecord];
+239 [label="{<f0> 17.0|<f1> Have A Platform Allows }" shape=Mrecord];
+240 [label="{<f0> 18.0|<f1> Understand Work Between Content > }" shape=Mrecord];
+241 [label="{<f0> 19.0|<f1> Understand Work Between Visual, Ux Design }" shape=Mrecord];
+20 [label="{<f0> 20.0|<f1> Plan my work. }" shape=Mrecord];
+237 -> 20
+20 -> 216  [label="Work"]
+222 -> 223
+222 -> 224
+222 -> 225
+222 -> 226
+222 -> 227
+222 -> 228
+222 -> 230
+222 -> 231
+222 -> 233
+222 -> 234
+222 -> 235
+222 -> 236
+222 -> 237
+222 -> 238
+222 -> 239
+222 -> 240
+222 -> 241
+223 -> 200 [label="Beta"]
+223 -> 201 [label="Cloud .\nGov"]
+225 -> 202 [label="Element"]
+226 -> 203 [label="Design Direction"]
+227 -> 201 [label="Cloud .\nGov"]
+228 -> 204 [label="Dis"]
+230 -> 217 [label="Acquisitions Roadmap"]
+231 -> 206 [label="Overlap"]
+231 -> 207 [label="Plan"]
+231 -> 208 [label="User Research"]
+233 -> 210 [label="Prototype Strategy"]
+234 -> 218 [label="Coworking Slot"]
+235 -> 236
+235 -> 219 [label="Recruiting Email\nTemplate"]
+237 -> 220 [label="Level Sense"]
+237 -> 211 [label="Project Timeline"]
+238 -> 221 [label="Html Idea"]
+239 -> 238
+239 -> 212 [label="Platform"]
+240 -> 215 [label="Content >"]
+240 -> 216 [label="Work"]
+241 -> 216 [label="Work"]
+241 -> 214 [label="Visual ,\nUx Design"]
+}

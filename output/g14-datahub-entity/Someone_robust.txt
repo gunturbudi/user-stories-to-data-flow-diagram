@@ -1,0 +1,47 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	entity "Email" as thingemail
+	entity "Publisher" as thingpublisher
+	entity "Membership" as thingmembership
+	actor "Admin" as actoradmin
+	actor "Owner" as actorowner
+	circle "Member" as thingmember
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	control "Join The\nPlatform" as controljoinplatform
+	control "Invite Someone" as controlinvitesomeonejoinplatform
+	control "Using Email" as controluseemailsignmember
+	control "Sign Up\nA Member\nOf Publisher" as controlsignmember
+	control "Become A\nMember Of\nPublisher" as controlbecomepublisher
+	control "Remove Someone\nFrom Membership\nIn Publisher" as controlremovesomeonemembership
+
+	thingpublisher <.. thingmembership
+	thingpublisher *-- thingmember
+	actoradmin --- thingplatforminterface
+	actorowner --- thingemailinterface
+	actorowner --- thingpublisherinterface
+	thingplatform --- controljoinplatform
+	controlinvitesomeonejoinplatform --> controljoinplatform
+	thingplatforminterface --> controljoinplatform
+	thingplatforminterface --> controlinvitesomeonejoinplatform
+	thingemailinterface --> controlinvitesomeonejoinplatform
+	thingemail --- controluseemailsignmember
+	thingemailinterface --> controluseemailsignmember
+	controlinvitesomeonejoinplatform --> controluseemailsignmember
+	controluseemailsignmember --> controlsignmember
+	thingmember --- controlsignmember
+	thingpublisher --- controlsignmember
+	thingpublisherinterface --> controlsignmember
+	thingpublisher --- controlbecomepublisher
+	thingpublisherinterface --> controlbecomepublisher
+	controluseemailsignmember --> controlbecomepublisher
+	thingmembership --- controlremovesomeonemembership
+	thingpublisher --- controlremovesomeonemembership
+	thingpublisherinterface --> controlremovesomeonemembership
+
+@enduml

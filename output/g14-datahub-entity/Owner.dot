@@ -1,0 +1,49 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Profile " color=red];
+201 [label="<f0>  |<f1> Exist User " ];
+202 [label="<f0>  |<f1> Publisher " color=red];
+203 [label="<f0>  |<f1> Email " color=red];
+204 [label="<f0>  |<f1> Membership " color=red];
+205 [label="<f0>  |<f1> Role " color=red];
+206 [label="<f0>  |<f1> People " ];
+207 [label="<f0>  |<f1> Organization " color=red];
+208 [label="<f0>  |<f1> User " color=red];
+209 [label="<f0>  |<f1> Owner " ];
+210 [label="Owner" shape=box];
+211 [label="{<f0> 1.0|<f1> Edit Profile }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Invite An Existing User }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Using Email }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Invite Someone }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> Sign Up A Member Of Publisher }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> Become A Member Of Publisher }" shape=Mrecord];
+217 [label="{<f0> 7.0|<f1> Remove Someone From Membership In Publisher }" shape=Mrecord];
+218 [label="{<f0> 8.0|<f1> View The People In Organization }" shape=Mrecord];
+219 [label="{<f0> 9.0|<f1> Make A User }" shape=Mrecord];
+220 [label="{<f0> 10.0|<f1> Remove A User As An Owner }" shape=Mrecord];
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 216
+210 -> 217
+210 -> 218
+210 -> 219
+210 -> 220
+211 -> 200 [label="Profile"]
+212 -> 201 [label="Exist User"]
+213 -> 215
+213 -> 216
+213 -> 203 [label="Email"]
+214 -> 213
+215 -> 202 [label="Publisher"]
+216 -> 202 [label="Publisher"]
+217 -> 204 [label="Membership"]
+217 -> 202 [label="Publisher"]
+218 -> 206 [label="People"]
+218 -> 207 [label="Organization"]
+219 -> 208 [label="User"]
+220 -> 209 [label="Owner"]
+220 -> 208 [label="User"]
+}

@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Summary Report" as thingsummaryreport
+	entity "Research Datum" as thingresearchdatum
+	actor "Research ,\nCentre Director" as actorresearchcentredirector
+	actor "Postgraduate Convenor" as actorpostgraduateconvenor
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Receive Regular\nSummary Reports\nOf Research\nData" as controlreceiveregularsummaryreports
+
+	thingresearchdatum <.. thingsummaryreport
+	actorresearchcentredirector --- thingdatuminterface
+	actorpostgraduateconvenor --- thingdatuminterface
+	thingsummaryreport --- controlreceiveregularsummaryreports
+	thingresearchdatum --- controlreceiveregularsummaryreports
+	thingdatuminterface --> controlreceiveregularsummaryreports
+
+@enduml

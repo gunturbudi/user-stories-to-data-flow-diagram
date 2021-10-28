@@ -1,0 +1,59 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Script" as thingscript
+	entity "Neurohub Installation" as thingneurohubinstallation
+	entity "Result" as thingresult
+	entity "Interaction" as thinginteraction
+	entity "Test" as thingtest
+	entity "Manual Input" as thingmanualinput
+	entity "Nightly Build" as thingnightlybuild
+	entity "Operating System" as thingoperatingsystem
+	entity "Acceptance" as thingacceptance #grey
+	actor "Release Engineer" as actorreleaseengineer
+	boundary "Script\nInterface" as thingscriptinterface #grey
+	boundary "Installation\nInterface" as thinginstallationinterface #grey
+	boundary "Input\nInterface" as thinginputinterface #grey
+	boundary "Interaction\nInterface" as thinginteractioninterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Call A\nScript" as controlcallscriptexecuteacceptancetestsneurohubinstallation
+	control "Execute Acceptance\nTests Against\nA Neurohub\nInstallation" as controlexecuteacceptancetestsneurohubinstallation
+	control "Report Back\nThe Results" as controlreportresult
+	control "Execute Tests" as controlexecutetest #grey
+	control "Requiring Any\nManual Input" as controlrequireexecutetestmanualinput
+	control "Requiring Interaction" as controlrequireexecutetestinteraction
+	control "Configure Nightly\nBuilds Automatically\nPerform A\nNeurohub Installation\nOn A\nVirgin Operating\nSystem" as controlconfigurenightlybuild
+
+	thingoperatingsystem <.. thingneurohubinstallation
+	thingacceptance <.. thingtest
+	thingneurohubinstallation <.. thingtest
+	thingneurohubinstallation <.. thingnightlybuild
+	actorreleaseengineer --- thingscriptinterface
+	actorreleaseengineer --- thinginstallationinterface
+	actorreleaseengineer --- thinginputinterface
+	actorreleaseengineer --- thinginteractioninterface
+	actorreleaseengineer --- thingsysteminterface
+	thingscript --- controlcallscriptexecuteacceptancetestsneurohubinstallation
+	thingscriptinterface --> controlcallscriptexecuteacceptancetestsneurohubinstallation
+	controlcallscriptexecuteacceptancetestsneurohubinstallation --> controlexecuteacceptancetestsneurohubinstallation
+	thingneurohubinstallation --- controlexecuteacceptancetestsneurohubinstallation
+	thinginstallationinterface --> controlexecuteacceptancetestsneurohubinstallation
+	thingtest --- controlexecuteacceptancetestsneurohubinstallation
+	thingresult --- controlreportresult
+	thingscriptinterface --> controlreportresult
+	controlcallscriptexecuteacceptancetestsneurohubinstallation --> controlreportresult
+	controlrequireexecutetestinteraction --> controlexecutetest
+	controlrequireexecutetestmanualinput --> controlexecutetest
+	thingtest --- controlexecutetest
+	thingmanualinput --- controlrequireexecutetestmanualinput
+	thinginputinterface --> controlrequireexecutetestmanualinput
+	thinginteraction --- controlrequireexecutetestinteraction
+	thinginteractioninterface --> controlrequireexecutetestinteraction
+	thingnightlybuild --- controlconfigurenightlybuild
+	thingoperatingsystem --- controlconfigurenightlybuild
+	thingsysteminterface --> controlconfigurenightlybuild
+	thingneurohubinstallation --- controlconfigurenightlybuild
+
+@enduml

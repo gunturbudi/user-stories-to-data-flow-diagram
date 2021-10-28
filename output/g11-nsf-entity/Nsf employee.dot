@@ -1,0 +1,86 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Fisma Low " ];
+201 [label="<f0>  |<f1> Process " ];
+202 [label="<f0>  |<f1> Prototype " ];
+203 [label="<f0>  |<f1> Key Consideration " ];
+204 [label="<f0>  |<f1> Step " ];
+205 [label="<f0>  |<f1> Key Lesson " ];
+206 [label="<f0>  |<f1> Content Management\nSystem Decision " color=red];
+207 [label="<f0>  |<f1> Final Workshop " color=red];
+208 [label="<f0>  |<f1> Feature " ];
+209 [label="<f0>  |<f1> Work " color=red];
+210 [label="<f0>  |<f1> Conjunction " ];
+211 [label="<f0>  |<f1> New Cms " ];
+212 [label="<f0>  |<f1> Github " ];
+213 [label="<f0>  |<f1> Person " ];
+214 [label="<f0>  |<f1> , Initial\nMeeting " ];
+215 [label="<f0>  |<f1> Hosting Plan " ];
+216 [label="<f0>  |<f1> Roadmap Document " color=red];
+217 [label="<f0>  |<f1> Cms Option " ];
+218 [label="<f0>  |<f1> Level Strategy\nRecommendation " ];
+219 [label="<f0>  |<f1> Editorial Planning\nRecommendation " ];
+220 [label="<f0>  |<f1> Brand Guideline " ];
+221 [label="<f0>  |<f1> Design Direction " ];
+222 [label="Nsf Employee" shape=box];
+223 [label="{<f0> 1.0|<f1> Switching The Cloud.Gov Hosting Plan Over From Prototype To Fisma Low }" shape=Mrecord];
+224 [label="{<f0> 2.0|<f1> Understand The Process }" shape=Mrecord];
+225 [label="{<f0> 3.0|<f1> Have An Updated Roadmap Document }" shape=Mrecord];
+226 [label="{<f0> 4.0|<f1> Narrow Down The Universe Of Cms Options }" shape=Mrecord];
+227 [label="{<f0> 5.0|<f1> Identify }" shape=Mrecord];
+228 [label="{<f0> 6.0|<f1> Getting To The Next Step }" shape=Mrecord];
+229 [label="{<f0> 7.0|<f1> Prioritize Key Considerations }" shape=Mrecord];
+230 [label="{<f0> 8.0|<f1> Have A Final Workshop }" shape=Mrecord];
+231 [label="{<f0> 9.0|<f1> Identify Key Lessons }" shape=Mrecord];
+232 [label="{<f0> 10.0|<f1> Have A Final Workshop Feature For The Content Management System Decision }" shape=Mrecord];
+233 [label="{<f0> 11.0|<f1> Understand Work }" shape=Mrecord];
+234 [label="{<f0> 12.0|<f1> Have High Level Strategy Recommendations }" shape=Mrecord];
+235 [label="{<f0> 13.0|<f1> Implement In Conjunction With The New Cms }" shape=Mrecord];
+236 [label="{<f0> 14.0|<f1> Have Editorial Planning Recommendations }" shape=Mrecord];
+237 [label="{<f0> 15.0|<f1> Know }" shape=Mrecord];
+238 [label="{<f0> 16.0|<f1> Schedule In, Regular Person Check Ins }" shape=Mrecord];
+239 [label="{<f0> 17.0|<f1> Join Github }" shape=Mrecord];
+240 [label="{<f0> 18.0|<f1> Learn Github How Used }" shape=Mrecord];
+241 [label="{<f0> 19.0|<f1> See }" shape=Mrecord];
+222 -> 223
+222 -> 224
+222 -> 225
+222 -> 226
+222 -> 228
+222 -> 229
+222 -> 230
+222 -> 231
+222 -> 232
+222 -> 233
+222 -> 234
+222 -> 235
+222 -> 236
+222 -> 238
+222 -> 239
+222 -> 240
+223 -> 224
+223 -> 215 [label="Hosting Plan"]
+223 -> 202 [label="Prototype"]
+223 -> 200 [label="Fisma Low"]
+224 -> 201 [label="Process"]
+225 -> 216 [label="Roadmap Document"]
+226 -> 217 [label="Cms Option"]
+228 -> 229
+228 -> 204 [label="Step"]
+229 -> 203 [label="Key Consideration"]
+230 -> 231
+230 -> 207 [label="Final Workshop"]
+231 -> 205 [label="Key Lesson"]
+232 -> 208 [label="Feature"]
+232 -> 206 [label="Content Management\nSystem Decision"]
+232 -> 207 [label="Final Workshop"]
+233 -> 209 [label="Work"]
+234 -> 235
+234 -> 218 [label="Level Strategy\nRecommendation"]
+235 -> 210 [label="Conjunction"]
+235 -> 211 [label="New Cms"]
+236 -> 219 [label="Editorial Planning\nRecommendation"]
+239 -> 212 [label="Github"]
+240 -> 212 [label="Github"]
+238 -> 213 [label="Person"]
+}

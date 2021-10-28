@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Requirement,shape=partialRectangle,null,null,data_base
+201,Project,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Security Level,shape=partialRectangle,null,null,data_base
+204,Administrator,rounded=0,null,null,external_entity
+205,Know,ellipse,null,null,process
+206,Check,ellipse,null,null,process

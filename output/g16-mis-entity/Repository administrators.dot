@@ -1,0 +1,10 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Embargo Privilege " ];
+201 [label="<f0>  |<f1> Repository Administrator " ];
+202 [label="Digitalrecords Archivist" shape=box];
+203 [label="{<f0> 1.0|<f1> Grant Embargo Privileges To Other Repository Administrators }" shape=Mrecord];
+202 -> 203
+203 -> 200 [label="Embargo Privilege"]
+203 -> 201 [label="Repository Administrator"]
+}

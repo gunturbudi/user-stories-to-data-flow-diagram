@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub Dependency" as thingneurohubdependency
+	entity "Lts Machine" as thingltsmachine
+	entity "Ubuntu Package\nManagement Tool" as thingubuntupackagemanagementtool
+	actor "Systems Administrator" as actorsystemsadministrator
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Install Neurohub\nDependencies Into\nAn Ubuntu\nLts Machine\nUsing The\nNormal Ubuntu\nPackage Management\nTools" as controlinstallneurohubdependencyubuntultsmachinenormalubuntupackagemanagementtools
+
+	thingltsmachine <.. thingneurohubdependency
+	thingubuntupackagemanagementtool <.. thingltsmachine
+	actorsystemsadministrator --- thingtoolinterface
+	thingneurohubdependency --- controlinstallneurohubdependencyubuntultsmachinenormalubuntupackagemanagementtools
+	thingltsmachine --- controlinstallneurohubdependencyubuntultsmachinenormalubuntupackagemanagementtools
+	thingubuntupackagemanagementtool --- controlinstallneurohubdependencyubuntultsmachinenormalubuntupackagemanagementtools
+	thingtoolinterface --> controlinstallneurohubdependencyubuntultsmachinenormalubuntupackagemanagementtools
+
+@enduml

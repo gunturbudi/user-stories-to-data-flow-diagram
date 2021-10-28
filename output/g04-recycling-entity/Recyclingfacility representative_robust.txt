@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Information" as thinginformation
+	entity "Material" as thingmaterial
+	entity "Access" as thingaccess
+	entity "Schedule" as thingschedule
+	entity "User Stat" as thinguserstat
+	actor "Recyclingfacility Representative" as actorrecyclingfacilityrepresentative
+	circle "Type" as thingtype
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	control "Update Information" as controlupdateinformation
+	control "Update The\nType Of\nMaterial" as controlupdatetype
+	control "Have Access\nTo Schedule" as controlhaveaccessschedule
+	control "Have Access\nTo User\nStats" as controlhaveaccess
+
+	thinguserstat <.. thingaccess
+	thingschedule <.. thingaccess
+	thingmaterial *-- thingtype
+	actorrecyclingfacilityrepresentative --- thinginformationinterface
+	actorrecyclingfacilityrepresentative --- thingmaterialinterface
+	actorrecyclingfacilityrepresentative --- thingscheduleinterface
+	actorrecyclingfacilityrepresentative --- thingstatinterface
+	thinginformation --- controlupdateinformation
+	thinginformationinterface --> controlupdateinformation
+	thingtype --- controlupdatetype
+	thingmaterial --- controlupdatetype
+	thingmaterialinterface --> controlupdatetype
+	thingschedule --- controlhaveaccessschedule
+	thingscheduleinterface --> controlhaveaccessschedule
+	thingaccess --- controlhaveaccessschedule
+	thingaccess --- controlhaveaccess
+	thinguserstat --- controlhaveaccess
+	thingstatinterface --> controlhaveaccess
+
+@enduml

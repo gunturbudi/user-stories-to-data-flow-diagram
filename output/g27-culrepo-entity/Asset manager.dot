@@ -1,0 +1,78 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Digital Copy " color=red];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Redundant Copy " ];
+203 [label="<f0>  |<f1> Threat " ];
+204 [label="<f0>  |<f1> Copy " color=red];
+205 [label="<f0>  |<f1> Unwanted Change " ];
+206 [label="<f0>  |<f1> Original Object " ];
+207 [label="<f0>  |<f1> Change " ];
+208 [label="<f0>  |<f1> Asset " color=red];
+209 [label="<f0>  |<f1> Institution " ];
+210 [label="<f0>  |<f1> Deposit " color=red];
+211 [label="<f0>  |<f1> Mechanism " ];
+212 [label="<f0>  |<f1> Understanding " ];
+213 [label="<f0>  |<f1> Listing " ];
+214 [label="<f0>  |<f1> Current Status " ];
+215 [label="<f0>  |<f1> Staffing " ];
+216 [label="<f0>  |<f1> Commitment " ];
+217 [label="<f0>  |<f1> Longevity " ];
+218 [label="<f0>  |<f1> Ir " color=red];
+219 [label="<f0>  |<f1> Funding " color=red];
+220 [label="<f0>  |<f1> Publish Plan " ];
+221 [label="<f0>  |<f1> Successor " ];
+222 [label="<f0>  |<f1> Management " ];
+223 [label="<f0>  |<f1> Contract Clause " ];
+224 [label="Asset Manager" shape=box];
+225 [label="{<f0> 1.0|<f1> Assured }" shape=Mrecord];
+226 [label="{<f0> 2.0|<f1> Changes Occur }" shape=Mrecord];
+227 [label="{<f0> 3.0|<f1> By Which Restore The Original Object To All Copies }" shape=Mrecord];
+228 [label="{<f0> 4.0|<f1> What Is To The Institution At The Time Of Deposit }" shape=Mrecord];
+229 [label="{<f0> 5.0|<f1> Know }" shape=Mrecord];
+230 [label="{<f0> 6.0|<f1> Obtain Understanding }" shape=Mrecord];
+231 [label="{<f0> 7.0|<f1> Have A Mechanism }" shape=Mrecord];
+232 [label="{<f0> 8.0|<f1> Obtain A Listing Of The Assets Have Deposited }" shape=Mrecord];
+233 [label="{<f0> 9.0|<f1> Obtain A Listing Of Current Status }" shape=Mrecord];
+234 [label="{<f0> 10.0|<f1> Obtain }" shape=Mrecord];
+235 [label="{<f0> 11.0|<f1> The Ir Cease }" shape=Mrecord];
+236 [label="{<f0> 12.0|<f1> Have Mechanism }" shape=Mrecord];
+237 [label="{<f0> 13.0|<f1> Pass Ownership Of The Assets To A Successor }" shape=Mrecord];
+238 [label="{<f0> 14.0|<f1> Pass Management }" shape=Mrecord];
+224 -> 226
+224 -> 227
+224 -> 228
+224 -> 229
+224 -> 230
+224 -> 231
+224 -> 232
+224 -> 233
+224 -> 235
+224 -> 236
+224 -> 237
+224 -> 238
+226 -> 207 [label="Change"]
+227 -> 204 [label="Copy"]
+227 -> 206 [label="Original Object"]
+228 -> 209 [label="Institution"]
+228 -> 210 [label="Deposit"]
+228 -> 208 [label="Asset"]
+229 -> 228
+230 -> 212 [label="Understanding"]
+231 -> 230
+231 -> 232
+231 -> 234
+231 -> 211 [label="Mechanism"]
+231 -> 212 [label="Understanding"]
+232 -> 213 [label="Listing"]
+232 -> 208 [label="Asset"]
+233 -> 214 [label="Current Status"]
+233 -> 213 [label="Listing"]
+235 -> 218 [label="Ir"]
+236 -> 237
+236 -> 238
+236 -> 211 [label="Mechanism"]
+237 -> 221 [label="Successor"]
+237 -> 208 [label="Asset"]
+238 -> 222 [label="Management"]
+}

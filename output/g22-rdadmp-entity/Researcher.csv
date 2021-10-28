@@ -1,0 +1,112 @@
+id,value,style,source,target,type
+19,Plan my research.,ellipse,null,null,process
+20,Share data manager posts.,ellipse,null,null,process
+21,Share data manager posts.,ellipse,null,null,process
+22,Share data manager posts.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Project,shape=partialRectangle,null,null,data_base
+202,Dmp,shape=partialRectangle,null,null,data_base
+203,Topic,shape=partialRectangle,null,null,data_base
+204,Information,shape=partialRectangle,null,null,data_base
+205,Resource,shape=partialRectangle,null,null,data_base
+206,Agreement,shape=partialRectangle,null,null,data_base
+207,Archive,shape=partialRectangle,null,null,data_base
+208,Metadata,shape=partialRectangle,null,null,data_base
+209,Cris,shape=partialRectangle,null,null,data_base
+210,Publication,shape=partialRectangle,null,null,data_base
+211,Institutional Repository,shape=partialRectangle,null,null,data_base
+212,Cost,shape=partialRectangle,null,null,data_base
+213,Section,shape=partialRectangle,null,null,data_base
+214,Researcher,shape=partialRectangle,null,null,data_base
+215,Department,shape=partialRectangle,null,null,data_base
+216,Role,shape=partialRectangle,null,null,data_base
+217,Responsibility,shape=partialRectangle,null,null,data_base
+218,Party,shape=partialRectangle,null,null,data_base
+219,Research,shape=partialRectangle,null,null,data_base
+220,Researcher,rounded=0,null,null,external_entity
+221,Data Manager,rounded=0,null,null,external_entity
+222,Indicate,ellipse,null,null,process
+223,Similar Know Which Topics In All Dmps,ellipse,null,null,process
+224,Prepopulate Information,ellipse,null,null,process
+225,Know,ellipse,null,null,process
+226,Store Agreements To Third Party Data In A Project,ellipse,null,null,process
+227,Take To Archive,ellipse,null,null,process
+228,Share Data,ellipse,null,null,process
+229,Record,ellipse,null,null,process
+230,Import Metadata,ellipse,null,null,process
+231,Extract The Description Of The Data,ellipse,null,null,process
+232,Record Publications In Cris,ellipse,null,null,process
+233,Record Research Publications In The Institutional Repository With Dmp Records,ellipse,null,null,process
+234,Link Publications In Cris,ellipse,null,null,process
+235,Link Research Publications In The Institutional Repository With Dmp Records,ellipse,null,null,process
+236,Know About Costs,ellipse,null,null,process
+237,See The Sections,ellipse,null,null,process
+238,Costing By Other Researchers In Department,ellipse,null,null,process
+239,Know Which Information Necessary,ellipse,null,null,process
+241,,endArrow=classic,220,223,endArrow=classic
+242,,endArrow=classic,220,224,endArrow=classic
+243,,endArrow=classic,220,225,endArrow=classic
+244,,endArrow=classic,220,226,endArrow=classic
+245,,endArrow=classic,220,227,endArrow=classic
+246,,endArrow=classic,220,228,endArrow=classic
+247,,endArrow=classic,220,229,endArrow=classic
+248,,endArrow=classic,220,230,endArrow=classic
+249,,endArrow=classic,220,231,endArrow=classic
+250,,endArrow=classic,220,232,endArrow=classic
+251,,endArrow=classic,220,233,endArrow=classic
+252,,endArrow=classic,220,234,endArrow=classic
+253,,endArrow=classic,220,235,endArrow=classic
+254,,endArrow=classic,220,236,endArrow=classic
+255,,endArrow=classic,220,237,endArrow=classic
+256,,endArrow=classic,220,238,endArrow=classic
+257,,endArrow=classic,221,239,endArrow=classic
+258,Topic,endArrow=classic,223,203,endArrow=classic
+259,Dmp,endArrow=classic,223,202,endArrow=classic
+260,Information,endArrow=classic,224,204,endArrow=classic
+261,,endArrow=classic,225,227,endArrow=classic
+262,Agreement,endArrow=classic,226,206,endArrow=classic
+263,Project,endArrow=classic,226,201,endArrow=classic
+264,Datum,endArrow=classic,226,200,endArrow=classic
+265,Archive,endArrow=classic,227,207,endArrow=classic
+266,Datum,endArrow=classic,228,200,endArrow=classic
+267,,endArrow=classic,229,228,endArrow=classic
+268,Metadata,endArrow=classic,230,208,endArrow=classic
+269,Datum,endArrow=classic,231,200,endArrow=classic
+270,Publication,endArrow=classic,232,210,endArrow=classic
+271,Cris,endArrow=classic,232,209,endArrow=classic
+272,Institutional Repository,endArrow=classic,233,211,endArrow=classic
+273,Publication,endArrow=classic,233,210,endArrow=classic
+274,Cris,endArrow=classic,234,209,endArrow=classic
+275,Publication,endArrow=classic,234,210,endArrow=classic
+276,Publication,endArrow=classic,235,210,endArrow=classic
+277,Institutional Repository,endArrow=classic,235,211,endArrow=classic
+278,Cost,endArrow=classic,236,212,endArrow=classic
+279,Section,endArrow=classic,237,213,endArrow=classic
+280,Role,endArrow=classic,237,216,endArrow=classic
+281,Department,endArrow=classic,237,215,endArrow=classic
+282,Responsibility,endArrow=classic,237,217,endArrow=classic
+283,,endArrow=classic,238,237,endArrow=classic
+284,Researcher,endArrow=classic,238,214,endArrow=classic
+285,Department,endArrow=classic,238,215,endArrow=classic
+286,Information,endArrow=classic,239,204,endArrow=classic
+309,Party,endArrow=classic,226,218,endArrow=classic
+321,Research,endArrow=classic,233,219,endArrow=classic
+1000,,endArrow=classic,225,19,endArrow=classic
+1001,Researcher,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,19,endArrow=classic
+1003,Research,endArrow=classic,19,219,endArrow=classic
+1004,,endArrow=classic,237,20,endArrow=classic
+1005,Researcher,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,20,endArrow=classic
+1007,Posts,rounded=0,null,null,external_entity
+1008,Posts,endArrow=classic,20,1007,endArrow=classic
+1009,,endArrow=classic,237,21,endArrow=classic
+1010,Researcher,rounded=0,null,null,external_entity
+1011,,endArrow=classic,1010,21,endArrow=classic
+1012,Posts,rounded=0,null,null,external_entity
+1013,Posts,endArrow=classic,21,1012,endArrow=classic
+1014,,endArrow=classic,237,22,endArrow=classic
+1015,Researcher,rounded=0,null,null,external_entity
+1016,,endArrow=classic,1015,22,endArrow=classic
+1017,Posts,rounded=0,null,null,external_entity
+1018,Posts,endArrow=classic,22,1017,endArrow=classic

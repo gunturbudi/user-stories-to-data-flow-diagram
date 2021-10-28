@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Internal Workflow" as thinginternalworkflow
+	entity "User Research" as thinguserresearch #grey
+	actor "Researcher" as actorresearcher
+	circle "Round" as thinglastround
+	circle "Protocol" as thingprotocol #grey
+	boundary "Workflow\nInterface" as thingworkflowinterface #grey
+	boundary "Research\nInterface" as thingresearchinterface #grey
+	control "Develop The\nUser Research\nProtocol For\nInternal Workflows" as controldevelopuserresearchprotocol
+	control "Recruit For\nThe Last\nRound Of\nUser Research" as controlrecruitlastround
+
+	thinguserresearch *-- thinglastround
+	thinguserresearch *-- thingprotocol
+	thinginternalworkflow *-- thingprotocol
+	actorresearcher --- thingworkflowinterface
+	actorresearcher --- thingresearchinterface
+	thingprotocol --- controldevelopuserresearchprotocol
+	thinginternalworkflow --- controldevelopuserresearchprotocol
+	thingworkflowinterface --> controldevelopuserresearchprotocol
+	thinglastround --- controlrecruitlastround
+	thingresearchinterface --> controlrecruitlastround
+	thinguserresearch --- controlrecruitlastround
+
+@enduml

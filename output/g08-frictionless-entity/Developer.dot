@@ -1,0 +1,144 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Data Package " color=red];
+201 [label="<f0>  |<f1> Node " ];
+202 [label="<f0>  |<f1> Python " ];
+203 [label="<f0>  |<f1> Second " ];
+204 [label="<f0>  |<f1> Jquery Plugin " ];
+205 [label="<f0>  |<f1> R " color=red];
+206 [label="<f0>  |<f1> Analysis " color=red];
+207 [label="<f0>  |<f1> Clojure " ];
+208 [label="<f0>  |<f1> Julia " ];
+209 [label="<f0>  |<f1> C++ " ];
+210 [label="<f0>  |<f1> Elasticsearch Integration " ];
+211 [label="<f0>  |<f1> Spss Integration " ];
+212 [label="<f0>  |<f1> Eprints Integration " ];
+213 [label="<f0>  |<f1> Mongo Integration " ];
+214 [label="<f0>  |<f1> Dat Integration " ];
+215 [label="<f0>  |<f1> Feather Integration " ];
+216 [label="<f0>  |<f1> Hdf5 Integration " ];
+217 [label="<f0>  |<f1> Datum " ];
+218 [label="<f0>  |<f1> Exist Wizard " ];
+219 [label="<f0>  |<f1> Dspace Integration " ];
+220 [label="<f0>  |<f1> Online Service " ];
+221 [label="<f0>  |<f1> Update " ];
+222 [label="<f0>  |<f1> Data Repository " color=red];
+223 [label="<f0>  |<f1> Web Socket\nProtocol " ];
+224 [label="<f0>  |<f1> Frictionless Data\nTool " color=red];
+225 [label="<f0>  |<f1> Core " ];
+226 [label="<f0>  |<f1> Data " color=red];
+227 [label="Developer" shape=box];
+228 [label="{<f0> 1.0|<f1> Get A Data Package Into Node }" shape=Mrecord];
+229 [label="{<f0> 2.0|<f1> Get A Data Package Into Python In Seconds }" shape=Mrecord];
+230 [label="{<f0> 3.0|<f1> Provided With A Jquery Plugin For Core Data Packages }" shape=Mrecord];
+231 [label="{<f0> 4.0|<f1> Do Exploratory Data Analysis In R }" shape=Mrecord];
+232 [label="{<f0> 5.0|<f1> Operationalize That Analysis In Python }" shape=Mrecord];
+233 [label="{<f0> 6.0|<f1> Get A Data Package Into Clojure In Seconds }" shape=Mrecord];
+234 [label="{<f0> 7.0|<f1> Get A Data Package Into Julia In Seconds }" shape=Mrecord];
+235 [label="{<f0> 8.0|<f1> Get A Data Package Into C++ In Seconds }" shape=Mrecord];
+236 [label="{<f0> 9.0|<f1> Provided With An Elasticsearch Integration }" shape=Mrecord];
+237 [label="{<f0> 10.0|<f1> Provided With An Spss Integration }" shape=Mrecord];
+238 [label="{<f0> 11.0|<f1> Provided With An Eprints Integration }" shape=Mrecord];
+239 [label="{<f0> 12.0|<f1> Provided With A Mongo Integration }" shape=Mrecord];
+240 [label="{<f0> 13.0|<f1> Provided With A Dat Integration }" shape=Mrecord];
+241 [label="{<f0> 14.0|<f1> Provided With Feather Integration }" shape=Mrecord];
+242 [label="{<f0> 15.0|<f1> Provided With Hdf5 Integration }" shape=Mrecord];
+243 [label="{<f0> 16.0|<f1> Customize An Existing Wizard For Specific Type Of Data }" shape=Mrecord];
+244 [label="{<f0> 17.0|<f1> Provided With An Dspace Integration }" shape=Mrecord];
+245 [label="{<f0> 18.0|<f1> Create A Web Socket Protocol For Frictionless Data Tools }" shape=Mrecord];
+19 [label="{<f0> 19.0|<f1> Start using the data for doing analysis and visualizations. }" shape=Mrecord];
+228 -> 19
+19 -> 226  [label="Data"]
+20 [label="{<f0> 20.0|<f1> Start using the data for doing analysis and visualizations. }" shape=Mrecord];
+229 -> 20
+20 -> 226  [label="Data"]
+21 [label="{<f0> 21.0|<f1> Start using the data in doing analysis and visualizations. }" shape=Mrecord];
+229 -> 21
+21 -> 226  [label="Data"]
+22 [label="{<f0> 22.0|<f1> Start using the data in doing analysis and visualizations. }" shape=Mrecord];
+229 -> 22
+22 -> 226  [label="Data"]
+23 [label="{<f0> 23.0|<f1> Start using the data in doing analysis and visualizations. }" shape=Mrecord];
+229 -> 23
+23 -> 226  [label="Data"]
+24 [label="{<f0> 24.0|<f1> Integrate data-packaged data with pipelines that use elasticsearch. }" shape=Mrecord];
+227 -> 24
+24 -> 226  [label="Data-packaged data"]
+25 [label="{<f0> 25.0|<f1> Integrate data-packaged data with pipelines that use spss. }" shape=Mrecord];
+227 -> 25
+25 -> 226  [label="Data-packaged data"]
+26 [label="{<f0> 26.0|<f1> Integrate data-packaged data with pipelines that use eprints. }" shape=Mrecord];
+227 -> 26
+26 -> 226  [label="Data-packaged data"]
+27 [label="{<f0> 27.0|<f1> Integrate data-packaged data with pipelines that use mongo. }" shape=Mrecord];
+227 -> 27
+27 -> 226  [label="Data-packaged data"]
+28 [label="{<f0> 28.0|<f1> Integrate data-packaged data with pipelines that use dat. }" shape=Mrecord];
+227 -> 28
+28 -> 226  [label="Data-packaged data"]
+29 [label="{<f0> 29.0|<f1> Integrate data-packaged data with pipelines that use feather. }" shape=Mrecord];
+227 -> 29
+29 -> 226  [label="Data-packaged data"]
+30 [label="{<f0> 30.0|<f1> Integrate data-packaged data with pipelines that use hdf5. }" shape=Mrecord];
+227 -> 30
+30 -> 226  [label="Data-packaged data"]
+31 [label="{<f0> 31.0|<f1> Integrate data-packaged data with pipelines that use dspace. }" shape=Mrecord];
+227 -> 31
+31 -> 226  [label="Data-packaged data"]
+32 [label="{<f0> 32.0|<f1> Use data packages with additional data analysis tools. }" shape=Mrecord];
+245 -> 32
+1027 [label="<f0>  |<f1> Data packages " color=red];
+32 -> 1027 [label="Data packages"]
+227 -> 228
+227 -> 229
+227 -> 230
+227 -> 231
+227 -> 232
+227 -> 233
+227 -> 234
+227 -> 235
+227 -> 236
+227 -> 237
+227 -> 238
+227 -> 239
+227 -> 240
+227 -> 241
+227 -> 242
+227 -> 243
+227 -> 244
+227 -> 245
+228 -> 200 [label="Data Package"]
+228 -> 201 [label="Node"]
+229 -> 202 [label="Python"]
+229 -> 203 [label="Second"]
+229 -> 200 [label="Data Package"]
+230 -> 204 [label="Jquery Plugin"]
+230 -> 200 [label="Data Package"]
+231 -> 205 [label="R"]
+231 -> 206 [label="Analysis"]
+232 -> 206 [label="Analysis"]
+232 -> 202 [label="Python"]
+233 -> 207 [label="Clojure"]
+233 -> 200 [label="Data Package"]
+233 -> 203 [label="Second"]
+234 -> 208 [label="Julia"]
+234 -> 200 [label="Data Package"]
+234 -> 203 [label="Second"]
+235 -> 209 [label="C++"]
+235 -> 200 [label="Data Package"]
+235 -> 203 [label="Second"]
+236 -> 210 [label="Elasticsearch Integration"]
+237 -> 211 [label="Spss Integration"]
+238 -> 212 [label="Eprints Integration"]
+239 -> 213 [label="Mongo Integration"]
+240 -> 214 [label="Dat Integration"]
+241 -> 215 [label="Feather Integration"]
+242 -> 216 [label="Hdf5 Integration"]
+243 -> 218 [label="Exist Wizard"]
+243 -> 217 [label="Datum"]
+244 -> 219 [label="Dspace Integration"]
+245 -> 223 [label="Web Socket\nProtocol"]
+245 -> 224 [label="Frictionless Data\nTool"]
+230 -> 225 [label="Core"]
+228 -> 226 [label="Data"]
+}

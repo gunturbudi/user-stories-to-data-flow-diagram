@@ -1,0 +1,99 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> System " ];
+201 [label="<f0>  |<f1> Activity Insight " color=red];
+202 [label="<f0>  |<f1> Scholarly ,\nFaculty Output " ];
+203 [label="<f0>  |<f1> Repository " ];
+204 [label="<f0>  |<f1> Symplectic Element " ];
+205 [label="<f0>  |<f1> Faculty " ];
+206 [label="<f0>  |<f1> Digestible Way " ];
+207 [label="<f0>  |<f1> Digital Space " ];
+208 [label="<f0>  |<f1> Aforementioned Work " color=red];
+209 [label="<f0>  |<f1> Text ,\nBased Format " ];
+210 [label="<f0>  |<f1> Variety " ];
+211 [label="<f0>  |<f1> Media File " color=red];
+212 [label="<f0>  |<f1> Platform " ];
+213 [label="<f0>  |<f1> Ease " ];
+214 [label="<f0>  |<f1> Administrator " ];
+215 [label="<f0>  |<f1> Account " color=red];
+216 [label="<f0>  |<f1> Partial " ];
+217 [label="<f0>  |<f1> Name " color=red];
+218 [label="<f0>  |<f1> Email " color=red];
+219 [label="<f0>  |<f1> Tracking Statistic " color=red];
+220 [label="Administrator" shape=box];
+221 [label="Db" shape=box];
+222 [label="Ir Administrator" shape=box];
+223 [label="{<f0> 1.0|<f1> Track Scholarly, Faculty Output In The Repositories }" shape=Mrecord];
+224 [label="{<f0> 2.0|<f1> Use Systems Such As Activity Insight }" shape=Mrecord];
+225 [label="{<f0> 3.0|<f1> Use Systems Such As Symplectic Elements }" shape=Mrecord];
+226 [label="{<f0> 4.0|<f1> See Comprehensive Tracking Statistics Presented To Faculty In A Digestible Way }" shape=Mrecord];
+227 [label="{<f0> 5.0|<f1> Disseminate The Aforementioned Works In A Digital Space Strongly Branded }" shape=Mrecord];
+228 [label="{<f0> 6.0|<f1> Have A Platform Support A Variety Of Text, Based Format }" shape=Mrecord];
+229 [label="{<f0> 7.0|<f1> Have A Platform Support A Variety Of Media File }" shape=Mrecord];
+230 [label="{<f0> 8.0|<f1> See A List Of All Administrators For Ease }" shape=Mrecord];
+231 [label="{<f0> 9.0|<f1> Administering Accounts }" shape=Mrecord];
+232 [label="{<f0> 10.0|<f1> Use Partial }" shape=Mrecord];
+233 [label="{<f0> 11.0|<f1> Search For }" shape=Mrecord];
+234 [label="{<f0> 12.0|<f1> Use }" shape=Mrecord];
+235 [label="{<f0> 13.0|<f1> Use Full Email }" shape=Mrecord];
+236 [label="{<f0> 14.0|<f1> Use Name }" shape=Mrecord];
+15 [label="{<f0> 15.0|<f1> Make sure my school is credited for the work. }" shape=Mrecord];
+227 -> 15
+1001 [label="Administrator," shape=box];
+1001 -> 15
+1003 [label="Administrator," shape=box];
+1003 -> 15
+1005 [label="<f0>  |<f1> School " color=red];
+15 -> 1005 [label="School"]
+220 -> 223
+220 -> 224
+220 -> 225
+220 -> 226
+220 -> 227
+220 -> 228
+220 -> 229
+221 -> 230
+221 -> 231
+221 -> 232
+221 -> 233
+221 -> 233
+221 -> 234
+221 -> 235
+221 -> 236
+222 -> 230
+222 -> 231
+222 -> 232
+222 -> 233
+222 -> 233
+222 -> 234
+222 -> 235
+222 -> 236
+223 -> 202 [label="Scholarly ,\nFaculty Output"]
+223 -> 203 [label="Repository"]
+224 -> 201 [label="Activity Insight"]
+224 -> 200 [label="System"]
+225 -> 223
+225 -> 200 [label="System"]
+225 -> 204 [label="Symplectic Element"]
+226 -> 219 [label="Tracking Statistic"]
+226 -> 205 [label="Faculty"]
+226 -> 206 [label="Digestible Way"]
+227 -> 208 [label="Aforementioned Work"]
+227 -> 207 [label="Digital Space"]
+228 -> 209 [label="Text ,\nBased Format"]
+228 -> 210 [label="Variety"]
+228 -> 212 [label="Platform"]
+229 -> 212 [label="Platform"]
+229 -> 210 [label="Variety"]
+229 -> 211 [label="Media File"]
+230 -> 214 [label="Administrator"]
+230 -> 213 [label="Ease"]
+231 -> 230
+231 -> 215 [label="Account"]
+232 -> 216 [label="Partial"]
+233 -> 232
+233 -> 234
+233 -> 235
+235 -> 218 [label="Email"]
+236 -> 217 [label="Name"]
+}

@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Site Admin,shape=partialRectangle,null,null,data_base
+201,Concern,shape=partialRectangle,null,null,data_base
+202,Issue,shape=partialRectangle,null,null,data_base
+203,Recyclingfacility,rounded=0,null,null,external_entity
+204,Communicate With The Site Admin,ellipse,null,null,process
+205,Convey Any Issues,ellipse,null,null,process
+206,Convey Concern,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Site Admin,endArrow=classic,204,200,endArrow=classic
+212,Issue,endArrow=classic,205,202,endArrow=classic
+213,Concern,endArrow=classic,206,201,endArrow=classic

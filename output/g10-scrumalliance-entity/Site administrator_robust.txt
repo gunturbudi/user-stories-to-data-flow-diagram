@@ -1,0 +1,86 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Event" as thingevent
+	entity "Course" as thingothercourse
+	entity "Fee" as thingfee #grey
+	entity "Practitioner" as thingpractitioner
+	entity "Annual Fee" as thingannualfee
+	entity "Trainer" as thingtrainer
+	entity "Member" as thingmember
+	entity "Training" as thingtraining #grey
+	entity "Site" as thingsite #grey
+	entity "Listing" as thinglisting #grey
+	actor "Site Administrator" as actorsiteadministrator
+	circle "Profile" as thingprofile #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	boundary "Course\nInterface" as thingcourseinterface #grey
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	control "Practicing" as controlpractice
+	control "Read Training\nApplication" as controlreadtrainingapplication
+	control "Read" as controlreadpractice
+	control "Reject Applications" as controlrejectapplication #grey
+	control "Approve Applications" as controlapproveapplication
+	control "Edit Any\nSite Member\nProfile" as controleditsitememberprofile
+	control "Create Event" as controlcreateevent
+	control "Create An\nOther Course\nNot Charged\nA Listing\nFee" as controlcreateothercourse
+	control "Set The\nListing Fee\nPer Other\nCourse" as controlsetlistingfeeothercourse
+	control "Set The\nFee Per\nEvent" as controlsetfeeevent
+	control "Set The\nAnnual Fees\nFor Members" as controlsetannualfee
+	control "Set The\nAnnual Fees\nFor Practitioner" as controlsetannualfeepractitioner
+	control "Set The\nAnnual Fees\nFor Trainer" as controlsetannualfeetrainer
+
+	thingtraining <.. thingapplication
+	thingfee <.. thingothercourse
+	thingevent <.. thingfee
+	thinglisting <.. thingfee
+	thingothercourse <.. thingfee
+	thingmember <.. thingannualfee
+	thingtrainer <.. thingannualfee
+	thingpractitioner <.. thingannualfee
+	thingsite <.. thingmember
+	thingmember *-- thingprofile
+	actorsiteadministrator --- thingapplicationinterface
+	actorsiteadministrator --- thingmemberinterface
+	actorsiteadministrator --- thingeventinterface
+	actorsiteadministrator --- thingfeeinterface
+	actorsiteadministrator --- thingcourseinterface
+	actorsiteadministrator --- thingpractitionerinterface
+	actorsiteadministrator --- thingtrainerinterface
+	controlreadpractice --> controlpractice
+	thingapplicationinterface --> controlreadtrainingapplication
+	thingapplication --- controlreadtrainingapplication
+	thingapplication --- controlrejectapplication
+	thingapplication --- controlapproveapplication
+	thingapplicationinterface --> controlapproveapplication
+	thingprofile --- controleditsitememberprofile
+	thingmemberinterface --> controleditsitememberprofile
+	thingevent --- controlcreateevent
+	thingeventinterface --> controlcreateevent
+	thingothercourse --- controlcreateothercourse
+	thingfeeinterface --> controlcreateothercourse
+	thingfee --- controlcreateothercourse
+	thingcourseinterface --> controlsetlistingfeeothercourse
+	thingothercourse --- controlsetlistingfeeothercourse
+	thingfee --- controlsetlistingfeeothercourse
+	thingfee --- controlsetfeeevent
+	thingevent --- controlsetfeeevent
+	thingeventinterface --> controlsetfeeevent
+	thingannualfee --- controlsetannualfee
+	thingmember --- controlsetannualfee
+	thingmemberinterface --> controlsetannualfee
+	thingpractitioner --- controlsetannualfeepractitioner
+	thingpractitionerinterface --> controlsetannualfeepractitioner
+	thingannualfee --- controlsetannualfeepractitioner
+	thingtrainer --- controlsetannualfeetrainer
+	thingtrainerinterface --> controlsetannualfeetrainer
+	thingannualfee --- controlsetannualfeetrainer
+
+@enduml

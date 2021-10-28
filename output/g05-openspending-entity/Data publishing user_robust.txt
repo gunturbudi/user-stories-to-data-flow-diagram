@@ -1,0 +1,119 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Datum" as thingdatum
+	entity "Data Source" as thingdatasource #grey
+	entity "Constant" as thingconstant
+	entity "Packager" as thingpackager
+	entity "Excel" as thingexcel
+	entity "Map" as thingmap
+	entity "Json" as thingJSON
+	entity "Google Spreadsheet" as thinggooglespreadsheet #grey
+	entity "Geojson ,\nAdditional Source" as thinggeojsonadditionalsource
+	entity "Platform Administrator" as thingplatformadministrator #grey
+	entity "Hide State" as thinghiddenstate
+	entity "View" as thingview
+	entity "Csv File" as thingcsvfile #grey
+	entity "Python Client" as thingpythonclient
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	circle "Model" as thingmodel
+	boundary "Fiscal ,\nData Package\nDescriptor File" as thingfiscaldatapackagedescriptorfiledatapublishinguser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Constant\nInterface" as thingconstantinterface #grey
+	boundary "Excel\nInterface" as thingexcelinterface #grey
+	boundary "Map\nInterface" as thingmapinterface #grey
+	boundary "Json\nInterface" as thingjsoninterface #grey
+	boundary "Spreadsheet\nInterface" as thingspreadsheetinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	boundary "State\nInterface" as thingstateinterface #grey
+	boundary "Client\nInterface" as thingclientinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	control "Edit A\nDataset" as controleditdataset
+	control "Edit The\nModel Of\nData" as controleditmodel
+	control "Delete A\nDataset" as controldeletedataset
+	control "Edit The\nData Source\nOf Data" as controleditdatasource
+	control "Have The\nPackager Constants" as controlhavepackagerconstant
+	control "Import Data\nIn Excel" as controlimportdatumexcel
+	control "Visualised On\nA Map" as controlvisualisemap
+	control "Know" as controlknow
+	control "Import Data\nIn Json" as controlimportdatumJSON
+	control "Import Data\nFrom A\nGoogle Spreadsheet" as controlimportdatumgooglespreadsheet
+	control "Import Data\nFrom" as controlimportdatum
+	control "Provide The\nPlatform Administrator\nWith Geojson,\nAdditional Sources" as controlprovideplatformadministratorgeojsonadditionalsource
+	control "Have Dataset" as controlhavedataset
+	control "Add A\nDataset In\nA Hidden\nState" as controladddatasethiddenstate
+	control "Hide A\nDataset" as controlhidedataset
+	control "Have A\nView On\nThe Datasets" as controlhaveview
+	control "Have A\nFunctioning Python\nClient" as controlhavefunctioningpythonclient
+	control "Know Csv\nFile Valid" as controlknowcsvfile
+
+	thinghiddenstate <.. thingdataset
+	thingexcel <.. thingdatum
+	thingJSON <.. thingdatum
+	thinggooglespreadsheet <.. thingdatum
+	thingdatum <.. thingdatasource
+	thingconstant <.. thingpackager
+	thinggeojsonadditionalsource <.. thingplatformadministrator
+	thingdataset <.. thingview
+	thingdatum *-- thingmodel
+	actordatapublishinguser --- thingfiscaldatapackagedescriptorfiledatapublishinguser
+	actordatapublishinguser --- thingdatasetinterface
+	actordatapublishinguser --- thingdatuminterface
+	actordatapublishinguser --- thingconstantinterface
+	actordatapublishinguser --- thingexcelinterface
+	actordatapublishinguser --- thingmapinterface
+	actordatapublishinguser --- thingjsoninterface
+	actordatapublishinguser --- thingspreadsheetinterface
+	actordatapublishinguser --- thingsourceinterface
+	actordatapublishinguser --- thingstateinterface
+	actordatapublishinguser --- thingclientinterface
+	actordatapublishinguser --- thingfileinterface
+	thingdataset --- controleditdataset
+	thingdatasetinterface --> controleditdataset
+	thingmodel --- controleditmodel
+	thingdatum --- controleditmodel
+	thingdatuminterface --> controleditmodel
+	thingdataset --- controldeletedataset
+	thingdatasetinterface --> controldeletedataset
+	thingdatasource --- controleditdatasource
+	thingdatum --- controleditdatasource
+	thingdatuminterface --> controleditdatasource
+	thingpackager --- controlhavepackagerconstant
+	thingconstant --- controlhavepackagerconstant
+	thingconstantinterface --> controlhavepackagerconstant
+	thingexcel --- controlimportdatumexcel
+	thingexcelinterface --> controlimportdatumexcel
+	thingdatum --- controlimportdatumexcel
+	thingmap --- controlvisualisemap
+	thingmapinterface --> controlvisualisemap
+	thingJSON --- controlimportdatumJSON
+	thingjsoninterface --> controlimportdatumJSON
+	thingdatum --- controlimportdatumJSON
+	thinggooglespreadsheet --- controlimportdatumgooglespreadsheet
+	thingspreadsheetinterface --> controlimportdatumgooglespreadsheet
+	thingdatum --- controlimportdatumgooglespreadsheet
+	thingfiscaldatapackagedescriptorfiledatapublishinguser --> controlimportdatum
+	thingdatum --- controlimportdatum
+	thingplatformadministrator --- controlprovideplatformadministratorgeojsonadditionalsource
+	thinggeojsonadditionalsource --- controlprovideplatformadministratorgeojsonadditionalsource
+	thingsourceinterface --> controlprovideplatformadministratorgeojsonadditionalsource
+	thingdataset --- controlhavedataset
+	thingdatasetinterface --> controlhavedataset
+	thinghiddenstate --- controladddatasethiddenstate
+	thingstateinterface --> controladddatasethiddenstate
+	thingdataset --- controladddatasethiddenstate
+	thingdataset --- controlhidedataset
+	thingdatasetinterface --> controlhidedataset
+	thingview --- controlhaveview
+	thingdataset --- controlhaveview
+	thingdatasetinterface --> controlhaveview
+	thingpythonclient --- controlhavefunctioningpythonclient
+	thingclientinterface --> controlhavefunctioningpythonclient
+	thingcsvfile --- controlknowcsvfile
+	thingfileinterface --> controlknowcsvfile
+
+@enduml

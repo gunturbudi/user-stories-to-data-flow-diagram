@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs File" as thingfabsfile
+	entity "Assistance Datum" as thingassistancedatum
+	actor "Website User" as actorwebsiteuser
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Access Published\nFabs Files" as controlaccesspublishedfabsfiles
+	control "See Financial,\nUpdated Assistance\nData" as controlseefinancialupdatedassistancedata
+
+	actorwebsiteuser --- thingfileinterface
+	actorwebsiteuser --- thingdatuminterface
+	thingfabsfile --- controlaccesspublishedfabsfiles
+	thingfileinterface --> controlaccesspublishedfabsfiles
+	thingassistancedatum --- controlseefinancialupdatedassistancedata
+	thingdatuminterface --> controlseefinancialupdatedassistancedata
+
+@enduml

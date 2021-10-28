@@ -1,0 +1,47 @@
+[
+  {
+    "text": "As a research facility manager, I want to deposit data from my facility directly into the archive on behalf of researchers, so that I am no longer required to maintain my own archive of facility data and researchers can access their own data as needed.",
+    "entities": [
+      {
+        "text": "research facility manager",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "facility",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "own archive",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

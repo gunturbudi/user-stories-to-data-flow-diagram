@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Report" as thingreport
+	entity "Working Paper" as thingworkingpaper
+	actor "Assistant Archivist" as actorassistantarchivist
+	actor "Researcher" as actorresearcher
+	boundary "Report\nInterface" as thingreportinterface #grey
+	control "Tag Staff" as controlstaff
+	control "Share Reports" as controlsharereport
+
+	actorresearcher --- thingreportinterface
+	thingreport --- controlsharereport
+	thingreportinterface --> controlsharereport
+
+@enduml

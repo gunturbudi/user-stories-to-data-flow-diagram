@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As a ResearcherPublisher, I want an integration with Zenodo, so that when I store my dataset in GitHub, I don\u00e2\u20ac\u2122t have to retype descriptive information about my dataset.",
+    "entities": [
+      {
+        "text": "ResearcherPublisher,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "don\u00e2",
+        "label": "Processing"
+      },
+      {
+        "text": "\u20ac\u2122",
+        "label": "Data"
+      },
+      {
+        "text": "retype",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

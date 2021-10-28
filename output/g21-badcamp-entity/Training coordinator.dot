@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Training Node " color=red];
+201 [label="<f0>  |<f1> Class Attendance " color=red];
+202 [label="<f0>  |<f1> View " ];
+203 [label="<f0>  |<f1> Information Attendee\nTrainer " ];
+204 [label="Trainer" shape=box];
+205 [label="{<f0> 1.0|<f1> Have A View Attached To Training Node Shows All Information Attendee Trainers See All Class Attendance First }" shape=Mrecord];
+204 -> 205
+205 -> 202 [label="View"]
+205 -> 200 [label="Training Node"]
+205 -> 203 [label="Information Attendee\nTrainer"]
+205 -> 201 [label="Class Attendance"]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a developer, I want to determine if we can use the in-built Fedora 4 event audit services.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to upgrade to Fedora 4 and migrate our applications and data.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "upgrade",
+        "label": "Processing"
+      },
+      {
+        "text": "migrate",
+        "label": "Processing"
+      },
+      {
+        "text": "applications",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

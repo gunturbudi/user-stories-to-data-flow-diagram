@@ -1,0 +1,101 @@
+[
+  {
+    "text": "As a depositor, I want to attach subject specific discoverability metadata to records, so that researchers in my discipline can find my data more easily.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "discoverability metadata",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "discipline",
+        "label": "PII"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a research facility manager, I want to deposit data from my facility directly into the archive on behalf of researchers, so that I am no longer required to maintain my own archive of facility data and researchers can access their own data as needed.",
+    "entities": [
+      {
+        "text": "research facility manager",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "facility",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "own archive",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a fundingbody, I want to be reassured that researchers I fund have robust archival plans for their data, so that I can be sure that funding them is a worthwhile investment.",
+    "entities": [
+      {
+        "text": "fundingbody,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "fund",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

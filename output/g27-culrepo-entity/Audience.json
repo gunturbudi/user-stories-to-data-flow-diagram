@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a library staff member, I want to use content and metadata from the repository in other systems and/or web pages easily, so that I can deliver such content in the manner best fit to the audience or occasion.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "audience",
+        "label": "Data"
+      }
+    ]
+  }
+]

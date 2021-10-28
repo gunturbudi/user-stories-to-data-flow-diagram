@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As an Inspector, I want to Conduct Inspections, so that I can validate Customer compliance with code and regulations and provide results of the inspection to the Customer.",
+    "entities": [
+      {
+        "text": "Inspector,",
+        "label": "Data"
+      },
+      {
+        "text": "Conduct Inspections",
+        "label": "Processing"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "Customer compliance",
+        "label": "PII"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "results of the inspection",
+        "label": "PII"
+      },
+      {
+        "text": "Customer",
+        "label": "Data"
+      }
+    ]
+  }
+]

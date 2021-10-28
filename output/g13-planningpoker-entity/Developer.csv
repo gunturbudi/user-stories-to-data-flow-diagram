@@ -1,0 +1,38 @@
+id,value,style,source,target,type
+200,Css,shape=partialRectangle,null,null,data_base
+201,Xhtml Standard,shape=partialRectangle,null,null,data_base
+202,Site,shape=partialRectangle,null,null,data_base
+203,7,shape=partialRectangle,null,null,data_base
+204,Function,shape=partialRectangle,null,null,data_base
+205,Internet Explorer,shape=partialRectangle,null,null,data_base
+206,Definition,shape=partialRectangle,null,null,data_base
+207,Use Term,shape=partialRectangle,null,null,data_base
+208,Database Index,shape=partialRectangle,null,null,data_base
+209,W3C Guideline,shape=partialRectangle,null,null,data_base
+210,Application,shape=partialRectangle,null,null,data_base
+211,Developer,rounded=0,null,null,external_entity
+212,Written A Site Is Compliant With Css,ellipse,null,null,process
+213,Written A Site Is Compliant With Xhtml Standards,ellipse,null,null,process
+214,Created Database Indexes,ellipse,null,null,process
+215,Have The Application Function In Internet Explorer,ellipse,null,null,process
+216,Have The Function In 7,ellipse,null,null,process
+217,Have,ellipse,null,null,process
+218,Have A List Of Definitions For Commonly Used Terms,ellipse,null,null,process
+220,,endArrow=classic,211,212,endArrow=classic
+221,,endArrow=classic,211,213,endArrow=classic
+222,,endArrow=classic,211,214,endArrow=classic
+223,,endArrow=classic,211,215,endArrow=classic
+224,,endArrow=classic,211,216,endArrow=classic
+225,,endArrow=classic,211,218,endArrow=classic
+226,Css,endArrow=classic,212,200,endArrow=classic
+227,Site,endArrow=classic,212,202,endArrow=classic
+228,Site,endArrow=classic,213,202,endArrow=classic
+229,Xhtml Standard,endArrow=classic,213,201,endArrow=classic
+230,Database Index,endArrow=classic,214,208,endArrow=classic
+231,Internet Explorer,endArrow=classic,215,205,endArrow=classic
+232,Function,endArrow=classic,215,204,endArrow=classic
+233,Function,endArrow=classic,216,204,endArrow=classic
+234,7,endArrow=classic,216,203,endArrow=classic
+235,Definition,endArrow=classic,218,206,endArrow=classic
+236,Use Term,endArrow=classic,218,207,endArrow=classic
+247,Application,endArrow=classic,215,210,endArrow=classic

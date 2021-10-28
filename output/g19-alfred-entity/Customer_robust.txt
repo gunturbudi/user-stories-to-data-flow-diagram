@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Feedback" as thingfeedback
+	entity "Customer" as thingcustomer
+	entity "Easy Way" as thingeasyway
+	actor "Developer" as actordeveloper
+	boundary "Customer\nInterface" as thingcustomerinterface #grey
+	control "Provide Feedback\nAbout App" as controlprovidefeedback
+	control "Enable Customers" as controlenablecustomerprovidefeedback
+	control "Watch This\nFeedback" as controlwatchfeedback
+	control "Need An\nEasy Way" as controlneedeasywaywatchfeedback
+
+	thingapp <.. thingfeedback
+	actordeveloper --- thingcustomerinterface
+	thingfeedback --- controlprovidefeedback
+	thingapp --- controlprovidefeedback
+	controlenablecustomerprovidefeedback --> controlprovidefeedback
+	thingcustomerinterface --> controlprovidefeedback
+	thingcustomer --- controlenablecustomerprovidefeedback
+	thingcustomerinterface --> controlenablecustomerprovidefeedback
+	controlneedeasywaywatchfeedback --> controlwatchfeedback
+	thingfeedback --- controlwatchfeedback
+	thingcustomerinterface --> controlwatchfeedback
+	thingeasyway --- controlneedeasywaywatchfeedback
+	thingcustomerinterface --> controlneedeasywaywatchfeedback
+	controlenablecustomerprovidefeedback --> controlneedeasywaywatchfeedback
+
+@enduml

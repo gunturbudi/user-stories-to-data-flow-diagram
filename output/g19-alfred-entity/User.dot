@@ -1,0 +1,126 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> Hearing " ];
+202 [label="<f0>  |<f1> Device " ];
+203 [label="<f0>  |<f1> Trouble " ];
+204 [label="<f0>  |<f1> Visual " color=red];
+205 [label="<f0>  |<f1> Visual Trouble " ];
+206 [label="<f0>  |<f1> Access " color=red];
+207 [label="<f0>  |<f1> Datum " ];
+208 [label="<f0>  |<f1> Blood Pressure " color=red];
+209 [label="<f0>  |<f1> Alfred " ];
+210 [label="<f0>  |<f1> Body Temperature " color=red];
+211 [label="<f0>  |<f1> Heart Rate " color=red];
+212 [label="<f0>  |<f1> Breathing Frequency " color=red];
+213 [label="<f0>  |<f1> Regular Summary " ];
+214 [label="<f0>  |<f1> Exercise " color=red];
+215 [label="<f0>  |<f1> Carer " ];
+216 [label="<f0>  |<f1> Game " color=red];
+217 [label="<f0>  |<f1> Corrective Feedback " color=red];
+218 [label="<f0>  |<f1> Question " color=red];
+219 [label="<f0>  |<f1> Easy Way " ];
+220 [label="<f0>  |<f1> New App " color=red];
+221 [label="<f0>  |<f1> Alfredo Platform " ];
+222 [label="<f0>  |<f1> Real Interaction " ];
+223 [label="<f0>  |<f1> Human " ];
+224 [label="<f0>  |<f1> Online Game " ];
+225 [label="<f0>  |<f1> Health Sensor " color=red];
+226 [label="<f0>  |<f1> Ict Tool " ];
+227 [label="<f0>  |<f1> Alfred " ];
+228 [label="<f0>  |<f1> Aflred " ];
+229 [label="Olderperson" shape=box];
+230 [label="Developer" shape=box];
+231 [label="{<f0> 1.0|<f1> Have An Alfred Device Easily Adapted For User Have Visual }" shape=Mrecord];
+232 [label="{<f0> 2.0|<f1> Have An Device Easily Adapted For User Have Hearing Troubles }" shape=Mrecord];
+233 [label="{<f0> 3.0|<f1> Determine The User's Blood Pressure }" shape=Mrecord];
+234 [label="{<f0> 4.0|<f1> Have Alfred }" shape=Mrecord];
+235 [label="{<f0> 5.0|<f1> Determine The User's Body Temperature }" shape=Mrecord];
+236 [label="{<f0> 6.0|<f1> Determine The User's Heart Rate }" shape=Mrecord];
+237 [label="{<f0> 7.0|<f1> Determine The User's Breathing Frequency }" shape=Mrecord];
+238 [label="{<f0> 8.0|<f1> Control }" shape=Mrecord];
+239 [label="{<f0> 9.0|<f1> Have A Regular Summary How Much Exercise Performed The User }" shape=Mrecord];
+240 [label="{<f0> 10.0|<f1> Have A Game That The Carer Together Play With The User }" shape=Mrecord];
+241 [label="{<f0> 11.0|<f1> Give Corrective Feedback }" shape=Mrecord];
+242 [label="{<f0> 12.0|<f1> Have An Easy Way }" shape=Mrecord];
+243 [label="{<f0> 13.0|<f1> Define Questions The User Ask }" shape=Mrecord];
+244 [label="{<f0> 14.0|<f1> Read Data From Health Sensors }" shape=Mrecord];
+245 [label="{<f0> 15.0|<f1> Have An Easy Way The User Is Wearing }" shape=Mrecord];
+246 [label="{<f0> 16.0|<f1> Offering New Apps In The Alfredo Platform }" shape=Mrecord];
+247 [label="{<f0> 17.0|<f1> Have An Aflred Device Encourages Users For Real Interaction Between Humans Only With Ict Tools }" shape=Mrecord];
+248 [label="{<f0> 18.0|<f1> Play Online Games Together With Other Users }" shape=Mrecord];
+19 [label="{<f0> 19.0|<f1> Monitor the users’ state of health but also have some fun time. }" shape=Mrecord];
+1000 [label="Informalcaregiver," shape=box];
+1000 -> 19
+1002 [label="Informalcaregiver," shape=box];
+1002 -> 19
+1004 [label="<f0>  |<f1> State of health " color=red];
+19 -> 1004 [label="State of health"]
+229 -> 231
+229 -> 232
+229 -> 233
+229 -> 234
+229 -> 235
+229 -> 236
+229 -> 237
+229 -> 239
+229 -> 240
+229 -> 241
+229 -> 243
+229 -> 244
+229 -> 245
+229 -> 246
+229 -> 247
+229 -> 248
+230 -> 239
+230 -> 240
+230 -> 242
+230 -> 243
+230 -> 244
+230 -> 245
+230 -> 248
+231 -> 200 [label="User"]
+231 -> 204 [label="Visual"]
+231 -> 202 [label="Device"]
+231 -> 205 [label="Visual Trouble"]
+231 -> 203 [label="Trouble"]
+232 -> 202 [label="Device"]
+232 -> 201 [label="Hearing"]
+232 -> 200 [label="User"]
+233 -> 208 [label="Blood Pressure"]
+234 -> 233
+234 -> 235
+234 -> 236
+234 -> 237
+234 -> 209 [label="Alfred"]
+235 -> 210 [label="Body Temperature"]
+236 -> 211 [label="Heart Rate"]
+237 -> 212 [label="Breathing Frequency"]
+239 -> 213 [label="Regular Summary"]
+239 -> 214 [label="Exercise"]
+239 -> 200 [label="User"]
+240 -> 216 [label="Game"]
+240 -> 215 [label="Carer"]
+240 -> 200 [label="User"]
+241 -> 217 [label="Corrective Feedback"]
+242 -> 243
+242 -> 219 [label="Easy Way"]
+243 -> 218 [label="Question"]
+243 -> 200 [label="User"]
+244 -> 225 [label="Health Sensor"]
+244 -> 207 [label="Datum"]
+245 -> 244
+245 -> 200 [label="User"]
+245 -> 219 [label="Easy Way"]
+246 -> 231
+246 -> 220 [label="New App"]
+246 -> 221 [label="Alfredo Platform"]
+247 -> 222 [label="Real Interaction"]
+247 -> 223 [label="Human"]
+247 -> 226 [label="Ict Tool"]
+247 -> 200 [label="User"]
+247 -> 202 [label="Device"]
+248 -> 224 [label="Online Game"]
+248 -> 200 [label="User"]
+247 -> 228 [label="Aflred"]
+}

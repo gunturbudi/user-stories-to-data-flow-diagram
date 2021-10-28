@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Research Datum,shape=partialRectangle,null,null,data_base
+201,Summary Report,shape=partialRectangle,null,null,data_base
+202,Postgraduate Convenor,rounded=0,null,null,external_entity
+203,Receive Regular Summary Reports Of Research Data,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Summary Report,endArrow=classic,203,201,endArrow=classic
+207,Research Datum,endArrow=classic,203,200,endArrow=classic

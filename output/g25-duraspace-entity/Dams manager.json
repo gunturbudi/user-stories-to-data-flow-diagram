@@ -1,0 +1,453 @@
+[
+  {
+    "text": "As the DAMS manager, I want to be able to list for browsing all formal collections represented in the DAMS along with the appropriate relationships.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "formal collections",
+        "label": "PII"
+      },
+      {
+        "text": "relationships",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know what repository an object belongs to.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager I want to know what collection(s) an object belongs to.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "collection(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to present in their assigned order all components comprising an object.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to indicate to preservation managers aspects of a master file useful for monitoring its integrity, and impending obsolescence, including file size, creation date, file format and format version.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation managers",
+        "label": "Data"
+      },
+      {
+        "text": "master file",
+        "label": "PII"
+      },
+      {
+        "text": "monitoring",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to indicate to preservation managers the checksum and checksum method for each master file for a given object.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation",
+        "label": "Data"
+      },
+      {
+        "text": "master file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to indicate the source-capture information for a file where it is useful to do so.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "source-capture information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know, via preservation managers, of any object for which integrity or authenticity is in question or that has been updated to a more current file format.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation managers",
+        "label": "Data"
+      },
+      {
+        "text": "object",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to present collections, objects, and object components by title.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know, via the preservation manager, of all files for which the checksum has changed since last registered.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation manager",
+        "label": "Data"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know what objects or object components are still under copyright and cannot be displayed without either a license or incurring risk.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when copyright for an object or object component is likely to expire per jurisdictional copyright statute.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "expire",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when the copyright status for an object or object component is modified, either manually or automatically.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know all the statutes pertinent to an object or object component.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "statutes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when the pertinence of a statute to a object or object component is scheduled to expire.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when the application of a statute to an object or object component has been modified, either manually or automatically.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know if copyrighted content has an applicable license.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "copyrighted content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know if an object or object component is subject to a library policy that restricts access in any way.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when application of a library policy to an object or object component is scheduled to expire.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know if application of a library policy to an object or object component has been modified, either manually or automatically.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know all the uses for an object or object component that are permitted or restricted per the rights status of the object or object component.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "uses",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want know the dates for when a permission or restriction is active.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "permission",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when permitted and restricted acts and/or their active dates are modified.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "restricted acts",
+        "label": "PII"
+      },
+      {
+        "text": "active dates",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to track all events scheduled for recording in the DAMS.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "events scheduled",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know the agent(s) responsible for carrying out an event.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "agent(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know when the event occurred.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a DAMS manager, I want to know the outcome of the event, e.g., object NN was deleted.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  }
+]

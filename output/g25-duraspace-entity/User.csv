@@ -1,0 +1,294 @@
+id,value,style,source,target,type
+200,Dam,shape=partialRectangle,null,null,data_base
+201,Object,shape=partialRectangle,null,null,data_base
+202,Library Unit,shape=partialRectangle,null,null,data_base
+203,Collection,shape=partialRectangle,null,null,data_base
+204,Repository,shape=partialRectangle,null,null,data_base
+205,Search,shape=partialRectangle,null,null,data_base
+206,Description,shape=partialRectangle,null,null,data_base
+207,Probable Importance,shape=partialRectangle,null,null,data_base
+208,User,shape=partialRectangle,null,null,data_base
+209,Access,shape=partialRectangle,null,null,data_base
+210,Rights Status,shape=partialRectangle,null,null,data_base
+211,Use,shape=partialRectangle,null,null,data_base
+212,Metadata,shape=partialRectangle,null,null,data_base
+213,Component Hierarchy,shape=partialRectangle,null,null,data_base
+214,Object Component,shape=partialRectangle,null,null,data_base
+215,Title,shape=partialRectangle,null,null,data_base
+216,Publication,shape=partialRectangle,null,null,data_base
+217,Place,shape=partialRectangle,null,null,data_base
+218,Etc Publisher,shape=partialRectangle,null,null,data_base
+219,Collection Component,shape=partialRectangle,null,null,data_base
+220,Scope,shape=partialRectangle,null,null,data_base
+221,Condition,shape=partialRectangle,null,null,data_base
+222,Identifier,shape=partialRectangle,null,null,data_base
+223,Etc,shape=partialRectangle,null,null,data_base
+224,Content,shape=partialRectangle,null,null,data_base
+225,Specific Language,shape=partialRectangle,null,null,data_base
+226,Name,shape=partialRectangle,null,null,data_base
+227,Specific Role,shape=partialRectangle,null,null,data_base
+228,Photographer,shape=partialRectangle,null,null,data_base
+229,Illustrator,shape=partialRectangle,null,null,data_base
+230,Geographical Etc,shape=partialRectangle,null,null,data_base
+231,Topic,shape=partialRectangle,null,null,data_base
+232,Form,shape=partialRectangle,null,null,data_base
+233,", Pertinent\nHeading",shape=partialRectangle,null,null,data_base
+234,Genre,shape=partialRectangle,null,null,data_base
+235,Geographical Function,shape=partialRectangle,null,null,data_base
+236,Function,shape=partialRectangle,null,null,data_base
+237,Geographical Name,shape=partialRectangle,null,null,data_base
+238,Occupation,shape=partialRectangle,null,null,data_base
+239,Geographical Cartographic,shape=partialRectangle,null,null,data_base
+240,Cartographic,shape=partialRectangle,null,null,data_base
+241,Geographical Occupation,shape=partialRectangle,null,null,data_base
+242,Resource,shape=partialRectangle,null,null,data_base
+243,Copyright,shape=partialRectangle,null,null,data_base
+244,Component Part,shape=partialRectangle,null,null,data_base
+245,User,rounded=0,null,null,external_entity
+246,Repository Manager,rounded=0,null,null,external_entity
+247,List Object,ellipse,null,null,process
+248,List The Collections In The Dams Belong To A Library Unit,ellipse,null,null,process
+249,Contact Repositories,ellipse,null,null,process
+250,Browse By Collections In The Dams,ellipse,null,null,process
+251,Specified,ellipse,null,null,process
+252,Limit Search,ellipse,null,null,process
+253,Indicate Any External Versions Of An Object,ellipse,null,null,process
+254,Be Of Probable Importance To An User,ellipse,null,null,process
+255,Indicate Description,ellipse,null,null,process
+256,What Repository Belongs To,ellipse,null,null,process
+257,Know,ellipse,null,null,process
+258,See The Component Parts Of An Object,ellipse,null,null,process
+259,Have Access To The Content Files For An Object,ellipse,null,null,process
+260,Know The Rights Status Of An Object,ellipse,null,null,process
+261,Know About Metadata Be Of Use To,ellipse,null,null,process
+262,Know About Other Versions Of The Object,ellipse,null,null,process
+263,See The Component Hierarchy Of An Object,ellipse,null,null,process
+264,Navigate The Component Hierarchy Of An Object,ellipse,null,null,process
+265,Search Object Component,ellipse,null,null,process
+266,Search Object,ellipse,null,null,process
+267,Search Collections By Title,ellipse,null,null,process
+268,Know For An Object The Place Of Publication,ellipse,null,null,process
+269,Know For The Place Of The Etc Publisher,ellipse,null,null,process
+270,Know For,ellipse,null,null,process
+271,Know For The Place Of The Etc Publisher Publication,ellipse,null,null,process
+272,Component Part,ellipse,null,null,process
+273,Govern,ellipse,null,null,process
+274,Govern Use,ellipse,null,null,process
+275,Govern Access,ellipse,null,null,process
+276,Know About Various Facets Of A Collection Component Such As Scope,ellipse,null,null,process
+277,Know About Various Facets Of Object,ellipse,null,null,process
+278,Know About Various Facets Of A Collection Component Such As Condition,ellipse,null,null,process
+279,Govern Etc,ellipse,null,null,process
+280,Know About Various Facets Of A Collection Component Such As Various Identifier,ellipse,null,null,process
+281,Know About Various Facets Of A Collection Component Such As Content,ellipse,null,null,process
+282,Scope Searches For Object,ellipse,null,null,process
+283,Scope Searches For Collections To A Specific Language,ellipse,null,null,process
+284,Scope Searches For Object Component,ellipse,null,null,process
+285,Search For Collections By Name,ellipse,null,null,process
+286,Scope By Searches By Name To A Specific Role Such As Etc,ellipse,null,null,process
+287,Scope By Searches By Name To A Specific Role Such As Photographer,ellipse,null,null,process
+288,Scope By Searches By Name To A Specific Role Such As Illustrator,ellipse,null,null,process
+289,"Search For By Such, Pertinent Headings Including Form Geographical Name Topic",ellipse,null,null,process
+290,"Search For By Such, Pertinent Headings Including Form Geographical Name",ellipse,null,null,process
+291,"Search For By Such, Pertinent Headings Including Form Geographical Function Geographical Occupation Title",ellipse,null,null,process
+292,"Search For By Such, Pertinent Headings Including Genre",ellipse,null,null,process
+293,"Search For Collections By Such, Pertinent Headings Including Title",ellipse,null,null,process
+294,See The Geographical Context Of Object,ellipse,null,null,process
+295,See The Geographical Context Of A Collection Component Where Pertinent,ellipse,null,null,process
+296,"Know Of All Pertinent, Other Versions Of The Resource",ellipse,null,null,process
+297,Know Of Description,ellipse,null,null,process
+298,Indicate Other Descriptions Of The Collection Are Of Probable Importance To Users,ellipse,null,null,process
+299,Indicate Other Descriptions Of The Collection Are Outside The Dams,ellipse,null,null,process
+301,,endArrow=classic,245,247,endArrow=classic
+302,,endArrow=classic,245,248,endArrow=classic
+303,,endArrow=classic,245,249,endArrow=classic
+304,,endArrow=classic,245,250,endArrow=classic
+305,,endArrow=classic,245,251,endArrow=classic
+306,,endArrow=classic,245,252,endArrow=classic
+307,,endArrow=classic,245,253,endArrow=classic
+308,,endArrow=classic,245,255,endArrow=classic
+309,,endArrow=classic,245,256,endArrow=classic
+310,,endArrow=classic,245,257,endArrow=classic
+311,,endArrow=classic,245,258,endArrow=classic
+312,,endArrow=classic,245,259,endArrow=classic
+313,,endArrow=classic,245,260,endArrow=classic
+314,,endArrow=classic,245,261,endArrow=classic
+315,,endArrow=classic,245,262,endArrow=classic
+316,,endArrow=classic,245,263,endArrow=classic
+317,,endArrow=classic,245,264,endArrow=classic
+318,,endArrow=classic,245,265,endArrow=classic
+319,,endArrow=classic,245,266,endArrow=classic
+320,,endArrow=classic,245,267,endArrow=classic
+321,,endArrow=classic,245,268,endArrow=classic
+322,,endArrow=classic,245,274,endArrow=classic
+323,,endArrow=classic,245,275,endArrow=classic
+324,,endArrow=classic,245,276,endArrow=classic
+325,,endArrow=classic,245,277,endArrow=classic
+326,,endArrow=classic,245,278,endArrow=classic
+327,,endArrow=classic,245,279,endArrow=classic
+328,,endArrow=classic,245,280,endArrow=classic
+329,,endArrow=classic,245,281,endArrow=classic
+330,,endArrow=classic,245,282,endArrow=classic
+331,,endArrow=classic,245,283,endArrow=classic
+332,,endArrow=classic,245,284,endArrow=classic
+333,,endArrow=classic,245,285,endArrow=classic
+334,,endArrow=classic,245,286,endArrow=classic
+335,,endArrow=classic,245,287,endArrow=classic
+336,,endArrow=classic,245,288,endArrow=classic
+337,,endArrow=classic,245,293,endArrow=classic
+338,,endArrow=classic,245,294,endArrow=classic
+339,,endArrow=classic,245,295,endArrow=classic
+340,,endArrow=classic,245,296,endArrow=classic
+341,,endArrow=classic,245,297,endArrow=classic
+342,,endArrow=classic,245,299,endArrow=classic
+343,,endArrow=classic,246,247,endArrow=classic
+344,,endArrow=classic,246,250,endArrow=classic
+345,,endArrow=classic,246,253,endArrow=classic
+346,,endArrow=classic,246,254,endArrow=classic
+347,,endArrow=classic,246,255,endArrow=classic
+348,,endArrow=classic,246,258,endArrow=classic
+349,,endArrow=classic,246,259,endArrow=classic
+350,,endArrow=classic,246,260,endArrow=classic
+351,,endArrow=classic,246,262,endArrow=classic
+352,,endArrow=classic,246,263,endArrow=classic
+353,,endArrow=classic,246,264,endArrow=classic
+354,,endArrow=classic,246,265,endArrow=classic
+355,,endArrow=classic,246,266,endArrow=classic
+356,,endArrow=classic,246,277,endArrow=classic
+357,,endArrow=classic,246,282,endArrow=classic
+358,,endArrow=classic,246,284,endArrow=classic
+359,,endArrow=classic,246,294,endArrow=classic
+360,,endArrow=classic,246,297,endArrow=classic
+361,,endArrow=classic,246,298,endArrow=classic
+362,,endArrow=classic,246,299,endArrow=classic
+363,Object,endArrow=classic,247,201,endArrow=classic
+364,Collection,endArrow=classic,248,203,endArrow=classic
+365,Dam,endArrow=classic,248,200,endArrow=classic
+366,Library Unit,endArrow=classic,248,202,endArrow=classic
+367,Repository,endArrow=classic,249,204,endArrow=classic
+368,Dam,endArrow=classic,250,200,endArrow=classic
+369,Collection,endArrow=classic,250,203,endArrow=classic
+370,,endArrow=classic,252,251,endArrow=classic
+371,Search,endArrow=classic,252,205,endArrow=classic
+372,,endArrow=classic,253,254,endArrow=classic
+373,Object,endArrow=classic,253,201,endArrow=classic
+374,Probable Importance,endArrow=classic,254,207,endArrow=classic
+375,User,endArrow=classic,254,208,endArrow=classic
+376,Description,endArrow=classic,255,206,endArrow=classic
+377,Repository,endArrow=classic,256,204,endArrow=classic
+378,,endArrow=classic,257,256,endArrow=classic
+379,Component Part,endArrow=classic,258,244,endArrow=classic
+380,Object,endArrow=classic,258,201,endArrow=classic
+381,Access,endArrow=classic,259,209,endArrow=classic
+382,Object,endArrow=classic,259,201,endArrow=classic
+383,Content,endArrow=classic,259,224,endArrow=classic
+384,Rights Status,endArrow=classic,260,210,endArrow=classic
+385,Object,endArrow=classic,260,201,endArrow=classic
+386,Metadata,endArrow=classic,261,212,endArrow=classic
+387,Use,endArrow=classic,261,211,endArrow=classic
+388,Object,endArrow=classic,262,201,endArrow=classic
+389,Component Hierarchy,endArrow=classic,263,213,endArrow=classic
+390,Object,endArrow=classic,263,201,endArrow=classic
+391,Object,endArrow=classic,264,201,endArrow=classic
+392,Component Hierarchy,endArrow=classic,264,213,endArrow=classic
+393,Object,endArrow=classic,266,201,endArrow=classic
+394,Title,endArrow=classic,267,215,endArrow=classic
+395,Collection,endArrow=classic,267,203,endArrow=classic
+396,Object,endArrow=classic,268,201,endArrow=classic
+397,Publication,endArrow=classic,268,216,endArrow=classic
+398,Place,endArrow=classic,268,217,endArrow=classic
+399,Etc Publisher,endArrow=classic,269,218,endArrow=classic
+400,Place,endArrow=classic,269,217,endArrow=classic
+401,,endArrow=classic,270,272,endArrow=classic
+402,Etc Publisher,endArrow=classic,271,218,endArrow=classic
+403,Publication,endArrow=classic,271,216,endArrow=classic
+404,Place,endArrow=classic,271,217,endArrow=classic
+405,Use,endArrow=classic,274,211,endArrow=classic
+406,Access,endArrow=classic,275,209,endArrow=classic
+407,Collection Component,endArrow=classic,276,219,endArrow=classic
+408,Scope,endArrow=classic,276,220,endArrow=classic
+409,Object,endArrow=classic,277,201,endArrow=classic
+410,,endArrow=classic,278,273,endArrow=classic
+411,,endArrow=classic,278,275,endArrow=classic
+412,Collection Component,endArrow=classic,278,219,endArrow=classic
+413,Condition,endArrow=classic,278,221,endArrow=classic
+414,Etc,endArrow=classic,279,223,endArrow=classic
+415,Identifier,endArrow=classic,280,222,endArrow=classic
+416,Collection Component,endArrow=classic,280,219,endArrow=classic
+417,Content,endArrow=classic,281,224,endArrow=classic
+418,Collection Component,endArrow=classic,281,219,endArrow=classic
+419,Object,endArrow=classic,282,201,endArrow=classic
+420,Search,endArrow=classic,282,205,endArrow=classic
+421,Collection,endArrow=classic,283,203,endArrow=classic
+422,Search,endArrow=classic,283,205,endArrow=classic
+423,Specific Language,endArrow=classic,283,225,endArrow=classic
+424,Search,endArrow=classic,284,205,endArrow=classic
+425,Collection,endArrow=classic,285,203,endArrow=classic
+426,Name,endArrow=classic,285,226,endArrow=classic
+427,Etc,endArrow=classic,286,223,endArrow=classic
+428,Specific Role,endArrow=classic,286,227,endArrow=classic
+429,Search,endArrow=classic,286,205,endArrow=classic
+430,Name,endArrow=classic,286,226,endArrow=classic
+431,Photographer,endArrow=classic,287,228,endArrow=classic
+432,Specific Role,endArrow=classic,287,227,endArrow=classic
+433,Search,endArrow=classic,287,205,endArrow=classic
+434,Name,endArrow=classic,287,226,endArrow=classic
+435,Specific Role,endArrow=classic,288,227,endArrow=classic
+436,Illustrator,endArrow=classic,288,229,endArrow=classic
+437,Search,endArrow=classic,288,205,endArrow=classic
+438,Name,endArrow=classic,288,226,endArrow=classic
+439,Genre,endArrow=classic,289,234,endArrow=classic
+440,Occupation,endArrow=classic,289,238,endArrow=classic
+441,Geographical Etc,endArrow=classic,289,230,endArrow=classic
+442,Form,endArrow=classic,289,232,endArrow=classic
+443,Topic,endArrow=classic,289,231,endArrow=classic
+444,", Pertinent\nHeading",endArrow=classic,289,233,endArrow=classic
+445,Geographical Function,endArrow=classic,289,235,endArrow=classic
+446,Geographical Name,endArrow=classic,289,237,endArrow=classic
+447,Geographical Cartographic,endArrow=classic,289,239,endArrow=classic
+448,Cartographic,endArrow=classic,289,240,endArrow=classic
+449,Geographical Occupation,endArrow=classic,289,241,endArrow=classic
+450,Title,endArrow=classic,289,215,endArrow=classic
+451,Etc,endArrow=classic,289,223,endArrow=classic
+452,Name,endArrow=classic,289,226,endArrow=classic
+453,Form,endArrow=classic,290,232,endArrow=classic
+454,", Pertinent\nHeading",endArrow=classic,290,233,endArrow=classic
+455,Geographical Etc,endArrow=classic,290,230,endArrow=classic
+456,Topic,endArrow=classic,290,231,endArrow=classic
+457,Geographical Function,endArrow=classic,290,235,endArrow=classic
+458,Genre,endArrow=classic,290,234,endArrow=classic
+459,Geographical Name,endArrow=classic,290,237,endArrow=classic
+460,Occupation,endArrow=classic,290,238,endArrow=classic
+461,Geographical Cartographic,endArrow=classic,290,239,endArrow=classic
+462,Cartographic,endArrow=classic,290,240,endArrow=classic
+463,Geographical Occupation,endArrow=classic,290,241,endArrow=classic
+464,Title,endArrow=classic,290,215,endArrow=classic
+465,Etc,endArrow=classic,290,223,endArrow=classic
+466,Name,endArrow=classic,290,226,endArrow=classic
+467,Geographical Name,endArrow=classic,291,237,endArrow=classic
+468,Geographical Etc,endArrow=classic,291,230,endArrow=classic
+469,Form,endArrow=classic,291,232,endArrow=classic
+470,Geographical Function,endArrow=classic,291,235,endArrow=classic
+471,Topic,endArrow=classic,291,231,endArrow=classic
+472,", Pertinent\nHeading",endArrow=classic,291,233,endArrow=classic
+473,Geographical Cartographic,endArrow=classic,291,239,endArrow=classic
+474,Geographical Occupation,endArrow=classic,291,241,endArrow=classic
+475,Title,endArrow=classic,291,215,endArrow=classic
+476,Genre,endArrow=classic,292,234,endArrow=classic
+477,Topic,endArrow=classic,292,231,endArrow=classic
+478,", Pertinent\nHeading",endArrow=classic,292,233,endArrow=classic
+479,Form,endArrow=classic,292,232,endArrow=classic
+480,Collection,endArrow=classic,293,203,endArrow=classic
+481,", Pertinent\nHeading",endArrow=classic,293,233,endArrow=classic
+482,Title,endArrow=classic,293,215,endArrow=classic
+483,Object,endArrow=classic,294,201,endArrow=classic
+484,Collection Component,endArrow=classic,295,219,endArrow=classic
+485,Resource,endArrow=classic,296,242,endArrow=classic
+486,Description,endArrow=classic,297,206,endArrow=classic
+487,Probable Importance,endArrow=classic,298,207,endArrow=classic
+488,User,endArrow=classic,298,208,endArrow=classic
+489,Collection,endArrow=classic,298,203,endArrow=classic
+490,Dam,endArrow=classic,299,200,endArrow=classic
+491,Collection,endArrow=classic,299,203,endArrow=classic
+510,Object Component,endArrow=classic,265,214,endArrow=classic
+555,Function,endArrow=classic,291,236,endArrow=classic

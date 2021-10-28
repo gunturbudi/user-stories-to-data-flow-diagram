@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a Customer, I want to Request Inspection, so that a County inspector is assigned to perform an inspection of my project.",
+    "entities": [
+      {
+        "text": "Customer",
+        "label": "Data"
+      },
+      {
+        "text": "Request Inspection",
+        "label": "Processing"
+      },
+      {
+        "text": "County inspector",
+        "label": "Data"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      }
+    ]
+  }
+]

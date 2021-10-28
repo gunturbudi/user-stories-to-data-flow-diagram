@@ -1,0 +1,65 @@
+[
+  {
+    "text": "As an employee, I want to access the route planning system during work, so that I can be guided through the neighbourhood.",
+    "entities": [
+      {
+        "text": "employee,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an employee from the HR department, I want to have access to the full information of all employees working for this business.",
+    "entities": [
+      {
+        "text": "employee",
+        "label": "Data"
+      },
+      {
+        "text": "HR department",
+        "label": "Data"
+      },
+      {
+        "text": "have access",
+        "label": "Processing"
+      },
+      {
+        "text": "full information",
+        "label": "PII"
+      },
+      {
+        "text": "employees",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an employee, I want to get quick notifications, so that I can process cases the first time.",
+    "entities": [
+      {
+        "text": "employee",
+        "label": "Data"
+      },
+      {
+        "text": "notifications",
+        "label": "PII"
+      },
+      {
+        "text": "process",
+        "label": "Processing"
+      },
+      {
+        "text": "cases",
+        "label": "PII"
+      }
+    ]
+  }
+]

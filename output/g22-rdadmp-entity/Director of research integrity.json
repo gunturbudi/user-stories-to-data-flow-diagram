@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a Director of Research Integrity, I want to access reports containing details of research projects in which data are classified as sensitive or highly sensitive, so that I can confirm security protocols are applied to these data.",
+    "entities": [
+      {
+        "text": "Director of Research Integrity,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "confirm",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

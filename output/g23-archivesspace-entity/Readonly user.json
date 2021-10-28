@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a ReadOnly user , I want to view archival descriptions in my repository.",
+    "entities": [
+      {
+        "text": "ReadOnly user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "archival descriptions",
+        "label": "PII"
+      },
+      {
+        "text": "repository",
+        "label": "PII"
+      }
+    ]
+  }
+]

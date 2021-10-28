@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Business" as thingbusiness
+	entity "Access" as thingaccess
+	entity "Employee" as thingemployee
+	actor "Employee" as actoremployee
+	actor "Hr Department" as actorhrdepartment
+	circle "Information" as thingfullinformation
+	boundary "Business\nInterface" as thingbusinessinterface #grey
+	control "Have Access\nTo The\nFull Information\nOf All\nEmployees For\nThis Business" as controlhaveaccess
+
+	thingfullinformation <.. thingaccess
+	thingbusiness <.. thingemployee
+	thingemployee *-- thingfullinformation
+	actoremployee --- thingbusinessinterface
+	actorhrdepartment --- thingbusinessinterface
+	thingaccess --- controlhaveaccess
+	thingfullinformation --- controlhaveaccess
+	thingemployee --- controlhaveaccess
+	thingbusiness --- controlhaveaccess
+	thingbusinessinterface --> controlhaveaccess
+
+@enduml

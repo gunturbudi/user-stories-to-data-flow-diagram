@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a recyclingfacility, I want to be able to communicate directly with the site admin and convey any issues or concerns I have, so that they fix them.",
+    "entities": [
+      {
+        "text": "recyclingfacility,",
+        "label": "Data"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      },
+      {
+        "text": "site admin",
+        "label": "Data"
+      },
+      {
+        "text": "issues",
+        "label": "PII"
+      },
+      {
+        "text": "concerns",
+        "label": "PII"
+      }
+    ]
+  }
+]

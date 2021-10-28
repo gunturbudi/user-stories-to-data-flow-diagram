@@ -1,0 +1,173 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Performance Impact" as thingperformanceimpact #grey
+	entity "Flexfield" as thingflexfield
+	entity "Fabs" as thingFABS
+	entity "Production" as thingproduction
+	entity "Date" as thingdate
+	entity "Update Date" as thingupdateddate
+	entity "Time" as thingtime
+	entity "File" as thingfile
+	entity "Wrong Extension" as thingwrongextension
+	entity "Fabs Go\nLive" as thingfabsgolive #grey
+	entity "Submission" as thingsubmission
+	entity "Zero" as thingzero
+	entity "Datum" as thingdatum
+	entity "Sam" as thingSAM
+	entity "Loan Record" as thingloanrecord
+	entity "Blank" as thingblank
+	entity "Schema" as thingschema
+	entity "Maximum Length" as thingmaximumlength
+	entity "Header" as thingheader
+	entity "Atom Feed" as thingatomfeed #grey
+	entity "Correct Format" as thingcorrectformat
+	entity "Error" as thingerror
+	entity "Zip" as thingzip
+	entity "Fabs Page" as thingfabspage
+	entity "Fsrs Record" as thingfsrsrecord
+	entity "Data Element" as thingdataelement
+	entity "Quotation Mark" as thingquotationmark
+	entity "Assistance" as thingassistance #grey
+	entity "Fabs" as thingfabs #grey
+	actor "Agency User" as actoragencyuser
+	circle "Large Number" as thinglargenumber
+	circle "Digit" as thinglastdigit
+	circle "F" as thingf #grey
+	circle "Period" as thingperiod #grey
+	circle "Level" as thinglevel #grey
+	boundary "Box" as thingboxshowtimeagencyuser #grey
+	boundary "Header Information\nBox" as thingheaderinformationboxshowupdateddateagencyuser
+	boundary "Validation Fabs\nRule" as thingvalidationfabsrulesagencyuser
+	boundary "Rule" as thingruleagencyuser #grey
+	boundary "Page" as thingpageagencyuser #grey
+	boundary "Landing Page" as thinglandingpageagencyuser
+	boundary "Impact\nInterface" as thingimpactinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Extension\nInterface" as thingextensioninterface #grey
+	boundary "Live\nInterface" as thingliveinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "Schema\nInterface" as thingschemainterface #grey
+	boundary "Feed\nInterface" as thingfeedinterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "Error\nInterface" as thingerrorinterface #grey
+	control "Include A\nLarge Number\nOf Flexfields\nWithout Performance\nImpact" as controlincludelargenumber
+	control "Show Updated\nDate" as controlshowupdateddate
+	control "Show Time" as controlshowtime
+	control "Receive A\nMore Helpful\nFile Level\nError" as controlreceivehelpfulfilelevelerror
+	control "Upload A\nFile With\nThe Wrong\nExtension" as controluploadreceivehelpfulfilelevelerrorfile
+	control "Provided With\nAll Financial,\nHistorical Assistance\nData For\nFabs Go\nLive" as controlprovidefinancialhistoricalassistancedata
+	control "Provided With\nHistorical Fpds\nData" as controlprovidehistoricalfpdsdata
+	control "See" as controlsee
+	control "Understand File\nLevel Errors" as controlunderstandfilelevelerrors
+	control "Ensure" as controlensure
+	control "Accept Zero\nFor Loan\nRecords" as controlacceptvalidationfabsrulesagencyuserzeroloanrecords
+	control "Blank" as controlblank
+	control "Accept" as controlacceptruleagencyuserblank
+	control "Derived Properly\nData Elements" as controlderivedataelements
+	control "Legalentityaddressline3 Match\nSchema" as controlmatchLegalEntityAddressLine3schema
+	control "Use The\nSchema Headers\nIn Fabs\nFile" as controluseschemaheader
+	control "Map The\nFederalactionobligation Properly\nTo The\nAtom Feed" as controlmapfederalactionobligationatomfeed
+	control "Get File\nF In\nThe Correct\nFormat" as controlgetfileFcorrectformat
+	control "Leave Off\nThe Last\nDigits Of\nThe Zip\nWithout An\nError" as controlleavelastdigiterror
+	control "Know" as controlknow
+	control "Navigate To\nFabs Pages" as controlnavigatelandingpageagencyuserfabspage
+	control "Navigate To" as controlnavigatepageagencyuserdabs
+	control "Dabs" as controldabs
+	control "Submit Data\nElements Quotation\nMarks" as controlsubmitdataelements
+
+	thingperformanceimpact <.. thingflexfield
+	thingschema <.. thingflexfield
+	thingatomfeed <.. thingflexfield
+	thingwrongextension <.. thingfile
+	thingfabs <.. thingfile
+	thingSAM <.. thingdatum
+	thingassistance <.. thingdatum
+	thingfabsgolive <.. thingdatum
+	thingflexfield <.. thingdatum
+	thingheader <.. thingschema
+	thingfile <.. thingheader
+	thinglevel <.. thingerror
+	thingfile <.. thingerror
+	thingerror <.. thingzip
+	thingflexfield *-- thinglargenumber
+	thingperformanceimpact *-- thinglargenumber
+	thingzip *-- thinglastdigit
+	thingcorrectformat *-- thingf
+	thingfile *-- thingf
+	thingsubmission *-- thingperiod
+	thingfile *-- thinglevel
+	actoragencyuser --- thingboxshowtimeagencyuser
+	actoragencyuser --- thingheaderinformationboxshowupdateddateagencyuser
+	actoragencyuser --- thingvalidationfabsrulesagencyuser
+	actoragencyuser --- thingruleagencyuser
+	actoragencyuser --- thingpageagencyuser
+	actoragencyuser --- thinglandingpageagencyuser
+	actoragencyuser --- thingimpactinterface
+	actoragencyuser --- thingfileinterface
+	actoragencyuser --- thingextensioninterface
+	actoragencyuser --- thingliveinterface
+	actoragencyuser --- thingdatuminterface
+	actoragencyuser --- thingelementinterface
+	actoragencyuser --- thingschemainterface
+	actoragencyuser --- thingfeedinterface
+	actoragencyuser --- thingformatinterface
+	actoragencyuser --- thingerrorinterface
+	thinglargenumber --- controlincludelargenumber
+	thingflexfield --- controlincludelargenumber
+	thingperformanceimpact --- controlincludelargenumber
+	thingimpactinterface --> controlincludelargenumber
+	thingupdateddate --- controlshowupdateddate
+	thingheaderinformationboxshowupdateddateagencyuser --> controlshowupdateddate
+	thingboxshowtimeagencyuser --> controlshowtime
+	thingtime --- controlshowtime
+	controluploadreceivehelpfulfilelevelerrorfile --> controlreceivehelpfulfilelevelerror
+	thingfileinterface --> controlreceivehelpfulfilelevelerror
+	thingfile --- controlreceivehelpfulfilelevelerror
+	thingerror --- controlreceivehelpfulfilelevelerror
+	thingfile --- controluploadreceivehelpfulfilelevelerrorfile
+	thingwrongextension --- controluploadreceivehelpfulfilelevelerrorfile
+	thingextensioninterface --> controluploadreceivehelpfulfilelevelerrorfile
+	thingfabsgolive --- controlprovidefinancialhistoricalassistancedata
+	thingliveinterface --> controlprovidefinancialhistoricalassistancedata
+	thingdatum --- controlprovidefinancialhistoricalassistancedata
+	thingdatuminterface --> controlprovidehistoricalfpdsdata
+	thingdatum --- controlprovidehistoricalfpdsdata
+	thingfileinterface --> controlunderstandfilelevelerrors
+	thingerror --- controlunderstandfilelevelerrors
+	thingvalidationfabsrulesagencyuser --> controlacceptvalidationfabsrulesagencyuserzeroloanrecords
+	thingzero --- controlacceptvalidationfabsrulesagencyuserzeroloanrecords
+	thingloanrecord --- controlacceptvalidationfabsrulesagencyuserzeroloanrecords
+	controlacceptruleagencyuserblank --> controlblank
+	thingruleagencyuser --> controlacceptruleagencyuserblank
+	thingblank --- controlacceptruleagencyuserblank
+	thingdataelement --- controlderivedataelements
+	thingelementinterface --> controlderivedataelements
+	thingschema --- controlmatchLegalEntityAddressLine3schema
+	thingschemainterface --> controlmatchLegalEntityAddressLine3schema
+	thingflexfield --- controlmatchLegalEntityAddressLine3schema
+	thingheader --- controluseschemaheader
+	thingschema --- controluseschemaheader
+	thingfileinterface --> controluseschemaheader
+	thingfile --- controluseschemaheader
+	thingatomfeed --- controlmapfederalactionobligationatomfeed
+	thingfeedinterface --> controlmapfederalactionobligationatomfeed
+	thingflexfield --- controlmapfederalactionobligationatomfeed
+	thingf --- controlgetfileFcorrectformat
+	thingcorrectformat --- controlgetfileFcorrectformat
+	thingformatinterface --> controlgetfileFcorrectformat
+	thinglastdigit --- controlleavelastdigiterror
+	thingzip --- controlleavelastdigiterror
+	thingerror --- controlleavelastdigiterror
+	thingerrorinterface --> controlleavelastdigiterror
+	thinglandingpageagencyuser --> controlnavigatelandingpageagencyuserfabspage
+	thingfabspage --- controlnavigatelandingpageagencyuserfabspage
+	thingpageagencyuser --> controlnavigatepageagencyuserdabs
+	controlnavigatepageagencyuserdabs --> controldabs
+	thingelementinterface --> controlsubmitdataelements
+	thingdataelement --- controlsubmitdataelements
+
+@enduml

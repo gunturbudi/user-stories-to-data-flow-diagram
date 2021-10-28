@@ -1,0 +1,142 @@
+id,value,style,source,target,type
+19,Start using the data for doing analysis and visualizations.,ellipse,null,null,process
+20,Start using the data for doing analysis and visualizations.,ellipse,null,null,process
+21,Start using the data in doing analysis and visualizations.,ellipse,null,null,process
+22,Start using the data in doing analysis and visualizations.,ellipse,null,null,process
+23,Start using the data in doing analysis and visualizations.,ellipse,null,null,process
+24,Integrate data-packaged data with pipelines that use elasticsearch.,ellipse,null,null,process
+25,Integrate data-packaged data with pipelines that use spss.,ellipse,null,null,process
+26,Integrate data-packaged data with pipelines that use eprints.,ellipse,null,null,process
+27,Integrate data-packaged data with pipelines that use mongo.,ellipse,null,null,process
+28,Integrate data-packaged data with pipelines that use dat.,ellipse,null,null,process
+29,Integrate data-packaged data with pipelines that use feather.,ellipse,null,null,process
+30,Integrate data-packaged data with pipelines that use hdf5.,ellipse,null,null,process
+31,Integrate data-packaged data with pipelines that use dspace.,ellipse,null,null,process
+32,Use data packages with additional data analysis tools.,ellipse,null,null,process
+200,Data Package,shape=partialRectangle,null,null,data_base
+201,Node,shape=partialRectangle,null,null,data_base
+202,Python,shape=partialRectangle,null,null,data_base
+203,Second,shape=partialRectangle,null,null,data_base
+204,Jquery Plugin,shape=partialRectangle,null,null,data_base
+205,R,shape=partialRectangle,null,null,data_base
+206,Analysis,shape=partialRectangle,null,null,data_base
+207,Clojure,shape=partialRectangle,null,null,data_base
+208,Julia,shape=partialRectangle,null,null,data_base
+209,C++,shape=partialRectangle,null,null,data_base
+210,Elasticsearch Integration,shape=partialRectangle,null,null,data_base
+211,Spss Integration,shape=partialRectangle,null,null,data_base
+212,Eprints Integration,shape=partialRectangle,null,null,data_base
+213,Mongo Integration,shape=partialRectangle,null,null,data_base
+214,Dat Integration,shape=partialRectangle,null,null,data_base
+215,Feather Integration,shape=partialRectangle,null,null,data_base
+216,Hdf5 Integration,shape=partialRectangle,null,null,data_base
+217,Datum,shape=partialRectangle,null,null,data_base
+218,Exist Wizard,shape=partialRectangle,null,null,data_base
+219,Dspace Integration,shape=partialRectangle,null,null,data_base
+220,Online Service,shape=partialRectangle,null,null,data_base
+221,Update,shape=partialRectangle,null,null,data_base
+222,Data Repository,shape=partialRectangle,null,null,data_base
+223,Web Socket\nProtocol,shape=partialRectangle,null,null,data_base
+224,Frictionless Data\nTool,shape=partialRectangle,null,null,data_base
+225,Core,shape=partialRectangle,null,null,data_base
+226,Data,shape=partialRectangle,null,null,data_base
+227,Developer,rounded=0,null,null,external_entity
+228,Get A Data Package Into Node,ellipse,null,null,process
+229,Get A Data Package Into Python In Seconds,ellipse,null,null,process
+230,Provided With A Jquery Plugin For Core Data Packages,ellipse,null,null,process
+231,Do Exploratory Data Analysis In R,ellipse,null,null,process
+232,Operationalize That Analysis In Python,ellipse,null,null,process
+233,Get A Data Package Into Clojure In Seconds,ellipse,null,null,process
+234,Get A Data Package Into Julia In Seconds,ellipse,null,null,process
+235,Get A Data Package Into C++ In Seconds,ellipse,null,null,process
+236,Provided With An Elasticsearch Integration,ellipse,null,null,process
+237,Provided With An Spss Integration,ellipse,null,null,process
+238,Provided With An Eprints Integration,ellipse,null,null,process
+239,Provided With A Mongo Integration,ellipse,null,null,process
+240,Provided With A Dat Integration,ellipse,null,null,process
+241,Provided With Feather Integration,ellipse,null,null,process
+242,Provided With Hdf5 Integration,ellipse,null,null,process
+243,Customize An Existing Wizard For Specific Type Of Data,ellipse,null,null,process
+244,Provided With An Dspace Integration,ellipse,null,null,process
+245,Create A Web Socket Protocol For Frictionless Data Tools,ellipse,null,null,process
+247,,endArrow=classic,227,228,endArrow=classic
+248,,endArrow=classic,227,229,endArrow=classic
+249,,endArrow=classic,227,230,endArrow=classic
+250,,endArrow=classic,227,231,endArrow=classic
+251,,endArrow=classic,227,232,endArrow=classic
+252,,endArrow=classic,227,233,endArrow=classic
+253,,endArrow=classic,227,234,endArrow=classic
+254,,endArrow=classic,227,235,endArrow=classic
+255,,endArrow=classic,227,236,endArrow=classic
+256,,endArrow=classic,227,237,endArrow=classic
+257,,endArrow=classic,227,238,endArrow=classic
+258,,endArrow=classic,227,239,endArrow=classic
+259,,endArrow=classic,227,240,endArrow=classic
+260,,endArrow=classic,227,241,endArrow=classic
+261,,endArrow=classic,227,242,endArrow=classic
+262,,endArrow=classic,227,243,endArrow=classic
+263,,endArrow=classic,227,244,endArrow=classic
+264,,endArrow=classic,227,245,endArrow=classic
+265,Data Package,endArrow=classic,228,200,endArrow=classic
+266,Node,endArrow=classic,228,201,endArrow=classic
+267,Python,endArrow=classic,229,202,endArrow=classic
+268,Second,endArrow=classic,229,203,endArrow=classic
+269,Data Package,endArrow=classic,229,200,endArrow=classic
+270,Jquery Plugin,endArrow=classic,230,204,endArrow=classic
+271,Data Package,endArrow=classic,230,200,endArrow=classic
+272,R,endArrow=classic,231,205,endArrow=classic
+273,Analysis,endArrow=classic,231,206,endArrow=classic
+274,Analysis,endArrow=classic,232,206,endArrow=classic
+275,Python,endArrow=classic,232,202,endArrow=classic
+276,Clojure,endArrow=classic,233,207,endArrow=classic
+277,Data Package,endArrow=classic,233,200,endArrow=classic
+278,Second,endArrow=classic,233,203,endArrow=classic
+279,Julia,endArrow=classic,234,208,endArrow=classic
+280,Data Package,endArrow=classic,234,200,endArrow=classic
+281,Second,endArrow=classic,234,203,endArrow=classic
+282,C++,endArrow=classic,235,209,endArrow=classic
+283,Data Package,endArrow=classic,235,200,endArrow=classic
+284,Second,endArrow=classic,235,203,endArrow=classic
+285,Elasticsearch Integration,endArrow=classic,236,210,endArrow=classic
+286,Spss Integration,endArrow=classic,237,211,endArrow=classic
+287,Eprints Integration,endArrow=classic,238,212,endArrow=classic
+288,Mongo Integration,endArrow=classic,239,213,endArrow=classic
+289,Dat Integration,endArrow=classic,240,214,endArrow=classic
+290,Feather Integration,endArrow=classic,241,215,endArrow=classic
+291,Hdf5 Integration,endArrow=classic,242,216,endArrow=classic
+292,Exist Wizard,endArrow=classic,243,218,endArrow=classic
+293,Datum,endArrow=classic,243,217,endArrow=classic
+294,Dspace Integration,endArrow=classic,244,219,endArrow=classic
+295,Web Socket\nProtocol,endArrow=classic,245,223,endArrow=classic
+296,Frictionless Data\nTool,endArrow=classic,245,224,endArrow=classic
+353,Core,endArrow=classic,230,225,endArrow=classic
+354,Data,endArrow=classic,228,226,endArrow=classic
+1000,,endArrow=classic,228,19,endArrow=classic
+1001,Data,endArrow=classic,19,226,endArrow=classic
+1002,,endArrow=classic,229,20,endArrow=classic
+1003,Data,endArrow=classic,20,226,endArrow=classic
+1004,,endArrow=classic,229,21,endArrow=classic
+1005,Data,endArrow=classic,21,226,endArrow=classic
+1006,,endArrow=classic,229,22,endArrow=classic
+1007,Data,endArrow=classic,22,226,endArrow=classic
+1008,,endArrow=classic,229,23,endArrow=classic
+1009,Data,endArrow=classic,23,226,endArrow=classic
+1010,,endArrow=classic,227,24,endArrow=classic
+1011,Data-packaged data,endArrow=classic,24,226,endArrow=classic
+1012,,endArrow=classic,227,25,endArrow=classic
+1013,Data-packaged data,endArrow=classic,25,226,endArrow=classic
+1014,,endArrow=classic,227,26,endArrow=classic
+1015,Data-packaged data,endArrow=classic,26,226,endArrow=classic
+1016,,endArrow=classic,227,27,endArrow=classic
+1017,Data-packaged data,endArrow=classic,27,226,endArrow=classic
+1018,,endArrow=classic,227,28,endArrow=classic
+1019,Data-packaged data,endArrow=classic,28,226,endArrow=classic
+1020,,endArrow=classic,227,29,endArrow=classic
+1021,Data-packaged data,endArrow=classic,29,226,endArrow=classic
+1022,,endArrow=classic,227,30,endArrow=classic
+1023,Data-packaged data,endArrow=classic,30,226,endArrow=classic
+1024,,endArrow=classic,227,31,endArrow=classic
+1025,Data-packaged data,endArrow=classic,31,226,endArrow=classic
+1026,,endArrow=classic,245,32,endArrow=classic
+1027,Data packages,rounded=0,null,null,external_entity
+1028,Data packages,endArrow=classic,32,1027,endArrow=classic

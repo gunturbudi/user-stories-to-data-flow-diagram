@@ -1,0 +1,30 @@
+id,value,style,source,target,type
+5,Perform management actions on any dataset.,ellipse,null,null,process
+200,View,shape=partialRectangle,null,null,data_base
+201,Dataset,shape=partialRectangle,null,null,data_base
+202,User,shape=partialRectangle,null,null,data_base
+203,Viewer,shape=partialRectangle,null,null,data_base
+204,Username,shape=partialRectangle,null,null,data_base
+205,Data Types\nHierarchy,shape=partialRectangle,null,null,data_base
+206,Platform Administrator,rounded=0,null,null,external_entity
+207,Api User,rounded=0,null,null,external_entity
+208,User,rounded=0,null,null,external_entity
+209,Have A View On All Datasets All Users,ellipse,null,null,process
+210,Translate The Data Types Hierarchies Of The Viewer,ellipse,null,null,process
+211,Understand,ellipse,null,null,process
+212,Set Own Username,ellipse,null,null,process
+214,,endArrow=classic,206,209,endArrow=classic
+215,,endArrow=classic,206,210,endArrow=classic
+216,,endArrow=classic,208,212,endArrow=classic
+217,View,endArrow=classic,209,200,endArrow=classic
+218,Dataset,endArrow=classic,209,201,endArrow=classic
+219,Data Types\nHierarchy,endArrow=classic,210,205,endArrow=classic
+220,Viewer,endArrow=classic,210,203,endArrow=classic
+221,Username,endArrow=classic,212,204,endArrow=classic
+222,User,endArrow=classic,209,202,endArrow=classic
+1000,,endArrow=classic,209,5,endArrow=classic
+1001,Platform administrator,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,5,endArrow=classic
+1003,Platform administrator,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,5,endArrow=classic
+1005,Dataset,endArrow=classic,5,201,endArrow=classic

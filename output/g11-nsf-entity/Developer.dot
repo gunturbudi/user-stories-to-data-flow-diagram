@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Subdomain " ];
+201 [label="<f0>  |<f1> Initial Hypothesis " ];
+202 [label="Developer" shape=box];
+203 [label="{<f0> 1.0|<f1> Have }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Know }" shape=Mrecord];
+}

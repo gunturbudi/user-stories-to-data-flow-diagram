@@ -1,0 +1,52 @@
+[
+  {
+    "text": "As a faculty member, I want to add a date delimiter to a search string, so that I can limit a search to return only results from before, after, or between a given date or dates.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "return",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "given date",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a faculty member, I want to go to my repository dashboard to manage members of my classes, grant submit permissions by pasting in a list of NetIDs, see confirmation that DDR recognizes the NetIDs, ability to manually remove permissions, ability to set begin and end dates for a submission window, and a have a status screen to clearly illustrate who has and hasn't submitted.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "classes",
+        "label": "PII"
+      },
+      {
+        "text": "who has",
+        "label": "PII"
+      }
+    ]
+  }
+]

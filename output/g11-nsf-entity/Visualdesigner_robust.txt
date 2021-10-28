@@ -1,0 +1,44 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nsf.Gov Website" as thingnsf.govwebsite #grey
+	entity "Different Style" as thingdifferentstyle
+	entity "Moodboard" as thingmoodboard
+	entity "Visual Design" as thingvisualdesign
+	entity "Nsf Project\nTeam" as thingnsfprojectteam #grey
+	entity "Design Concept" as thingdesignconcept
+	actor "Visualdesigner" as actorVisualDesigner
+	circle "Value" as thingvalue
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	boundary "Moodboard\nInterface" as thingmoodboardinterface #grey
+	boundary "Team\nInterface" as thingteaminterface #grey
+	control "Concept Different\nStyles For\nThe Nsf.Gov\nWebsite" as controlconceptdifferentstyle
+	control "Aid With\nVisual Design\nConcepts For\nThe Nsf.Gov\nWebsite" as controlaidvisualdesignconcepts
+	control "Create A\nMoodboard" as controlcreatemoodboardaidvisualdesignconcepts
+	control "Demonstrate The\nValue Of\nVisual Design\nTo The\nNsf Project\nTeam" as controldemonstratevalue
+
+	thingnsf.govwebsite <.. thingdifferentstyle
+	thingnsfprojectteam <.. thingvisualdesign
+	thingnsf.govwebsite <.. thingdesignconcept
+	thingvisualdesign *-- thingvalue
+	thingnsfprojectteam *-- thingvalue
+	actorVisualDesigner --- thingwebsiteinterface
+	actorVisualDesigner --- thingmoodboardinterface
+	actorVisualDesigner --- thingteaminterface
+	thingdifferentstyle --- controlconceptdifferentstyle
+	thingnsf.govwebsite --- controlconceptdifferentstyle
+	thingwebsiteinterface --> controlconceptdifferentstyle
+	thingdesignconcept --- controlaidvisualdesignconcepts
+	controlcreatemoodboardaidvisualdesignconcepts --> controlaidvisualdesignconcepts
+	thingmoodboardinterface --> controlaidvisualdesignconcepts
+	thingnsf.govwebsite --- controlaidvisualdesignconcepts
+	thingmoodboard --- controlcreatemoodboardaidvisualdesignconcepts
+	thingmoodboardinterface --> controlcreatemoodboardaidvisualdesignconcepts
+	thingvalue --- controldemonstratevalue
+	thingvisualdesign --- controldemonstratevalue
+	thingnsfprojectteam --- controldemonstratevalue
+	thingteaminterface --> controldemonstratevalue
+
+@enduml

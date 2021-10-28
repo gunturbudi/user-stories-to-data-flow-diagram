@@ -1,0 +1,36 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fedora" as thingfedora
+	entity "Datum" as thingdatum
+	entity "Application" as thingapplication
+	entity "Event Audit\nService" as thingeventauditservice
+	actor "Developer" as actordeveloper
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	boundary "Fedora\nInterface" as thingfedorainterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Determine" as controldetermine
+	control "Use The\nIn Fedora,\nBuilt Event\nAudit Services" as controlusedeterminefedorabuilteventauditservices
+	control "Upgrade To\nFedora" as controlupgradefedora
+	control "Migrate Applications" as controlmigrateapplication
+	control "Migrate Datum" as controlmigratedatum
+
+	actordeveloper --- thingserviceinterface
+	actordeveloper --- thingfedorainterface
+	actordeveloper --- thingapplicationinterface
+	actordeveloper --- thingdatuminterface
+	controlusedeterminefedorabuilteventauditservices --> controldetermine
+	thingserviceinterface --> controldetermine
+	thingeventauditservice --- controlusedeterminefedorabuilteventauditservices
+	thingserviceinterface --> controlusedeterminefedorabuilteventauditservices
+	thingfedora --- controlupgradefedora
+	thingfedorainterface --> controlupgradefedora
+	thingapplication --- controlmigrateapplication
+	thingapplicationinterface --> controlmigrateapplication
+	thingdatum --- controlmigratedatum
+	thingdatuminterface --> controlmigratedatum
+
+@enduml

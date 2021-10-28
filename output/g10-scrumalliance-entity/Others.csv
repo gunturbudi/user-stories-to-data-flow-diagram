@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Member,shape=partialRectangle,null,null,data_base
+201,Field,shape=partialRectangle,null,null,data_base
+202,Site Member,rounded=0,null,null,external_entity
+203,View The Profiles Of Other Members,ellipse,null,null,process
+204,Search For Profiles On A Few Fields,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Member,endArrow=classic,203,200,endArrow=classic
+209,Field,endArrow=classic,204,201,endArrow=classic

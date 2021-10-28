@@ -1,0 +1,73 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Data Package" as thingdatapackage #grey
+	entity "Tool" as thingtool
+	entity "Basic Metadata" as thingbasicmetadata
+	entity "Researcher" as thingresearcher
+	entity "User" as thinguser
+	entity "Site" as thingsite
+	entity "Preview Button" as thingpreviewbutton #grey
+	entity "Dataset" as thingdataset
+	entity "Exist Wizard" as thingexistingwizard
+	entity "Research" as thingresearch #grey
+	actor "Publisher" as actorpublisher
+	actor "Repository Manager" as actorrepositorymanager
+	actor "Developer" as actordeveloper
+	circle "Visualization" as thingvisualization
+	circle "Interactive Preview" as thinginteractivepreview
+	circle "Specific Type" as thingspecifictype
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	control "Provide A\nVisualization Of\nData In\nThe Data\nPackage" as controlprovidevisualization
+	control "Researchers Add\nBasic Metadata\nTo Research\nData" as controladdresearcherbasicmetadataresearchdata
+	control "User Add" as controladduser
+	control "Embed An\nInteractive Preview\nOf Data\nOn Site" as controlembedinteractivepreview
+	control "Embed A\nPreview Button\nOn Site" as controlembedpreviewbutton
+	control "Know" as controlknow
+	control "Customize An\nExisting Wizard\nFor Specific\nType Of\nData" as controlcustomizeexistingwizard
+
+	thingdatapackage <.. thingdatum
+	thingsite <.. thingdatum
+	thingresearch <.. thingdatum
+	thingdatum <.. thingbasicmetadata
+	thingbasicmetadata <.. thingresearcher
+	thingsite <.. thingpreviewbutton
+	thingspecifictype <.. thingexistingwizard
+	thingdatum *-- thingvisualization
+	thingdatapackage *-- thingvisualization
+	thingdatum *-- thinginteractivepreview
+	thingdatum *-- thingspecifictype
+	actorpublisher --- thingpackageinterface
+	actorrepositorymanager --- thingdatuminterface
+	actordeveloper --- thingdatuminterface
+	actorrepositorymanager --- thinguserinterface
+	actorpublisher --- thingsiteinterface
+	thingvisualization --- controlprovidevisualization
+	thingdatum --- controlprovidevisualization
+	thingdatapackage --- controlprovidevisualization
+	thingpackageinterface --> controlprovidevisualization
+	thingresearcher --- controladdresearcherbasicmetadataresearchdata
+	thingbasicmetadata --- controladdresearcherbasicmetadataresearchdata
+	thingdatuminterface --> controladdresearcherbasicmetadataresearchdata
+	thingdatum --- controladdresearcherbasicmetadataresearchdata
+	thinguser --- controladduser
+	thinguserinterface --> controladduser
+	thinginteractivepreview --- controlembedinteractivepreview
+	thingsite --- controlembedinteractivepreview
+	thingsiteinterface --> controlembedinteractivepreview
+	thingdatum --- controlembedinteractivepreview
+	thingpreviewbutton --- controlembedpreviewbutton
+	thingsite --- controlembedpreviewbutton
+	thingsiteinterface --> controlembedpreviewbutton
+	thingexistingwizard --- controlcustomizeexistingwizard
+	thingspecifictype --- controlcustomizeexistingwizard
+	thingdatum --- controlcustomizeexistingwizard
+	thingdatuminterface --> controlcustomizeexistingwizard
+
+@enduml

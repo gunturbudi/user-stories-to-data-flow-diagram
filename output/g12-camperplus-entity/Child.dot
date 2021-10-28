@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Child " color=red];
+201 [label="<f0>  |<f1> Counselor " ];
+202 [label="<f0>  |<f1> Activity " color=red];
+203 [label="<f0>  |<f1> Camp " color=red];
+204 [label="Parent" shape=box];
+205 [label="{<f0> 1.0|<f1> Message Child's Counselors }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> See A Schedule Of The Activities Children Involved At Camp }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Check on my child's progress }" shape=Mrecord];
+204 -> 3
+1001 [label="<f0>  |<f1> Concerns " color=red];
+3 -> 1001 [label="Concerns"]
+1003 [label="<f0>  |<f1> Progress " color=red];
+3 -> 1003 [label="Progress"]
+204 -> 205
+204 -> 206
+205 -> 201 [label="Counselor"]
+206 -> 202 [label="Activity"]
+206 -> 203 [label="Camp"]
+206 -> 200 [label="Child"]
+}

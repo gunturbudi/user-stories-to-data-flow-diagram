@@ -1,0 +1,24 @@
+id,value,style,source,target,type
+200,Item,shape=partialRectangle,null,null,data_base
+201,Collection,shape=partialRectangle,null,null,data_base
+202,"Repository , Support , Team Member",rounded=0,null,null,external_entity
+203,The Collection Owner Asked Both Collections,ellipse,null,null,process
+204,Belong To Both Collections,ellipse,null,null,process
+205,Alias An Item From Collection To Another,ellipse,null,null,process
+206,To,ellipse,null,null,process
+207,Map,ellipse,null,null,process
+208,Move A Collection,ellipse,null,null,process
+209,Rename A Collection,ellipse,null,null,process
+211,,endArrow=classic,202,203,endArrow=classic
+212,,endArrow=classic,202,204,endArrow=classic
+213,,endArrow=classic,202,205,endArrow=classic
+214,,endArrow=classic,202,206,endArrow=classic
+215,,endArrow=classic,202,208,endArrow=classic
+216,,endArrow=classic,202,209,endArrow=classic
+217,,endArrow=classic,203,206,endArrow=classic
+218,Collection,endArrow=classic,203,201,endArrow=classic
+219,Collection,endArrow=classic,204,201,endArrow=classic
+220,Item,endArrow=classic,205,200,endArrow=classic
+221,Collection,endArrow=classic,205,201,endArrow=classic
+222,Collection,endArrow=classic,208,201,endArrow=classic
+223,Collection,endArrow=classic,209,201,endArrow=classic

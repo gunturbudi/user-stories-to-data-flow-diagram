@@ -1,0 +1,33 @@
+id,value,style,source,target,type
+4,Confirm security protocols are applied to these data.,ellipse,null,null,process
+200,Project,shape=partialRectangle,null,null,data_base
+201,Detail,shape=partialRectangle,null,null,data_base
+202,Sensitive,shape=partialRectangle,null,null,data_base
+203,Datum,shape=partialRectangle,null,null,data_base
+204,Research,shape=partialRectangle,null,null,data_base
+205,Research Integrity,rounded=0,null,null,external_entity
+206,Director,rounded=0,null,null,external_entity
+207,Contain Details Of Research Projects In Which Data Sensitive Classified,ellipse,null,null,process
+208,Access,ellipse,null,null,process
+209,Contain Details Of Projects Highly Sensitive,ellipse,null,null,process
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,,endArrow=classic,205,209,endArrow=classic
+214,,endArrow=classic,206,207,endArrow=classic
+215,,endArrow=classic,206,208,endArrow=classic
+216,,endArrow=classic,206,209,endArrow=classic
+217,Detail,endArrow=classic,207,201,endArrow=classic
+218,Datum,endArrow=classic,207,203,endArrow=classic
+219,Project,endArrow=classic,207,200,endArrow=classic
+220,,endArrow=classic,208,207,endArrow=classic
+221,,endArrow=classic,208,209,endArrow=classic
+222,Project,endArrow=classic,209,200,endArrow=classic
+223,Sensitive,endArrow=classic,209,202,endArrow=classic
+224,Detail,endArrow=classic,209,201,endArrow=classic
+225,Research,endArrow=classic,207,204,endArrow=classic
+1000,"Director of research integrity,",rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,4,endArrow=classic
+1002,"Director of research integrity,",rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,4,endArrow=classic
+1004,Data,rounded=0,null,null,external_entity
+1005,Data,endArrow=classic,4,1004,endArrow=classic

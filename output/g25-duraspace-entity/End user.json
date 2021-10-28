@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a repository manager, I want to indicate the geo-coordinates for any resource that believe useful to an end user.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "geo-coordinates",
+        "label": "PII"
+      },
+      {
+        "text": "end user",
+        "label": "Data"
+      }
+    ]
+  }
+]

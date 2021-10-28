@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject
+	entity "Datum" as thingdatum
+	actor "Repository Owner" as actorrepositoryowner
+	circle "Plan Provenance" as thingplannedprovenance
+	circle "End" as thingend
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Check The\nPlanned Provenance\nOf The\nData Submitted\nAt The\nEnd Of\nA Project" as controlcheckplannedprovenance
+
+	thingend <.. thingdatum
+	thingdatum *-- thingplannedprovenance
+	thingproject *-- thingend
+	actorrepositoryowner --- thingprojectinterface
+	thingplannedprovenance --- controlcheckplannedprovenance
+	thingdatum --- controlcheckplannedprovenance
+	thingend --- controlcheckplannedprovenance
+	thingproject --- controlcheckplannedprovenance
+	thingprojectinterface --> controlcheckplannedprovenance
+
+@enduml

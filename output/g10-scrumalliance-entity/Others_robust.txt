@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Member" as thingothermember
+	entity "Field" as thingfewfield
+	actor "Site Member" as actorsitemember
+	circle "Profile" as thingprofile
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "View The\nProfiles Of\nOther Members" as controlviewprofile
+	control "Search For\nProfiles On\nA Few\nFields" as controlsearchprofile
+
+	thingothermember *-- thingprofile
+	thingfewfield *-- thingprofile
+	actorsitemember --- thingmemberinterface
+	actorsitemember --- thingfieldinterface
+	thingprofile --- controlviewprofile
+	thingothermember --- controlviewprofile
+	thingmemberinterface --> controlviewprofile
+	thingfewfield --- controlsearchprofile
+	thingfieldinterface --> controlsearchprofile
+	thingprofile --- controlsearchprofile
+
+@enduml

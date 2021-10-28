@@ -1,0 +1,118 @@
+[
+  {
+    "text": "As an archivist, I want to see what a particular user has downloaded, so that I can track use of assets.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "use of assets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to create user roles, so that I can group users by role.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "user roles",
+        "label": "PII"
+      },
+      {
+        "text": "group",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "role",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to assign rights to user groups or roles, so that I can control what users can and can't do.",
+    "entities": [
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      },
+      {
+        "text": "user groups",
+        "label": "PII"
+      },
+      {
+        "text": "roles",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to allow users to log in using Active Directory credentials, so that I don't have to manage another set of usernames and passwords.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "allow",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "log in",
+        "label": "Processing"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "usernames",
+        "label": "PII"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      }
+    ]
+  }
+]

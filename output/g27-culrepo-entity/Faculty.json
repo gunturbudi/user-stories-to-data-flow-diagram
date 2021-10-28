@@ -1,0 +1,110 @@
+[
+  {
+    "text": "As an administrator, I want to be able to use systems such as Symplectic Elements and Activity Insight to properly track faculty scholarly output in the repositories, so that I can facilitate personnel decisions.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "Activity Insight",
+        "label": "PII"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      },
+      {
+        "text": "scholarly output",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to see comprehensive tracking statistics that can be presented to faculty in a digestible way, so that I can increase buy-in for contributing their work.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "tracking statistics",
+        "label": "PII"
+      },
+      {
+        "text": "presented",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have information that will help me identify other faculty I might partner/collaborate with.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      },
+      {
+        "text": "partner",
+        "label": "Processing"
+      },
+      {
+        "text": "collaborate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Extension Administrator, I want to make resources that were developed for specific projects and geographic areas available to other faculty and educators across NYS.",
+    "entities": [
+      {
+        "text": "Extension Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "resources",
+        "label": "PII"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      },
+      {
+        "text": "geographic areas",
+        "label": "PII"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      }
+    ]
+  }
+]

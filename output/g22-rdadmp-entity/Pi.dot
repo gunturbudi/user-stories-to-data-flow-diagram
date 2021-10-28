@@ -1,0 +1,26 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Metadata " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Information " color=red];
+203 [label="<f0>  |<f1> Dmp " color=red];
+204 [label="Pi" shape=box];
+205 [label="{<f0> 1.0|<f1> Record All Metadata }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> What Kind Of Data Record }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Plan }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> What Kind Of Data Store }" shape=Mrecord];
+209 [label="{<f0> 5.0|<f1> Record Information About Dmp }" shape=Mrecord];
+210 [label="{<f0> 6.0|<f1> Know Data }" shape=Mrecord];
+211 [label="{<f0> 7.0|<f1> Know }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 208
+204 -> 209
+204 -> 210
+205 -> 200 [label="Metadata"]
+206 -> 201 [label="Datum"]
+208 -> 201 [label="Datum"]
+209 -> 202 [label="Information"]
+209 -> 203 [label="Dmp"]
+210 -> 201 [label="Datum"]
+}

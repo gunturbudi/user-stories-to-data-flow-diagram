@@ -1,0 +1,76 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Work" as thingwork
+	entity "Author" as thingauthor
+	entity "Update" as thingupdate
+	entity "Sortable Spot" as thingsortablespot
+	entity "Particular Author" as thingparticularauthor
+	entity "Subject Area" as thingsubjectarea
+	entity "Content" as thingcontent
+	entity "Need Resource" as thingneededresource
+	entity "Material" as thingmaterial
+	entity "Repository" as thingrepository
+	entity "Behalf" as thingbehalf
+	actor "Researcher" as actorresearcher
+	actor "Academicresearcher" as actoracademicresearcher
+	actor "Patron" as actorpatron
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	boundary "Spot\nInterface" as thingspotinterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	boundary "Behalf\nInterface" as thingbehalfinterface #grey
+	control "Contact The\nAuthor Of\nA Work\nInterests" as controlcontactauthor
+	control "Receive Updates" as controlreceiveupdate
+	control "Find The\nWorks Of\nA Particular\nAuthor In\nEasily Sortable\nSpot" as controlfindwork
+	control "Locate Needed\nResources" as controllocateneededresource
+	control "Browse Content\nBy Subject\nArea" as controlbrowsecontentsubjectarea
+	control "Browse Content\nBy Author" as controlbrowsecontentlocateneededresource
+	control "Upload Material\nTo The\nRepository On\nThe Author's\nBehalf" as controluploadmaterialrepository
+
+	thingparticularauthor <.. thingwork
+	thingsortablespot <.. thingwork
+	thingauthor <.. thingwork
+	thingwork *-- thingauthor
+	thingsortablespot <.. thingparticularauthor
+	thingauthor <.. thingcontent
+	thingsubjectarea <.. thingcontent
+	thingrepository <.. thingmaterial
+	thingbehalf <.. thingrepository
+	thingauthor <.. thingbehalf
+	actorresearcher --- thingworkinterface
+	actorresearcher --- thingupdateinterface
+	actoracademicresearcher --- thingspotinterface
+	actorpatron --- thingareainterface
+	actorpatron --- thingauthorinterface
+	actorpatron --- thingresourceinterface
+	actorlibrarystaffmember --- thingbehalfinterface
+	thingauthor --- controlcontactauthor
+	thingwork --- controlcontactauthor
+	thingworkinterface --> controlcontactauthor
+	thingupdate --- controlreceiveupdate
+	thingupdateinterface --> controlreceiveupdate
+	thingparticularauthor --- controlfindwork
+	thingsortablespot --- controlfindwork
+	thingspotinterface --> controlfindwork
+	thingwork --- controlfindwork
+	thingneededresource --- controllocateneededresource
+	thingresourceinterface --> controllocateneededresource
+	controlbrowsecontentlocateneededresource --> controllocateneededresource
+	thingsubjectarea --- controlbrowsecontentsubjectarea
+	thingareainterface --> controlbrowsecontentsubjectarea
+	thingcontent --- controlbrowsecontentsubjectarea
+	thingcontent --- controlbrowsecontentlocateneededresource
+	thingauthorinterface --> controlbrowsecontentlocateneededresource
+	thingauthor --- controlbrowsecontentlocateneededresource
+	thingmaterial --- controluploadmaterialrepository
+	thingrepository --- controluploadmaterialrepository
+	thingbehalf --- controluploadmaterialrepository
+	thingbehalfinterface --> controluploadmaterialrepository
+
+@enduml

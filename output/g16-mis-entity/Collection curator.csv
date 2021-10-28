@@ -1,0 +1,195 @@
+id,value,style,source,target,type
+200,Date,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Schedule Record,shape=partialRectangle,null,null,data_base
+203,Component Page,shape=partialRectangle,null,null,data_base
+204,Item,shape=partialRectangle,null,null,data_base
+205,Collection,shape=partialRectangle,null,null,data_base
+206,Repository,shape=partialRectangle,null,null,data_base
+207,Remote Status,shape=partialRectangle,null,null,data_base
+208,Staff Interface,shape=partialRectangle,null,null,data_base
+209,Replication,shape=partialRectangle,null,null,data_base
+210,Dashboard,shape=partialRectangle,null,null,data_base
+211,Encrypt File,shape=partialRectangle,null,null,data_base
+212,Key,shape=partialRectangle,null,null,data_base
+213,Server,shape=partialRectangle,null,null,data_base
+214,Simple Way,shape=partialRectangle,null,null,data_base
+215,Embargo,shape=partialRectangle,null,null,data_base
+216,Object,shape=partialRectangle,null,null,data_base
+217,Permission,shape=partialRectangle,null,null,data_base
+218,Deposit,shape=partialRectangle,null,null,data_base
+219,Option,shape=partialRectangle,null,null,data_base
+220,Tool,shape=partialRectangle,null,null,data_base
+221,Recent Submission,shape=partialRectangle,null,null,data_base
+222,"Repository ,\nAssign Doi",shape=partialRectangle,null,null,data_base
+223,Ezid,shape=partialRectangle,null,null,data_base
+224,Creator,shape=partialRectangle,null,null,data_base
+225,Author,shape=partialRectangle,null,null,data_base
+226,Unique Identifier,shape=partialRectangle,null,null,data_base
+227,Referer,shape=partialRectangle,null,null,data_base
+228,Visitor,shape=partialRectangle,null,null,data_base
+229,"Resolver ,\nAbstract Link",shape=partialRectangle,null,null,data_base
+230,User,shape=partialRectangle,null,null,data_base
+231,Easy Way,shape=partialRectangle,null,null,data_base
+232,Access,shape=partialRectangle,null,null,data_base
+233,Restrict Object,shape=partialRectangle,null,null,data_base
+234,Authentication,shape=partialRectangle,null,null,data_base
+235,Request,shape=partialRectangle,null,null,data_base
+236,Address,shape=partialRectangle,null,null,data_base
+237,Storage Site,shape=partialRectangle,null,null,data_base
+238,Metadata,shape=partialRectangle,null,null,data_base
+239,Deletion,shape=partialRectangle,null,null,data_base
+240,Duke Duke\nIp,shape=partialRectangle,null,null,data_base
+241,Ip,shape=partialRectangle,null,null,data_base
+242,Collection Curator,rounded=0,null,null,external_entity
+243,Set A Date Which Data Expire,ellipse,null,null,process
+244,Set A Date,ellipse,null,null,process
+245,Hide,ellipse,null,null,process
+246,Delete,ellipse,null,null,process
+247,See The Scheduled Records Deletion Date Displayed On The Item,ellipse,null,null,process
+248,See The Scheduled Records Date Displayed On Component Page,ellipse,null,null,process
+249,Map An Item From Collection To Another,ellipse,null,null,process
+250,Map Item,ellipse,null,null,process
+251,Have,ellipse,null,null,process
+252,Display The Remote Replication Status In Each Item In The Staff Interface,ellipse,null,null,process
+253,Display The Remote Status In Component Page,ellipse,null,null,process
+254,Have A Summary Of All Remote Replication Status At Collection Level On Dashboard,ellipse,null,null,process
+255,Lift An Embargo For An Object In A Simple Way,ellipse,null,null,process
+256,Have Items,ellipse,null,null,process
+257,Create Specific Deposit Forms To The Collection,ellipse,null,null,process
+258,Setting An Embargo Date At Deposit,ellipse,null,null,process
+259,Allow Some Collections The Option,ellipse,null,null,process
+260,Have Item Metadata Discoverable,ellipse,null,null,process
+261,Have A Tool,ellipse,null,null,process
+262,Perform Author Authority Control,ellipse,null,null,process
+263,Move Items From Collection To Another,ellipse,null,null,process
+264,See,ellipse,null,null,process
+265,Show A Summary Of Recent Submissions To Collection,ellipse,null,null,process
+266,"Have Metadata Changes To Items With Repository, Assigned Dois To Propagated To The Ezid",ellipse,null,null,process
+267,Identify Creator,ellipse,null,null,process
+268,Identify Authors Of Items By Unique Identifier,ellipse,null,null,process
+269,"See The Referers For Visitors Use Resolver, Abstracted Links",ellipse,null,null,process
+270,Reach Items,ellipse,null,null,process
+271,Create Groups Of Users,ellipse,null,null,process
+272,Manage Permissions In The Repository In An Easy Way,ellipse,null,null,process
+273,Restrict Access To Collection To Duke Duke Ip Addresses,ellipse,null,null,process
+274,Restrict Access To Item,ellipse,null,null,process
+275,Contact From The Repository,ellipse,null,null,process
+276,Request Access To Restricted Objects,ellipse,null,null,process
+277,Change Permissions On Items,ellipse,null,null,process
+278,Change Permissions On More,ellipse,null,null,process
+279,Require Authentication To Access Objects,ellipse,null,null,process
+280,View The Permission On Objects,ellipse,null,null,process
+282,,endArrow=classic,242,243,endArrow=classic
+283,,endArrow=classic,242,244,endArrow=classic
+284,,endArrow=classic,242,245,endArrow=classic
+285,,endArrow=classic,242,246,endArrow=classic
+286,,endArrow=classic,242,247,endArrow=classic
+287,,endArrow=classic,242,248,endArrow=classic
+288,,endArrow=classic,242,249,endArrow=classic
+289,,endArrow=classic,242,250,endArrow=classic
+290,,endArrow=classic,242,252,endArrow=classic
+291,,endArrow=classic,242,253,endArrow=classic
+292,,endArrow=classic,242,254,endArrow=classic
+293,,endArrow=classic,242,255,endArrow=classic
+294,,endArrow=classic,242,256,endArrow=classic
+295,,endArrow=classic,242,257,endArrow=classic
+296,,endArrow=classic,242,258,endArrow=classic
+297,,endArrow=classic,242,259,endArrow=classic
+298,,endArrow=classic,242,260,endArrow=classic
+299,,endArrow=classic,242,261,endArrow=classic
+300,,endArrow=classic,242,262,endArrow=classic
+301,,endArrow=classic,242,263,endArrow=classic
+302,,endArrow=classic,242,264,endArrow=classic
+303,,endArrow=classic,242,265,endArrow=classic
+304,,endArrow=classic,242,266,endArrow=classic
+305,,endArrow=classic,242,267,endArrow=classic
+306,,endArrow=classic,242,268,endArrow=classic
+307,,endArrow=classic,242,269,endArrow=classic
+308,,endArrow=classic,242,270,endArrow=classic
+309,,endArrow=classic,242,271,endArrow=classic
+310,,endArrow=classic,242,272,endArrow=classic
+311,,endArrow=classic,242,273,endArrow=classic
+312,,endArrow=classic,242,274,endArrow=classic
+313,,endArrow=classic,242,275,endArrow=classic
+314,,endArrow=classic,242,276,endArrow=classic
+315,,endArrow=classic,242,277,endArrow=classic
+316,,endArrow=classic,242,278,endArrow=classic
+317,,endArrow=classic,242,279,endArrow=classic
+318,Date,endArrow=classic,243,200,endArrow=classic
+319,Datum,endArrow=classic,243,201,endArrow=classic
+320,,endArrow=classic,244,245,endArrow=classic
+321,,endArrow=classic,244,246,endArrow=classic
+322,Date,endArrow=classic,244,200,endArrow=classic
+323,Schedule Record,endArrow=classic,247,202,endArrow=classic
+324,Item,endArrow=classic,247,204,endArrow=classic
+325,Date,endArrow=classic,247,200,endArrow=classic
+326,Component Page,endArrow=classic,248,203,endArrow=classic
+327,Schedule Record,endArrow=classic,248,202,endArrow=classic
+328,Date,endArrow=classic,248,200,endArrow=classic
+329,Collection,endArrow=classic,249,205,endArrow=classic
+330,Item,endArrow=classic,249,204,endArrow=classic
+331,Item,endArrow=classic,250,204,endArrow=classic
+332,Staff Interface,endArrow=classic,252,208,endArrow=classic
+333,Item,endArrow=classic,252,204,endArrow=classic
+334,Remote Status,endArrow=classic,253,207,endArrow=classic
+335,Component Page,endArrow=classic,253,203,endArrow=classic
+336,Dashboard,endArrow=classic,254,210,endArrow=classic
+337,Embargo,endArrow=classic,255,215,endArrow=classic
+338,Object,endArrow=classic,255,216,endArrow=classic
+339,Simple Way,endArrow=classic,255,214,endArrow=classic
+340,Item,endArrow=classic,256,204,endArrow=classic
+341,Object,endArrow=classic,256,216,endArrow=classic
+342,Access,endArrow=classic,256,232,endArrow=classic
+343,Collection,endArrow=classic,257,205,endArrow=classic
+344,,endArrow=classic,258,259,endArrow=classic
+345,Deposit,endArrow=classic,258,218,endArrow=classic
+346,Date,endArrow=classic,258,200,endArrow=classic
+347,Option,endArrow=classic,259,219,endArrow=classic
+348,Collection,endArrow=classic,259,205,endArrow=classic
+349,Metadata,endArrow=classic,260,238,endArrow=classic
+350,,endArrow=classic,261,262,endArrow=classic
+351,Tool,endArrow=classic,261,220,endArrow=classic
+352,Author,endArrow=classic,262,225,endArrow=classic
+353,Item,endArrow=classic,263,204,endArrow=classic
+354,Collection,endArrow=classic,263,205,endArrow=classic
+355,,endArrow=classic,264,265,endArrow=classic
+356,Recent Submission,endArrow=classic,265,221,endArrow=classic
+357,Collection,endArrow=classic,265,205,endArrow=classic
+358,"Repository ,\nAssign Doi",endArrow=classic,266,222,endArrow=classic
+359,Ezid,endArrow=classic,266,223,endArrow=classic
+360,Item,endArrow=classic,266,204,endArrow=classic
+361,Creator,endArrow=classic,267,224,endArrow=classic
+362,Author,endArrow=classic,268,225,endArrow=classic
+363,Unique Identifier,endArrow=classic,268,226,endArrow=classic
+364,Item,endArrow=classic,268,204,endArrow=classic
+365,,endArrow=classic,269,270,endArrow=classic
+366,Referer,endArrow=classic,269,227,endArrow=classic
+367,Visitor,endArrow=classic,269,228,endArrow=classic
+368,"Resolver ,\nAbstract Link",endArrow=classic,269,229,endArrow=classic
+369,Item,endArrow=classic,270,204,endArrow=classic
+370,,endArrow=classic,271,272,endArrow=classic
+371,User,endArrow=classic,271,230,endArrow=classic
+372,Easy Way,endArrow=classic,272,231,endArrow=classic
+373,Repository,endArrow=classic,272,206,endArrow=classic
+374,Permission,endArrow=classic,272,217,endArrow=classic
+375,Access,endArrow=classic,273,232,endArrow=classic
+376,Collection,endArrow=classic,273,205,endArrow=classic
+377,Address,endArrow=classic,273,236,endArrow=classic
+378,Item,endArrow=classic,274,204,endArrow=classic
+379,Access,endArrow=classic,274,232,endArrow=classic
+380,,endArrow=classic,275,276,endArrow=classic
+381,Repository,endArrow=classic,275,206,endArrow=classic
+382,Restrict Object,endArrow=classic,276,233,endArrow=classic
+383,Access,endArrow=classic,276,232,endArrow=classic
+384,Item,endArrow=classic,277,204,endArrow=classic
+385,Permission,endArrow=classic,277,217,endArrow=classic
+386,Permission,endArrow=classic,278,217,endArrow=classic
+387,Authentication,endArrow=classic,279,234,endArrow=classic
+388,Access,endArrow=classic,279,232,endArrow=classic
+389,Object,endArrow=classic,280,216,endArrow=classic
+390,Permission,endArrow=classic,280,217,endArrow=classic
+400,Replication,endArrow=classic,252,209,endArrow=classic
+548,Request,endArrow=classic,276,235,endArrow=classic
+591,Deletion,endArrow=classic,247,239,endArrow=classic
+660,Ip,endArrow=classic,273,241,endArrow=classic

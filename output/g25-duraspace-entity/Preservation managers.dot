@@ -1,0 +1,69 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Format Version " ];
+201 [label="<f0>  |<f1> Integrity " ];
+202 [label="<f0>  |<f1> File Format " ];
+203 [label="<f0>  |<f1> Creation Date " ];
+204 [label="<f0>  |<f1> Useful File " ];
+205 [label="<f0>  |<f1> Aspect " ];
+206 [label="<f0>  |<f1> Obsolescence " ];
+207 [label="<f0>  |<f1> File Size " ];
+208 [label="<f0>  |<f1> Object " color=red];
+209 [label="<f0>  |<f1> Authenticity " ];
+210 [label="<f0>  |<f1> Preservation Managers " ];
+211 [label="<f0>  |<f1> Question " ];
+212 [label="<f0>  |<f1> Master File " color=red];
+213 [label="<f0>  |<f1> Preservation Manager " ];
+214 [label="Dams Manager" shape=box];
+215 [label="{<f0> 1.0|<f1> Impending Monitoring Integrity Obsolescence Including Creation Date }" shape=Mrecord];
+216 [label="{<f0> 2.0|<f1> Indicate To Preservation Managers Aspects Of A Useful Master File }" shape=Mrecord];
+217 [label="{<f0> 3.0|<f1> Impending Monitoring Integrity Obsolescence Including File Size }" shape=Mrecord];
+218 [label="{<f0> 4.0|<f1> Indicate To Aspects Of A Useful File }" shape=Mrecord];
+219 [label="{<f0> 5.0|<f1> Impending Monitoring Integrity Obsolescence Including Format Version }" shape=Mrecord];
+220 [label="{<f0> 6.0|<f1> Impending Monitoring Integrity Obsolescence Including File Format }" shape=Mrecord];
+221 [label="{<f0> 7.0|<f1> Know Via Preservation Managers }" shape=Mrecord];
+222 [label="{<f0> 8.0|<f1> Know Of Any Object For Which Authenticity Is }" shape=Mrecord];
+223 [label="{<f0> 9.0|<f1> Update To A More Current File Format }" shape=Mrecord];
+224 [label="{<f0> 10.0|<f1> Know Of Any Object }" shape=Mrecord];
+225 [label="{<f0> 11.0|<f1> Know Of Any Object For Which Integrity Is In Question }" shape=Mrecord];
+214 -> 215
+214 -> 216
+214 -> 217
+214 -> 219
+214 -> 220
+214 -> 221
+214 -> 222
+214 -> 223
+214 -> 224
+214 -> 225
+215 -> 218
+215 -> 203 [label="Creation Date"]
+215 -> 201 [label="Integrity"]
+215 -> 206 [label="Obsolescence"]
+216 -> 212 [label="Master File"]
+216 -> 210 [label="Preservation Managers"]
+216 -> 205 [label="Aspect"]
+217 -> 216
+217 -> 201 [label="Integrity"]
+217 -> 206 [label="Obsolescence"]
+217 -> 207 [label="File Size"]
+218 -> 205 [label="Aspect"]
+218 -> 204 [label="Useful File"]
+219 -> 218
+219 -> 200 [label="Format Version"]
+219 -> 201 [label="Integrity"]
+219 -> 206 [label="Obsolescence"]
+220 -> 218
+220 -> 202 [label="File Format"]
+220 -> 201 [label="Integrity"]
+220 -> 206 [label="Obsolescence"]
+221 -> 213 [label="Preservation Manager"]
+222 -> 209 [label="Authenticity"]
+222 -> 208 [label="Object"]
+223 -> 202 [label="File Format"]
+224 -> 223
+224 -> 208 [label="Object"]
+225 -> 208 [label="Object"]
+225 -> 211 [label="Question"]
+225 -> 201 [label="Integrity"]
+}

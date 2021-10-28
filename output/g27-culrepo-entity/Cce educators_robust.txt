@@ -1,0 +1,34 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Versioning" as thingversioning
+	entity "Faq" as thingfaq
+	entity "Etc" as thingetc
+	entity "Extension Brochure" as thingextensionbrochure
+	actor "Faculty Member" as actorfacultymember
+	boundary "Faq\nInterface" as thingfaqinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Brochure\nInterface" as thingbrochureinterface #grey
+	control "Maintain Versioning\nOf Faq" as controlmaintainversioningfaq
+	control "Maintain Versioning\nOf Etc" as controlmaintainversioningetc
+	control "Maintain Versioning\nOf Extension\nBrochures" as controlmaintainversioning
+
+	thingextensionbrochure *-- thingversioning
+	thingetc *-- thingversioning
+	thingfaq *-- thingversioning
+	actorfacultymember --- thingfaqinterface
+	actorfacultymember --- thingetcinterface
+	actorfacultymember --- thingbrochureinterface
+	thingfaq --- controlmaintainversioningfaq
+	thingfaqinterface --> controlmaintainversioningfaq
+	thingversioning --- controlmaintainversioningfaq
+	thingetc --- controlmaintainversioningetc
+	thingetcinterface --> controlmaintainversioningetc
+	thingversioning --- controlmaintainversioningetc
+	thingversioning --- controlmaintainversioning
+	thingextensionbrochure --- controlmaintainversioning
+	thingbrochureinterface --> controlmaintainversioning
+
+@enduml

@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Github" as thingGitHub
+	entity "Ckan" as thingCKAN
+	actor "Developerdatawrangler" as actorDeveloperdataWrangler
+	boundary "Github\nInterface" as thinggithubinterface #grey
+	control "Store Data\nPackage In\nGithub" as controlstoredatapackageGitHub
+
+	thingGitHub <.. thingdatapackage
+	actorDeveloperdataWrangler --- thinggithubinterface
+	thingdatapackage --- controlstoredatapackageGitHub
+	thingGitHub --- controlstoredatapackageGitHub
+	thinggithubinterface --> controlstoredatapackageGitHub
+
+@enduml

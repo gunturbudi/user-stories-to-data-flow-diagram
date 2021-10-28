@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+7,"Record any conditions, clearances, or corrections needed from the applicant.",ellipse,null,null,process
+8,"Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",ellipse,null,null,process
+200,Plan,shape=partialRectangle,null,null,data_base
+201,Review,shape=partialRectangle,null,null,data_base
+202,Applicant,shape=partialRectangle,null,null,data_base
+203,Outcome,shape=partialRectangle,null,null,data_base
+204,Code Modification,shape=partialRectangle,null,null,data_base
+205,"Plan , Review , Staff Member",rounded=0,null,null,external_entity
+206,Assign Plans For Review,ellipse,null,null,process
+207,Conduct A Plan Review With The Applicant,ellipse,null,null,process
+208,Record The Outcome,ellipse,null,null,process
+209,Review Plans,ellipse,null,null,process
+210,Track The Completion Of Required Plan Reviews,ellipse,null,null,process
+211,Review The Code Modifications The Applicant,ellipse,null,null,process
+213,,endArrow=classic,205,206,endArrow=classic
+214,,endArrow=classic,205,207,endArrow=classic
+215,,endArrow=classic,205,208,endArrow=classic
+216,,endArrow=classic,205,209,endArrow=classic
+217,,endArrow=classic,205,210,endArrow=classic
+218,,endArrow=classic,205,211,endArrow=classic
+219,Plan,endArrow=classic,206,200,endArrow=classic
+220,Review,endArrow=classic,206,201,endArrow=classic
+221,Applicant,endArrow=classic,207,202,endArrow=classic
+222,Review,endArrow=classic,207,201,endArrow=classic
+223,Outcome,endArrow=classic,208,203,endArrow=classic
+224,Plan,endArrow=classic,209,200,endArrow=classic
+225,Review,endArrow=classic,210,201,endArrow=classic
+226,Code Modification,endArrow=classic,211,204,endArrow=classic
+1000,,endArrow=classic,209,7,endArrow=classic
+1001,Plans,rounded=0,null,null,external_entity
+1002,Plans,endArrow=classic,7,1001,endArrow=classic
+1003,,endArrow=classic,210,8,endArrow=classic
+1004,Results,rounded=0,null,null,external_entity
+1005,Results,endArrow=classic,8,1004,endArrow=classic
+1006,Payment,rounded=0,null,null,external_entity
+1007,Payment,endArrow=classic,8,1006,endArrow=classic

@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Advance " ];
+202 [label="<f0>  |<f1> Conservation Period " ];
+203 [label="<f0>  |<f1> Information " color=red];
+204 [label="<f0>  |<f1> File Format " color=red];
+205 [label="Archivemanager" shape=box];
+206 [label="{<f0> 1.0|<f1> Know The Legal Status Of Data }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Know In Advance The Conservation Period Of Data }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Reuse The Information Regarding File Format }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Associated To Data }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 200 [label="Datum"]
+207 -> 201 [label="Advance"]
+207 -> 202 [label="Conservation Period"]
+207 -> 200 [label="Datum"]
+208 -> 203 [label="Information"]
+208 -> 204 [label="File Format"]
+209 -> 200 [label="Datum"]
+}

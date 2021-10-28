@@ -1,0 +1,91 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific Estimator" as thingspecificestimator
+	entity "Estimate" as thingestimate
+	entity "Time" as thingsametime
+	entity "Estimator" as thingestimator
+	entity "Story" as thingstory
+	entity "Prior Estimate" as thingpriorestimate
+	entity "Current Round" as thingcurrentround
+	entity "Participant" as thingparticipant
+	entity "Prior Round" as thingpriorround
+	entity "Card" as thingcard
+	entity "Order" as thingsameorder
+	entity "Multiple Draw" as thingmultipledraw
+	entity "Timer" as thingtimer #grey
+	entity "-pron-" as thingmoinsPRONmoins #grey
+	entity "Thumbnail Photo" as thingthumbnailphoto
+	entity "Minute Countdown" as thingminutecountdown #grey
+	entity "Minute" as thingminute #grey
+	actor "Participant" as actorparticipant
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	boundary "Participant\nInterface" as thingparticipantinterface #grey
+	boundary "Round\nInterface" as thingroundinterface #grey
+	boundary "Draw\nInterface" as thingdrawinterface #grey
+	boundary "Card\nInterface" as thingcardinterface #grey
+	boundary "-Pron-\nInterface" as thingproninterface #grey
+	control "See" as controlsee
+	control "Shown All\nEstimates At\nThe Same\nTime" as controlshowestimatesametime
+	control "Change Estimate\nUp" as controlchangeestimate
+	control "Start A\nMinute Countdown\nTimer That\nAll Participants\nSee" as controlstartminutecountdowntimer
+	control "Scroll Through\nEstimate" as controlscrollestimate
+	control "Scroll Through\nThe Stories\nFrom Prior\nRounds" as controlscrollstory
+	control "Have The\nCards In\nThe Same\nOrder Across\nMultiple Draws" as controlhavecardsameorder
+	control "Have A\nSmall Thumbnail\nPhoto Cards\nWhere Played" as controlhavesmallthumbnailphoto
+	control "Have" as controlhave
+	control "The Timer\nSoon As\nReset Itself\nAll Play" as controlplayhavetimermoinsPRONmoinsall
+	control "The Minute\nTimer Soon\nAs Reset\nPlay An\nEstimate" as controlplayhaveminutetimerestimate
+
+	thingsametime <.. thingestimate
+	thingpriorround <.. thingstory
+	thingestimator <.. thingpriorestimate
+	thingsameorder <.. thingcard
+	thingmultipledraw <.. thingsameorder
+	thingmoinsPRONmoins <.. thingtimer
+	thingminutecountdown <.. thingtimer
+	thingparticipant <.. thingtimer
+	thingminute <.. thingtimer
+	thingestimate <.. thingtimer
+	thingcard <.. thingthumbnailphoto
+	actorparticipant --- thingtimeinterface
+	actorparticipant --- thingestimateinterface
+	actorparticipant --- thingparticipantinterface
+	actorparticipant --- thingroundinterface
+	actorparticipant --- thingdrawinterface
+	actorparticipant --- thingcardinterface
+	actorparticipant --- thingproninterface
+	thingsametime --- controlshowestimatesametime
+	thingtimeinterface --> controlshowestimatesametime
+	thingestimate --- controlshowestimatesametime
+	thingestimateinterface --> controlchangeestimate
+	thingestimate --- controlchangeestimate
+	thingparticipant --- controlstartminutecountdowntimer
+	thingparticipantinterface --> controlstartminutecountdowntimer
+	thingtimer --- controlstartminutecountdowntimer
+	thingestimate --- controlscrollestimate
+	thingestimateinterface --> controlscrollestimate
+	thingpriorround --- controlscrollstory
+	thingroundinterface --> controlscrollstory
+	thingstory --- controlscrollstory
+	thingcard --- controlhavecardsameorder
+	thingsameorder --- controlhavecardsameorder
+	thingmultipledraw --- controlhavecardsameorder
+	thingdrawinterface --> controlhavecardsameorder
+	thingthumbnailphoto --- controlhavesmallthumbnailphoto
+	thingcardinterface --> controlhavesmallthumbnailphoto
+	thingcard --- controlhavesmallthumbnailphoto
+	controlplayhaveminutetimerestimate --> controlhave
+	thingestimateinterface --> controlhave
+	controlplayhavetimermoinsPRONmoinsall --> controlhave
+	thingtimer --- controlplayhavetimermoinsPRONmoinsall
+	thingmoinsPRONmoins --- controlplayhavetimermoinsPRONmoinsall
+	thingproninterface --> controlplayhavetimermoinsPRONmoinsall
+	thingestimate --- controlplayhaveminutetimerestimate
+	thingtimer --- controlplayhaveminutetimerestimate
+	thingestimateinterface --> controlplayhaveminutetimerestimate
+
+@enduml

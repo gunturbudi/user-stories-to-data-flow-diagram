@@ -1,0 +1,36 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Researcher " color=red];
+201 [label="<f0>  |<f1> Information " color=red];
+202 [label="<f0>  |<f1> Available Right " ];
+203 [label="<f0>  |<f1> Donor " ];
+204 [label="<f0>  |<f1> Unprocessed Material " color=red];
+205 [label="<f0>  |<f1> Access " color=red];
+206 [label="<f0>  |<f1> Unprocesse Collection " color=red];
+207 [label="<f0>  |<f1> Inventory " ];
+208 [label="<f0>  |<f1> Archival Material " color=red];
+209 [label="<f0>  |<f1> Physical Location " color=red];
+210 [label="Archivist" shape=box];
+211 [label="{<f0> 1.0|<f1> Make Information About Available Rights To Researchers }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Make Information About Available Rights To Donor }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Provide Access To Digital Copies Of Unprocessed Material }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Access Inventories For Unprocessed Collections }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> View Physical Locations For Archival Material }" shape=Mrecord];
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+211 -> 201 [label="Information"]
+211 -> 202 [label="Available Right"]
+211 -> 200 [label="Researcher"]
+212 -> 203 [label="Donor"]
+212 -> 202 [label="Available Right"]
+212 -> 201 [label="Information"]
+213 -> 205 [label="Access"]
+213 -> 204 [label="Unprocessed Material"]
+214 -> 207 [label="Inventory"]
+214 -> 206 [label="Unprocesse Collection"]
+215 -> 209 [label="Physical Location"]
+215 -> 208 [label="Archival Material"]
+}

@@ -1,0 +1,77 @@
+id,value,style,source,target,type
+13,Showcase my experience.,ellipse,null,null,process
+200,Additional Detail,shape=partialRectangle,null,null,data_base
+201,Profile Page,shape=partialRectangle,null,null,data_base
+202,Article,shape=partialRectangle,null,null,data_base
+203,Cst Status,shape=partialRectangle,null,null,data_base
+204,Site,shape=partialRectangle,null,null,data_base
+205,Small Graphic,shape=partialRectangle,null,null,data_base
+206,Csp,shape=partialRectangle,null,null,data_base
+207,Trainer,shape=partialRectangle,null,null,data_base
+208,Practitioner,shape=partialRectangle,null,null,data_base
+209,Member,shape=partialRectangle,null,null,data_base
+210,Annual Fee,shape=partialRectangle,null,null,data_base
+211,Scrum Master,shape=partialRectangle,null,null,data_base
+212,Scrum Product\nOwner,shape=partialRectangle,null,null,data_base
+213,Practitioner,rounded=0,null,null,external_entity
+214,Site Visitor,rounded=0,null,null,external_entity
+215,Site Administrator,rounded=0,null,null,external_entity
+216,Include Additional Details About In Profile Page,ellipse,null,null,process
+217,Write An Article For The Site With A Small Graphic With,ellipse,null,null,process
+218,Show Csp,ellipse,null,null,process
+219,Show Cst Status,ellipse,null,null,process
+220,Show,ellipse,null,null,process
+221,View Lists On The Site Of All Certified Scrum Masters,ellipse,null,null,process
+222,View Lists On The Site Of Practitioner,ellipse,null,null,process
+223,View Lists On The Site Of Trainer,ellipse,null,null,process
+224,View Lists On The Site Of Certified Scrum Product Owner,ellipse,null,null,process
+225,Set The Annual Fees For Members,ellipse,null,null,process
+226,Set The Annual Fees For Trainer,ellipse,null,null,process
+227,Set The Annual Fees For Practitioner,ellipse,null,null,process
+229,,endArrow=classic,213,216,endArrow=classic
+230,,endArrow=classic,213,217,endArrow=classic
+231,,endArrow=classic,213,218,endArrow=classic
+232,,endArrow=classic,213,219,endArrow=classic
+233,,endArrow=classic,213,220,endArrow=classic
+234,,endArrow=classic,214,221,endArrow=classic
+235,,endArrow=classic,214,222,endArrow=classic
+236,,endArrow=classic,214,223,endArrow=classic
+237,,endArrow=classic,214,224,endArrow=classic
+238,,endArrow=classic,214,226,endArrow=classic
+239,,endArrow=classic,214,227,endArrow=classic
+240,,endArrow=classic,215,222,endArrow=classic
+241,,endArrow=classic,215,223,endArrow=classic
+242,,endArrow=classic,215,225,endArrow=classic
+243,,endArrow=classic,215,226,endArrow=classic
+244,,endArrow=classic,215,227,endArrow=classic
+245,Additional Detail,endArrow=classic,216,200,endArrow=classic
+246,Profile Page,endArrow=classic,216,201,endArrow=classic
+247,,endArrow=classic,217,218,endArrow=classic
+248,,endArrow=classic,217,219,endArrow=classic
+249,,endArrow=classic,217,220,endArrow=classic
+250,Article,endArrow=classic,217,202,endArrow=classic
+251,Site,endArrow=classic,217,204,endArrow=classic
+252,Small Graphic,endArrow=classic,217,205,endArrow=classic
+253,Csp,endArrow=classic,218,206,endArrow=classic
+254,Cst Status,endArrow=classic,219,203,endArrow=classic
+255,Scrum Master,endArrow=classic,221,211,endArrow=classic
+256,Site,endArrow=classic,221,204,endArrow=classic
+257,Practitioner,endArrow=classic,222,208,endArrow=classic
+258,Site,endArrow=classic,222,204,endArrow=classic
+259,Trainer,endArrow=classic,223,207,endArrow=classic
+260,Site,endArrow=classic,223,204,endArrow=classic
+261,Scrum Product\nOwner,endArrow=classic,224,212,endArrow=classic
+262,Site,endArrow=classic,224,204,endArrow=classic
+263,Annual Fee,endArrow=classic,225,210,endArrow=classic
+264,Member,endArrow=classic,225,209,endArrow=classic
+265,Trainer,endArrow=classic,226,207,endArrow=classic
+266,Annual Fee,endArrow=classic,226,210,endArrow=classic
+267,Practitioner,endArrow=classic,227,208,endArrow=classic
+268,Annual Fee,endArrow=classic,227,210,endArrow=classic
+1000,,endArrow=classic,216,13,endArrow=classic
+1001,"Practitioner,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,13,endArrow=classic
+1003,"Practitioner,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,13,endArrow=classic
+1005,Experience,rounded=0,null,null,external_entity
+1006,Experience,endArrow=classic,13,1005,endArrow=classic

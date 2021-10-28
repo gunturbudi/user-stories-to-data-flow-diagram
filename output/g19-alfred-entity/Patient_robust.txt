@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Medicine" as thingmedicine
+	entity "Patient" as thingpatient
+	actor "Medicalcaregiver" as actorMedicalCaregiver
+	control "See" as controlsee
+
+
+@enduml

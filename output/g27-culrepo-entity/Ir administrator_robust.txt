@@ -1,0 +1,312 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Viewable" as thingviewable
+	entity "Report" as thingreport
+	entity "Subscriber" as thingsubscriber
+	entity "Specified Report" as thingspecifiedreport
+	entity "Ease" as thingease
+	entity "Subject Classification" as thingsubjectclassification
+	entity "Patron" as thingpatron
+	entity "Dataset" as thingduedataset
+	entity "Error" as thingerror
+	entity "Document" as thingdocument
+	entity "Revise Report" as thingrevisedreport
+	entity "Previous Version" as thingpreviousversion
+	entity "Historical ,\nExpired Report" as thinghistoricalexpiredreport
+	entity "System" as thingsystem
+	entity "Historical Report" as thinghistoricalreport
+	entity "Subtopic" as thingsubtopic
+	entity "Personal Account" as thingpersonalaccount
+	entity "Access" as thingaccess
+	entity "Authorized Function" as thingauthorizedfunction
+	entity "Password" as thingpassword
+	entity "Administrator" as thingotheradministrator
+	entity "Permission" as thingpermission
+	entity "Account" as thingaccount
+	entity "Tracking" as thingtracking
+	entity "Robust Searching" as thingrobustsearching
+	entity "Feature" as thingfeature
+	entity "Future Date" as thingfuturedate #grey
+	entity "Calendar" as thingcalendar
+	entity "Name" as thingname
+	entity "Partial" as thingpartial
+	entity "Email" as thingfullemail
+	entity "Subscription" as thingsubscription
+	entity "Purpose" as thingpurpose
+	entity "Email Address" as thingemailaddress #grey
+	entity "Etc" as thingetc
+	entity "Relationship Group" as thingrelationshipgroup
+	entity "Release Date" as thingreleasedate
+	entity "Topic" as thingtopic #grey
+	entity "Closing" as thingclosing #grey
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	circle "Support" as thingsupport
+	circle "New Version" as thingnewversion
+	circle "Level" as thingvariouslevel
+	circle "Change" as thingchange #grey
+	circle "Browsing" as thingbrowsing #grey
+	circle "Use" as thinguse #grey
+	circle "Type" as thingtype #grey
+	circle "Fyi" as thingfyi #grey
+	boundary "Research ,\nMiss ,\nReport Order\nComplaint" as thingresearchmissingreportordercomplaintsdb
+	boundary "Ability" as thingabilitychangepasswordmakedb #grey
+	boundary "Administrator Account" as thingadministratoraccountsusefullemaildb #grey
+	boundary "Account" as thingaccountusenamedb #grey
+	boundary "Viewable\nInterface" as thingviewableinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Ease\nInterface" as thingeaseinterface #grey
+	boundary "Patron\nInterface" as thingpatroninterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Function\nInterface" as thingfunctioninterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	boundary "Tracking\nInterface" as thingtrackinginterface #grey
+	boundary "Searching\nInterface" as thingsearchinginterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	control "Mark Dataset\nViewable To" as controlmarkdatasetviewable
+	control "Mark Dataset" as controlmarkdataset
+	control "Mark Report" as controlmarkreport
+	control "Not Emailed" as controlemail
+	control "Manage Name\nDataset Change" as controlmanagenamedatasetchange
+	control "Manage Report" as controlmanagereport
+	control "See List\nOf Subscribers\nFor Specified\nReport In" as controlseelistspecifiedreport
+	control "Search" as controlsearch
+	control "Manage Subject\nClassifications For\nEase Of" as controlmanagesubjectclassificationsearch
+	control "Manage Subject\nClassifications For\nEase Of\nPatron Browsing" as controlmanagesubjectclassification
+	control "Manage Customizable\nRelationship Groups\nIn Support\nOf Patron" as controlmanagecustomizablerelationshipgroups
+	control "Upload Due\nDataset To\nError In\nDocument" as controluploadduedatasetdocument
+	control "Upload Due\nDataset To\nError In\nReport" as controluploadduedataset
+	control "Upload Revised\nReport" as controluploadrevisedreport
+	control "Upload New\nVersion Of\nDataset" as controluploadnewversiondataset
+	control "Upload New\nVersion Of\nReport Retaining\nPrevious Versions\nFor Patron\nUse" as controluploadnewversionpreviousversion
+	control "Have" as controlhave
+	control "Login To\nPersonal Account\nWith Access\nTo Authorized\nFunctions" as controlloginpersonalaccountaccess
+	control "Change Passwords" as controlchangepasswordmake
+	control "Have A\nPersonal Account\nWith" as controlhavepersonalaccountabilitychangepassworddbabilitychangepasswordretrieveforgottenonedb
+	control "Retrieve Forgotten\nOnes" as controlretrieveforgottenone
+	control "Make" as controlmake
+	control "Set Up\nAccounts For\nOther Administrators\nWith Various\nLevels Of\nPermission" as controlsetaccount
+	control "Delete Accounts\nFor Other\nAdministrators With\nVarious Levels\nOf Permission" as controldeleteaccountotheradministrator
+	control "Administering Accounts" as controladministerseelisteaseaccount
+	control "See A\nList Of\nAll Administrators\nFor Ease" as controlseelistease
+	control "Have Tracking\nFeatures For" as controlhavetrackingcreate
+	control "Have Robust\nSearching" as controlhaverobustsearching
+	control "Have Tracking\nFeatures For\nExisting Patron\nAccounts" as controlhavetracking
+	control "Create" as controlcreate
+	control "Unpublish Dataset" as controlunpublishdataset
+	control "Unpublish A\nReport" as controlunpublishreport
+	control "Add Future\nDates Of\nDataset" as controladdfuturedatedataset
+	control "Add Future\nRelease Dates\nOf Reports\nTo Calendar\nFor Patron\nFyi" as controladdfuturereleasedatescalendarpatronFYI
+	control "Use" as controluse #grey
+	control "Use Name" as controlusename
+	control "Use Full\nEmail" as controlusefullemail
+	control "Search For" as controlsearchaccountusedbaccountusepartialdb
+	control "Use Partial" as controlusepartial
+	control "Viewing, Changing,\nResetting, Changing\nAdministrate Accounts\nFor Purpose\nOf Accounts\nSubscriptions Subscriptions\nPasswords Etc" as controladministrateaccountsubscriptionsubscriptionpasswordetc
+	control "Viewing, Changing,\nResetting, Changing\nAdministrate Patron\nAccounts For\nPurpose Of\nClosing Accounts\nSubscriptions Subscriptions\nPasswords Email\nAddress" as controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+
+	thingviewable <.. thingdataset
+	thingtopic <.. thingdataset
+	thingname <.. thingdataset
+	thingpreviousversion <.. thingreport
+	thingcalendar <.. thingreport
+	thingbrowsing *-- thingease
+	thingpatron *-- thingease
+	thingease <.. thingsubjectclassification
+	thingpurpose <.. thingpatron
+	thingerror <.. thingduedataset
+	thingdocument <.. thingduedataset
+	thingreport <.. thingerror
+	thinguse <.. thingpreviousversion
+	thingpatron <.. thingpreviousversion
+	thingaccess <.. thingpersonalaccount
+	thingauthorizedfunction <.. thingaccess
+	thingemailaddress <.. thingpassword
+	thingetc <.. thingpassword
+	thingvariouslevel <.. thingotheradministrator
+	thingease <.. thingotheradministrator
+	thingotheradministrator <.. thingaccount
+	thingclosing <.. thingaccount
+	thingpatron <.. thingaccount
+	thingpurpose <.. thingaccount
+	thingfeature <.. thingtracking
+	thingaccount <.. thingfeature
+	thingdataset <.. thingfuturedate
+	thingfyi <.. thingcalendar
+	thingpassword <.. thingsubscription
+	thingsubscription *-- thingpurpose
+	thingaccount *-- thingpurpose
+	thingsupport <.. thingrelationshipgroup
+	thingreport <.. thingreleasedate
+	thingpatron *-- thingsupport
+	thingreport *-- thingnewversion
+	thingdataset *-- thingnewversion
+	thingpermission *-- thingvariouslevel
+	thingdataset *-- thingchange
+	thingpatron *-- thingbrowsing
+	thingpatron *-- thinguse
+	thingdocument *-- thingtype
+	thingpatron *-- thingfyi
+	actordb --- thingresearchmissingreportordercomplaintsdb
+	actoriradministrator --- thingresearchmissingreportordercomplaintsdb
+	actordb --- thingabilitychangepasswordmakedb
+	actoriradministrator --- thingabilitychangepasswordmakedb
+	actordb --- thingadministratoraccountsusefullemaildb
+	actoriradministrator --- thingadministratoraccountsusefullemaildb
+	actordb --- thingaccountusenamedb
+	actoriradministrator --- thingaccountusenamedb
+	actordb --- thingviewableinterface
+	actoriradministrator --- thingviewableinterface
+	actordb --- thingdatasetinterface
+	actoriradministrator --- thingdatasetinterface
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actordb --- thingnameinterface
+	actoriradministrator --- thingnameinterface
+	actordb --- thingeaseinterface
+	actoriradministrator --- thingeaseinterface
+	actordb --- thingpatroninterface
+	actoriradministrator --- thingpatroninterface
+	actordb --- thingdocumentinterface
+	actoriradministrator --- thingdocumentinterface
+	actordb --- thingfunctioninterface
+	actoriradministrator --- thingfunctioninterface
+	actordb --- thingaccountinterface
+	actoriradministrator --- thingaccountinterface
+	actordb --- thingpermissioninterface
+	actoriradministrator --- thingpermissioninterface
+	actordb --- thingtrackinginterface
+	actoriradministrator --- thingtrackinginterface
+	actordb --- thingsearchinginterface
+	actoriradministrator --- thingsearchinginterface
+	actordb --- thingetcinterface
+	actoriradministrator --- thingetcinterface
+	actordb --- thingaddressinterface
+	actoriradministrator --- thingaddressinterface
+	thingviewable --- controlmarkdatasetviewable
+	thingviewableinterface --> controlmarkdatasetviewable
+	thingdataset --- controlmarkdatasetviewable
+	thingdataset --- controlmarkdataset
+	thingdatasetinterface --> controlmarkdataset
+	thingreport --- controlmarkreport
+	thingreportinterface --> controlmarkreport
+	thingchange --- controlmanagenamedatasetchange
+	thingnameinterface --> controlmanagenamedatasetchange
+	thingreport --- controlmanagereport
+	thingreportinterface --> controlmanagereport
+	thingsubscriber --- controlseelistspecifiedreport
+	thingspecifiedreport --- controlseelistspecifiedreport
+	thingresearchmissingreportordercomplaintsdb --> controlseelistspecifiedreport
+	controlmanagesubjectclassificationsearch --> controlsearch
+	thingeaseinterface --> controlsearch
+	thingsubjectclassification --- controlmanagesubjectclassificationsearch
+	thingeaseinterface --> controlmanagesubjectclassificationsearch
+	thingease --- controlmanagesubjectclassificationsearch
+	thingsubjectclassification --- controlmanagesubjectclassification
+	thingease --- controlmanagesubjectclassification
+	thingbrowsing --- controlmanagesubjectclassification
+	thingpatroninterface --> controlmanagesubjectclassification
+	thingpatron --- controlmanagesubjectclassification
+	thingrelationshipgroup --- controlmanagecustomizablerelationshipgroups
+	thingsupport --- controlmanagecustomizablerelationshipgroups
+	thingpatron --- controlmanagecustomizablerelationshipgroups
+	thingpatroninterface --> controlmanagecustomizablerelationshipgroups
+	thingdocument --- controluploadduedatasetdocument
+	thingdocumentinterface --> controluploadduedatasetdocument
+	thingduedataset --- controluploadduedatasetdocument
+	thingduedataset --- controluploadduedataset
+	thingdatasetinterface --> controluploadduedataset
+	thingrevisedreport --- controluploadrevisedreport
+	thingreportinterface --> controluploadrevisedreport
+	thingdataset --- controluploadnewversiondataset
+	thingnewversion --- controluploadnewversiondataset
+	thingdatasetinterface --> controluploadnewversiondataset
+	thingnewversion --- controluploadnewversionpreviousversion
+	thingreport --- controluploadnewversionpreviousversion
+	thingpreviousversion --- controluploadnewversionpreviousversion
+	thinguse --- controluploadnewversionpreviousversion
+	thingpatroninterface --> controluploadnewversionpreviousversion
+	thingpatron --- controluploadnewversionpreviousversion
+	thingpersonalaccount --- controlloginpersonalaccountaccess
+	thingaccess --- controlloginpersonalaccountaccess
+	thingauthorizedfunction --- controlloginpersonalaccountaccess
+	thingfunctioninterface --> controlloginpersonalaccountaccess
+	thingpassword --- controlchangepasswordmake
+	thingabilitychangepasswordmakedb --> controlchangepasswordmake
+	controlhavepersonalaccountabilitychangepassworddbabilitychangepasswordretrieveforgottenonedb --> controlchangepasswordmake
+	thingpersonalaccount --- controlhavepersonalaccountabilitychangepassworddbabilitychangepasswordretrieveforgottenonedb
+	thingabilitychangepasswordmakedb --> controlhavepersonalaccountabilitychangepassworddbabilitychangepasswordretrieveforgottenonedb
+	thingaccountinterface --> controlretrieveforgottenone
+	controlchangepasswordmake --> controlretrieveforgottenone
+	controlchangepasswordmake --> controlmake
+	thingaccountinterface --> controlmake
+	thingaccount --- controlsetaccount
+	thingotheradministrator --- controlsetaccount
+	thingvariouslevel --- controlsetaccount
+	thingpermission --- controlsetaccount
+	thingpermissioninterface --> controlsetaccount
+	thingotheradministrator --- controldeleteaccountotheradministrator
+	thingpermission --- controldeleteaccountotheradministrator
+	thingaccount --- controldeleteaccountotheradministrator
+	thingvariouslevel --- controldeleteaccountotheradministrator
+	thingpermissioninterface --> controldeleteaccountotheradministrator
+	thingaccount --- controladministerseelisteaseaccount
+	thingaccountinterface --> controladministerseelisteaseaccount
+	controladministerseelisteaseaccount --> controlseelistease
+	thingease --- controlseelistease
+	thingeaseinterface --> controlseelistease
+	thingotheradministrator --- controlseelistease
+	thingtrackinginterface --> controlhavetrackingcreate
+	thingtracking --- controlhavetrackingcreate
+	thingrobustsearching --- controlhaverobustsearching
+	thingsearchinginterface --> controlhaverobustsearching
+	thingtracking --- controlhavetracking
+	thingtrackinginterface --> controlhavetracking
+	controlhavetrackingcreate --> controlcreate
+	thingtrackinginterface --> controlcreate
+	thingdataset --- controlunpublishdataset
+	thingdatasetinterface --> controlunpublishdataset
+	thingreport --- controlunpublishreport
+	thingreportinterface --> controlunpublishreport
+	thingfuturedate --- controladdfuturedatedataset
+	thingdataset --- controladdfuturedatedataset
+	thingdatasetinterface --> controladdfuturedatedataset
+	thingreleasedate --- controladdfuturereleasedatescalendarpatronFYI
+	thingfyi --- controladdfuturereleasedatescalendarpatronFYI
+	thingreport --- controladdfuturereleasedatescalendarpatronFYI
+	thingpatroninterface --> controladdfuturereleasedatescalendarpatronFYI
+	thingcalendar --- controladdfuturereleasedatescalendarpatronFYI
+	controlsearchaccountusedbaccountusepartialdb --> controluse
+	thingaccountusenamedb --> controluse
+	thingname --- controlusename
+	thingaccountusenamedb --> controlusename
+	thingfullemail --- controlusefullemail
+	thingadministratoraccountsusefullemaildb --> controlusefullemail
+	controlsearchaccountusedbaccountusepartialdb --> controlusefullemail
+	thingaccountusenamedb --> controlsearchaccountusedbaccountusepartialdb
+	thingadministratoraccountsusefullemaildb --> controlsearchaccountusedbaccountusepartialdb
+	thingpartial --- controlusepartial
+	controlsearchaccountusedbaccountusepartialdb --> controlusepartial
+	thingaccountusenamedb --> controlusepartial
+	thingetc --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingetcinterface --> controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpassword --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingaccount --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingsubscription --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpurpose --- controladministrateaccountsubscriptionsubscriptionpasswordetc
+	thingpurpose --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingemailaddress --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingaddressinterface --> controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingpassword --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingsubscription --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+	thingaccount --- controladministratepatronaccountssubscriptionsubscriptionpasswordemailaddress
+
+@enduml

@@ -1,0 +1,244 @@
+id,value,style,source,target,type
+200,Appropriate Relationship,shape=partialRectangle,null,null,data_base
+201,Formal Collection,shape=partialRectangle,null,null,data_base
+202,Dam,shape=partialRectangle,null,null,data_base
+203,Repository,shape=partialRectangle,null,null,data_base
+204,Object,shape=partialRectangle,null,null,data_base
+205,Assigned Order,shape=partialRectangle,null,null,data_base
+206,Aspect,shape=partialRectangle,null,null,data_base
+207,Obsolescence,shape=partialRectangle,null,null,data_base
+208,Integrity,shape=partialRectangle,null,null,data_base
+209,Format Version,shape=partialRectangle,null,null,data_base
+210,Useful File,shape=partialRectangle,null,null,data_base
+211,Manager,shape=partialRectangle,null,null,data_base
+212,Checksum,shape=partialRectangle,null,null,data_base
+213,Checksum Method,shape=partialRectangle,null,null,data_base
+214,File,shape=partialRectangle,null,null,data_base
+215,Source Capture\nInformation,shape=partialRectangle,null,null,data_base
+216,Preservation Managers,shape=partialRectangle,null,null,data_base
+217,Authenticity,shape=partialRectangle,null,null,data_base
+218,Question,shape=partialRectangle,null,null,data_base
+219,Object Component,shape=partialRectangle,null,null,data_base
+220,Collection,shape=partialRectangle,null,null,data_base
+221,Title,shape=partialRectangle,null,null,data_base
+222,Register,shape=partialRectangle,null,null,data_base
+223,Risk,shape=partialRectangle,null,null,data_base
+224,License,shape=partialRectangle,null,null,data_base
+225,Copyright,shape=partialRectangle,null,null,data_base
+226,Status,shape=partialRectangle,null,null,data_base
+227,Pertinent Statute,shape=partialRectangle,null,null,data_base
+228,Statute,shape=partialRectangle,null,null,data_base
+229,Pertinence,shape=partialRectangle,null,null,data_base
+230,Application,shape=partialRectangle,null,null,data_base
+231,Applicable License,shape=partialRectangle,null,null,data_base
+232,Copyright Content,shape=partialRectangle,null,null,data_base
+233,Way,shape=partialRectangle,null,null,data_base
+234,Access,shape=partialRectangle,null,null,data_base
+235,Policy,shape=partialRectangle,null,null,data_base
+236,Use,shape=partialRectangle,null,null,data_base
+237,Permission,shape=partialRectangle,null,null,data_base
+238,Date,shape=partialRectangle,null,null,data_base
+239,Restriction,shape=partialRectangle,null,null,data_base
+240,Active Date,shape=partialRectangle,null,null,data_base
+241,Permit Act,shape=partialRectangle,null,null,data_base
+242,Record,shape=partialRectangle,null,null,data_base
+243,Event,shape=partialRectangle,null,null,data_base
+244,Master,shape=partialRectangle,null,null,data_base
+245,Creation,shape=partialRectangle,null,null,data_base
+246,Preservation,shape=partialRectangle,null,null,data_base
+247,Library,shape=partialRectangle,null,null,data_base
+248,Rights,shape=partialRectangle,null,null,data_base
+249,Dams Manager,rounded=0,null,null,external_entity
+250,Browsing All Formal Collections In The Dams With The Appropriate Relationships,ellipse,null,null,process
+251,List,ellipse,null,null,process
+252,What Repository Belongs To,ellipse,null,null,process
+253,Know,ellipse,null,null,process
+254,Present In Assigned Order,ellipse,null,null,process
+255,Comprise An Object,ellipse,null,null,process
+256,Impending Monitoring Integrity Obsolescence Including File Size,ellipse,null,null,process
+257,Impending Monitoring Integrity Obsolescence Including Format Version,ellipse,null,null,process
+258,Impending Monitoring Integrity Obsolescence Including Creation Date,ellipse,null,null,process
+259,Indicate To Aspects Of A Useful File,ellipse,null,null,process
+260,Impending Monitoring Integrity Obsolescence Including File Format,ellipse,null,null,process
+261,Indicate To Preservation Managers Aspects Of A Useful Master File,ellipse,null,null,process
+262,Preservation Managers The Checksum Method For Each Master File For A Given Object,ellipse,null,null,process
+263,Indicate,ellipse,null,null,process
+264,Preservation Managers Checksum,ellipse,null,null,process
+265,Do,ellipse,null,null,process
+266,Indicate The Source Capture Information For A File Where Is Useful,ellipse,null,null,process
+267,Know Of Any Object For Which Integrity Is In Question,ellipse,null,null,process
+268,Update To A More Current File Format,ellipse,null,null,process
+269,Know Via Preservation Managers,ellipse,null,null,process
+270,Know Of Any Object For Which Authenticity Is,ellipse,null,null,process
+271,Know Of Any Object,ellipse,null,null,process
+272,Present Object,ellipse,null,null,process
+273,Present Collections By Title,ellipse,null,null,process
+274,Present Object Component,ellipse,null,null,process
+275,Know Via The Preservation Manager Of All Files For Which The Checksum Has Changed Since Last Registered,ellipse,null,null,process
+276,Incur Risk,ellipse,null,null,process
+277,Expire Per Jurisdictional Copyright Statute,ellipse,null,null,process
+278,Know Copyright For Object,ellipse,null,null,process
+279,Know Copyright For An Object Component,ellipse,null,null,process
+280,Know The Pertinent Statutes To An Object Component,ellipse,null,null,process
+281,Know The Pertinent Statutes To Object,ellipse,null,null,process
+282,Expire,ellipse,null,null,process
+283,Know Object,ellipse,null,null,process
+284,Know An Object Component Subject To A Library Policy Restricts Access In Any Way,ellipse,null,null,process
+285,Know The Uses For An Object Component Permitted,ellipse,null,null,process
+286,Know The Uses For Object,ellipse,null,null,process
+287,Know The Uses For An Object Component,ellipse,null,null,process
+288,Restrict Per The Status Of Object Component,ellipse,null,null,process
+289,Restrict Per The Rights Status Of The Object,ellipse,null,null,process
+290,Provided Know The Dates A Permission When Is Active,ellipse,null,null,process
+291,Provided Know The Dates Restriction When Is,ellipse,null,null,process
+292,Restrict,ellipse,null,null,process
+293,Know When Permitted Acts,ellipse,null,null,process
+294,Track All Events For Recording In The Dams,ellipse,null,null,process
+295,Carrying Out An Event,ellipse,null,null,process
+296,Know The Outcome Of The Event,ellipse,null,null,process
+298,,endArrow=classic,249,250,endArrow=classic
+299,,endArrow=classic,249,251,endArrow=classic
+300,,endArrow=classic,249,252,endArrow=classic
+301,,endArrow=classic,249,253,endArrow=classic
+302,,endArrow=classic,249,253,endArrow=classic
+303,,endArrow=classic,249,254,endArrow=classic
+304,,endArrow=classic,249,255,endArrow=classic
+305,,endArrow=classic,249,256,endArrow=classic
+306,,endArrow=classic,249,257,endArrow=classic
+307,,endArrow=classic,249,258,endArrow=classic
+308,,endArrow=classic,249,260,endArrow=classic
+309,,endArrow=classic,249,261,endArrow=classic
+310,,endArrow=classic,249,262,endArrow=classic
+311,,endArrow=classic,249,263,endArrow=classic
+312,,endArrow=classic,249,264,endArrow=classic
+313,,endArrow=classic,249,265,endArrow=classic
+314,,endArrow=classic,249,266,endArrow=classic
+315,,endArrow=classic,249,267,endArrow=classic
+316,,endArrow=classic,249,268,endArrow=classic
+317,,endArrow=classic,249,269,endArrow=classic
+318,,endArrow=classic,249,270,endArrow=classic
+319,,endArrow=classic,249,271,endArrow=classic
+320,,endArrow=classic,249,272,endArrow=classic
+321,,endArrow=classic,249,273,endArrow=classic
+322,,endArrow=classic,249,274,endArrow=classic
+323,,endArrow=classic,249,275,endArrow=classic
+324,,endArrow=classic,249,276,endArrow=classic
+325,,endArrow=classic,249,277,endArrow=classic
+326,,endArrow=classic,249,278,endArrow=classic
+327,,endArrow=classic,249,279,endArrow=classic
+328,,endArrow=classic,249,280,endArrow=classic
+329,,endArrow=classic,249,281,endArrow=classic
+330,,endArrow=classic,249,283,endArrow=classic
+331,,endArrow=classic,249,284,endArrow=classic
+332,,endArrow=classic,249,285,endArrow=classic
+333,,endArrow=classic,249,286,endArrow=classic
+334,,endArrow=classic,249,287,endArrow=classic
+335,,endArrow=classic,249,288,endArrow=classic
+336,,endArrow=classic,249,289,endArrow=classic
+337,,endArrow=classic,249,290,endArrow=classic
+338,,endArrow=classic,249,291,endArrow=classic
+339,,endArrow=classic,249,293,endArrow=classic
+340,,endArrow=classic,249,294,endArrow=classic
+341,,endArrow=classic,249,295,endArrow=classic
+342,,endArrow=classic,249,296,endArrow=classic
+343,,endArrow=classic,250,251,endArrow=classic
+344,Formal Collection,endArrow=classic,250,201,endArrow=classic
+345,Dam,endArrow=classic,250,202,endArrow=classic
+346,Appropriate Relationship,endArrow=classic,250,200,endArrow=classic
+347,Repository,endArrow=classic,252,203,endArrow=classic
+348,,endArrow=classic,253,252,endArrow=classic
+349,,endArrow=classic,253,292,endArrow=classic
+350,,endArrow=classic,254,255,endArrow=classic
+351,Assigned Order,endArrow=classic,254,205,endArrow=classic
+352,Object,endArrow=classic,255,204,endArrow=classic
+353,,endArrow=classic,256,261,endArrow=classic
+354,Integrity,endArrow=classic,256,208,endArrow=classic
+355,Obsolescence,endArrow=classic,256,207,endArrow=classic
+356,,endArrow=classic,257,259,endArrow=classic
+357,Format Version,endArrow=classic,257,209,endArrow=classic
+358,Obsolescence,endArrow=classic,257,207,endArrow=classic
+359,Integrity,endArrow=classic,257,208,endArrow=classic
+360,,endArrow=classic,258,259,endArrow=classic
+361,Obsolescence,endArrow=classic,258,207,endArrow=classic
+362,Integrity,endArrow=classic,258,208,endArrow=classic
+363,Date,endArrow=classic,258,238,endArrow=classic
+364,Aspect,endArrow=classic,259,206,endArrow=classic
+365,Useful File,endArrow=classic,259,210,endArrow=classic
+366,,endArrow=classic,260,259,endArrow=classic
+367,Obsolescence,endArrow=classic,260,207,endArrow=classic
+368,Integrity,endArrow=classic,260,208,endArrow=classic
+369,Preservation Managers,endArrow=classic,261,216,endArrow=classic
+370,Aspect,endArrow=classic,261,206,endArrow=classic
+371,File,endArrow=classic,261,214,endArrow=classic
+372,Manager,endArrow=classic,262,211,endArrow=classic
+373,Checksum Method,endArrow=classic,262,213,endArrow=classic
+374,File,endArrow=classic,262,214,endArrow=classic
+375,Object,endArrow=classic,262,204,endArrow=classic
+376,,endArrow=classic,263,262,endArrow=classic
+377,,endArrow=classic,263,264,endArrow=classic
+378,Manager,endArrow=classic,263,211,endArrow=classic
+379,Checksum,endArrow=classic,264,212,endArrow=classic
+380,Manager,endArrow=classic,264,211,endArrow=classic
+381,,endArrow=classic,266,265,endArrow=classic
+382,Source Capture\nInformation,endArrow=classic,266,215,endArrow=classic
+383,File,endArrow=classic,266,214,endArrow=classic
+384,Question,endArrow=classic,267,218,endArrow=classic
+385,Object,endArrow=classic,267,204,endArrow=classic
+386,Integrity,endArrow=classic,267,208,endArrow=classic
+387,Manager,endArrow=classic,269,211,endArrow=classic
+388,Authenticity,endArrow=classic,270,217,endArrow=classic
+389,Object,endArrow=classic,270,204,endArrow=classic
+390,,endArrow=classic,271,268,endArrow=classic
+391,Object,endArrow=classic,271,204,endArrow=classic
+392,Object,endArrow=classic,272,204,endArrow=classic
+393,Collection,endArrow=classic,273,220,endArrow=classic
+394,Title,endArrow=classic,273,221,endArrow=classic
+395,Register,endArrow=classic,275,222,endArrow=classic
+396,Checksum,endArrow=classic,275,212,endArrow=classic
+397,File,endArrow=classic,275,214,endArrow=classic
+398,Manager,endArrow=classic,275,211,endArrow=classic
+399,Risk,endArrow=classic,276,223,endArrow=classic
+400,Statute,endArrow=classic,277,228,endArrow=classic
+401,Object,endArrow=classic,278,204,endArrow=classic
+402,Copyright,endArrow=classic,278,225,endArrow=classic
+403,,endArrow=classic,279,277,endArrow=classic
+404,Object Component,endArrow=classic,279,219,endArrow=classic
+405,Copyright,endArrow=classic,279,225,endArrow=classic
+406,Pertinent Statute,endArrow=classic,280,227,endArrow=classic
+407,Object Component,endArrow=classic,280,219,endArrow=classic
+408,Object,endArrow=classic,281,204,endArrow=classic
+409,Pertinent Statute,endArrow=classic,281,227,endArrow=classic
+410,Object,endArrow=classic,283,204,endArrow=classic
+411,Access,endArrow=classic,284,234,endArrow=classic
+412,Way,endArrow=classic,284,233,endArrow=classic
+413,Object Component,endArrow=classic,284,219,endArrow=classic
+414,Policy,endArrow=classic,284,235,endArrow=classic
+415,Use,endArrow=classic,285,236,endArrow=classic
+416,Object Component,endArrow=classic,285,219,endArrow=classic
+417,Object,endArrow=classic,286,204,endArrow=classic
+418,Use,endArrow=classic,286,236,endArrow=classic
+419,,endArrow=classic,287,288,endArrow=classic
+420,,endArrow=classic,287,289,endArrow=classic
+421,Object Component,endArrow=classic,287,219,endArrow=classic
+422,Status,endArrow=classic,287,226,endArrow=classic
+423,Use,endArrow=classic,287,236,endArrow=classic
+424,Status,endArrow=classic,288,226,endArrow=classic
+425,Object,endArrow=classic,288,204,endArrow=classic
+426,Object,endArrow=classic,289,204,endArrow=classic
+427,Status,endArrow=classic,289,226,endArrow=classic
+428,Date,endArrow=classic,290,238,endArrow=classic
+429,Permission,endArrow=classic,290,237,endArrow=classic
+430,Restriction,endArrow=classic,291,239,endArrow=classic
+431,Date,endArrow=classic,291,238,endArrow=classic
+432,Permit Act,endArrow=classic,293,241,endArrow=classic
+433,Event,endArrow=classic,294,243,endArrow=classic
+434,Record,endArrow=classic,294,242,endArrow=classic
+435,Dam,endArrow=classic,294,202,endArrow=classic
+436,,endArrow=classic,295,253,endArrow=classic
+437,Event,endArrow=classic,295,243,endArrow=classic
+438,Event,endArrow=classic,296,243,endArrow=classic
+732,Master,endArrow=classic,261,244,endArrow=classic
+741,Creation,endArrow=classic,258,245,endArrow=classic
+753,Preservation,endArrow=classic,261,246,endArrow=classic
+788,Library,endArrow=classic,284,247,endArrow=classic
+828,Rights,endArrow=classic,289,248,endArrow=classic

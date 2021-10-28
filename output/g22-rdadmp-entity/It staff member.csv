@@ -1,0 +1,41 @@
+id,value,style,source,target,type
+7,Determine what basic support services and functionalities are required.,ellipse,null,null,process
+8,Determine what kind of basic services and functionalities are required.,ellipse,null,null,process
+9,Determine what kind of technical services and functionalities are required.,ellipse,null,null,process
+10,Determine what kind of technical services and functionalities are required.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Kind,shape=partialRectangle,null,null,data_base
+202,Type,shape=partialRectangle,null,null,data_base
+203,Format,shape=partialRectangle,null,null,data_base
+204,Software,shape=partialRectangle,null,null,data_base
+205,Technology,shape=partialRectangle,null,null,data_base
+206,Security Requirement,shape=partialRectangle,null,null,data_base
+207,", Staff Member",rounded=0,null,null,external_entity
+208,Know The Security Requirements Of The Data,ellipse,null,null,process
+209,Have An Estimate Of The Produced Data Volume,ellipse,null,null,process
+210,Know,ellipse,null,null,process
+211,Use,ellipse,null,null,process
+212,Know Which Software The Data Produced,ellipse,null,null,process
+213,Know Technology Produced,ellipse,null,null,process
+215,,endArrow=classic,207,208,endArrow=classic
+216,,endArrow=classic,207,209,endArrow=classic
+217,,endArrow=classic,207,212,endArrow=classic
+218,,endArrow=classic,207,213,endArrow=classic
+219,Security Requirement,endArrow=classic,208,206,endArrow=classic
+220,Datum,endArrow=classic,208,200,endArrow=classic
+221,,endArrow=classic,210,211,endArrow=classic
+222,Software,endArrow=classic,212,204,endArrow=classic
+223,Datum,endArrow=classic,212,200,endArrow=classic
+224,Technology,endArrow=classic,213,205,endArrow=classic
+1000,,endArrow=classic,207,7,endArrow=classic
+1001,Support services,rounded=0,null,null,external_entity
+1002,Support services,endArrow=classic,7,1001,endArrow=classic
+1003,,endArrow=classic,207,8,endArrow=classic
+1004,Basic services,rounded=0,null,null,external_entity
+1005,Basic services,endArrow=classic,8,1004,endArrow=classic
+1006,,endArrow=classic,207,9,endArrow=classic
+1007,Technical services,rounded=0,null,null,external_entity
+1008,Technical services,endArrow=classic,9,1007,endArrow=classic
+1009,,endArrow=classic,207,10,endArrow=classic
+1010,Technical services,rounded=0,null,null,external_entity
+1011,Technical services,endArrow=classic,10,1010,endArrow=classic

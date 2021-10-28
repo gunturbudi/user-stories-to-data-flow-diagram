@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan " color=red];
+201 [label="<f0>  |<f1> Review " color=red];
+202 [label="Plan , Review , Staff Member" shape=box];
+203 [label="Plan , Review , Staff Supervisor" shape=box];
+204 [label="{<f0> 1.0|<f1> Assign Plans For Review }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Manage Plan Reviewer Workload }" shape=Mrecord];
+3 [label="{<f0> 3.0|<f1> Ensure service levels are met }" shape=Mrecord];
+1000 [label="Plan review staff supervisor" shape=box];
+1000 -> 3
+205 -> 3
+1003 [label="<f0>  |<f1> Workload " color=red];
+3 -> 1003 [label="Workload"]
+202 -> 204
+203 -> 205
+204 -> 200 [label="Plan"]
+204 -> 201 [label="Review"]
+}

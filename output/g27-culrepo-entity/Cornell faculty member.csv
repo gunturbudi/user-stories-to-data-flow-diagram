@@ -1,0 +1,162 @@
+id,value,style,source,target,type
+32,Check things on the go.,ellipse,null,null,process
+33,Control how my work is presented.,ellipse,null,null,process
+34,See what others are most interested in reading.,ellipse,null,null,process
+35,"Promote my work, or that of my organization.",ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Publication,shape=partialRectangle,null,null,data_base
+203,File,shape=partialRectangle,null,null,data_base
+204,Right,shape=partialRectangle,null,null,data_base
+205,Cut,shape=partialRectangle,null,null,data_base
+206,Format Citation,shape=partialRectangle,null,null,data_base
+207,People,shape=partialRectangle,null,null,data_base
+208,Phone,shape=partialRectangle,null,null,data_base
+209,Content,shape=partialRectangle,null,null,data_base
+210,Shibboleth,shape=partialRectangle,null,null,data_base
+211,Control,shape=partialRectangle,null,null,data_base
+212,Item,shape=partialRectangle,null,null,data_base
+213,Organization,shape=partialRectangle,null,null,data_base
+214,Document,shape=partialRectangle,null,null,data_base
+215,Collection,shape=partialRectangle,null,null,data_base
+216,Distinctive Branding,shape=partialRectangle,null,null,data_base
+217,Identification Issue,shape=partialRectangle,null,null,data_base
+218,Name,shape=partialRectangle,null,null,data_base
+219,Dissertation,shape=partialRectangle,null,null,data_base
+220,Work,shape=partialRectangle,null,null,data_base
+221,Student,shape=partialRectangle,null,null,data_base
+222,Cc License,shape=partialRectangle,null,null,data_base
+223,Orcid,shape=partialRectangle,null,null,data_base
+224,Submission,shape=partialRectangle,null,null,data_base
+225,Gb,shape=partialRectangle,null,null,data_base
+226,Way,shape=partialRectangle,null,null,data_base
+227,Cc0 License,shape=partialRectangle,null,null,data_base
+228,Google Search\nResult,shape=partialRectangle,null,null,data_base
+229,Data,shape=partialRectangle,null,null,data_base
+230,Author,shape=partialRectangle,null,null,data_base
+231,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+232,Upload Data To The Repository,ellipse,null,null,process
+233,Associate The Repository With A Publication,ellipse,null,null,process
+234,See Rights To Files In The Repository,ellipse,null,null,process
+235,Upload Data,ellipse,null,null,process
+236,Provide A Cut,ellipse,null,null,process
+237,Paste Formatted Citation For People Use A Cut,ellipse,null,null,process
+238,Search The Repository,ellipse,null,null,process
+239,Browse Through Contents On Phone,ellipse,null,null,process
+240,Use Shibboleth,ellipse,null,null,process
+241,Login To,ellipse,null,null,process
+242,Have Some Control Over Items Within Collection Sort How Collection Contents Lists,ellipse,null,null,process
+243,Notified,ellipse,null,null,process
+244,Upload A Data File,ellipse,null,null,process
+245,Put A Cc Cc0 License On A Data File,ellipse,null,null,process
+246,Create A Collection For Documents,ellipse,null,null,process
+247,Create A Collection For Organization's Document,ellipse,null,null,process
+248,Apply Some Distinctive Branding To That Collection,ellipse,null,null,process
+249,Searching On Author Name Authority,ellipse,null,null,process
+250,Find The Items In The Repository,ellipse,null,null,process
+251,Searching On Name,ellipse,null,null,process
+252,Searching On Identification Issue,ellipse,null,null,process
+253,See Items,ellipse,null,null,process
+254,Search For The Dissertations In The Repository,ellipse,null,null,process
+255,Find Work By A Former Student,ellipse,null,null,process
+256,Assign A Cc License To The Files,ellipse,null,null,process
+257,Associate A Researcherid With A Submission,ellipse,null,null,process
+258,Associate Orcid,ellipse,null,null,process
+259,Use Users,ellipse,null,null,process
+260,Want,ellipse,null,null,process
+261,Download Users,ellipse,null,null,process
+262,Share On The Repository Files Are Larger Than Gb In A Way Still Allows,ellipse,null,null,process
+264,,endArrow=classic,231,232,endArrow=classic
+265,,endArrow=classic,231,233,endArrow=classic
+266,,endArrow=classic,231,234,endArrow=classic
+267,,endArrow=classic,231,235,endArrow=classic
+268,,endArrow=classic,231,236,endArrow=classic
+269,,endArrow=classic,231,237,endArrow=classic
+270,,endArrow=classic,231,238,endArrow=classic
+271,,endArrow=classic,231,240,endArrow=classic
+272,,endArrow=classic,231,241,endArrow=classic
+273,,endArrow=classic,231,242,endArrow=classic
+274,,endArrow=classic,231,244,endArrow=classic
+275,,endArrow=classic,231,245,endArrow=classic
+276,,endArrow=classic,231,246,endArrow=classic
+277,,endArrow=classic,231,247,endArrow=classic
+278,,endArrow=classic,231,248,endArrow=classic
+279,,endArrow=classic,231,249,endArrow=classic
+280,,endArrow=classic,231,250,endArrow=classic
+281,,endArrow=classic,231,251,endArrow=classic
+282,,endArrow=classic,231,252,endArrow=classic
+283,,endArrow=classic,231,253,endArrow=classic
+284,,endArrow=classic,231,254,endArrow=classic
+285,,endArrow=classic,231,255,endArrow=classic
+286,,endArrow=classic,231,256,endArrow=classic
+287,,endArrow=classic,231,257,endArrow=classic
+288,,endArrow=classic,231,258,endArrow=classic
+289,,endArrow=classic,231,259,endArrow=classic
+290,,endArrow=classic,231,260,endArrow=classic
+291,,endArrow=classic,231,261,endArrow=classic
+292,,endArrow=classic,231,262,endArrow=classic
+293,Datum,endArrow=classic,232,200,endArrow=classic
+294,Repository,endArrow=classic,232,201,endArrow=classic
+295,Publication,endArrow=classic,233,202,endArrow=classic
+296,Repository,endArrow=classic,233,201,endArrow=classic
+297,Right,endArrow=classic,234,204,endArrow=classic
+298,File,endArrow=classic,234,203,endArrow=classic
+299,Repository,endArrow=classic,234,201,endArrow=classic
+300,Datum,endArrow=classic,235,200,endArrow=classic
+301,Cut,endArrow=classic,236,205,endArrow=classic
+302,Format Citation,endArrow=classic,237,206,endArrow=classic
+303,People,endArrow=classic,237,207,endArrow=classic
+304,Cut,endArrow=classic,237,205,endArrow=classic
+305,Repository,endArrow=classic,238,201,endArrow=classic
+306,Content,endArrow=classic,239,209,endArrow=classic
+307,Phone,endArrow=classic,239,208,endArrow=classic
+308,Shibboleth,endArrow=classic,240,210,endArrow=classic
+309,,endArrow=classic,241,240,endArrow=classic
+310,Control,endArrow=classic,242,211,endArrow=classic
+311,File,endArrow=classic,244,203,endArrow=classic
+312,Cc0 License,endArrow=classic,245,227,endArrow=classic
+313,File,endArrow=classic,245,203,endArrow=classic
+314,Collection,endArrow=classic,246,215,endArrow=classic
+315,Document,endArrow=classic,246,214,endArrow=classic
+316,Document,endArrow=classic,247,214,endArrow=classic
+317,Collection,endArrow=classic,247,215,endArrow=classic
+318,Distinctive Branding,endArrow=classic,248,216,endArrow=classic
+319,Collection,endArrow=classic,248,215,endArrow=classic
+320,,endArrow=classic,249,250,endArrow=classic
+321,Repository,endArrow=classic,250,201,endArrow=classic
+322,Item,endArrow=classic,250,212,endArrow=classic
+323,,endArrow=classic,251,250,endArrow=classic
+324,Name,endArrow=classic,251,218,endArrow=classic
+325,,endArrow=classic,252,250,endArrow=classic
+326,Identification Issue,endArrow=classic,252,217,endArrow=classic
+327,Item,endArrow=classic,253,212,endArrow=classic
+328,,endArrow=classic,254,255,endArrow=classic
+329,Dissertation,endArrow=classic,254,219,endArrow=classic
+330,Repository,endArrow=classic,254,201,endArrow=classic
+331,Work,endArrow=classic,255,220,endArrow=classic
+332,Student,endArrow=classic,255,221,endArrow=classic
+333,Cc License,endArrow=classic,256,222,endArrow=classic
+334,File,endArrow=classic,256,203,endArrow=classic
+335,Submission,endArrow=classic,257,224,endArrow=classic
+336,Orcid,endArrow=classic,257,223,endArrow=classic
+337,Orcid,endArrow=classic,258,223,endArrow=classic
+338,,endArrow=classic,260,259,endArrow=classic
+339,,endArrow=classic,260,261,endArrow=classic
+340,,endArrow=classic,262,260,endArrow=classic
+341,Gb,endArrow=classic,262,225,endArrow=classic
+342,Way,endArrow=classic,262,226,endArrow=classic
+343,File,endArrow=classic,262,203,endArrow=classic
+359,Organization,endArrow=classic,247,213,endArrow=classic
+391,Data,endArrow=classic,232,229,endArrow=classic
+409,Author,endArrow=classic,249,230,endArrow=classic
+1000,,endArrow=classic,238,32,endArrow=classic
+1001,Things,rounded=0,null,null,external_entity
+1002,Things,endArrow=classic,32,1001,endArrow=classic
+1003,,endArrow=classic,242,33,endArrow=classic
+1004,Work,endArrow=classic,33,220,endArrow=classic
+1005,,endArrow=classic,260,34,endArrow=classic
+1006,Usage,rounded=0,null,null,external_entity
+1007,Usage,endArrow=classic,34,1006,endArrow=classic
+1008,,endArrow=classic,248,35,endArrow=classic
+1009,Work,endArrow=classic,35,220,endArrow=classic
+1010,Organization,endArrow=classic,35,213,endArrow=classic

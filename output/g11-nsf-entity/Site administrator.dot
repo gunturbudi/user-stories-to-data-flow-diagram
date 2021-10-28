@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Similar ,\nOrganization " ];
+201 [label="<f0>  |<f1> Visual Design " ];
+202 [label="<f0>  |<f1> Content " color=red];
+203 [label="Site Administrator" shape=box];
+204 [label="{<f0> 1.0|<f1> Understand }" shape=Mrecord];
+}

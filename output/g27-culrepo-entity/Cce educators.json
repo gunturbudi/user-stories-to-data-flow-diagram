@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a faculty member, I want to maintain versioning of Extension brochures, FAQs, etc., so that only the most current are used/adapted by other CCE Educators in their work.",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "Extension brochures",
+        "label": "PII"
+      },
+      {
+        "text": "adapted",
+        "label": "Processing"
+      },
+      {
+        "text": "CCE Educators",
+        "label": "Data"
+      }
+    ]
+  }
+]

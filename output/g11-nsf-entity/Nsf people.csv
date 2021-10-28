@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+3,Make recommendations accordingly.,ellipse,null,null,process
+200,User Interview,shape=partialRectangle,null,null,data_base
+201,User Researcher,rounded=0,null,null,external_entity
+202,Invited To User Interviews,ellipse,null,null,process
+203,Make,ellipse,null,null,process
+205,,endArrow=classic,201,202,endArrow=classic
+206,,endArrow=classic,201,203,endArrow=classic
+207,User Interview,endArrow=classic,202,200,endArrow=classic
+208,,endArrow=classic,203,202,endArrow=classic
+1000,Nsf people,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,3,endArrow=classic
+1002,Interviews,rounded=0,null,null,external_entity
+1003,Interviews,endArrow=classic,3,1002,endArrow=classic

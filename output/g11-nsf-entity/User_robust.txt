@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Article" as thingarticle
+	entity "Video" as thingvideo
+	entity "Website Recruitment\nTest" as thingwebsiterecruitmenttest #grey
+	actor "User" as actoruser
+	actor "Interested ,\nNsf Person" as actorinterestednsfperson
+	actor "User Interview" as actoruserinterview
+	actor "User Researcher" as actoruserresearcher
+	boundary "Article\nInterface" as thingarticleinterface #grey
+	boundary "Test\nInterface" as thingtestinterface #grey
+	control "Add A\nVideo To\nArticle" as controladdvideoarticle
+	control "Know" as controlknow
+	control "Set Up\nA Website\nRecruitment Test" as controlsetwebsiterecruitmenttest
+
+	thingarticle <.. thingvideo
+	actoruser --- thingarticleinterface
+	actoruserresearcher --- thingtestinterface
+	thingvideo --- controladdvideoarticle
+	thingarticle --- controladdvideoarticle
+	thingarticleinterface --> controladdvideoarticle
+	thingwebsiterecruitmenttest --- controlsetwebsiterecruitmenttest
+	thingtestinterface --> controlsetwebsiterecruitmenttest
+
+@enduml

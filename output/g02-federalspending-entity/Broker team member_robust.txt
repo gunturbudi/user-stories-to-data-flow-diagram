@@ -1,0 +1,38 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Clarity" as thingclarity
+	entity "Update" as thingupdate
+	entity "Resource" as thingresource #grey
+	entity "Daim" as thingDAIMS
+	entity "Fabs" as thingFABS
+	entity "Validation" as thingvalidation
+	entity "Launch" as thinglaunch
+	entity "Fundingagencycode" as thingFundingAgencyCode
+	entity "Sql Code" as thingsqlcode
+	entity "Broker" as thingbroker #grey
+	actor "Broker ,\nTeam Member" as actorbrokerteammember
+	boundary "Clarity\nInterface" as thingclarityinterface #grey
+	boundary "Fundingagencycode\nInterface" as thingfundingagencycodeinterface #grey
+	control "Make Some\nUpdates To\nThe Sql\nCodes For\nClarity" as controlmakeupdatesqlcodesclarity
+	control "00 Add\nThe" as controladdthe
+	control "Ensure" as controlensure
+	control "Derive Fundingagencycode" as controlderiveFundingAgencyCode
+
+	thingsqlcode <.. thingupdate
+	thingbroker <.. thingresource
+	thingFABS *-- thinglaunch
+	thingDAIMS *-- thinglaunch
+	thingclarity <.. thingsqlcode
+	actorbrokerteammember --- thingclarityinterface
+	actorbrokerteammember --- thingfundingagencycodeinterface
+	thingupdate --- controlmakeupdatesqlcodesclarity
+	thingsqlcode --- controlmakeupdatesqlcodesclarity
+	thingclarity --- controlmakeupdatesqlcodesclarity
+	thingclarityinterface --> controlmakeupdatesqlcodesclarity
+	thingFundingAgencyCode --- controlderiveFundingAgencyCode
+	thingfundingagencycodeinterface --> controlderiveFundingAgencyCode
+
+@enduml

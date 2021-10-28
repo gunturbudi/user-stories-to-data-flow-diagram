@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thingrepository
+	entity "Archival Description" as thingarchivaldescription
+	actor "Readonly User" as actorreadonlyuser
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "View Archival\nDescriptions In\nRepository" as controlviewarchivaldescriptionrepository
+
+	thingrepository <.. thingarchivaldescription
+	actorreadonlyuser --- thingrepositoryinterface
+	thingarchivaldescription --- controlviewarchivaldescriptionrepository
+	thingrepository --- controlviewarchivaldescriptionrepository
+	thingrepositoryinterface --> controlviewarchivaldescriptionrepository
+
+@enduml

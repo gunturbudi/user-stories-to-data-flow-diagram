@@ -1,0 +1,170 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Address" as thingaddress
+	entity "Email" as thingemail
+	entity "Repository" as thingrepository
+	entity "Title" as thingtitle
+	entity "Name" as thingname
+	entity "Phone" as thingphone
+	entity "Storage" as thingstorage
+	entity "T" as thingt
+	entity "Financial Contact" as thingfinancialcontact
+	entity "Collection" as thingcollection
+	entity "Remote ,\nPrimary Site" as thingremoteprimarysite
+	entity "Active ,\nAuthenticated User" as thingactiveauthenticateduser
+	entity "Anonymous User" as thinganonymoususer
+	entity "User" as thinguser
+	entity "Page" as thingpage
+	entity "Select Time" as thingselecttime
+	entity "Upcoming Downtime" as thingupcomingdowntime
+	entity "Message" as thingmessage
+	entity "Thing" as thingthing
+	entity "Recent Error" as thingrecenterror
+	entity "Easy Comprehension" as thingeasycomprehension
+	entity "Component" as thingcomponent
+	entity "Collections Size" as thingcollectionssize #grey
+	entity "Object" as thingobject
+	entity "Version" as thingversion
+	entity "Staff Interface" as thingstaffinterface #grey
+	entity "Replication Policy" as thingreplicationpolicy
+	entity "Dashboard Statistic" as thingdashboardstatistic
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Notification" as thingnotification
+	circle "Display" as thingdisplay
+	circle "Available Version" as thingavailableversion
+	boundary "Report" as thingreportshowstoragerepositorymanager #grey
+	boundary "Phone\nInterface" as thingphoneinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Downtime\nInterface" as thingdowntimeinterface #grey
+	boundary "Comprehension\nInterface" as thingcomprehensioninterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nPhone" as controltrackitemphone
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nPerson Contact\nIncluding Name" as controltrackitem
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nAddress" as controltrackitemaddress
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nEmail" as controltrackitememail
+	control "Track Financially\nResponsible For\nEach Item\nIn The\nRepository Probably\nBe A\nContact Including\nMaybe Title" as controltrackitemtitle
+	control "Show The\nStorage Each\nFinancial Contact" as controlshowstorage
+	control "T Run" as controlruntreportshowstoragerepositorymanager
+	control "Specify The\nRemote Replication\nPolicy For\nEach Collection" as controlspecifyremotereplicationpolicy
+	control "Elect" as controlelectreplicate
+	control "Replicate" as controlreplicate
+	control "Replicate Beyond\nThe Remote,\nPrimary Site" as controlreplicateremoteprimarysite
+	control "Elect Not" as controlelectnot
+	control "View Anonymous\nUser" as controlviewanonymoususer
+	control "View Active,\nAuthenticated Users" as controlviewactiveauthenticateduser
+	control "Schedule A\nMessage To\nUsers" as controlschedulemessageuserdisplaypagerepositorythingnotification
+	control "Displayed On\nEach Page\nOn The\nRepository Between\nSelect Times\nFor Things\nLike Notification\nOf Upcoming\nDowntime" as controldisplaypagerepositorythingnotification
+	control "See A\nDisplay Of\nRecent Errors\nFor Easy\nComprehension" as controlseedisplay
+	control "View A\nDashboard Statistics\nAbout Collections\nSize Including\nA List\nOf Collections" as controlviewdashboardstatisticscollectionssize
+	control "View Available\nVersions Of\nAn Object" as controlviewavailableversion
+	control "Restore A\nVersion From\nThe Staff\nInterface" as controlrestoreversion
+
+	thingrepository <.. thingitem
+	thingname <.. thingitem
+	thingname <.. thingrepository
+	thingselecttime <.. thingrepository
+	thingphone <.. thingrepository
+	thingemail <.. thingrepository
+	thingaddress <.. thingrepository
+	thingtitle <.. thingrepository
+	thingfinancialcontact <.. thingstorage
+	thingrepository <.. thingpage
+	thingthing <.. thingselecttime
+	thinguser <.. thingmessage
+	thingnotification <.. thingthing
+	thingeasycomprehension <.. thingrecenterror
+	thingcollection <.. thingcollectionssize
+	thingstaffinterface <.. thingversion
+	thingcollection <.. thingreplicationpolicy
+	thingcollectionssize <.. thingdashboardstatistic
+	thingupcomingdowntime *-- thingnotification
+	thingrecenterror *-- thingdisplay
+	thingobject *-- thingavailableversion
+	actorrepositorymanager --- thingreportshowstoragerepositorymanager
+	actorrepositorymanager --- thingphoneinterface
+	actorrepositorymanager --- thingnameinterface
+	actorrepositorymanager --- thingaddressinterface
+	actorrepositorymanager --- thingemailinterface
+	actorrepositorymanager --- thingtitleinterface
+	actorrepositorymanager --- thingcollectioninterface
+	actorrepositorymanager --- thingsiteinterface
+	actorrepositorymanager --- thinguserinterface
+	actorrepositorymanager --- thingdowntimeinterface
+	actorrepositorymanager --- thingcomprehensioninterface
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thinginterfaceinterface
+	thingphone --- controltrackitemphone
+	thingphoneinterface --> controltrackitemphone
+	thingitem --- controltrackitemphone
+	thingrepository --- controltrackitemphone
+	thingitem --- controltrackitem
+	thingrepository --- controltrackitem
+	thingname --- controltrackitem
+	thingnameinterface --> controltrackitem
+	thingaddress --- controltrackitemaddress
+	thingaddressinterface --> controltrackitemaddress
+	thingitem --- controltrackitemaddress
+	thingrepository --- controltrackitemaddress
+	thingemail --- controltrackitememail
+	thingemailinterface --> controltrackitememail
+	thingitem --- controltrackitememail
+	thingrepository --- controltrackitememail
+	thingtitle --- controltrackitemtitle
+	thingtitleinterface --> controltrackitemtitle
+	thingitem --- controltrackitemtitle
+	thingrepository --- controltrackitemtitle
+	thingstorage --- controlshowstorage
+	thingreportshowstoragerepositorymanager --> controlshowstorage
+	controlruntreportshowstoragerepositorymanager --> controlshowstorage
+	thingt --- controlruntreportshowstoragerepositorymanager
+	thingreportshowstoragerepositorymanager --> controlruntreportshowstoragerepositorymanager
+	thingreplicationpolicy --- controlspecifyremotereplicationpolicy
+	thingcollection --- controlspecifyremotereplicationpolicy
+	thingcollectioninterface --> controlspecifyremotereplicationpolicy
+	thingsiteinterface --> controlelectreplicate
+	controlelectreplicate --> controlreplicate
+	thingremoteprimarysite --- controlreplicateremoteprimarysite
+	thingsiteinterface --> controlreplicateremoteprimarysite
+	controlelectreplicate --> controlreplicateremoteprimarysite
+	thinganonymoususer --- controlviewanonymoususer
+	thinguserinterface --> controlviewanonymoususer
+	thingactiveauthenticateduser --- controlviewactiveauthenticateduser
+	thinguserinterface --> controlviewactiveauthenticateduser
+	thingmessage --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguser --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguserinterface --> controlschedulemessageuserdisplaypagerepositorythingnotification
+	controlschedulemessageuserdisplaypagerepositorythingnotification --> controldisplaypagerepositorythingnotification
+	thingpage --- controldisplaypagerepositorythingnotification
+	thingselecttime --- controldisplaypagerepositorythingnotification
+	thingthing --- controldisplaypagerepositorythingnotification
+	thingnotification --- controldisplaypagerepositorythingnotification
+	thingupcomingdowntime --- controldisplaypagerepositorythingnotification
+	thingdowntimeinterface --> controldisplaypagerepositorythingnotification
+	thingrepository --- controldisplaypagerepositorythingnotification
+	thingdisplay --- controlseedisplay
+	thingrecenterror --- controlseedisplay
+	thingeasycomprehension --- controlseedisplay
+	thingcomprehensioninterface --> controlseedisplay
+	thingdashboardstatistic --- controlviewdashboardstatisticscollectionssize
+	thingcollectionssize --- controlviewdashboardstatisticscollectionssize
+	thingcollection --- controlviewdashboardstatisticscollectionssize
+	thingcollectioninterface --> controlviewdashboardstatisticscollectionssize
+	thingavailableversion --- controlviewavailableversion
+	thingobject --- controlviewavailableversion
+	thingobjectinterface --> controlviewavailableversion
+	thingversion --- controlrestoreversion
+	thingstaffinterface --- controlrestoreversion
+	thinginterfaceinterface --> controlrestoreversion
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Identify work/internship opportunities.,ellipse,null,null,process
+200,Particular Topic,shape=partialRectangle,null,null,data_base
+201,Cornell,shape=partialRectangle,null,null,data_base
+202,Research,shape=partialRectangle,null,null,data_base
+203,Student,rounded=0,null,null,external_entity
+204,Learn,ellipse,null,null,process
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Work,rounded=0,null,null,external_entity
+1002,Work,endArrow=classic,2,1001,endArrow=classic

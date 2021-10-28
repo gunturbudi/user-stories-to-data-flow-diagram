@@ -1,0 +1,41 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Script " ];
+201 [label="<f0>  |<f1> Neurohub Installation " ];
+202 [label="<f0>  |<f1> Result " color=red];
+203 [label="<f0>  |<f1> Interaction " ];
+204 [label="<f0>  |<f1> Test " color=red];
+205 [label="<f0>  |<f1> Manual Input " ];
+206 [label="<f0>  |<f1> Nightly Build " ];
+207 [label="<f0>  |<f1> Operating System " ];
+208 [label="<f0>  |<f1> Acceptance " color=red];
+209 [label="Release Engineer" shape=box];
+210 [label="{<f0> 1.0|<f1> Call A Script }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Execute Acceptance Tests Against A Neurohub Installation }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Report Back The Results }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Execute Tests }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Requiring Any Manual Input }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Requiring Interaction }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Configure Nightly Builds Automatically Perform A Neurohub Installation On A Virgin Operating System }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 214
+209 -> 215
+209 -> 216
+210 -> 211
+210 -> 212
+210 -> 200 [label="Script"]
+211 -> 201 [label="Neurohub Installation"]
+211 -> 204 [label="Test"]
+212 -> 202 [label="Result"]
+213 -> 204 [label="Test"]
+214 -> 213
+214 -> 205 [label="Manual Input"]
+215 -> 213
+215 -> 203 [label="Interaction"]
+216 -> 206 [label="Nightly Build"]
+216 -> 207 [label="Operating System"]
+216 -> 201 [label="Neurohub Installation"]
+211 -> 208 [label="Acceptance"]
+}

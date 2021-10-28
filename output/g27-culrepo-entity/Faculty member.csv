@@ -1,0 +1,79 @@
+id,value,style,source,target,type
+13,Link to content).,ellipse,null,null,process
+14,Raise the profile of my work.,ellipse,null,null,process
+15,Use it for teaching.,ellipse,null,null,process
+16,Deliver the fullest picture of my research.,ellipse,null,null,process
+17,Assist in my research.,ellipse,null,null,process
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Student,shape=partialRectangle,null,null,data_base
+203,Item,shape=partialRectangle,null,null,data_base
+204,Publication,shape=partialRectangle,null,null,data_base
+205,Scholarly Work,shape=partialRectangle,null,null,data_base
+206,Faq,shape=partialRectangle,null,null,data_base
+207,Etc,shape=partialRectangle,null,null,data_base
+208,Versioning,shape=partialRectangle,null,null,data_base
+209,File,shape=partialRectangle,null,null,data_base
+210,", Scholarly\nWork",shape=partialRectangle,null,null,data_base
+211,Access,shape=partialRectangle,null,null,data_base
+212,Digital Collection,shape=partialRectangle,null,null,data_base
+213,Extension Brochure,shape=partialRectangle,null,null,data_base
+214,Faculty Member,rounded=0,null,null,external_entity
+215,Access A Collection Within The Repository,ellipse,null,null,process
+216,Direct Students To An Item Within The Repository,ellipse,null,null,process
+217,"Collect Those Within The Repository Into A Online, Single Access Point",ellipse,null,null,process
+218,Collect Those Without,ellipse,null,null,process
+219,Collect Publications,ellipse,null,null,process
+220,Upload Scholarly Work To The Repository,ellipse,null,null,process
+221,Maintain Versioning Of Extension Brochures,ellipse,null,null,process
+222,Maintain Versioning Of Etc,ellipse,null,null,process
+223,Maintain Versioning Of Faq,ellipse,null,null,process
+224,"Associate Files With Such, Scholarly Works",ellipse,null,null,process
+225,Access The Latter,ellipse,null,null,process
+226,Recommend,ellipse,null,null,process
+228,,endArrow=classic,214,215,endArrow=classic
+229,,endArrow=classic,214,216,endArrow=classic
+230,,endArrow=classic,214,217,endArrow=classic
+231,,endArrow=classic,214,219,endArrow=classic
+232,,endArrow=classic,214,220,endArrow=classic
+233,,endArrow=classic,214,221,endArrow=classic
+234,,endArrow=classic,214,222,endArrow=classic
+235,,endArrow=classic,214,223,endArrow=classic
+236,,endArrow=classic,214,224,endArrow=classic
+237,Collection,endArrow=classic,215,200,endArrow=classic
+238,Repository,endArrow=classic,215,201,endArrow=classic
+239,Student,endArrow=classic,216,202,endArrow=classic
+240,Item,endArrow=classic,216,203,endArrow=classic
+241,Repository,endArrow=classic,216,201,endArrow=classic
+242,Repository,endArrow=classic,217,201,endArrow=classic
+243,Publication,endArrow=classic,219,204,endArrow=classic
+244,Scholarly Work,endArrow=classic,220,205,endArrow=classic
+245,Repository,endArrow=classic,220,201,endArrow=classic
+246,Versioning,endArrow=classic,221,208,endArrow=classic
+247,Extension Brochure,endArrow=classic,221,213,endArrow=classic
+248,Etc,endArrow=classic,222,207,endArrow=classic
+249,Versioning,endArrow=classic,222,208,endArrow=classic
+250,Faq,endArrow=classic,223,206,endArrow=classic
+251,Versioning,endArrow=classic,223,208,endArrow=classic
+252,File,endArrow=classic,224,209,endArrow=classic
+253,", Scholarly\nWork",endArrow=classic,224,210,endArrow=classic
+254,Access,endArrow=classic,215,211,endArrow=classic
+1000,,endArrow=classic,216,13,endArrow=classic
+1001,Teaching,rounded=0,null,null,external_entity
+1002,Teaching,endArrow=classic,13,1001,endArrow=classic
+1003,,endArrow=classic,217,14,endArrow=classic
+1004,Work,rounded=0,null,null,external_entity
+1005,Work,endArrow=classic,14,1004,endArrow=classic
+1006,,endArrow=classic,220,15,endArrow=classic
+1007,Non-academic audience,rounded=0,null,null,external_entity
+1008,Non-academic audience,endArrow=classic,15,1007,endArrow=classic
+1009,Influence,rounded=0,null,null,external_entity
+1010,Influence,endArrow=classic,15,1009,endArrow=classic
+1011,Academic community,rounded=0,null,null,external_entity
+1012,Academic community,endArrow=classic,15,1011,endArrow=classic
+1013,,endArrow=classic,214,16,endArrow=classic
+1014,Research,rounded=0,null,null,external_entity
+1015,Research,endArrow=classic,16,1014,endArrow=classic
+1016,,endArrow=classic,214,17,endArrow=classic
+1017,Research,rounded=0,null,null,external_entity
+1018,Research,endArrow=classic,17,1017,endArrow=classic

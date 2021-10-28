@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Manager " ];
+201 [label="<f0>  |<f1> Checksum " ];
+202 [label="<f0>  |<f1> Master File " color=red];
+203 [label="<f0>  |<f1> Checksum Method " ];
+204 [label="<f0>  |<f1> Object " color=red];
+205 [label="Dams Manager" shape=box];
+206 [label="{<f0> 1.0|<f1> Preservation Managers The Checksum Method For Each Master File For A Given Object }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Indicate }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Preservation Managers Checksum }" shape=Mrecord];
+205 -> 206
+205 -> 207
+205 -> 208
+206 -> 200 [label="Manager"]
+206 -> 203 [label="Checksum Method"]
+206 -> 202 [label="Master File"]
+206 -> 204 [label="Object"]
+207 -> 206
+207 -> 208
+207 -> 200 [label="Manager"]
+208 -> 201 [label="Checksum"]
+208 -> 200 [label="Manager"]
+}

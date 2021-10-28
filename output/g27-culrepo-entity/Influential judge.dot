@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Influential Judge " ];
+201 [label="<f0>  |<f1> Legal Thinker " ];
+202 [label="<f0>  |<f1> Insight " color=red];
+203 [label="<f0>  |<f1> Initial Scholarship " color=red];
+204 [label="<f0>  |<f1> Paper " color=red];
+205 [label="<f0>  |<f1> Thesis " color=red];
+206 [label="Academicresearcher" shape=box];
+207 [label="{<f0> 1.0|<f1> Gain Insight Initial Scholarship How Started }" shape=Mrecord];
+206 -> 207
+207 -> 202 [label="Insight"]
+207 -> 203 [label="Initial Scholarship"]
+}

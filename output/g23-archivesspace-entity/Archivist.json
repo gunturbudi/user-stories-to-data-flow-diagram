@@ -1,0 +1,559 @@
+[
+  {
+    "text": "As an Archivist, I want to import EAD files that were exported by Archon.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "EAD files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to assign a component unique identifier to a Resource Component.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to associate a standard identifier string with a Subject heading.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to be able to understand that an error occurred during import and why it might have occurred.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import Accessions data in CSV.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Accessions data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import Resources from MARCXML records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Resources",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to see Dates and Extents displayed in both the read and edit views for Accessions and/or Resources before the list of Subjects.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "Dates",
+        "label": "PII"
+      },
+      {
+        "text": "Extents",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import Agent information from EAC-CPF records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to export agent records as EAC-CPF.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "agent records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import only Agent and Subject information from MARCXML records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "Subject information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to add Notes to other record types.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "Notes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to add administrative data about the archival description and finding aid-related data to a top-level Resource.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "finding aid-related data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to assign a Level of description to a Resource or Resource Component and optionally specify another value if the Level is not in a predefined list.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import EAD files that were exported by the Archivists' Toolkit.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "EAD files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search within a repository for resource and accession and digital object records.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "accession",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to create and edit a Collection Management subrecord.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to rearrange the Resource and/or Digital Object hierarchy using keyboard-based navigation.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "rearrange",
+        "label": "Processing"
+      },
+      {
+        "text": "Resource",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to rearrange the resource description hierarchy by dragging an archival object to a different position in the hierarchy.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "rearrange",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I would like to indicate an Agent is either the creator or source or subject of an Accession or Resource or Resource Component.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "creator",
+        "label": "Data"
+      },
+      {
+        "text": "source",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to export a description as EAD.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "description",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to create and edit Event records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "Event records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to manage Digital Objects.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to associate an Instance with a Resource and/or Resource Component.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I don't want to inadvertently overwrite someone else's changes to a record that I'm editing.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "overwrite",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to create and edit Rights Management statements.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to upload an EAD for import from within the frontend application.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to import EAD data.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "EAD data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to specify the Source for a Name Form of an Agent and add new Sources and edit existing Sources.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to create and edit Agent records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to create and edit a Resource record.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to associate a Subject record with a Resource description.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "Subject record",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to associate an Instance with a Container.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "Instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to assign Location information to a Container.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Location information",
+        "label": "PII"
+      }
+    ]
+  }
+]

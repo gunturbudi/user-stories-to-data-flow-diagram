@@ -1,0 +1,171 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Datapackage" as thingdatapackage
+	entity "File" as thingfile
+	entity "R" as thingr
+	entity "Detail" as thingfulldetail
+	entity "Particular Version" as thingparticularversion
+	entity "Package" as thingpackage
+	entity "Change" as thingchange
+	entity "Site" as thingsite
+	entity "Publisher" as thingpublisher
+	entity "Profile" as thingprofile
+	entity "Publish Datum" as thingpublisheddata
+	entity "World" as thingworld
+	entity "Registry Server" as thingregistryserver #grey
+	entity "Tag" as thingtag
+	entity "Sqlite Database" as thingsqlitedatabase
+	entity "Example" as thingexample #grey
+	actor "Consumer" as actorconsumer
+	actor "Publisher" as actorpublisher
+	circle "Description" as thingdescription
+	circle "Sense" as thingsense
+	circle "Age" as thingage
+	circle "Snapshot" as thingsnapshot
+	circle "Schema" as thingschema #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "R\nInterface" as thingrinterface #grey
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "World\nInterface" as thingworldinterface #grey
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	control "Relied Know\nThe Data\nGood" as controlknowdatum
+	control "View A\nData Package" as controlviewdatapackage
+	control "See" as controlsee
+	control "See Some\nExample Data\nPackages" as controlseeexampledatapackages
+	control "Search Data\nPackages" as controlsearchdatapackages
+	control "Search On\nDescription Of\nData Package" as controlsearchdescription
+	control "Download The\nData Package\nIn File" as controldownloaddatapackagefile
+	control "Load A\nData Package\nFrom R" as controlloaddatapackager
+	control "Download Coherent\nSqlite Database" as controldownloadcoherentsqlitedatabase
+	control "Download A\nDatapackage's Data" as controldownloaddata
+	control "Know Full\nDetails The\nData Package\nSchema How\nHas Changed" as controlknowfulldetail
+	control "Get A\nSense Of\nThe Age\nOf The\nDatapackage" as controlgetsense
+	control "View A\nDatapackage At\nA Online\nParticular Version" as controlviewdatapackageparticularversion
+	control "Download A\nData Package\nAt A\nParticular Version" as controldownloaddatapackageparticularversion
+	control "Notified Of\nChanges To\nA Package" as controlnotifychange
+	control "See The\nSite" as controlseesite
+	control "Browse Publishers" as controlbrowsepublisher
+	control "Find Publishers" as controlfindpublisher
+	control "See A\nPublisher's Profile" as controlseeprofile
+	control "View A\nPublisher's Profile" as controlviewprofile
+	control "Get The\nData For\nA Data\nPackage" as controlgetdatum
+	control "Show The\nWorld" as controlshowworld
+	control "Create A\nSnapshot Of\nData On\nThe Registry\nServer" as controlcreatesnapshot
+	control "Tag Datapackage" as controltagdatapackagecreatesnapshot
+	control "Overwrite A\nTag" as controloverwritetag
+	control "A Tag\nExists Try" as controltrywarntagoverwritetag
+	control "Warned" as controlwarn
+
+	thingregistryserver <.. thingdatum
+	thingpackage <.. thingdatum
+	thingexample <.. thingdatum
+	thingpublisher <.. thingdatum
+	thingdatum <.. thingdatum
+	thingdatapackage <.. thingdatum
+	thingparticularversion <.. thingdatapackage
+	thingschema <.. thingfulldetail
+	thingdatum <.. thingfulldetail
+	thingfile <.. thingpackage
+	thingr <.. thingpackage
+	thingparticularversion <.. thingpackage
+	thingdatum <.. thingpackage
+	thingpackage <.. thingchange
+	thingpublisher <.. thingprofile
+	thingpackage *-- thingdescription
+	thingage *-- thingsense
+	thingdatapackage *-- thingage
+	thingdatum *-- thingsnapshot
+	thingpackage *-- thingschema
+	actorconsumer --- thingdatuminterface
+	actorconsumer --- thingdatainterface
+	actorconsumer --- thingfileinterface
+	actorconsumer --- thingrinterface
+	actorconsumer --- thingdatabaseinterface
+	actorconsumer --- thingdatapackageinterface
+	actorpublisher --- thingdatapackageinterface
+	actorconsumer --- thingversioninterface
+	actorconsumer --- thingpackageinterface
+	actorconsumer --- thingsiteinterface
+	actorconsumer --- thingpublisherinterface
+	actorconsumer --- thingprofileinterface
+	actorpublisher --- thingworldinterface
+	actorpublisher --- thingtaginterface
+	thingdatum --- controlknowdatum
+	thingdatuminterface --> controlknowdatum
+	thingdatainterface --> controlviewdatapackage
+	thingpackage --- controlviewdatapackage
+	thingdatainterface --> controlseeexampledatapackages
+	thingpackage --- controlseeexampledatapackages
+	thingdatainterface --> controlsearchdatapackages
+	thingpackage --- controlsearchdatapackages
+	thingdescription --- controlsearchdescription
+	thingdatainterface --> controlsearchdescription
+	thingpackage --- controlsearchdescription
+	thingfile --- controldownloaddatapackagefile
+	thingfileinterface --> controldownloaddatapackagefile
+	thingpackage --- controldownloaddatapackagefile
+	thingr --- controlloaddatapackager
+	thingrinterface --> controlloaddatapackager
+	thingpackage --- controlloaddatapackager
+	thingsqlitedatabase --- controldownloadcoherentsqlitedatabase
+	thingdatabaseinterface --> controldownloadcoherentsqlitedatabase
+	thingdatainterface --> controldownloaddata
+	thingdatum --- controldownloaddata
+	thingfulldetail --- controlknowfulldetail
+	thingdatainterface --> controlknowfulldetail
+	thingdatum --- controlknowfulldetail
+	thingsense --- controlgetsense
+	thingage --- controlgetsense
+	thingdatapackage --- controlgetsense
+	thingdatapackageinterface --> controlgetsense
+	thingparticularversion --- controlviewdatapackageparticularversion
+	thingversioninterface --> controlviewdatapackageparticularversion
+	thingdatapackage --- controlviewdatapackageparticularversion
+	thingparticularversion --- controldownloaddatapackageparticularversion
+	thingversioninterface --> controldownloaddatapackageparticularversion
+	thingpackage --- controldownloaddatapackageparticularversion
+	thingchange --- controlnotifychange
+	thingpackage --- controlnotifychange
+	thingpackageinterface --> controlnotifychange
+	thingsite --- controlseesite
+	thingsiteinterface --> controlseesite
+	thingpublisher --- controlbrowsepublisher
+	thingpublisherinterface --> controlbrowsepublisher
+	thingpublisher --- controlfindpublisher
+	thingpublisherinterface --> controlfindpublisher
+	thingprofile --- controlseeprofile
+	thingprofileinterface --> controlseeprofile
+	thingprofile --- controlviewprofile
+	thingprofileinterface --> controlviewprofile
+	thingdatum --- controlgetdatum
+	thingdatainterface --> controlgetdatum
+	thingworld --- controlshowworld
+	thingworldinterface --> controlshowworld
+	thingsnapshot --- controlcreatesnapshot
+	thingregistryserver --- controlcreatesnapshot
+	controltagdatapackagecreatesnapshot --> controlcreatesnapshot
+	thingdatum --- controlcreatesnapshot
+	thingdatapackageinterface --> controlcreatesnapshot
+	thingdatapackage --- controltagdatapackagecreatesnapshot
+	thingdatapackageinterface --> controltagdatapackagecreatesnapshot
+	thingtag --- controloverwritetag
+	controltrywarntagoverwritetag --> controloverwritetag
+	thingtaginterface --> controloverwritetag
+	thingtag --- controltrywarntagoverwritetag
+	thingtaginterface --> controltrywarntagoverwritetag
+	controltrywarntagoverwritetag --> controlwarn
+	thingtaginterface --> controlwarn
+
+@enduml

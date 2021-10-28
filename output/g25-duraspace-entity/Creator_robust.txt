@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Name" as thingname
+	entity "Creator" as thingcreator
+	entity "Subject" as thingsubject
+	entity "Source" as thingsource
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "Creator\nInterface" as thingcreatorinterface #grey
+	boundary "Subject\nInterface" as thingsubjectinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Indicate Names\nTo The\nCollection As\nCreator" as controlindicatenamecreator
+	control "Indicate Names\nTo The\nCollection As\nSubject" as controlindicatenamesubject
+	control "Indicate Names\nTo The\nCollection As\nSource" as controlindicatenamesource
+
+	thingcreator <.. thingcollection
+	thingsource <.. thingcollection
+	thingsubject <.. thingcollection
+	thingcollection <.. thingname
+	actorrepositorymanager --- thingcreatorinterface
+	actorrepositorymanager --- thingsubjectinterface
+	actorrepositorymanager --- thingsourceinterface
+	thingname --- controlindicatenamecreator
+	thingcollection --- controlindicatenamecreator
+	thingcreator --- controlindicatenamecreator
+	thingcreatorinterface --> controlindicatenamecreator
+	thingsubject --- controlindicatenamesubject
+	thingsubjectinterface --> controlindicatenamesubject
+	thingcollection --- controlindicatenamesubject
+	thingname --- controlindicatenamesubject
+	thingsource --- controlindicatenamesource
+	thingsourceinterface --> controlindicatenamesource
+	thingcollection --- controlindicatenamesource
+	thingname --- controlindicatenamesource
+
+@enduml

@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Cut,shape=partialRectangle,null,null,data_base
+202,Format Citation,shape=partialRectangle,null,null,data_base
+203,People,shape=partialRectangle,null,null,data_base
+204,"Cornell , Faculty Member",rounded=0,null,null,external_entity
+205,Upload Data,ellipse,null,null,process
+206,Provide A Cut,ellipse,null,null,process
+207,Paste Formatted Citation For People Use A Cut,ellipse,null,null,process
+209,,endArrow=classic,204,205,endArrow=classic
+210,,endArrow=classic,204,206,endArrow=classic
+211,,endArrow=classic,204,207,endArrow=classic
+212,Datum,endArrow=classic,205,200,endArrow=classic
+213,Cut,endArrow=classic,206,201,endArrow=classic
+214,Format Citation,endArrow=classic,207,202,endArrow=classic
+215,People,endArrow=classic,207,203,endArrow=classic
+216,Cut,endArrow=classic,207,201,endArrow=classic

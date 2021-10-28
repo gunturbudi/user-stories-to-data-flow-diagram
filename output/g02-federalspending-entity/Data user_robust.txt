@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Deletion" as thingdeletion
+	entity "Update" as thingupdate
+	entity "Additional Field" as thingadditionalfield
+	entity "Fabs Record" as thingfabsrecord
+	entity "Office Name" as thingofficename
+	entity "Office Code" as thingofficecode
+	entity "Fpds Datum" as thingfpdsdatum
+	actor "Datum User" as actordatauser
+	boundary "Deletion\nInterface" as thingdeletioninterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Have The\nDeletions" as controlhavedeletion
+	control "Receive Updates\nTo Fabs\nRecords" as controlreceiveupdatefabsrecords
+	control "See The\nOffice Names\nFrom Office\nCodes" as controlseeofficenames
+	control "Access Additional\nFields From\nThe Fpds\nData" as controlaccessadditionalfield
+
+	thingfabsrecord <.. thingupdate
+	thingfpdsdatum <.. thingadditionalfield
+	thingofficecode <.. thingofficename
+	actordatauser --- thingdeletioninterface
+	actordatauser --- thingrecordinterface
+	actordatauser --- thingcodeinterface
+	actordatauser --- thingdatuminterface
+	thingdeletion --- controlhavedeletion
+	thingdeletioninterface --> controlhavedeletion
+	thingupdate --- controlreceiveupdatefabsrecords
+	thingfabsrecord --- controlreceiveupdatefabsrecords
+	thingrecordinterface --> controlreceiveupdatefabsrecords
+	thingofficename --- controlseeofficenames
+	thingofficecode --- controlseeofficenames
+	thingcodeinterface --> controlseeofficenames
+	thingadditionalfield --- controlaccessadditionalfield
+	thingfpdsdatum --- controlaccessadditionalfield
+	thingdatuminterface --> controlaccessadditionalfield
+
+@enduml

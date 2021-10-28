@@ -1,0 +1,46 @@
+[
+  {
+    "text": "As a system administrator, I want to run a script that installs the Neurohub node onto a virgin Ubuntu operating system.",
+    "entities": [
+      {
+        "text": "system administrator",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a system administrator, I want to run a script that tests to see if a Neurohub installation is functioning correctly.",
+    "entities": [
+      {
+        "text": "system administrator",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a system administrator, I want to have a managed backup protocol for the system.",
+    "entities": [
+      {
+        "text": "system administrator",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a system administrator, I want to migrate data from an older version of NeuroHub to the current version.",
+    "entities": [
+      {
+        "text": "system administrator",
+        "label": "Data"
+      },
+      {
+        "text": "migrate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

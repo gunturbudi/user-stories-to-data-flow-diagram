@@ -1,0 +1,132 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> User " color=red];
+201 [label="<f0>  |<f1> City " ];
+202 [label="<f0>  |<f1> Border Region " ];
+203 [label="<f0>  |<f1> Region " color=red];
+204 [label="<f0>  |<f1> Query " ];
+205 [label="<f0>  |<f1> Polygon " ];
+206 [label="<f0>  |<f1> Code " ];
+207 [label="<f0>  |<f1> Country " ];
+208 [label="<f0>  |<f1> Cube ,\nBased Query " ];
+209 [label="<f0>  |<f1> Csv Output " ];
+210 [label="<f0>  |<f1> Different Currency " ];
+211 [label="<f0>  |<f1> Monetary Measure " color=red];
+212 [label="<f0>  |<f1> Multiple Dataset " color=red];
+213 [label="<f0>  |<f1> Result " color=red];
+214 [label="<f0>  |<f1> Metadata " color=red];
+215 [label="<f0>  |<f1> Datum " ];
+216 [label="<f0>  |<f1> Population " color=red];
+217 [label="<f0>  |<f1> Measure " color=red];
+218 [label="<f0>  |<f1> Geographical Area " color=red];
+219 [label="<f0>  |<f1> Gdp " color=red];
+220 [label="<f0>  |<f1> Contextual Constraint " ];
+221 [label="<f0>  |<f1> Dataset " color=red];
+222 [label="<f0>  |<f1> Reference " ];
+223 [label="<f0>  |<f1> Gini " ];
+224 [label="<f0>  |<f1> Database " color=red];
+225 [label="<f0>  |<f1> Visualisation State " color=red];
+226 [label="<f0>  |<f1> Platform " ];
+227 [label="<f0>  |<f1> Embed Visualisation " ];
+228 [label="<f0>  |<f1> Embedded Viewer " ];
+229 [label="<f0>  |<f1> Hasc " ];
+230 [label="Api User" shape=box];
+231 [label="{<f0> 1.0|<f1> Understand }" shape=Mrecord];
+232 [label="{<f0> 2.0|<f1> Query City }" shape=Mrecord];
+233 [label="{<f0> 3.0|<f1> Query A Region }" shape=Mrecord];
+234 [label="{<f0> 4.0|<f1> Get Bordering Regions }" shape=Mrecord];
+235 [label="{<f0> 5.0|<f1> Get City }" shape=Mrecord];
+236 [label="{<f0> 6.0|<f1> Request Polygons On The Query }" shape=Mrecord];
+237 [label="{<f0> 7.0|<f1> Use Codes For City }" shape=Mrecord];
+238 [label="{<f0> 8.0|<f1> Use Codes For Region }" shape=Mrecord];
+239 [label="{<f0> 9.0|<f1> Use Codes For }" shape=Mrecord];
+240 [label="{<f0> 10.0|<f1> Have }" shape=Mrecord];
+241 [label="{<f0> 11.0|<f1> Use Hasc Codes For Countries }" shape=Mrecord];
+242 [label="{<f0> 12.0|<f1> Get A Csv Output Of Any Cube, Based Query }" shape=Mrecord];
+243 [label="{<f0> 13.0|<f1> Get A Set Of Monetary Measures To Different Currencies }" shape=Mrecord];
+244 [label="{<f0> 14.0|<f1> Use Metadata }" shape=Mrecord];
+245 [label="{<f0> 15.0|<f1> Get Results From Multiple Datasets }" shape=Mrecord];
+246 [label="{<f0> 16.0|<f1> Use Data }" shape=Mrecord];
+247 [label="{<f0> 17.0|<f1> Normalise Measures By Population }" shape=Mrecord];
+248 [label="{<f0> 18.0|<f1> Socioeconomic, Related Indexes Measures By Gini }" shape=Mrecord];
+249 [label="{<f0> 19.0|<f1> Get A Relative Percentage Of A Measure To The Total Of The Dataset Comes }" shape=Mrecord];
+250 [label="{<f0> 20.0|<f1> Store Visualisation State In The Database }" shape=Mrecord];
+251 [label="{<f0> 21.0|<f1> Change The Colors Of The Embedded Visualisations In Own Platform }" shape=Mrecord];
+252 [label="{<f0> 22.0|<f1> Change Some Of The Styling Of The Embedded Viewer In Own Platform }" shape=Mrecord];
+23 [label="{<f0> 23.0|<f1> Build user experiences based on more than one dataset more easily. }" shape=Mrecord];
+244 -> 23
+1001 [label="<f0>  |<f1> User experiences " color=red];
+23 -> 1001 [label="User experiences"]
+23 -> 221  [label="Dataset"]
+24 [label="{<f0> 24.0|<f1> Build user experiences based on more than one dataset more easily. }" shape=Mrecord];
+245 -> 24
+1005 [label="<f0>  |<f1> User experiences " color=red];
+24 -> 1005 [label="User experiences"]
+24 -> 221  [label="Dataset"]
+230 -> 232
+230 -> 233
+230 -> 234
+230 -> 235
+230 -> 236
+230 -> 237
+230 -> 238
+230 -> 240
+230 -> 241
+230 -> 242
+230 -> 243
+230 -> 244
+230 -> 245
+230 -> 246
+230 -> 247
+230 -> 247
+230 -> 247
+230 -> 248
+230 -> 249
+230 -> 250
+230 -> 251
+230 -> 252
+232 -> 234
+232 -> 201 [label="City"]
+233 -> 234
+233 -> 203 [label="Region"]
+234 -> 202 [label="Border Region"]
+235 -> 201 [label="City"]
+236 -> 205 [label="Polygon"]
+236 -> 204 [label="Query"]
+237 -> 201 [label="City"]
+237 -> 206 [label="Code"]
+238 -> 206 [label="Code"]
+238 -> 203 [label="Region"]
+239 -> 206 [label="Code"]
+240 -> 237
+240 -> 238
+240 -> 239
+240 -> 241
+241 -> 207 [label="Country"]
+241 -> 206 [label="Code"]
+242 -> 209 [label="Csv Output"]
+242 -> 208 [label="Cube ,\nBased Query"]
+243 -> 211 [label="Monetary Measure"]
+243 -> 210 [label="Different Currency"]
+244 -> 245
+244 -> 214 [label="Metadata"]
+245 -> 213 [label="Result"]
+245 -> 212 [label="Multiple Dataset"]
+246 -> 245
+246 -> 215 [label="Datum"]
+247 -> 217 [label="Measure"]
+247 -> 216 [label="Population"]
+247 -> 218 [label="Geographical Area"]
+247 -> 219 [label="Gdp"]
+248 -> 223 [label="Gini"]
+248 -> 217 [label="Measure"]
+249 -> 217 [label="Measure"]
+249 -> 221 [label="Dataset"]
+250 -> 225 [label="Visualisation State"]
+250 -> 224 [label="Database"]
+251 -> 227 [label="Embed Visualisation"]
+251 -> 226 [label="Platform"]
+252 -> 228 [label="Embedded Viewer"]
+252 -> 226 [label="Platform"]
+241 -> 229 [label="Hasc"]
+}

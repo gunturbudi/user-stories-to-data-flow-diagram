@@ -1,0 +1,24 @@
+id,value,style,source,target,type
+200,Metadata,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Information,shape=partialRectangle,null,null,data_base
+203,Dmp,shape=partialRectangle,null,null,data_base
+204,Pi,rounded=0,null,null,external_entity
+205,Record All Metadata,ellipse,null,null,process
+206,What Kind Of Data Record,ellipse,null,null,process
+207,Plan,ellipse,null,null,process
+208,What Kind Of Data Store,ellipse,null,null,process
+209,Record Information About Dmp,ellipse,null,null,process
+210,Know Data,ellipse,null,null,process
+211,Know,ellipse,null,null,process
+213,,endArrow=classic,204,205,endArrow=classic
+214,,endArrow=classic,204,206,endArrow=classic
+215,,endArrow=classic,204,208,endArrow=classic
+216,,endArrow=classic,204,209,endArrow=classic
+217,,endArrow=classic,204,210,endArrow=classic
+218,Metadata,endArrow=classic,205,200,endArrow=classic
+219,Datum,endArrow=classic,206,201,endArrow=classic
+220,Datum,endArrow=classic,208,201,endArrow=classic
+221,Information,endArrow=classic,209,202,endArrow=classic
+222,Dmp,endArrow=classic,209,203,endArrow=classic
+223,Datum,endArrow=classic,210,201,endArrow=classic

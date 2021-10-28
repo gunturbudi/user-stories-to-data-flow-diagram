@@ -1,0 +1,197 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Date " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Schedule Record " ];
+203 [label="<f0>  |<f1> Component Page " ];
+204 [label="<f0>  |<f1> Item " color=red];
+205 [label="<f0>  |<f1> Collection " color=red];
+206 [label="<f0>  |<f1> Repository " ];
+207 [label="<f0>  |<f1> Remote Status " ];
+208 [label="<f0>  |<f1> Staff Interface " ];
+209 [label="<f0>  |<f1> Replication " color=red];
+210 [label="<f0>  |<f1> Dashboard " ];
+211 [label="<f0>  |<f1> Encrypt File " ];
+212 [label="<f0>  |<f1> Key " ];
+213 [label="<f0>  |<f1> Server " ];
+214 [label="<f0>  |<f1> Simple Way " ];
+215 [label="<f0>  |<f1> Embargo " ];
+216 [label="<f0>  |<f1> Object " color=red];
+217 [label="<f0>  |<f1> Permission " color=red];
+218 [label="<f0>  |<f1> Deposit " color=red];
+219 [label="<f0>  |<f1> Option " ];
+220 [label="<f0>  |<f1> Tool " ];
+221 [label="<f0>  |<f1> Recent Submission " ];
+222 [label="<f0>  |<f1> Repository ,\nAssign Doi " ];
+223 [label="<f0>  |<f1> Ezid " ];
+224 [label="<f0>  |<f1> Creator " ];
+225 [label="<f0>  |<f1> Author " ];
+226 [label="<f0>  |<f1> Unique Identifier " color=red];
+227 [label="<f0>  |<f1> Referer " color=red];
+228 [label="<f0>  |<f1> Visitor " color=red];
+229 [label="<f0>  |<f1> Resolver ,\nAbstract Link " ];
+230 [label="<f0>  |<f1> User " color=red];
+231 [label="<f0>  |<f1> Easy Way " ];
+232 [label="<f0>  |<f1> Access " ];
+233 [label="<f0>  |<f1> Restrict Object " ];
+234 [label="<f0>  |<f1> Authentication " ];
+235 [label="<f0>  |<f1> Request " ];
+236 [label="<f0>  |<f1> Address " color=red];
+237 [label="<f0>  |<f1> Storage Site " ];
+238 [label="<f0>  |<f1> Metadata " color=red];
+239 [label="<f0>  |<f1> Deletion " ];
+240 [label="<f0>  |<f1> Duke Duke\nIp " ];
+241 [label="<f0>  |<f1> Ip " color=red];
+242 [label="Collection Curator" shape=box];
+243 [label="{<f0> 1.0|<f1> Set A Date Which Data Expire }" shape=Mrecord];
+244 [label="{<f0> 2.0|<f1> Set A Date }" shape=Mrecord];
+245 [label="{<f0> 3.0|<f1> Hide }" shape=Mrecord];
+246 [label="{<f0> 4.0|<f1> Delete }" shape=Mrecord];
+247 [label="{<f0> 5.0|<f1> See The Scheduled Records Deletion Date Displayed On The Item }" shape=Mrecord];
+248 [label="{<f0> 6.0|<f1> See The Scheduled Records Date Displayed On Component Page }" shape=Mrecord];
+249 [label="{<f0> 7.0|<f1> Map An Item From Collection To Another }" shape=Mrecord];
+250 [label="{<f0> 8.0|<f1> Map Item }" shape=Mrecord];
+251 [label="{<f0> 9.0|<f1> Have }" shape=Mrecord];
+252 [label="{<f0> 10.0|<f1> Display The Remote Replication Status In Each Item In The Staff Interface }" shape=Mrecord];
+253 [label="{<f0> 11.0|<f1> Display The Remote Status In Component Page }" shape=Mrecord];
+254 [label="{<f0> 12.0|<f1> Have A Summary Of All Remote Replication Status At Collection Level On Dashboard }" shape=Mrecord];
+255 [label="{<f0> 13.0|<f1> Lift An Embargo For An Object In A Simple Way }" shape=Mrecord];
+256 [label="{<f0> 14.0|<f1> Have Items }" shape=Mrecord];
+257 [label="{<f0> 15.0|<f1> Create Specific Deposit Forms To The Collection }" shape=Mrecord];
+258 [label="{<f0> 16.0|<f1> Setting An Embargo Date At Deposit }" shape=Mrecord];
+259 [label="{<f0> 17.0|<f1> Allow Some Collections The Option }" shape=Mrecord];
+260 [label="{<f0> 18.0|<f1> Have Item Metadata Discoverable }" shape=Mrecord];
+261 [label="{<f0> 19.0|<f1> Have A Tool }" shape=Mrecord];
+262 [label="{<f0> 20.0|<f1> Perform Author Authority Control }" shape=Mrecord];
+263 [label="{<f0> 21.0|<f1> Move Items From Collection To Another }" shape=Mrecord];
+264 [label="{<f0> 22.0|<f1> See }" shape=Mrecord];
+265 [label="{<f0> 23.0|<f1> Show A Summary Of Recent Submissions To Collection }" shape=Mrecord];
+266 [label="{<f0> 24.0|<f1> Have Metadata Changes To Items With Repository, Assigned Dois To Propagated To The Ezid }" shape=Mrecord];
+267 [label="{<f0> 25.0|<f1> Identify Creator }" shape=Mrecord];
+268 [label="{<f0> 26.0|<f1> Identify Authors Of Items By Unique Identifier }" shape=Mrecord];
+269 [label="{<f0> 27.0|<f1> See The Referers For Visitors Use Resolver, Abstracted Links }" shape=Mrecord];
+270 [label="{<f0> 28.0|<f1> Reach Items }" shape=Mrecord];
+271 [label="{<f0> 29.0|<f1> Create Groups Of Users }" shape=Mrecord];
+272 [label="{<f0> 30.0|<f1> Manage Permissions In The Repository In An Easy Way }" shape=Mrecord];
+273 [label="{<f0> 31.0|<f1> Restrict Access To Collection To Duke Duke Ip Addresses }" shape=Mrecord];
+274 [label="{<f0> 32.0|<f1> Restrict Access To Item }" shape=Mrecord];
+275 [label="{<f0> 33.0|<f1> Contact From The Repository }" shape=Mrecord];
+276 [label="{<f0> 34.0|<f1> Request Access To Restricted Objects }" shape=Mrecord];
+277 [label="{<f0> 35.0|<f1> Change Permissions On Items }" shape=Mrecord];
+278 [label="{<f0> 36.0|<f1> Change Permissions On More }" shape=Mrecord];
+279 [label="{<f0> 37.0|<f1> Require Authentication To Access Objects }" shape=Mrecord];
+280 [label="{<f0> 38.0|<f1> View The Permission On Objects }" shape=Mrecord];
+242 -> 243
+242 -> 244
+242 -> 245
+242 -> 246
+242 -> 247
+242 -> 248
+242 -> 249
+242 -> 250
+242 -> 252
+242 -> 253
+242 -> 254
+242 -> 255
+242 -> 256
+242 -> 257
+242 -> 258
+242 -> 259
+242 -> 260
+242 -> 261
+242 -> 262
+242 -> 263
+242 -> 264
+242 -> 265
+242 -> 266
+242 -> 267
+242 -> 268
+242 -> 269
+242 -> 270
+242 -> 271
+242 -> 272
+242 -> 273
+242 -> 274
+242 -> 275
+242 -> 276
+242 -> 277
+242 -> 278
+242 -> 279
+243 -> 200 [label="Date"]
+243 -> 201 [label="Datum"]
+244 -> 245
+244 -> 246
+244 -> 200 [label="Date"]
+247 -> 202 [label="Schedule Record"]
+247 -> 204 [label="Item"]
+247 -> 200 [label="Date"]
+248 -> 203 [label="Component Page"]
+248 -> 202 [label="Schedule Record"]
+248 -> 200 [label="Date"]
+249 -> 205 [label="Collection"]
+249 -> 204 [label="Item"]
+250 -> 204 [label="Item"]
+252 -> 208 [label="Staff Interface"]
+252 -> 204 [label="Item"]
+253 -> 207 [label="Remote Status"]
+253 -> 203 [label="Component Page"]
+254 -> 210 [label="Dashboard"]
+255 -> 215 [label="Embargo"]
+255 -> 216 [label="Object"]
+255 -> 214 [label="Simple Way"]
+256 -> 204 [label="Item"]
+256 -> 216 [label="Object"]
+256 -> 232 [label="Access"]
+257 -> 205 [label="Collection"]
+258 -> 259
+258 -> 218 [label="Deposit"]
+258 -> 200 [label="Date"]
+259 -> 219 [label="Option"]
+259 -> 205 [label="Collection"]
+260 -> 238 [label="Metadata"]
+261 -> 262
+261 -> 220 [label="Tool"]
+262 -> 225 [label="Author"]
+263 -> 204 [label="Item"]
+263 -> 205 [label="Collection"]
+264 -> 265
+265 -> 221 [label="Recent Submission"]
+265 -> 205 [label="Collection"]
+266 -> 222 [label="Repository ,\nAssign Doi"]
+266 -> 223 [label="Ezid"]
+266 -> 204 [label="Item"]
+267 -> 224 [label="Creator"]
+268 -> 225 [label="Author"]
+268 -> 226 [label="Unique Identifier"]
+268 -> 204 [label="Item"]
+269 -> 270
+269 -> 227 [label="Referer"]
+269 -> 228 [label="Visitor"]
+269 -> 229 [label="Resolver ,\nAbstract Link"]
+270 -> 204 [label="Item"]
+271 -> 272
+271 -> 230 [label="User"]
+272 -> 231 [label="Easy Way"]
+272 -> 206 [label="Repository"]
+272 -> 217 [label="Permission"]
+273 -> 232 [label="Access"]
+273 -> 205 [label="Collection"]
+273 -> 236 [label="Address"]
+274 -> 204 [label="Item"]
+274 -> 232 [label="Access"]
+275 -> 276
+275 -> 206 [label="Repository"]
+276 -> 233 [label="Restrict Object"]
+276 -> 232 [label="Access"]
+277 -> 204 [label="Item"]
+277 -> 217 [label="Permission"]
+278 -> 217 [label="Permission"]
+279 -> 234 [label="Authentication"]
+279 -> 232 [label="Access"]
+280 -> 216 [label="Object"]
+280 -> 217 [label="Permission"]
+252 -> 209 [label="Replication"]
+276 -> 235 [label="Request"]
+247 -> 239 [label="Deletion"]
+273 -> 241 [label="Ip"]
+}

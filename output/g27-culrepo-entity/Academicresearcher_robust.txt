@@ -1,0 +1,37 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sortable Spot" as thingsortablespot
+	entity "Particular Author" as thingparticularauthor
+	entity "Paper" as thingpaper #grey
+	entity "Influential Judge" as thinginfluentialjudge
+	entity "Legal Thinker" as thinglegalthinker
+	entity "Initial Scholarship" as thinginitialscholarship
+	entity "Insight" as thinginsight
+	entity "Thesis" as thingthesis #grey
+	actor "Academicresearcher" as actoracademicresearcher
+	circle "Work" as thingwork
+	boundary "Spot\nInterface" as thingspotinterface #grey
+	boundary "Scholarship\nInterface" as thingscholarshipinterface #grey
+	control "Find The\nWorks Of\nA Particular\nAuthor In\nEasily Sortable\nSpot" as controlfindwork
+	control "Gain Insight\nInitial Scholarship\nHow Started" as controlgaininsight
+
+	thingsortablespot <.. thingparticularauthor
+	thinglegalthinker <.. thingpaper
+	thingthesis <.. thingpaper
+	thinginitialscholarship <.. thinginsight
+	thingparticularauthor *-- thingwork
+	thingsortablespot *-- thingwork
+	actoracademicresearcher --- thingspotinterface
+	actoracademicresearcher --- thingscholarshipinterface
+	thingwork --- controlfindwork
+	thingparticularauthor --- controlfindwork
+	thingsortablespot --- controlfindwork
+	thingspotinterface --> controlfindwork
+	thinginsight --- controlgaininsight
+	thinginitialscholarship --- controlgaininsight
+	thingscholarshipinterface --> controlgaininsight
+
+@enduml

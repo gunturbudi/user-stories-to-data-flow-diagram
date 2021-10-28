@@ -1,0 +1,22 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Scrum Alliance" as thingscrumalliance #grey
+	entity "Membership Fee" as thingmembershipfee
+	actor "Company" as actorcompany
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	boundary "Alliance\nInterface" as thingallianceinterface #grey
+	control "Paying A\nCorporate Membership\nFee" as controlpayjoinscrumalliancecorporatemembershipfee
+	control "Join The\nScrum Alliance" as controljoinscrumalliance
+
+	actorcompany --- thingfeeinterface
+	actorcompany --- thingallianceinterface
+	thingmembershipfee --- controlpayjoinscrumalliancecorporatemembershipfee
+	thingfeeinterface --> controlpayjoinscrumalliancecorporatemembershipfee
+	controlpayjoinscrumalliancecorporatemembershipfee --> controljoinscrumalliance
+	thingscrumalliance --- controljoinscrumalliance
+	thingallianceinterface --> controljoinscrumalliance
+
+@enduml

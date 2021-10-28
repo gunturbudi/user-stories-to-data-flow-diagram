@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Archive" as thingarchive
+	entity "Facility" as thingfacility
+	entity "Researcher" as thingresearcher
+	entity "Datum" as thingdatum
+	entity "Archival ,\nRobust Plan" as thingarchivalrobustplan
+	entity "Discoverability Metadata" as thingdiscoverabilitymetadata
+	actor "Depositor" as actordepositor
+	actor "Research ,\nFacility Manager" as actorresearchfacilitymanager
+	actor "Fundingbody" as actorfundingbody
+	circle "Behalf" as thingbehalf
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	control "Attach Specific,\nSubject Discoverability\nMetadata To\nRecords" as controlattachspecificsubjectdiscoverabilitymetadatarecord
+	control "Deposit Data\nFrom Facility\nDirectly Into\nThe Archive\nOn Behalf\nOf Researchers" as controldepositdatumfacilityarchive
+	control "Reassured" as controlreassure
+
+	thingbehalf <.. thingarchive
+	thingarchive <.. thingfacility
+	thingfacility <.. thingdatum
+	thingdatum <.. thingarchivalrobustplan
+	thingrecord <.. thingdiscoverabilitymetadata
+	thingresearcher *-- thingbehalf
+	actordepositor --- thingrecordinterface
+	actorresearchfacilitymanager --- thingresearcherinterface
+	thingdiscoverabilitymetadata --- controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingrecord --- controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingrecordinterface --> controlattachspecificsubjectdiscoverabilitymetadatarecord
+	thingdatum --- controldepositdatumfacilityarchive
+	thingfacility --- controldepositdatumfacilityarchive
+	thingarchive --- controldepositdatumfacilityarchive
+	thingbehalf --- controldepositdatumfacilityarchive
+	thingresearcher --- controldepositdatumfacilityarchive
+	thingresearcherinterface --> controldepositdatumfacilityarchive
+
+@enduml

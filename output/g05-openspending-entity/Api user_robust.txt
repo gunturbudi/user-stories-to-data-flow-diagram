@@ -1,0 +1,182 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "City" as thingcity
+	entity "Border Region" as thingborderingregion
+	entity "Region" as thingregion
+	entity "Query" as thingquery
+	entity "Polygon" as thingpolygon
+	entity "Code" as thingcode #grey
+	entity "Country" as thingcountry
+	entity "Cube ,\nBased Query" as thingcubebasedquery
+	entity "Csv Output" as thingcsvoutput #grey
+	entity "Different Currency" as thingdifferentcurrency
+	entity "Monetary Measure" as thingmonetarymeasure
+	entity "Multiple Dataset" as thingmultipledataset
+	entity "Result" as thingresult
+	entity "Metadata" as thingmetadata
+	entity "Datum" as thingdatum
+	entity "Population" as thingpopulation
+	entity "Measure" as thingmeasure
+	entity "Geographical Area" as thinggeographicalarea
+	entity "Gdp" as thingGDP
+	entity "Contextual Constraint" as thingcontextualconstraint
+	entity "Dataset" as thingdataset
+	entity "Reference" as thingreference
+	entity "Gini" as thingGINI
+	entity "Database" as thingdatabase
+	entity "Visualisation State" as thingvisualisationstate #grey
+	entity "Platform" as thingownplatform
+	entity "Embed Visualisation" as thingembeddedvisualisation
+	entity "Embedded Viewer" as thingembeddedviewer
+	entity "Hasc" as thinghasc #grey
+	actor "Api User" as actorapiuser
+	circle "Total" as thingtotal
+	circle "Relative Percentage" as thingrelativepercentage
+	circle "Color" as thingcolor
+	circle "Styling" as thingstyling
+	boundary "Flexible Api" as thingflexibleapiusecodecityapiuser #grey
+	boundary "City\nInterface" as thingcityinterface #grey
+	boundary "Region\nInterface" as thingregioninterface #grey
+	boundary "Query\nInterface" as thingqueryinterface #grey
+	boundary "Currency\nInterface" as thingcurrencyinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Population\nInterface" as thingpopulationinterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Gdp\nInterface" as thinggdpinterface #grey
+	boundary "Gini\nInterface" as thingginiinterface #grey
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	control "Understand" as controlunderstand
+	control "Query City" as controlquerygetborderingregionmoinsPRONmoinscity
+	control "Query A\nRegion" as controlquerygetborderingregionregion
+	control "Get Bordering\nRegions" as controlgetborderingregion
+	control "Get City" as controlgetcity
+	control "Request Polygons\nOn The\nQuery" as controlrequestpolygon
+	control "Use Codes\nFor City" as controlusecodecity
+	control "Use Codes\nFor Region" as controlusecoderegion
+	control "Use Codes\nFor" as controlusecode #grey
+	control "Have" as controlhaveflexibleapiusehasccodesapiuser
+	control "Use Hasc\nCodes For\nCountries" as controlusehasccodes
+	control "Get A\nCsv Output\nOf Any\nCube, Based\nQuery" as controlgetcsvoutput
+	control "Get A\nSet Of\nMonetary Measures\nTo Different\nCurrencies" as controlgetset
+	control "Use Metadata" as controlusemetadatagetresult
+	control "Get Results\nFrom Multiple\nDatasets" as controlgetresult
+	control "Use Data" as controlusedatumgetresult
+	control "Normalise Measures\nBy Population" as controlnormalisemeasure
+	control "Socioeconomic, Related\nIndexes Measures\nBy Gini" as controlindexmeasureGINI
+	control "Get A\nRelative Percentage\nOf A\nMeasure To\nThe Total\nOf The\nDataset Comes" as controlgetrelativepercentagetotal
+	control "Store Visualisation\nState In\nThe Database" as controlstorevisualisationstatedatabase
+	control "Change The\nColors Of\nThe Embedded\nVisualisations In\nOwn Platform" as controlchangecolor
+	control "Change Some\nOf The\nStyling Of\nThe Embedded\nViewer In\nOwn Platform" as controlchangesome
+
+	thingquery <.. thingpolygon
+	thinghasc <.. thingcode
+	thingcubebasedquery <.. thingcsvoutput
+	thingdifferentcurrency <.. thingmonetarymeasure
+	thingmultipledataset <.. thingresult
+	thingpopulation <.. thingmeasure
+	thinggeographicalarea <.. thingmeasure
+	thingGDP <.. thingmeasure
+	thingGINI <.. thingmeasure
+	thingtotal <.. thingmeasure
+	thingreference <.. thingdataset
+	thingcontextualconstraint <.. thingreference
+	thingdatabase <.. thingvisualisationstate
+	thingownplatform <.. thingembeddedvisualisation
+	thingownplatform <.. thingembeddedviewer
+	thingdataset *-- thingtotal
+	thingmeasure *-- thingrelativepercentage
+	thingembeddedvisualisation *-- thingcolor
+	thingembeddedviewer *-- thingstyling
+	thingownplatform *-- thingstyling
+	actorapiuser --- thingflexibleapiusecodecityapiuser
+	actorapiuser --- thingcityinterface
+	actorapiuser --- thingregioninterface
+	actorapiuser --- thingqueryinterface
+	actorapiuser --- thingcurrencyinterface
+	actorapiuser --- thingmetadatainterface
+	actorapiuser --- thingdatasetinterface
+	actorapiuser --- thingdatuminterface
+	actorapiuser --- thingpopulationinterface
+	actorapiuser --- thingareainterface
+	actorapiuser --- thinggdpinterface
+	actorapiuser --- thingginiinterface
+	actorapiuser --- thingdatabaseinterface
+	actorapiuser --- thingplatforminterface
+	thingcityinterface --> controlquerygetborderingregionmoinsPRONmoinscity
+	thingcity --- controlquerygetborderingregionmoinsPRONmoinscity
+	thingregion --- controlquerygetborderingregionregion
+	thingregioninterface --> controlquerygetborderingregionregion
+	controlquerygetborderingregionregion --> controlgetborderingregion
+	thingborderingregion --- controlgetborderingregion
+	thingregioninterface --> controlgetborderingregion
+	controlquerygetborderingregionmoinsPRONmoinscity --> controlgetborderingregion
+	thingcity --- controlgetcity
+	thingcityinterface --> controlgetcity
+	thingpolygon --- controlrequestpolygon
+	thingquery --- controlrequestpolygon
+	thingqueryinterface --> controlrequestpolygon
+	thingflexibleapiusecodecityapiuser --> controlusecodecity
+	thingcity --- controlusecodecity
+	thingcode --- controlusecodecity
+	controlhaveflexibleapiusehasccodesapiuser --> controlusecodecity
+	thingcode --- controlusecoderegion
+	thingregion --- controlusecoderegion
+	thingflexibleapiusecodecityapiuser --> controlusecoderegion
+	controlhaveflexibleapiusehasccodesapiuser --> controlusecoderegion
+	thingcode --- controlusecode
+	controlhaveflexibleapiusehasccodesapiuser --> controlusecode
+	thingflexibleapiusecodecityapiuser --> controlhaveflexibleapiusehasccodesapiuser
+	controlhaveflexibleapiusehasccodesapiuser --> controlusehasccodes
+	thingcountry --- controlusehasccodes
+	thingcode --- controlusehasccodes
+	thingflexibleapiusecodecityapiuser --> controlusehasccodes
+	thingcsvoutput --- controlgetcsvoutput
+	thingcubebasedquery --- controlgetcsvoutput
+	thingqueryinterface --> controlgetcsvoutput
+	thingmonetarymeasure --- controlgetset
+	thingdifferentcurrency --- controlgetset
+	thingcurrencyinterface --> controlgetset
+	thingmetadata --- controlusemetadatagetresult
+	thingmetadatainterface --> controlusemetadatagetresult
+	controlusemetadatagetresult --> controlgetresult
+	thingresult --- controlgetresult
+	thingmultipledataset --- controlgetresult
+	thingdatasetinterface --> controlgetresult
+	controlusedatumgetresult --> controlgetresult
+	thingdatum --- controlusedatumgetresult
+	thingdatuminterface --> controlusedatumgetresult
+	thingmeasure --- controlnormalisemeasure
+	thingpopulation --- controlnormalisemeasure
+	thingpopulationinterface --> controlnormalisemeasure
+	thinggeographicalarea --- controlnormalisemeasure
+	thingareainterface --> controlnormalisemeasure
+	thingGDP --- controlnormalisemeasure
+	thinggdpinterface --> controlnormalisemeasure
+	thingGINI --- controlindexmeasureGINI
+	thingginiinterface --> controlindexmeasureGINI
+	thingmeasure --- controlindexmeasureGINI
+	thingrelativepercentage --- controlgetrelativepercentagetotal
+	thingtotal --- controlgetrelativepercentagetotal
+	thingmeasure --- controlgetrelativepercentagetotal
+	thingdataset --- controlgetrelativepercentagetotal
+	thingdatasetinterface --> controlgetrelativepercentagetotal
+	thingvisualisationstate --- controlstorevisualisationstatedatabase
+	thingdatabase --- controlstorevisualisationstatedatabase
+	thingdatabaseinterface --> controlstorevisualisationstatedatabase
+	thingcolor --- controlchangecolor
+	thingembeddedvisualisation --- controlchangecolor
+	thingownplatform --- controlchangecolor
+	thingplatforminterface --> controlchangecolor
+	thingstyling --- controlchangesome
+	thingembeddedviewer --- controlchangesome
+	thingownplatform --- controlchangesome
+	thingplatforminterface --> controlchangesome
+
+@enduml

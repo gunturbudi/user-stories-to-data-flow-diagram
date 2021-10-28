@@ -1,0 +1,40 @@
+id,value,style,source,target,type
+200,System,shape=partialRectangle,null,null,data_base
+201,Grant Record,shape=partialRectangle,null,null,data_base
+202,User Testing\nSummary,shape=partialRectangle,null,null,data_base
+203,Schedule,shape=partialRectangle,null,null,data_base
+204,Audit,shape=partialRectangle,null,null,data_base
+205,Environment,shape=partialRectangle,null,null,data_base
+206,Padded Field,shape=partialRectangle,null,null,data_base
+207,Ui Sme,shape=partialRectangle,null,null,data_base
+208,Max Permission,shape=partialRectangle,null,null,data_base
+209,Owner,rounded=0,null,null,external_entity
+210,Send Grant Records To System,ellipse,null,null,process
+211,Create A User Testing Summary From The Ui Sme,ellipse,null,null,process
+212,Design A Schedule From The Ui Sme,ellipse,null,null,process
+213,Design An Audit From The Ui Sme,ellipse,null,null,process
+214,Reset The Environment,ellipse,null,null,process
+215,Staging Max Permissions,ellipse,null,null,process
+216,Take,ellipse,null,null,process
+217,Provided With Padded Fields,ellipse,null,null,process
+219,,endArrow=classic,209,210,endArrow=classic
+220,,endArrow=classic,209,211,endArrow=classic
+221,,endArrow=classic,209,212,endArrow=classic
+222,,endArrow=classic,209,213,endArrow=classic
+223,,endArrow=classic,209,214,endArrow=classic
+224,,endArrow=classic,209,215,endArrow=classic
+225,,endArrow=classic,209,216,endArrow=classic
+226,,endArrow=classic,209,217,endArrow=classic
+227,Grant Record,endArrow=classic,210,201,endArrow=classic
+228,System,endArrow=classic,210,200,endArrow=classic
+229,User Testing\nSummary,endArrow=classic,211,202,endArrow=classic
+230,Ui Sme,endArrow=classic,211,207,endArrow=classic
+231,Schedule,endArrow=classic,212,203,endArrow=classic
+232,Ui Sme,endArrow=classic,212,207,endArrow=classic
+233,Audit,endArrow=classic,213,204,endArrow=classic
+234,Ui Sme,endArrow=classic,213,207,endArrow=classic
+235,,endArrow=classic,214,216,endArrow=classic
+236,Environment,endArrow=classic,214,205,endArrow=classic
+237,Max Permission,endArrow=classic,215,208,endArrow=classic
+238,,endArrow=classic,216,215,endArrow=classic
+239,Padded Field,endArrow=classic,217,206,endArrow=classic

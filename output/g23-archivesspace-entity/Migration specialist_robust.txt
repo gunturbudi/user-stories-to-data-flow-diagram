@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archon Source" as thingarchonsource #grey
+	entity "Aspace Record" as thingaspacerecord #grey
+	entity "Record Id" as thingrecordid
+	actor "Migration Specialist" as actormigrationspecialist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	control "Store The\nAt Record\nIds In\nEach Aspace\nRecord" as controlstoreatrecordids
+	control "Store Archon\nSource" as controlstorearchonsource
+
+	thingaspacerecord <.. thingrecordid
+	actormigrationspecialist --- thingrecordinterface
+	actormigrationspecialist --- thingsourceinterface
+	thingrecordid --- controlstoreatrecordids
+	thingaspacerecord --- controlstoreatrecordids
+	thingrecordinterface --> controlstoreatrecordids
+	thingarchonsource --- controlstorearchonsource
+	thingsourceinterface --> controlstorearchonsource
+
+@enduml

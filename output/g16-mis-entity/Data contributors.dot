@@ -1,0 +1,14 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sla " ];
+201 [label="<f0>  |<f1> Server " ];
+202 [label="<f0>  |<f1> Data Contributor " color=red];
+203 [label="Repoadmin" shape=box];
+204 [label="{<f0> 1.0|<f1> Provide The Server To Data Contributors }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Provide Sla }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 201 [label="Server"]
+204 -> 202 [label="Data Contributor"]
+205 -> 200 [label="Sla"]
+}

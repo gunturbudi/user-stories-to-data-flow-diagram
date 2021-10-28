@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Project" as thingproject #grey
+	entity "Detail" as thingdetail
+	entity "Sensitive" as thingsensitive
+	entity "Datum" as thingdatum
+	entity "Research" as thingresearch #grey
+	actor "Research Integrity" as actorresearchintegrity
+	actor "Director" as actordirector
+	boundary "Report" as thingreportcontaindetailresearchintegritydirector #grey
+	control "Contain Details\nOf Research\nProjects In\nWhich Data\nSensitive Classified" as controlcontaindetail
+	control "Access" as controlaccessreportcontaindetailreportcontaindetailsensitiveresearchintegritydirector
+	control "Contain Details\nOf Projects\nHighly Sensitive" as controlcontaindetailsensitive
+
+	thingresearch <.. thingproject
+	thingdatum <.. thingproject
+	thingproject *-- thingdetail
+	actordirector --- thingreportcontaindetailresearchintegritydirector
+	actorresearchintegrity --- thingreportcontaindetailresearchintegritydirector
+	thingreportcontaindetailresearchintegritydirector --> controlcontaindetail
+	thingdetail --- controlcontaindetail
+	thingdatum --- controlcontaindetail
+	controlaccessreportcontaindetailreportcontaindetailsensitiveresearchintegritydirector --> controlcontaindetail
+	thingproject --- controlcontaindetail
+	thingreportcontaindetailresearchintegritydirector --> controlaccessreportcontaindetailreportcontaindetailsensitiveresearchintegritydirector
+	controlaccessreportcontaindetailreportcontaindetailsensitiveresearchintegritydirector --> controlcontaindetailsensitive
+	thingproject --- controlcontaindetailsensitive
+	thingsensitive --- controlcontaindetailsensitive
+	thingdetail --- controlcontaindetailsensitive
+	thingreportcontaindetailresearchintegritydirector --> controlcontaindetailsensitive
+
+@enduml

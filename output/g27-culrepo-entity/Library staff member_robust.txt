@@ -1,0 +1,417 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access Embargo" as thingaccessembargo #grey
+	entity "Item" as thingitem
+	entity "Analytic" as thinganalytic
+	entity "Useful Statistic" as thingusefulstatistic #grey
+	entity "Comprehensive" as thingcomprehensive
+	entity "Altmetric" as thingaltmetric
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	entity "Author" as thingauthor
+	entity "Rare Material" as thingrarematerial
+	entity "Archival" as thingarchival
+	entity "System" as thingsystem
+	entity "Digital Item" as thingdigitalitem
+	entity "Material" as thingmaterial
+	entity "Behalf" as thingbehalf
+	entity "Metadata" as thingmetadata
+	entity "Description" as thingdescription
+	entity "Subscribable Flag" as thingsubscribableflag
+	entity "Document Title" as thingdocumenttitle #grey
+	entity "Subject Area" as thingsubjectarea #grey
+	entity "Keyword" as thingkeyword
+	entity "Document Type" as thingdocumenttype #grey
+	entity "Release Frequency" as thingreleasefrequency #grey
+	entity "Status" as thingstatus
+	entity "File Location" as thingfilelocation #grey
+	entity "Descriptive Metadata" as thingdescriptivemetadata
+	entity "Etc" as thingetc
+	entity "Supplementary File" as thingsupplementaryfile
+	entity "Slideshow" as thingslideshow
+	entity "Dataset" as thingdataset
+	entity "Stream Medium" as thingstreamingmedium
+	entity ", Collection" as thingthanmorecollection
+	entity "Deposit" as thingdeposit
+	entity "Content" as thingcontent
+	entity "Web Page" as thingwebpage #grey
+	entity "Upload Metadata" as thinguploadedmetadata
+	entity "Upload ,\nCorrect Document" as thinguploadedcorrectdocument
+	entity "Revision" as thingrevision
+	entity "Reason" as thingreason #grey
+	entity "Error" as thingerror
+	entity "Quick Response" as thingquickresponse
+	entity "Reasonable Resolution" as thingreasonableresolution
+	entity "Certain Collection" as thingcertaincollection
+	entity "Field" as thingfield
+	entity "Robust Manner" as thingrobustmanner
+	entity "Revisor" as thingrevisor
+	entity "Cornell" as thingcornell
+	entity "Researcher" as thingresearcher
+	entity "Sharing" as thingsharing
+	entity "Research" as thingresearch
+	entity "Rot" as thingrot
+	entity "Law School" as thinglawschool #grey
+	entity "Usage Statistic" as thingusagestatistic
+	entity "Search Capability" as thingsearchcapability
+	entity "Tech Support\nIssue" as thingtechsupportissue
+	entity "Custom" as thingcustom #grey
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Large Batch" as thinglargebatch
+	circle "Record" as thingrecord
+	circle "Searching" as thingsearching
+	circle "Result" as thingresult
+	circle "Scholarship" as thingscholarship
+	circle "Level" as thinglevel #grey
+	circle "Searchable" as thingsearchable #grey
+	boundary "Sustainable Link" as thingsustainablelink
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Comprehensive\nInterface" as thingcomprehensiveinterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Analytic\nInterface" as thinganalyticinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Archival\nInterface" as thingarchivalinterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Behalf\nInterface" as thingbehalfinterface #grey
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Flag\nInterface" as thingflaginterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Frequency\nInterface" as thingfrequencyinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Slideshow\nInterface" as thingslideshowinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	boundary "Capability\nInterface" as thingcapabilityinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Issue\nInterface" as thingissueinterface #grey
+	boundary "Response\nInterface" as thingresponseinterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	boundary "Manner\nInterface" as thingmannerinterface #grey
+	boundary "Revisor\nInterface" as thingrevisorinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	control "Apply An\nAccess Embargo\nTo An\nItem" as controlapplyaccessembargoitem
+	control "Remove An\nAccess Embargo\nTo An\nItem" as controlremoveaccessembargoitem
+	control "Access Useful\nStatistics Including\nAltmetrics At\nItem Level" as controlaccessusefulstatisticitemlevel
+	control "Access Useful\nStatistics Including\nAltmetrics At\nCollection" as controlaccessusefulstatisticcollection
+	control "Access Comprehensive" as controlaccesscomprehensive
+	control "Access Useful\nStatistics Including\nAltmetrics At\nAuthor" as controlaccessusefulstatisticauthor
+	control "Access Analytic" as controlaccessanalytic
+	control "Access Useful\nUsage Statistics\nIncluding Altmetrics\nAt The\nRepository" as controlaccessusefulusagestatisticsrepository
+	control "Create Collections\nHighlight" as controlcreatecollectionendanger
+	control "Endanger" as controlendanger
+	control "Create Collections\nHighlight Rare\nMaterial" as controlcreatecollection
+	control "Create Collections\nHighlight Archival" as controlcreatecollectionarchival
+	control "Make Digital\nItems In\nExternal, Trusted\nSystem Searchable\nWithin System" as controlmakedigitalitem
+	control "Upload Material\nTo The\nRepository On\nThe Author's\nBehalf" as controluploadmaterialrepository
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nFile Location" as controlcreatemetadatafilelocation
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nSubscribable Flag" as controlcreatemetadatasubscribableflag
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDocument Title" as controlcreatemetadata
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDescription" as controlcreatemetadatadescription
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nAuthor" as controlcreatemetadataauthor
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nSubject Area" as controlcreatemetadatasubjectarea
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nDocument Type" as controlcreatemetadatadocumenttype
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nRelease Frequency" as controlcreatemetadatareleasefrequency
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nStatus" as controlcreatemetadatastatus
+	control "Searching" as controlsearchcreatemetadatakeyword
+	control "Create Metadata\nFor Items\nWithin The\nRepository Includes\nKeyword" as controlcreatemetadatakeyword
+	control "Upload Large\nBatches Of\nItems Including\nDescriptive Metadata" as controluploadlargebatchdescriptivemetadata
+	control "Upload An\nItem To\nThe Repository\nOnly Become\nVisible" as controluploaditemrepository
+	control "Include Supplementary\nFiles Such\nAs Slideshow" as controlincludesupplementaryfileslideshow
+	control "Include Supplementary\nFiles Such\nAs Etc" as controlincludesupplementaryfileetc
+	control "Include Supplementary\nFiles Such\nAs Datasets" as controlincludesupplementaryfile
+	control "Deliver Streaming\nMedia Within\nThe Repository" as controldeliverstreamingmediumrepository
+	control "Assign An\nItem To\nThan, More\nCollection" as controlassignitemthanmorecollection
+	control "Add Custom\nMetadata Fields\nFor Deposits" as controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	control "Allow For\nBetter Search\nCapabilities" as controlallowbettersearchcapabilities
+	control "Have Customizable\nMetadata Fields" as controlhavecustomizablemetadatafields
+	control "Use Metadata" as controlusemetadata
+	control "Use Content\nFrom The\nRepository In\nOther Systems" as controlusecontentrepository
+	control "Use Content\nFrom Easily\nWeb Page" as controlusecontentwebpage
+	control "Receive A\nReasonable Resolution\nTo Tech\nSupport Issues" as controlreceivereasonableresolution
+	control "Receive A\nQuick Response" as controlreceivequickresponse
+	control "Create Custom\nMetadata Fields\nFor Certain\nCollections" as controlcreatecustommetadatafields
+	control "Allow Searching\nOf Those\nFields" as controlallowsearching
+	control "Preserve The\nMetadata Within\nThe Repository" as controlpreservemetadata
+	control "Preserve The\nContent In\nA Robust\nManner" as controlpreservecontentrobustmanner
+	control "Create A\nCollection Sometimes\nWith Custom\nMetadata Fields" as controlcreatecollectioncustommetadatafields
+	control "Determine" as controldetermineuploaditemrepository
+	control "Trace The\nList Of\nRevisors" as controltracelistdetermineuploaditemrepository
+	control "Tell The\nResearchers" as controltellresearcher
+	control "Using Sustainable\nLinks Not\nSuccumb" as controlusepreservescholarshipsustainablelink
+	control "Link Rot" as controllinkrot
+	control "Preserve The\nScholarship Of\nThe Law\nSchool" as controlpreservescholarship
+
+	thingitem <.. thingaccessembargo
+	thingdescriptivemetadata <.. thingitem
+	thingthanmorecollection <.. thingitem
+	thingrepository <.. thingitem
+	thingaltmetric <.. thingusefulstatistic
+	thingrepository <.. thingaltmetric
+	thingauthor <.. thingaltmetric
+	thingcollection <.. thingaltmetric
+	thinglevel <.. thingaltmetric
+	thingrarematerial <.. thingcollection
+	thingarchival <.. thingcollection
+	thingfield <.. thingcollection
+	thingbehalf <.. thingrepository
+	thingdocumenttitle <.. thingrepository
+	thingsubjectarea <.. thingrepository
+	thingdocumenttype <.. thingrepository
+	thingreleasefrequency <.. thingrepository
+	thingstatus <.. thingrepository
+	thingkeyword <.. thingrepository
+	thingfilelocation <.. thingrepository
+	thingdescription <.. thingrepository
+	thingsubscribableflag <.. thingrepository
+	thingauthor <.. thingrepository
+	thingsystem <.. thingrepository
+	thingsharing <.. thingsystem
+	thingrepository <.. thingsystem
+	thingsearchable <.. thingdigitalitem
+	thingsystem <.. thingdigitalitem
+	thingrepository <.. thingmaterial
+	thingauthor <.. thingbehalf
+	thingitem <.. thingmetadata
+	thingrepository <.. thingmetadata
+	thingcustom <.. thingmetadata
+	thingdataset <.. thingsupplementaryfile
+	thingetc <.. thingsupplementaryfile
+	thingslideshow <.. thingsupplementaryfile
+	thingrepository <.. thingstreamingmedium
+	thingrepository <.. thingcontent
+	thingrobustmanner <.. thingcontent
+	thingwebpage <.. thingcontent
+	thingerror <.. thinguploadedcorrectdocument
+	thingrevision <.. thingreason
+	thinguploadedmetadata <.. thingerror
+	thingtechsupportissue <.. thingreasonableresolution
+	thingdeposit <.. thingfield
+	thingcertaincollection <.. thingfield
+	thingmetadata <.. thingfield
+	thingresult <.. thingsharing
+	thingaltmetric <.. thingusagestatistic
+	thingitem *-- thinglargebatch
+	thingrevision *-- thingrecord
+	thingfield *-- thingsearching
+	thingresearch *-- thingresult
+	thinglawschool *-- thingscholarship
+	thingitem *-- thinglevel
+	thingsystem *-- thingsearchable
+	actorlibrarystaffmember --- thingsustainablelink
+	actorlibrarystaffmember --- thingiteminterface
+	actorlibrarystaffmember --- thingcollectioninterface
+	actorlibrarystaffmember --- thingcomprehensiveinterface
+	actorlibrarystaffmember --- thingauthorinterface
+	actorlibrarystaffmember --- thinganalyticinterface
+	actorlibrarystaffmember --- thingrepositoryinterface
+	actorlibrarystaffmember --- thingmaterialinterface
+	actorlibrarystaffmember --- thingarchivalinterface
+	actorlibrarystaffmember --- thingsysteminterface
+	actorlibrarystaffmember --- thingbehalfinterface
+	actorlibrarystaffmember --- thinglocationinterface
+	actorlibrarystaffmember --- thingflaginterface
+	actorlibrarystaffmember --- thingtitleinterface
+	actorlibrarystaffmember --- thingdescriptioninterface
+	actorlibrarystaffmember --- thingareainterface
+	actorlibrarystaffmember --- thingtypeinterface
+	actorlibrarystaffmember --- thingfrequencyinterface
+	actorlibrarystaffmember --- thingstatusinterface
+	actorlibrarystaffmember --- thingkeywordinterface
+	actorlibrarystaffmember --- thingmetadatainterface
+	actorlibrarystaffmember --- thingslideshowinterface
+	actorlibrarystaffmember --- thingetcinterface
+	actorlibrarystaffmember --- thingdatasetinterface
+	actorlibrarystaffmember --- thingdepositinterface
+	actorlibrarystaffmember --- thingcapabilityinterface
+	actorlibrarystaffmember --- thingpageinterface
+	actorlibrarystaffmember --- thingissueinterface
+	actorlibrarystaffmember --- thingresponseinterface
+	actorlibrarystaffmember --- thingfieldinterface
+	actorlibrarystaffmember --- thingmannerinterface
+	actorlibrarystaffmember --- thingresearcherinterface
+	actorlibrarystaffmember --- thinglinkinterface
+	thingaccessembargo --- controlapplyaccessembargoitem
+	thingitem --- controlapplyaccessembargoitem
+	thingiteminterface --> controlapplyaccessembargoitem
+	thingaccessembargo --- controlremoveaccessembargoitem
+	thingitem --- controlremoveaccessembargoitem
+	thingiteminterface --> controlremoveaccessembargoitem
+	thingusefulstatistic --- controlaccessusefulstatisticitemlevel
+	thinglevel --- controlaccessusefulstatisticitemlevel
+	thingiteminterface --> controlaccessusefulstatisticitemlevel
+	thingaltmetric --- controlaccessusefulstatisticitemlevel
+	thingcollection --- controlaccessusefulstatisticcollection
+	thingcollectioninterface --> controlaccessusefulstatisticcollection
+	thingusefulstatistic --- controlaccessusefulstatisticcollection
+	thingaltmetric --- controlaccessusefulstatisticcollection
+	thingcomprehensive --- controlaccesscomprehensive
+	thingcomprehensiveinterface --> controlaccesscomprehensive
+	thingauthor --- controlaccessusefulstatisticauthor
+	thingauthorinterface --> controlaccessusefulstatisticauthor
+	thingusefulstatistic --- controlaccessusefulstatisticauthor
+	thingaltmetric --- controlaccessusefulstatisticauthor
+	thinganalytic --- controlaccessanalytic
+	thinganalyticinterface --> controlaccessanalytic
+	thingusagestatistic --- controlaccessusefulusagestatisticsrepository
+	thingaltmetric --- controlaccessusefulusagestatisticsrepository
+	thingrepository --- controlaccessusefulusagestatisticsrepository
+	thingrepositoryinterface --> controlaccessusefulusagestatisticsrepository
+	thingcollectioninterface --> controlcreatecollectionendanger
+	thingcollection --- controlcreatecollectionendanger
+	controlcreatecollectionendanger --> controlendanger
+	thingcollectioninterface --> controlendanger
+	thingrarematerial --- controlcreatecollection
+	thingmaterialinterface --> controlcreatecollection
+	thingcollection --- controlcreatecollection
+	thingarchival --- controlcreatecollectionarchival
+	thingarchivalinterface --> controlcreatecollectionarchival
+	thingcollection --- controlcreatecollectionarchival
+	thingdigitalitem --- controlmakedigitalitem
+	thingsearchable --- controlmakedigitalitem
+	thingsystem --- controlmakedigitalitem
+	thingsysteminterface --> controlmakedigitalitem
+	thingmaterial --- controluploadmaterialrepository
+	thingbehalf --- controluploadmaterialrepository
+	thingbehalfinterface --> controluploadmaterialrepository
+	thingrepository --- controluploadmaterialrepository
+	thingfilelocation --- controlcreatemetadatafilelocation
+	thinglocationinterface --> controlcreatemetadatafilelocation
+	thingitem --- controlcreatemetadatafilelocation
+	thingrepository --- controlcreatemetadatafilelocation
+	thingmetadata --- controlcreatemetadatafilelocation
+	thingsubscribableflag --- controlcreatemetadatasubscribableflag
+	thingflaginterface --> controlcreatemetadatasubscribableflag
+	thingitem --- controlcreatemetadatasubscribableflag
+	thingrepository --- controlcreatemetadatasubscribableflag
+	thingmetadata --- controlcreatemetadatasubscribableflag
+	thingmetadata --- controlcreatemetadata
+	thingdocumenttitle --- controlcreatemetadata
+	thingtitleinterface --> controlcreatemetadata
+	thingitem --- controlcreatemetadata
+	thingrepository --- controlcreatemetadata
+	thingdescription --- controlcreatemetadatadescription
+	thingdescriptioninterface --> controlcreatemetadatadescription
+	thingitem --- controlcreatemetadatadescription
+	thingrepository --- controlcreatemetadatadescription
+	thingmetadata --- controlcreatemetadatadescription
+	thingauthor --- controlcreatemetadataauthor
+	thingauthorinterface --> controlcreatemetadataauthor
+	thingitem --- controlcreatemetadataauthor
+	thingrepository --- controlcreatemetadataauthor
+	thingmetadata --- controlcreatemetadataauthor
+	thingsubjectarea --- controlcreatemetadatasubjectarea
+	thingareainterface --> controlcreatemetadatasubjectarea
+	thingitem --- controlcreatemetadatasubjectarea
+	thingrepository --- controlcreatemetadatasubjectarea
+	thingmetadata --- controlcreatemetadatasubjectarea
+	thingdocumenttype --- controlcreatemetadatadocumenttype
+	thingtypeinterface --> controlcreatemetadatadocumenttype
+	thingitem --- controlcreatemetadatadocumenttype
+	thingrepository --- controlcreatemetadatadocumenttype
+	thingmetadata --- controlcreatemetadatadocumenttype
+	thingreleasefrequency --- controlcreatemetadatareleasefrequency
+	thingfrequencyinterface --> controlcreatemetadatareleasefrequency
+	thingitem --- controlcreatemetadatareleasefrequency
+	thingrepository --- controlcreatemetadatareleasefrequency
+	thingmetadata --- controlcreatemetadatareleasefrequency
+	thingstatus --- controlcreatemetadatastatus
+	thingstatusinterface --> controlcreatemetadatastatus
+	thingitem --- controlcreatemetadatastatus
+	thingrepository --- controlcreatemetadatastatus
+	thingmetadata --- controlcreatemetadatastatus
+	thingkeywordinterface --> controlsearchcreatemetadatakeyword
+	controlsearchcreatemetadatakeyword --> controlcreatemetadatakeyword
+	thingkeyword --- controlcreatemetadatakeyword
+	thingkeywordinterface --> controlcreatemetadatakeyword
+	thingitem --- controlcreatemetadatakeyword
+	thingrepository --- controlcreatemetadatakeyword
+	thingmetadata --- controlcreatemetadatakeyword
+	thinglargebatch --- controluploadlargebatchdescriptivemetadata
+	thingdescriptivemetadata --- controluploadlargebatchdescriptivemetadata
+	thingmetadatainterface --> controluploadlargebatchdescriptivemetadata
+	thingitem --- controluploadlargebatchdescriptivemetadata
+	thingitem --- controluploaditemrepository
+	thingrepository --- controluploaditemrepository
+	controldetermineuploaditemrepository --> controluploaditemrepository
+	thingrepositoryinterface --> controluploaditemrepository
+	thingslideshow --- controlincludesupplementaryfileslideshow
+	thingslideshowinterface --> controlincludesupplementaryfileslideshow
+	thingsupplementaryfile --- controlincludesupplementaryfileslideshow
+	thingetc --- controlincludesupplementaryfileetc
+	thingetcinterface --> controlincludesupplementaryfileetc
+	thingsupplementaryfile --- controlincludesupplementaryfileetc
+	thingsupplementaryfile --- controlincludesupplementaryfile
+	thingdataset --- controlincludesupplementaryfile
+	thingdatasetinterface --> controlincludesupplementaryfile
+	thingstreamingmedium --- controldeliverstreamingmediumrepository
+	thingrepository --- controldeliverstreamingmediumrepository
+	thingrepositoryinterface --> controldeliverstreamingmediumrepository
+	thingthanmorecollection --- controlassignitemthanmorecollection
+	thingitem --- controlassignitemthanmorecollection
+	thingcollectioninterface --> controlassignitemthanmorecollection
+	thingdeposit --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingdepositinterface --> controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingfield --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	controladdcustommetadatafieldsdepositallowbettersearchcapabilities --> controlallowbettersearchcapabilities
+	thingsearchcapability --- controlallowbettersearchcapabilities
+	thingcapabilityinterface --> controlallowbettersearchcapabilities
+	thingmetadatainterface --> controlhavecustomizablemetadatafields
+	thingfield --- controlhavecustomizablemetadatafields
+	thingmetadata --- controlusemetadata
+	thingmetadatainterface --> controlusemetadata
+	thingcontent --- controlusecontentrepository
+	thingrepository --- controlusecontentrepository
+	thingsysteminterface --> controlusecontentrepository
+	thingsystem --- controlusecontentrepository
+	thingwebpage --- controlusecontentwebpage
+	thingpageinterface --> controlusecontentwebpage
+	thingcontent --- controlusecontentwebpage
+	thingreasonableresolution --- controlreceivereasonableresolution
+	thingtechsupportissue --- controlreceivereasonableresolution
+	thingissueinterface --> controlreceivereasonableresolution
+	thingquickresponse --- controlreceivequickresponse
+	thingresponseinterface --> controlreceivequickresponse
+	thingcertaincollection --- controlcreatecustommetadatafields
+	thingcollectioninterface --> controlcreatecustommetadatafields
+	thingfield --- controlcreatecustommetadatafields
+	thingsearching --- controlallowsearching
+	thingfield --- controlallowsearching
+	thingfieldinterface --> controlallowsearching
+	thingrepository --- controlpreservemetadata
+	thingmetadata --- controlpreservemetadata
+	thingrepositoryinterface --> controlpreservemetadata
+	thingrobustmanner --- controlpreservecontentrobustmanner
+	thingmannerinterface --> controlpreservecontentrobustmanner
+	thingcontent --- controlpreservecontentrobustmanner
+	thingcollection --- controlcreatecollectioncustommetadatafields
+	thingmetadatainterface --> controlcreatecollectioncustommetadatafields
+	thingfield --- controlcreatecollectioncustommetadatafields
+	controltracelistdetermineuploaditemrepository --> controldetermineuploaditemrepository
+	thingrevisorinterface --> controldetermineuploaditemrepository
+	thingrevisor --- controltracelistdetermineuploaditemrepository
+	thingrevisorinterface --> controltracelistdetermineuploaditemrepository
+	thingresearcher --- controltellresearcher
+	thingresearcherinterface --> controltellresearcher
+	thingsustainablelink --> controlusepreservescholarshipsustainablelink
+	thinglinkinterface --> controlusepreservescholarshipsustainablelink
+	controlusepreservescholarshipsustainablelink --> controllinkrot
+	thingrot --- controllinkrot
+	thingsustainablelink --> controllinkrot
+	controlusepreservescholarshipsustainablelink --> controlpreservescholarship
+	thingscholarship --- controlpreservescholarship
+	thinglawschool --- controlpreservescholarship
+	thingsustainablelink --> controlpreservescholarship
+
+@enduml

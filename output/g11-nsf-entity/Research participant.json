@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a research participant, I want to make sure that the appearance of the prototype does not distract from the workflow, so that I can complete the user interview.",
+    "entities": [
+      {
+        "text": "research participant",
+        "label": "Data"
+      },
+      {
+        "text": "complete",
+        "label": "Processing"
+      },
+      {
+        "text": "user interview",
+        "label": "PII"
+      }
+    ]
+  }
+]

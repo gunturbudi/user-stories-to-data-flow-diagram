@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+200,Recycling Center\nInformation,shape=partialRectangle,null,null,data_base
+201,Stat,shape=partialRectangle,null,null,data_base
+202,User,shape=partialRectangle,null,null,data_base
+203,Superuser,rounded=0,null,null,external_entity
+204,Update The Recycling Center Information,ellipse,null,null,process
+205,View Users' Stats,ellipse,null,null,process
+206,Reply To User Questions,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Recycling Center\nInformation,endArrow=classic,204,200,endArrow=classic
+212,Stat,endArrow=classic,205,201,endArrow=classic
+214,User,endArrow=classic,205,202,endArrow=classic

@@ -1,0 +1,61 @@
+id,value,style,source,target,type
+200,Sponsorships Page,shape=partialRectangle,null,null,data_base
+201,Link,shape=partialRectangle,null,null,data_base
+202,Payment Page,shape=partialRectangle,null,null,data_base
+203,Individual Sponsorship,shape=partialRectangle,null,null,data_base
+204,Wysiwyg Editor,shape=partialRectangle,null,null,data_base
+205,Job Board,shape=partialRectangle,null,null,data_base
+206,Idividual Sponsorship,shape=partialRectangle,null,null,data_base
+207,Registration,shape=partialRectangle,null,null,data_base
+208,Payment Information,shape=partialRectangle,null,null,data_base
+209,Card,shape=partialRectangle,null,null,data_base
+210,User Profile,shape=partialRectangle,null,null,data_base
+211,Session,shape=partialRectangle,null,null,data_base
+212,Badcamp,shape=partialRectangle,null,null,data_base
+213,Company Sponsorship,shape=partialRectangle,null,null,data_base
+214,Form Content,shape=partialRectangle,null,null,data_base
+215,Authenticateduser,rounded=0,null,null,external_entity
+216,Find A To Link On The Sponsorships Page A $ Level Sponsor,ellipse,null,null,process
+217,Identify,ellipse,null,null,process
+218,Pay For A $ Company Sponsorship,ellipse,null,null,process
+219,See A Payment Page,ellipse,null,null,process
+220,Pay For Individual Sponsorships As The Third Step Of The Registration Process,ellipse,null,null,process
+221,Use A Wysiwyg Editor For All Long Form Content,ellipse,null,null,process
+222,View The Job Board,ellipse,null,null,process
+223,Offered Several Choices Of Idividual Sponsorship On The Second Page Of Registration,ellipse,null,null,process
+224,Enter Payment Information,ellipse,null,null,process
+225,Have Card For An Individual Sponsorship,ellipse,null,null,process
+226,Update User Profile,ellipse,null,null,process
+227,Edit Session,ellipse,null,null,process
+228,Submit A Session At Badcamp,ellipse,null,null,process
+230,,endArrow=classic,215,216,endArrow=classic
+231,,endArrow=classic,215,218,endArrow=classic
+232,,endArrow=classic,215,219,endArrow=classic
+233,,endArrow=classic,215,220,endArrow=classic
+234,,endArrow=classic,215,221,endArrow=classic
+235,,endArrow=classic,215,222,endArrow=classic
+236,,endArrow=classic,215,223,endArrow=classic
+237,,endArrow=classic,215,224,endArrow=classic
+238,,endArrow=classic,215,225,endArrow=classic
+239,,endArrow=classic,215,226,endArrow=classic
+240,,endArrow=classic,215,227,endArrow=classic
+241,,endArrow=classic,215,228,endArrow=classic
+242,Link,endArrow=classic,216,201,endArrow=classic
+243,Sponsorships Page,endArrow=classic,216,200,endArrow=classic
+244,Company Sponsorship,endArrow=classic,218,213,endArrow=classic
+245,,endArrow=classic,219,220,endArrow=classic
+246,Payment Page,endArrow=classic,219,202,endArrow=classic
+247,Individual Sponsorship,endArrow=classic,220,203,endArrow=classic
+248,Registration,endArrow=classic,220,207,endArrow=classic
+249,Wysiwyg Editor,endArrow=classic,221,204,endArrow=classic
+250,Form Content,endArrow=classic,221,214,endArrow=classic
+251,Job Board,endArrow=classic,222,205,endArrow=classic
+252,Idividual Sponsorship,endArrow=classic,223,206,endArrow=classic
+253,Registration,endArrow=classic,223,207,endArrow=classic
+254,Payment Information,endArrow=classic,224,208,endArrow=classic
+255,Card,endArrow=classic,225,209,endArrow=classic
+256,Individual Sponsorship,endArrow=classic,225,203,endArrow=classic
+257,User Profile,endArrow=classic,226,210,endArrow=classic
+258,Session,endArrow=classic,227,211,endArrow=classic
+259,Badcamp,endArrow=classic,228,212,endArrow=classic
+260,Session,endArrow=classic,228,211,endArrow=classic

@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a l Staff member, I want to search for Property information, so that I can obtain all associated current and historic owners, permits, and applications.",
+    "entities": [
+      {
+        "text": "l Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "Property information",
+        "label": "PII"
+      },
+      {
+        "text": "obtain",
+        "label": "Processing"
+      },
+      {
+        "text": "historic owners",
+        "label": "PII"
+      },
+      {
+        "text": "applications",
+        "label": "PII"
+      }
+    ]
+  }
+]

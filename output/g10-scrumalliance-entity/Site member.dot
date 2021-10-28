@@ -1,0 +1,75 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Page " color=red];
+201 [label="<f0>  |<f1> Structured Way " ];
+202 [label="<f0>  |<f1> Application " color=red];
+203 [label="<f0>  |<f1> Member " color=red];
+204 [label="<f0>  |<f1> Field " ];
+205 [label="<f0>  |<f1> Name " color=red];
+206 [label="<f0>  |<f1> Email " color=red];
+207 [label="<f0>  |<f1> Form " color=red];
+208 [label="<f0>  |<f1> Rss Feed " ];
+209 [label="<f0>  |<f1> News " color=red];
+210 [label="<f0>  |<f1> Methodology " ];
+211 [label="<f0>  |<f1> Job " color=red];
+212 [label="<f0>  |<f1> Entire Article " color=red];
+213 [label="<f0>  |<f1> Article " color=red];
+214 [label="<f0>  |<f1> Access " ];
+215 [label="<f0>  |<f1> Training Pdf " ];
+216 [label="Site Member" shape=box];
+217 [label="Page" shape=box];
+218 [label="Teaser" shape=box];
+219 [label="{<f0> 1.0|<f1> Describe On Own Page In A Structured Way }" shape=Mrecord];
+220 [label="{<f0> 2.0|<f1> Fill Out An Application }" shape=Mrecord];
+221 [label="{<f0> 3.0|<f1> Become A Certified Scrum Practitioner }" shape=Mrecord];
+222 [label="{<f0> 4.0|<f1> View The Profiles Of Other Members }" shape=Mrecord];
+223 [label="{<f0> 5.0|<f1> Search For Profiles On A Few Fields }" shape=Mrecord];
+224 [label="{<f0> 6.0|<f1> Mark Profile }" shape=Mrecord];
+225 [label="{<f0> 7.0|<f1> Private Mark Email Address }" shape=Mrecord];
+226 [label="{<f0> 8.0|<f1> Send An Email To Any Member Via A Form }" shape=Mrecord];
+227 [label="{<f0> 9.0|<f1> Subscribe To An Rss Feed Of News }" shape=Mrecord];
+228 [label="{<f0> 10.0|<f1> Download The Material, Latest Training Pdfs }" shape=Mrecord];
+229 [label="{<f0> 11.0|<f1> Download Methodology }" shape=Mrecord];
+230 [label="{<f0> 12.0|<f1> Scroll Through A Listing Of Jobs }" shape=Mrecord];
+231 [label="{<f0> 13.0|<f1> Subscribe To An Available Rss Feed Of Jobs }" shape=Mrecord];
+232 [label="{<f0> 14.0|<f1> Read The Entire Article }" shape=Mrecord];
+233 [label="{<f0> 15.0|<f1> Have Full Access To All Articles }" shape=Mrecord];
+216 -> 219
+216 -> 220
+216 -> 221
+216 -> 222
+216 -> 223
+216 -> 224
+216 -> 225
+216 -> 226
+216 -> 227
+216 -> 228
+216 -> 229
+216 -> 230
+216 -> 231
+216 -> 232
+216 -> 233
+217 -> 232
+217 -> 233
+218 -> 232
+218 -> 233
+219 -> 200 [label="Page"]
+219 -> 201 [label="Structured Way"]
+220 -> 221
+220 -> 202 [label="Application"]
+222 -> 203 [label="Member"]
+223 -> 204 [label="Field"]
+226 -> 206 [label="Email"]
+226 -> 207 [label="Form"]
+226 -> 203 [label="Member"]
+227 -> 208 [label="Rss Feed"]
+227 -> 209 [label="News"]
+228 -> 215 [label="Training Pdf"]
+229 -> 210 [label="Methodology"]
+230 -> 211 [label="Job"]
+231 -> 208 [label="Rss Feed"]
+231 -> 211 [label="Job"]
+232 -> 212 [label="Entire Article"]
+233 -> 214 [label="Access"]
+233 -> 213 [label="Article"]
+}

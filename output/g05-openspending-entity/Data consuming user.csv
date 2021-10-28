@@ -1,0 +1,109 @@
+id,value,style,source,target,type
+18,Use the data in other tools.,ellipse,null,null,process
+19,Share data that i have found with others.,ellipse,null,null,process
+20,Find the datasets i'm interested in.,ellipse,null,null,process
+200,Multiple Dimension,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Multiple Measure,shape=partialRectangle,null,null,data_base
+203,Visualisation,shape=partialRectangle,null,null,data_base
+204,Currency,shape=partialRectangle,null,null,data_base
+205,Monetary Measure,shape=partialRectangle,null,null,data_base
+206,Embed Visualisation,shape=partialRectangle,null,null,data_base
+207,Textual Description,shape=partialRectangle,null,null,data_base
+208,View State,shape=partialRectangle,null,null,data_base
+209,Social Network,shape=partialRectangle,null,null,data_base
+210,Url,shape=partialRectangle,null,null,data_base
+211,Colour,shape=partialRectangle,null,null,data_base
+212,Accessible,shape=partialRectangle,null,null,data_base
+213,Title,shape=partialRectangle,null,null,data_base
+214,Metadata,shape=partialRectangle,null,null,data_base
+215,Dataset,shape=partialRectangle,null,null,data_base
+216,Bubble Tree,shape=partialRectangle,null,null,data_base
+217,Default,shape=partialRectangle,null,null,data_base
+218,Treemap,shape=partialRectangle,null,null,data_base
+219,Multiple Year,shape=partialRectangle,null,null,data_base
+220,Recent Year,shape=partialRectangle,null,null,data_base
+221,Pivot Table,shape=partialRectangle,null,null,data_base
+222,Map,shape=partialRectangle,null,null,data_base
+223,"Datum , Consume User",rounded=0,null,null,external_entity
+224,Sort Filter Data By Multiple Dimensions,ellipse,null,null,process
+225,Sort Aggregate Data By Multiple Measures,ellipse,null,null,process
+226,Download A Csv Of The Data Used In Any Visualisation,ellipse,null,null,process
+227,Change The Display Of All Monetary Measures Across A Set Of Currencies,ellipse,null,null,process
+228,See Textual Descriptions Accompany Embedded Visualisations,ellipse,null,null,process
+229,Share A View State As A Url To Social Networks,ellipse,null,null,process
+230,"Download An Image, Ofa, Particular View State",ellipse,null,null,process
+231,Share An Image Of A Particular View State To The Social Networks Support This,ellipse,null,null,process
+232,Stepped,ellipse,null,null,process
+233,Have Consistent Use Of Colour On Map Visualisations,ellipse,null,null,process
+234,Search Any Dataset,ellipse,null,null,process
+235,Search Publicly Accessible By Title,ellipse,null,null,process
+236,Search Publicly Accessible By Metadata,ellipse,null,null,process
+237,Visualize By Default In Bubble Tree,ellipse,null,null,process
+238,Visualize By Default In Treemap,ellipse,null,null,process
+239,Visualize By Default In Pivot Table,ellipse,null,null,process
+240,Visualize By Default In Treemap The Most Recent Year Dataset When Contain Multiple Years,ellipse,null,null,process
+242,,endArrow=classic,223,224,endArrow=classic
+243,,endArrow=classic,223,226,endArrow=classic
+244,,endArrow=classic,223,227,endArrow=classic
+245,,endArrow=classic,223,228,endArrow=classic
+246,,endArrow=classic,223,229,endArrow=classic
+247,,endArrow=classic,223,230,endArrow=classic
+248,,endArrow=classic,223,231,endArrow=classic
+249,,endArrow=classic,223,233,endArrow=classic
+250,,endArrow=classic,223,234,endArrow=classic
+251,,endArrow=classic,223,235,endArrow=classic
+252,,endArrow=classic,223,236,endArrow=classic
+253,,endArrow=classic,223,237,endArrow=classic
+254,,endArrow=classic,223,238,endArrow=classic
+255,,endArrow=classic,223,239,endArrow=classic
+256,,endArrow=classic,223,240,endArrow=classic
+257,Datum,endArrow=classic,224,201,endArrow=classic
+258,Multiple Dimension,endArrow=classic,224,200,endArrow=classic
+259,Multiple Measure,endArrow=classic,224,202,endArrow=classic
+260,Multiple Dimension,endArrow=classic,225,200,endArrow=classic
+261,Multiple Measure,endArrow=classic,225,202,endArrow=classic
+262,Datum,endArrow=classic,225,201,endArrow=classic
+263,Visualisation,endArrow=classic,226,203,endArrow=classic
+264,Datum,endArrow=classic,226,201,endArrow=classic
+265,Monetary Measure,endArrow=classic,227,205,endArrow=classic
+266,Currency,endArrow=classic,227,204,endArrow=classic
+267,Textual Description,endArrow=classic,228,207,endArrow=classic
+268,Embed Visualisation,endArrow=classic,228,206,endArrow=classic
+269,View State,endArrow=classic,229,208,endArrow=classic
+270,Url,endArrow=classic,229,210,endArrow=classic
+271,Social Network,endArrow=classic,229,209,endArrow=classic
+272,View State,endArrow=classic,230,208,endArrow=classic
+273,View State,endArrow=classic,231,208,endArrow=classic
+274,Social Network,endArrow=classic,231,209,endArrow=classic
+275,Colour,endArrow=classic,233,211,endArrow=classic
+276,Visualisation,endArrow=classic,233,203,endArrow=classic
+277,Dataset,endArrow=classic,234,215,endArrow=classic
+278,Accessible,endArrow=classic,235,212,endArrow=classic
+279,Title,endArrow=classic,235,213,endArrow=classic
+280,Metadata,endArrow=classic,236,214,endArrow=classic
+281,Accessible,endArrow=classic,236,212,endArrow=classic
+282,Bubble Tree,endArrow=classic,237,216,endArrow=classic
+283,Default,endArrow=classic,237,217,endArrow=classic
+284,Default,endArrow=classic,238,217,endArrow=classic
+285,Treemap,endArrow=classic,238,218,endArrow=classic
+286,Pivot Table,endArrow=classic,239,221,endArrow=classic
+287,Default,endArrow=classic,239,217,endArrow=classic
+288,Default,endArrow=classic,240,217,endArrow=classic
+289,Treemap,endArrow=classic,240,218,endArrow=classic
+290,Multiple Year,endArrow=classic,240,219,endArrow=classic
+291,Recent Year,endArrow=classic,240,220,endArrow=classic
+292,Dataset,endArrow=classic,240,215,endArrow=classic
+302,Map,endArrow=classic,233,222,endArrow=classic
+1000,Data consuming user,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,18,endArrow=classic
+1002,Data,rounded=0,null,null,external_entity
+1003,Data,endArrow=classic,18,1002,endArrow=classic
+1004,Data consuming user,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,19,endArrow=classic
+1006,Data,rounded=0,null,null,external_entity
+1007,Data,endArrow=classic,19,1006,endArrow=classic
+1008,Data consuming user,rounded=0,null,null,external_entity
+1009,,endArrow=classic,1008,20,endArrow=classic
+1010,Datasets,rounded=0,null,null,external_entity
+1011,Datasets,endArrow=classic,20,1010,endArrow=classic

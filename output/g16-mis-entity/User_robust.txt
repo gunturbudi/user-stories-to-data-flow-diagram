@@ -1,0 +1,95 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Specific License" as thingspecificlicense
+	entity "Submitter" as thingsubmitter
+	entity "License" as thinglicense
+	entity "Selection" as thingselection
+	entity "Deposit" as thingdeposit
+	entity "Collection" as thingcollection
+	entity "Thing" as thingthing
+	entity "Upcoming Downtime" as thingupcomingdowntime
+	entity "Message" as thingmessage
+	entity "User" as thinguser
+	entity "Page" as thingpage
+	entity "Select Time" as thingselecttime
+	entity "Repository" as thingrepository
+	entity "Restrict Object" as thingrestrictedobject
+	entity "Access" as thingaccess
+	actor "Repoadmin" as actorrepoadmin
+	actor "Repository Manager" as actorrepositorymanager
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Notification" as thingnotification
+	boundary "User" as thinguserrepoadmin
+	boundary "License\nInterface" as thinglicenseinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Downtime\nInterface" as thingdowntimeinterface #grey
+	control "Presented With\nA License" as controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	control "The Submitter\nNot Accept\nThe License" as controlacceptsubmitterlicense
+	control "Have" as controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense
+	control "Denied" as controldenyacceptsubmitterlicense
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nDeposit" as controlpresentuserrepoadminselectiondeposit
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nThe Collection" as controlpresentuserrepoadminselection
+	control "Schedule A\nMessage To\nUsers" as controlschedulemessageuserdisplaypagerepositorythingnotification
+	control "Displayed On\nEach Page\nOn The\nRepository Between\nSelect Times\nFor Things\nLike Notification\nOf Upcoming\nDowntime" as controldisplaypagerepositorythingnotification
+	control "Contact From\nThe Repository" as controlcontactusercollectioncuratorrepositoryrequestaccess
+	control "Request Access\nTo Restricted\nObjects" as controlrequestaccess
+
+	thingcollection <.. thingspecificlicense
+	thinglicense <.. thingsubmitter
+	thingspecificlicense *-- thingselection
+	thingnotification <.. thingthing
+	thinguser <.. thingmessage
+	thingrepository <.. thingpage
+	thingthing <.. thingselecttime
+	thingselecttime <.. thingrepository
+	thingrestrictedobject <.. thingaccess
+	thingupcomingdowntime *-- thingnotification
+	actorrepoadmin --- thinguserrepoadmin
+	actorcollectioncurator --- thinguserrepoadmin
+	actorrepoadmin --- thinglicenseinterface
+	actorrepositorymanager --- thinguserinterface
+	actorrepositorymanager --- thingdowntimeinterface
+	thinguserrepoadmin --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thinglicense --- controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thingsubmitter --- controlacceptsubmitterlicense
+	controldenyacceptsubmitterlicense --> controlacceptsubmitterlicense
+	thinglicenseinterface --> controlacceptsubmitterlicense
+	thinglicense --- controlacceptsubmitterlicense
+	thinguserrepoadmin --> controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thingspecificlicense --- controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thingselection --- controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thinglicenseinterface --> controldenyacceptsubmitterlicense
+	controlpresentuserrepoadminlicensedenyacceptsubmitterlicense --> controldenyacceptsubmitterlicense
+	thingdeposit --- controlpresentuserrepoadminselectiondeposit
+	thingspecificlicense --- controlpresentuserrepoadminselectiondeposit
+	thinguserrepoadmin --> controlpresentuserrepoadminselectiondeposit
+	thingselection --- controlpresentuserrepoadminselectiondeposit
+	controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense --> controlpresentuserrepoadminselectiondeposit
+	thingselection --- controlpresentuserrepoadminselection
+	thingspecificlicense --- controlpresentuserrepoadminselection
+	thingcollection --- controlpresentuserrepoadminselection
+	thinguserrepoadmin --> controlpresentuserrepoadminselection
+	controlhavepresentuserrepoadminlicensedenyacceptsubmitterlicense --> controlpresentuserrepoadminselection
+	thingmessage --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguser --- controlschedulemessageuserdisplaypagerepositorythingnotification
+	thinguserinterface --> controlschedulemessageuserdisplaypagerepositorythingnotification
+	controlschedulemessageuserdisplaypagerepositorythingnotification --> controldisplaypagerepositorythingnotification
+	thingpage --- controldisplaypagerepositorythingnotification
+	thingrepository --- controldisplaypagerepositorythingnotification
+	thingselecttime --- controldisplaypagerepositorythingnotification
+	thingthing --- controldisplaypagerepositorythingnotification
+	thingnotification --- controldisplaypagerepositorythingnotification
+	thingupcomingdowntime --- controldisplaypagerepositorythingnotification
+	thingdowntimeinterface --> controldisplaypagerepositorythingnotification
+	thingrepository --- controlcontactusercollectioncuratorrepositoryrequestaccess
+	thinguserrepoadmin --> controlcontactusercollectioncuratorrepositoryrequestaccess
+	controlcontactusercollectioncuratorrepositoryrequestaccess --> controlrequestaccess
+	thingaccess --- controlrequestaccess
+	thingrestrictedobject --- controlrequestaccess
+	thinguserrepoadmin --> controlrequestaccess
+
+@enduml

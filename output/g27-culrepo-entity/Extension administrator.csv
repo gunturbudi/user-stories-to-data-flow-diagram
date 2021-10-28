@@ -1,0 +1,59 @@
+id,value,style,source,target,type
+200,Workflow,shape=partialRectangle,null,null,data_base
+201,Easy,shape=partialRectangle,null,null,data_base
+202,Specific Project,shape=partialRectangle,null,null,data_base
+203,Educator,shape=partialRectangle,null,null,data_base
+204,Resource,shape=partialRectangle,null,null,data_base
+205,"Available ,\nGeographic Area",shape=partialRectangle,null,null,data_base
+206,Nys,shape=partialRectangle,null,null,data_base
+207,Faculty,shape=partialRectangle,null,null,data_base
+208,Ingestion,shape=partialRectangle,null,null,data_base
+209,Approval Step,shape=partialRectangle,null,null,data_base
+210,Historical,shape=partialRectangle,null,null,data_base
+211,Attention,shape=partialRectangle,null,null,data_base
+212,Periodic Reminder,shape=partialRectangle,null,null,data_base
+213,Knowledge Collection,shape=partialRectangle,null,null,data_base
+214,Ir Reminder,shape=partialRectangle,null,null,data_base
+215,Extension Administrator,rounded=0,null,null,external_entity
+216,"Staff , Content Manager",rounded=0,null,null,external_entity
+217,Have Easy,ellipse,null,null,process
+218,"Make Resources Developed For Available, Geographic Area To Other Faculty Across Nys",ellipse,null,null,process
+219,Make Resources Developed For Specific Projects,ellipse,null,null,process
+220,"Make Resources Developed For Available, Geographic Area To Educator",ellipse,null,null,process
+221,Get Periodic Reminders Something When Needs Attention Including Approval Step,ellipse,null,null,process
+222,Get Periodic Reminders Something When Needs Attention Including Something Need,ellipse,null,null,process
+223,Get Periodic Ir Reminders Something When Needs Attention Including Next Ingestion,ellipse,null,null,process
+224,Move From A Current Knowledge Collection To Historical,ellipse,null,null,process
+226,,endArrow=classic,215,217,endArrow=classic
+227,,endArrow=classic,215,218,endArrow=classic
+228,,endArrow=classic,215,219,endArrow=classic
+229,,endArrow=classic,215,220,endArrow=classic
+230,,endArrow=classic,215,221,endArrow=classic
+231,,endArrow=classic,215,222,endArrow=classic
+232,,endArrow=classic,215,223,endArrow=classic
+233,,endArrow=classic,215,224,endArrow=classic
+234,,endArrow=classic,216,221,endArrow=classic
+235,,endArrow=classic,216,222,endArrow=classic
+236,,endArrow=classic,216,223,endArrow=classic
+237,,endArrow=classic,216,224,endArrow=classic
+238,Easy,endArrow=classic,217,201,endArrow=classic
+239,"Available ,\nGeographic Area",endArrow=classic,218,205,endArrow=classic
+240,Faculty,endArrow=classic,218,207,endArrow=classic
+241,Nys,endArrow=classic,218,206,endArrow=classic
+242,Resource,endArrow=classic,218,204,endArrow=classic
+243,Resource,endArrow=classic,219,204,endArrow=classic
+244,Specific Project,endArrow=classic,219,202,endArrow=classic
+245,Educator,endArrow=classic,220,203,endArrow=classic
+246,"Available ,\nGeographic Area",endArrow=classic,220,205,endArrow=classic
+247,Resource,endArrow=classic,220,204,endArrow=classic
+248,Periodic Reminder,endArrow=classic,221,212,endArrow=classic
+249,Approval Step,endArrow=classic,221,209,endArrow=classic
+250,Attention,endArrow=classic,221,211,endArrow=classic
+251,,endArrow=classic,222,224,endArrow=classic
+252,Periodic Reminder,endArrow=classic,222,212,endArrow=classic
+253,Attention,endArrow=classic,222,211,endArrow=classic
+254,Ir Reminder,endArrow=classic,223,214,endArrow=classic
+255,Attention,endArrow=classic,223,211,endArrow=classic
+256,Ingestion,endArrow=classic,223,208,endArrow=classic
+257,Knowledge Collection,endArrow=classic,224,213,endArrow=classic
+258,Historical,endArrow=classic,224,210,endArrow=classic

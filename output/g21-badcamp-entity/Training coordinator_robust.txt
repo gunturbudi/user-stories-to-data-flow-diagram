@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Training Node" as thingtrainingnode #grey
+	entity "Class Attendance" as thingclassattendance #grey
+	entity "View" as thingview
+	entity "Information Attendee\nTrainer" as thinginformationattendeetrainer
+	actor "Trainer" as actortrainer
+	boundary "Attendance\nInterface" as thingattendanceinterface #grey
+	control "Have A\nView Attached\nTo Training\nNode Shows\nAll Information\nAttendee Trainers\nSee All\nClass Attendance\nFirst" as controlhaveview
+
+	thinginformationattendeetrainer <.. thingtrainingnode
+	thingtrainingnode <.. thingview
+	thinginformationattendeetrainer <.. thingview
+	thingclassattendance <.. thingview
+	thingclassattendance <.. thinginformationattendeetrainer
+	actortrainer --- thingattendanceinterface
+	thingview --- controlhaveview
+	thingtrainingnode --- controlhaveview
+	thinginformationattendeetrainer --- controlhaveview
+	thingclassattendance --- controlhaveview
+	thingattendanceinterface --> controlhaveview
+
+@enduml

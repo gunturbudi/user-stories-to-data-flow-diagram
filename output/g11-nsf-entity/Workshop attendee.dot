@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Summary " ];
+201 [label="<f0>  |<f1> Event " ];
+202 [label="<f0>  |<f1> Major Finding " ];
+203 [label="Workshop Attendee" shape=box];
+204 [label="{<f0> 1.0|<f1> Have A Summary What Learned }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> See A Summary On Major Findings From The Event }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Summary"]
+205 -> 202 [label="Major Finding"]
+205 -> 201 [label="Event"]
+205 -> 200 [label="Summary"]
+}

@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Requirement,shape=partialRectangle,null,null,data_base
+201,Service,shape=partialRectangle,null,null,data_base
+202,Prospectiveapplicant,rounded=0,null,null,external_entity
+203,Research Requirements,ellipse,null,null,process
+204,Select A Service,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,Requirement,endArrow=classic,203,200,endArrow=classic
+208,Service,endArrow=classic,204,201,endArrow=classic

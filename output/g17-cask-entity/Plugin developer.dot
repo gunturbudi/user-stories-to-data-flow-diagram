@@ -1,0 +1,48 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Code " color=red];
+201 [label="<f0>  |<f1> Dataset Type " color=red];
+202 [label="<f0>  |<f1> Plugin " ];
+203 [label="<f0>  |<f1> Type " color=red];
+204 [label="<f0>  |<f1> App " color=red];
+205 [label="<f0>  |<f1> Version " ];
+206 [label="<f0>  |<f1> Pipeline " ];
+207 [label="<f0>  |<f1> Dataset Instance " color=red];
+208 [label="<f0>  |<f1> Custom Dataset " color=red];
+209 [label="<f0>  |<f1> Dataset " color=red];
+210 [label="Plugin Developer" shape=box];
+211 [label="{<f0> 1.0|<f1> Include The Code For A Dataset Type In The Plugin Artifact }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Use A Type As Part Of An App Inside The Plugin }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Use A Custom Dataset Type Independently Deployed }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> Upgrade The Code Of A Dataset Type }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> A Dataset Instance That Plugin Deploy A New Version Of The Plugin }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> Use That Version }" shape=Mrecord];
+217 [label="{<f0> 7.0|<f1> Update The Pipeline }" shape=Mrecord];
+218 [label="{<f0> 8.0|<f1> Upgrade The Code Of A Type }" shape=Mrecord];
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 216
+210 -> 217
+210 -> 218
+211 -> 200 [label="Code"]
+211 -> 201 [label="Dataset Type"]
+212 -> 203 [label="Type"]
+212 -> 204 [label="App"]
+212 -> 202 [label="Plugin"]
+213 -> 203 [label="Type"]
+214 -> 200 [label="Code"]
+214 -> 203 [label="Type"]
+215 -> 207 [label="Dataset Instance"]
+215 -> 202 [label="Plugin"]
+216 -> 205 [label="Version"]
+217 -> 216
+217 -> 206 [label="Pipeline"]
+218 -> 217
+218 -> 203 [label="Type"]
+218 -> 200 [label="Code"]
+213 -> 208 [label="Custom Dataset"]
+211 -> 209 [label="Dataset"]
+}

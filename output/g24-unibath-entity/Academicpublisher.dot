@@ -1,0 +1,16 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Article " color=red];
+201 [label="<f0>  |<f1> Underlie Dataset " color=red];
+202 [label="<f0>  |<f1> Persistent Link " ];
+203 [label="<f0>  |<f1> Web Link " ];
+204 [label="Academicpublisher" shape=box];
+205 [label="{<f0> 1.0|<f1> Make Persistent Links Between Underlying Dataset }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Make Persistent Web Links Between Articles }" shape=Mrecord];
+204 -> 205
+204 -> 206
+205 -> 202 [label="Persistent Link"]
+205 -> 201 [label="Underlie Dataset"]
+206 -> 203 [label="Web Link"]
+206 -> 200 [label="Article"]
+}

@@ -1,0 +1,366 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Dam,shape=partialRectangle,null,null,data_base
+202,Object,shape=partialRectangle,null,null,data_base
+203,Place,shape=partialRectangle,null,null,data_base
+204,Relevant Place,shape=partialRectangle,null,null,data_base
+205,Curatorial Access,shape=partialRectangle,null,null,data_base
+206,Unit,shape=partialRectangle,null,null,data_base
+207,Singular Provenance,shape=partialRectangle,null,null,data_base
+208,Assembly,shape=partialRectangle,null,null,data_base
+209,Provenance,shape=partialRectangle,null,null,data_base
+210,Title,shape=partialRectangle,null,null,data_base
+211,Source,shape=partialRectangle,null,null,data_base
+212,Name,shape=partialRectangle,null,null,data_base
+213,Subject,shape=partialRectangle,null,null,data_base
+214,Creator,shape=partialRectangle,null,null,data_base
+215,Probable Importance,shape=partialRectangle,null,null,data_base
+216,User,shape=partialRectangle,null,null,data_base
+217,Event,shape=partialRectangle,null,null,data_base
+218,Component,shape=partialRectangle,null,null,data_base
+219,File,shape=partialRectangle,null,null,data_base
+220,Aspect,shape=partialRectangle,null,null,data_base
+221,Pertinent Statute,shape=partialRectangle,null,null,data_base
+222,License,shape=partialRectangle,null,null,data_base
+223,"Pertinent ,\nRight",shape=partialRectangle,null,null,data_base
+224,Description,shape=partialRectangle,null,null,data_base
+225,Life Cycle,shape=partialRectangle,null,null,data_base
+226,Logical,shape=partialRectangle,null,null,data_base
+227,Appropriate Order,shape=partialRectangle,null,null,data_base
+228,"Different ,\nCopyright Status",shape=partialRectangle,null,null,data_base
+229,"Pertain ,\nRight",shape=partialRectangle,null,null,data_base
+230,Repository,shape=partialRectangle,null,null,data_base
+231,Object Component,shape=partialRectangle,null,null,data_base
+232,Useful Form,shape=partialRectangle,null,null,data_base
+233,Change,shape=partialRectangle,null,null,data_base
+234,Edition,shape=partialRectangle,null,null,data_base
+235,.,shape=partialRectangle,null,null,data_base
+236,Publisher,shape=partialRectangle,null,null,data_base
+237,Publication,shape=partialRectangle,null,null,data_base
+238,Origin Info,shape=partialRectangle,null,null,data_base
+239,Collection Component,shape=partialRectangle,null,null,data_base
+240,Title Entity,shape=partialRectangle,null,null,data_base
+241,Date,shape=partialRectangle,null,null,data_base
+242,Modification,shape=partialRectangle,null,null,data_base
+243,Note,shape=partialRectangle,null,null,data_base
+244,Unique Identity,shape=partialRectangle,null,null,data_base
+245,Record,shape=partialRectangle,null,null,data_base
+246,Pertinent Name,shape=partialRectangle,null,null,data_base
+247,Etc,shape=partialRectangle,null,null,data_base
+248,Specific Role,shape=partialRectangle,null,null,data_base
+249,Illustrator,shape=partialRectangle,null,null,data_base
+250,Photographer,shape=partialRectangle,null,null,data_base
+251,Resource,shape=partialRectangle,null,null,data_base
+252,Software,shape=partialRectangle,null,null,data_base
+253,Hardware,shape=partialRectangle,null,null,data_base
+254,Content,shape=partialRectangle,null,null,data_base
+255,End,shape=partialRectangle,null,null,data_base
+256,Repository Manager,rounded=0,null,null,external_entity
+257,Know Object,ellipse,null,null,process
+258,Know The Collections In The Dams,ellipse,null,null,process
+259,Update Repository Information In Place,ellipse,null,null,process
+260,Propagated To All Relevant Places,ellipse,null,null,process
+261,Constrain Curatorial Access To Units,ellipse,null,null,process
+262,Represent A Part Of A Collection,ellipse,null,null,process
+263,Compose Collections,ellipse,null,null,process
+264,Compose Collections Limiting The Collection To,ellipse,null,null,process
+265,Limit The Collection,ellipse,null,null,process
+266,Share The Same Provenance,ellipse,null,null,process
+267,Related To Another Collection,ellipse,null,null,process
+268,Say,ellipse,null,null,process
+269,Describe A Collection Including Title,ellipse,null,null,process
+270,Indicate Names To The Collection As Creator,ellipse,null,null,process
+271,Indicate Names To The Collection As Source,ellipse,null,null,process
+272,Indicate Names To The Collection As Subject,ellipse,null,null,process
+273,Indicate Subjects To The Collection,ellipse,null,null,process
+274,Indicate Other Descriptions Of The Collection Are Of Probable Importance To Users,ellipse,null,null,process
+275,Indicate Other Descriptions Of The Collection Are Outside The Dams,ellipse,null,null,process
+276,Know All Events To A Collection,ellipse,null,null,process
+277,Know The Components To An Object,ellipse,null,null,process
+278,Know The Files To An Object,ellipse,null,null,process
+279,Describe An Object Including Title,ellipse,null,null,process
+280,Describe An Object Including Other Aspect,ellipse,null,null,process
+281,Indicate Names To An Object,ellipse,null,null,process
+282,Indicate The Copyright Status Of An Object,ellipse,null,null,process
+283,Indicate Any Pertinent Statutes To An Object,ellipse,null,null,process
+284,Indicate Any License To An Object,ellipse,null,null,process
+285,"Indicate Any Pertinent, Other Rights To An Object",ellipse,null,null,process
+286,Be Of Probable Importance To An User,ellipse,null,null,process
+287,Indicate Any External Versions Of An Object,ellipse,null,null,process
+288,Indicate Description,ellipse,null,null,process
+289,Represent Logical,ellipse,null,null,process
+290,Represent The Physical Structure Of An Object,ellipse,null,null,process
+291,List The Components In Appropriate Order For An Object,ellipse,null,null,process
+292,Link A Component To Another Component,ellipse,null,null,process
+293,Link A Component To A File,ellipse,null,null,process
+294,Necessary Describe Each Component Including Title,ellipse,null,null,process
+295,Necessary Describe Each Component Including Other Facet,ellipse,null,null,process
+296,Indicate,ellipse,null,null,process
+297,Pertains To The Component From The Object As A Whole,ellipse,null,null,process
+298,"Indicate Apart Pertain, Other Rights To The Component From The Object As A Whole",ellipse,null,null,process
+299,Know The Content Files In The Dams For Repository's Objects,ellipse,null,null,process
+300,Associate A File With An Object Component,ellipse,null,null,process
+301,Associate A Content File With An Object,ellipse,null,null,process
+302,Provide A Title In All Useful Forms For Object Component,ellipse,null,null,process
+303,Provide A Title In All Useful Forms For Object,ellipse,null,null,process
+304,Provide A Title In All Useful Forms For Repository's Collections,ellipse,null,null,process
+305,Know Any Changes To Titles For Object Component,ellipse,null,null,process
+306,Know Any Changes To Titles For Repository's Collections,ellipse,null,null,process
+307,Know Any Changes To Titles For Object,ellipse,null,null,process
+308,Indicate For An Object Component The Place Of Publication When Pertinent,ellipse,null,null,process
+309,Indicate For The . The The Publisher,ellipse,null,null,process
+310,Indicate For The Place The The .,ellipse,null,null,process
+311,Indicate For The The Edition,ellipse,null,null,process
+312,Indicate For The Place The The Publisher,ellipse,null,null,process
+313,Indicate For The The Publisher,ellipse,null,null,process
+314,Indicate For The The .,ellipse,null,null,process
+315,Indicate For The Edition The The Publisher,ellipse,null,null,process
+316,Indicate For The Place The The Edition,ellipse,null,null,process
+317,Indicate For Object,ellipse,null,null,process
+318,Describe Various Facets Of A Collection Component Are Not Addressable Via Date,ellipse,null,null,process
+319,Describe Various Facets Of A Collection Component Are Not Addressable Via Name,ellipse,null,null,process
+320,Describe Various Facets Of Object,ellipse,null,null,process
+321,Describe Various Facets Of A Collection Component Are Not Addressable Via Title Entities,ellipse,null,null,process
+322,Describe Various Facets Of A Collection Component Are Not Addressable Via Subject,ellipse,null,null,process
+323,Know Of All Modifications To Notes For Object,ellipse,null,null,process
+324,Know Of All Modifications To Notes For Object Component,ellipse,null,null,process
+325,Know Of All Modifications To Notes For Repository's Collections,ellipse,null,null,process
+326,Present Indicate In A Collection Component,ellipse,null,null,process
+327,Register A Name Record For Each Unique Identity With Repository's Collections,ellipse,null,null,process
+328,Register A Record For Each Unique Identity With Object,ellipse,null,null,process
+329,Indicate All Subjects Are Pertinent To Object,ellipse,null,null,process
+330,Geo Indicate For Any Resource Believe To An End User,ellipse,null,null,process
+331,"Indicate All Pertinent, Other Versions Of A Resource Are External To The Dams",ellipse,null,null,process
+332,Know For Any Of Repository's Content Files Have Changed,ellipse,null,null,process
+333,Know,ellipse,null,null,process
+334,Generate A Content File,ellipse,null,null,process
+336,,endArrow=classic,256,257,endArrow=classic
+337,,endArrow=classic,256,258,endArrow=classic
+338,,endArrow=classic,256,259,endArrow=classic
+339,,endArrow=classic,256,260,endArrow=classic
+340,,endArrow=classic,256,261,endArrow=classic
+341,,endArrow=classic,256,264,endArrow=classic
+342,,endArrow=classic,256,266,endArrow=classic
+343,,endArrow=classic,256,267,endArrow=classic
+344,,endArrow=classic,256,268,endArrow=classic
+345,,endArrow=classic,256,269,endArrow=classic
+346,,endArrow=classic,256,270,endArrow=classic
+347,,endArrow=classic,256,271,endArrow=classic
+348,,endArrow=classic,256,272,endArrow=classic
+349,,endArrow=classic,256,273,endArrow=classic
+350,,endArrow=classic,256,274,endArrow=classic
+351,,endArrow=classic,256,275,endArrow=classic
+352,,endArrow=classic,256,276,endArrow=classic
+353,,endArrow=classic,256,277,endArrow=classic
+354,,endArrow=classic,256,278,endArrow=classic
+355,,endArrow=classic,256,279,endArrow=classic
+356,,endArrow=classic,256,280,endArrow=classic
+357,,endArrow=classic,256,281,endArrow=classic
+358,,endArrow=classic,256,282,endArrow=classic
+359,,endArrow=classic,256,283,endArrow=classic
+360,,endArrow=classic,256,284,endArrow=classic
+361,,endArrow=classic,256,285,endArrow=classic
+362,,endArrow=classic,256,286,endArrow=classic
+363,,endArrow=classic,256,287,endArrow=classic
+364,,endArrow=classic,256,288,endArrow=classic
+365,,endArrow=classic,256,289,endArrow=classic
+366,,endArrow=classic,256,290,endArrow=classic
+367,,endArrow=classic,256,291,endArrow=classic
+368,,endArrow=classic,256,292,endArrow=classic
+369,,endArrow=classic,256,293,endArrow=classic
+370,,endArrow=classic,256,294,endArrow=classic
+371,,endArrow=classic,256,295,endArrow=classic
+372,,endArrow=classic,256,296,endArrow=classic
+373,,endArrow=classic,256,296,endArrow=classic
+374,,endArrow=classic,256,297,endArrow=classic
+375,,endArrow=classic,256,297,endArrow=classic
+376,,endArrow=classic,256,298,endArrow=classic
+377,,endArrow=classic,256,299,endArrow=classic
+378,,endArrow=classic,256,300,endArrow=classic
+379,,endArrow=classic,256,301,endArrow=classic
+380,,endArrow=classic,256,302,endArrow=classic
+381,,endArrow=classic,256,303,endArrow=classic
+382,,endArrow=classic,256,305,endArrow=classic
+383,,endArrow=classic,256,307,endArrow=classic
+384,,endArrow=classic,256,308,endArrow=classic
+385,,endArrow=classic,256,317,endArrow=classic
+386,,endArrow=classic,256,318,endArrow=classic
+387,,endArrow=classic,256,319,endArrow=classic
+388,,endArrow=classic,256,320,endArrow=classic
+389,,endArrow=classic,256,321,endArrow=classic
+390,,endArrow=classic,256,322,endArrow=classic
+391,,endArrow=classic,256,323,endArrow=classic
+392,,endArrow=classic,256,324,endArrow=classic
+393,,endArrow=classic,256,326,endArrow=classic
+394,,endArrow=classic,256,328,endArrow=classic
+395,,endArrow=classic,256,329,endArrow=classic
+396,,endArrow=classic,256,330,endArrow=classic
+397,,endArrow=classic,256,331,endArrow=classic
+398,,endArrow=classic,256,332,endArrow=classic
+399,,endArrow=classic,256,334,endArrow=classic
+400,Object,endArrow=classic,257,202,endArrow=classic
+401,Collection,endArrow=classic,258,200,endArrow=classic
+402,Dam,endArrow=classic,258,201,endArrow=classic
+403,Place,endArrow=classic,259,203,endArrow=classic
+404,Relevant Place,endArrow=classic,260,204,endArrow=classic
+405,Curatorial Access,endArrow=classic,261,205,endArrow=classic
+406,Unit,endArrow=classic,261,206,endArrow=classic
+407,Collection,endArrow=classic,262,200,endArrow=classic
+408,,endArrow=classic,263,265,endArrow=classic
+409,Collection,endArrow=classic,263,200,endArrow=classic
+410,,endArrow=classic,264,266,endArrow=classic
+411,Collection,endArrow=classic,264,200,endArrow=classic
+412,,endArrow=classic,265,262,endArrow=classic
+413,Collection,endArrow=classic,265,200,endArrow=classic
+414,Provenance,endArrow=classic,266,209,endArrow=classic
+415,Collection,endArrow=classic,267,200,endArrow=classic
+416,,endArrow=classic,268,267,endArrow=classic
+417,Title,endArrow=classic,269,210,endArrow=classic
+418,Collection,endArrow=classic,269,200,endArrow=classic
+419,Name,endArrow=classic,270,212,endArrow=classic
+420,Creator,endArrow=classic,270,214,endArrow=classic
+421,Collection,endArrow=classic,270,200,endArrow=classic
+422,Source,endArrow=classic,271,211,endArrow=classic
+423,Collection,endArrow=classic,271,200,endArrow=classic
+424,Name,endArrow=classic,271,212,endArrow=classic
+425,Subject,endArrow=classic,272,213,endArrow=classic
+426,Collection,endArrow=classic,272,200,endArrow=classic
+427,Name,endArrow=classic,272,212,endArrow=classic
+428,Collection,endArrow=classic,273,200,endArrow=classic
+429,Subject,endArrow=classic,273,213,endArrow=classic
+430,Object,endArrow=classic,273,202,endArrow=classic
+431,Component,endArrow=classic,273,218,endArrow=classic
+432,Collection Component,endArrow=classic,273,239,endArrow=classic
+433,Probable Importance,endArrow=classic,274,215,endArrow=classic
+434,User,endArrow=classic,274,216,endArrow=classic
+435,Collection,endArrow=classic,274,200,endArrow=classic
+436,Collection,endArrow=classic,275,200,endArrow=classic
+437,Dam,endArrow=classic,275,201,endArrow=classic
+438,Event,endArrow=classic,276,217,endArrow=classic
+439,Collection,endArrow=classic,276,200,endArrow=classic
+440,Life Cycle,endArrow=classic,276,225,endArrow=classic
+441,Object,endArrow=classic,276,202,endArrow=classic
+442,Component,endArrow=classic,276,218,endArrow=classic
+443,File,endArrow=classic,276,219,endArrow=classic
+444,Component,endArrow=classic,277,218,endArrow=classic
+445,Object,endArrow=classic,277,202,endArrow=classic
+446,File,endArrow=classic,278,219,endArrow=classic
+447,Object,endArrow=classic,278,202,endArrow=classic
+448,Object,endArrow=classic,279,202,endArrow=classic
+449,Title,endArrow=classic,279,210,endArrow=classic
+450,Aspect,endArrow=classic,280,220,endArrow=classic
+451,Object,endArrow=classic,280,202,endArrow=classic
+452,Object,endArrow=classic,281,202,endArrow=classic
+453,Name,endArrow=classic,281,212,endArrow=classic
+454,Component,endArrow=classic,281,218,endArrow=classic
+455,Object,endArrow=classic,282,202,endArrow=classic
+456,Pertinent Statute,endArrow=classic,283,221,endArrow=classic
+457,Object,endArrow=classic,283,202,endArrow=classic
+458,License,endArrow=classic,284,222,endArrow=classic
+459,Object,endArrow=classic,284,202,endArrow=classic
+460,"Pertinent ,\nRight",endArrow=classic,285,223,endArrow=classic
+461,Object,endArrow=classic,285,202,endArrow=classic
+462,Probable Importance,endArrow=classic,286,215,endArrow=classic
+463,User,endArrow=classic,286,216,endArrow=classic
+464,,endArrow=classic,287,286,endArrow=classic
+465,Object,endArrow=classic,287,202,endArrow=classic
+466,Description,endArrow=classic,288,224,endArrow=classic
+467,Logical,endArrow=classic,289,226,endArrow=classic
+468,Object,endArrow=classic,290,202,endArrow=classic
+469,Appropriate Order,endArrow=classic,291,227,endArrow=classic
+470,Object,endArrow=classic,291,202,endArrow=classic
+471,Component,endArrow=classic,291,218,endArrow=classic
+472,Component,endArrow=classic,292,218,endArrow=classic
+473,File,endArrow=classic,293,219,endArrow=classic
+474,Component,endArrow=classic,293,218,endArrow=classic
+475,Title,endArrow=classic,294,210,endArrow=classic
+476,Component,endArrow=classic,294,218,endArrow=classic
+477,Component,endArrow=classic,295,218,endArrow=classic
+478,Aspect,endArrow=classic,295,220,endArrow=classic
+479,,endArrow=classic,296,297,endArrow=classic
+480,Object,endArrow=classic,297,202,endArrow=classic
+481,Component,endArrow=classic,297,218,endArrow=classic
+482,"Pertain ,\nRight",endArrow=classic,298,229,endArrow=classic
+483,Object,endArrow=classic,298,202,endArrow=classic
+484,Component,endArrow=classic,298,218,endArrow=classic
+485,Dam,endArrow=classic,299,201,endArrow=classic
+486,Object,endArrow=classic,299,202,endArrow=classic
+487,File,endArrow=classic,299,219,endArrow=classic
+488,Component,endArrow=classic,300,218,endArrow=classic
+489,File,endArrow=classic,300,219,endArrow=classic
+490,Object,endArrow=classic,301,202,endArrow=classic
+491,File,endArrow=classic,301,219,endArrow=classic
+492,Useful Form,endArrow=classic,302,232,endArrow=classic
+493,Title,endArrow=classic,302,210,endArrow=classic
+494,Component,endArrow=classic,302,218,endArrow=classic
+495,Object,endArrow=classic,303,202,endArrow=classic
+496,Useful Form,endArrow=classic,303,232,endArrow=classic
+497,Title,endArrow=classic,303,210,endArrow=classic
+498,Useful Form,endArrow=classic,304,232,endArrow=classic
+499,Collection,endArrow=classic,304,200,endArrow=classic
+500,Title,endArrow=classic,304,210,endArrow=classic
+501,Title,endArrow=classic,305,210,endArrow=classic
+502,Component,endArrow=classic,305,218,endArrow=classic
+503,Change,endArrow=classic,305,233,endArrow=classic
+504,Change,endArrow=classic,306,233,endArrow=classic
+505,Collection,endArrow=classic,306,200,endArrow=classic
+506,Title,endArrow=classic,306,210,endArrow=classic
+507,Origin Info,endArrow=classic,306,238,endArrow=classic
+508,Object,endArrow=classic,306,202,endArrow=classic
+509,Collection Component,endArrow=classic,306,239,endArrow=classic
+510,Object,endArrow=classic,307,202,endArrow=classic
+511,Title,endArrow=classic,307,210,endArrow=classic
+512,Change,endArrow=classic,307,233,endArrow=classic
+513,Object Component,endArrow=classic,308,231,endArrow=classic
+514,Place,endArrow=classic,308,203,endArrow=classic
+515,Publication,endArrow=classic,308,237,endArrow=classic
+516,.,endArrow=classic,309,235,endArrow=classic
+517,Publisher,endArrow=classic,309,236,endArrow=classic
+518,.,endArrow=classic,310,235,endArrow=classic
+519,Place,endArrow=classic,310,203,endArrow=classic
+520,Edition,endArrow=classic,311,234,endArrow=classic
+521,Publisher,endArrow=classic,312,236,endArrow=classic
+522,Place,endArrow=classic,312,203,endArrow=classic
+523,Publisher,endArrow=classic,313,236,endArrow=classic
+524,.,endArrow=classic,314,235,endArrow=classic
+525,Edition,endArrow=classic,315,234,endArrow=classic
+526,Publisher,endArrow=classic,315,236,endArrow=classic
+527,Edition,endArrow=classic,316,234,endArrow=classic
+528,Place,endArrow=classic,316,203,endArrow=classic
+529,Object,endArrow=classic,317,202,endArrow=classic
+530,Date,endArrow=classic,318,241,endArrow=classic
+531,Collection Component,endArrow=classic,318,239,endArrow=classic
+532,Name,endArrow=classic,319,212,endArrow=classic
+533,Collection Component,endArrow=classic,319,239,endArrow=classic
+534,Object,endArrow=classic,320,202,endArrow=classic
+535,Collection Component,endArrow=classic,321,239,endArrow=classic
+536,Title Entity,endArrow=classic,321,240,endArrow=classic
+537,Subject,endArrow=classic,322,213,endArrow=classic
+538,Collection Component,endArrow=classic,322,239,endArrow=classic
+539,Object,endArrow=classic,323,202,endArrow=classic
+540,Modification,endArrow=classic,323,242,endArrow=classic
+541,Note,endArrow=classic,323,243,endArrow=classic
+542,Component,endArrow=classic,324,218,endArrow=classic
+543,Modification,endArrow=classic,324,242,endArrow=classic
+544,Note,endArrow=classic,324,243,endArrow=classic
+545,Modification,endArrow=classic,325,242,endArrow=classic
+546,Note,endArrow=classic,325,243,endArrow=classic
+547,Collection,endArrow=classic,325,200,endArrow=classic
+548,Collection Component,endArrow=classic,326,239,endArrow=classic
+549,Unique Identity,endArrow=classic,327,244,endArrow=classic
+550,Collection,endArrow=classic,327,200,endArrow=classic
+551,Record,endArrow=classic,327,245,endArrow=classic
+552,Record,endArrow=classic,328,245,endArrow=classic
+553,Object,endArrow=classic,328,202,endArrow=classic
+554,Unique Identity,endArrow=classic,328,244,endArrow=classic
+555,Object,endArrow=classic,329,202,endArrow=classic
+556,Subject,endArrow=classic,329,213,endArrow=classic
+557,Resource,endArrow=classic,330,251,endArrow=classic
+558,User,endArrow=classic,330,216,endArrow=classic
+559,Dam,endArrow=classic,331,201,endArrow=classic
+560,Resource,endArrow=classic,331,251,endArrow=classic
+561,File,endArrow=classic,332,219,endArrow=classic
+562,File,endArrow=classic,334,219,endArrow=classic
+799,Repository,endArrow=classic,259,230,endArrow=classic
+1388,Content,endArrow=classic,299,254,endArrow=classic
+1462,End,endArrow=classic,330,255,endArrow=classic

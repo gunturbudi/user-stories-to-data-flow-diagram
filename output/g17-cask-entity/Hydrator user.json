@@ -1,0 +1,115 @@
+[
+  {
+    "text": "As a hydrator user, I want to create a pipeline that reads or writes an existing dataset instance.",
+    "entities": [
+      {
+        "text": "hydrator user",
+        "label": "Data"
+      },
+      {
+        "text": "reads",
+        "label": "Processing"
+      },
+      {
+        "text": "writes",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a hydrator user, I want to create a pipeline that reads or writes a new dataset instance and I want to create that dataset instance as part of pipeline creation.",
+    "entities": [
+      {
+        "text": "hydrator user",
+        "label": "Data"
+      },
+      {
+        "text": "reads",
+        "label": "Processing"
+      },
+      {
+        "text": "writes",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a hydrator user, I want to specify an explicit version of the dataset types of the dataset instances created by my pipeline and I expect pipeline creation to fail if that results in incompatible upgrade of an existing dataset instance that is shared with other apps or pipelines.",
+    "entities": [
+      {
+        "text": "hydrator user",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      },
+      {
+        "text": "upgrade",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a hydrator user, I want to explore the datasets created by my pipeline.",
+    "entities": [
+      {
+        "text": "hydrator user",
+        "label": "Data"
+      },
+      {
+        "text": "explore",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a hydrator user, I want to ensure that all dataset instances created by apps are available as sinks and sources for pipelines.",
+    "entities": [
+      {
+        "text": "hydrator user",
+        "label": "Data"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      }
+    ]
+  }
+]

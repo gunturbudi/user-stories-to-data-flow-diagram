@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a content editor, I want to be able to easily find content, so that I can edit it.",
+    "entities": [
+      {
+        "text": "content editor",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a content editor, I want to be able to add videos from Brightcove.",
+    "entities": [
+      {
+        "text": "content editor",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "videos",
+        "label": "PII"
+      }
+    ]
+  }
+]

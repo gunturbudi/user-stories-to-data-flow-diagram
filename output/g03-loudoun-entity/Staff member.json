@@ -1,0 +1,501 @@
+[
+  {
+    "text": "As a Staff member, I want to Perform a Completeness Review, so that I can validate when an application is complete and eligible for further technical review.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Perform",
+        "label": "Processing"
+      },
+      {
+        "text": "Review",
+        "label": "PII"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Record an Internal Note, so that I can share information with other Staff collaborating on the record.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Record",
+        "label": "Processing"
+      },
+      {
+        "text": "Internal Note",
+        "label": "PII"
+      },
+      {
+        "text": "Staff",
+        "label": "Data"
+      },
+      {
+        "text": "collaborating",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Assign an Application for Detailed Review, so that I can review the for compliance and subsequently approved or denied.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Application",
+        "label": "PII"
+      },
+      {
+        "text": "Review",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Apply a Hold, so that I can prevent progression through the workflow or other actions in the system until the issue is resolved.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Apply",
+        "label": "Processing"
+      },
+      {
+        "text": "Hold",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Remove a Hold, so that I can allow progression through the workflow or other actions in the system now that the issue has been resolved.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Remove",
+        "label": "Processing"
+      },
+      {
+        "text": "Hold",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Send a Formal Response to Applicant, so that I can satisfy communication and records responsibilities.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Send",
+        "label": "Processing"
+      },
+      {
+        "text": "Formal Response",
+        "label": "PII"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Track  the Draft Proffers, so that I can preserve the history of draft proffer statements submitted by the Applicant.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Track",
+        "label": "Processing"
+      },
+      {
+        "text": "Draft Proffers",
+        "label": "PII"
+      },
+      {
+        "text": "draft proffer statements",
+        "label": "PII"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Manage Approved Proffers, so that I can ensure compliance with and satisfaction of the proffer in the future.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Approved Proffers",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Manage Ordinances, so that I can maintain accurate ordinance information in the System.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Ordinances",
+        "label": "PII"
+      },
+      {
+        "text": "ordinance information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Schedule a Meeting, so that I can bring the required parties together at a specific date/time to address an issue.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "Meeting",
+        "label": "PII"
+      },
+      {
+        "text": "required parties",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a staff member, I want to denote an application with a Final Action status. So that I can finish it.",
+    "entities": [
+      {
+        "text": "staff member",
+        "label": "Data"
+      },
+      {
+        "text": "denote",
+        "label": "Processing"
+      },
+      {
+        "text": "application",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Perform a Staff Review, so that I can validate compliance of an application with the Zoning Ordinance and impact approval/denial of the application accordingly.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Perform",
+        "label": "Processing"
+      },
+      {
+        "text": "Review",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Develop a Staff Report, so that I can publish and distribute the report according to business rules.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Develop",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Manage Hearing Calendars, so that I can track hearing-related activities and due dates.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Hearing Calendars",
+        "label": "PII"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "due dates",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Assign a Hearing Date, so that I can present the application to the appropriate governing body within the timelines dictated by the relevant County rules and procedures.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Assign",
+        "label": "Processing"
+      },
+      {
+        "text": "Hearing Date",
+        "label": "PII"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      },
+      {
+        "text": "application",
+        "label": "PII"
+      },
+      {
+        "text": "governing body",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Manage Affidavits, so that I can ensure compliance with the requirements prior to the hearing.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Affidavits",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Prepare for and Support Hearing Execution, so that I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Prepare",
+        "label": "Processing"
+      },
+      {
+        "text": "Support",
+        "label": "Processing"
+      },
+      {
+        "text": "pre-hearing requirements",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Capture a Hearing Decision, so that I can enforce the system.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Capture",
+        "label": "Processing"
+      },
+      {
+        "text": "Hearing Decision",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Process the Appeals, so that I can track the outcome and record the impact on the relevant records.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Process",
+        "label": "Processing"
+      },
+      {
+        "text": "Appeals",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Manage Bonds, so that I can track and manage bonds throughout the lifecycle of the project until release.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Manage",
+        "label": "Processing"
+      },
+      {
+        "text": "Bonds",
+        "label": "PII"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "bonds",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I need to be notified when Geospatial attributes change, so that I can ensure that I am reviewing the permit/application to the most current data and appropriate standards.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      },
+      {
+        "text": "Geospatial attributes",
+        "label": "PII"
+      },
+      {
+        "text": "reviewing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to create each condo unit, so that I can associate it to the child parcel and address after the condominiums are recorded in the system.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "condo unit",
+        "label": "PII"
+      },
+      {
+        "text": "child parcel",
+        "label": "PII"
+      },
+      {
+        "text": "address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Send or Post Citations and Fines, so that I can successfully send the Notice Of Violation document to the property owner and log information about the action.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Send",
+        "label": "Processing"
+      },
+      {
+        "text": "Post",
+        "label": "Processing"
+      },
+      {
+        "text": "Citations",
+        "label": "PII"
+      },
+      {
+        "text": "Fines",
+        "label": "PII"
+      },
+      {
+        "text": "Notice Of Violation document",
+        "label": "PII"
+      },
+      {
+        "text": "property owner",
+        "label": "Data"
+      },
+      {
+        "text": "log",
+        "label": "Processing"
+      }
+    ]
+  }
+]

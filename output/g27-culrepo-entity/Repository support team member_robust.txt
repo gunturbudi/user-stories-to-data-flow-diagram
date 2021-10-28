@@ -1,0 +1,70 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Collection" as thingcollection
+	entity "Record" as thingrecord
+	entity "Associated File" as thingassociatedfile
+	entity "Uniform Error" as thinguniformerror
+	entity "Datum" as thingdatum
+	entity "System" as thingsystem
+	actor "Repository ,\nSupport ,\nTeam Member" as actorrepositorysupportteammember
+	circle "Owner" as thingowner #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Alias An\nItem From\nCollection To\nAnother" as controlaliasitem
+	control "Belong To\nBoth Collections" as controlbelongcollection
+	control "The Collection\nOwner Asked\nBoth Collections" as controlaskcollectionownercollectionto
+	control "To" as controlto
+	control "Map" as controlmap
+	control "Export A\nSet Of\nRecords" as controlexportset
+	control "Export A\nSet Of\nAssociated File" as controlexportsetassociatedfile
+	control "Manipulate This\nData" as controlmanipulatedatum
+	control "Reload Into\nThe System" as controlreloadsystem
+	control "Am Aware\nOf A\nUniform Error\nIn A\nCollection" as controlbeuniformerror
+	control "Manipulate" as controlmanipulatereloadsystem
+	control "Move A\nCollection" as controlmovecollection
+	control "Rename A\nCollection" as controlrenamecollection
+
+	thingcollection <.. thingitem
+	thingcollection <.. thinguniformerror
+	thingcollection *-- thingowner
+	actorrepositorysupportteammember --- thingcollectioninterface
+	actorrepositorysupportteammember --- thingrecordinterface
+	actorrepositorysupportteammember --- thingfileinterface
+	actorrepositorysupportteammember --- thingdatuminterface
+	actorrepositorysupportteammember --- thingsysteminterface
+	thingitem --- controlaliasitem
+	thingcollectioninterface --> controlaliasitem
+	thingcollection --- controlaliasitem
+	thingcollection --- controlbelongcollection
+	thingcollectioninterface --> controlbelongcollection
+	thingowner --- controlaskcollectionownercollectionto
+	thingcollection --- controlaskcollectionownercollectionto
+	thingcollectioninterface --> controlaskcollectionownercollectionto
+	controlaskcollectionownercollectionto --> controlto
+	thingcollectioninterface --> controlto
+	thingrecord --- controlexportset
+	thingrecordinterface --> controlexportset
+	thingassociatedfile --- controlexportsetassociatedfile
+	thingfileinterface --> controlexportsetassociatedfile
+	thingdatum --- controlmanipulatedatum
+	thingdatuminterface --> controlmanipulatedatum
+	thingsystem --- controlreloadsystem
+	controlmanipulatereloadsystem --> controlreloadsystem
+	thingsysteminterface --> controlreloadsystem
+	thinguniformerror --- controlbeuniformerror
+	thingcollection --- controlbeuniformerror
+	thingcollectioninterface --> controlbeuniformerror
+	thingsysteminterface --> controlmanipulatereloadsystem
+	thingcollection --- controlmovecollection
+	thingcollectioninterface --> controlmovecollection
+	thingcollection --- controlrenamecollection
+	thingcollectioninterface --> controlrenamecollection
+
+@enduml

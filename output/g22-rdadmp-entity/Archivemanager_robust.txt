@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Advance" as thingadvance
+	entity "Conservation Period" as thingconservationperiod #grey
+	entity "Information" as thinginformation
+	entity "File Format" as thingfileformat #grey
+	actor "Archivemanager" as actorarchivemanager
+	circle "Legal Status" as thinglegalstatus
+	boundary "Detailed Metadata" as thingdetailedmetadataarchivemanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	control "Know The\nLegal Status\nOf Data" as controlknowlegalstatus
+	control "Know In\nAdvance The\nConservation Period\nOf Data" as controlknowadvanceconservationperiod
+	control "Reuse The\nInformation Regarding\nFile Format" as controlreuseinformation
+	control "Associated To\nData" as controlassociatedetailedmetadataarchivemanagerdatum
+
+	thingconservationperiod <.. thingadvance
+	thingdatum <.. thingconservationperiod
+	thingfileformat <.. thinginformation
+	thingdatum *-- thinglegalstatus
+	actorarchivemanager --- thingdetailedmetadataarchivemanager
+	actorarchivemanager --- thingdatuminterface
+	actorarchivemanager --- thingformatinterface
+	thinglegalstatus --- controlknowlegalstatus
+	thingdatum --- controlknowlegalstatus
+	thingdatuminterface --> controlknowlegalstatus
+	thingadvance --- controlknowadvanceconservationperiod
+	thingconservationperiod --- controlknowadvanceconservationperiod
+	thingdatum --- controlknowadvanceconservationperiod
+	thingdatuminterface --> controlknowadvanceconservationperiod
+	thinginformation --- controlreuseinformation
+	thingfileformat --- controlreuseinformation
+	thingformatinterface --> controlreuseinformation
+	thingdetailedmetadataarchivemanager --> controlassociatedetailedmetadataarchivemanagerdatum
+	thingdatum --- controlassociatedetailedmetadataarchivemanagerdatum
+
+@enduml

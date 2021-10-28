@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a repository manager, I need details on the type of data, so that I can check if the archiving can be arranged.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to have metadata in additional languages, so that I can allow for multilingual data archive.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "multilingual",
+        "label": "Processing"
+      }
+    ]
+  }
+]

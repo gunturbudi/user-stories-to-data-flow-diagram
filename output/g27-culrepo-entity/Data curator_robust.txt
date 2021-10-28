@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Item" as thingitem
+	entity "Record" as thingrecord
+	entity "Mechanism" as thingmechanism
+	actor "Data Curator" as actordatacurator
+	circle "New Version" as thingnewversion
+	boundary "Old Version" as thingoldversiondatacurator
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Mechanism\nInterface" as thingmechanisminterface #grey
+	control "Accessed" as controlaccessoldversiondatacurator
+	control "Upload A\nNew Version\nOf An\nItem Has\nChanged Still\nAllowing" as controluploadnewversionaccessoldversiondatacurator
+	control "Stored" as controlstore
+	control "Have A\nMechanism" as controlhavemechanismallowrecord
+	control "Allow For\nRecords For\nItems Not\nDo Need" as controlallowrecord
+
+	thingitem <.. thingrecord
+	thingitem *-- thingnewversion
+	actordatacurator --- thingoldversiondatacurator
+	actordatacurator --- thingiteminterface
+	actordatacurator --- thingmechanisminterface
+	thingoldversiondatacurator --> controlaccessoldversiondatacurator
+	controluploadnewversionaccessoldversiondatacurator --> controlaccessoldversiondatacurator
+	thingnewversion --- controluploadnewversionaccessoldversiondatacurator
+	thingitem --- controluploadnewversionaccessoldversiondatacurator
+	thingiteminterface --> controluploadnewversionaccessoldversiondatacurator
+	controlallowrecord --> controlstore
+	thingiteminterface --> controlstore
+	thingmechanism --- controlhavemechanismallowrecord
+	thingmechanisminterface --> controlhavemechanismallowrecord
+	controlhavemechanismallowrecord --> controlallowrecord
+	thingrecord --- controlallowrecord
+	thingitem --- controlallowrecord
+	thingiteminterface --> controlallowrecord
+
+@enduml

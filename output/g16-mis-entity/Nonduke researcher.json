@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a non-Duke researcher, I want to describe my team and mine's objects in the repository after they've been deposited if we've been assigned permission to edit metadata.",
+    "entities": [
+      {
+        "text": "non-Duke researcher",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "team",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  }
+]

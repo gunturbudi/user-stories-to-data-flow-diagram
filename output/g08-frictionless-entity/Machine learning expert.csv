@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+2,Start using the data in doing analysis.,ellipse,null,null,process
+200,Ml Dataset,shape=partialRectangle,null,null,data_base
+201,"Machine , Learning Expert",rounded=0,null,null,external_entity
+202,Package Ml Datasets As Data Packages,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Ml Dataset,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,2,1001,endArrow=classic

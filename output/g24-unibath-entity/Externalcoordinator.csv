@@ -1,0 +1,16 @@
+id,value,style,source,target,type
+200,Guarantee,shape=partialRectangle,null,null,data_base
+201,Datum,shape=partialRectangle,null,null,data_base
+202,Campus,shape=partialRectangle,null,null,data_base
+203,Ip Right,shape=partialRectangle,null,null,data_base
+204,Bath Collaborator,shape=partialRectangle,null,null,data_base
+205,Externalcoordinator,rounded=0,null,null,external_entity
+206,Have Guarantees Ip Rights Not,ellipse,null,null,process
+207,Access Data From Bath Collaborators Off Campus,ellipse,null,null,process
+209,,endArrow=classic,205,206,endArrow=classic
+210,,endArrow=classic,205,207,endArrow=classic
+211,Guarantee,endArrow=classic,206,200,endArrow=classic
+212,Datum,endArrow=classic,207,201,endArrow=classic
+213,Bath Collaborator,endArrow=classic,207,204,endArrow=classic
+214,Campus,endArrow=classic,207,202,endArrow=classic
+215,Ip Right,endArrow=classic,206,203,endArrow=classic

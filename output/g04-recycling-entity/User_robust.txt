@@ -1,0 +1,277 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Address" as thingaddress
+	entity "Public Information" as thingpublicinformation
+	entity "Zip Code" as thingzipcode #grey
+	entity "Facility" as thingfacility
+	entity "Type" as thingtype
+	entity "Recyclable Waste" as thingrecyclablewaste
+	entity "Profile" as thingprofile
+	entity "Favorite" as thingfavorite
+	entity "Area" as thingarea
+	entity "Site" as thingsite
+	entity "Flexible Pick" as thingflexiblepick
+	entity "Feedback" as thingfeedback
+	entity "Acocunt" as thingacocunt
+	entity "Transaction History" as thingtransactionhistory #grey
+	entity "Great Ui" as thinggreatUI
+	entity "Ux" as thingUX
+	entity "Electronic Device" as thingelectronicdevice
+	entity "Stuff" as thingotherstuff
+	entity "Tempting Reward" as thingtemptingreward
+	entity "Personal Information" as thingpersonalinformation
+	entity "Map" as thingmap
+	entity "Schedule" as thingschedule
+	entity "Week" as thingweek
+	entity "Email Account" as thingemailaccount #grey
+	entity "Administrator" as thingadministrator
+	entity "Facolitie" as thingfacolitie
+	entity "Complaint" as thingcomplaint
+	entity "User" as thinguser
+	entity "Activity" as thingactivity
+	entity "Stat" as thingstat
+	entity "Specific User" as thingspecificuser
+	entity "Information" as thinginformation
+	entity "Material" as thingmaterial
+	entity "Donation Center" as thingdonationcenter
+	entity "Email Id" as thingemailid
+	entity "Waste Drop" as thingwastedrop
+	entity "Recycling Center" as thingrecyclingcenter
+	entity "Recycling Bin" as thingrecyclingbin
+	entity "Disposal Event" as thingdisposalevent
+	entity "Recycling" as thingrecycling #grey
+	entity "Opening" as thingopening #grey
+	entity "Ip" as thingip #grey
+	actor "User" as actoruser
+	actor "Admin" as actoradmin
+	actor "Superuser" as actorsuperuser
+	actor "Recyclingfacility Representative" as actorrecyclingfacilityrepresentative
+	circle "Hour" as thinghour
+	circle "Different Type" as thingdifferenttype
+	circle "Record" as thingrecord
+	circle "Database" as thingdatabase
+	circle "Location" as thinglocation
+	circle "Display" as thingdisplay #grey
+	circle "Documentation" as thingdocumentation #grey
+	circle "Error Log" as thingerrorlog #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Facility\nInterface" as thingfacilityinterface #grey
+	boundary "Waste\nInterface" as thingwasteinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "Id\nInterface" as thingidinterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Pick\nInterface" as thingpickinterface #grey
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	boundary "Acocunt\nInterface" as thingacocuntinterface #grey
+	boundary "History\nInterface" as thinghistoryinterface #grey
+	boundary "Site\nInterface" as thingsiteinterface #grey
+	boundary "Ux\nInterface" as thinguxinterface #grey
+	boundary "Device\nInterface" as thingdeviceinterface #grey
+	boundary "Reward\nInterface" as thingrewardinterface #grey
+	boundary "Map\nInterface" as thingmapinterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	boundary "Administrator\nInterface" as thingadministratorinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Facolitie\nInterface" as thingfacolitieinterface #grey
+	boundary "Complaint\nInterface" as thingcomplaintinterface #grey
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	boundary "Activity\nInterface" as thingactivityinterface #grey
+	boundary "Stat\nInterface" as thingstatinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	control "Click On\nThe Address" as controlclickaddress
+	control "View Public\nInformation" as controlviewpublicinformation
+	control "Enter Zip\nCode" as controlenterzipcode
+	control "Get A\nList Of\nNearby Recycling\nFacilities" as controlgetlist
+	control "Get The\nHours Of\nEach Recycling\nFacility" as controlgethour
+	control "Have Pick\nA" as controlhavepicka
+	control "Select Different\nTypes Of\nRecyclable Waste" as controlselectdifferenttype
+	control "Add Donation\nCenters As\nFavorites On\nProfile" as controladddonationcentersfavorite
+	control "Give Email\nId" as controlgiveemailID
+	control "View A\nMap Display\nOf The\nSpecial Waste\nDrop Off\nSites Around\nArea" as controlviewmapdisplay
+	control "Time Choose\nA Flexible\nPick Up" as controlchooseflexiblepick
+	control "View User\nDocumentation For\nThe Website" as controlviewuserdocumentation
+	control "Get Feedback" as controlgetfeedback
+	control "Enter An\nInvalid Zip\nCode" as controlentergetfeedbackinvalidzipcode
+	control "Create An\nAcocunt" as controlcreateacocunt
+	control "Check Transaction\nHistory" as controlchecktransactionhistory
+	control "Keep A\nRecord Of\nTransaction History" as controlkeeprecord
+	control "Have A\nGreat Ui\nFrom The\nSites" as controlhavegreatUI
+	control "Have Ux" as controlhaveUX
+	control "Access The\nSite" as controlaccesssite
+	control "Do The\nOther Stuffs\nOn All\nOf Electronic\nDevices" as controldootherstuff
+	control "Receive Tempting\nRewards" as controlreceivetemptingreward
+	control "Have" as controlhave
+	control "View All\nLocations Of\nRecycling Centers\nOn A\nMap" as controlviewlocationmap
+	control "Upload Week's\nSchedule" as controluploadschedule
+	control "Link Email\nAccount To\nProfile" as controllinkemailaccountprofile
+	control "Contact The\nAdministrators" as controlcontactadministrator
+	control "View User\nError Logs" as controlviewusererrorlogs
+	control "View The\nCurrently Safe\nDisposal Events\nAround Area" as controlviewsafedisposalevents
+	control "Browse Through\nThe List\nOf Facolities" as controlbrowselist
+	control "Environment See\nWhich Ones" as controlseeone
+	control "Read Complaint" as controlreadcomplaint
+	control "Read Users'\nFeedback" as controlreadfeedback
+	control "Handle All\nUsers' Activities" as controlhandleactivity
+	control "View Users'\nStats" as controlviewstat
+	control "Block Specific\nUsers On\nIp Address" as controlblockspecificuser
+	control "Update Information" as controlupdateinformation
+	control "Update The\nType Of\nMaterial" as controlupdatetype
+
+	thingip <.. thingaddress
+	thingtype <.. thingfacility
+	thingrecycling <.. thingfacility
+	thinghour <.. thingfacility
+	thingmaterial <.. thingtype
+	thingprofile <.. thingfavorite
+	thingarea <.. thingsite
+	thinguser <.. thingfeedback
+	thingsite <.. thinggreatUI
+	thingelectronicdevice <.. thingotherstuff
+	thingwastedrop <.. thingmap
+	thingweek <.. thingschedule
+	thingprofile <.. thingemailaccount
+	thingsite <.. thinguser
+	thinguser <.. thingactivity
+	thinguser <.. thingstat
+	thingaddress <.. thingspecificuser
+	thingfavorite <.. thingdonationcenter
+	thingsite <.. thingwastedrop
+	thingmap <.. thingrecyclingcenter
+	thingarea <.. thingrecyclingbin
+	thingarea <.. thingdisposalevent
+	thingopening *-- thinghour
+	thingfacility *-- thinghour
+	thingrecyclablewaste *-- thingdifferenttype
+	thingtransactionhistory *-- thingrecord
+	thingsite *-- thingdatabase
+	thingrecyclingcenter *-- thinglocation
+	thingwastedrop *-- thingdisplay
+	thingrecyclingbin *-- thingdisplay
+	thingmap *-- thingdisplay
+	thinguser *-- thingdocumentation
+	thingsite *-- thingdocumentation
+	thinguser *-- thingerrorlog
+	actoruser --- thingaddressinterface
+	actoradmin --- thingaddressinterface
+	actoruser --- thinginformationinterface
+	actorrecyclingfacilityrepresentative --- thinginformationinterface
+	actoruser --- thingcodeinterface
+	actoruser --- thingfacilityinterface
+	actoruser --- thingwasteinterface
+	actoruser --- thingprofileinterface
+	actoruser --- thingidinterface
+	actoruser --- thingareainterface
+	actoruser --- thingpickinterface
+	actoruser --- thingwebsiteinterface
+	actoruser --- thingacocuntinterface
+	actoruser --- thinghistoryinterface
+	actoruser --- thingsiteinterface
+	actoruser --- thinguxinterface
+	actoruser --- thingdeviceinterface
+	actoruser --- thingrewardinterface
+	actoruser --- thingmapinterface
+	actoruser --- thingscheduleinterface
+	actoruser --- thingadministratorinterface
+	actoradmin --- thinguserinterface
+	actoruser --- thingfacolitieinterface
+	actoradmin --- thingcomplaintinterface
+	actoradmin --- thingfeedbackinterface
+	actoradmin --- thingactivityinterface
+	actorsuperuser --- thingstatinterface
+	actorrecyclingfacilityrepresentative --- thingmaterialinterface
+	thingaddress --- controlclickaddress
+	thingaddressinterface --> controlclickaddress
+	thingpublicinformation --- controlviewpublicinformation
+	thinginformationinterface --> controlviewpublicinformation
+	thingzipcode --- controlenterzipcode
+	thingcodeinterface --> controlenterzipcode
+	thingfacilityinterface --> controlgetlist
+	thingfacility --- controlgetlist
+	thinghour --- controlgethour
+	thingfacilityinterface --> controlgethour
+	thingfacility --- controlgethour
+	thingdifferenttype --- controlselectdifferenttype
+	thingrecyclablewaste --- controlselectdifferenttype
+	thingwasteinterface --> controlselectdifferenttype
+	thingdonationcenter --- controladddonationcentersfavorite
+	thingfavorite --- controladddonationcentersfavorite
+	thingprofile --- controladddonationcentersfavorite
+	thingprofileinterface --> controladddonationcentersfavorite
+	thingemailid --- controlgiveemailID
+	thingidinterface --> controlgiveemailID
+	thingdisplay --- controlviewmapdisplay
+	thingwastedrop --- controlviewmapdisplay
+	thingsite --- controlviewmapdisplay
+	thingarea --- controlviewmapdisplay
+	thingareainterface --> controlviewmapdisplay
+	thingrecyclingbin --- controlviewmapdisplay
+	thingflexiblepick --- controlchooseflexiblepick
+	thingpickinterface --> controlchooseflexiblepick
+	thingdocumentation --- controlviewuserdocumentation
+	thingwebsiteinterface --> controlviewuserdocumentation
+	thingsite --- controlviewuserdocumentation
+	thingfeedback --- controlgetfeedback
+	controlentergetfeedbackinvalidzipcode --> controlgetfeedback
+	thingcodeinterface --> controlgetfeedback
+	thingzipcode --- controlentergetfeedbackinvalidzipcode
+	thingcodeinterface --> controlentergetfeedbackinvalidzipcode
+	thingacocunt --- controlcreateacocunt
+	thingacocuntinterface --> controlcreateacocunt
+	thingtransactionhistory --- controlchecktransactionhistory
+	thinghistoryinterface --> controlchecktransactionhistory
+	thingrecord --- controlkeeprecord
+	thingtransactionhistory --- controlkeeprecord
+	thinghistoryinterface --> controlkeeprecord
+	thinggreatUI --- controlhavegreatUI
+	thingsiteinterface --> controlhavegreatUI
+	thingsite --- controlhavegreatUI
+	thingUX --- controlhaveUX
+	thinguxinterface --> controlhaveUX
+	thingsite --- controlaccesssite
+	thingsiteinterface --> controlaccesssite
+	thingotherstuff --- controldootherstuff
+	thingelectronicdevice --- controldootherstuff
+	thingdeviceinterface --> controldootherstuff
+	thingtemptingreward --- controlreceivetemptingreward
+	thingrewardinterface --> controlreceivetemptingreward
+	thinglocation --- controlviewlocationmap
+	thingrecyclingcenter --- controlviewlocationmap
+	thingmap --- controlviewlocationmap
+	thingmapinterface --> controlviewlocationmap
+	thingschedule --- controluploadschedule
+	thingscheduleinterface --> controluploadschedule
+	thingemailaccount --- controllinkemailaccountprofile
+	thingprofile --- controllinkemailaccountprofile
+	thingprofileinterface --> controllinkemailaccountprofile
+	thingadministrator --- controlcontactadministrator
+	thingadministratorinterface --> controlcontactadministrator
+	thingerrorlog --- controlviewusererrorlogs
+	thinguserinterface --> controlviewusererrorlogs
+	thingdisposalevent --- controlviewsafedisposalevents
+	thingarea --- controlviewsafedisposalevents
+	thingareainterface --> controlviewsafedisposalevents
+	thingfacolitie --- controlbrowselist
+	thingfacolitieinterface --> controlbrowselist
+	thingcomplaint --- controlreadcomplaint
+	thingcomplaintinterface --> controlreadcomplaint
+	thingfeedbackinterface --> controlreadfeedback
+	thingfeedback --- controlreadfeedback
+	thingactivity --- controlhandleactivity
+	thingactivityinterface --> controlhandleactivity
+	thingstat --- controlviewstat
+	thingstatinterface --> controlviewstat
+	thingspecificuser --- controlblockspecificuser
+	thingaddressinterface --> controlblockspecificuser
+	thingaddress --- controlblockspecificuser
+	thinginformation --- controlupdateinformation
+	thinginformationinterface --> controlupdateinformation
+	thingmaterial --- controlupdatetype
+	thingmaterialinterface --> controlupdatetype
+	thingtype --- controlupdatetype
+
+@enduml

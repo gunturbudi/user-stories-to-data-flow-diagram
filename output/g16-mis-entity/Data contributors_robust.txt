@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sla" as thingSLA
+	entity "Server" as thingserver
+	entity "Data Contributor" as thingdatacontributor
+	actor "Repoadmin" as actorrepoadmin
+	boundary "Contributor\nInterface" as thingcontributorinterface #grey
+	boundary "Sla\nInterface" as thingslainterface #grey
+	control "Provide The\nServer To\nData Contributors" as controlprovideserverdatacontributors
+	control "Provide Sla" as controlprovideSLA
+
+	thingdatacontributor <.. thingserver
+	actorrepoadmin --- thingcontributorinterface
+	actorrepoadmin --- thingslainterface
+	thingserver --- controlprovideserverdatacontributors
+	thingdatacontributor --- controlprovideserverdatacontributors
+	thingcontributorinterface --> controlprovideserverdatacontributors
+	thingSLA --- controlprovideSLA
+	thingslainterface --> controlprovideSLA
+
+@enduml

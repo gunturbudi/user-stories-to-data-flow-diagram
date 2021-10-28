@@ -1,0 +1,192 @@
+[
+  {
+    "text": "As a authenticateduser, I want to find a link on the sponsorships page to become a $350 level sponsor, so that I can pay for and become a sponsor role.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, so that I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to See a payment page to pay for my individual sponsorships as the third step of the registration process so that pay for my sponsorship.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "See",
+        "label": "Processing"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      },
+      {
+        "text": "individual sponsorships",
+        "label": "PII"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsorship",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship, so that I can pay for an individual sponsorship.",
+    "entities": [
+      {
+        "text": "authenticateduser",
+        "label": "Data"
+      },
+      {
+        "text": "Enter",
+        "label": "Processing"
+      },
+      {
+        "text": "payment information",
+        "label": "PII"
+      },
+      {
+        "text": "card",
+        "label": "PII"
+      },
+      {
+        "text": "individual sponsorship",
+        "label": "PII"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to update my user profile, so that I can connect with other Drupalists at BADCamp.",
+    "entities": [
+      {
+        "text": "authenticateduser",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "user profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to use a WYSIWYG editor for all long-form content, so that I don't have to know HTML to update my content.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "long-form content",
+        "label": "PII"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to view the job board, so that I can look for an interesting Drupal gig!.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to edit my session, so that if I make a mistake, I can correct it.",
+    "entities": [
+      {
+        "text": "authenticateduser",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "session",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to submit a session at BADCAMP, so that I can get my session evaluated.",
+    "entities": [
+      {
+        "text": "authenticateduser",
+        "label": "Data"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "session",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a authenticateduser, I want to Be offered several choices of idividual sponsorship on the second page of registration, so that I can be awesome and financially support the camp.",
+    "entities": [
+      {
+        "text": "authenticateduser,",
+        "label": "Data"
+      },
+      {
+        "text": "idividual sponsorship",
+        "label": "PII"
+      }
+    ]
+  }
+]

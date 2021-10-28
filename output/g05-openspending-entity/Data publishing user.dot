@@ -1,0 +1,114 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dataset " color=red];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Data Source " color=red];
+203 [label="<f0>  |<f1> Constant " ];
+204 [label="<f0>  |<f1> Packager " ];
+205 [label="<f0>  |<f1> Excel " ];
+206 [label="<f0>  |<f1> Map " ];
+207 [label="<f0>  |<f1> Json " color=red];
+208 [label="<f0>  |<f1> Google Spreadsheet " ];
+209 [label="<f0>  |<f1> Geojson ,\nAdditional Source " ];
+210 [label="<f0>  |<f1> Platform Administrator " ];
+211 [label="<f0>  |<f1> Hide State " ];
+212 [label="<f0>  |<f1> View " ];
+213 [label="<f0>  |<f1> Csv File " color=red];
+214 [label="<f0>  |<f1> Python Client " ];
+215 [label="Datum , Publishing User" shape=box];
+216 [label="{<f0> 1.0|<f1> Edit A Dataset }" shape=Mrecord];
+217 [label="{<f0> 2.0|<f1> Edit The Model Of Data }" shape=Mrecord];
+218 [label="{<f0> 3.0|<f1> Delete A Dataset }" shape=Mrecord];
+219 [label="{<f0> 4.0|<f1> Edit The Data Source Of Data }" shape=Mrecord];
+220 [label="{<f0> 5.0|<f1> Have The Packager Constants }" shape=Mrecord];
+221 [label="{<f0> 6.0|<f1> Import Data In Excel }" shape=Mrecord];
+222 [label="{<f0> 7.0|<f1> Visualised On A Map }" shape=Mrecord];
+223 [label="{<f0> 8.0|<f1> Know }" shape=Mrecord];
+224 [label="{<f0> 9.0|<f1> Import Data In Json }" shape=Mrecord];
+225 [label="{<f0> 10.0|<f1> Import Data From A Google Spreadsheet }" shape=Mrecord];
+226 [label="{<f0> 11.0|<f1> Import Data From }" shape=Mrecord];
+227 [label="{<f0> 12.0|<f1> Provide The Platform Administrator With Geojson, Additional Sources }" shape=Mrecord];
+228 [label="{<f0> 13.0|<f1> Have Dataset }" shape=Mrecord];
+229 [label="{<f0> 14.0|<f1> Add A Dataset In A Hidden State }" shape=Mrecord];
+230 [label="{<f0> 15.0|<f1> Hide A Dataset }" shape=Mrecord];
+231 [label="{<f0> 16.0|<f1> Have A View On The Datasets }" shape=Mrecord];
+232 [label="{<f0> 17.0|<f1> Have A Functioning Python Client }" shape=Mrecord];
+233 [label="{<f0> 18.0|<f1> Know Csv File Valid }" shape=Mrecord];
+19 [label="{<f0> 19.0|<f1> Make enhancements in the api built for my data. }" shape=Mrecord];
+1000 [label="Data publishing user" shape=box];
+1000 -> 19
+1002 [label="<f0>  |<f1> Data " color=red];
+19 -> 1002 [label="Data"]
+20 [label="{<f0> 20.0|<f1> Make enhancements in the api built for my data. }" shape=Mrecord];
+1004 [label="Data publishing user" shape=box];
+1004 -> 20
+1006 [label="<f0>  |<f1> Data " color=red];
+20 -> 1006 [label="Data"]
+21 [label="{<f0> 21.0|<f1> Improve the map-based visualisations of my data. }" shape=Mrecord];
+1008 [label="Data publishing user" shape=box];
+1008 -> 21
+1010 [label="<f0>  |<f1> Data " color=red];
+21 -> 1010 [label="Data"]
+22 [label="{<f0> 22.0|<f1> Work on a dataset before having it discoverable via openspending user interfaces. }" shape=Mrecord];
+1012 [label="Data publishing user" shape=box];
+1012 -> 22
+22 -> 200  [label="Dataset"]
+23 [label="{<f0> 23.0|<f1> Fix my mistakes or have a dataset primarily for my own use. }" shape=Mrecord];
+1015 [label="Data publishing user" shape=box];
+1015 -> 23
+1017 [label="<f0>  |<f1> Mistakes " color=red];
+23 -> 1017 [label="Mistakes"]
+23 -> 200  [label="Dataset"]
+24 [label="{<f0> 24.0|<f1> Perform management actions on my own datasets. }" shape=Mrecord];
+1020 [label="Data publishing user" shape=box];
+1020 -> 24
+1022 [label="<f0>  |<f1> Datasets " color=red];
+24 -> 1022 [label="Datasets"]
+25 [label="{<f0> 25.0|<f1> Fix possible data issues before publishing it on open spending. }" shape=Mrecord];
+1024 [label="Data publishing user" shape=box];
+1024 -> 25
+1026 [label="<f0>  |<f1> Data issues " color=red];
+25 -> 1026 [label="Data issues"]
+215 -> 216
+215 -> 217
+215 -> 218
+215 -> 219
+215 -> 220
+215 -> 221
+215 -> 222
+215 -> 224
+215 -> 225
+215 -> 226
+215 -> 227
+215 -> 228
+215 -> 229
+215 -> 230
+215 -> 231
+215 -> 232
+215 -> 233
+216 -> 200 [label="Dataset"]
+217 -> 201 [label="Datum"]
+218 -> 200 [label="Dataset"]
+219 -> 202 [label="Data Source"]
+219 -> 201 [label="Datum"]
+220 -> 204 [label="Packager"]
+220 -> 203 [label="Constant"]
+221 -> 205 [label="Excel"]
+221 -> 201 [label="Datum"]
+222 -> 206 [label="Map"]
+224 -> 207 [label="Json"]
+224 -> 201 [label="Datum"]
+225 -> 208 [label="Google Spreadsheet"]
+225 -> 201 [label="Datum"]
+226 -> 201 [label="Datum"]
+227 -> 210 [label="Platform Administrator"]
+227 -> 209 [label="Geojson ,\nAdditional Source"]
+228 -> 200 [label="Dataset"]
+229 -> 211 [label="Hide State"]
+229 -> 200 [label="Dataset"]
+230 -> 200 [label="Dataset"]
+231 -> 212 [label="View"]
+231 -> 200 [label="Dataset"]
+232 -> 214 [label="Python Client"]
+233 -> 213 [label="Csv File"]
+}

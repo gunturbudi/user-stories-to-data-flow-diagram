@@ -1,0 +1,6 @@
+id,value,style,source,target,type
+200,Assigned Kid,shape=partialRectangle,null,null,data_base
+201,Camp Counselor,rounded=0,null,null,external_entity
+202,Take Attendance Of Assigned Kids,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Assigned Kid,endArrow=classic,202,200,endArrow=classic

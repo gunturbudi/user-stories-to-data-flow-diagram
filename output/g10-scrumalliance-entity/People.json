@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "move",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "proof of payment",
+        "label": "PII"
+      }
+    ]
+  }
+]

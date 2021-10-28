@@ -1,0 +1,226 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Address " color=red];
+201 [label="<f0>  |<f1> Public Information " color=red];
+202 [label="<f0>  |<f1> Zip Code " color=red];
+203 [label="<f0>  |<f1> Facility " ];
+204 [label="<f0>  |<f1> Type " ];
+205 [label="<f0>  |<f1> Recyclable Waste " color=red];
+206 [label="<f0>  |<f1> Profile " color=red];
+207 [label="<f0>  |<f1> Favorite " color=red];
+208 [label="<f0>  |<f1> Area " color=red];
+209 [label="<f0>  |<f1> Site " color=red];
+210 [label="<f0>  |<f1> Flexible Pick " ];
+211 [label="<f0>  |<f1> Feedback " color=red];
+212 [label="<f0>  |<f1> Acocunt " color=red];
+213 [label="<f0>  |<f1> Transaction History " color=red];
+214 [label="<f0>  |<f1> Great Ui " ];
+215 [label="<f0>  |<f1> Ux " ];
+216 [label="<f0>  |<f1> Electronic Device " color=red];
+217 [label="<f0>  |<f1> Stuff " ];
+218 [label="<f0>  |<f1> Tempting Reward " ];
+219 [label="<f0>  |<f1> Personal Information " color=red];
+220 [label="<f0>  |<f1> Map " ];
+221 [label="<f0>  |<f1> Schedule " color=red];
+222 [label="<f0>  |<f1> Week " color=red];
+223 [label="<f0>  |<f1> Email Account " color=red];
+224 [label="<f0>  |<f1> Administrator " ];
+225 [label="<f0>  |<f1> Facolitie " ];
+226 [label="<f0>  |<f1> Complaint " color=red];
+227 [label="<f0>  |<f1> User " color=red];
+228 [label="<f0>  |<f1> Activity " color=red];
+229 [label="<f0>  |<f1> Stat " color=red];
+230 [label="<f0>  |<f1> Specific User " ];
+231 [label="<f0>  |<f1> Information " color=red];
+232 [label="<f0>  |<f1> Material " ];
+233 [label="<f0>  |<f1> Donation Center " ];
+234 [label="<f0>  |<f1> Email Id " color=red];
+235 [label="<f0>  |<f1> Waste Drop " color=red];
+236 [label="<f0>  |<f1> Recycling Center " ];
+237 [label="<f0>  |<f1> Recycling Bin " ];
+238 [label="<f0>  |<f1> Disposal Event " ];
+239 [label="<f0>  |<f1> Recycling " ];
+240 [label="<f0>  |<f1> Opening " color=red];
+241 [label="<f0>  |<f1> Ip " color=red];
+242 [label="User" shape=box];
+243 [label="Admin" shape=box];
+244 [label="Superuser" shape=box];
+245 [label="Recyclingfacility Representative" shape=box];
+246 [label="{<f0> 1.0|<f1> Click On The Address }" shape=Mrecord];
+247 [label="{<f0> 2.0|<f1> View Public Information }" shape=Mrecord];
+248 [label="{<f0> 3.0|<f1> Enter Zip Code }" shape=Mrecord];
+249 [label="{<f0> 4.0|<f1> Get A List Of Nearby Recycling Facilities }" shape=Mrecord];
+250 [label="{<f0> 5.0|<f1> Get The Hours Of Each Recycling Facility }" shape=Mrecord];
+251 [label="{<f0> 6.0|<f1> Have Pick A }" shape=Mrecord];
+252 [label="{<f0> 7.0|<f1> Select Different Types Of Recyclable Waste }" shape=Mrecord];
+253 [label="{<f0> 8.0|<f1> Add Donation Centers As Favorites On Profile }" shape=Mrecord];
+254 [label="{<f0> 9.0|<f1> Give Email Id }" shape=Mrecord];
+255 [label="{<f0> 10.0|<f1> View A Map Display Of The Special Waste Drop Off Sites Around Area }" shape=Mrecord];
+256 [label="{<f0> 11.0|<f1> Time Choose A Flexible Pick Up }" shape=Mrecord];
+257 [label="{<f0> 12.0|<f1> View User Documentation For The Website }" shape=Mrecord];
+258 [label="{<f0> 13.0|<f1> Get Feedback }" shape=Mrecord];
+259 [label="{<f0> 14.0|<f1> Enter An Invalid Zip Code }" shape=Mrecord];
+260 [label="{<f0> 15.0|<f1> Create An Acocunt }" shape=Mrecord];
+261 [label="{<f0> 16.0|<f1> Check Transaction History }" shape=Mrecord];
+262 [label="{<f0> 17.0|<f1> Keep A Record Of Transaction History }" shape=Mrecord];
+263 [label="{<f0> 18.0|<f1> Have A Great Ui From The Sites }" shape=Mrecord];
+264 [label="{<f0> 19.0|<f1> Have Ux }" shape=Mrecord];
+265 [label="{<f0> 20.0|<f1> Access The Site }" shape=Mrecord];
+266 [label="{<f0> 21.0|<f1> Do The Other Stuffs On All Of Electronic Devices }" shape=Mrecord];
+267 [label="{<f0> 22.0|<f1> Receive Tempting Rewards }" shape=Mrecord];
+268 [label="{<f0> 23.0|<f1> Have }" shape=Mrecord];
+269 [label="{<f0> 24.0|<f1> View All Locations Of Recycling Centers On A Map }" shape=Mrecord];
+270 [label="{<f0> 25.0|<f1> Upload Week's Schedule }" shape=Mrecord];
+271 [label="{<f0> 26.0|<f1> Link Email Account To Profile }" shape=Mrecord];
+272 [label="{<f0> 27.0|<f1> Contact The Administrators }" shape=Mrecord];
+273 [label="{<f0> 28.0|<f1> View User Error Logs }" shape=Mrecord];
+274 [label="{<f0> 29.0|<f1> View The Currently Safe Disposal Events Around Area }" shape=Mrecord];
+275 [label="{<f0> 30.0|<f1> Browse Through The List Of Facolities }" shape=Mrecord];
+276 [label="{<f0> 31.0|<f1> Environment See Which Ones }" shape=Mrecord];
+277 [label="{<f0> 32.0|<f1> Read Complaint }" shape=Mrecord];
+278 [label="{<f0> 33.0|<f1> Read Users' Feedback }" shape=Mrecord];
+279 [label="{<f0> 34.0|<f1> Handle All Users' Activities }" shape=Mrecord];
+280 [label="{<f0> 35.0|<f1> View Users' Stats }" shape=Mrecord];
+281 [label="{<f0> 36.0|<f1> Block Specific Users On Ip Address }" shape=Mrecord];
+282 [label="{<f0> 37.0|<f1> Update Information }" shape=Mrecord];
+283 [label="{<f0> 38.0|<f1> Update The Type Of Material }" shape=Mrecord];
+39 [label="{<f0> 39.0|<f1> Arrange drop-offs on my off days or during after-work hours. }" shape=Mrecord];
+250 -> 39
+1001 [label="User" shape=box];
+1001 -> 39
+1003 [label="User" shape=box];
+1003 -> 39
+1005 [label="User" shape=box];
+1005 -> 39
+1007 [label="<f0>  |<f1> Off days " color=red];
+39 -> 1007 [label="Off days"]
+40 [label="{<f0> 40.0|<f1> Receive notifications for new events as they are posted. }" shape=Mrecord];
+242 -> 40
+1010 [label="User" shape=box];
+1010 -> 40
+1012 [label="User" shape=box];
+1012 -> 40
+1014 [label="User" shape=box];
+1014 -> 40
+1016 [label="<f0>  |<f1> Events " color=red];
+40 -> 1016 [label="Events"]
+41 [label="{<f0> 41.0|<f1> Create my own profile. }" shape=Mrecord];
+260 -> 41
+1019 [label="User" shape=box];
+1019 -> 41
+1021 [label="User" shape=box];
+1021 -> 41
+1023 [label="User" shape=box];
+1023 -> 41
+1025 [label="<f0>  |<f1> Own profile " color=red];
+41 -> 1025 [label="Own profile"]
+42 [label="{<f0> 42.0|<f1> Ask for help. }" shape=Mrecord];
+272 -> 42
+1028 [label="User" shape=box];
+1028 -> 42
+1030 [label="User" shape=box];
+1030 -> 42
+1032 [label="User" shape=box];
+1032 -> 42
+42 -> 211  [label="Feedback"]
+43 [label="{<f0> 43.0|<f1> Review any issues that are being faced by users of the system. }" shape=Mrecord];
+1035 [label="Admin," shape=box];
+1035 -> 43
+273 -> 43
+1038 [label="Admin," shape=box];
+1038 -> 43
+1040 [label="Admin," shape=box];
+1040 -> 43
+1042 [label="<f0>  |<f1> Issues " color=red];
+43 -> 1042 [label="Issues"]
+242 -> 246
+242 -> 247
+242 -> 248
+242 -> 249
+242 -> 250
+242 -> 252
+242 -> 253
+242 -> 254
+242 -> 255
+242 -> 256
+242 -> 257
+242 -> 258
+242 -> 259
+242 -> 260
+242 -> 261
+242 -> 262
+242 -> 263
+242 -> 264
+242 -> 265
+242 -> 266
+242 -> 267
+242 -> 269
+242 -> 270
+242 -> 271
+242 -> 272
+242 -> 274
+242 -> 275
+242 -> 281
+242 -> 282
+243 -> 246
+243 -> 273
+243 -> 277
+243 -> 278
+243 -> 279
+243 -> 281
+244 -> 280
+245 -> 247
+245 -> 282
+245 -> 283
+246 -> 200 [label="Address"]
+247 -> 201 [label="Public Information"]
+248 -> 202 [label="Zip Code"]
+249 -> 203 [label="Facility"]
+250 -> 203 [label="Facility"]
+252 -> 205 [label="Recyclable Waste"]
+253 -> 233 [label="Donation Center"]
+253 -> 207 [label="Favorite"]
+253 -> 206 [label="Profile"]
+254 -> 234 [label="Email Id"]
+255 -> 235 [label="Waste Drop"]
+255 -> 209 [label="Site"]
+255 -> 208 [label="Area"]
+255 -> 237 [label="Recycling Bin"]
+256 -> 210 [label="Flexible Pick"]
+257 -> 209 [label="Site"]
+258 -> 211 [label="Feedback"]
+259 -> 258
+259 -> 202 [label="Zip Code"]
+260 -> 212 [label="Acocunt"]
+261 -> 213 [label="Transaction History"]
+262 -> 213 [label="Transaction History"]
+263 -> 214 [label="Great Ui"]
+263 -> 209 [label="Site"]
+264 -> 215 [label="Ux"]
+265 -> 209 [label="Site"]
+266 -> 217 [label="Stuff"]
+266 -> 216 [label="Electronic Device"]
+267 -> 218 [label="Tempting Reward"]
+269 -> 236 [label="Recycling Center"]
+269 -> 220 [label="Map"]
+270 -> 221 [label="Schedule"]
+271 -> 223 [label="Email Account"]
+271 -> 206 [label="Profile"]
+272 -> 224 [label="Administrator"]
+274 -> 238 [label="Disposal Event"]
+274 -> 208 [label="Area"]
+275 -> 225 [label="Facolitie"]
+277 -> 226 [label="Complaint"]
+278 -> 211 [label="Feedback"]
+279 -> 228 [label="Activity"]
+280 -> 229 [label="Stat"]
+281 -> 230 [label="Specific User"]
+281 -> 200 [label="Address"]
+282 -> 231 [label="Information"]
+283 -> 232 [label="Material"]
+283 -> 204 [label="Type"]
+270 -> 222 [label="Week"]
+257 -> 227 [label="User"]
+249 -> 239 [label="Recycling"]
+248 -> 241 [label="Ip"]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "As a fundingbody, I want to be reassured that researchers I fund have robust archival plans for their data, so that I can be sure that funding them is a worthwhile investment.",
+    "entities": [
+      {
+        "text": "fundingbody,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "fund",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a fundingbody, I want to harvest metadata on outputs from research I fund, so that I can analyse effectiveness of funding strategy and I can encourage cross fertilisation of research outputs.",
+    "entities": [
+      {
+        "text": "fundingbody",
+        "label": "Data"
+      },
+      {
+        "text": "harvest",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "fund",
+        "label": "Processing"
+      }
+    ]
+  }
+]

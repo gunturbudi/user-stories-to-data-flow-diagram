@@ -1,0 +1,119 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> App " color=red];
+201 [label="<f0>  |<f1> Type " color=red];
+202 [label="<f0>  |<f1> Option " ];
+203 [label="<f0>  |<f1> Runtime " ];
+204 [label="<f0>  |<f1> Dataset Type " color=red];
+205 [label="<f0>  |<f1> Archetype " ];
+206 [label="<f0>  |<f1> Interface " ];
+207 [label="<f0>  |<f1> Explicit Version " ];
+208 [label="<f0>  |<f1> Instance " color=red];
+209 [label="<f0>  |<f1> Upgrade Step " ];
+210 [label="<f0>  |<f1> Upgrade " ];
+211 [label="<f0>  |<f1> Way " ];
+212 [label="<f0>  |<f1> Procedure " ];
+213 [label="<f0>  |<f1> Compaction " ];
+214 [label="<f0>  |<f1> Administrative ,\nCustom Operation " ];
+215 [label="<f0>  |<f1> Dataset " color=red];
+216 [label="<f0>  |<f1> Migration " ];
+217 [label="Dataset Developer" shape=box];
+218 [label="{<f0> 1.0|<f1> Deploy A Independent Dataset Type From Any App }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> Allow }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Create Dataset Instances Of That Type }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Use Dataset Instances Of That Type }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Have The Dataset Code At Runtime }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> Have The Option }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Forcing }" shape=Mrecord];
+225 [label="{<f0> 8.0|<f1> Have An Archetype Helps Properly Package Dataset Type }" shape=Mrecord];
+226 [label="{<f0> 9.0|<f1> Separate The Interface From The Implementation Of A Dataset Type }" shape=Mrecord];
+227 [label="{<f0> 10.0|<f1> Assign Explicit Versions To The Code Of A Dataset Type }" shape=Mrecord];
+228 [label="{<f0> 11.0|<f1> Deploy A New Version Of A Dataset Type }" shape=Mrecord];
+229 [label="{<f0> 12.0|<f1> Affecting The Dataset Instances Of That Type }" shape=Mrecord];
+230 [label="{<f0> 13.0|<f1> Explore A Dataset Instance From A Dataset Type A Type Deployed }" shape=Mrecord];
+231 [label="{<f0> 14.0|<f1> Fail }" shape=Mrecord];
+232 [label="{<f0> 15.0|<f1> Delete Outdated Versions Of A Dataset Type }" shape=Mrecord];
+233 [label="{<f0> 16.0|<f1> List All Dataset Instances Use A Dataset Type }" shape=Mrecord];
+234 [label="{<f0> 17.0|<f1> List All Instances Use A Specific Version Of A Type }" shape=Mrecord];
+235 [label="{<f0> 18.0|<f1> Implementing An Upgrade Step A Dataset Instance When Upgraded To A New Version Of The Dataset Type }" shape=Mrecord];
+236 [label="{<f0> 19.0|<f1> Have A Way }" shape=Mrecord];
+237 [label="{<f0> 20.0|<f1> Reject An Upgrade Of A Dataset Instance To A Newer Version Of }" shape=Mrecord];
+238 [label="{<f0> 21.0|<f1> Implementing A Migration Procedure Run After An Upgrade Of A Dataset Instance To A New Version Of }" shape=Mrecord];
+239 [label="{<f0> 22.0|<f1> Implementing A Procedure Run After An Upgrade Of A Instance To A New Version Of Type }" shape=Mrecord];
+240 [label="{<f0> 23.0|<f1> Implement Administrative, Custom Operations Such As }" shape=Mrecord];
+241 [label="{<f0> 24.0|<f1> Rebalance }" shape=Mrecord];
+242 [label="{<f0> 25.0|<f1> Implement Administrative, Custom Operations Such As Compaction }" shape=Mrecord];
+217 -> 218
+217 -> 219
+217 -> 220
+217 -> 221
+217 -> 222
+217 -> 223
+217 -> 224
+217 -> 225
+217 -> 226
+217 -> 227
+217 -> 228
+217 -> 229
+217 -> 230
+217 -> 232
+217 -> 233
+217 -> 234
+217 -> 235
+217 -> 236
+217 -> 237
+217 -> 238
+217 -> 239
+217 -> 240
+217 -> 241
+217 -> 242
+218 -> 200 [label="App"]
+218 -> 201 [label="Type"]
+219 -> 220
+219 -> 221
+220 -> 201 [label="Type"]
+221 -> 201 [label="Type"]
+222 -> 203 [label="Runtime"]
+223 -> 202 [label="Option"]
+224 -> 222
+224 -> 223
+225 -> 205 [label="Archetype"]
+225 -> 201 [label="Type"]
+226 -> 206 [label="Interface"]
+226 -> 201 [label="Type"]
+227 -> 207 [label="Explicit Version"]
+227 -> 201 [label="Type"]
+228 -> 201 [label="Type"]
+229 -> 228
+229 -> 201 [label="Type"]
+230 -> 208 [label="Instance"]
+230 -> 201 [label="Type"]
+232 -> 204 [label="Dataset Type"]
+233 -> 204 [label="Dataset Type"]
+233 -> 208 [label="Instance"]
+234 -> 208 [label="Instance"]
+234 -> 201 [label="Type"]
+235 -> 223
+235 -> 209 [label="Upgrade Step"]
+235 -> 208 [label="Instance"]
+235 -> 201 [label="Type"]
+236 -> 237
+236 -> 211 [label="Way"]
+237 -> 210 [label="Upgrade"]
+237 -> 208 [label="Instance"]
+238 -> 223
+238 -> 208 [label="Instance"]
+238 -> 210 [label="Upgrade"]
+238 -> 212 [label="Procedure"]
+239 -> 223
+239 -> 212 [label="Procedure"]
+239 -> 201 [label="Type"]
+239 -> 208 [label="Instance"]
+239 -> 210 [label="Upgrade"]
+240 -> 241
+240 -> 214 [label="Administrative ,\nCustom Operation"]
+242 -> 214 [label="Administrative ,\nCustom Operation"]
+242 -> 213 [label="Compaction"]
+218 -> 215 [label="Dataset"]
+238 -> 216 [label="Migration"]
+}

@@ -1,0 +1,124 @@
+id,value,style,source,target,type
+19,Monitor the users’ state of health but also have some fun time.,ellipse,null,null,process
+200,User,shape=partialRectangle,null,null,data_base
+201,Hearing,shape=partialRectangle,null,null,data_base
+202,Device,shape=partialRectangle,null,null,data_base
+203,Trouble,shape=partialRectangle,null,null,data_base
+204,Visual,shape=partialRectangle,null,null,data_base
+205,Visual Trouble,shape=partialRectangle,null,null,data_base
+206,Access,shape=partialRectangle,null,null,data_base
+207,Datum,shape=partialRectangle,null,null,data_base
+208,Blood Pressure,shape=partialRectangle,null,null,data_base
+209,Alfred,shape=partialRectangle,null,null,data_base
+210,Body Temperature,shape=partialRectangle,null,null,data_base
+211,Heart Rate,shape=partialRectangle,null,null,data_base
+212,Breathing Frequency,shape=partialRectangle,null,null,data_base
+213,Regular Summary,shape=partialRectangle,null,null,data_base
+214,Exercise,shape=partialRectangle,null,null,data_base
+215,Carer,shape=partialRectangle,null,null,data_base
+216,Game,shape=partialRectangle,null,null,data_base
+217,Corrective Feedback,shape=partialRectangle,null,null,data_base
+218,Question,shape=partialRectangle,null,null,data_base
+219,Easy Way,shape=partialRectangle,null,null,data_base
+220,New App,shape=partialRectangle,null,null,data_base
+221,Alfredo Platform,shape=partialRectangle,null,null,data_base
+222,Real Interaction,shape=partialRectangle,null,null,data_base
+223,Human,shape=partialRectangle,null,null,data_base
+224,Online Game,shape=partialRectangle,null,null,data_base
+225,Health Sensor,shape=partialRectangle,null,null,data_base
+226,Ict Tool,shape=partialRectangle,null,null,data_base
+227,Alfred,shape=partialRectangle,null,null,data_base
+228,Aflred,shape=partialRectangle,null,null,data_base
+229,Olderperson,rounded=0,null,null,external_entity
+230,Developer,rounded=0,null,null,external_entity
+231,Have An Alfred Device Easily Adapted For User Have Visual,ellipse,null,null,process
+232,Have An Device Easily Adapted For User Have Hearing Troubles,ellipse,null,null,process
+233,Determine The User's Blood Pressure,ellipse,null,null,process
+234,Have Alfred,ellipse,null,null,process
+235,Determine The User's Body Temperature,ellipse,null,null,process
+236,Determine The User's Heart Rate,ellipse,null,null,process
+237,Determine The User's Breathing Frequency,ellipse,null,null,process
+238,Control,ellipse,null,null,process
+239,Have A Regular Summary How Much Exercise Performed The User,ellipse,null,null,process
+240,Have A Game That The Carer Together Play With The User,ellipse,null,null,process
+241,Give Corrective Feedback,ellipse,null,null,process
+242,Have An Easy Way,ellipse,null,null,process
+243,Define Questions The User Ask,ellipse,null,null,process
+244,Read Data From Health Sensors,ellipse,null,null,process
+245,Have An Easy Way The User Is Wearing,ellipse,null,null,process
+246,Offering New Apps In The Alfredo Platform,ellipse,null,null,process
+247,Have An Aflred Device Encourages Users For Real Interaction Between Humans Only With Ict Tools,ellipse,null,null,process
+248,Play Online Games Together With Other Users,ellipse,null,null,process
+250,,endArrow=classic,229,231,endArrow=classic
+251,,endArrow=classic,229,232,endArrow=classic
+252,,endArrow=classic,229,233,endArrow=classic
+253,,endArrow=classic,229,234,endArrow=classic
+254,,endArrow=classic,229,235,endArrow=classic
+255,,endArrow=classic,229,236,endArrow=classic
+256,,endArrow=classic,229,237,endArrow=classic
+257,,endArrow=classic,229,239,endArrow=classic
+258,,endArrow=classic,229,240,endArrow=classic
+259,,endArrow=classic,229,241,endArrow=classic
+260,,endArrow=classic,229,243,endArrow=classic
+261,,endArrow=classic,229,244,endArrow=classic
+262,,endArrow=classic,229,245,endArrow=classic
+263,,endArrow=classic,229,246,endArrow=classic
+264,,endArrow=classic,229,247,endArrow=classic
+265,,endArrow=classic,229,248,endArrow=classic
+266,,endArrow=classic,230,239,endArrow=classic
+267,,endArrow=classic,230,240,endArrow=classic
+268,,endArrow=classic,230,242,endArrow=classic
+269,,endArrow=classic,230,243,endArrow=classic
+270,,endArrow=classic,230,244,endArrow=classic
+271,,endArrow=classic,230,245,endArrow=classic
+272,,endArrow=classic,230,248,endArrow=classic
+273,User,endArrow=classic,231,200,endArrow=classic
+274,Visual,endArrow=classic,231,204,endArrow=classic
+275,Device,endArrow=classic,231,202,endArrow=classic
+276,Visual Trouble,endArrow=classic,231,205,endArrow=classic
+277,Trouble,endArrow=classic,231,203,endArrow=classic
+278,Device,endArrow=classic,232,202,endArrow=classic
+279,Hearing,endArrow=classic,232,201,endArrow=classic
+280,User,endArrow=classic,232,200,endArrow=classic
+281,Blood Pressure,endArrow=classic,233,208,endArrow=classic
+282,,endArrow=classic,234,233,endArrow=classic
+283,,endArrow=classic,234,235,endArrow=classic
+284,,endArrow=classic,234,236,endArrow=classic
+285,,endArrow=classic,234,237,endArrow=classic
+286,Alfred,endArrow=classic,234,209,endArrow=classic
+287,Body Temperature,endArrow=classic,235,210,endArrow=classic
+288,Heart Rate,endArrow=classic,236,211,endArrow=classic
+289,Breathing Frequency,endArrow=classic,237,212,endArrow=classic
+290,Regular Summary,endArrow=classic,239,213,endArrow=classic
+291,Exercise,endArrow=classic,239,214,endArrow=classic
+292,User,endArrow=classic,239,200,endArrow=classic
+293,Game,endArrow=classic,240,216,endArrow=classic
+294,Carer,endArrow=classic,240,215,endArrow=classic
+295,User,endArrow=classic,240,200,endArrow=classic
+296,Corrective Feedback,endArrow=classic,241,217,endArrow=classic
+297,,endArrow=classic,242,243,endArrow=classic
+298,Easy Way,endArrow=classic,242,219,endArrow=classic
+299,Question,endArrow=classic,243,218,endArrow=classic
+300,User,endArrow=classic,243,200,endArrow=classic
+301,Health Sensor,endArrow=classic,244,225,endArrow=classic
+302,Datum,endArrow=classic,244,207,endArrow=classic
+303,,endArrow=classic,245,244,endArrow=classic
+304,User,endArrow=classic,245,200,endArrow=classic
+305,Easy Way,endArrow=classic,245,219,endArrow=classic
+306,,endArrow=classic,246,231,endArrow=classic
+307,New App,endArrow=classic,246,220,endArrow=classic
+308,Alfredo Platform,endArrow=classic,246,221,endArrow=classic
+309,Real Interaction,endArrow=classic,247,222,endArrow=classic
+310,Human,endArrow=classic,247,223,endArrow=classic
+311,Ict Tool,endArrow=classic,247,226,endArrow=classic
+312,User,endArrow=classic,247,200,endArrow=classic
+313,Device,endArrow=classic,247,202,endArrow=classic
+314,Online Game,endArrow=classic,248,224,endArrow=classic
+315,User,endArrow=classic,248,200,endArrow=classic
+350,Aflred,endArrow=classic,247,228,endArrow=classic
+1000,"Informalcaregiver,",rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,19,endArrow=classic
+1002,"Informalcaregiver,",rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,19,endArrow=classic
+1004,State of health,rounded=0,null,null,external_entity
+1005,State of health,endArrow=classic,19,1004,endArrow=classic

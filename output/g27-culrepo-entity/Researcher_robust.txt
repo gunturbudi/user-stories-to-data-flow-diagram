@@ -1,0 +1,167 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Department" as thingotherdepartment
+	entity "Topic" as thinggiventopic
+	entity "Research" as thingresearch
+	entity "Cornell" as thingcornell
+	entity "School" as thingschool
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Library" as thinglibrary
+	entity "Google" as thinggoogle
+	entity "Pdf" as thingPDF
+	entity "Descriptive Metadata" as thingdescriptivemetadata
+	entity "Work" as thingwork
+	entity "Author" as thingauthor
+	entity "Update" as thingupdate
+	entity "Subset" as thingsubset
+	entity "Collection" as thinggivencollection
+	entity "Effective Manner" as thingeffectivemanner
+	entity "Information" as thinginformation
+	entity "Faculty" as thingotherfaculty
+	entity "Interactive Map" as thinginteractivemap
+	entity "Researcher" as thingresearcher
+	entity "Dmps" as thingDMPs
+	entity "Sharing" as thingsharing
+	entity "System" as thingsystem #grey
+	entity "Deposit" as thingdeposit
+	entity "Search Capability" as thingsearchcapability
+	entity "Metadata Field" as thingmetadatafield
+	entity "Discovery" as thingdiscovery #grey
+	actor "Researcher" as actorresearcher
+	actor "Library ,\nStaff Member" as actorlibrarystaffmember
+	circle "Result" as thingresult
+	boundary "Department\nInterface" as thingdepartmentinterface #grey
+	boundary "School\nInterface" as thingschoolinterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Google\nInterface" as thinggoogleinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Update\nInterface" as thingupdateinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Faculty\nInterface" as thingfacultyinterface #grey
+	boundary "Map\nInterface" as thingmapinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	control "Stay Up\nTo Date\nOn Research\nTo A\nGiven Topic\nAt Cornell\nIncluding Those\nIn Other\nDepartments" as controlstaydateresearch
+	control "Stay Up\nTo Date\nOn Research\nTo A\nGiven Topic\nAt Cornell\nIncluding Those\nIn School" as controlstaydateresearchschool
+	control "Discover Items\nIn The\nRepository Through\nThe Library's\nDiscovery System" as controldiscoveritemdiscoverysystem
+	control "Discover Items\nIn The\nRepository Through\nGoogle" as controldiscoveritemgoogle
+	control "See Descriptive\nMetadata For\nThe Item" as controlseedescriptivemetadata
+	control "Come To\nThe Item\nThrough The\nRepository" as controlcomeseedescriptivemetadataitemrepository
+	control "Come To\nThe Item\nDirectly To\nThe Pdf" as controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	control "Contact The\nAuthor Of\nA Work\nInterests" as controlcontactauthor
+	control "Receive Updates" as controlreceiveupdate
+	control "Search Within\nCollection" as controlsearchcollection
+	control "Search Within\nA Repository\nIn An\nEffective Manner\nSearching Within\nSubsets Of\nA Given\nCollection" as controlsearchrepositoryeffectivemanner
+	control "Have Information\nHelp Identify\nOther Faculty" as controlhaveinformation
+	control "Promote Work\nThrough Interactive\nMaps" as controlpromoteworkinteractivemap
+	control "Share Work\nThrough Interactive\nMaps" as controlshareworkinteractivemap
+	control "Tell The\nResearchers" as controltellresearcher
+	control "Allow For\nBetter Search\nCapabilities" as controlallowbettersearchcapabilities
+	control "Add Custom\nMetadata Fields\nFor Deposits" as controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+
+	thingresearch <.. thingdate
+	thingcornell <.. thinggiventopic
+	thingotherdepartment <.. thinggiventopic
+	thinggiventopic <.. thingresearch
+	thingotherdepartment <.. thingcornell
+	thingschool <.. thingcornell
+	thingrepository <.. thingitem
+	thingPDF <.. thingitem
+	thingeffectivemanner <.. thingrepository
+	thingsystem <.. thingrepository
+	thinggoogle <.. thingrepository
+	thingitem <.. thingdescriptivemetadata
+	thinginteractivemap <.. thingwork
+	thingauthor <.. thingwork
+	thingwork *-- thingauthor
+	thinggivencollection <.. thingsubset
+	thingsubset <.. thingeffectivemanner
+	thingotherfaculty <.. thinginformation
+	thingresult <.. thingsharing
+	thingsharing <.. thingsystem
+	thingdiscovery <.. thingsystem
+	thinglibrary <.. thingsystem
+	thingrepository <.. thingsystem
+	thingdeposit <.. thingmetadatafield
+	thingresearch *-- thingresult
+	actorresearcher --- thingdepartmentinterface
+	actorresearcher --- thingschoolinterface
+	actorresearcher --- thingsysteminterface
+	actorresearcher --- thinggoogleinterface
+	actorresearcher --- thingrepositoryinterface
+	actorresearcher --- thingworkinterface
+	actorresearcher --- thingupdateinterface
+	actorresearcher --- thingcollectioninterface
+	actorresearcher --- thingfacultyinterface
+	actorresearcher --- thingmapinterface
+	actorlibrarystaffmember --- thingresearcherinterface
+	actorlibrarystaffmember --- thingdepositinterface
+	thingdate --- controlstaydateresearch
+	thingresearch --- controlstaydateresearch
+	thinggiventopic --- controlstaydateresearch
+	thingcornell --- controlstaydateresearch
+	thingotherdepartment --- controlstaydateresearch
+	thingdepartmentinterface --> controlstaydateresearch
+	thingschool --- controlstaydateresearchschool
+	thingschoolinterface --> controlstaydateresearchschool
+	thinggiventopic --- controlstaydateresearchschool
+	thingdate --- controlstaydateresearchschool
+	thingresearch --- controlstaydateresearchschool
+	thingcornell --- controlstaydateresearchschool
+	thingitem --- controldiscoveritemdiscoverysystem
+	thingrepository --- controldiscoveritemdiscoverysystem
+	thingsysteminterface --> controldiscoveritemdiscoverysystem
+	thingsystem --- controldiscoveritemdiscoverysystem
+	thinggoogle --- controldiscoveritemgoogle
+	thinggoogleinterface --> controldiscoveritemgoogle
+	thingitem --- controldiscoveritemgoogle
+	thingrepository --- controldiscoveritemgoogle
+	thingdescriptivemetadata --- controlseedescriptivemetadata
+	controlcomeseedescriptivemetadataitemrepository --> controlseedescriptivemetadata
+	thingrepositoryinterface --> controlseedescriptivemetadata
+	thingitem --- controlseedescriptivemetadata
+	controlcomeseedescriptivemetadatamoinsPRONmoinsitemto --> controlseedescriptivemetadata
+	thingitem --- controlcomeseedescriptivemetadataitemrepository
+	thingrepository --- controlcomeseedescriptivemetadataitemrepository
+	thingrepositoryinterface --> controlcomeseedescriptivemetadataitemrepository
+	thingPDF --- controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingpdfinterface --> controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingitem --- controlcomeseedescriptivemetadatamoinsPRONmoinsitemto
+	thingauthor --- controlcontactauthor
+	thingwork --- controlcontactauthor
+	thingworkinterface --> controlcontactauthor
+	thingupdate --- controlreceiveupdate
+	thingupdateinterface --> controlreceiveupdate
+	thingcollectioninterface --> controlsearchcollection
+	thinggivencollection --- controlsearchcollection
+	thingrepository --- controlsearchrepositoryeffectivemanner
+	thinggivencollection --- controlsearchrepositoryeffectivemanner
+	thingeffectivemanner --- controlsearchrepositoryeffectivemanner
+	thingcollectioninterface --> controlsearchrepositoryeffectivemanner
+	thingsubset --- controlsearchrepositoryeffectivemanner
+	thinginformation --- controlhaveinformation
+	thingotherfaculty --- controlhaveinformation
+	thingfacultyinterface --> controlhaveinformation
+	thinginteractivemap --- controlpromoteworkinteractivemap
+	thingmapinterface --> controlpromoteworkinteractivemap
+	thingwork --- controlpromoteworkinteractivemap
+	thingwork --- controlshareworkinteractivemap
+	thinginteractivemap --- controlshareworkinteractivemap
+	thingmapinterface --> controlshareworkinteractivemap
+	thingresearcher --- controltellresearcher
+	thingresearcherinterface --> controltellresearcher
+	thingsearchcapability --- controlallowbettersearchcapabilities
+	controladdcustommetadatafieldsdepositallowbettersearchcapabilities --> controlallowbettersearchcapabilities
+	thingdepositinterface --> controlallowbettersearchcapabilities
+	thingmetadatafield --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingdeposit --- controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+	thingdepositinterface --> controladdcustommetadatafieldsdepositallowbettersearchcapabilities
+
+@enduml

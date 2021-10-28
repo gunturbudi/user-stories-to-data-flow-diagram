@@ -1,0 +1,61 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Workflow " color=red];
+201 [label="<f0>  |<f1> Easy " ];
+202 [label="<f0>  |<f1> Specific Project " ];
+203 [label="<f0>  |<f1> Educator " ];
+204 [label="<f0>  |<f1> Resource " color=red];
+205 [label="<f0>  |<f1> Available ,\nGeographic Area " ];
+206 [label="<f0>  |<f1> Nys " ];
+207 [label="<f0>  |<f1> Faculty " ];
+208 [label="<f0>  |<f1> Ingestion " ];
+209 [label="<f0>  |<f1> Approval Step " ];
+210 [label="<f0>  |<f1> Historical " color=red];
+211 [label="<f0>  |<f1> Attention " ];
+212 [label="<f0>  |<f1> Periodic Reminder " ];
+213 [label="<f0>  |<f1> Knowledge Collection " color=red];
+214 [label="<f0>  |<f1> Ir Reminder " ];
+215 [label="Extension Administrator" shape=box];
+216 [label="Staff , Content Manager" shape=box];
+217 [label="{<f0> 1.0|<f1> Have Easy }" shape=Mrecord];
+218 [label="{<f0> 2.0|<f1> Make Resources Developed For Available, Geographic Area To Other Faculty Across Nys }" shape=Mrecord];
+219 [label="{<f0> 3.0|<f1> Make Resources Developed For Specific Projects }" shape=Mrecord];
+220 [label="{<f0> 4.0|<f1> Make Resources Developed For Available, Geographic Area To Educator }" shape=Mrecord];
+221 [label="{<f0> 5.0|<f1> Get Periodic Reminders Something When Needs Attention Including Approval Step }" shape=Mrecord];
+222 [label="{<f0> 6.0|<f1> Get Periodic Reminders Something When Needs Attention Including Something Need }" shape=Mrecord];
+223 [label="{<f0> 7.0|<f1> Get Periodic Ir Reminders Something When Needs Attention Including Next Ingestion }" shape=Mrecord];
+224 [label="{<f0> 8.0|<f1> Move From A Current Knowledge Collection To Historical }" shape=Mrecord];
+215 -> 217
+215 -> 218
+215 -> 219
+215 -> 220
+215 -> 221
+215 -> 222
+215 -> 223
+215 -> 224
+216 -> 221
+216 -> 222
+216 -> 223
+216 -> 224
+217 -> 201 [label="Easy"]
+218 -> 205 [label="Available ,\nGeographic Area"]
+218 -> 207 [label="Faculty"]
+218 -> 206 [label="Nys"]
+218 -> 204 [label="Resource"]
+219 -> 204 [label="Resource"]
+219 -> 202 [label="Specific Project"]
+220 -> 203 [label="Educator"]
+220 -> 205 [label="Available ,\nGeographic Area"]
+220 -> 204 [label="Resource"]
+221 -> 212 [label="Periodic Reminder"]
+221 -> 209 [label="Approval Step"]
+221 -> 211 [label="Attention"]
+222 -> 224
+222 -> 212 [label="Periodic Reminder"]
+222 -> 211 [label="Attention"]
+223 -> 214 [label="Ir Reminder"]
+223 -> 211 [label="Attention"]
+223 -> 208 [label="Ingestion"]
+224 -> 213 [label="Knowledge Collection"]
+224 -> 210 [label="Historical"]
+}

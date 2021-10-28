@@ -1,0 +1,113 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Address " color=red];
+202 [label="<f0>  |<f1> Email " color=red];
+203 [label="<f0>  |<f1> Repository " ];
+204 [label="<f0>  |<f1> Title " ];
+205 [label="<f0>  |<f1> Name " color=red];
+206 [label="<f0>  |<f1> Phone " color=red];
+207 [label="<f0>  |<f1> Storage " ];
+208 [label="<f0>  |<f1> T " color=red];
+209 [label="<f0>  |<f1> Financial Contact " color=red];
+210 [label="<f0>  |<f1> Collection " color=red];
+211 [label="<f0>  |<f1> Remote ,\nPrimary Site " ];
+212 [label="<f0>  |<f1> Active ,\nAuthenticated User " ];
+213 [label="<f0>  |<f1> Anonymous User " ];
+214 [label="<f0>  |<f1> User " color=red];
+215 [label="<f0>  |<f1> Page " ];
+216 [label="<f0>  |<f1> Select Time " ];
+217 [label="<f0>  |<f1> Upcoming Downtime " ];
+218 [label="<f0>  |<f1> Message " color=red];
+219 [label="<f0>  |<f1> Thing " ];
+220 [label="<f0>  |<f1> Recent Error " ];
+221 [label="<f0>  |<f1> Easy Comprehension " ];
+222 [label="<f0>  |<f1> Component " ];
+223 [label="<f0>  |<f1> Collections Size " color=red];
+224 [label="<f0>  |<f1> Object " color=red];
+225 [label="<f0>  |<f1> Version " ];
+226 [label="<f0>  |<f1> Staff Interface " ];
+227 [label="<f0>  |<f1> Replication Policy " ];
+228 [label="<f0>  |<f1> Dashboard Statistic " ];
+229 [label="Repository Manager" shape=box];
+230 [label="{<f0> 1.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Phone }" shape=Mrecord];
+231 [label="{<f0> 2.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Person Contact Including Name }" shape=Mrecord];
+232 [label="{<f0> 3.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Address }" shape=Mrecord];
+233 [label="{<f0> 4.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Email }" shape=Mrecord];
+234 [label="{<f0> 5.0|<f1> Track Financially Responsible For Each Item In The Repository Probably Be A Contact Including Maybe Title }" shape=Mrecord];
+235 [label="{<f0> 6.0|<f1> Show The Storage Each Financial Contact }" shape=Mrecord];
+236 [label="{<f0> 7.0|<f1> T Run }" shape=Mrecord];
+237 [label="{<f0> 8.0|<f1> Specify The Remote Replication Policy For Each Collection }" shape=Mrecord];
+238 [label="{<f0> 9.0|<f1> Elect }" shape=Mrecord];
+239 [label="{<f0> 10.0|<f1> Replicate }" shape=Mrecord];
+240 [label="{<f0> 11.0|<f1> Replicate Beyond The Remote, Primary Site }" shape=Mrecord];
+241 [label="{<f0> 12.0|<f1> Elect Not }" shape=Mrecord];
+242 [label="{<f0> 13.0|<f1> View Anonymous User }" shape=Mrecord];
+243 [label="{<f0> 14.0|<f1> View Active, Authenticated Users }" shape=Mrecord];
+244 [label="{<f0> 15.0|<f1> Schedule A Message To Users }" shape=Mrecord];
+245 [label="{<f0> 16.0|<f1> Displayed On Each Page On The Repository Between Select Times For Things Like Notification Of Upcoming Downtime }" shape=Mrecord];
+246 [label="{<f0> 17.0|<f1> See A Display Of Recent Errors For Easy Comprehension }" shape=Mrecord];
+247 [label="{<f0> 18.0|<f1> View A Dashboard Statistics About Collections Size Including A List Of Collections }" shape=Mrecord];
+248 [label="{<f0> 19.0|<f1> View Available Versions Of An Object }" shape=Mrecord];
+249 [label="{<f0> 20.0|<f1> Restore A Version From The Staff Interface }" shape=Mrecord];
+229 -> 230
+229 -> 231
+229 -> 232
+229 -> 233
+229 -> 234
+229 -> 235
+229 -> 236
+229 -> 237
+229 -> 238
+229 -> 240
+229 -> 242
+229 -> 243
+229 -> 244
+229 -> 245
+229 -> 246
+229 -> 247
+229 -> 248
+229 -> 249
+230 -> 206 [label="Phone"]
+230 -> 200 [label="Item"]
+230 -> 203 [label="Repository"]
+231 -> 200 [label="Item"]
+231 -> 203 [label="Repository"]
+231 -> 205 [label="Name"]
+232 -> 201 [label="Address"]
+232 -> 200 [label="Item"]
+232 -> 203 [label="Repository"]
+233 -> 202 [label="Email"]
+233 -> 200 [label="Item"]
+233 -> 203 [label="Repository"]
+234 -> 204 [label="Title"]
+234 -> 200 [label="Item"]
+234 -> 203 [label="Repository"]
+235 -> 207 [label="Storage"]
+236 -> 235
+236 -> 208 [label="T"]
+237 -> 227 [label="Replication Policy"]
+237 -> 210 [label="Collection"]
+238 -> 239
+238 -> 240
+240 -> 211 [label="Remote ,\nPrimary Site"]
+242 -> 213 [label="Anonymous User"]
+243 -> 212 [label="Active ,\nAuthenticated User"]
+244 -> 245
+244 -> 218 [label="Message"]
+244 -> 214 [label="User"]
+245 -> 215 [label="Page"]
+245 -> 216 [label="Select Time"]
+245 -> 219 [label="Thing"]
+245 -> 217 [label="Upcoming Downtime"]
+245 -> 203 [label="Repository"]
+246 -> 220 [label="Recent Error"]
+246 -> 221 [label="Easy Comprehension"]
+247 -> 228 [label="Dashboard Statistic"]
+247 -> 223 [label="Collections Size"]
+247 -> 210 [label="Collection"]
+248 -> 224 [label="Object"]
+249 -> 225 [label="Version"]
+249 -> 226 [label="Staff Interface"]
+235 -> 209 [label="Financial Contact"]
+}

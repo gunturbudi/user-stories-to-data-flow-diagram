@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Name,shape=partialRectangle,null,null,data_base
+202,Creator,shape=partialRectangle,null,null,data_base
+203,Subject,shape=partialRectangle,null,null,data_base
+204,Source,shape=partialRectangle,null,null,data_base
+205,Repository Manager,rounded=0,null,null,external_entity
+206,Indicate Names To The Collection As Creator,ellipse,null,null,process
+207,Indicate Names To The Collection As Subject,ellipse,null,null,process
+208,Indicate Names To The Collection As Source,ellipse,null,null,process
+210,,endArrow=classic,205,206,endArrow=classic
+211,,endArrow=classic,205,207,endArrow=classic
+212,,endArrow=classic,205,208,endArrow=classic
+213,Name,endArrow=classic,206,201,endArrow=classic
+214,Collection,endArrow=classic,206,200,endArrow=classic
+215,Creator,endArrow=classic,206,202,endArrow=classic
+216,Subject,endArrow=classic,207,203,endArrow=classic
+217,Collection,endArrow=classic,207,200,endArrow=classic
+218,Name,endArrow=classic,207,201,endArrow=classic
+219,Source,endArrow=classic,208,204,endArrow=classic
+220,Collection,endArrow=classic,208,200,endArrow=classic
+221,Name,endArrow=classic,208,201,endArrow=classic

@@ -1,0 +1,37 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Alfred " ];
+201 [label="<f0>  |<f1> People " ];
+202 [label="<f0>  |<f1> Similar Disease " ];
+203 [label="<f0>  |<f1> Circle " color=red];
+204 [label="<f0>  |<f1> App " color=red];
+205 [label="<f0>  |<f1> Possible ,\nPeople " ];
+206 [label="Olderperson" shape=box];
+207 [label="Developer" shape=box];
+208 [label="{<f0> 1.0|<f1> Use Alfred }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Set Up Social Groups Of People With Similar Diseases }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Contact People From Own Circle }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Have }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Remind People }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Exercise }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Present App To As Possible, Many People }" shape=Mrecord];
+206 -> 208
+206 -> 209
+206 -> 210
+206 -> 211
+206 -> 212
+206 -> 213
+207 -> 214
+208 -> 209
+208 -> 210
+208 -> 200 [label="Alfred"]
+209 -> 201 [label="People"]
+209 -> 202 [label="Similar Disease"]
+210 -> 203 [label="Circle"]
+210 -> 201 [label="People"]
+211 -> 212
+212 -> 213
+212 -> 201 [label="People"]
+214 -> 204 [label="App"]
+214 -> 205 [label="Possible ,\nPeople"]
+}

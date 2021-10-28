@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Project Lifecycle,shape=partialRectangle,null,null,data_base
+201,thingIT,shape=partialRectangle,null,null,data_base
+202,Resource Requirement,shape=partialRectangle,null,null,data_base
+203,Manager,rounded=0,null,null,external_entity
+204,Know About It Resource Requirements In The Project Lifecycle,ellipse,null,null,process
+206,,endArrow=classic,203,204,endArrow=classic
+207,thingIT,endArrow=classic,204,201,endArrow=classic
+208,Resource Requirement,endArrow=classic,204,202,endArrow=classic
+209,Project Lifecycle,endArrow=classic,204,200,endArrow=classic

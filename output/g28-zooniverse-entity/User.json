@@ -1,0 +1,417 @@
+[
+  {
+    "text": "As a user, I want to search and discover music using content identification or fingerprinting.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "fingerprinting",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search and discover music based on my profile.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search and discover music based on other users similar to myself.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search and discover music or ringback tones similar to a given music video based on content similarity.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "ringback tones",
+        "label": "PII"
+      },
+      {
+        "text": "music video",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search and discover music by exploiting enriched metadata and image tags, so that I find related artists, new genre, or other relevant listening path.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "image tags",
+        "label": "PII"
+      },
+      {
+        "text": "genre",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to upload tagged videos and have tags available for all further processing steps.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "tagged videos",
+        "label": "PII"
+      },
+      {
+        "text": "tags",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to view thumbnail sequences of video segments.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "thumbnail sequences",
+        "label": "PII"
+      },
+      {
+        "text": "video segments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to get info about similar video items and segments.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "video items",
+        "label": "PII"
+      },
+      {
+        "text": "segments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to get info about perceptually similar video items and segments.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "get info",
+        "label": "Processing"
+      },
+      {
+        "text": "video items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to receive content recommendations from similar profiles.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "content recommendations",
+        "label": "PII"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to receive content recommendations based on most relevant news events in my area.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "news events",
+        "label": "PII"
+      },
+      {
+        "text": "area",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to identify persons in videos, and receive related information about them.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "persons",
+        "label": "PII"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to identify products in videos, and receive related information about them.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "products",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to identify broadcaster logos in videos, and receive related information about them.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "broadcaster logos",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to identify brands in videos, and receive related information about them.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to take a picture or upload an image, so that I am recommended with videos related to that picture or image.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "take",
+        "label": "Processing"
+      },
+      {
+        "text": "picture",
+        "label": "PII"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      },
+      {
+        "text": "picture",
+        "label": "PII"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to walk around, access content using a geographical map and be informed if there are videos covering the area, monuments or any other relevant point of interest.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "walk around",
+        "label": "Processing"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "geographical map",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to search content items using automatic speech recognition.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "content items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to prefilter the content using search on high\u00adlevel asset information such as metadata and tags either recognized by the system of provided by the user.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "prefilter",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "high\u00adlevel asset information",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  }
+]

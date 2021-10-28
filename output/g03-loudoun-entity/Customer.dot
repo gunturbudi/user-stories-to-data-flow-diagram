@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Customer Portal\nUser Account " color=red];
+201 [label="<f0>  |<f1> Inspection " color=red];
+202 [label="Customer" shape=box];
+203 [label="Inspector" shape=box];
+204 [label="{<f0> 1.0|<f1> Create A Customer Portal User Account }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Request Inspection }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Conduct Inspections }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Perform transactions that first require user authentication. }" shape=Mrecord];
+204 -> 4
+1001 [label="Customer" shape=box];
+1001 -> 4
+1003 [label="<f0>  |<f1> Transactions " color=red];
+4 -> 1003 [label="Transactions"]
+5 [label="{<f0> 5.0|<f1> Perform an inspection of my project. }" shape=Mrecord];
+1005 [label="County inspector" shape=box];
+1005 -> 5
+1007 [label="County inspector" shape=box];
+1007 -> 5
+1009 [label="<f0>  |<f1> Project " color=red];
+5 -> 1009 [label="Project"]
+6 [label="{<f0> 6.0|<f1> Provide results of the inspection to the customer. }" shape=Mrecord];
+1011 [label="Inspector," shape=box];
+1011 -> 6
+206 -> 6
+1014 [label="<f0>  |<f1> Customer compliance " color=red];
+6 -> 1014 [label="Customer compliance"]
+1016 [label="<f0>  |<f1> Results of the inspection " color=red];
+6 -> 1016 [label="Results of the inspection"]
+202 -> 204
+202 -> 205
+202 -> 206
+203 -> 205
+203 -> 206
+204 -> 200 [label="Customer Portal\nUser Account"]
+205 -> 201 [label="Inspection"]
+206 -> 201 [label="Inspection"]
+}

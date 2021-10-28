@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Guarantee" as thingguarantee
+	entity "Datum" as thingdatum
+	entity "Campus" as thingcampus
+	entity "Ip Right" as thingipright
+	entity "Bath Collaborator" as thingbathcollaborator
+	actor "Externalcoordinator" as actorexternalcoordinator
+	boundary "Guarantee\nInterface" as thingguaranteeinterface #grey
+	boundary "Campus\nInterface" as thingcampusinterface #grey
+	control "Have Guarantees\nIp Rights\nNot" as controlhaveguarantee
+	control "Access Data\nFrom Bath\nCollaborators Off\nCampus" as controlaccessdatumcampus
+
+	thingipright <.. thingguarantee
+	thingbathcollaborator <.. thingdatum
+	thingcampus <.. thingbathcollaborator
+	actorexternalcoordinator --- thingguaranteeinterface
+	actorexternalcoordinator --- thingcampusinterface
+	thingguarantee --- controlhaveguarantee
+	thingguaranteeinterface --> controlhaveguarantee
+	thingdatum --- controlaccessdatumcampus
+	thingbathcollaborator --- controlaccessdatumcampus
+	thingcampus --- controlaccessdatumcampus
+	thingcampusinterface --> controlaccessdatumcampus
+
+@enduml

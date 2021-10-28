@@ -1,0 +1,91 @@
+id,value,style,source,target,type
+200,Default,shape=partialRectangle,null,null,data_base
+201,Value,shape=partialRectangle,null,null,data_base
+202,Property,shape=partialRectangle,null,null,data_base
+203,Schema,shape=partialRectangle,null,null,data_base
+204,Dataset,shape=partialRectangle,null,null,data_base
+205,Uniform Way,shape=partialRectangle,null,null,data_base
+206,Json String,shape=partialRectangle,null,null,data_base
+207,Time,shape=partialRectangle,null,null,data_base
+208,Migration Process,shape=partialRectangle,null,null,data_base
+209,Explore,shape=partialRectangle,null,null,data_base
+210,Effect,shape=partialRectangle,null,null,data_base
+211,Change,shape=partialRectangle,null,null,data_base
+212,Dataset Operation,shape=partialRectangle,null,null,data_base
+213,Datum,shape=partialRectangle,null,null,data_base
+214,Silent Loss,shape=partialRectangle,null,null,data_base
+215,Sql,shape=partialRectangle,null,null,data_base
+216,User,rounded=0,null,null,external_entity
+217,Find Out,ellipse,null,null,process
+218,Specify The Schema Of A Dataset In A Uniform Way Across All Dataset Types,ellipse,null,null,process
+219,Specify Schema As A Json String,ellipse,null,null,process
+220,Specify Schema As A Sql Schema String,ellipse,null,null,process
+221,Configure Time In A Uniform Way Across All Dataset Types,ellipse,null,null,process
+222,Live,ellipse,null,null,process
+223,See The Properties Used,ellipse,null,null,process
+224,Configure A Dataset Instance,ellipse,null,null,process
+225,Update The Properties Of A Dataset Instance,ellipse,null,null,process
+226,Update A Single Property Of A Dataset Instance,ellipse,null,null,process
+227,Knowing All Other Properties,ellipse,null,null,process
+228,Remove A Single Property Of A Dataset Instance,ellipse,null,null,process
+229,Trigger A Migration Process For A Dataset,ellipse,null,null,process
+230,Specify As Part Of Dataset Configuration Explorable,ellipse,null,null,process
+231,Specify The Explore Schema,ellipse,null,null,process
+232,Enable Explore For A Dataset Not Configured For Initially Explore,ellipse,null,null,process
+233,Disable Explore For A Dataset Configured For Initially Explore,ellipse,null,null,process
+234,Ensure,ellipse,null,null,process
+235,Never Leads To Silent Loss Of Datum,ellipse,null,null,process
+236,"Never Leads To Available, Silent Loss Of Data For Explore",ellipse,null,null,process
+238,,endArrow=classic,216,218,endArrow=classic
+239,,endArrow=classic,216,219,endArrow=classic
+240,,endArrow=classic,216,220,endArrow=classic
+241,,endArrow=classic,216,221,endArrow=classic
+242,,endArrow=classic,216,222,endArrow=classic
+243,,endArrow=classic,216,223,endArrow=classic
+244,,endArrow=classic,216,224,endArrow=classic
+245,,endArrow=classic,216,225,endArrow=classic
+246,,endArrow=classic,216,226,endArrow=classic
+247,,endArrow=classic,216,227,endArrow=classic
+248,,endArrow=classic,216,228,endArrow=classic
+249,,endArrow=classic,216,229,endArrow=classic
+250,,endArrow=classic,216,230,endArrow=classic
+251,,endArrow=classic,216,231,endArrow=classic
+252,,endArrow=classic,216,232,endArrow=classic
+253,,endArrow=classic,216,233,endArrow=classic
+254,,endArrow=classic,216,234,endArrow=classic
+255,,endArrow=classic,216,235,endArrow=classic
+256,,endArrow=classic,216,236,endArrow=classic
+257,Schema,endArrow=classic,218,203,endArrow=classic
+258,Dataset,endArrow=classic,218,204,endArrow=classic
+259,Uniform Way,endArrow=classic,218,205,endArrow=classic
+260,Json String,endArrow=classic,219,206,endArrow=classic
+261,Schema,endArrow=classic,219,203,endArrow=classic
+262,Schema,endArrow=classic,220,203,endArrow=classic
+263,,endArrow=classic,221,222,endArrow=classic
+264,Time,endArrow=classic,221,207,endArrow=classic
+265,Uniform Way,endArrow=classic,221,205,endArrow=classic
+266,,endArrow=classic,223,224,endArrow=classic
+267,Property,endArrow=classic,223,202,endArrow=classic
+268,Property,endArrow=classic,225,202,endArrow=classic
+269,Dataset,endArrow=classic,226,204,endArrow=classic
+270,,endArrow=classic,227,226,endArrow=classic
+271,,endArrow=classic,227,228,endArrow=classic
+272,Property,endArrow=classic,227,202,endArrow=classic
+273,Dataset,endArrow=classic,228,204,endArrow=classic
+274,Migration Process,endArrow=classic,229,208,endArrow=classic
+275,Dataset,endArrow=classic,229,204,endArrow=classic
+276,Schema,endArrow=classic,231,203,endArrow=classic
+277,Explore,endArrow=classic,232,209,endArrow=classic
+278,Dataset,endArrow=classic,232,204,endArrow=classic
+279,Dataset,endArrow=classic,233,204,endArrow=classic
+280,Explore,endArrow=classic,233,209,endArrow=classic
+281,,endArrow=classic,234,235,endArrow=classic
+282,,endArrow=classic,234,236,endArrow=classic
+283,Silent Loss,endArrow=classic,234,214,endArrow=classic
+284,Explore,endArrow=classic,234,209,endArrow=classic
+285,Silent Loss,endArrow=classic,235,214,endArrow=classic
+286,Datum,endArrow=classic,235,213,endArrow=classic
+287,Explore,endArrow=classic,235,209,endArrow=classic
+288,Explore,endArrow=classic,236,209,endArrow=classic
+289,Datum,endArrow=classic,236,213,endArrow=classic
+393,Sql,endArrow=classic,220,215,endArrow=classic

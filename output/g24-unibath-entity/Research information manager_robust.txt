@@ -1,0 +1,69 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Cris" as thingCRIS
+	entity "Archive" as thingarchive
+	entity "Record" as thingrecord
+	entity "Complete ,\nHold Datum" as thingcompletehelddatum
+	entity "Publish Dataset" as thingpublisheddataset
+	entity "View Statistic" as thingviewstatistic
+	entity "Sector" as thingsector
+	entity "Country" as thingcountry
+	entity "Dataset" as thingdataset
+	entity "Metadata" as thingmetadata
+	entity "Project" as thingproject
+	entity "Citation Count" as thingcitationcount
+	actor "Research ,\nInformation Manager" as actorresearchinformationmanager
+	boundary "Cris\nInterface" as thingcrisinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Country\nInterface" as thingcountryinterface #grey
+	boundary "Sector\nInterface" as thingsectorinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Integrate The\nArchive With\nCris" as controlintegratearchiveCRIS
+	control "Include Records\nFor Externally\nComplete, Held\nData" as controlincluderecord
+	control "Track Citation\nCounts For\nPublished Datasets" as controltrackcitationcountspublisheddataset
+	control "Segment The\nView Statistics\nBy Country" as controlsegmentviewstatistic
+	control "Segment The\nView Statistics\nBy Sector" as controlsegmentviewstatisticsector
+	control "Segment" as controlsegmentdownload
+	control "Download" as controldownload
+	control "Have Datasets\nTo Metadata\nAbout Projects" as controlhavedataset
+
+	thingCRIS <.. thingarchive
+	thingcompletehelddatum <.. thingrecord
+	thingcountry <.. thingviewstatistic
+	thingsector <.. thingviewstatistic
+	thingmetadata <.. thingdataset
+	thingproject <.. thingdataset
+	thingproject <.. thingmetadata
+	thingpublisheddataset <.. thingcitationcount
+	actorresearchinformationmanager --- thingcrisinterface
+	actorresearchinformationmanager --- thingdatuminterface
+	actorresearchinformationmanager --- thingdatasetinterface
+	actorresearchinformationmanager --- thingcountryinterface
+	actorresearchinformationmanager --- thingsectorinterface
+	actorresearchinformationmanager --- thingprojectinterface
+	thingarchive --- controlintegratearchiveCRIS
+	thingCRIS --- controlintegratearchiveCRIS
+	thingcrisinterface --> controlintegratearchiveCRIS
+	thingrecord --- controlincluderecord
+	thingcompletehelddatum --- controlincluderecord
+	thingdatuminterface --> controlincluderecord
+	thingcitationcount --- controltrackcitationcountspublisheddataset
+	thingpublisheddataset --- controltrackcitationcountspublisheddataset
+	thingdatasetinterface --> controltrackcitationcountspublisheddataset
+	thingviewstatistic --- controlsegmentviewstatistic
+	thingcountry --- controlsegmentviewstatistic
+	thingcountryinterface --> controlsegmentviewstatistic
+	thingsector --- controlsegmentviewstatisticsector
+	thingsectorinterface --> controlsegmentviewstatisticsector
+	thingviewstatistic --- controlsegmentviewstatisticsector
+	controlsegmentdownload --> controldownload
+	thingdataset --- controlhavedataset
+	thingmetadata --- controlhavedataset
+	thingproject --- controlhavedataset
+	thingprojectinterface --> controlhavedataset
+
+@enduml

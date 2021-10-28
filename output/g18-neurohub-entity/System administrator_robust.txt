@@ -1,0 +1,56 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Script" as thingscript
+	entity "Neurohub Node" as thingneurohubnode
+	entity "Neurohub Installation" as thingneurohubinstallation
+	entity "System" as thingsystem
+	entity "Current Version" as thingcurrentversion
+	entity "Neurohub" as thingNeuroHub
+	entity "Datum" as thingdatum
+	entity "Backup Protocol" as thingbackupprotocol
+	entity "Ubuntu Operating" as thingubuntuoperating #grey
+	actor "System Administrator" as actorsystemadministrator
+	circle "Old Version" as thingolderversion
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Installation\nInterface" as thinginstallationinterface #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	control "Run A\nScript Installs\nThe Neurohub\nNode Onto\nA Virgin\nUbuntu Operating\nSystem" as controlrunscript
+	control "See" as controlsee
+	control "Run A\nScript Tests\nA Neurohub\nInstallation Is\nCorrectly Functioning" as controlrunscriptseeneurohubinstallation
+	control "Have A\nManaged Backup\nProtocol For\nThe System" as controlhavemanagedbackupprotocol
+	control "Migrate Data\nFrom An\nOlder Version\nOf Neurohub\nTo The\nCurrent Version" as controlmigratedatumcurrentversion
+
+	thingneurohubnode <.. thingscript
+	thingneurohubinstallation <.. thingscript
+	thingsystem <.. thingscript
+	thingsystem <.. thingneurohubnode
+	thingubuntuoperating <.. thingsystem
+	thingcurrentversion <.. thingNeuroHub
+	thingolderversion <.. thingdatum
+	thingsystem <.. thingbackupprotocol
+	thingNeuroHub *-- thingolderversion
+	actorsystemadministrator --- thingsysteminterface
+	actorsystemadministrator --- thinginstallationinterface
+	actorsystemadministrator --- thingversioninterface
+	thingscript --- controlrunscript
+	thingneurohubnode --- controlrunscript
+	thingsysteminterface --> controlrunscript
+	thingsystem --- controlrunscript
+	controlrunscriptseeneurohubinstallation --> controlsee
+	thinginstallationinterface --> controlsee
+	thingneurohubinstallation --- controlrunscriptseeneurohubinstallation
+	thingscript --- controlrunscriptseeneurohubinstallation
+	thinginstallationinterface --> controlrunscriptseeneurohubinstallation
+	thingbackupprotocol --- controlhavemanagedbackupprotocol
+	thingsystem --- controlhavemanagedbackupprotocol
+	thingsysteminterface --> controlhavemanagedbackupprotocol
+	thingdatum --- controlmigratedatumcurrentversion
+	thingolderversion --- controlmigratedatumcurrentversion
+	thingNeuroHub --- controlmigratedatumcurrentversion
+	thingcurrentversion --- controlmigratedatumcurrentversion
+	thingversioninterface --> controlmigratedatumcurrentversion
+
+@enduml

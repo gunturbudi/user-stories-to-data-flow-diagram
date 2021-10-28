@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a pipeline developer, I want to upgrade a dataset instance to a newer version of the code after the pipeline was created.",
+    "entities": [
+      {
+        "text": "pipeline developer",
+        "label": "Data"
+      },
+      {
+        "text": "upgrade",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  }
+]

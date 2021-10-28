@@ -1,0 +1,50 @@
+[
+  {
+    "text": "As a user, I want to have the application respond quickly to my actions, so that I don't get bored.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "actions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to be able to use Unicode, so that I can use any language I like.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "language",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to see sensible and predictable URLs, so that the application feels logical and transparent.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have nice error pages when something goes wrong, so that I can trust the system and its developers.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  }
+]

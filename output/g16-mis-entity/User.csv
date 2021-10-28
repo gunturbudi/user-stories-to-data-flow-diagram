@@ -1,0 +1,73 @@
+id,value,style,source,target,type
+200,Specific License,shape=partialRectangle,null,null,data_base
+201,Submitter,shape=partialRectangle,null,null,data_base
+202,License,shape=partialRectangle,null,null,data_base
+203,Selection,shape=partialRectangle,null,null,data_base
+204,Deposit,shape=partialRectangle,null,null,data_base
+205,Collection,shape=partialRectangle,null,null,data_base
+206,Thing,shape=partialRectangle,null,null,data_base
+207,Upcoming Downtime,shape=partialRectangle,null,null,data_base
+208,Message,shape=partialRectangle,null,null,data_base
+209,User,shape=partialRectangle,null,null,data_base
+210,Page,shape=partialRectangle,null,null,data_base
+211,Select Time,shape=partialRectangle,null,null,data_base
+212,Repository,shape=partialRectangle,null,null,data_base
+213,Restrict Object,shape=partialRectangle,null,null,data_base
+214,Access,shape=partialRectangle,null,null,data_base
+215,Repoadmin,rounded=0,null,null,external_entity
+216,Repository Manager,rounded=0,null,null,external_entity
+217,Collection Curator,rounded=0,null,null,external_entity
+218,Presented With A License,ellipse,null,null,process
+219,The Submitter Not Accept The License,ellipse,null,null,process
+220,Have,ellipse,null,null,process
+221,Denied,ellipse,null,null,process
+222,Presented With A Selection Of Specific Licenses To Deposit,ellipse,null,null,process
+223,Presented With A Selection Of Specific Licenses To The Collection,ellipse,null,null,process
+224,Schedule A Message To Users,ellipse,null,null,process
+225,Displayed On Each Page On The Repository Between Select Times For Things Like Notification Of Upcoming Downtime,ellipse,null,null,process
+226,Contact From The Repository,ellipse,null,null,process
+227,Request Access To Restricted Objects,ellipse,null,null,process
+229,,endArrow=classic,215,218,endArrow=classic
+230,,endArrow=classic,215,219,endArrow=classic
+231,,endArrow=classic,215,220,endArrow=classic
+232,,endArrow=classic,215,221,endArrow=classic
+233,,endArrow=classic,215,222,endArrow=classic
+234,,endArrow=classic,215,223,endArrow=classic
+235,,endArrow=classic,215,226,endArrow=classic
+236,,endArrow=classic,215,227,endArrow=classic
+237,,endArrow=classic,216,224,endArrow=classic
+238,,endArrow=classic,216,225,endArrow=classic
+239,,endArrow=classic,217,218,endArrow=classic
+240,,endArrow=classic,217,220,endArrow=classic
+241,,endArrow=classic,217,222,endArrow=classic
+242,,endArrow=classic,217,223,endArrow=classic
+243,,endArrow=classic,217,226,endArrow=classic
+244,,endArrow=classic,217,227,endArrow=classic
+245,,endArrow=classic,218,221,endArrow=classic
+246,License,endArrow=classic,218,202,endArrow=classic
+247,Submitter,endArrow=classic,219,201,endArrow=classic
+248,License,endArrow=classic,219,202,endArrow=classic
+249,,endArrow=classic,220,218,endArrow=classic
+250,,endArrow=classic,220,222,endArrow=classic
+251,,endArrow=classic,220,223,endArrow=classic
+252,Specific License,endArrow=classic,220,200,endArrow=classic
+253,Selection,endArrow=classic,220,203,endArrow=classic
+254,,endArrow=classic,221,219,endArrow=classic
+255,Deposit,endArrow=classic,222,204,endArrow=classic
+256,Specific License,endArrow=classic,222,200,endArrow=classic
+257,Selection,endArrow=classic,222,203,endArrow=classic
+258,Selection,endArrow=classic,223,203,endArrow=classic
+259,Specific License,endArrow=classic,223,200,endArrow=classic
+260,Collection,endArrow=classic,223,205,endArrow=classic
+261,,endArrow=classic,224,225,endArrow=classic
+262,Message,endArrow=classic,224,208,endArrow=classic
+263,User,endArrow=classic,224,209,endArrow=classic
+264,Page,endArrow=classic,225,210,endArrow=classic
+265,Repository,endArrow=classic,225,212,endArrow=classic
+266,Select Time,endArrow=classic,225,211,endArrow=classic
+267,Thing,endArrow=classic,225,206,endArrow=classic
+268,Upcoming Downtime,endArrow=classic,225,207,endArrow=classic
+269,,endArrow=classic,226,227,endArrow=classic
+270,Repository,endArrow=classic,226,212,endArrow=classic
+271,Access,endArrow=classic,227,214,endArrow=classic
+272,Restrict Object,endArrow=classic,227,213,endArrow=classic

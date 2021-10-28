@@ -1,0 +1,41 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Route Planning\nSystem" as thingrouteplanningsystem #grey
+	entity "Work" as thingwork
+	entity "Access" as thingaccess
+	entity "Business" as thingbusiness
+	entity "Employee" as thingemployee
+	entity "Quick Notification" as thingquicknotification
+	actor "Employee" as actoremployee
+	actor "Hr Department" as actorhrdepartment
+	circle "Information" as thingfullinformation
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Business\nInterface" as thingbusinessinterface #grey
+	boundary "Notification\nInterface" as thingnotificationinterface #grey
+	control "Access The\nRoute Planning\nSystem During\nWork" as controlaccessrouteplanningsystemwork
+	control "Have Access\nTo The\nFull Information\nOf All\nEmployees For\nThis Business" as controlhaveaccess
+	control "Get Quick\nNotifications" as controlgetquicknotification
+
+	thingwork <.. thingrouteplanningsystem
+	thingfullinformation <.. thingaccess
+	thingbusiness <.. thingemployee
+	thingemployee *-- thingfullinformation
+	actoremployee --- thingworkinterface
+	actorhrdepartment --- thingbusinessinterface
+	actoremployee --- thingbusinessinterface
+	actoremployee --- thingnotificationinterface
+	thingrouteplanningsystem --- controlaccessrouteplanningsystemwork
+	thingwork --- controlaccessrouteplanningsystemwork
+	thingworkinterface --> controlaccessrouteplanningsystemwork
+	thingaccess --- controlhaveaccess
+	thingfullinformation --- controlhaveaccess
+	thingemployee --- controlhaveaccess
+	thingbusiness --- controlhaveaccess
+	thingbusinessinterface --> controlhaveaccess
+	thingquicknotification --- controlgetquicknotification
+	thingnotificationinterface --> controlgetquicknotification
+
+@enduml

@@ -1,0 +1,44 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Presentation" as thingpresentation
+	entity "Etc" as thingetc
+	entity "Pdf" as thingpdf
+	entity "Member" as thingmember
+	entity "Article" as thingarticle
+	entity "Upcoming Course" as thingupcomingcourse
+	actor "Visitor" as actorvisitor
+	actor "Site Editor" as actorsiteeditor
+	actor "Trainer" as actortrainer
+	boundary "Visitor" as thingvisitortrainer
+	boundary "Presentation\nInterface" as thingpresentationinterface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "Pdf\nInterface" as thingpdfinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	control "Download Presentations" as controldownloadpresentation
+	control "Download Etc" as controldownloadetc
+	control "Download Pdf" as controldownloadpdf
+	control "For Indicate\nAn Article\nMembers" as controlindicatearticlemember
+	control "Notice" as controlnoticevisitortrainer
+	control "See" as controlsee
+
+	thingmember <.. thingarticle
+	actortrainer --- thingvisitortrainer
+	actorvisitor --- thingpresentationinterface
+	actorvisitor --- thingetcinterface
+	actorvisitor --- thingpdfinterface
+	actorsiteeditor --- thingmemberinterface
+	thingpresentation --- controldownloadpresentation
+	thingpresentationinterface --> controldownloadpresentation
+	thingetc --- controldownloadetc
+	thingetcinterface --> controldownloadetc
+	thingpdf --- controldownloadpdf
+	thingpdfinterface --> controldownloadpdf
+	thingarticle --- controlindicatearticlemember
+	thingmember --- controlindicatearticlemember
+	thingmemberinterface --> controlindicatearticlemember
+	thingvisitortrainer --> controlnoticevisitortrainer
+
+@enduml

@@ -1,0 +1,63 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Owner" as thingowner
+	entity "Usage" as thingusage
+	entity "Key Metric" as thingkeymetric
+	entity "Download" as thingdownload
+	entity "Billing System" as thingbillingsystem #grey
+	entity "Pricing Plan" as thingpricingplan #grey
+	entity "Api" as thingapi #grey
+	actor "Owner" as actorowner
+	actor "Admin" as actoradmin
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	boundary "Usage\nInterface" as thingusageinterface #grey
+	boundary "Download\nInterface" as thingdownloadinterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Make A\nUser" as controlmakeuser
+	control "Remove A\nUser As\nAn Owner" as controlremoveuserowner
+	control "See Key\nMetrics About\nUsage Such\nAs Users" as controlseekeymetric
+	control "See Key\nMetrics About\nUsage Such\nAs Api\nUsage" as controlseekeymetricapiusage
+	control "See Key\nMetrics About\nUsage Such\nAs Download" as controlseekeymetricdownload
+	control "Have A\nPricing Plan" as controlhavepricingplan
+	control "Have Billing\nSystem" as controlhavebillingsystem
+
+	thingowner <.. thinguser
+	thinguser <.. thingusage
+	thingdownload <.. thingusage
+	thingapi <.. thingusage
+	thingusage <.. thingkeymetric
+	actorowner --- thinguserinterface
+	actoradmin --- thinguserinterface
+	actorowner --- thingownerinterface
+	actoradmin --- thingusageinterface
+	actoradmin --- thingdownloadinterface
+	actoradmin --- thingplaninterface
+	actoradmin --- thingsysteminterface
+	thinguser --- controlmakeuser
+	thinguserinterface --> controlmakeuser
+	thingowner --- controlremoveuserowner
+	thingownerinterface --> controlremoveuserowner
+	thinguser --- controlremoveuserowner
+	thingkeymetric --- controlseekeymetric
+	thingusage --- controlseekeymetric
+	thinguser --- controlseekeymetric
+	thinguserinterface --> controlseekeymetric
+	thingusageinterface --> controlseekeymetricapiusage
+	thingkeymetric --- controlseekeymetricapiusage
+	thingusage --- controlseekeymetricapiusage
+	thingdownload --- controlseekeymetricdownload
+	thingdownloadinterface --> controlseekeymetricdownload
+	thingkeymetric --- controlseekeymetricdownload
+	thingusage --- controlseekeymetricdownload
+	thingpricingplan --- controlhavepricingplan
+	thingplaninterface --> controlhavepricingplan
+	thingbillingsystem --- controlhavebillingsystem
+	thingsysteminterface --> controlhavebillingsystem
+
+@enduml

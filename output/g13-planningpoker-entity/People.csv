@@ -1,0 +1,28 @@
+id,value,style,source,target,type
+200,Site,shape=partialRectangle,null,null,data_base
+201,Xhtml Standard,shape=partialRectangle,null,null,data_base
+202,Css,shape=partialRectangle,null,null,data_base
+203,7,shape=partialRectangle,null,null,data_base
+204,Internet Explorer,shape=partialRectangle,null,null,data_base
+205,Function,shape=partialRectangle,null,null,data_base
+206,W3C Guideline,shape=partialRectangle,null,null,data_base
+207,Application,shape=partialRectangle,null,null,data_base
+208,Developer,rounded=0,null,null,external_entity
+209,Written A Site Is Compliant With Css,ellipse,null,null,process
+210,Written A Site Is Compliant With Xhtml Standards,ellipse,null,null,process
+211,Have The Function In 7,ellipse,null,null,process
+212,Have The Application Function In Internet Explorer,ellipse,null,null,process
+213,Have,ellipse,null,null,process
+215,,endArrow=classic,208,209,endArrow=classic
+216,,endArrow=classic,208,210,endArrow=classic
+217,,endArrow=classic,208,211,endArrow=classic
+218,,endArrow=classic,208,212,endArrow=classic
+219,Css,endArrow=classic,209,202,endArrow=classic
+220,Site,endArrow=classic,209,200,endArrow=classic
+221,Site,endArrow=classic,210,200,endArrow=classic
+222,Xhtml Standard,endArrow=classic,210,201,endArrow=classic
+223,Function,endArrow=classic,211,205,endArrow=classic
+224,7,endArrow=classic,211,203,endArrow=classic
+225,Internet Explorer,endArrow=classic,212,204,endArrow=classic
+226,Function,endArrow=classic,212,205,endArrow=classic
+235,Application,endArrow=classic,212,207,endArrow=classic

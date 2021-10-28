@@ -1,0 +1,59 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Right" as thingright
+	entity "Role" as thingrole
+	entity "Rac Staff" as thingracstaff #grey
+	entity "Password" as thingownpassword
+	entity "Researcher" as thingresearcher
+	entity "User Group" as thingusergroup
+	entity "Directory Credential" as thingdirectorycredential
+	entity "Metadata Field" as thingmetadatafield
+	entity "User" as thinguser #grey
+	actor "Administrator" as actoradministrator
+	boundary "User" as thinguseradministrator
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "Role\nInterface" as thingroleinterface #grey
+	boundary "Credential\nInterface" as thingcredentialinterface #grey
+	control "Create User\nGroups" as controlcreateusergroups
+	control "Create User\nRoles" as controlcreateuserroles
+	control "Assign Rights\nTo User\nGroups" as controlassignrightusergroups
+	control "Assign Rights\nTo Role" as controlassignrightrole
+	control "Assign Rac\nStaff To\nDifferent User\nGroups" as controlassignracstaffdifferentusergroups
+	control "Log" as controlloguseradministrator
+	control "Allow" as controlallowuseloguseradministratoractivedirectorycredentials
+	control "Using Active\nDirectory Credentials" as controluseloguseradministratoractivedirectorycredentials
+	control "Have" as controlhave
+	control "Limit" as controllimit
+
+	thingrole <.. thingright
+	thingusergroup <.. thingright
+	thinguser <.. thingrole
+	thingusergroup <.. thingracstaff
+	actoradministrator --- thinguseradministrator
+	actoradministrator --- thinggroupinterface
+	actoradministrator --- thingroleinterface
+	actoradministrator --- thingcredentialinterface
+	thingusergroup --- controlcreateusergroups
+	thinggroupinterface --> controlcreateusergroups
+	thingroleinterface --> controlcreateuserroles
+	thingrole --- controlcreateuserroles
+	thingright --- controlassignrightusergroups
+	thinggroupinterface --> controlassignrightusergroups
+	thingusergroup --- controlassignrightusergroups
+	thingrole --- controlassignrightrole
+	thingroleinterface --> controlassignrightrole
+	thingright --- controlassignrightrole
+	thingracstaff --- controlassignracstaffdifferentusergroups
+	thinggroupinterface --> controlassignracstaffdifferentusergroups
+	thingusergroup --- controlassignracstaffdifferentusergroups
+	thinguseradministrator --> controlloguseradministrator
+	controluseloguseradministratoractivedirectorycredentials --> controlloguseradministrator
+	thingcredentialinterface --> controlallowuseloguseradministratoractivedirectorycredentials
+	controlallowuseloguseradministratoractivedirectorycredentials --> controluseloguseradministratoractivedirectorycredentials
+	thingdirectorycredential --- controluseloguseradministratoractivedirectorycredentials
+	thingcredentialinterface --> controluseloguseradministratoractivedirectorycredentials
+
+@enduml

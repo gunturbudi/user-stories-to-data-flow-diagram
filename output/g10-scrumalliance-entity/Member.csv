@@ -1,0 +1,79 @@
+id,value,style,source,target,type
+12,Renew my membership.,ellipse,null,null,process
+200,Member,shape=partialRectangle,null,null,data_base
+201,Article,shape=partialRectangle,null,null,data_base
+202,Practitioner,shape=partialRectangle,null,null,data_base
+203,Annual Fee,shape=partialRectangle,null,null,data_base
+204,Trainer,shape=partialRectangle,null,null,data_base
+205,Form,shape=partialRectangle,null,null,data_base
+206,Email,shape=partialRectangle,null,null,data_base
+207,Reminder,shape=partialRectangle,null,null,data_base
+208,Link,shape=partialRectangle,null,null,data_base
+209,System,shape=partialRectangle,null,null,data_base
+210,New Password,shape=partialRectangle,null,null,data_base
+211,Term Memory\nProblem,shape=partialRectangle,null,null,data_base
+212,Site,shape=partialRectangle,null,null,data_base
+213,Password,shape=partialRectangle,null,null,data_base
+214,Site Member,rounded=0,null,null,external_entity
+215,Site Administrator,rounded=0,null,null,external_entity
+216,Site Editor,rounded=0,null,null,external_entity
+217,Member,rounded=0,null,null,external_entity
+218,View The Profiles Of Other Members,ellipse,null,null,process
+219,Edit Any Site Member Profile,ellipse,null,null,process
+220,For Indicate An Article Members,ellipse,null,null,process
+221,Set The Annual Fees For Practitioner,ellipse,null,null,process
+222,Set The Annual Fees For Trainer,ellipse,null,null,process
+223,Set The Annual Fees For Members,ellipse,null,null,process
+224,Send An Email To Any Member Via A Form,ellipse,null,null,process
+225,Receive A Link,ellipse,null,null,process
+226,Receive A Reminder,ellipse,null,null,process
+227,The System Email Me A New Password Have Short Term Memory Problems,ellipse,null,null,process
+228,Have,ellipse,null,null,process
+230,,endArrow=classic,214,218,endArrow=classic
+231,,endArrow=classic,214,219,endArrow=classic
+232,,endArrow=classic,214,220,endArrow=classic
+233,,endArrow=classic,214,223,endArrow=classic
+234,,endArrow=classic,214,224,endArrow=classic
+235,,endArrow=classic,215,218,endArrow=classic
+236,,endArrow=classic,215,219,endArrow=classic
+237,,endArrow=classic,215,220,endArrow=classic
+238,,endArrow=classic,215,221,endArrow=classic
+239,,endArrow=classic,215,222,endArrow=classic
+240,,endArrow=classic,215,223,endArrow=classic
+241,,endArrow=classic,216,218,endArrow=classic
+242,,endArrow=classic,216,219,endArrow=classic
+243,,endArrow=classic,216,220,endArrow=classic
+244,,endArrow=classic,216,223,endArrow=classic
+245,,endArrow=classic,217,225,endArrow=classic
+246,,endArrow=classic,217,226,endArrow=classic
+247,,endArrow=classic,217,227,endArrow=classic
+248,,endArrow=classic,217,228,endArrow=classic
+249,Member,endArrow=classic,218,200,endArrow=classic
+250,Article,endArrow=classic,220,201,endArrow=classic
+251,Member,endArrow=classic,220,200,endArrow=classic
+252,Practitioner,endArrow=classic,221,202,endArrow=classic
+253,Annual Fee,endArrow=classic,221,203,endArrow=classic
+254,Trainer,endArrow=classic,222,204,endArrow=classic
+255,Annual Fee,endArrow=classic,222,203,endArrow=classic
+256,Annual Fee,endArrow=classic,223,203,endArrow=classic
+257,Member,endArrow=classic,223,200,endArrow=classic
+258,Email,endArrow=classic,224,206,endArrow=classic
+259,Form,endArrow=classic,224,205,endArrow=classic
+260,Member,endArrow=classic,224,200,endArrow=classic
+261,Link,endArrow=classic,225,208,endArrow=classic
+262,Reminder,endArrow=classic,226,207,endArrow=classic
+263,,endArrow=classic,227,228,endArrow=classic
+264,System,endArrow=classic,227,209,endArrow=classic
+265,New Password,endArrow=classic,227,210,endArrow=classic
+266,Term Memory\nProblem,endArrow=classic,227,211,endArrow=classic
+268,Site,endArrow=classic,219,212,endArrow=classic
+278,Password,endArrow=classic,227,213,endArrow=classic
+1000,Member,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,12,endArrow=classic
+1002,Member,rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,12,endArrow=classic
+1004,Member,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,12,endArrow=classic
+1006,,endArrow=classic,226,12,endArrow=classic
+1007,Membership,rounded=0,null,null,external_entity
+1008,Membership,endArrow=classic,12,1007,endArrow=classic

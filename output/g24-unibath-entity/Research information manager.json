@@ -1,0 +1,103 @@
+[
+  {
+    "text": "As a Research Information manager, I want to integrate the archive with CRIS, so that I can analyse impact of research data publication I can link funding to all of the outputs it produces.",
+    "entities": [
+      {
+        "text": "Research Information manager",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "funding",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Research Information manager, I want to include records for externally held data complete, so that the university's record of data holdings is complete.",
+    "entities": [
+      {
+        "text": "Research Information manager",
+        "label": "Data"
+      },
+      {
+        "text": "include",
+        "label": "Processing"
+      },
+      {
+        "text": "records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Research Information manager, I want to track citation counts for published datasets, so that impact of datasets within academia can be demonstrated.",
+    "entities": [
+      {
+        "text": "Research Information manager",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Research Information manager, I want to segment the view and download statistics by country and sector so that impact of datasets outside academia can be demonstrated.",
+    "entities": [
+      {
+        "text": "Research Information manager",
+        "label": "Data"
+      },
+      {
+        "text": "segment",
+        "label": "Processing"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "statistics",
+        "label": "PII"
+      },
+      {
+        "text": "country",
+        "label": "PII"
+      },
+      {
+        "text": "sector",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Research Information manager, I want to have datasets linked to metadata about projects, so that I can report on projects depositing datasets in relation to funder requirements.",
+    "entities": [
+      {
+        "text": "Research Information manager",
+        "label": "Data"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "linked",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  }
+]

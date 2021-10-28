@@ -1,0 +1,365 @@
+[
+  {
+    "text": "As a Cornell faculty member, I want to upload data to the repository and associate it with a publication, so that I receive attribution for my data as well as my publications.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to see clearly what reuse rights I have to files discovered in the repository, so that I know how I can reuse them.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "reuse rights",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to upload data and provide a cut and paste formatted citation for people who use it, so that I receive proper attribution for my work.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to search the repository and browse through its contents on my phone, so that I can check things on the go.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "contents",
+        "label": "PII"
+      },
+      {
+        "text": "phone",
+        "label": "PII"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      },
+      {
+        "text": "things",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to login remotely to the repository using Shibboleth, so that I can get remote access to Cornell campus-only content.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "login",
+        "label": "Processing"
+      },
+      {
+        "text": "remote access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to have some control over how items within my collection sort in collection contents lists, so that I can control how my work is presented.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "collection",
+        "label": "PII"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to be notified if someone downloads any of my items or files, so that I can follow usage and see what others are most interested in reading.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      },
+      {
+        "text": "downloads",
+        "label": "Processing"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "follow",
+        "label": "Processing"
+      },
+      {
+        "text": "usage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to upload a data file and put a CC-By or CC0 license on it, so that my licensing desires are clearly stated.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "data file",
+        "label": "PII"
+      },
+      {
+        "text": "licensing desires",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to create a collection for my documents, or my organization's documents, and apply some distinctive branding to that collection, so that I can promote my work, or that of my organization.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "documents",
+        "label": "PII"
+      },
+      {
+        "text": "organization's documents",
+        "label": "PII"
+      },
+      {
+        "text": "promote",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to easily find all the items in the repository that I have authored, by searching on my name (author name authority and/or identification issue), because I keeps my publications in the repository up-to-date and points people tithe repository.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "searching",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "name authority",
+        "label": "PII"
+      },
+      {
+        "text": "identification issue",
+        "label": "PII"
+      },
+      {
+        "text": "publications",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to see items I have deposited in the repository appear high up in Google search results, because that's my ticket to stardom.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      },
+      {
+        "text": "ticket",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to search for the dissertations in the repository for which I have been a thesis committee member, to quickly find work by a former student.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "dissertations",
+        "label": "PII"
+      },
+      {
+        "text": "thesis committee member",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "former student",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to easily assign a CC license to the files I are depositing, so that users know how the materials can be used.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      },
+      {
+        "text": "depositing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to associate a researcherID or ORCID with a submission, so that there is no ambiguity between my work and someone else with the same name.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "researcherID",
+        "label": "Data"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Cornell faculty member, I want to share on the repository files that are larger than 1GB in a way that still allows users to download them if I want to use them, so that I can meet funder requirements.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

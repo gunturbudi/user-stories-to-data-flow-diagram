@@ -1,0 +1,212 @@
+[
+  {
+    "text": "As a researcher, I want to stay up to date on research related to a given topic at Cornell, including those in other departments/schools, so that my own research remains relevant and innovative.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "date",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      },
+      {
+        "text": "given topic",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to be able to tell the researchers I'm helping with DMPs that Cornell has a repository system I can use for archiving and sharing results of their research, so that I can easily meet the needs of funder DMP requirements.",
+    "entities": [
+      {
+        "text": "library staff member,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "sharing",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to discover items in the repository through the library's discovery system and Google, so that I can facilitate my easy use of the content.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "discover",
+        "label": "Processing"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to see descriptive metadata for the item whether I come to the item through the repository or directly to the PDF, so that I can correctly identify the source of the content.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "descriptive metadata",
+        "label": "PII"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to contact the author of a work that interests me, so that I can learn more about my research.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to receive updates when new works are published in a given collection or by a given author, so that I can discover more of their work.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "receive updates",
+        "label": "Processing"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to search within a repository or collection in an effective manner, including searching within subsets of a given collection, so that I can facilitate my use of the collection.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have information that will help me identify other faculty I might partner/collaborate with.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      },
+      {
+        "text": "partner",
+        "label": "Processing"
+      },
+      {
+        "text": "collaborate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a library staff member, I want to be able to add custom metadata fields for deposits I make on behalf of researchers to allow for better search capabilities.",
+    "entities": [
+      {
+        "text": "library staff member",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata fields",
+        "label": "PII"
+      },
+      {
+        "text": "deposits",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to promote/share my work through interactive maps, so that I can display the range and extent of my work graphically.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "promote",
+        "label": "Processing"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  }
+]

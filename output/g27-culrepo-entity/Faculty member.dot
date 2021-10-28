@@ -1,0 +1,81 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Collection " color=red];
+201 [label="<f0>  |<f1> Repository " ];
+202 [label="<f0>  |<f1> Student " ];
+203 [label="<f0>  |<f1> Item " color=red];
+204 [label="<f0>  |<f1> Publication " color=red];
+205 [label="<f0>  |<f1> Scholarly Work " color=red];
+206 [label="<f0>  |<f1> Faq " ];
+207 [label="<f0>  |<f1> Etc " ];
+208 [label="<f0>  |<f1> Versioning " ];
+209 [label="<f0>  |<f1> File " color=red];
+210 [label="<f0>  |<f1> , Scholarly\nWork " color=red];
+211 [label="<f0>  |<f1> Access " ];
+212 [label="<f0>  |<f1> Digital Collection " color=red];
+213 [label="<f0>  |<f1> Extension Brochure " color=red];
+214 [label="Faculty Member" shape=box];
+215 [label="{<f0> 1.0|<f1> Access A Collection Within The Repository }" shape=Mrecord];
+216 [label="{<f0> 2.0|<f1> Direct Students To An Item Within The Repository }" shape=Mrecord];
+217 [label="{<f0> 3.0|<f1> Collect Those Within The Repository Into A Online, Single Access Point }" shape=Mrecord];
+218 [label="{<f0> 4.0|<f1> Collect Those Without }" shape=Mrecord];
+219 [label="{<f0> 5.0|<f1> Collect Publications }" shape=Mrecord];
+220 [label="{<f0> 6.0|<f1> Upload Scholarly Work To The Repository }" shape=Mrecord];
+221 [label="{<f0> 7.0|<f1> Maintain Versioning Of Extension Brochures }" shape=Mrecord];
+222 [label="{<f0> 8.0|<f1> Maintain Versioning Of Etc }" shape=Mrecord];
+223 [label="{<f0> 9.0|<f1> Maintain Versioning Of Faq }" shape=Mrecord];
+224 [label="{<f0> 10.0|<f1> Associate Files With Such, Scholarly Works }" shape=Mrecord];
+225 [label="{<f0> 11.0|<f1> Access The Latter }" shape=Mrecord];
+226 [label="{<f0> 12.0|<f1> Recommend }" shape=Mrecord];
+13 [label="{<f0> 13.0|<f1> Link to content). }" shape=Mrecord];
+216 -> 13
+1001 [label="<f0>  |<f1> Teaching " color=red];
+13 -> 1001 [label="Teaching"]
+14 [label="{<f0> 14.0|<f1> Raise the profile of my work. }" shape=Mrecord];
+217 -> 14
+1004 [label="<f0>  |<f1> Work " color=red];
+14 -> 1004 [label="Work"]
+15 [label="{<f0> 15.0|<f1> Use it for teaching. }" shape=Mrecord];
+220 -> 15
+1007 [label="<f0>  |<f1> Non-academic audience " color=red];
+15 -> 1007 [label="Non-academic audience"]
+1009 [label="<f0>  |<f1> Influence " color=red];
+15 -> 1009 [label="Influence"]
+1011 [label="<f0>  |<f1> Academic community " color=red];
+15 -> 1011 [label="Academic community"]
+16 [label="{<f0> 16.0|<f1> Deliver the fullest picture of my research. }" shape=Mrecord];
+214 -> 16
+1014 [label="<f0>  |<f1> Research " color=red];
+16 -> 1014 [label="Research"]
+17 [label="{<f0> 17.0|<f1> Assist in my research. }" shape=Mrecord];
+214 -> 17
+1017 [label="<f0>  |<f1> Research " color=red];
+17 -> 1017 [label="Research"]
+214 -> 215
+214 -> 216
+214 -> 217
+214 -> 219
+214 -> 220
+214 -> 221
+214 -> 222
+214 -> 223
+214 -> 224
+215 -> 200 [label="Collection"]
+215 -> 201 [label="Repository"]
+216 -> 202 [label="Student"]
+216 -> 203 [label="Item"]
+216 -> 201 [label="Repository"]
+217 -> 201 [label="Repository"]
+219 -> 204 [label="Publication"]
+220 -> 205 [label="Scholarly Work"]
+220 -> 201 [label="Repository"]
+221 -> 208 [label="Versioning"]
+221 -> 213 [label="Extension Brochure"]
+222 -> 207 [label="Etc"]
+222 -> 208 [label="Versioning"]
+223 -> 206 [label="Faq"]
+223 -> 208 [label="Versioning"]
+224 -> 209 [label="File"]
+224 -> 210 [label=", Scholarly\nWork"]
+215 -> 211 [label="Access"]
+}

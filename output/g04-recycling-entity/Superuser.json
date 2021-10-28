@@ -1,0 +1,57 @@
+[
+  {
+    "text": "As a superuser, I want to update the recycling center information, so that I can provide the latest information about the recycling center.",
+    "entities": [
+      {
+        "text": "superuser,",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a superuser, I want to view users' stats, so that I can view in real-time how many users have visited my recycling center information and their recyclable waste.",
+    "entities": [
+      {
+        "text": "superuser,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "stats",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a superuser, I want to reply to user questions, so that I can answer any questions about my recycling center.",
+    "entities": [
+      {
+        "text": "superuser,",
+        "label": "Data"
+      },
+      {
+        "text": "reply",
+        "label": "Processing"
+      },
+      {
+        "text": "user questions",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Record" as thingrecord
+	entity "Change" as thingchange
+	actor "Archivist" as actorarchivist
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	control "Overwrite Changes\nTo A\nRecord" as controloverwritechangerecord
+
+	thingrecord <.. thingchange
+	actorarchivist --- thingrecordinterface
+	thingchange --- controloverwritechangerecord
+	thingrecord --- controloverwritechangerecord
+	thingrecordinterface --> controloverwritechangerecord
+
+@enduml

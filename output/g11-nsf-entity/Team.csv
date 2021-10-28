@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Place,shape=partialRectangle,null,null,data_base
+201,Nsf Member,rounded=0,null,null,external_entity
+202,Team,rounded=0,null,null,external_entity
+203,Have A Place,ellipse,null,null,process
+205,,endArrow=classic,201,203,endArrow=classic
+206,,endArrow=classic,202,203,endArrow=classic
+207,Place,endArrow=classic,203,200,endArrow=classic

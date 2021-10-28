@@ -1,0 +1,153 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Symplectic Element" as thingsymplecticelement
+	entity "Fedora Connector" as thingfedoraconnector #grey
+	entity "Ddr" as thingDDR
+	entity "Object" as thingobject
+	entity "Hydra" as thinghydra
+	entity "Emory" as thingemory
+	entity "Selection" as thingselection
+	entity "Submitter" as thingsubmitter
+	entity "Collection" as thingcollection
+	entity "Specific License" as thingspecificlicense
+	entity "License" as thinglicense
+	entity "Deposit" as thingdeposit
+	entity "Metadata" as thingmetadata
+	entity "Item" as thingitem
+	entity "Access" as thingaccess
+	entity "Server" as thingserver
+	entity "Repository" as thingrepository
+	entity "Event" as thingevent
+	entity "Sla" as thingSLA
+	entity "Public Interface" as thingpublicinterface
+	entity "Fedora Instance" as thingfedorainstance
+	entity "Oai Pmh" as thingoaipmh
+	entity "Data Contributor" as thingdatacontributor
+	entity "Data Interface" as thingdatainterface
+	actor "Repoadmin" as actorrepoadmin
+	circle "Content" as thingcontent #grey
+	circle "Index" as thingindex #grey
+	boundary "User" as thinguserrepoadmin
+	boundary "Connector\nInterface" as thingconnectorinterface #grey
+	boundary "Ddr\nInterface" as thingddrinterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "License\nInterface" as thinglicenseinterface #grey
+	boundary "Pmh\nInterface" as thingpmhinterface #grey
+	boundary "Server\nInterface" as thingserverinterface #grey
+	boundary "Contributor\nInterface" as thingcontributorinterface #grey
+	boundary "Sla\nInterface" as thingslainterface #grey
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Integrate With\nDdr Provide\nA Fedora\nConnector" as controlintegrateDDR
+	control "Integrate With\nDdr Provide\nEmory" as controlintegrateDDRemory
+	control "Have Bidirectionally\nSymplectic Elements" as controlhavesymplecticelement
+	control "Have" as controlhaveintegrateDDR
+	control "Denied" as controldenyacceptsubmitterlicense
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nDeposit" as controlpresentuserrepoadminselectiondeposit
+	control "Presented With\nA Selection\nOf Specific\nLicenses To\nThe Collection" as controlpresentuserrepoadminselection
+	control "The Submitter\nNot Accept\nThe License" as controlacceptsubmitterlicense
+	control "Presented With\nA License" as controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	control "Expose Repository\nContents Via\nOai Pmh" as controlexposerepositorycontentsoaiPMH
+	control "Continue" as controlcontinueprovideaccessevent
+	control "Provide Access\nTo The\nRepository In\nThe Event\nThat The\nServer Fails" as controlprovideaccessevent
+	control "Provide The\nServer To\nData Contributors" as controlprovideserverdatacontributors
+	control "Provide Sla" as controlprovideSLA
+	control "Disrupting Access\nTo The\nPublic Interface" as controldisruptupdaterepositoryindexaccess
+	control "Update The\nRepository Index" as controlupdaterepositoryindex
+	control "Provide A\nLinked Data\nInterface To\nThe Repository" as controlprovidelinkeddatainterfacerepository
+	control "Communicate" as controlcommunicate
+	control "Have Symplectic\nElements" as controlhavesymplecticelementcommunicate
+
+	thingfedoraconnector <.. thingDDR
+	thingemory <.. thingDDR
+	thingspecificlicense *-- thingselection
+	thinglicense <.. thingsubmitter
+	thingcollection <.. thingspecificlicense
+	thingrepository <.. thingaccess
+	thingpublicinterface <.. thingaccess
+	thingdatacontributor <.. thingserver
+	thingevent <.. thingrepository
+	thingserver <.. thingevent
+	thingrepository <.. thingdatainterface
+	thingoaipmh *-- thingcontent
+	thingrepository *-- thingcontent
+	thingrepository *-- thingindex
+	actorrepoadmin --- thinguserrepoadmin
+	actorrepoadmin --- thingconnectorinterface
+	actorrepoadmin --- thingddrinterface
+	actorrepoadmin --- thingelementinterface
+	actorrepoadmin --- thinglicenseinterface
+	actorrepoadmin --- thingpmhinterface
+	actorrepoadmin --- thingserverinterface
+	actorrepoadmin --- thingcontributorinterface
+	actorrepoadmin --- thingslainterface
+	actorrepoadmin --- thinginterfaceinterface
+	actorrepoadmin --- thingrepositoryinterface
+	thingDDR --- controlintegrateDDR
+	thingfedoraconnector --- controlintegrateDDR
+	controlhaveintegrateDDR --> controlintegrateDDR
+	thingconnectorinterface --> controlintegrateDDR
+	thingemory --- controlintegrateDDRemory
+	thingddrinterface --> controlintegrateDDRemory
+	thingDDR --- controlintegrateDDRemory
+	controlhaveintegrateDDR --> controlintegrateDDRemory
+	thingsymplecticelement --- controlhavesymplecticelement
+	thingelementinterface --> controlhavesymplecticelement
+	thingconnectorinterface --> controlhaveintegrateDDR
+	thingDDR --- controlhaveintegrateDDR
+	thinguserrepoadmin --> controlhaveintegrateDDR
+	thingspecificlicense --- controlhaveintegrateDDR
+	thingselection --- controlhaveintegrateDDR
+	thinglicenseinterface --> controldenyacceptsubmitterlicense
+	controlpresentuserrepoadminlicensedenyacceptsubmitterlicense --> controldenyacceptsubmitterlicense
+	thingdeposit --- controlpresentuserrepoadminselectiondeposit
+	thingspecificlicense --- controlpresentuserrepoadminselectiondeposit
+	thinguserrepoadmin --> controlpresentuserrepoadminselectiondeposit
+	thingselection --- controlpresentuserrepoadminselectiondeposit
+	controlhaveintegrateDDR --> controlpresentuserrepoadminselectiondeposit
+	thingselection --- controlpresentuserrepoadminselection
+	thingspecificlicense --- controlpresentuserrepoadminselection
+	thingcollection --- controlpresentuserrepoadminselection
+	thinguserrepoadmin --> controlpresentuserrepoadminselection
+	controlhaveintegrateDDR --> controlpresentuserrepoadminselection
+	thingsubmitter --- controlacceptsubmitterlicense
+	controldenyacceptsubmitterlicense --> controlacceptsubmitterlicense
+	thinglicenseinterface --> controlacceptsubmitterlicense
+	thinglicense --- controlacceptsubmitterlicense
+	thinguserrepoadmin --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thinglicense --- controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	controlhaveintegrateDDR --> controlpresentuserrepoadminlicensedenyacceptsubmitterlicense
+	thingcontent --- controlexposerepositorycontentsoaiPMH
+	thingoaipmh --- controlexposerepositorycontentsoaiPMH
+	thingpmhinterface --> controlexposerepositorycontentsoaiPMH
+	thingserverinterface --> controlcontinueprovideaccessevent
+	controlcontinueprovideaccessevent --> controlprovideaccessevent
+	thingaccess --- controlprovideaccessevent
+	thingrepository --- controlprovideaccessevent
+	thingevent --- controlprovideaccessevent
+	thingserver --- controlprovideaccessevent
+	thingserverinterface --> controlprovideaccessevent
+	thingdatacontributor --- controlprovideserverdatacontributors
+	thingcontributorinterface --> controlprovideserverdatacontributors
+	thingserver --- controlprovideserverdatacontributors
+	thingSLA --- controlprovideSLA
+	thingslainterface --> controlprovideSLA
+	thingpublicinterface --- controldisruptupdaterepositoryindexaccess
+	thinginterfaceinterface --> controldisruptupdaterepositoryindexaccess
+	thingaccess --- controldisruptupdaterepositoryindexaccess
+	controldisruptupdaterepositoryindexaccess --> controlupdaterepositoryindex
+	thingindex --- controlupdaterepositoryindex
+	thingrepositoryinterface --> controlupdaterepositoryindex
+	thingrepository --- controlupdaterepositoryindex
+	thingdatainterface --- controlprovidelinkeddatainterfacerepository
+	thingrepository --- controlprovidelinkeddatainterfacerepository
+	thingrepositoryinterface --> controlprovidelinkeddatainterfacerepository
+	controlhavesymplecticelementcommunicate --> controlcommunicate
+	thingelementinterface --> controlcommunicate
+	thingsymplecticelement --- controlhavesymplecticelementcommunicate
+	thingelementinterface --> controlhavesymplecticelementcommunicate
+
+@enduml

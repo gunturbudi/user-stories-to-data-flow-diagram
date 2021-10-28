@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan " color=red];
+201 [label="<f0>  |<f1> Review " color=red];
+202 [label="<f0>  |<f1> Applicant " ];
+203 [label="<f0>  |<f1> Outcome " ];
+204 [label="<f0>  |<f1> Code Modification " ];
+205 [label="Plan , Review , Staff Member" shape=box];
+206 [label="{<f0> 1.0|<f1> Assign Plans For Review }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Conduct A Plan Review With The Applicant }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Record The Outcome }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> Review Plans }" shape=Mrecord];
+210 [label="{<f0> 5.0|<f1> Track The Completion Of Required Plan Reviews }" shape=Mrecord];
+211 [label="{<f0> 6.0|<f1> Review The Code Modifications The Applicant }" shape=Mrecord];
+7 [label="{<f0> 7.0|<f1> Record any conditions, clearances, or corrections needed from the applicant. }" shape=Mrecord];
+209 -> 7
+1001 [label="<f0>  |<f1> Plans " color=red];
+7 -> 1001 [label="Plans"]
+8 [label="{<f0> 8.0|<f1> Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance. }" shape=Mrecord];
+210 -> 8
+1004 [label="<f0>  |<f1> Results " color=red];
+8 -> 1004 [label="Results"]
+1006 [label="<f0>  |<f1> Payment " color=red];
+8 -> 1006 [label="Payment"]
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+205 -> 210
+205 -> 211
+206 -> 200 [label="Plan"]
+206 -> 201 [label="Review"]
+207 -> 202 [label="Applicant"]
+207 -> 201 [label="Review"]
+208 -> 203 [label="Outcome"]
+209 -> 200 [label="Plan"]
+210 -> 201 [label="Review"]
+211 -> 204 [label="Code Modification"]
+}

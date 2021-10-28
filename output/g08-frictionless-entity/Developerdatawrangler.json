@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a DeveloperDataWrangler, I want to store my Data Package in GitHub and have it automatically stored into CKAN, so that I get a data API and my dataset is listed in a relevant catalog.",
+    "entities": [
+      {
+        "text": "DeveloperDataWrangler",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "Data Package",
+        "label": "PII"
+      },
+      {
+        "text": "automatically stored",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

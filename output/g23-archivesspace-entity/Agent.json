@@ -1,0 +1,69 @@
+[
+  {
+    "text": "As an Archivist, I want to import only Agent and Subject information from MARCXML records.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "Subject information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I would like to indicate an Agent is either the creator or source or subject of an Accession or Resource or Resource Component.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "creator",
+        "label": "Data"
+      },
+      {
+        "text": "source",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Archivist, I want to specify the Source for a Name Form of an Agent and add new Sources and edit existing Sources.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  }
+]

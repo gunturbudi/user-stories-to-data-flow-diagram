@@ -1,0 +1,169 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "User" as thinguser
+	entity "Hearing" as thinghearing
+	entity "Device" as thingdevice #grey
+	entity "Trouble" as thingtrouble
+	entity "Visual" as thingvisual
+	entity "Visual Trouble" as thingvisualtrouble
+	entity "Access" as thingaccess
+	entity "Datum" as thingdatum
+	entity "Blood Pressure" as thingbloodpressure #grey
+	entity "Alfred" as thingALFRED
+	entity "Body Temperature" as thingbodytemperature #grey
+	entity "Heart Rate" as thingheartrate #grey
+	entity "Breathing Frequency" as thingbreathingfrequency #grey
+	entity "Regular Summary" as thingregularsummary
+	entity "Exercise" as thingmuchexercise
+	entity "Carer" as thingcarer
+	entity "Game" as thinggame
+	entity "Corrective Feedback" as thingcorrectivefeedback
+	entity "Question" as thingquestion
+	entity "Easy Way" as thingeasyway
+	entity "New App" as thingnewapp
+	entity "Alfredo Platform" as thingalfredoplatform #grey
+	entity "Real Interaction" as thingrealinteraction
+	entity "Human" as thinghuman
+	entity "Online Game" as thingonlinegame
+	entity "Health Sensor" as thinghealthsensor
+	entity "Ict Tool" as thingicttool
+	entity "Alfred" as thingalfred #grey
+	entity "Aflred" as thingaflred #grey
+	actor "Olderperson" as actorOlderPerson
+	actor "Developer" as actordeveloper
+	circle "Change Demand" as thingchangingdemand
+	boundary "Hearing\nInterface" as thinghearinginterface #grey
+	boundary "Trouble\nInterface" as thingtroubleinterface #grey
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Temperature\nInterface" as thingtemperatureinterface #grey
+	boundary "Rate\nInterface" as thingrateinterface #grey
+	boundary "Frequency\nInterface" as thingfrequencyinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Feedback\nInterface" as thingfeedbackinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Have An\nAlfred Device\nEasily Adapted\nFor User\nHave Visual" as controlhavealfreddevice
+	control "Have An\nDevice Easily\nAdapted For\nUser Have\nHearing Troubles" as controlhavedevicehearing
+	control "Determine The\nUser's Blood\nPressure" as controldeterminebloodpressure
+	control "Have Alfred" as controlhaveALFREDdeterminebloodpressure
+	control "Determine The\nUser's Body\nTemperature" as controldeterminebodytemperature
+	control "Determine The\nUser's Heart\nRate" as controldetermineheartrate
+	control "Determine The\nUser's Breathing\nFrequency" as controldeterminebreathingfrequency
+	control "Control" as controlcontrol
+	control "Have A\nRegular Summary\nHow Much\nExercise Performed\nThe User" as controlhaveregularsummary
+	control "Have A\nGame That\nThe Carer\nTogether Play\nWith The\nUser" as controlhavegame
+	control "Give Corrective\nFeedback" as controlgivecorrectivefeedback
+	control "Have An\nEasy Way" as controlhaveeasywaydefinequestion
+	control "Define Questions\nThe User\nAsk" as controldefinequestion
+	control "Read Data\nFrom Health\nSensors" as controlreaddatum
+	control "Have An\nEasy Way\nThe User\nIs Wearing" as controlhaveeasywayreaddatum
+	control "Offering New\nApps In\nThe Alfredo\nPlatform" as controlofferhavealfreddevicenewapp
+	control "Have An\nAflred Device\nEncourages Users\nFor Real\nInteraction Between\nHumans Only\nWith Ict\nTools" as controlhaveaflreddevice
+	control "Play Online\nGames Together\nWith Other\nUsers" as controlplayonlinegameotheruser
+
+	thingvisual <.. thinguser
+	thingvisualtrouble <.. thinguser
+	thingrealinteraction <.. thinguser
+	thingtrouble <.. thinguser
+	thinghearing <.. thinguser
+	thingtrouble <.. thinghearing
+	thingalfred <.. thingdevice
+	thingchangingdemand <.. thingdevice
+	thingaflred <.. thingdevice
+	thinguser <.. thingdevice
+	thingdatum <.. thingaccess
+	thinghealthsensor <.. thingdatum
+	thinguser <.. thingbloodpressure
+	thinguser <.. thingbodytemperature
+	thingmuchexercise <.. thingregularsummary
+	thinguser <.. thingregularsummary
+	thinguser <.. thingmuchexercise
+	thinguser <.. thingcarer
+	thingcarer <.. thinggame
+	thinguser <.. thinggame
+	thinguser <.. thingquestion
+	thinguser <.. thingeasyway
+	thingalfredoplatform <.. thingnewapp
+	thinghuman <.. thingrealinteraction
+	thingicttool <.. thinghuman
+	thinguser <.. thingonlinegame
+	thinguser *-- thingchangingdemand
+	actorOlderPerson --- thinghearinginterface
+	actorOlderPerson --- thingtroubleinterface
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingtemperatureinterface
+	actorOlderPerson --- thingrateinterface
+	actorOlderPerson --- thingfrequencyinterface
+	actordeveloper --- thinguserinterface
+	actorOlderPerson --- thinguserinterface
+	actorOlderPerson --- thingfeedbackinterface
+	actordeveloper --- thingwayinterface
+	actorOlderPerson --- thingplatforminterface
+	actorOlderPerson --- thingtoolinterface
+	thinguser --- controlhavealfreddevice
+	thingvisual --- controlhavealfreddevice
+	thingdevice --- controlhavealfreddevice
+	thingvisualtrouble --- controlhavealfreddevice
+	thingtroubleinterface --> controlhavealfreddevice
+	thingtrouble --- controlhavealfreddevice
+	controlofferhavealfreddevicenewapp --> controlhavealfreddevice
+	thingchangingdemand --- controlhavealfreddevice
+	thingdevice --- controlhavedevicehearing
+	thinghearing --- controlhavedevicehearing
+	thinghearinginterface --> controlhavedevicehearing
+	thinguser --- controlhavedevicehearing
+	thingbloodpressure --- controldeterminebloodpressure
+	controlhaveALFREDdeterminebloodpressure --> controldeterminebloodpressure
+	thingalfredinterface --> controldeterminebloodpressure
+	thingALFRED --- controlhaveALFREDdeterminebloodpressure
+	thingalfredinterface --> controlhaveALFREDdeterminebloodpressure
+	thingbodytemperature --- controldeterminebodytemperature
+	thingtemperatureinterface --> controldeterminebodytemperature
+	controlhaveALFREDdeterminebloodpressure --> controldeterminebodytemperature
+	thingheartrate --- controldetermineheartrate
+	thingrateinterface --> controldetermineheartrate
+	controlhaveALFREDdeterminebloodpressure --> controldetermineheartrate
+	thingbreathingfrequency --- controldeterminebreathingfrequency
+	thingfrequencyinterface --> controldeterminebreathingfrequency
+	controlhaveALFREDdeterminebloodpressure --> controldeterminebreathingfrequency
+	thingregularsummary --- controlhaveregularsummary
+	thingmuchexercise --- controlhaveregularsummary
+	thinguserinterface --> controlhaveregularsummary
+	thinguser --- controlhaveregularsummary
+	thinggame --- controlhavegame
+	thingcarer --- controlhavegame
+	thinguser --- controlhavegame
+	thinguserinterface --> controlhavegame
+	thingcorrectivefeedback --- controlgivecorrectivefeedback
+	thingfeedbackinterface --> controlgivecorrectivefeedback
+	thingeasyway --- controlhaveeasywaydefinequestion
+	thingwayinterface --> controlhaveeasywaydefinequestion
+	controlhaveeasywaydefinequestion --> controldefinequestion
+	thingquestion --- controldefinequestion
+	thinguser --- controldefinequestion
+	thinguserinterface --> controldefinequestion
+	thinghealthsensor --- controlreaddatum
+	controlhaveeasywayreaddatum --> controlreaddatum
+	thingdatum --- controlreaddatum
+	thinguserinterface --> controlreaddatum
+	thinguser --- controlhaveeasywayreaddatum
+	thingeasyway --- controlhaveeasywayreaddatum
+	thinguserinterface --> controlhaveeasywayreaddatum
+	thingnewapp --- controlofferhavealfreddevicenewapp
+	thingalfredoplatform --- controlofferhavealfreddevicenewapp
+	thingplatforminterface --> controlofferhavealfreddevicenewapp
+	thingrealinteraction --- controlhaveaflreddevice
+	thinghuman --- controlhaveaflreddevice
+	thingicttool --- controlhaveaflreddevice
+	thingtoolinterface --> controlhaveaflreddevice
+	thinguser --- controlhaveaflreddevice
+	thingdevice --- controlhaveaflreddevice
+	thingonlinegame --- controlplayonlinegameotheruser
+	thinguserinterface --> controlplayonlinegameotheruser
+	thinguser --- controlplayonlinegameotheruser
+
+@enduml

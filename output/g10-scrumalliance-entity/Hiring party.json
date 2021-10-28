@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "publishing",
+        "label": "Processing"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "hiring party",
+        "label": "Data"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "text": "As a collection curator, I want to canonically identify authors and creators of my items by unique identifier, so that it's easier to view all of the works by that person together.",
+    "entities": [
+      {
+        "text": "collection curator",
+        "label": "Data"
+      },
+      {
+        "text": "canonically",
+        "label": "Processing"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "authors",
+        "label": "Data"
+      },
+      {
+        "text": "creators",
+        "label": "Data"
+      },
+      {
+        "text": "items",
+        "label": "PII"
+      },
+      {
+        "text": "unique identifier",
+        "label": "PII"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "person",
+        "label": "Data"
+      }
+    ]
+  }
+]

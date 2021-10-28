@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Webmaster Workflow\nReport" as thingwebmasterworkflowreport #grey
+	actor "Cms" as actorCMS
+	boundary "Report\nInterface" as thingreportinterface #grey
+	control "See The\nWebmaster Workflow\nReport" as controlseewebmasterworkflowreport
+
+	actorCMS --- thingreportinterface
+	thingwebmasterworkflowreport --- controlseewebmasterworkflowreport
+	thingreportinterface --> controlseewebmasterworkflowreport
+
+@enduml

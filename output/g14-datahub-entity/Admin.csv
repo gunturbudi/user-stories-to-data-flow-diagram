@@ -1,0 +1,48 @@
+id,value,style,source,target,type
+9,Start contributing or using data.,ellipse,null,null,process
+200,Platform,shape=partialRectangle,null,null,data_base
+201,Site Deployment,shape=partialRectangle,null,null,data_base
+202,User,shape=partialRectangle,null,null,data_base
+203,Download,shape=partialRectangle,null,null,data_base
+204,Usage,shape=partialRectangle,null,null,data_base
+205,Key Metric,shape=partialRectangle,null,null,data_base
+206,Billing System,shape=partialRectangle,null,null,data_base
+207,Pricing Plan,shape=partialRectangle,null,null,data_base
+208,Configuration Parameter,shape=partialRectangle,null,null,data_base
+209,Api,shape=partialRectangle,null,null,data_base
+210,Admin,rounded=0,null,null,external_entity
+211,Join The Platform,ellipse,null,null,process
+212,Invite Someone,ellipse,null,null,process
+213,Set Key Configuration Parameters For Site Deployment,ellipse,null,null,process
+214,See Key Metrics About Usage Such As Api Usage,ellipse,null,null,process
+215,See Key Metrics About Usage Such As Users,ellipse,null,null,process
+216,See Key Metrics About Usage Such As Download,ellipse,null,null,process
+217,Have A Pricing Plan,ellipse,null,null,process
+218,Have Billing System,ellipse,null,null,process
+220,,endArrow=classic,210,211,endArrow=classic
+221,,endArrow=classic,210,212,endArrow=classic
+222,,endArrow=classic,210,213,endArrow=classic
+223,,endArrow=classic,210,214,endArrow=classic
+224,,endArrow=classic,210,215,endArrow=classic
+225,,endArrow=classic,210,216,endArrow=classic
+226,,endArrow=classic,210,217,endArrow=classic
+227,,endArrow=classic,210,218,endArrow=classic
+228,Platform,endArrow=classic,211,200,endArrow=classic
+229,,endArrow=classic,212,211,endArrow=classic
+230,Configuration Parameter,endArrow=classic,213,208,endArrow=classic
+231,Site Deployment,endArrow=classic,213,201,endArrow=classic
+232,Key Metric,endArrow=classic,214,205,endArrow=classic
+233,Usage,endArrow=classic,214,204,endArrow=classic
+234,Key Metric,endArrow=classic,215,205,endArrow=classic
+235,Usage,endArrow=classic,215,204,endArrow=classic
+236,User,endArrow=classic,215,202,endArrow=classic
+237,Download,endArrow=classic,216,203,endArrow=classic
+238,Key Metric,endArrow=classic,216,205,endArrow=classic
+239,Usage,endArrow=classic,216,204,endArrow=classic
+240,Pricing Plan,endArrow=classic,217,207,endArrow=classic
+241,Billing System,endArrow=classic,218,206,endArrow=classic
+245,Api,endArrow=classic,214,209,endArrow=classic
+1000,They,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,9,endArrow=classic
+1002,Data,rounded=0,null,null,external_entity
+1003,Data,endArrow=classic,9,1002,endArrow=classic

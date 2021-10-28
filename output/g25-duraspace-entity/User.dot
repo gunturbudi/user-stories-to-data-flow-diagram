@@ -1,0 +1,296 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Dam " ];
+201 [label="<f0>  |<f1> Object " color=red];
+202 [label="<f0>  |<f1> Library Unit " color=red];
+203 [label="<f0>  |<f1> Collection " color=red];
+204 [label="<f0>  |<f1> Repository " color=red];
+205 [label="<f0>  |<f1> Search " color=red];
+206 [label="<f0>  |<f1> Description " ];
+207 [label="<f0>  |<f1> Probable Importance " ];
+208 [label="<f0>  |<f1> User " ];
+209 [label="<f0>  |<f1> Access " ];
+210 [label="<f0>  |<f1> Rights Status " color=red];
+211 [label="<f0>  |<f1> Use " color=red];
+212 [label="<f0>  |<f1> Metadata " color=red];
+213 [label="<f0>  |<f1> Component Hierarchy " ];
+214 [label="<f0>  |<f1> Object Component " color=red];
+215 [label="<f0>  |<f1> Title " color=red];
+216 [label="<f0>  |<f1> Publication " ];
+217 [label="<f0>  |<f1> Place " ];
+218 [label="<f0>  |<f1> Etc Publisher " ];
+219 [label="<f0>  |<f1> Collection Component " ];
+220 [label="<f0>  |<f1> Scope " ];
+221 [label="<f0>  |<f1> Condition " ];
+222 [label="<f0>  |<f1> Identifier " ];
+223 [label="<f0>  |<f1> Etc " ];
+224 [label="<f0>  |<f1> Content " color=red];
+225 [label="<f0>  |<f1> Specific Language " ];
+226 [label="<f0>  |<f1> Name " color=red];
+227 [label="<f0>  |<f1> Specific Role " color=red];
+228 [label="<f0>  |<f1> Photographer " ];
+229 [label="<f0>  |<f1> Illustrator " ];
+230 [label="<f0>  |<f1> Geographical Etc " ];
+231 [label="<f0>  |<f1> Topic " color=red];
+232 [label="<f0>  |<f1> Form " color=red];
+233 [label="<f0>  |<f1> , Pertinent\nHeading " ];
+234 [label="<f0>  |<f1> Genre " color=red];
+235 [label="<f0>  |<f1> Geographical Function " ];
+236 [label="<f0>  |<f1> Function " ];
+237 [label="<f0>  |<f1> Geographical Name " color=red];
+238 [label="<f0>  |<f1> Occupation " color=red];
+239 [label="<f0>  |<f1> Geographical Cartographic " ];
+240 [label="<f0>  |<f1> Cartographic " ];
+241 [label="<f0>  |<f1> Geographical Occupation " color=red];
+242 [label="<f0>  |<f1> Resource " ];
+243 [label="<f0>  |<f1> Copyright " color=red];
+244 [label="<f0>  |<f1> Component Part " ];
+245 [label="User" shape=box];
+246 [label="Repository Manager" shape=box];
+247 [label="{<f0> 1.0|<f1> List Object }" shape=Mrecord];
+248 [label="{<f0> 2.0|<f1> List The Collections In The Dams Belong To A Library Unit }" shape=Mrecord];
+249 [label="{<f0> 3.0|<f1> Contact Repositories }" shape=Mrecord];
+250 [label="{<f0> 4.0|<f1> Browse By Collections In The Dams }" shape=Mrecord];
+251 [label="{<f0> 5.0|<f1> Specified }" shape=Mrecord];
+252 [label="{<f0> 6.0|<f1> Limit Search }" shape=Mrecord];
+253 [label="{<f0> 7.0|<f1> Indicate Any External Versions Of An Object }" shape=Mrecord];
+254 [label="{<f0> 8.0|<f1> Be Of Probable Importance To An User }" shape=Mrecord];
+255 [label="{<f0> 9.0|<f1> Indicate Description }" shape=Mrecord];
+256 [label="{<f0> 10.0|<f1> What Repository Belongs To }" shape=Mrecord];
+257 [label="{<f0> 11.0|<f1> Know }" shape=Mrecord];
+258 [label="{<f0> 12.0|<f1> See The Component Parts Of An Object }" shape=Mrecord];
+259 [label="{<f0> 13.0|<f1> Have Access To The Content Files For An Object }" shape=Mrecord];
+260 [label="{<f0> 14.0|<f1> Know The Rights Status Of An Object }" shape=Mrecord];
+261 [label="{<f0> 15.0|<f1> Know About Metadata Be Of Use To }" shape=Mrecord];
+262 [label="{<f0> 16.0|<f1> Know About Other Versions Of The Object }" shape=Mrecord];
+263 [label="{<f0> 17.0|<f1> See The Component Hierarchy Of An Object }" shape=Mrecord];
+264 [label="{<f0> 18.0|<f1> Navigate The Component Hierarchy Of An Object }" shape=Mrecord];
+265 [label="{<f0> 19.0|<f1> Search Object Component }" shape=Mrecord];
+266 [label="{<f0> 20.0|<f1> Search Object }" shape=Mrecord];
+267 [label="{<f0> 21.0|<f1> Search Collections By Title }" shape=Mrecord];
+268 [label="{<f0> 22.0|<f1> Know For An Object The Place Of Publication }" shape=Mrecord];
+269 [label="{<f0> 23.0|<f1> Know For The Place Of The Etc Publisher }" shape=Mrecord];
+270 [label="{<f0> 24.0|<f1> Know For }" shape=Mrecord];
+271 [label="{<f0> 25.0|<f1> Know For The Place Of The Etc Publisher Publication }" shape=Mrecord];
+272 [label="{<f0> 26.0|<f1> Component Part }" shape=Mrecord];
+273 [label="{<f0> 27.0|<f1> Govern }" shape=Mrecord];
+274 [label="{<f0> 28.0|<f1> Govern Use }" shape=Mrecord];
+275 [label="{<f0> 29.0|<f1> Govern Access }" shape=Mrecord];
+276 [label="{<f0> 30.0|<f1> Know About Various Facets Of A Collection Component Such As Scope }" shape=Mrecord];
+277 [label="{<f0> 31.0|<f1> Know About Various Facets Of Object }" shape=Mrecord];
+278 [label="{<f0> 32.0|<f1> Know About Various Facets Of A Collection Component Such As Condition }" shape=Mrecord];
+279 [label="{<f0> 33.0|<f1> Govern Etc }" shape=Mrecord];
+280 [label="{<f0> 34.0|<f1> Know About Various Facets Of A Collection Component Such As Various Identifier }" shape=Mrecord];
+281 [label="{<f0> 35.0|<f1> Know About Various Facets Of A Collection Component Such As Content }" shape=Mrecord];
+282 [label="{<f0> 36.0|<f1> Scope Searches For Object }" shape=Mrecord];
+283 [label="{<f0> 37.0|<f1> Scope Searches For Collections To A Specific Language }" shape=Mrecord];
+284 [label="{<f0> 38.0|<f1> Scope Searches For Object Component }" shape=Mrecord];
+285 [label="{<f0> 39.0|<f1> Search For Collections By Name }" shape=Mrecord];
+286 [label="{<f0> 40.0|<f1> Scope By Searches By Name To A Specific Role Such As Etc }" shape=Mrecord];
+287 [label="{<f0> 41.0|<f1> Scope By Searches By Name To A Specific Role Such As Photographer }" shape=Mrecord];
+288 [label="{<f0> 42.0|<f1> Scope By Searches By Name To A Specific Role Such As Illustrator }" shape=Mrecord];
+289 [label="{<f0> 43.0|<f1> Search For By Such, Pertinent Headings Including Form Geographical Name Topic }" shape=Mrecord];
+290 [label="{<f0> 44.0|<f1> Search For By Such, Pertinent Headings Including Form Geographical Name }" shape=Mrecord];
+291 [label="{<f0> 45.0|<f1> Search For By Such, Pertinent Headings Including Form Geographical Function Geographical Occupation Title }" shape=Mrecord];
+292 [label="{<f0> 46.0|<f1> Search For By Such, Pertinent Headings Including Genre }" shape=Mrecord];
+293 [label="{<f0> 47.0|<f1> Search For Collections By Such, Pertinent Headings Including Title }" shape=Mrecord];
+294 [label="{<f0> 48.0|<f1> See The Geographical Context Of Object }" shape=Mrecord];
+295 [label="{<f0> 49.0|<f1> See The Geographical Context Of A Collection Component Where Pertinent }" shape=Mrecord];
+296 [label="{<f0> 50.0|<f1> Know Of All Pertinent, Other Versions Of The Resource }" shape=Mrecord];
+297 [label="{<f0> 51.0|<f1> Know Of Description }" shape=Mrecord];
+298 [label="{<f0> 52.0|<f1> Indicate Other Descriptions Of The Collection Are Of Probable Importance To Users }" shape=Mrecord];
+299 [label="{<f0> 53.0|<f1> Indicate Other Descriptions Of The Collection Are Outside The Dams }" shape=Mrecord];
+245 -> 247
+245 -> 248
+245 -> 249
+245 -> 250
+245 -> 251
+245 -> 252
+245 -> 253
+245 -> 255
+245 -> 256
+245 -> 257
+245 -> 258
+245 -> 259
+245 -> 260
+245 -> 261
+245 -> 262
+245 -> 263
+245 -> 264
+245 -> 265
+245 -> 266
+245 -> 267
+245 -> 268
+245 -> 274
+245 -> 275
+245 -> 276
+245 -> 277
+245 -> 278
+245 -> 279
+245 -> 280
+245 -> 281
+245 -> 282
+245 -> 283
+245 -> 284
+245 -> 285
+245 -> 286
+245 -> 287
+245 -> 288
+245 -> 293
+245 -> 294
+245 -> 295
+245 -> 296
+245 -> 297
+245 -> 299
+246 -> 247
+246 -> 250
+246 -> 253
+246 -> 254
+246 -> 255
+246 -> 258
+246 -> 259
+246 -> 260
+246 -> 262
+246 -> 263
+246 -> 264
+246 -> 265
+246 -> 266
+246 -> 277
+246 -> 282
+246 -> 284
+246 -> 294
+246 -> 297
+246 -> 298
+246 -> 299
+247 -> 201 [label="Object"]
+248 -> 203 [label="Collection"]
+248 -> 200 [label="Dam"]
+248 -> 202 [label="Library Unit"]
+249 -> 204 [label="Repository"]
+250 -> 200 [label="Dam"]
+250 -> 203 [label="Collection"]
+252 -> 251
+252 -> 205 [label="Search"]
+253 -> 254
+253 -> 201 [label="Object"]
+254 -> 207 [label="Probable Importance"]
+254 -> 208 [label="User"]
+255 -> 206 [label="Description"]
+256 -> 204 [label="Repository"]
+257 -> 256
+258 -> 244 [label="Component Part"]
+258 -> 201 [label="Object"]
+259 -> 209 [label="Access"]
+259 -> 201 [label="Object"]
+259 -> 224 [label="Content"]
+260 -> 210 [label="Rights Status"]
+260 -> 201 [label="Object"]
+261 -> 212 [label="Metadata"]
+261 -> 211 [label="Use"]
+262 -> 201 [label="Object"]
+263 -> 213 [label="Component Hierarchy"]
+263 -> 201 [label="Object"]
+264 -> 201 [label="Object"]
+264 -> 213 [label="Component Hierarchy"]
+266 -> 201 [label="Object"]
+267 -> 215 [label="Title"]
+267 -> 203 [label="Collection"]
+268 -> 201 [label="Object"]
+268 -> 216 [label="Publication"]
+268 -> 217 [label="Place"]
+269 -> 218 [label="Etc Publisher"]
+269 -> 217 [label="Place"]
+270 -> 272
+271 -> 218 [label="Etc Publisher"]
+271 -> 216 [label="Publication"]
+271 -> 217 [label="Place"]
+274 -> 211 [label="Use"]
+275 -> 209 [label="Access"]
+276 -> 219 [label="Collection Component"]
+276 -> 220 [label="Scope"]
+277 -> 201 [label="Object"]
+278 -> 273
+278 -> 275
+278 -> 219 [label="Collection Component"]
+278 -> 221 [label="Condition"]
+279 -> 223 [label="Etc"]
+280 -> 222 [label="Identifier"]
+280 -> 219 [label="Collection Component"]
+281 -> 224 [label="Content"]
+281 -> 219 [label="Collection Component"]
+282 -> 201 [label="Object"]
+282 -> 205 [label="Search"]
+283 -> 203 [label="Collection"]
+283 -> 205 [label="Search"]
+283 -> 225 [label="Specific Language"]
+284 -> 205 [label="Search"]
+285 -> 203 [label="Collection"]
+285 -> 226 [label="Name"]
+286 -> 223 [label="Etc"]
+286 -> 227 [label="Specific Role"]
+286 -> 205 [label="Search"]
+286 -> 226 [label="Name"]
+287 -> 228 [label="Photographer"]
+287 -> 227 [label="Specific Role"]
+287 -> 205 [label="Search"]
+287 -> 226 [label="Name"]
+288 -> 227 [label="Specific Role"]
+288 -> 229 [label="Illustrator"]
+288 -> 205 [label="Search"]
+288 -> 226 [label="Name"]
+289 -> 234 [label="Genre"]
+289 -> 238 [label="Occupation"]
+289 -> 230 [label="Geographical Etc"]
+289 -> 232 [label="Form"]
+289 -> 231 [label="Topic"]
+289 -> 233 [label=", Pertinent\nHeading"]
+289 -> 235 [label="Geographical Function"]
+289 -> 237 [label="Geographical Name"]
+289 -> 239 [label="Geographical Cartographic"]
+289 -> 240 [label="Cartographic"]
+289 -> 241 [label="Geographical Occupation"]
+289 -> 215 [label="Title"]
+289 -> 223 [label="Etc"]
+289 -> 226 [label="Name"]
+290 -> 232 [label="Form"]
+290 -> 233 [label=", Pertinent\nHeading"]
+290 -> 230 [label="Geographical Etc"]
+290 -> 231 [label="Topic"]
+290 -> 235 [label="Geographical Function"]
+290 -> 234 [label="Genre"]
+290 -> 237 [label="Geographical Name"]
+290 -> 238 [label="Occupation"]
+290 -> 239 [label="Geographical Cartographic"]
+290 -> 240 [label="Cartographic"]
+290 -> 241 [label="Geographical Occupation"]
+290 -> 215 [label="Title"]
+290 -> 223 [label="Etc"]
+290 -> 226 [label="Name"]
+291 -> 237 [label="Geographical Name"]
+291 -> 230 [label="Geographical Etc"]
+291 -> 232 [label="Form"]
+291 -> 235 [label="Geographical Function"]
+291 -> 231 [label="Topic"]
+291 -> 233 [label=", Pertinent\nHeading"]
+291 -> 239 [label="Geographical Cartographic"]
+291 -> 241 [label="Geographical Occupation"]
+291 -> 215 [label="Title"]
+292 -> 234 [label="Genre"]
+292 -> 231 [label="Topic"]
+292 -> 233 [label=", Pertinent\nHeading"]
+292 -> 232 [label="Form"]
+293 -> 203 [label="Collection"]
+293 -> 233 [label=", Pertinent\nHeading"]
+293 -> 215 [label="Title"]
+294 -> 201 [label="Object"]
+295 -> 219 [label="Collection Component"]
+296 -> 242 [label="Resource"]
+297 -> 206 [label="Description"]
+298 -> 207 [label="Probable Importance"]
+298 -> 208 [label="User"]
+298 -> 203 [label="Collection"]
+299 -> 200 [label="Dam"]
+299 -> 203 [label="Collection"]
+265 -> 214 [label="Object Component"]
+291 -> 236 [label="Function"]
+}

@@ -1,0 +1,84 @@
+id,value,style,source,target,type
+200,Fisma Low,shape=partialRectangle,null,null,data_base
+201,Process,shape=partialRectangle,null,null,data_base
+202,Prototype,shape=partialRectangle,null,null,data_base
+203,Key Consideration,shape=partialRectangle,null,null,data_base
+204,Step,shape=partialRectangle,null,null,data_base
+205,Key Lesson,shape=partialRectangle,null,null,data_base
+206,Content Management\nSystem Decision,shape=partialRectangle,null,null,data_base
+207,Final Workshop,shape=partialRectangle,null,null,data_base
+208,Feature,shape=partialRectangle,null,null,data_base
+209,Work,shape=partialRectangle,null,null,data_base
+210,Conjunction,shape=partialRectangle,null,null,data_base
+211,New Cms,shape=partialRectangle,null,null,data_base
+212,Github,shape=partialRectangle,null,null,data_base
+213,Person,shape=partialRectangle,null,null,data_base
+214,", Initial\nMeeting",shape=partialRectangle,null,null,data_base
+215,Hosting Plan,shape=partialRectangle,null,null,data_base
+216,Roadmap Document,shape=partialRectangle,null,null,data_base
+217,Cms Option,shape=partialRectangle,null,null,data_base
+218,Level Strategy\nRecommendation,shape=partialRectangle,null,null,data_base
+219,Editorial Planning\nRecommendation,shape=partialRectangle,null,null,data_base
+220,Brand Guideline,shape=partialRectangle,null,null,data_base
+221,Design Direction,shape=partialRectangle,null,null,data_base
+222,Nsf Employee,rounded=0,null,null,external_entity
+223,Switching The Cloud.Gov Hosting Plan Over From Prototype To Fisma Low,ellipse,null,null,process
+224,Understand The Process,ellipse,null,null,process
+225,Have An Updated Roadmap Document,ellipse,null,null,process
+226,Narrow Down The Universe Of Cms Options,ellipse,null,null,process
+227,Identify,ellipse,null,null,process
+228,Getting To The Next Step,ellipse,null,null,process
+229,Prioritize Key Considerations,ellipse,null,null,process
+230,Have A Final Workshop,ellipse,null,null,process
+231,Identify Key Lessons,ellipse,null,null,process
+232,Have A Final Workshop Feature For The Content Management System Decision,ellipse,null,null,process
+233,Understand Work,ellipse,null,null,process
+234,Have High Level Strategy Recommendations,ellipse,null,null,process
+235,Implement In Conjunction With The New Cms,ellipse,null,null,process
+236,Have Editorial Planning Recommendations,ellipse,null,null,process
+237,Know,ellipse,null,null,process
+238,"Schedule In, Regular Person Check Ins",ellipse,null,null,process
+239,Join Github,ellipse,null,null,process
+240,Learn Github How Used,ellipse,null,null,process
+241,See,ellipse,null,null,process
+243,,endArrow=classic,222,223,endArrow=classic
+244,,endArrow=classic,222,224,endArrow=classic
+245,,endArrow=classic,222,225,endArrow=classic
+246,,endArrow=classic,222,226,endArrow=classic
+247,,endArrow=classic,222,228,endArrow=classic
+248,,endArrow=classic,222,229,endArrow=classic
+249,,endArrow=classic,222,230,endArrow=classic
+250,,endArrow=classic,222,231,endArrow=classic
+251,,endArrow=classic,222,232,endArrow=classic
+252,,endArrow=classic,222,233,endArrow=classic
+253,,endArrow=classic,222,234,endArrow=classic
+254,,endArrow=classic,222,235,endArrow=classic
+255,,endArrow=classic,222,236,endArrow=classic
+256,,endArrow=classic,222,238,endArrow=classic
+257,,endArrow=classic,222,239,endArrow=classic
+258,,endArrow=classic,222,240,endArrow=classic
+259,,endArrow=classic,223,224,endArrow=classic
+260,Hosting Plan,endArrow=classic,223,215,endArrow=classic
+261,Prototype,endArrow=classic,223,202,endArrow=classic
+262,Fisma Low,endArrow=classic,223,200,endArrow=classic
+263,Process,endArrow=classic,224,201,endArrow=classic
+264,Roadmap Document,endArrow=classic,225,216,endArrow=classic
+265,Cms Option,endArrow=classic,226,217,endArrow=classic
+266,,endArrow=classic,228,229,endArrow=classic
+267,Step,endArrow=classic,228,204,endArrow=classic
+268,Key Consideration,endArrow=classic,229,203,endArrow=classic
+269,,endArrow=classic,230,231,endArrow=classic
+270,Final Workshop,endArrow=classic,230,207,endArrow=classic
+271,Key Lesson,endArrow=classic,231,205,endArrow=classic
+272,Feature,endArrow=classic,232,208,endArrow=classic
+273,Content Management\nSystem Decision,endArrow=classic,232,206,endArrow=classic
+274,Final Workshop,endArrow=classic,232,207,endArrow=classic
+275,Work,endArrow=classic,233,209,endArrow=classic
+276,,endArrow=classic,234,235,endArrow=classic
+277,Level Strategy\nRecommendation,endArrow=classic,234,218,endArrow=classic
+278,Conjunction,endArrow=classic,235,210,endArrow=classic
+279,New Cms,endArrow=classic,235,211,endArrow=classic
+280,Editorial Planning\nRecommendation,endArrow=classic,236,219,endArrow=classic
+281,Github,endArrow=classic,239,212,endArrow=classic
+282,Github,endArrow=classic,240,212,endArrow=classic
+298,Person,endArrow=classic,238,213,endArrow=classic

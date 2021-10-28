@@ -1,0 +1,46 @@
+id,value,style,source,target,type
+200,Code,shape=partialRectangle,null,null,data_base
+201,Dataset Type,shape=partialRectangle,null,null,data_base
+202,Plugin,shape=partialRectangle,null,null,data_base
+203,Type,shape=partialRectangle,null,null,data_base
+204,App,shape=partialRectangle,null,null,data_base
+205,Version,shape=partialRectangle,null,null,data_base
+206,Pipeline,shape=partialRectangle,null,null,data_base
+207,Dataset Instance,shape=partialRectangle,null,null,data_base
+208,Custom Dataset,shape=partialRectangle,null,null,data_base
+209,Dataset,shape=partialRectangle,null,null,data_base
+210,Plugin Developer,rounded=0,null,null,external_entity
+211,Include The Code For A Dataset Type In The Plugin Artifact,ellipse,null,null,process
+212,Use A Type As Part Of An App Inside The Plugin,ellipse,null,null,process
+213,Use A Custom Dataset Type Independently Deployed,ellipse,null,null,process
+214,Upgrade The Code Of A Dataset Type,ellipse,null,null,process
+215,A Dataset Instance That Plugin Deploy A New Version Of The Plugin,ellipse,null,null,process
+216,Use That Version,ellipse,null,null,process
+217,Update The Pipeline,ellipse,null,null,process
+218,Upgrade The Code Of A Type,ellipse,null,null,process
+220,,endArrow=classic,210,211,endArrow=classic
+221,,endArrow=classic,210,212,endArrow=classic
+222,,endArrow=classic,210,213,endArrow=classic
+223,,endArrow=classic,210,214,endArrow=classic
+224,,endArrow=classic,210,215,endArrow=classic
+225,,endArrow=classic,210,216,endArrow=classic
+226,,endArrow=classic,210,217,endArrow=classic
+227,,endArrow=classic,210,218,endArrow=classic
+228,Code,endArrow=classic,211,200,endArrow=classic
+229,Dataset Type,endArrow=classic,211,201,endArrow=classic
+230,Type,endArrow=classic,212,203,endArrow=classic
+231,App,endArrow=classic,212,204,endArrow=classic
+232,Plugin,endArrow=classic,212,202,endArrow=classic
+233,Type,endArrow=classic,213,203,endArrow=classic
+234,Code,endArrow=classic,214,200,endArrow=classic
+235,Type,endArrow=classic,214,203,endArrow=classic
+236,Dataset Instance,endArrow=classic,215,207,endArrow=classic
+237,Plugin,endArrow=classic,215,202,endArrow=classic
+238,Version,endArrow=classic,216,205,endArrow=classic
+239,,endArrow=classic,217,216,endArrow=classic
+240,Pipeline,endArrow=classic,217,206,endArrow=classic
+241,,endArrow=classic,218,217,endArrow=classic
+242,Type,endArrow=classic,218,203,endArrow=classic
+243,Code,endArrow=classic,218,200,endArrow=classic
+246,Custom Dataset,endArrow=classic,213,208,endArrow=classic
+247,Dataset,endArrow=classic,211,209,endArrow=classic

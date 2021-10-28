@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Research Material,shape=partialRectangle,null,null,data_base
+201,Cornell Faculty,shape=partialRectangle,null,null,data_base
+202,Particular Topic,shape=partialRectangle,null,null,data_base
+203,Educational,shape=partialRectangle,null,null,data_base
+204,Externaluser,rounded=0,null,null,external_entity
+205,Find,ellipse,null,null,process
+206,Access Educational,ellipse,null,null,process
+207,Access Research Materials From Cornell Faculty To A Particular Topic,ellipse,null,null,process
+209,,endArrow=classic,204,206,endArrow=classic
+210,,endArrow=classic,204,207,endArrow=classic
+211,Educational,endArrow=classic,206,203,endArrow=classic
+212,Research Material,endArrow=classic,207,200,endArrow=classic
+213,Cornell Faculty,endArrow=classic,207,201,endArrow=classic
+214,Particular Topic,endArrow=classic,207,202,endArrow=classic

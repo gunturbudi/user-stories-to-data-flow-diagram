@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a user, I want to contact the administrators, so that I can give feedback or ask for help.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "administrators",
+        "label": "Data"
+      },
+      {
+        "text": "give",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  }
+]

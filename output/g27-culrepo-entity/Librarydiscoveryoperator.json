@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a librarydiscoveryoperator, I want to harvest useful metadata from the repository via OAI, and continue to do so incrementally, so that I can make Cornell publications discoverable in my repository.",
+    "entities": [
+      {
+        "text": "librarydiscoveryoperator,",
+        "label": "Data"
+      },
+      {
+        "text": "harvest",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  }
+]

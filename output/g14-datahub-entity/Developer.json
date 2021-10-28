@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As a Developer, I want to use data package as a node lib in my project, so that that I can depend on it using my normal dependency framework.",
+    "entities": [
+      {
+        "text": "Developer",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "data package",
+        "label": "PII"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      },
+      {
+        "text": "depend",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to list all DataPackages requirements for my project in the file and pin the exact versions of any DataPackage that my project depends on, so that that the project can be deterministically deployed locally and won't break because of the DataPackage schema changes.",
+    "entities": [
+      {
+        "text": "Developer,",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "DataPackages requirements",
+        "label": "PII"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      },
+      {
+        "text": "DataPackage",
+        "label": "PII"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      }
+    ]
+  }
+]

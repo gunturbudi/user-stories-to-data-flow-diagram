@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a research evaluation manager, I want to ensure all data are quoted correctly with our affiliation, so that they are counted towards our citation counts.",
+    "entities": [
+      {
+        "text": "research evaluation manager",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "affiliation",
+        "label": "PII"
+      }
+    ]
+  }
+]

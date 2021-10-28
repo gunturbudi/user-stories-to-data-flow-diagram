@@ -1,0 +1,35 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Attendee " color=red];
+201 [label="<f0>  |<f1> Summit " color=red];
+202 [label="<f0>  |<f1> Basic Information " ];
+203 [label="<f0>  |<f1> Sponsor " color=red];
+204 [label="<f0>  |<f1> Agenda " ];
+205 [label="Summit Coordinator" shape=box];
+206 [label="{<f0> 1.0|<f1> See A List Of Attendees Up For Summit }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> List Basic Information About Summit }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> List Sponsors For Summit }" shape=Mrecord];
+209 [label="{<f0> 4.0|<f1> List An Agenda For Summit }" shape=Mrecord];
+5 [label="{<f0> 5.0|<f1> Communicate with my attendees by email prior to the event. }" shape=Mrecord];
+206 -> 5
+1001 [label="<f0>  |<f1> Attendees " color=red];
+5 -> 1001 [label="Attendees"]
+1003 [label="<f0>  |<f1> Email " color=red];
+5 -> 1003 [label="Email"]
+6 [label="{<f0> 6.0|<f1> Encourage participation. }" shape=Mrecord];
+209 -> 6
+1006 [label="<f0>  |<f1> Feedback " color=red];
+6 -> 1006 [label="Feedback"]
+205 -> 206
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 200 [label="Attendee"]
+206 -> 201 [label="Summit"]
+207 -> 202 [label="Basic Information"]
+207 -> 201 [label="Summit"]
+208 -> 203 [label="Sponsor"]
+208 -> 201 [label="Summit"]
+209 -> 204 [label="Agenda"]
+209 -> 201 [label="Summit"]
+}

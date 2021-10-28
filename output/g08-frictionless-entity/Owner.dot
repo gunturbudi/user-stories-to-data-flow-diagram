@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Match ,\nService " ];
+201 [label="<f0>  |<f1> App " ];
+202 [label="<f0>  |<f1> Packaging Datum " ];
+203 [label="actora" shape=box];
+204 [label="{<f0> 1.0|<f1> Provided With An App Acts As A Match, Making Service For Packaging Data }" shape=Mrecord];
+203 -> 204
+204 -> 201 [label="App"]
+204 -> 200 [label="Match ,\nService"]
+204 -> 202 [label="Packaging Datum"]
+}

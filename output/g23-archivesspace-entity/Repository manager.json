@@ -1,0 +1,52 @@
+[
+  {
+    "text": "As a Repository Manager , I want to create, update and delete archival descriptions in my repository.",
+    "entities": [
+      {
+        "text": "Repository Manager",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "archival descriptions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Repository Manager , I want to create, update and delete any records in my repository.",
+    "entities": [
+      {
+        "text": "Repository Manager",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "records",
+        "label": "PII"
+      }
+    ]
+  }
+]

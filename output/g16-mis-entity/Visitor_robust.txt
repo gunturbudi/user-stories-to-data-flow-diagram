@@ -1,0 +1,11 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Way" as thingway
+	actor "Visitor" as actorvisitor
+	control "See" as controlsee
+
+
+@enduml

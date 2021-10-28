@@ -1,0 +1,190 @@
+[
+  {
+    "text": "As a user, I want to access the raw agency published files from FABS via USAspending.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.",
+    "entities": [
+      {
+        "text": "Developer,",
+        "label": "Data"
+      },
+      {
+        "text": "prevent",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "double publishing",
+        "label": "Processing"
+      },
+      {
+        "text": "FABS submissions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "submission file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "complete",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.",
+    "entities": [
+      {
+        "text": "Developer ,",
+        "label": "Data"
+      },
+      {
+        "text": "clarify",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I don't want to see NASA grants displayed as contracts.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "accept",
+        "label": "Processing"
+      },
+      {
+        "text": "records",
+        "label": "PII"
+      },
+      {
+        "text": "ActionTypes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "accept",
+        "label": "Processing"
+      },
+      {
+        "text": "ActionDates",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to access the raw agency published files from FABS via USAspending.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to generate and validate D Files from FABS and FPDS data.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "D Files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want more information about how many rows will be published prior to deciding whether to publish.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      }
+    ]
+  }
+]

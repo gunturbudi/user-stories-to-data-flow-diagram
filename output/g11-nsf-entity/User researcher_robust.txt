@@ -1,0 +1,92 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Wig Prototype" as thingwigprototype #grey
+	entity "Interview" as thinginterview
+	entity "Hypothesis" as thinghypothesis
+	entity "Outreach" as thingoutreach
+	entity "Website Recruitment\nTest" as thingwebsiterecruitmenttest #grey
+	entity "User Definition\nWorkshop" as thinguserdefinitionworkshop #grey
+	entity "Nsf" as thingNSF
+	entity "Olpa Task\nScript" as thingolpataskscript
+	entity "Priority Workflow\nCandidate" as thingpriorityworkflowcandidate
+	entity "User" as thinguser #grey
+	actor "User Researcher" as actoruserresearcher
+	circle "Research Plan" as thingresearchplan #grey
+	circle "Participant" as thingparticipant #grey
+	boundary "Correct Nsf\nPeople" as thingcorrectnsfpeopleuserresearcher
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Script\nInterface" as thingscriptinterface #grey
+	boundary "Prototype\nInterface" as thingprototypeinterface #grey
+	boundary "Candidate\nInterface" as thingcandidateinterface #grey
+	boundary "Hypothesis\nInterface" as thinghypothesisinterface #grey
+	boundary "Outreach\nInterface" as thingoutreachinterface #grey
+	boundary "Interview\nInterface" as thinginterviewinterface #grey
+	boundary "Test\nInterface" as thingtestinterface #grey
+	boundary "Nsf\nInterface" as thingnsfinterface #grey
+	control "Test The\nUser Research\nPlan" as controltestuserresearchplan
+	control "Have The\nFinalized Olpa\nTask Script" as controlhavefinalizedolpataskscript
+	control "Have The\nWig Prototype" as controlhavewigprototype
+	control "Have A\nList Of\nPriority Workflow\nCandidates" as controlhavelist
+	control "Scheduling Interviews\nFor Hypothesis" as controlschedulinginterview
+	control "Continue" as controlcontinueschedulinginterview
+	control "Know Outreach\nTo Lists\nSuccessful" as controlknowoutreach
+	control "Identifying Interview\nParticipants" as controlidentifyinterviewparticipants
+	control "Begin" as controlbeginidentifyinterviewparticipants
+	control "Set Up\nA Website\nRecruitment Test" as controlsetwebsiterecruitmenttest
+	control "Invited To\nUser Interviews" as controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	control "Make" as controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews
+	control "Drafting A\nResearch Plan" as controldraftresearchplan
+	control "Conduct A\nUser Definition\nWorkshop With\nNsf" as controlconductuserdefinitionworkshopNSF
+
+	thinghypothesis <.. thinginterview
+	thinguser <.. thinginterview
+	thingNSF <.. thinguserdefinitionworkshop
+	thinguser *-- thingresearchplan
+	thinginterview *-- thingparticipant
+	actoruserresearcher --- thingcorrectnsfpeopleuserresearcher
+	actoruserresearcher --- thingplaninterface
+	actoruserresearcher --- thingscriptinterface
+	actoruserresearcher --- thingprototypeinterface
+	actoruserresearcher --- thingcandidateinterface
+	actoruserresearcher --- thinghypothesisinterface
+	actoruserresearcher --- thingoutreachinterface
+	actoruserresearcher --- thinginterviewinterface
+	actoruserresearcher --- thingtestinterface
+	actoruserresearcher --- thingnsfinterface
+	thingresearchplan --- controltestuserresearchplan
+	thingplaninterface --> controltestuserresearchplan
+	thingolpataskscript --- controlhavefinalizedolpataskscript
+	thingscriptinterface --> controlhavefinalizedolpataskscript
+	thingwigprototype --- controlhavewigprototype
+	thingprototypeinterface --> controlhavewigprototype
+	thingpriorityworkflowcandidate --- controlhavelist
+	thingcandidateinterface --> controlhavelist
+	thinginterview --- controlschedulinginterview
+	thinghypothesis --- controlschedulinginterview
+	controlcontinueschedulinginterview --> controlschedulinginterview
+	thinghypothesisinterface --> controlschedulinginterview
+	thinghypothesisinterface --> controlcontinueschedulinginterview
+	thingoutreach --- controlknowoutreach
+	thingoutreachinterface --> controlknowoutreach
+	thingparticipant --- controlidentifyinterviewparticipants
+	controlbeginidentifyinterviewparticipants --> controlidentifyinterviewparticipants
+	thinginterviewinterface --> controlidentifyinterviewparticipants
+	thinginterviewinterface --> controlbeginidentifyinterviewparticipants
+	thingplaninterface --> controlbeginidentifyinterviewparticipants
+	thingwebsiterecruitmenttest --- controlsetwebsiterecruitmenttest
+	thingtestinterface --> controlsetwebsiterecruitmenttest
+	thingcorrectnsfpeopleuserresearcher --> controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews --> controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	thinginterview --- controlinvitecorrectnsfpeopleuserresearcheruserinterviews
+	thingcorrectnsfpeopleuserresearcher --> controlmakeinvitecorrectnsfpeopleuserresearcheruserinterviews
+	thingresearchplan --- controldraftresearchplan
+	thingplaninterface --> controldraftresearchplan
+	controlbeginidentifyinterviewparticipants --> controldraftresearchplan
+	thinguserdefinitionworkshop --- controlconductuserdefinitionworkshopNSF
+	thingNSF --- controlconductuserdefinitionworkshopNSF
+	thingnsfinterface --> controlconductuserdefinitionworkshopNSF
+
+@enduml

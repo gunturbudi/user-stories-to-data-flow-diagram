@@ -1,0 +1,406 @@
+[
+  {
+    "text": "As a researcher, I want to indicate where my data will be stored during the project and where after the project, so that it remains accessible during all stages of the data lifecycle.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "stored",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to import metadata that I captured with a metadata tool, so that I do not have to capture it again in a DMP.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know which topics are mandatory and similar in all DMPs, so that I can save time through quickly writing it.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "topics",
+        "label": "PII"
+      },
+      {
+        "text": "DMPs",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want the DMP to prepopulate information that I have already entered in other institutional systems, so that I do not have to re-enter information ensuring the DMP contains accurate and standardized information.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "prepopulate",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "re-enter",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know how many resources are needed during the project, so that I can calculate costs.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "resources",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to extract the description of the data collected, so that I can reuse it for the writing of a data paper.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "extract",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to record research publications in the institutional repository or CRIS with DMP records, so that I can generate reports of research output resulting from a project.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      },
+      {
+        "text": "research publications",
+        "label": "PII"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to link research publications in the institutional repository or CRIS with DMP records, so that I can generate reports of research output resulting from a project.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "research publications",
+        "label": "PII"
+      },
+      {
+        "text": "DMP records",
+        "label": "PII"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to store agreements relating to third party data used in a project, so that the data can be cited, attributed and used correctly.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "agreements",
+        "label": "PII"
+      },
+      {
+        "text": "third party data",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know about costs, so that I can plan my research.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "costs",
+        "label": "PII"
+      },
+      {
+        "text": "plan",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know how long it will take to archive, so that I can plan further steps.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "archive",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a data manager, I want to know which information is necessary to re-use the data, so that it can be checked whether all necessary information is available for researchers interested in re-using the data.",
+    "entities": [
+      {
+        "text": "data manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "re-use",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "checked",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to see the sections on costing by other researchers in my department, so that I can see if we could share data manager posts.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "department",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "data manager",
+        "label": "Data"
+      },
+      {
+        "text": "posts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to see the sections on roles submitted by other researchers in my department, so that I can see if we could share data manager posts.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "roles",
+        "label": "PII"
+      },
+      {
+        "text": "submitted",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "department",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "data manager",
+        "label": "Data"
+      },
+      {
+        "text": "posts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to see the sections on responsibilities submitted by other researchers in my department, so that I can see if we could share data manager posts.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "responsibilities",
+        "label": "PII"
+      },
+      {
+        "text": "submitted",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "department",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "data manager",
+        "label": "Data"
+      },
+      {
+        "text": "posts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to record my intention to share data I have collected under terms of a particular licence, so that other researchers who use the data understand the rights of use.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "record",
+        "label": "Processing"
+      },
+      {
+        "text": "intention",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "collected",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  }
+]

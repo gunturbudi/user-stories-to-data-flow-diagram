@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Active ,\nAuthenticated User" as thingactiveauthenticateduser
+	entity "Anonymous User" as thinganonymoususer
+	actor "Repository Manager" as actorrepositorymanager
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "View Anonymous\nUser" as controlviewanonymoususer
+	control "View Active,\nAuthenticated Users" as controlviewactiveauthenticateduser
+
+	actorrepositorymanager --- thinguserinterface
+	thinganonymoususer --- controlviewanonymoususer
+	thinguserinterface --> controlviewanonymoususer
+	thingactiveauthenticateduser --- controlviewactiveauthenticateduser
+	thinguserinterface --> controlviewactiveauthenticateduser
+
+@enduml

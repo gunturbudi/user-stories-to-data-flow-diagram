@@ -1,0 +1,267 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsor" as thingsponsor
+	entity "Dedicated Page" as thingdedicatedpage
+	entity "Class" as thingclass
+	entity "Location" as thinglocation
+	entity "View" as thingview #grey
+	entity "Offering" as thingoffering
+	entity "Trainer" as thingtrainer
+	entity "Title" as thingtitle
+	entity "Datetime" as thingdatetime
+	entity "Follow Information" as thingfollowinginformation
+	entity "Skill Level" as thingskilllevel #grey
+	entity "Registration" as thingregistration
+	entity "Logo" as thinglogo
+	entity "Day Level" as thingdaylevel
+	entity "Link" as thinglink
+	entity "Training" as thingtraining
+	entity "Day Register" as thingdayregister #grey
+	entity "Remain Registration" as thingremainingregistration
+	entity "Short Summary" as thingshortsummary
+	entity "Intro Section" as thingintrosection #grey
+	entity "Page" as thingpage #grey
+	entity "Code Lounge" as thingcodinglounge
+	entity "Company" as thingcompany
+	entity "Attendee" as thingattendee
+	entity "Session" as thingsession
+	entity "Summit" as thingsummit
+	entity "Event" as thingevent
+	entity "Blog" as thingblog
+	entity "Seat" as thingmanyseat
+	entity "Specific Detail" as thingspecificdetail
+	entity "Sponsorship Person" as thingsponsorshipperson #grey
+	entity "Job" as thingjob
+	entity "Schedule" as thingschedule
+	entity "Badcamp" as thingbadcamp
+	entity "Menu" as thingmenu
+	entity "Notification" as thingnotification
+	entity "User Profile" as thinguserprofile
+	entity "Venue Detail" as thingvenuedetail
+	entity "Sponsorship Level" as thingsponsorshiplevel
+	entity "Map" as thingmap #grey
+	entity "Home" as thinghome #grey
+	entity "User" as thinguser #grey
+	actor "Anonymoususer" as actoranonymoususer
+	circle "Number" as thingnumber #grey
+	circle "Detail" as thingfulldetail
+	circle "Option" as thingoption #grey
+	circle "Newsletter" as thingnewsletter #grey
+	circle "Form" as thingform #grey
+	circle "Information" as thinginformation #grey
+	circle "Landing" as thinglanding #grey
+	boundary "Sponsor\nInterface" as thingsponsorinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Class\nInterface" as thingclassinterface #grey
+	boundary "Datetime\nInterface" as thingdatetimeinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Location\nInterface" as thinglocationinterface #grey
+	boundary "Registration\nInterface" as thingregistrationinterface #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	boundary "Section\nInterface" as thingsectioninterface #grey
+	boundary "Detail\nInterface" as thingdetailinterface #grey
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	boundary "Badcamp\nInterface" as thingbadcampinterface #grey
+	boundary "Blog\nInterface" as thingbloginterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	boundary "Session\nInterface" as thingsessioninterface #grey
+	control "View A\nList Of\nSponsors" as controlviewlist
+	control "Learn More\nAbout" as controllearnmore #grey
+	control "Learn More\nAbout Datetime" as controllearnmoredatetime
+	control "Have A\nDedicated Page\nFor Each\nClass" as controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	control "Learn More\nAbout Location" as controllearnmorelocation
+	control "Learn More\nAbout Possibly\nA View" as controllearnmoreview #grey
+	control "Learn More\nAbout Skill\nLevel" as controllearnmoreskilllevel
+	control "Register For\nClass" as controlregisterclass
+	control "Learn More\nAbout Trainer" as controllearnmoretrainer
+	control "Learn More\nAbout Title" as controllearnmoretitle
+	control "Learn More\nAbout Logo" as controllearnmorelogo
+	control "Learn More\nAbout Possibly\nA Map\nView" as controllearnmoremapview
+	control "Learn More\nAbout The\nOffering The\nFollowing Information\nShown Registrations\nRemaining" as controllearnmoreoffering
+	control "Have" as controlhave
+	control "Have A\nPage With\nA List\nOf All\nTraining Offerings" as controlhavepagelist
+	control "Have A\nTraining Landing\nPage With\nAn Intro\nSection" as controlhavetraininglandingpageintrosection
+	control "Promote Call\nFor Trainings" as controlpromotecall
+	control "Have A\nLink On\nThe Home\nPage To\nA List\nOf Training\nOptions" as controlhavelinklist
+	control "Find Out" as controlfind
+	control "See A\nList Of\nAttendees With\nThis Company" as controlseelist
+	control "View Venue\nDetails" as controlviewvenuedetails
+	control "See Training" as controlseetraining
+	control "See Summit" as controlseesummit
+	control "See All\nEvents That\nA Sponsor\nIs Sponsoring" as controlseeevent
+	control "Sign Up\nFor The\nBadcamp Newsletter" as controlsignbadcampnewsletter
+	control "Read The\nBlog" as controlreadblog
+	control "See" as controlsee
+	control "See Specific\nDetails On\nSummits" as controlseespecificdetail
+	control "Learn About\nSponsorship Levels" as controllearnsponsorshiplevels
+	control "Contact Jobs\nAs A\nSponsor The\nSponsorship Person" as controlcontactlearnjobsponsorsponsorshipperson #grey
+	control "Learn" as controllearn
+	control "Posting Jobs\nAs A\nSponsor" as controlpostlearnjobsponsor
+	control "See The\nSchedule" as controlseeschedule
+	control "Speak At\nBadcamp" as controlspeakbadcamp
+	control "Register" as controlregisterspeakbadcamp
+	control "Find A\nLink In\nThe Menu\nLinks To\nThe Registration\nForm" as controlfindlink
+	control "Fill Out\nA User\nRegistration Form" as controlfilluserregistrationform
+	control "Receive A\nNotification" as controlreceivenotification
+	control "Submit A\nSession" as controlsubmitreceivenotificationsession
+	control "Find Session\nInformation" as controlfindsessioninformation
+
+	thingclass <.. thingdedicatedpage
+	thingtraining <.. thinglocation
+	thingmap <.. thingview
+	thingfollowinginformation <.. thingoffering
+	thingregistration <.. thingoffering
+	thingtraining <.. thingoffering
+	thingregistration <.. thingfollowinginformation
+	thinguser <.. thingregistration
+	thinglocation <.. thingdaylevel
+	thingnumber <.. thingdaylevel
+	thingdayregister <.. thingdaylevel
+	thingremainingregistration <.. thingdaylevel
+	thingtrainer <.. thingdaylevel
+	thingshortsummary <.. thingdaylevel
+	thingtitle <.. thingdaylevel
+	thinglink <.. thingdaylevel
+	thingtraining <.. thingdaylevel
+	thingmenu <.. thinglink
+	thingpage <.. thinglink
+	thingfulldetail <.. thinglink
+	thinglanding <.. thingpage
+	thingintrosection <.. thingpage
+	thinghome <.. thingpage
+	thingoption <.. thingpage
+	thingoffering <.. thingpage
+	thingcompany <.. thingattendee
+	thingsponsor <.. thingattendee
+	thingattendee <.. thingsession
+	thingsponsor <.. thingevent
+	thingsummit <.. thingspecificdetail
+	thingsponsor <.. thingjob
+	thingform <.. thingmenu
+	thingregistration <.. thingmenu
+	thingregistration *-- thingnumber
+	thingtraining *-- thingfulldetail
+	thingtraining *-- thingoption
+	thingbadcamp *-- thingnewsletter
+	thingregistration *-- thingform
+	thingsession *-- thinginformation
+	thingtraining *-- thinglanding
+	actoranonymoususer --- thingsponsorinterface
+	actoranonymoususer --- thinglevelinterface
+	actoranonymoususer --- thingclassinterface
+	actoranonymoususer --- thingdatetimeinterface
+	actoranonymoususer --- thingtitleinterface
+	actoranonymoususer --- thingviewinterface
+	actoranonymoususer --- thinglocationinterface
+	actoranonymoususer --- thingregistrationinterface
+	actoranonymoususer --- thingtraininginterface
+	actoranonymoususer --- thingsectioninterface
+	actoranonymoususer --- thingdetailinterface
+	actoranonymoususer --- thingsummitinterface
+	actoranonymoususer --- thingbadcampinterface
+	actoranonymoususer --- thingbloginterface
+	actoranonymoususer --- thingscheduleinterface
+	actoranonymoususer --- thingsessioninterface
+	thingsponsor --- controlviewlist
+	thingsponsorinterface --> controlviewlist
+	thinguserprofile --- controlviewlist
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmore
+	thingdatetime --- controllearnmoredatetime
+	thingdatetimeinterface --> controllearnmoredatetime
+	thingdedicatedpage --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thingclass --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thinglocation --- controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	thingclassinterface --> controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmorelocation
+	thinglocation --- controllearnmorelocation
+	thinglocationinterface --> controllearnmorelocation
+	thingview --- controllearnmoreview
+	thingskilllevel --- controllearnmoreskilllevel
+	thinglevelinterface --> controllearnmoreskilllevel
+	thingclass --- controlregisterclass
+	thingclassinterface --> controlregisterclass
+	thingtrainer --- controllearnmoretrainer
+	thingclassinterface --> controllearnmoretrainer
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoretrainer
+	thingtitle --- controllearnmoretitle
+	thingtitleinterface --> controllearnmoretitle
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoretitle
+	thinglogo --- controllearnmorelogo
+	thingclassinterface --> controllearnmorelogo
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmorelogo
+	thingviewinterface --> controllearnmoremapview
+	thingview --- controllearnmoremapview
+	thingoffering --- controllearnmoreoffering
+	thingfollowinginformation --- controllearnmoreoffering
+	thingregistration --- controllearnmoreoffering
+	thingregistrationinterface --> controllearnmoreoffering
+	controlhavededicatedpagelearnmorelearnmorelearnmorelearnmorelearnmorelocation --> controllearnmoreoffering
+	thingpage --- controlhavepagelist
+	thingtraininginterface --> controlhavepagelist
+	thingoffering --- controlhavepagelist
+	thingintrosection --- controlhavetraininglandingpageintrosection
+	thingsectioninterface --> controlhavetraininglandingpageintrosection
+	thingpage --- controlhavetraininglandingpageintrosection
+	thingtraining --- controlpromotecall
+	thingtraininginterface --> controlpromotecall
+	thinglink --- controlhavelinklist
+	thingpage --- controlhavelinklist
+	thingoption --- controlhavelinklist
+	thingtraininginterface --> controlhavelinklist
+	thingattendee --- controlseelist
+	thingcompany --- controlseelist
+	thingsession --- controlseelist
+	thingsummit --- controlseelist
+	thingsponsorinterface --> controlseelist
+	thingvenuedetail --- controlviewvenuedetails
+	thingdetailinterface --> controlviewvenuedetails
+	thingtraining --- controlseetraining
+	thingtraininginterface --> controlseetraining
+	thingsummit --- controlseesummit
+	thingsummitinterface --> controlseesummit
+	thingevent --- controlseeevent
+	thingsponsor --- controlseeevent
+	thingsponsorinterface --> controlseeevent
+	thingnewsletter --- controlsignbadcampnewsletter
+	thingbadcampinterface --> controlsignbadcampnewsletter
+	thingblog --- controlreadblog
+	thingbloginterface --> controlreadblog
+	thingspecificdetail --- controlseespecificdetail
+	thingsummit --- controlseespecificdetail
+	thingsummitinterface --> controlseespecificdetail
+	thingsponsorshiplevel --- controllearnsponsorshiplevels
+	thinglevelinterface --> controllearnsponsorshiplevels
+	thingsponsorshipperson --- controlcontactlearnjobsponsorsponsorshipperson
+	thingsponsor --- controlcontactlearnjobsponsorsponsorshipperson
+	thingjob --- controlcontactlearnjobsponsorsponsorshipperson
+	controlpostlearnjobsponsor --> controllearn
+	thingsponsorinterface --> controllearn
+	controlcontactlearnjobsponsorsponsorshipperson --> controllearn
+	thingjob --- controlpostlearnjobsponsor
+	thingsponsor --- controlpostlearnjobsponsor
+	thingsponsorinterface --> controlpostlearnjobsponsor
+	thingschedule --- controlseeschedule
+	thingscheduleinterface --> controlseeschedule
+	thingbadcamp --- controlspeakbadcamp
+	controlregisterspeakbadcamp --> controlspeakbadcamp
+	thingbadcampinterface --> controlspeakbadcamp
+	thingbadcampinterface --> controlregisterspeakbadcamp
+	thingmenu --- controlfindlink
+	thingform --- controlfindlink
+	thinglink --- controlfindlink
+	thingregistrationinterface --> controlfindlink
+	thingform --- controlfilluserregistrationform
+	thingregistrationinterface --> controlfilluserregistrationform
+	thingnotification --- controlreceivenotification
+	controlsubmitreceivenotificationsession --> controlreceivenotification
+	thingsessioninterface --> controlreceivenotification
+	thingsession --- controlsubmitreceivenotificationsession
+	thingsessioninterface --> controlsubmitreceivenotificationsession
+	thinginformation --- controlfindsessioninformation
+	thingsessioninterface --> controlfindsessioninformation
+
+@enduml

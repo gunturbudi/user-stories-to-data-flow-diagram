@@ -1,0 +1,17 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Plan " ];
+201 [label="<f0>  |<f1> Dmp " color=red];
+202 [label="<f0>  |<f1> Project Proposal " color=red];
+203 [label="<f0>  |<f1> Reference " ];
+204 [label="<f0>  |<f1> Data Management " color=red];
+205 [label="Stakeholder" shape=box];
+206 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Know Responsible For The Dmp }" shape=Mrecord];
+208 [label="{<f0> 3.0|<f1> Have References To The Project Proposal }" shape=Mrecord];
+205 -> 207
+205 -> 208
+207 -> 201 [label="Dmp"]
+208 -> 203 [label="Reference"]
+208 -> 202 [label="Project Proposal"]
+}

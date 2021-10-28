@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Violation" as thingviolation
+	actor "Enforcement ,\nStaff Member" as actorenforcementstaffmember
+	circle "Notice" as thingnotice
+	boundary "Violation\nInterface" as thingviolationinterface #grey
+	control "Issue A\nNotice Of\nViolation" as controlissuenotice
+
+	thingviolation *-- thingnotice
+	actorenforcementstaffmember --- thingviolationinterface
+	thingnotice --- controlissuenotice
+	thingviolation --- controlissuenotice
+	thingviolationinterface --> controlissuenotice
+
+@enduml

@@ -1,0 +1,93 @@
+[
+  {
+    "text": "As an Admin, I want to invite someone to join the platform, so that that they can start contributing or using data.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "contributing",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to invite someone using their email to sign up and become a member of my Publisher, so that that they are authorized to publish data packages under my Publisher.",
+    "entities": [
+      {
+        "text": "owner,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      },
+      {
+        "text": "member",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to remove someone from membership in my publisher, so that they no longer have ability to publish or modify my data packages.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      },
+      {
+        "text": "publisher",
+        "label": "PII"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "modify",
+        "label": "Processing"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      }
+    ]
+  }
+]

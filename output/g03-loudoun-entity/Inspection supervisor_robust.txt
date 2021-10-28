@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inspector Workload" as thinginspectorworkload #grey
+	actor "Inspection Supervisor" as actorinspectionsupervisor
+	boundary "Workload\nInterface" as thingworkloadinterface #grey
+	control "Manage Inspector\nWorkload" as controlmanageinspectorworkload
+
+	actorinspectionsupervisor --- thingworkloadinterface
+	thinginspectorworkload --- controlmanageinspectorworkload
+	thingworkloadinterface --> controlmanageinspectorworkload
+
+@enduml

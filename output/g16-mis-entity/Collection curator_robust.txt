@@ -1,0 +1,321 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Date" as thingdate
+	entity "Datum" as thingdatum
+	entity "Schedule Record" as thingscheduledrecord
+	entity "Component Page" as thingcomponentpage #grey
+	entity "Item" as thingitem
+	entity "Collection" as thingcollection
+	entity "Repository" as thingrepository
+	entity "Remote Status" as thingremotestatus #grey
+	entity "Staff Interface" as thingstaffinterface #grey
+	entity "Replication" as thingreplication
+	entity "Dashboard" as thingdashboard
+	entity "Encrypt File" as thingencryptedfile
+	entity "Key" as thingkey
+	entity "Server" as thingserver
+	entity "Simple Way" as thingsimpleway
+	entity "Embargo" as thingembargo
+	entity "Object" as thingobject
+	entity "Permission" as thingpermission
+	entity "Deposit" as thingdeposit
+	entity "Option" as thingoption
+	entity "Tool" as thingtool
+	entity "Recent Submission" as thingrecentsubmission
+	entity "Repository ,\nAssign Doi" as thingrepositoryassigneddoi
+	entity "Ezid" as thingEZID
+	entity "Creator" as thingcreator
+	entity "Author" as thingauthor
+	entity "Unique Identifier" as thinguniqueidentifier
+	entity "Referer" as thingreferer
+	entity "Visitor" as thingvisitor
+	entity "Resolver ,\nAbstract Link" as thingresolverabstractedlink
+	entity "User" as thinguser
+	entity "Easy Way" as thingeasyway
+	entity "Access" as thingaccess
+	entity "Restrict Object" as thingrestrictedobject
+	entity "Authentication" as thingauthentication
+	entity "Request" as thingrequest
+	entity "Address" as thingaddress
+	entity "Storage Site" as thingstoragesite
+	entity "Metadata" as thingmetadata #grey
+	entity "Deletion" as thingdeletion #grey
+	entity "Duke Duke\nIp" as thingdukedukeip #grey
+	entity "Ip" as thingip #grey
+	actor "Collection Curator" as actorcollectioncurator
+	circle "Summary" as thingsummary
+	circle "Stored Checksum" as thingstoredchecksum
+	circle "Group" as thinggroup
+	circle "Status" as thingstatus #grey
+	circle "Level" as thinglevel #grey
+	circle "Form" as thingform #grey
+	circle "Authority Control" as thingauthoritycontrol #grey
+	circle "Change" as thingchange #grey
+	boundary "Dashboard Widget" as thingdashboardwidgetshowsummarycollectioncurator #grey
+	boundary "User" as thingusercollectioncurator
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Interface\nInterface" as thinginterfaceinterface #grey
+	boundary "Dashboard\nInterface" as thingdashboardinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	boundary "Option\nInterface" as thingoptioninterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Ezid\nInterface" as thingezidinterface #grey
+	boundary "Creator\nInterface" as thingcreatorinterface #grey
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	control "Set A\nDate Which\nData Expire" as controlsetdate
+	control "Set A\nDate" as controlsetdatehide
+	control "Hide" as controlhide
+	control "Delete" as controldelete
+	control "See The\nScheduled Records\nDeletion Date\nDisplayed On\nThe Item" as controlseescheduledrecord
+	control "See The\nScheduled Records\nDate Displayed\nOn Component\nPage" as controlseescheduledrecordcomponentpage
+	control "Map An\nItem From\nCollection To\nAnother" as controlmapitemanother
+	control "Map Item" as controlmapitem
+	control "Have" as controlhave
+	control "Display The\nRemote Replication\nStatus In\nEach Item\nIn The\nStaff Interface" as controldisplayremotereplicationstatusstaffinterface
+	control "Display The\nRemote Status\nIn Component\nPage" as controldisplayremotestatuscomponentpage
+	control "Have A\nSummary Of\nAll Remote\nReplication Status\nAt Collection\nLevel On\nDashboard" as controlhavesummarycollectionlevel
+	control "Lift An\nEmbargo For\nAn Object\nIn A\nSimple Way" as controlliftembargosimpleway
+	control "Have Items" as controlhaveitem
+	control "Create Specific\nDeposit Forms\nTo The\nCollection" as controlcreatespecificdepositforms
+	control "Setting An\nEmbargo Date\nAt Deposit" as controlsetallowcollectionoptionembargodatedeposit
+	control "Allow Some\nCollections The\nOption" as controlallowcollectionoption
+	control "Have Item\nMetadata Discoverable" as controlhaveitemmetadata
+	control "Have A\nTool" as controlhavetoolperformauthorauthoritycontrol
+	control "Perform Author\nAuthority Control" as controlperformauthorauthoritycontrol
+	control "Move Items\nFrom Collection\nTo Another" as controlmoveitemanother
+	control "See" as controlseedashboardwidgetshowsummarycollectioncurator
+	control "Show A\nSummary Of\nRecent Submissions\nTo Collection" as controlshowsummary
+	control "Have Metadata\nChanges To\nItems With\nRepository, Assigned\nDois To\nPropagated To\nThe Ezid" as controlhavemetadatachanges
+	control "Identify Creator" as controlidentifycreator
+	control "Identify Authors\nOf Items\nBy Unique\nIdentifier" as controlidentifyauthoruniqueidentifier
+	control "See The\nReferers For\nVisitors Use\nResolver, Abstracted\nLinks" as controlseereferer
+	control "Reach Items" as controlreachitem
+	control "Create Groups\nOf Users" as controlcreategroupmanagepermissioneasyway
+	control "Manage Permissions\nIn The\nRepository In\nAn Easy\nWay" as controlmanagepermissioneasyway
+	control "Restrict Access\nTo Collection\nTo Duke\nDuke Ip\nAddresses" as controlrestrictaccessdukedukeipaddresses
+	control "Restrict Access\nTo Item" as controlrestrictaccessitem
+	control "Contact From\nThe Repository" as controlcontactusercollectioncuratorrepositoryrequestaccess
+	control "Request Access\nTo Restricted\nObjects" as controlrequestaccess
+	control "Change Permissions\nOn Items" as controlchangepermission
+	control "Change Permissions\nOn More" as controlchangepermissionmore
+	control "Require Authentication\nTo Access\nObjects" as controlrequireauthentication
+	control "View The\nPermission On\nObjects" as controlviewpermission
+
+	thingdatum <.. thingdate
+	thingcomponentpage <.. thingdate
+	thingdeletion <.. thingdate
+	thingitem <.. thingdate
+	thingdeposit <.. thingdate
+	thingembargo <.. thingdate
+	thingitem <.. thingscheduledrecord
+	thingdate <.. thingscheduledrecord
+	thingcollection <.. thingitem
+	thingstaffinterface <.. thingitem
+	thingrepositoryassigneddoi <.. thingitem
+	thinguniqueidentifier <.. thingitem
+	thingpermission <.. thingitem
+	thingaccess <.. thingitem
+	thingreplication <.. thingcollection
+	thingoption <.. thingcollection
+	thingdashboard <.. thingcollection
+	thingaddress <.. thingcollection
+	thingeasyway <.. thingrepository
+	thingcomponentpage <.. thingremotestatus
+	thingstoragesite <.. thingreplication
+	thingserver <.. thingkey
+	thingobject <.. thingembargo
+	thingsimpleway <.. thingobject
+	thingaccess <.. thingobject
+	thingrepository <.. thingpermission
+	thingitem <.. thingpermission
+	thingobject <.. thingpermission
+	thingaccess <.. thingpermission
+	thingcollection <.. thingdeposit
+	thingcollection <.. thingrecentsubmission
+	thingEZID <.. thingrepositoryassigneddoi
+	thingitem *-- thingauthor
+	thingvisitor <.. thingreferer
+	thingresolverabstractedlink <.. thingvisitor
+	thingcollection <.. thingaccess
+	thingrestrictedobject <.. thingaccess
+	thingitem <.. thingaccess
+	thingobject <.. thingaccess
+	thingobject <.. thingauthentication
+	thingaccess <.. thingauthentication
+	thingdukedukeip <.. thingaddress
+	thingip <.. thingaddress
+	thingEZID <.. thingmetadata
+	thingitem <.. thingmetadata
+	thingrecentsubmission *-- thingsummary
+	thingstatus *-- thingsummary
+	thingreplication *-- thingsummary
+	thingencryptedfile *-- thingstoredchecksum
+	thinguser *-- thinggroup
+	thingitem *-- thingstatus
+	thinglevel *-- thingstatus
+	thingreplication *-- thingstatus
+	thingdashboard *-- thinglevel
+	thingcollection *-- thinglevel
+	thingcollection *-- thingform
+	thingdeposit *-- thingform
+	thingauthor *-- thingauthoritycontrol
+	thingitem *-- thingchange
+	thingmetadata *-- thingchange
+	actorcollectioncurator --- thingdashboardwidgetshowsummarycollectioncurator
+	actorcollectioncurator --- thingusercollectioncurator
+	actorcollectioncurator --- thingdatuminterface
+	actorcollectioncurator --- thingdateinterface
+	actorcollectioncurator --- thingiteminterface
+	actorcollectioncurator --- thingpageinterface
+	actorcollectioncurator --- thingcollectioninterface
+	actorcollectioncurator --- thinginterfaceinterface
+	actorcollectioncurator --- thingdashboardinterface
+	actorcollectioncurator --- thingwayinterface
+	actorcollectioncurator --- thingdepositinterface
+	actorcollectioncurator --- thingoptioninterface
+	actorcollectioncurator --- thingtoolinterface
+	actorcollectioncurator --- thingauthorinterface
+	actorcollectioncurator --- thingezidinterface
+	actorcollectioncurator --- thingcreatorinterface
+	actorcollectioncurator --- thingidentifierinterface
+	actorcollectioncurator --- thinglinkinterface
+	actorcollectioncurator --- thinguserinterface
+	actorcollectioncurator --- thingaddressinterface
+	actorcollectioncurator --- thingpermissioninterface
+	actorcollectioncurator --- thingaccessinterface
+	thingdate --- controlsetdate
+	thingdatum --- controlsetdate
+	thingdatuminterface --> controlsetdate
+	thingdateinterface --> controlsetdatehide
+	thingdate --- controlsetdatehide
+	controlsetdatehide --> controlhide
+	thingdateinterface --> controlhide
+	thingdateinterface --> controldelete
+	controlsetdatehide --> controldelete
+	thingscheduledrecord --- controlseescheduledrecord
+	thingitem --- controlseescheduledrecord
+	thingiteminterface --> controlseescheduledrecord
+	thingdate --- controlseescheduledrecord
+	thingcomponentpage --- controlseescheduledrecordcomponentpage
+	thingpageinterface --> controlseescheduledrecordcomponentpage
+	thingscheduledrecord --- controlseescheduledrecordcomponentpage
+	thingdate --- controlseescheduledrecordcomponentpage
+	thingcollection --- controlmapitemanother
+	thingcollectioninterface --> controlmapitemanother
+	thingitem --- controlmapitemanother
+	thingitem --- controlmapitem
+	thingiteminterface --> controlmapitem
+	thingstatus --- controldisplayremotereplicationstatusstaffinterface
+	thingstaffinterface --- controldisplayremotereplicationstatusstaffinterface
+	thinginterfaceinterface --> controldisplayremotereplicationstatusstaffinterface
+	thingitem --- controldisplayremotereplicationstatusstaffinterface
+	thingremotestatus --- controldisplayremotestatuscomponentpage
+	thingcomponentpage --- controldisplayremotestatuscomponentpage
+	thingpageinterface --> controldisplayremotestatuscomponentpage
+	thingsummary --- controlhavesummarycollectionlevel
+	thinglevel --- controlhavesummarycollectionlevel
+	thingdashboard --- controlhavesummarycollectionlevel
+	thingdashboardinterface --> controlhavesummarycollectionlevel
+	thingstatus --- controlhavesummarycollectionlevel
+	thingembargo --- controlliftembargosimpleway
+	thingobject --- controlliftembargosimpleway
+	thingsimpleway --- controlliftembargosimpleway
+	thingwayinterface --> controlliftembargosimpleway
+	thingitem --- controlhaveitem
+	thingobject --- controlhaveitem
+	thingiteminterface --> controlhaveitem
+	thingaccess --- controlhaveitem
+	thingform --- controlcreatespecificdepositforms
+	thingcollection --- controlcreatespecificdepositforms
+	thingcollectioninterface --> controlcreatespecificdepositforms
+	thingdeposit --- controlsetallowcollectionoptionembargodatedeposit
+	thingdepositinterface --> controlsetallowcollectionoptionembargodatedeposit
+	thingdate --- controlsetallowcollectionoptionembargodatedeposit
+	controlsetallowcollectionoptionembargodatedeposit --> controlallowcollectionoption
+	thingoption --- controlallowcollectionoption
+	thingoptioninterface --> controlallowcollectionoption
+	thingcollection --- controlallowcollectionoption
+	thingmetadata --- controlhaveitemmetadata
+	thingiteminterface --> controlhaveitemmetadata
+	thingtool --- controlhavetoolperformauthorauthoritycontrol
+	thingtoolinterface --> controlhavetoolperformauthorauthoritycontrol
+	controlhavetoolperformauthorauthoritycontrol --> controlperformauthorauthoritycontrol
+	thingauthoritycontrol --- controlperformauthorauthoritycontrol
+	thingauthorinterface --> controlperformauthorauthoritycontrol
+	thingauthor --- controlperformauthorauthoritycontrol
+	thingitem --- controlmoveitemanother
+	thingcollection --- controlmoveitemanother
+	thingcollectioninterface --> controlmoveitemanother
+	thingdashboardwidgetshowsummarycollectioncurator --> controlseedashboardwidgetshowsummarycollectioncurator
+	thingdashboardwidgetshowsummarycollectioncurator --> controlshowsummary
+	thingrecentsubmission --- controlshowsummary
+	controlseedashboardwidgetshowsummarycollectioncurator --> controlshowsummary
+	thingcollection --- controlshowsummary
+	thingsummary --- controlshowsummary
+	thingchange --- controlhavemetadatachanges
+	thingrepositoryassigneddoi --- controlhavemetadatachanges
+	thingEZID --- controlhavemetadatachanges
+	thingezidinterface --> controlhavemetadatachanges
+	thingitem --- controlhavemetadatachanges
+	thingcreator --- controlidentifycreator
+	thingcreatorinterface --> controlidentifycreator
+	thingauthor --- controlidentifyauthoruniqueidentifier
+	thinguniqueidentifier --- controlidentifyauthoruniqueidentifier
+	thingidentifierinterface --> controlidentifyauthoruniqueidentifier
+	thingitem --- controlidentifyauthoruniqueidentifier
+	thingreferer --- controlseereferer
+	thingvisitor --- controlseereferer
+	thingresolverabstractedlink --- controlseereferer
+	thinglinkinterface --> controlseereferer
+	controlseereferer --> controlreachitem
+	thingitem --- controlreachitem
+	thingiteminterface --> controlreachitem
+	thinggroup --- controlcreategroupmanagepermissioneasyway
+	thinguser --- controlcreategroupmanagepermissioneasyway
+	thinguserinterface --> controlcreategroupmanagepermissioneasyway
+	controlcreategroupmanagepermissioneasyway --> controlmanagepermissioneasyway
+	thingeasyway --- controlmanagepermissioneasyway
+	thingrepository --- controlmanagepermissioneasyway
+	thingpermission --- controlmanagepermissioneasyway
+	thingwayinterface --> controlmanagepermissioneasyway
+	thingaccess --- controlrestrictaccessdukedukeipaddresses
+	thingaddressinterface --> controlrestrictaccessdukedukeipaddresses
+	thingcollection --- controlrestrictaccessdukedukeipaddresses
+	thingaddress --- controlrestrictaccessdukedukeipaddresses
+	thingitem --- controlrestrictaccessitem
+	thingiteminterface --> controlrestrictaccessitem
+	thingaccess --- controlrestrictaccessitem
+	thingusercollectioncurator --> controlcontactusercollectioncuratorrepositoryrequestaccess
+	thingrepository --- controlcontactusercollectioncuratorrepositoryrequestaccess
+	controlcontactusercollectioncuratorrepositoryrequestaccess --> controlrequestaccess
+	thingrestrictedobject --- controlrequestaccess
+	thingusercollectioncurator --> controlrequestaccess
+	thingaccess --- controlrequestaccess
+	thingitem --- controlchangepermission
+	thingpermission --- controlchangepermission
+	thingiteminterface --> controlchangepermission
+	thingpermissioninterface --> controlchangepermissionmore
+	thingpermission --- controlchangepermissionmore
+	thingauthentication --- controlrequireauthentication
+	thingaccessinterface --> controlrequireauthentication
+	thingaccess --- controlrequireauthentication
+	thingobject --- controlviewpermission
+	thingpermission --- controlviewpermission
+	thingobjectinterface --> controlviewpermission
+
+@enduml

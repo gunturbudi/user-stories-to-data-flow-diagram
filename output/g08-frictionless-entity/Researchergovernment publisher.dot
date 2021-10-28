@@ -1,0 +1,33 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Narrow Dataset " color=red];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> Inflation " ];
+203 [label="<f0>  |<f1> Line " ];
+204 [label="<f0>  |<f1> Geographic Datum " ];
+205 [label="<f0>  |<f1> Reference Datum " ];
+206 [label="<f0>  |<f1> Country Name " color=red];
+207 [label="<f0>  |<f1> Country Code " ];
+208 [label="<f0>  |<f1> Spending " color=red];
+209 [label="Researchergovernment Publisher" shape=box];
+210 [label="{<f0> 1.0|<f1> Add General Reference Data To Narrow Dataset }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Add General Country Names To Dataset Only Contains Country Codes }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Add Reference Data On Inflation To Spending Dataset }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Map Lines In Dataset Using Geographic Data In Dataset }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+210 -> 205 [label="Reference Datum"]
+210 -> 200 [label="Narrow Dataset"]
+211 -> 206 [label="Country Name"]
+211 -> 201 [label="Dataset"]
+211 -> 207 [label="Country Code"]
+212 -> 202 [label="Inflation"]
+212 -> 201 [label="Dataset"]
+212 -> 205 [label="Reference Datum"]
+213 -> 203 [label="Line"]
+213 -> 204 [label="Geographic Datum"]
+213 -> 201 [label="Dataset"]
+212 -> 208 [label="Spending"]
+}

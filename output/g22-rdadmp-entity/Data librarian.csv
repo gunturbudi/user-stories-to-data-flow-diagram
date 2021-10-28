@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+3,Import this metadata into a data catalogue.,ellipse,null,null,process
+200,Metadata,shape=partialRectangle,null,null,data_base
+201,Dmp,shape=partialRectangle,null,null,data_base
+202,System,shape=partialRectangle,null,null,data_base
+203,Pointer,shape=partialRectangle,null,null,data_base
+204,Administrative Information,shape=partialRectangle,null,null,data_base
+205,Project,shape=partialRectangle,null,null,data_base
+206,Data Librarian,rounded=0,null,null,external_entity
+207,Extract Pointers From The Dmp To Metadata In Other Systems,ellipse,null,null,process
+208,Import Administrative Information Regarding A Project Into Dmp,ellipse,null,null,process
+210,,endArrow=classic,206,207,endArrow=classic
+211,,endArrow=classic,206,208,endArrow=classic
+212,Pointer,endArrow=classic,207,203,endArrow=classic
+213,Dmp,endArrow=classic,207,201,endArrow=classic
+214,Metadata,endArrow=classic,207,200,endArrow=classic
+215,System,endArrow=classic,207,202,endArrow=classic
+216,Administrative Information,endArrow=classic,208,204,endArrow=classic
+217,Project,endArrow=classic,208,205,endArrow=classic
+218,Dmp,endArrow=classic,208,201,endArrow=classic
+1000,,endArrow=classic,207,3,endArrow=classic
+1001,Metadata,endArrow=classic,3,200,endArrow=classic

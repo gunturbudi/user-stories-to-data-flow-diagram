@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,"Obtain publicly available information concerning properties, county services, processes and other general information.",ellipse,null,null,process
+200,Information,shape=partialRectangle,null,null,data_base
+201,Public User,rounded=0,null,null,external_entity
+202,Search For Information,ellipse,null,null,process
+204,,endArrow=classic,201,202,endArrow=classic
+205,Information,endArrow=classic,202,200,endArrow=classic
+1000,,endArrow=classic,202,2,endArrow=classic
+1001,Properties,rounded=0,null,null,external_entity
+1002,Properties,endArrow=classic,2,1001,endArrow=classic
+1003,County services,rounded=0,null,null,external_entity
+1004,County services,endArrow=classic,2,1003,endArrow=classic
+1005,Processes,rounded=0,null,null,external_entity
+1006,Processes,endArrow=classic,2,1005,endArrow=classic

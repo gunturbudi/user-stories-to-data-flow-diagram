@@ -1,0 +1,244 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Content Identification" as thingcontentidentification #grey
+	entity "Fingerprinting" as thingfingerprinting
+	entity "Music" as thingmusic
+	entity "Profile" as thingprofile
+	entity "Similar ,\nUser" as thingsimilarotheruser
+	entity "Content Similarity" as thingcontentsimilarity #grey
+	entity "Similar ,\nMusic Tone" as thingsimilarmusictone
+	entity "Ringback" as thingringback
+	entity "Enriched Metadata" as thingenrichedmetadata
+	entity "Available Tag" as thingavailabletag
+	entity "Tag Video" as thingtaggedvideo
+	entity "Segment" as thingsegment
+	entity "Info" as thinginfo
+	entity "Similar Profile" as thingsimilarprofile
+	entity "Area" as thingarea
+	entity "Video" as thingvideo
+	entity "Person" as thingperson
+	entity "Related Information" as thingrelatedinformation
+	entity "Product" as thingproduct
+	entity "Brand" as thingbrand
+	entity "Picture" as thingpicture
+	entity "High­level" as thinghigh­level
+	entity "Metadata" as thingmetadata
+	entity "Search" as thingsearch
+	entity "Tag" as thingtag
+	entity "Geographical Map" as thinggeographicalmap
+	entity "Processing Step" as thingprocessingstep
+	entity "Thumbnail Sequence" as thingthumbnailsequence
+	entity "Content Recommendation" as thingcontentrecommendation
+	entity "News Event" as thingnewsevent
+	entity "Broadcaster Logo" as thingbroadcasterlogo
+	entity "Speech Recognition" as thingspeechrecognition
+	entity "Asset" as thingasset #grey
+	actor "User" as actoruser
+	actor "Admin" as actoradmin
+	circle "Tone" as thingtone #grey
+	circle "Item" as thingitem #grey
+	boundary "Music" as thingmusicusecontentidentificationuser #grey
+	boundary "Content Item" as thingcontentitemsuseautomaticspeechrecognitionuser #grey
+	boundary "Content" as thingcontentusesearchadmin #grey
+	boundary "Music\nInterface" as thingmusicinterface #grey
+	boundary "Identification\nInterface" as thingidentificationinterface #grey
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Similarity\nInterface" as thingsimilarityinterface #grey
+	boundary "Ringback\nInterface" as thingringbackinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Video\nInterface" as thingvideointerface #grey
+	boundary "Segment\nInterface" as thingsegmentinterface #grey
+	boundary "Picture\nInterface" as thingpictureinterface #grey
+	boundary "Map\nInterface" as thingmapinterface #grey
+	control "Use Content\nIdentification" as controlusecontentidentification
+	control "Search" as controlsearchmusicusemusicusefingerprintinguser
+	control "Use Fingerprinting" as controlusefingerprinting
+	control "Use" as controluse #grey
+	control "Discover Music" as controldiscovermusicusecontentidentification
+	control "Search Music\nOn Profile" as controlsearchmusic
+	control "Discover Music\nOn Profile" as controldiscovermusic
+	control "Discover Music\nOn Similar,\nOther Users\nTo" as controldiscovermusicsimilarotheruser
+	control "Search Similar\nRingback Tone\nTo A\nGiven Music\nVideo On\nContent Similarity" as controlsearchsimilarringbacktone
+	control "Discover Similar,\nMusic Tones\nTo A\nGiven Music\nVideo On\nContent Similarity" as controldiscoversimilarmusictone
+	control "Discover Ringback" as controldiscoverringback
+	control "Exploiting Enriched\nMetadata" as controlexploitsearchmusicenrichedmetadata
+	control "Exploiting Image\nTag" as controlexploitsearchmusicimagetag
+	control "Upload Tagged\nVideos" as controluploadtaggedvideo
+	control "Have Available\nTags For\nAll Further\nProcessing Steps" as controlhaveavailabletag #grey
+	control "View Thumbnail\nSequences Of\nVideo Segments" as controlviewthumbnailsequences
+	control "Get Info\nAbout Segment" as controlgetinfosegment
+	control "Get Info\nAbout Similar\nVideo Items" as controlgetinfo
+	control "Receive Content\nRecommendations From\nSimilar Profiles" as controlreceivecontentrecommendations
+	control "Identify Persons\nIn Videos" as controlidentifyperson
+	control "Receive Related\nInformation About\nPersons In\nVideos" as controlreceiverelatedinformation
+	control "Identify Products\nIn Videos" as controlidentifyproduct
+	control "Identify Broadcaster\nLogos In\nVideos" as controlidentifybroadcasterlogos
+	control "Identify Brands\nIn Videos" as controlidentifybrand
+	control "Take A\nPicture" as controltakepicture
+	control "Upload An\nImage" as controluploadimage
+	control "Use Automatic\nSpeech Recognition" as controluseautomaticspeechrecognition
+	control "Use Search\nOn High­Level\nAsset Information\nSuch As\nMetadata" as controlusesearch
+	control "Prefilter" as controlprefiltercontentusesearchcontentusesearchtagadmin
+	control "Use Search\nOn High­Level\nInformation Such\nAs Tag" as controlusesearchtag
+	control "Use A\nGeographical Map" as controlusegeographicalmap
+	control "Informed, Content\nAccess Walk" as controlwalkusegeographicalmap
+
+	thingprofile <.. thingmusic
+	thingsimilarotheruser <.. thingmusic
+	thingcontentsimilarity <.. thingmusic
+	thingsimilarotheruser <.. thingsimilarotheruser
+	thingmusic <.. thingsimilarmusictone
+	thingvideo <.. thingsimilarmusictone
+	thingprocessingstep <.. thingavailabletag
+	thingvideo <.. thingsegment
+	thingitem <.. thinginfo
+	thingsegment <.. thinginfo
+	thingvideo <.. thinginfo
+	thingasset <.. thinginfo
+	thingmetadata <.. thinginfo
+	thingcontentsimilarity <.. thingvideo
+	thingmusic <.. thingvideo
+	thingvideo <.. thingperson
+	thingperson <.. thingrelatedinformation
+	thingproduct <.. thingrelatedinformation
+	thingbrand <.. thingrelatedinformation
+	thingbroadcasterlogo <.. thingrelatedinformation
+	thingvideo <.. thingproduct
+	thingvideo <.. thingbrand
+	thinghigh­level <.. thingsearch
+	thinginfo <.. thingsearch
+	thingpicture <.. thingtag
+	thingsegment <.. thingthumbnailsequence
+	thingsimilarprofile <.. thingcontentrecommendation
+	thingnewsevent <.. thingcontentrecommendation
+	thingarea <.. thingnewsevent
+	thingvideo <.. thingbroadcasterlogo
+	thingringback *-- thingtone
+	thingvideo *-- thingtone
+	thingvideo *-- thingitem
+	actoruser --- thingmusicusecontentidentificationuser
+	actoruser --- thingcontentitemsuseautomaticspeechrecognitionuser
+	actoradmin --- thingcontentusesearchadmin
+	actoruser --- thingmusicinterface
+	actoruser --- thingidentificationinterface
+	actoruser --- thingprofileinterface
+	actoruser --- thingsimilarityinterface
+	actoruser --- thingringbackinterface
+	actoruser --- thingmetadatainterface
+	actoruser --- thingimageinterface
+	actoruser --- thingvideointerface
+	actoruser --- thingsegmentinterface
+	actoruser --- thingpictureinterface
+	actoruser --- thingmapinterface
+	thingcontentidentification --- controlusecontentidentification
+	thingmusicusecontentidentificationuser --> controlusecontentidentification
+	controldiscovermusicusecontentidentification --> controlusecontentidentification
+	thingidentificationinterface --> controlusecontentidentification
+	controlsearchmusicusemusicusefingerprintinguser --> controlusecontentidentification
+	thingmusicinterface --> controlsearchmusicusemusicusefingerprintinguser
+	thingmusicusecontentidentificationuser --> controlsearchmusicusemusicusefingerprintinguser
+	thingcontentitemsuseautomaticspeechrecognitionuser --> controlsearchmusicusemusicusefingerprintinguser
+	thingfingerprinting --- controlusefingerprinting
+	controlsearchmusicusemusicusefingerprintinguser --> controlusefingerprinting
+	thingmusicinterface --> controlusefingerprinting
+	controldiscovermusicusecontentidentification --> controlusefingerprinting
+	controlsearchmusicusemusicusefingerprintinguser --> controluse
+	thingmusic --- controldiscovermusicusecontentidentification
+	thingmusicinterface --> controldiscovermusicusecontentidentification
+	thingprofile --- controlsearchmusic
+	thingmusic --- controlsearchmusic
+	thingsimilarotheruser --- controlsearchmusic
+	controlexploitsearchmusicenrichedmetadata --> controlsearchmusic
+	thingmusicinterface --> controlsearchmusic
+	controlexploitsearchmusicimagetag --> controlsearchmusic
+	thingmusic --- controldiscovermusic
+	thingprofile --- controldiscovermusic
+	thingprofileinterface --> controldiscovermusic
+	controlexploitsearchmusicenrichedmetadata --> controldiscovermusic
+	controlexploitsearchmusicimagetag --> controldiscovermusic
+	thingmusic --- controldiscovermusicsimilarotheruser
+	thingsimilarotheruser --- controldiscovermusicsimilarotheruser
+	thinguserinterface --> controldiscovermusicsimilarotheruser
+	thingtone --- controlsearchsimilarringbacktone
+	thingcontentsimilarity --- controlsearchsimilarringbacktone
+	thingsimilarityinterface --> controlsearchsimilarringbacktone
+	thingvideo --- controlsearchsimilarringbacktone
+	thingsimilarmusictone --- controldiscoversimilarmusictone
+	thingcontentsimilarity --- controldiscoversimilarmusictone
+	thingsimilarityinterface --> controldiscoversimilarmusictone
+	thingmusic --- controldiscoversimilarmusictone
+	thingringback --- controldiscoverringback
+	thingringbackinterface --> controldiscoverringback
+	thingenrichedmetadata --- controlexploitsearchmusicenrichedmetadata
+	thingmetadatainterface --> controlexploitsearchmusicenrichedmetadata
+	thingimageinterface --> controlexploitsearchmusicimagetag
+	thingtag --- controlexploitsearchmusicimagetag
+	thingtaggedvideo --- controluploadtaggedvideo
+	thingvideointerface --> controluploadtaggedvideo
+	thingavailabletag --- controlhaveavailabletag
+	thingprocessingstep --- controlhaveavailabletag
+	thingthumbnailsequence --- controlviewthumbnailsequences
+	thingvideointerface --> controlviewthumbnailsequences
+	thingsegment --- controlviewthumbnailsequences
+	thingsegment --- controlgetinfosegment
+	thingsegmentinterface --> controlgetinfosegment
+	thinginfo --- controlgetinfosegment
+	thinginfo --- controlgetinfo
+	thingitem --- controlgetinfo
+	thingvideointerface --> controlgetinfo
+	thingvideo --- controlgetinfo
+	thingcontentrecommendation --- controlreceivecontentrecommendations
+	thingsimilarprofile --- controlreceivecontentrecommendations
+	thingnewsevent --- controlreceivecontentrecommendations
+	thingarea --- controlreceivecontentrecommendations
+	thingprofileinterface --> controlreceivecontentrecommendations
+	thingperson --- controlidentifyperson
+	thingvideo --- controlidentifyperson
+	thingvideointerface --> controlidentifyperson
+	thingrelatedinformation --- controlreceiverelatedinformation
+	thingvideo --- controlreceiverelatedinformation
+	thingperson --- controlreceiverelatedinformation
+	thingproduct --- controlreceiverelatedinformation
+	thingbrand --- controlreceiverelatedinformation
+	thingvideointerface --> controlreceiverelatedinformation
+	thingbroadcasterlogo --- controlreceiverelatedinformation
+	thingproduct --- controlidentifyproduct
+	thingvideo --- controlidentifyproduct
+	thingvideointerface --> controlidentifyproduct
+	thingbroadcasterlogo --- controlidentifybroadcasterlogos
+	thingvideo --- controlidentifybroadcasterlogos
+	thingvideointerface --> controlidentifybroadcasterlogos
+	thingbrand --- controlidentifybrand
+	thingvideo --- controlidentifybrand
+	thingvideointerface --> controlidentifybrand
+	thingpicture --- controltakepicture
+	thingpictureinterface --> controltakepicture
+	thingimageinterface --> controluploadimage
+	thingpicture --- controluploadimage
+	thingcontentitemsuseautomaticspeechrecognitionuser --> controluseautomaticspeechrecognition
+	thingspeechrecognition --- controluseautomaticspeechrecognition
+	controlsearchmusicusemusicusefingerprintinguser --> controluseautomaticspeechrecognition
+	thingcontentusesearchadmin --> controlusesearch
+	thingsearch --- controlusesearch
+	thinghigh­level --- controlusesearch
+	thingmetadata --- controlusesearch
+	controlprefiltercontentusesearchcontentusesearchtagadmin --> controlusesearch
+	thinginfo --- controlusesearch
+	thingcontentusesearchadmin --> controlprefiltercontentusesearchcontentusesearchtagadmin
+	controlprefiltercontentusesearchcontentusesearchtagadmin --> controlusesearchtag
+	thingtag --- controlusesearchtag
+	thinghigh­level --- controlusesearchtag
+	thingsearch --- controlusesearchtag
+	thinginfo --- controlusesearchtag
+	thingcontentusesearchadmin --> controlusesearchtag
+	thinggeographicalmap --- controlusegeographicalmap
+	controlwalkusegeographicalmap --> controlusegeographicalmap
+	thingmapinterface --> controlusegeographicalmap
+	thingmapinterface --> controlwalkusegeographicalmap
+
+@enduml

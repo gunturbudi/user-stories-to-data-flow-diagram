@@ -1,0 +1,144 @@
+[
+  {
+    "text": "As an administrator, I want to be able to use systems such as Symplectic Elements and Activity Insight to properly track faculty scholarly output in the repositories, so that I can facilitate personnel decisions.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "Activity Insight",
+        "label": "PII"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      },
+      {
+        "text": "scholarly output",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to see comprehensive tracking statistics that can be presented to faculty in a digestible way, so that I can increase buy-in for contributing their work.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "tracking statistics",
+        "label": "PII"
+      },
+      {
+        "text": "presented",
+        "label": "Processing"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to disseminate the aforementioned works in a digital space that is strongly branded, so that I can make sure my school is credited for the work.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "disseminate",
+        "label": "Processing"
+      },
+      {
+        "text": "works",
+        "label": "PII"
+      },
+      {
+        "text": "school",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to have a platform that can support a variety of media file and text-based formats, so that the intellectual output of the school can be showcased and preserved in a more comprehensive way.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "support",
+        "label": "Processing"
+      },
+      {
+        "text": "media file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to see a list of all administrators for ease of administering accounts.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "administrators",
+        "label": "Data"
+      },
+      {
+        "text": "administering",
+        "label": "Processing"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a DB/IR administrator, I want to search for administrator accounts using full/partial email or name.",
+    "entities": [
+      {
+        "text": "IR administrator",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "administrator",
+        "label": "Data"
+      },
+      {
+        "text": "accounts",
+        "label": "PII"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  }
+]

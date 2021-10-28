@@ -1,0 +1,12 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Response " color=red];
+201 [label="<f0>  |<f1> Paper ,\nBased Form " ];
+202 [label="<f0>  |<f1> Subject " ];
+203 [label="Mri Operator" shape=box];
+204 [label="{<f0> 1.0|<f1> Record The Responses That Subjects Make When Completing Paper, Based Forms }" shape=Mrecord];
+203 -> 204
+204 -> 200 [label="Response"]
+204 -> 202 [label="Subject"]
+204 -> 201 [label="Paper ,\nBased Form"]
+}

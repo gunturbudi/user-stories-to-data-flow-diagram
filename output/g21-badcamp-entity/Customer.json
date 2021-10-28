@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a sponsor, I want to sponsor a summit that matches my brand, so that I can get exposure to potential customers and otherwise tout my Drupal credentials.",
+    "entities": [
+      {
+        "text": "sponsor,",
+        "label": "Data"
+      },
+      {
+        "text": "sponsor",
+        "label": "Processing"
+      },
+      {
+        "text": "brand",
+        "label": "PII"
+      },
+      {
+        "text": "customers",
+        "label": "Data"
+      },
+      {
+        "text": "Drupal credentials",
+        "label": "PII"
+      }
+    ]
+  }
+]

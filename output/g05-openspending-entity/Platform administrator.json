@@ -1,0 +1,111 @@
+[
+  {
+    "text": "As a Platform Administrator, I want to be able to Hide any dataset already added as Public, So that I can maintain Public/Hidden status for other users.",
+    "entities": [
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "Hide",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Platform Administrator, I want to have a view on all datasets published by all users, So that I can perform management actions on any dataset.",
+    "entities": [
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Platform Administrator, I want to be able to delete any dataset published, So that I can deal with takedown requests, or clean up test datasets.",
+    "entities": [
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "takedown requests",
+        "label": "PII"
+      },
+      {
+        "text": "clean up",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Data Publishing User, I want to be able to provide the Platform Administrator with additional GeoJSON sources, So that I can improve the map-based visualisations of my data.",
+    "entities": [
+      {
+        "text": "Data Publishing User",
+        "label": "Data"
+      },
+      {
+        "text": "Platform Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "GeoJSON sources",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Platform administrator, I want to be able to translate the data types hierarchies of the Viewer while in embed mode, So that my users can understand the interface in their native language.",
+    "entities": [
+      {
+        "text": "Platform administrator",
+        "label": "Data"
+      },
+      {
+        "text": "translate",
+        "label": "Processing"
+      },
+      {
+        "text": "data types",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

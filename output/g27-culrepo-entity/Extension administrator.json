@@ -1,0 +1,57 @@
+[
+  {
+    "text": "As an Extension Administrator, I want to have easy, well documented and supported workflows that can be easily passed on to others when she/others retire, so that continuity can be maintained.",
+    "entities": [
+      {
+        "text": "Extension Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "workflows",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Extension Administrator, I want to make resources that were developed for specific projects and geographic areas available to other faculty and educators across NYS.",
+    "entities": [
+      {
+        "text": "Extension Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "resources",
+        "label": "PII"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      },
+      {
+        "text": "geographic areas",
+        "label": "PII"
+      },
+      {
+        "text": "faculty",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Extension Administrator or Staff Content Manager, I want to get periodic IR reminders, including when something needs attention (including next ingestion/approval steps), or something that might need to move from a current knowledge collection to Historical.",
+    "entities": [
+      {
+        "text": "Extension Administrator",
+        "label": "Data"
+      },
+      {
+        "text": "Staff Content Manager",
+        "label": "Data"
+      }
+    ]
+  }
+]

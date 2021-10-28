@@ -1,0 +1,28 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Early Stage" as thingearlystage
+	entity "Information" as thinginformation
+	entity "Datum" as thingdatum
+	actor "Archive" as actorarchive
+	circle "Volume" as thingvolume
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Stage\nInterface" as thingstageinterface #grey
+	control "Get Information\nAbout The\nVolume Of\nData" as controlgetinformationpreserveearlystage
+	control "Preserve At\nAn Early\nStage" as controlpreserveearlystage
+
+	thingvolume <.. thinginformation
+	thingdatum *-- thingvolume
+	actorarchive --- thingdatuminterface
+	actorarchive --- thingstageinterface
+	thinginformation --- controlgetinformationpreserveearlystage
+	thingvolume --- controlgetinformationpreserveearlystage
+	thingdatum --- controlgetinformationpreserveearlystage
+	thingdatuminterface --> controlgetinformationpreserveearlystage
+	controlgetinformationpreserveearlystage --> controlpreserveearlystage
+	thingearlystage --- controlpreserveearlystage
+	thingstageinterface --> controlpreserveearlystage
+
+@enduml

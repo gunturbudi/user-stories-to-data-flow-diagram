@@ -1,0 +1,96 @@
+[
+  {
+    "text": "As an owner, I want to be sure that USAspending only send grant records to my system.",
+    "entities": [
+      {
+        "text": "owner,",
+        "label": "Data"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "grant records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.",
+    "entities": [
+      {
+        "text": "Owner,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "user testing summary",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.",
+    "entities": [
+      {
+        "text": "Owner,",
+        "label": "Data"
+      },
+      {
+        "text": "design",
+        "label": "Processing"
+      },
+      {
+        "text": "schedule",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.",
+    "entities": [
+      {
+        "text": "Owner,",
+        "label": "Data"
+      },
+      {
+        "text": "design",
+        "label": "Processing"
+      },
+      {
+        "text": "audit",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.",
+    "entities": [
+      {
+        "text": "Owner,",
+        "label": "Data"
+      },
+      {
+        "text": "reset",
+        "label": "Processing"
+      },
+      {
+        "text": "take",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I only want zero-padded fields, so that I can justify padding.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      }
+    ]
+  }
+]

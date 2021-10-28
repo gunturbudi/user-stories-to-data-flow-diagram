@@ -1,0 +1,76 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archive" as thingarchive
+	entity "Web" as thingweb
+	entity "Native Language" as thingnativelanguage
+	entity "System" as thingsystem
+	entity "Deposit File" as thingdepositedfile
+	entity "Example Citation" as thingexamplecitation #grey
+	entity "Dataset" as thingdataset
+	entity "Doi" as thingdoi
+	entity "Persistent Url" as thingpersistenturl
+	entity "Primo" as thingprimo
+	entity "Glance" as thingglance
+	actor "Datum Reuser" as actordatareuser
+	circle "Different Version" as thingdifferentversion
+	boundary "Web\nInterface" as thingwebinterface #grey
+	boundary "Language\nInterface" as thinglanguageinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Primo\nInterface" as thingprimointerface #grey
+	boundary "Glance\nInterface" as thingglanceinterface #grey
+	control "Search The\nArchive Through\nThe Web" as controlsearcharchiveweb
+	control "Access The\nSystem In\nNative Language" as controlaccesssystemnativelanguage
+	control "Examine Deposited\nFiles" as controlexaminedepositedfile
+	control "Identify Deposited\nFiles" as controlidentifydepositedfile
+	control "View An\nExample Citation\nFor A\nDataset" as controlviewexamplecitation
+	control "View A\nDoi For\nA Dataset" as controlviewdoidataset
+	control "Get A\nPersistent Url\nFor A\nDataset" as controlgetpersistenturl
+	control "Search The\nArchive Through\nPrimo" as controlsearcharchiveprimo
+	control "See Different\nVersions Of\nA Dataset\nAt A\nGlance" as controlseedifferentversionglance
+
+	thingweb <.. thingarchive
+	thingprimo <.. thingarchive
+	thingnativelanguage <.. thingsystem
+	thingdataset <.. thingexamplecitation
+	thingglance <.. thingdataset
+	thingdataset <.. thingdoi
+	thingdataset <.. thingpersistenturl
+	thingdataset *-- thingdifferentversion
+	actordatareuser --- thingwebinterface
+	actordatareuser --- thinglanguageinterface
+	actordatareuser --- thingfileinterface
+	actordatareuser --- thingdatasetinterface
+	actordatareuser --- thingprimointerface
+	actordatareuser --- thingglanceinterface
+	thingarchive --- controlsearcharchiveweb
+	thingweb --- controlsearcharchiveweb
+	thingwebinterface --> controlsearcharchiveweb
+	thingsystem --- controlaccesssystemnativelanguage
+	thingnativelanguage --- controlaccesssystemnativelanguage
+	thinglanguageinterface --> controlaccesssystemnativelanguage
+	thingdepositedfile --- controlexaminedepositedfile
+	thingfileinterface --> controlexaminedepositedfile
+	thingdepositedfile --- controlidentifydepositedfile
+	thingfileinterface --> controlidentifydepositedfile
+	thingexamplecitation --- controlviewexamplecitation
+	thingdataset --- controlviewexamplecitation
+	thingdatasetinterface --> controlviewexamplecitation
+	thingdoi --- controlviewdoidataset
+	thingdataset --- controlviewdoidataset
+	thingdatasetinterface --> controlviewdoidataset
+	thingpersistenturl --- controlgetpersistenturl
+	thingdataset --- controlgetpersistenturl
+	thingdatasetinterface --> controlgetpersistenturl
+	thingprimo --- controlsearcharchiveprimo
+	thingprimointerface --> controlsearcharchiveprimo
+	thingarchive --- controlsearcharchiveprimo
+	thingdifferentversion --- controlseedifferentversionglance
+	thingglance --- controlseedifferentversionglance
+	thingglanceinterface --> controlseedifferentversionglance
+	thingdataset --- controlseedifferentversionglance
+
+@enduml

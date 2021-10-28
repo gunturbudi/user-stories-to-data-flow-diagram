@@ -1,0 +1,26 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Nsf.Gov Website " ];
+201 [label="<f0>  |<f1> Different Style " ];
+202 [label="<f0>  |<f1> Moodboard " ];
+203 [label="<f0>  |<f1> Visual Design " ];
+204 [label="<f0>  |<f1> Nsf Project\nTeam " ];
+205 [label="<f0>  |<f1> Design Concept " ];
+206 [label="Visualdesigner" shape=box];
+207 [label="{<f0> 1.0|<f1> Concept Different Styles For The Nsf.Gov Website }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Aid With Visual Design Concepts For The Nsf.Gov Website }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Create A Moodboard }" shape=Mrecord];
+210 [label="{<f0> 4.0|<f1> Demonstrate The Value Of Visual Design To The Nsf Project Team }" shape=Mrecord];
+206 -> 207
+206 -> 208
+206 -> 209
+206 -> 210
+207 -> 201 [label="Different Style"]
+207 -> 200 [label="Nsf.Gov Website"]
+208 -> 205 [label="Design Concept"]
+208 -> 200 [label="Nsf.Gov Website"]
+209 -> 208
+209 -> 202 [label="Moodboard"]
+210 -> 203 [label="Visual Design"]
+210 -> 204 [label="Nsf Project\nTeam"]
+}

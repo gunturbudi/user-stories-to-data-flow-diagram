@@ -1,0 +1,9 @@
+id,value,style,source,target,type
+200,Report,shape=partialRectangle,null,null,data_base
+201,Working Paper,shape=partialRectangle,null,null,data_base
+202,Assistant Archivist,rounded=0,null,null,external_entity
+203,Researcher,rounded=0,null,null,external_entity
+204,Tag Staff,ellipse,null,null,process
+205,Share Reports,ellipse,null,null,process
+207,,endArrow=classic,203,205,endArrow=classic
+208,Report,endArrow=classic,205,200,endArrow=classic

@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Etc Publisher " ];
+201 [label="<f0>  |<f1> Object " color=red];
+202 [label="<f0>  |<f1> Place " ];
+203 [label="<f0>  |<f1> Publication " ];
+204 [label="User" shape=box];
+205 [label="{<f0> 1.0|<f1> Know For The Place Of The Etc Publisher }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Know For The Place Of The Etc Publisher Publication }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Know For An Object The Place Of Publication }" shape=Mrecord];
+208 [label="{<f0> 4.0|<f1> Know For }" shape=Mrecord];
+209 [label="{<f0> 5.0|<f1> Component Part }" shape=Mrecord];
+204 -> 207
+205 -> 200 [label="Etc Publisher"]
+205 -> 202 [label="Place"]
+206 -> 200 [label="Etc Publisher"]
+206 -> 202 [label="Place"]
+206 -> 203 [label="Publication"]
+207 -> 201 [label="Object"]
+207 -> 202 [label="Place"]
+207 -> 203 [label="Publication"]
+208 -> 209
+}

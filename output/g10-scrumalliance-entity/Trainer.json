@@ -1,0 +1,470 @@
+[
+  {
+    "text": "As a Trainer, I want to include additional details in my profile page about me, so that others can learn about me and decide if I am the right trainer for them.",
+    "entities": [
+      {
+        "text": "Trainer",
+        "label": "Data"
+      },
+      {
+        "text": "include",
+        "label": "Processing"
+      },
+      {
+        "text": "profile page",
+        "label": "PII"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "about me",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to list my upcoming classes in my profile and include a link to a detailed page about each, so that prospective attendees can find my courses.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "upcoming classes",
+        "label": "PII"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      },
+      {
+        "text": "prospective attendees",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "courses",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to create a new course or event, so that site visitors can see it.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to create an Other Course or Event I am charged a listing fee for that activity, so that I don't list events I don't really intend to hold.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "Event",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to update one of my existing courses or events, so that it reflects accurate information.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "existing courses",
+        "label": "PII"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to delete one of my courses or events, so that it's no longer listed if I cancel for some reason.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "courses",
+        "label": "PII"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to copy one of my courses or events, so that I can create a new one.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "copy",
+        "label": "Processing"
+      },
+      {
+        "text": "courses",
+        "label": "PII"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to turn a course into an event or an event into a course, so that I can correctly classify anything that was entered incorrectly.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "turn",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view a course I can click on the trainer's name and be taken to the trainer's profile, so that I can read more about a trainer before registering for a course.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "'s profile",
+        "label": "PII"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to see the upcoming courses are what I want visitors to notice, so that they register and there's a benefit to my membership.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "visitors",
+        "label": "Data"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to be assured that no one can submit the same answers multiple time and skew my results, so that my ratings are accurate.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "answers",
+        "label": "PII"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "ratings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to be notified about the results of surveys about my classes, so that I can read them.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "notified",
+        "label": "Processing"
+      },
+      {
+        "text": "results of surveys",
+        "label": "PII"
+      },
+      {
+        "text": "classes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to see the results for each trainer and averages for the class, so that I can identify any outliers or possible problems.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "averages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a trainer's rating, so that I choose a course from an appropriate trainer.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "'s rating",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to show my rating up on my profile page, so that site visitors can choose wisely.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "rating",
+        "label": "PII"
+      },
+      {
+        "text": "profile page",
+        "label": "PII"
+      },
+      {
+        "text": "site visitors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to load an Excel file into the site, so that the course participants are added to the Scrum Alliance records.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "load",
+        "label": "Processing"
+      },
+      {
+        "text": "course participants",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "move",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "proof of payment",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, so that fees can be set without involving a programmer.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "annual fees",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a trainer, I want to read information of relevance only to trainers, so that the Scrum Alliance can share information with me easily.",
+    "entities": [
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      }
+    ]
+  }
+]

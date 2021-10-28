@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a site editor, I want to update any course or event, so that I can fix things the original author hasn't.",
+    "entities": [
+      {
+        "text": "site editor",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "course",
+        "label": "PII"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      },
+      {
+        "text": "original author",
+        "label": "Data"
+      }
+    ]
+  }
+]

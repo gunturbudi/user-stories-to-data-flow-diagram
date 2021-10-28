@@ -1,0 +1,213 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Preapplication Assistance " color=red];
+201 [label="<f0>  |<f1> Application " color=red];
+202 [label="<f0>  |<f1> Support Documentation " ];
+203 [label="<f0>  |<f1> Fee " color=red];
+204 [label="<f0>  |<f1> Transaction " color=red];
+205 [label="<f0>  |<f1> Formal Response " color=red];
+206 [label="<f0>  |<f1> Applicant " ];
+207 [label="<f0>  |<f1> Zoning ,\nRelated Permit " ];
+208 [label="<f0>  |<f1> Requirement " color=red];
+209 [label="<f0>  |<f1> Execution " ];
+210 [label="<f0>  |<f1> Outcome " ];
+211 [label="<f0>  |<f1> Plan " color=red];
+212 [label="<f0>  |<f1> Development ,\nRelated Permit " ];
+213 [label="<f0>  |<f1> Building Development\nProject " color=red];
+214 [label="<f0>  |<f1> Draft Proffer " color=red];
+215 [label="<f0>  |<f1> Code Modification " ];
+216 [label="Applicant" shape=box];
+217 [label="Staff Member" shape=box];
+218 [label="Zoning , Staff Member" shape=box];
+219 [label="Plan , Review , Staff Member" shape=box];
+220 [label="Development , Staff Member" shape=box];
+221 [label="{<f0> 1.0|<f1> Request Preapplication Assistance }" shape=Mrecord];
+222 [label="{<f0> 2.0|<f1> Submit Application }" shape=Mrecord];
+223 [label="{<f0> 3.0|<f1> Submit Supporting Documentation }" shape=Mrecord];
+224 [label="{<f0> 4.0|<f1> Pay Fee }" shape=Mrecord];
+225 [label="{<f0> 5.0|<f1> Check The Status Of A Transaction }" shape=Mrecord];
+226 [label="{<f0> 6.0|<f1> Modify Application }" shape=Mrecord];
+227 [label="{<f0> 7.0|<f1> Send A Formal Response To Applicant }" shape=Mrecord];
+228 [label="{<f0> 8.0|<f1> Track The Draft Proffers }" shape=Mrecord];
+229 [label="{<f0> 9.0|<f1> Issue The Zoning, Related Permits }" shape=Mrecord];
+230 [label="{<f0> 10.0|<f1> Satisfy }" shape=Mrecord];
+231 [label="{<f0> 11.0|<f1> Hearing Requirements }" shape=Mrecord];
+232 [label="{<f0> 12.0|<f1> Hearing Execution }" shape=Mrecord];
+233 [label="{<f0> 13.0|<f1> Support }" shape=Mrecord];
+234 [label="{<f0> 14.0|<f1> Prepare }" shape=Mrecord];
+235 [label="{<f0> 15.0|<f1> Request A Plan Review Meeting }" shape=Mrecord];
+236 [label="{<f0> 16.0|<f1> Conduct A Plan Review With The Applicant }" shape=Mrecord];
+237 [label="{<f0> 17.0|<f1> Record The Outcome }" shape=Mrecord];
+238 [label="{<f0> 18.0|<f1> Resubmit Plans }" shape=Mrecord];
+239 [label="{<f0> 19.0|<f1> Review The Code Modifications The Applicant }" shape=Mrecord];
+240 [label="{<f0> 20.0|<f1> Track The Completion Of Required Plan Reviews }" shape=Mrecord];
+241 [label="{<f0> 21.0|<f1> Issue A Development, Related Permit }" shape=Mrecord];
+242 [label="{<f0> 22.0|<f1> Complete Building Development Project }" shape=Mrecord];
+23 [label="{<f0> 23.0|<f1> Receive a response to a request for a meeting or information that is a result of the preapplication assistance. }" shape=Mrecord];
+221 -> 23
+1001 [label="Applicant" shape=box];
+1001 -> 23
+1003 [label="Applicant" shape=box];
+1003 -> 23
+1005 [label="Applicant" shape=box];
+1005 -> 23
+1007 [label="Applicant" shape=box];
+1007 -> 23
+1009 [label="<f0>  |<f1> Meeting " color=red];
+23 -> 1009 [label="Meeting"]
+24 [label="{<f0> 24.0|<f1> Initiate a transaction with the county. }" shape=Mrecord];
+222 -> 24
+1012 [label="Applicant" shape=box];
+1012 -> 24
+1014 [label="Applicant" shape=box];
+1014 -> 24
+1016 [label="Applicant" shape=box];
+1016 -> 24
+1018 [label="Applicant" shape=box];
+1018 -> 24
+1020 [label="<f0>  |<f1> Information " color=red];
+24 -> 1020 [label="Information"]
+1022 [label="<f0>  |<f1> Plans " color=red];
+24 -> 1022 [label="Plans"]
+1024 [label="<f0>  |<f1> Documents " color=red];
+24 -> 1024 [label="Documents"]
+24 -> 204  [label="Transaction"]
+25 [label="{<f0> 25.0|<f1> Satisfy documentation requirements for my application. }" shape=Mrecord];
+223 -> 25
+1028 [label="Applicant" shape=box];
+1028 -> 25
+1030 [label="Applicant" shape=box];
+1030 -> 25
+1032 [label="Applicant" shape=box];
+1032 -> 25
+1034 [label="Applicant" shape=box];
+1034 -> 25
+25 -> 201  [label="Application"]
+26 [label="{<f0> 26.0|<f1> Understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results. }" shape=Mrecord];
+225 -> 26
+1038 [label="Applicant" shape=box];
+1038 -> 26
+1040 [label="Applicant" shape=box];
+1040 -> 26
+1042 [label="Applicant" shape=box];
+1042 -> 26
+1044 [label="Applicant" shape=box];
+1044 -> 26
+1046 [label="<f0>  |<f1> Service " color=red];
+26 -> 1046 [label="Service"]
+27 [label="{<f0> 27.0|<f1> Change information on an application. }" shape=Mrecord];
+216 -> 27
+1049 [label="Applicant" shape=box];
+1049 -> 27
+1051 [label="Applicant" shape=box];
+1051 -> 27
+1053 [label="Applicant" shape=box];
+1053 -> 27
+1055 [label="Applicant" shape=box];
+1055 -> 27
+1057 [label="<f0>  |<f1> Information " color=red];
+27 -> 1057 [label="Information"]
+28 [label="{<f0> 28.0|<f1> Preserve the history of draft proffer statements submitted by the applicant. }" shape=Mrecord];
+1059 [label="Staff member" shape=box];
+1059 -> 28
+228 -> 28
+1062 [label="Staff member" shape=box];
+1062 -> 28
+28 -> 214  [label="Draft proffer statements"]
+29 [label="{<f0> 29.0|<f1> Ensure all pre-hearing requirements are satisfied in time for the hearing. }" shape=Mrecord];
+230 -> 29
+1066 [label="Applicant" shape=box];
+1066 -> 29
+1068 [label="Applicant" shape=box];
+1068 -> 29
+1070 [label="Applicant" shape=box];
+1070 -> 29
+1072 [label="Applicant" shape=box];
+1072 -> 29
+1074 [label="<f0>  |<f1> Pre-hearing requirements " color=red];
+29 -> 1074 [label="Pre-hearing requirements"]
+30 [label="{<f0> 30.0|<f1> Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing. }" shape=Mrecord];
+1076 [label="Staff member" shape=box];
+1076 -> 30
+232 -> 30
+1079 [label="Staff member" shape=box];
+1079 -> 30
+1081 [label="<f0>  |<f1> Pre-hearing requirements " color=red];
+30 -> 1081 [label="Pre-hearing requirements"]
+31 [label="{<f0> 31.0|<f1> Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance. }" shape=Mrecord];
+1083 [label="Plan review staff member" shape=box];
+1083 -> 31
+1085 [label="Plan review staff member" shape=box];
+1085 -> 31
+1087 [label="Plan review staff member" shape=box];
+1087 -> 31
+240 -> 31
+1090 [label="Plan review staff member" shape=box];
+1090 -> 31
+1092 [label="<f0>  |<f1> Results " color=red];
+31 -> 1092 [label="Results"]
+1094 [label="<f0>  |<f1> Payment " color=red];
+31 -> 1094 [label="Payment"]
+32 [label="{<f0> 32.0|<f1> Obtain occupancy. }" shape=Mrecord];
+242 -> 32
+1097 [label="Applicant" shape=box];
+1097 -> 32
+1099 [label="Applicant" shape=box];
+1099 -> 32
+1101 [label="Applicant" shape=box];
+1101 -> 32
+1103 [label="Applicant" shape=box];
+1103 -> 32
+1105 [label="<f0>  |<f1> Bond " color=red];
+32 -> 1105 [label="Bond"]
+216 -> 221
+216 -> 222
+216 -> 223
+216 -> 224
+216 -> 225
+216 -> 226
+216 -> 230
+216 -> 231
+216 -> 235
+216 -> 238
+216 -> 240
+216 -> 242
+217 -> 227
+217 -> 228
+217 -> 232
+217 -> 234
+217 -> 236
+218 -> 229
+218 -> 241
+219 -> 227
+219 -> 235
+219 -> 236
+219 -> 237
+219 -> 238
+219 -> 239
+219 -> 240
+220 -> 229
+220 -> 241
+221 -> 200 [label="Preapplication Assistance"]
+222 -> 201 [label="Application"]
+223 -> 202 [label="Support Documentation"]
+224 -> 203 [label="Fee"]
+225 -> 204 [label="Transaction"]
+226 -> 201 [label="Application"]
+227 -> 205 [label="Formal Response"]
+227 -> 206 [label="Applicant"]
+228 -> 214 [label="Draft Proffer"]
+229 -> 207 [label="Zoning ,\nRelated Permit"]
+230 -> 231
+231 -> 208 [label="Requirement"]
+232 -> 209 [label="Execution"]
+233 -> 232
+234 -> 232
+236 -> 206 [label="Applicant"]
+237 -> 210 [label="Outcome"]
+238 -> 211 [label="Plan"]
+239 -> 215 [label="Code Modification"]
+240 -> 211 [label="Plan"]
+241 -> 212 [label="Development ,\nRelated Permit"]
+242 -> 213 [label="Building Development\nProject"]
+}

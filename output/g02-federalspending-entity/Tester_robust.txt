@@ -1,0 +1,29 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Environment" as thingotherenvironment
+	entity "Fabs" as thingFABS
+	entity "Field" as thingfield
+	entity "Follow Check" as thingfollowcheck
+	entity "Test Feature" as thingtestfeature
+	entity "Test File" as thingtestfile
+	actor "Tester" as actortester
+	boundary "Environment\nInterface" as thingenvironmentinterface #grey
+	control "Have Access\nTo Test\nFeatures In\nOther Environments" as controlhaveaccess
+	control "Staging" as controlstagehaveaccess
+	control "Ensure" as controlensure
+
+	thingtestfeature <.. thingaccess
+	thingotherenvironment <.. thingtestfeature
+	actortester --- thingenvironmentinterface
+	thingaccess --- controlhaveaccess
+	thingtestfeature --- controlhaveaccess
+	thingotherenvironment --- controlhaveaccess
+	controlstagehaveaccess --> controlhaveaccess
+	thingenvironmentinterface --> controlhaveaccess
+	thingenvironmentinterface --> controlstagehaveaccess
+
+@enduml

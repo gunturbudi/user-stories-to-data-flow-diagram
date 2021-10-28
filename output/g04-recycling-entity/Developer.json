@@ -1,0 +1,45 @@
+[
+  {
+    "text": "As a developer, I want to access an API from the website, so that I can integrate it and implement certain features in my own iOS application.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to use bootstrap in the process of developing, so that I can easily design my website.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "design",
+        "label": "Processing"
+      },
+      {
+        "text": "website",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to attend some UI/UX lessons, so that I can develop an awesome and beautiful features website.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "attend",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+id,value,style,source,target,type
+13,Find what they're looking for.,ellipse,null,null,process
+200,Sponsorship Money,shape=partialRectangle,null,null,data_base
+201,Stripe,shape=partialRectangle,null,null,data_base
+202,Venue,shape=partialRectangle,null,null,data_base
+203,Training,shape=partialRectangle,null,null,data_base
+204,Sponsor,shape=partialRectangle,null,null,data_base
+205,Event,shape=partialRectangle,null,null,data_base
+206,Summit,shape=partialRectangle,null,null,data_base
+207,Drupal Planet,shape=partialRectangle,null,null,data_base
+208,Consumption,shape=partialRectangle,null,null,data_base
+209,Location,shape=partialRectangle,null,null,data_base
+210,Time Slot,shape=partialRectangle,null,null,data_base
+211,Room,shape=partialRectangle,null,null,data_base
+212,Session,shape=partialRectangle,null,null,data_base
+213,Blog Post,shape=partialRectangle,null,null,data_base
+214,Approve,shape=partialRectangle,null,null,data_base
+215,Administrator,rounded=0,null,null,external_entity
+216,Refund Sponsorship Money Processed Stripe,ellipse,null,null,process
+217,Create Venues,ellipse,null,null,process
+218,Maintain Venues,ellipse,null,null,process
+219,Assign Sponsors To Events,ellipse,null,null,process
+220,Assign Sponsors To Training,ellipse,null,null,process
+221,Assign Sponsors To Summit,ellipse,null,null,process
+222,Tag Blog Posts For Consumption By Drupal Planet,ellipse,null,null,process
+223,Create Blog Posts,ellipse,null,null,process
+224,Assign A Room To A Time Slot,ellipse,null,null,process
+225,Assign A Room To A Location,ellipse,null,null,process
+226,Mark A Session,ellipse,null,null,process
+227,Bulk Approve Sessions,ellipse,null,null,process
+229,,endArrow=classic,215,216,endArrow=classic
+230,,endArrow=classic,215,217,endArrow=classic
+231,,endArrow=classic,215,218,endArrow=classic
+232,,endArrow=classic,215,219,endArrow=classic
+233,,endArrow=classic,215,220,endArrow=classic
+234,,endArrow=classic,215,221,endArrow=classic
+235,,endArrow=classic,215,222,endArrow=classic
+236,,endArrow=classic,215,223,endArrow=classic
+237,,endArrow=classic,215,224,endArrow=classic
+238,,endArrow=classic,215,225,endArrow=classic
+239,,endArrow=classic,215,226,endArrow=classic
+240,,endArrow=classic,215,227,endArrow=classic
+241,Sponsorship Money,endArrow=classic,216,200,endArrow=classic
+242,Stripe,endArrow=classic,216,201,endArrow=classic
+243,Venue,endArrow=classic,217,202,endArrow=classic
+244,Venue,endArrow=classic,218,202,endArrow=classic
+245,Sponsor,endArrow=classic,219,204,endArrow=classic
+246,Event,endArrow=classic,219,205,endArrow=classic
+247,Training,endArrow=classic,220,203,endArrow=classic
+248,Sponsor,endArrow=classic,220,204,endArrow=classic
+249,Summit,endArrow=classic,221,206,endArrow=classic
+250,Sponsor,endArrow=classic,221,204,endArrow=classic
+251,Blog Post,endArrow=classic,222,213,endArrow=classic
+252,Consumption,endArrow=classic,222,208,endArrow=classic
+253,Drupal Planet,endArrow=classic,222,207,endArrow=classic
+254,Blog Post,endArrow=classic,223,213,endArrow=classic
+255,Room,endArrow=classic,224,211,endArrow=classic
+256,Time Slot,endArrow=classic,224,210,endArrow=classic
+257,Location,endArrow=classic,225,209,endArrow=classic
+258,Room,endArrow=classic,225,211,endArrow=classic
+259,Session,endArrow=classic,226,212,endArrow=classic
+260,Session,endArrow=classic,227,212,endArrow=classic
+272,Approve,endArrow=classic,227,214,endArrow=classic
+1000,,endArrow=classic,218,13,endArrow=classic
+1001,Location details,rounded=0,null,null,external_entity
+1002,Location details,endArrow=classic,13,1001,endArrow=classic

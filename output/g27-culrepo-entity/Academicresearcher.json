@@ -1,0 +1,52 @@
+[
+  {
+    "text": "As an academicresearcher, I want to find the works of a particular author in one easily sortable spot, so that I can see the evolution of their scholarship over time.",
+    "entities": [
+      {
+        "text": "academicresearcher,",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "works",
+        "label": "PII"
+      },
+      {
+        "text": "author",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an academicresearcher, I want to the thesis paper of an influential judge or legal thinker to gain insight into how their initial scholarship got started.",
+    "entities": [
+      {
+        "text": "academicresearcher,",
+        "label": "Data"
+      },
+      {
+        "text": "thesis paper",
+        "label": "PII"
+      },
+      {
+        "text": "influential judge",
+        "label": "Data"
+      },
+      {
+        "text": "legal thinker",
+        "label": "Data"
+      },
+      {
+        "text": "gain insight",
+        "label": "Processing"
+      }
+    ]
+  }
+]

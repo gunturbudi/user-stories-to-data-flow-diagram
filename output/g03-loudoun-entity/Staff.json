@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As a Staff member, I want to Record an Internal Note, so that I can share information with other Staff collaborating on the record.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Record",
+        "label": "Processing"
+      },
+      {
+        "text": "Internal Note",
+        "label": "PII"
+      },
+      {
+        "text": "Staff",
+        "label": "Data"
+      },
+      {
+        "text": "collaborating",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Staff member, I want to Prepare for and Support Hearing Execution, so that I can ensure all pre-hearing requirements are satisfied and staff and Applicant are ready for the hearing.",
+    "entities": [
+      {
+        "text": "Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Prepare",
+        "label": "Processing"
+      },
+      {
+        "text": "Support",
+        "label": "Processing"
+      },
+      {
+        "text": "pre-hearing requirements",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  }
+]

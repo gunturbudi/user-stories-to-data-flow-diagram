@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Ad,shape=partialRectangle,null,null,data_base
+201,Site,shape=partialRectangle,null,null,data_base
+202,Posting,shape=partialRectangle,null,null,data_base
+203,Day,shape=partialRectangle,null,null,data_base
+204,Recruiter,rounded=0,null,null,external_entity
+205,Post,ellipse,null,null,process
+206,Want Ad,ellipse,null,null,process
+207,Extend An Ad For Another Days,ellipse,null,null,process
+208,Updating Visiting The Site The Posting,ellipse,null,null,process
+210,,endArrow=classic,204,205,endArrow=classic
+211,,endArrow=classic,204,206,endArrow=classic
+212,,endArrow=classic,204,207,endArrow=classic
+213,,endArrow=classic,204,208,endArrow=classic
+214,,endArrow=classic,205,206,endArrow=classic
+215,Ad,endArrow=classic,206,200,endArrow=classic
+216,Day,endArrow=classic,207,203,endArrow=classic
+217,Ad,endArrow=classic,207,200,endArrow=classic
+218,,endArrow=classic,208,207,endArrow=classic
+219,Site,endArrow=classic,208,201,endArrow=classic
+220,Posting,endArrow=classic,208,202,endArrow=classic

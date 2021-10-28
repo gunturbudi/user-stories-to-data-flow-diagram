@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As a developer, I want to enable customers to provide feedback about my App and need an easy way to watch this feedback.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "customers",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "App",
+        "label": "PII"
+      },
+      {
+        "text": "watch",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  }
+]

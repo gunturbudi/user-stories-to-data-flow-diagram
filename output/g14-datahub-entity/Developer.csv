@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+200,Project,shape=partialRectangle,null,null,data_base
+201,Data Package,shape=partialRectangle,null,null,data_base
+202,Node Lib,shape=partialRectangle,null,null,data_base
+203,File,shape=partialRectangle,null,null,data_base
+204,Datapackage,shape=partialRectangle,null,null,data_base
+205,Datapackages Requirement,shape=partialRectangle,null,null,data_base
+206,Developer,rounded=0,null,null,external_entity
+207,Use Data Package As A Node Lib In Project,ellipse,null,null,process
+208,List All Datapackages Requirements For Project In The File,ellipse,null,null,process
+209,Pin The Exact Versions Of Any Datapackage,ellipse,null,null,process
+211,,endArrow=classic,206,207,endArrow=classic
+212,,endArrow=classic,206,208,endArrow=classic
+213,,endArrow=classic,206,209,endArrow=classic
+214,Data Package,endArrow=classic,207,201,endArrow=classic
+215,Node Lib,endArrow=classic,207,202,endArrow=classic
+216,Project,endArrow=classic,207,200,endArrow=classic
+217,Datapackages Requirement,endArrow=classic,208,205,endArrow=classic
+218,File,endArrow=classic,208,203,endArrow=classic
+219,Project,endArrow=classic,208,200,endArrow=classic
+220,Datapackage,endArrow=classic,209,204,endArrow=classic

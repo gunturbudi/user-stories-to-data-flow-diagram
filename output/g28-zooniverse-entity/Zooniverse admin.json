@@ -1,0 +1,566 @@
+[
+  {
+    "text": "As a Zooniverse admin, I want to assess how interesting or appealing or complex a picture is based on automated analysis, citizen annotations, and comments on Talk.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automated analysis",
+        "label": "Processing"
+      },
+      {
+        "text": "citizen annotations",
+        "label": "PII"
+      },
+      {
+        "text": "comments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "scientist",
+        "label": "Data"
+      },
+      {
+        "text": "look",
+        "label": "Processing"
+      },
+      {
+        "text": "subject",
+        "label": "PII"
+      },
+      {
+        "text": "Talk comments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to identify volunteer types.",
+    "entities": [
+      {
+        "text": "Zooniverse admin",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to preclassify the Galaxy Zoo images using simple low\u00adlevel image features.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "preclassify",
+        "label": "Processing"
+      },
+      {
+        "text": "Galaxy Zoo images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to automatically detect Snapshot Serengeti images with no classifiable animals in them.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "Snapshot Serengeti images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic image series detection for the case of timestamping malfunction in Snapshot Serengeti images.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic animal species preclassification in Snapshot Serengeti.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "perform automatic",
+        "label": "Processing"
+      },
+      {
+        "text": "animal species",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic animal attribute preclassification in Snapshot Serengeti.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic",
+        "label": "Processing"
+      },
+      {
+        "text": "animal attribute",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic animal number detection in Snapshot Serengeti.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic",
+        "label": "Processing"
+      },
+      {
+        "text": "animal number",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic segmentation or localization of plankton in Plankton Portal.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic segmentation",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to automatically detect Plankton Portal images with no classifiable plankton in them.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "Plankton Portal images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic detection of plankton size or orientation in Plankton Portal images.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic detection",
+        "label": "Processing"
+      },
+      {
+        "text": "plankton size",
+        "label": "PII"
+      },
+      {
+        "text": "orientation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic preclassification of plankton species in Plankton Portal images.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatic preclassification",
+        "label": "Processing"
+      },
+      {
+        "text": "plankton species",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform automatic worm motion analysis to reduce video duration in Worm Watch Lab.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "video duration",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to automatically detect the time in a Worm Watch Lab video where the worm lays an egg.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically detect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc in the satellite images.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "features",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to assess the probability/weight of a volunteer\u2019s classification based on their experience.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "assess",
+        "label": "Processing"
+      },
+      {
+        "text": "weight",
+        "label": "PII"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      },
+      {
+        "text": "experience",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to perform prefiltering of the images to remove artefacts such as bright stars and camera read errors.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "perform prefiltering",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to detect moving and transient objects in the images.",
+    "entities": [
+      {
+        "text": "Zooniverse admin",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to remove background noise and distracting sounds from the audio files.",
+    "entities": [
+      {
+        "text": "Zooniverse admin",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "background noise",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to group whale calls that are similar.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "group",
+        "label": "Processing"
+      },
+      {
+        "text": "whale calls",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to identify the number of whales heard in a single audio file.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "whales heard",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know when I should interrupt a volunteer.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "interrupt",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "interrupt",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      },
+      {
+        "text": "text",
+        "label": "PII"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know when I should educate a volunteer.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "educate",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "educate",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      },
+      {
+        "text": "text",
+        "label": "PII"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know when a volunteer has made an interesting comment on a subject.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      },
+      {
+        "text": "comment",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know when Zoonibot should comment on a subject.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "comment",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know when Zoonibot should give an explanation.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to know what Zoonibot should say to a volunteer.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "volunteer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to group subjects by similarity.",
+    "entities": [
+      {
+        "text": "Zooniverse admin",
+        "label": "Data"
+      },
+      {
+        "text": "group",
+        "label": "Processing"
+      },
+      {
+        "text": "subjects",
+        "label": "Data"
+      },
+      {
+        "text": "similarity",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zooniverse admin, I want to recommend different projects to volunteers based on their previous experiences.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "recommend",
+        "label": "Processing"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      },
+      {
+        "text": "volunteers",
+        "label": "Data"
+      }
+    ]
+  }
+]

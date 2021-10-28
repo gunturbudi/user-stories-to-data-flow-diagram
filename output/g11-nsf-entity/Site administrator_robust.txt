@@ -1,0 +1,13 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Similar ,\nOrganization" as thingsimilarotherorganization
+	entity "Visual Design" as thingvisualdesign
+	entity "Content" as thingcontent
+	actor "Site Administrator" as actorsiteadministrator
+	control "Understand" as controlunderstand
+
+
+@enduml

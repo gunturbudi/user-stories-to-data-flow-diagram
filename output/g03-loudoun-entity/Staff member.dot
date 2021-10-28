@@ -1,0 +1,153 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Completeness Review " color=red];
+201 [label="<f0>  |<f1> Internal Note " color=red];
+202 [label="<f0>  |<f1> Detailed Review " color=red];
+203 [label="<f0>  |<f1> Application " color=red];
+204 [label="<f0>  |<f1> Hold " color=red];
+205 [label="<f0>  |<f1> Formal Response " color=red];
+206 [label="<f0>  |<f1> Applicant " ];
+207 [label="<f0>  |<f1> Approve Proffer " ];
+208 [label="<f0>  |<f1> Ordinance " color=red];
+209 [label="<f0>  |<f1> Meeting " color=red];
+210 [label="<f0>  |<f1> Staff Review " color=red];
+211 [label="<f0>  |<f1> Staff Report " ];
+212 [label="<f0>  |<f1> Calendar " color=red];
+213 [label="<f0>  |<f1> Hearing Date " color=red];
+214 [label="<f0>  |<f1> Affidavit " color=red];
+215 [label="<f0>  |<f1> Execution " ];
+216 [label="<f0>  |<f1> Hearing Decision " color=red];
+217 [label="<f0>  |<f1> Appeal " color=red];
+218 [label="<f0>  |<f1> Bond " color=red];
+219 [label="<f0>  |<f1> Condo Unit " color=red];
+220 [label="<f0>  |<f1> Citation " color=red];
+221 [label="<f0>  |<f1> Fine " color=red];
+222 [label="<f0>  |<f1> Draft Proffer " color=red];
+223 [label="<f0>  |<f1> Action Status " ];
+224 [label="Staff Member" shape=box];
+225 [label="{<f0> 1.0|<f1> Perform A Completeness Review }" shape=Mrecord];
+226 [label="{<f0> 2.0|<f1> Record An Internal Note }" shape=Mrecord];
+227 [label="{<f0> 3.0|<f1> Assign An Application For Detailed Review }" shape=Mrecord];
+228 [label="{<f0> 4.0|<f1> Apply A Hold }" shape=Mrecord];
+229 [label="{<f0> 5.0|<f1> Remove A Hold }" shape=Mrecord];
+230 [label="{<f0> 6.0|<f1> Send A Formal Response To Applicant }" shape=Mrecord];
+231 [label="{<f0> 7.0|<f1> Track The Draft Proffers }" shape=Mrecord];
+232 [label="{<f0> 8.0|<f1> Manage Approved Proffers }" shape=Mrecord];
+233 [label="{<f0> 9.0|<f1> Manage Ordinances }" shape=Mrecord];
+234 [label="{<f0> 10.0|<f1> Schedule A Meeting }" shape=Mrecord];
+235 [label="{<f0> 11.0|<f1> Perform A Staff Review }" shape=Mrecord];
+236 [label="{<f0> 12.0|<f1> Develop A Staff Report }" shape=Mrecord];
+237 [label="{<f0> 13.0|<f1> Hearing Calendars }" shape=Mrecord];
+238 [label="{<f0> 14.0|<f1> Manage }" shape=Mrecord];
+239 [label="{<f0> 15.0|<f1> Assign A Hearing Date }" shape=Mrecord];
+240 [label="{<f0> 16.0|<f1> Manage Affidavits }" shape=Mrecord];
+241 [label="{<f0> 17.0|<f1> Hearing Execution }" shape=Mrecord];
+242 [label="{<f0> 18.0|<f1> Support }" shape=Mrecord];
+243 [label="{<f0> 19.0|<f1> Prepare }" shape=Mrecord];
+244 [label="{<f0> 20.0|<f1> Capture A Hearing Decision }" shape=Mrecord];
+245 [label="{<f0> 21.0|<f1> Process The Appeals }" shape=Mrecord];
+246 [label="{<f0> 22.0|<f1> Manage Bonds }" shape=Mrecord];
+247 [label="{<f0> 23.0|<f1> Notified }" shape=Mrecord];
+248 [label="{<f0> 24.0|<f1> Create Each Condo Unit }" shape=Mrecord];
+249 [label="{<f0> 25.0|<f1> Send Citations }" shape=Mrecord];
+250 [label="{<f0> 26.0|<f1> Send Fine }" shape=Mrecord];
+251 [label="{<f0> 27.0|<f1> Post Fine }" shape=Mrecord];
+252 [label="{<f0> 28.0|<f1> Post Citations }" shape=Mrecord];
+253 [label="{<f0> 29.0|<f1> Denote An Application With A Final Action Status }" shape=Mrecord];
+30 [label="{<f0> 30.0|<f1> Preserve the history of draft proffer statements submitted by the applicant. }" shape=Mrecord];
+231 -> 30
+30 -> 222  [label="Draft proffer statements"]
+31 [label="{<f0> 31.0|<f1> Maintain accurate ordinance information in the system. }" shape=Mrecord];
+233 -> 31
+1003 [label="<f0>  |<f1> Ordinance information " color=red];
+31 -> 1003 [label="Ordinance information"]
+32 [label="{<f0> 32.0|<f1> Address an issue. }" shape=Mrecord];
+234 -> 32
+1006 [label="<f0>  |<f1> Required parties " color=red];
+32 -> 1006 [label="Required parties"]
+33 [label="{<f0> 33.0|<f1> Track hearing-related activities and due dates. }" shape=Mrecord];
+237 -> 33
+1009 [label="<f0>  |<f1> Due dates " color=red];
+33 -> 1009 [label="Due dates"]
+34 [label="{<f0> 34.0|<f1> Present the application to the appropriate governing body within the timelines dictated by the relevant county rules and procedures. }" shape=Mrecord];
+239 -> 34
+34 -> 203  [label="Application"]
+1013 [label="<f0>  |<f1> Governing body " color=red];
+34 -> 1013 [label="Governing body"]
+35 [label="{<f0> 35.0|<f1> Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing. }" shape=Mrecord];
+241 -> 35
+1016 [label="<f0>  |<f1> Pre-hearing requirements " color=red];
+35 -> 1016 [label="Pre-hearing requirements"]
+36 [label="{<f0> 36.0|<f1> Manage bonds throughout the lifecycle of the project until release. }" shape=Mrecord];
+238 -> 36
+1019 [label="<f0>  |<f1> Bonds " color=red];
+36 -> 1019 [label="Bonds"]
+37 [label="{<f0> 37.0|<f1> Associate it to the child parcel and address after the condominiums are recorded in the system. }" shape=Mrecord];
+248 -> 37
+1022 [label="<f0>  |<f1> Child parcel " color=red];
+37 -> 1022 [label="Child parcel"]
+1024 [label="<f0>  |<f1> Address " color=red];
+37 -> 1024 [label="Address"]
+38 [label="{<f0> 38.0|<f1> Send the notice of violation document to the property owner and log information about the action. }" shape=Mrecord];
+252 -> 38
+1027 [label="<f0>  |<f1> Notice of violation document " color=red];
+38 -> 1027 [label="Notice of violation document"]
+224 -> 225
+224 -> 226
+224 -> 227
+224 -> 228
+224 -> 229
+224 -> 230
+224 -> 231
+224 -> 232
+224 -> 233
+224 -> 234
+224 -> 235
+224 -> 236
+224 -> 237
+224 -> 238
+224 -> 239
+224 -> 240
+224 -> 241
+224 -> 243
+224 -> 244
+224 -> 245
+224 -> 246
+224 -> 248
+224 -> 249
+224 -> 250
+224 -> 251
+224 -> 252
+224 -> 253
+225 -> 200 [label="Completeness Review"]
+226 -> 201 [label="Internal Note"]
+227 -> 203 [label="Application"]
+227 -> 202 [label="Detailed Review"]
+228 -> 204 [label="Hold"]
+229 -> 204 [label="Hold"]
+230 -> 205 [label="Formal Response"]
+230 -> 206 [label="Applicant"]
+231 -> 222 [label="Draft Proffer"]
+232 -> 207 [label="Approve Proffer"]
+233 -> 208 [label="Ordinance"]
+234 -> 209 [label="Meeting"]
+235 -> 210 [label="Staff Review"]
+236 -> 211 [label="Staff Report"]
+237 -> 212 [label="Calendar"]
+238 -> 237
+239 -> 213 [label="Hearing Date"]
+240 -> 214 [label="Affidavit"]
+241 -> 215 [label="Execution"]
+242 -> 241
+243 -> 241
+244 -> 216 [label="Hearing Decision"]
+245 -> 217 [label="Appeal"]
+246 -> 218 [label="Bond"]
+248 -> 219 [label="Condo Unit"]
+249 -> 220 [label="Citation"]
+250 -> 221 [label="Fine"]
+251 -> 221 [label="Fine"]
+252 -> 220 [label="Citation"]
+253 -> 223 [label="Action Status"]
+253 -> 203 [label="Application"]
+}

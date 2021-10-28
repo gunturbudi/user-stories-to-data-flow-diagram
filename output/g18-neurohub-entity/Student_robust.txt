@@ -1,0 +1,31 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Neurohub" as thingneurohub
+	entity "Student" as thingstudent
+	entity "Course" as thingcourse
+	entity "Feedback" as thingfeedback
+	entity "Form" as thingform #grey
+	actor "Supervisor" as actorsupervisor
+	boundary "Order" as thingorderprovideformfeedbacksupervisor #grey
+	boundary "Neurohub\nInterface" as thingneurohubinterface #grey
+	control "Create Feedback\nForms Within\nNeurohub" as controlcreatefeedbackforms
+	control "Forms Provide\nWith Feedback\nAbout The\nCourse That\nAttended" as controlprovideformfeedback
+
+	thingcourse <.. thingfeedback
+	thingneurohub <.. thingfeedback
+	thingneurohub <.. thingform
+	thingfeedback <.. thingform
+	actorsupervisor --- thingorderprovideformfeedbacksupervisor
+	actorsupervisor --- thingneurohubinterface
+	thingneurohub --- controlcreatefeedbackforms
+	thingneurohubinterface --> controlcreatefeedbackforms
+	thingform --- controlcreatefeedbackforms
+	thingorderprovideformfeedbacksupervisor --> controlprovideformfeedback
+	thingform --- controlprovideformfeedback
+	thingfeedback --- controlprovideformfeedback
+	thingcourse --- controlprovideformfeedback
+
+@enduml

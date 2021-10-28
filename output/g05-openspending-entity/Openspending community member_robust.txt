@@ -1,0 +1,32 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fiscal ,\nOpen Space" as thingfiscalopenspace
+	entity "Blog" as thingblog
+	entity "Project" as thingproject
+	entity "App" as thingapp
+	actor "Openspending ,\nCommunity Member" as actoropenspendingcommunitymember
+	boundary "Space\nInterface" as thingspaceinterface #grey
+	boundary "Blog\nInterface" as thingbloginterface #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	control "Have A\nBlog All\nProject In\nThe Fiscal,\nOpen Space" as controlhaveblogproject
+	control "Have A\nBlog Highlights\nAny" as controlhaveblog
+	control "Have An\nApp" as controlhaveapp
+
+	thingproject <.. thingblog
+	thingfiscalopenspace <.. thingproject
+	actoropenspendingcommunitymember --- thingspaceinterface
+	actoropenspendingcommunitymember --- thingbloginterface
+	actoropenspendingcommunitymember --- thingappinterface
+	thingproject --- controlhaveblogproject
+	thingfiscalopenspace --- controlhaveblogproject
+	thingspaceinterface --> controlhaveblogproject
+	thingblog --- controlhaveblogproject
+	thingblog --- controlhaveblog
+	thingbloginterface --> controlhaveblog
+	thingapp --- controlhaveapp
+	thingappinterface --> controlhaveapp
+
+@enduml

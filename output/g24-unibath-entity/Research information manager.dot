@@ -1,0 +1,52 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Cris " ];
+201 [label="<f0>  |<f1> Archive " color=red];
+202 [label="<f0>  |<f1> Record " color=red];
+203 [label="<f0>  |<f1> Complete ,\nHold Datum " ];
+204 [label="<f0>  |<f1> Publish Dataset " color=red];
+205 [label="<f0>  |<f1> View Statistic " ];
+206 [label="<f0>  |<f1> Sector " color=red];
+207 [label="<f0>  |<f1> Country " color=red];
+208 [label="<f0>  |<f1> Dataset " color=red];
+209 [label="<f0>  |<f1> Metadata " color=red];
+210 [label="<f0>  |<f1> Project " color=red];
+211 [label="<f0>  |<f1> Citation Count " ];
+212 [label="Research , Information Manager" shape=box];
+213 [label="{<f0> 1.0|<f1> Integrate The Archive With Cris }" shape=Mrecord];
+214 [label="{<f0> 2.0|<f1> Include Records For Externally Complete, Held Data }" shape=Mrecord];
+215 [label="{<f0> 3.0|<f1> Track Citation Counts For Published Datasets }" shape=Mrecord];
+216 [label="{<f0> 4.0|<f1> Segment The View Statistics By Country }" shape=Mrecord];
+217 [label="{<f0> 5.0|<f1> Segment The View Statistics By Sector }" shape=Mrecord];
+218 [label="{<f0> 6.0|<f1> Segment }" shape=Mrecord];
+219 [label="{<f0> 7.0|<f1> Download }" shape=Mrecord];
+220 [label="{<f0> 8.0|<f1> Have Datasets To Metadata About Projects }" shape=Mrecord];
+9 [label="{<f0> 9.0|<f1> Link funding to all of the outputs it produces. }" shape=Mrecord];
+213 -> 9
+1001 [label="<f0>  |<f1> Funding " color=red];
+9 -> 1001 [label="Funding"]
+10 [label="{<f0> 10.0|<f1> Report on projects depositing datasets in relation to funder requirements. }" shape=Mrecord];
+220 -> 10
+1004 [label="<f0>  |<f1> Datasets " color=red];
+10 -> 1004 [label="Datasets"]
+212 -> 213
+212 -> 214
+212 -> 215
+212 -> 216
+212 -> 217
+212 -> 220
+213 -> 201 [label="Archive"]
+213 -> 200 [label="Cris"]
+214 -> 202 [label="Record"]
+214 -> 203 [label="Complete ,\nHold Datum"]
+215 -> 211 [label="Citation Count"]
+215 -> 204 [label="Publish Dataset"]
+216 -> 205 [label="View Statistic"]
+216 -> 207 [label="Country"]
+217 -> 206 [label="Sector"]
+217 -> 205 [label="View Statistic"]
+218 -> 219
+220 -> 208 [label="Dataset"]
+220 -> 209 [label="Metadata"]
+220 -> 210 [label="Project"]
+}

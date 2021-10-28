@@ -1,0 +1,542 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Collection" as thingcollection
+	entity "Dam" as thingDAMS
+	entity "Object" as thingobject
+	entity "Place" as thingplace
+	entity "Relevant Place" as thingrelevantplace
+	entity "Curatorial Access" as thingcuratorialaccess
+	entity "Unit" as thingunit
+	entity "Singular Provenance" as thingsingularprovenance
+	entity "Assembly" as thingassembly
+	entity "Provenance" as thingsameprovenance
+	entity "Title" as thingtitle
+	entity "Source" as thingsource
+	entity "Name" as thingname
+	entity "Subject" as thingsubject
+	entity "Creator" as thingcreator
+	entity "Probable Importance" as thingprobableimportance
+	entity "User" as thinguser
+	entity "Event" as thingevent
+	entity "Component" as thingcomponent
+	entity "File" as thingfile
+	entity "Aspect" as thingotheraspect
+	entity "Pertinent Statute" as thingpertinentstatute
+	entity "License" as thinglicense
+	entity "Pertinent ,\nRight" as thingpertinentotherright
+	entity "Description" as thingdescription
+	entity "Life Cycle" as thinglifecycle #grey
+	entity "Logical" as thinglogical
+	entity "Appropriate Order" as thingappropriateorder
+	entity "Different ,\nCopyright Status" as thingdifferentcopyrightstatus
+	entity "Pertain ,\nRight" as thingpertainotherright
+	entity "Repository" as thingrepository
+	entity "Object Component" as thingobjectcomponent
+	entity "Useful Form" as thingusefulform
+	entity "Change" as thingchange
+	entity "Edition" as thingedition #grey
+	entity "." as thing. #grey
+	entity "Publisher" as thingpublisher #grey
+	entity "Publication" as thingpublication
+	entity "Origin Info" as thingorigininfo
+	entity "Collection Component" as thingcollectioncomponent
+	entity "Title Entity" as thingtitleentity
+	entity "Date" as thingdate
+	entity "Modification" as thingmodification
+	entity "Note" as thingnote
+	entity "Unique Identity" as thinguniqueidentity
+	entity "Record" as thingrecord #grey
+	entity "Pertinent Name" as thingpertinentname
+	entity "Etc" as thingetc
+	entity "Specific Role" as thingspecificrole
+	entity "Illustrator" as thingillustrator
+	entity "Photographer" as thingphotographer
+	entity "Resource" as thingresource
+	entity "Software" as thingsoftware
+	entity "Hardware" as thinghardware
+	entity "Content" as thingcontent #grey
+	entity "End" as thingend #grey
+	actor "Repository Manager" as actorrepositorymanager
+	circle "Description" as thingotherdescription
+	circle "Copyright Status" as thingcopyrightstatus
+	circle "External Version" as thingexternalversion
+	circle "Physical Structure" as thingphysicalstructure
+	circle "Facet" as thingvariousfacet
+	circle "Pertinent ,\nVersion" as thingpertinentotherversion
+	circle "Information" as thinginformation #grey
+	circle "Part" as thingpart #grey
+	boundary "Update" as thingupdaterepositorymanager
+	boundary "Item" as thingitemsharesameprovenancerepositorymanager #grey
+	boundary "Collection" as thingcollectionrepositorymanager
+	boundary "Statute" as thingstatuterepositorymanager
+	boundary "License" as thinglicenserepositorymanager
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Dams\nInterface" as thingdamsinterface #grey
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Creator\nInterface" as thingcreatorinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	boundary "Subject\nInterface" as thingsubjectinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Aspect\nInterface" as thingaspectinterface #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Logical\nInterface" as thinglogicalinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Facet\nInterface" as thingfacetinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Entity\nInterface" as thingentityinterface #grey
+	control "Know Object" as controlknowobject
+	control "Know The\nCollections In\nThe Dams" as controlknowcollection
+	control "Update Repository\nInformation In\nPlace" as controlupdaterepositoryinformationplace
+	control "Propagated To\nAll Relevant\nPlaces" as controlpropagateupdaterepositorymanagerrelevantplace
+	control "Constrain Curatorial\nAccess To\nUnits" as controlconstraincuratorialaccess
+	control "Represent A\nPart Of\nA Collection" as controlrepresentpart
+	control "Compose Collections" as controlcomposecollectionlimitcollectionrepresentpart
+	control "Compose Collections\nLimiting The\nCollection To" as controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	control "Limit The\nCollection" as controllimitcollectionrepresentpart
+	control "Share The\nSame Provenance" as controlsharesameprovenance
+	control "Related To\nAnother Collection" as controlrelatecollectionrepositorymanagercollection
+	control "Say" as controlsayrelatecollectionrepositorymanagercollection
+	control "Describe A\nCollection Including\nTitle" as controldescribecollection
+	control "Indicate Names\nTo The\nCollection As\nCreator" as controlindicatenamecreator
+	control "Indicate Names\nTo The\nCollection As\nSource" as controlindicatenamesource
+	control "Indicate Names\nTo The\nCollection As\nSubject" as controlindicatenamesubject
+	control "Indicate Subjects\nTo The\nCollection" as controlindicatesubject
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Of\nProbable Importance\nTo Users" as controlindicateotherdescriptionof
+	control "Indicate Other\nDescriptions Of\nThe Collection\nAre Outside\nThe Dams" as controlindicateotherdescription
+	control "Know All\nEvents To\nA Collection" as controlknowevent
+	control "Know The\nComponents To\nAn Object" as controlknowcomponent
+	control "Know The\nFiles To\nAn Object" as controlknowfile
+	control "Describe An\nObject Including\nTitle" as controldescribeobject
+	control "Describe An\nObject Including\nOther Aspect" as controldescribeobjectotheraspect
+	control "Indicate Names\nTo An\nObject" as controlindicatename
+	control "Indicate The\nCopyright Status\nOf An\nObject" as controlindicatecopyrightstatus
+	control "Indicate Any\nPertinent Statutes\nTo An\nObject" as controlindicatepertinentstatute
+	control "Indicate Any\nLicense To\nAn Object" as controlindicatelicenseobject
+	control "Indicate Any\nPertinent, Other\nRights To\nAn Object" as controlindicatepertinentotherright
+	control "Be Of\nProbable Importance\nTo An\nUser" as controlbeprobableimportanceuser
+	control "Indicate Any\nExternal Versions\nOf An\nObject" as controlindicateexternalversionbeprobableimportanceuser
+	control "Indicate Description" as controlindicatedescription
+	control "Represent Logical" as controlrepresentlogical
+	control "Represent The\nPhysical Structure\nOf An\nObject" as controlrepresentphysicalstructure
+	control "List The\nComponents In\nAppropriate Order\nFor An\nObject" as controllistcomponentappropriateorderobject
+	control "Link A\nComponent To\nAnother Component" as controllinkcomponent
+	control "Link A\nComponent To\nA File" as controllinkcomponentto
+	control "Necessary Describe\nEach Component\nIncluding Title" as controldescribecomponenttitle
+	control "Necessary Describe\nEach Component\nIncluding Other\nFacet" as controldescribecomponentotherfacet
+	control "Indicate" as controlindicate
+	control "Pertains To\nThe Component\nFrom The\nObject As\nA Whole" as controlpertainstatuterepositorymanagercomponentobjectwhole
+	control "Indicate Apart\nPertain, Other\nRights To\nThe Component\nFrom The\nObject As\nA Whole" as controlindicatepertainotherright
+	control "Know The\nContent Files\nIn The\nDams For\nRepository's Objects" as controlknowcontentfiles
+	control "Associate A\nFile With\nAn Object\nComponent" as controlassociatefileobjectcomponent
+	control "Associate A\nContent File\nWith An\nObject" as controlassociatecontentfile
+	control "Provide A\nTitle In\nAll Useful\nForms For\nObject Component" as controlprovidetitleusefulformobjectcomponent
+	control "Provide A\nTitle In\nAll Useful\nForms For\nObject" as controlprovidetitleusefulformobject
+	control "Provide A\nTitle In\nAll Useful\nForms For\nRepository's Collections" as controlprovidetitleusefulformcollection
+	control "Know Any\nChanges To\nTitles For\nObject Component" as controlknowchangeobjectcomponent
+	control "Know Any\nChanges To\nTitles For\nRepository's Collections" as controlknowchange
+	control "Know Any\nChanges To\nTitles For\nObject" as controlknowchangeobject
+	control "Indicate For\nAn Object\nComponent The\nPlace Of\nPublication When\nPertinent" as controlindicateobjectcomponentplace
+	control "Indicate For\nThe .\nThe The\nPublisher" as controlindicatepublisher. #grey
+	control "Indicate For\nThe Place\nThe The\n." as controlindicateplace. #grey
+	control "Indicate For\nThe The\nEdition" as controlindicateedition #grey
+	control "Indicate For\nThe Place\nThe The\nPublisher" as controlindicateplacepublisherplace #grey
+	control "Indicate For\nThe The\nPublisher" as controlindicatepublisher #grey
+	control "Indicate For\nThe The\n." as controlindicate. #grey
+	control "Indicate For\nThe Edition\nThe The\nPublisher" as controlindicatepublisheredition #grey
+	control "Indicate For\nThe Place\nThe The\nEdition" as controlindicateplaceedition #grey
+	control "Indicate For\nObject" as controlindicateobject
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Date" as controldescribevariousfacetdate
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Name" as controldescribevariousfacetname
+	control "Describe Various\nFacets Of\nObject" as controldescribevariousfacetobject
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Title\nEntities" as controldescribevariousfacet
+	control "Describe Various\nFacets Of\nA Collection\nComponent Are\nNot Addressable\nVia Subject" as controldescribevariousfacetsubject
+	control "Know Of\nAll Modifications\nTo Notes\nFor Object" as controlknowmodificationobject
+	control "Know Of\nAll Modifications\nTo Notes\nFor Object\nComponent" as controlknowmodificationobjectcomponent
+	control "Know Of\nAll Modifications\nTo Notes\nFor Repository's\nCollections" as controlknowmodification
+	control "Present Indicate\nIn A\nCollection Component" as controlindicatecollectioncomponent
+	control "Register A\nName Record\nFor Each\nUnique Identity\nWith Repository's\nCollections" as controlregisternamerecord
+	control "Register A\nRecord For\nEach Unique\nIdentity With\nObject" as controlregisterrecordobject
+	control "Indicate All\nSubjects Are\nPertinent To\nObject" as controlindicatesubjectobject
+	control "Geo Indicate\nFor Any\nResource Believe\nTo An\nEnd User" as controlindicateresource
+	control "Indicate All\nPertinent, Other\nVersions Of\nA Resource\nAre External\nTo The\nDams" as controlindicatepertinentotherversion
+	control "Know For\nAny Of\nRepository's Content\nFiles Have\nChanged" as controlknowany
+	control "Know" as controlknow
+	control "Generate A\nContent File" as controlgeneratecontentfile
+
+	thingDAMS <.. thingcollection
+	thingtitle <.. thingcollection
+	thingcreator <.. thingcollection
+	thingrepository <.. thingcollection
+	thingsubject <.. thingcollection
+	thingsource <.. thingcollection
+	thingprobableimportance <.. thingcollection
+	thingobject <.. thingcollection
+	thingcollection <.. thingcollection
+	thingobject <.. thingDAMS
+	thinglifecycle <.. thingobject
+	thingrepository <.. thingobject
+	thingpart <.. thingobject
+	thingtitle <.. thingobject
+	thingotheraspect <.. thingobject
+	thingpublication <.. thingplace
+	thingunit <.. thingcuratorialaccess
+	thingusefulform <.. thingtitle
+	thingcollection <.. thingtitle
+	thingobject <.. thingtitle
+	thingcomponent <.. thingtitle
+	thingcollection <.. thingname
+	thingobject <.. thingname
+	thingcomponent <.. thingname
+	thinguniqueidentity <.. thingname
+	thingcollection <.. thingsubject
+	thingobject <.. thingsubject
+	thingcomponent <.. thingsubject
+	thingcollectioncomponent <.. thingsubject
+	thinguser <.. thingprobableimportance
+	thingend <.. thinguser
+	thingcollection <.. thingevent
+	thingobject <.. thingevent
+	thingcomponent <.. thingevent
+	thingfile <.. thingevent
+	thingobject <.. thingcomponent
+	thingappropriateorder <.. thingcomponent
+	thingcomponent <.. thingcomponent
+	thingtitle <.. thingcomponent
+	thinglifecycle <.. thingcomponent
+	thingfile <.. thingcomponent
+	thingotheraspect <.. thingcomponent
+	thingobject <.. thingfile
+	thingcontent <.. thingfile
+	thingDAMS <.. thingfile
+	thingrepository <.. thingfile
+	thingcomponent <.. thingfile
+	thingobject <.. thingpertinentstatute
+	thingobject <.. thinglicense
+	thingobject <.. thingpertinentotherright
+	thingobject <.. thinglifecycle
+	thingobject <.. thingappropriateorder
+	thingobject <.. thingdifferentcopyrightstatus
+	thingobject <.. thingpertainotherright
+	thingcomponent <.. thingpertainotherright
+	thingplace <.. thingobjectcomponent
+	thingcollection <.. thingusefulform
+	thingobject <.. thingusefulform
+	thingcomponent <.. thingusefulform
+	thingtitle <.. thingchange
+	thingorigininfo <.. thingchange
+	thingcollectioncomponent <.. thingchange
+	thingobject <.. thingchange
+	thingobject <.. thingorigininfo
+	thingcomponent <.. thingorigininfo
+	thingtitleentity <.. thingcollectioncomponent
+	thingdate <.. thingcollectioncomponent
+	thingsubject <.. thingcollectioncomponent
+	thingname <.. thingcollectioncomponent
+	thingnote <.. thingmodification
+	thingcollection <.. thingnote
+	thingobject <.. thingnote
+	thingcomponent <.. thingnote
+	thingcollection <.. thinguniqueidentity
+	thingobject <.. thinguniqueidentity
+	thinguniqueidentity <.. thingrecord
+	thingname <.. thingrecord
+	thingcollection <.. thingpertinentname
+	thingobject <.. thingpertinentname
+	thingcomponent <.. thingpertinentname
+	thingillustrator <.. thingspecificrole
+	thingetc <.. thingspecificrole
+	thingphotographer <.. thingspecificrole
+	thingDAMS <.. thingresource
+	thinguser <.. thingresource
+	thingcollection *-- thingotherdescription
+	thingobject *-- thingcopyrightstatus
+	thingobject *-- thingexternalversion
+	thingobject *-- thingphysicalstructure
+	thingcollectioncomponent *-- thingvariousfacet
+	thingobject *-- thingvariousfacet
+	thingresource *-- thingpertinentotherversion
+	thingplace *-- thinginformation
+	thingrepository *-- thinginformation
+	thingcomponent *-- thingpart
+	actorrepositorymanager --- thingupdaterepositorymanager
+	actorrepositorymanager --- thingitemsharesameprovenancerepositorymanager
+	actorrepositorymanager --- thingcollectionrepositorymanager
+	actorrepositorymanager --- thingstatuterepositorymanager
+	actorrepositorymanager --- thinglicenserepositorymanager
+	actorrepositorymanager --- thingobjectinterface
+	actorrepositorymanager --- thingdamsinterface
+	actorrepositorymanager --- thingplaceinterface
+	actorrepositorymanager --- thingunitinterface
+	actorrepositorymanager --- thingtitleinterface
+	actorrepositorymanager --- thingcreatorinterface
+	actorrepositorymanager --- thingsourceinterface
+	actorrepositorymanager --- thingsubjectinterface
+	actorrepositorymanager --- thinguserinterface
+	actorrepositorymanager --- thingaspectinterface
+	actorrepositorymanager --- thingdescriptioninterface
+	actorrepositorymanager --- thinglogicalinterface
+	actorrepositorymanager --- thingcomponentinterface
+	actorrepositorymanager --- thingfileinterface
+	actorrepositorymanager --- thingfacetinterface
+	actorrepositorymanager --- thingpublicationinterface
+	actorrepositorymanager --- thingdateinterface
+	actorrepositorymanager --- thingnameinterface
+	actorrepositorymanager --- thingentityinterface
+	thingobject --- controlknowobject
+	thingobjectinterface --> controlknowobject
+	thingcollection --- controlknowcollection
+	thingDAMS --- controlknowcollection
+	thingdamsinterface --> controlknowcollection
+	thinginformation --- controlupdaterepositoryinformationplace
+	thingplace --- controlupdaterepositoryinformationplace
+	thingplaceinterface --> controlupdaterepositoryinformationplace
+	thingupdaterepositorymanager --> controlpropagateupdaterepositorymanagerrelevantplace
+	thingrelevantplace --- controlpropagateupdaterepositorymanagerrelevantplace
+	thingcuratorialaccess --- controlconstraincuratorialaccess
+	thingunit --- controlconstraincuratorialaccess
+	thingunitinterface --> controlconstraincuratorialaccess
+	controllimitcollectionrepresentpart --> controlrepresentpart
+	thingcollection --- controlrepresentpart
+	thingcollectioninterface --> controlrepresentpart
+	thingcollectioninterface --> controlcomposecollectionlimitcollectionrepresentpart
+	thingcollection --- controlcomposecollectionlimitcollectionrepresentpart
+	thingitemsharesameprovenancerepositorymanager --> controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	thingcollection --- controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager
+	controlcomposecollectionlimitcollectionrepresentpart --> controllimitcollectionrepresentpart
+	thingcollection --- controllimitcollectionrepresentpart
+	thingcollectioninterface --> controllimitcollectionrepresentpart
+	controlcomposecollectioncollectionitemsharesameprovenancerepositorymanager --> controlsharesameprovenance
+	thingsameprovenance --- controlsharesameprovenance
+	thingitemsharesameprovenancerepositorymanager --> controlsharesameprovenance
+	thingcollectionrepositorymanager --> controlrelatecollectionrepositorymanagercollection
+	controlsayrelatecollectionrepositorymanagercollection --> controlrelatecollectionrepositorymanagercollection
+	thingcollection --- controlrelatecollectionrepositorymanagercollection
+	thingcollectionrepositorymanager --> controlsayrelatecollectionrepositorymanagercollection
+	thingtitle --- controldescribecollection
+	thingtitleinterface --> controldescribecollection
+	thingcollection --- controldescribecollection
+	thingname --- controlindicatenamecreator
+	thingcreator --- controlindicatenamecreator
+	thingcreatorinterface --> controlindicatenamecreator
+	thingcollection --- controlindicatenamecreator
+	thingsource --- controlindicatenamesource
+	thingsourceinterface --> controlindicatenamesource
+	thingcollection --- controlindicatenamesource
+	thingname --- controlindicatenamesource
+	thingsubject --- controlindicatenamesubject
+	thingsubjectinterface --> controlindicatenamesubject
+	thingcollection --- controlindicatenamesubject
+	thingname --- controlindicatenamesubject
+	thingcollection --- controlindicatesubject
+	thingsubject --- controlindicatesubject
+	thingobject --- controlindicatesubject
+	thingcomponent --- controlindicatesubject
+	thingcollectioncomponent --- controlindicatesubject
+	thingobjectinterface --> controlindicatesubject
+	thingprobableimportance --- controlindicateotherdescriptionof
+	thinguser --- controlindicateotherdescriptionof
+	thinguserinterface --> controlindicateotherdescriptionof
+	thingotherdescription --- controlindicateotherdescriptionof
+	thingcollection --- controlindicateotherdescriptionof
+	thingotherdescription --- controlindicateotherdescription
+	thingcollection --- controlindicateotherdescription
+	thingDAMS --- controlindicateotherdescription
+	thingdamsinterface --> controlindicateotherdescription
+	thingevent --- controlknowevent
+	thingcollection --- controlknowevent
+	thinglifecycle --- controlknowevent
+	thingobject --- controlknowevent
+	thingcomponent --- controlknowevent
+	thingobjectinterface --> controlknowevent
+	thingfile --- controlknowevent
+	thingcomponent --- controlknowcomponent
+	thingobject --- controlknowcomponent
+	thingobjectinterface --> controlknowcomponent
+	thingfile --- controlknowfile
+	thingobject --- controlknowfile
+	thingobjectinterface --> controlknowfile
+	thingobject --- controldescribeobject
+	thingtitle --- controldescribeobject
+	thingtitleinterface --> controldescribeobject
+	thingotheraspect --- controldescribeobjectotheraspect
+	thingaspectinterface --> controldescribeobjectotheraspect
+	thingobject --- controldescribeobjectotheraspect
+	thingobject --- controlindicatename
+	thingname --- controlindicatename
+	thingcomponent --- controlindicatename
+	thingobjectinterface --> controlindicatename
+	thingcopyrightstatus --- controlindicatecopyrightstatus
+	thingobject --- controlindicatecopyrightstatus
+	thingobjectinterface --> controlindicatecopyrightstatus
+	thingpertinentstatute --- controlindicatepertinentstatute
+	thingobject --- controlindicatepertinentstatute
+	thingobjectinterface --> controlindicatepertinentstatute
+	thinglicense --- controlindicatelicenseobject
+	thingobject --- controlindicatelicenseobject
+	thingobjectinterface --> controlindicatelicenseobject
+	thingpertinentotherright --- controlindicatepertinentotherright
+	thingobject --- controlindicatepertinentotherright
+	thingobjectinterface --> controlindicatepertinentotherright
+	controlindicateexternalversionbeprobableimportanceuser --> controlbeprobableimportanceuser
+	thingprobableimportance --- controlbeprobableimportanceuser
+	thinguser --- controlbeprobableimportanceuser
+	thingobjectinterface --> controlbeprobableimportanceuser
+	thingexternalversion --- controlindicateexternalversionbeprobableimportanceuser
+	thingobject --- controlindicateexternalversionbeprobableimportanceuser
+	thingobjectinterface --> controlindicateexternalversionbeprobableimportanceuser
+	thingdescription --- controlindicatedescription
+	thingdescriptioninterface --> controlindicatedescription
+	thinglogical --- controlrepresentlogical
+	thinglogicalinterface --> controlrepresentlogical
+	thingphysicalstructure --- controlrepresentphysicalstructure
+	thingobject --- controlrepresentphysicalstructure
+	thingobjectinterface --> controlrepresentphysicalstructure
+	thingappropriateorder --- controllistcomponentappropriateorderobject
+	thingobject --- controllistcomponentappropriateorderobject
+	thingcomponent --- controllistcomponentappropriateorderobject
+	thingobjectinterface --> controllistcomponentappropriateorderobject
+	thingcomponentinterface --> controllinkcomponent
+	thingcomponent --- controllinkcomponent
+	thingfileinterface --> controllinkcomponentto
+	thingfile --- controllinkcomponentto
+	thingcomponent --- controllinkcomponentto
+	thingtitle --- controldescribecomponenttitle
+	thingcomponent --- controldescribecomponenttitle
+	thingtitleinterface --> controldescribecomponenttitle
+	thingfacetinterface --> controldescribecomponentotherfacet
+	thingcomponent --- controldescribecomponentotherfacet
+	thingotheraspect --- controldescribecomponentotherfacet
+	thingstatuterepositorymanager --> controlindicate
+	thinglicenserepositorymanager --> controlindicate
+	thingstatuterepositorymanager --> controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingobject --- controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingcomponent --- controlpertainstatuterepositorymanagercomponentobjectwhole
+	controlindicate --> controlpertainstatuterepositorymanagercomponentobjectwhole
+	thinglicenserepositorymanager --> controlpertainstatuterepositorymanagercomponentobjectwhole
+	thingpertainotherright --- controlindicatepertainotherright
+	thingobject --- controlindicatepertainotherright
+	thingcomponent --- controlindicatepertainotherright
+	thingobjectinterface --> controlindicatepertainotherright
+	thingDAMS --- controlknowcontentfiles
+	thingobject --- controlknowcontentfiles
+	thingobjectinterface --> controlknowcontentfiles
+	thingfile --- controlknowcontentfiles
+	thingobjectinterface --> controlassociatefileobjectcomponent
+	thingcomponent --- controlassociatefileobjectcomponent
+	thingfile --- controlassociatefileobjectcomponent
+	thingobject --- controlassociatecontentfile
+	thingobjectinterface --> controlassociatecontentfile
+	thingfile --- controlassociatecontentfile
+	thingusefulform --- controlprovidetitleusefulformobjectcomponent
+	thingobjectinterface --> controlprovidetitleusefulformobjectcomponent
+	thingtitle --- controlprovidetitleusefulformobjectcomponent
+	thingcomponent --- controlprovidetitleusefulformobjectcomponent
+	thingobject --- controlprovidetitleusefulformobject
+	thingusefulform --- controlprovidetitleusefulformobject
+	thingobjectinterface --> controlprovidetitleusefulformobject
+	thingtitle --- controlprovidetitleusefulformobject
+	thingusefulform --- controlprovidetitleusefulformcollection
+	thingcollection --- controlprovidetitleusefulformcollection
+	thingtitle --- controlprovidetitleusefulformcollection
+	thingcollectioninterface --> controlprovidetitleusefulformcollection
+	thingobjectinterface --> controlknowchangeobjectcomponent
+	thingtitle --- controlknowchangeobjectcomponent
+	thingcomponent --- controlknowchangeobjectcomponent
+	thingchange --- controlknowchangeobjectcomponent
+	thingchange --- controlknowchange
+	thingcollection --- controlknowchange
+	thingtitle --- controlknowchange
+	thingorigininfo --- controlknowchange
+	thingpart --- controlknowchange
+	thingobject --- controlknowchange
+	thingcollectioncomponent --- controlknowchange
+	thingcollectioninterface --> controlknowchange
+	thingobject --- controlknowchangeobject
+	thingobjectinterface --> controlknowchangeobject
+	thingtitle --- controlknowchangeobject
+	thingchange --- controlknowchangeobject
+	thingobjectcomponent --- controlindicateobjectcomponentplace
+	thingpublicationinterface --> controlindicateobjectcomponentplace
+	thingplace --- controlindicateobjectcomponentplace
+	thingpublication --- controlindicateobjectcomponentplace
+	thing. --- controlindicatepublisher.
+	thingpublisher --- controlindicatepublisher.
+	thing. --- controlindicateplace.
+	thingplace --- controlindicateplace.
+	thingedition --- controlindicateedition
+	thingpublisher --- controlindicateplacepublisherplace
+	thingplace --- controlindicateplacepublisherplace
+	thingpublisher --- controlindicatepublisher
+	thing. --- controlindicate.
+	thingedition --- controlindicatepublisheredition
+	thingpublisher --- controlindicatepublisheredition
+	thingedition --- controlindicateplaceedition
+	thingplace --- controlindicateplaceedition
+	thingobject --- controlindicateobject
+	thingobjectinterface --> controlindicateobject
+	thingdate --- controldescribevariousfacetdate
+	thingdateinterface --> controldescribevariousfacetdate
+	thingcollectioncomponent --- controldescribevariousfacetdate
+	thingvariousfacet --- controldescribevariousfacetdate
+	thingnameinterface --> controldescribevariousfacetname
+	thingname --- controldescribevariousfacetname
+	thingcollectioncomponent --- controldescribevariousfacetname
+	thingvariousfacet --- controldescribevariousfacetname
+	thingobject --- controldescribevariousfacetobject
+	thingvariousfacet --- controldescribevariousfacetobject
+	thingobjectinterface --> controldescribevariousfacetobject
+	thingvariousfacet --- controldescribevariousfacet
+	thingcollectioncomponent --- controldescribevariousfacet
+	thingtitleentity --- controldescribevariousfacet
+	thingentityinterface --> controldescribevariousfacet
+	thingsubject --- controldescribevariousfacetsubject
+	thingcollectioncomponent --- controldescribevariousfacetsubject
+	thingvariousfacet --- controldescribevariousfacetsubject
+	thingsubjectinterface --> controldescribevariousfacetsubject
+	thingobject --- controlknowmodificationobject
+	thingobjectinterface --> controlknowmodificationobject
+	thingmodification --- controlknowmodificationobject
+	thingnote --- controlknowmodificationobject
+	thingobjectinterface --> controlknowmodificationobjectcomponent
+	thingcomponent --- controlknowmodificationobjectcomponent
+	thingmodification --- controlknowmodificationobjectcomponent
+	thingnote --- controlknowmodificationobjectcomponent
+	thingmodification --- controlknowmodification
+	thingnote --- controlknowmodification
+	thingcollection --- controlknowmodification
+	thingcollectioninterface --> controlknowmodification
+	thingcollectioncomponent --- controlindicatecollectioncomponent
+	thingcomponentinterface --> controlindicatecollectioncomponent
+	thinguniqueidentity --- controlregisternamerecord
+	thingcollection --- controlregisternamerecord
+	thingrecord --- controlregisternamerecord
+	thingcollectioninterface --> controlregisternamerecord
+	thingrecord --- controlregisterrecordobject
+	thingobject --- controlregisterrecordobject
+	thinguniqueidentity --- controlregisterrecordobject
+	thingobjectinterface --> controlregisterrecordobject
+	thingobject --- controlindicatesubjectobject
+	thingobjectinterface --> controlindicatesubjectobject
+	thingsubject --- controlindicatesubjectobject
+	thingresource --- controlindicateresource
+	thinguserinterface --> controlindicateresource
+	thinguser --- controlindicateresource
+	thingpertinentotherversion --- controlindicatepertinentotherversion
+	thingDAMS --- controlindicatepertinentotherversion
+	thingresource --- controlindicatepertinentotherversion
+	thingdamsinterface --> controlindicatepertinentotherversion
+	thingfileinterface --> controlknowany
+	thingfile --- controlknowany
+	thingfileinterface --> controlgeneratecontentfile
+	thingfile --- controlgeneratecontentfile
+
+@enduml

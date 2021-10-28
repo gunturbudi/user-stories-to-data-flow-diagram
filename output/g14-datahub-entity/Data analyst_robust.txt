@@ -1,0 +1,26 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datapackage" as thingdatapackage
+	actor "Data Analyst" as actordataanalyst
+	circle "Different Version" as thingdifferentversion
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "Datapackage\nInterface" as thingdatapackageinterface #grey
+	control "Download A\nData Package" as controldownloaddatapackage
+	control "Update Previously\nDownloaded Data\nPackage" as controlupdatedownloadeddatapackage
+	control "Compare Different\nVersions Of\nSome Datapackage" as controlcomparedifferentversion
+
+	thingdatapackage *-- thingdifferentversion
+	actordataanalyst --- thingpackageinterface
+	actordataanalyst --- thingdatapackageinterface
+	thingpackageinterface --> controldownloaddatapackage
+	thingdatapackage --- controldownloaddatapackage
+	thingpackageinterface --> controlupdatedownloadeddatapackage
+	thingdatapackage --- controlupdatedownloadeddatapackage
+	thingdifferentversion --- controlcomparedifferentversion
+	thingdatapackage --- controlcomparedifferentversion
+	thingdatapackageinterface --> controlcomparedifferentversion
+
+@enduml

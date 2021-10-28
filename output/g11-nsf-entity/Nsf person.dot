@@ -1,0 +1,6 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="User Interview" shape=box];
+201 [label="Interested , Nsf Person" shape=box];
+202 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+}

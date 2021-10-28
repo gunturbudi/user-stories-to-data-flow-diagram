@@ -1,0 +1,135 @@
+id,value,style,source,target,type
+200,Method,shape=partialRectangle,null,null,data_base
+201,Etd,shape=partialRectangle,null,null,data_base
+202,Group,shape=partialRectangle,null,null,data_base
+203,Collection,shape=partialRectangle,null,null,data_base
+204,Multiple People,shape=partialRectangle,null,null,data_base
+205,Date,shape=partialRectangle,null,null,data_base
+206,Specific Collection,shape=partialRectangle,null,null,data_base
+207,Depositor,shape=partialRectangle,null,null,data_base
+208,Permission,shape=partialRectangle,null,null,data_base
+209,Deposit Window,shape=partialRectangle,null,null,data_base
+210,Embargo,shape=partialRectangle,null,null,data_base
+211,Tool,shape=partialRectangle,null,null,data_base
+212,Batch,shape=partialRectangle,null,null,data_base
+213,File,shape=partialRectangle,null,null,data_base
+214,Metadata Curator,shape=partialRectangle,null,null,data_base
+215,Embargoed Item,shape=partialRectangle,null,null,data_base
+216,Item,shape=partialRectangle,null,null,data_base
+217,Configuration,shape=partialRectangle,null,null,data_base
+218,Descriptive Record,shape=partialRectangle,null,null,data_base
+219,Fedora,shape=partialRectangle,null,null,data_base
+220,Use External,shape=partialRectangle,null,null,data_base
+221,Individual People,shape=partialRectangle,null,null,data_base
+222,Repository,shape=partialRectangle,null,null,data_base
+223,Access Control,shape=partialRectangle,null,null,data_base
+224,Default,shape=partialRectangle,null,null,data_base
+225,Release,shape=partialRectangle,null,null,data_base
+226,Deposit,shape=partialRectangle,null,null,data_base
+227,Summary,shape=partialRectangle,null,null,data_base
+228,Digitalrecords Archivist,rounded=0,null,null,external_entity
+229,Batch,ellipse,null,null,process
+230,Have A Method Etds,ellipse,null,null,process
+231,Add Multiple People,ellipse,null,null,process
+232,Have,ellipse,null,null,process
+233,Deposit Groups In Specific Collections,ellipse,null,null,process
+234,Set A Date To Have These Permissions On These Depositors Pick Up On The Collection's Default Permission,ellipse,null,null,process
+235,Set A Date The Deposit Window Closes,ellipse,null,null,process
+236,Remove Multiple People,ellipse,null,null,process
+237,Recognize Embargoes,ellipse,null,null,process
+238,View Collection,ellipse,null,null,process
+239,View Repository Administrator,ellipse,null,null,process
+240,Download The Files,ellipse,null,null,process
+241,Have The Batch Tool,ellipse,null,null,process
+242,View Metadata Curator,ellipse,null,null,process
+243,Set Embargoes,ellipse,null,null,process
+244,Lift Embargoes On The Release Date,ellipse,null,null,process
+245,Set The Access Controls To The Configuration On Item On That Date,ellipse,null,null,process
+246,Edit The Length Of Embargoes,ellipse,null,null,process
+247,Expose The Descriptive Record For Each Etd Item For Use External To Fedora,ellipse,null,null,process
+248,Grant Embargo Privileges To Other Repository Administrators,ellipse,null,null,process
+249,Add Individual People From Deposit Groups,ellipse,null,null,process
+250,Remove Individual People From Deposit Groups,ellipse,null,null,process
+251,View Summary Embargo Metadata For All Etds In The Repository,ellipse,null,null,process
+252,Download Summary Embargo Metadata For All Etds In The Repository,ellipse,null,null,process
+254,,endArrow=classic,228,229,endArrow=classic
+255,,endArrow=classic,228,230,endArrow=classic
+256,,endArrow=classic,228,231,endArrow=classic
+257,,endArrow=classic,228,232,endArrow=classic
+258,,endArrow=classic,228,232,endArrow=classic
+259,,endArrow=classic,228,233,endArrow=classic
+260,,endArrow=classic,228,234,endArrow=classic
+261,,endArrow=classic,228,235,endArrow=classic
+262,,endArrow=classic,228,236,endArrow=classic
+263,,endArrow=classic,228,237,endArrow=classic
+264,,endArrow=classic,228,238,endArrow=classic
+265,,endArrow=classic,228,239,endArrow=classic
+266,,endArrow=classic,228,240,endArrow=classic
+267,,endArrow=classic,228,241,endArrow=classic
+268,,endArrow=classic,228,242,endArrow=classic
+269,,endArrow=classic,228,243,endArrow=classic
+270,,endArrow=classic,228,244,endArrow=classic
+271,,endArrow=classic,228,245,endArrow=classic
+272,,endArrow=classic,228,246,endArrow=classic
+273,,endArrow=classic,228,247,endArrow=classic
+274,,endArrow=classic,228,248,endArrow=classic
+275,,endArrow=classic,228,249,endArrow=classic
+276,,endArrow=classic,228,250,endArrow=classic
+277,,endArrow=classic,228,251,endArrow=classic
+278,,endArrow=classic,228,252,endArrow=classic
+279,,endArrow=classic,230,229,endArrow=classic
+280,Method,endArrow=classic,230,200,endArrow=classic
+281,Etd,endArrow=classic,230,201,endArrow=classic
+282,,endArrow=classic,231,233,endArrow=classic
+283,Multiple People,endArrow=classic,231,204,endArrow=classic
+284,,endArrow=classic,232,231,endArrow=classic
+285,,endArrow=classic,232,234,endArrow=classic
+286,,endArrow=classic,232,235,endArrow=classic
+287,,endArrow=classic,232,236,endArrow=classic
+288,,endArrow=classic,232,244,endArrow=classic
+289,,endArrow=classic,232,245,endArrow=classic
+290,,endArrow=classic,232,249,endArrow=classic
+291,,endArrow=classic,232,250,endArrow=classic
+292,Date,endArrow=classic,232,205,endArrow=classic
+293,Group,endArrow=classic,233,202,endArrow=classic
+294,Specific Collection,endArrow=classic,233,206,endArrow=classic
+295,Permission,endArrow=classic,234,208,endArrow=classic
+296,Depositor,endArrow=classic,234,207,endArrow=classic
+297,Date,endArrow=classic,234,205,endArrow=classic
+298,Date,endArrow=classic,235,205,endArrow=classic
+299,Deposit Window,endArrow=classic,235,209,endArrow=classic
+300,,endArrow=classic,236,233,endArrow=classic
+301,Multiple People,endArrow=classic,236,204,endArrow=classic
+302,Embargo,endArrow=classic,237,210,endArrow=classic
+303,Collection,endArrow=classic,238,203,endArrow=classic
+304,File,endArrow=classic,240,213,endArrow=classic
+305,,endArrow=classic,241,237,endArrow=classic
+306,,endArrow=classic,241,243,endArrow=classic
+307,Batch,endArrow=classic,241,212,endArrow=classic
+308,Tool,endArrow=classic,241,211,endArrow=classic
+309,,endArrow=classic,242,240,endArrow=classic
+310,Metadata Curator,endArrow=classic,242,214,endArrow=classic
+311,Embargo,endArrow=classic,243,210,endArrow=classic
+312,Embargo,endArrow=classic,244,210,endArrow=classic
+313,Date,endArrow=classic,244,205,endArrow=classic
+314,Access Control,endArrow=classic,245,223,endArrow=classic
+315,Configuration,endArrow=classic,245,217,endArrow=classic
+316,Item,endArrow=classic,245,216,endArrow=classic
+317,Date,endArrow=classic,245,205,endArrow=classic
+318,Embargo,endArrow=classic,246,210,endArrow=classic
+319,Descriptive Record,endArrow=classic,247,218,endArrow=classic
+320,Use External,endArrow=classic,247,220,endArrow=classic
+321,Fedora,endArrow=classic,247,219,endArrow=classic
+322,Etd,endArrow=classic,247,201,endArrow=classic
+323,Individual People,endArrow=classic,249,221,endArrow=classic
+324,Group,endArrow=classic,249,202,endArrow=classic
+325,Individual People,endArrow=classic,250,221,endArrow=classic
+326,Group,endArrow=classic,250,202,endArrow=classic
+327,Repository,endArrow=classic,251,222,endArrow=classic
+328,Etd,endArrow=classic,251,201,endArrow=classic
+329,Etd,endArrow=classic,252,201,endArrow=classic
+330,Repository,endArrow=classic,252,222,endArrow=classic
+360,Default,endArrow=classic,234,224,endArrow=classic
+376,Release,endArrow=classic,244,225,endArrow=classic
+381,Deposit,endArrow=classic,233,226,endArrow=classic
+404,Summary,endArrow=classic,251,227,endArrow=classic

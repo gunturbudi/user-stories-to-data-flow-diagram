@@ -1,0 +1,33 @@
+id,value,style,source,target,type
+4,Find my data more easily.,ellipse,null,null,process
+200,Record,shape=partialRectangle,null,null,data_base
+201,Archive,shape=partialRectangle,null,null,data_base
+202,Facility,shape=partialRectangle,null,null,data_base
+203,Researcher,shape=partialRectangle,null,null,data_base
+204,Datum,shape=partialRectangle,null,null,data_base
+205,"Archival ,\nRobust Plan",shape=partialRectangle,null,null,data_base
+206,Discoverability Metadata,shape=partialRectangle,null,null,data_base
+207,Depositor,rounded=0,null,null,external_entity
+208,"Research , Facility Manager",rounded=0,null,null,external_entity
+209,Fundingbody,rounded=0,null,null,external_entity
+210,"Attach Specific, Subject Discoverability Metadata To Records",ellipse,null,null,process
+211,Deposit Data From Facility Directly Into The Archive On Behalf Of Researchers,ellipse,null,null,process
+212,Reassured,ellipse,null,null,process
+214,,endArrow=classic,207,210,endArrow=classic
+215,,endArrow=classic,208,211,endArrow=classic
+216,Discoverability Metadata,endArrow=classic,210,206,endArrow=classic
+217,Record,endArrow=classic,210,200,endArrow=classic
+218,Datum,endArrow=classic,211,204,endArrow=classic
+219,Facility,endArrow=classic,211,202,endArrow=classic
+220,Archive,endArrow=classic,211,201,endArrow=classic
+221,Researcher,endArrow=classic,211,203,endArrow=classic
+1000,Researchers,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,4,endArrow=classic
+1002,Researchers,rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,4,endArrow=classic
+1004,Researchers,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,4,endArrow=classic
+1006,Discipline,rounded=0,null,null,external_entity
+1007,Discipline,endArrow=classic,4,1006,endArrow=classic
+1008,Data,rounded=0,null,null,external_entity
+1009,Data,endArrow=classic,4,1008,endArrow=classic

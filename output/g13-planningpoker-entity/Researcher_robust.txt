@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Identifiable Way" as thingidentifiableway
+	actor "Researcher" as actorresearcher
+	boundary "Result" as thingresultresearcher
+	control "Stored In\nA Identifiable\nWay" as controlstoreresultresearcheridentifiableway
+
+	actorresearcher --- thingresultresearcher
+	thingresultresearcher --> controlstoreresultresearcheridentifiableway
+	thingidentifiableway --- controlstoreresultresearcheridentifiableway
+
+@enduml

@@ -1,0 +1,50 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Platform " ];
+201 [label="<f0>  |<f1> Site Deployment " ];
+202 [label="<f0>  |<f1> User " color=red];
+203 [label="<f0>  |<f1> Download " color=red];
+204 [label="<f0>  |<f1> Usage " color=red];
+205 [label="<f0>  |<f1> Key Metric " ];
+206 [label="<f0>  |<f1> Billing System " ];
+207 [label="<f0>  |<f1> Pricing Plan " ];
+208 [label="<f0>  |<f1> Configuration Parameter " ];
+209 [label="<f0>  |<f1> Api " color=red];
+210 [label="Admin" shape=box];
+211 [label="{<f0> 1.0|<f1> Join The Platform }" shape=Mrecord];
+212 [label="{<f0> 2.0|<f1> Invite Someone }" shape=Mrecord];
+213 [label="{<f0> 3.0|<f1> Set Key Configuration Parameters For Site Deployment }" shape=Mrecord];
+214 [label="{<f0> 4.0|<f1> See Key Metrics About Usage Such As Api Usage }" shape=Mrecord];
+215 [label="{<f0> 5.0|<f1> See Key Metrics About Usage Such As Users }" shape=Mrecord];
+216 [label="{<f0> 6.0|<f1> See Key Metrics About Usage Such As Download }" shape=Mrecord];
+217 [label="{<f0> 7.0|<f1> Have A Pricing Plan }" shape=Mrecord];
+218 [label="{<f0> 8.0|<f1> Have Billing System }" shape=Mrecord];
+9 [label="{<f0> 9.0|<f1> Start contributing or using data. }" shape=Mrecord];
+1000 [label="They" shape=box];
+1000 -> 9
+1002 [label="<f0>  |<f1> Data " color=red];
+9 -> 1002 [label="Data"]
+210 -> 211
+210 -> 212
+210 -> 213
+210 -> 214
+210 -> 215
+210 -> 216
+210 -> 217
+210 -> 218
+211 -> 200 [label="Platform"]
+212 -> 211
+213 -> 208 [label="Configuration Parameter"]
+213 -> 201 [label="Site Deployment"]
+214 -> 205 [label="Key Metric"]
+214 -> 204 [label="Usage"]
+215 -> 205 [label="Key Metric"]
+215 -> 204 [label="Usage"]
+215 -> 202 [label="User"]
+216 -> 203 [label="Download"]
+216 -> 205 [label="Key Metric"]
+216 -> 204 [label="Usage"]
+217 -> 207 [label="Pricing Plan"]
+218 -> 206 [label="Billing System"]
+214 -> 209 [label="Api"]
+}

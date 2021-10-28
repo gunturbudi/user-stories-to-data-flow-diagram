@@ -1,0 +1,309 @@
+[
+  {
+    "text": "As an Agency user, I want to be able to include a large number of flexfields without performance impact.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "flexfields",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want to be able to include a large number of flexfields without performance impact.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "flexfields",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to ensure that deleted FSRS records are not included in submissions.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "FSRS records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want the FABS validation rules to accept zero and blank for loan records.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "loan records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "Financial Assistance data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to be confident that the data coming from SAM is complete.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "non-loan records",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to have all derived data elements derived properly.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "derived data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to use the schema v1.1 headers in my FABS file.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "map",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want FPDS data to be up-to-date daily.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "updated date",
+        "label": "PII"
+      },
+      {
+        "text": "time",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "historical Financial Assistance data",
+        "label": "PII"
+      },
+      {
+        "text": "loaded",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want historical FPDS data loaded.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want to accurately see who created a submission, so that I'm not confused about who last updated a submission.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "who created",
+        "label": "PII"
+      },
+      {
+        "text": "who last updated",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to get File F in the correct format.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an Agency user, I want to better understand my file-level errors.",
+    "entities": [
+      {
+        "text": "Agency user",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "file-level errors",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "submissions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "navigate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won't strip off leading and trailing zeroes.",
+    "entities": [
+      {
+        "text": "agency user",
+        "label": "Data"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      },
+      {
+        "text": "data elements",
+        "label": "PII"
+      }
+    ]
+  }
+]

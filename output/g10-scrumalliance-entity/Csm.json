@@ -1,0 +1,69 @@
+[
+  {
+    "text": "As a CSM, I want to have my name listed in the registry without becoming a member of the site, so that employers or others can verify my certification.",
+    "entities": [
+      {
+        "text": "CSM,",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "verify",
+        "label": "Processing"
+      },
+      {
+        "text": "certification",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a CSM, I want to be sent an email welcoming me to the Scrum Alliance and with instructions to register or activate my membership once my name has been loaded to the registry.",
+    "entities": [
+      {
+        "text": "CSM,",
+        "label": "Data"
+      },
+      {
+        "text": "sent",
+        "label": "Processing"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a CSM, I want to be charged a fee once I am approved for Practitioner status, so that my certification status can be activated.",
+    "entities": [
+      {
+        "text": "CSM,",
+        "label": "Data"
+      },
+      {
+        "text": "charged",
+        "label": "Processing"
+      },
+      {
+        "text": "certification status",
+        "label": "PII"
+      }
+    ]
+  }
+]

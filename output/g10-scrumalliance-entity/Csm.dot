@@ -1,0 +1,51 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Site " ];
+201 [label="<f0>  |<f1> Registry " ];
+202 [label="<f0>  |<f1> Name " color=red];
+203 [label="<f0>  |<f1> Membership " color=red];
+204 [label="<f0>  |<f1> Scrum Alliance " ];
+205 [label="<f0>  |<f1> Fee " color=red];
+206 [label="<f0>  |<f1> Practitioner Status " ];
+207 [label="Csm" shape=box];
+208 [label="{<f0> 1.0|<f1> Becoming A Member Of The Site }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Have Name In The Registry }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Register Membership }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> With Sent }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Name Loaded To The Registry }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Welcome To The Scrum Alliance }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Activate Membership }" shape=Mrecord];
+215 [label="{<f0> 8.0|<f1> Approved For Practitioner Status }" shape=Mrecord];
+216 [label="{<f0> 9.0|<f1> Charged A Fee }" shape=Mrecord];
+10 [label="{<f0> 10.0|<f1> Verify my certification. }" shape=Mrecord];
+1000 [label="Employers" shape=box];
+1000 -> 10
+1002 [label="<f0>  |<f1> Certification " color=red];
+10 -> 1002 [label="Certification"]
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+207 -> 213
+207 -> 214
+207 -> 215
+207 -> 216
+208 -> 209
+208 -> 200 [label="Site"]
+209 -> 202 [label="Name"]
+209 -> 201 [label="Registry"]
+210 -> 212
+210 -> 203 [label="Membership"]
+211 -> 210
+211 -> 213
+211 -> 214
+212 -> 201 [label="Registry"]
+212 -> 202 [label="Name"]
+213 -> 204 [label="Scrum Alliance"]
+214 -> 212
+214 -> 203 [label="Membership"]
+215 -> 216
+215 -> 206 [label="Practitioner Status"]
+216 -> 205 [label="Fee"]
+}

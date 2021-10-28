@@ -1,0 +1,113 @@
+id,value,style,source,target,type
+22,Keep track of each individual camper,ellipse,null,null,process
+23,Keep track of who is where at all times,ellipse,null,null,process
+200,Camper,shape=partialRectangle,null,null,data_base
+201,Camp,shape=partialRectangle,null,null,data_base
+202,Activity,shape=partialRectangle,null,null,data_base
+203,Nametag,shape=partialRectangle,null,null,data_base
+204,Rule,shape=partialRectangle,null,null,data_base
+205,Campers Worker,shape=partialRectangle,null,null,data_base
+206,Group,shape=partialRectangle,null,null,data_base
+207,Database,shape=partialRectangle,null,null,data_base
+208,Behavioral Problem,shape=partialRectangle,null,null,data_base
+209,Information,shape=partialRectangle,null,null,data_base
+210,Immediate Parent,shape=partialRectangle,null,null,data_base
+211,Guardian,shape=partialRectangle,null,null,data_base
+212,Parent,shape=partialRectangle,null,null,data_base
+213,Weekly Feedback,shape=partialRectangle,null,null,data_base
+214,Inappropriate Behavior,shape=partialRectangle,null,null,data_base
+215,Manager,shape=partialRectangle,null,null,data_base
+216,Consent Form,shape=partialRectangle,null,null,data_base
+217,Emergency,shape=partialRectangle,null,null,data_base
+218,Camp Administrator,rounded=0,null,null,external_entity
+219,Camp Worker,rounded=0,null,null,external_entity
+220,Add Campers,ellipse,null,null,process
+221,Remove Campers,ellipse,null,null,process
+222,Attend The Camp,ellipse,null,null,process
+223,Upload Consent Forms,ellipse,null,null,process
+224,Schedule Activities For Campers,ellipse,null,null,process
+225,Create Nametags For Campers,ellipse,null,null,process
+226,Follow,ellipse,null,null,process
+227,Create Rules Camp Has,ellipse,null,null,process
+228,Create Rules Campers Workers Has,ellipse,null,null,process
+229,Modify Rules Campers Workers Has,ellipse,null,null,process
+230,Modify Rules Camp Has,ellipse,null,null,process
+231,Create Groups,ellipse,null,null,process
+232,Add Campers To The Groups,ellipse,null,null,process
+233,Delete Campers From The Database,ellipse,null,null,process
+234,See,ellipse,null,null,process
+235,Suspend A Camper Had Behavioral Problems,ellipse,null,null,process
+236,Store Guardian's Information,ellipse,null,null,process
+237,Store Camper's Immediate Parent Information,ellipse,null,null,process
+238,Provide Weekly Feedback To Camper's Parents,ellipse,null,null,process
+239,Report A Camper To The Manager With An Inappropriate Behavior,ellipse,null,null,process
+240,Store Campers' Emergency Information In A Database,ellipse,null,null,process
+242,,endArrow=classic,218,220,endArrow=classic
+243,,endArrow=classic,218,221,endArrow=classic
+244,,endArrow=classic,218,222,endArrow=classic
+245,,endArrow=classic,218,223,endArrow=classic
+246,,endArrow=classic,218,224,endArrow=classic
+247,,endArrow=classic,218,225,endArrow=classic
+248,,endArrow=classic,218,226,endArrow=classic
+249,,endArrow=classic,218,227,endArrow=classic
+250,,endArrow=classic,218,228,endArrow=classic
+251,,endArrow=classic,218,229,endArrow=classic
+252,,endArrow=classic,218,230,endArrow=classic
+253,,endArrow=classic,218,231,endArrow=classic
+254,,endArrow=classic,218,232,endArrow=classic
+255,,endArrow=classic,218,233,endArrow=classic
+256,,endArrow=classic,218,235,endArrow=classic
+257,,endArrow=classic,218,236,endArrow=classic
+258,,endArrow=classic,218,237,endArrow=classic
+259,,endArrow=classic,218,238,endArrow=classic
+260,,endArrow=classic,218,240,endArrow=classic
+261,,endArrow=classic,219,239,endArrow=classic
+262,Camper,endArrow=classic,220,200,endArrow=classic
+263,,endArrow=classic,221,222,endArrow=classic
+264,Camper,endArrow=classic,221,200,endArrow=classic
+265,Camp,endArrow=classic,222,201,endArrow=classic
+266,Consent Form,endArrow=classic,223,216,endArrow=classic
+267,Activity,endArrow=classic,224,202,endArrow=classic
+268,Camper,endArrow=classic,224,200,endArrow=classic
+269,Nametag,endArrow=classic,225,203,endArrow=classic
+270,Camper,endArrow=classic,225,200,endArrow=classic
+271,Camp,endArrow=classic,227,201,endArrow=classic
+272,Rule,endArrow=classic,227,204,endArrow=classic
+273,,endArrow=classic,228,226,endArrow=classic
+274,Rule,endArrow=classic,228,204,endArrow=classic
+275,Campers Worker,endArrow=classic,228,205,endArrow=classic
+276,,endArrow=classic,229,226,endArrow=classic
+277,Rule,endArrow=classic,229,204,endArrow=classic
+278,Campers Worker,endArrow=classic,229,205,endArrow=classic
+279,Camp,endArrow=classic,230,201,endArrow=classic
+280,Rule,endArrow=classic,230,204,endArrow=classic
+281,Group,endArrow=classic,231,206,endArrow=classic
+282,Camper,endArrow=classic,232,200,endArrow=classic
+283,Group,endArrow=classic,232,206,endArrow=classic
+284,Database,endArrow=classic,233,207,endArrow=classic
+285,Camper,endArrow=classic,233,200,endArrow=classic
+286,Behavioral Problem,endArrow=classic,235,208,endArrow=classic
+287,Camper,endArrow=classic,235,200,endArrow=classic
+288,Guardian,endArrow=classic,236,211,endArrow=classic
+289,Information,endArrow=classic,236,209,endArrow=classic
+290,Information,endArrow=classic,237,209,endArrow=classic
+291,Weekly Feedback,endArrow=classic,238,213,endArrow=classic
+292,Parent,endArrow=classic,238,212,endArrow=classic
+293,Manager,endArrow=classic,239,215,endArrow=classic
+294,Inappropriate Behavior,endArrow=classic,239,214,endArrow=classic
+295,Camper,endArrow=classic,239,200,endArrow=classic
+296,Database,endArrow=classic,240,207,endArrow=classic
+297,Information,endArrow=classic,240,209,endArrow=classic
+315,Immediate Parent,endArrow=classic,237,210,endArrow=classic
+336,Emergency,endArrow=classic,240,217,endArrow=classic
+1000,,endArrow=classic,220,22,endArrow=classic
+1001,Camp administrator,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,22,endArrow=classic
+1003,Individual camper,rounded=0,null,null,external_entity
+1004,Individual camper,endArrow=classic,22,1003,endArrow=classic
+1005,Camp workers,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,23,endArrow=classic
+1007,Camp workers,rounded=0,null,null,external_entity
+1008,,endArrow=classic,1007,23,endArrow=classic
+1009,Who is where,rounded=0,null,null,external_entity
+1010,Who is where,endArrow=classic,23,1009,endArrow=classic

@@ -1,0 +1,111 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Multiple Dimension " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Multiple Measure " ];
+203 [label="<f0>  |<f1> Visualisation " color=red];
+204 [label="<f0>  |<f1> Currency " ];
+205 [label="<f0>  |<f1> Monetary Measure " color=red];
+206 [label="<f0>  |<f1> Embed Visualisation " ];
+207 [label="<f0>  |<f1> Textual Description " color=red];
+208 [label="<f0>  |<f1> View State " ];
+209 [label="<f0>  |<f1> Social Network " color=red];
+210 [label="<f0>  |<f1> Url " ];
+211 [label="<f0>  |<f1> Colour " color=red];
+212 [label="<f0>  |<f1> Accessible " ];
+213 [label="<f0>  |<f1> Title " color=red];
+214 [label="<f0>  |<f1> Metadata " color=red];
+215 [label="<f0>  |<f1> Dataset " color=red];
+216 [label="<f0>  |<f1> Bubble Tree " ];
+217 [label="<f0>  |<f1> Default " ];
+218 [label="<f0>  |<f1> Treemap " ];
+219 [label="<f0>  |<f1> Multiple Year " ];
+220 [label="<f0>  |<f1> Recent Year " ];
+221 [label="<f0>  |<f1> Pivot Table " ];
+222 [label="<f0>  |<f1> Map " ];
+223 [label="Datum , Consume User" shape=box];
+224 [label="{<f0> 1.0|<f1> Sort Filter Data By Multiple Dimensions }" shape=Mrecord];
+225 [label="{<f0> 2.0|<f1> Sort Aggregate Data By Multiple Measures }" shape=Mrecord];
+226 [label="{<f0> 3.0|<f1> Download A Csv Of The Data Used In Any Visualisation }" shape=Mrecord];
+227 [label="{<f0> 4.0|<f1> Change The Display Of All Monetary Measures Across A Set Of Currencies }" shape=Mrecord];
+228 [label="{<f0> 5.0|<f1> See Textual Descriptions Accompany Embedded Visualisations }" shape=Mrecord];
+229 [label="{<f0> 6.0|<f1> Share A View State As A Url To Social Networks }" shape=Mrecord];
+230 [label="{<f0> 7.0|<f1> Download An Image, Ofa, Particular View State }" shape=Mrecord];
+231 [label="{<f0> 8.0|<f1> Share An Image Of A Particular View State To The Social Networks Support This }" shape=Mrecord];
+232 [label="{<f0> 9.0|<f1> Stepped }" shape=Mrecord];
+233 [label="{<f0> 10.0|<f1> Have Consistent Use Of Colour On Map Visualisations }" shape=Mrecord];
+234 [label="{<f0> 11.0|<f1> Search Any Dataset }" shape=Mrecord];
+235 [label="{<f0> 12.0|<f1> Search Publicly Accessible By Title }" shape=Mrecord];
+236 [label="{<f0> 13.0|<f1> Search Publicly Accessible By Metadata }" shape=Mrecord];
+237 [label="{<f0> 14.0|<f1> Visualize By Default In Bubble Tree }" shape=Mrecord];
+238 [label="{<f0> 15.0|<f1> Visualize By Default In Treemap }" shape=Mrecord];
+239 [label="{<f0> 16.0|<f1> Visualize By Default In Pivot Table }" shape=Mrecord];
+240 [label="{<f0> 17.0|<f1> Visualize By Default In Treemap The Most Recent Year Dataset When Contain Multiple Years }" shape=Mrecord];
+18 [label="{<f0> 18.0|<f1> Use the data in other tools. }" shape=Mrecord];
+1000 [label="Data consuming user" shape=box];
+1000 -> 18
+1002 [label="<f0>  |<f1> Data " color=red];
+18 -> 1002 [label="Data"]
+19 [label="{<f0> 19.0|<f1> Share data that i have found with others. }" shape=Mrecord];
+1004 [label="Data consuming user" shape=box];
+1004 -> 19
+1006 [label="<f0>  |<f1> Data " color=red];
+19 -> 1006 [label="Data"]
+20 [label="{<f0> 20.0|<f1> Find the datasets i'm interested in. }" shape=Mrecord];
+1008 [label="Data consuming user" shape=box];
+1008 -> 20
+1010 [label="<f0>  |<f1> Datasets " color=red];
+20 -> 1010 [label="Datasets"]
+223 -> 224
+223 -> 226
+223 -> 227
+223 -> 228
+223 -> 229
+223 -> 230
+223 -> 231
+223 -> 233
+223 -> 234
+223 -> 235
+223 -> 236
+223 -> 237
+223 -> 238
+223 -> 239
+223 -> 240
+224 -> 201 [label="Datum"]
+224 -> 200 [label="Multiple Dimension"]
+224 -> 202 [label="Multiple Measure"]
+225 -> 200 [label="Multiple Dimension"]
+225 -> 202 [label="Multiple Measure"]
+225 -> 201 [label="Datum"]
+226 -> 203 [label="Visualisation"]
+226 -> 201 [label="Datum"]
+227 -> 205 [label="Monetary Measure"]
+227 -> 204 [label="Currency"]
+228 -> 207 [label="Textual Description"]
+228 -> 206 [label="Embed Visualisation"]
+229 -> 208 [label="View State"]
+229 -> 210 [label="Url"]
+229 -> 209 [label="Social Network"]
+230 -> 208 [label="View State"]
+231 -> 208 [label="View State"]
+231 -> 209 [label="Social Network"]
+233 -> 211 [label="Colour"]
+233 -> 203 [label="Visualisation"]
+234 -> 215 [label="Dataset"]
+235 -> 212 [label="Accessible"]
+235 -> 213 [label="Title"]
+236 -> 214 [label="Metadata"]
+236 -> 212 [label="Accessible"]
+237 -> 216 [label="Bubble Tree"]
+237 -> 217 [label="Default"]
+238 -> 217 [label="Default"]
+238 -> 218 [label="Treemap"]
+239 -> 221 [label="Pivot Table"]
+239 -> 217 [label="Default"]
+240 -> 217 [label="Default"]
+240 -> 218 [label="Treemap"]
+240 -> 219 [label="Multiple Year"]
+240 -> 220 [label="Recent Year"]
+240 -> 215 [label="Dataset"]
+233 -> 222 [label="Map"]
+}

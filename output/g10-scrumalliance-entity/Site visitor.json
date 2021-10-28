@@ -1,0 +1,420 @@
+[
+  {
+    "text": "As a site visitor, I want to read current news on the home page, so that I stay current on agile news.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "current news",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to access old news that is no longer on the home page, so that I can access things I remember from the past or that others mention to me.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "old news",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to email news items to the editor, so that they can be considered for publication.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "Processing"
+      },
+      {
+        "text": "news items",
+        "label": "PII"
+      },
+      {
+        "text": "editor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a list of all upcoming Certification Courses and can page through them if there are a lot, so that I can choose the best course for me.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a list of all upcoming Other Courses and can page through them if necessary, so that I can choose the best course for me.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a list of all upcoming Events, so that I can decide if I want to attend any.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "upcoming Events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to have an advanced search option that lets me fill in a form of search criteria, so that I can quickly find what I am looking for.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "fill in",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view a course I can click on the trainer's name and be taken to the trainer's profile, so that I can read more about a trainer before registering for a course.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "'s profile",
+        "label": "PII"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to subscribe to an RSS feed of upcoming courses and events, so that I am up to day without having to visit the site.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "subscribe",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to read FAQs, so that I can get quick answers.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to do a full-text search of the FAQs, so that I can find an answer quickly.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to read a new article on the front page about once a week, so that I am up on all the latest happenings.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to click the link from the article teaser to take me directly to the body of the article. not to another teaser setup, so that I can easily finish the article.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to be able to read some of your articles, so that I can learn without first joining the site.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to do a full-text search of article body, title, and author name, so that I can find what I want.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "article body",
+        "label": "PII"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      },
+      {
+        "text": "author name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to subscribe to an RSS feed of articles, so that I can read them without visiting the site.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "subscribe",
+        "label": "Processing"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to post comments about articles, so that others can read them.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "comments",
+        "label": "PII"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see new content when I come to the site, so that I come back more often.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to have articles that interest me and are easy to get to, so that I come to the site for my agile news and learning.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "news",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to know as soon as I visit what on earth Scrum is and why it needs an alliance, so that I don't bounce immediately o\u00ef\u00ac\u20ac the page.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to know as I glance around the home page what on earth a CSM is and why I'd want to be one, so that I read more.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to be able to get back to the home page quickly and easily, so that I don't get lost navigating.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a list of the most popular items on the site, so that I am most likely to read the most important or best content.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to see a trainer's rating, so that I choose a course from an appropriate trainer.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "'s rating",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view a section of the website that teaches me the basics of what Scrum is, so that I can learn that quickly.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site visitor, I want to view lists on the site of all Certified Scrum Masters, Practitioners, Trainers, and Certified Scrum Product Owners.",
+    "entities": [
+      {
+        "text": "site visitor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  }
+]

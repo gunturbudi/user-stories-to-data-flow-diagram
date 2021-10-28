@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As a company accountant, I want to view all available activity fees online, so that I can easily create a bill statement.",
+    "entities": [
+      {
+        "text": "company accountant",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "activity fees",
+        "label": "PII"
+      }
+    ]
+  }
+]

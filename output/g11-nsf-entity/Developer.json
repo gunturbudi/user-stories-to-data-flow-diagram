@@ -1,0 +1,24 @@
+[
+  {
+    "text": "As a developer, I want to have the subdomain beta.nsf.gov be set up, so that I can deploy a beta site to it.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to know what the three initial hypotheses are, so that I can plan work around development of prototypes.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  }
+]

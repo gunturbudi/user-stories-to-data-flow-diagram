@@ -1,0 +1,20 @@
+id,value,style,source,target,type
+4,Generate new insights.,ellipse,null,null,process
+5,Adjust my analytics code to the desired schema version.,ellipse,null,null,process
+200,Datapackage,shape=partialRectangle,null,null,data_base
+201,Data Analyst,rounded=0,null,null,external_entity
+202,Download A Data Package,ellipse,null,null,process
+203,Update Previously Downloaded Data Package,ellipse,null,null,process
+204,Compare Different Versions Of Some Datapackage,ellipse,null,null,process
+206,,endArrow=classic,201,202,endArrow=classic
+207,,endArrow=classic,201,203,endArrow=classic
+208,,endArrow=classic,201,204,endArrow=classic
+209,Datapackage,endArrow=classic,202,200,endArrow=classic
+210,Datapackage,endArrow=classic,203,200,endArrow=classic
+211,Datapackage,endArrow=classic,204,200,endArrow=classic
+1000,,endArrow=classic,202,4,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,4,1001,endArrow=classic
+1003,,endArrow=classic,204,5,endArrow=classic
+1004,Analytics code,rounded=0,null,null,external_entity
+1005,Analytics code,endArrow=classic,5,1004,endArrow=classic

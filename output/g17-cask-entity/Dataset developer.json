@@ -1,0 +1,215 @@
+[
+  {
+    "text": "As a dataset developer, I want to deploy a dataset type independent from any app and allow apps to create and use dataset instances of that type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to have the option of forcing applications to have the dataset code injected at runtime.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "forcing",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset code",
+        "label": "PII"
+      },
+      {
+        "text": "injected",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to have an archetype that helps me package my dataset type properly.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "package",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to separate the interface from the implementation of a dataset type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "separate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to assign explicit versions to the code of a dataset type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "assign",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to deploy a new version of a dataset type without affecting the dataset instances of that type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to explore a dataset instance created from a dataset type that was deployed by itself.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "explore",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      },
+      {
+        "text": "created",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to delete outdated versions of a dataset type and I expect this to fail if there are any dataset instances with that version of the type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to list all dataset instances that use a dataset type or a specific version of a type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instances",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to have the option of implementing an upgrade step for when a dataset instance is upgraded to a new version of the dataset type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      },
+      {
+        "text": "upgraded",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to have a way to reject an upgrade of a dataset instance to a newer version of it type if the upgrade is not compatible.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "reject",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to have the option of implementing a migration procedure that can be run after an upgrade of a dataset instance to a new version of it type.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset instance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a dataset developer, I want to implement custom administrative operations such as \"compaction\" or \"rebalance\" that are no common to all dataset types.",
+    "entities": [
+      {
+        "text": "dataset developer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

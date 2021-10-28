@@ -1,0 +1,161 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Completeness Review" as thingcompletenessreview #grey
+	entity "Internal Note" as thinginternalnote
+	entity "Detailed Review" as thingdetailedreview
+	entity "Application" as thingapplication
+	entity "Hold" as thinghold
+	entity "Formal Response" as thingformalresponse
+	entity "Applicant" as thingapplicant
+	entity "Approve Proffer" as thingapprovedproffer
+	entity "Ordinance" as thingordinance
+	entity "Meeting" as thingmeeting
+	entity "Staff Review" as thingstaffreview #grey
+	entity "Staff Report" as thingstaffreport #grey
+	entity "Calendar" as thingcalendar
+	entity "Hearing Date" as thinghearingdate #grey
+	entity "Affidavit" as thingaffidavit
+	entity "Execution" as thingexecution
+	entity "Hearing Decision" as thinghearingdecision #grey
+	entity "Appeal" as thingappeal
+	entity "Bond" as thingbond
+	entity "Condo Unit" as thingcondounit #grey
+	entity "Citation" as thingcitation
+	entity "Fine" as thingfine
+	entity "Draft Proffer" as thingdraftproffer
+	entity "Action Status" as thingactionstatus
+	actor "Staff Member" as actorstaffmember
+	boundary "Review\nInterface" as thingreviewinterface #grey
+	boundary "Note\nInterface" as thingnoteinterface #grey
+	boundary "Hold\nInterface" as thingholdinterface #grey
+	boundary "Applicant\nInterface" as thingapplicantinterface #grey
+	boundary "Proffer\nInterface" as thingprofferinterface #grey
+	boundary "Ordinance\nInterface" as thingordinanceinterface #grey
+	boundary "Meeting\nInterface" as thingmeetinginterface #grey
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Calendar\nInterface" as thingcalendarinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Affidavit\nInterface" as thingaffidavitinterface #grey
+	boundary "Execution\nInterface" as thingexecutioninterface #grey
+	boundary "Decision\nInterface" as thingdecisioninterface #grey
+	boundary "Appeal\nInterface" as thingappealinterface #grey
+	boundary "Bond\nInterface" as thingbondinterface #grey
+	boundary "Unit\nInterface" as thingunitinterface #grey
+	boundary "Citation\nInterface" as thingcitationinterface #grey
+	boundary "Fine\nInterface" as thingfineinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	control "Perform A\nCompleteness Review" as controlperformcompletenessreview
+	control "Record An\nInternal Note" as controlrecordinternalnote
+	control "Assign An\nApplication For\nDetailed Review" as controlassignapplication
+	control "Apply A\nHold" as controlapplyhold
+	control "Remove A\nHold" as controlremovehold
+	control "Send A\nFormal Response\nTo Applicant" as controlsendformalresponse
+	control "Track The\nDraft Proffers" as controltrackdraftproffers
+	control "Manage Approved\nProffers" as controlmanageapprovedproffer
+	control "Manage Ordinances" as controlmanageordinance
+	control "Schedule A\nMeeting" as controlschedulemeeting
+	control "Perform A\nStaff Review" as controlperformstaffreview
+	control "Develop A\nStaff Report" as controldevelopstaffreport
+	control "Hearing Calendars" as controlhearingcalendar
+	control "Manage" as controlmanagehearingcalendar
+	control "Assign A\nHearing Date" as controlassignhearingdate
+	control "Manage Affidavits" as controlmanageaffidavit
+	control "Hearing Execution" as controlhearingexecution
+	control "Support" as controlsupporthearingexecution #grey
+	control "Prepare" as controlpreparehearingexecution
+	control "Capture A\nHearing Decision" as controlcapturehearingdecision
+	control "Process The\nAppeals" as controlprocessappeal
+	control "Manage Bonds" as controlmanagebond
+	control "Notified" as controlnotify
+	control "Create Each\nCondo Unit" as controlcreatecondounit
+	control "Send Citations" as controlsendcitation
+	control "Send Fine" as controlsendfine
+	control "Post Fine" as controlpostfine
+	control "Post Citations" as controlpostcitation
+	control "Denote An\nApplication With\nA Final\nAction Status" as controldenoteapplication
+
+	thingdetailedreview <.. thingapplication
+	thingactionstatus <.. thingapplication
+	thingapplicant <.. thingformalresponse
+	actorstaffmember --- thingreviewinterface
+	actorstaffmember --- thingnoteinterface
+	actorstaffmember --- thingholdinterface
+	actorstaffmember --- thingapplicantinterface
+	actorstaffmember --- thingprofferinterface
+	actorstaffmember --- thingordinanceinterface
+	actorstaffmember --- thingmeetinginterface
+	actorstaffmember --- thingreportinterface
+	actorstaffmember --- thingcalendarinterface
+	actorstaffmember --- thingdateinterface
+	actorstaffmember --- thingaffidavitinterface
+	actorstaffmember --- thingexecutioninterface
+	actorstaffmember --- thingdecisioninterface
+	actorstaffmember --- thingappealinterface
+	actorstaffmember --- thingbondinterface
+	actorstaffmember --- thingunitinterface
+	actorstaffmember --- thingcitationinterface
+	actorstaffmember --- thingfineinterface
+	actorstaffmember --- thingstatusinterface
+	thingcompletenessreview --- controlperformcompletenessreview
+	thingreviewinterface --> controlperformcompletenessreview
+	thinginternalnote --- controlrecordinternalnote
+	thingnoteinterface --> controlrecordinternalnote
+	thingapplication --- controlassignapplication
+	thingdetailedreview --- controlassignapplication
+	thingreviewinterface --> controlassignapplication
+	thinghold --- controlapplyhold
+	thingholdinterface --> controlapplyhold
+	thinghold --- controlremovehold
+	thingholdinterface --> controlremovehold
+	thingformalresponse --- controlsendformalresponse
+	thingapplicant --- controlsendformalresponse
+	thingapplicantinterface --> controlsendformalresponse
+	thingdraftproffer --- controltrackdraftproffers
+	thingprofferinterface --> controltrackdraftproffers
+	thingapprovedproffer --- controlmanageapprovedproffer
+	thingprofferinterface --> controlmanageapprovedproffer
+	thingordinance --- controlmanageordinance
+	thingordinanceinterface --> controlmanageordinance
+	thingmeeting --- controlschedulemeeting
+	thingmeetinginterface --> controlschedulemeeting
+	thingstaffreview --- controlperformstaffreview
+	thingreviewinterface --> controlperformstaffreview
+	thingstaffreport --- controldevelopstaffreport
+	thingreportinterface --> controldevelopstaffreport
+	thingcalendar --- controlhearingcalendar
+	controlmanagehearingcalendar --> controlhearingcalendar
+	thingcalendarinterface --> controlhearingcalendar
+	thingcalendarinterface --> controlmanagehearingcalendar
+	thinghearingdate --- controlassignhearingdate
+	thingdateinterface --> controlassignhearingdate
+	thingaffidavit --- controlmanageaffidavit
+	thingaffidavitinterface --> controlmanageaffidavit
+	thingexecution --- controlhearingexecution
+	controlpreparehearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlhearingexecution
+	controlsupporthearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlpreparehearingexecution
+	thinghearingdecision --- controlcapturehearingdecision
+	thingdecisioninterface --> controlcapturehearingdecision
+	thingappeal --- controlprocessappeal
+	thingappealinterface --> controlprocessappeal
+	thingbond --- controlmanagebond
+	thingbondinterface --> controlmanagebond
+	thingcondounit --- controlcreatecondounit
+	thingunitinterface --> controlcreatecondounit
+	thingcitation --- controlsendcitation
+	thingcitationinterface --> controlsendcitation
+	thingfine --- controlsendfine
+	thingfineinterface --> controlsendfine
+	thingfine --- controlpostfine
+	thingfineinterface --> controlpostfine
+	thingcitation --- controlpostcitation
+	thingcitationinterface --> controlpostcitation
+	thingactionstatus --- controldenoteapplication
+	thingstatusinterface --> controldenoteapplication
+	thingapplication --- controldenoteapplication
+
+@enduml

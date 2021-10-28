@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a researcher, I want to store agreements relating to third party data used in a project, so that the data can be cited, attributed and used correctly.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "agreements",
+        "label": "PII"
+      },
+      {
+        "text": "third party data",
+        "label": "Data"
+      }
+    ]
+  }
+]

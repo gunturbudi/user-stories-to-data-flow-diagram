@@ -1,0 +1,74 @@
+[
+  {
+    "text": "As an archivemanager, I want to know the legal status of data, so that I can apply the legal requirements accordingly.",
+    "entities": [
+      {
+        "text": "archivemanager,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivemanager, I want to know in advance the conservation period of data, so that I can better organize the service by adapting the preservation actions.",
+    "entities": [
+      {
+        "text": "archivemanager,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivemanager, I want to reuse the information regarding file format, so that I can apply automated checks for the file validation.",
+    "entities": [
+      {
+        "text": "archivemanager,",
+        "label": "Data"
+      },
+      {
+        "text": "reuse",
+        "label": "Processing"
+      },
+      {
+        "text": "file format",
+        "label": "PII"
+      },
+      {
+        "text": "automated checks",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivemanager, I want to make sure that detailed metadata are associated to data so that it will be understandable by future users.",
+    "entities": [
+      {
+        "text": "archivemanager,",
+        "label": "Data"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "associated",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

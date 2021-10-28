@@ -1,0 +1,67 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Check" as thingcheck
+	entity "Deposit Dataset" as thingdepositeddataset
+	entity "Metadata" as thingmetadata
+	entity "Datum" as thingdatum
+	entity "Entire Archive" as thingentirearchive
+	entity "Open Standard" as thingopenstandard
+	entity "Deposit" as thingdeposit
+	entity "Data Centre" as thingdatacentre
+	entity "Bath" as thingbath #grey
+	actor "Bath ,\nData ,\nArchive Administrator" as actorbathdataarchiveadministrator
+	circle "Schedule Disposal" as thingscheduleddisposal
+	circle "Use" as thinguse
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Archive\nInterface" as thingarchiveinterface #grey
+	boundary "Centre\nInterface" as thingcentreinterface #grey
+	boundary "Deposit\nInterface" as thingdepositinterface #grey
+	control "Make Some\nChecks On\nDeposited Datasets" as controlmakecheckdepositeddataset
+	control "Require A\nMinimum Set\nOf Metadata" as controlrequireminimumset
+	control "Approve Scheduled\nDisposal Of\nData" as controlapprovescheduleddisposal
+	control "Query The\nEntire Archive" as controlqueryentirearchive
+	control "Import Bath\nData From\nAn Wholesale,\nExternal Data\nCentre" as controlimportbathdatawholesaleexternaldatacentre
+	control "Encourage The\nUse Of\nOpen Standards\nFor Deposit" as controlencourageuse
+	control "Promote The\nUse Of\nOpen Standards\nFor Deposit" as controlpromoteuse
+
+	thingdepositeddataset <.. thingcheck
+	thingbath <.. thingdatum
+	thingdatacentre <.. thingdatum
+	thingdeposit <.. thingopenstandard
+	thingdatum *-- thingscheduleddisposal
+	thingopenstandard *-- thinguse
+	thingdeposit *-- thinguse
+	actorbathdataarchiveadministrator --- thingdatasetinterface
+	actorbathdataarchiveadministrator --- thingmetadatainterface
+	actorbathdataarchiveadministrator --- thingdatuminterface
+	actorbathdataarchiveadministrator --- thingarchiveinterface
+	actorbathdataarchiveadministrator --- thingcentreinterface
+	actorbathdataarchiveadministrator --- thingdepositinterface
+	thingcheck --- controlmakecheckdepositeddataset
+	thingdepositeddataset --- controlmakecheckdepositeddataset
+	thingdatasetinterface --> controlmakecheckdepositeddataset
+	thingmetadata --- controlrequireminimumset
+	thingmetadatainterface --> controlrequireminimumset
+	thingscheduleddisposal --- controlapprovescheduleddisposal
+	thingdatum --- controlapprovescheduleddisposal
+	thingdatuminterface --> controlapprovescheduleddisposal
+	thingentirearchive --- controlqueryentirearchive
+	thingarchiveinterface --> controlqueryentirearchive
+	thingdatacentre --- controlimportbathdatawholesaleexternaldatacentre
+	thingcentreinterface --> controlimportbathdatawholesaleexternaldatacentre
+	thingdatum --- controlimportbathdatawholesaleexternaldatacentre
+	thinguse --- controlencourageuse
+	thingopenstandard --- controlencourageuse
+	thingdeposit --- controlencourageuse
+	thingdepositinterface --> controlencourageuse
+	thingopenstandard --- controlpromoteuse
+	thinguse --- controlpromoteuse
+	thingdeposit --- controlpromoteuse
+	thingdepositinterface --> controlpromoteuse
+
+@enduml

@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Research,shape=partialRectangle,null,null,data_base
+201,Contact Information,shape=partialRectangle,null,null,data_base
+202,"Potential , Research Participant",rounded=0,null,null,external_entity
+203,Learn About The Research,ellipse,null,null,process
+204,Leave Contact Information,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Research,endArrow=classic,203,200,endArrow=classic
+209,Contact Information,endArrow=classic,204,201,endArrow=classic

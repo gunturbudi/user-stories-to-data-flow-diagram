@@ -1,0 +1,47 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Site" as thingsite
+	entity "Xhtml Standard" as thingxhtmlstandard
+	entity "Css" as thingCSS
+	entity "7" as thing7
+	entity "Internet Explorer" as thinginternetexplorer #grey
+	entity "Function" as thingfunction #grey
+	entity "W3C Guideline" as thingw3cguideline
+	entity "Application" as thingapplication #grey
+	actor "Developer" as actordeveloper
+	boundary "Css\nInterface" as thingcssinterface #grey
+	boundary "Standard\nInterface" as thingstandardinterface #grey
+	boundary "7\nInterface" as thing7interface #grey
+	boundary "Explorer\nInterface" as thingexplorerinterface #grey
+	control "Written A\nSite Is\nCompliant With\nCss" as controlwritesiteCSS
+	control "Written A\nSite Is\nCompliant With\nXhtml Standards" as controlwritesite
+	control "Have The\nFunction In\n7" as controlhavefunction7
+	control "Have The\nApplication Function\nIn Internet\nExplorer" as controlhaveapplicationfunctioninternetexplorer
+	control "Have" as controlhave
+
+	thingxhtmlstandard <.. thingsite
+	thingCSS <.. thingsite
+	thing7 <.. thingfunction
+	thingapplication <.. thingfunction
+	thinginternetexplorer <.. thingfunction
+	actordeveloper --- thingcssinterface
+	actordeveloper --- thingstandardinterface
+	actordeveloper --- thing7interface
+	actordeveloper --- thingexplorerinterface
+	thingCSS --- controlwritesiteCSS
+	thingcssinterface --> controlwritesiteCSS
+	thingsite --- controlwritesiteCSS
+	thingsite --- controlwritesite
+	thingxhtmlstandard --- controlwritesite
+	thingstandardinterface --> controlwritesite
+	thingfunction --- controlhavefunction7
+	thing7 --- controlhavefunction7
+	thing7interface --> controlhavefunction7
+	thinginternetexplorer --- controlhaveapplicationfunctioninternetexplorer
+	thingexplorerinterface --> controlhaveapplicationfunctioninternetexplorer
+	thingfunction --- controlhaveapplicationfunctioninternetexplorer
+
+@enduml

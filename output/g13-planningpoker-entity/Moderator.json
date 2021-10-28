@@ -1,0 +1,510 @@
+[
+  {
+    "text": "As a moderator, I want to create a new game by entering a name and an optional description, so that I can start inviting estimators.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "entering",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "optional description",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to invite estimators by giving them a URL where they can access the game, so that we can start the game.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to start a round by entering an item in a single multi-line text field, so that we can estimate it.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to see all items we try to estimate this session, so that I can answer questions about the current story such as \"does this include ___\".",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "estimate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to select an item to be estimated or re-estimated, so that the team sees that item and can estimate it.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to add an item to the list of items to be estimated, so that so that we can be flexible and accommodate situations where we think of a new story while playing.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to edit an item in the list of items to be estimated, so that I can make it better reflect the team's understanding of the item.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to delete an item from the list of items to be estimated, so that we can remove it and not estimate it.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to show all estimates immediately, so that I can decide to show the estimates that have been given even though not all estimators have given their estimate.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "show",
+        "label": "Processing"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to accept the average of all estimates, so that we can move on to the next item when we agree.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "accept",
+        "label": "Processing"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to have the \"estimate\" field filled in automatically if all estimators show the same card, so that I can accept it more quickly.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to enter the agreed-upon estimate, so that we can move on to the next item when we agree.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "enter",
+        "label": "Processing"
+      },
+      {
+        "text": "agreed-upon estimate",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to estimate a story we estimated earlier in the session again, so that we can give a new estimate if we feel different about the story after estimating other related stories.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "estimate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to import stories from a spreadsheet, so that I don't have to copy and paste each individual story.",
+    "entities": [
+      {
+        "text": "moderator",
+        "label": "Data"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      },
+      {
+        "text": "copy",
+        "label": "Processing"
+      },
+      {
+        "text": "paste",
+        "label": "Processing"
+      },
+      {
+        "text": "story",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to copy/paste stories from a spreadsheet, so that I can get started more quickly.",
+    "entities": [
+      {
+        "text": "moderator",
+        "label": "Data"
+      },
+      {
+        "text": "copy",
+        "label": "Processing"
+      },
+      {
+        "text": "paste",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to browse through previous games, so that I can find the previous game I\u2019m looking for.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to view a transcript of a game, so that I can see the stories and estimates.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "transcript",
+        "label": "PII"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to export a transcript of a game as a HTML file, so that I can save the stories and estimates locally.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "transcript",
+        "label": "PII"
+      },
+      {
+        "text": "save",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to export a transcript of a game as a CSV file, so that I can further process the stories and estimates.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "transcript",
+        "label": "PII"
+      },
+      {
+        "text": "process",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to delete a game, so that stories and estimates for this game are no longer stored.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to create an account for the application by entering my name, email address, a password and a username, so that I can start using the application.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "account",
+        "label": "PII"
+      },
+      {
+        "text": "entering",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "email address",
+        "label": "PII"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      },
+      {
+        "text": "username",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to log in using my account name and password, so that I can start using the application.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "log in",
+        "label": "Processing"
+      },
+      {
+        "text": "account name",
+        "label": "PII"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to change my account details, so that I can keep my account details up-to-date.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "account details",
+        "label": "PII"
+      },
+      {
+        "text": "account details",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to delete my account, so that account information and games are no longer stored.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "account",
+        "label": "PII"
+      },
+      {
+        "text": "account information",
+        "label": "PII"
+      },
+      {
+        "text": "games",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to see dates and times in my local timezone, so that I don't have to do timezone conversion myself.",
+    "entities": [
+      {
+        "text": "moderator",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "dates",
+        "label": "PII"
+      },
+      {
+        "text": "local timezone",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to get a password reminder by email, so that I can get back to using the application when I've forgotten my password.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "password reminder",
+        "label": "PII"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "password",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to select whether to have the team estimate with (0, 1/2, 1, 2, 3, 5, 8, etc.) or (0, 1, 2, 4, 8, 16, 32, etc.), so that the team can use either the modified Fibonacci sequence or powers of 2.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a moderator, I want to invite up to 15 estimators, so that we can play with large but not immense teams.",
+    "entities": [
+      {
+        "text": "moderator,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  }
+]

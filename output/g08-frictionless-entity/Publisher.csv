@@ -1,0 +1,80 @@
+id,value,style,source,target,type
+15,Show my work to users of the data.,ellipse,null,null,process
+16,Preview the data and be encouraged that this is the correct data for them.,ellipse,null,null,process
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Type Information,shape=partialRectangle,null,null,data_base
+202,Data Package,shape=partialRectangle,null,null,data_base
+203,Open Refine,shape=partialRectangle,null,null,data_base
+204,Integration,shape=partialRectangle,null,null,data_base
+205,Excel,shape=partialRectangle,null,null,data_base
+206,User,shape=partialRectangle,null,null,data_base
+207,Dataset,shape=partialRectangle,null,null,data_base
+208,Useful Metadata,shape=partialRectangle,null,null,data_base
+209,Data Availability\nPersistence,shape=partialRectangle,null,null,data_base
+210,Publication,shape=partialRectangle,null,null,data_base
+211,Site,shape=partialRectangle,null,null,data_base
+212,Preview Button,shape=partialRectangle,null,null,data_base
+213,Methodology,shape=partialRectangle,null,null,data_base
+214,Reproducible Step,shape=partialRectangle,null,null,data_base
+215,Data Column,shape=partialRectangle,null,null,data_base
+216,Data State,shape=partialRectangle,null,null,data_base
+217,Publisher,rounded=0,null,null,external_entity
+218,Add Type Information To Data,ellipse,null,null,process
+219,Provide A Visualization Of Data In The Data Package,ellipse,null,null,process
+220,Provided With An Integration With Open Refine,ellipse,null,null,process
+221,Online Store Data,ellipse,null,null,process
+222,Know,ellipse,null,null,process
+223,Add Useful Metadata,ellipse,null,null,process
+224,Add In New Data Columns,ellipse,null,null,process
+225,Make The Dataset,ellipse,null,null,process
+226,Check Data Availability Persistence After Publication,ellipse,null,null,process
+227,Time Check Good,ellipse,null,null,process
+228,Embed An Interactive Preview Of Data On Site,ellipse,null,null,process
+229,Embed A Preview Button On Site,ellipse,null,null,process
+230,Package Reproducible Steps,ellipse,null,null,process
+231,Get A Certain Data State,ellipse,null,null,process
+233,,endArrow=classic,217,218,endArrow=classic
+234,,endArrow=classic,217,219,endArrow=classic
+235,,endArrow=classic,217,220,endArrow=classic
+236,,endArrow=classic,217,220,endArrow=classic
+237,,endArrow=classic,217,221,endArrow=classic
+238,,endArrow=classic,217,223,endArrow=classic
+239,,endArrow=classic,217,224,endArrow=classic
+240,,endArrow=classic,217,225,endArrow=classic
+241,,endArrow=classic,217,226,endArrow=classic
+242,,endArrow=classic,217,228,endArrow=classic
+243,,endArrow=classic,217,229,endArrow=classic
+244,,endArrow=classic,217,230,endArrow=classic
+245,,endArrow=classic,217,231,endArrow=classic
+246,Type Information,endArrow=classic,218,201,endArrow=classic
+247,Datum,endArrow=classic,218,200,endArrow=classic
+248,Data Package,endArrow=classic,219,202,endArrow=classic
+249,Datum,endArrow=classic,219,200,endArrow=classic
+250,Integration,endArrow=classic,220,204,endArrow=classic
+251,Open Refine,endArrow=classic,220,203,endArrow=classic
+252,Excel,endArrow=classic,220,205,endArrow=classic
+253,Datum,endArrow=classic,221,200,endArrow=classic
+254,Useful Metadata,endArrow=classic,223,208,endArrow=classic
+255,,endArrow=classic,224,225,endArrow=classic
+256,Data Column,endArrow=classic,224,215,endArrow=classic
+257,Dataset,endArrow=classic,225,207,endArrow=classic
+258,Data Availability\nPersistence,endArrow=classic,226,209,endArrow=classic
+259,Publication,endArrow=classic,226,210,endArrow=classic
+260,Site,endArrow=classic,228,211,endArrow=classic
+261,Datum,endArrow=classic,228,200,endArrow=classic
+262,Preview Button,endArrow=classic,229,212,endArrow=classic
+263,Site,endArrow=classic,229,211,endArrow=classic
+264,,endArrow=classic,230,231,endArrow=classic
+265,Reproducible Step,endArrow=classic,230,214,endArrow=classic
+266,Data State,endArrow=classic,231,216,endArrow=classic
+1000,,endArrow=classic,219,15,endArrow=classic
+1001,Analysis,rounded=0,null,null,external_entity
+1002,Analysis,endArrow=classic,15,1001,endArrow=classic
+1003,Work,rounded=0,null,null,external_entity
+1004,Work,endArrow=classic,15,1003,endArrow=classic
+1005,Users,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,16,endArrow=classic
+1007,This,rounded=0,null,null,external_entity
+1008,,endArrow=classic,1007,16,endArrow=classic
+1009,Data,rounded=0,null,null,external_entity
+1010,Data,endArrow=classic,16,1009,endArrow=classic

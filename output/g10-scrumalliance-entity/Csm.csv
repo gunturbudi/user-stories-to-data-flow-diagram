@@ -1,0 +1,49 @@
+id,value,style,source,target,type
+10,Verify my certification.,ellipse,null,null,process
+200,Site,shape=partialRectangle,null,null,data_base
+201,Registry,shape=partialRectangle,null,null,data_base
+202,Name,shape=partialRectangle,null,null,data_base
+203,Membership,shape=partialRectangle,null,null,data_base
+204,Scrum Alliance,shape=partialRectangle,null,null,data_base
+205,Fee,shape=partialRectangle,null,null,data_base
+206,Practitioner Status,shape=partialRectangle,null,null,data_base
+207,Csm,rounded=0,null,null,external_entity
+208,Becoming A Member Of The Site,ellipse,null,null,process
+209,Have Name In The Registry,ellipse,null,null,process
+210,Register Membership,ellipse,null,null,process
+211,With Sent,ellipse,null,null,process
+212,Name Loaded To The Registry,ellipse,null,null,process
+213,Welcome To The Scrum Alliance,ellipse,null,null,process
+214,Activate Membership,ellipse,null,null,process
+215,Approved For Practitioner Status,ellipse,null,null,process
+216,Charged A Fee,ellipse,null,null,process
+218,,endArrow=classic,207,208,endArrow=classic
+219,,endArrow=classic,207,209,endArrow=classic
+220,,endArrow=classic,207,210,endArrow=classic
+221,,endArrow=classic,207,211,endArrow=classic
+222,,endArrow=classic,207,212,endArrow=classic
+223,,endArrow=classic,207,213,endArrow=classic
+224,,endArrow=classic,207,214,endArrow=classic
+225,,endArrow=classic,207,215,endArrow=classic
+226,,endArrow=classic,207,216,endArrow=classic
+227,,endArrow=classic,208,209,endArrow=classic
+228,Site,endArrow=classic,208,200,endArrow=classic
+229,Name,endArrow=classic,209,202,endArrow=classic
+230,Registry,endArrow=classic,209,201,endArrow=classic
+231,,endArrow=classic,210,212,endArrow=classic
+232,Membership,endArrow=classic,210,203,endArrow=classic
+233,,endArrow=classic,211,210,endArrow=classic
+234,,endArrow=classic,211,213,endArrow=classic
+235,,endArrow=classic,211,214,endArrow=classic
+236,Registry,endArrow=classic,212,201,endArrow=classic
+237,Name,endArrow=classic,212,202,endArrow=classic
+238,Scrum Alliance,endArrow=classic,213,204,endArrow=classic
+239,,endArrow=classic,214,212,endArrow=classic
+240,Membership,endArrow=classic,214,203,endArrow=classic
+241,,endArrow=classic,215,216,endArrow=classic
+242,Practitioner Status,endArrow=classic,215,206,endArrow=classic
+243,Fee,endArrow=classic,216,205,endArrow=classic
+1000,Employers,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,10,endArrow=classic
+1002,Certification,rounded=0,null,null,external_entity
+1003,Certification,endArrow=classic,10,1002,endArrow=classic

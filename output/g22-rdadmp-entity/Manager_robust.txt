@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Resource" as thingresource
+	entity "Service" as thingservice
+	entity "Datum" as thingdatum
+	actor "Manager" as actormanager
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Service\nInterface" as thingserviceinterface #grey
+	control "Know About\nAll Resources\nFor The\nData" as controlknowresource
+	control "Know About\nService" as controlknowservice
+
+	thingdatum <.. thingresource
+	actormanager --- thingdatuminterface
+	actormanager --- thingserviceinterface
+	thingresource --- controlknowresource
+	thingdatum --- controlknowresource
+	thingdatuminterface --> controlknowresource
+	thingservice --- controlknowservice
+	thingserviceinterface --> controlknowservice
+
+@enduml

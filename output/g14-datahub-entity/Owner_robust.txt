@@ -1,0 +1,72 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	entity "Exist User" as thingexistinguser
+	entity "Publisher" as thingpublisher
+	entity "Email" as thingemail
+	entity "Membership" as thingmembership
+	entity "Role" as thingrole
+	entity "People" as thingpeople
+	entity "Organization" as thingorganization
+	entity "User" as thinguser
+	entity "Owner" as thingowner
+	actor "Owner" as actorowner
+	circle "Member" as thingmember
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Publisher\nInterface" as thingpublisherinterface #grey
+	boundary "Organization\nInterface" as thingorganizationinterface #grey
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	control "Edit Profile" as controleditprofile
+	control "Invite An\nExisting User" as controlinviteexistinguser
+	control "Using Email" as controluseemailsignmember
+	control "Invite Someone" as controlinvitesomeoneuseemailsignmember
+	control "Sign Up\nA Member\nOf Publisher" as controlsignmember
+	control "Become A\nMember Of\nPublisher" as controlbecomepublisher
+	control "Remove Someone\nFrom Membership\nIn Publisher" as controlremovesomeonemembership
+	control "View The\nPeople In\nOrganization" as controlviewpeople
+	control "Make A\nUser" as controlmakeuser
+	control "Remove A\nUser As\nAn Owner" as controlremoveuserowner
+
+	thingpublisher <.. thingmembership
+	thingorganization <.. thingpeople
+	thingowner <.. thinguser
+	thingpublisher *-- thingmember
+	actorowner --- thingprofileinterface
+	actorowner --- thinguserinterface
+	actorowner --- thingemailinterface
+	actorowner --- thingpublisherinterface
+	actorowner --- thingorganizationinterface
+	actorowner --- thingownerinterface
+	thingprofile --- controleditprofile
+	thingprofileinterface --> controleditprofile
+	thingexistinguser --- controlinviteexistinguser
+	thinguserinterface --> controlinviteexistinguser
+	thingemail --- controluseemailsignmember
+	controlinvitesomeoneuseemailsignmember --> controluseemailsignmember
+	thingemailinterface --> controluseemailsignmember
+	thingemailinterface --> controlinvitesomeoneuseemailsignmember
+	controluseemailsignmember --> controlsignmember
+	thingmember --- controlsignmember
+	thingpublisher --- controlsignmember
+	thingpublisherinterface --> controlsignmember
+	thingpublisher --- controlbecomepublisher
+	thingpublisherinterface --> controlbecomepublisher
+	controluseemailsignmember --> controlbecomepublisher
+	thingmembership --- controlremovesomeonemembership
+	thingpublisher --- controlremovesomeonemembership
+	thingpublisherinterface --> controlremovesomeonemembership
+	thingpeople --- controlviewpeople
+	thingorganization --- controlviewpeople
+	thingorganizationinterface --> controlviewpeople
+	thinguser --- controlmakeuser
+	thinguserinterface --> controlmakeuser
+	thingowner --- controlremoveuserowner
+	thingownerinterface --> controlremoveuserowner
+	thinguser --- controlremoveuserowner
+
+@enduml

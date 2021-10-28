@@ -1,0 +1,32 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> View " ];
+201 [label="<f0>  |<f1> Dataset " color=red];
+202 [label="<f0>  |<f1> User " color=red];
+203 [label="<f0>  |<f1> Viewer " ];
+204 [label="<f0>  |<f1> Username " color=red];
+205 [label="<f0>  |<f1> Data Types\nHierarchy " color=red];
+206 [label="Platform Administrator" shape=box];
+207 [label="Api User" shape=box];
+208 [label="User" shape=box];
+209 [label="{<f0> 1.0|<f1> Have A View On All Datasets All Users }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Translate The Data Types Hierarchies Of The Viewer }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Understand }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> Set Own Username }" shape=Mrecord];
+5 [label="{<f0> 5.0|<f1> Perform management actions on any dataset. }" shape=Mrecord];
+209 -> 5
+1001 [label="Platform administrator" shape=box];
+1001 -> 5
+1003 [label="Platform administrator" shape=box];
+1003 -> 5
+5 -> 201  [label="Dataset"]
+206 -> 209
+206 -> 210
+208 -> 212
+209 -> 200 [label="View"]
+209 -> 201 [label="Dataset"]
+210 -> 205 [label="Data Types\nHierarchy"]
+210 -> 203 [label="Viewer"]
+212 -> 204 [label="Username"]
+209 -> 202 [label="User"]
+}

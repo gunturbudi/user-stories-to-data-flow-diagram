@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Item " color=red];
+201 [label="<f0>  |<f1> Record " color=red];
+202 [label="<f0>  |<f1> Mechanism " ];
+203 [label="Data Curator" shape=box];
+204 [label="{<f0> 1.0|<f1> Accessed }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> Upload A New Version Of An Item Has Changed Still Allowing }" shape=Mrecord];
+206 [label="{<f0> 3.0|<f1> Stored }" shape=Mrecord];
+207 [label="{<f0> 4.0|<f1> Have A Mechanism }" shape=Mrecord];
+208 [label="{<f0> 5.0|<f1> Allow For Records For Items Not Do Need }" shape=Mrecord];
+203 -> 204
+203 -> 205
+203 -> 206
+203 -> 207
+203 -> 208
+205 -> 204
+205 -> 200 [label="Item"]
+207 -> 208
+207 -> 202 [label="Mechanism"]
+208 -> 206
+208 -> 201 [label="Record"]
+208 -> 200 [label="Item"]
+}

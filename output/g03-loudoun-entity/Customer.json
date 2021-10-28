@@ -1,0 +1,81 @@
+[
+  {
+    "text": "As a Customer, I want to Create a Customer Portal User Account, so that I can log on to the Customer Portal and perform transactions that first require user authentication.",
+    "entities": [
+      {
+        "text": "Customer",
+        "label": "Data"
+      },
+      {
+        "text": "Create",
+        "label": "Processing"
+      },
+      {
+        "text": "User Account",
+        "label": "PII"
+      },
+      {
+        "text": "log on",
+        "label": "Processing"
+      },
+      {
+        "text": "transactions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Customer, I want to Request Inspection, so that a County inspector is assigned to perform an inspection of my project.",
+    "entities": [
+      {
+        "text": "Customer",
+        "label": "Data"
+      },
+      {
+        "text": "Request Inspection",
+        "label": "Processing"
+      },
+      {
+        "text": "County inspector",
+        "label": "Data"
+      },
+      {
+        "text": "project",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Inspector, I want to Conduct Inspections, so that I can validate Customer compliance with code and regulations and provide results of the inspection to the Customer.",
+    "entities": [
+      {
+        "text": "Inspector,",
+        "label": "Data"
+      },
+      {
+        "text": "Conduct Inspections",
+        "label": "Processing"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "Customer compliance",
+        "label": "PII"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "results of the inspection",
+        "label": "PII"
+      },
+      {
+        "text": "Customer",
+        "label": "Data"
+      }
+    ]
+  }
+]

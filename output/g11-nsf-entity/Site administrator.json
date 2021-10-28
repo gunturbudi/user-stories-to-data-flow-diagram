@@ -1,0 +1,28 @@
+[
+  {
+    "text": "As a site administrator, I want to understand how other similar organizations are handling visual design, so that I can make informed decisions about what appears to work well and what doesn't.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to understand how other similar organizations are handling content, so that I can make informed decisions about what appears to work well and what doesn't.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "handling",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      }
+    ]
+  }
+]

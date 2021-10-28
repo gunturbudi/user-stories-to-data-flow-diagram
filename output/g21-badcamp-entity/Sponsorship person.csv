@@ -1,0 +1,21 @@
+id,value,style,source,target,type
+4,Post my job listing on the badcamp site.,ellipse,null,null,process
+200,Sponsor,shape=partialRectangle,null,null,data_base
+201,Job,shape=partialRectangle,null,null,data_base
+202,Sponsorship Person,shape=partialRectangle,null,null,data_base
+203,Anonymoususer,rounded=0,null,null,external_entity
+204,Learn,ellipse,null,null,process
+205,Posting Jobs As A Sponsor,ellipse,null,null,process
+206,Contact Jobs As A Sponsor The Sponsorship Person,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,205,204,endArrow=classic
+211,Job,endArrow=classic,205,201,endArrow=classic
+212,Sponsor,endArrow=classic,205,200,endArrow=classic
+213,,endArrow=classic,206,204,endArrow=classic
+214,Sponsorship Person,endArrow=classic,206,202,endArrow=classic
+215,Sponsor,endArrow=classic,206,200,endArrow=classic
+216,Job,endArrow=classic,206,201,endArrow=classic
+1000,,endArrow=classic,204,4,endArrow=classic
+1001,Job listing,rounded=0,null,null,external_entity
+1002,Job listing,endArrow=classic,4,1001,endArrow=classic

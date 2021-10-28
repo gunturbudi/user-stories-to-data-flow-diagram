@@ -1,0 +1,22 @@
+id,value,style,source,target,type
+200,Authenticated User,shape=partialRectangle,null,null,data_base
+201,Day,shape=partialRectangle,null,null,data_base
+202,Registration,shape=partialRectangle,null,null,data_base
+203,Training,shape=partialRectangle,null,null,data_base
+204,Checkbox,shape=partialRectangle,null,null,data_base
+205,Schedule,shape=partialRectangle,null,null,data_base
+206,Cancellation Term,shape=partialRectangle,null,null,data_base
+207,Trainee,rounded=0,null,null,external_entity
+208,Limit To Registration Per Day Per Authenticated User,ellipse,null,null,process
+209,See,ellipse,null,null,process
+210,Accept The Cancellation Terms With A Checkbox,ellipse,null,null,process
+211,Add To Schedule,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,210,endArrow=classic
+215,,endArrow=classic,207,211,endArrow=classic
+216,Registration,endArrow=classic,208,202,endArrow=classic
+217,Day,endArrow=classic,208,201,endArrow=classic
+218,Authenticated User,endArrow=classic,208,200,endArrow=classic
+219,Cancellation Term,endArrow=classic,210,206,endArrow=classic
+220,Checkbox,endArrow=classic,210,204,endArrow=classic
+221,Schedule,endArrow=classic,211,205,endArrow=classic

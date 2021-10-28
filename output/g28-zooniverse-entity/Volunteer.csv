@@ -1,0 +1,66 @@
+id,value,style,source,target,type
+200,Experience,shape=partialRectangle,null,null,data_base
+201,Volunteer,shape=partialRectangle,null,null,data_base
+202,Classification,shape=partialRectangle,null,null,data_base
+203,Weight,shape=partialRectangle,null,null,data_base
+204,Text,shape=partialRectangle,null,null,data_base
+205,Video,shape=partialRectangle,null,null,data_base
+206,Image,shape=partialRectangle,null,null,data_base
+207,Education,shape=partialRectangle,null,null,data_base
+208,Subject,shape=partialRectangle,null,null,data_base
+209,Interesting Comment,shape=partialRectangle,null,null,data_base
+210,Previous Experience,shape=partialRectangle,null,null,data_base
+211,Different Project,shape=partialRectangle,null,null,data_base
+212,Zooniverse Admin,rounded=0,null,null,external_entity
+213,Identify Volunteer Types,ellipse,null,null,process
+214,Assess The Probability Of A Volunteer’s Classification On Experience,ellipse,null,null,process
+215,Assess Weight,ellipse,null,null,process
+216,Know,ellipse,null,null,process
+217,Interrupt A Volunteer,ellipse,null,null,process
+218,Interrupt A Volunteer With An Image,ellipse,null,null,process
+219,Interrupt A Volunteer With A Video,ellipse,null,null,process
+220,Educate A Volunteer,ellipse,null,null,process
+221,Educate A Volunteer With A Video,ellipse,null,null,process
+222,Educate A Volunteer With An Image,ellipse,null,null,process
+223,Which Piece Of Education Give To A Volunteer,ellipse,null,null,process
+224,What Say To A Volunteer,ellipse,null,null,process
+225,Recommend Different Projects To Volunteers On Previous Experiences,ellipse,null,null,process
+227,,endArrow=classic,212,213,endArrow=classic
+228,,endArrow=classic,212,214,endArrow=classic
+229,,endArrow=classic,212,215,endArrow=classic
+230,,endArrow=classic,212,216,endArrow=classic
+231,,endArrow=classic,212,216,endArrow=classic
+232,,endArrow=classic,212,217,endArrow=classic
+233,,endArrow=classic,212,220,endArrow=classic
+234,,endArrow=classic,212,223,endArrow=classic
+235,,endArrow=classic,212,224,endArrow=classic
+236,,endArrow=classic,212,225,endArrow=classic
+237,Classification,endArrow=classic,214,202,endArrow=classic
+238,Experience,endArrow=classic,214,200,endArrow=classic
+239,Weight,endArrow=classic,215,203,endArrow=classic
+240,,endArrow=classic,216,223,endArrow=classic
+241,,endArrow=classic,216,224,endArrow=classic
+242,,endArrow=classic,217,216,endArrow=classic
+243,Volunteer,endArrow=classic,217,201,endArrow=classic
+244,Text,endArrow=classic,217,204,endArrow=classic
+245,,endArrow=classic,218,216,endArrow=classic
+246,Image,endArrow=classic,218,206,endArrow=classic
+247,Volunteer,endArrow=classic,218,201,endArrow=classic
+248,,endArrow=classic,219,216,endArrow=classic
+249,Video,endArrow=classic,219,205,endArrow=classic
+250,Volunteer,endArrow=classic,219,201,endArrow=classic
+251,,endArrow=classic,220,216,endArrow=classic
+252,Volunteer,endArrow=classic,220,201,endArrow=classic
+253,Text,endArrow=classic,220,204,endArrow=classic
+254,,endArrow=classic,221,216,endArrow=classic
+255,Video,endArrow=classic,221,205,endArrow=classic
+256,Volunteer,endArrow=classic,221,201,endArrow=classic
+257,,endArrow=classic,222,216,endArrow=classic
+258,Image,endArrow=classic,222,206,endArrow=classic
+259,Volunteer,endArrow=classic,222,201,endArrow=classic
+260,Education,endArrow=classic,223,207,endArrow=classic
+261,Volunteer,endArrow=classic,223,201,endArrow=classic
+262,Volunteer,endArrow=classic,224,201,endArrow=classic
+263,Different Project,endArrow=classic,225,211,endArrow=classic
+264,Previous Experience,endArrow=classic,225,210,endArrow=classic
+265,Volunteer,endArrow=classic,225,201,endArrow=classic

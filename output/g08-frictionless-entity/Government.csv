@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Datum,shape=partialRectangle,null,null,data_base
+201,Government,shape=partialRectangle,null,null,data_base
+202,"Civic , Tech Activist",rounded=0,null,null,external_entity
+203,Make,ellipse,null,null,process
+204,Assess The Quality Of Data The Government,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,,endArrow=classic,203,204,endArrow=classic
+209,Datum,endArrow=classic,204,200,endArrow=classic
+211,Government,endArrow=classic,204,201,endArrow=classic

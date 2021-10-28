@@ -1,0 +1,22 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datapackage " color=red];
+201 [label="Data Analyst" shape=box];
+202 [label="{<f0> 1.0|<f1> Download A Data Package }" shape=Mrecord];
+203 [label="{<f0> 2.0|<f1> Update Previously Downloaded Data Package }" shape=Mrecord];
+204 [label="{<f0> 3.0|<f1> Compare Different Versions Of Some Datapackage }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Generate new insights. }" shape=Mrecord];
+202 -> 4
+1001 [label="<f0>  |<f1> Data " color=red];
+4 -> 1001 [label="Data"]
+5 [label="{<f0> 5.0|<f1> Adjust my analytics code to the desired schema version. }" shape=Mrecord];
+204 -> 5
+1004 [label="<f0>  |<f1> Analytics code " color=red];
+5 -> 1004 [label="Analytics code"]
+201 -> 202
+201 -> 203
+201 -> 204
+202 -> 200 [label="Datapackage"]
+203 -> 200 [label="Datapackage"]
+204 -> 200 [label="Datapackage"]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "text": "As a repoadmin, I want to have users to be presented with a license or a selection of licenses, specific to the collection, and deposit to be denied if the submitter does not accept the license.",
+    "entities": [
+      {
+        "text": "repoadmin,",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "presented",
+        "label": "Processing"
+      },
+      {
+        "text": "deposit",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to schedule a message to users to be displayed on each page on the repository between select times for things like notification of upcoming downtime.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "message",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a collection curator, I want users to contact me directly from the repository to request access to restricted objects.",
+    "entities": [
+      {
+        "text": "collection curator",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "request access",
+        "label": "Processing"
+      }
+    ]
+  }
+]

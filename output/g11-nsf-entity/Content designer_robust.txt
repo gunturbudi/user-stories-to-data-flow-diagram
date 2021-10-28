@@ -1,0 +1,43 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Nsf" as thingNSF
+	entity "Editorial Plan" as thingeditorialplan
+	entity "Recommendation" as thingrecommendation
+	entity "Content Type" as thingcontenttype
+	entity "Content Design" as thingcontentdesign
+	actor "Content Designer" as actorcontentdesigner
+	circle "Understanding" as thingbetterunderstanding
+	circle "Value" as thingvalue
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	boundary "Recommendation\nInterface" as thingrecommendationinterface #grey
+	control "Develop A\nBetter Understanding\nOf Editorial\nPlan" as controldevelopbetterunderstandingeditorialplan
+	control "Develop A\nBetter Understanding\nOf Nsf's\nContent Types" as controldevelopbetterunderstanding
+	control "Demonstrate The\nValue Of\nUser, Centered\nContent Design\n'S An\nIntegral Part\nOf Recommendations" as controldemonstratevalueensurerecommendation
+	control "Ensure" as controlensure
+
+	thingNSF <.. thingcontenttype
+	thingrecommendation <.. thingcontentdesign
+	thingcontenttype *-- thingbetterunderstanding
+	thingeditorialplan *-- thingbetterunderstanding
+	thingcontentdesign *-- thingvalue
+	actorcontentdesigner --- thingplaninterface
+	actorcontentdesigner --- thingtypeinterface
+	actorcontentdesigner --- thingrecommendationinterface
+	thingeditorialplan --- controldevelopbetterunderstandingeditorialplan
+	thingplaninterface --> controldevelopbetterunderstandingeditorialplan
+	thingbetterunderstanding --- controldevelopbetterunderstandingeditorialplan
+	thingbetterunderstanding --- controldevelopbetterunderstanding
+	thingcontenttype --- controldevelopbetterunderstanding
+	thingtypeinterface --> controldevelopbetterunderstanding
+	thingvalue --- controldemonstratevalueensurerecommendation
+	thingcontentdesign --- controldemonstratevalueensurerecommendation
+	thingrecommendation --- controldemonstratevalueensurerecommendation
+	thingrecommendationinterface --> controldemonstratevalueensurerecommendation
+	controldemonstratevalueensurerecommendation --> controlensure
+	thingrecommendationinterface --> controlensure
+
+@enduml

@@ -1,0 +1,181 @@
+[
+  {
+    "text": "As an Owner, I want to edit my profile, so that that it is updated with new information.",
+    "entities": [
+      {
+        "text": "Owner,",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Owner, I want to invite an existing user, so that the user can become a member of my publisher.",
+    "entities": [
+      {
+        "text": "Owner",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "existing user",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to invite someone using their email to sign up and become a member of my Publisher, so that that they are authorized to publish data packages under my Publisher.",
+    "entities": [
+      {
+        "text": "owner,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      },
+      {
+        "text": "member",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to remove someone from membership in my publisher, so that they no longer have ability to publish or modify my data packages.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "membership",
+        "label": "PII"
+      },
+      {
+        "text": "publisher",
+        "label": "PII"
+      },
+      {
+        "text": "publish",
+        "label": "Processing"
+      },
+      {
+        "text": "modify",
+        "label": "Processing"
+      },
+      {
+        "text": "data packages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to view all the people in my organization and what roles they have, so that that I can change these if I want.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      },
+      {
+        "text": "roles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to make a user an owner, so that they have full control.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "full control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an owner, I want to remove a user as an owner, so that they are just a member and no longer have full control.",
+    "entities": [
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "owner",
+        "label": "Data"
+      },
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "full control",
+        "label": "Processing"
+      }
+    ]
+  }
+]

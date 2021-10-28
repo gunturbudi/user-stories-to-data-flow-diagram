@@ -1,0 +1,211 @@
+id,value,style,source,target,type
+23,Receive a response to a request for a meeting or information that is a result of the preapplication assistance.,ellipse,null,null,process
+24,Initiate a transaction with the county.,ellipse,null,null,process
+25,Satisfy documentation requirements for my application.,ellipse,null,null,process
+26,"Understand where the provisioning of my service is in the process, such as information related to service levels, fees, plan review, permit, or inspection results.",ellipse,null,null,process
+27,Change information on an application.,ellipse,null,null,process
+28,Preserve the history of draft proffer statements submitted by the applicant.,ellipse,null,null,process
+29,Ensure all pre-hearing requirements are satisfied in time for the hearing.,ellipse,null,null,process
+30,Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing.,ellipse,null,null,process
+31,"Ensure all plan review tasks are completed, results have been sent to the applicant and any downstream steps are initiated such has a final review or payment for permit issuance.",ellipse,null,null,process
+32,Obtain occupancy.,ellipse,null,null,process
+200,Preapplication Assistance,shape=partialRectangle,null,null,data_base
+201,Application,shape=partialRectangle,null,null,data_base
+202,Support Documentation,shape=partialRectangle,null,null,data_base
+203,Fee,shape=partialRectangle,null,null,data_base
+204,Transaction,shape=partialRectangle,null,null,data_base
+205,Formal Response,shape=partialRectangle,null,null,data_base
+206,Applicant,shape=partialRectangle,null,null,data_base
+207,"Zoning ,\nRelated Permit",shape=partialRectangle,null,null,data_base
+208,Requirement,shape=partialRectangle,null,null,data_base
+209,Execution,shape=partialRectangle,null,null,data_base
+210,Outcome,shape=partialRectangle,null,null,data_base
+211,Plan,shape=partialRectangle,null,null,data_base
+212,"Development ,\nRelated Permit",shape=partialRectangle,null,null,data_base
+213,Building Development\nProject,shape=partialRectangle,null,null,data_base
+214,Draft Proffer,shape=partialRectangle,null,null,data_base
+215,Code Modification,shape=partialRectangle,null,null,data_base
+216,Applicant,rounded=0,null,null,external_entity
+217,Staff Member,rounded=0,null,null,external_entity
+218,"Zoning , Staff Member",rounded=0,null,null,external_entity
+219,"Plan , Review , Staff Member",rounded=0,null,null,external_entity
+220,"Development , Staff Member",rounded=0,null,null,external_entity
+221,Request Preapplication Assistance,ellipse,null,null,process
+222,Submit Application,ellipse,null,null,process
+223,Submit Supporting Documentation,ellipse,null,null,process
+224,Pay Fee,ellipse,null,null,process
+225,Check The Status Of A Transaction,ellipse,null,null,process
+226,Modify Application,ellipse,null,null,process
+227,Send A Formal Response To Applicant,ellipse,null,null,process
+228,Track The Draft Proffers,ellipse,null,null,process
+229,"Issue The Zoning, Related Permits",ellipse,null,null,process
+230,Satisfy,ellipse,null,null,process
+231,Hearing Requirements,ellipse,null,null,process
+232,Hearing Execution,ellipse,null,null,process
+233,Support,ellipse,null,null,process
+234,Prepare,ellipse,null,null,process
+235,Request A Plan Review Meeting,ellipse,null,null,process
+236,Conduct A Plan Review With The Applicant,ellipse,null,null,process
+237,Record The Outcome,ellipse,null,null,process
+238,Resubmit Plans,ellipse,null,null,process
+239,Review The Code Modifications The Applicant,ellipse,null,null,process
+240,Track The Completion Of Required Plan Reviews,ellipse,null,null,process
+241,"Issue A Development, Related Permit",ellipse,null,null,process
+242,Complete Building Development Project,ellipse,null,null,process
+244,,endArrow=classic,216,221,endArrow=classic
+245,,endArrow=classic,216,222,endArrow=classic
+246,,endArrow=classic,216,223,endArrow=classic
+247,,endArrow=classic,216,224,endArrow=classic
+248,,endArrow=classic,216,225,endArrow=classic
+249,,endArrow=classic,216,226,endArrow=classic
+250,,endArrow=classic,216,230,endArrow=classic
+251,,endArrow=classic,216,231,endArrow=classic
+252,,endArrow=classic,216,235,endArrow=classic
+253,,endArrow=classic,216,238,endArrow=classic
+254,,endArrow=classic,216,240,endArrow=classic
+255,,endArrow=classic,216,242,endArrow=classic
+256,,endArrow=classic,217,227,endArrow=classic
+257,,endArrow=classic,217,228,endArrow=classic
+258,,endArrow=classic,217,232,endArrow=classic
+259,,endArrow=classic,217,234,endArrow=classic
+260,,endArrow=classic,217,236,endArrow=classic
+261,,endArrow=classic,218,229,endArrow=classic
+262,,endArrow=classic,218,241,endArrow=classic
+263,,endArrow=classic,219,227,endArrow=classic
+264,,endArrow=classic,219,235,endArrow=classic
+265,,endArrow=classic,219,236,endArrow=classic
+266,,endArrow=classic,219,237,endArrow=classic
+267,,endArrow=classic,219,238,endArrow=classic
+268,,endArrow=classic,219,239,endArrow=classic
+269,,endArrow=classic,219,240,endArrow=classic
+270,,endArrow=classic,220,229,endArrow=classic
+271,,endArrow=classic,220,241,endArrow=classic
+272,Preapplication Assistance,endArrow=classic,221,200,endArrow=classic
+273,Application,endArrow=classic,222,201,endArrow=classic
+274,Support Documentation,endArrow=classic,223,202,endArrow=classic
+275,Fee,endArrow=classic,224,203,endArrow=classic
+276,Transaction,endArrow=classic,225,204,endArrow=classic
+277,Application,endArrow=classic,226,201,endArrow=classic
+278,Formal Response,endArrow=classic,227,205,endArrow=classic
+279,Applicant,endArrow=classic,227,206,endArrow=classic
+280,Draft Proffer,endArrow=classic,228,214,endArrow=classic
+281,"Zoning ,\nRelated Permit",endArrow=classic,229,207,endArrow=classic
+282,,endArrow=classic,230,231,endArrow=classic
+283,Requirement,endArrow=classic,231,208,endArrow=classic
+284,Execution,endArrow=classic,232,209,endArrow=classic
+285,,endArrow=classic,233,232,endArrow=classic
+286,,endArrow=classic,234,232,endArrow=classic
+287,Applicant,endArrow=classic,236,206,endArrow=classic
+288,Outcome,endArrow=classic,237,210,endArrow=classic
+289,Plan,endArrow=classic,238,211,endArrow=classic
+290,Code Modification,endArrow=classic,239,215,endArrow=classic
+291,Plan,endArrow=classic,240,211,endArrow=classic
+292,"Development ,\nRelated Permit",endArrow=classic,241,212,endArrow=classic
+293,Building Development\nProject,endArrow=classic,242,213,endArrow=classic
+1000,,endArrow=classic,221,23,endArrow=classic
+1001,Applicant,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,23,endArrow=classic
+1003,Applicant,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,23,endArrow=classic
+1005,Applicant,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,23,endArrow=classic
+1007,Applicant,rounded=0,null,null,external_entity
+1008,,endArrow=classic,1007,23,endArrow=classic
+1009,Meeting,rounded=0,null,null,external_entity
+1010,Meeting,endArrow=classic,23,1009,endArrow=classic
+1011,,endArrow=classic,222,24,endArrow=classic
+1012,Applicant,rounded=0,null,null,external_entity
+1013,,endArrow=classic,1012,24,endArrow=classic
+1014,Applicant,rounded=0,null,null,external_entity
+1015,,endArrow=classic,1014,24,endArrow=classic
+1016,Applicant,rounded=0,null,null,external_entity
+1017,,endArrow=classic,1016,24,endArrow=classic
+1018,Applicant,rounded=0,null,null,external_entity
+1019,,endArrow=classic,1018,24,endArrow=classic
+1020,Information,rounded=0,null,null,external_entity
+1021,Information,endArrow=classic,24,1020,endArrow=classic
+1022,Plans,rounded=0,null,null,external_entity
+1023,Plans,endArrow=classic,24,1022,endArrow=classic
+1024,Documents,rounded=0,null,null,external_entity
+1025,Documents,endArrow=classic,24,1024,endArrow=classic
+1026,Transaction,endArrow=classic,24,204,endArrow=classic
+1027,,endArrow=classic,223,25,endArrow=classic
+1028,Applicant,rounded=0,null,null,external_entity
+1029,,endArrow=classic,1028,25,endArrow=classic
+1030,Applicant,rounded=0,null,null,external_entity
+1031,,endArrow=classic,1030,25,endArrow=classic
+1032,Applicant,rounded=0,null,null,external_entity
+1033,,endArrow=classic,1032,25,endArrow=classic
+1034,Applicant,rounded=0,null,null,external_entity
+1035,,endArrow=classic,1034,25,endArrow=classic
+1036,Application,endArrow=classic,25,201,endArrow=classic
+1037,,endArrow=classic,225,26,endArrow=classic
+1038,Applicant,rounded=0,null,null,external_entity
+1039,,endArrow=classic,1038,26,endArrow=classic
+1040,Applicant,rounded=0,null,null,external_entity
+1041,,endArrow=classic,1040,26,endArrow=classic
+1042,Applicant,rounded=0,null,null,external_entity
+1043,,endArrow=classic,1042,26,endArrow=classic
+1044,Applicant,rounded=0,null,null,external_entity
+1045,,endArrow=classic,1044,26,endArrow=classic
+1046,Service,rounded=0,null,null,external_entity
+1047,Service,endArrow=classic,26,1046,endArrow=classic
+1048,,endArrow=classic,216,27,endArrow=classic
+1049,Applicant,rounded=0,null,null,external_entity
+1050,,endArrow=classic,1049,27,endArrow=classic
+1051,Applicant,rounded=0,null,null,external_entity
+1052,,endArrow=classic,1051,27,endArrow=classic
+1053,Applicant,rounded=0,null,null,external_entity
+1054,,endArrow=classic,1053,27,endArrow=classic
+1055,Applicant,rounded=0,null,null,external_entity
+1056,,endArrow=classic,1055,27,endArrow=classic
+1057,Information,rounded=0,null,null,external_entity
+1058,Information,endArrow=classic,27,1057,endArrow=classic
+1059,Staff member,rounded=0,null,null,external_entity
+1060,,endArrow=classic,1059,28,endArrow=classic
+1061,,endArrow=classic,228,28,endArrow=classic
+1062,Staff member,rounded=0,null,null,external_entity
+1063,,endArrow=classic,1062,28,endArrow=classic
+1064,Draft proffer statements,endArrow=classic,28,214,endArrow=classic
+1065,,endArrow=classic,230,29,endArrow=classic
+1066,Applicant,rounded=0,null,null,external_entity
+1067,,endArrow=classic,1066,29,endArrow=classic
+1068,Applicant,rounded=0,null,null,external_entity
+1069,,endArrow=classic,1068,29,endArrow=classic
+1070,Applicant,rounded=0,null,null,external_entity
+1071,,endArrow=classic,1070,29,endArrow=classic
+1072,Applicant,rounded=0,null,null,external_entity
+1073,,endArrow=classic,1072,29,endArrow=classic
+1074,Pre-hearing requirements,rounded=0,null,null,external_entity
+1075,Pre-hearing requirements,endArrow=classic,29,1074,endArrow=classic
+1076,Staff member,rounded=0,null,null,external_entity
+1077,,endArrow=classic,1076,30,endArrow=classic
+1078,,endArrow=classic,232,30,endArrow=classic
+1079,Staff member,rounded=0,null,null,external_entity
+1080,,endArrow=classic,1079,30,endArrow=classic
+1081,Pre-hearing requirements,rounded=0,null,null,external_entity
+1082,Pre-hearing requirements,endArrow=classic,30,1081,endArrow=classic
+1083,Plan review staff member,rounded=0,null,null,external_entity
+1084,,endArrow=classic,1083,31,endArrow=classic
+1085,Plan review staff member,rounded=0,null,null,external_entity
+1086,,endArrow=classic,1085,31,endArrow=classic
+1087,Plan review staff member,rounded=0,null,null,external_entity
+1088,,endArrow=classic,1087,31,endArrow=classic
+1089,,endArrow=classic,240,31,endArrow=classic
+1090,Plan review staff member,rounded=0,null,null,external_entity
+1091,,endArrow=classic,1090,31,endArrow=classic
+1092,Results,rounded=0,null,null,external_entity
+1093,Results,endArrow=classic,31,1092,endArrow=classic
+1094,Payment,rounded=0,null,null,external_entity
+1095,Payment,endArrow=classic,31,1094,endArrow=classic
+1096,,endArrow=classic,242,32,endArrow=classic
+1097,Applicant,rounded=0,null,null,external_entity
+1098,,endArrow=classic,1097,32,endArrow=classic
+1099,Applicant,rounded=0,null,null,external_entity
+1100,,endArrow=classic,1099,32,endArrow=classic
+1101,Applicant,rounded=0,null,null,external_entity
+1102,,endArrow=classic,1101,32,endArrow=classic
+1103,Applicant,rounded=0,null,null,external_entity
+1104,,endArrow=classic,1103,32,endArrow=classic
+1105,Bond,rounded=0,null,null,external_entity
+1106,Bond,endArrow=classic,32,1105,endArrow=classic

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Photographer" as thingphotographer
+	entity "Image" as thingimage
+	actor "Archivist" as actorarchivist
+	boundary "Photographer\nInterface" as thingphotographerinterface #grey
+	control "Search Images\nBy Photographer" as controlsearchimage
+
+	thingphotographer <.. thingimage
+	actorarchivist --- thingphotographerinterface
+	thingimage --- controlsearchimage
+	thingphotographer --- controlsearchimage
+	thingphotographerinterface --> controlsearchimage
+
+@enduml

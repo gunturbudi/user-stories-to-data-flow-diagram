@@ -1,0 +1,46 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Public Dataset" as thingpublicdataset
+	entity "User" as thinguser
+	entity "Dataset" as thingdataset
+	entity "View" as thingview
+	entity "Platform Administrator" as thingplatformadministrator #grey
+	entity "Geojson ,\nAdditional Source" as thinggeojsonadditionalsource
+	entity "Viewer" as thingviewer
+	entity "Data Types\nHierarchy" as thingdatatypeshierarchy
+	actor "Platform Administrator" as actorplatformadministrator
+	actor "Datum ,\nPublishing User" as actordatapublishinguser
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	boundary "Viewer\nInterface" as thingviewerinterface #grey
+	control "Hide Any\nAlready Public\nDataset" as controlhidepublicdataset
+	control "Have A\nView On\nAll Datasets\nAll Users" as controlhaveview
+	control "Delete Any\nDataset" as controldeletedataset
+	control "Provide The\nPlatform Administrator\nWith Geojson,\nAdditional Sources" as controlprovideplatformadministratorgeojsonadditionalsource
+	control "Translate The\nData Types\nHierarchies Of\nThe Viewer" as controltranslatedatatypeshierarchies
+
+	thinguser <.. thingdataset
+	thingdataset <.. thingview
+	thinggeojsonadditionalsource <.. thingplatformadministrator
+	thingviewer <.. thingdatatypeshierarchy
+	actorplatformadministrator --- thingdatasetinterface
+	actordatapublishinguser --- thingsourceinterface
+	actorplatformadministrator --- thingviewerinterface
+	thingpublicdataset --- controlhidepublicdataset
+	thingdatasetinterface --> controlhidepublicdataset
+	thingview --- controlhaveview
+	thingdataset --- controlhaveview
+	thingdatasetinterface --> controlhaveview
+	thingdataset --- controldeletedataset
+	thingdatasetinterface --> controldeletedataset
+	thingplatformadministrator --- controlprovideplatformadministratorgeojsonadditionalsource
+	thinggeojsonadditionalsource --- controlprovideplatformadministratorgeojsonadditionalsource
+	thingsourceinterface --> controlprovideplatformadministratorgeojsonadditionalsource
+	thingdatatypeshierarchy --- controltranslatedatatypeshierarchies
+	thingviewer --- controltranslatedatatypeshierarchies
+	thingviewerinterface --> controltranslatedatatypeshierarchies
+
+@enduml

@@ -1,0 +1,905 @@
+[
+  {
+    "text": "As a repository manager, I want to know all the collections and objects in the DAMS for which I have custodial responsibility.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "objects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to be able to update repository information in one place and be assured updates will be propagated to all relevant places.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      },
+      {
+        "text": "repository information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to constrain curatorial access to my units assets to staff members of my unit and to DAMS managers having universal access.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "constrain",
+        "label": "Processing"
+      },
+      {
+        "text": "units assets",
+        "label": "PII"
+      },
+      {
+        "text": "staff members",
+        "label": "Data"
+      },
+      {
+        "text": "unit",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know all the collections for which I have curatorial responsibility.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to compose collections, limiting the collection to the items sharing the same provenance, limiting the collection to represent a part of a collection have a singular provenance, or assembly a collection from other collections and objects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "compose",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      },
+      {
+        "text": "assembly",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to say one collection is related to another collection.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "say",
+        "label": "Processing"
+      },
+      {
+        "text": "related",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to describe a collection, including its title, it's inclusive / bulk dates, its language(s), and many other aspects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      },
+      {
+        "text": "bulk dates",
+        "label": "PII"
+      },
+      {
+        "text": "language(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate names related to the collection either as creator, source, or subject.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "names",
+        "label": "PII"
+      },
+      {
+        "text": "creator",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate subjects related to the collection.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "subjects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate other descriptions of the collection that are outside the DAMS and of probable importance to users.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know all events occurring to a collection.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want know all the components belonging to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As repository manager, I want to know all the files belonging to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to describe an object, including its title, date(s), language(s), and other aspects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      },
+      {
+        "text": "date(s",
+        "label": "PII"
+      },
+      {
+        "text": "language(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate names related to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "names",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate subjects that are related to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "subjects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate the copyright status of an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any statutes pertinent to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "statutes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any license pertinent to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "license",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any other rights pertinent to an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any external versions or descriptions of an object that may be of probable importance to an user.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "external versions",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know all events done to an object over the object's life cycle.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "events done",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to represent the physical and/or logical structure of an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "represent",
+        "label": "Processing"
+      },
+      {
+        "text": "physical",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to list all the components, in their appropriate order, for an object.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "components",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to link, when appropriate, a component to another component or to a file.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to describe each component as necessary, including title, date(s), language(s), and other facets.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      },
+      {
+        "text": "date(s",
+        "label": "PII"
+      },
+      {
+        "text": "language(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any name that is pertinent to the component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate any subject that is pertinent to the component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "subject",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate if the component has a copyright status different than that of of the object as a whole.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate if a statute pertains to the component, apart from the object as a whole.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate if a license pertains to the component, apart from the object as a whole.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate if other rights pertain to the component, apart from the object as a whole.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know all events occurring to a component over its life cycle.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know all the content files in the DAMS for my repository's objects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "content files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to associate a content file with either an object or an object component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "content file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know any event that occurred to a content file for any of my repository's objects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to provide a title, in all useful forms, for my repository's collections, objects, and object components.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "title",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know any changes occurring to titles for repository's collections, objects, and object components.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "titles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate for an object or object component the place of publication, the publisher, edition, etc., when pertinent.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know of any changes made to the origin Info for an object, including its component parts.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "origin Info",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to describe various facets of a collection, object, or object component that are not addressable via title, date, name, and subject entities.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "subject entities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know of all modifications made to notes for my repository's collections, objects, or object components.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "modifications",
+        "label": "PII"
+      },
+      {
+        "text": "notes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate the language(s) for present in a collection, object, or object component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "language(s",
+        "label": "PII"
+      },
+      {
+        "text": "present",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know of any changes made to language(s) indicated for a collection, object, or object component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "language(s",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to register a name record for each unique identity associated with my repository's collections and objects.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "register",
+        "label": "Processing"
+      },
+      {
+        "text": "name record",
+        "label": "PII"
+      },
+      {
+        "text": "unique identity",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate that a name pertinent to a collection, object, or object component has a specific role, such as illustrator, photographer, etc.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "role",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate all subjects that are pertinent to a collection, object, or object component.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "subjects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate the geo-coordinates for any resource that believe useful to an end user.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "geo-coordinates",
+        "label": "PII"
+      },
+      {
+        "text": "end user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to indicate all other pertinent versions or descriptions of a resource that are external to the DAMS.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know if the checksum for any of my repository's content files that have changed.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "checksum",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to know, where pertinent, the hardware and software used to generate a content file.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      }
+    ]
+  }
+]

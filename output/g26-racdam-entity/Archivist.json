@@ -1,0 +1,1131 @@
+[
+  {
+    "text": "As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "apply",
+        "label": "Processing"
+      },
+      {
+        "text": "license",
+        "label": "PII"
+      },
+      {
+        "text": "rights statement",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to mark individual files as restricted, so that they don't get shared by mistake.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "individual files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to mark groups of files as restricted, so that they don't get shared by mistake.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "groups of files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to restrict a file from view.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to restrict a group of files from view.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict",
+        "label": "Processing"
+      },
+      {
+        "text": "group of files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to set a date on which restrictions will be removed from a file, so that that I don't have to update this by hand.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrictions",
+        "label": "PII"
+      },
+      {
+        "text": "update",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to add restriction end date information to files, so that I can share files when they become open.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "add restriction",
+        "label": "Processing"
+      },
+      {
+        "text": "end date information",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to add detailed restrictions to groups of files, so that I know if and how they can be shared.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "groups of files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to restrict access to some files by IP address, so that I can give reading room access only to certain digital files.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict access",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "IP address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to restrict access to certain files by user, so that I can allow donor representatives to see certain files.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict access",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "PII"
+      },
+      {
+        "text": "donor representatives",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "photo",
+        "label": "PII"
+      },
+      {
+        "text": "researcher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to select existing rights statuses and statements, so that I can easily create uniform rights statements.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "select",
+        "label": "Processing"
+      },
+      {
+        "text": "statements",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to redact information in digital files for a period of time, so that I can provide access to non-sensitive portions of a record.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "redact",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "provide access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to have an online form for licensing archival material, so that the process is more transparent and some of the back and forth can be eliminated.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "licensing",
+        "label": "Processing"
+      },
+      {
+        "text": "archival material",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to batch edit metadata about files.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "batch edit",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to upload a single file.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to upload groups of files, so that I can save time.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "groups of files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to automatically create access copies of files, so that I don't have to do this manually.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically create",
+        "label": "Processing"
+      },
+      {
+        "text": "access copies",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to automatically generate technical metadata, so that I know the file size.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically generate",
+        "label": "Processing"
+      },
+      {
+        "text": "technical metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to distinguish between digital objects digitized to preservation standards and those created for access purposes only, so that I know whether I should apply preservation actions.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "distinguish",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to link electronic versions of researchers' publications to citations, so that I can share them with other researchers.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to upload scans of images created while answering research requests, so that they can be used again for other research requests.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "scans of images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to create quality scans of images and documents, so that they can be reused.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "documents",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to automatically create access derivatives of digital objects, so that I don't have to do this manually.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically",
+        "label": "Processing"
+      },
+      {
+        "text": "create access",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to automatically assign unique identifiers to material I scan, so that I avoid potential errors.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically assign",
+        "label": "Processing"
+      },
+      {
+        "text": "unique identifiers",
+        "label": "PII"
+      },
+      {
+        "text": "material",
+        "label": "PII"
+      },
+      {
+        "text": "scan",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to automatically embed metadata in file headers, so that I avoid repetitive and easily-forgotten tasks.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically embed",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to rotate images, so that I can orient them correctly.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "rotate",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to apply automatic contrast and level operations to a scanned file, so that I can eliminate unnecessary work.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to perform contrast, level and other manipulations manually, so that I can improve on results from automated tools.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "perform",
+        "label": "Processing"
+      },
+      {
+        "text": "contrast",
+        "label": "PII"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to manage scans of archival material created for educational visits, so that find and refer to them for another visit.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "manage scans",
+        "label": "Processing"
+      },
+      {
+        "text": "archival material",
+        "label": "PII"
+      },
+      {
+        "text": "refer",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to manage loan documentation, including preservation photos, forms and correspondence, so that I can find it easily later.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "loan documentation",
+        "label": "PII"
+      },
+      {
+        "text": "preservation photos",
+        "label": "PII"
+      },
+      {
+        "text": "forms",
+        "label": "PII"
+      },
+      {
+        "text": "correspondence",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to make information about rights available to researchers and donors, so that they know what they can do with images.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "make information",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to ensure that emails sent about specific objects contain accurate citation information, so that I can confirm which object is being referred to.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "emails",
+        "label": "PII"
+      },
+      {
+        "text": "sent",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to track use of a photo, so that I know if I've sent it to a researcher before.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "use of a photo",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to see what a particular user has downloaded, so that I can track use of assets.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "use of assets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to provide access to digital copies of unprocessed material, so that donors can access things they have given us.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "provide access",
+        "label": "Processing"
+      },
+      {
+        "text": "digital copies",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to make as much archival material as possible available for use, so that I can fulfill the RAC's mission.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "archival material",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to use archival content on the RAC website, so that I can integrate our collections into our web presence.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "archival content",
+        "label": "PII"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to browse through files in a collection.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search all files by keyword.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to upload inventories, so that our donor representatives have an easier time requesting their material.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "inventories",
+        "label": "PII"
+      },
+      {
+        "text": "donor representatives",
+        "label": "Data"
+      },
+      {
+        "text": "requesting",
+        "label": "Processing"
+      },
+      {
+        "text": "material",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search by tag, so that it makes finding particular photographs easier.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "tag",
+        "label": "PII"
+      },
+      {
+        "text": "photographs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to access the digital files on the X-drive, so that I can use them.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "digital files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to have electronic versions of the collection files available for staff use, so that I increase accessibility and I do not lose the original files.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to distinguish between images scanned in color or black and white, so that I know whether or not these images meet publication requirements.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "distinguish",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to access inventories for unprocessed collections, so that I can provide reference services to donors.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "inventories",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search images by photographer.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "photographer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search images by people represented in them.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "people represented",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search images by place the photo was taken.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "place the photo",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search images by rights.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search index cards and other non-public finding aids, so that I can provide better research assistance.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "index cards",
+        "label": "PII"
+      },
+      {
+        "text": "finding aids",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to view collection files, so that I can gain background information for processing a collection.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "collection files",
+        "label": "PII"
+      },
+      {
+        "text": "background information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to view physical locations for non-archival material, so that I can provide research services to donors.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "physical locations",
+        "label": "PII"
+      },
+      {
+        "text": "non-archival material",
+        "label": "PII"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to find files that cannot be made publicly available, so that I can easily access everything that's been digitized.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "visual representations",
+        "label": "PII"
+      },
+      {
+        "text": "index cards",
+        "label": "PII"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search individual material types.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "individual material types",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to search images by uploading an image, so that so I can find images when i don't have any metadata.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "uploading",
+        "label": "Processing"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  }
+]

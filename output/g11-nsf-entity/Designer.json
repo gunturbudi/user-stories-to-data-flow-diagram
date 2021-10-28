@@ -1,0 +1,37 @@
+[
+  {
+    "text": "As a designer, I want to have a new social media wireframe, so that I can begin implementing design.",
+    "entities": [
+      {
+        "text": "designer,",
+        "label": "Data"
+      },
+      {
+        "text": "social media wireframe",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a designer, I want to know what early indications of hypotheses might be, so that I can start planning for the first prototype.",
+    "entities": [
+      {
+        "text": "designer,",
+        "label": "Data"
+      },
+      {
+        "text": "early indications",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a designer, I want to have a style guide / design guide / content guide, so that we have a uniform way of delivering product.",
+    "entities": [
+      {
+        "text": "designer",
+        "label": "Data"
+      }
+    ]
+  }
+]

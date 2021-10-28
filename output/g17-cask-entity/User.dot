@@ -1,0 +1,93 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Default " ];
+201 [label="<f0>  |<f1> Value " ];
+202 [label="<f0>  |<f1> Property " color=red];
+203 [label="<f0>  |<f1> Schema " ];
+204 [label="<f0>  |<f1> Dataset " color=red];
+205 [label="<f0>  |<f1> Uniform Way " ];
+206 [label="<f0>  |<f1> Json String " ];
+207 [label="<f0>  |<f1> Time " color=red];
+208 [label="<f0>  |<f1> Migration Process " ];
+209 [label="<f0>  |<f1> Explore " ];
+210 [label="<f0>  |<f1> Effect " ];
+211 [label="<f0>  |<f1> Change " ];
+212 [label="<f0>  |<f1> Dataset Operation " color=red];
+213 [label="<f0>  |<f1> Datum " ];
+214 [label="<f0>  |<f1> Silent Loss " ];
+215 [label="<f0>  |<f1> Sql " ];
+216 [label="User" shape=box];
+217 [label="{<f0> 1.0|<f1> Find Out }" shape=Mrecord];
+218 [label="{<f0> 2.0|<f1> Specify The Schema Of A Dataset In A Uniform Way Across All Dataset Types }" shape=Mrecord];
+219 [label="{<f0> 3.0|<f1> Specify Schema As A Json String }" shape=Mrecord];
+220 [label="{<f0> 4.0|<f1> Specify Schema As A Sql Schema String }" shape=Mrecord];
+221 [label="{<f0> 5.0|<f1> Configure Time In A Uniform Way Across All Dataset Types }" shape=Mrecord];
+222 [label="{<f0> 6.0|<f1> Live }" shape=Mrecord];
+223 [label="{<f0> 7.0|<f1> See The Properties Used }" shape=Mrecord];
+224 [label="{<f0> 8.0|<f1> Configure A Dataset Instance }" shape=Mrecord];
+225 [label="{<f0> 9.0|<f1> Update The Properties Of A Dataset Instance }" shape=Mrecord];
+226 [label="{<f0> 10.0|<f1> Update A Single Property Of A Dataset Instance }" shape=Mrecord];
+227 [label="{<f0> 11.0|<f1> Knowing All Other Properties }" shape=Mrecord];
+228 [label="{<f0> 12.0|<f1> Remove A Single Property Of A Dataset Instance }" shape=Mrecord];
+229 [label="{<f0> 13.0|<f1> Trigger A Migration Process For A Dataset }" shape=Mrecord];
+230 [label="{<f0> 14.0|<f1> Specify As Part Of Dataset Configuration Explorable }" shape=Mrecord];
+231 [label="{<f0> 15.0|<f1> Specify The Explore Schema }" shape=Mrecord];
+232 [label="{<f0> 16.0|<f1> Enable Explore For A Dataset Not Configured For Initially Explore }" shape=Mrecord];
+233 [label="{<f0> 17.0|<f1> Disable Explore For A Dataset Configured For Initially Explore }" shape=Mrecord];
+234 [label="{<f0> 18.0|<f1> Ensure }" shape=Mrecord];
+235 [label="{<f0> 19.0|<f1> Never Leads To Silent Loss Of Datum }" shape=Mrecord];
+236 [label="{<f0> 20.0|<f1> Never Leads To Available, Silent Loss Of Data For Explore }" shape=Mrecord];
+216 -> 218
+216 -> 219
+216 -> 220
+216 -> 221
+216 -> 222
+216 -> 223
+216 -> 224
+216 -> 225
+216 -> 226
+216 -> 227
+216 -> 228
+216 -> 229
+216 -> 230
+216 -> 231
+216 -> 232
+216 -> 233
+216 -> 234
+216 -> 235
+216 -> 236
+218 -> 203 [label="Schema"]
+218 -> 204 [label="Dataset"]
+218 -> 205 [label="Uniform Way"]
+219 -> 206 [label="Json String"]
+219 -> 203 [label="Schema"]
+220 -> 203 [label="Schema"]
+221 -> 222
+221 -> 207 [label="Time"]
+221 -> 205 [label="Uniform Way"]
+223 -> 224
+223 -> 202 [label="Property"]
+225 -> 202 [label="Property"]
+226 -> 204 [label="Dataset"]
+227 -> 226
+227 -> 228
+227 -> 202 [label="Property"]
+228 -> 204 [label="Dataset"]
+229 -> 208 [label="Migration Process"]
+229 -> 204 [label="Dataset"]
+231 -> 203 [label="Schema"]
+232 -> 209 [label="Explore"]
+232 -> 204 [label="Dataset"]
+233 -> 204 [label="Dataset"]
+233 -> 209 [label="Explore"]
+234 -> 235
+234 -> 236
+234 -> 214 [label="Silent Loss"]
+234 -> 209 [label="Explore"]
+235 -> 214 [label="Silent Loss"]
+235 -> 213 [label="Datum"]
+235 -> 209 [label="Explore"]
+236 -> 209 [label="Explore"]
+236 -> 213 [label="Datum"]
+220 -> 215 [label="Sql"]
+}

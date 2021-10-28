@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Datum" as thingdatum
+	entity "Information" as thinginformation
+	entity "Dmp" as thingdmp
+	actor "Pi" as actorpi
+	circle "Kind" as thingkind
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Record All\nMetadata" as controlrecordmetadata
+	control "What Kind\nOf Data\nRecord" as controlrecordkind
+	control "Plan" as controlplan
+	control "What Kind\nOf Data\nStore" as controlstorekind
+	control "Record Information\nAbout Dmp" as controlrecordinformation
+	control "Know Data" as controlknowdatum
+	control "Know" as controlknow
+
+	thingdmp <.. thinginformation
+	thingdatum *-- thingkind
+	actorpi --- thingmetadatainterface
+	actorpi --- thingdatuminterface
+	actorpi --- thingdmpinterface
+	thingmetadata --- controlrecordmetadata
+	thingmetadatainterface --> controlrecordmetadata
+	thingkind --- controlrecordkind
+	thingdatum --- controlrecordkind
+	thingdatuminterface --> controlrecordkind
+	thingkind --- controlstorekind
+	thingdatum --- controlstorekind
+	thingdatuminterface --> controlstorekind
+	thinginformation --- controlrecordinformation
+	thingdmp --- controlrecordinformation
+	thingdmpinterface --> controlrecordinformation
+	thingdatum --- controlknowdatum
+	thingdatuminterface --> controlknowdatum
+
+@enduml

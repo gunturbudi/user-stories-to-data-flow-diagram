@@ -1,0 +1,379 @@
+[
+  {
+    "text": "As an API User, I want to be able to understand if a user is a Publisher, So that I can offer functionality based on Dataset Publisher privileges.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to understand if a user is an Administrator, So that I can offer functionality based on Platform Administration privileges.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to get bordering regions|cities when I query a region|city, So that I can provider wider visual context for mapping visualisations.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "query",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to dynamically request polygons based on the query made, So that I can provide maps that match the query.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "dynamically",
+        "label": "Processing"
+      },
+      {
+        "text": "request",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to have a flexible API using HASC codes for countries, regions and cities, So that I can visualise budget data on maps.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "countries",
+        "label": "PII"
+      },
+      {
+        "text": "regions",
+        "label": "PII"
+      },
+      {
+        "text": "cities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to get a CSV output of any cube-based query, So that I can use work with tools that read CSV.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to get a set of monetary measures transferred to different currencies, So that I can use this in scenarios that might enable comparison by normalisation.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "monetary measures",
+        "label": "PII"
+      },
+      {
+        "text": "transferred",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to use metadata to get results from multiple datasets, So that I can build user experiences based on more than one dataset more easily.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "build",
+        "label": "Processing"
+      },
+      {
+        "text": "user experiences",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to use data to get results from multiple datasets, So that I can build user experiences based on more than one dataset more easily.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "build",
+        "label": "Processing"
+      },
+      {
+        "text": "user experiences",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to normalise measures by population, So that I work with datasets in reference to their contextual constraints.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "normalise",
+        "label": "Processing"
+      },
+      {
+        "text": "measures",
+        "label": "PII"
+      },
+      {
+        "text": "population",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to normalise measures by geographical area, So that I work with datasets in reference to their contextual constraints.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "normalise",
+        "label": "Processing"
+      },
+      {
+        "text": "measures",
+        "label": "PII"
+      },
+      {
+        "text": "geographical area",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to normalise measures by GDP, so I work with datasets in reference to their contextual constraints.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "normalise",
+        "label": "Processing"
+      },
+      {
+        "text": "measures",
+        "label": "PII"
+      },
+      {
+        "text": "GDP",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to normalise measures by GINI and related socioeconomic indexes, So that I work with datasets in reference to their contextual constraints.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "normalise",
+        "label": "Processing"
+      },
+      {
+        "text": "measures",
+        "label": "PII"
+      },
+      {
+        "text": "socioeconomic indexes",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to get a relative percentage of a measure to the total of the dataset it comes from, So that I can build alternative displays of the data.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an API User, I want to be able to persistently store visualisation state in the database, So that such can be shared more easily and contribute to a visualisation gallery.",
+    "entities": [
+      {
+        "text": "API User",
+        "label": "Data"
+      },
+      {
+        "text": "persistently store",
+        "label": "Processing"
+      },
+      {
+        "text": "visualisation state",
+        "label": "PII"
+      },
+      {
+        "text": "contribute",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API user, I want to be able to change the colors of the embedded visualisations in my own platform, So that I can customize the visualisations.",
+    "entities": [
+      {
+        "text": "API user",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "colors",
+        "label": "PII"
+      },
+      {
+        "text": "customize",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an API user, I want to be able to change some of the styling of the embedded Viewer in my own platform, So that I can brand it to my own organisation's color scheme.",
+    "entities": [
+      {
+        "text": "API user",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "styling",
+        "label": "PII"
+      },
+      {
+        "text": "brand",
+        "label": "Processing"
+      }
+    ]
+  }
+]

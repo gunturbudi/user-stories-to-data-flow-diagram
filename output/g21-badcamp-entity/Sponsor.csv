@@ -1,0 +1,109 @@
+id,value,style,source,target,type
+16,Learn more about my organization.,ellipse,null,null,process
+17,Post my job listing on the badcamp site.,ellipse,null,null,process
+18,Tout my drupal credentials.,ellipse,null,null,process
+200,Sponsor,shape=partialRectangle,null,null,data_base
+201,Training,shape=partialRectangle,null,null,data_base
+202,Summit,shape=partialRectangle,null,null,data_base
+203,Event,shape=partialRectangle,null,null,data_base
+204,Sponsorship Page,shape=partialRectangle,null,null,data_base
+205,Sponsorship Profile,shape=partialRectangle,null,null,data_base
+206,Job,shape=partialRectangle,null,null,data_base
+207,Sponsorship Person,shape=partialRectangle,null,null,data_base
+208,Brand,shape=partialRectangle,null,null,data_base
+209,Badcamp Attendee,shape=partialRectangle,null,null,data_base
+210,Administrator,rounded=0,null,null,external_entity
+211,Summit Coordinator,rounded=0,null,null,external_entity
+212,Anonymoususer,rounded=0,null,null,external_entity
+213,Sponsor,rounded=0,null,null,external_entity
+214,Assign Sponsors To Training,ellipse,null,null,process
+215,Assign Sponsors To Summit,ellipse,null,null,process
+216,Assign Sponsors To Events,ellipse,null,null,process
+217,List Sponsors For Summit,ellipse,null,null,process
+218,See All Events That A Sponsor Is Sponsoring,ellipse,null,null,process
+219,See Summit,ellipse,null,null,process
+220,See Training,ellipse,null,null,process
+221,Link Badcamp Attendees To Sponsorship Page,ellipse,null,null,process
+222,Link To Sponsorship Profile From Job Listings,ellipse,null,null,process
+223,Learn,ellipse,null,null,process
+224,Posting Jobs As A Sponsor,ellipse,null,null,process
+225,Contact Jobs As A Sponsor The Sponsorship Person,ellipse,null,null,process
+226,Post A Job,ellipse,null,null,process
+227,Personalize Sponsorship Page,ellipse,null,null,process
+228,Sponsor A Summit Matches Brand,ellipse,null,null,process
+230,,endArrow=classic,210,214,endArrow=classic
+231,,endArrow=classic,210,215,endArrow=classic
+232,,endArrow=classic,210,216,endArrow=classic
+233,,endArrow=classic,210,217,endArrow=classic
+234,,endArrow=classic,210,219,endArrow=classic
+235,,endArrow=classic,210,220,endArrow=classic
+236,,endArrow=classic,211,215,endArrow=classic
+237,,endArrow=classic,211,217,endArrow=classic
+238,,endArrow=classic,211,219,endArrow=classic
+239,,endArrow=classic,212,214,endArrow=classic
+240,,endArrow=classic,212,215,endArrow=classic
+241,,endArrow=classic,212,217,endArrow=classic
+242,,endArrow=classic,212,218,endArrow=classic
+243,,endArrow=classic,212,219,endArrow=classic
+244,,endArrow=classic,212,220,endArrow=classic
+245,,endArrow=classic,212,223,endArrow=classic
+246,,endArrow=classic,212,224,endArrow=classic
+247,,endArrow=classic,213,221,endArrow=classic
+248,,endArrow=classic,213,222,endArrow=classic
+249,,endArrow=classic,213,226,endArrow=classic
+250,,endArrow=classic,213,227,endArrow=classic
+251,,endArrow=classic,213,228,endArrow=classic
+252,Training,endArrow=classic,214,201,endArrow=classic
+253,Sponsor,endArrow=classic,214,200,endArrow=classic
+254,Summit,endArrow=classic,215,202,endArrow=classic
+255,Sponsor,endArrow=classic,215,200,endArrow=classic
+256,Sponsor,endArrow=classic,216,200,endArrow=classic
+257,Event,endArrow=classic,216,203,endArrow=classic
+258,Sponsor,endArrow=classic,217,200,endArrow=classic
+259,Summit,endArrow=classic,217,202,endArrow=classic
+260,Sponsor,endArrow=classic,218,200,endArrow=classic
+261,Event,endArrow=classic,218,203,endArrow=classic
+262,Summit,endArrow=classic,219,202,endArrow=classic
+263,Training,endArrow=classic,220,201,endArrow=classic
+264,Badcamp Attendee,endArrow=classic,221,209,endArrow=classic
+265,Sponsorship Page,endArrow=classic,221,204,endArrow=classic
+266,Sponsorship Profile,endArrow=classic,222,205,endArrow=classic
+267,,endArrow=classic,224,223,endArrow=classic
+268,Job,endArrow=classic,224,206,endArrow=classic
+269,Sponsor,endArrow=classic,224,200,endArrow=classic
+270,,endArrow=classic,225,223,endArrow=classic
+271,Sponsorship Person,endArrow=classic,225,207,endArrow=classic
+272,Sponsor,endArrow=classic,225,200,endArrow=classic
+273,Job,endArrow=classic,225,206,endArrow=classic
+274,Job,endArrow=classic,226,206,endArrow=classic
+275,Sponsorship Page,endArrow=classic,227,204,endArrow=classic
+276,Brand,endArrow=classic,228,208,endArrow=classic
+277,Summit,endArrow=classic,228,202,endArrow=classic
+1000,Recruits,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,16,endArrow=classic
+1002,Recruits,rounded=0,null,null,external_entity
+1003,,endArrow=classic,1002,16,endArrow=classic
+1004,Recruits,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,16,endArrow=classic
+1006,Recruits,rounded=0,null,null,external_entity
+1007,,endArrow=classic,1006,16,endArrow=classic
+1008,Organization,rounded=0,null,null,external_entity
+1009,Organization,endArrow=classic,16,1008,endArrow=classic
+1010,"Anonymoususer,",rounded=0,null,null,external_entity
+1011,,endArrow=classic,1010,17,endArrow=classic
+1012,"Anonymoususer,",rounded=0,null,null,external_entity
+1013,,endArrow=classic,1012,17,endArrow=classic
+1014,,endArrow=classic,223,17,endArrow=classic
+1015,"Anonymoususer,",rounded=0,null,null,external_entity
+1016,,endArrow=classic,1015,17,endArrow=classic
+1017,Job listing,rounded=0,null,null,external_entity
+1018,Job listing,endArrow=classic,17,1017,endArrow=classic
+1019,"Sponsor,",rounded=0,null,null,external_entity
+1020,,endArrow=classic,1019,18,endArrow=classic
+1021,"Sponsor,",rounded=0,null,null,external_entity
+1022,,endArrow=classic,1021,18,endArrow=classic
+1023,"Sponsor,",rounded=0,null,null,external_entity
+1024,,endArrow=classic,1023,18,endArrow=classic
+1025,,endArrow=classic,228,18,endArrow=classic
+1026,Drupal credentials,rounded=0,null,null,external_entity
+1027,Drupal credentials,endArrow=classic,18,1026,endArrow=classic

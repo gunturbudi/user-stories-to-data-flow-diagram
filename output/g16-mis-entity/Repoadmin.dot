@@ -1,0 +1,108 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Symplectic Element " ];
+201 [label="<f0>  |<f1> Fedora Connector " ];
+202 [label="<f0>  |<f1> Ddr " color=red];
+203 [label="<f0>  |<f1> Object " color=red];
+204 [label="<f0>  |<f1> Hydra " ];
+205 [label="<f0>  |<f1> Emory " ];
+206 [label="<f0>  |<f1> Selection " ];
+207 [label="<f0>  |<f1> Submitter " ];
+208 [label="<f0>  |<f1> Collection " color=red];
+209 [label="<f0>  |<f1> Specific License " ];
+210 [label="<f0>  |<f1> License " ];
+211 [label="<f0>  |<f1> Deposit " color=red];
+212 [label="<f0>  |<f1> Metadata " color=red];
+213 [label="<f0>  |<f1> Item " color=red];
+214 [label="<f0>  |<f1> Access " ];
+215 [label="<f0>  |<f1> Server " ];
+216 [label="<f0>  |<f1> Repository " ];
+217 [label="<f0>  |<f1> Event " ];
+218 [label="<f0>  |<f1> Sla " ];
+219 [label="<f0>  |<f1> Public Interface " ];
+220 [label="<f0>  |<f1> Fedora Instance " ];
+221 [label="<f0>  |<f1> Oai Pmh " ];
+222 [label="<f0>  |<f1> Data Contributor " color=red];
+223 [label="<f0>  |<f1> Data Interface " color=red];
+224 [label="Repoadmin" shape=box];
+225 [label="{<f0> 1.0|<f1> Integrate With Ddr Provide A Fedora Connector }" shape=Mrecord];
+226 [label="{<f0> 2.0|<f1> Integrate With Ddr Provide Emory }" shape=Mrecord];
+227 [label="{<f0> 3.0|<f1> Have Bidirectionally Symplectic Elements }" shape=Mrecord];
+228 [label="{<f0> 4.0|<f1> Have }" shape=Mrecord];
+229 [label="{<f0> 5.0|<f1> Denied }" shape=Mrecord];
+230 [label="{<f0> 6.0|<f1> Presented With A Selection Of Specific Licenses To Deposit }" shape=Mrecord];
+231 [label="{<f0> 7.0|<f1> Presented With A Selection Of Specific Licenses To The Collection }" shape=Mrecord];
+232 [label="{<f0> 8.0|<f1> The Submitter Not Accept The License }" shape=Mrecord];
+233 [label="{<f0> 9.0|<f1> Presented With A License }" shape=Mrecord];
+234 [label="{<f0> 10.0|<f1> Expose Repository Contents Via Oai Pmh }" shape=Mrecord];
+235 [label="{<f0> 11.0|<f1> Continue }" shape=Mrecord];
+236 [label="{<f0> 12.0|<f1> Provide Access To The Repository In The Event That The Server Fails }" shape=Mrecord];
+237 [label="{<f0> 13.0|<f1> Provide The Server To Data Contributors }" shape=Mrecord];
+238 [label="{<f0> 14.0|<f1> Provide Sla }" shape=Mrecord];
+239 [label="{<f0> 15.0|<f1> Disrupting Access To The Public Interface }" shape=Mrecord];
+240 [label="{<f0> 16.0|<f1> Update The Repository Index }" shape=Mrecord];
+241 [label="{<f0> 17.0|<f1> Provide A Linked Data Interface To The Repository }" shape=Mrecord];
+242 [label="{<f0> 18.0|<f1> Communicate }" shape=Mrecord];
+243 [label="{<f0> 19.0|<f1> Have Symplectic Elements }" shape=Mrecord];
+224 -> 225
+224 -> 226
+224 -> 227
+224 -> 228
+224 -> 228
+224 -> 229
+224 -> 230
+224 -> 231
+224 -> 232
+224 -> 233
+224 -> 234
+224 -> 235
+224 -> 236
+224 -> 237
+224 -> 238
+224 -> 239
+224 -> 240
+224 -> 241
+224 -> 242
+224 -> 243
+225 -> 202 [label="Ddr"]
+225 -> 201 [label="Fedora Connector"]
+226 -> 205 [label="Emory"]
+226 -> 202 [label="Ddr"]
+227 -> 200 [label="Symplectic Element"]
+228 -> 225
+228 -> 226
+228 -> 230
+228 -> 231
+228 -> 233
+228 -> 202 [label="Ddr"]
+228 -> 209 [label="Specific License"]
+228 -> 206 [label="Selection"]
+229 -> 232
+230 -> 211 [label="Deposit"]
+230 -> 209 [label="Specific License"]
+230 -> 206 [label="Selection"]
+231 -> 206 [label="Selection"]
+231 -> 209 [label="Specific License"]
+231 -> 208 [label="Collection"]
+232 -> 207 [label="Submitter"]
+232 -> 210 [label="License"]
+233 -> 229
+233 -> 210 [label="License"]
+234 -> 221 [label="Oai Pmh"]
+235 -> 236
+236 -> 214 [label="Access"]
+236 -> 216 [label="Repository"]
+236 -> 217 [label="Event"]
+236 -> 215 [label="Server"]
+237 -> 222 [label="Data Contributor"]
+237 -> 215 [label="Server"]
+238 -> 218 [label="Sla"]
+239 -> 240
+239 -> 219 [label="Public Interface"]
+239 -> 214 [label="Access"]
+240 -> 216 [label="Repository"]
+241 -> 223 [label="Data Interface"]
+241 -> 216 [label="Repository"]
+243 -> 242
+243 -> 200 [label="Symplectic Element"]
+}

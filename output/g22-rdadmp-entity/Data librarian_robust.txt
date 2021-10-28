@@ -1,0 +1,35 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Metadata" as thingmetadata
+	entity "Dmp" as thingdmp
+	entity "System" as thingothersystem
+	entity "Pointer" as thingpointer
+	entity "Administrative Information" as thingadministrativeinformation
+	entity "Project" as thingproject
+	actor "Data Librarian" as actordatalibrarian
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Extract Pointers\nFrom The\nDmp To\nMetadata In\nOther Systems" as controlextractpointermetadata
+	control "Import Administrative\nInformation Regarding\nA Project\nInto Dmp" as controlimportadministrativeinformationproject
+
+	thingothersystem <.. thingmetadata
+	thingmetadata <.. thingdmp
+	thingdmp <.. thingpointer
+	thingproject <.. thingadministrativeinformation
+	thingdmp <.. thingproject
+	actordatalibrarian --- thingsysteminterface
+	actordatalibrarian --- thingdmpinterface
+	thingpointer --- controlextractpointermetadata
+	thingdmp --- controlextractpointermetadata
+	thingmetadata --- controlextractpointermetadata
+	thingothersystem --- controlextractpointermetadata
+	thingsysteminterface --> controlextractpointermetadata
+	thingadministrativeinformation --- controlimportadministrativeinformationproject
+	thingproject --- controlimportadministrativeinformationproject
+	thingdmpinterface --> controlimportadministrativeinformationproject
+	thingdmp --- controlimportadministrativeinformationproject
+
+@enduml

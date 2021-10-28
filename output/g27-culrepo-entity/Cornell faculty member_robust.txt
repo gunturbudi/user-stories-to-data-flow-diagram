@@ -1,0 +1,213 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Repository" as thingrepository
+	entity "Publication" as thingpublication
+	entity "File" as thingfile
+	entity "Right" as thingright
+	entity "Cut" as thingcut
+	entity "Format Citation" as thingformattedcitation
+	entity "People" as thingpeople
+	entity "Phone" as thingphone
+	entity "Content" as thingcontent
+	entity "Shibboleth" as thingshibboleth
+	entity "Control" as thingcontrol
+	entity "Item" as thingitem
+	entity "Organization" as thingorganization
+	entity "Document" as thingdocument
+	entity "Collection" as thingcollection
+	entity "Distinctive Branding" as thingdistinctivebranding
+	entity "Identification Issue" as thingidentificationissue #grey
+	entity "Name" as thingname
+	entity "Dissertation" as thingdissertation
+	entity "Work" as thingwork
+	entity "Student" as thingformerstudent
+	entity "Cc License" as thingcclicense #grey
+	entity "Orcid" as thingORCID
+	entity "Submission" as thingsubmission
+	entity "Gb" as thingGB
+	entity "Way" as thingway
+	entity "Cc0 License" as thingcc0license
+	entity "Google Search\nResult" as thinggooglesearchresult
+	entity "Data" as thingdata #grey
+	entity "Author" as thingauthor #grey
+	actor "Cornell ,\nFaculty Member" as actorcornellfacultymember
+	circle "Contents List" as thingcontentslist #grey
+	circle "Sort" as thingsort #grey
+	circle "Authority" as thingauthority #grey
+	boundary "Repository" as thingrepositoryuseshibbolethcornellfacultymember #grey
+	boundary "User" as thinguser
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Publication\nInterface" as thingpublicationinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Cut\nInterface" as thingcutinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Issue\nInterface" as thingissueinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Student\nInterface" as thingstudentinterface #grey
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	boundary "Orcid\nInterface" as thingorcidinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Upload Data\nTo The\nRepository" as controluploaddatumrepository
+	control "Associate The\nRepository With\nA Publication" as controlassociaterepository
+	control "See Rights\nTo Files\nIn The\nRepository" as controlseerightfile
+	control "Upload Data" as controluploaddatum
+	control "Provide A\nCut" as controlprovidecut
+	control "Paste Formatted\nCitation For\nPeople Use\nA Cut" as controlpasteformattedcitation
+	control "Search The\nRepository" as controlsearchrepository
+	control "Browse Through\nContents On\nPhone" as controlbrowsecontentphone #grey
+	control "Use Shibboleth" as controluseshibboleth
+	control "Login To" as controlloginrepositoryuseshibbolethcornellfacultymember
+	control "Have Some\nControl Over\nItems Within\nCollection Sort\nHow Collection\nContents Lists" as controlhavecontrol
+	control "Notified" as controlnotify
+	control "Upload A\nData File" as controluploaddatafile
+	control "Put A\nCc Cc0\nLicense On\nA Data\nFile" as controlputcccc0licensedatafile
+	control "Create A\nCollection For\nDocuments" as controlcreatecollection
+	control "Create A\nCollection For\nOrganization's Document" as controlcreatecollectiondocument
+	control "Apply Some\nDistinctive Branding\nTo That\nCollection" as controlapplydistinctivebrandingcollection
+	control "Searching On\nAuthor Name\nAuthority" as controlsearchfinditemauthornameauthority
+	control "Find The\nItems In\nThe Repository" as controlfinditem
+	control "Searching On\nName" as controlsearchfinditemname
+	control "Searching On\nIdentification Issue" as controlsearchfinditemidentificationissue
+	control "See Items" as controlseeitem
+	control "Search For\nThe Dissertations\nIn The\nRepository" as controlsearchdissertationfindworkformerstudent
+	control "Find Work\nBy A\nFormer Student" as controlfindworkformerstudent
+	control "Assign A\nCc License\nTo The\nFiles" as controlassigncclicensefile
+	control "Associate A\nResearcherid With\nA Submission" as controlassociateresearcherIDsubmission
+	control "Associate Orcid" as controlassociateORCID
+	control "Use Users" as controluseuser
+	control "Want" as controlwantdownloadusercornellfacultymemberuseruseuser
+	control "Download Users" as controldownloadusercornellfacultymemberuser
+	control "Share On\nThe Repository\nFiles Are\nLarger Than\nGb In\nA Way\nStill Allows" as controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+
+	thingrepository <.. thingdatum
+	thingpublication <.. thingrepository
+	thingrepository <.. thingfile
+	thingdata <.. thingfile
+	thingGB <.. thingfile
+	thingfile <.. thingright
+	thingpeople <.. thingformattedcitation
+	thingcut <.. thingpeople
+	thingcontentslist <.. thingcontrol
+	thingcollection <.. thingcontrol
+	thingsort <.. thingitem
+	thingrepository <.. thingitem
+	thingorganization <.. thingdocument
+	thingdocument <.. thingcollection
+	thingcollection <.. thingdistinctivebranding
+	thingauthor <.. thingname
+	thingrepository <.. thingdissertation
+	thingformerstudent <.. thingwork
+	thingfile <.. thingcclicense
+	thingsubmission <.. thingORCID
+	thingway <.. thingGB
+	thingfile <.. thingcc0license
+	thingcollection *-- thingcontentslist
+	thingcollection *-- thingsort
+	thingname *-- thingauthority
+	actorcornellfacultymember --- thingrepositoryuseshibbolethcornellfacultymember
+	actorcornellfacultymember --- thinguser
+	actorcornellfacultymember --- thingrepositoryinterface
+	actorcornellfacultymember --- thingpublicationinterface
+	actorcornellfacultymember --- thingdatuminterface
+	actorcornellfacultymember --- thingcutinterface
+	actorcornellfacultymember --- thingcollectioninterface
+	actorcornellfacultymember --- thingfileinterface
+	actorcornellfacultymember --- thingdocumentinterface
+	actorcornellfacultymember --- thingnameinterface
+	actorcornellfacultymember --- thingissueinterface
+	actorcornellfacultymember --- thingiteminterface
+	actorcornellfacultymember --- thingstudentinterface
+	actorcornellfacultymember --- thingsubmissioninterface
+	actorcornellfacultymember --- thingorcidinterface
+	actorcornellfacultymember --- thingwayinterface
+	thingdatum --- controluploaddatumrepository
+	thingrepository --- controluploaddatumrepository
+	thingrepositoryinterface --> controluploaddatumrepository
+	thingpublication --- controlassociaterepository
+	thingpublicationinterface --> controlassociaterepository
+	thingrepository --- controlassociaterepository
+	thingright --- controlseerightfile
+	thingfile --- controlseerightfile
+	thingrepository --- controlseerightfile
+	thingrepositoryinterface --> controlseerightfile
+	thingdatuminterface --> controluploaddatum
+	thingdatum --- controluploaddatum
+	thingcut --- controlprovidecut
+	thingcutinterface --> controlprovidecut
+	thingformattedcitation --- controlpasteformattedcitation
+	thingpeople --- controlpasteformattedcitation
+	thingcut --- controlpasteformattedcitation
+	thingcutinterface --> controlpasteformattedcitation
+	thingrepository --- controlsearchrepository
+	thingrepositoryinterface --> controlsearchrepository
+	thingcontent --- controlbrowsecontentphone
+	thingphone --- controlbrowsecontentphone
+	thingshibboleth --- controluseshibboleth
+	controlloginrepositoryuseshibbolethcornellfacultymember --> controluseshibboleth
+	thingrepositoryuseshibbolethcornellfacultymember --> controluseshibboleth
+	thingrepositoryuseshibbolethcornellfacultymember --> controlloginrepositoryuseshibbolethcornellfacultymember
+	thingcontrol --- controlhavecontrol
+	thingcontentslist --- controlhavecontrol
+	thingcollectioninterface --> controlhavecontrol
+	thingfileinterface --> controluploaddatafile
+	thingfile --- controluploaddatafile
+	thingcc0license --- controlputcccc0licensedatafile
+	thingfileinterface --> controlputcccc0licensedatafile
+	thingfile --- controlputcccc0licensedatafile
+	thingcollection --- controlcreatecollection
+	thingdocument --- controlcreatecollection
+	thingdocumentinterface --> controlcreatecollection
+	thingdocument --- controlcreatecollectiondocument
+	thingdocumentinterface --> controlcreatecollectiondocument
+	thingcollection --- controlcreatecollectiondocument
+	thingdistinctivebranding --- controlapplydistinctivebrandingcollection
+	thingcollection --- controlapplydistinctivebrandingcollection
+	thingcollectioninterface --> controlapplydistinctivebrandingcollection
+	thingauthority --- controlsearchfinditemauthornameauthority
+	thingnameinterface --> controlsearchfinditemauthornameauthority
+	controlsearchfinditemname --> controlfinditem
+	thingrepository --- controlfinditem
+	thingitem --- controlfinditem
+	thingrepositoryinterface --> controlfinditem
+	controlsearchfinditemauthornameauthority --> controlfinditem
+	controlsearchfinditemidentificationissue --> controlfinditem
+	thingname --- controlsearchfinditemname
+	thingnameinterface --> controlsearchfinditemname
+	thingidentificationissue --- controlsearchfinditemidentificationissue
+	thingissueinterface --> controlsearchfinditemidentificationissue
+	thingiteminterface --> controlseeitem
+	thingitem --- controlseeitem
+	thingdissertation --- controlsearchdissertationfindworkformerstudent
+	thingrepository --- controlsearchdissertationfindworkformerstudent
+	thingrepositoryinterface --> controlsearchdissertationfindworkformerstudent
+	controlsearchdissertationfindworkformerstudent --> controlfindworkformerstudent
+	thingwork --- controlfindworkformerstudent
+	thingformerstudent --- controlfindworkformerstudent
+	thingstudentinterface --> controlfindworkformerstudent
+	thingcclicense --- controlassigncclicensefile
+	thingfile --- controlassigncclicensefile
+	thingfileinterface --> controlassigncclicensefile
+	thingsubmission --- controlassociateresearcherIDsubmission
+	thingsubmissioninterface --> controlassociateresearcherIDsubmission
+	thingORCID --- controlassociateresearcherIDsubmission
+	thingORCID --- controlassociateORCID
+	thingorcidinterface --> controlassociateORCID
+	controlwantdownloadusercornellfacultymemberuseruseuser --> controluseuser
+	thinguser --> controluseuser
+	controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser --> controlwantdownloadusercornellfacultymemberuseruseuser
+	thingwayinterface --> controlwantdownloadusercornellfacultymemberuseruseuser
+	controlwantdownloadusercornellfacultymemberuseruseuser --> controldownloadusercornellfacultymemberuser
+	thinguser --> controldownloadusercornellfacultymemberuser
+	thingGB --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingway --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingwayinterface --> controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+	thingfile --- controlsharerepositoryfileswantdownloadusercornellfacultymemberuseruseuser
+
+@enduml

@@ -1,0 +1,19 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Report " ];
+201 [label="<f0>  |<f1> Common ,\nQuery Functionality " ];
+202 [label="<f0>  |<f1> Reporting " ];
+203 [label="<f0>  |<f1> Custom Query " ];
+204 [label="County , Staff Member" shape=box];
+205 [label="{<f0> 1.0|<f1> Create Outside Report Of The Common, Querying Functionality }" shape=Mrecord];
+206 [label="{<f0> 2.0|<f1> Create A Custom Query }" shape=Mrecord];
+207 [label="{<f0> 3.0|<f1> Create Outside Report Of Reporting }" shape=Mrecord];
+204 -> 205
+204 -> 206
+204 -> 207
+205 -> 200 [label="Report"]
+205 -> 201 [label="Common ,\nQuery Functionality"]
+206 -> 203 [label="Custom Query"]
+207 -> 202 [label="Reporting"]
+207 -> 200 [label="Report"]
+}

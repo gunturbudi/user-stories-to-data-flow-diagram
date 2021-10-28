@@ -1,0 +1,51 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Narrow Dataset" as thingnarrowdataset
+	entity "Dataset" as thingdataset
+	entity "Inflation" as thinginflation
+	entity "Line" as thingline
+	entity "Geographic Datum" as thinggeographicdatum
+	entity "Reference Datum" as thingreferencedatum
+	entity "Country Name" as thingcountryname
+	entity "Country Code" as thingcountrycode
+	entity "Spending" as thingspending #grey
+	actor "Researchergovernment Publisher" as actorresearchergovernmentpublisher
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Code\nInterface" as thingcodeinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	control "Add General\nReference Data\nTo Narrow\nDataset" as controladdgeneralreferencedatanarrowdataset
+	control "Add General\nCountry Names\nTo Dataset\nOnly Contains\nCountry Codes" as controladdgeneralcountrynamesdataset
+	control "Add Reference\nData On\nInflation To\nSpending Dataset" as controladdreferencedataspendingdataset
+	control "Map Lines\nIn Dataset\nUsing Geographic\nData In\nDataset" as controlmaplinegeographicdatumdataset
+
+	thingcountrycode <.. thingdataset
+	thinggeographicdatum <.. thingdataset
+	thingspending <.. thingdataset
+	thingdataset <.. thinginflation
+	thingdataset <.. thingline
+	thingnarrowdataset <.. thingreferencedatum
+	thinginflation <.. thingreferencedatum
+	thingdataset <.. thingcountryname
+	actorresearchergovernmentpublisher --- thingdatasetinterface
+	actorresearchergovernmentpublisher --- thingcodeinterface
+	actorresearchergovernmentpublisher --- thingdatuminterface
+	thingreferencedatum --- controladdgeneralreferencedatanarrowdataset
+	thingnarrowdataset --- controladdgeneralreferencedatanarrowdataset
+	thingdatasetinterface --> controladdgeneralreferencedatanarrowdataset
+	thingcountryname --- controladdgeneralcountrynamesdataset
+	thingdataset --- controladdgeneralcountrynamesdataset
+	thingcountrycode --- controladdgeneralcountrynamesdataset
+	thingcodeinterface --> controladdgeneralcountrynamesdataset
+	thinginflation --- controladdreferencedataspendingdataset
+	thingdatasetinterface --> controladdreferencedataspendingdataset
+	thingdataset --- controladdreferencedataspendingdataset
+	thingreferencedatum --- controladdreferencedataspendingdataset
+	thingline --- controlmaplinegeographicdatumdataset
+	thinggeographicdatum --- controlmaplinegeographicdatumdataset
+	thingdatuminterface --> controlmaplinegeographicdatumdataset
+	thingdataset --- controlmaplinegeographicdatumdataset
+
+@enduml

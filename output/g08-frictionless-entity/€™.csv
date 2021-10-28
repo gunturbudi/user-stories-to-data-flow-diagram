@@ -1,0 +1,14 @@
+id,value,style,source,target,type
+2,Retype descriptive information about my dataset.,ellipse,null,null,process
+200,Zenodo,shape=partialRectangle,null,null,data_base
+201,Integration,shape=partialRectangle,null,null,data_base
+202,Researcherpublisher,rounded=0,null,null,external_entity
+203,Provided With An Integration With Zenodo,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Integration,endArrow=classic,203,201,endArrow=classic
+207,Zenodo,endArrow=classic,203,200,endArrow=classic
+1000,,endArrow=classic,203,2,endArrow=classic
+1001,Dataset,rounded=0,null,null,external_entity
+1002,Dataset,endArrow=classic,2,1001,endArrow=classic
+1003,Dataset,rounded=0,null,null,external_entity
+1004,Dataset,endArrow=classic,2,1003,endArrow=classic

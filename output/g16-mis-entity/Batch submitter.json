@@ -1,0 +1,40 @@
+[
+  {
+    "text": "As a batch submitter, I want to provide my data and metadata in a simple, documented format to the repository staff for ingest.",
+    "entities": [
+      {
+        "text": "batch submitter",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a batch submitter, I want to access documentation describing the folder ingest process.",
+    "entities": [
+      {
+        "text": "batch submitter",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "documentation",
+        "label": "PII"
+      }
+    ]
+  }
+]

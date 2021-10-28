@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a corporatesponsor, I want to display my logo on a corporate sponsors page, so that others see the company's support of Scrum.",
+    "entities": [
+      {
+        "text": "corporatesponsor,",
+        "label": "Data"
+      },
+      {
+        "text": "display",
+        "label": "Processing"
+      },
+      {
+        "text": "logo",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a corporatesponsor, I want to make my logo randomly appear on the home page, so that others see the company's support of Scrum.",
+    "entities": [
+      {
+        "text": "corporatesponsor,",
+        "label": "Data"
+      },
+      {
+        "text": "make",
+        "label": "Processing"
+      },
+      {
+        "text": "logo",
+        "label": "PII"
+      }
+    ]
+  }
+]

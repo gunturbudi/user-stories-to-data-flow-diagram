@@ -1,0 +1,43 @@
+[
+  {
+    "text": "As a researcher, I want to keyword search across all of an RF program officer's scanned diaries, rather than having to search each scanned diary segment separately, so that I can more efficiently locate diary entries relevant to my research.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "keyword",
+        "label": "Processing"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "RF program officer",
+        "label": "Data"
+      },
+      {
+        "text": "scanned diaries",
+        "label": "PII"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "diary segment",
+        "label": "PII"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  }
+]

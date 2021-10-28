@@ -1,0 +1,28 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Presentation " color=red];
+201 [label="<f0>  |<f1> Etc " ];
+202 [label="<f0>  |<f1> Pdf " ];
+203 [label="<f0>  |<f1> Member " color=red];
+204 [label="<f0>  |<f1> Article " color=red];
+205 [label="<f0>  |<f1> Upcoming Course " color=red];
+206 [label="Visitor" shape=box];
+207 [label="Site Editor" shape=box];
+208 [label="Trainer" shape=box];
+209 [label="{<f0> 1.0|<f1> Download Presentations }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Download Etc }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Download Pdf }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> For Indicate An Article Members }" shape=Mrecord];
+213 [label="{<f0> 5.0|<f1> Notice }" shape=Mrecord];
+214 [label="{<f0> 6.0|<f1> See }" shape=Mrecord];
+206 -> 209
+206 -> 210
+206 -> 211
+207 -> 212
+208 -> 213
+209 -> 200 [label="Presentation"]
+210 -> 201 [label="Etc"]
+211 -> 202 [label="Pdf"]
+212 -> 204 [label="Article"]
+212 -> 203 [label="Member"]
+}

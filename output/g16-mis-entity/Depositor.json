@@ -1,0 +1,57 @@
+[
+  {
+    "text": "As a depositor, I want to get feedback post-ingest alerting me if files I submitted do not conform to their format specifications, if they are not valid, or if they are not wellformed.",
+    "entities": [
+      {
+        "text": "depositor,",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "feedback post-ingest alerting",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to see what kinds of things the repository accepts and what formats are accepted and recommended.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to easily find information about which data can be assigned a DOI, how to get one, and what metadata are required.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      }
+    ]
+  }
+]

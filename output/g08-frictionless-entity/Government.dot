@@ -1,0 +1,13 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Government " ];
+202 [label="Civic , Tech Activist" shape=box];
+203 [label="{<f0> 1.0|<f1> Make }" shape=Mrecord];
+204 [label="{<f0> 2.0|<f1> Assess The Quality Of Data The Government }" shape=Mrecord];
+202 -> 203
+202 -> 204
+203 -> 204
+204 -> 200 [label="Datum"]
+204 -> 201 [label="Government"]
+}

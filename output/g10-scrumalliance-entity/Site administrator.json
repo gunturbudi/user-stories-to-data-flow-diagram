@@ -1,0 +1,131 @@
+[
+  {
+    "text": "As a site administrator, I want to read practicing and training applications and approve or reject them, so that only applicants who qualify can become CSPs or CSTs.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "practicing",
+        "label": "PII"
+      },
+      {
+        "text": "applications",
+        "label": "PII"
+      },
+      {
+        "text": "approve",
+        "label": "Processing"
+      },
+      {
+        "text": "applicants",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to edit any site member profile, so that I can correct problems for members.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "site",
+        "label": "Data"
+      },
+      {
+        "text": "member profile",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to create an Other Course or Event that is not charged a listing fee, so that the Scrum Alliance doesn't charge itself for Scrum Gatherings that it puts on.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "Course",
+        "label": "PII"
+      },
+      {
+        "text": "Event",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to set the listing fee per Other Course or Event, so that we have flexibility on what to charge in the future.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "listing fee",
+        "label": "PII"
+      },
+      {
+        "text": "Event",
+        "label": "PII"
+      },
+      {
+        "text": "charge",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site administrator, I want to set the annual fees for members, Practitioners and Trainers, so that fees can be set without involving a programmer.",
+    "entities": [
+      {
+        "text": "site administrator",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      },
+      {
+        "text": "annual fees",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "Practitioners",
+        "label": "Data"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      }
+    ]
+  }
+]

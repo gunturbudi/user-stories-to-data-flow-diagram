@@ -1,0 +1,146 @@
+id,value,style,source,target,type
+33,Deal with their details.,ellipse,null,null,process
+200,App,shape=partialRectangle,null,null,data_base
+201,"Possible ,\nPeople",shape=partialRectangle,null,null,data_base
+202,Market Place,shape=partialRectangle,null,null,data_base
+203,Customer,shape=partialRectangle,null,null,data_base
+204,Feedback,shape=partialRectangle,null,null,data_base
+205,Easy Way,shape=partialRectangle,null,null,data_base
+206,Api,shape=partialRectangle,null,null,data_base
+207,Apps Development\nSupport,shape=partialRectangle,null,null,data_base
+208,Way,shape=partialRectangle,null,null,data_base
+209,Access,shape=partialRectangle,null,null,data_base
+210,High Level,shape=partialRectangle,null,null,data_base
+211,Goal,shape=partialRectangle,null,null,data_base
+212,Work,shape=partialRectangle,null,null,data_base
+213,Accounting,shape=partialRectangle,null,null,data_base
+214,Clear,shape=partialRectangle,null,null,data_base
+215,Pricing Modality,shape=partialRectangle,null,null,data_base
+216,Fee,shape=partialRectangle,null,null,data_base
+217,Platform,shape=partialRectangle,null,null,data_base
+218,Detailed Information,shape=partialRectangle,null,null,data_base
+219,User,shape=partialRectangle,null,null,data_base
+220,Question,shape=partialRectangle,null,null,data_base
+221,Datum,shape=partialRectangle,null,null,data_base
+222,Apps Change,shape=partialRectangle,null,null,data_base
+223,Operating System\nFeature,shape=partialRectangle,null,null,data_base
+224,Health Sensor,shape=partialRectangle,null,null,data_base
+225,Alfred,shape=partialRectangle,null,null,data_base
+226,Developer,rounded=0,null,null,external_entity
+227,"Present App To As Possible, Many People",ellipse,null,null,process
+228,Create Apps Within The Market Place,ellipse,null,null,process
+229,Maintain Apps Within The Market Place,ellipse,null,null,process
+230,Enable Customers,ellipse,null,null,process
+231,Provide Feedback About App,ellipse,null,null,process
+232,Watch This Feedback,ellipse,null,null,process
+233,Need An Easy Way,ellipse,null,null,process
+234,Documented Have The Api,ellipse,null,null,process
+235,Obtain Apps Development Support,ellipse,null,null,process
+236,Possible Notified,ellipse,null,null,process
+237,Present App In Several Ways,ellipse,null,null,process
+238,Have App To Granted Access To Several Operating System Features,ellipse,null,null,process
+239,Have,ellipse,null,null,process
+240,Be On A High Level,ellipse,null,null,process
+241,Provide An Easy Way,ellipse,null,null,process
+242,Manage The User Settings,ellipse,null,null,process
+243,Reduce The Work,ellipse,null,null,process
+244,Have The Alfred Api,ellipse,null,null,process
+245,Achieve Goals,ellipse,null,null,process
+246,Have The Accounting As Possible Simple,ellipse,null,null,process
+247,Have The Accounting Clear,ellipse,null,null,process
+248,Have An Easy Way,ellipse,null,null,process
+249,Manage The Pricing Modality Of Apps,ellipse,null,null,process
+250,Know The Provider Of The Market Place Charges,ellipse,null,null,process
+251,Using The Platform,ellipse,null,null,process
+252,Know The Fees,ellipse,null,null,process
+253,Have Detailed Information Happened,ellipse,null,null,process
+254,Design App On Own,ellipse,null,null,process
+255,"Be A, Few Rules",ellipse,null,null,process
+256,Define Questions The User Ask,ellipse,null,null,process
+257,Have An Easy Way The User Is Wearing,ellipse,null,null,process
+258,Read Data From Health Sensors,ellipse,null,null,process
+260,,endArrow=classic,226,227,endArrow=classic
+261,,endArrow=classic,226,228,endArrow=classic
+262,,endArrow=classic,226,230,endArrow=classic
+263,,endArrow=classic,226,231,endArrow=classic
+264,,endArrow=classic,226,232,endArrow=classic
+265,,endArrow=classic,226,233,endArrow=classic
+266,,endArrow=classic,226,234,endArrow=classic
+267,,endArrow=classic,226,235,endArrow=classic
+268,,endArrow=classic,226,237,endArrow=classic
+269,,endArrow=classic,226,238,endArrow=classic
+270,,endArrow=classic,226,239,endArrow=classic
+271,,endArrow=classic,226,240,endArrow=classic
+272,,endArrow=classic,226,241,endArrow=classic
+273,,endArrow=classic,226,242,endArrow=classic
+274,,endArrow=classic,226,243,endArrow=classic
+275,,endArrow=classic,226,244,endArrow=classic
+276,,endArrow=classic,226,245,endArrow=classic
+277,,endArrow=classic,226,246,endArrow=classic
+278,,endArrow=classic,226,247,endArrow=classic
+279,,endArrow=classic,226,248,endArrow=classic
+280,,endArrow=classic,226,249,endArrow=classic
+281,,endArrow=classic,226,250,endArrow=classic
+282,,endArrow=classic,226,251,endArrow=classic
+283,,endArrow=classic,226,252,endArrow=classic
+284,,endArrow=classic,226,253,endArrow=classic
+285,,endArrow=classic,226,254,endArrow=classic
+286,,endArrow=classic,226,256,endArrow=classic
+287,,endArrow=classic,226,257,endArrow=classic
+288,,endArrow=classic,226,258,endArrow=classic
+289,App,endArrow=classic,227,200,endArrow=classic
+290,"Possible ,\nPeople",endArrow=classic,227,201,endArrow=classic
+291,App,endArrow=classic,228,200,endArrow=classic
+292,Market Place,endArrow=classic,228,202,endArrow=classic
+293,Market Place,endArrow=classic,229,202,endArrow=classic
+294,App,endArrow=classic,229,200,endArrow=classic
+295,,endArrow=classic,230,231,endArrow=classic
+296,,endArrow=classic,230,233,endArrow=classic
+297,Customer,endArrow=classic,230,203,endArrow=classic
+298,Feedback,endArrow=classic,231,204,endArrow=classic
+299,App,endArrow=classic,231,200,endArrow=classic
+300,Feedback,endArrow=classic,232,204,endArrow=classic
+301,,endArrow=classic,233,232,endArrow=classic
+302,Easy Way,endArrow=classic,233,205,endArrow=classic
+303,Api,endArrow=classic,234,206,endArrow=classic
+304,Apps Development\nSupport,endArrow=classic,235,207,endArrow=classic
+305,Way,endArrow=classic,237,208,endArrow=classic
+306,App,endArrow=classic,237,200,endArrow=classic
+307,Access,endArrow=classic,238,209,endArrow=classic
+308,Operating System\nFeature,endArrow=classic,238,223,endArrow=classic
+309,App,endArrow=classic,238,200,endArrow=classic
+310,,endArrow=classic,239,240,endArrow=classic
+311,High Level,endArrow=classic,240,210,endArrow=classic
+312,,endArrow=classic,241,242,endArrow=classic
+313,Easy Way,endArrow=classic,241,205,endArrow=classic
+314,User,endArrow=classic,242,219,endArrow=classic
+315,,endArrow=classic,243,245,endArrow=classic
+316,Work,endArrow=classic,243,212,endArrow=classic
+317,,endArrow=classic,244,243,endArrow=classic
+318,Api,endArrow=classic,244,206,endArrow=classic
+319,Goal,endArrow=classic,245,211,endArrow=classic
+320,Accounting,endArrow=classic,246,213,endArrow=classic
+321,Clear,endArrow=classic,247,214,endArrow=classic
+322,Accounting,endArrow=classic,247,213,endArrow=classic
+323,,endArrow=classic,248,249,endArrow=classic
+324,,endArrow=classic,248,256,endArrow=classic
+325,Easy Way,endArrow=classic,248,205,endArrow=classic
+326,Pricing Modality,endArrow=classic,249,215,endArrow=classic
+327,App,endArrow=classic,249,200,endArrow=classic
+328,Market Place,endArrow=classic,250,202,endArrow=classic
+329,,endArrow=classic,251,250,endArrow=classic
+330,Platform,endArrow=classic,251,217,endArrow=classic
+331,Fee,endArrow=classic,252,216,endArrow=classic
+332,Detailed Information,endArrow=classic,253,218,endArrow=classic
+333,App,endArrow=classic,254,200,endArrow=classic
+334,Question,endArrow=classic,256,220,endArrow=classic
+335,User,endArrow=classic,256,219,endArrow=classic
+336,,endArrow=classic,257,258,endArrow=classic
+337,Easy Way,endArrow=classic,257,205,endArrow=classic
+338,User,endArrow=classic,257,219,endArrow=classic
+339,Datum,endArrow=classic,258,221,endArrow=classic
+340,Health Sensor,endArrow=classic,258,224,endArrow=classic
+390,Alfred,endArrow=classic,244,225,endArrow=classic
+1000,,endArrow=classic,239,33,endArrow=classic
+1001,Details,rounded=0,null,null,external_entity
+1002,Details,endArrow=classic,33,1001,endArrow=classic

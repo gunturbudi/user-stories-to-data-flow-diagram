@@ -1,0 +1,97 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Additional Detail" as thingadditionaldetail
+	entity "Profile Page" as thingprofilepage #grey
+	entity "Article" as thingarticle
+	entity "Cst Status" as thingcststatus #grey
+	entity "Site" as thingsite
+	entity "Small Graphic" as thingsmallgraphic
+	entity "Csp" as thingcsp
+	entity "Trainer" as thingtrainer
+	entity "Practitioner" as thingpractitioner
+	entity "Member" as thingmember
+	entity "Annual Fee" as thingannualfee
+	entity "Scrum Master" as thingscrummaster
+	entity "Scrum Product\nOwner" as thingscrumproductowner
+	actor "Practitioner" as actorpractitioner
+	actor "Site Visitor" as actorsitevisitor
+	actor "Site Administrator" as actorsiteadministrator
+	boundary "Article" as thingarticleshowcsppractitioner #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Master\nInterface" as thingmasterinterface #grey
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	boundary "Owner\nInterface" as thingownerinterface #grey
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	control "Include Additional\nDetails About\nIn Profile\nPage" as controlincludeadditionaldetail
+	control "Write An\nArticle For\nThe Site\nWith A\nSmall Graphic\nWith" as controlwritearticlesite
+	control "Show Csp" as controlshowcsp
+	control "Show Cst\nStatus" as controlshowcststatus
+	control "Show" as controlshow #grey
+	control "View Lists\nOn The\nSite Of\nAll Certified\nScrum Masters" as controlviewlist
+	control "View Lists\nOn The\nSite Of\nPractitioner" as controlviewlistpractitioner
+	control "View Lists\nOn The\nSite Of\nTrainer" as controlviewlisttrainer
+	control "View Lists\nOn The\nSite Of\nCertified Scrum\nProduct Owner" as controlviewlistcertifiedscrumproductowner
+	control "Set The\nAnnual Fees\nFor Members" as controlsetannualfee
+	control "Set The\nAnnual Fees\nFor Trainer" as controlsetannualfeetrainer
+	control "Set The\nAnnual Fees\nFor Practitioner" as controlsetannualfeepractitioner
+
+	thingprofilepage <.. thingadditionaldetail
+	thingsmallgraphic <.. thingsite
+	thingscrummaster <.. thingsite
+	thingscrumproductowner <.. thingsite
+	thingtrainer <.. thingsite
+	thingpractitioner <.. thingsite
+	thingmember <.. thingannualfee
+	thingpractitioner <.. thingannualfee
+	thingtrainer <.. thingannualfee
+	actorpractitioner --- thingarticleshowcsppractitioner
+	actorpractitioner --- thingpageinterface
+	actorsitevisitor --- thingmasterinterface
+	actorsitevisitor --- thingpractitionerinterface
+	actorsiteadministrator --- thingpractitionerinterface
+	actorsitevisitor --- thingtrainerinterface
+	actorsiteadministrator --- thingtrainerinterface
+	actorsitevisitor --- thingownerinterface
+	actorsiteadministrator --- thingmemberinterface
+	thingadditionaldetail --- controlincludeadditionaldetail
+	thingprofilepage --- controlincludeadditionaldetail
+	thingpageinterface --> controlincludeadditionaldetail
+	thingarticle --- controlwritearticlesite
+	thingsite --- controlwritearticlesite
+	thingsmallgraphic --- controlwritearticlesite
+	thingarticleshowcsppractitioner --> controlwritearticlesite
+	controlwritearticlesite --> controlshowcsp
+	thingcsp --- controlshowcsp
+	thingarticleshowcsppractitioner --> controlshowcsp
+	thingcststatus --- controlshowcststatus
+	thingarticleshowcsppractitioner --> controlshowcststatus
+	controlwritearticlesite --> controlshowcststatus
+	thingarticleshowcsppractitioner --> controlshow
+	controlwritearticlesite --> controlshow
+	thingscrummaster --- controlviewlist
+	thingmasterinterface --> controlviewlist
+	thingsite --- controlviewlist
+	thingpractitioner --- controlviewlistpractitioner
+	thingpractitionerinterface --> controlviewlistpractitioner
+	thingsite --- controlviewlistpractitioner
+	thingtrainer --- controlviewlisttrainer
+	thingtrainerinterface --> controlviewlisttrainer
+	thingsite --- controlviewlisttrainer
+	thingscrumproductowner --- controlviewlistcertifiedscrumproductowner
+	thingownerinterface --> controlviewlistcertifiedscrumproductowner
+	thingsite --- controlviewlistcertifiedscrumproductowner
+	thingannualfee --- controlsetannualfee
+	thingmember --- controlsetannualfee
+	thingmemberinterface --> controlsetannualfee
+	thingtrainer --- controlsetannualfeetrainer
+	thingannualfee --- controlsetannualfeetrainer
+	thingtrainerinterface --> controlsetannualfeetrainer
+	thingpractitioner --- controlsetannualfeepractitioner
+	thingannualfee --- controlsetannualfeepractitioner
+	thingpractitionerinterface --> controlsetannualfeepractitioner
+
+@enduml

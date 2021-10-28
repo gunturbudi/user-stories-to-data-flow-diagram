@@ -1,0 +1,105 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Sponsor" as thingsponsor
+	entity "Training" as thingtraining
+	entity "Summit" as thingsummit
+	entity "Event" as thingevent
+	entity "Sponsorship Page" as thingsponsorshippage #grey
+	entity "Sponsorship Profile" as thingsponsorshipprofile #grey
+	entity "Job" as thingjob
+	entity "Sponsorship Person" as thingsponsorshipperson #grey
+	entity "Brand" as thingbrand
+	entity "Badcamp Attendee" as thingbadcampattendee
+	actor "Administrator" as actoradministrator
+	actor "Summit Coordinator" as actorsummitcoordinator
+	actor "Anonymoususer" as actoranonymoususer
+	actor "Sponsor" as actorsponsor
+	circle "Listing" as thinglisting #grey
+	boundary "Training\nInterface" as thingtraininginterface #grey
+	boundary "Summit\nInterface" as thingsummitinterface #grey
+	boundary "Event\nInterface" as thingeventinterface #grey
+	boundary "Sponsor\nInterface" as thingsponsorinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	boundary "Job\nInterface" as thingjobinterface #grey
+	boundary "Brand\nInterface" as thingbrandinterface #grey
+	control "Assign Sponsors\nTo Training" as controlassignsponsortraining
+	control "Assign Sponsors\nTo Summit" as controlassignsponsorsummit
+	control "Assign Sponsors\nTo Events" as controlassignsponsorevent
+	control "List Sponsors\nFor Summit" as controllistsponsorsummit
+	control "See All\nEvents That\nA Sponsor\nIs Sponsoring" as controlseeevent
+	control "See Summit" as controlseesummit
+	control "See Training" as controlseetraining
+	control "Link Badcamp\nAttendees To\nSponsorship Page" as controllinkbadcampattendeessponsorshippage
+	control "Link To\nSponsorship Profile\nFrom Job\nListings" as controllinksponsorshipprofilejoblistings
+	control "Learn" as controllearn
+	control "Posting Jobs\nAs A\nSponsor" as controlpostlearnjobsponsor
+	control "Contact Jobs\nAs A\nSponsor The\nSponsorship Person" as controlcontactlearnjobsponsorsponsorshipperson #grey
+	control "Post A\nJob" as controlpostjob
+	control "Personalize Sponsorship\nPage" as controlpersonalizesponsorshippage
+	control "Sponsor A\nSummit Matches\nBrand" as controlsponsorsummit
+
+	thingevent <.. thingsponsor
+	thingtraining <.. thingsponsor
+	thingsummit <.. thingsponsor
+	thingbrand <.. thingsummit
+	thingsponsor <.. thingevent
+	thinglisting <.. thingsponsorshipprofile
+	thingsponsor <.. thingjob
+	thingsponsorshippage <.. thingbadcampattendee
+	thingjob *-- thinglisting
+	actoradministrator --- thingtraininginterface
+	actoranonymoususer --- thingtraininginterface
+	actoradministrator --- thingsummitinterface
+	actorsummitcoordinator --- thingsummitinterface
+	actoranonymoususer --- thingsummitinterface
+	actoradministrator --- thingeventinterface
+	actoranonymoususer --- thingsponsorinterface
+	actorsponsor --- thingpageinterface
+	actorsponsor --- thingjobinterface
+	actorsponsor --- thingbrandinterface
+	thingtraining --- controlassignsponsortraining
+	thingtraininginterface --> controlassignsponsortraining
+	thingsponsor --- controlassignsponsortraining
+	thingsummit --- controlassignsponsorsummit
+	thingsummitinterface --> controlassignsponsorsummit
+	thingsponsor --- controlassignsponsorsummit
+	thingsponsor --- controlassignsponsorevent
+	thingevent --- controlassignsponsorevent
+	thingeventinterface --> controlassignsponsorevent
+	thingsponsor --- controllistsponsorsummit
+	thingsummit --- controllistsponsorsummit
+	thingsummitinterface --> controllistsponsorsummit
+	thingsponsorinterface --> controlseeevent
+	thingsponsor --- controlseeevent
+	thingevent --- controlseeevent
+	thingsummit --- controlseesummit
+	thingsummitinterface --> controlseesummit
+	thingtraining --- controlseetraining
+	thingtraininginterface --> controlseetraining
+	thingbadcampattendee --- controllinkbadcampattendeessponsorshippage
+	thingsponsorshippage --- controllinkbadcampattendeessponsorshippage
+	thingpageinterface --> controllinkbadcampattendeessponsorshippage
+	thingsponsorshipprofile --- controllinksponsorshipprofilejoblistings
+	thinglisting --- controllinksponsorshipprofilejoblistings
+	thingjobinterface --> controllinksponsorshipprofilejoblistings
+	controlpostlearnjobsponsor --> controllearn
+	thingsponsorinterface --> controllearn
+	controlcontactlearnjobsponsorsponsorshipperson --> controllearn
+	thingjob --- controlpostlearnjobsponsor
+	thingsponsor --- controlpostlearnjobsponsor
+	thingsponsorinterface --> controlpostlearnjobsponsor
+	thingsponsorshipperson --- controlcontactlearnjobsponsorsponsorshipperson
+	thingsponsor --- controlcontactlearnjobsponsorsponsorshipperson
+	thingjob --- controlcontactlearnjobsponsorsponsorshipperson
+	thingjob --- controlpostjob
+	thingjobinterface --> controlpostjob
+	thingsponsorshippage --- controlpersonalizesponsorshippage
+	thingpageinterface --> controlpersonalizesponsorshippage
+	thingbrand --- controlsponsorsummit
+	thingbrandinterface --> controlsponsorsummit
+	thingsummit --- controlsponsorsummit
+
+@enduml

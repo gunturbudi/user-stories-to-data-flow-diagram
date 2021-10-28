@@ -1,0 +1,54 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Right " color=red];
+201 [label="<f0>  |<f1> Role " color=red];
+202 [label="<f0>  |<f1> Rac Staff " ];
+203 [label="<f0>  |<f1> Password " color=red];
+204 [label="<f0>  |<f1> Researcher " color=red];
+205 [label="<f0>  |<f1> User Group " color=red];
+206 [label="<f0>  |<f1> Directory Credential " ];
+207 [label="<f0>  |<f1> Metadata Field " color=red];
+208 [label="<f0>  |<f1> User " color=red];
+209 [label="Administrator" shape=box];
+210 [label="{<f0> 1.0|<f1> Create User Groups }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Create User Roles }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Assign Rights To User Groups }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Assign Rights To Role }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Assign Rac Staff To Different User Groups }" shape=Mrecord];
+215 [label="{<f0> 6.0|<f1> Log }" shape=Mrecord];
+216 [label="{<f0> 7.0|<f1> Allow }" shape=Mrecord];
+217 [label="{<f0> 8.0|<f1> Using Active Directory Credentials }" shape=Mrecord];
+218 [label="{<f0> 9.0|<f1> Have }" shape=Mrecord];
+219 [label="{<f0> 10.0|<f1> Limit }" shape=Mrecord];
+11 [label="{<f0> 11.0|<f1> Control user permissions. }" shape=Mrecord];
+210 -> 11
+1001 [label="<f0>  |<f1> User permissions " color=red];
+11 -> 1001 [label="User permissions"]
+12 [label="{<f0> 12.0|<f1> Group users by role. }" shape=Mrecord];
+211 -> 12
+12 -> 201  [label="Role"]
+13 [label="{<f0> 13.0|<f1> Hide things from display based on user groups. }" shape=Mrecord];
+209 -> 13
+1006 [label="<f0>  |<f1> User groups " color=red];
+13 -> 1006 [label="User groups"]
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+209 -> 215
+209 -> 216
+209 -> 217
+210 -> 205 [label="User Group"]
+211 -> 201 [label="Role"]
+212 -> 200 [label="Right"]
+212 -> 205 [label="User Group"]
+213 -> 201 [label="Role"]
+213 -> 200 [label="Right"]
+214 -> 202 [label="Rac Staff"]
+214 -> 205 [label="User Group"]
+216 -> 217
+217 -> 215
+217 -> 206 [label="Directory Credential"]
+210 -> 208 [label="User"]
+}

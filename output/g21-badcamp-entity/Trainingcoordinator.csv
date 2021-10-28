@@ -1,0 +1,53 @@
+id,value,style,source,target,type
+200,Trainer,shape=partialRectangle,null,null,data_base
+201,Website,shape=partialRectangle,null,null,data_base
+202,Info,shape=partialRectangle,null,null,data_base
+203,Update,shape=partialRectangle,null,null,data_base
+204,Attendee,shape=partialRectangle,null,null,data_base
+205,Deadline,shape=partialRectangle,null,null,data_base
+206,Cancellation Workflow,shape=partialRectangle,null,null,data_base
+207,Registration,shape=partialRectangle,null,null,data_base
+208,Trainee Information,shape=partialRectangle,null,null,data_base
+209,View,shape=partialRectangle,null,null,data_base
+210,Training Session,shape=partialRectangle,null,null,data_base
+211,Admin,shape=partialRectangle,null,null,data_base
+212,Cancellation,shape=partialRectangle,null,null,data_base
+213,Trainingcoordinator,rounded=0,null,null,external_entity
+214,Email The Trainers Once From The Website For Info,ellipse,null,null,process
+215,Email The Trainers Once From The Website For Update,ellipse,null,null,process
+216,Track Registration Status For Each Attendee,ellipse,null,null,process
+217,Have An Admin View Helps,ellipse,null,null,process
+218,Tie In A Cancellation Deadline Whatever Registration Exists,ellipse,null,null,process
+219,Tie In A Deadline Whatever Cancellation Workflow Exists,ellipse,null,null,process
+220,Show A Single Training Session,ellipse,null,null,process
+221,Have An View,ellipse,null,null,process
+222,Filter,ellipse,null,null,process
+224,,endArrow=classic,213,214,endArrow=classic
+225,,endArrow=classic,213,215,endArrow=classic
+226,,endArrow=classic,213,216,endArrow=classic
+227,,endArrow=classic,213,217,endArrow=classic
+228,,endArrow=classic,213,218,endArrow=classic
+229,,endArrow=classic,213,219,endArrow=classic
+230,,endArrow=classic,213,220,endArrow=classic
+231,,endArrow=classic,213,221,endArrow=classic
+232,,endArrow=classic,213,222,endArrow=classic
+233,Trainer,endArrow=classic,214,200,endArrow=classic
+234,Website,endArrow=classic,214,201,endArrow=classic
+235,Info,endArrow=classic,214,202,endArrow=classic
+236,Update,endArrow=classic,215,203,endArrow=classic
+237,Trainer,endArrow=classic,215,200,endArrow=classic
+238,Website,endArrow=classic,215,201,endArrow=classic
+239,Attendee,endArrow=classic,216,204,endArrow=classic
+240,,endArrow=classic,217,216,endArrow=classic
+241,Trainee Information,endArrow=classic,217,208,endArrow=classic
+242,View,endArrow=classic,217,209,endArrow=classic
+243,Registration,endArrow=classic,218,207,endArrow=classic
+244,Deadline,endArrow=classic,218,205,endArrow=classic
+245,Deadline,endArrow=classic,219,205,endArrow=classic
+246,Cancellation Workflow,endArrow=classic,219,206,endArrow=classic
+247,Training Session,endArrow=classic,220,210,endArrow=classic
+248,,endArrow=classic,221,222,endArrow=classic
+249,View,endArrow=classic,221,209,endArrow=classic
+250,,endArrow=classic,222,220,endArrow=classic
+254,Admin,endArrow=classic,217,211,endArrow=classic
+259,Cancellation,endArrow=classic,218,212,endArrow=classic

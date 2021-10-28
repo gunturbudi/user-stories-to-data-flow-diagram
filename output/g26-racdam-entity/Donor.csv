@@ -1,0 +1,34 @@
+id,value,style,source,target,type
+200,Researcher,shape=partialRectangle,null,null,data_base
+201,Information,shape=partialRectangle,null,null,data_base
+202,Available Right,shape=partialRectangle,null,null,data_base
+203,Donor,shape=partialRectangle,null,null,data_base
+204,Unprocessed Material,shape=partialRectangle,null,null,data_base
+205,Access,shape=partialRectangle,null,null,data_base
+206,Unprocesse Collection,shape=partialRectangle,null,null,data_base
+207,Inventory,shape=partialRectangle,null,null,data_base
+208,Archival Material,shape=partialRectangle,null,null,data_base
+209,Physical Location,shape=partialRectangle,null,null,data_base
+210,Archivist,rounded=0,null,null,external_entity
+211,Make Information About Available Rights To Researchers,ellipse,null,null,process
+212,Make Information About Available Rights To Donor,ellipse,null,null,process
+213,Provide Access To Digital Copies Of Unprocessed Material,ellipse,null,null,process
+214,Access Inventories For Unprocessed Collections,ellipse,null,null,process
+215,View Physical Locations For Archival Material,ellipse,null,null,process
+217,,endArrow=classic,210,211,endArrow=classic
+218,,endArrow=classic,210,212,endArrow=classic
+219,,endArrow=classic,210,213,endArrow=classic
+220,,endArrow=classic,210,214,endArrow=classic
+221,,endArrow=classic,210,215,endArrow=classic
+222,Information,endArrow=classic,211,201,endArrow=classic
+223,Available Right,endArrow=classic,211,202,endArrow=classic
+224,Researcher,endArrow=classic,211,200,endArrow=classic
+225,Donor,endArrow=classic,212,203,endArrow=classic
+226,Available Right,endArrow=classic,212,202,endArrow=classic
+227,Information,endArrow=classic,212,201,endArrow=classic
+228,Access,endArrow=classic,213,205,endArrow=classic
+229,Unprocessed Material,endArrow=classic,213,204,endArrow=classic
+230,Inventory,endArrow=classic,214,207,endArrow=classic
+231,Unprocesse Collection,endArrow=classic,214,206,endArrow=classic
+232,Physical Location,endArrow=classic,215,209,endArrow=classic
+233,Archival Material,endArrow=classic,215,208,endArrow=classic

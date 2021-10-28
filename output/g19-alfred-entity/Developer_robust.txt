@@ -1,0 +1,206 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "App" as thingapp
+	entity "Possible ,\nPeople" as thingpossiblemanypeople
+	entity "Market Place" as thingmarketplace #grey
+	entity "Customer" as thingcustomer
+	entity "Feedback" as thingfeedback
+	entity "Easy Way" as thingeasyway
+	entity "Api" as thingapi
+	entity "Apps Development\nSupport" as thingappsdevelopmentsupport #grey
+	entity "Way" as thingseveralway
+	entity "Access" as thingaccess
+	entity "High Level" as thinghighlevel
+	entity "Goal" as thinggoal
+	entity "Work" as thingwork
+	entity "Accounting" as thingaccounting
+	entity "Clear" as thingclear
+	entity "Pricing Modality" as thingpricingmodality #grey
+	entity "Fee" as thingfee
+	entity "Platform" as thingplatform
+	entity "Detailed Information" as thingdetailedinformation
+	entity "User" as thinguser
+	entity "Question" as thingquestion
+	entity "Datum" as thingdatum
+	entity "Apps Change" as thingappschange
+	entity "Operating System\nFeature" as thingoperatingsystemfeature
+	entity "Health Sensor" as thinghealthsensor
+	entity "Alfred" as thingalfred #grey
+	actor "Developer" as actordeveloper
+	circle "State" as thingstate
+	circle "Provider" as thingprovider
+	circle "Setting" as thingsetting #grey
+	circle "Charge" as thingcharge #grey
+	boundary "Api Components" as thingapicomponentsdeveloper
+	boundary "People\nInterface" as thingpeopleinterface #grey
+	boundary "Place\nInterface" as thingplaceinterface #grey
+	boundary "Customer\nInterface" as thingcustomerinterface #grey
+	boundary "App\nInterface" as thingappinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Api\nInterface" as thingapiinterface #grey
+	boundary "Support\nInterface" as thingsupportinterface #grey
+	boundary "Feature\nInterface" as thingfeatureinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Goal\nInterface" as thinggoalinterface #grey
+	boundary "Accounting\nInterface" as thingaccountinginterface #grey
+	boundary "Clear\nInterface" as thingclearinterface #grey
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Sensor\nInterface" as thingsensorinterface #grey
+	control "Present App\nTo As\nPossible, Many\nPeople" as controlpresentapppossiblemanypeople
+	control "Create Apps\nWithin The\nMarket Place" as controlcreateapp
+	control "Maintain Apps\nWithin The\nMarket Place" as controlmaintainapp #grey
+	control "Enable Customers" as controlenablecustomerprovidefeedback
+	control "Provide Feedback\nAbout App" as controlprovidefeedback
+	control "Watch This\nFeedback" as controlwatchfeedback
+	control "Need An\nEasy Way" as controlneedeasywaywatchfeedback
+	control "Documented Have\nThe Api" as controlhaveapi
+	control "Obtain Apps\nDevelopment Support" as controlobtainappsdevelopmentsupport
+	control "Possible Notified" as controlnotify
+	control "Present App\nIn Several\nWays" as controlpresentappseveralway
+	control "Have App\nTo Granted\nAccess To\nSeveral Operating\nSystem Features" as controlhaveapp
+	control "Have" as controlhavebeapicomponentsdeveloperhighlevel
+	control "Be On\nA High\nLevel" as controlbeapicomponentsdeveloperhighlevel
+	control "Provide An\nEasy Way" as controlprovideeasywaymanageusersettings
+	control "Manage The\nUser Settings" as controlmanageusersettings
+	control "Reduce The\nWork" as controlreduceworkachievegoal
+	control "Have The\nAlfred Api" as controlhavealfredAPIreduceworkachievegoal
+	control "Achieve Goals" as controlachievegoal
+	control "Have The\nAccounting As\nPossible Simple" as controlhaveaccounting
+	control "Have The\nAccounting Clear" as controlhaveaccountingclear
+	control "Have An\nEasy Way" as controlhaveeasywaymanagepricingmodality
+	control "Manage The\nPricing Modality\nOf Apps" as controlmanagepricingmodality
+	control "Know The\nProvider Of\nThe Market\nPlace Charges" as controlknowprovider
+	control "Using The\nPlatform" as controluseknowproviderplatform
+	control "Know The\nFees" as controlknowfee
+	control "Have Detailed\nInformation Happened" as controlhavedetailedinformation
+	control "Design App\nOn Own" as controldesignappown
+	control "Be A,\nFew Rules" as controlbe
+	control "Define Questions\nThe User\nAsk" as controldefinequestion
+	control "Have An\nEasy Way\nThe User\nIs Wearing" as controlhaveeasywayreaddatum
+	control "Read Data\nFrom Health\nSensors" as controlreaddatum
+
+	thingpossiblemanypeople <.. thingapp
+	thingseveralway <.. thingapp
+	thingaccess <.. thingapp
+	thingmarketplace <.. thingapp
+	thingapp <.. thingfeedback
+	thinguser <.. thingeasyway
+	thingalfred <.. thingapi
+	thingoperatingsystemfeature <.. thingaccess
+	thingclear <.. thingaccounting
+	thingapp <.. thingpricingmodality
+	thinguser <.. thingquestion
+	thinghealthsensor <.. thingdatum
+	thingappschange *-- thingstate
+	thingcharge *-- thingprovider
+	thingmarketplace *-- thingprovider
+	thinguser *-- thingsetting
+	thingmarketplace *-- thingcharge
+	actordeveloper --- thingapicomponentsdeveloper
+	actordeveloper --- thingpeopleinterface
+	actordeveloper --- thingplaceinterface
+	actordeveloper --- thingcustomerinterface
+	actordeveloper --- thingappinterface
+	actordeveloper --- thingwayinterface
+	actordeveloper --- thingapiinterface
+	actordeveloper --- thingsupportinterface
+	actordeveloper --- thingfeatureinterface
+	actordeveloper --- thinguserinterface
+	actordeveloper --- thinggoalinterface
+	actordeveloper --- thingaccountinginterface
+	actordeveloper --- thingclearinterface
+	actordeveloper --- thingplatforminterface
+	actordeveloper --- thingfeeinterface
+	actordeveloper --- thinginformationinterface
+	actordeveloper --- thingsensorinterface
+	thingapp --- controlpresentapppossiblemanypeople
+	thingpossiblemanypeople --- controlpresentapppossiblemanypeople
+	thingpeopleinterface --> controlpresentapppossiblemanypeople
+	thingplaceinterface --> controlcreateapp
+	thingapp --- controlcreateapp
+	thingmarketplace --- controlcreateapp
+	thingmarketplace --- controlmaintainapp
+	thingapp --- controlmaintainapp
+	thingcustomer --- controlenablecustomerprovidefeedback
+	thingcustomerinterface --> controlenablecustomerprovidefeedback
+	controlenablecustomerprovidefeedback --> controlprovidefeedback
+	thingfeedback --- controlprovidefeedback
+	thingappinterface --> controlprovidefeedback
+	thingapp --- controlprovidefeedback
+	controlneedeasywaywatchfeedback --> controlwatchfeedback
+	thingwayinterface --> controlwatchfeedback
+	thingfeedback --- controlwatchfeedback
+	thingeasyway --- controlneedeasywaywatchfeedback
+	thingwayinterface --> controlneedeasywaywatchfeedback
+	controlenablecustomerprovidefeedback --> controlneedeasywaywatchfeedback
+	thingapi --- controlhaveapi
+	thingapiinterface --> controlhaveapi
+	thingappsdevelopmentsupport --- controlobtainappsdevelopmentsupport
+	thingsupportinterface --> controlobtainappsdevelopmentsupport
+	thingseveralway --- controlpresentappseveralway
+	thingapp --- controlpresentappseveralway
+	thingwayinterface --> controlpresentappseveralway
+	thingaccess --- controlhaveapp
+	thingoperatingsystemfeature --- controlhaveapp
+	thingfeatureinterface --> controlhaveapp
+	thingapp --- controlhaveapp
+	thingapicomponentsdeveloper --> controlhavebeapicomponentsdeveloperhighlevel
+	controlhavebeapicomponentsdeveloperhighlevel --> controlbeapicomponentsdeveloperhighlevel
+	thingapicomponentsdeveloper --> controlbeapicomponentsdeveloperhighlevel
+	thinghighlevel --- controlbeapicomponentsdeveloperhighlevel
+	thingeasyway --- controlprovideeasywaymanageusersettings
+	thingwayinterface --> controlprovideeasywaymanageusersettings
+	controlprovideeasywaymanageusersettings --> controlmanageusersettings
+	thingsetting --- controlmanageusersettings
+	thinguserinterface --> controlmanageusersettings
+	thinguser --- controlmanageusersettings
+	thingwork --- controlreduceworkachievegoal
+	controlhavealfredAPIreduceworkachievegoal --> controlreduceworkachievegoal
+	thingapiinterface --> controlreduceworkachievegoal
+	thingapiinterface --> controlhavealfredAPIreduceworkachievegoal
+	thingapi --- controlhavealfredAPIreduceworkachievegoal
+	controlreduceworkachievegoal --> controlachievegoal
+	thinggoal --- controlachievegoal
+	thinggoalinterface --> controlachievegoal
+	thingaccounting --- controlhaveaccounting
+	thingaccountinginterface --> controlhaveaccounting
+	thingclear --- controlhaveaccountingclear
+	thingclearinterface --> controlhaveaccountingclear
+	thingaccounting --- controlhaveaccountingclear
+	thingeasyway --- controlhaveeasywaymanagepricingmodality
+	thingwayinterface --> controlhaveeasywaymanagepricingmodality
+	controlhaveeasywaymanagepricingmodality --> controlmanagepricingmodality
+	thingpricingmodality --- controlmanagepricingmodality
+	thingapp --- controlmanagepricingmodality
+	thingappinterface --> controlmanagepricingmodality
+	thingprovider --- controlknowprovider
+	thingcharge --- controlknowprovider
+	controluseknowproviderplatform --> controlknowprovider
+	thingmarketplace --- controlknowprovider
+	thingplaceinterface --> controlknowprovider
+	thingplatform --- controluseknowproviderplatform
+	thingplatforminterface --> controluseknowproviderplatform
+	thingfee --- controlknowfee
+	thingfeeinterface --> controlknowfee
+	thingdetailedinformation --- controlhavedetailedinformation
+	thinginformationinterface --> controlhavedetailedinformation
+	thingapp --- controldesignappown
+	thingappinterface --> controldesignappown
+	thingquestion --- controldefinequestion
+	thinguser --- controldefinequestion
+	thingwayinterface --> controldefinequestion
+	controlhaveeasywaymanagepricingmodality --> controldefinequestion
+	thingeasyway --- controlhaveeasywayreaddatum
+	thinguser --- controlhaveeasywayreaddatum
+	thinguserinterface --> controlhaveeasywayreaddatum
+	controlhaveeasywayreaddatum --> controlreaddatum
+	thingdatum --- controlreaddatum
+	thinghealthsensor --- controlreaddatum
+	thingsensorinterface --> controlreaddatum
+
+@enduml

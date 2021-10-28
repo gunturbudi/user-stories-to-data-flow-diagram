@@ -1,0 +1,164 @@
+[
+  {
+    "text": "As an NSF employee, I want to understand the process of switching the cloud.gov hosting plan over from prototype to FISMA low.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to have an updated roadmap document, so that I can see prioritized areas to focus on for the next few months and beyond.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "roadmap document",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to narrow down the universe of CMS options and identify/prioritize key considerations for getting to the next step.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to have a final workshop to identify key lessons and features for the content management system decision.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to understand work performed, so that I can understand when and what I can use later.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "work performed",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to have high-level strategy recommendations to implement in conjunction with the new CMS.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to have editorial-planning recommendations, so that I can understand how they might impact an eventual CMS / future web presence.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to know how brand guidelines are developed and maintained, so that I can incorporate them throughout the project.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to know how visual design directions were developed, so that I can make better design decisions in the future.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to schedule regular in-person check-ins, so that we can continue to communicate the goals of the project with our stakeholders.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to join Github, so that I can participate in the issues as assigned.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to learn about how Github is used, so that I can participate in the issues as assigned.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to see how the user recruitment form looks and behaves on a sample page, so that I can understand the impact the recruitment will have on the NSF page.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an NSF employee, I want to know where the initial in-person meeting will be, so that I can plan on attending.",
+    "entities": [
+      {
+        "text": "NSF employee",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  }
+]

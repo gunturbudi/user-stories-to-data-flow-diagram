@@ -1,0 +1,19 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Logo" as thinglogo
+	entity "Sponsors Page" as thingsponsorspage
+	actor "Corporatesponsor" as actorcorporatesponsor
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Display Logo\nOn A\nCorporate Sponsors\nPage" as controldisplaylogocorporatesponsorspage
+	control "Make" as controlmake
+
+	thingsponsorspage <.. thinglogo
+	actorcorporatesponsor --- thingpageinterface
+	thinglogo --- controldisplaylogocorporatesponsorspage
+	thingsponsorspage --- controldisplaylogocorporatesponsorspage
+	thingpageinterface --> controldisplaylogocorporatesponsorspage
+
+@enduml

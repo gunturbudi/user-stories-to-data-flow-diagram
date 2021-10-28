@@ -1,0 +1,166 @@
+[
+  {
+    "text": "As a data reuser, I want to search the archive through the web, so that I can easily find data relevant to my needs.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "needs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to access the system in my native language, so that I am not put off reusing University of Bath data by language barriers.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "native language",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to examine and identify deposited files, so that I can make a preliminary assessment of usefulness without downloading the whole dataset.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "examine",
+        "label": "Processing"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "deposited files",
+        "label": "PII"
+      },
+      {
+        "text": "downloading",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to view an example citation for a dataset, so that I can reference it correctly.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to view a DOI for a dataset, so that I can get back to the data in future and I can import the dataset into my referencemanagement software automatically.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "import",
+        "label": "Processing"
+      },
+      {
+        "text": "referencemanagement software",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to get a persistent URL for a dataset, so that I can get back to the data in future.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to search the archive through Primo , so that I can search books, articles and data all in one place.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a data reuser, I want to see different versions of a dataset at a glance, so that I can be sure I'm using the right version of the dataset.",
+    "entities": [
+      {
+        "text": "data reuser",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

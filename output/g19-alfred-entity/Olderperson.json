@@ -1,0 +1,1533 @@
+[
+  {
+    "text": "As an OlderPerson, I want to know exactly what ALFRED does with my personal data, and share it only on my specific permission.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "personal data",
+        "label": "PII"
+      },
+      {
+        "text": "specific permission",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive information from ALFRED by speech technology.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "speech",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use only well-visible buttons.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED as much as possible with speech interaction.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "speech interaction",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to always keep control on the activities of ALFRED.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "keep control",
+        "label": "Processing"
+      },
+      {
+        "text": "activities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to manage my privacy and data settings.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "privacy",
+        "label": "PII"
+      },
+      {
+        "text": "data settings",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have everything preinstalled, so that I do not have to set up ALFRED by myself.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "preinstalled",
+        "label": "PII"
+      },
+      {
+        "text": "set up",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have a small ALFRED device that is wearable and easy to carry with me.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "carry",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED on all my computers, tablets and phone.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "computers",
+        "label": "PII"
+      },
+      {
+        "text": "tablets",
+        "label": "PII"
+      },
+      {
+        "text": "phone",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED on a bracelet or a necklace, so that I can always wear him with me.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "bracelet",
+        "label": "PII"
+      },
+      {
+        "text": "necklace",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have clear instructions and service after sales that guide me if I have trouble in using ALFRED.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "clear instructions",
+        "label": "Processing"
+      },
+      {
+        "text": "service after sales",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that speaks very slowly and clearly.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that only reacts to me.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "reacts",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that only listens to me when I ask it to.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "listens",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an introduction conversation with ALFRED, so that I can learn everything about him and he about me.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "introduction conversation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to buy ALFRED in a senior shop with special client support.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "buy",
+        "label": "Processing"
+      },
+      {
+        "text": "senior shop",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to buy ALFRED for a low price.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "buy",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive visual support, especially when looking at a list, map or agenda.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "visual support",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to pay for small amounts.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have a very good battery for ALFRED so I can keep him on the whole day.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that informs me about a low battery when leaving the house.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that can be easily adapted for user that have visual or hearing troubles.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that can be easily adapted for user that have visual troubles.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that can be easily adapted for user that have hearing trouble.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that repeats the last phrase.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to zoom into visual content.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "zoom",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that responds to the changing demand of the users by offering new Apps in the ALFREDO platform.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that helps me to communicate with my friends and family.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      },
+      {
+        "text": "friends",
+        "label": "PII"
+      },
+      {
+        "text": "family",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have video conversation with others.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "video conversation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an AFLRED device that encourages its users for real interaction between humans and not only with ICT tools.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have an ALFRED device that provides me with information about existing apps that corresponds to my interests.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "interests",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to customize my preferences in the different functionalities of the solution.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "customize",
+        "label": "Processing"
+      },
+      {
+        "text": "preferences",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have my data stored directly on the phone.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "stored",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive a wake up call from ALFRED in the morning checking on me if I am ok.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "checking",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive day and night rythm support with agenda reminders.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "rythm support",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive support to use the public transport.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "support",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED for navigation.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED for touristic walks and indications with explanations on historical and cultural sights.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "touristic walks",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive support to have a taxi on time.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "support",
+        "label": "PII"
+      },
+      {
+        "text": "taxi",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to see who is standing at my door and open the door.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "who is",
+        "label": "PII"
+      },
+      {
+        "text": "door",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to pick the phone sooner up when I am at home.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "pick",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to turn on/off the lights.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "turn on",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to control the heating.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to control the TV and radio.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "TV",
+        "label": "PII"
+      },
+      {
+        "text": "radio.",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to watch movies.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "watch",
+        "label": "Processing"
+      },
+      {
+        "text": "movies",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to hear about the news.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "hear",
+        "label": "Processing"
+      },
+      {
+        "text": "news",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to contact help in case of an emergency.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "help",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED contact the nearest caregiver when I ask ALFRED for urgent help.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive a message when my home care nurse is on her way.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "message",
+        "label": "PII"
+      },
+      {
+        "text": "home care nurse",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive a medicine reminder from ALFRED.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "medicine reminder",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to see whether I already have taken my pills, so that I can avoid an overdose.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "pills",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to do my grocery shopping.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "do",
+        "label": "Processing"
+      },
+      {
+        "text": "grocery shopping",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to send messages.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "messages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to detect falls and send an emergency to a specific contact.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "falls",
+        "label": "PII"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "emergency",
+        "label": "PII"
+      },
+      {
+        "text": "specific contact",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to suggest healthy recipes.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED ask spontaneous questions but it would be better to programme it during certain times of the day.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "ask",
+        "label": "Processing"
+      },
+      {
+        "text": "spontaneous questions",
+        "label": "PII"
+      },
+      {
+        "text": "programme",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to initiate questions, but it should be in the domains of my interest such as cinema, exhibitions, cooking.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "initiate",
+        "label": "Processing"
+      },
+      {
+        "text": "questions",
+        "label": "PII"
+      },
+      {
+        "text": "interest",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to call someone with ALFRED.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "call",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to activate the vocal interaction mode of ALFRED by pushing a specific button.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "activate",
+        "label": "Processing"
+      },
+      {
+        "text": "vocal interaction",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to maintain my contact list in my phone.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "contact list",
+        "label": "PII"
+      },
+      {
+        "text": "phone",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to manage my agenda.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "agenda",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to insert my meetings into ALFRED using speech.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "insert",
+        "label": "Processing"
+      },
+      {
+        "text": "meetings",
+        "label": "PII"
+      },
+      {
+        "text": "speech",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive reminders on my appointments.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive reminders",
+        "label": "Processing"
+      },
+      {
+        "text": "appointments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive a reminder from ALFRED on all the things I need to bring with me when I leave the house.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive a reminder",
+        "label": "Processing"
+      },
+      {
+        "text": "things",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to set up social groups of people with similar diseases.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "set up",
+        "label": "Processing"
+      },
+      {
+        "text": "social groups",
+        "label": "PII"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to contact people from my own circle.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "contact",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "own circle",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to learn about art expositions or a museum.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "art expositions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to learn about all the social activities that are organized in my neighborhood.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "neighborhood",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to get a personalized invitation to a social event, so that it motivates more to go.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "personalized invitation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to navigate to an event or concert and help me when I am lost.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "navigate",
+        "label": "Processing"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      },
+      {
+        "text": "concert",
+        "label": "PII"
+      },
+      {
+        "text": "help",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to help me navigate despite my mild cognitive impairments.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "help",
+        "label": "Processing"
+      },
+      {
+        "text": "navigate",
+        "label": "Processing"
+      },
+      {
+        "text": "mild cognitive impairments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to pay for small amounts.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "pay",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to use ALFRED to organize a meeting with a group of friends at a certain place.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "organize",
+        "label": "Processing"
+      },
+      {
+        "text": "meeting",
+        "label": "PII"
+      },
+      {
+        "text": "group of friends",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to play online games together with other users.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "play",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to get suggestions for sports classes in my neighbourhood.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "get suggestions",
+        "label": "Processing"
+      },
+      {
+        "text": "neighbourhood",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to enable me to have face to face contacts as well, so that I do not just have virtual contacts over ALFRED.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "contacts",
+        "label": "PII"
+      },
+      {
+        "text": "contacts",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to help me to control my body weight.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "help",
+        "label": "Processing"
+      },
+      {
+        "text": "control",
+        "label": "Processing"
+      },
+      {
+        "text": "body weight",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to just press one button to call my caregiver.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "call",
+        "label": "Processing"
+      },
+      {
+        "text": "caregiver.",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to decide who has access to my vital data.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "decide",
+        "label": "Processing"
+      },
+      {
+        "text": "who has access",
+        "label": "PII"
+      },
+      {
+        "text": "vital data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have the wearables with integrated sensors to look good and not to be stigmatizing.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to see my vital parameters myself on the phone.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "vital parameters",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have the ALFRED shirt to look good.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have the ALFRED shirt has to be non stigmatizing.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to set limits in the games duration as I get bored easily.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "set limits",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to play games where I can use my Imagination.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "Imagination",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to do guided exercises with ALFRED and ALFRED should also use sensors to capture health data while I am doing exercises.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "capture",
+        "label": "Processing"
+      },
+      {
+        "text": "health data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have games that include my favourite sports.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "favourite sports",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive suggestions about local sport Classes.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "receive suggestions",
+        "label": "Processing"
+      },
+      {
+        "text": "local sport Classes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to remind me to keep a good body posture.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "remind",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to receive specific tips how to reduce my health impairments without medication.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "reduce",
+        "label": "Processing"
+      },
+      {
+        "text": "health impairments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have some games that show me how good my memory and physical health is.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "memory",
+        "label": "PII"
+      },
+      {
+        "text": "physical health",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have training for specific muscle Groups.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "have training",
+        "label": "Processing"
+      },
+      {
+        "text": "muscle Groups",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to be able to see my training Performance.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "training Performance",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to have ALFRED to help to motivate me during the week to do exercise that should change daily, as the constant change motivates me.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "help",
+        "label": "Processing"
+      },
+      {
+        "text": "motivate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an OlderPerson, I want to games that require the combination of mental and physical exercise, such as opposing motion exercises of the arms and legs.",
+    "entities": [
+      {
+        "text": "OlderPerson,",
+        "label": "Data"
+      },
+      {
+        "text": "mental",
+        "label": "PII"
+      },
+      {
+        "text": "physical exercise",
+        "label": "PII"
+      }
+    ]
+  }
+]

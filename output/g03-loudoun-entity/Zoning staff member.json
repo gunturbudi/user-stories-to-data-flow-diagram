@@ -1,0 +1,44 @@
+[
+  {
+    "text": "As a Zoning Staff member, I want to Process the Requests for Zoning Information, so that I can capture my response to the request in the system and also send a communication from the system to the Applicant.",
+    "entities": [
+      {
+        "text": "Zoning Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Process",
+        "label": "Processing"
+      },
+      {
+        "text": "capture",
+        "label": "Processing"
+      },
+      {
+        "text": "response",
+        "label": "PII"
+      },
+      {
+        "text": "communication",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a Zoning Staff member, I want to Issue the Zoning-Related Permits, so that I can satisfy an Applicant's request for service that has proven to be eligible and in compliance with the Zoning Ordinance.",
+    "entities": [
+      {
+        "text": "Zoning Staff member",
+        "label": "Data"
+      },
+      {
+        "text": "Issue",
+        "label": "Processing"
+      },
+      {
+        "text": "Applicant",
+        "label": "Data"
+      }
+    ]
+  }
+]

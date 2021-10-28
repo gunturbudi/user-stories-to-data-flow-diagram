@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As an externaluser, I want to easily find and access research and educational materials from Cornell faculty related to a particular topic, which I can use to develop stronger research/evidence based programming, grant proposals, community policy, or business practices.",
+    "entities": [
+      {
+        "text": "externaluser,",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      },
+      {
+        "text": "educational materials",
+        "label": "PII"
+      },
+      {
+        "text": "Cornell faculty",
+        "label": "Data"
+      }
+    ]
+  }
+]

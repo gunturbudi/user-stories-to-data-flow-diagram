@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a manager, I want to know about all resources and services used for the data, so that I can estimate the true cost of the project.",
+    "entities": [
+      {
+        "text": "manager,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "resources and services",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

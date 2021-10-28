@@ -1,0 +1,229 @@
+[
+  {
+    "text": "As an admin, I want to be able to add or remove recycling facilities' information, so that users get the most recent information.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "remove",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to read users' feedback and complaints, so that we can add more features and keep improving the service we provide to them.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      },
+      {
+        "text": "complaints",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to block specific users based on IP address, so that I can prevent spamming on the websites.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "block",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "IP address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to view a dashboard that monitors all the sites' statuses, so that I can have a sense of what people are doing on our sites and know the service status.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "monitors",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to have all data encrypted, so that important information will not be stolen during a server breach or an attack.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "have",
+        "label": "Processing"
+      },
+      {
+        "text": "data encrypted",
+        "label": "PII"
+      },
+      {
+        "text": "important information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to handle all users' activities, so that I can manage more efficiently.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "handle",
+        "label": "Processing"
+      },
+      {
+        "text": "users'",
+        "label": "Data"
+      },
+      {
+        "text": "activities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to add recycling center information, so that I can keep the database up-to-date over time.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to view user error logs, so that I can fix or review any issues that are being faced by users of the system.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "error logs",
+        "label": "PII"
+      },
+      {
+        "text": "issues",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to onboard recycling centers on the platform, so that I can increase information accuracy.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "onboard",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to have a dashboard that shows usage stats and locations, so that I can identify the neighbourhoods with the largest number of drop-offs and to try getting more facilities involved.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "usage stats",
+        "label": "PII"
+      },
+      {
+        "text": "locations",
+        "label": "PII"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "neighbourhoods",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to be able to communicate directly with facilities, so that I can keep them updated about features we have on our website.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      },
+      {
+        "text": "facilities",
+        "label": "PII"
+      },
+      {
+        "text": "updated",
+        "label": "Processing"
+      },
+      {
+        "text": "features",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+id,value,style,source,target,type
+9,Link funding to all of the outputs it produces.,ellipse,null,null,process
+10,Report on projects depositing datasets in relation to funder requirements.,ellipse,null,null,process
+200,Cris,shape=partialRectangle,null,null,data_base
+201,Archive,shape=partialRectangle,null,null,data_base
+202,Record,shape=partialRectangle,null,null,data_base
+203,"Complete ,\nHold Datum",shape=partialRectangle,null,null,data_base
+204,Publish Dataset,shape=partialRectangle,null,null,data_base
+205,View Statistic,shape=partialRectangle,null,null,data_base
+206,Sector,shape=partialRectangle,null,null,data_base
+207,Country,shape=partialRectangle,null,null,data_base
+208,Dataset,shape=partialRectangle,null,null,data_base
+209,Metadata,shape=partialRectangle,null,null,data_base
+210,Project,shape=partialRectangle,null,null,data_base
+211,Citation Count,shape=partialRectangle,null,null,data_base
+212,"Research , Information Manager",rounded=0,null,null,external_entity
+213,Integrate The Archive With Cris,ellipse,null,null,process
+214,"Include Records For Externally Complete, Held Data",ellipse,null,null,process
+215,Track Citation Counts For Published Datasets,ellipse,null,null,process
+216,Segment The View Statistics By Country,ellipse,null,null,process
+217,Segment The View Statistics By Sector,ellipse,null,null,process
+218,Segment,ellipse,null,null,process
+219,Download,ellipse,null,null,process
+220,Have Datasets To Metadata About Projects,ellipse,null,null,process
+222,,endArrow=classic,212,213,endArrow=classic
+223,,endArrow=classic,212,214,endArrow=classic
+224,,endArrow=classic,212,215,endArrow=classic
+225,,endArrow=classic,212,216,endArrow=classic
+226,,endArrow=classic,212,217,endArrow=classic
+227,,endArrow=classic,212,220,endArrow=classic
+228,Archive,endArrow=classic,213,201,endArrow=classic
+229,Cris,endArrow=classic,213,200,endArrow=classic
+230,Record,endArrow=classic,214,202,endArrow=classic
+231,"Complete ,\nHold Datum",endArrow=classic,214,203,endArrow=classic
+232,Citation Count,endArrow=classic,215,211,endArrow=classic
+233,Publish Dataset,endArrow=classic,215,204,endArrow=classic
+234,View Statistic,endArrow=classic,216,205,endArrow=classic
+235,Country,endArrow=classic,216,207,endArrow=classic
+236,Sector,endArrow=classic,217,206,endArrow=classic
+237,View Statistic,endArrow=classic,217,205,endArrow=classic
+238,,endArrow=classic,218,219,endArrow=classic
+239,Dataset,endArrow=classic,220,208,endArrow=classic
+240,Metadata,endArrow=classic,220,209,endArrow=classic
+241,Project,endArrow=classic,220,210,endArrow=classic
+1000,,endArrow=classic,213,9,endArrow=classic
+1001,Funding,rounded=0,null,null,external_entity
+1002,Funding,endArrow=classic,9,1001,endArrow=classic
+1003,,endArrow=classic,220,10,endArrow=classic
+1004,Datasets,rounded=0,null,null,external_entity
+1005,Datasets,endArrow=classic,10,1004,endArrow=classic

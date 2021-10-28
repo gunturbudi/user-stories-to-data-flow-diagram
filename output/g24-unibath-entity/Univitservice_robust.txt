@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archived Datum" as thingarchiveddatum
+	entity "Archive" as thingarchive
+	entity "Ldap" as thingLDAP
+	entity "Datum" as thingdatum
+	entity "Different System" as thingdifferentsystem
+	entity "Storage System" as thingstoragesystem
+	entity "University System" as thinguniversitysystem
+	actor "Univitservice" as actorUnivITservice
+	boundary "Hcp Object\nStore" as thinghcpobjectstore #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Ldap\nInterface" as thingldapinterface #grey
+	control "Store Archived\nData On\nExisting Storage\nSystems" as controlstorearchiveddatum
+	control "Integrate The\nArchive With\nExisting University\nSystems Such\nAs Ldap" as controlintegratearchive
+	control "Store Archived\nData On\nThe Hcp\nObject Store" as controlstorearchiveddatumhcpobjectstore
+	control "Export All\nData To\nA Different\nSystem" as controlexportdatumdifferentsystem
+
+	thingstoragesystem <.. thingarchiveddatum
+	thinguniversitysystem <.. thingarchive
+	thingdifferentsystem <.. thingdatum
+	thingLDAP <.. thinguniversitysystem
+	actorUnivITservice --- thinghcpobjectstore
+	actorUnivITservice --- thingsysteminterface
+	actorUnivITservice --- thingldapinterface
+	thingarchiveddatum --- controlstorearchiveddatum
+	thingstoragesystem --- controlstorearchiveddatum
+	thingsysteminterface --> controlstorearchiveddatum
+	thingarchive --- controlintegratearchive
+	thinguniversitysystem --- controlintegratearchive
+	thingLDAP --- controlintegratearchive
+	thingldapinterface --> controlintegratearchive
+	thinghcpobjectstore --> controlstorearchiveddatumhcpobjectstore
+	thingarchiveddatum --- controlstorearchiveddatumhcpobjectstore
+	thingdatum --- controlexportdatumdifferentsystem
+	thingdifferentsystem --- controlexportdatumdifferentsystem
+	thingsysteminterface --> controlexportdatumdifferentsystem
+
+@enduml

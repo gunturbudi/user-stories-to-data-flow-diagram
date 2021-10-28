@@ -1,0 +1,51 @@
+[
+  {
+    "text": "As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, so that the training coordinator doesn't have to do all the work to get login info for environment setup.",
+    "entities": [
+      {
+        "text": "trainer,",
+        "label": "Data"
+      },
+      {
+        "text": "attendee information",
+        "label": "PII"
+      },
+      {
+        "text": "Trainers",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "class attendance",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "trusted",
+        "label": "Processing"
+      },
+      {
+        "text": "privacy",
+        "label": "PII"
+      },
+      {
+        "text": "training coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "get",
+        "label": "Processing"
+      },
+      {
+        "text": "login info",
+        "label": "PII"
+      }
+    ]
+  }
+]

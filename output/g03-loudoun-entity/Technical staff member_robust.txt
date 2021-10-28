@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Gis Property\nManagement" as thinggispropertymanagement #grey
+	actor "Technical ,\nStaff Member" as actortechnicalstaffmember
+	boundary "Management\nInterface" as thingmanagementinterface #grey
+	control "Update The\nGis Property\nManagement" as controlupdategispropertymanagement
+
+	actortechnicalstaffmember --- thingmanagementinterface
+	thinggispropertymanagement --- controlupdategispropertymanagement
+	thingmanagementinterface --> controlupdategispropertymanagement
+
+@enduml

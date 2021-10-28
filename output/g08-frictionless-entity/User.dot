@@ -1,0 +1,70 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Datum " ];
+201 [label="<f0>  |<f1> Data Package " color=red];
+202 [label="<f0>  |<f1> Tool " ];
+203 [label="<f0>  |<f1> Basic Metadata " color=red];
+204 [label="<f0>  |<f1> Researcher " ];
+205 [label="<f0>  |<f1> User " ];
+206 [label="<f0>  |<f1> Site " color=red];
+207 [label="<f0>  |<f1> Preview Button " ];
+208 [label="<f0>  |<f1> Dataset " color=red];
+209 [label="<f0>  |<f1> Exist Wizard " ];
+210 [label="<f0>  |<f1> Research " color=red];
+211 [label="Publisher" shape=box];
+212 [label="Repository Manager" shape=box];
+213 [label="Developer" shape=box];
+214 [label="{<f0> 1.0|<f1> Provide A Visualization Of Data In The Data Package }" shape=Mrecord];
+215 [label="{<f0> 2.0|<f1> Researchers Add Basic Metadata To Research Data }" shape=Mrecord];
+216 [label="{<f0> 3.0|<f1> User Add }" shape=Mrecord];
+217 [label="{<f0> 4.0|<f1> Embed An Interactive Preview Of Data On Site }" shape=Mrecord];
+218 [label="{<f0> 5.0|<f1> Embed A Preview Button On Site }" shape=Mrecord];
+219 [label="{<f0> 6.0|<f1> Know }" shape=Mrecord];
+220 [label="{<f0> 7.0|<f1> Customize An Existing Wizard For Specific Type Of Data }" shape=Mrecord];
+8 [label="{<f0> 8.0|<f1> Show my work to users of the data. }" shape=Mrecord];
+214 -> 8
+1001 [label="Publisher," shape=box];
+1001 -> 8
+1003 [label="Publisher," shape=box];
+1003 -> 8
+1005 [label="<f0>  |<f1> Analysis " color=red];
+8 -> 1005 [label="Analysis"]
+1007 [label="<f0>  |<f1> Work " color=red];
+8 -> 1007 [label="Work"]
+9 [label="{<f0> 9.0|<f1> Preview the data and be encouraged that this is the correct data for them. }" shape=Mrecord];
+1009 [label="Users" shape=box];
+1009 -> 9
+1011 [label="This" shape=box];
+1011 -> 9
+1013 [label="Users" shape=box];
+1013 -> 9
+1015 [label="This" shape=box];
+1015 -> 9
+1017 [label="Users" shape=box];
+1017 -> 9
+1019 [label="This" shape=box];
+1019 -> 9
+1021 [label="<f0>  |<f1> Data " color=red];
+9 -> 1021 [label="Data"]
+211 -> 214
+211 -> 217
+211 -> 218
+212 -> 215
+212 -> 216
+212 -> 220
+213 -> 215
+213 -> 220
+214 -> 200 [label="Datum"]
+214 -> 201 [label="Data Package"]
+215 -> 204 [label="Researcher"]
+215 -> 203 [label="Basic Metadata"]
+215 -> 200 [label="Datum"]
+216 -> 205 [label="User"]
+217 -> 206 [label="Site"]
+217 -> 200 [label="Datum"]
+218 -> 207 [label="Preview Button"]
+218 -> 206 [label="Site"]
+220 -> 209 [label="Exist Wizard"]
+220 -> 200 [label="Datum"]
+215 -> 210 [label="Research"]
+}

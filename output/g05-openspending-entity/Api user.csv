@@ -1,0 +1,130 @@
+id,value,style,source,target,type
+23,Build user experiences based on more than one dataset more easily.,ellipse,null,null,process
+24,Build user experiences based on more than one dataset more easily.,ellipse,null,null,process
+200,User,shape=partialRectangle,null,null,data_base
+201,City,shape=partialRectangle,null,null,data_base
+202,Border Region,shape=partialRectangle,null,null,data_base
+203,Region,shape=partialRectangle,null,null,data_base
+204,Query,shape=partialRectangle,null,null,data_base
+205,Polygon,shape=partialRectangle,null,null,data_base
+206,Code,shape=partialRectangle,null,null,data_base
+207,Country,shape=partialRectangle,null,null,data_base
+208,"Cube ,\nBased Query",shape=partialRectangle,null,null,data_base
+209,Csv Output,shape=partialRectangle,null,null,data_base
+210,Different Currency,shape=partialRectangle,null,null,data_base
+211,Monetary Measure,shape=partialRectangle,null,null,data_base
+212,Multiple Dataset,shape=partialRectangle,null,null,data_base
+213,Result,shape=partialRectangle,null,null,data_base
+214,Metadata,shape=partialRectangle,null,null,data_base
+215,Datum,shape=partialRectangle,null,null,data_base
+216,Population,shape=partialRectangle,null,null,data_base
+217,Measure,shape=partialRectangle,null,null,data_base
+218,Geographical Area,shape=partialRectangle,null,null,data_base
+219,Gdp,shape=partialRectangle,null,null,data_base
+220,Contextual Constraint,shape=partialRectangle,null,null,data_base
+221,Dataset,shape=partialRectangle,null,null,data_base
+222,Reference,shape=partialRectangle,null,null,data_base
+223,Gini,shape=partialRectangle,null,null,data_base
+224,Database,shape=partialRectangle,null,null,data_base
+225,Visualisation State,shape=partialRectangle,null,null,data_base
+226,Platform,shape=partialRectangle,null,null,data_base
+227,Embed Visualisation,shape=partialRectangle,null,null,data_base
+228,Embedded Viewer,shape=partialRectangle,null,null,data_base
+229,Hasc,shape=partialRectangle,null,null,data_base
+230,Api User,rounded=0,null,null,external_entity
+231,Understand,ellipse,null,null,process
+232,Query City,ellipse,null,null,process
+233,Query A Region,ellipse,null,null,process
+234,Get Bordering Regions,ellipse,null,null,process
+235,Get City,ellipse,null,null,process
+236,Request Polygons On The Query,ellipse,null,null,process
+237,Use Codes For City,ellipse,null,null,process
+238,Use Codes For Region,ellipse,null,null,process
+239,Use Codes For,ellipse,null,null,process
+240,Have,ellipse,null,null,process
+241,Use Hasc Codes For Countries,ellipse,null,null,process
+242,"Get A Csv Output Of Any Cube, Based Query",ellipse,null,null,process
+243,Get A Set Of Monetary Measures To Different Currencies,ellipse,null,null,process
+244,Use Metadata,ellipse,null,null,process
+245,Get Results From Multiple Datasets,ellipse,null,null,process
+246,Use Data,ellipse,null,null,process
+247,Normalise Measures By Population,ellipse,null,null,process
+248,"Socioeconomic, Related Indexes Measures By Gini",ellipse,null,null,process
+249,Get A Relative Percentage Of A Measure To The Total Of The Dataset Comes,ellipse,null,null,process
+250,Store Visualisation State In The Database,ellipse,null,null,process
+251,Change The Colors Of The Embedded Visualisations In Own Platform,ellipse,null,null,process
+252,Change Some Of The Styling Of The Embedded Viewer In Own Platform,ellipse,null,null,process
+254,,endArrow=classic,230,232,endArrow=classic
+255,,endArrow=classic,230,233,endArrow=classic
+256,,endArrow=classic,230,234,endArrow=classic
+257,,endArrow=classic,230,235,endArrow=classic
+258,,endArrow=classic,230,236,endArrow=classic
+259,,endArrow=classic,230,237,endArrow=classic
+260,,endArrow=classic,230,238,endArrow=classic
+261,,endArrow=classic,230,240,endArrow=classic
+262,,endArrow=classic,230,241,endArrow=classic
+263,,endArrow=classic,230,242,endArrow=classic
+264,,endArrow=classic,230,243,endArrow=classic
+265,,endArrow=classic,230,244,endArrow=classic
+266,,endArrow=classic,230,245,endArrow=classic
+267,,endArrow=classic,230,246,endArrow=classic
+268,,endArrow=classic,230,247,endArrow=classic
+269,,endArrow=classic,230,247,endArrow=classic
+270,,endArrow=classic,230,247,endArrow=classic
+271,,endArrow=classic,230,248,endArrow=classic
+272,,endArrow=classic,230,249,endArrow=classic
+273,,endArrow=classic,230,250,endArrow=classic
+274,,endArrow=classic,230,251,endArrow=classic
+275,,endArrow=classic,230,252,endArrow=classic
+276,,endArrow=classic,232,234,endArrow=classic
+277,City,endArrow=classic,232,201,endArrow=classic
+278,,endArrow=classic,233,234,endArrow=classic
+279,Region,endArrow=classic,233,203,endArrow=classic
+280,Border Region,endArrow=classic,234,202,endArrow=classic
+281,City,endArrow=classic,235,201,endArrow=classic
+282,Polygon,endArrow=classic,236,205,endArrow=classic
+283,Query,endArrow=classic,236,204,endArrow=classic
+284,City,endArrow=classic,237,201,endArrow=classic
+285,Code,endArrow=classic,237,206,endArrow=classic
+286,Code,endArrow=classic,238,206,endArrow=classic
+287,Region,endArrow=classic,238,203,endArrow=classic
+288,Code,endArrow=classic,239,206,endArrow=classic
+289,,endArrow=classic,240,237,endArrow=classic
+290,,endArrow=classic,240,238,endArrow=classic
+291,,endArrow=classic,240,239,endArrow=classic
+292,,endArrow=classic,240,241,endArrow=classic
+293,Country,endArrow=classic,241,207,endArrow=classic
+294,Code,endArrow=classic,241,206,endArrow=classic
+295,Csv Output,endArrow=classic,242,209,endArrow=classic
+296,"Cube ,\nBased Query",endArrow=classic,242,208,endArrow=classic
+297,Monetary Measure,endArrow=classic,243,211,endArrow=classic
+298,Different Currency,endArrow=classic,243,210,endArrow=classic
+299,,endArrow=classic,244,245,endArrow=classic
+300,Metadata,endArrow=classic,244,214,endArrow=classic
+301,Result,endArrow=classic,245,213,endArrow=classic
+302,Multiple Dataset,endArrow=classic,245,212,endArrow=classic
+303,,endArrow=classic,246,245,endArrow=classic
+304,Datum,endArrow=classic,246,215,endArrow=classic
+305,Measure,endArrow=classic,247,217,endArrow=classic
+306,Population,endArrow=classic,247,216,endArrow=classic
+307,Geographical Area,endArrow=classic,247,218,endArrow=classic
+308,Gdp,endArrow=classic,247,219,endArrow=classic
+309,Gini,endArrow=classic,248,223,endArrow=classic
+310,Measure,endArrow=classic,248,217,endArrow=classic
+311,Measure,endArrow=classic,249,217,endArrow=classic
+312,Dataset,endArrow=classic,249,221,endArrow=classic
+313,Visualisation State,endArrow=classic,250,225,endArrow=classic
+314,Database,endArrow=classic,250,224,endArrow=classic
+315,Embed Visualisation,endArrow=classic,251,227,endArrow=classic
+316,Platform,endArrow=classic,251,226,endArrow=classic
+317,Embedded Viewer,endArrow=classic,252,228,endArrow=classic
+318,Platform,endArrow=classic,252,226,endArrow=classic
+395,Hasc,endArrow=classic,241,229,endArrow=classic
+1000,,endArrow=classic,244,23,endArrow=classic
+1001,User experiences,rounded=0,null,null,external_entity
+1002,User experiences,endArrow=classic,23,1001,endArrow=classic
+1003,Dataset,endArrow=classic,23,221,endArrow=classic
+1004,,endArrow=classic,245,24,endArrow=classic
+1005,User experiences,rounded=0,null,null,external_entity
+1006,User experiences,endArrow=classic,24,1005,endArrow=classic
+1007,Dataset,endArrow=classic,24,221,endArrow=classic

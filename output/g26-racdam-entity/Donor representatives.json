@@ -1,0 +1,60 @@
+[
+  {
+    "text": "As an archivist, I want to restrict access to certain files by user, so that I can allow donor representatives to see certain files.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict access",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "PII"
+      },
+      {
+        "text": "donor representatives",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to upload inventories, so that our donor representatives have an easier time requesting their material.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "inventories",
+        "label": "PII"
+      },
+      {
+        "text": "donor representatives",
+        "label": "Data"
+      },
+      {
+        "text": "requesting",
+        "label": "Processing"
+      },
+      {
+        "text": "material",
+        "label": "PII"
+      }
+    ]
+  }
+]

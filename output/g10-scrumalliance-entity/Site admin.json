@@ -1,0 +1,166 @@
+[
+  {
+    "text": "As a site admin, I want to delete any course or event, so that I can remove things that will no longer occur.",
+    "entities": [
+      {
+        "text": "site admin",
+        "label": "Data"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "course",
+        "label": "PII"
+      },
+      {
+        "text": "event",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to approve each help wanted ad before it gets to the site, so that we're sure of the quality of jobs being listed.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "approve",
+        "label": "Processing"
+      },
+      {
+        "text": "help wanted ad",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to be emailed whenever a job is submitted, so that I am aware of it and can decide if I want to post it.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "emailed",
+        "label": "Processing"
+      },
+      {
+        "text": "job",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to edit and delete help wanted ads, so that I can correct small problems or make sure each ad complies with site guidelines.",
+    "entities": [
+      {
+        "text": "site admin",
+        "label": "Data"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "delete",
+        "label": "Processing"
+      },
+      {
+        "text": "wanted ads",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to stop publishing jobs on the site 30 days after being posted, so that jobs that may have been filled aren't still listed when the hiring party forgets to come back and delete the ad.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "publishing",
+        "label": "Processing"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "hiring party",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to see the results for each trainer and averages for the class, so that I can identify any outliers or possible problems.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "results",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "averages",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to view all classes in a pending state, so that I can approve any that need to be approved.",
+    "entities": [
+      {
+        "text": "site admin",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "classes",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site admin, I want to move people in a trainer's class from a pending state to the registry once I have received proof of payment from the trainer.",
+    "entities": [
+      {
+        "text": "site admin,",
+        "label": "Data"
+      },
+      {
+        "text": "move",
+        "label": "Processing"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      },
+      {
+        "text": "proof of payment",
+        "label": "PII"
+      }
+    ]
+  }
+]

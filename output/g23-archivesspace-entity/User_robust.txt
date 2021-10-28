@@ -1,0 +1,85 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Password" as thingpassword
+	entity "User" as thinguser
+	entity "Ldap" as thingLDAP
+	entity "Database" as thingdatabase
+	entity "Enum Value" as thingenumvalue #grey
+	entity "Bulk" as thingbulk
+	entity "Repository" as thingrepository
+	entity "Additional Property" as thingadditionalproperty
+	entity "Appropriate Permission" as thingappropriatepermission
+	entity "Backend Change" as thingbackendchange
+	entity "Enum List" as thingenumlist
+	entity "Frontend Change" as thingfrontendchange
+	entity "Data Entry" as thingdataentry
+	actor "Application Administrator" as actorapplicationadministrator
+	actor "User" as actoruser
+	actor "System Administrator" as actorsystemadministrator
+	circle "List" as thinglist #grey
+	circle "Manager Role" as thingmanagerrole #grey
+	boundary "Backend Change" as thingbackendchangesbulkupdateenumvalueanotheruser #grey
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	boundary "Ldap\nInterface" as thingldapinterface #grey
+	boundary "List\nInterface" as thinglistinterface #grey
+	boundary "Database\nInterface" as thingdatabaseinterface #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Entry\nInterface" as thingentryinterface #grey
+	control "Reset A\nUser's Password\nFor A\nUser's Password" as controlresetpassword
+	control "Using Ldap" as controluseLDAP
+	control "Authenticate" as controlauthenticateuseLDAP
+	control "Log In" as controllog
+	control "Provided With\nBackend Changes" as controlprovidebackendchanges
+	control "Managing Enum\nLists" as controlmanageprovidebackendchangesenumlists
+	control "Provided With\nFrontend Changes" as controlprovidefrontendchanges
+	control "Loading Enum\nValue Lists\nFrom The\nDatabase" as controlloadingenumvaluelistsdatabase
+	control "Update Enum\nValue To\nAnother" as controlupdateenumvalueanother
+	control "Add Additional\nProperties For\nRepositories" as controladdadditionalproperty
+	control "Declare" as controldeclare
+	control "Assign Users\nTo An\nAdvanced Data\nEntry" as controlassignuseradvanceddataentry
+	control "Ensure" as controlensure
+
+	thingpassword <.. thingpassword
+	thinguser <.. thingpassword
+	thingdataentry <.. thinguser
+	thingrepository <.. thingadditionalproperty
+	thingenumvalue *-- thinglist
+	thingdatabase *-- thinglist
+	thingrepository *-- thingmanagerrole
+	actoruser --- thingbackendchangesbulkupdateenumvalueanotheruser
+	actorapplicationadministrator --- thingpasswordinterface
+	actoruser --- thingldapinterface
+	actoruser --- thinglistinterface
+	actoruser --- thingdatabaseinterface
+	actoruser --- thingrepositoryinterface
+	actorapplicationadministrator --- thingentryinterface
+	thingpassword --- controlresetpassword
+	thingpasswordinterface --> controlresetpassword
+	thingLDAP --- controluseLDAP
+	controlauthenticateuseLDAP --> controluseLDAP
+	thingldapinterface --> controluseLDAP
+	thingldapinterface --> controlauthenticateuseLDAP
+	thingbackendchange --- controlprovidebackendchanges
+	controlmanageprovidebackendchangesenumlists --> controlprovidebackendchanges
+	thinglistinterface --> controlprovidebackendchanges
+	thingenumlist --- controlmanageprovidebackendchangesenumlists
+	thinglistinterface --> controlmanageprovidebackendchangesenumlists
+	thingfrontendchange --- controlprovidefrontendchanges
+	thinglistinterface --> controlprovidefrontendchanges
+	controlmanageprovidebackendchangesenumlists --> controlprovidefrontendchanges
+	thinglist --- controlloadingenumvaluelistsdatabase
+	thingdatabase --- controlloadingenumvaluelistsdatabase
+	thingdatabaseinterface --> controlloadingenumvaluelistsdatabase
+	thingbackendchangesbulkupdateenumvalueanotheruser --> controlupdateenumvalueanother
+	thingenumvalue --- controlupdateenumvalueanother
+	thingadditionalproperty --- controladdadditionalproperty
+	thingrepository --- controladdadditionalproperty
+	thingrepositoryinterface --> controladdadditionalproperty
+	thingdataentry --- controlassignuseradvanceddataentry
+	thingentryinterface --> controlassignuseradvanceddataentry
+	thinguser --- controlassignuseradvanceddataentry
+
+@enduml

@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Action" as thingaction
+	entity "Unicode" as thingunicode
+	entity "Predictable" as thingpredictable
+	entity "Sensible Url" as thingsensibleurl
+	entity "Error Page" as thingerrorpage
+	actor "User" as actoruser
+	boundary "Application" as thingapplicationuser
+	boundary "Unicode\nInterface" as thingunicodeinterface #grey
+	boundary "Predictable\nInterface" as thingpredictableinterface #grey
+	boundary "Url\nInterface" as thingurlinterface #grey
+	boundary "Page\nInterface" as thingpageinterface #grey
+	control "Have" as controlhaverespondapplicationuseraction
+	control "Respond To\nActions" as controlrespondapplicationuseraction
+	control "Use Unicode" as controluseunicode
+	control "See Predictable" as controlseepredictable
+	control "See Sensible\nUrls" as controlseesensibleurl
+	control "Have Nice\nError Pages" as controlhaveniceerrorpages
+
+	actoruser --- thingapplicationuser
+	actoruser --- thingunicodeinterface
+	actoruser --- thingpredictableinterface
+	actoruser --- thingurlinterface
+	actoruser --- thingpageinterface
+	thingapplicationuser --> controlhaverespondapplicationuseraction
+	controlhaverespondapplicationuseraction --> controlrespondapplicationuseraction
+	thingapplicationuser --> controlrespondapplicationuseraction
+	thingaction --- controlrespondapplicationuseraction
+	thingunicode --- controluseunicode
+	thingunicodeinterface --> controluseunicode
+	thingpredictable --- controlseepredictable
+	thingpredictableinterface --> controlseepredictable
+	thingsensibleurl --- controlseesensibleurl
+	thingurlinterface --> controlseesensibleurl
+	thingerrorpage --- controlhaveniceerrorpages
+	thingpageinterface --> controlhaveniceerrorpages
+
+@enduml

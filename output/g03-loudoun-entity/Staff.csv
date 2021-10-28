@@ -1,0 +1,19 @@
+id,value,style,source,target,type
+5,Ensure all pre-hearing requirements are satisfied and staff and applicant are ready for the hearing.,ellipse,null,null,process
+200,Internal Note,shape=partialRectangle,null,null,data_base
+201,Execution,shape=partialRectangle,null,null,data_base
+202,Staff Member,rounded=0,null,null,external_entity
+203,Record An Internal Note,ellipse,null,null,process
+204,Hearing Execution,ellipse,null,null,process
+205,Prepare,ellipse,null,null,process
+206,Support,ellipse,null,null,process
+208,,endArrow=classic,202,203,endArrow=classic
+209,,endArrow=classic,202,204,endArrow=classic
+210,,endArrow=classic,202,205,endArrow=classic
+211,Internal Note,endArrow=classic,203,200,endArrow=classic
+212,Execution,endArrow=classic,204,201,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,,endArrow=classic,206,204,endArrow=classic
+1000,,endArrow=classic,204,5,endArrow=classic
+1001,Pre-hearing requirements,rounded=0,null,null,external_entity
+1002,Pre-hearing requirements,endArrow=classic,5,1001,endArrow=classic

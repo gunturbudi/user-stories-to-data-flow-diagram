@@ -1,0 +1,481 @@
+[
+  {
+    "text": "As a anonymoususer, I want to view a list of sponsors, so that I can thank all the awesome sponsors.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "thank",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to view a list of user profiles, so that I know who is attending the conference.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "user profiles",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title, so that I can choose the right class, AND the trainer can tweet and promote their class.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "Logo",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "location",
+        "label": "PII"
+      },
+      {
+        "text": "trainer",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link, so that I can shop for training all with one page AND find their class on on one page.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "day and time of training",
+        "label": "PII"
+      },
+      {
+        "text": "trainers",
+        "label": "Data"
+      },
+      {
+        "text": "shop",
+        "label": "Processing"
+      },
+      {
+        "text": "class",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have a training landing page with an intro section and a list of all training offerings and promote call for trainings, so that I can shop for training all with one page and we can have a call for trainings for selection.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "shop",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to have a link on the home page to a list of training options, so that I can take training.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to find out where the coding lounge is and what time it is open, so that I can code with my friends.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "what time",
+        "label": "PII"
+      },
+      {
+        "text": "code",
+        "label": "Processing"
+      },
+      {
+        "text": "friends",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to See a list of attendees associated with this company, so that I know who from this sponsor organization is attending.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "See",
+        "label": "Processing"
+      },
+      {
+        "text": "list of attendees",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to view venue details, so that I can get a sense of the location and see the events happening there.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "venue details",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see a list of the sessions associated with sponsor attendees, so that I know where I can engage with this sponsor and where they are thought leaders.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "sessions",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor attendees",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring so that I know where I can engage with this sponsor and where they are thought leaders.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "events",
+        "label": "PII"
+      },
+      {
+        "text": "trainings",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to sign up for the BADCamp newsletter, so that I can stay up to date with the latest communications about BADCamp.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "sign up",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to read the blog, so that I can stay informed about all the latest happenings with BADCamp.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see how many seats are left for the summit, so that I can make sure to register in-time to reserve my spot.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "seats",
+        "label": "PII"
+      },
+      {
+        "text": "spot",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see specific details on summits, so that I can learn more about the summit I'm interested in to see if it matches my interests, register for the event, and get day-of knowledge to help me get to the location.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "interests",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see a list of all the summits, so that I can determine which summit I might be interested and able to attend.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to learn about sponsorship levels, so that I can determine the right level of sponsorship for my organization.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship levels",
+        "label": "PII"
+      },
+      {
+        "text": "organization",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person, so that I have the opportunty to post my job listing on the BADCamp site.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship person",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "job listing",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see the schedule, so that I can plan my day and figure out where to go!.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "schedule",
+        "label": "PII"
+      },
+      {
+        "text": "day",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see the final list of sessions approved, so that I can see what's going on at BADCamp .",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to receive a notification when sessions have been evaluated, so that I know whether I've been accepted or rejected.",
+    "entities": [
+      {
+        "text": "anonymoususer",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "notification",
+        "label": "PII"
+      },
+      {
+        "text": "sessions",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to receive a notification when I submit a session, so that know that my session went through ok.",
+    "entities": [
+      {
+        "text": "anonymoususer",
+        "label": "Data"
+      },
+      {
+        "text": "notification",
+        "label": "PII"
+      },
+      {
+        "text": "submit",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to register to speak at BADCamp, so that I submit a session.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "register",
+        "label": "Processing"
+      },
+      {
+        "text": "speak",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to see a list of all the summits that include when they are, so that I can determine which summit I want to attend.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to easily find a link in the menu that links to the registration form, so that I can easily register for the camp.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to fill out a user registration form, so that I can register for the camp and get an account on the website.",
+    "entities": [
+      {
+        "text": "anonymoususer,",
+        "label": "Data"
+      },
+      {
+        "text": "fill out",
+        "label": "Processing"
+      },
+      {
+        "text": "user registration form",
+        "label": "PII"
+      },
+      {
+        "text": "account",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a anonymoususer, I want to find session information, so that I can go to a session.",
+    "entities": [
+      {
+        "text": "anonymoususer",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "session information",
+        "label": "PII"
+      }
+    ]
+  }
+]

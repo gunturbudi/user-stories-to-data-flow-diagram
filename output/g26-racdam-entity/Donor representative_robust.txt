@@ -1,0 +1,53 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Incremental Accrual" as thingincrementalaccrual
+	entity "New Collection" as thingnewcollection
+	entity "Descriptive Information" as thingdescriptiveinformation
+	entity "Image" as thingimage
+	entity "Institution" as thinginstitution
+	entity "Collection" as thingcollection
+	actor "Donor Representative" as actordonorrepresentative
+	circle "Thumbnail" as thingthumbnail
+	boundary "Accrual\nInterface" as thingaccrualinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Institution\nInterface" as thinginstitutioninterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	control "Exist" as controlexist
+	control "Supply Incremental\nAccruals To\nNew Collections" as controlsupplyincrementalaccrualnewcollection
+	control "Supply Incremental\nAccruals To" as controlsupplyincrementalaccrualexist
+	control "Access The\nDescriptive Information\nAbout The\nImages Institutions\nNeeds" as controlaccessdescriptiveinformation
+	control "Look At\nImages Have\nScanned From\nCollection" as controllookimage
+	control "See Thumbnails\nOf Images" as controlseethumbnail
+
+	thingnewcollection <.. thingincrementalaccrual
+	thingimage <.. thingdescriptiveinformation
+	thinginstitution <.. thingdescriptiveinformation
+	thinginstitution <.. thingimage
+	thingcollection <.. thingimage
+	thingimage *-- thingthumbnail
+	actordonorrepresentative --- thingaccrualinterface
+	actordonorrepresentative --- thingcollectioninterface
+	actordonorrepresentative --- thinginstitutioninterface
+	actordonorrepresentative --- thingimageinterface
+	controlsupplyincrementalaccrualexist --> controlexist
+	thingaccrualinterface --> controlexist
+	thingincrementalaccrual --- controlsupplyincrementalaccrualnewcollection
+	thingnewcollection --- controlsupplyincrementalaccrualnewcollection
+	thingcollectioninterface --> controlsupplyincrementalaccrualnewcollection
+	thingincrementalaccrual --- controlsupplyincrementalaccrualexist
+	thingaccrualinterface --> controlsupplyincrementalaccrualexist
+	thingdescriptiveinformation --- controlaccessdescriptiveinformation
+	thingimage --- controlaccessdescriptiveinformation
+	thinginstitution --- controlaccessdescriptiveinformation
+	thinginstitutioninterface --> controlaccessdescriptiveinformation
+	thingcollection --- controllookimage
+	thingimage --- controllookimage
+	thingcollectioninterface --> controllookimage
+	thingthumbnail --- controlseethumbnail
+	thingimageinterface --> controlseethumbnail
+	thingimage --- controlseethumbnail
+
+@enduml

@@ -1,0 +1,66 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Place " ];
+201 [label="<f0>  |<f1> Internal ,\nPrivate Group " ];
+202 [label="<f0>  |<f1> Range " color=red];
+203 [label="<f0>  |<f1> University " ];
+204 [label="<f0>  |<f1> Material " color=red];
+205 [label="<f0>  |<f1> Public " color=red];
+206 [label="<f0>  |<f1> Tagging " ];
+207 [label="<f0>  |<f1> Access " ];
+208 [label="<f0>  |<f1> Option " ];
+209 [label="<f0>  |<f1> Organization " color=red];
+210 [label="<f0>  |<f1> Project " color=red];
+211 [label="Crossdeptprojteammember" shape=box];
+212 [label="{<f0> 1.0|<f1> Have A Better Place With A Range Of Tagging }" shape=Mrecord];
+213 [label="{<f0> 2.0|<f1> Collect Materials }" shape=Mrecord];
+214 [label="{<f0> 3.0|<f1> Have A Better Place With Public }" shape=Mrecord];
+215 [label="{<f0> 4.0|<f1> Have A Better Place With A Range Of Organization }" shape=Mrecord];
+216 [label="{<f0> 5.0|<f1> Have A Better Place With A Range Of Access }" shape=Mrecord];
+217 [label="{<f0> 6.0|<f1> Have A Better Place With Option Internal, Private Group Only Use }" shape=Mrecord];
+218 [label="{<f0> 7.0|<f1> Have A Better Place With University }" shape=Mrecord];
+219 [label="{<f0> 8.0|<f1> Collect Project Materials }" shape=Mrecord];
+220 [label="{<f0> 9.0|<f1> Share Materials }" shape=Mrecord];
+221 [label="{<f0> 10.0|<f1> Share Project Materials }" shape=Mrecord];
+211 -> 212
+211 -> 214
+211 -> 215
+211 -> 216
+211 -> 217
+211 -> 218
+211 -> 219
+211 -> 221
+212 -> 213
+212 -> 220
+212 -> 206 [label="Tagging"]
+212 -> 200 [label="Place"]
+212 -> 202 [label="Range"]
+213 -> 204 [label="Material"]
+214 -> 213
+214 -> 220
+214 -> 205 [label="Public"]
+214 -> 200 [label="Place"]
+215 -> 219
+215 -> 221
+215 -> 200 [label="Place"]
+215 -> 202 [label="Range"]
+215 -> 209 [label="Organization"]
+216 -> 213
+216 -> 220
+216 -> 207 [label="Access"]
+216 -> 200 [label="Place"]
+216 -> 202 [label="Range"]
+217 -> 213
+217 -> 220
+217 -> 208 [label="Option"]
+217 -> 201 [label="Internal ,\nPrivate Group"]
+217 -> 200 [label="Place"]
+218 -> 213
+218 -> 220
+218 -> 203 [label="University"]
+218 -> 200 [label="Place"]
+219 -> 204 [label="Material"]
+220 -> 204 [label="Material"]
+221 -> 204 [label="Material"]
+219 -> 210 [label="Project"]
+}

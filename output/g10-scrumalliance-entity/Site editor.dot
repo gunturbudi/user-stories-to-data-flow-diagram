@@ -1,0 +1,96 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Follow Date " ];
+201 [label="<f0>  |<f1> Date " color=red];
+202 [label="<f0>  |<f1> Faq Section " ];
+203 [label="<f0>  |<f1> Teaser " color=red];
+204 [label="<f0>  |<f1> Article " color=red];
+205 [label="<f0>  |<f1> Site " ];
+206 [label="<f0>  |<f1> Home Page " ];
+207 [label="<f0>  |<f1> Good Control " ];
+208 [label="<f0>  |<f1> Member " color=red];
+209 [label="<f0>  |<f1> News " color=red];
+210 [label="<f0>  |<f1> Prominent Area " ];
+211 [label="<f0>  |<f1> Content " ];
+212 [label="<f0>  |<f1> , Trainers\nSection " ];
+213 [label="<f0>  |<f1> Information " color=red];
+214 [label="<f0>  |<f1> Course " color=red];
+215 [label="<f0>  |<f1> Event " color=red];
+216 [label="<f0>  |<f1> Thing " ];
+217 [label="<f0>  |<f1> Flexibility " ];
+218 [label="<f0>  |<f1> Email " color=red];
+219 [label="<f0>  |<f1> Product Owner " ];
+220 [label="<f0>  |<f1> Priority Number " ];
+221 [label="<f0>  |<f1> Scrum Master " ];
+222 [label="<f0>  |<f1> Publishing " ];
+223 [label="Site Editor" shape=box];
+224 [label="{<f0> 1.0|<f1> Set The Following Dates On A News Item }" shape=Mrecord];
+225 [label="{<f0> 2.0|<f1> Publishing Date }" shape=Mrecord];
+226 [label="{<f0> 3.0|<f1> Maintain A Faq Section }" shape=Mrecord];
+227 [label="{<f0> 4.0|<f1> Include A Teaser With Each Article }" shape=Mrecord];
+228 [label="{<f0> 5.0|<f1> Add An Article To The Site }" shape=Mrecord];
+229 [label="{<f0> 6.0|<f1> Designate }" shape=Mrecord];
+230 [label="{<f0> 7.0|<f1> Have Pretty Good Control Over How The Article }" shape=Mrecord];
+231 [label="{<f0> 8.0|<f1> For Indicate An Article Members }" shape=Mrecord];
+232 [label="{<f0> 9.0|<f1> Have A Prominent Area On The Home Page }" shape=Mrecord];
+233 [label="{<f0> 10.0|<f1> Create The Content Of The }" shape=Mrecord];
+234 [label="{<f0> 11.0|<f1> Post Information In A Only, Trainers Section }" shape=Mrecord];
+235 [label="{<f0> 12.0|<f1> Assign Priority Numbers To News Items }" shape=Mrecord];
+236 [label="{<f0> 13.0|<f1> Update Any Course }" shape=Mrecord];
+237 [label="{<f0> 14.0|<f1> Update Event }" shape=Mrecord];
+238 [label="{<f0> 15.0|<f1> Set Start Publishing Dates }" shape=Mrecord];
+239 [label="{<f0> 16.0|<f1> Stop }" shape=Mrecord];
+240 [label="{<f0> 17.0|<f1> Have Some Flexibility Things Where Appear }" shape=Mrecord];
+241 [label="{<f0> 18.0|<f1> Edit The Content Of The Automatically Email To Certified, New Scrum Masters }" shape=Mrecord];
+242 [label="{<f0> 19.0|<f1> Edit The Content Of The Automatically Email To Product Owner }" shape=Mrecord];
+223 -> 224
+223 -> 225
+223 -> 226
+223 -> 227
+223 -> 228
+223 -> 230
+223 -> 231
+223 -> 232
+223 -> 233
+223 -> 234
+223 -> 235
+223 -> 236
+223 -> 237
+223 -> 238
+223 -> 239
+223 -> 240
+223 -> 241
+223 -> 242
+224 -> 200 [label="Follow Date"]
+225 -> 201 [label="Date"]
+225 -> 204 [label="Article"]
+226 -> 202 [label="Faq Section"]
+227 -> 203 [label="Teaser"]
+227 -> 204 [label="Article"]
+228 -> 205 [label="Site"]
+228 -> 204 [label="Article"]
+230 -> 207 [label="Good Control"]
+230 -> 204 [label="Article"]
+231 -> 208 [label="Member"]
+231 -> 204 [label="Article"]
+232 -> 210 [label="Prominent Area"]
+232 -> 206 [label="Home Page"]
+233 -> 211 [label="Content"]
+234 -> 213 [label="Information"]
+234 -> 212 [label=", Trainers\nSection"]
+235 -> 220 [label="Priority Number"]
+236 -> 214 [label="Course"]
+237 -> 215 [label="Event"]
+238 -> 201 [label="Date"]
+239 -> 225
+240 -> 217 [label="Flexibility"]
+240 -> 216 [label="Thing"]
+241 -> 218 [label="Email"]
+241 -> 221 [label="Scrum Master"]
+241 -> 211 [label="Content"]
+242 -> 219 [label="Product Owner"]
+242 -> 211 [label="Content"]
+242 -> 218 [label="Email"]
+224 -> 209 [label="News"]
+225 -> 222 [label="Publishing"]
+}

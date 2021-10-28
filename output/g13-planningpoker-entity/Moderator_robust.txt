@@ -1,0 +1,292 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "New Game" as thingnewgame
+	entity "Optional Description" as thingoptionaldescription
+	entity "Name" as thingname
+	entity "Estimator" as thingestimator
+	entity "Game" as thinggame
+	entity "Url" as thingurl
+	entity "Item" as thingitem
+	entity "Round" as thinground
+	entity "Estimate" as thingestimate
+	entity "Estimate Field" as thingestimatefield
+	entity "Agree Estimate" as thingagreedestimate
+	entity "Story" as thingstory
+	entity "Previous Game" as thingpreviousgame
+	entity "Html File" as thinghtmlfile #grey
+	entity "Csv File" as thingcsvfile #grey
+	entity "Application" as thingapplication
+	entity "Account" as thingaccount
+	entity "Password" as thingpassword
+	entity "Username" as thingusername
+	entity "Email" as thingemail
+	entity "Team" as thingteam
+	entity "2" as thing2
+	entity "1" as thing1
+	entity "3" as thing3
+	entity "5" as thing5
+	entity "8" as thing8
+	entity "Etc" as thingetc
+	entity ", Estimator" as thingtoupestimator
+	entity "Spreadsheet" as thingspreadsheet
+	entity "Time" as thingtime
+	entity "Date" as thingdate
+	entity "Local Timezone" as thinglocaltimezone
+	entity "Text Field" as thingtextfield
+	actor "Moderator" as actormoderator
+	circle "Average" as thingaverage
+	circle "Transcript" as thingtranscript
+	circle "Address" as thingaddress #grey
+	circle "Detail" as thingdetail #grey
+	circle "Reminder" as thingreminder #grey
+	boundary "Description\nInterface" as thingdescriptioninterface #grey
+	boundary "Name\nInterface" as thingnameinterface #grey
+	boundary "Game\nInterface" as thinggameinterface #grey
+	boundary "Estimator\nInterface" as thingestimatorinterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	boundary "Round\nInterface" as thingroundinterface #grey
+	boundary "Item\nInterface" as thingiteminterface #grey
+	boundary "Estimate\nInterface" as thingestimateinterface #grey
+	boundary "Story\nInterface" as thingstoryinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Password\nInterface" as thingpasswordinterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Email\nInterface" as thingemailinterface #grey
+	boundary "Username\nInterface" as thingusernameinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "5\nInterface" as thing5interface #grey
+	boundary "8\nInterface" as thing8interface #grey
+	boundary "3\nInterface" as thing3interface #grey
+	boundary "2\nInterface" as thing2interface #grey
+	boundary "Etc\nInterface" as thingetcinterface #grey
+	boundary "1\nInterface" as thing1interface #grey
+	boundary "Spreadsheet\nInterface" as thingspreadsheetinterface #grey
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	boundary "Timezone\nInterface" as thingtimezoneinterface #grey
+	control "Entering An\nOptional Description" as controlentercreatenewgameoptionaldescription
+	control "Entering A\nName" as controlentercreatenewgamename
+	control "Create A\nNew Game" as controlcreatenewgame
+	control "Giving Them\nA Url\nWhere Access\nThe Game" as controlgiveinviteestimatorurl
+	control "Invite Estimators" as controlinviteestimator
+	control "Entering An\nItem In\nA Line,\nSingle Text\nField" as controlenterstartrounditemlinesingletextfield
+	control "Start A\nRound" as controlstartround
+	control "See All\nItems" as controlseeitem
+	control "Select An\nItem" as controlselectitemestimate
+	control "Select An\nItem To\nEstimated" as controlselectitem
+	control "Estimate" as controlestimate
+	control "Add An\nItem To\nThe List\nOf Items" as controladditemlistestimate
+	control "Edit An\nItem In\nThe List\nOf Items\nTo Estimated" as controledititemlist
+	control "Delete An\nItem From\nThe List\nOf Items\nTo Estimated" as controldeleteitem
+	control "Show All\nEstimates" as controlshowestimate
+	control "Accept The\nAverage Of\nAll Estimates" as controlacceptaverage
+	control "Have The\nAutomatically Estimate\nField" as controlhaveestimatefield
+	control "Enter Upon\nThe Agreed\nEstimate" as controlenteragreedestimate
+	control "Estimate A\nStory" as controlestimatestory
+	control "Browse Through\nPrevious Games" as controlbrowsepreviousgame
+	control "View A\nTranscript Of\nA Game" as controlviewtranscript
+	control "Export A\nTranscript Of\nA Game\nAs A\nHtml File" as controlexporttranscript
+	control "Delete A\nGame" as controldeletegame
+	control "Create An\nAccount For\nThe Application" as controlcreateaccount
+	control "Entering A\nPassword" as controlentercreateaccountpassword
+	control "Entering Name" as controlentercreateaccountname
+	control "Entering Email\nAddress" as controlentercreateaccountemailaddress
+	control "Entering A\nUsername" as controlentercreateaccountusername
+	control "Log" as controllog
+	control "Using Account\nName" as controluselogaccountname
+	control "Using Password" as controluselogpassword
+	control "Change Account\nDetails" as controlchangeaccountdetails
+	control "Delete Account" as controldeleteaccount
+	control "Get A\nPassword Reminder\nBy Email" as controlgetpasswordreminderemail
+	control "Have The\nTeam With" as controlhaveteam #grey
+	control "Select" as controlselecthaveteamhaveteam2haveteamhaveteamhaveteam
+	control "Have The\nTeam With\n5" as controlhaveteam5
+	control "Have The\nTeam With\n2" as controlhaveteam2
+	control "Have The\nTeam With\n3" as controlhaveteam3
+	control "Have The\nTeam With\n1" as controlhaveteam1
+	control "Have The\nTeam With\nEtc" as controlhaveteametc
+	control "Have The\nTeam With\n8" as controlhaveteam8
+	control "Invite To,\nUp Estimators" as controlinvitetoupestimator
+	control "Import Stories\nFrom A\nSpreadsheet" as controlimportstory
+	control "Copy Stories\nFrom A\nSpreadsheet" as controlcopystory
+	control "Paste Stories\nFrom A\nSpreadsheet" as controlpastestory
+	control "See Time" as controlseetime
+	control "See Dates\nIn Local\nTimezone" as controlseedatelocaltimezone
+
+	thingaccount <.. thingname
+	thinghtmlfile <.. thinggame
+	thingcsvfile <.. thinggame
+	thinggame <.. thingurl
+	thingtextfield <.. thingitem
+	thingitem <.. thingitem
+	thingspreadsheet <.. thingstory
+	thingapplication <.. thingaccount
+	thing8 <.. thingteam
+	thing3 <.. thingteam
+	thing5 <.. thingteam
+	thing2 <.. thingteam
+	thing1 <.. thingteam
+	thingetc <.. thingteam
+	thinglocaltimezone <.. thingdate
+	thingestimate *-- thingaverage
+	thinggame *-- thingtranscript
+	thingemail *-- thingaddress
+	thingaccount *-- thingdetail
+	thingemail *-- thingreminder
+	thingpassword *-- thingreminder
+	actormoderator --- thingdescriptioninterface
+	actormoderator --- thingnameinterface
+	actormoderator --- thinggameinterface
+	actormoderator --- thingestimatorinterface
+	actormoderator --- thingfieldinterface
+	actormoderator --- thingroundinterface
+	actormoderator --- thingiteminterface
+	actormoderator --- thingestimateinterface
+	actormoderator --- thingstoryinterface
+	actormoderator --- thingfileinterface
+	actormoderator --- thingpasswordinterface
+	actormoderator --- thingapplicationinterface
+	actormoderator --- thingemailinterface
+	actormoderator --- thingusernameinterface
+	actormoderator --- thingaccountinterface
+	actormoderator --- thing5interface
+	actormoderator --- thing8interface
+	actormoderator --- thing3interface
+	actormoderator --- thing2interface
+	actormoderator --- thingetcinterface
+	actormoderator --- thing1interface
+	actormoderator --- thingspreadsheetinterface
+	actormoderator --- thingtimeinterface
+	actormoderator --- thingtimezoneinterface
+	thingoptionaldescription --- controlentercreatenewgameoptionaldescription
+	thingdescriptioninterface --> controlentercreatenewgameoptionaldescription
+	thingname --- controlentercreatenewgamename
+	thingnameinterface --> controlentercreatenewgamename
+	controlentercreatenewgamename --> controlcreatenewgame
+	thingnewgame --- controlcreatenewgame
+	thinggameinterface --> controlcreatenewgame
+	controlentercreatenewgameoptionaldescription --> controlcreatenewgame
+	thingurl --- controlgiveinviteestimatorurl
+	thinggame --- controlgiveinviteestimatorurl
+	thinggameinterface --> controlgiveinviteestimatorurl
+	controlgiveinviteestimatorurl --> controlinviteestimator
+	thingestimator --- controlinviteestimator
+	thingestimatorinterface --> controlinviteestimator
+	thingitem --- controlenterstartrounditemlinesingletextfield
+	thingtextfield --- controlenterstartrounditemlinesingletextfield
+	thingfieldinterface --> controlenterstartrounditemlinesingletextfield
+	controlenterstartrounditemlinesingletextfield --> controlstartround
+	thinground --- controlstartround
+	thingroundinterface --> controlstartround
+	thingiteminterface --> controlseeitem
+	thingitem --- controlseeitem
+	thingiteminterface --> controlselectitemestimate
+	thingitem --- controlselectitemestimate
+	thingitem --- controlselectitem
+	thingiteminterface --> controlselectitem
+	controlselectitemestimate --> controlestimate
+	controladditemlistestimate --> controlestimate
+	thingiteminterface --> controlestimate
+	thingitem --- controladditemlistestimate
+	thingiteminterface --> controladditemlistestimate
+	thingitem --- controledititemlist
+	thingiteminterface --> controledititemlist
+	thingitem --- controldeleteitem
+	thingiteminterface --> controldeleteitem
+	thingestimate --- controlshowestimate
+	thingestimateinterface --> controlshowestimate
+	thingaverage --- controlacceptaverage
+	thingestimate --- controlacceptaverage
+	thingestimateinterface --> controlacceptaverage
+	thingestimatefield --- controlhaveestimatefield
+	thingfieldinterface --> controlhaveestimatefield
+	thingagreedestimate --- controlenteragreedestimate
+	thingestimateinterface --> controlenteragreedestimate
+	thingstory --- controlestimatestory
+	thingstoryinterface --> controlestimatestory
+	thingpreviousgame --- controlbrowsepreviousgame
+	thinggameinterface --> controlbrowsepreviousgame
+	thingtranscript --- controlviewtranscript
+	thinggame --- controlviewtranscript
+	thinggameinterface --> controlviewtranscript
+	thinghtmlfile --- controlexporttranscript
+	thingfileinterface --> controlexporttranscript
+	thinggame --- controlexporttranscript
+	thingtranscript --- controlexporttranscript
+	thingcsvfile --- controlexporttranscript
+	thinggame --- controldeletegame
+	thinggameinterface --> controldeletegame
+	controlentercreateaccountname --> controlcreateaccount
+	thingaccount --- controlcreateaccount
+	thingapplication --- controlcreateaccount
+	thingapplicationinterface --> controlcreateaccount
+	controlentercreateaccountemailaddress --> controlcreateaccount
+	controlentercreateaccountusername --> controlcreateaccount
+	controlentercreateaccountpassword --> controlcreateaccount
+	thingpassword --- controlentercreateaccountpassword
+	thingpasswordinterface --> controlentercreateaccountpassword
+	thingname --- controlentercreateaccountname
+	thingnameinterface --> controlentercreateaccountname
+	thingaddress --- controlentercreateaccountemailaddress
+	thingemailinterface --> controlentercreateaccountemailaddress
+	thingusername --- controlentercreateaccountusername
+	thingusernameinterface --> controlentercreateaccountusername
+	controluselogaccountname --> controllog
+	thingaccountinterface --> controllog
+	controluselogpassword --> controllog
+	thingaccountinterface --> controluselogaccountname
+	thingname --- controluselogaccountname
+	thingpassword --- controluselogpassword
+	thingpasswordinterface --> controluselogpassword
+	thingdetail --- controlchangeaccountdetails
+	thingaccountinterface --> controlchangeaccountdetails
+	thingaccount --- controldeleteaccount
+	thingaccountinterface --> controldeleteaccount
+	thingreminder --- controlgetpasswordreminderemail
+	thingemail --- controlgetpasswordreminderemail
+	thingemailinterface --> controlgetpasswordreminderemail
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteam --> controlhaveteam
+	thingteam --- controlhaveteam
+	thingteam --- controlselecthaveteamhaveteam2haveteamhaveteamhaveteam
+	thing2 --- controlselecthaveteamhaveteam2haveteamhaveteamhaveteam
+	thing8interface --> controlselecthaveteamhaveteam2haveteamhaveteamhaveteam
+	thing5 --- controlhaveteam5
+	thing5interface --> controlhaveteam5
+	thingteam --- controlhaveteam5
+	thing2 --- controlhaveteam2
+	thing2interface --> controlhaveteam2
+	thingteam --- controlhaveteam2
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteam --> controlhaveteam2
+	thing3 --- controlhaveteam3
+	thing3interface --> controlhaveteam3
+	thingteam --- controlhaveteam3
+	thing1 --- controlhaveteam1
+	thing1interface --> controlhaveteam1
+	thingteam --- controlhaveteam1
+	thingetc --- controlhaveteametc
+	thingetcinterface --> controlhaveteametc
+	thingteam --- controlhaveteametc
+	thingteam --- controlhaveteam8
+	thing8 --- controlhaveteam8
+	thing8interface --> controlhaveteam8
+	controlselecthaveteamhaveteam2haveteamhaveteamhaveteam --> controlhaveteam8
+	thingtoupestimator --- controlinvitetoupestimator
+	thingestimatorinterface --> controlinvitetoupestimator
+	thingspreadsheet --- controlimportstory
+	thingspreadsheetinterface --> controlimportstory
+	thingstory --- controlimportstory
+	thingstory --- controlcopystory
+	thingspreadsheet --- controlcopystory
+	thingspreadsheetinterface --> controlcopystory
+	thingstory --- controlpastestory
+	thingspreadsheet --- controlpastestory
+	thingspreadsheetinterface --> controlpastestory
+	thingtime --- controlseetime
+	thingtimeinterface --> controlseetime
+	thingdate --- controlseedatelocaltimezone
+	thinglocaltimezone --- controlseedatelocaltimezone
+	thingtimezoneinterface --> controlseedatelocaltimezone
+
+@enduml

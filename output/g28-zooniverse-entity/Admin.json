@@ -1,0 +1,191 @@
+[
+  {
+    "text": "As an admin, I want to see, validate and edit segmentation of videos.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "validate",
+        "label": "Processing"
+      },
+      {
+        "text": "edit",
+        "label": "Processing"
+      },
+      {
+        "text": "segmentation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to annotate news video segments and extract a topic for each segment.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "annotate",
+        "label": "Processing"
+      },
+      {
+        "text": "news video segments",
+        "label": "PII"
+      },
+      {
+        "text": "extract",
+        "label": "Processing"
+      },
+      {
+        "text": "topic",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to filter and rank videos based on A/V quality aspects.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "filter",
+        "label": "Processing"
+      },
+      {
+        "text": "rank",
+        "label": "Processing"
+      },
+      {
+        "text": "videos",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to get a quick assessment of whether audio material has been edited before the upload.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "quick assessment",
+        "label": "Processing"
+      },
+      {
+        "text": "audio material",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to prefilter nudity content.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "prefilter",
+        "label": "Processing"
+      },
+      {
+        "text": "nudity content",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to prefilter content using search based on low\u00adlevel asset information.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "prefilter",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to automatically validated the ingested contents for copyright infringement.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "automatically validated",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to prefilter the content using search on high\u00adlevel asset information such as metadata and tags either recognized by the system of provided by the user.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "prefilter",
+        "label": "Processing"
+      },
+      {
+        "text": "content",
+        "label": "PII"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "high\u00adlevel asset information",
+        "label": "PII"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "user",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an admin, I want to see a summary of articles, so that I reuse them.",
+    "entities": [
+      {
+        "text": "admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      }
+    ]
+  }
+]

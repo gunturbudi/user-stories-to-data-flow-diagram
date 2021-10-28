@@ -1,0 +1,35 @@
+[
+  {
+    "text": "As a Cornell faculty member, I want to search for the dissertations in the repository for which I have been a thesis committee member, to quickly find work by a former student.",
+    "entities": [
+      {
+        "text": "Cornell faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "dissertations",
+        "label": "PII"
+      },
+      {
+        "text": "thesis committee member",
+        "label": "Data"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      },
+      {
+        "text": "former student",
+        "label": "Data"
+      }
+    ]
+  }
+]

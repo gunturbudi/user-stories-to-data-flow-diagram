@@ -1,0 +1,68 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Platform" as thingplatform
+	entity "Site Deployment" as thingsitedeployment #grey
+	entity "User" as thinguser
+	entity "Download" as thingdownload
+	entity "Usage" as thingusage
+	entity "Key Metric" as thingkeymetric
+	entity "Billing System" as thingbillingsystem #grey
+	entity "Pricing Plan" as thingpricingplan #grey
+	entity "Configuration Parameter" as thingconfigurationparameter
+	entity "Api" as thingapi #grey
+	actor "Admin" as actoradmin
+	boundary "Platform\nInterface" as thingplatforminterface #grey
+	boundary "Deployment\nInterface" as thingdeploymentinterface #grey
+	boundary "Usage\nInterface" as thingusageinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Download\nInterface" as thingdownloadinterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	control "Join The\nPlatform" as controljoinplatform
+	control "Invite Someone" as controlinvitesomeonejoinplatform
+	control "Set Key\nConfiguration Parameters\nFor Site\nDeployment" as controlsetkeyconfigurationparameterssitedeployment
+	control "See Key\nMetrics About\nUsage Such\nAs Api\nUsage" as controlseekeymetricapiusage
+	control "See Key\nMetrics About\nUsage Such\nAs Users" as controlseekeymetric
+	control "See Key\nMetrics About\nUsage Such\nAs Download" as controlseekeymetricdownload
+	control "Have A\nPricing Plan" as controlhavepricingplan
+	control "Have Billing\nSystem" as controlhavebillingsystem
+
+	thinguser <.. thingusage
+	thingdownload <.. thingusage
+	thingapi <.. thingusage
+	thingusage <.. thingkeymetric
+	thingsitedeployment <.. thingconfigurationparameter
+	actoradmin --- thingplatforminterface
+	actoradmin --- thingdeploymentinterface
+	actoradmin --- thingusageinterface
+	actoradmin --- thinguserinterface
+	actoradmin --- thingdownloadinterface
+	actoradmin --- thingplaninterface
+	actoradmin --- thingsysteminterface
+	thingplatform --- controljoinplatform
+	controlinvitesomeonejoinplatform --> controljoinplatform
+	thingplatforminterface --> controljoinplatform
+	thingplatforminterface --> controlinvitesomeonejoinplatform
+	thingconfigurationparameter --- controlsetkeyconfigurationparameterssitedeployment
+	thingsitedeployment --- controlsetkeyconfigurationparameterssitedeployment
+	thingdeploymentinterface --> controlsetkeyconfigurationparameterssitedeployment
+	thingusageinterface --> controlseekeymetricapiusage
+	thingkeymetric --- controlseekeymetricapiusage
+	thingusage --- controlseekeymetricapiusage
+	thingkeymetric --- controlseekeymetric
+	thingusage --- controlseekeymetric
+	thinguser --- controlseekeymetric
+	thinguserinterface --> controlseekeymetric
+	thingdownload --- controlseekeymetricdownload
+	thingdownloadinterface --> controlseekeymetricdownload
+	thingkeymetric --- controlseekeymetricdownload
+	thingusage --- controlseekeymetricdownload
+	thingpricingplan --- controlhavepricingplan
+	thingplaninterface --> controlhavepricingplan
+	thingbillingsystem --- controlhavebillingsystem
+	thingsysteminterface --> controlhavebillingsystem
+
+@enduml

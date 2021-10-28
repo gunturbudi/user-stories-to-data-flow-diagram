@@ -1,0 +1,25 @@
+id,value,style,source,target,type
+200,Repository,shape=partialRectangle,null,null,data_base
+201,Archival Description,shape=partialRectangle,null,null,data_base
+202,Record,shape=partialRectangle,null,null,data_base
+203,Repository Manager,rounded=0,null,null,external_entity
+204,Create,ellipse,null,null,process
+205,Delete Archival Descriptions In Repository,ellipse,null,null,process
+206,Update Archival Descriptions In Repository,ellipse,null,null,process
+207,Create Any Records In Repository,ellipse,null,null,process
+208,Update Any Records In Repository,ellipse,null,null,process
+209,Delete Any Records In Repository,ellipse,null,null,process
+211,,endArrow=classic,203,206,endArrow=classic
+212,,endArrow=classic,203,207,endArrow=classic
+213,,endArrow=classic,203,208,endArrow=classic
+214,,endArrow=classic,203,209,endArrow=classic
+215,Archival Description,endArrow=classic,205,201,endArrow=classic
+216,Repository,endArrow=classic,205,200,endArrow=classic
+217,Archival Description,endArrow=classic,206,201,endArrow=classic
+218,Repository,endArrow=classic,206,200,endArrow=classic
+219,Record,endArrow=classic,207,202,endArrow=classic
+220,Repository,endArrow=classic,207,200,endArrow=classic
+221,Repository,endArrow=classic,208,200,endArrow=classic
+222,Record,endArrow=classic,208,202,endArrow=classic
+223,Repository,endArrow=classic,209,200,endArrow=classic
+224,Record,endArrow=classic,209,202,endArrow=classic

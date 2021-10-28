@@ -1,0 +1,232 @@
+id,value,style,source,target,type
+42,Assist researchers.,ellipse,null,null,process
+43,Use them in immediate and future in talks and articles.,ellipse,null,null,process
+44,Find everything relevant to my inquiry across collections.,ellipse,null,null,process
+45,Locate digitized documents relevant to my research.,ellipse,null,null,process
+46,Locate diary entries relevant to my research.,ellipse,null,null,process
+200,Photo,shape=partialRectangle,null,null,data_base
+201,Document,shape=partialRectangle,null,null,data_base
+202,Report,shape=partialRectangle,null,null,data_base
+203,File,shape=partialRectangle,null,null,data_base
+204,Common Material,shape=partialRectangle,null,null,data_base
+205,Collection,shape=partialRectangle,null,null,data_base
+206,Folder,shape=partialRectangle,null,null,data_base
+207,Publication,shape=partialRectangle,null,null,data_base
+208,Researcher,shape=partialRectangle,null,null,data_base
+209,Citation,shape=partialRectangle,null,null,data_base
+210,Donor,shape=partialRectangle,null,null,data_base
+211,Available Right,shape=partialRectangle,null,null,data_base
+212,Information,shape=partialRectangle,null,null,data_base
+213,Visual,shape=partialRectangle,null,null,data_base
+214,Password,shape=partialRectangle,null,null,data_base
+215,Link,shape=partialRectangle,null,null,data_base
+216,Social Medium,shape=partialRectangle,null,null,data_base
+217,Image,shape=partialRectangle,null,null,data_base
+218,Digital Object,shape=partialRectangle,null,null,data_base
+219,Notification,shape=partialRectangle,null,null,data_base
+220,Web Browser,shape=partialRectangle,null,null,data_base
+221,Video,shape=partialRectangle,null,null,data_base
+222,Audio File,shape=partialRectangle,null,null,data_base
+223,Common Format,shape=partialRectangle,null,null,data_base
+224,Descriptive Datum,shape=partialRectangle,null,null,data_base
+225,Keyword,shape=partialRectangle,null,null,data_base
+226,Structured Datum,shape=partialRectangle,null,null,data_base
+227,Mediation,shape=partialRectangle,null,null,data_base
+228,"Archival ,\nDigitized Material",shape=partialRectangle,null,null,data_base
+229,Specific File,shape=partialRectangle,null,null,data_base
+230,Question,shape=partialRectangle,null,null,data_base
+231,Date,shape=partialRectangle,null,null,data_base
+232,Program Rf\nOfficer,shape=partialRectangle,null,null,data_base
+233,Scan Diary,shape=partialRectangle,null,null,data_base
+234,Search,shape=partialRectangle,null,null,data_base
+235,Working Paper,shape=partialRectangle,null,null,data_base
+236,Index Card,shape=partialRectangle,null,null,data_base
+237,Analog Version,shape=partialRectangle,null,null,data_base
+238,Outreach Material,shape=partialRectangle,null,null,data_base
+239,Diary Segment,shape=partialRectangle,null,null,data_base
+240,Film Clip,shape=partialRectangle,null,null,data_base
+241,Archivist,rounded=0,null,null,external_entity
+242,Researcher,rounded=0,null,null,external_entity
+243,Assistant Archivist,rounded=0,null,null,external_entity
+244,Administrator,rounded=0,null,null,external_entity
+245,Know,ellipse,null,null,process
+246,Provided With Clear Citation Information On Each Document,ellipse,null,null,process
+247,Share Reports,ellipse,null,null,process
+248,Download A File,ellipse,null,null,process
+249,See Common Material Across Collections,ellipse,null,null,process
+250,Access Tagged Working Papers,ellipse,null,null,process
+251,View Thumbnails Of Photos,ellipse,null,null,process
+252,Tag Staff,ellipse,null,null,process
+253,Link Electronic Versions Of Researchers' Publications To Citations,ellipse,null,null,process
+254,Make Information About Available Rights To Researchers,ellipse,null,null,process
+255,Make Information About Available Rights To Donor,ellipse,null,null,process
+256,Access Visual,ellipse,null,null,process
+257,Access Metadata Representations Of Index Cards,ellipse,null,null,process
+258,Have,ellipse,null,null,process
+259,Generate Structured Citation Data,ellipse,null,null,process
+260,Share A Link To A File On Social Media,ellipse,null,null,process
+261,Understand The Copyright Status Of The Image,ellipse,null,null,process
+262,Download Reports,ellipse,null,null,process
+263,Locate Photographs,ellipse,null,null,process
+264,Locate Document,ellipse,null,null,process
+265,Request Analog Versions Of Digital Objects,ellipse,null,null,process
+266,Order Copies Of Photos,ellipse,null,null,process
+267,Receive A Notification,ellipse,null,null,process
+268,Stream Video,ellipse,null,null,process
+269,Stream Audio Files In Web Browser,ellipse,null,null,process
+270,Export Descriptive Data In A Common Format,ellipse,null,null,process
+271,Search All Files By Keyword,ellipse,null,null,process
+272,Search By Keyword,ellipse,null,null,process
+273,Browse Through Files In A Collection,ellipse,null,null,process
+274,Search Across Photo Collection Images,ellipse,null,null,process
+275,Using Structured Data,ellipse,null,null,process
+276,Search,ellipse,null,null,process
+277,Access Educational Outreach Materials,ellipse,null,null,process
+278,"Have Collection, Accurate Citation Information",ellipse,null,null,process
+279,"Access Archival, Digitized Materials Without Mediation",ellipse,null,null,process
+280,Ask A Question About A Specific File,ellipse,null,null,process
+281,Know The Date On Which Something Digitized,ellipse,null,null,process
+282,Keyword Search Across All Of An Program Rf Officer's Scanned Diaries,ellipse,null,null,process
+283,Search Each Scanned Diary Segment,ellipse,null,null,process
+284,Having,ellipse,null,null,process
+285,View Film Clips,ellipse,null,null,process
+287,,endArrow=classic,241,253,endArrow=classic
+288,,endArrow=classic,241,254,endArrow=classic
+289,,endArrow=classic,241,255,endArrow=classic
+290,,endArrow=classic,241,256,endArrow=classic
+291,,endArrow=classic,241,257,endArrow=classic
+292,,endArrow=classic,241,259,endArrow=classic
+293,,endArrow=classic,241,278,endArrow=classic
+294,,endArrow=classic,242,246,endArrow=classic
+295,,endArrow=classic,242,247,endArrow=classic
+296,,endArrow=classic,242,248,endArrow=classic
+297,,endArrow=classic,242,249,endArrow=classic
+298,,endArrow=classic,242,250,endArrow=classic
+299,,endArrow=classic,242,251,endArrow=classic
+300,,endArrow=classic,242,253,endArrow=classic
+301,,endArrow=classic,242,259,endArrow=classic
+302,,endArrow=classic,242,260,endArrow=classic
+303,,endArrow=classic,242,261,endArrow=classic
+304,,endArrow=classic,242,262,endArrow=classic
+305,,endArrow=classic,242,263,endArrow=classic
+306,,endArrow=classic,242,264,endArrow=classic
+307,,endArrow=classic,242,265,endArrow=classic
+308,,endArrow=classic,242,266,endArrow=classic
+309,,endArrow=classic,242,267,endArrow=classic
+310,,endArrow=classic,242,268,endArrow=classic
+311,,endArrow=classic,242,269,endArrow=classic
+312,,endArrow=classic,242,270,endArrow=classic
+313,,endArrow=classic,242,271,endArrow=classic
+314,,endArrow=classic,242,272,endArrow=classic
+315,,endArrow=classic,242,273,endArrow=classic
+316,,endArrow=classic,242,274,endArrow=classic
+317,,endArrow=classic,242,275,endArrow=classic
+318,,endArrow=classic,242,276,endArrow=classic
+319,,endArrow=classic,242,277,endArrow=classic
+320,,endArrow=classic,242,278,endArrow=classic
+321,,endArrow=classic,242,279,endArrow=classic
+322,,endArrow=classic,242,280,endArrow=classic
+323,,endArrow=classic,242,281,endArrow=classic
+324,,endArrow=classic,242,282,endArrow=classic
+325,,endArrow=classic,242,283,endArrow=classic
+326,,endArrow=classic,242,284,endArrow=classic
+327,,endArrow=classic,242,285,endArrow=classic
+328,Document,endArrow=classic,246,201,endArrow=classic
+329,Information,endArrow=classic,246,212,endArrow=classic
+330,Report,endArrow=classic,247,202,endArrow=classic
+331,File,endArrow=classic,248,203,endArrow=classic
+332,Common Material,endArrow=classic,249,204,endArrow=classic
+333,Collection,endArrow=classic,249,205,endArrow=classic
+334,Working Paper,endArrow=classic,250,235,endArrow=classic
+335,Photo,endArrow=classic,251,200,endArrow=classic
+336,Publication,endArrow=classic,253,207,endArrow=classic
+337,Citation,endArrow=classic,253,209,endArrow=classic
+338,Information,endArrow=classic,254,212,endArrow=classic
+339,Available Right,endArrow=classic,254,211,endArrow=classic
+340,Researcher,endArrow=classic,254,208,endArrow=classic
+341,Donor,endArrow=classic,255,210,endArrow=classic
+342,Available Right,endArrow=classic,255,211,endArrow=classic
+343,Information,endArrow=classic,255,212,endArrow=classic
+344,Visual,endArrow=classic,256,213,endArrow=classic
+345,Index Card,endArrow=classic,257,236,endArrow=classic
+346,Link,endArrow=classic,260,215,endArrow=classic
+347,Social Medium,endArrow=classic,260,216,endArrow=classic
+348,File,endArrow=classic,260,203,endArrow=classic
+349,Image,endArrow=classic,261,217,endArrow=classic
+350,Report,endArrow=classic,262,202,endArrow=classic
+351,Photo,endArrow=classic,263,200,endArrow=classic
+352,Document,endArrow=classic,264,201,endArrow=classic
+353,Analog Version,endArrow=classic,265,237,endArrow=classic
+354,Digital Object,endArrow=classic,265,218,endArrow=classic
+355,Photo,endArrow=classic,266,200,endArrow=classic
+356,Notification,endArrow=classic,267,219,endArrow=classic
+357,Video,endArrow=classic,268,221,endArrow=classic
+358,Audio File,endArrow=classic,269,222,endArrow=classic
+359,Web Browser,endArrow=classic,269,220,endArrow=classic
+360,Descriptive Datum,endArrow=classic,270,224,endArrow=classic
+361,Common Format,endArrow=classic,270,223,endArrow=classic
+362,Keyword,endArrow=classic,271,225,endArrow=classic
+363,File,endArrow=classic,271,203,endArrow=classic
+364,Keyword,endArrow=classic,272,225,endArrow=classic
+365,File,endArrow=classic,273,203,endArrow=classic
+366,Collection,endArrow=classic,273,205,endArrow=classic
+367,Image,endArrow=classic,274,217,endArrow=classic
+368,Structured Datum,endArrow=classic,275,226,endArrow=classic
+369,,endArrow=classic,276,275,endArrow=classic
+370,Outreach Material,endArrow=classic,277,238,endArrow=classic
+371,Information,endArrow=classic,278,212,endArrow=classic
+372,"Archival ,\nDigitized Material",endArrow=classic,279,228,endArrow=classic
+373,Mediation,endArrow=classic,279,227,endArrow=classic
+374,Question,endArrow=classic,280,230,endArrow=classic
+375,Specific File,endArrow=classic,280,229,endArrow=classic
+376,Date,endArrow=classic,281,231,endArrow=classic
+377,Search,endArrow=classic,282,234,endArrow=classic
+378,Scan Diary,endArrow=classic,282,233,endArrow=classic
+379,Diary Segment,endArrow=classic,283,239,endArrow=classic
+380,,endArrow=classic,284,282,endArrow=classic
+381,,endArrow=classic,284,283,endArrow=classic
+382,Film Clip,endArrow=classic,285,240,endArrow=classic
+1000,,endArrow=classic,257,42,endArrow=classic
+1001,"Archivist,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,42,endArrow=classic
+1003,"Archivist,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,42,endArrow=classic
+1005,"Archivist,",rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,42,endArrow=classic
+1007,Information,endArrow=classic,42,212,endArrow=classic
+1008,"Researcher,",rounded=0,null,null,external_entity
+1009,,endArrow=classic,1008,43,endArrow=classic
+1010,,endArrow=classic,262,43,endArrow=classic
+1011,"Researcher,",rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,43,endArrow=classic
+1013,"Researcher,",rounded=0,null,null,external_entity
+1014,,endArrow=classic,1013,43,endArrow=classic
+1015,Talks,rounded=0,null,null,external_entity
+1016,Talks,endArrow=classic,43,1015,endArrow=classic
+1017,"Researcher,",rounded=0,null,null,external_entity
+1018,,endArrow=classic,1017,44,endArrow=classic
+1019,,endArrow=classic,275,44,endArrow=classic
+1020,"Researcher,",rounded=0,null,null,external_entity
+1021,,endArrow=classic,1020,44,endArrow=classic
+1022,"Researcher,",rounded=0,null,null,external_entity
+1023,,endArrow=classic,1022,44,endArrow=classic
+1024,Inquiry,rounded=0,null,null,external_entity
+1025,Inquiry,endArrow=classic,44,1024,endArrow=classic
+1026,"Researcher,",rounded=0,null,null,external_entity
+1027,,endArrow=classic,1026,45,endArrow=classic
+1028,,endArrow=classic,276,45,endArrow=classic
+1029,"Researcher,",rounded=0,null,null,external_entity
+1030,,endArrow=classic,1029,45,endArrow=classic
+1031,"Researcher,",rounded=0,null,null,external_entity
+1032,,endArrow=classic,1031,45,endArrow=classic
+1033,Research,rounded=0,null,null,external_entity
+1034,Research,endArrow=classic,45,1033,endArrow=classic
+1035,"Researcher,",rounded=0,null,null,external_entity
+1036,,endArrow=classic,1035,46,endArrow=classic
+1037,,endArrow=classic,276,46,endArrow=classic
+1038,"Researcher,",rounded=0,null,null,external_entity
+1039,,endArrow=classic,1038,46,endArrow=classic
+1040,"Researcher,",rounded=0,null,null,external_entity
+1041,,endArrow=classic,1040,46,endArrow=classic
+1042,Research,rounded=0,null,null,external_entity
+1043,Research,endArrow=classic,46,1042,endArrow=classic

@@ -1,0 +1,61 @@
+id,value,style,source,target,type
+15,Make recommendations accordingly.,ellipse,null,null,process
+200,Wig Prototype,shape=partialRectangle,null,null,data_base
+201,Interview,shape=partialRectangle,null,null,data_base
+202,Hypothesis,shape=partialRectangle,null,null,data_base
+203,Outreach,shape=partialRectangle,null,null,data_base
+204,Website Recruitment\nTest,shape=partialRectangle,null,null,data_base
+205,User Definition\nWorkshop,shape=partialRectangle,null,null,data_base
+206,Nsf,shape=partialRectangle,null,null,data_base
+207,Olpa Task\nScript,shape=partialRectangle,null,null,data_base
+208,Priority Workflow\nCandidate,shape=partialRectangle,null,null,data_base
+209,User,shape=partialRectangle,null,null,data_base
+210,User Researcher,rounded=0,null,null,external_entity
+211,Test The User Research Plan,ellipse,null,null,process
+212,Have The Finalized Olpa Task Script,ellipse,null,null,process
+213,Have The Wig Prototype,ellipse,null,null,process
+214,Have A List Of Priority Workflow Candidates,ellipse,null,null,process
+215,Scheduling Interviews For Hypothesis,ellipse,null,null,process
+216,Continue,ellipse,null,null,process
+217,Know Outreach To Lists Successful,ellipse,null,null,process
+218,Identifying Interview Participants,ellipse,null,null,process
+219,Begin,ellipse,null,null,process
+220,Set Up A Website Recruitment Test,ellipse,null,null,process
+221,Invited To User Interviews,ellipse,null,null,process
+222,Make,ellipse,null,null,process
+223,Drafting A Research Plan,ellipse,null,null,process
+224,Conduct A User Definition Workshop With Nsf,ellipse,null,null,process
+226,,endArrow=classic,210,211,endArrow=classic
+227,,endArrow=classic,210,212,endArrow=classic
+228,,endArrow=classic,210,213,endArrow=classic
+229,,endArrow=classic,210,214,endArrow=classic
+230,,endArrow=classic,210,215,endArrow=classic
+231,,endArrow=classic,210,216,endArrow=classic
+232,,endArrow=classic,210,217,endArrow=classic
+233,,endArrow=classic,210,218,endArrow=classic
+234,,endArrow=classic,210,219,endArrow=classic
+235,,endArrow=classic,210,219,endArrow=classic
+236,,endArrow=classic,210,220,endArrow=classic
+237,,endArrow=classic,210,221,endArrow=classic
+238,,endArrow=classic,210,222,endArrow=classic
+239,,endArrow=classic,210,223,endArrow=classic
+240,,endArrow=classic,210,224,endArrow=classic
+241,Olpa Task\nScript,endArrow=classic,212,207,endArrow=classic
+242,Wig Prototype,endArrow=classic,213,200,endArrow=classic
+243,Priority Workflow\nCandidate,endArrow=classic,214,208,endArrow=classic
+244,Interview,endArrow=classic,215,201,endArrow=classic
+245,Hypothesis,endArrow=classic,215,202,endArrow=classic
+246,,endArrow=classic,216,215,endArrow=classic
+247,Outreach,endArrow=classic,217,203,endArrow=classic
+248,,endArrow=classic,219,218,endArrow=classic
+249,,endArrow=classic,219,223,endArrow=classic
+250,Website Recruitment\nTest,endArrow=classic,220,204,endArrow=classic
+251,Interview,endArrow=classic,221,201,endArrow=classic
+252,,endArrow=classic,222,221,endArrow=classic
+253,User Definition\nWorkshop,endArrow=classic,224,205,endArrow=classic
+254,Nsf,endArrow=classic,224,206,endArrow=classic
+255,User,endArrow=classic,211,209,endArrow=classic
+1000,Nsf people,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,15,endArrow=classic
+1002,Interviews,rounded=0,null,null,external_entity
+1003,Interviews,endArrow=classic,15,1002,endArrow=classic

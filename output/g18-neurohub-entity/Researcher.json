@@ -1,0 +1,973 @@
+[
+  {
+    "text": "As a researcher, I want to create a log book page for an experiment and attach a file to this page.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to create a log book page for an experiment and attach a directory that contains multiple files.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to upload files prior to having them attached to a log book page.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "attached",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to upload files prior to having them attached to a log book page using the web interface.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "attached",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to upload files prior to having them attached to a log book page using a mapped network drive.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "attached",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to attach currently non-attached files to a log book page.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "non-attached files",
+        "label": "PII"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to receive an alert of any unattached files that are in my workspace.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "unattached files",
+        "label": "PII"
+      },
+      {
+        "text": "workspace",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to download files attached to an experiment using my Web browser.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to access files stored in my Neurohub workspace, using a network drive attached to my workstation.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "Neurohub workspace",
+        "label": "PII"
+      },
+      {
+        "text": "workstation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to create a log book page.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "log book page",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a supervisor, I want to view what my researchers were doing on a given date or period of time.",
+    "entities": [
+      {
+        "text": "supervisor",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "given date",
+        "label": "PII"
+      },
+      {
+        "text": "period of time",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want to have that my Twitter Tweets to appear in Neurohub, so that other researchers in the centre can see what I am up to.",
+    "entities": [
+      {
+        "text": "user,",
+        "label": "Data"
+      },
+      {
+        "text": "Twitter Tweets",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to insert Greek symbols into my logbook entries.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "insert",
+        "label": "Processing"
+      },
+      {
+        "text": "Greek symbols",
+        "label": "PII"
+      },
+      {
+        "text": "logbook entries",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to point my Mendeley client at a group-wide shared repository of research papers and get notifications via Mendeley when new content is added.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "point",
+        "label": "Processing"
+      },
+      {
+        "text": "Mendeley client",
+        "label": "PII"
+      },
+      {
+        "text": "get notifications",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have electronic support for keeping track of which data sets were used/output/modified as part of a particular experiment.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "keeping track",
+        "label": "Processing"
+      },
+      {
+        "text": "data sets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a user, I want a mechanism for electronically sharing papers and notes with other researchers, so that we can collaborate effectively.",
+    "entities": [
+      {
+        "text": "user",
+        "label": "Data"
+      },
+      {
+        "text": "sharing",
+        "label": "Processing"
+      },
+      {
+        "text": "papers",
+        "label": "PII"
+      },
+      {
+        "text": "notes",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have services to support the long term curation of data, so that I can be sure that data will not get 'lost' with the passage of time.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have a timeline display of multiple data files and their associated images, so that I can compare the data taken from experiments on particular dates.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "data files",
+        "label": "PII"
+      },
+      {
+        "text": "associated images",
+        "label": "PII"
+      },
+      {
+        "text": "compare",
+        "label": "Processing"
+      },
+      {
+        "text": "data taken",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have remote access to my data for off-site working , so that I can still work effectively while away from the lab.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "remote access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to share post-experiment write-ups with other researchers, so that others can more easily replicate my work.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "post-experiment write-ups",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "replicate",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to collect data as a library of data, which can then be used by one or multiple experiments that are defined at a later stage.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "collect",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "experiments",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to indicate within my electronic log book which experimental data is good/bad, hide the bad data, but still keep it in the system just in case it is useful in the future.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "electronic log book",
+        "label": "PII"
+      },
+      {
+        "text": "experimental data",
+        "label": "PII"
+      },
+      {
+        "text": "bad data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the system to provide standard metadata, that all researchers in the centre (and beyond) can use, so that we can better understand each others' data.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "provide",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have physiology images to be annotated with standard meta data, so that my data can later be searched for and understood.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "physiology images",
+        "label": "PII"
+      },
+      {
+        "text": "annotated",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "searched",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to attach standard meta data for behavioural observations (and video), so that my data can later be searched for and understood.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "behavioural observations",
+        "label": "PII"
+      },
+      {
+        "text": "video)",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "searched",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to attach standard meta data for drug responses, so that my data can later be searched for and understood.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "drug responses",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "searched",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to search for images of cells using standard meta data.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "cells",
+        "label": "PII"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have at least some meta data to be automatically inserted when new data is added to the system.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to attach detailed meta data to the data and entries that I create.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to select a partially pre-populated template that already contains commonly entered meta data while adding new data to the system, so that I do not waste time repeatedly inserting the same meta data over and over again for each individual file or log book entry.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "select",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "adding",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "inserting",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "individual file",
+        "label": "PII"
+      },
+      {
+        "text": "log book entry",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to form links between objects, for example File A is an analysis of File B, so that data can be searched by type and by association.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "form",
+        "label": "Processing"
+      },
+      {
+        "text": "links",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "searched",
+        "label": "Processing"
+      },
+      {
+        "text": "association",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to locate experiment files using meta data, regardless of where those files are located.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "experiment files",
+        "label": "PII"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have any data that I have written to the VRE to be protected from modification or deletion, so that original data can always be traced back to an experiment and a point in time.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "written",
+        "label": "Processing"
+      },
+      {
+        "text": "deletion",
+        "label": "Processing"
+      },
+      {
+        "text": "original data",
+        "label": "PII"
+      },
+      {
+        "text": "traced back",
+        "label": "Processing"
+      },
+      {
+        "text": "experiment",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to store all the inputs for an experiment so that the provenance of the results can be verified.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "inputs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the ability to search for files by file type and format.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to bulk upload directories and files with minimal effort.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "bulk upload",
+        "label": "Processing"
+      },
+      {
+        "text": "directories",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to associate meta data to the group as a whole at some point in time after the bulk upload has completed, so that I have a period of time to reflect on suitable values for the meta data.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "associate",
+        "label": "Processing"
+      },
+      {
+        "text": "meta data",
+        "label": "PII"
+      },
+      {
+        "text": "reflect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to restrict the data I share to certain researchers or groups of researchers.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "restrict",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "groups of",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to locate and access data that colleagues want to share.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "colleagues",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher,  I want to have the ability to interact with a revision control system so that I can keep track of changes to files over time.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "interact",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to secure remote access to the Neurohub node when working away from the laboratory",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "secure",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have a group-level repository for sharing papers/reviews/comments with other researchers.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "sharing",
+        "label": "Processing"
+      },
+      {
+        "text": "papers",
+        "label": "PII"
+      },
+      {
+        "text": "reviews",
+        "label": "PII"
+      },
+      {
+        "text": "comments",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have the details of the workflow plan as well as the execution history and results recorded in Neurohub while executing a workflow",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "have the details",
+        "label": "Processing"
+      }
+    ]
+  }
+]

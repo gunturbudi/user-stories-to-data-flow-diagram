@@ -1,0 +1,35 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Script " ];
+201 [label="<f0>  |<f1> Neurohub Node " ];
+202 [label="<f0>  |<f1> Neurohub Installation " ];
+203 [label="<f0>  |<f1> System " ];
+204 [label="<f0>  |<f1> Current Version " ];
+205 [label="<f0>  |<f1> Neurohub " color=red];
+206 [label="<f0>  |<f1> Datum " ];
+207 [label="<f0>  |<f1> Backup Protocol " ];
+208 [label="<f0>  |<f1> Ubuntu Operating " ];
+209 [label="System Administrator" shape=box];
+210 [label="{<f0> 1.0|<f1> Run A Script Installs The Neurohub Node Onto A Virgin Ubuntu Operating System }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> See }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Run A Script Tests A Neurohub Installation Is Correctly Functioning }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Have A Managed Backup Protocol For The System }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Migrate Data From An Older Version Of Neurohub To The Current Version }" shape=Mrecord];
+209 -> 210
+209 -> 211
+209 -> 212
+209 -> 213
+209 -> 214
+210 -> 200 [label="Script"]
+210 -> 201 [label="Neurohub Node"]
+210 -> 203 [label="System"]
+212 -> 211
+212 -> 202 [label="Neurohub Installation"]
+212 -> 200 [label="Script"]
+213 -> 207 [label="Backup Protocol"]
+213 -> 203 [label="System"]
+214 -> 206 [label="Datum"]
+214 -> 205 [label="Neurohub"]
+214 -> 204 [label="Current Version"]
+210 -> 208 [label="Ubuntu Operating"]
+}

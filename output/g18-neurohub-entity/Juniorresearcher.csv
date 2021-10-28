@@ -1,0 +1,11 @@
+id,value,style,source,target,type
+200,Group,shape=partialRectangle,null,null,data_base
+201,Knowledge,shape=partialRectangle,null,null,data_base
+202,Juniorresearcher,rounded=0,null,null,external_entity
+203,Harvest Knowledge Within The Group,ellipse,null,null,process
+204,Have,ellipse,null,null,process
+206,,endArrow=classic,202,203,endArrow=classic
+207,,endArrow=classic,202,204,endArrow=classic
+208,Knowledge,endArrow=classic,203,201,endArrow=classic
+209,Group,endArrow=classic,203,200,endArrow=classic
+210,,endArrow=classic,204,203,endArrow=classic

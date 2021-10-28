@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a DAMS manager, I want to indicate to preservation managers the checksum and checksum method for each master file for a given object.",
+    "entities": [
+      {
+        "text": "DAMS manager",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "preservation",
+        "label": "Data"
+      },
+      {
+        "text": "master file",
+        "label": "PII"
+      }
+    ]
+  }
+]

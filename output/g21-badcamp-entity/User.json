@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a administrator, I want to create and maintain venues, so that I can provide location details to help users find what they're looking for.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "create",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "venues",
+        "label": "PII"
+      },
+      {
+        "text": "location details",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

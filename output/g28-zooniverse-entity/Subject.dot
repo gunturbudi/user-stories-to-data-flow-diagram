@@ -1,0 +1,6 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Similarity " color=red];
+201 [label="<f0>  |<f1> Group Subject " color=red];
+202 [label="Zooniverse Admin" shape=box];
+}

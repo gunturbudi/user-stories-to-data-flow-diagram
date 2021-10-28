@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a researcher, I want to develop the user research protocol for internal workflows, so that we can begin testing against a CMS prototype.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to recruit for the last round of user research, so that we can summarize our findings and synthesize results.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "recruit",
+        "label": "Processing"
+      },
+      {
+        "text": "user research",
+        "label": "PII"
+      },
+      {
+        "text": "summarize",
+        "label": "Processing"
+      },
+      {
+        "text": "findings",
+        "label": "PII"
+      }
+    ]
+  }
+]

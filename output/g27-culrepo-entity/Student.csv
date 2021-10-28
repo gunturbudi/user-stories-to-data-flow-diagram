@@ -1,0 +1,37 @@
+id,value,style,source,target,type
+5,Link to content).,ellipse,null,null,process
+6,Identify work/internship opportunities.,ellipse,null,null,process
+200,Student,shape=partialRectangle,null,null,data_base
+201,Item,shape=partialRectangle,null,null,data_base
+202,Repository,shape=partialRectangle,null,null,data_base
+203,Particular Topic,shape=partialRectangle,null,null,data_base
+204,Cornell,shape=partialRectangle,null,null,data_base
+205,Research,shape=partialRectangle,null,null,data_base
+206,Dmp,shape=partialRectangle,null,null,data_base
+207,Datum,shape=partialRectangle,null,null,data_base
+208,Faculty Member,rounded=0,null,null,external_entity
+209,Student,rounded=0,null,null,external_entity
+210,Direct Students To An Item Within The Repository,ellipse,null,null,process
+211,Learn,ellipse,null,null,process
+212,Upload To The Repository The Data Associated With,ellipse,null,null,process
+213,Meet Requirements Of A Dmp,ellipse,null,null,process
+215,,endArrow=classic,208,210,endArrow=classic
+216,,endArrow=classic,209,212,endArrow=classic
+217,,endArrow=classic,209,213,endArrow=classic
+218,Student,endArrow=classic,210,200,endArrow=classic
+219,Item,endArrow=classic,210,201,endArrow=classic
+220,Repository,endArrow=classic,210,202,endArrow=classic
+221,,endArrow=classic,212,213,endArrow=classic
+222,Datum,endArrow=classic,212,207,endArrow=classic
+223,Repository,endArrow=classic,212,202,endArrow=classic
+224,Dmp,endArrow=classic,213,206,endArrow=classic
+1000,,endArrow=classic,210,5,endArrow=classic
+1001,Faculty member,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,5,endArrow=classic
+1003,Teaching,rounded=0,null,null,external_entity
+1004,Teaching,endArrow=classic,5,1003,endArrow=classic
+1005,"Student,",rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,6,endArrow=classic
+1007,,endArrow=classic,209,6,endArrow=classic
+1008,Work,rounded=0,null,null,external_entity
+1009,Work,endArrow=classic,6,1008,endArrow=classic

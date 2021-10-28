@@ -1,0 +1,49 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Pipeline " ];
+201 [label="<f0>  |<f1> App " color=red];
+202 [label="<f0>  |<f1> Exist Instance " ];
+203 [label="<f0>  |<f1> Dataset " color=red];
+204 [label="<f0>  |<f1> Instance " color=red];
+205 [label="<f0>  |<f1> App " color=red];
+206 [label="<f0>  |<f1> Source " ];
+207 [label="<f0>  |<f1> Sink " ];
+208 [label="Hydrator User" shape=box];
+209 [label="{<f0> 1.0|<f1> Create A Pipeline }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Create A Pipeline Reads }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> Write An Existing Dataset Instance }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> Write A New Dataset Instance }" shape=Mrecord];
+213 [label="{<f0> 5.0|<f1> Specify An Explicit Version Of The Dataset Types Of The Dataset Instances Pipeline }" shape=Mrecord];
+214 [label="{<f0> 6.0|<f1> Fail }" shape=Mrecord];
+215 [label="{<f0> 7.0|<f1> Explore The Datasets Pipeline }" shape=Mrecord];
+216 [label="{<f0> 8.0|<f1> Ensure All Instances Apps Available As Source }" shape=Mrecord];
+217 [label="{<f0> 9.0|<f1> Ensure All Dataset Instances Apps Available As Sinks For Pipelines }" shape=Mrecord];
+208 -> 209
+208 -> 210
+208 -> 211
+208 -> 212
+208 -> 213
+208 -> 214
+208 -> 214
+208 -> 215
+208 -> 216
+208 -> 217
+209 -> 211
+209 -> 212
+209 -> 200 [label="Pipeline"]
+210 -> 200 [label="Pipeline"]
+211 -> 204 [label="Instance"]
+211 -> 203 [label="Dataset"]
+212 -> 204 [label="Instance"]
+212 -> 203 [label="Dataset"]
+213 -> 204 [label="Instance"]
+213 -> 203 [label="Dataset"]
+215 -> 203 [label="Dataset"]
+216 -> 204 [label="Instance"]
+216 -> 206 [label="Source"]
+217 -> 207 [label="Sink"]
+217 -> 200 [label="Pipeline"]
+217 -> 204 [label="Instance"]
+216 -> 201 [label="App"]
+216 -> 205 [label="App"]
+}

@@ -1,0 +1,56 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Alfred" as thingALFRED
+	entity "People" as thingpeople
+	entity "Similar Disease" as thingsimilardisease
+	entity "Circle" as thingowncircle
+	entity "App" as thingapp
+	entity "Possible ,\nPeople" as thingpossiblemanypeople
+	actor "Olderperson" as actorOlderPerson
+	actor "Developer" as actordeveloper
+	circle "Social Group" as thingsocialgroup
+	boundary "Alfred" as thingALFREDMedicalCaregiver
+	boundary "Alfred\nInterface" as thingalfredinterface #grey
+	boundary "Disease\nInterface" as thingdiseaseinterface #grey
+	boundary "People\nInterface" as thingpeopleinterface #grey
+	control "Use Alfred" as controluseALFREDsetsocialgroup
+	control "Set Up\nSocial Groups\nOf People\nWith Similar\nDiseases" as controlsetsocialgroup
+	control "Contact People\nFrom Own\nCircle" as controlcontactpeopleowncircle
+	control "Have" as controlhaveremindALFREDMedicalCaregiverpeopleexercise
+	control "Remind People" as controlremindALFREDMedicalCaregiverpeopleexercise
+	control "Exercise" as controlexercise
+	control "Present App\nTo As\nPossible, Many\nPeople" as controlpresentapppossiblemanypeople
+
+	thingsimilardisease <.. thingpeople
+	thingowncircle <.. thingpeople
+	thingpossiblemanypeople <.. thingapp
+	thingpeople *-- thingsocialgroup
+	actorOlderPerson --- thingALFREDMedicalCaregiver
+	actorOlderPerson --- thingalfredinterface
+	actorOlderPerson --- thingdiseaseinterface
+	actordeveloper --- thingpeopleinterface
+	thingALFRED --- controluseALFREDsetsocialgroup
+	thingalfredinterface --> controluseALFREDsetsocialgroup
+	controluseALFREDsetsocialgroup --> controlsetsocialgroup
+	thingsocialgroup --- controlsetsocialgroup
+	thingpeople --- controlsetsocialgroup
+	thingsimilardisease --- controlsetsocialgroup
+	thingdiseaseinterface --> controlsetsocialgroup
+	thingowncircle --- controlcontactpeopleowncircle
+	thingpeople --- controlcontactpeopleowncircle
+	thingalfredinterface --> controlcontactpeopleowncircle
+	controluseALFREDsetsocialgroup --> controlcontactpeopleowncircle
+	thingALFREDMedicalCaregiver --> controlhaveremindALFREDMedicalCaregiverpeopleexercise
+	controlhaveremindALFREDMedicalCaregiverpeopleexercise --> controlremindALFREDMedicalCaregiverpeopleexercise
+	thingALFREDMedicalCaregiver --> controlremindALFREDMedicalCaregiverpeopleexercise
+	thingpeople --- controlremindALFREDMedicalCaregiverpeopleexercise
+	controlremindALFREDMedicalCaregiverpeopleexercise --> controlexercise
+	thingALFREDMedicalCaregiver --> controlexercise
+	thingapp --- controlpresentapppossiblemanypeople
+	thingpossiblemanypeople --- controlpresentapppossiblemanypeople
+	thingpeopleinterface --> controlpresentapppossiblemanypeople
+
+@enduml

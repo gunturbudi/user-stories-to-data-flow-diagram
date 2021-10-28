@@ -1,0 +1,138 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Project" as thingproject
+	entity "Dmp" as thingdmp
+	entity "Topic" as thingtopic
+	entity "Information" as thinginformation
+	entity "Resource" as thingmanyresource
+	entity "Agreement" as thingagreement
+	entity "Archive" as thingarchive
+	entity "Metadata" as thingmetadata
+	entity "Cris" as thingCRIS
+	entity "Publication" as thingpublication #grey
+	entity "Institutional Repository" as thinginstitutionalrepository
+	entity "Cost" as thingcost
+	entity "Section" as thingsection
+	entity "Researcher" as thingotherresearcher
+	entity "Department" as thingdepartment
+	entity "Role" as thingrole
+	entity "Responsibility" as thingresponsibility
+	entity "Party" as thingparty #grey
+	entity "Research" as thingresearch #grey
+	actor "Researcher" as actorresearcher
+	actor "Data Manager" as actordatamanager
+	circle "Description" as thingdescription
+	circle "Record" as thingrecord #grey
+	boundary "Dmp" as thingdmpresearcher
+	boundary "Intention" as thingintentionsharedatumresearcher #grey
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	boundary "Archive\nInterface" as thingarchiveinterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Cris\nInterface" as thingcrisinterface #grey
+	boundary "Cost\nInterface" as thingcostinterface #grey
+	boundary "Department\nInterface" as thingdepartmentinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	control "Indicate" as controlindicate
+	control "Similar Know\nWhich Topics\nIn All\nDmps" as controlknowtopicdmp
+	control "Prepopulate Information" as controlprepopulatedmpresearcherinformation
+	control "Know" as controlknow
+	control "Store Agreements\nTo Third\nParty Data\nIn A\nProject" as controlstoreagreement
+	control "Take To\nArchive" as controltakearchive
+	control "Share Data" as controlsharedatum
+	control "Record" as controlrecordintentionsharedatumresearcher
+	control "Import Metadata" as controlimportmetadata
+	control "Extract The\nDescription Of\nThe Data" as controlextractdescription
+	control "Record Publications\nIn Cris" as controlrecordpublicationCRIS
+	control "Record Research\nPublications In\nThe Institutional\nRepository With\nDmp Records" as controlrecordresearchpublicationsinstitutionalrepositorydmprecords
+	control "Link Publications\nIn Cris" as controllinkpublicationCRIS
+	control "Link Research\nPublications In\nThe Institutional\nRepository With\nDmp Records" as controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	control "Know About\nCosts" as controlknowcost
+	control "See The\nSections" as controlseesection
+	control "Costing By\nOther Researchers\nIn Department" as controlcostseesectionotherresearcherdepartment
+	control "Know Which\nInformation Necessary" as controlknowinformation
+
+	thingparty <.. thingdatum
+	thingproject <.. thingdatum
+	thingdmp <.. thingtopic
+	thingdatum <.. thingagreement
+	thingCRIS <.. thingpublication
+	thingresearch <.. thingpublication
+	thinginstitutionalrepository <.. thingpublication
+	thingrecord <.. thinginstitutionalrepository
+	thingrole <.. thingsection
+	thingresponsibility <.. thingsection
+	thingdepartment <.. thingotherresearcher
+	thingotherresearcher <.. thingrole
+	thingdepartment <.. thingrole
+	thingotherresearcher <.. thingresponsibility
+	thingdepartment <.. thingresponsibility
+	thingdatum *-- thingdescription
+	thingdmp *-- thingrecord
+	actorresearcher --- thingdmpresearcher
+	actorresearcher --- thingintentionsharedatumresearcher
+	actorresearcher --- thingdmpinterface
+	actorresearcher --- thingprojectinterface
+	actorresearcher --- thingarchiveinterface
+	actorresearcher --- thingmetadatainterface
+	actorresearcher --- thingdatuminterface
+	actorresearcher --- thingcrisinterface
+	actorresearcher --- thingcostinterface
+	actorresearcher --- thingdepartmentinterface
+	actordatamanager --- thinginformationinterface
+	thingtopic --- controlknowtopicdmp
+	thingdmp --- controlknowtopicdmp
+	thingdmpinterface --> controlknowtopicdmp
+	thingdmpresearcher --> controlprepopulatedmpresearcherinformation
+	thinginformation --- controlprepopulatedmpresearcherinformation
+	thingarchiveinterface --> controlknow
+	thingagreement --- controlstoreagreement
+	thingprojectinterface --> controlstoreagreement
+	thingproject --- controlstoreagreement
+	thingdatum --- controlstoreagreement
+	thingarchive --- controltakearchive
+	thingarchiveinterface --> controltakearchive
+	controlknow --> controltakearchive
+	thingintentionsharedatumresearcher --> controlsharedatum
+	controlrecordintentionsharedatumresearcher --> controlsharedatum
+	thingdatum --- controlsharedatum
+	thingintentionsharedatumresearcher --> controlrecordintentionsharedatumresearcher
+	thingmetadata --- controlimportmetadata
+	thingmetadatainterface --> controlimportmetadata
+	thingdescription --- controlextractdescription
+	thingdatuminterface --> controlextractdescription
+	thingdatum --- controlextractdescription
+	thingpublication --- controlrecordpublicationCRIS
+	thingCRIS --- controlrecordpublicationCRIS
+	thingcrisinterface --> controlrecordpublicationCRIS
+	thinginstitutionalrepository --- controlrecordresearchpublicationsinstitutionalrepositorydmprecords
+	thingpublication --- controlrecordresearchpublicationsinstitutionalrepositorydmprecords
+	thingrecord --- controlrecordresearchpublicationsinstitutionalrepositorydmprecords
+	thingdmpinterface --> controlrecordresearchpublicationsinstitutionalrepositorydmprecords
+	thingCRIS --- controllinkpublicationCRIS
+	thingpublication --- controllinkpublicationCRIS
+	thingcrisinterface --> controllinkpublicationCRIS
+	thingpublication --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thinginstitutionalrepository --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingrecord --- controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingdmpinterface --> controllinkresearchpublicationsinstitutionalrepositorydmprecords
+	thingcost --- controlknowcost
+	thingcostinterface --> controlknowcost
+	thingsection --- controlseesection
+	controlcostseesectionotherresearcherdepartment --> controlseesection
+	thingdepartmentinterface --> controlseesection
+	thingrole --- controlseesection
+	thingdepartment --- controlseesection
+	thingresponsibility --- controlseesection
+	thingotherresearcher --- controlcostseesectionotherresearcherdepartment
+	thingdepartment --- controlcostseesectionotherresearcherdepartment
+	thingdepartmentinterface --> controlcostseesectionotherresearcherdepartment
+	thinginformationinterface --> controlknowinformation
+	thinginformation --- controlknowinformation
+
+@enduml

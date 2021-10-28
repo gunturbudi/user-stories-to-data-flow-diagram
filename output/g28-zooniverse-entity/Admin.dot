@@ -1,0 +1,96 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Video " color=red];
+201 [label="<f0>  |<f1> Segment " color=red];
+202 [label="<f0>  |<f1> Topic " color=red];
+203 [label="<f0>  |<f1> Quick Assessment " ];
+204 [label="<f0>  |<f1> Upload " ];
+205 [label="<f0>  |<f1> Audio Material " color=red];
+206 [label="<f0>  |<f1> Content " color=red];
+207 [label="<f0>  |<f1> Search " ];
+208 [label="<f0>  |<f1> Copyright Infringement " ];
+209 [label="<f0>  |<f1> Ingested Content " color=red];
+210 [label="<f0>  |<f1> Information " color=red];
+211 [label="<f0>  |<f1> Metadata " color=red];
+212 [label="<f0>  |<f1> Tag " color=red];
+213 [label="<f0>  |<f1> High­level " color=red];
+214 [label="<f0>  |<f1> Article " color=red];
+215 [label="<f0>  |<f1> Quality Aspect " ];
+216 [label="<f0>  |<f1> News " color=red];
+217 [label="<f0>  |<f1> Nudity " color=red];
+218 [label="<f0>  |<f1> Asset " color=red];
+219 [label="Admin" shape=box];
+220 [label="{<f0> 1.0|<f1> See Segmentation Of Videos }" shape=Mrecord];
+221 [label="{<f0> 2.0|<f1> Validate Segmentation Of Videos }" shape=Mrecord];
+222 [label="{<f0> 3.0|<f1> Edit Segmentation Of Videos }" shape=Mrecord];
+223 [label="{<f0> 4.0|<f1> Annotate News Video Segments }" shape=Mrecord];
+224 [label="{<f0> 5.0|<f1> Extract A Topic For Each Segment }" shape=Mrecord];
+225 [label="{<f0> 6.0|<f1> Filter Videos On Quality Aspects }" shape=Mrecord];
+226 [label="{<f0> 7.0|<f1> Filter Videos On }" shape=Mrecord];
+227 [label="{<f0> 8.0|<f1> V }" shape=Mrecord];
+228 [label="{<f0> 9.0|<f1> Rank Videos On }" shape=Mrecord];
+229 [label="{<f0> 10.0|<f1> Rank Videos On Quality Aspects }" shape=Mrecord];
+230 [label="{<f0> 11.0|<f1> Get A Quick Assessment Audio Material Has Edited Before The Upload }" shape=Mrecord];
+231 [label="{<f0> 12.0|<f1> Prefilter Nudity Content }" shape=Mrecord];
+232 [label="{<f0> 13.0|<f1> Prefilter Content Using Search On Asset Information }" shape=Mrecord];
+233 [label="{<f0> 14.0|<f1> Validated The Ingested Contents For Copyright Infringement }" shape=Mrecord];
+234 [label="{<f0> 15.0|<f1> Prefilter }" shape=Mrecord];
+235 [label="{<f0> 16.0|<f1> Use Search On High­Level Information Such As Tag }" shape=Mrecord];
+236 [label="{<f0> 17.0|<f1> Use Search On High­Level Asset Information Such As Metadata }" shape=Mrecord];
+237 [label="{<f0> 18.0|<f1> See A Summary Of Articles }" shape=Mrecord];
+219 -> 220
+219 -> 221
+219 -> 222
+219 -> 223
+219 -> 224
+219 -> 225
+219 -> 226
+219 -> 227
+219 -> 228
+219 -> 229
+219 -> 230
+219 -> 231
+219 -> 232
+219 -> 233
+219 -> 234
+219 -> 235
+219 -> 236
+219 -> 237
+220 -> 200 [label="Video"]
+221 -> 200 [label="Video"]
+222 -> 200 [label="Video"]
+223 -> 201 [label="Segment"]
+224 -> 202 [label="Topic"]
+224 -> 201 [label="Segment"]
+225 -> 215 [label="Quality Aspect"]
+225 -> 200 [label="Video"]
+226 -> 227
+226 -> 200 [label="Video"]
+228 -> 227
+228 -> 200 [label="Video"]
+229 -> 200 [label="Video"]
+229 -> 215 [label="Quality Aspect"]
+230 -> 203 [label="Quick Assessment"]
+230 -> 205 [label="Audio Material"]
+230 -> 204 [label="Upload"]
+231 -> 206 [label="Content"]
+232 -> 206 [label="Content"]
+232 -> 207 [label="Search"]
+232 -> 210 [label="Information"]
+233 -> 209 [label="Ingested Content"]
+233 -> 208 [label="Copyright Infringement"]
+234 -> 235
+234 -> 236
+235 -> 212 [label="Tag"]
+235 -> 210 [label="Information"]
+235 -> 207 [label="Search"]
+235 -> 213 [label="High­level"]
+236 -> 213 [label="High­level"]
+236 -> 211 [label="Metadata"]
+236 -> 207 [label="Search"]
+236 -> 210 [label="Information"]
+237 -> 214 [label="Article"]
+223 -> 216 [label="News"]
+231 -> 217 [label="Nudity"]
+232 -> 218 [label="Asset"]
+}

@@ -1,0 +1,39 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Student " ];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Repository " ];
+203 [label="<f0>  |<f1> Particular Topic " ];
+204 [label="<f0>  |<f1> Cornell " ];
+205 [label="<f0>  |<f1> Research " color=red];
+206 [label="<f0>  |<f1> Dmp " ];
+207 [label="<f0>  |<f1> Datum " ];
+208 [label="Faculty Member" shape=box];
+209 [label="Student" shape=box];
+210 [label="{<f0> 1.0|<f1> Direct Students To An Item Within The Repository }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Learn }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Upload To The Repository The Data Associated With }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Meet Requirements Of A Dmp }" shape=Mrecord];
+5 [label="{<f0> 5.0|<f1> Link to content). }" shape=Mrecord];
+210 -> 5
+1001 [label="Faculty member" shape=box];
+1001 -> 5
+1003 [label="<f0>  |<f1> Teaching " color=red];
+5 -> 1003 [label="Teaching"]
+6 [label="{<f0> 6.0|<f1> Identify work/internship opportunities. }" shape=Mrecord];
+1005 [label="Student," shape=box];
+1005 -> 6
+209 -> 6
+1008 [label="<f0>  |<f1> Work " color=red];
+6 -> 1008 [label="Work"]
+208 -> 210
+209 -> 212
+209 -> 213
+210 -> 200 [label="Student"]
+210 -> 201 [label="Item"]
+210 -> 202 [label="Repository"]
+212 -> 213
+212 -> 207 [label="Datum"]
+212 -> 202 [label="Repository"]
+213 -> 206 [label="Dmp"]
+}

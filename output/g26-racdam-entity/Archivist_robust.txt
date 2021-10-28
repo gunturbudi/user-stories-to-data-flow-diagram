@@ -1,0 +1,511 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Right" as thingright
+	entity "License Statement" as thinglicensestatement
+	entity "Individual File" as thingindividualfile
+	entity "File" as thingfile
+	entity "View" as thingview
+	entity "Restriction" as thingrestriction
+	entity "Date" as thingdate
+	entity "Detailed Restriction" as thingdetailedrestriction
+	entity "Ip Address" as thingipaddress #grey
+	entity "Access" as thingaccess
+	entity "User" as thinguser
+	entity "Certain File" as thingcertainfile
+	entity "Photo" as thingphoto
+	entity "Statement" as thingstatement
+	entity "Information" as thinginformation
+	entity "Digital File" as thingdigitalfile
+	entity "Time" as thingtime
+	entity "Online Form" as thingonlineform
+	entity "Archival Material" as thingarchivalmaterial
+	entity "Single File" as thingsinglefile
+	entity "Technical Metadata" as thingtechnicalmetadata
+	entity "Digital Object" as thingdigitalobject
+	entity "Researcher" as thingresearcher
+	entity "Publication" as thingpublication
+	entity "Citation" as thingcitation
+	entity "Scan" as thingscan
+	entity "Image" as thingimage
+	entity "Document" as thingdocument
+	entity "Unique Identifier" as thinguniqueidentifier
+	entity "Metadata" as thingmetadata
+	entity "Scan File" as thingscannedfile
+	entity "Level" as thinglevel
+	entity "Contrast ,\nAutomatic Operation" as thingcontrastautomaticoperation
+	entity "Manipulation" as thingothermanipulation
+	entity "Contrast" as thingcontrast
+	entity "Educational Visit" as thingeducationalvisit
+	entity "Documentation" as thingdocumentation #grey
+	entity "Form" as thingform
+	entity "Correspondence" as thingcorrespondence
+	entity "Donor" as thingdonor
+	entity "Available Right" as thingavailableright
+	entity "Email" as thingemail
+	entity "Specific Object" as thingspecificobject
+	entity "Particular User" as thingparticularuser
+	entity "Unprocessed Material" as thingunprocessedmaterial
+	entity "Available ,\nPossible ,\nArchival ,\nMaterial" as thingavailablepossiblearchivalmuchmaterial
+	entity "Archival Content" as thingarchivalcontent #grey
+	entity "Rac Website" as thingracwebsite #grey
+	entity "Collection" as thingcollection
+	entity "Keyword" as thingkeyword
+	entity "Inventory" as thinginventory
+	entity "Tag" as thingtag
+	entity "Drive" as thingdrive
+	entity "Black" as thingblack
+	entity "Color" as thingcolor
+	entity "White" as thingwhite
+	entity "Photographer" as thingphotographer
+	entity "People" as thingpeople
+	entity "Place" as thingplace
+	entity "Physical Location" as thingphysicallocation
+	entity "Visual" as thingvisual
+	entity "Rights Status" as thingrightsstatus
+	entity "Preservation Standard" as thingpreservationstandard
+	entity "Research Request" as thingresearchrequest
+	entity "Index Card" as thingindexcard
+	entity "Finding Aid" as thingfindingaid
+	entity "Material Type" as thingmaterialtype
+	entity "End" as thingend #grey
+	entity "Edit" as thingedit #grey
+	entity "Quality" as thingquality #grey
+	entity "Loan" as thingloan #grey
+	entity "Preservation" as thingpreservation #grey
+	entity "Staff" as thingstaff #grey
+	actor "Archivist" as actorarchivist
+	circle "Group" as thinggroup
+	circle "Period" as thingperiod
+	circle "Electronic Version" as thingelectronicversion
+	circle "Use" as thinguse
+	circle "Digital Copy" as thingdigitalcopy
+	circle "Metadata Representation" as thingmetadatarepresentation
+	circle "Copy" as thingcopy #grey
+	circle "Purpose" as thingpurpose #grey
+	circle "Derivative" as thingderivative #grey
+	circle "Header" as thingheader #grey
+	boundary "Statement\nInterface" as thingstatementinterface #grey
+	boundary "Right\nInterface" as thingrightinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Address\nInterface" as thingaddressinterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Status\nInterface" as thingstatusinterface #grey
+	boundary "Time\nInterface" as thingtimeinterface #grey
+	boundary "Material\nInterface" as thingmaterialinterface #grey
+	boundary "Form\nInterface" as thingforminterface #grey
+	boundary "Metadata\nInterface" as thingmetadatainterface #grey
+	boundary "Access\nInterface" as thingaccessinterface #grey
+	boundary "Standard\nInterface" as thingstandardinterface #grey
+	boundary "Citation\nInterface" as thingcitationinterface #grey
+	boundary "Request\nInterface" as thingrequestinterface #grey
+	boundary "Image\nInterface" as thingimageinterface #grey
+	boundary "Document\nInterface" as thingdocumentinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Identifier\nInterface" as thingidentifierinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Contrast\nInterface" as thingcontrastinterface #grey
+	boundary "Manipulation\nInterface" as thingmanipulationinterface #grey
+	boundary "Visit\nInterface" as thingvisitinterface #grey
+	boundary "Correspondence\nInterface" as thingcorrespondenceinterface #grey
+	boundary "Photo\nInterface" as thingphotointerface #grey
+	boundary "Donor\nInterface" as thingdonorinterface #grey
+	boundary "Researcher\nInterface" as thingresearcherinterface #grey
+	boundary "Use\nInterface" as thinguseinterface #grey
+	boundary "Website\nInterface" as thingwebsiteinterface #grey
+	boundary "Collection\nInterface" as thingcollectioninterface #grey
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Inventory\nInterface" as thinginventoryinterface #grey
+	boundary "Tag\nInterface" as thingtaginterface #grey
+	boundary "Drive\nInterface" as thingdriveinterface #grey
+	boundary "Color\nInterface" as thingcolorinterface #grey
+	boundary "Black\nInterface" as thingblackinterface #grey
+	boundary "White\nInterface" as thingwhiteinterface #grey
+	boundary "Card\nInterface" as thingcardinterface #grey
+	boundary "Aid\nInterface" as thingaidinterface #grey
+	boundary "Visual\nInterface" as thingvisualinterface #grey
+	boundary "Type\nInterface" as thingtypeinterface #grey
+	control "Apply A\nLicense Statement" as controlapplylicensestatement
+	control "Apply Right" as controlapplyright
+	control "Mark Individual\nFiles" as controlmarkindividualfile
+	control "Mark Groups\nOf Files" as controlmarkgroup
+	control "Restrict A\nFile From\nView" as controlrestrictfile
+	control "Restrict A\nGroup Of\nFiles From\nView" as controlrestrictgroup
+	control "Set A\nDate On\nWhich Restrictions\nRemoved From\nA File" as controlsetdate
+	control "Add End\nRestriction Date\nInformation To\nFiles" as controladdendrestrictiondateinformationfile
+	control "Add Detailed\nRestrictions To\nGroups Of\nFiles" as controladddetailedrestrictiongroup
+	control "Restrict Access\nTo Some\nFiles By\nIp Address" as controlrestrictaccess
+	control "Restrict Access\nTo Certain\nFiles By\nUser" as controlrestrictaccessuser
+	control "Know" as controlknow
+	control "Select Statement" as controlselectstatement
+	control "Select Existing\nRights Statuses" as controlselectexistingrightsstatuses
+	control "Redact Information\nIn Digital\nFiles For\nA Period\nOf Time" as controlredactinformationperiod
+	control "Licensing Archival\nMaterial" as controllicensehaveonlineformarchivalmaterial
+	control "Have An\nOnline Form" as controlhaveonlineform
+	control "Batch Edit\nMetadata About\nFiles" as controlbatcheditmetadatafile
+	control "Upload A\nSingle File" as controluploadsinglefile
+	control "Upload Groups\nOf Files" as controluploadgroup
+	control "Create Access\nCopies Of\nFiles" as controlcreateaccesscopies
+	control "Generate Technical\nMetadata" as controlgeneratetechnicalmetadata
+	control "Distinguish Between\nDigital Objects\nTo Only\nThose For\nAccess Purposes" as controldistinguishdigitalobjectthose
+	control "Distinguish Between\nDigital Objects\nTo Preservation\nStandards" as controldistinguishdigitalobject
+	control "Link Electronic\nVersions Of\nResearchers' Publications\nTo Citations" as controllinkelectronicversioncitation
+	control "Upload Scans\nOf Images\nAnswering Research\nRequests" as controluploadscanimage
+	control "Create Quality\nScans Of\nImages" as controlcreatequalityscans
+	control "Create Scans\nOf Document" as controlcreatescandocument
+	control "Create Access\nDerivatives Of\nDigital Objects" as controlcreateaccessderivatives
+	control "Assign Unique\nIdentifiers" as controlassignuniqueidentifier
+	control "Embed Metadata\nIn File\nHeaders" as controlembedmetadata
+	control "Rotate Images" as controlrotateimage
+	control "Apply Level" as controlapplylevel
+	control "Apply Contrast,\nAutomatic Operations\nTo A\nScanned File" as controlapplycontrastautomaticoperationscannedfile
+	control "Perform Contrast" as controlperformcontrast
+	control "Perform Manually\nOther Manipulation" as controlperformothermanipulation
+	control "Perform Level" as controlperformlevel
+	control "Manage Scans\nOf Archival\nMaterial For\nEducational Visits" as controlmanagescan
+	control "Manage Documentation\nIncluding Correspondence" as controlmanagedocumentationcorrespondence
+	control "Manage Documentation\nIncluding Form" as controlmanagedocumentationform
+	control "Manage Loan\nDocumentation Including\nPreservation Photos" as controlmanageloandocumentation
+	control "Make Information\nAbout Available\nRights To\nDonor" as controlmakeinformationdonor
+	control "Make Information\nAbout Available\nRights To\nResearchers" as controlmakeinformation
+	control "Ensure" as controlensure
+	control "Track Use\nOf A\nPhoto" as controltrackuse
+	control "See" as controlsee
+	control "Provide Access\nTo Digital\nCopies Of\nUnprocessed Material" as controlprovideaccess
+	control "Make As\nAvailable, Possible,\nArchival, Much\nMaterial For\nUse" as controlmakeavailablepossiblearchivalmuchmaterial
+	control "Use Archival\nContent On\nThe Rac\nWebsite" as controlusearchivalcontentracwebsite
+	control "Browse Through\nFiles In\nA Collection" as controlbrowsefilecollection
+	control "Search All\nFiles By\nKeyword" as controlsearchfile
+	control "Upload Inventories" as controluploadinventory
+	control "Search By\nTag" as controlsearchtag
+	control "Access The\nDigital Files\nOn The\nDrive" as controlaccessdigitalfile
+	control "Have Electronic\nVersions Of\nThe Available\nCollection Files\nFor Staff\nUse" as controlhaveelectronicversion
+	control "Distinguish Between\nImages In\nColor" as controldistinguishimage
+	control "Distinguish Between\nImages In\nBlack" as controldistinguishimageblack
+	control "Distinguish Between\nImages In\nWhite" as controldistinguishimagewhite
+	control "Access Inventories\nFor Unprocessed\nCollections" as controlaccessinventory
+	control "Search Images\nBy Photographer" as controlsearchimage
+	control "Search Images\nBy Place\nThe Photo\nTaken" as controlsearchimageplace
+	control "Search Index\nCards" as controlsearchindexcards
+	control "Search Public,\nOther Finding\nAid" as controlsearchpublicotherfindingaid
+	control "View Collection\nFiles" as controlviewcollectionfiles
+	control "View Physical\nLocations For\nArchival Material" as controlviewphysicallocation
+	control "Find Files\nNot Publicly\nMade" as controlfindfile
+	control "Access Metadata\nRepresentations Of\nIndex Cards" as controlaccessmetadatarepresentation
+	control "Access Visual" as controlaccessvisual
+	control "Search Individual\nMaterial Types" as controlsearchindividualmaterialtypes
+	control "Uploading An\nImage" as controluploadsearchimageimage
+
+	thingview <.. thingfile
+	thingipaddress <.. thingfile
+	thingcollection <.. thingfile
+	thingkeyword <.. thingfile
+	thinguse <.. thingfile
+	thingfile <.. thingrestriction
+	thingend <.. thingrestriction
+	thingrestriction <.. thingdate
+	thingfile <.. thingdate
+	thinggroup <.. thingdetailedrestriction
+	thingfile <.. thingaccess
+	thingcertainfile <.. thingaccess
+	thingdigitalcopy <.. thingaccess
+	thingdigitalobject <.. thingaccess
+	thinguser <.. thingcertainfile
+	thingpreservation <.. thingphoto
+	thingdigitalfile <.. thinginformation
+	thingavailableright <.. thinginformation
+	thingfile <.. thinginformation
+	thingdate <.. thinginformation
+	thingcitation <.. thinginformation
+	thingperiod <.. thingdigitalfile
+	thingdrive <.. thingdigitalfile
+	thingeducationalvisit <.. thingarchivalmaterial
+	thingpreservationstandard <.. thingdigitalobject
+	thingpurpose <.. thingdigitalobject
+	thingresearcher <.. thingpublication
+	thingcitation <.. thingpublication
+	thingimage <.. thingscan
+	thingarchivalmaterial <.. thingscan
+	thingdocument <.. thingscan
+	thingquality <.. thingscan
+	thingresearchrequest <.. thingimage
+	thingcolor <.. thingimage
+	thingphotographer <.. thingimage
+	thingplace <.. thingimage
+	thingright <.. thingimage
+	thingpeople <.. thingimage
+	thingwhite <.. thingimage
+	thingblack <.. thingimage
+	thingheader <.. thingmetadata
+	thingedit <.. thingmetadata
+	thingfile <.. thingmetadata
+	thingscannedfile <.. thingcontrastautomaticoperation
+	thingform <.. thingdocumentation
+	thingcorrespondence <.. thingdocumentation
+	thingloan <.. thingdocumentation
+	thingphoto <.. thingdocumentation
+	thingresearcher <.. thingavailableright
+	thingdonor <.. thingavailableright
+	thingspecificobject <.. thingemail
+	thinguse <.. thingavailablepossiblearchivalmuchmaterial
+	thingracwebsite <.. thingarchivalcontent
+	thingcollection <.. thinginventory
+	thingpeople <.. thingpeople
+	thingphoto <.. thingplace
+	thingarchivalmaterial <.. thingphysicallocation
+	thingfile *-- thinggroup
+	thingtime *-- thingperiod
+	thingpublication *-- thingelectronicversion
+	thingfile *-- thingelectronicversion
+	thingphoto *-- thinguse
+	thingstaff *-- thinguse
+	thingunprocessedmaterial *-- thingdigitalcopy
+	thingindexcard *-- thingmetadatarepresentation
+	thingfile *-- thingcopy
+	thingaccess *-- thingcopy
+	thingaccess *-- thingpurpose
+	thingdigitalobject *-- thingderivative
+	thingaccess *-- thingderivative
+	thingfile *-- thingheader
+	actorarchivist --- thingstatementinterface
+	actorarchivist --- thingrightinterface
+	actorarchivist --- thingfileinterface
+	actorarchivist --- thingviewinterface
+	actorarchivist --- thingaddressinterface
+	actorarchivist --- thinguserinterface
+	actorarchivist --- thingstatusinterface
+	actorarchivist --- thingtimeinterface
+	actorarchivist --- thingmaterialinterface
+	actorarchivist --- thingforminterface
+	actorarchivist --- thingmetadatainterface
+	actorarchivist --- thingaccessinterface
+	actorarchivist --- thingstandardinterface
+	actorarchivist --- thingcitationinterface
+	actorarchivist --- thingrequestinterface
+	actorarchivist --- thingimageinterface
+	actorarchivist --- thingdocumentinterface
+	actorarchivist --- thingobjectinterface
+	actorarchivist --- thingidentifierinterface
+	actorarchivist --- thinglevelinterface
+	actorarchivist --- thingcontrastinterface
+	actorarchivist --- thingmanipulationinterface
+	actorarchivist --- thingvisitinterface
+	actorarchivist --- thingcorrespondenceinterface
+	actorarchivist --- thingphotointerface
+	actorarchivist --- thingdonorinterface
+	actorarchivist --- thingresearcherinterface
+	actorarchivist --- thinguseinterface
+	actorarchivist --- thingwebsiteinterface
+	actorarchivist --- thingcollectioninterface
+	actorarchivist --- thingkeywordinterface
+	actorarchivist --- thinginventoryinterface
+	actorarchivist --- thingtaginterface
+	actorarchivist --- thingdriveinterface
+	actorarchivist --- thingcolorinterface
+	actorarchivist --- thingblackinterface
+	actorarchivist --- thingwhiteinterface
+	actorarchivist --- thingcardinterface
+	actorarchivist --- thingaidinterface
+	actorarchivist --- thingvisualinterface
+	actorarchivist --- thingtypeinterface
+	thinglicensestatement --- controlapplylicensestatement
+	thingstatementinterface --> controlapplylicensestatement
+	thingright --- controlapplyright
+	thingrightinterface --> controlapplyright
+	thingindividualfile --- controlmarkindividualfile
+	thingfileinterface --> controlmarkindividualfile
+	thinggroup --- controlmarkgroup
+	thingfile --- controlmarkgroup
+	thingfileinterface --> controlmarkgroup
+	thingview --- controlrestrictfile
+	thingviewinterface --> controlrestrictfile
+	thingfile --- controlrestrictfile
+	thinggroup --- controlrestrictgroup
+	thingfile --- controlrestrictgroup
+	thingview --- controlrestrictgroup
+	thingviewinterface --> controlrestrictgroup
+	thingdate --- controlsetdate
+	thingrestriction --- controlsetdate
+	thingfile --- controlsetdate
+	thingfileinterface --> controlsetdate
+	thingfile --- controladdendrestrictiondateinformationfile
+	thingfileinterface --> controladdendrestrictiondateinformationfile
+	thinginformation --- controladdendrestrictiondateinformationfile
+	thingdetailedrestriction --- controladddetailedrestrictiongroup
+	thinggroup --- controladddetailedrestrictiongroup
+	thingfile --- controladddetailedrestrictiongroup
+	thingfileinterface --> controladddetailedrestrictiongroup
+	thingaccess --- controlrestrictaccess
+	thingipaddress --- controlrestrictaccess
+	thingaddressinterface --> controlrestrictaccess
+	thingfile --- controlrestrictaccess
+	thingcertainfile --- controlrestrictaccessuser
+	thinguser --- controlrestrictaccessuser
+	thinguserinterface --> controlrestrictaccessuser
+	thingaccess --- controlrestrictaccessuser
+	thingstatement --- controlselectstatement
+	thingstatementinterface --> controlselectstatement
+	thingrightsstatus --- controlselectexistingrightsstatuses
+	thingstatusinterface --> controlselectexistingrightsstatuses
+	thinginformation --- controlredactinformationperiod
+	thingdigitalfile --- controlredactinformationperiod
+	thingperiod --- controlredactinformationperiod
+	thingtime --- controlredactinformationperiod
+	thingtimeinterface --> controlredactinformationperiod
+	thingmaterialinterface --> controllicensehaveonlineformarchivalmaterial
+	thingarchivalmaterial --- controllicensehaveonlineformarchivalmaterial
+	controllicensehaveonlineformarchivalmaterial --> controlhaveonlineform
+	thingonlineform --- controlhaveonlineform
+	thingforminterface --> controlhaveonlineform
+	thingfile --- controlbatcheditmetadatafile
+	thingfileinterface --> controlbatcheditmetadatafile
+	thingmetadata --- controlbatcheditmetadatafile
+	thingsinglefile --- controluploadsinglefile
+	thingfileinterface --> controluploadsinglefile
+	thinggroup --- controluploadgroup
+	thingfile --- controluploadgroup
+	thingfileinterface --> controluploadgroup
+	thingcopy --- controlcreateaccesscopies
+	thingfile --- controlcreateaccesscopies
+	thingfileinterface --> controlcreateaccesscopies
+	thingtechnicalmetadata --- controlgeneratetechnicalmetadata
+	thingmetadatainterface --> controlgeneratetechnicalmetadata
+	thingpurpose --- controldistinguishdigitalobjectthose
+	thingaccessinterface --> controldistinguishdigitalobjectthose
+	thingdigitalobject --- controldistinguishdigitalobjectthose
+	thingdigitalobject --- controldistinguishdigitalobject
+	thingpreservationstandard --- controldistinguishdigitalobject
+	thingstandardinterface --> controldistinguishdigitalobject
+	thingelectronicversion --- controllinkelectronicversioncitation
+	thingpublication --- controllinkelectronicversioncitation
+	thingcitation --- controllinkelectronicversioncitation
+	thingcitationinterface --> controllinkelectronicversioncitation
+	thingscan --- controluploadscanimage
+	thingimage --- controluploadscanimage
+	thingresearchrequest --- controluploadscanimage
+	thingrequestinterface --> controluploadscanimage
+	thingimageinterface --> controlcreatequalityscans
+	thingimage --- controlcreatequalityscans
+	thingscan --- controlcreatequalityscans
+	thingdocument --- controlcreatescandocument
+	thingdocumentinterface --> controlcreatescandocument
+	thingscan --- controlcreatescandocument
+	thingderivative --- controlcreateaccessderivatives
+	thingobjectinterface --> controlcreateaccessderivatives
+	thingdigitalobject --- controlcreateaccessderivatives
+	thinguniqueidentifier --- controlassignuniqueidentifier
+	thingidentifierinterface --> controlassignuniqueidentifier
+	thingmetadata --- controlembedmetadata
+	thingheader --- controlembedmetadata
+	thingfileinterface --> controlembedmetadata
+	thingimage --- controlrotateimage
+	thingimageinterface --> controlrotateimage
+	thinglevel --- controlapplylevel
+	thinglevelinterface --> controlapplylevel
+	thingcontrastautomaticoperation --- controlapplycontrastautomaticoperationscannedfile
+	thingscannedfile --- controlapplycontrastautomaticoperationscannedfile
+	thingfileinterface --> controlapplycontrastautomaticoperationscannedfile
+	thingcontrast --- controlperformcontrast
+	thingcontrastinterface --> controlperformcontrast
+	thingothermanipulation --- controlperformothermanipulation
+	thingmanipulationinterface --> controlperformothermanipulation
+	thinglevel --- controlperformlevel
+	thinglevelinterface --> controlperformlevel
+	thingarchivalmaterial --- controlmanagescan
+	thingeducationalvisit --- controlmanagescan
+	thingvisitinterface --> controlmanagescan
+	thingscan --- controlmanagescan
+	thingcorrespondence --- controlmanagedocumentationcorrespondence
+	thingcorrespondenceinterface --> controlmanagedocumentationcorrespondence
+	thingdocumentation --- controlmanagedocumentationcorrespondence
+	thingdocumentation --- controlmanagedocumentationform
+	thingform --- controlmanagedocumentationform
+	thingforminterface --> controlmanagedocumentationform
+	thingphotointerface --> controlmanageloandocumentation
+	thingdocumentation --- controlmanageloandocumentation
+	thingphoto --- controlmanageloandocumentation
+	thingdonor --- controlmakeinformationdonor
+	thingdonorinterface --> controlmakeinformationdonor
+	thingavailableright --- controlmakeinformationdonor
+	thinginformation --- controlmakeinformationdonor
+	thingavailableright --- controlmakeinformation
+	thingresearcherinterface --> controlmakeinformation
+	thinginformation --- controlmakeinformation
+	thingresearcher --- controlmakeinformation
+	thinguse --- controltrackuse
+	thingphoto --- controltrackuse
+	thingphotointerface --> controltrackuse
+	thingdigitalcopy --- controlprovideaccess
+	thingunprocessedmaterial --- controlprovideaccess
+	thingaccess --- controlprovideaccess
+	thingmaterialinterface --> controlprovideaccess
+	thingavailablepossiblearchivalmuchmaterial --- controlmakeavailablepossiblearchivalmuchmaterial
+	thinguseinterface --> controlmakeavailablepossiblearchivalmuchmaterial
+	thinguse --- controlmakeavailablepossiblearchivalmuchmaterial
+	thingarchivalcontent --- controlusearchivalcontentracwebsite
+	thingracwebsite --- controlusearchivalcontentracwebsite
+	thingwebsiteinterface --> controlusearchivalcontentracwebsite
+	thingcollection --- controlbrowsefilecollection
+	thingcollectioninterface --> controlbrowsefilecollection
+	thingfile --- controlbrowsefilecollection
+	thingkeyword --- controlsearchfile
+	thingkeywordinterface --> controlsearchfile
+	thingfile --- controlsearchfile
+	thinginventory --- controluploadinventory
+	thinginventoryinterface --> controluploadinventory
+	thingtag --- controlsearchtag
+	thingtaginterface --> controlsearchtag
+	thingdrive --- controlaccessdigitalfile
+	thingdriveinterface --> controlaccessdigitalfile
+	thingdigitalfile --- controlaccessdigitalfile
+	thingelectronicversion --- controlhaveelectronicversion
+	thinguseinterface --> controlhaveelectronicversion
+	thingfile --- controlhaveelectronicversion
+	thinguse --- controlhaveelectronicversion
+	thingcolor --- controldistinguishimage
+	thingcolorinterface --> controldistinguishimage
+	thingimage --- controldistinguishimage
+	thingblack --- controldistinguishimageblack
+	thingblackinterface --> controldistinguishimageblack
+	thingimage --- controldistinguishimageblack
+	thingwhite --- controldistinguishimagewhite
+	thingwhiteinterface --> controldistinguishimagewhite
+	thingimage --- controldistinguishimagewhite
+	thinginventory --- controlaccessinventory
+	thingcollectioninterface --> controlaccessinventory
+	thingcollection --- controlaccessinventory
+	thingphotographer --- controlsearchimage
+	thingimage --- controlsearchimage
+	thingright --- controlsearchimage
+	controluploadsearchimageimage --> controlsearchimage
+	thingpeople --- controlsearchimage
+	thingrightinterface --> controlsearchimage
+	thingplace --- controlsearchimageplace
+	thingphoto --- controlsearchimageplace
+	thingimage --- controlsearchimageplace
+	thingphotointerface --> controlsearchimageplace
+	thingindexcard --- controlsearchindexcards
+	thingcardinterface --> controlsearchindexcards
+	thingfindingaid --- controlsearchpublicotherfindingaid
+	thingaidinterface --> controlsearchpublicotherfindingaid
+	thingcollectioninterface --> controlviewcollectionfiles
+	thingfile --- controlviewcollectionfiles
+	thingphysicallocation --- controlviewphysicallocation
+	thingarchivalmaterial --- controlviewphysicallocation
+	thingmaterialinterface --> controlviewphysicallocation
+	thingfile --- controlfindfile
+	thingfileinterface --> controlfindfile
+	thingmetadatarepresentation --- controlaccessmetadatarepresentation
+	thingcardinterface --> controlaccessmetadatarepresentation
+	thingindexcard --- controlaccessmetadatarepresentation
+	thingvisual --- controlaccessvisual
+	thingvisualinterface --> controlaccessvisual
+	thingmaterialtype --- controlsearchindividualmaterialtypes
+	thingtypeinterface --> controlsearchindividualmaterialtypes
+	thingimage --- controluploadsearchimageimage
+	thingimageinterface --> controluploadsearchimageimage
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Dataset" as thingdataset
+	entity "Dmp" as thingdmp
+	actor "Research Head" as actorresearchhead
+	circle "Persistent Identifier" as thingpersistentidentifier
+	boundary "Dmp\nInterface" as thingdmpinterface #grey
+	control "Access To\nThe Persistent\nIdentifiers Of\nDatasets In\nThe Dmp" as controlaccesspersistentidentifier
+
+	thingdmp <.. thingdataset
+	thingdataset *-- thingpersistentidentifier
+	actorresearchhead --- thingdmpinterface
+	thingpersistentidentifier --- controlaccesspersistentidentifier
+	thingdataset --- controlaccesspersistentidentifier
+	thingdmp --- controlaccesspersistentidentifier
+	thingdmpinterface --> controlaccesspersistentidentifier
+
+@enduml

@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As a site member, I want to view the profiles of other members, so that I can find others I might want to connect with.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "others",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to search for profiles based on a few fields, so that I can find others I might want to connect with.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      },
+      {
+        "text": "others",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Feedback " color=red];
+201 [label="<f0>  |<f1> File " color=red];
+202 [label="<f0>  |<f1> Format " ];
+203 [label="<f0>  |<f1> Repository " ];
+204 [label="<f0>  |<f1> Thing " ];
+205 [label="<f0>  |<f1> Information " ];
+206 [label="<f0>  |<f1> Datum " ];
+207 [label="<f0>  |<f1> Metadata " color=red];
+208 [label="Depositor" shape=box];
+209 [label="{<f0> 1.0|<f1> Get Feedback Alerting }" shape=Mrecord];
+210 [label="{<f0> 2.0|<f1> Files Not Conform To Format Specifications }" shape=Mrecord];
+211 [label="{<f0> 3.0|<f1> See }" shape=Mrecord];
+212 [label="{<f0> 4.0|<f1> Get One }" shape=Mrecord];
+213 [label="{<f0> 5.0|<f1> Find Information Which Data A Assigned What Metadata Required }" shape=Mrecord];
+208 -> 209
+208 -> 210
+208 -> 212
+208 -> 213
+209 -> 210
+209 -> 200 [label="Feedback"]
+210 -> 201 [label="File"]
+213 -> 212
+213 -> 205 [label="Information"]
+213 -> 206 [label="Datum"]
+213 -> 207 [label="Metadata"]
+210 -> 202 [label="Format"]
+}

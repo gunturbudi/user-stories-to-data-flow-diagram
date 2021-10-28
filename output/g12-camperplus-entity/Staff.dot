@@ -1,0 +1,23 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Form " color=red];
+201 [label="<f0>  |<f1> Staff " ];
+202 [label="<f0>  |<f1> Kid " color=red];
+203 [label="<f0>  |<f1> Emergency " color=red];
+204 [label="<f0>  |<f1> Registration " color=red];
+205 [label="Camp Administrator" shape=box];
+206 [label="Parent" shape=box];
+207 [label="{<f0> 1.0|<f1> Create A Form For Kid }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Create A Registration Form For Both Staff }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Connect With The Staff In Case Of An Emergency }" shape=Mrecord];
+205 -> 207
+205 -> 208
+206 -> 209
+207 -> 200 [label="Form"]
+207 -> 202 [label="Kid"]
+208 -> 201 [label="Staff"]
+208 -> 200 [label="Form"]
+209 -> 203 [label="Emergency"]
+209 -> 201 [label="Staff"]
+208 -> 204 [label="Registration"]
+}

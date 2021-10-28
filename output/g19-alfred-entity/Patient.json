@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a MedicalCaregiver, I want to be able to see if the patient has taken her medicine.",
+    "entities": [
+      {
+        "text": "MedicalCaregiver,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "patient",
+        "label": "Data"
+      },
+      {
+        "text": "medicine",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+id,value,style,source,target,type
+200,Script,shape=partialRectangle,null,null,data_base
+201,Neurohub Node,shape=partialRectangle,null,null,data_base
+202,Neurohub Installation,shape=partialRectangle,null,null,data_base
+203,System,shape=partialRectangle,null,null,data_base
+204,Current Version,shape=partialRectangle,null,null,data_base
+205,Neurohub,shape=partialRectangle,null,null,data_base
+206,Datum,shape=partialRectangle,null,null,data_base
+207,Backup Protocol,shape=partialRectangle,null,null,data_base
+208,Ubuntu Operating,shape=partialRectangle,null,null,data_base
+209,System Administrator,rounded=0,null,null,external_entity
+210,Run A Script Installs The Neurohub Node Onto A Virgin Ubuntu Operating System,ellipse,null,null,process
+211,See,ellipse,null,null,process
+212,Run A Script Tests A Neurohub Installation Is Correctly Functioning,ellipse,null,null,process
+213,Have A Managed Backup Protocol For The System,ellipse,null,null,process
+214,Migrate Data From An Older Version Of Neurohub To The Current Version,ellipse,null,null,process
+216,,endArrow=classic,209,210,endArrow=classic
+217,,endArrow=classic,209,211,endArrow=classic
+218,,endArrow=classic,209,212,endArrow=classic
+219,,endArrow=classic,209,213,endArrow=classic
+220,,endArrow=classic,209,214,endArrow=classic
+221,Script,endArrow=classic,210,200,endArrow=classic
+222,Neurohub Node,endArrow=classic,210,201,endArrow=classic
+223,System,endArrow=classic,210,203,endArrow=classic
+224,,endArrow=classic,212,211,endArrow=classic
+225,Neurohub Installation,endArrow=classic,212,202,endArrow=classic
+226,Script,endArrow=classic,212,200,endArrow=classic
+227,Backup Protocol,endArrow=classic,213,207,endArrow=classic
+228,System,endArrow=classic,213,203,endArrow=classic
+229,Datum,endArrow=classic,214,206,endArrow=classic
+230,Neurohub,endArrow=classic,214,205,endArrow=classic
+231,Current Version,endArrow=classic,214,204,endArrow=classic
+232,Ubuntu Operating,endArrow=classic,210,208,endArrow=classic

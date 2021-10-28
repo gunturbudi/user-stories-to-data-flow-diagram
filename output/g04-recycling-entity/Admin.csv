@@ -1,0 +1,78 @@
+id,value,style,source,target,type
+15,Review any issues that are being faced by users of the system.,ellipse,null,null,process
+16,Try getting more facilities involved.,ellipse,null,null,process
+17,Keep them updated about features we have on our website.,ellipse,null,null,process
+200,Information,shape=partialRectangle,null,null,data_base
+201,Complaint,shape=partialRectangle,null,null,data_base
+202,Feedback,shape=partialRectangle,null,null,data_base
+203,User,shape=partialRectangle,null,null,data_base
+204,Specific User,shape=partialRectangle,null,null,data_base
+205,Ip Address,shape=partialRectangle,null,null,data_base
+206,Dashboard,shape=partialRectangle,null,null,data_base
+207,Status,shape=partialRectangle,null,null,data_base
+208,Site,shape=partialRectangle,null,null,data_base
+209,Datum,shape=partialRectangle,null,null,data_base
+210,Activity,shape=partialRectangle,null,null,data_base
+211,Platform,shape=partialRectangle,null,null,data_base
+212,Location,shape=partialRectangle,null,null,data_base
+213,Facility,shape=partialRectangle,null,null,data_base
+214,Recycling Center,shape=partialRectangle,null,null,data_base
+215,Usage Stat,shape=partialRectangle,null,null,data_base
+216,Recycling,shape=partialRectangle,null,null,data_base
+217,Admin,rounded=0,null,null,external_entity
+218,Add Recycling Facilities' Information,ellipse,null,null,process
+219,Remove Recycling Facilities' Information,ellipse,null,null,process
+220,Read Users' Feedback,ellipse,null,null,process
+221,Read Complaint,ellipse,null,null,process
+222,Block Specific Users On Ip Address,ellipse,null,null,process
+223,View A Dashboard Monitors The Sites' Statuses,ellipse,null,null,process
+224,Have,ellipse,null,null,process
+225,Handle All Users' Activities,ellipse,null,null,process
+226,Add Recycling Center Information,ellipse,null,null,process
+227,View User Error Logs,ellipse,null,null,process
+228,Onboard Recycling Centers On The Platform,ellipse,null,null,process
+229,Have A Dashboard Shows Location,ellipse,null,null,process
+230,Have A Dashboard Shows Usage Stats,ellipse,null,null,process
+231,Communicate With Facilities,ellipse,null,null,process
+233,,endArrow=classic,217,218,endArrow=classic
+234,,endArrow=classic,217,219,endArrow=classic
+235,,endArrow=classic,217,220,endArrow=classic
+236,,endArrow=classic,217,221,endArrow=classic
+237,,endArrow=classic,217,222,endArrow=classic
+238,,endArrow=classic,217,223,endArrow=classic
+239,,endArrow=classic,217,225,endArrow=classic
+240,,endArrow=classic,217,226,endArrow=classic
+241,,endArrow=classic,217,227,endArrow=classic
+242,,endArrow=classic,217,228,endArrow=classic
+243,,endArrow=classic,217,229,endArrow=classic
+244,,endArrow=classic,217,230,endArrow=classic
+245,,endArrow=classic,217,231,endArrow=classic
+246,Information,endArrow=classic,218,200,endArrow=classic
+247,Information,endArrow=classic,219,200,endArrow=classic
+248,Feedback,endArrow=classic,220,202,endArrow=classic
+249,Complaint,endArrow=classic,221,201,endArrow=classic
+250,Specific User,endArrow=classic,222,204,endArrow=classic
+251,Ip Address,endArrow=classic,222,205,endArrow=classic
+252,Dashboard,endArrow=classic,223,206,endArrow=classic
+253,Status,endArrow=classic,223,207,endArrow=classic
+254,Activity,endArrow=classic,225,210,endArrow=classic
+255,Information,endArrow=classic,226,200,endArrow=classic
+256,Recycling Center,endArrow=classic,228,214,endArrow=classic
+257,Platform,endArrow=classic,228,211,endArrow=classic
+258,Location,endArrow=classic,229,212,endArrow=classic
+259,Dashboard,endArrow=classic,229,206,endArrow=classic
+260,Usage Stat,endArrow=classic,230,215,endArrow=classic
+261,Dashboard,endArrow=classic,230,206,endArrow=classic
+262,Facility,endArrow=classic,231,213,endArrow=classic
+265,User,endArrow=classic,220,203,endArrow=classic
+271,Site,endArrow=classic,223,208,endArrow=classic
+286,Recycling,endArrow=classic,218,216,endArrow=classic
+1000,,endArrow=classic,227,15,endArrow=classic
+1001,Issues,rounded=0,null,null,external_entity
+1002,Issues,endArrow=classic,15,1001,endArrow=classic
+1003,,endArrow=classic,217,16,endArrow=classic
+1004,Neighbourhoods,rounded=0,null,null,external_entity
+1005,Neighbourhoods,endArrow=classic,16,1004,endArrow=classic
+1006,,endArrow=classic,217,17,endArrow=classic
+1007,Features,rounded=0,null,null,external_entity
+1008,Features,endArrow=classic,17,1007,endArrow=classic

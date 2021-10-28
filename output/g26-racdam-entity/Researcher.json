@@ -1,0 +1,742 @@
+[
+  {
+    "text": "As an archivist, I want to know if a photo has already been scanned, so that I can license it to a researcher.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "photo",
+        "label": "PII"
+      },
+      {
+        "text": "researcher",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an assistant archivist, I want to upload and tag staff generated working papers, so that staff and researchers are able to easily access them.",
+    "entities": [
+      {
+        "text": "assistant archivist",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to link electronic versions of researchers' publications to citations, so that I can share them with other researchers.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to generate structured citation data, so that so I can cite a file in a publication.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "generate",
+        "label": "Processing"
+      },
+      {
+        "text": "citation data",
+        "label": "PII"
+      },
+      {
+        "text": "cite",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to share a link to a file on social media, so that so I can show other people an interesting thing I found.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to understand the copyright status of the image, so that I know if I can use it.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "understand",
+        "label": "Processing"
+      },
+      {
+        "text": "image",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher I want clear citation information on each document, so that I can cite accurately in a publication.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "document",
+        "label": "PII"
+      },
+      {
+        "text": "cite",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to share reports I've written, so that it is available to staff and researchers.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to download a file, so that I can use it for research without having to come to the reading room.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to download reports, so that I can use them in immediate and future in talks and articles.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "talks",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to locate photographs and documents that I can share on social media.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "photographs",
+        "label": "PII"
+      },
+      {
+        "text": "documents",
+        "label": "PII"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to request analog versions of digital objects, so that I can view them in the reading room.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "request",
+        "label": "Processing"
+      },
+      {
+        "text": "analog versions",
+        "label": "PII"
+      },
+      {
+        "text": "digital objects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to order copies of photos, so that I can use them in a publication.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "order",
+        "label": "Processing"
+      },
+      {
+        "text": "copies of photos",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to receive a notification if something I request in the reading room or for duplication is already digitized, so that I don't have to put in that request.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "request",
+        "label": "Processing"
+      },
+      {
+        "text": "reading room",
+        "label": "PII"
+      },
+      {
+        "text": "put in",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to make information about rights available to researchers and donors, so that they know what they can do with images.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "make information",
+        "label": "Processing"
+      },
+      {
+        "text": "rights",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "donors",
+        "label": "Data"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to stream audio and video files in my web browser.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "stream",
+        "label": "Processing"
+      },
+      {
+        "text": "audio",
+        "label": "PII"
+      },
+      {
+        "text": "video files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to export descriptive data in a common format, so that I can use text mining tools on it.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "export",
+        "label": "Processing"
+      },
+      {
+        "text": "descriptive data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to search all files by keyword.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to search by keyword, so that I can learn what already exists digitally and avoid placing additional duplication requests.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "keyword",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to see common material across collections, so that so I can prepare a comprehensive analysis.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "collections",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to browse through files in a collection.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "browse",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to be able to search across photo collection images, so that I can prepare presentations.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "photo collection images",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to search using structured data, so that I can find everything relevant to my inquiry across collections.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "structured data",
+        "label": "PII"
+      },
+      {
+        "text": "inquiry",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to access tagged working papers, so that my research process is better informed.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "working papers",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to access educational outreach materials, so that I can make connections with institutions.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "educational outreach materials",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to have accurate cross-collection citation information, so that I can find materials again.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "cross-collection citation information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to access digitized archival materials without mediation, so that I can decide what, I want to look at.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "access digitized",
+        "label": "Processing"
+      },
+      {
+        "text": "archival materials",
+        "label": "PII"
+      },
+      {
+        "text": "mediation",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to ask a question about a specific file, so that I can find out more information.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "ask",
+        "label": "Processing"
+      },
+      {
+        "text": "question",
+        "label": "PII"
+      },
+      {
+        "text": "specific file",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to search OCRed text in all available digitized textual documents, so that I can more efficiently locate digitized documents relevant to my research.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "OCRed text",
+        "label": "PII"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know the date on which something was digitized, so that I know if it's been digitized since I last looked.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to keyword search across all of an RF program officer's scanned diaries, rather than having to search each scanned diary segment separately, so that I can more efficiently locate diary entries relevant to my research.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "keyword",
+        "label": "Processing"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "RF program officer",
+        "label": "Data"
+      },
+      {
+        "text": "scanned diaries",
+        "label": "PII"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "diary segment",
+        "label": "PII"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "research",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to view thumbnails of photos, so that I can make a selection of which one I want to license.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "thumbnails of photos",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to know when only part of a folder has been digitized, so that I know if I am seeing everything or only a portion.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "seeing",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an researcher, I want to view film clips, so that I can see excerpts of films.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "film clips",
+        "label": "PII"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an archivist, I want to access metadata and visual representations of index cards, so that I can use that information to assist researchers.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "visual representations",
+        "label": "PII"
+      },
+      {
+        "text": "index cards",
+        "label": "PII"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to have researchers reset their own passwords, so that I don't have to send passwords in cleartext.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "reset",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "passwords",
+        "label": "PII"
+      }
+    ]
+  }
+]

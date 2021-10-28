@@ -1,0 +1,56 @@
+[
+  {
+    "text": "As an assistant archivist, I want to upload and tag staff generated working papers, so that staff and researchers are able to easily access them.",
+    "entities": [
+      {
+        "text": "assistant archivist",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "tag",
+        "label": "Processing"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a researcher, I want to share reports I've written, so that it is available to staff and researchers.",
+    "entities": [
+      {
+        "text": "researcher",
+        "label": "Data"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "reports",
+        "label": "PII"
+      },
+      {
+        "text": "staff",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      }
+    ]
+  }
+]

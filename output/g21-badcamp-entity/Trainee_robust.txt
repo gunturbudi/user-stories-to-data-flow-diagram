@@ -1,0 +1,39 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Authenticated User" as thingauthenticateduser
+	entity "Day" as thingday
+	entity "Registration" as thingregistration
+	entity "Training" as thingtraining
+	entity "Checkbox" as thingcheckbox
+	entity "Schedule" as thingschedule
+	entity "Cancellation Term" as thingcancellationterm
+	actor "Trainee" as actortrainee
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Checkbox\nInterface" as thingcheckboxinterface #grey
+	boundary "Schedule\nInterface" as thingscheduleinterface #grey
+	control "Limit To\nRegistration Per\nDay Per\nAuthenticated User" as controllimitregistration
+	control "See" as controlsee
+	control "Accept The\nCancellation Terms\nWith A\nCheckbox" as controlacceptcancellationterms
+	control "Add To\nSchedule" as controladdschedule
+
+	thingauthenticateduser <.. thingday
+	thingday <.. thingregistration
+	thingauthenticateduser <.. thingregistration
+	thingcheckbox <.. thingcancellationterm
+	actortrainee --- thinguserinterface
+	actortrainee --- thingcheckboxinterface
+	actortrainee --- thingscheduleinterface
+	thingregistration --- controllimitregistration
+	thingday --- controllimitregistration
+	thingauthenticateduser --- controllimitregistration
+	thinguserinterface --> controllimitregistration
+	thingcancellationterm --- controlacceptcancellationterms
+	thingcheckbox --- controlacceptcancellationterms
+	thingcheckboxinterface --> controlacceptcancellationterms
+	thingschedule --- controladdschedule
+	thingscheduleinterface --> controladdschedule
+
+@enduml

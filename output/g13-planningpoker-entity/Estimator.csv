@@ -1,0 +1,53 @@
+id,value,style,source,target,type
+10,Ask questions.,ellipse,null,null,process
+200,Game,shape=partialRectangle,null,null,data_base
+201,Url,shape=partialRectangle,null,null,data_base
+202,Estimator,shape=partialRectangle,null,null,data_base
+203,Estimate,shape=partialRectangle,null,null,data_base
+204,", Estimator",shape=partialRectangle,null,null,data_base
+205,Time,shape=partialRectangle,null,null,data_base
+206,Page,shape=partialRectangle,null,null,data_base
+207,Name,shape=partialRectangle,null,null,data_base
+208,Item,shape=partialRectangle,null,null,data_base
+209,Prior Estimate,shape=partialRectangle,null,null,data_base
+210,Story,shape=partialRectangle,null,null,data_base
+211,Moderator,rounded=0,null,null,external_entity
+212,Participant,rounded=0,null,null,external_entity
+213,Estimator,rounded=0,null,null,external_entity
+214,Giving Them A Url Where Access The Game,ellipse,null,null,process
+215,Invite Estimators,ellipse,null,null,process
+216,Show All Estimates,ellipse,null,null,process
+217,"Invite To, Up Estimators",ellipse,null,null,process
+218,Shown All Estimates At The Same Time,ellipse,null,null,process
+219,Join A Game,ellipse,null,null,process
+220,Entering Name On The Page,ellipse,null,null,process
+221,See The Item,ellipse,null,null,process
+222,See,ellipse,null,null,process
+224,,endArrow=classic,211,214,endArrow=classic
+225,,endArrow=classic,211,215,endArrow=classic
+226,,endArrow=classic,211,216,endArrow=classic
+227,,endArrow=classic,211,217,endArrow=classic
+228,,endArrow=classic,212,218,endArrow=classic
+229,,endArrow=classic,213,219,endArrow=classic
+230,,endArrow=classic,213,220,endArrow=classic
+231,,endArrow=classic,213,221,endArrow=classic
+232,,endArrow=classic,214,215,endArrow=classic
+233,Url,endArrow=classic,214,201,endArrow=classic
+234,Game,endArrow=classic,214,200,endArrow=classic
+235,Estimator,endArrow=classic,215,202,endArrow=classic
+236,Estimate,endArrow=classic,216,203,endArrow=classic
+237,", Estimator",endArrow=classic,217,204,endArrow=classic
+238,Time,endArrow=classic,218,205,endArrow=classic
+239,Estimate,endArrow=classic,218,203,endArrow=classic
+240,Game,endArrow=classic,219,200,endArrow=classic
+241,,endArrow=classic,220,219,endArrow=classic
+242,Name,endArrow=classic,220,207,endArrow=classic
+243,Page,endArrow=classic,220,206,endArrow=classic
+244,Item,endArrow=classic,221,208,endArrow=classic
+1000,Participant,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,10,endArrow=classic
+1002,,endArrow=classic,212,10,endArrow=classic
+1003,Participant,rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,10,endArrow=classic
+1005,Opinion,rounded=0,null,null,external_entity
+1006,Opinion,endArrow=classic,10,1005,endArrow=classic

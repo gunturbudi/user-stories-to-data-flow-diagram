@@ -1,0 +1,19 @@
+[
+  {
+    "text": "As an ethics manager, I want to be informed about the data, so that I can check for sensitivity of data.",
+    "entities": [
+      {
+        "text": "ethics manager",
+        "label": "Data"
+      },
+      {
+        "text": "informed",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

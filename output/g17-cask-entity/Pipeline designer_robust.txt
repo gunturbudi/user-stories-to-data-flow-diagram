@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Error Message" as thingerrormessage
+	actor "Pipeline Designer" as actorpipelinedesigner
+	boundary "Message\nInterface" as thingmessageinterface #grey
+	control "Get A\nMeaningful Error\nMessage" as controlgetmeaningfulerrormessage
+
+	actorpipelinedesigner --- thingmessageinterface
+	thingerrormessage --- controlgetmeaningfulerrormessage
+	thingmessageinterface --> controlgetmeaningfulerrormessage
+
+@enduml

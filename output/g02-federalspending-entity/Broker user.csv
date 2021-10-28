@@ -1,0 +1,71 @@
+id,value,style,source,target,type
+14,Submit my data efficiently.,ellipse,null,null,process
+15,Fix my submission.,ellipse,null,null,process
+200,Error Message,shape=partialRectangle,null,null,data_base
+201,Accurate Text,shape=partialRectangle,null,null,data_base
+202,Fpds Data\nLoad,shape=partialRectangle,null,null,data_base
+203,Work,shape=partialRectangle,null,null,data_base
+204,Record,shape=partialRectangle,null,null,data_base
+205,Duns Error,shape=partialRectangle,null,null,data_base
+206,Individual Recipient,shape=partialRectangle,null,null,data_base
+207,Logic,shape=partialRectangle,null,null,data_base
+208,Information,shape=partialRectangle,null,null,data_base
+209,Code,shape=partialRectangle,null,null,data_base
+210,Field,shape=partialRectangle,null,null,data_base
+211,Content Mockup,shape=partialRectangle,null,null,data_base
+212,Entity Zip\nValidation,shape=partialRectangle,null,null,data_base
+213,Error,shape=partialRectangle,null,null,data_base
+214,Broker User,rounded=0,null,null,external_entity
+215,Upload The Error Message,ellipse,null,null,process
+216,Have Accurate Text,ellipse,null,null,process
+217,Validate The Error Message,ellipse,null,null,process
+218,Synced With The Fpds Data Load,ellipse,null,null,process
+219,Help,ellipse,null,null,process
+220,Create Content Mockups,ellipse,null,null,process
+221,Have The Same Work As The Legal Entity Zip Validations,ellipse,null,null,process
+222,Submit Records For Individual Recipients,ellipse,null,null,process
+223,Receiving A Duns Error,ellipse,null,null,process
+224,Updated Error Codes Accurately Reflect The Logic,ellipse,null,null,process
+225,Updated Codes,ellipse,null,null,process
+226,Provide Enough Information,ellipse,null,null,process
+227,Derive Fields,ellipse,null,null,process
+229,,endArrow=classic,214,215,endArrow=classic
+230,,endArrow=classic,214,216,endArrow=classic
+231,,endArrow=classic,214,217,endArrow=classic
+232,,endArrow=classic,214,218,endArrow=classic
+233,,endArrow=classic,214,219,endArrow=classic
+234,,endArrow=classic,214,220,endArrow=classic
+235,,endArrow=classic,214,221,endArrow=classic
+236,,endArrow=classic,214,222,endArrow=classic
+237,,endArrow=classic,214,223,endArrow=classic
+238,,endArrow=classic,214,224,endArrow=classic
+239,,endArrow=classic,214,225,endArrow=classic
+240,,endArrow=classic,214,226,endArrow=classic
+241,,endArrow=classic,214,227,endArrow=classic
+242,,endArrow=classic,215,216,endArrow=classic
+243,Error Message,endArrow=classic,215,200,endArrow=classic
+244,Accurate Text,endArrow=classic,216,201,endArrow=classic
+245,,endArrow=classic,217,216,endArrow=classic
+246,Error Message,endArrow=classic,217,200,endArrow=classic
+247,Fpds Data\nLoad,endArrow=classic,218,202,endArrow=classic
+248,,endArrow=classic,219,220,endArrow=classic
+249,Content Mockup,endArrow=classic,220,211,endArrow=classic
+250,Work,endArrow=classic,221,203,endArrow=classic
+251,Entity Zip\nValidation,endArrow=classic,221,212,endArrow=classic
+252,Record,endArrow=classic,222,204,endArrow=classic
+253,Individual Recipient,endArrow=classic,222,206,endArrow=classic
+254,,endArrow=classic,223,222,endArrow=classic
+255,Duns Error,endArrow=classic,223,205,endArrow=classic
+256,Logic,endArrow=classic,224,207,endArrow=classic
+257,Code,endArrow=classic,224,209,endArrow=classic
+258,,endArrow=classic,225,226,endArrow=classic
+259,Code,endArrow=classic,225,209,endArrow=classic
+260,Information,endArrow=classic,226,208,endArrow=classic
+261,Field,endArrow=classic,227,210,endArrow=classic
+262,Error,endArrow=classic,215,213,endArrow=classic
+1000,,endArrow=classic,219,14,endArrow=classic
+1001,Data,rounded=0,null,null,external_entity
+1002,Data,endArrow=classic,14,1001,endArrow=classic
+1003,,endArrow=classic,226,15,endArrow=classic
+1004,Submission,rounded=0,null,null,external_entity
+1005,Submission,endArrow=classic,15,1004,endArrow=classic

@@ -1,0 +1,78 @@
+[
+  {
+    "text": "As a donor representative, I want to supply incremental accruals to new and existing collections, so that material can be transferred on an ongoing basis.",
+    "entities": [
+      {
+        "text": "donor representative",
+        "label": "Data"
+      },
+      {
+        "text": "supply",
+        "label": "Processing"
+      },
+      {
+        "text": "transferred",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a donor representative, I want to access the descriptive information about the images scanned for my institutions needs.",
+    "entities": [
+      {
+        "text": "donor representative",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "needs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a donor representative, I want to look at images that have been scanned from my collection, so that so that I can use them in my institutions exhibits, reports etc.",
+    "entities": [
+      {
+        "text": "donor representative",
+        "label": "Data"
+      },
+      {
+        "text": "look",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "scanned",
+        "label": "Processing"
+      },
+      {
+        "text": "collection",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a donor representative, I want to see thumbnails of images, so that I can select which one I want.",
+    "entities": [
+      {
+        "text": "donor representative",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "thumbnails of images",
+        "label": "PII"
+      }
+    ]
+  }
+]

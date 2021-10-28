@@ -1,0 +1,15 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resource " color=red];
+201 [label="<f0>  |<f1> Particular Collection " ];
+202 [label="<f0>  |<f1> Find Aid " ];
+203 [label="Researcher" shape=box];
+204 [label="{<f0> 1.0|<f1> View A Finding Aid For Resource }" shape=Mrecord];
+205 [label="{<f0> 2.0|<f1> View A Finding Aid For A Particular Collection }" shape=Mrecord];
+203 -> 204
+203 -> 205
+204 -> 200 [label="Resource"]
+204 -> 202 [label="Find Aid"]
+205 -> 202 [label="Find Aid"]
+205 -> 201 [label="Particular Collection"]
+}

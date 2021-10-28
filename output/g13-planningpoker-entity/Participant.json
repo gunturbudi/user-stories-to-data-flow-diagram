@@ -1,0 +1,193 @@
+[
+  {
+    "text": "As a participant, I want to immediately see that an estimate has been given by a specific estimator, so that I know who has already given an estimate and who we\u2019re still waiting for.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be shown all estimates at the same time after all estimators have given their estimate, so that I can be sure estimates are independent and not influenced by other estimates given in the same draw.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      },
+      {
+        "text": "estimators",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be able to change my estimate up until the last person selects a card and all are shown, so that I can change my mind based on information I hear.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "estimate",
+        "label": "PII"
+      },
+      {
+        "text": "person",
+        "label": "Data"
+      },
+      {
+        "text": "selects",
+        "label": "Processing"
+      },
+      {
+        "text": "mind",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be able to see each estimator's prior estimates for the story being estimated, so that I can see how his or her opinion has changed so I can ask questions.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "estimator",
+        "label": "Data"
+      },
+      {
+        "text": "prior estimates",
+        "label": "PII"
+      },
+      {
+        "text": "opinion",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to see who gave what estimates during the current round, so that I know this when we\u2019re discussing the estimates.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "who gave what estimates",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to be able start a two-minute countdown timer that all participants can see, so that I can limit the time spent discussing the estimates when I think we\u2019ve talked long enough.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "participants",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to have the two-minute timer reset itself as soon as we all play an estimate, so that it's ready for use on the next round.",
+    "entities": [
+      {
+        "text": "participant,",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to scroll back through the stories and estimates from prior rounds, so that I can use this information when I estimate the item of the current round.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "scroll",
+        "label": "Processing"
+      },
+      {
+        "text": "stories",
+        "label": "PII"
+      },
+      {
+        "text": "estimates",
+        "label": "PII"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to always have the cards in the same order across multiple draws, so that it's easy to compare estimates.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to change my estimate as long as the draw has not been completed, so that I can change my mind.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "change",
+        "label": "Processing"
+      },
+      {
+        "text": "estimate",
+        "label": "PII"
+      },
+      {
+        "text": "mind",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a participant, I want to have a small thumbnail photo displayed near where my cards are played, so that the game is more personal because I see who I'm estimating with.",
+    "entities": [
+      {
+        "text": "participant",
+        "label": "Data"
+      },
+      {
+        "text": "thumbnail photo",
+        "label": "PII"
+      },
+      {
+        "text": "cards",
+        "label": "PII"
+      }
+    ]
+  }
+]

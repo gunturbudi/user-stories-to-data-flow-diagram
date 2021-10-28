@@ -1,0 +1,45 @@
+[
+  {
+    "text": "As a stakeholder, I want to know when the data management plan was created or updated, so that I know how up-to-date the plan is or whether it needs to be updated.",
+    "entities": [
+      {
+        "text": "stakeholder,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a stakeholder, I want to know who is responsible for the DMP, so that I can ask them about further details.",
+    "entities": [
+      {
+        "text": "stakeholder,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "who is responsible",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a stakeholder, I want to have references to the project proposal, so that I can look up further general information.",
+    "entities": [
+      {
+        "text": "stakeholder,",
+        "label": "Data"
+      },
+      {
+        "text": "have references",
+        "label": "Processing"
+      }
+    ]
+  }
+]

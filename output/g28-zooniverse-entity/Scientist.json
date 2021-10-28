@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a Zooniverse admin, I want to detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments.",
+    "entities": [
+      {
+        "text": "Zooniverse admin,",
+        "label": "Data"
+      },
+      {
+        "text": "detect",
+        "label": "Processing"
+      },
+      {
+        "text": "scientist",
+        "label": "Data"
+      },
+      {
+        "text": "look",
+        "label": "Processing"
+      },
+      {
+        "text": "subject",
+        "label": "PII"
+      },
+      {
+        "text": "Talk comments",
+        "label": "PII"
+      }
+    ]
+  }
+]

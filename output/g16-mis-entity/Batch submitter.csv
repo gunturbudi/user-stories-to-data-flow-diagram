@@ -1,0 +1,24 @@
+id,value,style,source,target,type
+200,"Document ,\nSimple Format",shape=partialRectangle,null,null,data_base
+201,Ingest,shape=partialRectangle,null,null,data_base
+202,Datum,shape=partialRectangle,null,null,data_base
+203,Metadata,shape=partialRectangle,null,null,data_base
+204,Repository Staff,shape=partialRectangle,null,null,data_base
+205,Folder,shape=partialRectangle,null,null,data_base
+206,Process,shape=partialRectangle,null,null,data_base
+207,Batch Submitter,rounded=0,null,null,external_entity
+208,"Provide Data In A Documented, Simple Format To The Repository Staff For Ingest",ellipse,null,null,process
+209,Provide Metadata,ellipse,null,null,process
+210,Describe The Folder,ellipse,null,null,process
+211,Access,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Datum,endArrow=classic,208,202,endArrow=classic
+218,"Document ,\nSimple Format",endArrow=classic,208,200,endArrow=classic
+219,Repository Staff,endArrow=classic,208,204,endArrow=classic
+220,Ingest,endArrow=classic,208,201,endArrow=classic
+221,Metadata,endArrow=classic,209,203,endArrow=classic
+222,Folder,endArrow=classic,210,205,endArrow=classic
+223,,endArrow=classic,211,210,endArrow=classic

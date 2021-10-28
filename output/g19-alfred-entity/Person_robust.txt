@@ -1,0 +1,20 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Thing" as thingthing
+	entity "Person" as thingperson
+	actor "Socialcaregiver" as actorSocialCaregiver
+	boundary "Alfred" as thingALFREDSocialCaregiver
+	control "Remind Of\nThe Things" as controlremindALFREDSocialCaregiverthingbringperson
+	control "Bring To\nThe Person" as controlbringperson
+
+	actorSocialCaregiver --- thingALFREDSocialCaregiver
+	thingALFREDSocialCaregiver --> controlremindALFREDSocialCaregiverthingbringperson
+	thingthing --- controlremindALFREDSocialCaregiverthingbringperson
+	controlremindALFREDSocialCaregiverthingbringperson --> controlbringperson
+	thingperson --- controlbringperson
+	thingALFREDSocialCaregiver --> controlbringperson
+
+@enduml

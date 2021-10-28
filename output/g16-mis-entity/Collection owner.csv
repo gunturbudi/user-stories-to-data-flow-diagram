@@ -1,0 +1,17 @@
+id,value,style,source,target,type
+200,Collection,shape=partialRectangle,null,null,data_base
+201,Submitter,shape=partialRectangle,null,null,data_base
+202,Exist Item,shape=partialRectangle,null,null,data_base
+203,Collection Owner,rounded=0,null,null,external_entity
+204,Modify Existing Items In That Collection,ellipse,null,null,process
+205,Be,ellipse,null,null,process
+206,Have Submitters To Collection,ellipse,null,null,process
+208,,endArrow=classic,203,204,endArrow=classic
+209,,endArrow=classic,203,205,endArrow=classic
+210,,endArrow=classic,203,206,endArrow=classic
+211,Exist Item,endArrow=classic,204,202,endArrow=classic
+212,Collection,endArrow=classic,204,200,endArrow=classic
+213,,endArrow=classic,205,204,endArrow=classic
+214,,endArrow=classic,206,205,endArrow=classic
+215,Submitter,endArrow=classic,206,201,endArrow=classic
+216,Collection,endArrow=classic,206,200,endArrow=classic

@@ -1,0 +1,61 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "Grant Record" as thinggrantrecord
+	entity "User Testing\nSummary" as thingusertestingsummary #grey
+	entity "Schedule" as thingschedule
+	entity "Audit" as thingaudit
+	entity "Environment" as thingenvironment
+	entity "Padded Field" as thingpaddedfield
+	entity "Ui Sme" as thinguisme
+	entity "Max Permission" as thingmaxpermission
+	actor "Owner" as actorowner
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "Sme\nInterface" as thingsmeinterface #grey
+	boundary "Environment\nInterface" as thingenvironmentinterface #grey
+	boundary "Permission\nInterface" as thingpermissioninterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	control "Send Grant\nRecords To\nSystem" as controlsendgrantrecordsystem
+	control "Create A\nUser Testing\nSummary From\nThe Ui\nSme" as controlcreateusertestingsummary
+	control "Design A\nSchedule From\nThe Ui\nSme" as controldesignschedule
+	control "Design An\nAudit From\nThe Ui\nSme" as controldesignaudit
+	control "Reset The\nEnvironment" as controlresetenvironmenttakestagemaxpermissions
+	control "Staging Max\nPermissions" as controlstagemaxpermissions
+	control "Take" as controltakestagemaxpermissions
+	control "Provided With\nPadded Fields" as controlprovidepaddedfield
+
+	thingsystem <.. thinggrantrecord
+	thinguisme <.. thingusertestingsummary
+	thinguisme <.. thingschedule
+	thinguisme <.. thingaudit
+	actorowner --- thingsysteminterface
+	actorowner --- thingsmeinterface
+	actorowner --- thingenvironmentinterface
+	actorowner --- thingpermissioninterface
+	actorowner --- thingfieldinterface
+	thinggrantrecord --- controlsendgrantrecordsystem
+	thingsystem --- controlsendgrantrecordsystem
+	thingsysteminterface --> controlsendgrantrecordsystem
+	thingusertestingsummary --- controlcreateusertestingsummary
+	thinguisme --- controlcreateusertestingsummary
+	thingsmeinterface --> controlcreateusertestingsummary
+	thingschedule --- controldesignschedule
+	thingsmeinterface --> controldesignschedule
+	thinguisme --- controldesignschedule
+	thingaudit --- controldesignaudit
+	thingsmeinterface --> controldesignaudit
+	thinguisme --- controldesignaudit
+	thingenvironment --- controlresetenvironmenttakestagemaxpermissions
+	thingenvironmentinterface --> controlresetenvironmenttakestagemaxpermissions
+	controltakestagemaxpermissions --> controlstagemaxpermissions
+	thingmaxpermission --- controlstagemaxpermissions
+	thingpermissioninterface --> controlstagemaxpermissions
+	controlresetenvironmenttakestagemaxpermissions --> controltakestagemaxpermissions
+	thingenvironmentinterface --> controltakestagemaxpermissions
+	thingpaddedfield --- controlprovidepaddedfield
+	thingfieldinterface --> controlprovidepaddedfield
+
+@enduml

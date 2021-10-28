@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As an archivist, I want to search images by photographer.",
+    "entities": [
+      {
+        "text": "archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "images",
+        "label": "PII"
+      },
+      {
+        "text": "photographer",
+        "label": "Data"
+      }
+    ]
+  }
+]

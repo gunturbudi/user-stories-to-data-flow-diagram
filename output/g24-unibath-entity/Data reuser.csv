@@ -1,0 +1,66 @@
+id,value,style,source,target,type
+10,Find data relevant to my needs.,ellipse,null,null,process
+11,Import the dataset into my referencemanagement software automatically.,ellipse,null,null,process
+12,"Search books, articles and data all in one place.",ellipse,null,null,process
+200,Archive,shape=partialRectangle,null,null,data_base
+201,Web,shape=partialRectangle,null,null,data_base
+202,Native Language,shape=partialRectangle,null,null,data_base
+203,System,shape=partialRectangle,null,null,data_base
+204,Deposit File,shape=partialRectangle,null,null,data_base
+205,Example Citation,shape=partialRectangle,null,null,data_base
+206,Dataset,shape=partialRectangle,null,null,data_base
+207,Doi,shape=partialRectangle,null,null,data_base
+208,Persistent Url,shape=partialRectangle,null,null,data_base
+209,Primo,shape=partialRectangle,null,null,data_base
+210,Glance,shape=partialRectangle,null,null,data_base
+211,Datum Reuser,rounded=0,null,null,external_entity
+212,Search The Archive Through The Web,ellipse,null,null,process
+213,Access The System In Native Language,ellipse,null,null,process
+214,Examine Deposited Files,ellipse,null,null,process
+215,Identify Deposited Files,ellipse,null,null,process
+216,View An Example Citation For A Dataset,ellipse,null,null,process
+217,View A Doi For A Dataset,ellipse,null,null,process
+218,Get A Persistent Url For A Dataset,ellipse,null,null,process
+219,Search The Archive Through Primo,ellipse,null,null,process
+220,See Different Versions Of A Dataset At A Glance,ellipse,null,null,process
+222,,endArrow=classic,211,212,endArrow=classic
+223,,endArrow=classic,211,213,endArrow=classic
+224,,endArrow=classic,211,214,endArrow=classic
+225,,endArrow=classic,211,215,endArrow=classic
+226,,endArrow=classic,211,216,endArrow=classic
+227,,endArrow=classic,211,217,endArrow=classic
+228,,endArrow=classic,211,218,endArrow=classic
+229,,endArrow=classic,211,219,endArrow=classic
+230,,endArrow=classic,211,220,endArrow=classic
+231,Archive,endArrow=classic,212,200,endArrow=classic
+232,Web,endArrow=classic,212,201,endArrow=classic
+233,System,endArrow=classic,213,203,endArrow=classic
+234,Native Language,endArrow=classic,213,202,endArrow=classic
+235,Deposit File,endArrow=classic,214,204,endArrow=classic
+236,Deposit File,endArrow=classic,215,204,endArrow=classic
+237,Example Citation,endArrow=classic,216,205,endArrow=classic
+238,Dataset,endArrow=classic,216,206,endArrow=classic
+239,Doi,endArrow=classic,217,207,endArrow=classic
+240,Dataset,endArrow=classic,217,206,endArrow=classic
+241,Persistent Url,endArrow=classic,218,208,endArrow=classic
+242,Dataset,endArrow=classic,218,206,endArrow=classic
+243,Primo,endArrow=classic,219,209,endArrow=classic
+244,Archive,endArrow=classic,219,200,endArrow=classic
+245,Glance,endArrow=classic,220,210,endArrow=classic
+246,Dataset,endArrow=classic,220,206,endArrow=classic
+1000,Data reuser,rounded=0,null,null,external_entity
+1001,,endArrow=classic,1000,10,endArrow=classic
+1002,Needs,rounded=0,null,null,external_entity
+1003,Needs,endArrow=classic,10,1002,endArrow=classic
+1004,Data reuser,rounded=0,null,null,external_entity
+1005,,endArrow=classic,1004,11,endArrow=classic
+1006,Data,rounded=0,null,null,external_entity
+1007,Data,endArrow=classic,11,1006,endArrow=classic
+1008,Referencemanagement software,rounded=0,null,null,external_entity
+1009,Referencemanagement software,endArrow=classic,11,1008,endArrow=classic
+1010,Data reuser,rounded=0,null,null,external_entity
+1011,,endArrow=classic,1010,12,endArrow=classic
+1012,Articles,rounded=0,null,null,external_entity
+1013,Articles,endArrow=classic,12,1012,endArrow=classic
+1014,Data,rounded=0,null,null,external_entity
+1015,Data,endArrow=classic,12,1014,endArrow=classic

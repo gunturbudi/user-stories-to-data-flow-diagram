@@ -1,0 +1,142 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Data Package" as thingdatapackage #grey
+	entity "Node" as thingnode
+	entity "Python" as thingpython
+	entity "Second" as thingsecond
+	entity "Jquery Plugin" as thingjqueryplugin #grey
+	entity "R" as thingr
+	entity "Analysis" as thinganalysis
+	entity "Clojure" as thingclojure
+	entity "Julia" as thingjulia
+	entity "C++" as thingcplusplus
+	entity "Elasticsearch Integration" as thingelasticsearchintegration #grey
+	entity "Spss Integration" as thingspssintegration #grey
+	entity "Eprints Integration" as thingeprintsintegration #grey
+	entity "Mongo Integration" as thingmongointegration #grey
+	entity "Dat Integration" as thingdatintegration #grey
+	entity "Feather Integration" as thingfeatherintegration #grey
+	entity "Hdf5 Integration" as thinghdf5integration #grey
+	entity "Datum" as thingdatum
+	entity "Exist Wizard" as thingexistingwizard
+	entity "Dspace Integration" as thingdspaceintegration #grey
+	entity "Online Service" as thingonlineservice
+	entity "Update" as thingupdate
+	entity "Data Repository" as thingdatarepository #grey
+	entity "Web Socket\nProtocol" as thingwebsocketprotocol #grey
+	entity "Frictionless Data\nTool" as thingfrictionlessdatatool
+	entity "Core" as thingcore #grey
+	entity "Data" as thingdata #grey
+	actor "Developer" as actordeveloper
+	circle "Specific Type" as thingspecifictype
+	boundary "Node\nInterface" as thingnodeinterface #grey
+	boundary "Second\nInterface" as thingsecondinterface #grey
+	boundary "Package\nInterface" as thingpackageinterface #grey
+	boundary "R\nInterface" as thingrinterface #grey
+	boundary "Python\nInterface" as thingpythoninterface #grey
+	boundary "Integration\nInterface" as thingintegrationinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Tool\nInterface" as thingtoolinterface #grey
+	control "Get A\nData Package\nInto Node" as controlgetdatapackagenode
+	control "Get A\nData Package\nInto Python\nIn Seconds" as controlgetdatapackagepythonsecond
+	control "Provided With\nA Jquery\nPlugin For\nCore Data\nPackages" as controlprovidejqueryplugin
+	control "Do Exploratory\nData Analysis\nIn R" as controldoexploratorydataanalysisr
+	control "Operationalize That\nAnalysis In\nPython" as controloperationalizeanalysis
+	control "Get A\nData Package\nInto Clojure\nIn Seconds" as controlgetdatapackageclojuresecond
+	control "Get A\nData Package\nInto Julia\nIn Seconds" as controlgetdatapackagejuliasecond
+	control "Get A\nData Package\nInto C++\nIn Seconds" as controlgetdatapackagecplusplussecond
+	control "Provided With\nAn Elasticsearch\nIntegration" as controlprovideelasticsearchintegration
+	control "Provided With\nAn Spss\nIntegration" as controlprovidespssintegration
+	control "Provided With\nAn Eprints\nIntegration" as controlprovideeprintsintegration
+	control "Provided With\nA Mongo\nIntegration" as controlprovidemongointegration
+	control "Provided With\nA Dat\nIntegration" as controlprovidedatintegration
+	control "Provided With\nFeather Integration" as controlprovidefeatherintegration
+	control "Provided With\nHdf5 Integration" as controlprovidehdf5integration
+	control "Customize An\nExisting Wizard\nFor Specific\nType Of\nData" as controlcustomizeexistingwizard
+	control "Provided With\nAn Dspace\nIntegration" as controlprovidedspaceintegration
+	control "Create A\nWeb Socket\nProtocol For\nFrictionless Data\nTools" as controlcreatewebsocketprotocol
+
+	thingnode <.. thingdatapackage
+	thingpython <.. thingdatapackage
+	thingcore <.. thingdatapackage
+	thingclojure <.. thingdatapackage
+	thingjulia <.. thingdatapackage
+	thingcplusplus <.. thingdatapackage
+	thingsecond <.. thingpython
+	thingdatapackage <.. thingjqueryplugin
+	thingpython <.. thinganalysis
+	thingdata <.. thinganalysis
+	thingr <.. thinganalysis
+	thingsecond <.. thingclojure
+	thingsecond <.. thingjulia
+	thingsecond <.. thingcplusplus
+	thingspecifictype <.. thingexistingwizard
+	thingdatarepository <.. thingonlineservice
+	thingupdate <.. thingdatarepository
+	thingdatum <.. thingdatarepository
+	thingfrictionlessdatatool <.. thingwebsocketprotocol
+	thingdatum *-- thingspecifictype
+	actordeveloper --- thingnodeinterface
+	actordeveloper --- thingsecondinterface
+	actordeveloper --- thingpackageinterface
+	actordeveloper --- thingrinterface
+	actordeveloper --- thingpythoninterface
+	actordeveloper --- thingintegrationinterface
+	actordeveloper --- thingdatuminterface
+	actordeveloper --- thingtoolinterface
+	thingdatapackage --- controlgetdatapackagenode
+	thingnode --- controlgetdatapackagenode
+	thingnodeinterface --> controlgetdatapackagenode
+	thingpython --- controlgetdatapackagepythonsecond
+	thingsecond --- controlgetdatapackagepythonsecond
+	thingsecondinterface --> controlgetdatapackagepythonsecond
+	thingdatapackage --- controlgetdatapackagepythonsecond
+	thingjqueryplugin --- controlprovidejqueryplugin
+	thingpackageinterface --> controlprovidejqueryplugin
+	thingdatapackage --- controlprovidejqueryplugin
+	thingr --- controldoexploratorydataanalysisr
+	thingrinterface --> controldoexploratorydataanalysisr
+	thinganalysis --- controldoexploratorydataanalysisr
+	thinganalysis --- controloperationalizeanalysis
+	thingpythoninterface --> controloperationalizeanalysis
+	thingpython --- controloperationalizeanalysis
+	thingclojure --- controlgetdatapackageclojuresecond
+	thingdatapackage --- controlgetdatapackageclojuresecond
+	thingsecond --- controlgetdatapackageclojuresecond
+	thingsecondinterface --> controlgetdatapackageclojuresecond
+	thingjulia --- controlgetdatapackagejuliasecond
+	thingdatapackage --- controlgetdatapackagejuliasecond
+	thingsecond --- controlgetdatapackagejuliasecond
+	thingsecondinterface --> controlgetdatapackagejuliasecond
+	thingcplusplus --- controlgetdatapackagecplusplussecond
+	thingdatapackage --- controlgetdatapackagecplusplussecond
+	thingsecond --- controlgetdatapackagecplusplussecond
+	thingsecondinterface --> controlgetdatapackagecplusplussecond
+	thingelasticsearchintegration --- controlprovideelasticsearchintegration
+	thingintegrationinterface --> controlprovideelasticsearchintegration
+	thingspssintegration --- controlprovidespssintegration
+	thingintegrationinterface --> controlprovidespssintegration
+	thingeprintsintegration --- controlprovideeprintsintegration
+	thingintegrationinterface --> controlprovideeprintsintegration
+	thingmongointegration --- controlprovidemongointegration
+	thingintegrationinterface --> controlprovidemongointegration
+	thingdatintegration --- controlprovidedatintegration
+	thingintegrationinterface --> controlprovidedatintegration
+	thingfeatherintegration --- controlprovidefeatherintegration
+	thingintegrationinterface --> controlprovidefeatherintegration
+	thinghdf5integration --- controlprovidehdf5integration
+	thingintegrationinterface --> controlprovidehdf5integration
+	thingexistingwizard --- controlcustomizeexistingwizard
+	thingspecifictype --- controlcustomizeexistingwizard
+	thingdatum --- controlcustomizeexistingwizard
+	thingdatuminterface --> controlcustomizeexistingwizard
+	thingdspaceintegration --- controlprovidedspaceintegration
+	thingintegrationinterface --> controlprovidedspaceintegration
+	thingwebsocketprotocol --- controlcreatewebsocketprotocol
+	thingfrictionlessdatatool --- controlcreatewebsocketprotocol
+	thingtoolinterface --> controlcreatewebsocketprotocol
+
+@enduml

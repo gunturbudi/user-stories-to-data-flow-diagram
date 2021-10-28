@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a developer, I want to deposit and maintain datasets via an API such as SWORD2, so that my service can interact with the archive.",
+    "entities": [
+      {
+        "text": "developer",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "interact",
+        "label": "Processing"
+      }
+    ]
+  }
+]

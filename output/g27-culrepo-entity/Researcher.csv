@@ -1,0 +1,120 @@
+id,value,style,source,target,type
+18,Learn more about my research.,ellipse,null,null,process
+19,Display the range and extent of my work graphically.,ellipse,null,null,process
+200,Date,shape=partialRectangle,null,null,data_base
+201,Department,shape=partialRectangle,null,null,data_base
+202,Topic,shape=partialRectangle,null,null,data_base
+203,Research,shape=partialRectangle,null,null,data_base
+204,Cornell,shape=partialRectangle,null,null,data_base
+205,School,shape=partialRectangle,null,null,data_base
+206,Item,shape=partialRectangle,null,null,data_base
+207,Repository,shape=partialRectangle,null,null,data_base
+208,Library,shape=partialRectangle,null,null,data_base
+209,Google,shape=partialRectangle,null,null,data_base
+210,Pdf,shape=partialRectangle,null,null,data_base
+211,Descriptive Metadata,shape=partialRectangle,null,null,data_base
+212,Work,shape=partialRectangle,null,null,data_base
+213,Author,shape=partialRectangle,null,null,data_base
+214,Update,shape=partialRectangle,null,null,data_base
+215,Subset,shape=partialRectangle,null,null,data_base
+216,Collection,shape=partialRectangle,null,null,data_base
+217,Effective Manner,shape=partialRectangle,null,null,data_base
+218,Information,shape=partialRectangle,null,null,data_base
+219,Faculty,shape=partialRectangle,null,null,data_base
+220,Interactive Map,shape=partialRectangle,null,null,data_base
+221,Researcher,shape=partialRectangle,null,null,data_base
+222,Dmps,shape=partialRectangle,null,null,data_base
+223,Sharing,shape=partialRectangle,null,null,data_base
+224,System,shape=partialRectangle,null,null,data_base
+225,Deposit,shape=partialRectangle,null,null,data_base
+226,Search Capability,shape=partialRectangle,null,null,data_base
+227,Metadata Field,shape=partialRectangle,null,null,data_base
+228,Discovery,shape=partialRectangle,null,null,data_base
+229,Researcher,rounded=0,null,null,external_entity
+230,"Library , Staff Member",rounded=0,null,null,external_entity
+231,Stay Up To Date On Research To A Given Topic At Cornell Including Those In Other Departments,ellipse,null,null,process
+232,Stay Up To Date On Research To A Given Topic At Cornell Including Those In School,ellipse,null,null,process
+233,Discover Items In The Repository Through The Library's Discovery System,ellipse,null,null,process
+234,Discover Items In The Repository Through Google,ellipse,null,null,process
+235,See Descriptive Metadata For The Item,ellipse,null,null,process
+236,Come To The Item Through The Repository,ellipse,null,null,process
+237,Come To The Item Directly To The Pdf,ellipse,null,null,process
+238,Contact The Author Of A Work Interests,ellipse,null,null,process
+239,Receive Updates,ellipse,null,null,process
+240,Search Within Collection,ellipse,null,null,process
+241,Search Within A Repository In An Effective Manner Searching Within Subsets Of A Given Collection,ellipse,null,null,process
+242,Have Information Help Identify Other Faculty,ellipse,null,null,process
+243,Promote Work Through Interactive Maps,ellipse,null,null,process
+244,Share Work Through Interactive Maps,ellipse,null,null,process
+245,Tell The Researchers,ellipse,null,null,process
+246,Allow For Better Search Capabilities,ellipse,null,null,process
+247,Add Custom Metadata Fields For Deposits,ellipse,null,null,process
+249,,endArrow=classic,229,231,endArrow=classic
+250,,endArrow=classic,229,232,endArrow=classic
+251,,endArrow=classic,229,233,endArrow=classic
+252,,endArrow=classic,229,234,endArrow=classic
+253,,endArrow=classic,229,235,endArrow=classic
+254,,endArrow=classic,229,236,endArrow=classic
+255,,endArrow=classic,229,238,endArrow=classic
+256,,endArrow=classic,229,239,endArrow=classic
+257,,endArrow=classic,229,240,endArrow=classic
+258,,endArrow=classic,229,241,endArrow=classic
+259,,endArrow=classic,229,242,endArrow=classic
+260,,endArrow=classic,229,243,endArrow=classic
+261,,endArrow=classic,229,244,endArrow=classic
+262,,endArrow=classic,230,245,endArrow=classic
+263,,endArrow=classic,230,246,endArrow=classic
+264,,endArrow=classic,230,247,endArrow=classic
+265,Date,endArrow=classic,231,200,endArrow=classic
+266,Research,endArrow=classic,231,203,endArrow=classic
+267,Topic,endArrow=classic,231,202,endArrow=classic
+268,Cornell,endArrow=classic,231,204,endArrow=classic
+269,Department,endArrow=classic,231,201,endArrow=classic
+270,School,endArrow=classic,232,205,endArrow=classic
+271,Topic,endArrow=classic,232,202,endArrow=classic
+272,Date,endArrow=classic,232,200,endArrow=classic
+273,Research,endArrow=classic,232,203,endArrow=classic
+274,Cornell,endArrow=classic,232,204,endArrow=classic
+275,Item,endArrow=classic,233,206,endArrow=classic
+276,Repository,endArrow=classic,233,207,endArrow=classic
+277,System,endArrow=classic,233,224,endArrow=classic
+278,Google,endArrow=classic,234,209,endArrow=classic
+279,Item,endArrow=classic,234,206,endArrow=classic
+280,Repository,endArrow=classic,234,207,endArrow=classic
+281,Descriptive Metadata,endArrow=classic,235,211,endArrow=classic
+282,Item,endArrow=classic,235,206,endArrow=classic
+283,,endArrow=classic,236,235,endArrow=classic
+284,Item,endArrow=classic,236,206,endArrow=classic
+285,Repository,endArrow=classic,236,207,endArrow=classic
+286,,endArrow=classic,237,235,endArrow=classic
+287,Pdf,endArrow=classic,237,210,endArrow=classic
+288,Item,endArrow=classic,237,206,endArrow=classic
+289,Author,endArrow=classic,238,213,endArrow=classic
+290,Work,endArrow=classic,238,212,endArrow=classic
+291,Update,endArrow=classic,239,214,endArrow=classic
+292,Collection,endArrow=classic,240,216,endArrow=classic
+293,Repository,endArrow=classic,241,207,endArrow=classic
+294,Collection,endArrow=classic,241,216,endArrow=classic
+295,Effective Manner,endArrow=classic,241,217,endArrow=classic
+296,Subset,endArrow=classic,241,215,endArrow=classic
+297,Information,endArrow=classic,242,218,endArrow=classic
+298,Faculty,endArrow=classic,242,219,endArrow=classic
+299,Interactive Map,endArrow=classic,243,220,endArrow=classic
+300,Work,endArrow=classic,243,212,endArrow=classic
+301,Work,endArrow=classic,244,212,endArrow=classic
+302,Interactive Map,endArrow=classic,244,220,endArrow=classic
+303,Researcher,endArrow=classic,245,221,endArrow=classic
+304,Search Capability,endArrow=classic,246,226,endArrow=classic
+305,,endArrow=classic,247,246,endArrow=classic
+306,Metadata Field,endArrow=classic,247,227,endArrow=classic
+307,Deposit,endArrow=classic,247,225,endArrow=classic
+310,Library,endArrow=classic,233,208,endArrow=classic
+347,Discovery,endArrow=classic,233,228,endArrow=classic
+1000,,endArrow=classic,238,18,endArrow=classic
+1001,"Researcher,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,18,endArrow=classic
+1003,Research,endArrow=classic,18,203,endArrow=classic
+1004,,endArrow=classic,243,19,endArrow=classic
+1005,"Researcher,",rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,19,endArrow=classic
+1007,Work,endArrow=classic,19,212,endArrow=classic

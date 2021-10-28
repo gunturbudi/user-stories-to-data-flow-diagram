@@ -1,0 +1,40 @@
+[
+  {
+    "text": "As an externalcoordinator, I want to have guarantees that my IP rights will not be breached, so that the risk of collaborating with Bath is acceptable to me.",
+    "entities": [
+      {
+        "text": "externalcoordinator,",
+        "label": "Data"
+      },
+      {
+        "text": "IP rights",
+        "label": "PII"
+      },
+      {
+        "text": "collaborating",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "AS an externalcoordinator, I want to access data from Bath collaborators off campus, so that I can collaborate effectively.",
+    "entities": [
+      {
+        "text": "externalcoordinator",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "Bath collaborators",
+        "label": "PII"
+      }
+    ]
+  }
+]

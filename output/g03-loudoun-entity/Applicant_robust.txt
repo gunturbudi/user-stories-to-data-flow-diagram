@@ -1,0 +1,140 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Preapplication Assistance" as thingpreapplicationassistance #grey
+	entity "Application" as thingapplication
+	entity "Support Documentation" as thingsupportingdocumentation
+	entity "Fee" as thingfee
+	entity "Transaction" as thingtransaction
+	entity "Formal Response" as thingformalresponse
+	entity "Applicant" as thingapplicant
+	entity "Zoning ,\nRelated Permit" as thingzoningrelatedpermit
+	entity "Requirement" as thingrequirement
+	entity "Execution" as thingexecution
+	entity "Outcome" as thingoutcome
+	entity "Plan" as thingplan
+	entity "Development ,\nRelated Permit" as thingdevelopmentrelatedpermit
+	entity "Building Development\nProject" as thingbuildingdevelopmentproject #grey
+	entity "Draft Proffer" as thingdraftproffer
+	entity "Code Modification" as thingcodemodification
+	actor "Applicant" as actorapplicant
+	actor "Staff Member" as actorstaffmember
+	actor "Zoning ,\nStaff Member" as actorzoningstaffmember
+	actor "Plan ,\nReview ,\nStaff Member" as actorplanreviewstaffmember
+	actor "Development ,\nStaff Member" as actordevelopmentstaffmember
+	circle "Status" as thingstatus
+	circle "Completion" as thingcompletion
+	circle "Review Meeting" as thingreviewmeeting #grey
+	circle "Review" as thingreview #grey
+	boundary "Assistance\nInterface" as thingassistanceinterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Documentation\nInterface" as thingdocumentationinterface #grey
+	boundary "Fee\nInterface" as thingfeeinterface #grey
+	boundary "Transaction\nInterface" as thingtransactioninterface #grey
+	boundary "Applicant\nInterface" as thingapplicantinterface #grey
+	boundary "Proffer\nInterface" as thingprofferinterface #grey
+	boundary "Permit\nInterface" as thingpermitinterface #grey
+	boundary "Requirement\nInterface" as thingrequirementinterface #grey
+	boundary "Execution\nInterface" as thingexecutioninterface #grey
+	boundary "Plan\nInterface" as thingplaninterface #grey
+	boundary "Outcome\nInterface" as thingoutcomeinterface #grey
+	boundary "Modification\nInterface" as thingmodificationinterface #grey
+	boundary "Project\nInterface" as thingprojectinterface #grey
+	control "Request Preapplication\nAssistance" as controlrequestpreapplicationassistance
+	control "Submit Application" as controlsubmitapplication
+	control "Submit Supporting\nDocumentation" as controlsubmitsupportingdocumentation
+	control "Pay Fee" as controlpayfee
+	control "Check The\nStatus Of\nA Transaction" as controlcheckstatus
+	control "Modify Application" as controlmodifyapplication
+	control "Send A\nFormal Response\nTo Applicant" as controlsendformalresponse
+	control "Track The\nDraft Proffers" as controltrackdraftproffers
+	control "Issue The\nZoning, Related\nPermits" as controlissuezoningrelatedpermit
+	control "Satisfy" as controlsatisfyhearingrequirement
+	control "Hearing Requirements" as controlhearingrequirement
+	control "Hearing Execution" as controlhearingexecution
+	control "Support" as controlsupporthearingexecution #grey
+	control "Prepare" as controlpreparehearingexecution
+	control "Request A\nPlan Review\nMeeting" as controlrequestplanreviewmeeting
+	control "Conduct A\nPlan Review\nWith The\nApplicant" as controlconductplanreview
+	control "Record The\nOutcome" as controlrecordoutcome
+	control "Resubmit Plans" as controlresubmitplan
+	control "Review The\nCode Modifications\nThe Applicant" as controlreviewcodemodifications
+	control "Track The\nCompletion Of\nRequired Plan\nReviews" as controltrackcompletion
+	control "Issue A\nDevelopment, Related\nPermit" as controlissuedevelopmentrelatedpermit
+	control "Complete Building\nDevelopment Project" as controlcompletebuildingdevelopmentproject
+
+	thingapplicant <.. thingformalresponse
+	thingtransaction *-- thingstatus
+	thingreview *-- thingcompletion
+	thingplan *-- thingcompletion
+	thingplan *-- thingreviewmeeting
+	thingapplicant *-- thingreview
+	thingplan *-- thingreview
+	actorapplicant --- thingassistanceinterface
+	actorapplicant --- thingapplicationinterface
+	actorapplicant --- thingdocumentationinterface
+	actorapplicant --- thingfeeinterface
+	actorapplicant --- thingtransactioninterface
+	actorstaffmember --- thingapplicantinterface
+	actorplanreviewstaffmember --- thingapplicantinterface
+	actorstaffmember --- thingprofferinterface
+	actorzoningstaffmember --- thingpermitinterface
+	actordevelopmentstaffmember --- thingpermitinterface
+	actorapplicant --- thingrequirementinterface
+	actorstaffmember --- thingexecutioninterface
+	actorapplicant --- thingplaninterface
+	actorplanreviewstaffmember --- thingplaninterface
+	actorplanreviewstaffmember --- thingoutcomeinterface
+	actorplanreviewstaffmember --- thingmodificationinterface
+	actorapplicant --- thingprojectinterface
+	thingpreapplicationassistance --- controlrequestpreapplicationassistance
+	thingassistanceinterface --> controlrequestpreapplicationassistance
+	thingapplication --- controlsubmitapplication
+	thingapplicationinterface --> controlsubmitapplication
+	thingsupportingdocumentation --- controlsubmitsupportingdocumentation
+	thingdocumentationinterface --> controlsubmitsupportingdocumentation
+	thingfee --- controlpayfee
+	thingfeeinterface --> controlpayfee
+	thingstatus --- controlcheckstatus
+	thingtransaction --- controlcheckstatus
+	thingtransactioninterface --> controlcheckstatus
+	thingapplication --- controlmodifyapplication
+	thingapplicationinterface --> controlmodifyapplication
+	thingformalresponse --- controlsendformalresponse
+	thingapplicant --- controlsendformalresponse
+	thingapplicantinterface --> controlsendformalresponse
+	thingdraftproffer --- controltrackdraftproffers
+	thingprofferinterface --> controltrackdraftproffers
+	thingzoningrelatedpermit --- controlissuezoningrelatedpermit
+	thingpermitinterface --> controlissuezoningrelatedpermit
+	thingrequirementinterface --> controlsatisfyhearingrequirement
+	controlsatisfyhearingrequirement --> controlhearingrequirement
+	thingrequirement --- controlhearingrequirement
+	thingrequirementinterface --> controlhearingrequirement
+	thingexecution --- controlhearingexecution
+	controlpreparehearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlhearingexecution
+	controlsupporthearingexecution --> controlhearingexecution
+	thingexecutioninterface --> controlpreparehearingexecution
+	thingreviewmeeting --- controlrequestplanreviewmeeting
+	thingplaninterface --> controlrequestplanreviewmeeting
+	thingreview --- controlconductplanreview
+	thingapplicant --- controlconductplanreview
+	thingapplicantinterface --> controlconductplanreview
+	thingoutcome --- controlrecordoutcome
+	thingoutcomeinterface --> controlrecordoutcome
+	thingplan --- controlresubmitplan
+	thingplaninterface --> controlresubmitplan
+	thingcodemodification --- controlreviewcodemodifications
+	thingmodificationinterface --> controlreviewcodemodifications
+	thingcompletion --- controltrackcompletion
+	thingplaninterface --> controltrackcompletion
+	thingplan --- controltrackcompletion
+	thingdevelopmentrelatedpermit --- controlissuedevelopmentrelatedpermit
+	thingpermitinterface --> controlissuedevelopmentrelatedpermit
+	thingbuildingdevelopmentproject --- controlcompletebuildingdevelopmentproject
+	thingprojectinterface --> controlcompletebuildingdevelopmentproject
+
+@enduml

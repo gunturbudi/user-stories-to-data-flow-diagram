@@ -1,0 +1,82 @@
+[
+  {
+    "text": "As an Admin, I want to invite someone to join the platform, so that that they can start contributing or using data.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "invite",
+        "label": "Processing"
+      },
+      {
+        "text": "someone",
+        "label": "Data"
+      },
+      {
+        "text": "contributing",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Admin, I want to set key configuration parameters for my site deployment, so that that I can change key information like the site title.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "set",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an Admin, I want to see key metrics about usage such as users, API usage, downloads, so that that I know how things are going.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "usage",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "API usage",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an Admin, I want to have a pricing plan and billing system, so that that I can charge users and make my platform sustainable.",
+    "entities": [
+      {
+        "text": "Admin,",
+        "label": "Data"
+      },
+      {
+        "text": "charge",
+        "label": "Processing"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  }
+]

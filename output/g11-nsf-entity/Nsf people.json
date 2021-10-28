@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a user researcher, I want to make sure the correct NSF people are invited to user interviews, so that they can observe the interviews and make recommendations accordingly.",
+    "entities": [
+      {
+        "text": "user researcher",
+        "label": "Data"
+      },
+      {
+        "text": "NSF people",
+        "label": "Data"
+      },
+      {
+        "text": "user interviews",
+        "label": "PII"
+      },
+      {
+        "text": "observe",
+        "label": "Processing"
+      },
+      {
+        "text": "interviews",
+        "label": "PII"
+      }
+    ]
+  }
+]

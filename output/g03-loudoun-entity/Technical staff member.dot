@@ -1,0 +1,8 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Gis Property\nManagement " ];
+201 [label="Technical , Staff Member" shape=box];
+202 [label="{<f0> 1.0|<f1> Update The Gis Property Management }" shape=Mrecord];
+201 -> 202
+202 -> 200 [label="Gis Property\nManagement"]
+}

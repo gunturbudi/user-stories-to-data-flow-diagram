@@ -1,0 +1,355 @@
+id,value,style,source,target,type
+71,Improve on results from automated tools.,ellipse,null,null,process
+72,Track use of assets.,ellipse,null,null,process
+73,Integrate our collections into our web presence.,ellipse,null,null,process
+74,Gain background information for processing a collection.,ellipse,null,null,process
+75,Assist researchers.,ellipse,null,null,process
+76,Find images when i don't have any metadata.,ellipse,null,null,process
+200,Right,shape=partialRectangle,null,null,data_base
+201,License Statement,shape=partialRectangle,null,null,data_base
+202,Individual File,shape=partialRectangle,null,null,data_base
+203,File,shape=partialRectangle,null,null,data_base
+204,View,shape=partialRectangle,null,null,data_base
+205,Restriction,shape=partialRectangle,null,null,data_base
+206,Date,shape=partialRectangle,null,null,data_base
+207,Detailed Restriction,shape=partialRectangle,null,null,data_base
+208,Ip Address,shape=partialRectangle,null,null,data_base
+209,Access,shape=partialRectangle,null,null,data_base
+210,User,shape=partialRectangle,null,null,data_base
+211,Certain File,shape=partialRectangle,null,null,data_base
+212,Photo,shape=partialRectangle,null,null,data_base
+213,Statement,shape=partialRectangle,null,null,data_base
+214,Information,shape=partialRectangle,null,null,data_base
+215,Digital File,shape=partialRectangle,null,null,data_base
+216,Time,shape=partialRectangle,null,null,data_base
+217,Online Form,shape=partialRectangle,null,null,data_base
+218,Archival Material,shape=partialRectangle,null,null,data_base
+219,Single File,shape=partialRectangle,null,null,data_base
+220,Technical Metadata,shape=partialRectangle,null,null,data_base
+221,Digital Object,shape=partialRectangle,null,null,data_base
+222,Researcher,shape=partialRectangle,null,null,data_base
+223,Publication,shape=partialRectangle,null,null,data_base
+224,Citation,shape=partialRectangle,null,null,data_base
+225,Scan,shape=partialRectangle,null,null,data_base
+226,Image,shape=partialRectangle,null,null,data_base
+227,Document,shape=partialRectangle,null,null,data_base
+228,Unique Identifier,shape=partialRectangle,null,null,data_base
+229,Metadata,shape=partialRectangle,null,null,data_base
+230,Scan File,shape=partialRectangle,null,null,data_base
+231,Level,shape=partialRectangle,null,null,data_base
+232,"Contrast ,\nAutomatic Operation",shape=partialRectangle,null,null,data_base
+233,Manipulation,shape=partialRectangle,null,null,data_base
+234,Contrast,shape=partialRectangle,null,null,data_base
+235,Educational Visit,shape=partialRectangle,null,null,data_base
+236,Documentation,shape=partialRectangle,null,null,data_base
+237,Form,shape=partialRectangle,null,null,data_base
+238,Correspondence,shape=partialRectangle,null,null,data_base
+239,Donor,shape=partialRectangle,null,null,data_base
+240,Available Right,shape=partialRectangle,null,null,data_base
+241,Email,shape=partialRectangle,null,null,data_base
+242,Specific Object,shape=partialRectangle,null,null,data_base
+243,Particular User,shape=partialRectangle,null,null,data_base
+244,Unprocessed Material,shape=partialRectangle,null,null,data_base
+245,"Available ,\nPossible ,\nArchival ,\nMaterial",shape=partialRectangle,null,null,data_base
+246,Archival Content,shape=partialRectangle,null,null,data_base
+247,Rac Website,shape=partialRectangle,null,null,data_base
+248,Collection,shape=partialRectangle,null,null,data_base
+249,Keyword,shape=partialRectangle,null,null,data_base
+250,Inventory,shape=partialRectangle,null,null,data_base
+251,Tag,shape=partialRectangle,null,null,data_base
+252,Drive,shape=partialRectangle,null,null,data_base
+253,Black,shape=partialRectangle,null,null,data_base
+254,Color,shape=partialRectangle,null,null,data_base
+255,White,shape=partialRectangle,null,null,data_base
+256,Photographer,shape=partialRectangle,null,null,data_base
+257,People,shape=partialRectangle,null,null,data_base
+258,Place,shape=partialRectangle,null,null,data_base
+259,Physical Location,shape=partialRectangle,null,null,data_base
+260,Visual,shape=partialRectangle,null,null,data_base
+261,Rights Status,shape=partialRectangle,null,null,data_base
+262,Preservation Standard,shape=partialRectangle,null,null,data_base
+263,Research Request,shape=partialRectangle,null,null,data_base
+264,Index Card,shape=partialRectangle,null,null,data_base
+265,Finding Aid,shape=partialRectangle,null,null,data_base
+266,Material Type,shape=partialRectangle,null,null,data_base
+267,End,shape=partialRectangle,null,null,data_base
+268,Edit,shape=partialRectangle,null,null,data_base
+269,Quality,shape=partialRectangle,null,null,data_base
+270,Loan,shape=partialRectangle,null,null,data_base
+271,Preservation,shape=partialRectangle,null,null,data_base
+272,Staff,shape=partialRectangle,null,null,data_base
+273,Archivist,rounded=0,null,null,external_entity
+274,Apply A License Statement,ellipse,null,null,process
+275,Apply Right,ellipse,null,null,process
+276,Mark Individual Files,ellipse,null,null,process
+277,Mark Groups Of Files,ellipse,null,null,process
+278,Restrict A File From View,ellipse,null,null,process
+279,Restrict A Group Of Files From View,ellipse,null,null,process
+280,Set A Date On Which Restrictions Removed From A File,ellipse,null,null,process
+281,Add End Restriction Date Information To Files,ellipse,null,null,process
+282,Add Detailed Restrictions To Groups Of Files,ellipse,null,null,process
+283,Restrict Access To Some Files By Ip Address,ellipse,null,null,process
+284,Restrict Access To Certain Files By User,ellipse,null,null,process
+285,Know,ellipse,null,null,process
+286,Select Statement,ellipse,null,null,process
+287,Select Existing Rights Statuses,ellipse,null,null,process
+288,Redact Information In Digital Files For A Period Of Time,ellipse,null,null,process
+289,Licensing Archival Material,ellipse,null,null,process
+290,Have An Online Form,ellipse,null,null,process
+291,Batch Edit Metadata About Files,ellipse,null,null,process
+292,Upload A Single File,ellipse,null,null,process
+293,Upload Groups Of Files,ellipse,null,null,process
+294,Create Access Copies Of Files,ellipse,null,null,process
+295,Generate Technical Metadata,ellipse,null,null,process
+296,Distinguish Between Digital Objects To Only Those For Access Purposes,ellipse,null,null,process
+297,Distinguish Between Digital Objects To Preservation Standards,ellipse,null,null,process
+298,Link Electronic Versions Of Researchers' Publications To Citations,ellipse,null,null,process
+299,Upload Scans Of Images Answering Research Requests,ellipse,null,null,process
+300,Create Quality Scans Of Images,ellipse,null,null,process
+301,Create Scans Of Document,ellipse,null,null,process
+302,Create Access Derivatives Of Digital Objects,ellipse,null,null,process
+303,Assign Unique Identifiers,ellipse,null,null,process
+304,Embed Metadata In File Headers,ellipse,null,null,process
+305,Rotate Images,ellipse,null,null,process
+306,Apply Level,ellipse,null,null,process
+307,"Apply Contrast, Automatic Operations To A Scanned File",ellipse,null,null,process
+308,Perform Contrast,ellipse,null,null,process
+309,Perform Manually Other Manipulation,ellipse,null,null,process
+310,Perform Level,ellipse,null,null,process
+311,Manage Scans Of Archival Material For Educational Visits,ellipse,null,null,process
+312,Manage Documentation Including Correspondence,ellipse,null,null,process
+313,Manage Documentation Including Form,ellipse,null,null,process
+314,Manage Loan Documentation Including Preservation Photos,ellipse,null,null,process
+315,Make Information About Available Rights To Donor,ellipse,null,null,process
+316,Make Information About Available Rights To Researchers,ellipse,null,null,process
+317,Ensure,ellipse,null,null,process
+318,Track Use Of A Photo,ellipse,null,null,process
+319,See,ellipse,null,null,process
+320,Provide Access To Digital Copies Of Unprocessed Material,ellipse,null,null,process
+321,"Make As Available, Possible, Archival, Much Material For Use",ellipse,null,null,process
+322,Use Archival Content On The Rac Website,ellipse,null,null,process
+323,Browse Through Files In A Collection,ellipse,null,null,process
+324,Search All Files By Keyword,ellipse,null,null,process
+325,Upload Inventories,ellipse,null,null,process
+326,Search By Tag,ellipse,null,null,process
+327,Access The Digital Files On The Drive,ellipse,null,null,process
+328,Have Electronic Versions Of The Available Collection Files For Staff Use,ellipse,null,null,process
+329,Distinguish Between Images In Color,ellipse,null,null,process
+330,Distinguish Between Images In Black,ellipse,null,null,process
+331,Distinguish Between Images In White,ellipse,null,null,process
+332,Access Inventories For Unprocessed Collections,ellipse,null,null,process
+333,Search Images By Photographer,ellipse,null,null,process
+334,Search Images By Place The Photo Taken,ellipse,null,null,process
+335,Search Index Cards,ellipse,null,null,process
+336,"Search Public, Other Finding Aid",ellipse,null,null,process
+337,View Collection Files,ellipse,null,null,process
+338,View Physical Locations For Archival Material,ellipse,null,null,process
+339,Find Files Not Publicly Made,ellipse,null,null,process
+340,Access Metadata Representations Of Index Cards,ellipse,null,null,process
+341,Access Visual,ellipse,null,null,process
+342,Search Individual Material Types,ellipse,null,null,process
+343,Uploading An Image,ellipse,null,null,process
+345,,endArrow=classic,273,274,endArrow=classic
+346,,endArrow=classic,273,275,endArrow=classic
+347,,endArrow=classic,273,276,endArrow=classic
+348,,endArrow=classic,273,277,endArrow=classic
+349,,endArrow=classic,273,278,endArrow=classic
+350,,endArrow=classic,273,279,endArrow=classic
+351,,endArrow=classic,273,280,endArrow=classic
+352,,endArrow=classic,273,281,endArrow=classic
+353,,endArrow=classic,273,282,endArrow=classic
+354,,endArrow=classic,273,283,endArrow=classic
+355,,endArrow=classic,273,284,endArrow=classic
+356,,endArrow=classic,273,286,endArrow=classic
+357,,endArrow=classic,273,287,endArrow=classic
+358,,endArrow=classic,273,288,endArrow=classic
+359,,endArrow=classic,273,289,endArrow=classic
+360,,endArrow=classic,273,290,endArrow=classic
+361,,endArrow=classic,273,291,endArrow=classic
+362,,endArrow=classic,273,292,endArrow=classic
+363,,endArrow=classic,273,293,endArrow=classic
+364,,endArrow=classic,273,294,endArrow=classic
+365,,endArrow=classic,273,295,endArrow=classic
+366,,endArrow=classic,273,296,endArrow=classic
+367,,endArrow=classic,273,297,endArrow=classic
+368,,endArrow=classic,273,298,endArrow=classic
+369,,endArrow=classic,273,299,endArrow=classic
+370,,endArrow=classic,273,300,endArrow=classic
+371,,endArrow=classic,273,301,endArrow=classic
+372,,endArrow=classic,273,302,endArrow=classic
+373,,endArrow=classic,273,303,endArrow=classic
+374,,endArrow=classic,273,304,endArrow=classic
+375,,endArrow=classic,273,305,endArrow=classic
+376,,endArrow=classic,273,306,endArrow=classic
+377,,endArrow=classic,273,307,endArrow=classic
+378,,endArrow=classic,273,308,endArrow=classic
+379,,endArrow=classic,273,309,endArrow=classic
+380,,endArrow=classic,273,310,endArrow=classic
+381,,endArrow=classic,273,311,endArrow=classic
+382,,endArrow=classic,273,312,endArrow=classic
+383,,endArrow=classic,273,313,endArrow=classic
+384,,endArrow=classic,273,314,endArrow=classic
+385,,endArrow=classic,273,315,endArrow=classic
+386,,endArrow=classic,273,316,endArrow=classic
+387,,endArrow=classic,273,318,endArrow=classic
+388,,endArrow=classic,273,320,endArrow=classic
+389,,endArrow=classic,273,321,endArrow=classic
+390,,endArrow=classic,273,322,endArrow=classic
+391,,endArrow=classic,273,323,endArrow=classic
+392,,endArrow=classic,273,324,endArrow=classic
+393,,endArrow=classic,273,325,endArrow=classic
+394,,endArrow=classic,273,326,endArrow=classic
+395,,endArrow=classic,273,327,endArrow=classic
+396,,endArrow=classic,273,328,endArrow=classic
+397,,endArrow=classic,273,329,endArrow=classic
+398,,endArrow=classic,273,330,endArrow=classic
+399,,endArrow=classic,273,331,endArrow=classic
+400,,endArrow=classic,273,332,endArrow=classic
+401,,endArrow=classic,273,333,endArrow=classic
+402,,endArrow=classic,273,334,endArrow=classic
+403,,endArrow=classic,273,335,endArrow=classic
+404,,endArrow=classic,273,336,endArrow=classic
+405,,endArrow=classic,273,337,endArrow=classic
+406,,endArrow=classic,273,338,endArrow=classic
+407,,endArrow=classic,273,339,endArrow=classic
+408,,endArrow=classic,273,340,endArrow=classic
+409,,endArrow=classic,273,341,endArrow=classic
+410,,endArrow=classic,273,342,endArrow=classic
+411,,endArrow=classic,273,343,endArrow=classic
+412,License Statement,endArrow=classic,274,201,endArrow=classic
+413,Right,endArrow=classic,275,200,endArrow=classic
+414,Individual File,endArrow=classic,276,202,endArrow=classic
+415,File,endArrow=classic,277,203,endArrow=classic
+416,View,endArrow=classic,278,204,endArrow=classic
+417,File,endArrow=classic,278,203,endArrow=classic
+418,File,endArrow=classic,279,203,endArrow=classic
+419,View,endArrow=classic,279,204,endArrow=classic
+420,Date,endArrow=classic,280,206,endArrow=classic
+421,Restriction,endArrow=classic,280,205,endArrow=classic
+422,File,endArrow=classic,280,203,endArrow=classic
+423,File,endArrow=classic,281,203,endArrow=classic
+424,Information,endArrow=classic,281,214,endArrow=classic
+425,Detailed Restriction,endArrow=classic,282,207,endArrow=classic
+426,File,endArrow=classic,282,203,endArrow=classic
+427,Access,endArrow=classic,283,209,endArrow=classic
+428,Ip Address,endArrow=classic,283,208,endArrow=classic
+429,File,endArrow=classic,283,203,endArrow=classic
+430,Certain File,endArrow=classic,284,211,endArrow=classic
+431,User,endArrow=classic,284,210,endArrow=classic
+432,Access,endArrow=classic,284,209,endArrow=classic
+433,Statement,endArrow=classic,286,213,endArrow=classic
+434,Rights Status,endArrow=classic,287,261,endArrow=classic
+435,Information,endArrow=classic,288,214,endArrow=classic
+436,Digital File,endArrow=classic,288,215,endArrow=classic
+437,Time,endArrow=classic,288,216,endArrow=classic
+438,,endArrow=classic,289,290,endArrow=classic
+439,Archival Material,endArrow=classic,289,218,endArrow=classic
+440,Online Form,endArrow=classic,290,217,endArrow=classic
+441,File,endArrow=classic,291,203,endArrow=classic
+442,Metadata,endArrow=classic,291,229,endArrow=classic
+443,Single File,endArrow=classic,292,219,endArrow=classic
+444,File,endArrow=classic,293,203,endArrow=classic
+445,File,endArrow=classic,294,203,endArrow=classic
+446,Technical Metadata,endArrow=classic,295,220,endArrow=classic
+447,Digital Object,endArrow=classic,296,221,endArrow=classic
+448,Digital Object,endArrow=classic,297,221,endArrow=classic
+449,Preservation Standard,endArrow=classic,297,262,endArrow=classic
+450,Publication,endArrow=classic,298,223,endArrow=classic
+451,Citation,endArrow=classic,298,224,endArrow=classic
+452,Scan,endArrow=classic,299,225,endArrow=classic
+453,Image,endArrow=classic,299,226,endArrow=classic
+454,Research Request,endArrow=classic,299,263,endArrow=classic
+455,Image,endArrow=classic,300,226,endArrow=classic
+456,Scan,endArrow=classic,300,225,endArrow=classic
+457,Document,endArrow=classic,301,227,endArrow=classic
+458,Scan,endArrow=classic,301,225,endArrow=classic
+459,Digital Object,endArrow=classic,302,221,endArrow=classic
+460,Unique Identifier,endArrow=classic,303,228,endArrow=classic
+461,Metadata,endArrow=classic,304,229,endArrow=classic
+462,Image,endArrow=classic,305,226,endArrow=classic
+463,Level,endArrow=classic,306,231,endArrow=classic
+464,"Contrast ,\nAutomatic Operation",endArrow=classic,307,232,endArrow=classic
+465,Scan File,endArrow=classic,307,230,endArrow=classic
+466,Contrast,endArrow=classic,308,234,endArrow=classic
+467,Manipulation,endArrow=classic,309,233,endArrow=classic
+468,Level,endArrow=classic,310,231,endArrow=classic
+469,Archival Material,endArrow=classic,311,218,endArrow=classic
+470,Educational Visit,endArrow=classic,311,235,endArrow=classic
+471,Scan,endArrow=classic,311,225,endArrow=classic
+472,Correspondence,endArrow=classic,312,238,endArrow=classic
+473,Documentation,endArrow=classic,312,236,endArrow=classic
+474,Documentation,endArrow=classic,313,236,endArrow=classic
+475,Form,endArrow=classic,313,237,endArrow=classic
+476,Documentation,endArrow=classic,314,236,endArrow=classic
+477,Photo,endArrow=classic,314,212,endArrow=classic
+478,Donor,endArrow=classic,315,239,endArrow=classic
+479,Available Right,endArrow=classic,315,240,endArrow=classic
+480,Information,endArrow=classic,315,214,endArrow=classic
+481,Available Right,endArrow=classic,316,240,endArrow=classic
+482,Information,endArrow=classic,316,214,endArrow=classic
+483,Researcher,endArrow=classic,316,222,endArrow=classic
+484,Photo,endArrow=classic,318,212,endArrow=classic
+485,Unprocessed Material,endArrow=classic,320,244,endArrow=classic
+486,Access,endArrow=classic,320,209,endArrow=classic
+487,"Available ,\nPossible ,\nArchival ,\nMaterial",endArrow=classic,321,245,endArrow=classic
+488,Archival Content,endArrow=classic,322,246,endArrow=classic
+489,Rac Website,endArrow=classic,322,247,endArrow=classic
+490,Collection,endArrow=classic,323,248,endArrow=classic
+491,File,endArrow=classic,323,203,endArrow=classic
+492,Keyword,endArrow=classic,324,249,endArrow=classic
+493,File,endArrow=classic,324,203,endArrow=classic
+494,Inventory,endArrow=classic,325,250,endArrow=classic
+495,Tag,endArrow=classic,326,251,endArrow=classic
+496,Drive,endArrow=classic,327,252,endArrow=classic
+497,Digital File,endArrow=classic,327,215,endArrow=classic
+498,File,endArrow=classic,328,203,endArrow=classic
+499,Color,endArrow=classic,329,254,endArrow=classic
+500,Image,endArrow=classic,329,226,endArrow=classic
+501,Black,endArrow=classic,330,253,endArrow=classic
+502,Image,endArrow=classic,330,226,endArrow=classic
+503,White,endArrow=classic,331,255,endArrow=classic
+504,Image,endArrow=classic,331,226,endArrow=classic
+505,Inventory,endArrow=classic,332,250,endArrow=classic
+506,Collection,endArrow=classic,332,248,endArrow=classic
+507,Photographer,endArrow=classic,333,256,endArrow=classic
+508,Image,endArrow=classic,333,226,endArrow=classic
+509,Right,endArrow=classic,333,200,endArrow=classic
+510,People,endArrow=classic,333,257,endArrow=classic
+511,Place,endArrow=classic,334,258,endArrow=classic
+512,Photo,endArrow=classic,334,212,endArrow=classic
+513,Image,endArrow=classic,334,226,endArrow=classic
+514,Index Card,endArrow=classic,335,264,endArrow=classic
+515,Finding Aid,endArrow=classic,336,265,endArrow=classic
+516,File,endArrow=classic,337,203,endArrow=classic
+517,Physical Location,endArrow=classic,338,259,endArrow=classic
+518,Archival Material,endArrow=classic,338,218,endArrow=classic
+519,File,endArrow=classic,339,203,endArrow=classic
+520,Index Card,endArrow=classic,340,264,endArrow=classic
+521,Visual,endArrow=classic,341,260,endArrow=classic
+522,Material Type,endArrow=classic,342,266,endArrow=classic
+523,,endArrow=classic,343,333,endArrow=classic
+524,Image,endArrow=classic,343,226,endArrow=classic
+742,End,endArrow=classic,281,267,endArrow=classic
+760,Edit,endArrow=classic,291,268,endArrow=classic
+787,Quality,endArrow=classic,300,269,endArrow=classic
+828,Loan,endArrow=classic,314,270,endArrow=classic
+852,Preservation,endArrow=classic,297,271,endArrow=classic
+907,Staff,endArrow=classic,328,272,endArrow=classic
+1000,,endArrow=classic,308,71,endArrow=classic
+1001,Results,rounded=0,null,null,external_entity
+1002,Results,endArrow=classic,71,1001,endArrow=classic
+1003,,endArrow=classic,273,72,endArrow=classic
+1004,Use of assets,rounded=0,null,null,external_entity
+1005,Use of assets,endArrow=classic,72,1004,endArrow=classic
+1006,,endArrow=classic,322,73,endArrow=classic
+1007,Collections,rounded=0,null,null,external_entity
+1008,Collections,endArrow=classic,73,1007,endArrow=classic
+1009,,endArrow=classic,337,74,endArrow=classic
+1010,Background information,rounded=0,null,null,external_entity
+1011,Background information,endArrow=classic,74,1010,endArrow=classic
+1012,,endArrow=classic,340,75,endArrow=classic
+1013,Information,endArrow=classic,75,214,endArrow=classic
+1014,,endArrow=classic,343,76,endArrow=classic
+1015,Images,rounded=0,null,null,external_entity
+1016,Images,endArrow=classic,76,1015,endArrow=classic
+1017,Metadata,endArrow=classic,76,229,endArrow=classic

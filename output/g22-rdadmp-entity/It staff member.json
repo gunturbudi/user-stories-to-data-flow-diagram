@@ -1,0 +1,129 @@
+[
+  {
+    "text": "As an IT staff member, I want to know the security requirements of the data, so that I know which kind of security measures to apply.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to have an estimate of the produced data volume, so that I can plan the overall storage consumption.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "produced data volume",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can determine what basic support services and functionalities are required.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data types",
+        "label": "PII"
+      },
+      {
+        "text": "support services",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to know which kind of data types will be produced or collected, so that I can ensure that the necessary technical resources and technical know-how is available.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data types",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to know how the data is used, so that I can determine what kind of basic services and functionalities are required.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "basic services",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to know which formats are used, so that I can determine what kind of technical services and functionalities are required.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "technical services",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an IT staff member, I want to know with which software or technology the data is produced or used, so that I can determine what kind of technical services and functionalities are required.",
+    "entities": [
+      {
+        "text": "IT staff member",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "technical services",
+        "label": "PII"
+      }
+    ]
+  }
+]

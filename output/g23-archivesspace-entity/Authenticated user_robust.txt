@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Access" as thingaccess
+	entity "Contextual Help" as thingcontextualhelp
+	entity "Link" as thinglink
+	actor "Authenticated User" as actorauthenticateduser
+	boundary "Help\nInterface" as thinghelpinterface #grey
+	control "Get Access\nTo Links\nTo Contextual\nHelp" as controlgetaccess
+
+	thinglink <.. thingaccess
+	thingcontextualhelp <.. thinglink
+	actorauthenticateduser --- thinghelpinterface
+	thingaccess --- controlgetaccess
+	thinglink --- controlgetaccess
+	thingcontextualhelp --- controlgetaccess
+	thinghelpinterface --> controlgetaccess
+
+@enduml

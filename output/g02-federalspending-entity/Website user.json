@@ -1,0 +1,36 @@
+[
+  {
+    "text": "As a Website user, I want to access published FABS files, so that I can see the new files as they come in.",
+    "entities": [
+      {
+        "text": "Website user",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "FABS files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a website user, I want to see updated financial assistance data daily.",
+    "entities": [
+      {
+        "text": "website user",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "financial assistance data",
+        "label": "PII"
+      }
+    ]
+  }
+]

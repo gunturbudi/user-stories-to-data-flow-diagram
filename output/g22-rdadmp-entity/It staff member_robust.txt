@@ -1,0 +1,48 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Datum" as thingdatum
+	entity "Kind" as thingkind
+	entity "Type" as thingtype #grey
+	entity "Format" as thingformat
+	entity "Software" as thingsoftware
+	entity "Technology" as thingtechnology
+	entity "Security Requirement" as thingsecurityrequirement
+	actor ", Staff\nMember" as actoritstaffmember
+	circle "Estimate" as thingestimate
+	circle "Volume" as thingvolume #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Data\nInterface" as thingdatainterface #grey
+	boundary "Technology\nInterface" as thingtechnologyinterface #grey
+	control "Know The\nSecurity Requirements\nOf The\nData" as controlknowsecurityrequirements
+	control "Have An\nEstimate Of\nThe Produced\nData Volume" as controlhaveestimate
+	control "Know" as controlknow
+	control "Use" as controluse
+	control "Know Which\nSoftware The\nData Produced" as controlknowsoftwaredata
+	control "Know Technology\nProduced" as controlknowtechnology
+
+	thingtype *-- thingkind
+	thingdatum <.. thingtype
+	thingdatum <.. thingsoftware
+	thingdatum <.. thingsecurityrequirement
+	thingvolume *-- thingestimate
+	thingdatum *-- thingvolume
+	actoritstaffmember --- thingdatuminterface
+	actoritstaffmember --- thingdatainterface
+	actoritstaffmember --- thingtechnologyinterface
+	thingsecurityrequirement --- controlknowsecurityrequirements
+	thingdatum --- controlknowsecurityrequirements
+	thingdatuminterface --> controlknowsecurityrequirements
+	thingestimate --- controlhaveestimate
+	thingvolume --- controlhaveestimate
+	thingdatainterface --> controlhaveestimate
+	controlknow --> controluse
+	thingsoftware --- controlknowsoftwaredata
+	thingdatainterface --> controlknowsoftwaredata
+	thingdatum --- controlknowsoftwaredata
+	thingtechnology --- controlknowtechnology
+	thingtechnologyinterface --> controlknowtechnology
+
+@enduml

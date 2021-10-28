@@ -1,0 +1,111 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Sponsor " color=red];
+201 [label="<f0>  |<f1> Training " color=red];
+202 [label="<f0>  |<f1> Summit " color=red];
+203 [label="<f0>  |<f1> Event " color=red];
+204 [label="<f0>  |<f1> Sponsorship Page " color=red];
+205 [label="<f0>  |<f1> Sponsorship Profile " color=red];
+206 [label="<f0>  |<f1> Job " color=red];
+207 [label="<f0>  |<f1> Sponsorship Person " color=red];
+208 [label="<f0>  |<f1> Brand " color=red];
+209 [label="<f0>  |<f1> Badcamp Attendee " ];
+210 [label="Administrator" shape=box];
+211 [label="Summit Coordinator" shape=box];
+212 [label="Anonymoususer" shape=box];
+213 [label="Sponsor" shape=box];
+214 [label="{<f0> 1.0|<f1> Assign Sponsors To Training }" shape=Mrecord];
+215 [label="{<f0> 2.0|<f1> Assign Sponsors To Summit }" shape=Mrecord];
+216 [label="{<f0> 3.0|<f1> Assign Sponsors To Events }" shape=Mrecord];
+217 [label="{<f0> 4.0|<f1> List Sponsors For Summit }" shape=Mrecord];
+218 [label="{<f0> 5.0|<f1> See All Events That A Sponsor Is Sponsoring }" shape=Mrecord];
+219 [label="{<f0> 6.0|<f1> See Summit }" shape=Mrecord];
+220 [label="{<f0> 7.0|<f1> See Training }" shape=Mrecord];
+221 [label="{<f0> 8.0|<f1> Link Badcamp Attendees To Sponsorship Page }" shape=Mrecord];
+222 [label="{<f0> 9.0|<f1> Link To Sponsorship Profile From Job Listings }" shape=Mrecord];
+223 [label="{<f0> 10.0|<f1> Learn }" shape=Mrecord];
+224 [label="{<f0> 11.0|<f1> Posting Jobs As A Sponsor }" shape=Mrecord];
+225 [label="{<f0> 12.0|<f1> Contact Jobs As A Sponsor The Sponsorship Person }" shape=Mrecord];
+226 [label="{<f0> 13.0|<f1> Post A Job }" shape=Mrecord];
+227 [label="{<f0> 14.0|<f1> Personalize Sponsorship Page }" shape=Mrecord];
+228 [label="{<f0> 15.0|<f1> Sponsor A Summit Matches Brand }" shape=Mrecord];
+16 [label="{<f0> 16.0|<f1> Learn more about my organization. }" shape=Mrecord];
+1000 [label="Recruits" shape=box];
+1000 -> 16
+1002 [label="Recruits" shape=box];
+1002 -> 16
+1004 [label="Recruits" shape=box];
+1004 -> 16
+1006 [label="Recruits" shape=box];
+1006 -> 16
+1008 [label="<f0>  |<f1> Organization " color=red];
+16 -> 1008 [label="Organization"]
+17 [label="{<f0> 17.0|<f1> Post my job listing on the badcamp site. }" shape=Mrecord];
+1010 [label="Anonymoususer," shape=box];
+1010 -> 17
+1012 [label="Anonymoususer," shape=box];
+1012 -> 17
+223 -> 17
+1015 [label="Anonymoususer," shape=box];
+1015 -> 17
+1017 [label="<f0>  |<f1> Job listing " color=red];
+17 -> 1017 [label="Job listing"]
+18 [label="{<f0> 18.0|<f1> Tout my drupal credentials. }" shape=Mrecord];
+1019 [label="Sponsor," shape=box];
+1019 -> 18
+1021 [label="Sponsor," shape=box];
+1021 -> 18
+1023 [label="Sponsor," shape=box];
+1023 -> 18
+228 -> 18
+1026 [label="<f0>  |<f1> Drupal credentials " color=red];
+18 -> 1026 [label="Drupal credentials"]
+210 -> 214
+210 -> 215
+210 -> 216
+210 -> 217
+210 -> 219
+210 -> 220
+211 -> 215
+211 -> 217
+211 -> 219
+212 -> 214
+212 -> 215
+212 -> 217
+212 -> 218
+212 -> 219
+212 -> 220
+212 -> 223
+212 -> 224
+213 -> 221
+213 -> 222
+213 -> 226
+213 -> 227
+213 -> 228
+214 -> 201 [label="Training"]
+214 -> 200 [label="Sponsor"]
+215 -> 202 [label="Summit"]
+215 -> 200 [label="Sponsor"]
+216 -> 200 [label="Sponsor"]
+216 -> 203 [label="Event"]
+217 -> 200 [label="Sponsor"]
+217 -> 202 [label="Summit"]
+218 -> 200 [label="Sponsor"]
+218 -> 203 [label="Event"]
+219 -> 202 [label="Summit"]
+220 -> 201 [label="Training"]
+221 -> 209 [label="Badcamp Attendee"]
+221 -> 204 [label="Sponsorship Page"]
+222 -> 205 [label="Sponsorship Profile"]
+224 -> 223
+224 -> 206 [label="Job"]
+224 -> 200 [label="Sponsor"]
+225 -> 223
+225 -> 207 [label="Sponsorship Person"]
+225 -> 200 [label="Sponsor"]
+225 -> 206 [label="Job"]
+226 -> 206 [label="Job"]
+227 -> 204 [label="Sponsorship Page"]
+228 -> 208 [label="Brand"]
+228 -> 202 [label="Summit"]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "text": "As a faculty member, I want to direct students to an item within the repository, so that I can facilitate my teaching (i.e. desires ability to link to content).",
+    "entities": [
+      {
+        "text": "faculty member",
+        "label": "Data"
+      },
+      {
+        "text": "direct",
+        "label": "Processing"
+      },
+      {
+        "text": "students",
+        "label": "Data"
+      },
+      {
+        "text": "teaching",
+        "label": "PII"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a student, I want to learn who at Cornell has or is engaged in research related to a particular topic, so that I can decide if I would like to pursue studies/research at Cornell.",
+    "entities": [
+      {
+        "text": "student,",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "who",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a student, I want to learn who at Cornell has or is engaged in research related to a particular topic, so that I can find an appropriate advisor, choose which courses to enroll in, and identify work/internship opportunities.",
+    "entities": [
+      {
+        "text": "student,",
+        "label": "Data"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      },
+      {
+        "text": "who",
+        "label": "PII"
+      },
+      {
+        "text": "advisor",
+        "label": "Data"
+      },
+      {
+        "text": "identify",
+        "label": "Processing"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a student, I want to upload to the repository the data that is associated with my embargoed dissertation to meet requirements of a DMP I submitted with my NSF DDIG.",
+    "entities": [
+      {
+        "text": "student,",
+        "label": "Data"
+      },
+      {
+        "text": "upload",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "dissertation",
+        "label": "PII"
+      }
+    ]
+  }
+]

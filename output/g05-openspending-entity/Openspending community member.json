@@ -1,0 +1,28 @@
+[
+  {
+    "text": "As an OpenSpending Community Member, I want to have a blog that highlights any and all projects in the open fiscal space, So that I can relate to openspending.org as the central hub of fiscal openness.",
+    "entities": [
+      {
+        "text": "OpenSpending Community Member",
+        "label": "Data"
+      },
+      {
+        "text": "projects",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As an OpenSpending Community Member, I want to have an app where I can find examples of use of fiscal data visualisations, So that I can find guidance in creating my own with Open Spending.",
+    "entities": [
+      {
+        "text": "OpenSpending Community Member",
+        "label": "Data"
+      },
+      {
+        "text": "creating",
+        "label": "Processing"
+      }
+    ]
+  }
+]

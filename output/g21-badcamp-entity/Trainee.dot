@@ -1,0 +1,24 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Authenticated User " ];
+201 [label="<f0>  |<f1> Day " color=red];
+202 [label="<f0>  |<f1> Registration " color=red];
+203 [label="<f0>  |<f1> Training " color=red];
+204 [label="<f0>  |<f1> Checkbox " ];
+205 [label="<f0>  |<f1> Schedule " color=red];
+206 [label="<f0>  |<f1> Cancellation Term " ];
+207 [label="Trainee" shape=box];
+208 [label="{<f0> 1.0|<f1> Limit To Registration Per Day Per Authenticated User }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> See }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Accept The Cancellation Terms With A Checkbox }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Add To Schedule }" shape=Mrecord];
+207 -> 208
+207 -> 210
+207 -> 211
+208 -> 202 [label="Registration"]
+208 -> 201 [label="Day"]
+208 -> 200 [label="Authenticated User"]
+210 -> 206 [label="Cancellation Term"]
+210 -> 204 [label="Checkbox"]
+211 -> 205 [label="Schedule"]
+}

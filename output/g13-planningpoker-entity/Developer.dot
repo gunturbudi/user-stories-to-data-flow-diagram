@@ -1,0 +1,40 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Css " ];
+201 [label="<f0>  |<f1> Xhtml Standard " ];
+202 [label="<f0>  |<f1> Site " ];
+203 [label="<f0>  |<f1> 7 " ];
+204 [label="<f0>  |<f1> Function " ];
+205 [label="<f0>  |<f1> Internet Explorer " ];
+206 [label="<f0>  |<f1> Definition " ];
+207 [label="<f0>  |<f1> Use Term " ];
+208 [label="<f0>  |<f1> Database Index " ];
+209 [label="<f0>  |<f1> W3C Guideline " ];
+210 [label="<f0>  |<f1> Application " ];
+211 [label="Developer" shape=box];
+212 [label="{<f0> 1.0|<f1> Written A Site Is Compliant With Css }" shape=Mrecord];
+213 [label="{<f0> 2.0|<f1> Written A Site Is Compliant With Xhtml Standards }" shape=Mrecord];
+214 [label="{<f0> 3.0|<f1> Created Database Indexes }" shape=Mrecord];
+215 [label="{<f0> 4.0|<f1> Have The Application Function In Internet Explorer }" shape=Mrecord];
+216 [label="{<f0> 5.0|<f1> Have The Function In 7 }" shape=Mrecord];
+217 [label="{<f0> 6.0|<f1> Have }" shape=Mrecord];
+218 [label="{<f0> 7.0|<f1> Have A List Of Definitions For Commonly Used Terms }" shape=Mrecord];
+211 -> 212
+211 -> 213
+211 -> 214
+211 -> 215
+211 -> 216
+211 -> 218
+212 -> 200 [label="Css"]
+212 -> 202 [label="Site"]
+213 -> 202 [label="Site"]
+213 -> 201 [label="Xhtml Standard"]
+214 -> 208 [label="Database Index"]
+215 -> 205 [label="Internet Explorer"]
+215 -> 204 [label="Function"]
+216 -> 204 [label="Function"]
+216 -> 203 [label="7"]
+218 -> 206 [label="Definition"]
+218 -> 207 [label="Use Term"]
+215 -> 210 [label="Application"]
+}

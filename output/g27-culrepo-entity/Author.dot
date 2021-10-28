@@ -1,0 +1,57 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Work " color=red];
+201 [label="<f0>  |<f1> Author " color=red];
+202 [label="<f0>  |<f1> Update " ];
+203 [label="<f0>  |<f1> Sortable Spot " ];
+204 [label="<f0>  |<f1> Particular Author " ];
+205 [label="<f0>  |<f1> Subject Area " color=red];
+206 [label="<f0>  |<f1> Content " color=red];
+207 [label="<f0>  |<f1> Need Resource " ];
+208 [label="<f0>  |<f1> Material " color=red];
+209 [label="<f0>  |<f1> Repository " ];
+210 [label="<f0>  |<f1> Behalf " color=red];
+211 [label="Researcher" shape=box];
+212 [label="Academicresearcher" shape=box];
+213 [label="Patron" shape=box];
+214 [label="Library , Staff Member" shape=box];
+215 [label="{<f0> 1.0|<f1> Contact The Author Of A Work Interests }" shape=Mrecord];
+216 [label="{<f0> 2.0|<f1> Receive Updates }" shape=Mrecord];
+217 [label="{<f0> 3.0|<f1> Find The Works Of A Particular Author In Easily Sortable Spot }" shape=Mrecord];
+218 [label="{<f0> 4.0|<f1> Locate Needed Resources }" shape=Mrecord];
+219 [label="{<f0> 5.0|<f1> Browse Content By Subject Area }" shape=Mrecord];
+220 [label="{<f0> 6.0|<f1> Browse Content By Author }" shape=Mrecord];
+221 [label="{<f0> 7.0|<f1> Upload Material To The Repository On The Author's Behalf }" shape=Mrecord];
+8 [label="{<f0> 8.0|<f1> Learn more about my research. }" shape=Mrecord];
+215 -> 8
+1001 [label="Researcher," shape=box];
+1001 -> 8
+1003 [label="Researcher," shape=box];
+1003 -> 8
+1005 [label="Researcher," shape=box];
+1005 -> 8
+1007 [label="<f0>  |<f1> Research " color=red];
+8 -> 1007 [label="Research"]
+211 -> 215
+211 -> 216
+212 -> 217
+213 -> 218
+213 -> 219
+213 -> 220
+214 -> 221
+215 -> 201 [label="Author"]
+215 -> 200 [label="Work"]
+216 -> 202 [label="Update"]
+217 -> 204 [label="Particular Author"]
+217 -> 203 [label="Sortable Spot"]
+217 -> 200 [label="Work"]
+218 -> 207 [label="Need Resource"]
+219 -> 205 [label="Subject Area"]
+219 -> 206 [label="Content"]
+220 -> 218
+220 -> 206 [label="Content"]
+220 -> 201 [label="Author"]
+221 -> 208 [label="Material"]
+221 -> 209 [label="Repository"]
+221 -> 210 [label="Behalf"]
+}

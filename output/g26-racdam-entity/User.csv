@@ -1,0 +1,42 @@
+id,value,style,source,target,type
+8,Track use of assets.,ellipse,null,null,process
+9,Group users by role.,ellipse,null,null,process
+200,Particular User,shape=partialRectangle,null,null,data_base
+201,Right,shape=partialRectangle,null,null,data_base
+202,Role,shape=partialRectangle,null,null,data_base
+203,User Group,shape=partialRectangle,null,null,data_base
+204,Directory Credential,shape=partialRectangle,null,null,data_base
+205,User,shape=partialRectangle,null,null,data_base
+206,Archivist,rounded=0,null,null,external_entity
+207,Administrator,rounded=0,null,null,external_entity
+208,See,ellipse,null,null,process
+209,Create User Roles,ellipse,null,null,process
+210,Assign Rights To User Groups,ellipse,null,null,process
+211,Assign Rights To Role,ellipse,null,null,process
+212,Allow,ellipse,null,null,process
+213,Using Active Directory Credentials,ellipse,null,null,process
+214,Log,ellipse,null,null,process
+216,,endArrow=classic,207,209,endArrow=classic
+217,,endArrow=classic,207,210,endArrow=classic
+218,,endArrow=classic,207,211,endArrow=classic
+219,,endArrow=classic,207,212,endArrow=classic
+220,,endArrow=classic,207,213,endArrow=classic
+221,,endArrow=classic,207,214,endArrow=classic
+222,Role,endArrow=classic,209,202,endArrow=classic
+223,Right,endArrow=classic,210,201,endArrow=classic
+224,User Group,endArrow=classic,210,203,endArrow=classic
+225,Role,endArrow=classic,211,202,endArrow=classic
+226,Right,endArrow=classic,211,201,endArrow=classic
+227,,endArrow=classic,212,213,endArrow=classic
+228,,endArrow=classic,213,214,endArrow=classic
+229,Directory Credential,endArrow=classic,213,204,endArrow=classic
+238,User,endArrow=classic,209,205,endArrow=classic
+1000,,endArrow=classic,206,8,endArrow=classic
+1001,"Archivist,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,8,endArrow=classic
+1003,Use of assets,rounded=0,null,null,external_entity
+1004,Use of assets,endArrow=classic,8,1003,endArrow=classic
+1005,Administrator,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,9,endArrow=classic
+1007,,endArrow=classic,209,9,endArrow=classic
+1008,Role,endArrow=classic,9,202,endArrow=classic

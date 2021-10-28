@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As an NSF member of the team, I want to have a place where I can access all the related reports and documentation, so that I can refer to it easily now and in the future.",
+    "entities": [
+      {
+        "text": "NSF member",
+        "label": "Data"
+      },
+      {
+        "text": "team",
+        "label": "Data"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "related reports",
+        "label": "PII"
+      },
+      {
+        "text": "documentation",
+        "label": "PII"
+      },
+      {
+        "text": "refer",
+        "label": "Processing"
+      }
+    ]
+  }
+]

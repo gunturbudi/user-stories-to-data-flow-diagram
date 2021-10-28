@@ -1,0 +1,24 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Profile" as thingprofile
+	entity "Upcoming Class" as thingupcomingclass
+	entity "Link" as thinglink
+	entity "Detailed Page" as thingdetailedpage
+	actor "Trainer" as actortrainer
+	boundary "Profile\nInterface" as thingprofileinterface #grey
+	control "Include A\nLink To\nA Detailed\nPage About\nEach" as controlincludelink #grey
+	control "List Upcoming\nClasses In\nProfile" as controllistupcomingclassprofile
+
+	thingprofile <.. thingupcomingclass
+	thingdetailedpage <.. thinglink
+	actortrainer --- thingprofileinterface
+	thinglink --- controlincludelink
+	thingdetailedpage --- controlincludelink
+	thingupcomingclass --- controllistupcomingclassprofile
+	thingprofile --- controllistupcomingclassprofile
+	thingprofileinterface --> controllistupcomingclassprofile
+
+@enduml

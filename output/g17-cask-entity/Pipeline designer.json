@@ -1,0 +1,15 @@
+[
+  {
+    "text": "As a pipeline designer, I want to get a meaningful error message when pipeline creation fails when I use an existing dataset as a sink or source, so that I know that the schema or any other property of the dataset is incompatible with what the pipeline requires.",
+    "entities": [
+      {
+        "text": "pipeline designer",
+        "label": "Data"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

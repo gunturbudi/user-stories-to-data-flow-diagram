@@ -1,0 +1,94 @@
+[
+  {
+    "text": "As a ResearcherGovernment Publisher, I want to add general reference data to my narrow dataset, so that my dataset is more useful.",
+    "entities": [
+      {
+        "text": "ResearcherGovernment Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "narrow dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherGovernment Publisher, I want to add general country names to my dataset that only contains country codes, so that my dataset is more readable.",
+    "entities": [
+      {
+        "text": "ResearcherGovernment Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "country names",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherGovernment Publisher, I want to add reference data on inflation to my spending dataset, so that the spending lines in my dataset is more understandable.",
+    "entities": [
+      {
+        "text": "ResearcherGovernment Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "spending dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a ResearcherGovernment Publisher, I want to map lines in my dataset using geographic data in my dataset, so that my dataset is more engaging for non-technical users.",
+    "entities": [
+      {
+        "text": "ResearcherGovernment Publisher",
+        "label": "Data"
+      },
+      {
+        "text": "map lines",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Colour" as thingcolour
+	entity "Regular User" as thingregularuser
+	entity "Access" as thingaccess
+	entity "System" as thingsystem
+	entity "Worm" as thingworm
+	entity "Way" as thingway
+	entity "Web Interface\nGraphic" as thingwebinterfacegraphic
+	entity "Page Template" as thingpagetemplate
+	entity "Metadata Field" as thingmetadatafield
+	actor "Lab Administrator" as actorlabadministrator
+	boundary "Graphic\nInterface" as thinggraphicinterface #grey
+	boundary "Colour\nInterface" as thingcolourinterface #grey
+	boundary "System\nInterface" as thingsysteminterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	boundary "Field\nInterface" as thingfieldinterface #grey
+	boundary "Worm\nInterface" as thingworminterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	control "Theme The\nWeb Interface\nGraphics" as controlthemewebinterfacegraphics
+	control "Theme Colour" as controlthemecolour
+	control "Increased Access\nTo The\nSystem" as controlincreaseaccesssupportregularuser
+	control "Support Regular\nUsers" as controlsupportregularuser
+	control "Create Page\nTemplates With\nBespoke Metadata\nFields" as controlcreatepagetemplates
+	control "Managing Worm" as controlmanageprovidewayworm
+	control "Provided With\nA Way" as controlprovideway
+
+	thingsystem <.. thingaccess
+	thingmetadatafield <.. thingpagetemplate
+	actorlabadministrator --- thinggraphicinterface
+	actorlabadministrator --- thingcolourinterface
+	actorlabadministrator --- thingsysteminterface
+	actorlabadministrator --- thinguserinterface
+	actorlabadministrator --- thingfieldinterface
+	actorlabadministrator --- thingworminterface
+	actorlabadministrator --- thingwayinterface
+	thingwebinterfacegraphic --- controlthemewebinterfacegraphics
+	thinggraphicinterface --> controlthemewebinterfacegraphics
+	thingcolour --- controlthemecolour
+	thingcolourinterface --> controlthemecolour
+	thingaccess --- controlincreaseaccesssupportregularuser
+	thingsystem --- controlincreaseaccesssupportregularuser
+	thingsysteminterface --> controlincreaseaccesssupportregularuser
+	controlincreaseaccesssupportregularuser --> controlsupportregularuser
+	thingregularuser --- controlsupportregularuser
+	thinguserinterface --> controlsupportregularuser
+	thingpagetemplate --- controlcreatepagetemplates
+	thingmetadatafield --- controlcreatepagetemplates
+	thingfieldinterface --> controlcreatepagetemplates
+	thingworm --- controlmanageprovidewayworm
+	thingworminterface --> controlmanageprovidewayworm
+	controlmanageprovidewayworm --> controlprovideway
+	thingway --- controlprovideway
+	thingwayinterface --> controlprovideway
+
+@enduml

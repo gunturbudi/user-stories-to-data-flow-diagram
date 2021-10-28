@@ -1,0 +1,23 @@
+[
+  {
+    "text": "As a sponsor, I want to link BADCamp attendees to my sponsorship page, so that I can show off our level of attendance.",
+    "entities": [
+      {
+        "text": "sponsor",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "BADCamp attendees",
+        "label": "Data"
+      },
+      {
+        "text": "sponsorship page",
+        "label": "PII"
+      }
+    ]
+  }
+]

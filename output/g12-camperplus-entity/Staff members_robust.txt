@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Different Position" as thingdifferentposition
+	entity "Staff Member" as thingstaffmember
+	actor "Camp Administrator" as actorcampadministrator
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	control "Assign Different\nPositions To\nThe Staff\nMembers" as controlassigndifferentpositionstaffmembers
+
+	thingstaffmember <.. thingdifferentposition
+	actorcampadministrator --- thingmemberinterface
+	thingdifferentposition --- controlassigndifferentpositionstaffmembers
+	thingstaffmember --- controlassigndifferentpositionstaffmembers
+	thingmemberinterface --> controlassigndifferentpositionstaffmembers
+
+@enduml

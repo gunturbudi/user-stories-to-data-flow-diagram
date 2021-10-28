@@ -1,0 +1,106 @@
+id,value,style,source,target,type
+200,Symplectic Element,shape=partialRectangle,null,null,data_base
+201,Fedora Connector,shape=partialRectangle,null,null,data_base
+202,Ddr,shape=partialRectangle,null,null,data_base
+203,Object,shape=partialRectangle,null,null,data_base
+204,Hydra,shape=partialRectangle,null,null,data_base
+205,Emory,shape=partialRectangle,null,null,data_base
+206,Selection,shape=partialRectangle,null,null,data_base
+207,Submitter,shape=partialRectangle,null,null,data_base
+208,Collection,shape=partialRectangle,null,null,data_base
+209,Specific License,shape=partialRectangle,null,null,data_base
+210,License,shape=partialRectangle,null,null,data_base
+211,Deposit,shape=partialRectangle,null,null,data_base
+212,Metadata,shape=partialRectangle,null,null,data_base
+213,Item,shape=partialRectangle,null,null,data_base
+214,Access,shape=partialRectangle,null,null,data_base
+215,Server,shape=partialRectangle,null,null,data_base
+216,Repository,shape=partialRectangle,null,null,data_base
+217,Event,shape=partialRectangle,null,null,data_base
+218,Sla,shape=partialRectangle,null,null,data_base
+219,Public Interface,shape=partialRectangle,null,null,data_base
+220,Fedora Instance,shape=partialRectangle,null,null,data_base
+221,Oai Pmh,shape=partialRectangle,null,null,data_base
+222,Data Contributor,shape=partialRectangle,null,null,data_base
+223,Data Interface,shape=partialRectangle,null,null,data_base
+224,Repoadmin,rounded=0,null,null,external_entity
+225,Integrate With Ddr Provide A Fedora Connector,ellipse,null,null,process
+226,Integrate With Ddr Provide Emory,ellipse,null,null,process
+227,Have Bidirectionally Symplectic Elements,ellipse,null,null,process
+228,Have,ellipse,null,null,process
+229,Denied,ellipse,null,null,process
+230,Presented With A Selection Of Specific Licenses To Deposit,ellipse,null,null,process
+231,Presented With A Selection Of Specific Licenses To The Collection,ellipse,null,null,process
+232,The Submitter Not Accept The License,ellipse,null,null,process
+233,Presented With A License,ellipse,null,null,process
+234,Expose Repository Contents Via Oai Pmh,ellipse,null,null,process
+235,Continue,ellipse,null,null,process
+236,Provide Access To The Repository In The Event That The Server Fails,ellipse,null,null,process
+237,Provide The Server To Data Contributors,ellipse,null,null,process
+238,Provide Sla,ellipse,null,null,process
+239,Disrupting Access To The Public Interface,ellipse,null,null,process
+240,Update The Repository Index,ellipse,null,null,process
+241,Provide A Linked Data Interface To The Repository,ellipse,null,null,process
+242,Communicate,ellipse,null,null,process
+243,Have Symplectic Elements,ellipse,null,null,process
+245,,endArrow=classic,224,225,endArrow=classic
+246,,endArrow=classic,224,226,endArrow=classic
+247,,endArrow=classic,224,227,endArrow=classic
+248,,endArrow=classic,224,228,endArrow=classic
+249,,endArrow=classic,224,228,endArrow=classic
+250,,endArrow=classic,224,229,endArrow=classic
+251,,endArrow=classic,224,230,endArrow=classic
+252,,endArrow=classic,224,231,endArrow=classic
+253,,endArrow=classic,224,232,endArrow=classic
+254,,endArrow=classic,224,233,endArrow=classic
+255,,endArrow=classic,224,234,endArrow=classic
+256,,endArrow=classic,224,235,endArrow=classic
+257,,endArrow=classic,224,236,endArrow=classic
+258,,endArrow=classic,224,237,endArrow=classic
+259,,endArrow=classic,224,238,endArrow=classic
+260,,endArrow=classic,224,239,endArrow=classic
+261,,endArrow=classic,224,240,endArrow=classic
+262,,endArrow=classic,224,241,endArrow=classic
+263,,endArrow=classic,224,242,endArrow=classic
+264,,endArrow=classic,224,243,endArrow=classic
+265,Ddr,endArrow=classic,225,202,endArrow=classic
+266,Fedora Connector,endArrow=classic,225,201,endArrow=classic
+267,Emory,endArrow=classic,226,205,endArrow=classic
+268,Ddr,endArrow=classic,226,202,endArrow=classic
+269,Symplectic Element,endArrow=classic,227,200,endArrow=classic
+270,,endArrow=classic,228,225,endArrow=classic
+271,,endArrow=classic,228,226,endArrow=classic
+272,,endArrow=classic,228,230,endArrow=classic
+273,,endArrow=classic,228,231,endArrow=classic
+274,,endArrow=classic,228,233,endArrow=classic
+275,Ddr,endArrow=classic,228,202,endArrow=classic
+276,Specific License,endArrow=classic,228,209,endArrow=classic
+277,Selection,endArrow=classic,228,206,endArrow=classic
+278,,endArrow=classic,229,232,endArrow=classic
+279,Deposit,endArrow=classic,230,211,endArrow=classic
+280,Specific License,endArrow=classic,230,209,endArrow=classic
+281,Selection,endArrow=classic,230,206,endArrow=classic
+282,Selection,endArrow=classic,231,206,endArrow=classic
+283,Specific License,endArrow=classic,231,209,endArrow=classic
+284,Collection,endArrow=classic,231,208,endArrow=classic
+285,Submitter,endArrow=classic,232,207,endArrow=classic
+286,License,endArrow=classic,232,210,endArrow=classic
+287,,endArrow=classic,233,229,endArrow=classic
+288,License,endArrow=classic,233,210,endArrow=classic
+289,Oai Pmh,endArrow=classic,234,221,endArrow=classic
+290,,endArrow=classic,235,236,endArrow=classic
+291,Access,endArrow=classic,236,214,endArrow=classic
+292,Repository,endArrow=classic,236,216,endArrow=classic
+293,Event,endArrow=classic,236,217,endArrow=classic
+294,Server,endArrow=classic,236,215,endArrow=classic
+295,Data Contributor,endArrow=classic,237,222,endArrow=classic
+296,Server,endArrow=classic,237,215,endArrow=classic
+297,Sla,endArrow=classic,238,218,endArrow=classic
+298,,endArrow=classic,239,240,endArrow=classic
+299,Public Interface,endArrow=classic,239,219,endArrow=classic
+300,Access,endArrow=classic,239,214,endArrow=classic
+301,Repository,endArrow=classic,240,216,endArrow=classic
+302,Data Interface,endArrow=classic,241,223,endArrow=classic
+303,Repository,endArrow=classic,241,216,endArrow=classic
+304,,endArrow=classic,243,242,endArrow=classic
+305,Symplectic Element,endArrow=classic,243,200,endArrow=classic

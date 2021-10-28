@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As a Repository Manager, I want a tool that makes it easy for researchers/ users to add basic metadata to their research data, so that it is more findable and therefore useful.",
+    "entities": [
+      {
+        "text": "Repository Manager",
+        "label": "Data"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      },
+      {
+        "text": "add",
+        "label": "Processing"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "research data",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "As an administrator, I want to know who funded the project and their requirements, so that I can track the funder specific obligations.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "know",
+        "label": "Processing"
+      },
+      {
+        "text": "who funded",
+        "label": "PII"
+      },
+      {
+        "text": "requirements",
+        "label": "PII"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As an administrator, I want to check that all data has the appropriate security level, so that I can demonstrate compliance.",
+    "entities": [
+      {
+        "text": "administrator,",
+        "label": "Data"
+      },
+      {
+        "text": "check",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  }
+]

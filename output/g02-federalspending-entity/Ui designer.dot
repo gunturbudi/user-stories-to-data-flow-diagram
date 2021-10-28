@@ -1,0 +1,41 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Resources Page " ];
+201 [label="<f0>  |<f1> Agency " color=red];
+202 [label="<f0>  |<f1> User Testing " color=red];
+203 [label="<f0>  |<f1> Edit " color=red];
+204 [label="<f0>  |<f1> Issue " color=red];
+205 [label="<f0>  |<f1> Tech " ];
+206 [label="<f0>  |<f1> Landing Page " ];
+207 [label="Ui Designer" shape=box];
+208 [label="{<f0> 1.0|<f1> Redesign The Resources Page }" shape=Mrecord];
+209 [label="{<f0> 2.0|<f1> Report To The Agencies About User Testing }" shape=Mrecord];
+210 [label="{<f0> 3.0|<f1> Move On Landing Page Edits }" shape=Mrecord];
+211 [label="{<f0> 4.0|<f1> Move On }" shape=Mrecord];
+212 [label="{<f0> 5.0|<f1> Round 3 Of }" shape=Mrecord];
+213 [label="{<f0> 6.0|<f1> Page Edits }" shape=Mrecord];
+214 [label="{<f0> 7.0|<f1> Track The Issues Thursday Come Up In Tech }" shape=Mrecord];
+215 [label="{<f0> 8.0|<f1> Begin User Testing }" shape=Mrecord];
+216 [label="{<f0> 9.0|<f1> Schedule User Testing }" shape=Mrecord];
+207 -> 208
+207 -> 209
+207 -> 210
+207 -> 211
+207 -> 212
+207 -> 213
+207 -> 214
+207 -> 215
+207 -> 216
+208 -> 200 [label="Resources Page"]
+209 -> 201 [label="Agency"]
+209 -> 202 [label="User Testing"]
+210 -> 203 [label="Edit"]
+211 -> 212
+212 -> 213
+213 -> 203 [label="Edit"]
+214 -> 204 [label="Issue"]
+214 -> 205 [label="Tech"]
+215 -> 202 [label="User Testing"]
+216 -> 202 [label="User Testing"]
+210 -> 206 [label="Landing Page"]
+}

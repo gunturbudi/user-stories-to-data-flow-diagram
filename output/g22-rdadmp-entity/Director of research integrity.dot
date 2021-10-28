@@ -1,0 +1,35 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Project " color=red];
+201 [label="<f0>  |<f1> Detail " ];
+202 [label="<f0>  |<f1> Sensitive " ];
+203 [label="<f0>  |<f1> Datum " ];
+204 [label="<f0>  |<f1> Research " color=red];
+205 [label="Research Integrity" shape=box];
+206 [label="Director" shape=box];
+207 [label="{<f0> 1.0|<f1> Contain Details Of Research Projects In Which Data Sensitive Classified }" shape=Mrecord];
+208 [label="{<f0> 2.0|<f1> Access }" shape=Mrecord];
+209 [label="{<f0> 3.0|<f1> Contain Details Of Projects Highly Sensitive }" shape=Mrecord];
+4 [label="{<f0> 4.0|<f1> Confirm security protocols are applied to these data. }" shape=Mrecord];
+1000 [label="Director of research integrity," shape=box];
+1000 -> 4
+1002 [label="Director of research integrity," shape=box];
+1002 -> 4
+1004 [label="<f0>  |<f1> Data " color=red];
+4 -> 1004 [label="Data"]
+205 -> 207
+205 -> 208
+205 -> 209
+206 -> 207
+206 -> 208
+206 -> 209
+207 -> 201 [label="Detail"]
+207 -> 203 [label="Datum"]
+207 -> 200 [label="Project"]
+208 -> 207
+208 -> 209
+209 -> 200 [label="Project"]
+209 -> 202 [label="Sensitive"]
+209 -> 201 [label="Detail"]
+207 -> 204 [label="Research"]
+}

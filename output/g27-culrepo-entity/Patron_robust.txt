@@ -1,0 +1,205 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Report" as thingreport
+	entity "New Version" as thingnewversion
+	entity "Time" as thingtime
+	entity "Old Format" as thingoldformat
+	entity "Multiple Format" as thingmultipleformat
+	entity "Content" as thingcontent
+	entity "Partial Title" as thingpartialtitle
+	entity "Complete" as thingcomplete
+	entity "Keyword" as thingkeyword
+	entity "Need Report" as thingneededreport
+	entity "Need Resource" as thingneededresource
+	entity "Subject Area" as thingsubjectarea
+	entity "Author" as thingauthor
+	entity "Historical" as thinghistorical
+	entity "Timely Information" as thingtimelyinformation
+	entity "Related ,\nInformation" as thingrelatedotherinformation
+	entity "Version" as thinglastversion #grey
+	entity "Previous Range" as thingpreviousrange #grey
+	entity "Personal Account" as thingpersonalaccount
+	entity "Email Notification" as thingemailnotification #grey
+	entity "Calendar" as thingowncalendar
+	entity "Issue" as thingissue
+	entity "System Provider" as thingsystemprovider #grey
+	entity "Question" as thingquestion
+	entity "Lotus Work" as thinglotuswork
+	entity "Publication Date\nRange" as thingpublicationdaterange
+	entity "Name" as thingname #grey
+	actor "Patron" as actorpatron
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	circle "Multiple Version" as thingmultipleversion
+	circle "S" as things #grey
+	circle "Release Calendar" as thingreleasecalendar #grey
+	circle "Change" as thingchange #grey
+	boundary "Dataset" as thingdataset
+	boundary "Purpose" as thingpurposefindrelatedotherinformationpatron #grey
+	boundary "Version\nInterface" as thingversioninterface #grey
+	boundary "Dataset\nInterface" as thingdatasetinterface #grey
+	boundary "Work\nInterface" as thingworkinterface #grey
+	boundary "Title\nInterface" as thingtitleinterface #grey
+	boundary "Report\nInterface" as thingreportinterface #grey
+	boundary "Keyword\nInterface" as thingkeywordinterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	boundary "Area\nInterface" as thingareainterface #grey
+	boundary "Author\nInterface" as thingauthorinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Historical\nInterface" as thinghistoricalinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	boundary "Provider\nInterface" as thingproviderinterface #grey
+	boundary "Question\nInterface" as thingquestioninterface #grey
+	control "Know" as controlknow
+	control "Select Reports\nTo Emailed\nPossibly Many\nAt Time\nNew Versions\nWhen Are\nAvailable" as controlselectreportmany
+	control "Select Dataset" as controlselectdataset
+	control "Deselect Dataset" as controldeselectdataset
+	control "Deselect Reports\nTo Emailed\nPossibly Many\nAt Time\nNew Versions\nWhen Are\nAvailable" as controldeselectreportmanytime
+	control "View Content\nIn Multiple\nFormats Including\nOld Formats\nSuch As\nLotus Works" as controlviewcontent
+	control "Upload Content\nIn Multiple\nFormats Including\nOld Formats\nSuch As\nLotus Works" as controluploadcontent #grey
+	control "Locate Dataset" as controllocatedataset
+	control "Search For\nDataset With\nA Partial\nTitle" as controlsearchdatasetpartialtitlelocatelocatedataset
+	control "Locate Needed\nReport" as controllocateneededreport
+	control "Search For\nReport" as controlsearchreport
+	control "Search For\nDataset With\nComplete" as controlsearchdatasetcomplete
+	control "Search For\nDataset With\nKeywords" as controlsearchdataset
+	control "Locate Needed\nResources" as controllocateneededresource
+	control "Browse Content\nBy Subject\nArea" as controlbrowsecontentsubjectarea
+	control "Browse Content\nBy Author" as controlbrowsecontentlocateneededresource
+	control "View Multiple\nVersions Of\nA Report" as controlviewmultipleversion
+	control "Dataset" as controldatasetgetgethistorical
+	control "Get Timely\nInformation" as controlgettimelyinformation
+	control "Get Historical" as controlgethistorical
+	control "Know Other\nReport S" as controlknowotherreports
+	control "Report" as controlreport
+	control "Find Related,\nOther Information" as controlfindrelatedotherinformation
+	control "Viewed For" as controlviewpurposefindrelatedotherinformationpatron
+	control "Know Other\nDataset S\nE.G. Also\nRelated" as controlknowotherdatasets
+	control "Request Email\nNotification" as controlrequestemailnotification
+	control "Create A\nPersonal Account" as controlcreatepersonalaccountrequestemailnotification
+	control "Download Dataset\nRelease Calendar" as controldownloaddatasetreleasecalendar
+	control "Load Into\nOwn Calendar" as controlloadowncalendar
+	control "Download Report" as controldownloadreportloadowncalendar
+	control "Report Issues" as controlreportissue
+	control "Email System\nProvider" as controlemailsystemproviderreportissue
+	control "Ask Questions" as controlaskquestion
+	control "Manage Report" as controlmanagereport
+	control "Manage Name\nDataset Change" as controlmanagenamedatasetchange
+
+	thingtime <.. thingreport
+	thingnewversion <.. thingtime
+	thinglotuswork <.. thingoldformat
+	thingoldformat <.. thingmultipleformat
+	thingmultipleformat <.. thingcontent
+	thingauthor <.. thingcontent
+	thingsubjectarea <.. thingcontent
+	thinglastversion <.. thingpreviousrange
+	thingreport *-- thingmultipleversion
+	thingreport *-- things
+	actorpatron --- thingdataset
+	actordb --- thingdataset
+	actoriradministrator --- thingdataset
+	actorpatron --- thingpurposefindrelatedotherinformationpatron
+	actorpatron --- thingversioninterface
+	actorpatron --- thingworkinterface
+	actorpatron --- thingreportinterface
+	actordb --- thingreportinterface
+	actoriradministrator --- thingreportinterface
+	actorpatron --- thingresourceinterface
+	actorpatron --- thingareainterface
+	actorpatron --- thingauthorinterface
+	actorpatron --- thinginformationinterface
+	actorpatron --- thinghistoricalinterface
+	actorpatron --- thingaccountinterface
+	actorpatron --- thingproviderinterface
+	actorpatron --- thingquestioninterface
+	thingtime --- controlselectreportmany
+	thingnewversion --- controlselectreportmany
+	thingversioninterface --> controlselectreportmany
+	thingreport --- controlselectreportmany
+	thingdataset --> controlselectdataset
+	thingdataset --> controldeselectdataset
+	thingreport --- controldeselectreportmanytime
+	thingnewversion --- controldeselectreportmanytime
+	thingtime --- controldeselectreportmanytime
+	thingversioninterface --> controldeselectreportmanytime
+	thingcontent --- controlviewcontent
+	thingmultipleformat --- controlviewcontent
+	thingoldformat --- controlviewcontent
+	thingworkinterface --> controlviewcontent
+	thinglotuswork --- controlviewcontent
+	thinglotuswork --- controluploadcontent
+	thingoldformat --- controluploadcontent
+	thingmultipleformat --- controluploadcontent
+	thingcontent --- controluploadcontent
+	controlsearchdatasetpartialtitlelocatelocatedataset --> controllocatedataset
+	thingdataset --> controllocatedataset
+	thingpartialtitle --- controlsearchdatasetpartialtitlelocatelocatedataset
+	thingdataset --> controlsearchdatasetpartialtitlelocatelocatedataset
+	thingneededreport --- controllocateneededreport
+	thingdataset --> controllocateneededreport
+	controlsearchdatasetpartialtitlelocatelocatedataset --> controllocateneededreport
+	thingreportinterface --> controlsearchreport
+	thingreport --- controlsearchreport
+	thingcomplete --- controlsearchdatasetcomplete
+	thingdataset --> controlsearchdatasetcomplete
+	thingkeyword --- controlsearchdataset
+	thingdataset --> controlsearchdataset
+	thingneededresource --- controllocateneededresource
+	thingresourceinterface --> controllocateneededresource
+	controlbrowsecontentlocateneededresource --> controllocateneededresource
+	thingsubjectarea --- controlbrowsecontentsubjectarea
+	thingareainterface --> controlbrowsecontentsubjectarea
+	thingcontent --- controlbrowsecontentsubjectarea
+	thingauthor --- controlbrowsecontentlocateneededresource
+	thingauthorinterface --> controlbrowsecontentlocateneededresource
+	thingcontent --- controlbrowsecontentlocateneededresource
+	thingmultipleversion --- controlviewmultipleversion
+	thingreport --- controlviewmultipleversion
+	thingreportinterface --> controlviewmultipleversion
+	thinginformationinterface --> controldatasetgetgethistorical
+	thingdataset --> controldatasetgetgethistorical
+	controlknowotherdatasets --> controldatasetgetgethistorical
+	thingtimelyinformation --- controlgettimelyinformation
+	thinginformationinterface --> controlgettimelyinformation
+	controldatasetgetgethistorical --> controlgettimelyinformation
+	controldatasetgetgethistorical --> controlgethistorical
+	thinghistorical --- controlgethistorical
+	thinghistoricalinterface --> controlgethistorical
+	things --- controlknowotherreports
+	thingreportinterface --> controlknowotherreports
+	controlviewpurposefindrelatedotherinformationpatron --> controlfindrelatedotherinformation
+	thingrelatedotherinformation --- controlfindrelatedotherinformation
+	thingpurposefindrelatedotherinformationpatron --> controlfindrelatedotherinformation
+	thingpurposefindrelatedotherinformationpatron --> controlviewpurposefindrelatedotherinformationpatron
+	controldatasetgetgethistorical --> controlviewpurposefindrelatedotherinformationpatron
+	things --- controlknowotherdatasets
+	thingdataset --> controlknowotherdatasets
+	thingemailnotification --- controlrequestemailnotification
+	controlcreatepersonalaccountrequestemailnotification --> controlrequestemailnotification
+	thingaccountinterface --> controlrequestemailnotification
+	thingpersonalaccount --- controlcreatepersonalaccountrequestemailnotification
+	thingaccountinterface --> controlcreatepersonalaccountrequestemailnotification
+	thingreleasecalendar --- controldownloaddatasetreleasecalendar
+	thingdataset --> controldownloaddatasetreleasecalendar
+	thingowncalendar --- controlloadowncalendar
+	controldownloadreportloadowncalendar --> controlloadowncalendar
+	thingreportinterface --> controlloadowncalendar
+	thingreport --- controldownloadreportloadowncalendar
+	thingreportinterface --> controldownloadreportloadowncalendar
+	thingissue --- controlreportissue
+	controlemailsystemproviderreportissue --> controlreportissue
+	thingproviderinterface --> controlreportissue
+	thingsystemprovider --- controlemailsystemproviderreportissue
+	thingproviderinterface --> controlemailsystemproviderreportissue
+	thingquestion --- controlaskquestion
+	thingquestioninterface --> controlaskquestion
+	thingreport --- controlmanagereport
+	thingreportinterface --> controlmanagereport
+	thingchange --- controlmanagenamedatasetchange
+	thingdataset --> controlmanagenamedatasetchange
+
+@enduml

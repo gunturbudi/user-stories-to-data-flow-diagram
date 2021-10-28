@@ -1,0 +1,167 @@
+[
+  {
+    "text": "As a repository manager, I want to track who is financially responsible for each item in the repository, who should probably be a person contact including name, phone, email, maybe title and address.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "who is financially",
+        "label": "PII"
+      },
+      {
+        "text": "contact",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      },
+      {
+        "text": "phone",
+        "label": "PII"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "address",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to be able t run a report periodically showing the storage consumed by each financial contact.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "run",
+        "label": "Processing"
+      },
+      {
+        "text": "financial contact",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to specify the remote replication policy for each collection.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to elect to either replicate remotely or not and possibly to replicate beyond the primary remote site.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "replicate",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As repository manager, I want to view authenticated, active users and anonymous users.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "authenticated",
+        "label": "Data"
+      },
+      {
+        "text": "active users",
+        "label": "Data"
+      },
+      {
+        "text": "anonymous users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to schedule a message to users to be displayed on each page on the repository between select times for things like notification of upcoming downtime.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "schedule",
+        "label": "Processing"
+      },
+      {
+        "text": "message",
+        "label": "PII"
+      },
+      {
+        "text": "users",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to see a display of recent errors deduplicated for easy comprehension like Symplectic Elements provides.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to view a dashboard statistics about collections size including a list of collections, the number of items and components in each, total storage consumed by each collection, visualization of deposit activity.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a repository manager, I want to view available versions of an object and restore a version from the staff interface.",
+    "entities": [
+      {
+        "text": "repository manager",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "restore",
+        "label": "Processing"
+      }
+    ]
+  }
+]

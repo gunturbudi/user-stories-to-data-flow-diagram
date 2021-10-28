@@ -1,0 +1,50 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Public Dataset " color=red];
+201 [label="<f0>  |<f1> User " color=red];
+202 [label="<f0>  |<f1> Dataset " color=red];
+203 [label="<f0>  |<f1> View " ];
+204 [label="<f0>  |<f1> Platform Administrator " ];
+205 [label="<f0>  |<f1> Geojson ,\nAdditional Source " ];
+206 [label="<f0>  |<f1> Viewer " ];
+207 [label="<f0>  |<f1> Data Types\nHierarchy " color=red];
+208 [label="Platform Administrator" shape=box];
+209 [label="Datum , Publishing User" shape=box];
+210 [label="{<f0> 1.0|<f1> Hide Any Already Public Dataset }" shape=Mrecord];
+211 [label="{<f0> 2.0|<f1> Have A View On All Datasets All Users }" shape=Mrecord];
+212 [label="{<f0> 3.0|<f1> Delete Any Dataset }" shape=Mrecord];
+213 [label="{<f0> 4.0|<f1> Provide The Platform Administrator With Geojson, Additional Sources }" shape=Mrecord];
+214 [label="{<f0> 5.0|<f1> Translate The Data Types Hierarchies Of The Viewer }" shape=Mrecord];
+6 [label="{<f0> 6.0|<f1> Perform management actions on any dataset. }" shape=Mrecord];
+211 -> 6
+1001 [label="Platform administrator" shape=box];
+1001 -> 6
+6 -> 202  [label="Dataset"]
+7 [label="{<f0> 7.0|<f1> Clean up test datasets. }" shape=Mrecord];
+212 -> 7
+1005 [label="Platform administrator" shape=box];
+1005 -> 7
+1007 [label="<f0>  |<f1> Takedown requests " color=red];
+7 -> 1007 [label="Takedown requests"]
+8 [label="{<f0> 8.0|<f1> Improve the map-based visualisations of my data. }" shape=Mrecord];
+1009 [label="Data publishing user" shape=box];
+1009 -> 8
+1011 [label="Data publishing user" shape=box];
+1011 -> 8
+1013 [label="<f0>  |<f1> Data " color=red];
+8 -> 1013 [label="Data"]
+208 -> 210
+208 -> 211
+208 -> 212
+208 -> 214
+209 -> 213
+210 -> 200 [label="Public Dataset"]
+211 -> 203 [label="View"]
+211 -> 202 [label="Dataset"]
+212 -> 202 [label="Dataset"]
+213 -> 204 [label="Platform Administrator"]
+213 -> 205 [label="Geojson ,\nAdditional Source"]
+214 -> 207 [label="Data Types\nHierarchy"]
+214 -> 206 [label="Viewer"]
+211 -> 201 [label="User"]
+}

@@ -1,0 +1,79 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Specific Estimator " ];
+201 [label="<f0>  |<f1> Estimate " color=red];
+202 [label="<f0>  |<f1> Time " color=red];
+203 [label="<f0>  |<f1> Estimator " ];
+204 [label="<f0>  |<f1> Story " color=red];
+205 [label="<f0>  |<f1> Prior Estimate " color=red];
+206 [label="<f0>  |<f1> Current Round " ];
+207 [label="<f0>  |<f1> Participant " ];
+208 [label="<f0>  |<f1> Prior Round " ];
+209 [label="<f0>  |<f1> Card " color=red];
+210 [label="<f0>  |<f1> Order " ];
+211 [label="<f0>  |<f1> Multiple Draw " ];
+212 [label="<f0>  |<f1> Timer " ];
+213 [label="<f0>  |<f1> -pron- " ];
+214 [label="<f0>  |<f1> Thumbnail Photo " color=red];
+215 [label="<f0>  |<f1> Minute Countdown " ];
+216 [label="<f0>  |<f1> Minute " ];
+217 [label="Participant" shape=box];
+218 [label="{<f0> 1.0|<f1> See }" shape=Mrecord];
+219 [label="{<f0> 2.0|<f1> Shown All Estimates At The Same Time }" shape=Mrecord];
+220 [label="{<f0> 3.0|<f1> Change Estimate Up }" shape=Mrecord];
+221 [label="{<f0> 4.0|<f1> Start A Minute Countdown Timer That All Participants See }" shape=Mrecord];
+222 [label="{<f0> 5.0|<f1> Scroll Through Estimate }" shape=Mrecord];
+223 [label="{<f0> 6.0|<f1> Scroll Through The Stories From Prior Rounds }" shape=Mrecord];
+224 [label="{<f0> 7.0|<f1> Have The Cards In The Same Order Across Multiple Draws }" shape=Mrecord];
+225 [label="{<f0> 8.0|<f1> Have A Small Thumbnail Photo Cards Where Played }" shape=Mrecord];
+226 [label="{<f0> 9.0|<f1> Have }" shape=Mrecord];
+227 [label="{<f0> 10.0|<f1> The Timer Soon As Reset Itself All Play }" shape=Mrecord];
+228 [label="{<f0> 11.0|<f1> The Minute Timer Soon As Reset Play An Estimate }" shape=Mrecord];
+12 [label="{<f0> 12.0|<f1> Change my mind based on information i hear. }" shape=Mrecord];
+217 -> 12
+1001 [label="<f0>  |<f1> Mind " color=red];
+12 -> 1001 [label="Mind"]
+13 [label="{<f0> 13.0|<f1> Ask questions. }" shape=Mrecord];
+217 -> 13
+1004 [label="<f0>  |<f1> Opinion " color=red];
+13 -> 1004 [label="Opinion"]
+14 [label="{<f0> 14.0|<f1> Use this information when i estimate the item of the current round. }" shape=Mrecord];
+223 -> 14
+1007 [label="<f0>  |<f1> Information " color=red];
+14 -> 1007 [label="Information"]
+15 [label="{<f0> 15.0|<f1> Change my mind. }" shape=Mrecord];
+217 -> 15
+1010 [label="<f0>  |<f1> Mind " color=red];
+15 -> 1010 [label="Mind"]
+217 -> 219
+217 -> 220
+217 -> 221
+217 -> 222
+217 -> 223
+217 -> 224
+217 -> 225
+217 -> 226
+217 -> 227
+217 -> 228
+219 -> 202 [label="Time"]
+219 -> 201 [label="Estimate"]
+220 -> 201 [label="Estimate"]
+221 -> 207 [label="Participant"]
+221 -> 212 [label="Timer"]
+222 -> 201 [label="Estimate"]
+223 -> 208 [label="Prior Round"]
+223 -> 204 [label="Story"]
+224 -> 209 [label="Card"]
+224 -> 210 [label="Order"]
+224 -> 211 [label="Multiple Draw"]
+225 -> 214 [label="Thumbnail Photo"]
+225 -> 209 [label="Card"]
+227 -> 226
+227 -> 212 [label="Timer"]
+227 -> 213 [label="-pron-"]
+228 -> 226
+228 -> 201 [label="Estimate"]
+228 -> 212 [label="Timer"]
+221 -> 215 [label="Minute Countdown"]
+221 -> 216 [label="Minute"]
+}

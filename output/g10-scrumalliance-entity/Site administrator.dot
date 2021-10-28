@@ -1,0 +1,58 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Application " color=red];
+201 [label="<f0>  |<f1> Event " color=red];
+202 [label="<f0>  |<f1> Course " color=red];
+203 [label="<f0>  |<f1> Fee " color=red];
+204 [label="<f0>  |<f1> Practitioner " ];
+205 [label="<f0>  |<f1> Annual Fee " color=red];
+206 [label="<f0>  |<f1> Trainer " ];
+207 [label="<f0>  |<f1> Member " color=red];
+208 [label="<f0>  |<f1> Training " color=red];
+209 [label="<f0>  |<f1> Site " ];
+210 [label="<f0>  |<f1> Listing " color=red];
+211 [label="Site Administrator" shape=box];
+212 [label="{<f0> 1.0|<f1> Practicing }" shape=Mrecord];
+213 [label="{<f0> 2.0|<f1> Read Training Application }" shape=Mrecord];
+214 [label="{<f0> 3.0|<f1> Read }" shape=Mrecord];
+215 [label="{<f0> 4.0|<f1> Reject Applications }" shape=Mrecord];
+216 [label="{<f0> 5.0|<f1> Approve Applications }" shape=Mrecord];
+217 [label="{<f0> 6.0|<f1> Edit Any Site Member Profile }" shape=Mrecord];
+218 [label="{<f0> 7.0|<f1> Create Event }" shape=Mrecord];
+219 [label="{<f0> 8.0|<f1> Create An Other Course Not Charged A Listing Fee }" shape=Mrecord];
+220 [label="{<f0> 9.0|<f1> Set The Listing Fee Per Other Course }" shape=Mrecord];
+221 [label="{<f0> 10.0|<f1> Set The Fee Per Event }" shape=Mrecord];
+222 [label="{<f0> 11.0|<f1> Set The Annual Fees For Members }" shape=Mrecord];
+223 [label="{<f0> 12.0|<f1> Set The Annual Fees For Practitioner }" shape=Mrecord];
+224 [label="{<f0> 13.0|<f1> Set The Annual Fees For Trainer }" shape=Mrecord];
+211 -> 213
+211 -> 216
+211 -> 217
+211 -> 218
+211 -> 219
+211 -> 220
+211 -> 221
+211 -> 222
+211 -> 223
+211 -> 224
+213 -> 200 [label="Application"]
+214 -> 212
+215 -> 200 [label="Application"]
+216 -> 200 [label="Application"]
+218 -> 201 [label="Event"]
+219 -> 202 [label="Course"]
+219 -> 203 [label="Fee"]
+220 -> 202 [label="Course"]
+220 -> 203 [label="Fee"]
+221 -> 203 [label="Fee"]
+221 -> 201 [label="Event"]
+222 -> 205 [label="Annual Fee"]
+222 -> 207 [label="Member"]
+223 -> 204 [label="Practitioner"]
+223 -> 205 [label="Annual Fee"]
+224 -> 206 [label="Trainer"]
+224 -> 205 [label="Annual Fee"]
+213 -> 208 [label="Training"]
+217 -> 209 [label="Site"]
+219 -> 210 [label="Listing"]
+}

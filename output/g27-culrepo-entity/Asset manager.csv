@@ -1,0 +1,76 @@
+id,value,style,source,target,type
+200,Digital Copy,shape=partialRectangle,null,null,data_base
+201,Repository,shape=partialRectangle,null,null,data_base
+202,Redundant Copy,shape=partialRectangle,null,null,data_base
+203,Threat,shape=partialRectangle,null,null,data_base
+204,Copy,shape=partialRectangle,null,null,data_base
+205,Unwanted Change,shape=partialRectangle,null,null,data_base
+206,Original Object,shape=partialRectangle,null,null,data_base
+207,Change,shape=partialRectangle,null,null,data_base
+208,Asset,shape=partialRectangle,null,null,data_base
+209,Institution,shape=partialRectangle,null,null,data_base
+210,Deposit,shape=partialRectangle,null,null,data_base
+211,Mechanism,shape=partialRectangle,null,null,data_base
+212,Understanding,shape=partialRectangle,null,null,data_base
+213,Listing,shape=partialRectangle,null,null,data_base
+214,Current Status,shape=partialRectangle,null,null,data_base
+215,Staffing,shape=partialRectangle,null,null,data_base
+216,Commitment,shape=partialRectangle,null,null,data_base
+217,Longevity,shape=partialRectangle,null,null,data_base
+218,Ir,shape=partialRectangle,null,null,data_base
+219,Funding,shape=partialRectangle,null,null,data_base
+220,Publish Plan,shape=partialRectangle,null,null,data_base
+221,Successor,shape=partialRectangle,null,null,data_base
+222,Management,shape=partialRectangle,null,null,data_base
+223,Contract Clause,shape=partialRectangle,null,null,data_base
+224,Asset Manager,rounded=0,null,null,external_entity
+225,Assured,ellipse,null,null,process
+226,Changes Occur,ellipse,null,null,process
+227,By Which Restore The Original Object To All Copies,ellipse,null,null,process
+228,What Is To The Institution At The Time Of Deposit,ellipse,null,null,process
+229,Know,ellipse,null,null,process
+230,Obtain Understanding,ellipse,null,null,process
+231,Have A Mechanism,ellipse,null,null,process
+232,Obtain A Listing Of The Assets Have Deposited,ellipse,null,null,process
+233,Obtain A Listing Of Current Status,ellipse,null,null,process
+234,Obtain,ellipse,null,null,process
+235,The Ir Cease,ellipse,null,null,process
+236,Have Mechanism,ellipse,null,null,process
+237,Pass Ownership Of The Assets To A Successor,ellipse,null,null,process
+238,Pass Management,ellipse,null,null,process
+240,,endArrow=classic,224,226,endArrow=classic
+241,,endArrow=classic,224,227,endArrow=classic
+242,,endArrow=classic,224,228,endArrow=classic
+243,,endArrow=classic,224,229,endArrow=classic
+244,,endArrow=classic,224,230,endArrow=classic
+245,,endArrow=classic,224,231,endArrow=classic
+246,,endArrow=classic,224,232,endArrow=classic
+247,,endArrow=classic,224,233,endArrow=classic
+248,,endArrow=classic,224,235,endArrow=classic
+249,,endArrow=classic,224,236,endArrow=classic
+250,,endArrow=classic,224,237,endArrow=classic
+251,,endArrow=classic,224,238,endArrow=classic
+252,Change,endArrow=classic,226,207,endArrow=classic
+253,Copy,endArrow=classic,227,204,endArrow=classic
+254,Original Object,endArrow=classic,227,206,endArrow=classic
+255,Institution,endArrow=classic,228,209,endArrow=classic
+256,Deposit,endArrow=classic,228,210,endArrow=classic
+257,Asset,endArrow=classic,228,208,endArrow=classic
+258,,endArrow=classic,229,228,endArrow=classic
+259,Understanding,endArrow=classic,230,212,endArrow=classic
+260,,endArrow=classic,231,230,endArrow=classic
+261,,endArrow=classic,231,232,endArrow=classic
+262,,endArrow=classic,231,234,endArrow=classic
+263,Mechanism,endArrow=classic,231,211,endArrow=classic
+264,Understanding,endArrow=classic,231,212,endArrow=classic
+265,Listing,endArrow=classic,232,213,endArrow=classic
+266,Asset,endArrow=classic,232,208,endArrow=classic
+267,Current Status,endArrow=classic,233,214,endArrow=classic
+268,Listing,endArrow=classic,233,213,endArrow=classic
+269,Ir,endArrow=classic,235,218,endArrow=classic
+270,,endArrow=classic,236,237,endArrow=classic
+271,,endArrow=classic,236,238,endArrow=classic
+272,Mechanism,endArrow=classic,236,211,endArrow=classic
+273,Successor,endArrow=classic,237,221,endArrow=classic
+274,Asset,endArrow=classic,237,208,endArrow=classic
+275,Management,endArrow=classic,238,222,endArrow=classic

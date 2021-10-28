@@ -1,0 +1,500 @@
+[
+  {
+    "text": "As a depositor, I want to deposit and maintain datasets through a simple web interface, so that I don't need to install and learn new software to deposit.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to have a user interface that is familiar to me, so that I feel like all the University systems are joined up.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to deposit and maintain datasets through Pure, so that I have a single onestop shop for managing my research outputs.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "managing",
+        "label": "Processing"
+      },
+      {
+        "text": "research outputs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to deposit and maintain datasets through Virtual Research Environments and other workflow tools, so that I can continue to work with tools with which I'm familiar.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "maintain",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to deposit the files that I have, so that I don't have to spend a lot of time finding the right version and converting to the right format.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to place data under an embargo, so that my right of first use is protected, and I can fulfil my confidentiality responsibilities.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "place",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "confidentiality responsibilities",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to apply licenses to datasets, so that my IP rights are protected appropriately.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "apply",
+        "label": "Processing"
+      },
+      {
+        "text": "licenses",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "IP rights",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to allow my collaborators privileged access to datasets, so that we continue to have a productive relationship.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "allow",
+        "label": "Processing"
+      },
+      {
+        "text": "collaborators",
+        "label": "PII"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "relationship",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to deposit arbitrarily large files, so that I am not limited in what files I can and cannot deposit.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      },
+      {
+        "text": "files",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to link datasets to publications in Opus, so that both my data and publications are more easily discovered.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to mint DOIs for my data, so that it can be discovered and cited more easily and citations can be tracked so that I can receive credit.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "mint",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "receive",
+        "label": "Processing"
+      },
+      {
+        "text": "credit",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to have metadata automatically filled from other University systems and remembered from previous deposits, so that I don't have to waste time reentering the same information.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "metadata",
+        "label": "PII"
+      },
+      {
+        "text": "filled",
+        "label": "Processing"
+      },
+      {
+        "text": "deposits",
+        "label": "PII"
+      },
+      {
+        "text": "reentering",
+        "label": "Processing"
+      },
+      {
+        "text": "information",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to link to data stored in external repositories, so that I can store my data in an appropriate repository but still register it with the University and I don't have to deposit my data in multiple places.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to specify a disposal policy for my data, so that I do not accidentally breach laws or collaboration agreements.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "specify",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "collaboration agreements",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to track downloads of my data, so that I can demonstrate the impact of my work.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "downloads",
+        "label": "PII"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to track citations of my data, so that I can demonstrate the impact of my work",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "work",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to have guarantees about data integrity, so that I can use my data in the future and I can fulfil funder requirements for archival.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "use",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to attach subject specific discoverability metadata to records, so that researchers in my discipline can find my data more easily.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "attach",
+        "label": "Processing"
+      },
+      {
+        "text": "discoverability metadata",
+        "label": "PII"
+      },
+      {
+        "text": "researchers",
+        "label": "Data"
+      },
+      {
+        "text": "discipline",
+        "label": "PII"
+      },
+      {
+        "text": "find",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to link datasets with the project DMP, so that compliance with DMP can be demonstrated and whole project workflow is linked together.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "link",
+        "label": "Processing"
+      },
+      {
+        "text": "datasets",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to manage and share \u201clive\u201d research data, so that whole project workflow is linked together.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "share",
+        "label": "Processing"
+      },
+      {
+        "text": "live",
+        "label": "PII"
+      },
+      {
+        "text": "research data",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to manage multiple versions of the same dataset, so that changes to the dataset are transparent and do not compromise research integrity.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "manage",
+        "label": "Processing"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      },
+      {
+        "text": "dataset",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a depositor, I want to allow others to deposit on my behalf, so that I can delegate research data management tasks appropriately.",
+    "entities": [
+      {
+        "text": "depositor",
+        "label": "Data"
+      },
+      {
+        "text": "deposit",
+        "label": "Processing"
+      },
+      {
+        "text": "behalf",
+        "label": "PII"
+      }
+    ]
+  }
+]

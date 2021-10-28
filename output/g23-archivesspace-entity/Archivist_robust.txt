@@ -1,0 +1,360 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Archon" as thingarchon
+	entity "Unique ,\nComponent Identifier" as thinguniquecomponentidentifier
+	entity "Resource Component" as thingresourcecomponent
+	entity "Subject Heading" as thingsubjectheading
+	entity "Standard Identifier" as thingstandardidentifier
+	entity "Import" as thingimport
+	entity "Error" as thingerror
+	entity "Csv" as thingCSV
+	entity "Resource" as thingresource
+	entity "Subject" as thingsubject
+	entity "Read" as thingread
+	entity "View" as thingview
+	entity "Accession" as thingaccession
+	entity "Date" as thingdate
+	entity "Extent" as thingextent
+	entity "Subject Information" as thingsubjectinformation
+	entity "Agent" as thingagent
+	entity "Note" as thingnote
+	entity "Aid ,\nRelated Datum" as thingaidrelateddatum
+	entity "Administrative Datum" as thingadministrativedatum
+	entity "Level" as thinglevel
+	entity "Value" as thingvalue
+	entity "Description" as thingdescription
+	entity "Archivist" as thingarchivist
+	entity "Toolkit" as thingtoolkit
+	entity "Keyboard ,\nBased Navigation" as thingkeyboardbasednavigation
+	entity "Archival Object" as thingarchivalobject
+	entity "Hierarchy" as thinghierarchy
+	entity "Different Position" as thingdifferentposition
+	entity "Source" as thingsource
+	entity "Accession Component" as thingaccessioncomponent
+	entity "Ead" as thingEAD
+	entity "Digital Object" as thingdigitalobject
+	entity "Instance" as thinginstance
+	entity "Record" as thingrecord
+	entity "Change" as thingchange
+	entity "Ead" as thingead
+	entity "Frontend Application" as thingfrontendapplication #grey
+	entity "Name Form" as thingnameform #grey
+	entity "New Source" as thingnewsource
+	entity "Exist Source" as thingexistingsource
+	entity "Subject Record" as thingsubjectrecord
+	entity "Container" as thingcontainer
+	entity "Repository" as thingrepository
+	entity "Collection Management\nSubrecord" as thingcollectionmanagementsubrecord #grey
+	entity "Accessions Datum" as thingaccessionsdatum
+	entity "Information" as thinginformation #grey
+	entity "Eac Cpf" as thingeaccpf
+	entity "Rights Management\nStatement" as thingrightsmanagementstatement
+	entity "Marcxml" as thingmarcxml #grey
+	entity "Archival" as thingarchival #grey
+	entity "Object" as thingobject #grey
+	entity "Event" as thingevent #grey
+	entity "Location" as thinglocation #grey
+	actor "Archivist" as actorarchivist
+	circle "File" as thingfile #grey
+	circle "Component" as thingcomponent #grey
+	circle "Type" as thingtype #grey
+	circle "Datum" as thingdatum #grey
+	boundary "Archon\nInterface" as thingarchoninterface #grey
+	boundary "Resource\nInterface" as thingresourceinterface #grey
+	boundary "Heading\nInterface" as thingheadinginterface #grey
+	boundary "Csv\nInterface" as thingcsvinterface #grey
+	boundary "Record\nInterface" as thingrecordinterface #grey
+	boundary "Date\nInterface" as thingdateinterface #grey
+	boundary "Read\nInterface" as thingreadinterface #grey
+	boundary "Extent\nInterface" as thingextentinterface #grey
+	boundary "Subject\nInterface" as thingsubjectinterface #grey
+	boundary "View\nInterface" as thingviewinterface #grey
+	boundary "Cpf\nInterface" as thingcpfinterface #grey
+	boundary "Information\nInterface" as thinginformationinterface #grey
+	boundary "Level\nInterface" as thinglevelinterface #grey
+	boundary "Component\nInterface" as thingcomponentinterface #grey
+	boundary "Toolkit\nInterface" as thingtoolkitinterface #grey
+	boundary "Hierarchy\nInterface" as thinghierarchyinterface #grey
+	boundary "Navigation\nInterface" as thingnavigationinterface #grey
+	boundary "Ead\nInterface" as thingeadinterface #grey
+	boundary "Object\nInterface" as thingobjectinterface #grey
+	boundary "Statement\nInterface" as thingstatementinterface #grey
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	boundary "Agent\nInterface" as thingagentinterface #grey
+	boundary "Source\nInterface" as thingsourceinterface #grey
+	boundary "Container\nInterface" as thingcontainerinterface #grey
+	boundary "Accession\nInterface" as thingaccessioninterface #grey
+	boundary "Subrecord\nInterface" as thingsubrecordinterface #grey
+	control "Import Ead\nFiles Exported\nArchon" as controlimporteadfiles
+	control "Assign A\nUnique, Component\nIdentifier To\nA Resource\nComponent" as controlassignuniquecomponentidentifierresourcecomponent
+	control "Associate A\nStandard Identifier\nWith A\nSubject Heading" as controlassociatestandardidentifier
+	control "Understand" as controlunderstand
+	control "Import Accessions\nData In\nCsv" as controlimportaccessionsdata
+	control "Import Resources\nFrom Marcxml\nRecords" as controlimportresourcemarcxmlrecords
+	control "See Dates\nIn" as controlseedateeditviewlist
+	control "See Dates\nIn The\nRead" as controlseedate
+	control "See Extent" as controlseeextent
+	control "Edit Views\nFor Accessions\nBefore The\nList Of\nSubjects" as controleditviewlist
+	control "Edit Views\nFor Resource" as controleditviewresource
+	control "Import Agent\nInformation From\nEac Cpf\nRecords" as controlimportagentinformation
+	control "Export Agent\nRecords As\nEac Cpf" as controlexportagentrecordseacCPF
+	control "Import Only\nAgent From\nMarcxml Records" as controlimportagentmarcxmlrecords
+	control "Import Subject\nInformation" as controlimportsubjectinformation
+	control "Add Notes\nTo Other\nRecord Types" as controladdnoteotherrecordtypes
+	control "Finding Add\nAdministrative Data\nAbout The\nArchival Description\nAid, Related\nData To\nA Top\nLevel Resource" as controladdadministrativedatumaidrelateddatumtoplevelresource
+	control "Specify Another\nValue" as controlspecifyvalue #grey
+	control "Assign A\nLevel Of\nDescription To\nA Resource\nComponent" as controlassignlevelresourcecomponent
+	control "Assign A\nLevel Of\nDescription To\nResource" as controlassignlevelresource
+	control "Rearrange Digital\nObject Hierarchy" as controlrearrangedigitalobjecthierarchy
+	control "Rearrange The\nResource Using\nKeyboard, Based\nNavigation" as controlrearrangeresourcekeyboardbasednavigation
+	control "Dragging An\nArchival Object\nTo A\nDifferent Position\nIn The\nHierarchy" as controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	control "Rearrange The\nResource Description\nHierarchy" as controlrearrangeresourcedescriptionhierarchy
+	control "Indicate" as controlindicate
+	control "Export A\nDescription As\nEad" as controlexportdescription
+	control "Create Event\nRecords" as controlcreateeventrecords
+	control "Edit Event\nRecords" as controlediteventrecords
+	control "Manage Digital\nObjects" as controlmanagedigitalobject
+	control "Associate An\nInstance With\nResource" as controlassociateinstanceresource
+	control "Associate An\nInstance With\nA Resource\nComponent" as controlassociateinstance
+	control "Overwrite Changes\nTo A\nRecord" as controloverwritechangerecord
+	control "Create Rights\nManagement Statements" as controlcreaterightsmanagementstatements
+	control "Edit Rights\nManagement Statements" as controleditrightsmanagementstatements
+	control "Upload An\nEad For\nImport Within\nThe Frontend\nApplication" as controluploadeadimport
+	control "Import Ead\nData" as controlimporteaddata
+	control "Specify The\nSource For\nA Name\nForm Of\nAn Agent" as controlspecifysource
+	control "Edit Existing\nSources" as controleditexistingsource #grey
+	control "Add New\nSources" as controladdnewsource
+	control "Create Agent\nRecords" as controlcreateagentrecords
+	control "Edit Agent\nRecords" as controleditagentrecords
+	control "Create A\nResource Record" as controlcreateresourcerecord
+	control "Edit A\nResource Record" as controleditresourcerecord
+	control "Associate A\nSubject Record\nWith A\nResource Description" as controlassociatesubjectrecord
+	control "Assign Location\nInformation To\nA Container" as controlassignlocationinformationcontainer
+	control "Search Within\nA Repository\nFor Accession" as controlsearchrepositoryaccession
+	control "Search Within\nA Repository\nFor Digital\nObject" as controlsearchrepositorydigitalobject
+	control "Search Within\nA Repository\nFor Resource\nRecords" as controlsearchrepository
+	control "Create A\nCollection Management\nSubrecord" as controlcreatecollectionmanagementsubrecord
+	control "Edit A\nCollection Management\nSubrecord" as controleditcollectionmanagementsubrecord
+
+	thingcomponent <.. thinguniquecomponentidentifier
+	thingsubjectheading <.. thingstandardidentifier
+	thingfrontendapplication <.. thingimport
+	thingkeyboardbasednavigation <.. thingresource
+	thinglevel <.. thingresource
+	thingrecord <.. thingresource
+	thingaccession <.. thingview
+	thingresource <.. thingview
+	thingsubject <.. thingaccession
+	thingread <.. thingdate
+	thingrecord <.. thingagent
+	thingtype <.. thingnote
+	thingresource <.. thingaidrelateddatum
+	thingdescription <.. thingadministrativedatum
+	thingdescription *-- thinglevel
+	thingresourcecomponent <.. thingdescription
+	thingEAD <.. thingdescription
+	thingresource <.. thingdescription
+	thingarchival <.. thingdescription
+	thingaidrelateddatum <.. thingdescription
+	thingarchivist <.. thingtoolkit
+	thingdifferentposition <.. thingarchivalobject
+	thingobject <.. thinghierarchy
+	thingdescription <.. thinghierarchy
+	thinghierarchy <.. thingdifferentposition
+	thingnameform <.. thingsource
+	thingresourcecomponent <.. thinginstance
+	thingcontainer <.. thinginstance
+	thingresource <.. thinginstance
+	thingmarcxml <.. thingrecord
+	thingevent <.. thingrecord
+	thingresource <.. thingrecord
+	thingagent <.. thingrecord
+	thingeaccpf <.. thingrecord
+	thingrecord <.. thingchange
+	thingimport <.. thingead
+	thingagent <.. thingnameform
+	thingresource <.. thingsubjectrecord
+	thingdescription <.. thingsubjectrecord
+	thingresource <.. thingrepository
+	thingrecord <.. thingrepository
+	thingdigitalobject <.. thingrepository
+	thingaccession <.. thingrepository
+	thingCSV <.. thingaccessionsdatum
+	thinglocation <.. thinginformation
+	thingcontainer <.. thinginformation
+	thingagent <.. thinginformation
+	thingrecord <.. thinginformation
+	thingarchon *-- thingfile
+	thingtoolkit *-- thingfile
+	thingead *-- thingfile
+	thingresource *-- thingcomponent
+	thingrecord *-- thingtype
+	thingead *-- thingdatum
+	actorarchivist --- thingarchoninterface
+	actorarchivist --- thingresourceinterface
+	actorarchivist --- thingheadinginterface
+	actorarchivist --- thingcsvinterface
+	actorarchivist --- thingrecordinterface
+	actorarchivist --- thingdateinterface
+	actorarchivist --- thingreadinterface
+	actorarchivist --- thingextentinterface
+	actorarchivist --- thingsubjectinterface
+	actorarchivist --- thingviewinterface
+	actorarchivist --- thingcpfinterface
+	actorarchivist --- thinginformationinterface
+	actorarchivist --- thinglevelinterface
+	actorarchivist --- thingcomponentinterface
+	actorarchivist --- thingtoolkitinterface
+	actorarchivist --- thinghierarchyinterface
+	actorarchivist --- thingnavigationinterface
+	actorarchivist --- thingeadinterface
+	actorarchivist --- thingobjectinterface
+	actorarchivist --- thingstatementinterface
+	actorarchivist --- thingapplicationinterface
+	actorarchivist --- thingagentinterface
+	actorarchivist --- thingsourceinterface
+	actorarchivist --- thingaccessioninterface
+	actorarchivist --- thingsubrecordinterface
+	thingfile --- controlimporteadfiles
+	thingarchon --- controlimporteadfiles
+	thingarchoninterface --> controlimporteadfiles
+	thingtoolkit --- controlimporteadfiles
+	thingtoolkitinterface --> controlimporteadfiles
+	thinguniquecomponentidentifier --- controlassignuniquecomponentidentifierresourcecomponent
+	thingcomponent --- controlassignuniquecomponentidentifierresourcecomponent
+	thingresourceinterface --> controlassignuniquecomponentidentifierresourcecomponent
+	thingstandardidentifier --- controlassociatestandardidentifier
+	thingsubjectheading --- controlassociatestandardidentifier
+	thingheadinginterface --> controlassociatestandardidentifier
+	thingaccessionsdatum --- controlimportaccessionsdata
+	thingCSV --- controlimportaccessionsdata
+	thingcsvinterface --> controlimportaccessionsdata
+	thingresource --- controlimportresourcemarcxmlrecords
+	thingrecordinterface --> controlimportresourcemarcxmlrecords
+	thingrecord --- controlimportresourcemarcxmlrecords
+	thingdateinterface --> controlseedateeditviewlist
+	thingdate --- controlseedateeditviewlist
+	thingview --- controlseedateeditviewlist
+	thingdate --- controlseedate
+	thingread --- controlseedate
+	thingreadinterface --> controlseedate
+	thingextent --- controlseeextent
+	thingextentinterface --> controlseeextent
+	controlseedateeditviewlist --> controleditviewlist
+	thingview --- controleditviewlist
+	thingaccession --- controleditviewlist
+	thingsubjectinterface --> controleditviewlist
+	thingsubject --- controleditviewlist
+	thingviewinterface --> controleditviewresource
+	thingresource --- controleditviewresource
+	thingview --- controleditviewresource
+	controlseedateeditviewlist --> controleditviewresource
+	thinginformation --- controlimportagentinformation
+	thingrecordinterface --> controlimportagentinformation
+	thingrecord --- controlimportagentinformation
+	thingeaccpf --- controlexportagentrecordseacCPF
+	thingcpfinterface --> controlexportagentrecordseacCPF
+	thingrecord --- controlexportagentrecordseacCPF
+	thingagent --- controlimportagentmarcxmlrecords
+	thingrecordinterface --> controlimportagentmarcxmlrecords
+	thingrecord --- controlimportagentmarcxmlrecords
+	thingsubjectinformation --- controlimportsubjectinformation
+	thinginformationinterface --> controlimportsubjectinformation
+	thingnote --- controladdnoteotherrecordtypes
+	thingtype --- controladdnoteotherrecordtypes
+	thingrecordinterface --> controladdnoteotherrecordtypes
+	thingadministrativedatum --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingaidrelateddatum --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thinglevelinterface --> controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingresource --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingdescription --- controladdadministrativedatumaidrelateddatumtoplevelresource
+	thingvalue --- controlspecifyvalue
+	thinglevel --- controlassignlevelresourcecomponent
+	thingdescription --- controlassignlevelresourcecomponent
+	thingresourcecomponent --- controlassignlevelresourcecomponent
+	thingcomponentinterface --> controlassignlevelresourcecomponent
+	thingresource --- controlassignlevelresource
+	thingresourceinterface --> controlassignlevelresource
+	thinglevel --- controlassignlevelresource
+	thingdescription --- controlassignlevelresource
+	thinghierarchyinterface --> controlrearrangedigitalobjecthierarchy
+	thinghierarchy --- controlrearrangedigitalobjecthierarchy
+	thingkeyboardbasednavigation --- controlrearrangeresourcekeyboardbasednavigation
+	thingnavigationinterface --> controlrearrangeresourcekeyboardbasednavigation
+	thingresource --- controlrearrangeresourcekeyboardbasednavigation
+	thingarchivalobject --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thingdifferentposition --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thinghierarchy --- controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	thinghierarchyinterface --> controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition
+	controldragrearrangeresourcedescriptionhierarchyarchivalobjectdifferentposition --> controlrearrangeresourcedescriptionhierarchy
+	thingresourceinterface --> controlrearrangeresourcedescriptionhierarchy
+	thinghierarchy --- controlrearrangeresourcedescriptionhierarchy
+	thingEAD --- controlexportdescription
+	thingeadinterface --> controlexportdescription
+	thingdescription --- controlexportdescription
+	thingrecordinterface --> controlcreateeventrecords
+	thingrecord --- controlcreateeventrecords
+	thingrecordinterface --> controlediteventrecords
+	thingrecord --- controlediteventrecords
+	thingdigitalobject --- controlmanagedigitalobject
+	thingobjectinterface --> controlmanagedigitalobject
+	thingresource --- controlassociateinstanceresource
+	thingresourceinterface --> controlassociateinstanceresource
+	thinginstance --- controlassociateinstanceresource
+	thinginstance --- controlassociateinstance
+	thingresourcecomponent --- controlassociateinstance
+	thingcontainer --- controlassociateinstance
+	thingcomponentinterface --> controlassociateinstance
+	thingchange --- controloverwritechangerecord
+	thingrecord --- controloverwritechangerecord
+	thingrecordinterface --> controloverwritechangerecord
+	thingrightsmanagementstatement --- controlcreaterightsmanagementstatements
+	thingstatementinterface --> controlcreaterightsmanagementstatements
+	thingstatementinterface --> controleditrightsmanagementstatements
+	thingrightsmanagementstatement --- controleditrightsmanagementstatements
+	thingead --- controluploadeadimport
+	thingfrontendapplication --- controluploadeadimport
+	thingapplicationinterface --> controluploadeadimport
+	thingimport --- controluploadeadimport
+	thingdatum --- controlimporteaddata
+	thingeadinterface --> controlimporteaddata
+	thingnameform --- controlspecifysource
+	thingagentinterface --> controlspecifysource
+	thingagent --- controlspecifysource
+	thingsource --- controlspecifysource
+	thingexistingsource --- controleditexistingsource
+	thingnewsource --- controladdnewsource
+	thingsourceinterface --> controladdnewsource
+	thingagentinterface --> controlcreateagentrecords
+	thingrecord --- controlcreateagentrecords
+	thingagentinterface --> controleditagentrecords
+	thingrecord --- controleditagentrecords
+	thingresourceinterface --> controlcreateresourcerecord
+	thingrecord --- controlcreateresourcerecord
+	thingresourceinterface --> controleditresourcerecord
+	thingrecord --- controleditresourcerecord
+	thingsubjectrecord --- controlassociatesubjectrecord
+	thingresourceinterface --> controlassociatesubjectrecord
+	thingdescription --- controlassociatesubjectrecord
+	thingcontainer --- controlassignlocationinformationcontainer
+	thinginformation --- controlassignlocationinformationcontainer
+	thingcontainerinterface --> controlassignlocationinformationcontainer
+	thingaccessioninterface --> controlsearchrepositoryaccession
+	thingaccession --- controlsearchrepositoryaccession
+	thingrepository --- controlsearchrepositoryaccession
+	thingdigitalobject --- controlsearchrepositorydigitalobject
+	thingobjectinterface --> controlsearchrepositorydigitalobject
+	thingrepository --- controlsearchrepositorydigitalobject
+	thingrepository --- controlsearchrepository
+	thingresource --- controlsearchrepository
+	thingrecord --- controlsearchrepository
+	thingrecordinterface --> controlsearchrepository
+	thingcollectionmanagementsubrecord --- controlcreatecollectionmanagementsubrecord
+	thingsubrecordinterface --> controlcreatecollectionmanagementsubrecord
+	thingcollectionmanagementsubrecord --- controleditcollectionmanagementsubrecord
+	thingsubrecordinterface --> controleditcollectionmanagementsubrecord
+
+@enduml

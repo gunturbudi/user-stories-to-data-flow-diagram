@@ -1,0 +1,77 @@
+id,value,style,source,target,type
+12,Change my mind based on information i hear.,ellipse,null,null,process
+13,Ask questions.,ellipse,null,null,process
+14,Use this information when i estimate the item of the current round.,ellipse,null,null,process
+15,Change my mind.,ellipse,null,null,process
+200,Specific Estimator,shape=partialRectangle,null,null,data_base
+201,Estimate,shape=partialRectangle,null,null,data_base
+202,Time,shape=partialRectangle,null,null,data_base
+203,Estimator,shape=partialRectangle,null,null,data_base
+204,Story,shape=partialRectangle,null,null,data_base
+205,Prior Estimate,shape=partialRectangle,null,null,data_base
+206,Current Round,shape=partialRectangle,null,null,data_base
+207,Participant,shape=partialRectangle,null,null,data_base
+208,Prior Round,shape=partialRectangle,null,null,data_base
+209,Card,shape=partialRectangle,null,null,data_base
+210,Order,shape=partialRectangle,null,null,data_base
+211,Multiple Draw,shape=partialRectangle,null,null,data_base
+212,Timer,shape=partialRectangle,null,null,data_base
+213,-pron-,shape=partialRectangle,null,null,data_base
+214,Thumbnail Photo,shape=partialRectangle,null,null,data_base
+215,Minute Countdown,shape=partialRectangle,null,null,data_base
+216,Minute,shape=partialRectangle,null,null,data_base
+217,Participant,rounded=0,null,null,external_entity
+218,See,ellipse,null,null,process
+219,Shown All Estimates At The Same Time,ellipse,null,null,process
+220,Change Estimate Up,ellipse,null,null,process
+221,Start A Minute Countdown Timer That All Participants See,ellipse,null,null,process
+222,Scroll Through Estimate,ellipse,null,null,process
+223,Scroll Through The Stories From Prior Rounds,ellipse,null,null,process
+224,Have The Cards In The Same Order Across Multiple Draws,ellipse,null,null,process
+225,Have A Small Thumbnail Photo Cards Where Played,ellipse,null,null,process
+226,Have,ellipse,null,null,process
+227,The Timer Soon As Reset Itself All Play,ellipse,null,null,process
+228,The Minute Timer Soon As Reset Play An Estimate,ellipse,null,null,process
+230,,endArrow=classic,217,219,endArrow=classic
+231,,endArrow=classic,217,220,endArrow=classic
+232,,endArrow=classic,217,221,endArrow=classic
+233,,endArrow=classic,217,222,endArrow=classic
+234,,endArrow=classic,217,223,endArrow=classic
+235,,endArrow=classic,217,224,endArrow=classic
+236,,endArrow=classic,217,225,endArrow=classic
+237,,endArrow=classic,217,226,endArrow=classic
+238,,endArrow=classic,217,227,endArrow=classic
+239,,endArrow=classic,217,228,endArrow=classic
+240,Time,endArrow=classic,219,202,endArrow=classic
+241,Estimate,endArrow=classic,219,201,endArrow=classic
+242,Estimate,endArrow=classic,220,201,endArrow=classic
+243,Participant,endArrow=classic,221,207,endArrow=classic
+244,Timer,endArrow=classic,221,212,endArrow=classic
+245,Estimate,endArrow=classic,222,201,endArrow=classic
+246,Prior Round,endArrow=classic,223,208,endArrow=classic
+247,Story,endArrow=classic,223,204,endArrow=classic
+248,Card,endArrow=classic,224,209,endArrow=classic
+249,Order,endArrow=classic,224,210,endArrow=classic
+250,Multiple Draw,endArrow=classic,224,211,endArrow=classic
+251,Thumbnail Photo,endArrow=classic,225,214,endArrow=classic
+252,Card,endArrow=classic,225,209,endArrow=classic
+253,,endArrow=classic,227,226,endArrow=classic
+254,Timer,endArrow=classic,227,212,endArrow=classic
+255,-pron-,endArrow=classic,227,213,endArrow=classic
+256,,endArrow=classic,228,226,endArrow=classic
+257,Estimate,endArrow=classic,228,201,endArrow=classic
+258,Timer,endArrow=classic,228,212,endArrow=classic
+306,Minute Countdown,endArrow=classic,221,215,endArrow=classic
+310,Minute,endArrow=classic,221,216,endArrow=classic
+1000,,endArrow=classic,217,12,endArrow=classic
+1001,Mind,rounded=0,null,null,external_entity
+1002,Mind,endArrow=classic,12,1001,endArrow=classic
+1003,,endArrow=classic,217,13,endArrow=classic
+1004,Opinion,rounded=0,null,null,external_entity
+1005,Opinion,endArrow=classic,13,1004,endArrow=classic
+1006,,endArrow=classic,223,14,endArrow=classic
+1007,Information,rounded=0,null,null,external_entity
+1008,Information,endArrow=classic,14,1007,endArrow=classic
+1009,,endArrow=classic,217,15,endArrow=classic
+1010,Mind,rounded=0,null,null,external_entity
+1011,Mind,endArrow=classic,15,1010,endArrow=classic

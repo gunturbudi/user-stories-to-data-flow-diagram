@@ -1,0 +1,48 @@
+id,value,style,source,target,type
+6,Perform management actions on any dataset.,ellipse,null,null,process
+7,Clean up test datasets.,ellipse,null,null,process
+8,Improve the map-based visualisations of my data.,ellipse,null,null,process
+200,Public Dataset,shape=partialRectangle,null,null,data_base
+201,User,shape=partialRectangle,null,null,data_base
+202,Dataset,shape=partialRectangle,null,null,data_base
+203,View,shape=partialRectangle,null,null,data_base
+204,Platform Administrator,shape=partialRectangle,null,null,data_base
+205,"Geojson ,\nAdditional Source",shape=partialRectangle,null,null,data_base
+206,Viewer,shape=partialRectangle,null,null,data_base
+207,Data Types\nHierarchy,shape=partialRectangle,null,null,data_base
+208,Platform Administrator,rounded=0,null,null,external_entity
+209,"Datum , Publishing User",rounded=0,null,null,external_entity
+210,Hide Any Already Public Dataset,ellipse,null,null,process
+211,Have A View On All Datasets All Users,ellipse,null,null,process
+212,Delete Any Dataset,ellipse,null,null,process
+213,"Provide The Platform Administrator With Geojson, Additional Sources",ellipse,null,null,process
+214,Translate The Data Types Hierarchies Of The Viewer,ellipse,null,null,process
+216,,endArrow=classic,208,210,endArrow=classic
+217,,endArrow=classic,208,211,endArrow=classic
+218,,endArrow=classic,208,212,endArrow=classic
+219,,endArrow=classic,208,214,endArrow=classic
+220,,endArrow=classic,209,213,endArrow=classic
+221,Public Dataset,endArrow=classic,210,200,endArrow=classic
+222,View,endArrow=classic,211,203,endArrow=classic
+223,Dataset,endArrow=classic,211,202,endArrow=classic
+224,Dataset,endArrow=classic,212,202,endArrow=classic
+225,Platform Administrator,endArrow=classic,213,204,endArrow=classic
+226,"Geojson ,\nAdditional Source",endArrow=classic,213,205,endArrow=classic
+227,Data Types\nHierarchy,endArrow=classic,214,207,endArrow=classic
+228,Viewer,endArrow=classic,214,206,endArrow=classic
+230,User,endArrow=classic,211,201,endArrow=classic
+1000,,endArrow=classic,211,6,endArrow=classic
+1001,Platform administrator,rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,6,endArrow=classic
+1003,Dataset,endArrow=classic,6,202,endArrow=classic
+1004,,endArrow=classic,212,7,endArrow=classic
+1005,Platform administrator,rounded=0,null,null,external_entity
+1006,,endArrow=classic,1005,7,endArrow=classic
+1007,Takedown requests,rounded=0,null,null,external_entity
+1008,Takedown requests,endArrow=classic,7,1007,endArrow=classic
+1009,Data publishing user,rounded=0,null,null,external_entity
+1010,,endArrow=classic,1009,8,endArrow=classic
+1011,Data publishing user,rounded=0,null,null,external_entity
+1012,,endArrow=classic,1011,8,endArrow=classic
+1013,Data,rounded=0,null,null,external_entity
+1014,Data,endArrow=classic,8,1013,endArrow=classic

@@ -1,0 +1,98 @@
+[
+  {
+    "text": "As a summit coordinator, I want to see a list of attendees signed up for my summit, so that I can communicate with my attendees by email prior to the event.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "list of attendees",
+        "label": "PII"
+      },
+      {
+        "text": "communicate",
+        "label": "Processing"
+      },
+      {
+        "text": "attendees",
+        "label": "PII"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list basic information about my summit, so that I can inform potential attendees on why they should attend my summit.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "summit",
+        "label": "PII"
+      },
+      {
+        "text": "attendees",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list sponsors for my summit, so that I can make sure sponsors feel rewarded and will be interested in sponsoring in future years.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      },
+      {
+        "text": "sponsors",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list an agenda for my summit, so that I can entice attendees and give positive feedback to presenters to encourage participation.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "entice",
+        "label": "Processing"
+      },
+      {
+        "text": "attendees",
+        "label": "Data"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  }
+]

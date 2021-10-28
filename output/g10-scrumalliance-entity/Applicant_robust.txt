@@ -1,0 +1,25 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Application" as thingapplication
+	entity "Training" as thingtraining #grey
+	actor "Site Administrator" as actorsiteadministrator
+	boundary "Application\nInterface" as thingapplicationinterface #grey
+	control "Practicing" as controlpractice
+	control "Read" as controlreadpractice
+	control "Read Training\nApplication" as controlreadtrainingapplication
+	control "Reject Applications" as controlrejectapplication #grey
+	control "Approve Applications" as controlapproveapplication
+
+	thingtraining <.. thingapplication
+	actorsiteadministrator --- thingapplicationinterface
+	controlreadpractice --> controlpractice
+	thingapplicationinterface --> controlreadtrainingapplication
+	thingapplication --- controlreadtrainingapplication
+	thingapplication --- controlrejectapplication
+	thingapplication --- controlapproveapplication
+	thingapplicationinterface --> controlapproveapplication
+
+@enduml

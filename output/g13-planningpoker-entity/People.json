@@ -1,0 +1,41 @@
+[
+  {
+    "text": "As a developer, I want to have written a site which is compliant with XHTML and CSS standards, so that as many people as possible can access the site and view it as intended.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the application function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2, so that as many people as possible can fully use the application.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a developer, I want to have the site comply with the W3C accessibility guidelines where possible, so that people with accessibility issues can use the application.",
+    "entities": [
+      {
+        "text": "developer,",
+        "label": "Data"
+      },
+      {
+        "text": "people",
+        "label": "Data"
+      }
+    ]
+  }
+]

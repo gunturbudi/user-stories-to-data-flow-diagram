@@ -1,0 +1,73 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Error Message " color=red];
+201 [label="<f0>  |<f1> Accurate Text " ];
+202 [label="<f0>  |<f1> Fpds Data\nLoad " color=red];
+203 [label="<f0>  |<f1> Work " ];
+204 [label="<f0>  |<f1> Record " color=red];
+205 [label="<f0>  |<f1> Duns Error " ];
+206 [label="<f0>  |<f1> Individual Recipient " color=red];
+207 [label="<f0>  |<f1> Logic " ];
+208 [label="<f0>  |<f1> Information " color=red];
+209 [label="<f0>  |<f1> Code " color=red];
+210 [label="<f0>  |<f1> Field " color=red];
+211 [label="<f0>  |<f1> Content Mockup " ];
+212 [label="<f0>  |<f1> Entity Zip\nValidation " ];
+213 [label="<f0>  |<f1> Error " color=red];
+214 [label="Broker User" shape=box];
+215 [label="{<f0> 1.0|<f1> Upload The Error Message }" shape=Mrecord];
+216 [label="{<f0> 2.0|<f1> Have Accurate Text }" shape=Mrecord];
+217 [label="{<f0> 3.0|<f1> Validate The Error Message }" shape=Mrecord];
+218 [label="{<f0> 4.0|<f1> Synced With The Fpds Data Load }" shape=Mrecord];
+219 [label="{<f0> 5.0|<f1> Help }" shape=Mrecord];
+220 [label="{<f0> 6.0|<f1> Create Content Mockups }" shape=Mrecord];
+221 [label="{<f0> 7.0|<f1> Have The Same Work As The Legal Entity Zip Validations }" shape=Mrecord];
+222 [label="{<f0> 8.0|<f1> Submit Records For Individual Recipients }" shape=Mrecord];
+223 [label="{<f0> 9.0|<f1> Receiving A Duns Error }" shape=Mrecord];
+224 [label="{<f0> 10.0|<f1> Updated Error Codes Accurately Reflect The Logic }" shape=Mrecord];
+225 [label="{<f0> 11.0|<f1> Updated Codes }" shape=Mrecord];
+226 [label="{<f0> 12.0|<f1> Provide Enough Information }" shape=Mrecord];
+227 [label="{<f0> 13.0|<f1> Derive Fields }" shape=Mrecord];
+14 [label="{<f0> 14.0|<f1> Submit my data efficiently. }" shape=Mrecord];
+219 -> 14
+1001 [label="<f0>  |<f1> Data " color=red];
+14 -> 1001 [label="Data"]
+15 [label="{<f0> 15.0|<f1> Fix my submission. }" shape=Mrecord];
+226 -> 15
+1004 [label="<f0>  |<f1> Submission " color=red];
+15 -> 1004 [label="Submission"]
+214 -> 215
+214 -> 216
+214 -> 217
+214 -> 218
+214 -> 219
+214 -> 220
+214 -> 221
+214 -> 222
+214 -> 223
+214 -> 224
+214 -> 225
+214 -> 226
+214 -> 227
+215 -> 216
+215 -> 200 [label="Error Message"]
+216 -> 201 [label="Accurate Text"]
+217 -> 216
+217 -> 200 [label="Error Message"]
+218 -> 202 [label="Fpds Data\nLoad"]
+219 -> 220
+220 -> 211 [label="Content Mockup"]
+221 -> 203 [label="Work"]
+221 -> 212 [label="Entity Zip\nValidation"]
+222 -> 204 [label="Record"]
+222 -> 206 [label="Individual Recipient"]
+223 -> 222
+223 -> 205 [label="Duns Error"]
+224 -> 207 [label="Logic"]
+224 -> 209 [label="Code"]
+225 -> 226
+225 -> 209 [label="Code"]
+226 -> 208 [label="Information"]
+227 -> 210 [label="Field"]
+215 -> 213 [label="Error"]
+}

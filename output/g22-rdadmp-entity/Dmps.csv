@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Topic,shape=partialRectangle,null,null,data_base
+201,Dmp,shape=partialRectangle,null,null,data_base
+202,Researcher,rounded=0,null,null,external_entity
+203,Similar Know Which Topics In All Dmps,ellipse,null,null,process
+205,,endArrow=classic,202,203,endArrow=classic
+206,Topic,endArrow=classic,203,200,endArrow=classic
+207,Dmp,endArrow=classic,203,201,endArrow=classic

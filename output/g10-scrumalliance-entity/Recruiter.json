@@ -1,0 +1,40 @@
+[
+  {
+    "text": "As a recruiter, I want to post a help wanted ad, so that I can attract candidates.",
+    "entities": [
+      {
+        "text": "recruiter",
+        "label": "Data"
+      },
+      {
+        "text": "post",
+        "label": "Processing"
+      },
+      {
+        "text": "wanted ad",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a recruiter, I want to be able to extend an ad for another 30 days by visiting the site and updating the posting, so that my ad remains active.",
+    "entities": [
+      {
+        "text": "recruiter,",
+        "label": "Data"
+      },
+      {
+        "text": "extend",
+        "label": "Processing"
+      },
+      {
+        "text": "ad",
+        "label": "PII"
+      },
+      {
+        "text": "ad",
+        "label": "PII"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Guarantee " ];
+201 [label="<f0>  |<f1> Datum " ];
+202 [label="<f0>  |<f1> Campus " ];
+203 [label="<f0>  |<f1> Ip Right " color=red];
+204 [label="<f0>  |<f1> Bath Collaborator " color=red];
+205 [label="Externalcoordinator" shape=box];
+206 [label="{<f0> 1.0|<f1> Have Guarantees Ip Rights Not }" shape=Mrecord];
+207 [label="{<f0> 2.0|<f1> Access Data From Bath Collaborators Off Campus }" shape=Mrecord];
+205 -> 206
+205 -> 207
+206 -> 200 [label="Guarantee"]
+207 -> 201 [label="Datum"]
+207 -> 204 [label="Bath Collaborator"]
+207 -> 202 [label="Campus"]
+206 -> 203 [label="Ip Right"]
+}

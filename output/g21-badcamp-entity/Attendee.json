@@ -1,0 +1,158 @@
+[
+  {
+    "text": "As a attendee, I want to have a very clear map where the buildings and rooms are, so that I can make it to class on time.",
+    "entities": [
+      {
+        "text": "attendee",
+        "label": "Data"
+      },
+      {
+        "text": "buildings",
+        "label": "PII"
+      },
+      {
+        "text": "rooms",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a trainingcoordinator, I want to have an admin view that helps track registration status for each attendee so that, so that we can see if attendend, refunded, no show.",
+    "entities": [
+      {
+        "text": "trainingcoordinator,",
+        "label": "Data"
+      },
+      {
+        "text": "track",
+        "label": "Processing"
+      },
+      {
+        "text": "registration status",
+        "label": "PII"
+      },
+      {
+        "text": "attendee",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a attendee, I want to be added to a training waitlist, so that so they can be considered for a class.",
+    "entities": [
+      {
+        "text": "attendee",
+        "label": "Data"
+      },
+      {
+        "text": "added",
+        "label": "Processing"
+      },
+      {
+        "text": "waitlist",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a attendee, I want to register for a summit, so that I can reserve my seat at the summit.",
+    "entities": [
+      {
+        "text": "attendee",
+        "label": "Data"
+      },
+      {
+        "text": "register",
+        "label": "Processing"
+      },
+      {
+        "text": "reserve",
+        "label": "Processing"
+      },
+      {
+        "text": "seat",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a attendee, I want to get detailed directions to the summit venue, so that I can get to the summit easily on the day of the event.",
+    "entities": [
+      {
+        "text": "attendee",
+        "label": "Data"
+      },
+      {
+        "text": "get detailed directions",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a attendee, I want to see what summits I'm signed up for, so that I can confirm my attendence and prevent myself from accidentally double-booking with a training or another summit.",
+    "entities": [
+      {
+        "text": "attendee",
+        "label": "Data"
+      },
+      {
+        "text": "see",
+        "label": "Processing"
+      },
+      {
+        "text": "confirm",
+        "label": "Processing"
+      },
+      {
+        "text": "attendence",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list basic information about my summit, so that I can inform potential attendees on why they should attend my summit.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "summit",
+        "label": "PII"
+      },
+      {
+        "text": "attendees",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a summit coordinator, I want to list an agenda for my summit, so that I can entice attendees and give positive feedback to presenters to encourage participation.",
+    "entities": [
+      {
+        "text": "summit coordinator",
+        "label": "Data"
+      },
+      {
+        "text": "list",
+        "label": "Processing"
+      },
+      {
+        "text": "entice",
+        "label": "Processing"
+      },
+      {
+        "text": "attendees",
+        "label": "Data"
+      },
+      {
+        "text": "feedback",
+        "label": "PII"
+      }
+    ]
+  }
+]

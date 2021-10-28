@@ -1,0 +1,10 @@
+id,value,style,source,target,type
+200,Summary Report,shape=partialRectangle,null,null,data_base
+201,Research Datum,shape=partialRectangle,null,null,data_base
+202,"Research , Centre Director",rounded=0,null,null,external_entity
+203,Postgraduate Convenor,rounded=0,null,null,external_entity
+204,Receive Regular Summary Reports Of Research Data,ellipse,null,null,process
+206,,endArrow=classic,202,204,endArrow=classic
+207,,endArrow=classic,203,204,endArrow=classic
+208,Summary Report,endArrow=classic,204,200,endArrow=classic
+209,Research Datum,endArrow=classic,204,201,endArrow=classic

@@ -1,0 +1,234 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Photo " color=red];
+201 [label="<f0>  |<f1> Document " color=red];
+202 [label="<f0>  |<f1> Report " color=red];
+203 [label="<f0>  |<f1> File " color=red];
+204 [label="<f0>  |<f1> Common Material " color=red];
+205 [label="<f0>  |<f1> Collection " color=red];
+206 [label="<f0>  |<f1> Folder " ];
+207 [label="<f0>  |<f1> Publication " ];
+208 [label="<f0>  |<f1> Researcher " color=red];
+209 [label="<f0>  |<f1> Citation " color=red];
+210 [label="<f0>  |<f1> Donor " ];
+211 [label="<f0>  |<f1> Available Right " ];
+212 [label="<f0>  |<f1> Information " color=red];
+213 [label="<f0>  |<f1> Visual " color=red];
+214 [label="<f0>  |<f1> Password " color=red];
+215 [label="<f0>  |<f1> Link " ];
+216 [label="<f0>  |<f1> Social Medium " ];
+217 [label="<f0>  |<f1> Image " color=red];
+218 [label="<f0>  |<f1> Digital Object " color=red];
+219 [label="<f0>  |<f1> Notification " ];
+220 [label="<f0>  |<f1> Web Browser " ];
+221 [label="<f0>  |<f1> Video " color=red];
+222 [label="<f0>  |<f1> Audio File " color=red];
+223 [label="<f0>  |<f1> Common Format " ];
+224 [label="<f0>  |<f1> Descriptive Datum " ];
+225 [label="<f0>  |<f1> Keyword " color=red];
+226 [label="<f0>  |<f1> Structured Datum " ];
+227 [label="<f0>  |<f1> Mediation " color=red];
+228 [label="<f0>  |<f1> Archival ,\nDigitized Material " color=red];
+229 [label="<f0>  |<f1> Specific File " color=red];
+230 [label="<f0>  |<f1> Question " color=red];
+231 [label="<f0>  |<f1> Date " color=red];
+232 [label="<f0>  |<f1> Program Rf\nOfficer " ];
+233 [label="<f0>  |<f1> Scan Diary " ];
+234 [label="<f0>  |<f1> Search " color=red];
+235 [label="<f0>  |<f1> Working Paper " color=red];
+236 [label="<f0>  |<f1> Index Card " color=red];
+237 [label="<f0>  |<f1> Analog Version " color=red];
+238 [label="<f0>  |<f1> Outreach Material " color=red];
+239 [label="<f0>  |<f1> Diary Segment " color=red];
+240 [label="<f0>  |<f1> Film Clip " color=red];
+241 [label="Archivist" shape=box];
+242 [label="Researcher" shape=box];
+243 [label="Assistant Archivist" shape=box];
+244 [label="Administrator" shape=box];
+245 [label="{<f0> 1.0|<f1> Know }" shape=Mrecord];
+246 [label="{<f0> 2.0|<f1> Provided With Clear Citation Information On Each Document }" shape=Mrecord];
+247 [label="{<f0> 3.0|<f1> Share Reports }" shape=Mrecord];
+248 [label="{<f0> 4.0|<f1> Download A File }" shape=Mrecord];
+249 [label="{<f0> 5.0|<f1> See Common Material Across Collections }" shape=Mrecord];
+250 [label="{<f0> 6.0|<f1> Access Tagged Working Papers }" shape=Mrecord];
+251 [label="{<f0> 7.0|<f1> View Thumbnails Of Photos }" shape=Mrecord];
+252 [label="{<f0> 8.0|<f1> Tag Staff }" shape=Mrecord];
+253 [label="{<f0> 9.0|<f1> Link Electronic Versions Of Researchers' Publications To Citations }" shape=Mrecord];
+254 [label="{<f0> 10.0|<f1> Make Information About Available Rights To Researchers }" shape=Mrecord];
+255 [label="{<f0> 11.0|<f1> Make Information About Available Rights To Donor }" shape=Mrecord];
+256 [label="{<f0> 12.0|<f1> Access Visual }" shape=Mrecord];
+257 [label="{<f0> 13.0|<f1> Access Metadata Representations Of Index Cards }" shape=Mrecord];
+258 [label="{<f0> 14.0|<f1> Have }" shape=Mrecord];
+259 [label="{<f0> 15.0|<f1> Generate Structured Citation Data }" shape=Mrecord];
+260 [label="{<f0> 16.0|<f1> Share A Link To A File On Social Media }" shape=Mrecord];
+261 [label="{<f0> 17.0|<f1> Understand The Copyright Status Of The Image }" shape=Mrecord];
+262 [label="{<f0> 18.0|<f1> Download Reports }" shape=Mrecord];
+263 [label="{<f0> 19.0|<f1> Locate Photographs }" shape=Mrecord];
+264 [label="{<f0> 20.0|<f1> Locate Document }" shape=Mrecord];
+265 [label="{<f0> 21.0|<f1> Request Analog Versions Of Digital Objects }" shape=Mrecord];
+266 [label="{<f0> 22.0|<f1> Order Copies Of Photos }" shape=Mrecord];
+267 [label="{<f0> 23.0|<f1> Receive A Notification }" shape=Mrecord];
+268 [label="{<f0> 24.0|<f1> Stream Video }" shape=Mrecord];
+269 [label="{<f0> 25.0|<f1> Stream Audio Files In Web Browser }" shape=Mrecord];
+270 [label="{<f0> 26.0|<f1> Export Descriptive Data In A Common Format }" shape=Mrecord];
+271 [label="{<f0> 27.0|<f1> Search All Files By Keyword }" shape=Mrecord];
+272 [label="{<f0> 28.0|<f1> Search By Keyword }" shape=Mrecord];
+273 [label="{<f0> 29.0|<f1> Browse Through Files In A Collection }" shape=Mrecord];
+274 [label="{<f0> 30.0|<f1> Search Across Photo Collection Images }" shape=Mrecord];
+275 [label="{<f0> 31.0|<f1> Using Structured Data }" shape=Mrecord];
+276 [label="{<f0> 32.0|<f1> Search }" shape=Mrecord];
+277 [label="{<f0> 33.0|<f1> Access Educational Outreach Materials }" shape=Mrecord];
+278 [label="{<f0> 34.0|<f1> Have Collection, Accurate Citation Information }" shape=Mrecord];
+279 [label="{<f0> 35.0|<f1> Access Archival, Digitized Materials Without Mediation }" shape=Mrecord];
+280 [label="{<f0> 36.0|<f1> Ask A Question About A Specific File }" shape=Mrecord];
+281 [label="{<f0> 37.0|<f1> Know The Date On Which Something Digitized }" shape=Mrecord];
+282 [label="{<f0> 38.0|<f1> Keyword Search Across All Of An Program Rf Officer's Scanned Diaries }" shape=Mrecord];
+283 [label="{<f0> 39.0|<f1> Search Each Scanned Diary Segment }" shape=Mrecord];
+284 [label="{<f0> 40.0|<f1> Having }" shape=Mrecord];
+285 [label="{<f0> 41.0|<f1> View Film Clips }" shape=Mrecord];
+42 [label="{<f0> 42.0|<f1> Assist researchers. }" shape=Mrecord];
+257 -> 42
+1001 [label="Archivist," shape=box];
+1001 -> 42
+1003 [label="Archivist," shape=box];
+1003 -> 42
+1005 [label="Archivist," shape=box];
+1005 -> 42
+42 -> 212  [label="Information"]
+43 [label="{<f0> 43.0|<f1> Use them in immediate and future in talks and articles. }" shape=Mrecord];
+1008 [label="Researcher," shape=box];
+1008 -> 43
+262 -> 43
+1011 [label="Researcher," shape=box];
+1011 -> 43
+1013 [label="Researcher," shape=box];
+1013 -> 43
+1015 [label="<f0>  |<f1> Talks " color=red];
+43 -> 1015 [label="Talks"]
+44 [label="{<f0> 44.0|<f1> Find everything relevant to my inquiry across collections. }" shape=Mrecord];
+1017 [label="Researcher," shape=box];
+1017 -> 44
+275 -> 44
+1020 [label="Researcher," shape=box];
+1020 -> 44
+1022 [label="Researcher," shape=box];
+1022 -> 44
+1024 [label="<f0>  |<f1> Inquiry " color=red];
+44 -> 1024 [label="Inquiry"]
+45 [label="{<f0> 45.0|<f1> Locate digitized documents relevant to my research. }" shape=Mrecord];
+1026 [label="Researcher," shape=box];
+1026 -> 45
+276 -> 45
+1029 [label="Researcher," shape=box];
+1029 -> 45
+1031 [label="Researcher," shape=box];
+1031 -> 45
+1033 [label="<f0>  |<f1> Research " color=red];
+45 -> 1033 [label="Research"]
+46 [label="{<f0> 46.0|<f1> Locate diary entries relevant to my research. }" shape=Mrecord];
+1035 [label="Researcher," shape=box];
+1035 -> 46
+276 -> 46
+1038 [label="Researcher," shape=box];
+1038 -> 46
+1040 [label="Researcher," shape=box];
+1040 -> 46
+1042 [label="<f0>  |<f1> Research " color=red];
+46 -> 1042 [label="Research"]
+241 -> 253
+241 -> 254
+241 -> 255
+241 -> 256
+241 -> 257
+241 -> 259
+241 -> 278
+242 -> 246
+242 -> 247
+242 -> 248
+242 -> 249
+242 -> 250
+242 -> 251
+242 -> 253
+242 -> 259
+242 -> 260
+242 -> 261
+242 -> 262
+242 -> 263
+242 -> 264
+242 -> 265
+242 -> 266
+242 -> 267
+242 -> 268
+242 -> 269
+242 -> 270
+242 -> 271
+242 -> 272
+242 -> 273
+242 -> 274
+242 -> 275
+242 -> 276
+242 -> 277
+242 -> 278
+242 -> 279
+242 -> 280
+242 -> 281
+242 -> 282
+242 -> 283
+242 -> 284
+242 -> 285
+246 -> 201 [label="Document"]
+246 -> 212 [label="Information"]
+247 -> 202 [label="Report"]
+248 -> 203 [label="File"]
+249 -> 204 [label="Common Material"]
+249 -> 205 [label="Collection"]
+250 -> 235 [label="Working Paper"]
+251 -> 200 [label="Photo"]
+253 -> 207 [label="Publication"]
+253 -> 209 [label="Citation"]
+254 -> 212 [label="Information"]
+254 -> 211 [label="Available Right"]
+254 -> 208 [label="Researcher"]
+255 -> 210 [label="Donor"]
+255 -> 211 [label="Available Right"]
+255 -> 212 [label="Information"]
+256 -> 213 [label="Visual"]
+257 -> 236 [label="Index Card"]
+260 -> 215 [label="Link"]
+260 -> 216 [label="Social Medium"]
+260 -> 203 [label="File"]
+261 -> 217 [label="Image"]
+262 -> 202 [label="Report"]
+263 -> 200 [label="Photo"]
+264 -> 201 [label="Document"]
+265 -> 237 [label="Analog Version"]
+265 -> 218 [label="Digital Object"]
+266 -> 200 [label="Photo"]
+267 -> 219 [label="Notification"]
+268 -> 221 [label="Video"]
+269 -> 222 [label="Audio File"]
+269 -> 220 [label="Web Browser"]
+270 -> 224 [label="Descriptive Datum"]
+270 -> 223 [label="Common Format"]
+271 -> 225 [label="Keyword"]
+271 -> 203 [label="File"]
+272 -> 225 [label="Keyword"]
+273 -> 203 [label="File"]
+273 -> 205 [label="Collection"]
+274 -> 217 [label="Image"]
+275 -> 226 [label="Structured Datum"]
+276 -> 275
+277 -> 238 [label="Outreach Material"]
+278 -> 212 [label="Information"]
+279 -> 228 [label="Archival ,\nDigitized Material"]
+279 -> 227 [label="Mediation"]
+280 -> 230 [label="Question"]
+280 -> 229 [label="Specific File"]
+281 -> 231 [label="Date"]
+282 -> 234 [label="Search"]
+282 -> 233 [label="Scan Diary"]
+283 -> 239 [label="Diary Segment"]
+284 -> 282
+284 -> 283
+285 -> 240 [label="Film Clip"]
+}

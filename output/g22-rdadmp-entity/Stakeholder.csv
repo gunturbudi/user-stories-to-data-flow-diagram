@@ -1,0 +1,15 @@
+id,value,style,source,target,type
+200,Plan,shape=partialRectangle,null,null,data_base
+201,Dmp,shape=partialRectangle,null,null,data_base
+202,Project Proposal,shape=partialRectangle,null,null,data_base
+203,Reference,shape=partialRectangle,null,null,data_base
+204,Data Management,shape=partialRectangle,null,null,data_base
+205,Stakeholder,rounded=0,null,null,external_entity
+206,Know,ellipse,null,null,process
+207,Know Responsible For The Dmp,ellipse,null,null,process
+208,Have References To The Project Proposal,ellipse,null,null,process
+210,,endArrow=classic,205,207,endArrow=classic
+211,,endArrow=classic,205,208,endArrow=classic
+212,Dmp,endArrow=classic,207,201,endArrow=classic
+213,Reference,endArrow=classic,208,203,endArrow=classic
+214,Project Proposal,endArrow=classic,208,202,endArrow=classic

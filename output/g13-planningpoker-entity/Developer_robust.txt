@@ -1,0 +1,62 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Css" as thingCSS
+	entity "Xhtml Standard" as thingxhtmlstandard
+	entity "Site" as thingsite
+	entity "7" as thing7
+	entity "Function" as thingfunction #grey
+	entity "Internet Explorer" as thinginternetexplorer #grey
+	entity "Definition" as thingdefinition
+	entity "Use Term" as thingusedterm
+	entity "Database Index" as thingdatabaseindex
+	entity "W3C Guideline" as thingw3cguideline
+	entity "Application" as thingapplication #grey
+	actor "Developer" as actordeveloper
+	boundary "Css\nInterface" as thingcssinterface #grey
+	boundary "Standard\nInterface" as thingstandardinterface #grey
+	boundary "Index\nInterface" as thingindexinterface #grey
+	boundary "Explorer\nInterface" as thingexplorerinterface #grey
+	boundary "7\nInterface" as thing7interface #grey
+	boundary "Term\nInterface" as thingterminterface #grey
+	control "Written A\nSite Is\nCompliant With\nCss" as controlwritesiteCSS
+	control "Written A\nSite Is\nCompliant With\nXhtml Standards" as controlwritesite
+	control "Created Database\nIndexes" as controlcreatedatabaseindexes
+	control "Have The\nApplication Function\nIn Internet\nExplorer" as controlhaveapplicationfunctioninternetexplorer
+	control "Have The\nFunction In\n7" as controlhavefunction7
+	control "Have" as controlhave
+	control "Have A\nList Of\nDefinitions For\nCommonly Used\nTerms" as controlhavelist
+
+	thingxhtmlstandard <.. thingsite
+	thingCSS <.. thingsite
+	thing7 <.. thingfunction
+	thingapplication <.. thingfunction
+	thinginternetexplorer <.. thingfunction
+	thingusedterm <.. thingdefinition
+	actordeveloper --- thingcssinterface
+	actordeveloper --- thingstandardinterface
+	actordeveloper --- thingindexinterface
+	actordeveloper --- thingexplorerinterface
+	actordeveloper --- thing7interface
+	actordeveloper --- thingterminterface
+	thingCSS --- controlwritesiteCSS
+	thingcssinterface --> controlwritesiteCSS
+	thingsite --- controlwritesiteCSS
+	thingsite --- controlwritesite
+	thingxhtmlstandard --- controlwritesite
+	thingstandardinterface --> controlwritesite
+	thingdatabaseindex --- controlcreatedatabaseindexes
+	thingindexinterface --> controlcreatedatabaseindexes
+	thinginternetexplorer --- controlhaveapplicationfunctioninternetexplorer
+	thingexplorerinterface --> controlhaveapplicationfunctioninternetexplorer
+	thingfunction --- controlhaveapplicationfunctioninternetexplorer
+	thingfunction --- controlhavefunction7
+	thing7 --- controlhavefunction7
+	thing7interface --> controlhavefunction7
+	thingdefinition --- controlhavelist
+	thingusedterm --- controlhavelist
+	thingterminterface --> controlhavelist
+
+@enduml

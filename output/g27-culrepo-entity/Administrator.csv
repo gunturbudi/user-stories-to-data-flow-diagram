@@ -1,0 +1,97 @@
+id,value,style,source,target,type
+15,Make sure my school is credited for the work.,ellipse,null,null,process
+200,System,shape=partialRectangle,null,null,data_base
+201,Activity Insight,shape=partialRectangle,null,null,data_base
+202,"Scholarly ,\nFaculty Output",shape=partialRectangle,null,null,data_base
+203,Repository,shape=partialRectangle,null,null,data_base
+204,Symplectic Element,shape=partialRectangle,null,null,data_base
+205,Faculty,shape=partialRectangle,null,null,data_base
+206,Digestible Way,shape=partialRectangle,null,null,data_base
+207,Digital Space,shape=partialRectangle,null,null,data_base
+208,Aforementioned Work,shape=partialRectangle,null,null,data_base
+209,"Text ,\nBased Format",shape=partialRectangle,null,null,data_base
+210,Variety,shape=partialRectangle,null,null,data_base
+211,Media File,shape=partialRectangle,null,null,data_base
+212,Platform,shape=partialRectangle,null,null,data_base
+213,Ease,shape=partialRectangle,null,null,data_base
+214,Administrator,shape=partialRectangle,null,null,data_base
+215,Account,shape=partialRectangle,null,null,data_base
+216,Partial,shape=partialRectangle,null,null,data_base
+217,Name,shape=partialRectangle,null,null,data_base
+218,Email,shape=partialRectangle,null,null,data_base
+219,Tracking Statistic,shape=partialRectangle,null,null,data_base
+220,Administrator,rounded=0,null,null,external_entity
+221,Db,rounded=0,null,null,external_entity
+222,Ir Administrator,rounded=0,null,null,external_entity
+223,"Track Scholarly, Faculty Output In The Repositories",ellipse,null,null,process
+224,Use Systems Such As Activity Insight,ellipse,null,null,process
+225,Use Systems Such As Symplectic Elements,ellipse,null,null,process
+226,See Comprehensive Tracking Statistics Presented To Faculty In A Digestible Way,ellipse,null,null,process
+227,Disseminate The Aforementioned Works In A Digital Space Strongly Branded,ellipse,null,null,process
+228,"Have A Platform Support A Variety Of Text, Based Format",ellipse,null,null,process
+229,Have A Platform Support A Variety Of Media File,ellipse,null,null,process
+230,See A List Of All Administrators For Ease,ellipse,null,null,process
+231,Administering Accounts,ellipse,null,null,process
+232,Use Partial,ellipse,null,null,process
+233,Search For,ellipse,null,null,process
+234,Use,ellipse,null,null,process
+235,Use Full Email,ellipse,null,null,process
+236,Use Name,ellipse,null,null,process
+238,,endArrow=classic,220,223,endArrow=classic
+239,,endArrow=classic,220,224,endArrow=classic
+240,,endArrow=classic,220,225,endArrow=classic
+241,,endArrow=classic,220,226,endArrow=classic
+242,,endArrow=classic,220,227,endArrow=classic
+243,,endArrow=classic,220,228,endArrow=classic
+244,,endArrow=classic,220,229,endArrow=classic
+245,,endArrow=classic,221,230,endArrow=classic
+246,,endArrow=classic,221,231,endArrow=classic
+247,,endArrow=classic,221,232,endArrow=classic
+248,,endArrow=classic,221,233,endArrow=classic
+249,,endArrow=classic,221,233,endArrow=classic
+250,,endArrow=classic,221,234,endArrow=classic
+251,,endArrow=classic,221,235,endArrow=classic
+252,,endArrow=classic,221,236,endArrow=classic
+253,,endArrow=classic,222,230,endArrow=classic
+254,,endArrow=classic,222,231,endArrow=classic
+255,,endArrow=classic,222,232,endArrow=classic
+256,,endArrow=classic,222,233,endArrow=classic
+257,,endArrow=classic,222,233,endArrow=classic
+258,,endArrow=classic,222,234,endArrow=classic
+259,,endArrow=classic,222,235,endArrow=classic
+260,,endArrow=classic,222,236,endArrow=classic
+261,"Scholarly ,\nFaculty Output",endArrow=classic,223,202,endArrow=classic
+262,Repository,endArrow=classic,223,203,endArrow=classic
+263,Activity Insight,endArrow=classic,224,201,endArrow=classic
+264,System,endArrow=classic,224,200,endArrow=classic
+265,,endArrow=classic,225,223,endArrow=classic
+266,System,endArrow=classic,225,200,endArrow=classic
+267,Symplectic Element,endArrow=classic,225,204,endArrow=classic
+268,Tracking Statistic,endArrow=classic,226,219,endArrow=classic
+269,Faculty,endArrow=classic,226,205,endArrow=classic
+270,Digestible Way,endArrow=classic,226,206,endArrow=classic
+271,Aforementioned Work,endArrow=classic,227,208,endArrow=classic
+272,Digital Space,endArrow=classic,227,207,endArrow=classic
+273,"Text ,\nBased Format",endArrow=classic,228,209,endArrow=classic
+274,Variety,endArrow=classic,228,210,endArrow=classic
+275,Platform,endArrow=classic,228,212,endArrow=classic
+276,Platform,endArrow=classic,229,212,endArrow=classic
+277,Variety,endArrow=classic,229,210,endArrow=classic
+278,Media File,endArrow=classic,229,211,endArrow=classic
+279,Administrator,endArrow=classic,230,214,endArrow=classic
+280,Ease,endArrow=classic,230,213,endArrow=classic
+281,,endArrow=classic,231,230,endArrow=classic
+282,Account,endArrow=classic,231,215,endArrow=classic
+283,Partial,endArrow=classic,232,216,endArrow=classic
+284,,endArrow=classic,233,232,endArrow=classic
+285,,endArrow=classic,233,234,endArrow=classic
+286,,endArrow=classic,233,235,endArrow=classic
+287,Email,endArrow=classic,235,218,endArrow=classic
+288,Name,endArrow=classic,236,217,endArrow=classic
+1000,,endArrow=classic,227,15,endArrow=classic
+1001,"Administrator,",rounded=0,null,null,external_entity
+1002,,endArrow=classic,1001,15,endArrow=classic
+1003,"Administrator,",rounded=0,null,null,external_entity
+1004,,endArrow=classic,1003,15,endArrow=classic
+1005,School,rounded=0,null,null,external_entity
+1006,School,endArrow=classic,15,1005,endArrow=classic

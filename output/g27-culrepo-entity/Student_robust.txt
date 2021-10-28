@@ -1,0 +1,42 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Student" as thingstudent
+	entity "Item" as thingitem
+	entity "Repository" as thingrepository
+	entity "Particular Topic" as thingparticulartopic
+	entity "Cornell" as thingcornell
+	entity "Research" as thingresearch
+	entity "Dmp" as thingdmp
+	entity "Datum" as thingdatum
+	actor "Faculty Member" as actorfacultymember
+	actor "Student" as actorstudent
+	circle "Requirement" as thingrequirement
+	boundary "Embargoed Dissertation" as thingembargoeddissertationmeetrequirementstudent #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Direct Students\nTo An\nItem Within\nThe Repository" as controldirectstudentitem
+	control "Learn" as controllearn
+	control "Upload To\nThe Repository\nThe Data\nAssociated With" as controluploadrepositorydatum
+	control "Meet Requirements\nOf A\nDmp" as controlmeetrequirement
+
+	thingitem <.. thingstudent
+	thingrepository <.. thingitem
+	thingparticulartopic <.. thingresearch
+	thingdmp *-- thingrequirement
+	actorstudent --- thingembargoeddissertationmeetrequirementstudent
+	actorfacultymember --- thingrepositoryinterface
+	thingstudent --- controldirectstudentitem
+	thingitem --- controldirectstudentitem
+	thingrepository --- controldirectstudentitem
+	thingrepositoryinterface --> controldirectstudentitem
+	thingdatum --- controluploadrepositorydatum
+	thingembargoeddissertationmeetrequirementstudent --> controluploadrepositorydatum
+	thingrepository --- controluploadrepositorydatum
+	controluploadrepositorydatum --> controlmeetrequirement
+	thingrequirement --- controlmeetrequirement
+	thingdmp --- controlmeetrequirement
+	thingembargoeddissertationmeetrequirementstudent --> controlmeetrequirement
+
+@enduml

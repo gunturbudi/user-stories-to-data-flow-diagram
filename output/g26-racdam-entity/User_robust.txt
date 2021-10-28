@@ -1,0 +1,48 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Particular User" as thingparticularuser
+	entity "Right" as thingright
+	entity "Role" as thingrole
+	entity "User Group" as thingusergroup
+	entity "Directory Credential" as thingdirectorycredential
+	entity "User" as thinguser #grey
+	actor "Archivist" as actorarchivist
+	actor "Administrator" as actoradministrator
+	boundary "User" as thinguseradministrator
+	boundary "Role\nInterface" as thingroleinterface #grey
+	boundary "Group\nInterface" as thinggroupinterface #grey
+	boundary "Credential\nInterface" as thingcredentialinterface #grey
+	control "See" as controlsee
+	control "Create User\nRoles" as controlcreateuserroles
+	control "Assign Rights\nTo User\nGroups" as controlassignrightusergroups
+	control "Assign Rights\nTo Role" as controlassignrightrole
+	control "Allow" as controlallowuseloguseradministratoractivedirectorycredentials
+	control "Using Active\nDirectory Credentials" as controluseloguseradministratoractivedirectorycredentials
+	control "Log" as controlloguseradministrator
+
+	thingusergroup <.. thingright
+	thingrole <.. thingright
+	thinguser <.. thingrole
+	actoradministrator --- thinguseradministrator
+	actoradministrator --- thingroleinterface
+	actoradministrator --- thinggroupinterface
+	actoradministrator --- thingcredentialinterface
+	thingroleinterface --> controlcreateuserroles
+	thingrole --- controlcreateuserroles
+	thingright --- controlassignrightusergroups
+	thingusergroup --- controlassignrightusergroups
+	thinggroupinterface --> controlassignrightusergroups
+	thingrole --- controlassignrightrole
+	thingroleinterface --> controlassignrightrole
+	thingright --- controlassignrightrole
+	thingcredentialinterface --> controlallowuseloguseradministratoractivedirectorycredentials
+	controlallowuseloguseradministratoractivedirectorycredentials --> controluseloguseradministratoractivedirectorycredentials
+	thingdirectorycredential --- controluseloguseradministratoractivedirectorycredentials
+	thingcredentialinterface --> controluseloguseradministratoractivedirectorycredentials
+	controluseloguseradministratoractivedirectorycredentials --> controlloguseradministrator
+	thinguseradministrator --> controlloguseradministrator
+
+@enduml

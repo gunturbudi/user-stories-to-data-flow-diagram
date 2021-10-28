@@ -1,0 +1,122 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "System" as thingsystem
+	entity "Activity Insight" as thingactivityinsight #grey
+	entity "Scholarly ,\nFaculty Output" as thingscholarlyfacultyoutput
+	entity "Repository" as thingrepository
+	entity "Symplectic Element" as thingsymplecticelement
+	entity "Faculty" as thingfaculty
+	entity "Digestible Way" as thingdigestibleway
+	entity "Digital Space" as thingdigitalspace
+	entity "Aforementioned Work" as thingaforementionedwork
+	entity "Text ,\nBased Format" as thingtextbasedformat
+	entity "Variety" as thingvariety
+	entity "Media File" as thingmediafile #grey
+	entity "Platform" as thingplatform
+	entity "Ease" as thingease
+	entity "Administrator" as thingadministrator
+	entity "Account" as thingaccount
+	entity "Partial" as thingpartial
+	entity "Name" as thingname
+	entity "Email" as thingfullemail
+	entity "Tracking Statistic" as thingtrackingstatistic
+	actor "Administrator" as actoradministrator
+	actor "Db" as actordb
+	actor "Ir Administrator" as actoriradministrator
+	boundary "Account" as thingaccountusenamedb #grey
+	boundary "Administrator Account" as thingadministratoraccountsusefullemaildb #grey
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	boundary "Insight\nInterface" as thinginsightinterface #grey
+	boundary "Element\nInterface" as thingelementinterface #grey
+	boundary "Way\nInterface" as thingwayinterface #grey
+	boundary "Space\nInterface" as thingspaceinterface #grey
+	boundary "Format\nInterface" as thingformatinterface #grey
+	boundary "File\nInterface" as thingfileinterface #grey
+	boundary "Account\nInterface" as thingaccountinterface #grey
+	control "Track Scholarly,\nFaculty Output\nIn The\nRepositories" as controltrackscholarlyfacultyoutputrepository
+	control "Use Systems\nSuch As\nActivity Insight" as controlusesystemactivityinsight
+	control "Use Systems\nSuch As\nSymplectic Elements" as controlusesystemtrackscholarlyfacultyoutputrepository
+	control "See Comprehensive\nTracking Statistics\nPresented To\nFaculty In\nA Digestible\nWay" as controlseecomprehensivetrackingstatistics
+	control "Disseminate The\nAforementioned Works\nIn A\nDigital Space\nStrongly Branded" as controldisseminateaforementionedworkdigitalspace
+	control "Have A\nPlatform Support\nA Variety\nOf Text,\nBased Format" as controlhaveplatformtextbasedformat
+	control "Have A\nPlatform Support\nA Variety\nOf Media\nFile" as controlhaveplatform
+	control "See A\nList Of\nAll Administrators\nFor Ease" as controlseelistease
+	control "Administering Accounts" as controladministerseelisteaseaccount
+	control "Use Partial" as controlusepartial
+	control "Search For" as controlsearchaccountusedbaccountusepartialdb
+	control "Use" as controluse #grey
+	control "Use Full\nEmail" as controlusefullemail
+	control "Use Name" as controlusename
+
+	thingsymplecticelement <.. thingsystem
+	thingactivityinsight <.. thingsystem
+	thingrepository <.. thingscholarlyfacultyoutput
+	thingdigestibleway <.. thingfaculty
+	thingdigitalspace <.. thingaforementionedwork
+	thingmediafile *-- thingvariety
+	thingtextbasedformat *-- thingvariety
+	thingvariety <.. thingplatform
+	thingease <.. thingadministrator
+	thingfaculty <.. thingtrackingstatistic
+	thingdigestibleway <.. thingtrackingstatistic
+	actordb --- thingaccountusenamedb
+	actoriradministrator --- thingaccountusenamedb
+	actordb --- thingadministratoraccountsusefullemaildb
+	actoriradministrator --- thingadministratoraccountsusefullemaildb
+	actoradministrator --- thingrepositoryinterface
+	actoradministrator --- thinginsightinterface
+	actoradministrator --- thingelementinterface
+	actoradministrator --- thingwayinterface
+	actoradministrator --- thingspaceinterface
+	actoradministrator --- thingformatinterface
+	actoradministrator --- thingfileinterface
+	actordb --- thingaccountinterface
+	actoriradministrator --- thingaccountinterface
+	thingscholarlyfacultyoutput --- controltrackscholarlyfacultyoutputrepository
+	thingrepository --- controltrackscholarlyfacultyoutputrepository
+	thingrepositoryinterface --> controltrackscholarlyfacultyoutputrepository
+	controlusesystemtrackscholarlyfacultyoutputrepository --> controltrackscholarlyfacultyoutputrepository
+	thingactivityinsight --- controlusesystemactivityinsight
+	thinginsightinterface --> controlusesystemactivityinsight
+	thingsystem --- controlusesystemactivityinsight
+	thingsystem --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingsymplecticelement --- controlusesystemtrackscholarlyfacultyoutputrepository
+	thingelementinterface --> controlusesystemtrackscholarlyfacultyoutputrepository
+	thingtrackingstatistic --- controlseecomprehensivetrackingstatistics
+	thingfaculty --- controlseecomprehensivetrackingstatistics
+	thingdigestibleway --- controlseecomprehensivetrackingstatistics
+	thingwayinterface --> controlseecomprehensivetrackingstatistics
+	thingaforementionedwork --- controldisseminateaforementionedworkdigitalspace
+	thingdigitalspace --- controldisseminateaforementionedworkdigitalspace
+	thingspaceinterface --> controldisseminateaforementionedworkdigitalspace
+	thingtextbasedformat --- controlhaveplatformtextbasedformat
+	thingformatinterface --> controlhaveplatformtextbasedformat
+	thingvariety --- controlhaveplatformtextbasedformat
+	thingplatform --- controlhaveplatformtextbasedformat
+	thingplatform --- controlhaveplatform
+	thingvariety --- controlhaveplatform
+	thingmediafile --- controlhaveplatform
+	thingfileinterface --> controlhaveplatform
+	thingadministrator --- controlseelistease
+	thingease --- controlseelistease
+	controladministerseelisteaseaccount --> controlseelistease
+	thingaccountinterface --> controlseelistease
+	thingaccount --- controladministerseelisteaseaccount
+	thingaccountinterface --> controladministerseelisteaseaccount
+	thingpartial --- controlusepartial
+	controlsearchaccountusedbaccountusepartialdb --> controlusepartial
+	thingaccountusenamedb --> controlusepartial
+	thingaccountusenamedb --> controlsearchaccountusedbaccountusepartialdb
+	thingadministratoraccountsusefullemaildb --> controlsearchaccountusedbaccountusepartialdb
+	controlsearchaccountusedbaccountusepartialdb --> controluse
+	thingaccountusenamedb --> controluse
+	thingadministratoraccountsusefullemaildb --> controlusefullemail
+	thingfullemail --- controlusefullemail
+	controlsearchaccountusedbaccountusepartialdb --> controlusefullemail
+	thingaccountusenamedb --> controlusename
+	thingname --- controlusename
+
+@enduml

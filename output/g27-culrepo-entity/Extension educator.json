@@ -1,0 +1,31 @@
+[
+  {
+    "text": "As an Extension Educator, I want to have a place to store a variety of documents, presentations and data sets I've created, that doesn't require an extra step in making available on my own County/Region/Project site (i.e. a list or directory of materials there is automatically updated when placed in a central archive/repository).",
+    "entities": [
+      {
+        "text": "Extension Educator",
+        "label": "Data"
+      },
+      {
+        "text": "store",
+        "label": "Processing"
+      },
+      {
+        "text": "documents",
+        "label": "PII"
+      },
+      {
+        "text": "presentations",
+        "label": "PII"
+      },
+      {
+        "text": "data sets",
+        "label": "PII"
+      },
+      {
+        "text": "County",
+        "label": "PII"
+      }
+    ]
+  }
+]

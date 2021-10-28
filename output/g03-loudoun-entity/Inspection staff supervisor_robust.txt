@@ -1,0 +1,15 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Inspection" as thinginspection
+	actor "Inspection ,\nStaff Supervisor" as actorinspectionstaffsupervisor
+	boundary "Inspection\nInterface" as thinginspectioninterface #grey
+	control "Assign Inspections" as controlassigninspection
+
+	actorinspectionstaffsupervisor --- thinginspectioninterface
+	thinginspection --- controlassigninspection
+	thinginspectioninterface --> controlassigninspection
+
+@enduml

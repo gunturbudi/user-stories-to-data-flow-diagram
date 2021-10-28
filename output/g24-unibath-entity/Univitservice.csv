@@ -1,0 +1,25 @@
+id,value,style,source,target,type
+200,Archived Datum,shape=partialRectangle,null,null,data_base
+201,Archive,shape=partialRectangle,null,null,data_base
+202,Ldap,shape=partialRectangle,null,null,data_base
+203,Datum,shape=partialRectangle,null,null,data_base
+204,Different System,shape=partialRectangle,null,null,data_base
+205,Storage System,shape=partialRectangle,null,null,data_base
+206,University System,shape=partialRectangle,null,null,data_base
+207,Univitservice,rounded=0,null,null,external_entity
+208,Store Archived Data On Existing Storage Systems,ellipse,null,null,process
+209,Integrate The Archive With Existing University Systems Such As Ldap,ellipse,null,null,process
+210,Store Archived Data On The Hcp Object Store,ellipse,null,null,process
+211,Export All Data To A Different System,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Archived Datum,endArrow=classic,208,200,endArrow=classic
+218,Storage System,endArrow=classic,208,205,endArrow=classic
+219,Archive,endArrow=classic,209,201,endArrow=classic
+220,University System,endArrow=classic,209,206,endArrow=classic
+221,Ldap,endArrow=classic,209,202,endArrow=classic
+222,Archived Datum,endArrow=classic,210,200,endArrow=classic
+223,Datum,endArrow=classic,211,203,endArrow=classic
+224,Different System,endArrow=classic,211,204,endArrow=classic

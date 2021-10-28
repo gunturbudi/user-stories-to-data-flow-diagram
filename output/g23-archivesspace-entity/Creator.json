@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As an Archivist, I would like to indicate an Agent is either the creator or source or subject of an Accession or Resource or Resource Component.",
+    "entities": [
+      {
+        "text": "Archivist,",
+        "label": "Data"
+      },
+      {
+        "text": "indicate",
+        "label": "Processing"
+      },
+      {
+        "text": "Agent",
+        "label": "Data"
+      },
+      {
+        "text": "creator",
+        "label": "Data"
+      },
+      {
+        "text": "source",
+        "label": "PII"
+      }
+    ]
+  }
+]

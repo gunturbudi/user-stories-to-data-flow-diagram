@@ -1,0 +1,27 @@
+[
+  {
+    "text": "As a researcher,  I want to have the ability to locate and access data that colleagues want to share.",
+    "entities": [
+      {
+        "text": "researcher,",
+        "label": "Data"
+      },
+      {
+        "text": "locate",
+        "label": "Processing"
+      },
+      {
+        "text": "access",
+        "label": "Processing"
+      },
+      {
+        "text": "data",
+        "label": "PII"
+      },
+      {
+        "text": "colleagues",
+        "label": "Data"
+      }
+    ]
+  }
+]

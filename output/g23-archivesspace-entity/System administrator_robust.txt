@@ -1,0 +1,12 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Repository" as thinggivenrepository
+	entity "User" as thinguser
+	actor "System Administrator" as actorsystemadministrator
+	control "Declare" as controldeclare
+
+
+@enduml

@@ -1,0 +1,18 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "External Repository" as thingexternalrepository
+	entity "Data Set" as thingdataset
+	actor "Institutional ,\nData Steward" as actorinstitutionaldatasteward
+	boundary "Repository\nInterface" as thingrepositoryinterface #grey
+	control "Extract The\nData Sets\nSubmitted To\nExternal Repositories" as controlextractdatasets
+
+	thingexternalrepository <.. thingdataset
+	actorinstitutionaldatasteward --- thingrepositoryinterface
+	thingdataset --- controlextractdatasets
+	thingexternalrepository --- controlextractdatasets
+	thingrepositoryinterface --> controlextractdatasets
+
+@enduml

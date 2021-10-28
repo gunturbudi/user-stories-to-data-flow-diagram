@@ -1,0 +1,284 @@
+digraph dfd2{ 
+node[shape=record]
+200 [label="<f0>  |<f1> Access Embargo " ];
+201 [label="<f0>  |<f1> Item " color=red];
+202 [label="<f0>  |<f1> Analytic " ];
+203 [label="<f0>  |<f1> Useful Statistic " ];
+204 [label="<f0>  |<f1> Comprehensive " ];
+205 [label="<f0>  |<f1> Altmetric " ];
+206 [label="<f0>  |<f1> Collection " color=red];
+207 [label="<f0>  |<f1> Repository " ];
+208 [label="<f0>  |<f1> Author " color=red];
+209 [label="<f0>  |<f1> Rare Material " color=red];
+210 [label="<f0>  |<f1> Archival " ];
+211 [label="<f0>  |<f1> System " ];
+212 [label="<f0>  |<f1> Digital Item " ];
+213 [label="<f0>  |<f1> Material " color=red];
+214 [label="<f0>  |<f1> Behalf " color=red];
+215 [label="<f0>  |<f1> Metadata " color=red];
+216 [label="<f0>  |<f1> Description " ];
+217 [label="<f0>  |<f1> Subscribable Flag " ];
+218 [label="<f0>  |<f1> Document Title " ];
+219 [label="<f0>  |<f1> Subject Area " color=red];
+220 [label="<f0>  |<f1> Keyword " ];
+221 [label="<f0>  |<f1> Document Type " ];
+222 [label="<f0>  |<f1> Release Frequency " ];
+223 [label="<f0>  |<f1> Status " ];
+224 [label="<f0>  |<f1> File Location " ];
+225 [label="<f0>  |<f1> Descriptive Metadata " color=red];
+226 [label="<f0>  |<f1> Etc " ];
+227 [label="<f0>  |<f1> Supplementary File " ];
+228 [label="<f0>  |<f1> Slideshow " ];
+229 [label="<f0>  |<f1> Dataset " color=red];
+230 [label="<f0>  |<f1> Stream Medium " ];
+231 [label="<f0>  |<f1> , Collection " color=red];
+232 [label="<f0>  |<f1> Deposit " color=red];
+233 [label="<f0>  |<f1> Content " color=red];
+234 [label="<f0>  |<f1> Web Page " color=red];
+235 [label="<f0>  |<f1> Upload Metadata " color=red];
+236 [label="<f0>  |<f1> Upload ,\nCorrect Document " ];
+237 [label="<f0>  |<f1> Revision " color=red];
+238 [label="<f0>  |<f1> Reason " ];
+239 [label="<f0>  |<f1> Error " ];
+240 [label="<f0>  |<f1> Quick Response " color=red];
+241 [label="<f0>  |<f1> Reasonable Resolution " ];
+242 [label="<f0>  |<f1> Certain Collection " color=red];
+243 [label="<f0>  |<f1> Field " color=red];
+244 [label="<f0>  |<f1> Robust Manner " ];
+245 [label="<f0>  |<f1> Revisor " ];
+246 [label="<f0>  |<f1> Cornell " ];
+247 [label="<f0>  |<f1> Researcher " color=red];
+248 [label="<f0>  |<f1> Sharing " ];
+249 [label="<f0>  |<f1> Research " color=red];
+250 [label="<f0>  |<f1> Rot " ];
+251 [label="<f0>  |<f1> Law School " color=red];
+252 [label="<f0>  |<f1> Usage Statistic " color=red];
+253 [label="<f0>  |<f1> Search Capability " ];
+254 [label="<f0>  |<f1> Tech Support\nIssue " ];
+255 [label="<f0>  |<f1> Custom " ];
+256 [label="Library , Staff Member" shape=box];
+257 [label="{<f0> 1.0|<f1> Apply An Access Embargo To An Item }" shape=Mrecord];
+258 [label="{<f0> 2.0|<f1> Remove An Access Embargo To An Item }" shape=Mrecord];
+259 [label="{<f0> 3.0|<f1> Access Useful Statistics Including Altmetrics At Item Level }" shape=Mrecord];
+260 [label="{<f0> 4.0|<f1> Access Useful Statistics Including Altmetrics At Collection }" shape=Mrecord];
+261 [label="{<f0> 5.0|<f1> Access Comprehensive }" shape=Mrecord];
+262 [label="{<f0> 6.0|<f1> Access Useful Statistics Including Altmetrics At Author }" shape=Mrecord];
+263 [label="{<f0> 7.0|<f1> Access Analytic }" shape=Mrecord];
+264 [label="{<f0> 8.0|<f1> Access Useful Usage Statistics Including Altmetrics At The Repository }" shape=Mrecord];
+265 [label="{<f0> 9.0|<f1> Create Collections Highlight }" shape=Mrecord];
+266 [label="{<f0> 10.0|<f1> Endanger }" shape=Mrecord];
+267 [label="{<f0> 11.0|<f1> Create Collections Highlight Rare Material }" shape=Mrecord];
+268 [label="{<f0> 12.0|<f1> Create Collections Highlight Archival }" shape=Mrecord];
+269 [label="{<f0> 13.0|<f1> Make Digital Items In External, Trusted System Searchable Within System }" shape=Mrecord];
+270 [label="{<f0> 14.0|<f1> Upload Material To The Repository On The Author's Behalf }" shape=Mrecord];
+271 [label="{<f0> 15.0|<f1> Create Metadata For Items Within The Repository Includes File Location }" shape=Mrecord];
+272 [label="{<f0> 16.0|<f1> Create Metadata For Items Within The Repository Includes Subscribable Flag }" shape=Mrecord];
+273 [label="{<f0> 17.0|<f1> Create Metadata For Items Within The Repository Includes Document Title }" shape=Mrecord];
+274 [label="{<f0> 18.0|<f1> Create Metadata For Items Within The Repository Includes Description }" shape=Mrecord];
+275 [label="{<f0> 19.0|<f1> Create Metadata For Items Within The Repository Includes Author }" shape=Mrecord];
+276 [label="{<f0> 20.0|<f1> Create Metadata For Items Within The Repository Includes Subject Area }" shape=Mrecord];
+277 [label="{<f0> 21.0|<f1> Create Metadata For Items Within The Repository Includes Document Type }" shape=Mrecord];
+278 [label="{<f0> 22.0|<f1> Create Metadata For Items Within The Repository Includes Release Frequency }" shape=Mrecord];
+279 [label="{<f0> 23.0|<f1> Create Metadata For Items Within The Repository Includes Status }" shape=Mrecord];
+280 [label="{<f0> 24.0|<f1> Searching }" shape=Mrecord];
+281 [label="{<f0> 25.0|<f1> Create Metadata For Items Within The Repository Includes Keyword }" shape=Mrecord];
+282 [label="{<f0> 26.0|<f1> Upload Large Batches Of Items Including Descriptive Metadata }" shape=Mrecord];
+283 [label="{<f0> 27.0|<f1> Upload An Item To The Repository Only Become Visible }" shape=Mrecord];
+284 [label="{<f0> 28.0|<f1> Include Supplementary Files Such As Slideshow }" shape=Mrecord];
+285 [label="{<f0> 29.0|<f1> Include Supplementary Files Such As Etc }" shape=Mrecord];
+286 [label="{<f0> 30.0|<f1> Include Supplementary Files Such As Datasets }" shape=Mrecord];
+287 [label="{<f0> 31.0|<f1> Deliver Streaming Media Within The Repository }" shape=Mrecord];
+288 [label="{<f0> 32.0|<f1> Assign An Item To Than, More Collection }" shape=Mrecord];
+289 [label="{<f0> 33.0|<f1> Add Custom Metadata Fields For Deposits }" shape=Mrecord];
+290 [label="{<f0> 34.0|<f1> Allow For Better Search Capabilities }" shape=Mrecord];
+291 [label="{<f0> 35.0|<f1> Have Customizable Metadata Fields }" shape=Mrecord];
+292 [label="{<f0> 36.0|<f1> Use Metadata }" shape=Mrecord];
+293 [label="{<f0> 37.0|<f1> Use Content From The Repository In Other Systems }" shape=Mrecord];
+294 [label="{<f0> 38.0|<f1> Use Content From Easily Web Page }" shape=Mrecord];
+295 [label="{<f0> 39.0|<f1> Receive A Reasonable Resolution To Tech Support Issues }" shape=Mrecord];
+296 [label="{<f0> 40.0|<f1> Receive A Quick Response }" shape=Mrecord];
+297 [label="{<f0> 41.0|<f1> Create Custom Metadata Fields For Certain Collections }" shape=Mrecord];
+298 [label="{<f0> 42.0|<f1> Allow Searching Of Those Fields }" shape=Mrecord];
+299 [label="{<f0> 43.0|<f1> Preserve The Metadata Within The Repository }" shape=Mrecord];
+300 [label="{<f0> 44.0|<f1> Preserve The Content In A Robust Manner }" shape=Mrecord];
+301 [label="{<f0> 45.0|<f1> Create A Collection Sometimes With Custom Metadata Fields }" shape=Mrecord];
+302 [label="{<f0> 46.0|<f1> Determine }" shape=Mrecord];
+303 [label="{<f0> 47.0|<f1> Trace The List Of Revisors }" shape=Mrecord];
+304 [label="{<f0> 48.0|<f1> Tell The Researchers }" shape=Mrecord];
+305 [label="{<f0> 49.0|<f1> Using Sustainable Links Not Succumb }" shape=Mrecord];
+306 [label="{<f0> 50.0|<f1> Link Rot }" shape=Mrecord];
+307 [label="{<f0> 51.0|<f1> Preserve The Scholarship Of The Law School }" shape=Mrecord];
+52 [label="{<f0> 52.0|<f1> Ensure continued access to said content. }" shape=Mrecord];
+287 -> 52
+52 -> 233  [label="Content"]
+53 [label="{<f0> 53.0|<f1> Deliver such content in the manner best fit to the audience or occasion. }" shape=Mrecord];
+256 -> 53
+53 -> 233  [label="Content"]
+256 -> 257
+256 -> 258
+256 -> 259
+256 -> 260
+256 -> 261
+256 -> 262
+256 -> 263
+256 -> 264
+256 -> 265
+256 -> 266
+256 -> 267
+256 -> 268
+256 -> 269
+256 -> 270
+256 -> 271
+256 -> 272
+256 -> 273
+256 -> 274
+256 -> 275
+256 -> 276
+256 -> 277
+256 -> 278
+256 -> 279
+256 -> 280
+256 -> 281
+256 -> 282
+256 -> 283
+256 -> 284
+256 -> 285
+256 -> 286
+256 -> 287
+256 -> 288
+256 -> 289
+256 -> 290
+256 -> 291
+256 -> 292
+256 -> 293
+256 -> 294
+256 -> 295
+256 -> 296
+256 -> 297
+256 -> 298
+256 -> 299
+256 -> 300
+256 -> 301
+256 -> 304
+256 -> 305
+256 -> 305
+256 -> 306
+256 -> 307
+257 -> 200 [label="Access Embargo"]
+257 -> 201 [label="Item"]
+258 -> 200 [label="Access Embargo"]
+258 -> 201 [label="Item"]
+259 -> 203 [label="Useful Statistic"]
+259 -> 205 [label="Altmetric"]
+260 -> 206 [label="Collection"]
+260 -> 203 [label="Useful Statistic"]
+260 -> 205 [label="Altmetric"]
+261 -> 204 [label="Comprehensive"]
+262 -> 208 [label="Author"]
+262 -> 203 [label="Useful Statistic"]
+262 -> 205 [label="Altmetric"]
+263 -> 202 [label="Analytic"]
+264 -> 252 [label="Usage Statistic"]
+264 -> 205 [label="Altmetric"]
+264 -> 207 [label="Repository"]
+265 -> 266
+265 -> 206 [label="Collection"]
+267 -> 209 [label="Rare Material"]
+267 -> 206 [label="Collection"]
+268 -> 210 [label="Archival"]
+268 -> 206 [label="Collection"]
+269 -> 212 [label="Digital Item"]
+269 -> 211 [label="System"]
+270 -> 213 [label="Material"]
+270 -> 214 [label="Behalf"]
+270 -> 207 [label="Repository"]
+271 -> 224 [label="File Location"]
+271 -> 201 [label="Item"]
+271 -> 207 [label="Repository"]
+271 -> 215 [label="Metadata"]
+272 -> 217 [label="Subscribable Flag"]
+272 -> 201 [label="Item"]
+272 -> 207 [label="Repository"]
+272 -> 215 [label="Metadata"]
+273 -> 215 [label="Metadata"]
+273 -> 218 [label="Document Title"]
+273 -> 201 [label="Item"]
+273 -> 207 [label="Repository"]
+274 -> 216 [label="Description"]
+274 -> 201 [label="Item"]
+274 -> 207 [label="Repository"]
+274 -> 215 [label="Metadata"]
+275 -> 208 [label="Author"]
+275 -> 201 [label="Item"]
+275 -> 207 [label="Repository"]
+275 -> 215 [label="Metadata"]
+276 -> 219 [label="Subject Area"]
+276 -> 201 [label="Item"]
+276 -> 207 [label="Repository"]
+276 -> 215 [label="Metadata"]
+277 -> 221 [label="Document Type"]
+277 -> 201 [label="Item"]
+277 -> 207 [label="Repository"]
+277 -> 215 [label="Metadata"]
+278 -> 222 [label="Release Frequency"]
+278 -> 201 [label="Item"]
+278 -> 207 [label="Repository"]
+278 -> 215 [label="Metadata"]
+279 -> 223 [label="Status"]
+279 -> 201 [label="Item"]
+279 -> 207 [label="Repository"]
+279 -> 215 [label="Metadata"]
+280 -> 281
+281 -> 220 [label="Keyword"]
+281 -> 201 [label="Item"]
+281 -> 207 [label="Repository"]
+281 -> 215 [label="Metadata"]
+282 -> 225 [label="Descriptive Metadata"]
+282 -> 201 [label="Item"]
+283 -> 201 [label="Item"]
+283 -> 207 [label="Repository"]
+284 -> 228 [label="Slideshow"]
+284 -> 227 [label="Supplementary File"]
+285 -> 226 [label="Etc"]
+285 -> 227 [label="Supplementary File"]
+286 -> 227 [label="Supplementary File"]
+286 -> 229 [label="Dataset"]
+287 -> 230 [label="Stream Medium"]
+287 -> 207 [label="Repository"]
+288 -> 231 [label=", Collection"]
+288 -> 201 [label="Item"]
+289 -> 290
+289 -> 232 [label="Deposit"]
+289 -> 243 [label="Field"]
+290 -> 253 [label="Search Capability"]
+291 -> 243 [label="Field"]
+292 -> 215 [label="Metadata"]
+293 -> 233 [label="Content"]
+293 -> 207 [label="Repository"]
+293 -> 211 [label="System"]
+294 -> 234 [label="Web Page"]
+294 -> 233 [label="Content"]
+295 -> 241 [label="Reasonable Resolution"]
+295 -> 254 [label="Tech Support\nIssue"]
+296 -> 240 [label="Quick Response"]
+297 -> 242 [label="Certain Collection"]
+297 -> 243 [label="Field"]
+298 -> 243 [label="Field"]
+299 -> 207 [label="Repository"]
+299 -> 215 [label="Metadata"]
+300 -> 244 [label="Robust Manner"]
+300 -> 233 [label="Content"]
+301 -> 206 [label="Collection"]
+301 -> 243 [label="Field"]
+302 -> 283
+303 -> 302
+303 -> 245 [label="Revisor"]
+304 -> 247 [label="Researcher"]
+305 -> 306
+305 -> 307
+306 -> 250 [label="Rot"]
+307 -> 251 [label="Law School"]
+295 -> 238 [label="Reason"]
+304 -> 249 [label="Research"]
+289 -> 255 [label="Custom"]
+}

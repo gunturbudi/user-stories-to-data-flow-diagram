@@ -1,0 +1,24 @@
+id,value,style,source,target,type
+200,Deletion,shape=partialRectangle,null,null,data_base
+201,Update,shape=partialRectangle,null,null,data_base
+202,Additional Field,shape=partialRectangle,null,null,data_base
+203,Fabs Record,shape=partialRectangle,null,null,data_base
+204,Office Name,shape=partialRectangle,null,null,data_base
+205,Office Code,shape=partialRectangle,null,null,data_base
+206,Fpds Datum,shape=partialRectangle,null,null,data_base
+207,Datum User,rounded=0,null,null,external_entity
+208,Have The Deletions,ellipse,null,null,process
+209,Receive Updates To Fabs Records,ellipse,null,null,process
+210,See The Office Names From Office Codes,ellipse,null,null,process
+211,Access Additional Fields From The Fpds Data,ellipse,null,null,process
+213,,endArrow=classic,207,208,endArrow=classic
+214,,endArrow=classic,207,209,endArrow=classic
+215,,endArrow=classic,207,210,endArrow=classic
+216,,endArrow=classic,207,211,endArrow=classic
+217,Deletion,endArrow=classic,208,200,endArrow=classic
+218,Update,endArrow=classic,209,201,endArrow=classic
+219,Fabs Record,endArrow=classic,209,203,endArrow=classic
+220,Office Name,endArrow=classic,210,204,endArrow=classic
+221,Office Code,endArrow=classic,210,205,endArrow=classic
+222,Additional Field,endArrow=classic,211,202,endArrow=classic
+223,Fpds Datum,endArrow=classic,211,206,endArrow=classic

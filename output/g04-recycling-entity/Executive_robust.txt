@@ -1,0 +1,21 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Company" as thingcompany
+	entity "Access" as thingfullaccess
+	entity "Datum" as thingdatum
+	actor "Executive" as actorexecutive
+	boundary "Company\nInterface" as thingcompanyinterface #grey
+	control "Have Full\nAccess To\nData To\nCompany" as controlhavefullaccess
+
+	thingdatum <.. thingfullaccess
+	thingcompany <.. thingdatum
+	actorexecutive --- thingcompanyinterface
+	thingfullaccess --- controlhavefullaccess
+	thingdatum --- controlhavefullaccess
+	thingcompany --- controlhavefullaccess
+	thingcompanyinterface --> controlhavefullaccess
+
+@enduml

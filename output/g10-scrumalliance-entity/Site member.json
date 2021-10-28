@@ -1,0 +1,276 @@
+[
+  {
+    "text": "As a site member, I want to describe myself on my own page in a semi-structured way, so that others can learn about me.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "describe",
+        "label": "Processing"
+      },
+      {
+        "text": "own page",
+        "label": "PII"
+      },
+      {
+        "text": "learn",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to fill out an application to become a Certified Scrum Practitioner, so that I can earn that designation.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "fill out",
+        "label": "Processing"
+      },
+      {
+        "text": "application",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to fill out an application to become a Certified Scrum Trainer, so that I can teach CSM and CSPO courses and certify others.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "fill out",
+        "label": "Processing"
+      },
+      {
+        "text": "application",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to view the profiles of other members, so that I can find others I might want to connect with.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "view",
+        "label": "Processing"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      },
+      {
+        "text": "members",
+        "label": "Data"
+      },
+      {
+        "text": "others",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to search for profiles based on a few fields, so that I can find others I might want to connect with.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "search",
+        "label": "Processing"
+      },
+      {
+        "text": "profiles",
+        "label": "PII"
+      },
+      {
+        "text": "others",
+        "label": "Data"
+      },
+      {
+        "text": "connect",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to mark my profile as private in which case only my name will appear, so that no one can learn things about me I don't want shared.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      },
+      {
+        "text": "name",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to mark my email address as private even if the rest of my profile is not, so that no one can contact me.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "mark",
+        "label": "Processing"
+      },
+      {
+        "text": "email address",
+        "label": "PII"
+      },
+      {
+        "text": "profile",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to send an email to any member via a form, so that we can connect.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "send",
+        "label": "Processing"
+      },
+      {
+        "text": "email",
+        "label": "PII"
+      },
+      {
+        "text": "member",
+        "label": "Data"
+      },
+      {
+        "text": "form",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to subscribe to an RSS feed of news, so that I remain sufficiently and easily informed.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "subscribe",
+        "label": "Processing"
+      },
+      {
+        "text": "news",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to download the latest training material and methodology PDFs, so that I have them.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "download",
+        "label": "Processing"
+      },
+      {
+        "text": "training material",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to scroll through a listing of jobs, so that I can see if there any I am interested in.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "scroll",
+        "label": "Processing"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to subscribe to an RSS feed of jobs available, so that I can read them without visiting the site.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "subscribe",
+        "label": "Processing"
+      },
+      {
+        "text": "jobs",
+        "label": "PII"
+      },
+      {
+        "text": "read",
+        "label": "Processing"
+      }
+    ]
+  },
+  {
+    "text": "As a site member who has read a teaser on the front page, I want to read the entire article so that I can finish articles that appeal to me.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      }
+    ]
+  },
+  {
+    "text": "As a site member, I want to have full access to all articles, so that there is a benefit to being a member.",
+    "entities": [
+      {
+        "text": "site member",
+        "label": "Data"
+      },
+      {
+        "text": "full access",
+        "label": "Processing"
+      },
+      {
+        "text": "articles",
+        "label": "PII"
+      }
+    ]
+  }
+]

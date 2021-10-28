@@ -1,0 +1,8 @@
+id,value,style,source,target,type
+200,Interdepartmental Form,shape=partialRectangle,null,null,data_base
+201,Working Paper,shape=partialRectangle,null,null,data_base
+202,Assistant Archivist,rounded=0,null,null,external_entity
+203,Tag Staff,ellipse,null,null,process
+204,Access Interdepartmental Forms,ellipse,null,null,process
+206,,endArrow=classic,202,204,endArrow=classic
+207,Interdepartmental Form,endArrow=classic,204,200,endArrow=classic

@@ -1,0 +1,96 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Member" as thingothermember
+	entity "Article" as thingarticle
+	entity "Practitioner" as thingpractitioner
+	entity "Annual Fee" as thingannualfee
+	entity "Trainer" as thingtrainer
+	entity "Form" as thingform
+	entity "Email" as thingemail
+	entity "Reminder" as thingreminder
+	entity "Link" as thinglink
+	entity "System" as thingsystem
+	entity "New Password" as thingnewpassword
+	entity "Term Memory\nProblem" as thingtermmemoryproblem
+	entity "Site" as thingsite #grey
+	entity "Password" as thingpassword #grey
+	actor "Site Member" as actorsitemember
+	actor "Site Administrator" as actorsiteadministrator
+	actor "Site Editor" as actorsiteeditor
+	actor "Member" as actormember
+	circle "Profile" as thingprofile
+	boundary "Member\nInterface" as thingmemberinterface #grey
+	boundary "Practitioner\nInterface" as thingpractitionerinterface #grey
+	boundary "Trainer\nInterface" as thingtrainerinterface #grey
+	boundary "Form\nInterface" as thingforminterface #grey
+	boundary "Link\nInterface" as thinglinkinterface #grey
+	boundary "Reminder\nInterface" as thingreminderinterface #grey
+	boundary "Problem\nInterface" as thingprobleminterface #grey
+	control "View The\nProfiles Of\nOther Members" as controlviewprofile
+	control "Edit Any\nSite Member\nProfile" as controleditsitememberprofile
+	control "For Indicate\nAn Article\nMembers" as controlindicatearticlemember
+	control "Set The\nAnnual Fees\nFor Practitioner" as controlsetannualfeepractitioner
+	control "Set The\nAnnual Fees\nFor Trainer" as controlsetannualfeetrainer
+	control "Set The\nAnnual Fees\nFor Members" as controlsetannualfee
+	control "Send An\nEmail To\nAny Member\nVia A\nForm" as controlsendemailmemberform
+	control "Receive A\nLink" as controlreceivelink
+	control "Receive A\nReminder" as controlreceivereminder
+	control "The System\nEmail Me\nA New\nPassword Have\nShort Term\nMemory Problems" as controlhavehavesystemnewpasswordshorttermmemoryproblems
+	control "Have" as controlhave
+
+	thingform <.. thingothermember
+	thingsite <.. thingothermember
+	thingothermember <.. thingarticle
+	thingpractitioner <.. thingannualfee
+	thingtrainer <.. thingannualfee
+	thingothermember <.. thingannualfee
+	thingothermember <.. thingemail
+	thingpassword <.. thingreminder
+	thingnewpassword <.. thingsystem
+	thingtermmemoryproblem <.. thingnewpassword
+	thingothermember *-- thingprofile
+	actorsitemember --- thingmemberinterface
+	actorsiteadministrator --- thingmemberinterface
+	actorsiteeditor --- thingmemberinterface
+	actorsiteadministrator --- thingpractitionerinterface
+	actorsiteadministrator --- thingtrainerinterface
+	actorsitemember --- thingforminterface
+	actormember --- thinglinkinterface
+	actormember --- thingreminderinterface
+	actormember --- thingprobleminterface
+	thingprofile --- controlviewprofile
+	thingothermember --- controlviewprofile
+	thingmemberinterface --> controlviewprofile
+	thingmemberinterface --> controleditsitememberprofile
+	thingprofile --- controleditsitememberprofile
+	thingarticle --- controlindicatearticlemember
+	thingmemberinterface --> controlindicatearticlemember
+	thingothermember --- controlindicatearticlemember
+	thingpractitioner --- controlsetannualfeepractitioner
+	thingpractitionerinterface --> controlsetannualfeepractitioner
+	thingannualfee --- controlsetannualfeepractitioner
+	thingtrainer --- controlsetannualfeetrainer
+	thingtrainerinterface --> controlsetannualfeetrainer
+	thingannualfee --- controlsetannualfeetrainer
+	thingannualfee --- controlsetannualfee
+	thingmemberinterface --> controlsetannualfee
+	thingothermember --- controlsetannualfee
+	thingemail --- controlsendemailmemberform
+	thingform --- controlsendemailmemberform
+	thingforminterface --> controlsendemailmemberform
+	thingothermember --- controlsendemailmemberform
+	thinglink --- controlreceivelink
+	thinglinkinterface --> controlreceivelink
+	thingreminder --- controlreceivereminder
+	thingreminderinterface --> controlreceivereminder
+	thingsystem --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingnewpassword --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingtermmemoryproblem --- controlhavehavesystemnewpasswordshorttermmemoryproblems
+	thingprobleminterface --> controlhavehavesystemnewpasswordshorttermmemoryproblems
+	controlhavehavesystemnewpasswordshorttermmemoryproblems --> controlhave
+	thingprobleminterface --> controlhave
+
+@enduml

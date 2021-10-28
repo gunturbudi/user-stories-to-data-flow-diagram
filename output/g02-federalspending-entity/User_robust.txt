@@ -1,0 +1,168 @@
+
+@startuml
+	skinparam defaultTextAlignment center
+	skinparam monochrome true
+
+	entity "Fabs" as thingFABS
+	entity "File" as thingfile
+	entity "Usaspende" as thingusaspende
+	entity "Derivation" as thingderivation
+	entity "Publish Button" as thingpublishbutton #grey
+	entity "Warning File" as thingwarningfile
+	entity "Error" as thingerror
+	entity "Complete" as thingcomplete
+	entity "Accurate Datum" as thingaccuratedatum
+	entity "D" as thingd
+	entity "C" as thingc
+	entity "Record" as thingrecord
+	entity "Dun" as thingDUNS
+	entity "Sam" as thingSAM
+	entity "D File" as thingdfile
+	entity "Fpds Datum" as thingfpdsdatum #grey
+	entity "User" as thinguser
+	entity "Case" as thingcase
+	entity "Contract" as thingcontract
+	entity "Row" as thingmanyrow
+	entity "Information" as thingmoreinformation
+	entity "Registration Date" as thingregistrationdate
+	entity "Fabs Submission" as thingfabssubmission
+	entity "Nasa Grant" as thingnasagrant
+	entity "Submission" as thingsubmission #grey
+	entity "Cfda" as thingcfda #grey
+	actor "User" as actoruser
+	actor "-pron-" as actormoinsPRONmoins #grey
+	actor "actorwhose" as actorwhose #grey
+	actor "Developer" as actordeveloper
+	circle "Code" as thingcode #grey
+	boundary "Raw Agency" as thingrawagencypublishfileusaspendeuser #grey
+	boundary "Publish Button" as thingpublishbuttonFABSuser
+	boundary "Flexfield" as thingflexfieldfileusermoinsPRONmoins
+	boundary "Duns Validations" as thingdunsvalidationswhoseuserwhosewhose
+	boundary "Validation" as thingvalidationwhoseuserwhosewhose #grey
+	boundary "Derivation\nInterface" as thingderivationinterface #grey
+	boundary "Ppopcongressionaldistrict\nInterface" as thingppopcongressionaldistrictinterface #grey
+	boundary "Complete\nInterface" as thingcompleteinterface #grey
+	boundary "Ppopcode\nInterface" as thingppopcodeinterface #grey
+	boundary "Fabs\nInterface" as thingfabsinterface #grey
+	boundary "Datum\nInterface" as thingdatuminterface #grey
+	boundary "Submission\nInterface" as thingsubmissioninterface #grey
+	boundary "User\nInterface" as thinguserinterface #grey
+	control "Publish Files\nFrom Fabs\nVia Usaspending" as controlpublishfileusaspende
+	control "Access" as controlaccessrawagencypublishfileusaspendeuser
+	control "Click The\nPublish Button\nIn Fabs\nThe Derivations\nAre Happening" as controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	control "Deactivate" as controldeactivatepublishbuttonFABSuser
+	control "Appear In\nError" as controlappearflexfieldfileusermoinsPRONmoinserror
+	control "Appear In\nThe Warning\nFiles" as controlappearflexfieldsubmissionfileusermoinsPRONmoinswarningfile
+	control "Have Accurate\nData To\nPpopcongressionaldistrict" as controlhaveaccuratedatumPPoPCongressionalDistrict
+	control "Have Complete" as controlhavecomplete
+	control "Have Accurate\nData To\nPpopcode" as controlhaveaccuratedatum
+	control "Accept Records\nActiontypes Are\nC" as controlacceptvalidationwhoseuserwhosewhoserecordc
+	control "Accept Records\nActiontypes Are\nThe Duns" as controlacceptvalidationwhoseuserwhosewhoserecordDUNS
+	control "Accept Records\nActiontypes Are\nD" as controlacceptvalidationwhoseuserwhosewhoserecordd
+	control "Accept Records\nActiontypes Are\nB" as controlacceptdunsvalidationswhoseuserwhosewhoserecord
+	control "After Accept\nRecords Actiondates\nAre Before\nThe Current\nRegistration Date\nIn Sam\nThe Initial\nRegistration Date" as controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	control "Generate D\nFiles From\nFabs" as controlgeneratedfile
+	control "Generate D\nFiles From\nFpds Datum" as controlgeneratedfilefpdsdatum
+	control "Validate D\nFiles From\nFabs" as controlvalidatedfile
+	control "Validate D\nFiles From\nFpds Datum" as controlvalidatedfilefpdsdatum
+	control "Prevent Users\nFrom Publishing,\nDouble Fabs\nSubmissions Refreshing" as controlpreventuserpublishingdoublefabssubmissions
+	control "Clarify To\nUsers" as controlclarifyuser
+	control "See" as controlsee
+	control "Publish" as controlpublish
+
+	thingderivation <.. thingFABS
+	thingFABS <.. thingfile
+	thingsubmission <.. thingfile
+	thingFABS <.. thingpublishbutton
+	thingcfda <.. thingerror
+	thingusaspende <.. thingaccuratedatum
+	thingregistrationdate <.. thingrecord
+	thingusaspende <.. thingrecord
+	thingFABS <.. thingdfile
+	thingfpdsdatum <.. thingdfile
+	thingfabssubmission <.. thinguser
+	thingmanyrow <.. thingmoreinformation
+	thingSAM <.. thingregistrationdate
+	thingerror *-- thingcode
+	actoruser --- thingrawagencypublishfileusaspendeuser
+	actoruser --- thingpublishbuttonFABSuser
+	actoruser --- thingflexfieldfileusermoinsPRONmoins
+	actormoinsPRONmoins --- thingflexfieldfileusermoinsPRONmoins
+	actoruser --- thingdunsvalidationswhoseuserwhosewhose
+	actorwhose --- thingdunsvalidationswhoseuserwhosewhose
+	actorwhose --- thingvalidationwhoseuserwhosewhose
+	actoruser --- thingvalidationwhoseuserwhosewhose
+	actoruser --- thingderivationinterface
+	actoruser --- thingppopcongressionaldistrictinterface
+	actoruser --- thingcompleteinterface
+	actoruser --- thingppopcodeinterface
+	actoruser --- thingfabsinterface
+	actoruser --- thingdatuminterface
+	actordeveloper --- thingsubmissioninterface
+	actordeveloper --- thinguserinterface
+	thingfile --- controlpublishfileusaspende
+	thingFABS --- controlpublishfileusaspende
+	thingusaspende --- controlpublishfileusaspende
+	thingrawagencypublishfileusaspendeuser --> controlpublishfileusaspende
+	controlaccessrawagencypublishfileusaspendeuser --> controlpublishfileusaspende
+	thingrawagencypublishfileusaspendeuser --> controlaccessrawagencypublishfileusaspendeuser
+	thingpublishbutton --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingderivation --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingderivationinterface --> controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	thingFABS --- controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation
+	controlclickdeactivatepublishbuttonFABSuserpublishbuttonderivation --> controldeactivatepublishbuttonFABSuser
+	thingpublishbuttonFABSuser --> controldeactivatepublishbuttonFABSuser
+	thingFABS --- controldeactivatepublishbuttonFABSuser
+	thingflexfieldfileusermoinsPRONmoins --> controlappearflexfieldfileusermoinsPRONmoinserror
+	thingerror --- controlappearflexfieldfileusermoinsPRONmoinserror
+	thingfile --- controlappearflexfieldfileusermoinsPRONmoinserror
+	thingwarningfile --- controlappearflexfieldsubmissionfileusermoinsPRONmoinswarningfile
+	thingfile --- controlappearflexfieldsubmissionfileusermoinsPRONmoinswarningfile
+	thingflexfieldfileusermoinsPRONmoins --> controlappearflexfieldsubmissionfileusermoinsPRONmoinswarningfile
+	thingppopcongressionaldistrictinterface --> controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingaccuratedatum --- controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingusaspende --- controlhaveaccuratedatumPPoPCongressionalDistrict
+	thingcomplete --- controlhavecomplete
+	thingcompleteinterface --> controlhavecomplete
+	thingaccuratedatum --- controlhaveaccuratedatum
+	thingppopcodeinterface --> controlhaveaccuratedatum
+	thingusaspende --- controlhaveaccuratedatum
+	thingc --- controlacceptvalidationwhoseuserwhosewhoserecordc
+	thingvalidationwhoseuserwhosewhose --> controlacceptvalidationwhoseuserwhosewhoserecordc
+	thingrecord --- controlacceptvalidationwhoseuserwhosewhoserecordc
+	thingusaspende --- controlacceptvalidationwhoseuserwhosewhoserecordc
+	thingvalidationwhoseuserwhosewhose --> controlacceptvalidationwhoseuserwhosewhoserecordDUNS
+	thingDUNS --- controlacceptvalidationwhoseuserwhosewhoserecordDUNS
+	thingrecord --- controlacceptvalidationwhoseuserwhosewhoserecordDUNS
+	thingusaspende --- controlacceptvalidationwhoseuserwhosewhoserecordDUNS
+	thingd --- controlacceptvalidationwhoseuserwhosewhoserecordd
+	thingvalidationwhoseuserwhosewhose --> controlacceptvalidationwhoseuserwhosewhoserecordd
+	thingrecord --- controlacceptvalidationwhoseuserwhosewhoserecordd
+	thingusaspende --- controlacceptvalidationwhoseuserwhosewhoserecordd
+	thingdunsvalidationswhoseuserwhosewhose --> controlacceptdunsvalidationswhoseuserwhosewhoserecord
+	thingrecord --- controlacceptdunsvalidationswhoseuserwhosewhoserecord
+	thingusaspende --- controlacceptdunsvalidationswhoseuserwhosewhoserecord
+	thingregistrationdate --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingrecord --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingSAM --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingusaspende --- controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingdunsvalidationswhoseuserwhosewhose --> controlacceptdunsvalidationsuserrecordinitialregistrationdate
+	thingdfile --- controlgeneratedfile
+	thingfabsinterface --> controlgeneratedfile
+	thingFABS --- controlgeneratedfile
+	thingfpdsdatum --- controlgeneratedfilefpdsdatum
+	thingdatuminterface --> controlgeneratedfilefpdsdatum
+	thingdfile --- controlgeneratedfilefpdsdatum
+	thingFABS --- controlvalidatedfile
+	thingdfile --- controlvalidatedfile
+	thingfabsinterface --> controlvalidatedfile
+	thingdfile --- controlvalidatedfilefpdsdatum
+	thingfpdsdatum --- controlvalidatedfilefpdsdatum
+	thingdatuminterface --> controlvalidatedfilefpdsdatum
+	thinguser --- controlpreventuserpublishingdoublefabssubmissions
+	thingfabssubmission --- controlpreventuserpublishingdoublefabssubmissions
+	thingsubmissioninterface --> controlpreventuserpublishingdoublefabssubmissions
+	thinguserinterface --> controlclarifyuser
+	thinguser --- controlclarifyuser
+
+@enduml
