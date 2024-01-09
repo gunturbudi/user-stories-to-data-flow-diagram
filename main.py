@@ -6,14 +6,14 @@ from flair.data import Sentence
 from ucscenario.src.api.utils.diagram_generator_api import *
 from dfd_to_padfd import generate_pa_dfd_xml
 
-import spacy
+# import spacy
 import os
 import csv
 import networkx as nx
 import string
 import json
 from shutil import copyfile
-from so_that import process_so_that, split_us
+from so_that import SoThatProcessor
 from similarity_util import get_similarity
 
 from nltk.stem import WordNetLemmatizer
@@ -22,34 +22,36 @@ lemmatizer = WordNetLemmatizer()
 import collections
 
 class StoryDFD():
-    def __init__(self):
-        self.initModels()
+    def __init__(self, dfd_folder, ner_model, nlp_model):
+        self.initModels(ner_model, nlp_model)
         self.privacy_only = False
+        self.so_that_processor = SoThatProcessor(ner_model, nlp_model)
         self.so_that = {}
-        self.root_folder = "dfd_output/"
+        self.root_folder = dfd_folder
 
-    def initModels(self):
+    def initModels(self, ner_model, nlp_model):
         logging.info('Initating NER Model')
-        NER_MODEL_PATH = "ner-model.pt"
-        self.model = SequenceTagger.load(NER_MODEL_PATH)
+        # NER_MODEL_PATH = "static/model/ner-model-roberta-aug-mr-jean-baptiste.pt"
+        # self.model = SequenceTagger.load(NER_MODEL_PATH)
+        self.model = ner_model
+        self.nlp = nlp_model
 
-        logging.info('Initating Spacy NLP Model')
-        self.nlp = spacy.load("en_core_web_sm")
+        # logging.info('Initating Spacy NLP Model')
+        # self.nlp = spacy.load("en_core_web_sm")
 
 
-    def setStories(self, stories):
+    def setStories(self, stories, stories_id):
         self.stories = stories
+        self.stories_id = stories_id
 
     def setStoriesFromFile(self, filename):
         self.stories = []
+        self.stories_id = None
 
         # some project are error due to the encoding
-        # experiment with several encoding
-
-        # with open(filename, 'r', encoding='cp1252') as f:
-        # with open(filename, 'r', encoding='utf-8') as f:
-
-        with open(filename, 'r', encoding='utf-8-sig') as f:
+        # try to change with these encodings:
+        # cp1252 utf-8-sig utf-8
+        with open(filename, 'r', encoding='cp1252') as f:
             for story in f:
                 self.stories.append(story)
 
@@ -78,9 +80,24 @@ class StoryDFD():
 
         
     def getUniqueEntitiesByLabel(self, entity_label):
-        entities = []
+        entities_data = []
         entities_dict = {}
 
+        for i, entities in enumerate(self.ner_data):
+            for entity in entities:
+                label = entity.get_label("ner").value
+
+                if entity_label != label:
+                    continue
+
+                if entity.text not in entities_dict:
+                    entities_data.append(entity.text)
+                    entities_dict[entity.text] = [self.stories[i]]
+                else:
+                    entities_dict[entity.text].append(self.stories[i])
+
+        '''
+        OLD Flair
         for data in self.ner_data:
             for entity in data["entities"]:
                 label = entity["labels"][0].value
@@ -92,9 +109,10 @@ class StoryDFD():
                     entities_dict[entity["text"]] = [data["text"]]
                 else:
                     entities_dict[entity["text"]].append(data["text"])
+        '''
 
         # key = entity text, value = user story text
-        return entities_dict, entities
+        return entities_dict, entities_data
 
     def getStoriesByLabel(self, entity_label):
         stories = []
@@ -118,12 +136,15 @@ class StoryDFD():
         else:
             print("No user stories to generate")
 
+        # if result:
+        #    print(result)
+
         return result
 
     def generateSoThatDict(self, story):            
-        actors, verb, personal_data = process_so_that(story)
+        actors, verb, personal_data = self.so_that_processor.process_so_that(story)
         if personal_data:
-            first, second, third, idx_cut_first, idx_cut_second = split_us(story)
+            first, second, third, _, _ = self.so_that_processor.split_us(story)
 
             self.so_that[story] = {
                 "first" : first,
@@ -146,7 +167,9 @@ class StoryDFD():
         for i, story in enumerate(self.stories):
             sentence = Sentence(story)
             self.model.predict(sentence)
-            self.ner_data.append(sentence.to_dict(tag_type='ner'))
+            self.ner_data.append(sentence.get_spans('ner'))
+            ## old flair
+            ## self.ner_data.append(sentence.to_dict(tag_type='ner'))
 
     def buildNLP(self):
         logging.info('Building NLP data from the Stories')
@@ -163,68 +186,156 @@ class StoryDFD():
 
         return word
 
-    def processDFDPerStory(self, folder_output, unify_dfd=False):
-        self.buildNER()
+    @staticmethod
+    def ensure_folder_exists(path):
+        if not os.path.exists(path):
+            os.mkdir(path)
 
-        dfd_folder = self.root_folder + folder_output + "/"
+    def handle_individual_story(self, i, story):
+        dfd_output_name_num = os.path.join(self.root_folder, f"s_{i+1}")
+
+        if self.stories_id:
+            dfd_output_name_num = os.path.join(self.root_folder, f"s_{self.stories_id[i]}")
+
+        if os.path.exists(dfd_output_name_num + '.xml'):
+            return
+
+        result = DiagramGenerator.generate(story)
+        self.so_that = {}
+        self.generateSoThatDict(story.replace(".", ""))
+        if self.so_that:
+            with open(dfd_output_name_num + "_so.txt", 'w') as ff:
+                ff.write(str(self.so_that))
+        self.robustToDFD(result["id"], dfd_output_name_num)
+
+    def processDFDPerStory(self, unify_dfd=False):
+        self.buildNER()
+        self.ensure_folder_exists(self.root_folder)
         _, self.personal_data_entities = self.getUniqueEntitiesByLabel("PII")
         
-        if not os.path.exists(dfd_folder):
-            os.mkdir(dfd_folder)
+        error_stories = []
 
-        error_story = []
-        error_cause = []
         if not unify_dfd:
             for i, story in enumerate(self.stories):
-                dfd_output_name_num = dfd_folder + "s_{}".format(i+1)
-
-                if os.path.exists(dfd_output_name_num + '.xml'):
-                    continue
-
                 try:
-                    result = DiagramGenerator.generate(story)
-
-                    self.so_that = {}
-                    self.generateSoThatDict(story.replace(".",""))
-
-                    print("**"*10)
-                    print(story)
-                    print(self.so_that)
-                    print("**"*10)
-
-                    if self.so_that:
-                        with open(dfd_output_name_num + "_so.txt", 'w') as ff:
-                            ff.write(str(self.so_that))
-
-                    self.robustToDFD(result["id"], dfd_output_name_num)
-                    
+                    self.handle_individual_story(i, story)
                 except Exception as e:
-                    error_story.append(story)
-                    error_cause.append(str(e))
-
+                    error_stories.append((story, str(e)))
         else:
             self.filtered_stories = self.stories
             self.so_that = {}
             for story in self.stories:
                 self.generateSoThatDict(story)
-
-
             robustness_result = self.generateRobustnessDiagram()
+            self.robustToDFD(robustness_result["id"], os.path.join(self.root_folder, "stories"))
 
-            # READ THE OUTPUT OF ROBUSTNESS DIAGRAM and TRANSFORM it to DFD
-            self.robustToDFD(robustness_result["id"], dfd_folder + "stories")
+        with open("error_story.txt", 'w', encoding='utf-8') as f:
+            for story, error in error_stories:
+                f.write(story)
+                f.write(error)
+                f.write("==" * 10)
 
-        with open("error_story.txt", 'w') as f:
-            for i, s in enumerate(error_story):
-                f.write(s)
-                f.write(error_cause[i])
-                f.write("=="*10)
+    
+    def csv_to_gojs(CSV_FILE_PATH):
+        nodes, links = [], []
 
+        with open(CSV_FILE_PATH, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row['type'] in ['data_base', 'external_entity', 'process']:
+                    node = {
+                        "key": row['id'],
+                        "text": row['value'],
+                        "type": row['type']
+                    }
+                    nodes.append(node)
+                else:
+                    link = {
+                        "from": row['source'],
+                        "to": row['target'],
+                        "text": row['value']
+                    }
+                    links.append(link)
 
+        return {"nodes": nodes, "links": links}
 
-    def processDFDPerEntity(self, process_all=False, us_name=None, based_on="data_subject", force_single=False):
+    
+    def dot_to_csv(dot_content):
+        lines = dot_content.split("\n")
+        
+        nodes = {}
+        edges = []
+        
+        for line in lines:
+            line = line.strip()
+            
+            # Node extraction
+            if '[' in line and 'label' in line:
+                node_id = line.split(' ')[0]
+                label = line.split('label=')[1].split('"')[1]
+                
+                # determine node type
+                if 'shape=record' in line or 'color=red' in line:
+                    nodes[node_id] = (label.split('|')[1], 'shape=partialRectangle', 'data_base')
+                elif 'shape=box' in line:
+                    nodes[node_id] = (label, 'rounded=0', 'external_entity')
+                elif 'shape=Mrecord' in line:
+                    nodes[node_id] = (label.split('|')[1], 'ellipse', 'process')
+            
+            # Edge extraction
+            if '->' in line:
+                parts = line.split('->')
+                source = parts[0].strip()
+                target = parts[1].split('[')[0].strip()
+                
+                label = ''
+                if 'label' in line:
+                    label = line.split('label=')[1].split('"')[1]
+                
+                edges.append((source, target, label))
+        
+        # Convert nodes and edges to csv format
+        csv_lines = ["id,value,style,source,target,type"]
+        
+        # Write nodes
+        for node_id, (label, style, node_type) in nodes.items():
+            csv_lines.append(f"{node_id},{label},{style},null,null,{node_type}")
+        
+        # Write edges
+        edge_id = 208
+        for source, target, label in edges:
+            csv_lines.append(f"{edge_id},{label},endArrow=classic,{source},{target},endArrow=classic")
+            edge_id += 1
+
+        return "\n".join(csv_lines)
+
+    
+    def setupNLPTools(self):
         self.buildNER()
         self.buildNLP()
+
+    def processDFDFromList(self, story_list, folder_output, filename):
+        dfd_folder = os.path.join(self.root_folder, folder_output)
+        self.ensure_folder_exists(dfd_folder)
+        
+        dfd_output_name = os.path.join(dfd_folder, filename)
+        
+        self.stories = story_list
+        self.filtered_stories = story_list
+        
+        self.setupNLPTools()
+        _, self.personal_data_entities = self.getUniqueEntitiesByLabel("PII")
+        
+        robustness_result = self.generateRobustnessDiagram()
+        
+        self.so_that = {}
+        for story in self.filtered_stories:
+            self.generateSoThatDict(story)
+            
+        self.robustToDFD(robustness_result["id"], dfd_output_name)
+
+    def processDFDPerEntity(self, process_all=False, us_name=None, based_on="data_subject", force_single=False):
+        self.setupNLPTools()
 
         Entity_Based_Stories, Personal_Data_Stories, Processing_Stories = {}, {}, {}
 
@@ -288,47 +399,45 @@ class StoryDFD():
 
                 self.filtered_stories = stories
 
-                #try:
+                try:
                 
-                # READ THE OUTPUT OF ROBUSTNESS DIAGRAM and TRANSFORM it to DFD
-                dfd_folder = self.root_folder + us_name
-                if not os.path.exists(dfd_folder):
-                    os.mkdir(dfd_folder)
+                    # READ THE OUTPUT OF ROBUSTNESS DIAGRAM and TRANSFORM it to DFD
+                    dfd_folder = os.path.join(self.root_folder, us_name)
+                    if not os.path.exists(dfd_folder):
+                        os.mkdir(dfd_folder)
 
-                dfd_output_name = dfd_folder + "/" + data_subject
-                self.writeFilteredStoriesToFile(filename=dfd_output_name)
+                    dfd_output_name = os.path.join(dfd_folder, data_subject)
+                    self.writeFilteredStoriesToFile(filename=dfd_output_name)
 
-                if os.path.exists(dfd_output_name + '.xml'):
-                    continue
-                
-                # GENERATE ROBUSTNESS DIAGRAM
-                if force_single:
-                    for i, story in enumerate(stories):
-                        dfd_output_name_num = dfd_output_name + "_{}".format(i+1)
-                        result = DiagramGenerator.generate(story)
+                    if os.path.exists(dfd_output_name + '.xml'):
+                        continue
+                    
+                    # GENERATE ROBUSTNESS DIAGRAM
+                    if force_single:
+                        for i, story in enumerate(stories):
+                            dfd_output_name_num = dfd_output_name + "_{}".format(i+1)
+                            result = DiagramGenerator.generate(story)
+
+                            self.so_that = {}
+                            self.generateSoThatDict(story)
+
+                            if self.so_that:
+                                with open(dfd_output_name_num + "_so_that.txt", 'w') as ff:
+                                    ff.write(str(self.so_that))
+                            
+                            self.robustToDFD(result["id"], dfd_output_name_num)
+
+                    else:
+                        robustness_result = self.generateRobustnessDiagram()
 
                         self.so_that = {}
-                        self.generateSoThatDict(story)
+                        for story in self.filtered_stories:
+                            self.generateSoThatDict(story)
 
-                        if self.so_that:
-                            with open(dfd_output_name_num + "_so_that.txt", 'w') as ff:
-                                ff.write(str(self.so_that))
-                        
-                        self.robustToDFD(result["id"], dfd_output_name_num)
-
-                else:
-                    robustness_result = self.generateRobustnessDiagram()
-
-                    self.so_that = {}
-                    for story in self.filtered_stories:
-                        self.generateSoThatDict(story)
-
-                    self.robustToDFD(robustness_result["id"], dfd_output_name)
+                        self.robustToDFD(robustness_result["id"], dfd_output_name)
                 
-                #except:
-                #    pass
-
-
+                except:
+                    pass
 
     def generateDfdGraphiz(self, dot_rows, dfd_output_name):
         with open(dfd_output_name + ".dot", 'w') as dfd:
@@ -525,7 +634,9 @@ class StoryDFD():
                             for proc in data_actor['process']:
                                 if (process[proc]['label'].strip().lower() in so_data["second"].strip().lower() or get_similarity(process[proc]['label'], so_data["second"]) > 0.7) and not PROCESS_CONNECTED:
                                     # make the connection from process in the second part of user story
-                                    PROCESS_CONNECTED = True
+                                    PROCESS_CONNECTED = False
+                                    # update : keep it false so triple will be detected
+                                    
                                     row = [id_dfd_so, "", DFD_PROP['dataflow']['style'], process[proc]['id_dfd'], id_process, DFD_PROP['dataflow']['type']]
                                     dfd_rows.append({"id":row[0], "data":row})
                                     dot_rows.append("{} -> {}".format(process[proc]['id_dfd'], id_process))
@@ -558,7 +669,7 @@ class StoryDFD():
                         
                     # if we found a new personal data in so that, we add it to DFD
                     if NEW_ENTITY:
-                        row = [id_dfd_so, personal_data_so, DFD_PROP['external_entity']['style'], "null", "null", DFD_PROP['external_entity']['type']]
+                        row = [id_dfd_so, personal_data_so, DFD_PROP['datastore']['style'], "null", "null", DFD_PROP['datastore']['type']]
 
                         dfd_rows.append({"id":row[0], "data":row})
                         dot_rows.append("{} [label=\"<f0>  |<f1> {} \" {}];".format(row[0], personal_data_so, "color=red"))
@@ -624,8 +735,6 @@ class StoryDFD():
 
                     break
 
-
-
         dfd_rows.sort(key=lambda x: x.get('id'))
         sorted_dfd_rows = [v["data"] for v in dfd_rows]
         sorted_dfd_rows.insert(0, DFD_CSV_HEADER)
@@ -643,12 +752,30 @@ class StoryDFD():
     
 
 
-dd = StoryDFD()
+# dd = StoryDFD()
 
-dd.setStoriesFromFile("g12-camperplus.txt")
+# SOLID_US = "C:/Users/guntu/Documents/Kuliah S3/Code & Dataset/solid_user_stories.txt"
+# ALFRED_US = "C:/Users/guntu/Documents/Kuliah S3/Code & Dataset/user stories/g19-alfred.txt"
+# BADCAMP_US = "C:/Users/guntu/Documents/Kuliah S3/Code & Dataset/user stories/g21-badcamp.txt"
 
-# process per user story
-dd.processDFDPerStory("g12-camperplus")
+# dd.setStoriesFromFile(BADCAMP_US)
+# dd.processDFD()
 
-# process per entity, default process per data subject, see the parameter for more
+# dd.setStoriesFromFile("g12-camperplus.txt")
+# dd.setStoriesFromFile("g12-camperplus.txt")
+# dd.setStoriesFromFile("g12-camperplus_single_story.txt")
+# dd.processDFDPerStory("camperplus_single_evaluate2")
+# dd.processDFDPerStory("alfred_story")
 # dd.processDFDPerEntity(process_all=True, us_name="camperplus_gabung", force_single=False)
+
+
+# FOLDER PROCESS
+
+# US_FOLDER = "C:/Users/guntu/Documents/Kuliah S3/Code & Dataset/user stories/"
+# for us_file in os.listdir(US_FOLDER):
+#     if us_file.endswith(".txt"):
+#         print("Generating DFD for ", us_file)
+
+#         dd.setStoriesFromFile(os.path.join(US_FOLDER, us_file))
+#         # dd.processDFD(process_all=True, us_name=us_file.replace(".txt",""), force_single=True)
+#         dd.processDFDPerEntity(process_all=True, us_name=us_file.replace(".txt","-entity"), force_single=False)
